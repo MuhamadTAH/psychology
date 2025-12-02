@@ -49,27 +49,16 @@ export default function WelcomePage() {
   return (
     <div className="min-h-screen bg-black flex items-center justify-center px-6">
       <div className="w-full max-w-md">
-        {/* Optional: Small video logo at top */}
-        <div className="flex justify-center mb-8">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-16 h-16 object-contain opacity-70"
-          >
-            <source src="/welcome-animation.webm" type="video/webm" />
-          </video>
-        </div>
+        {/* Video logo removed per strict visual directives */}
 
         {/* Headline */}
-        <h1 className="text-5xl font-serif text-white text-center mb-4 tracking-tight">
-          Identify Yourself.
+        <h1 className="text-4xl md:text-5xl font-mono text-white text-center mb-4 tracking-tighter">
+          IDENTIFY YOURSELF.
         </h1>
 
         {/* Subtext */}
-        <p className="text-gray-400 text-center mb-12 text-sm">
-          Access to this database is restricted.
+        <p className="text-gray-400 text-center mb-12 text-sm font-mono">
+          ACCESS TO THIS DATABASE IS RESTRICTED.
         </p>
 
         {/* Three Ghost Buttons */}
@@ -80,7 +69,7 @@ export default function WelcomePage() {
               // Trigger Clerk sign-in
               router.push("/sign-in");
             }}
-            className="w-full py-4 px-8 bg-transparent border border-white text-white text-sm uppercase tracking-wider hover:bg-white/10 transition-colors rounded-none"
+            className="w-full py-4 px-8 bg-transparent border border-white text-white text-sm font-mono uppercase tracking-[0.2em] hover:bg-white/10 transition-colors rounded-none"
           >
             Access Existing Dossier
           </button>
@@ -91,7 +80,7 @@ export default function WelcomePage() {
               // Trigger Clerk sign-up
               router.push("/sign-up");
             }}
-            className="w-full py-4 px-8 bg-transparent border border-white text-white text-sm uppercase tracking-wider hover:bg-white/10 transition-colors rounded-none"
+            className="w-full py-4 px-8 bg-transparent border border-white text-white text-sm font-mono uppercase tracking-[0.2em] hover:bg-white/10 transition-colors rounded-none"
           >
             Create Operative Profile
           </button>
@@ -99,7 +88,7 @@ export default function WelcomePage() {
           {/* Button 3: Ghost Mode */}
           <button
             onClick={() => setShowGhostWarning(true)}
-            className="w-full py-4 px-8 bg-transparent border border-white text-white text-sm uppercase tracking-wider hover:bg-white/10 transition-colors rounded-none"
+            className="w-full py-4 px-8 bg-transparent border border-white text-white text-sm font-mono uppercase tracking-[0.2em] hover:bg-white/10 transition-colors rounded-none"
           >
             Proceed as Ghost
           </button>
@@ -109,7 +98,7 @@ export default function WelcomePage() {
         <div className="mt-12 text-center">
           <button
             onClick={() => router.push("/")}
-            className="text-gray-600 hover:text-gray-400 text-xs uppercase tracking-wider transition-colors"
+            className="text-gray-700 hover:text-gray-500 text-[10px] font-mono uppercase tracking-widest transition-colors"
           >
             Exit Demo
           </button>
@@ -118,25 +107,25 @@ export default function WelcomePage() {
 
       {/* Ghost Mode Warning Modal */}
       {showGhostWarning && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center px-6 z-50">
-          <div className="bg-zinc-900 border-2 border-red-600 max-w-md w-full p-8 rounded-none">
-            <h2 className="text-2xl font-serif text-white mb-4">Warning: Ghost Mode</h2>
-            <p className="text-gray-400 mb-8 text-sm leading-relaxed">
+        <div className="fixed inset-0 bg-black/90 flex items-center justify-center px-6 z-50">
+          <div className="bg-black border border-red-600 max-w-md w-full p-8 rounded-none shadow-[0_0_20px_rgba(220,38,38,0.2)]">
+            <h2 className="text-xl font-mono text-red-500 mb-4 uppercase tracking-widest">Warning: Ghost Mode</h2>
+            <p className="text-gray-400 mb-8 text-xs font-mono leading-relaxed uppercase">
               Data will not be encrypted or saved across devices. Your progress will be lost when you close this session.
             </p>
 
             <div className="flex gap-4">
               <button
                 onClick={() => setShowGhostWarning(false)}
-                className="flex-1 py-3 px-6 bg-transparent border border-white text-white text-sm uppercase tracking-wider hover:bg-white/10 transition-colors rounded-none"
+                className="flex-1 py-3 px-6 bg-transparent border border-gray-600 text-gray-400 text-xs font-mono uppercase tracking-widest hover:bg-white/5 transition-colors rounded-none"
               >
                 Cancel
               </button>
               <button
                 onClick={() => router.push("/dark-psychology-dashboard")}
-                className="flex-1 py-3 px-6 bg-red-600 border border-red-600 text-white text-sm uppercase tracking-wider hover:bg-red-700 transition-colors rounded-none"
+                className="flex-1 py-3 px-6 bg-red-900/20 border border-red-600 text-red-500 text-xs font-mono uppercase tracking-widest hover:bg-red-900/40 transition-colors rounded-none"
               >
-                Continue Anyway
+                Continue
               </button>
             </div>
           </div>
@@ -145,10 +134,10 @@ export default function WelcomePage() {
 
       {/* CSS for glitch effect */}
       <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
         
-        .font-serif {
-          font-family: 'Playfair Display', serif;
+        .font-mono {
+          font-family: 'JetBrains Mono', monospace;
         }
 
         @keyframes glitch {
