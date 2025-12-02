@@ -1,0 +1,336 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A3",
+  "unitTitle": "The Grand Chessmaster: Machiavellianism",
+  "lessonId": "A3-1",
+  "lessonTitle": "\"The End Justifies the Means\": The Core Philosophy",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Spotting the \"Game\"",
+  "objective": "To practice identifying Machiavellian tactics (Strategic Deception, Utilitarianism, Reputation Management) in real-world scenarios.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A3-1-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Hidden Scoreboard",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A Machiavellian is always keeping score, but they never show it. Every interaction is a calculation: 'What can you do for me?'"
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "In this practice, look for the **Utility**. If someone is being nice, ask: 'Is this kindness, or is this an investment?'"
+        }
+      ]
+    },
+    {
+      "screenId": "A3-1-P2-S2",
+      "screenType": "Exercises",
+      "title": "Spotting the Strategy",
+      "exercises": [
+        {
+          "exerciseId": "A3-1-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: A colleague who usually ignores you suddenly invites you to lunch the day after you are assigned to a high-profile project.",
+          "question": "This behavior suggests:",
+          "options": [
+            "They finally realized you are cool.",
+            "Transactional Alliance (You now have 'Utility').",
+            "They are lonely.",
+            "Coincidence."
+          ],
+          "correct": "Transactional Alliance (You now have 'Utility').",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. To a Machiavellian, people are assets. You increased in value (the project), so they are 'investing' in you now.",
+            "incorrect": "The timing is the tell. If they ignore you when you have no power, and engage when you do, it is a transaction, not a friendship."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P2-E2",
+          "type": "multiple-choice",
+          "question": "How does a Machiavellian view 'Reputation'?",
+          "options": [
+            "As a reflection of their true soul.",
+            "As a tool/asset to be carefully managed and manipulated.",
+            "They don't care about reputation.",
+            "As something only Narcissists care about."
+          ],
+          "correct": "As a tool/asset to be carefully managed and manipulated.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'It is better to *seem* good than to *be* good.' They cultivate a reputation of honesty or kindness strategically, to use as cover later.",
+            "incorrect": "They care deeply, but not for ego. They care because a good reputation lowers people's defenses."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P2-E3",
+          "type": "true-false",
+          "scene": "Scenario: 'I don't like firing people, but if I don't fire 10% of the staff, the stock price drops and I lose my bonus. So, it's the logical choice.'",
+          "question": "Is this Machiavellian thinking?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is 'Utilitarianism' with self-interest. The suffering of others is weighed against personal gain mathematically, without emotional distress.",
+            "incorrect": "This is the definition of the Machiavellian mindset: Cold calculation of gain vs. loss, ignoring the human cost."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P2-E4",
+          "type": "fill-in",
+          "sentence": "A Narcissist wants you to see their (--------). A Machiavellian wants you to see their (--------).",
+          "options": [
+            "face",
+            "mask",
+            "greatness",
+            "pain",
+            "utility"
+          ],
+          "answers": [
+            "greatness",
+            "mask"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The Narcissist screams 'Look at how great I am!' The Machiavellian whispers 'Look how normal/helpful I am' (while hiding the knife).",
+            "incorrect": "The Machiavellian hides. They want you to see a harmless mask so you don't see the strategy."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P2-E5",
+          "type": "scenario",
+          "scene": "Scenario: You ask for a favor. They reply: 'I can do that. But I might need a favor from you regarding the budget report next week.'",
+          "question": "This is:",
+          "options": [
+            "A friendly exchange.",
+            "Quid Pro Quo (Explicit Transaction).",
+            "Blackmail.",
+            "Generosity."
+          ],
+          "correct": "Quid Pro Quo (Explicit Transaction).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Quid Pro Quo' means 'This for That.' They are treating the relationship as a contract. It's honest, but transactional.",
+            "incorrect": "It's not generosity; it's a trade. They are locking in your repayment *before* they help you."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P2-E6",
+          "type": "matching",
+          "question": "Match the Tactic to the Goal:",
+          "pairs": [
+            {
+              "term": "Strategic Vulnerability",
+              "definition": "Sharing a small weakness to gain trust."
+            },
+            {
+              "term": "The Long Game",
+              "definition": "Accepting a small loss now for a big win later."
+            },
+            {
+              "term": "Information Hoarding",
+              "definition": "Keeping secrets to maintain an advantage."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Vulnerability creates trust. Patience wins wars. Secrecy creates power.",
+            "incorrect": "Think strategy. Why would a general share a weakness? To lure the enemy in."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P2-E7",
+          "type": "scenario",
+          "scene": "Scenario: A manager creates a conflict between two employees (Triangulation) so they are too busy fighting each other to notice the manager's mistakes.",
+          "question": "This tactic is called:",
+          "options": [
+            "Divide and Conquer.",
+            "Team Building.",
+            "Conflict Resolution.",
+            "Accidental Drama."
+          ],
+          "correct": "Divide and Conquer.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. A classic Machiavellian move. If the 'pawns' unite, they are dangerous. If they fight, they are weak and easily controlled.",
+            "incorrect": "This creates chaos, not resolution. It keeps the manager in power as the 'stabilizer' of the chaos they created."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P2-E8",
+          "type": "build-sentence",
+          "question": "Arrange these words to describe Machiavellian empathy:",
+          "words": [
+            "understand",
+            "emotions,",
+            "They",
+            "feel",
+            "them",
+            "don't",
+            "but"
+          ],
+          "correct": "They understand emotions, but don't feel them",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is 'Cold Empathy.' They know *you* are sad, and they know how to *use* your sadness, but they don't *feel* sad.",
+            "incorrect": "They aren't blind to emotion; they are detached from it."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P2-E9",
+          "type": "reverse-scenario",
+          "answer": "Feigning incompetence or playing 'dumb' so others underestimate you and reveal their plans.",
+          "question": "What is this strategic mask?",
+          "options": [
+            "The Fox (Cunning disguised as stupidity).",
+            "The Lion (Open power).",
+            "The Victim (Narcissism).",
+            "The Martyr."
+          ],
+          "correct": "The Fox (Cunning disguised as stupidity).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Machiavelli advised being both a Lion (strong) and a Fox (cunning). Playing dumb is a classic Fox move.",
+            "incorrect": "A Narcissist hates looking dumb. A Machiavellian *loves* looking dumb if it gives them an advantage."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P2-E10",
+          "type": "true-false",
+          "scene": "Scenario: Someone says, 'I never lie.'",
+          "question": "Is this person likely a Machiavellian?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. A Machiavellian knows *everyone* lies. They wouldn't make such an absolute statement unless it was a specific tactical lie. They usually avoid absolutes.",
+            "incorrect": "Machiavellians prefer ambiguity. 'I try to be honest' is a safer, more manipulative statement than 'I never lie' (which is easily disproven)."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P2-E11",
+          "type": "multiple-choice",
+          "question": "In a 'Zero-Sum Game' mindset, what does a Machiavellian believe?",
+          "options": [
+            "We can all win together.",
+            "If you win, I lose. Therefore, I must make sure you lose.",
+            "Winning doesn't matter.",
+            "Rules are fair."
+          ],
+          "correct": "If you win, I lose. Therefore, I must make sure you lose.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They view resources (money, power, status) as finite. To get a bigger slice of the pie, they must take yours.",
+            "incorrect": "The 'Win-Win' is the opposite of Machiavellianism. They are competitive by nature."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P2-E12",
+          "type": "scenario",
+          "scene": "Scenario: You share a secret with a friend. They say: 'Thanks for telling me. That's good to know.' They don't share a secret back.",
+          "question": "What just happened?",
+          "options": [
+            "They are a good listener.",
+            "Information Asymmetry (They gathered Intel without giving any).",
+            "They forgot.",
+            "They are shy."
+          ],
+          "correct": "Information Asymmetry (They gathered Intel without giving any).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. In a healthy relationship, vulnerability is reciprocal. Here, they hoarded your intel. They now have leverage over you.",
+            "incorrect": "It feels like listening, but it's strategic silence. They are collecting 'ammo' or 'leverage'."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P2-E13",
+          "type": "fill-in",
+          "sentence": "A Machiavellian is not impulsive; they are (--------).",
+          "options": [
+            "calculated",
+            "emotional",
+            "loud",
+            "weak"
+          ],
+          "answers": [
+            "calculated"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. A Narcissist reacts to emotion. A Machiavellian calculates the best move. They have high impulse control.",
+            "incorrect": "They are the opposite of emotional. Every move is weighed for risk vs. reward."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P2-E14",
+          "type": "ethical-dilemma",
+          "scene": "You realize your boss is Machiavellian. They are offering you a promotion, but you know they will expect 'absolute loyalty' (unethical favors) in return.",
+          "question": "What is the strategic move?",
+          "options": [
+            "Accept blindly.",
+            "Reject and quit.",
+            "Negotiate the terms clearly *now* to avoid the 'debt' trap later.",
+            "Betray them first."
+          ],
+          "correct": "Negotiate the terms clearly *now* to avoid the 'debt' trap later.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You must speak their language (Transaction). 'I am happy to lead the team, but I will run it by the book.' Set the boundary before taking the power.",
+            "incorrect": "Blind acceptance is a trap. Quitting might be premature. Negotiation shows you are a player, not a pawn."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Game Revealed",
+          "scene": "You have practiced spotting the 'Game.' You know that Charm can be a mask, Generosity can be a transaction, and Silence can be a weapon.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The Ethical Trap (A simulation of a Machiavellian moral dilemma).",
+            "Becoming a Chess Master.",
+            "A lesson on Gaslighting.",
+            "Ignoring the game."
+          ],
+          "correct": "The Ethical Trap (A simulation of a Machiavellian moral dilemma).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The final test is to see if you can hold your ethics when a Machiavellian offers you an 'easy win' through a 'dark path'.",
+            "incorrect": "Next is the Challenge: Navigating a moral trap set by a Strategist."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A4",
+  "unitTitle": "The Void Behind the Mask: Psychopathy",
+  "lessonId": "A4-4",
+  "lessonTitle": "The Absence of Conscience: Remorse vs. Regret",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Pity Play\" Defense",
+  "objective": "To master the defense against the 'Pity Play' by distinguishing between genuine need and manipulative victimhood, and refusing to step into the 'Rescuer' role.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Heart_of_Steel_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A4-4-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Wolf Crying Sheep",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The most dangerous predator is not the one who roars; it is the one who cries. Psychopaths know that decent people have a 'blind spot' for victims."
+        },
+        {
+          "type": "paragraph",
+          "text": "In this challenge, the manipulator will try to weaponize your **Empathy** against you. They will act helpless, sick, or destroyed to make you drop your boundaries."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Do not become the 'Rescuer.' Compassion without boundaries is self-destruction."
+        }
+      ]
+    },
+    {
+      "screenId": "A4-4-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Rescue Trap",
+      "exercises": [
+        {
+          "exerciseId": "A4-4-P3-E1",
+          "type": "boss-scenario",
+          "scene": "You finally leave an abusive partner. Two days later, they call you from a hospital. 'I crashed the car because I was crying so hard about losing you. I have no one else. Please come pick me up.'",
+          "question": "This is the 'Ultimate Pity Play.' What is the strategic move?",
+          "options": [
+            "Rush to the hospital immediately. (Rescuer Trap)",
+            "Call their family/friends to pick them up, but maintain No Contact yourself. (Compassionate Detachment)",
+            "Ignore it completely. (Risk of Escalation)",
+            "Go pick them up, but lecture them. (Engagement)"
+          ],
+          "correct": "Call their family/friends to pick them up, but maintain No Contact yourself. (Compassionate Detachment)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You ensured they were safe (Compassion) but refused to re-enter the cycle (Boundary). If you go, you are trapped again.",
+            "incorrect": "If you go to the hospital, they win. They proved that 'Crisis = Your Presence.' They will manufacture crises forever."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The 'Poor Me' Defense",
+          "steps": [
+            {
+              "scene": "You catch an employee stealing funds. They look at the floor: 'My partner left me, my dog died, and I'm about to be evicted. I just needed a loan. Please don't fire me.'",
+              "options": [
+                "'Oh my god, I'm so sorry! Keep the job.' (Submission)",
+                "'That is terrible, but theft is theft. You are fired.' (Accountability)",
+                "'I'll loan you the money personally.' (Enabling)",
+                "'You're lying.' (Argument)"
+              ],
+              "correct": "'That is terrible, but theft is theft. You are fired.' (Accountability)",
+              "feedback": {
+                "correct": "Perfect. You acknowledged the pain ('That is terrible') but held the consequence ('You are fired'). Sadness does not excuse crime.",
+                "incorrect": "If you let them stay, you teach them that a 'Sad Story' creates immunity from rules."
+              }
+            },
+            {
+              "question": "The employee instantly stops crying and glares at you: 'You are a heartless monster. I hope you rot.' (The Mask Drop).",
+              "options": [
+                "'Wait, I'm not heartless!' (Defense)",
+                "'Maybe I should give them another chance...' (Guilt)",
+                "Maintain silence and escort them out. (Finality)",
+                "Cry."
+              ],
+              "correct": "Maintain silence and escort them out. (Finality)",
+              "feedback": {
+                "correct": "Mastery. The instant switch from 'Sad' to 'Rage' proves the sadness was a tool. You made the right call.",
+                "incorrect": "Defending your character gives them power. Let them think you are a monster. Be a monster who protects the business."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Pity Play. You separated the 'Story' from the 'Action.'",
+            "incorrect": "You let Pity override Justice. Now you have a thief on your payroll."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why is 'Pity' the most dangerous emotion to feel for a Psychopath?",
+          "options": [
+            "It isn't dangerous.",
+            "Because Pity allows them to bypass your defenses without triggering your 'Fight or Flight' response.",
+            "Because they hate pity.",
+            "Because it makes you sad."
+          ],
+          "correct": "Because Pity allows them to bypass your defenses without triggering your 'Fight or Flight' response.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Fear makes you put up walls. Pity makes you open the gates. It is the Trojan Horse of emotions.",
+            "incorrect": "They don't hate pity; they harvest it. It is their favorite camouflage."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P3-E4",
+          "type": "fill-in",
+          "sentence": "If you try to 'save' a Psychopath, you do not save them; you become their (--------).",
+          "options": [
+            "victim",
+            "hero",
+            "teacher",
+            "friend"
+          ],
+          "answers": [
+            "victim"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You cannot save someone who does not want to be saved, but does want to consume you. The Rescuer always becomes the Victim.",
+            "incorrect": "There are no heroes in a parasitic relationship, only hosts."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'I know I'm bad for you. You should probably just leave me. I destroy everything I touch.'",
+          "question": "This is:",
+          "options": [
+            "A warning / The 'Orphan' Pity Play.",
+            "Genuine remorse.",
+            "A breakup attempt.",
+            "Humility."
+          ],
+          "correct": "A warning / The 'Orphan' Pity Play.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They are telling you the truth to make you say: 'No, you're not! I can fix you!' It baits you into validating them.",
+            "incorrect": "Believe them the first time. It is a warning. Leave."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: A Psychopath uses a physical illness (real or fake) to stop you from setting boundaries.",
+          "question": "Is this a form of Coercion?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It is 'Medical Coercion.' 'You can't leave me, I have cancer/depression/a headache.' It holds the relationship hostage.",
+            "incorrect": "Illness does not grant immunity from boundaries."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the defense against the Pity Play:",
+          "words": [
+            "Compassion",
+            "not",
+            "submission",
+            "is"
+          ],
+          "correct": "Compassion is not submission",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You can feel sad for someone (Compassion) without giving them your wallet or your life (Submission).",
+            "incorrect": "Keep them separate. Feel the feeling, but hold the boundary."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A dynamic where the victim believes they are the only one who can 'heal' or 'understand' the damaged predator.",
+          "question": "What is this trap?",
+          "options": [
+            "The 'Beauty and the Beast' Fantasy",
+            "True Love",
+            "Empathy",
+            "Narcissism"
+          ],
+          "correct": "The 'Beauty and the Beast' Fantasy",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It is the fantasy that your love is strong enough to cure their pathology. It is a fatal ego trap for the empath.",
+            "incorrect": "It is not love; it is a savior complex. The Beast eats Beauty in the real version."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "Your toxic ex is homeless. They ask to sleep on your couch 'just for a week' or they will freeze.",
+          "question": "What is the Ethical/Safe choice?",
+          "options": [
+            "Let them in. You can't let them freeze.",
+            "Give them the number for a homeless shelter. Do not let them in.",
+            "Ignore them.",
+            "Give them money for a hotel."
+          ],
+          "correct": "Give them the number for a homeless shelter. Do not let them in.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You offer a resource (shelter info) that is not *you*. If you let them in, they will never leave (Squatter's Rights).",
+            "incorrect": "Letting them in breaks No Contact and endangers your safety. A hotel pays for their problem. The shelter puts the responsibility on them."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm only like this because my ex abused me.'",
+          "question": "This logic is:",
+          "options": [
+            "Blame-Shifting (Using the past to excuse the present).",
+            "A valid reason.",
+            "Healing.",
+            "Truth."
+          ],
+          "correct": "Blame-Shifting (Using the past to excuse the present).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Trauma explains behavior, but it does not *excuse* abuse. They are using the 'victim card' to get away with being a perpetrator.",
+            "incorrect": "Many abused people do not abuse others. This is a manipulation tactic."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P3-E11",
+          "type": "fill-in",
+          "sentence": "A Psychopath respects (--------), never charity.",
+          "options": [
+            "strength",
+            "love",
+            "kindness",
+            "pity"
+          ],
+          "answers": [
+            "strength"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you give charity, they see you as weak/exploitable. If you show strength (boundaries), they respect (or fear) you.",
+            "incorrect": "They view charity as weakness to be harvested."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: You stop saving them. They get angry.",
+          "question": "Does this prove their helplessness was fake?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. A truly helpless person is grateful for whatever they get. A predator gets angry when the entitlement is denied.",
+            "incorrect": "The rage reveals the entitlement. The 'helplessness' was just a mask."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P3-E13",
+          "type": "matching",
+          "question": "Match the Defense to the Pity Play:",
+          "pairs": [
+            {
+              "term": "'I'm so stupid!'",
+              "definition": "Defense: 'You made a mistake, but you can fix it.'"
+            },
+            {
+              "term": "'I have no one!'",
+              "definition": "Defense: 'There are support groups for that.'"
+            },
+            {
+              "term": "'I'm going to hurt myself.'",
+              "definition": "Defense: Call 911 (Professional Help)."
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Direct them to *external* resources. Do not become the resource.",
+            "incorrect": "Don't reassure them ('You aren't stupid!'). Put the work back on them."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P3-E14",
+          "type": "scenario",
+          "scene": "Scenario: They cry without tears, check your reaction, then cry harder.",
+          "question": "This is:",
+          "options": [
+            "Calibration (Checking if the manipulation is working).",
+            "Dry eyes.",
+            "Deep sadness.",
+            "Shyness."
+          ],
+          "correct": "Calibration (Checking if the manipulation is working).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are monitoring you. If you aren't reacting, they dial up the performance. It is mechanical.",
+            "incorrect": "Real grief is internal. This is a performance for an audience."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Heart of Steel",
+          "scene": "You have learned that 'Pity' is a weapon. You know that a Psychopath uses your empathy against you. You have closed the door to the Pity Play.",
+          "question": "You are ready for the final test of Unit 4:",
+          "options": [
+            "Lesson A4-5: Unit 4 Review.",
+            "Lesson A1-1.",
+            "Saving them.",
+            "Crying."
+          ],
+          "correct": "Lesson A4-5: Unit 4 Review.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You have mastered the Predator's Biology, Charm, Parasitism, and Moral Void. Now, we review.",
+            "incorrect": "Next up: The Unit 4 Review."
+          }
+        }
+      ]
+    }
+  ]
+}

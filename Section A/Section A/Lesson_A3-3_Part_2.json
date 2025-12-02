@@ -1,0 +1,409 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A3",
+  "unitTitle": "The Grand Chessmaster: Machiavellianism",
+  "lessonId": "A3-3",
+  "lessonTitle": "Weak Point Practice – Identifying \"Cynical\" Logic",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Detecting Exploitative Logic",
+  "objective": "To practice spotting and debunking the specific logical traps ('Rationalizations') manipulators use to disguise selfishness as wisdom or necessity.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A3-3-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Logic of Wolves",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Machiavellians are experts at **Rationalization**. They can twist logic to make the most cruel act sound like a necessary, or even noble, decision."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "In this practice, don't listen to the *tone* (which might be calm). Listen to the *logic*. Ask: 'Does this argument justify harming someone for personal gain?'"
+        }
+      ]
+    },
+    {
+      "screenId": "A3-3-P2-S2",
+      "screenType": "Exercises",
+      "title": "Spotting the Fallacy",
+      "exercises": [
+        {
+          "exerciseId": "A3-3-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: A manager fires a loyal employee to hire their own nephew. They say: 'It's nothing personal. It's just how the world works. Family comes first.'",
+          "question": "This logic is:",
+          "options": [
+            "Nepotism disguised as 'Realism'.",
+            "Good business sense.",
+            "Loyalty.",
+            "Kindness."
+          ],
+          "correct": "Nepotism disguised as 'Realism'.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They use a cynical worldview ('how the world works') to justify an unethical act (Nepotism).",
+            "incorrect": "It's not good business to fire loyal talent. It's corruption disguised as a 'hard truth'."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is the **'Zero-Sum'** Fallacy?",
+          "options": [
+            "The belief that we can all win.",
+            "The belief that resources are infinite.",
+            "The belief that for me to gain +1, you *must* lose -1. (Life is a war).",
+            "A math problem."
+          ],
+          "correct": "The belief that for me to gain +1, you *must* lose -1. (Life is a war).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is the Machiavellian worldview. They cannot imagine a 'Win-Win.' They think if they help you, they are losing ground.",
+            "incorrect": "It is the opposite of abundance. It assumes scarcity and conflict are the only reality."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E3",
+          "type": "scenario",
+          "scene": "Scenario: You catch a partner cheating. They say: 'If you had been more attentive, I wouldn't have had to look elsewhere.'",
+          "question": "This is 'Victim Blaming' combined with:",
+          "options": [
+            "The 'Cause and Effect' Fallacy (Justifying betrayal as a natural consequence).",
+            "A genuine apology.",
+            "Love Bombing.",
+            "Flattery."
+          ],
+          "correct": "The 'Cause and Effect' Fallacy (Justifying betrayal as a natural consequence).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They frame their choice (cheating) as a mechanical result of your action (inattention), removing their free will and responsibility.",
+            "incorrect": "They are not apologizing. They are using pseudo-logic to say 'You made me do it'."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E4",
+          "type": "fill-in",
+          "sentence": "The most dangerous lie is the one that sounds like (--------).",
+          "options": [
+            "truth",
+            "anger",
+            "fear",
+            "joke"
+          ],
+          "answers": [
+            "truth"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Machiavellian logic is dangerous because it is often 'technically' true but morally bankrupt (e.g., 'It's not illegal').",
+            "incorrect": "They use 'hard truths' (cynicism) to mask bad intent."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E5",
+          "type": "true-false",
+          "scene": "Scenario: 'I did it for the Greater Good.'",
+          "question": "Is this often a cover for 'I did it for my own good'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the tyrant's favorite excuse. They harm individuals to help the 'abstract' group, but usually, they profit personally.",
+            "incorrect": "Historically, the 'Greater Good' is the most common justification for atrocity."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E6",
+          "type": "matching",
+          "question": "Match the Cynical Excuse to the Reality:",
+          "pairs": [
+            {
+              "term": "'Everyone does it.'",
+              "definition": "Diffusion of Responsibility."
+            },
+            {
+              "term": "'I was just following orders.'",
+              "definition": "Displacement of Authority."
+            },
+            {
+              "term": "'They were asking for it.'",
+              "definition": "Dehumanization."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. These are the 'Big 3' moral disengagement strategies used to sleep at night.",
+            "incorrect": "Look at the mechanic. 'Everyone' diffuses blame. 'Orders' displaces blame. 'Asking for it' removes victim status."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E7",
+          "type": "scenario",
+          "scene": "Scenario: A salesperson sells a car they know is broken. 'Caveat Emptor (Buyer Beware). It was their job to check the engine, not mine to tell them.'",
+          "question": "This logic relies on:",
+          "options": [
+            "The 'Law of the Jungle' (Survival of the fittest).",
+            "Excellent customer service.",
+            "Radical Honesty.",
+            "Empathy."
+          ],
+          "correct": "The 'Law of the Jungle' (Survival of the fittest).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They believe that if you are 'weak' (uninformed), you deserve to be exploited by the 'strong' (informed).",
+            "incorrect": "It is the opposite of honesty. It is withholding truth for profit."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E8",
+          "type": "build-sentence",
+          "question": "Arrange the words to describe 'Moral Relativism':",
+          "words": [
+            "only",
+            "what",
+            "Right",
+            "works",
+            "is"
+          ],
+          "correct": "Right is only what works",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. To a Machiavellian, 'Good' is defined as 'Effective.' 'Bad' is defined as 'Ineffective.' Morality does not enter the equation.",
+            "incorrect": "They judge actions by results, not principles."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E9",
+          "type": "reverse-scenario",
+          "answer": "Using strict adherence to rules and bureaucracy to punish an enemy or avoid helping them.",
+          "question": "What is this form of aggression?",
+          "options": [
+            "Malicious Compliance / Lawfare",
+            "Gaslighting",
+            "Love Bombing",
+            "Hoovering"
+          ],
+          "correct": "Malicious Compliance / Lawfare",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. 'I'd love to help, but the *policy* says...' They use the rules as a shield to hide their malice.",
+            "incorrect": "It's not gaslighting. It's using the 'Letter of the Law' to violate the 'Spirit of the Law'."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E10",
+          "type": "ethical-dilemma",
+          "scene": "A rival makes a mistake that will hurt the whole team. You can fix it easily.",
+          "question": "The Machiavellian Logic is:",
+          "options": [
+            "'Let it burn. The chaos will remove my rival, and I will look like a hero when I fix it later.'",
+            "'Fix it immediately to help the team.'",
+            "'Tell the boss so we can solve it together.'",
+            "'Quit.'"
+          ],
+          "correct": "'Let it burn. The chaos will remove my rival, and I will look like a hero when I fix it later.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is 'Strategic Inaction.' They allow harm to occur because the fallout benefits their ranking.",
+            "incorrect": "Helping the team is the Ethical choice. The Machiavellian choice maximizes personal power at the team's expense."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E11",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm not manipulating you. I'm just *managing* you because you're too emotional to make good decisions.'",
+          "question": "This is:",
+          "options": [
+            "Paternalistic Rationalization (I control you for your own good).",
+            "Good leadership.",
+            "Love.",
+            "Friendship."
+          ],
+          "correct": "Paternalistic Rationalization (I control you for your own good).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They frame their dominance as 'care.' 'I have to take your freedom because you are too weak to use it.'",
+            "incorrect": "It removes your agency. Good leaders empower; they don't 'manage' people like toddlers."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E12",
+          "type": "fill-in",
+          "sentence": "A Machiavellian sees (--------) as a transaction, not a bond.",
+          "options": [
+            "loyalty",
+            "money",
+            "truth",
+            "fear"
+          ],
+          "answers": [
+            "loyalty"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are loyal only as long as the 'payment' (benefit) continues. When the benefit ends, the loyalty ends.",
+            "incorrect": "Loyalty is usually emotional. To them, it is contractual."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E13",
+          "type": "true-false",
+          "scene": "Scenario: 'If you have nothing to hide, you have nothing to fear.'",
+          "question": "Is this a manipulation tactic?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This logic creates a 'False Dilemma.' It suggests that privacy is proof of guilt. It is used to invade boundaries.",
+            "incorrect": "Privacy is a right. Using this logic forces you to surrender your privacy to prove your innocence."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E14",
+          "type": "micro-sim",
+          "scenarioTitle": "The 'Just A Joke' Defense",
+          "steps": [
+            {
+              "scene": "Colleague: 'Wow, nice presentation. Did you get your kid to design the slides?' (Insult). You get angry.",
+              "options": [
+                "'That's rude!' (React)",
+                "'Yes, he's very talented.' (Agree & Amplify)",
+                "'Why would you say that?' (Question)",
+                "Cry."
+              ],
+              "correct": "'Yes, he's very talented.' (Agree & Amplify)",
+              "feedback": {
+                "correct": "Mastery. You refused to be insulted. You agreed with the absurdity, stripping the insult of its power.",
+                "incorrect": "Reacting proves they hurt you. Agreeing mocks them back."
+              }
+            },
+            {
+              "question": "Colleague: 'God, I was just joking. You take everything so seriously.' (Logic: 'Your reaction is the problem, not my insult').",
+              "options": [
+                "'Jokes are supposed to be funny.' (Frame Holding)",
+                "'I'm sorry, I'm just stressed.' (Submission)",
+                "'It wasn't funny!' (Debate)",
+                "'You're a bully.' (Attack)"
+              ],
+              "correct": "'Jokes are supposed to be funny.' (Frame Holding)",
+              "feedback": {
+                "correct": "Perfect. You rejected their logic ('It was a joke') by defining the reality ('It failed to be funny').",
+                "incorrect": "Don't apologize. Don't debate. Simply reject the premise that it was a valid joke."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You dismantled the 'Schrödinger's Douchebag' (Someone who decides if they were joking based on your reaction).",
+            "incorrect": "You let them define the reality. They insulted you, then blamed you for noticing."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E15",
+          "type": "multiple-choice",
+          "question": "What is the 'Tu Quoque' (You Also) fallacy often used by manipulators?",
+          "options": [
+            "Admitting fault.",
+            "Deflecting an accusation by accusing the accuser. ('I stole? Well, you were late yesterday!').",
+            "Apologizing.",
+            "Complimenting you."
+          ],
+          "correct": "Deflecting an accusation by accusing the accuser. ('I stole? Well, you were late yesterday!').",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It avoids the argument by claiming 'hypocrisy.' Even if you *were* late, it doesn't justify their theft. But it creates a stalemate.",
+            "incorrect": "It translates to 'You too.' It is a distraction tactic to avoid accountability."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E16",
+          "type": "scenario",
+          "scene": "Scenario: 'I withheld the information because I didn't want to worry you.'",
+          "question": "This logic is:",
+          "options": [
+            "Infantilization (Treating you like a child).",
+            "Protective kindness.",
+            "Professionalism.",
+            "Honesty."
+          ],
+          "correct": "Infantilization (Treating you like a child).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They decided *for* you what you could handle. It strips you of agency and information.",
+            "incorrect": "It masks control as protection. Adults deserve the truth to make their own decisions."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E17",
+          "type": "fill-in",
+          "sentence": "The Machiavellian believes that if they can (--------) you, they are superior to you.",
+          "options": [
+            "deceive",
+            "help",
+            "love",
+            "know"
+          ],
+          "answers": [
+            "deceive"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Duper's Delight.' The act of fooling you is proof of their intellect and your stupidity.",
+            "incorrect": "It's about deception. Tricking you validates their worldview that they are the 'Fox' and you are the 'Sheep'."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P2-E18",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: Logic Deconstructed",
+          "scene": "You have exposed the logical gears of the machine. Rationalization, Victim Blaming, False Dilemmas, and Tu Quoque. They are all shields against guilt.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Double-Cross' (A simulation of betrayal).",
+            "Trusting blindly.",
+            "A lesson on history.",
+            "Sleeping."
+          ],
+          "correct": "The 'Double-Cross' (A simulation of betrayal).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The final test of Cynical Logic is when the ally becomes the enemy. Can you spot the Double-Cross before it happens?",
+            "incorrect": "Next up: The betrayal scenario."
+          }
+        }
+      ]
+    }
+  ]
+}

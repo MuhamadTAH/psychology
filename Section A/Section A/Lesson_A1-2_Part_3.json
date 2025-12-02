@@ -1,0 +1,337 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A1",
+  "unitTitle": "The Fast Hook",
+  "lessonId": "A1-2",
+  "lessonTitle": "Tactic Teaser: Flattery & Rapport",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: Rapport & The 'Ask'",
+  "objective": "To combine the concepts of flattery and rapport, and to master defensive strategies against the 'Flattery -> Rapport -> Ask' sequence.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "complete",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "complete",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Rapport_Shield_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A1-2-P3-S1",
+      "screenType": "Learn",
+      "title": "Part 3: Challenge",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You've mastered spotting flattery. Now for the 'Challenge.' Flattery is just one tool to build *Rapport*—a feeling of connection and trust."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Manipulators *manufacture* rapport using tactics like 'Mirroring' (copying your body language) and 'Pacing' (matching your speech speed). Let's see if you can spot this in action."
+        }
+      ]
+    },
+    {
+      "screenId": "A1-2-P3-S2",
+      "screenType": "Exercises",
+      "exercises": [
+        {
+          "exerciseId": "A1-2-P3-E1",
+          "type": "multiple-choice",
+          "question": "What is 'Rapport' in a manipulative context?",
+          "options": [
+            "A genuine friendship.",
+            "A faked feeling of connection used to build unearned trust.",
+            "A disagreement between two people.",
+            "A formal business relationship."
+          ],
+          "correct": "A faked feeling of connection used to build unearned trust.",
+          "difficulty": "easy",
+          "explanation": "Rapport is the 'bridge' a manipulator builds to send their 'ask' across. They build it *fast* and *fake*."
+        },
+        {
+          "exerciseId": "A1-2-P3-E2",
+          "type": "true-false",
+          "statement": "'Mirroring' is when a manipulator copies your body language (like posture or gestures) to make you subconsciously feel 'like' them.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "explanation": "This is a core rapport-building tactic. If someone 'acts' like you, your brain *thinks* they 'are' like you, and therefore 'safe'."
+        },
+        {
+          "exerciseId": "A1-2-P3-E3",
+          "type": "scenario",
+          "scene": "You are in an interview. The interviewer leans forward and smiles. You naturally do the same. You both seem to be 'clicking'.",
+          "question": "This is:",
+          "options": [
+            "A clear sign the interviewer is manipulating you.",
+            "Natural (benign) rapport-building. This is how humans connect.",
+            "A tactic you are using to manipulate them.",
+            "A sign of aggression."
+          ],
+          "correct": "Natural (benign) rapport-building. This is how humans connect.",
+          "difficulty": "medium",
+          "explanation": "This is a vital distinction. 'Rapport' is a normal, healthy part of human connection. It only becomes 'dark' when it is *faked* to *exploit* someone."
+        },
+        {
+          "exerciseId": "A1-2-P3-E4",
+          "type": "scenario",
+          "scene": "You're on a date. You cross your arms, and a second later, they cross their arms. You take a sip of water, they immediately take a sip. You lean back, they lean back.",
+          "question": "This is most likely:",
+          "options": [
+            "A coincidence.",
+            "Natural connection. You are 'in sync'.",
+            "Conscious 'Mirroring' (a manipulation tactic).",
+            "A sign of boredom."
+          ],
+          "correct": "Conscious 'Mirroring' (a manipulation tactic).",
+          "difficulty": "medium",
+          "explanation": "When the mirroring is *this* precise and immediate, it's often a *conscious* tactic being used to 'force' a connection. Natural rapport is not this perfect."
+        },
+        {
+          "exerciseId": "A1-2-P3-E5",
+          "type": "fill-in",
+          "sentence": "Flattery appeals to the (--------), while Mirroring appeals to the (--------).",
+          "options": [
+            "ego",
+            "subconscious",
+            "logic",
+            "fear",
+            "anger"
+          ],
+          "answers": [
+            "ego",
+            "subconscious"
+          ],
+          "difficulty": "medium",
+          "explanation": "This is a powerful combo. Flattery attacks your conscious *ego* ('I'm smart') while mirroring attacks your *subconscious* brain ('they are like me')."
+        },
+        {
+          "exerciseId": "A1-2-P3-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words into the rapport-building sequence:",
+          "words": [
+            "build",
+            "lower",
+            "to",
+            "your",
+            "defenses",
+            "Manipulators",
+            "rapport"
+          ],
+          "correct": "Manipulators build rapport to lower your defenses",
+          "difficulty": "medium",
+          "explanation": "This is the whole point. Rapport is the *tool* to achieve the *goal* of lowered defenses."
+        },
+        {
+          "exerciseId": "A1-2-P3-E7",
+          "type": "reverse-scenario",
+          "answer": "By 'mirroring' your posture and speech, then using flattery about your 'unique' insights.",
+          "question": "How does a manipulator build rapid, fake rapport to make you feel 'seen'?",
+          "options": [
+            "By disagreeing with you to show dominance.",
+            "By being quiet and letting you talk.",
+            "By combining subconscious (mirroring) and ego-based (flattery) tactics.",
+            "By telling you all about their own accomplishments."
+          ],
+          "correct": "By combining subconscious (mirroring) and ego-based (flattery) tactics.",
+          "difficulty": "hard",
+          "explanation": "This combination is extremely effective. Your brain *feels* the connection (mirroring) and your ego *loves* the praise (flattery)."
+        },
+        {
+          "exerciseId": "A1-2-P3-E8",
+          "type": "ethical-dilemma",
+          "scene": "You are a salesperson and you are *trained* by your company to mirror your clients to 'build rapport' and increase sales.",
+          "question": "From a Dark Psychology perspective, is this...?",
+          "options": [
+            "Ethical. It's just a normal part of business and persuasion.",
+            "Unethical. It is conscious manipulation to make a sale.",
+            "A 'Grey Area.' It depends on the *intent* (helping a client vs. tricking them)."
+          ],
+          "correct": "A 'Grey Area.' It depends on the *intent* (helping a client vs. tricking them).",
+          "difficulty": "hard",
+          "explanation": "This is a tough one. Most social 'persuasion' lives in this grey area. The 'dark' line is crossed when the intent is to *deceive* or *harm* (e.g., sell a bad product to a vulnerable person)."
+        },
+        {
+          "exerciseId": "A1-2-P3-E9",
+          "type": "matching",
+          "question": "Match the advanced tactic with its immediate goal:",
+          "pairs": [
+            {
+              "term": "Flattery",
+              "definition": "Appeal to the Ego"
+            },
+            {
+              "term": "Mirroring",
+              "definition": "Create Subconscious 'Sameness'"
+            },
+            {
+              "term": "Pacing",
+              "definition": "Match Speech/Energy to build trust"
+            },
+            {
+              "term": "The 'Ask'",
+              "definition": "The Manipulator's Ultimate Goal"
+            }
+          ],
+          "difficulty": "medium",
+          "explanation": "'Pacing' is matching someone's speech speed, tone, or key phrases. It's 'mirroring' for your voice. We'll cover it later."
+        },
+        {
+          "exerciseId": "A1-2-P3-E10",
+          "type": "case-analysis",
+          "caseTitle": "The 'Perfect' Friend",
+          "scene": "You meet 'Charlie.' It feels like you've known them for years. They love all the same rare bands you do. They even use the same weird slang phrases! They compliment your 'unique' style. A week later, they ask to 'borrow' $500.",
+          "question": "What *two* tactics were most likely combined?",
+          "options": [
+            "Guilt and Threats",
+            "Honesty and Generosity",
+            "Mirroring/Pacing and Flattery",
+            "Gaslighting and The Silent Treatment"
+          ],
+          "correct": "Mirroring/Pacing and Flattery",
+          "difficulty": "hard",
+          "explanation": "This is a classic 'grooming' script. They 'mirror' your interests and 'pace' your slang to create a false, deep connection. The flattery ('unique style') seals the deal. The 'ask' ($500) was the goal all along."
+        },
+        {
+          "exerciseId": "A1-2-P3-E11",
+          "type": "true-false",
+          "statement": "If you *notice* someone is consciously mirroring you, the best defense is to angrily call them out on it: 'Stop copying me!'",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "hard",
+          "explanation": "This is a bad defense. It makes *you* look aggressive. The *best* defense is to *subtly change your own posture* (e.g., touch your face). If they follow, you've confirmed the tactic. Now *you* have the power, because you know their game."
+        },
+        {
+          "exerciseId": "A1-2-P3-E12",
+          "type": "micro-sim",
+          "scenarioTitle": "The 'Rapport' Defense Test",
+          "steps": [
+            {
+              "scene": "You are at a networking event. A potential 'partner' leans in, matching your posture. 'I've read your work,' they say, 'It's just brilliant. Truly next-level.' What is your *first* defensive move?",
+              "options": [
+                "(Change posture) 'Thanks. What specific part did you find brilliant?'",
+                "'Thank you so much! I'm a big fan of your work too!'",
+                "'I'm not that brilliant, but thanks.'",
+                "'I know you're just flattering me.'"
+              ],
+              "correct": "(Change posture) 'Thanks. What specific part did you find brilliant?'",
+              "feedback": "Perfect! This is a 2-part defense. You (1) *test the mirror* by changing posture and (2) *test the flattery* by asking for specifics."
+            },
+            {
+              "question": "They *also* lean back, following you. 'Oh... just, you know, the *general idea* of it. So, about my proposal...' What have you confirmed?",
+              "options": [
+                "That they are a genuine fan and you should trust them.",
+                "That they *are* mirroring you and the flattery was *empty* (vague).",
+                "That they are shy and nervous.",
+                "That your work is not as brilliant as you thought."
+              ],
+              "correct": "That they *are* mirroring you and the flattery was *empty* (vague).",
+              "feedback": "Exactly. You've confirmed *both* tactics. They failed your test. You now know their 'rapport' is fake. You can judge their 'proposal' with pure logic."
+            }
+          ],
+          "difficulty": "hard",
+          "explanation": "The defense is to *test* the rapport. Test the mirror (change posture) and test the flattery (ask for specifics). A manipulator will fail both tests."
+        },
+        {
+          "exerciseId": "A1-2-P3-E13",
+          "type": "multiple-choice",
+          "question": "What is 'Pacing'?",
+          "options": [
+            "Asking a lot of questions quickly.",
+            "Matching a person's speech speed, tone, or key phrases to build rapport.",
+            "Rushing someone into making a decision.",
+            "Speaking very slowly to show calmness."
+          ],
+          "correct": "Matching a person's speech speed, tone, or key phrases to build rapport.",
+          "difficulty": "medium",
+          "explanation": "'Pacing' is 'mirroring' for your voice. If you talk fast and excited, they will too. It's another subconscious 'sameness' tactic."
+        },
+        {
+          "exerciseId": "A1-2-P3-E14",
+          "type": "scenario",
+          "scene": "You are talking fast and excitedly about a new project. Your co-worker, who is usually slow and calm, suddenly starts talking just as fast. 'Wow! That's incredible! Your energy is amazing!'",
+          "question": "This is a combination of what two tactics?",
+          "options": [
+            "Pacing and Flattery",
+            "Gaslighting and Guilt",
+            "Honesty and Excitement",
+            "Mirroring and The Silent Treatment"
+          ],
+          "correct": "Pacing and Flattery",
+          "difficulty": "hard",
+          "explanation": "They are 'pacing' your speech speed and energy, and then adding 'flattery' to seal the deal. Be on the lookout for the 'ask' that comes next."
+        },
+        {
+          "exerciseId": "A1-2-P3-E15",
+          "type": "boss-scenario",
+          "scene": "Let's revisit 'Alex' from the Coffee Shop. They sit down, *matching your posture*. 'Hey! So glad I ran into you. You're looking great, by the way. That color is perfect on you. Listen, you're just *so smart* with money... I'm in a *terrible* jam. I'm so embarrassed. I just need $100...'",
+          "question": "This is a 'Boss Scenario.' Which tactics are combined here?",
+          "options": [
+            "Mirroring, Flattery, and (False) Vulnerability",
+            "Honesty, Trust, and Friendship",
+            "Gaslighting, Threats, and Fear",
+            "Pacing, Guilt, and The Silent Treatment"
+          ],
+          "correct": "Mirroring, Flattery, and (False) VulnerVulnerability",
+          "difficulty": "hard",
+          "explanation": "This is the full combo. (1) Mirroring (rapport), (2) Flattery (ego), (3) False Vulnerability (trust/pity). You've been 'softened up' in three different ways for the 'ask' ($100)."
+        },
+        {
+          "exerciseId": "A1-2-P3-E16",
+          "type": "ethical-dilemma",
+          "scene": "You now know how to mirror and pace. Is it 'dark' or 'unethical' to *consciously* use this in a job interview to build rapport with the interviewer?",
+          "question": "What is the most 'ethically aware' answer?",
+          "options": [
+            "Yes. It's 'faking' a connection, so it's 'dark' manipulation.",
+            "No. This is a standard, high-level social skill. The 'goal' (getting a job) is transparent, so it's 'persuasion,' not 'manipulation'.",
+            "It doesn't matter, as long as you get the job.",
+            "It's only ethical if you also flatter them."
+          ],
+          "correct": "No. This is a standard, high-level social skill. The 'goal' (getting a job) is transparent, so it's 'persuasion,' not 'manipulation'.",
+          "difficulty": "hard",
+          "explanation": "This is the 'light' side. Using rapport skills to build a *real* connection in a transparent situation (like an interview) is just social intelligence. It becomes 'dark' when the goal is *hidden* and *exploitative*."
+        },
+        {
+          "exerciseId": "A1-2-P3-E17",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: Flattery & Rapport",
+          "scene": "You have now completed the 'Flattery & Rapport' lesson. You've learned that 'Flattery' is an ego-attack and 'Rapport' (Mirroring, Pacing) is a subconscious-attack. You've seen how manipulators *combine* these 'softeners' *before* they deliver the 'ask'.",
+          "question": "You are now ready to move on. What is the main takeaway?",
+          "options": [
+            "Never trust anyone who compliments you or acts like you.",
+            "Manipulators *combine* tactics. The 'softeners' always come *before* the 'ask'.",
+            "Flattery is bad, but mirroring is a good way to make friends.",
+            "Everyone is a manipulator."
+          ],
+          "correct": "Manipulators *combine* tactics. The 'softeners' always come *before* the 'ask'.",
+          "difficulty": "medium",
+          "explanation": "This is the pattern. Always look for the pattern. Congratulations on completing your first tactical lesson. You've earned the 'Rapport Shield' badge."
+        }
+      ]
+    }
+  ]
+}

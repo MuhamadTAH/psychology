@@ -1,0 +1,334 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B4",
+  "unitTitle": "The Pressure Cooker: Emotional Leverage",
+  "lessonId": "B4-4",
+  "lessonTitle": "Hope-Mongering: Selling the Dream",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: The \"Too Good to Be True\" Audit",
+  "objective": "To practice identifying specific Hope-Mongering tactics (Technobabble, Secret Knowledge, The Testimonial Trap) and applying critical thinking frameworks like the 'Reversal Test' to neutralize false hope.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B4-4-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: Auditing the Miracle",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When someone offers you a miracle, your brain wants to believe it. To stay safe, you must learn to audit the promise."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Tool: **The Reversal Test**. Ask yourself: 'If this product/idea were fake, what would it look like?' If it looks exactly like what is being offered (vague promises, urgency, testimonials but no data), it is fake."
+        }
+      ]
+    },
+    {
+      "screenId": "B4-4-P2-S2",
+      "screenType": "Exercises",
+      "title": "Spotting the Dream Trap",
+      "exercises": [
+        {
+          "exerciseId": "B4-4-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: An ad claims: 'Scientists hate this one weird trick to lose belly fat overnight!'",
+          "question": "This utilizes:",
+          "options": [
+            "The 'Forbidden Knowledge' Hook + Hope.",
+            "Medical science.",
+            "Honesty.",
+            "Education."
+          ],
+          "correct": "The 'Forbidden Knowledge' Hook + Hope.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It frames the solution as 'secret' and 'hated by experts' to make you feel like an insider getting away with something.",
+            "incorrect": "Scientists don't hate tricks; they hate fraud. The phrase is a classic clickbait template."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is the 'Testimonial Trap'?",
+          "options": [
+            "Relying on emotional stories from 'satisfied customers' instead of data or peer-reviewed studies.",
+            "Taking a test.",
+            "Being honest.",
+            "Asking a friend."
+          ],
+          "correct": "Relying on emotional stories from 'satisfied customers' instead of data or peer-reviewed studies.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Testimonials are easily faked or cherry-picked. They appeal to emotion ('She looks happy, I want to be happy'), bypassing logic.",
+            "incorrect": "Anecdotes are not data. In Hope-Mongering, testimonials replace evidence."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P2-E3",
+          "type": "fill-in",
+          "sentence": "If a solution promises huge results with (--------) effort, it is a scam.",
+          "options": [
+            "zero",
+            "hard",
+            "maximum",
+            "smart"
+          ],
+          "answers": [
+            "zero"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The Law of Thermodynamics applies to life. Energy in = Energy out. 'Zero effort' is the hallmark of the Hope-Monger.",
+            "incorrect": "Smart work is good. Zero work is a lie."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'This investment has zero risk and guaranteed returns.'",
+          "question": "Is this mathematically impossible?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. In finance, Risk and Reward are correlated. High reward requires high risk. 'Zero risk' is the lie used to trap the fearful.",
+            "incorrect": "There is no such thing as a risk-free high return."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P2-E5",
+          "type": "matching",
+          "question": "Match the Technobabble to the Reality:",
+          "pairs": [
+            {
+              "term": "\"Quantum Bio-Hacking\"",
+              "definition": "Reality: A vitamin supplement."
+            },
+            {
+              "term": "\"Algorithmic Arbitrage\"",
+              "definition": "Reality: A Ponzi scheme."
+            },
+            {
+              "term": "\"Vibrational Alignment\"",
+              "definition": "Reality: Paying for a compliment."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They use complex words to hide simple (or nonexistent) products.",
+            "incorrect": "Strip away the jargon. What are you actually buying?"
+          }
+        },
+        {
+          "exerciseId": "B4-4-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: You are lonely. A dating profile says: 'I am a wealthy model looking for a soulmate to spoil. No drama.'",
+          "question": "This is a 'Honey Trap' targeting:",
+          "options": [
+            "The fantasy of the 'Perfect Savior'.",
+            "Your intelligence.",
+            "Your kindness.",
+            "Your job."
+          ],
+          "correct": "The fantasy of the 'Perfect Savior'.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It offers a solution to financial and emotional needs in one package. It is designed to be irresistible to the desperate.",
+            "incorrect": "It targets your wish for a 'Rescue,' not your kindness."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Vacuum Test':",
+          "words": [
+            "emotion",
+            "Remove",
+            "the",
+            "check",
+            "and",
+            "math",
+            "the"
+          ],
+          "correct": "Remove the emotion and check the math",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you stop feeling 'Hope' and just look at the numbers, the scam falls apart.",
+            "incorrect": "Math doesn't care about your dreams. Check the math."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "A leader who claims to have a 'Secret Plan' or 'Divine Vision' that cannot be questioned or explained to outsiders.",
+          "question": "What is this?",
+          "options": [
+            "The Prophet / Visionary Trap",
+            "A CEO",
+            "A Teacher",
+            "A Scientist"
+          ],
+          "correct": "The Prophet / Visionary Trap",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. By claiming the source is 'Divine' or 'Secret,' they insulate themselves from logic. You must believe to see.",
+            "incorrect": "Scientists explain. Prophets demand faith. Manipulators play the Prophet."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "A friend is selling a 'detox' drink. They truly believe it works, but you know it's a pyramid scheme.",
+          "question": "Are they a manipulator?",
+          "options": [
+            "They are an 'Unwitting Accomplice.' They are victims who have been weaponized to sell hope to others.",
+            "Yes, they are evil.",
+            "No, the drink works.",
+            "Maybe."
+          ],
+          "correct": "They are an 'Unwitting Accomplice.' They are victims who have been weaponized to sell hope to others.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. MLM schemes rely on the sincerity of their victims to sell the lie. Your friend is selling hope because they bought hope.",
+            "incorrect": "They aren't evil; they are deluded. That makes them effective sellers."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'Everyone laughed at Edison/Einstein too!'",
+          "question": "This is the 'Galileo Gambit.' It argues that:",
+          "options": [
+            "Being rejected by experts proves you are a genius.",
+            "Einstein was smart.",
+            "Science is wrong.",
+            "Laughter is mean."
+          ],
+          "correct": "Being rejected by experts proves you are a genius.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. It is a logical fallacy. People laughed at Einstein, but they also laughed at Bozo the Clown. Being laughed at doesn't make you right.",
+            "incorrect": "Rejection creates a 'Martyr' narrative that appeals to conspiracy theorists."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P2-E11",
+          "type": "fill-in",
+          "sentence": "Hope-Mongering works best when the victim feels (--------) over their life.",
+          "options": [
+            "powerless",
+            "happy",
+            "rich",
+            "calm"
+          ],
+          "answers": [
+            "powerless"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If you feel in control, you work. If you feel powerless, you wish for magic. Manipulators sell magic to the powerless.",
+            "incorrect": "Powerless people buy lottery tickets. Empowered people build wealth."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'Just manifest it!'",
+          "question": "Can 'Toxic Positivity' be a form of Hope-Mongering?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It blames the victim for 'negative thinking' instead of addressing the scam's failure. 'You didn't get rich because you didn't believe enough.'",
+            "incorrect": "It shifts the blame for the product's failure onto the user's mindset."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: You ask for a refund. They say: 'You are giving up on your dreams so easily? I thought you were a winner.'",
+          "question": "This combines Hope with:",
+          "options": [
+            "Shaming / Identity Attack.",
+            "Customer Service.",
+            "Logic.",
+            "Kindness."
+          ],
+          "correct": "Shaming / Identity Attack.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They attack your identity ('Winner' vs 'Quitter') to force you to keep buying the fake hope.",
+            "incorrect": "It is the 'Sunk Cost' of the ego. You pay to prove you aren't a quitter."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P2-E14",
+          "type": "multiple-choice",
+          "question": "What is the 'Survivorship Bias' in testimonials?",
+          "options": [
+            "Seeing only the 1 winner and ignoring the 1,000 losers, making success look probable.",
+            "Surviving a crash.",
+            "Being lucky.",
+            "Ignoring winners."
+          ],
+          "correct": "Seeing only the 1 winner and ignoring the 1,000 losers, making success look probable.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They show you the one person who got rich. They hide the 99% who lost money. It distorts probability.",
+            "incorrect": "It makes the exception look like the rule."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Audit",
+          "scene": "You have learned to audit the dream. You check the math, ignore the testimonials, and spot the fallacy. You are grounded.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Miracle Cure' Scam (Simulation).",
+            "Buying a lottery ticket.",
+            "Dreaming big.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Miracle Cure' Scam (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you reject a cure that promises to fix your biggest pain? Let's find out.",
+            "incorrect": "Next up: The ultimate test of desperation vs. logic."
+          }
+        }
+      ]
+    }
+  ]
+}

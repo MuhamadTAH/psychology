@@ -1,0 +1,343 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B2",
+  "unitTitle": "The Frame Game: Controlling Perception",
+  "lessonId": "B2-3",
+  "lessonTitle": "The Contrast Principle",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: \"Door-in-the-Face\"",
+  "objective": "To define the 'Contrast Principle' and the 'Door-in-the-Face' technique, understanding how manipulators use extreme comparisons to make their real goal appear reasonable.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B2-3-P1-S1",
+      "screenType": "Learn",
+      "title": "The Power of Comparison",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "If you lift a 50lb weight, then a 20lb weight, the 20lb weight feels like a feather. If you lift a 5lb weight first, the 20lb weight feels heavy."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is the **Contrast Principle**. Manipulators use it by showing you something terrible, expensive, or difficult *first*, so that their actual offer looks amazing by comparison."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Technique: **Door-in-the-Face**. Make a huge request you know will be rejected, so the second (real) request looks like a compromise."
+        }
+      ]
+    },
+    {
+      "screenId": "B2-3-P1-S2",
+      "screenType": "Exercises",
+      "title": "Defining the Contrast",
+      "exercises": [
+        {
+          "exerciseId": "B2-3-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the **Contrast Principle**?",
+          "options": [
+            "The idea that black and white are opposites.",
+            "A perceptual bias where we judge things based on what came immediately before them, rather than on their absolute value.",
+            "A camera setting.",
+            "Being moody."
+          ],
+          "correct": "A perceptual bias where we judge things based on what came immediately before them, rather than on their absolute value.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. A $100 bottle of wine looks expensive. But if you just looked at a $1,000 bottle, $100 looks cheap.",
+            "incorrect": "It's not visual contrast. It is psychological relativity. We judge by comparison."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: A friend asks to borrow $1,000. You say 'No way!' They say, 'Okay, I understand. Could I just borrow $50 for gas then?' You say 'Yes.'",
+          "question": "This is the:",
+          "options": [
+            "Door-in-the-Face Technique.",
+            "Foot-in-the-Door Technique.",
+            "Gaslighting.",
+            "Charity."
+          ],
+          "correct": "Door-in-the-Face Technique.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They slammed the 'Door' on the big request. The second request seems tiny by comparison, and you feel pressure to be nice because they 'backed down.'",
+            "incorrect": "Foot-in-the-Door starts small to get big. Door-in-the-Face starts BIG (to get rejected) to get the real (smaller) goal."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P1-E3",
+          "type": "fill-in",
+          "sentence": "The Door-in-the-Face tactic relies on the social rule of (--------) Concessions.",
+          "options": [
+            "reciprocal",
+            "financial",
+            "angry",
+            "fast"
+          ],
+          "answers": [
+            "reciprocal"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If I make a concession (lowering my request from $1000 to $50), social pressure dictates you should make a concession too (changing your 'No' to 'Yes').",
+            "incorrect": "It uses the Reciprocity rule. I moved, so you should move."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: A real estate agent shows you a 'dump' that is overpriced first. Then they show you a nice house that is fairly priced.",
+          "question": "Is the 'dump' a Contrast Setup?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the 'Setup Property.' It makes the normal house look like a palace/bargain by comparison.",
+            "incorrect": "They don't expect you to buy the dump. Its only job is to make the next house look better."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P1-E5",
+          "type": "matching",
+          "question": "Match the Tactic to the Mechanism:",
+          "pairs": [
+            {
+              "term": "Door-in-the-Face",
+              "definition": "Start Big -> Get Rejected -> Go Small (Relief)."
+            },
+            {
+              "term": "Foot-in-the-Door",
+              "definition": "Start Small -> Get Accepted -> Go Big (Consistency)."
+            },
+            {
+              "term": "Anchoring",
+              "definition": "Set a reference point to bias adjustment."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. DITF uses Relief/Contrast. FITD uses Consistency/Commitment. Anchoring uses Reference.",
+            "incorrect": "Look at the direction. Big to Small (DITF). Small to Big (FITD)."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange the words to define perceptual relativity:",
+          "words": [
+            "Comparison",
+            "value",
+            "creates",
+            "absolute",
+            "not",
+            "price"
+          ],
+          "correct": "Comparison creates value not absolute price",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Value is relative. Water is free, but $5 for water at a festival seems okay if the other option is dehydration.",
+            "incorrect": "We don't judge value in a vacuum. We compare."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "Selling the expensive item (Suit) first, so the accessories (Belt, Tie) seem cheap.",
+          "question": "What is this sales strategy?",
+          "options": [
+            "The Contrast Principle (Retail)",
+            "The Sunk Cost Fallacy",
+            "Gaslighting",
+            "Love Bombing"
+          ],
+          "correct": "The Contrast Principle (Retail)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you spend $500 on a suit, $50 for a tie seems like 'nothing.' If you bought the tie first, $50 would feel like a lot.",
+            "incorrect": "It's simple contrast. The big number shrinks the perception of the small number."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: A kid asks, 'Can I stay out until 3 AM?' Mom says 'No!' Kid says: 'Okay, how about midnight?' Mom says 'Fine.'",
+          "question": "The kid used:",
+          "options": [
+            "Door-in-the-Face.",
+            "Respect.",
+            "Logic.",
+            "Telling the truth."
+          ],
+          "correct": "Door-in-the-Face.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If the kid asked for midnight first, Mom might have said 11 PM. By anchoring at 3 AM, midnight became the 'reasonable compromise'.",
+            "incorrect": "It wasn't respect; it was a negotiation tactic. The 3 AM request was a decoy."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are raising money for charity. Is it ethical to ask for $100 (knowing most will refuse) so you can get the $20 you actually want?",
+          "question": "Is this 'Dark'?",
+          "options": [
+            "No. It helps a good cause and respects their right to say no.",
+            "Yes. All psychology is evil.",
+            "Yes, because you tricked them.",
+            "No, because $20 is nothing."
+          ],
+          "correct": "No. It helps a good cause and respects their right to say no.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is standard fundraising. The intent is benevolent. It leverages psychology to maximize help.",
+            "incorrect": "The tool is neutral. Using Contrast to feed the hungry is generally considered ethical persuasion."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P1-E10",
+          "type": "fill-in",
+          "sentence": "For Door-in-the-Face to work, the first request must be extreme but (--------).",
+          "options": [
+            "plausible",
+            "insulting",
+            "quiet",
+            "fast"
+          ],
+          "answers": [
+            "plausible"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If the first request is absurd ('Give me a million dollars'), the person gets angry. It must be *possible* but rejected.",
+            "incorrect": "If it's insulting or impossible, it breaks rapport. It must be a 'credible' extreme."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P1-E11",
+          "type": "multiple-choice",
+          "question": "Why does the second (smaller) request feel like a 'Favor' from the manipulator?",
+          "options": [
+            "Because they 'backed down' from their big demand. It feels like they did something nice for you by lowering the price.",
+            "It doesn't.",
+            "Because they smiled.",
+            "Because it is cheap."
+          ],
+          "correct": "Because they 'backed down' from their big demand. It feels like they did something nice for you by lowering the price.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The concession creates a debt. 'I stopped asking for $1,000, so you should agree to $50.'",
+            "incorrect": "It's the *act* of retreating that triggers the Reciprocity instinct."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'This usually takes 6 weeks, but I can rush it for you in 2 weeks.' (Reality: It always takes 2 weeks).",
+          "question": "Is this Contrast?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They contrasted '6 weeks' (Bad) with '2 weeks' (Standard) to make the standard service look like a miracle.",
+            "incorrect": "This is the 'Scotty Principle' (Star Trek). Promise long, deliver short. It creates a hero effect."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: A partner creates a huge fight over nothing (The Explosion). Then they stop yelling and just act cold (The Relief). You apologize just to keep the peace.",
+          "question": "How did Contrast work here?",
+          "options": [
+            "The 'Coldness' felt like safety compared to the 'Screaming.' You accepted bad treatment because it wasn't *terrible* treatment.",
+            "It didn't.",
+            "They were right.",
+            "You were wrong."
+          ],
+          "correct": "The 'Coldness' felt like safety compared to the 'Screaming.' You accepted bad treatment because it wasn't *terrible* treatment.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Abusers use Contrast to lower your standards. Abuse makes 'Neutral' feel like 'Love'.",
+            "incorrect": "You settled for the lesser of two evils. That is the Contrast Trap."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P1-E14",
+          "type": "matching",
+          "question": "Match the tactic to the outcome:",
+          "pairs": [
+            {
+              "term": "Anchor",
+              "definition": "Sets the starting point."
+            },
+            {
+              "term": "Contrast",
+              "definition": "Makes the second option look better."
+            },
+            {
+              "term": "Reciprocal Concession",
+              "definition": "Creates obligation to say 'Yes' to the second offer."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Anchor = Start. Contrast = Comparison. Concession = Social Debt.",
+            "incorrect": "Review the flow. Start high -> Retreat -> Agreement."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Relative World",
+          "scene": "You now know that value is not fixed; it is relative. The first offer changes how you see the second offer.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Spotting Relative Value Traps (Real-world examples).",
+            "Buying houses.",
+            "Calculating math.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: Spotting Relative Value Traps (Real-world examples).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We need to train you to see the 'Decoy' that makes the 'Trap' look good.",
+            "incorrect": "Next up: Practical detection of comparison traps."
+          }
+        }
+      ]
+    }
+  ]
+}

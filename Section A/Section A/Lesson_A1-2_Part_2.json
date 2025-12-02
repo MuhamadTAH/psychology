@@ -1,0 +1,347 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A1",
+  "unitTitle": "The Fast Hook",
+  "lessonId": "A1-2",
+  "lessonTitle": "Tactic Teaser: Flattery & Rapport",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Spot the Flattery Trap",
+  "objective": "To practice identifying and distinguishing manipulative flattery from genuine praise in a variety of real-world scenarios.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "complete",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A1-2-P2-S1",
+      "screenType": "Learn",
+      "title": "Part 2: Practice",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In Part 1, you learned *why* flattery works. Now, let's practice spotting it."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The key is to look for the 'pattern': Vague Flattery + A Future 'Ask'. Let's see how you do in these real-world scenarios."
+        }
+      ]
+    },
+    {
+      "screenId": "A1-2-P2-S2",
+      "screenType": "Exercises",
+      "exercises": [
+        {
+          "exerciseId": "A1-2-P2-E1",
+          "type": "scenario",
+          "scene": "At a networking event, someone you just met says, 'Your reputation precedes you. Everyone says you're a genius.'",
+          "question": "What is the most likely intent?",
+          "options": [
+            "A simple, factual statement.",
+            "Vague flattery to 'soften you up' before they ask for a job or contact.",
+            "A sign that they are intimidated by you.",
+            "A research-backed compliment."
+          ],
+          "correct": "Vague flattery to 'soften you up' before they ask for a job or contact.",
+          "difficulty": "easy",
+          "explanation": "This is classic networking flattery. It's vague ('genius') and designed to make you feel important and more receptive to their 'ask'."
+        },
+        {
+          "exerciseId": "A1-2-P2-E2",
+          "type": "true-false",
+          "statement": "If your best friend says, 'You're the best!' after you help them move, this is manipulative flattery.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "explanation": "Context is key. This is a genuine expression of gratitude *after* an action, not a 'softener' *before* an 'ask'. The intent is appreciation, not manipulation."
+        },
+        {
+          "exerciseId": "A1-2-P2-E3",
+          "type": "scenario",
+          "scene": "A date says, 'I've never met anyone as smart and funny as you. You're just... perfect.'",
+          "question": "This is a form of:",
+          "options": [
+            "Normal compliment",
+            "Implied flattery",
+            "'Love Bombing' (extreme, fast-paced flattery)",
+            "Honest feedback"
+          ],
+          "correct": "'Love Bombing' (extreme, fast-paced flattery)",
+          "difficulty": "medium",
+          "explanation": "This is 'Love Bombing.' The flattery is so extreme ('perfect') that it's designed to create an intense, fast emotional bond. This is a common setup tactic."
+        },
+        {
+          "exerciseId": "A1-2-P2-E4",
+          "type": "multiple-choice",
+          "question": "What is the best *verbal defense* when a co-worker says, 'You're a lifesaver! I could never do this as well as you... which is why I was hoping you could finish this report for me?'",
+          "options": [
+            "Aww, thank you! Of course I'll do it.",
+            "Stop flattering me, you manipulator!",
+            "I can't. I'm too busy.",
+            "'Thank you. I appreciate the compliment, but I can't take on your report.'"
+          ],
+          "correct": "'Thank you. I appreciate the compliment, but I can't take on your report.'",
+          "difficulty": "medium",
+          "explanation": "This is the perfect defense. You 'Acknowledge the Flattery' (Thank you) and then 'Assert the Boundary' (but I can't). This separates the two."
+        },
+        {
+          "exerciseId": "A1-2-P2-E5",
+          "type": "reverse-scenario",
+          "answer": "A manipulator wants to use your own ego against you to get what they want.",
+          "question": "What is their 'weapon' of choice?",
+          "options": [
+            "Guilt-tripping",
+            "Gaslighting",
+            "Flattery",
+            "Silent Treatment"
+          ],
+          "correct": "Flattery",
+          "difficulty": "easy",
+          "explanation": "Flattery is a direct appeal to the ego. The manipulator knows that if they make you feel good, you'll be less likely to be logical."
+        },
+        {
+          "exerciseId": "A1-2-P2-E6",
+          "type": "matching",
+          "question": "Match the defense with the flattery type:",
+          "pairs": [
+            {
+              "term": "Vague Flattery ('You're so great')",
+              "definition": "Defense: Ask a specific question. 'Great in what way?'"
+            },
+            {
+              "term": "Implied Flattery ('I'm so disorganized')",
+              "definition": "Defense: Don't accept the 'inferior' role. 'I'm sure you'll figure it out.'"
+            },
+            {
+              "term": "Flattery + 'Ask'",
+              "definition": "Defense: Acknowledge and separate. 'Thanks, but no.'"
+            },
+            {
+              "term": "Love Bombing ('You're perfect')",
+              "definition": "Defense: See it as a red flag. 'That's fast. Let's slow down.'"
+            }
+          ],
+          "difficulty": "hard",
+          "explanation": "These are practical defenses. Asking specific questions ('Great in what way?') often makes the manipulator back down, as their flattery is empty."
+        },
+        {
+          "exerciseId": "A1-2-P2-E7",
+          "type": "fill-in",
+          "sentence": "The 'Flattery -> ___ -> Ask' pattern is the most common manipulative sequence.",
+          "options": [
+            "Soften Defenses",
+            "Insult",
+            "Argument",
+            "Silence"
+          ],
+          "answers": [
+            "Soften Defenses"
+          ],
+          "difficulty": "medium",
+          "explanation": "This is the core loop. The flattery is the *tool* used to *soften your defenses* so you will agree to the 'ask'."
+        },
+        {
+          "exerciseId": "A1-2-P2-E8",
+          "type": "case-analysis",
+          "caseTitle": "The 'Genius' Intern",
+          "caseDescription": "An intern, 'Ben,' constantly tells his manager, 'Sarah,' that her 'leadership style is inspiring' and 'her ideas are revolutionary.' Sarah starts to believe Ben is the only one who 'gets' her. She gives Ben the best projects, even though his work is average.",
+          "question": "What has happened to Sarah?",
+          "options": [
+            "She is a good manager rewarding a good intern.",
+            "She has been 'groomed' by flattery and is now showing favoritism.",
+            "She is flattered, but it's harmless.",
+            "Ben is just a very supportive person."
+          ],
+          "correct": "She has been 'groomed' by flattery and is now showing favoritism.",
+          "difficulty": "hard",
+          "explanation": "Sarah has fallen for the 'Halo Effect.' The flattery made Ben *seem* 'brilliant' and 'supportive,' so she *perceives* his work as better than it is. The flattery manipulated her."
+        },
+        {
+          "exerciseId": "A1-2-P2-E9",
+          "type": "micro-sim",
+          "scenarioTitle": "The 'Implied' Flattery Trap",
+          "steps": [
+            {
+              "question": "Co-worker: 'Ugh, I'm just so bad with spreadsheets. My brain just freezes. You're like a math wizard, I don't know how you do it.'",
+              "options": [
+                "'Thanks! Yes, I am pretty good at them.'",
+                "'Oh, stop, you're not that bad.'",
+                "'What do you need?'",
+                "'It just takes practice.'"
+              ],
+              "correct": "'It just takes practice.'",
+              "feedback": "This is a good, neutral response. You don't accept the 'wizard' label (which sets you up) or the 'I'm bad' label. You stay neutral."
+            },
+            {
+              "prompt": "Co-worker: 'Well, since you're so good... could you just build this one formula for me? It'll be so much faster for you.'",
+              "options": [
+                "'Ugh, fine. Just this once.' (You've been trapped)",
+                "'Sorry, I'm busy. But I can send you a link to a tutorial that helped me.'",
+                "'Wow, so that's what this was about?'",
+                "'Okay, but you owe me.'"
+              ],
+              "correct": "'Sorry, I'm busy. But I can send you a link to a tutorial that helped me.'",
+              "feedback": "This is a *perfect* response. You deny the 'ask' but offer 'help' that is not 'doing it for them.' You've set a boundary *and* been helpful."
+            }
+          ],
+          "difficulty": "hard",
+          "explanation": "This tactic ('implied flattery' or 'feigned incompetence') is designed to make you feel 'superior' and 'helpful.' The best defense is to offer 'help' (like a tutorial) instead of 'service' (doing the work)."
+        },
+        {
+          "exerciseId": "A1-2-P2-E10",
+          "type": "true-false",
+          "statement": "The *only* people who fall for flattery are people with low self-esteem.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "explanation": "This is a myth. People with *high* self-esteem or 'expert' status often fall for it, because the flattery confirms their *own* high opinion of themselves. Everyone is susceptible."
+        },
+        {
+          "exerciseId": "A1-2-P2-E11",
+          "type": "build-sentence",
+          "prompt": "Arrange these words into a core defense:",
+          "words": [
+            "the",
+            "flattery",
+            "and",
+            "the",
+            "Separate",
+            "'ask.'"
+          ],
+          "correct": "Separate the flattery and the 'ask.'",
+          "difficulty": "easy",
+          "explanation": "This is the 'Golden Rule' of flattery defense. Judge the compliment and the request as two separate, unrelated things."
+        },
+        {
+          "exerciseId": "A1-2-P2-E12",
+          "type": "scenario",
+          "scene": "A comment on your social media post says, 'You are the most insightful person on this app. I hang on your every word.'",
+          "question": "What is the *most likely* next step for this user?",
+          "options": [
+            "They will never comment again.",
+            "They will send you a DM with a link to their crypto scheme or YouTube channel.",
+            "They will become your biggest fan and support you.",
+            "They will forget they ever posted."
+          ],
+          "correct": "They will send you a DM with a link to their crypto scheme or YouTube channel.",
+          "difficulty": "medium",
+          "explanation": "This is 'Social Media Grooming.' The extreme flattery is designed to make you 'like' them and be receptive to the 'ask' (a click, a sale, a subscription) that is coming next."
+        },
+        {
+          "exerciseId": "A1-2-P2-E13",
+          "type": "ethical-dilemma",
+          "scene": "You realize you've been using 'implied flattery' (like 'I'm so bad at X') for years to get your friends to help you, without realizing it was a tactic.",
+          "question": "What is the most 'ethically aware' next step?",
+          "options": [
+            "Keep doing it, since it works.",
+            "Feel terrible and never ask for help again.",
+            "Recognize the pattern and, from now on, ask for help *directly* instead of using a 'softener'.",
+            "Tell your friends they are easy to manipulate."
+          ],
+          "correct": "Recognize the pattern and, from now on, ask for help *directly* instead of using a 'softener'.",
+          "difficulty": "medium",
+          "explanation": "This is the 'light' side. Ethical communication is *direct*. 'I'm struggling with this. Could you help me?' is honest. 'I'm so bad at this...' is a setup."
+        },
+        {
+          "exerciseId": "A1-2-P2-E14",
+          "type": "reverse-scenario",
+          "scene": "Acknowledge the compliment, but *ignore* its emotional pull. Then, judge the 'ask' on its own logical merits.",
+          "question": "This is the core process for...?",
+          "options": [
+            "Defeating a guilt trip",
+            "Spotting gaslighting",
+            "Defending against flattery",
+            "Making new friends"
+          ],
+          "correct": "Defending against flattery",
+          "difficulty": "medium",
+          "explanation": "This is the 'Separate and Judge' method. You don't have to be rude and reject the compliment, you just have to *neutralize* it."
+        },
+        {
+          "exerciseId": "A1-2-P2-E15",
+          "type": "true-false",
+          "statement": "The more specific and truthful a piece of flattery is, the more effective it is as a manipulation tool.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "hard",
+          "explanation": "This is an advanced concept. The most effective manipulators use *real* compliments. It's still manipulation if the *intent* is to use that praise as a lever."
+        },
+        {
+          "exerciseId": "A1-2-P2-E16",
+          "type": "fill-in",
+          "sentence": "The opposite of 'Rapport' (a feeling of connection) is ___ (a feeling of disconnection).",
+          "options": [
+            "dissonance",
+            "anger",
+            "sadness",
+            "trust"
+          ],
+          "answers": [
+            "dissonance"
+          ],
+          "difficulty": "medium",
+          "explanation": "Manipulators try to build fast 'rapport' and avoid 'dissonance' (disagreement or awkwardness). This is why we often comply."
+        },
+        {
+          "exerciseId": "A1-2-P2-E17",
+          "type": "scenario",
+          "scene": "You're on a first date. They say, 'Wow, your job sounds so... *important*. I bet you're a big deal at your office.'",
+          "question": "This is likely 'fishing' for what?",
+          "options": [
+            "Your salary or status.",
+            "A way to compliment you.",
+            "A way to change the subject.",
+            "A genuine question about your day."
+          ],
+          "correct": "Your salary or status.",
+          "difficulty": "medium",
+          "explanation": "This is flattery used as 'fishing.' They flatter your 'importance' to get you to volunteer information about your status, salary, or power."
+        },
+        {
+          "exerciseId": "A1-2-P2-E18",
+          "type": "multiple-choice",
+          "question": "You have now practiced spotting flattery. What is the *next* logical tactic manipulators use with flattery?",
+          "options": [
+            "The Silent Treatment",
+            "Gaslighting",
+            "'Rapport Building' (like Mirroring)",
+            "Threats"
+          ],
+          "correct": "'Rapport Building' (like Mirroring)",
+          "difficulty": "medium",
+          "explanation": "Correct. Flattery is one part of 'rapport.' The next part is making you feel 'the same.' In Part 3, we'll cover 'Rapport' as a combined tactic."
+        }
+      ]
+    }
+  ]
+}

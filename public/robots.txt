@@ -1,0 +1,17 @@
+# robots.txt for DuoLearn
+# This file tells search engines which pages they can crawl
+
+# Allow all robots to access all content
+User-agent: *
+Allow: /
+
+# Disallow sensitive or private pages
+Disallow: /api/
+Disallow: /admin/
+Disallow: /yourlesson/
+
+# Sitemap location (update with your actual domain)
+Sitemap: https://duolearn.com/sitemap.xml
+
+# Crawl-delay (optional, for being polite to search engines)
+Crawl-delay: 1

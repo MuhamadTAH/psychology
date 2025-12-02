@@ -1,0 +1,262 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A5",
+  "unitTitle": "The Vulnerable Mind: Why We Fall For It",
+  "lessonId": "A5-5",
+  "lessonTitle": "Unit 5 & Section A Grand Review",
+  "lessonType": "Review",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The Section A Boss Fight",
+  "objective": "To demonstrate mastery of all Section A concepts by defeating a 'Master Manipulator' who uses advanced, combined tactics from the Dark Triad.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 1000,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Section_A_Mastery_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A5-5-P3-S1",
+      "screenType": "Learn",
+      "title": "The Final Boss: 'The Chameleon'",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are about to face 'The Chameleon.' This predator has no single personality. They shift from **Narcissist** (to hook your ego), to **Psychopath** (to scare you), to **Machiavellian** (to trap you)."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Mission: Identify the mask they are wearing in each phase and apply the correct defense. One mistake resets the bond."
+        }
+      ]
+    },
+    {
+      "screenId": "A5-5-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Chameleon",
+      "exercises": [
+        {
+          "exerciseId": "A5-5-P3-E1",
+          "type": "boss-scenario",
+          "scene": "Phase 1: The Hook (Narcissist Mask). The Chameleon says: 'I've dated hundreds of people, but you are the only one who truly *sees* me. You are special. We are going to rule this city together.'",
+          "question": "They are targeting your Need for Significance. What is the defense?",
+          "options": [
+            "Accept the compliment. It feels good.",
+            "Recognize 'Idealization' and 'Grandiosity.' Maintain skepticism. Slow down the pace.",
+            "Tell them they are amazing too.",
+            "Break up immediately."
+          ],
+          "correct": "Recognize 'Idealization' and 'Grandiosity.' Maintain skepticism. Slow down the pace.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is Love Bombing tailored to your ego. By slowing down, you test if they respect boundaries (they won't).",
+            "incorrect": "Accepting the 'Special' status hooks you. You must reject the pedestal."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Phase 2: The Trap (Machiavellian Mask)",
+          "steps": [
+            {
+              "scene": "The Chameleon says: 'I want to help you with your career. I can get you that promotion, but you need to give me access to your work email so I can 'fix' your messages.'",
+              "options": [
+                "'Okay! Thank you!' (Access Granted)",
+                "'Why do you need that?' (Weak Defense)",
+                "'I appreciate the offer, but I keep my work private.' (Hard Boundary)",
+                "'You are trying to control me.' (Accusation)"
+              ],
+              "correct": "'I appreciate the offer, but I keep my work private.' (Hard Boundary)",
+              "feedback": {
+                "correct": "Perfect. This was a 'Trojan Horse.' They offered help to get Access/Leverage. You closed the gate.",
+                "incorrect": "Giving access creates dependency and blackmail potential. Accusing them allows them to Gaslight you ('I was just helping!')."
+              }
+            },
+            {
+              "question": "Chameleon (Switching to Guilt): 'Wow. I try to help you and you treat me like a criminal. I guess you don't trust me.'",
+              "options": [
+                "'I'm sorry! I trust you!' (Submission)",
+                "'Trust is earned. My email is private.' (Broken Record)",
+                "'You are gaslighting me.' (Debate)",
+                "Give the password."
+              ],
+              "correct": "'Trust is earned. My email is private.' (Broken Record)",
+              "feedback": {
+                "correct": "Mastery. You refused to J.A.D.E. (Justify, Argue, Defend, Explain). You held the line against the Pity Play.",
+                "incorrect": "Apologizing hands them the power. Debating validates their hurt feelings."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Machiavellian Infiltration. You kept your leverage.",
+            "incorrect": "You gave them the keys to your life. Game Over."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P3-E3",
+          "type": "scenario",
+          "scene": "Phase 3: The Terror (Psychopath Mask). You try to leave. They stare at you with dead eyes: 'If you walk out that door, I will release the photos I took of you. You will be ruined.'",
+          "question": "This is 'Cold Coercion.' What is the only move?",
+          "options": [
+            "Stay and beg for mercy.",
+            "Get angry and fight.",
+            "Call their bluff (Risk).",
+            "Leave immediately. Go to the police/lawyer. Do not negotiate with terrorists."
+          ],
+          "correct": "Leave immediately. Go to the police/lawyer. Do not negotiate with terrorists.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Blackmail is a crime, not a relationship dynamic. If you stay, the blackmail never ends. You must involve external authority (Law).",
+            "incorrect": "Staying confirms that blackmail works. You are now a hostage, not a partner."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P3-E4",
+          "type": "ethical-dilemma",
+          "scene": "The Chameleon is destroying your reputation (Smear Campaign). You have evidence that would destroy them, but it would hurt their innocent children.",
+          "question": "Do you release it?",
+          "options": [
+            "Yes. 'The End Justifies the Means' (Machiavellian).",
+            "No. 'Do No Harm' applies to innocents. Find a way to clear your name that doesn't use the kids (Ethical Mastery).",
+            "Ignore it.",
+            "Threaten them with it."
+          ],
+          "correct": "No. 'Do No Harm' applies to innocents. Find a way to clear your name that doesn't use the kids (Ethical Mastery).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Becoming a monster to defeat a monster means you lost the war for your soul. The Ethical path is harder but necessary.",
+            "incorrect": "Using children as ammo makes you a Machiavellian. You must win without becoming them."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P3-E5",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the ultimate victory:",
+          "words": [
+            "Indifference",
+            "opposite",
+            "is",
+            "abuse",
+            "the",
+            "of"
+          ],
+          "correct": "Indifference is the opposite of abuse",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Not hate. Not fear. Indifference. When they no longer trigger an emotion, you are free.",
+            "incorrect": "Love and Hate are both connections. Indifference is freedom."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P3-E6",
+          "type": "multiple-choice",
+          "question": "What was the 'Hook' that allowed the Chameleon in initially?",
+          "options": [
+            "Your stupidity.",
+            "Your unmet emotional needs (Validation, Safety, Connection).",
+            "Bad luck.",
+            "Their magic powers."
+          ],
+          "correct": "Your unmet emotional needs (Validation, Safety, Connection).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They entered through the door you left open. The final step of Section A is to close those doors (Self-Love).",
+            "incorrect": "It wasn't stupidity or magic. It was hunger."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P3-E7",
+          "type": "scenario",
+          "scene": "Scenario: Years later, you see the Chameleon. They look happy and successful with a new partner.",
+          "question": "Your reaction is:",
+          "options": [
+            "Jealousy. 'Why are they nice to her?'",
+            "Anger. 'It's unfair!'",
+            "Pity for the new victim, but relief that it isn't you. (Radical Acceptance).",
+            "Curiosity."
+          ],
+          "correct": "Pity for the new victim, but relief that it isn't you. (Radical Acceptance).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You know the 'happiness' is a mask (Love Bombing). You know the cycle will repeat. You are grateful to be out.",
+            "incorrect": "Jealousy means you still believe the mask. Anger means you are still attached."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P3-E8",
+          "type": "true-false",
+          "scene": "Scenario: 'I can spot any manipulator instantly now.'",
+          "question": "Is this mindset safe?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct/False. Overconfidence is a trap. The moment you think you are immune, you stop checking for red flags. Stay humble, stay vigilant.",
+            "incorrect": "No one is immune. Constant vigilance (Trust but Verify) is required."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P3-E9",
+          "type": "fill-in",
+          "sentence": "You have completed Section A. You have moved from (--------) to (--------).",
+          "options": [
+            "blindness",
+            "sight",
+            "fear",
+            "anger"
+          ],
+          "answers": [
+            "blindness",
+            "sight"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You can now see the invisible game. You can name the tactics. You are no longer blind prey.",
+            "incorrect": "The journey is from ignorance to awareness."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P3-E10",
+          "type": "case-analysis",
+          "caseTitle": "Section A Complete: The Awakening",
+          "scene": "You have mastered the Foundation. You know the Enemy (The Triad). You know the Weapons (Gaslighting/Love Bombing). You know the Target (Yourself).",
+          "question": "What lies ahead in Section B?",
+          "options": [
+            "The Tools of Influence (NLP, Body Language, Framing).",
+            "More of the same.",
+            "Sleep.",
+            "Quitting."
+          ],
+          "correct": "The Tools of Influence (NLP, Body Language, Framing).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that you are safe, we will learn the specific mechanics of Influence. How do they frame reality? How do they use language? Section B awaits.",
+            "incorrect": "Section B is about the specific 'Tools' used to shape reality."
+          }
+        }
+      ]
+    }
+  ]
+}

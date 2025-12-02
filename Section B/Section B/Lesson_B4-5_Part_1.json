@@ -1,0 +1,339 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B4",
+  "unitTitle": "The Pressure Cooker: Emotional Leverage",
+  "lessonId": "B4-5",
+  "lessonTitle": "Unit B4 Review: The Lever",
+  "lessonType": "Review",
+  "lessonPart": 1,
+  "lessonPartTitle": "Leverage Core Concepts",
+  "objective": "To synthesize and test comprehensive knowledge of Emotional Leverage tactics, including Scarcity, Weaponized Reciprocity, Fear-Mongering, and Hope-Mongering.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B4-5-P1-S1",
+      "screenType": "Learn",
+      "title": "Unit B4 Review",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You have learned how manipulators use Leverage to force your hand. They squeeze you with Time (Scarcity), bind you with Debt (Reciprocity), paralyze you with Fear, or blind you with Hope."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "This review covers all concepts from Lesson B4-1 to B4-4. Pass this to unlock the Unit B4 Gauntlet."
+        }
+      ]
+    },
+    {
+      "screenId": "B4-5-P1-S2",
+      "screenType": "Exercises",
+      "title": "Leverage Check",
+      "exercises": [
+        {
+          "exerciseId": "B4-5-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the core mechanism of the **Scarcity Principle**?",
+          "options": [
+            "We hate things that are rare.",
+            "We value things *more* when they are rare, limited, or disappearing.",
+            "We prefer abundance.",
+            "We like waiting."
+          ],
+          "correct": "We value things *more* when they are rare, limited, or disappearing.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The fear of loss is stronger than the desire for gain. 'Limited Time' triggers a survival panic.",
+            "incorrect": "It triggers 'Loss Aversion.' We chase what is running away."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: A stranger cleans your windshield at a stoplight without asking, then asks for $5.",
+          "question": "This is:",
+          "options": [
+            "Weaponized Reciprocity (The Unsolicited Favor).",
+            "Kindness.",
+            "A job.",
+            "Friendship."
+          ],
+          "correct": "Weaponized Reciprocity (The Unsolicited Favor).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They forced a 'favor' on you to trigger your instinct to repay the debt. You didn't ask for it, so you owe nothing.",
+            "incorrect": "It creates a debt you didn't agree to. That is the trap."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P1-E3",
+          "type": "fill-in",
+          "sentence": "Fear-Mongering works by creating a (--------) so they can sell you the solution.",
+          "options": [
+            "problem",
+            "party",
+            "joy",
+            "law"
+          ],
+          "answers": [
+            "problem"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'The Boogeyman is coming!' (Problem). 'But I can save you for $100.' (Solution).",
+            "incorrect": "They invent or exaggerate the threat to position themselves as the Savior."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'This offer expires in 10 minutes.'",
+          "question": "Is this Artificial Urgency?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Digital products don't rot. The timer is there to stop you from thinking.",
+            "incorrect": "It creates a 'Panic Loop' to force an impulsive decision."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P1-E5",
+          "type": "matching",
+          "question": "Match the Tactic to the Emotion:",
+          "pairs": [
+            {
+              "term": "Scarcity",
+              "definition": "Fear of Missing Out (FOMO)."
+            },
+            {
+              "term": "Reciprocity",
+              "definition": "Guilt / Obligation."
+            },
+            {
+              "term": "Hope-Mongering",
+              "definition": "Desperation / Wishful Thinking."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Scarcity uses Loss. Reciprocity uses Debt. Hope uses Greed.",
+            "incorrect": "Identify the feeling driving the action."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P1-E6",
+          "type": "scenario",
+          "scene": "Scenario: 'If you don't buy this security system, criminals *will* break in and hurt your family.'",
+          "question": "This appeal relies on:",
+          "options": [
+            "The Fear Appeal (Catastrophizing).",
+            "Logic.",
+            "Optimism.",
+            "Facts."
+          ],
+          "correct": "The Fear Appeal (Catastrophizing).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They paint the worst-case scenario to bypass your budget objections. You pay for 'peace of mind,' not the hardware.",
+            "incorrect": "It targets the amygdala (fear center), not the prefrontal cortex (logic)."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P1-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Free Sample' trap:",
+          "words": [
+            "sample",
+            "free",
+            "The",
+            "is",
+            "a",
+            "bribe"
+          ],
+          "correct": "The free sample is a bribe",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Companies don't give food away to be nice. They do it because most people feel awkward eating and walking away without buying.",
+            "incorrect": "It triggers the Reciprocity Reflex."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P1-E8",
+          "type": "reverse-scenario",
+          "answer": "Promising an impossible result (e.g., 'Lose 30lbs in 3 days' or 'Get rich quick') to exploit desperate people.",
+          "question": "What is this?",
+          "options": [
+            "The Miracle Cure / Hope-Mongering",
+            "The Truth",
+            "A good deal",
+            "Science"
+          ],
+          "correct": "The Miracle Cure / Hope-Mongering",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Desperate people turn off their critical thinking. They *need* the miracle to be true.",
+            "incorrect": "It is a scam targeting vulnerability."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "A charity sends you free personalized address labels in the mail along with a donation request.",
+          "question": "Why is this effective?",
+          "options": [
+            "You feel guilty throwing away something with your name on it, and you feel 'indebted' because they gave you a gift.",
+            "They are nice.",
+            "You needed labels.",
+            "It is magic."
+          ],
+          "correct": "You feel guilty throwing away something with your name on it, and you feel 'indebted' because they gave you a gift.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It creates a 'Psychological Burden.' You pay $20 to relieve the guilt of receiving a $0.50 gift.",
+            "incorrect": "It is Weaponized Reciprocity in the mail."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P1-E10",
+          "type": "fill-in",
+          "sentence": "To defeat the Reciprocity Trap, you must reframe the 'Gift' as a (--------) tactic.",
+          "options": [
+            "sales",
+            "love",
+            "fun",
+            "kind"
+          ],
+          "answers": [
+            "sales"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you see it as a 'Trick,' you don't feel the need to repay it. The Reciprocity Rule only applies to genuine favors.",
+            "incorrect": "Label it correctly. It is not a gift; it is bait."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P1-E11",
+          "type": "multiple-choice",
+          "question": "What is 'The Phantom Competitor'?",
+          "options": [
+            "A fake rival invented to create Scarcity and Competition ('Someone else is looking at this house right now').",
+            "A ghost.",
+            "A sports team.",
+            "A friend."
+          ],
+          "correct": "A fake rival invented to create Scarcity and Competition ('Someone else is looking at this house right now').",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It forces you to bid against yourself out of fear of losing the prize.",
+            "incorrect": "It creates artificial rivalry to speed up the close."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I can only hold this price for you because I like you.'",
+          "question": "Is this 'Exclusivity'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It frames the price as a special favor for *you* (Identity Scarcity), increasing the pressure to buy to maintain the 'relationship'.",
+            "incorrect": "It combines Scarcity with Liking."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: A 'Guru' says, 'The banking system is collapsing! Only my gold bars will save you!'",
+          "question": "This combines:",
+          "options": [
+            "Fear-Mongering (The Problem) + Hope-Mongering (The Solution).",
+            "Financial advice.",
+            "History.",
+            "News."
+          ],
+          "correct": "Fear-Mongering (The Problem) + Hope-Mongering (The Solution).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They create the disease (Fear) so they can sell the cure (Gold).",
+            "incorrect": "It creates a funnel from Panic to Purchase."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P1-E14",
+          "type": "matching",
+          "question": "Match the Defense:",
+          "pairs": [
+            {
+              "term": "For Scarcity",
+              "definition": "The 24-Hour Rule (Wait)."
+            },
+            {
+              "term": "For Reciprocity",
+              "definition": "Refuse the Gift (No thank you)."
+            },
+            {
+              "term": "For Hope-Mongering",
+              "definition": "The \"Too Good to be True\" Audit."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Slow down. Reject the debt. Verify the claim.",
+            "incorrect": "Match the antidote to the poison."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Pressure Valve",
+          "scene": "You have reviewed the levers of emotional control. You know that 'Free' is expensive and 'Now' is dangerous.",
+          "question": "In Part 2, we will face the Challenge:",
+          "options": [
+            "The Unit B4 Gauntlet (Pressure Tactics).",
+            "Lesson A1-1.",
+            "Buying a timeshare.",
+            "Sleeping."
+          ],
+          "correct": "The Unit B4 Gauntlet (Pressure Tactics).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you spot the pressure points when they come at you fast? Let's find out.",
+            "incorrect": "Next up: The Gauntlet."
+          }
+        }
+      ]
+    }
+  ]
+}

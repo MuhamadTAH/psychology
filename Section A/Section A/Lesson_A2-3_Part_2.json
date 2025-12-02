@@ -1,0 +1,346 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A2",
+  "unitTitle": "The Manipulator's Playbook: Narcissism & Gaslighting",
+  "lessonId": "A2-3",
+  "lessonTitle": "Tactic Deep Dive: Love Bombing",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Spot the 'Too Good to Be True'",
+  "objective": "To practice identifying the specific red flags of Love Bombing (Future Faking, Boundary Testing, Isolation) in real-world dating and professional scenarios.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A2-3-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: Is it Love or a Trap?",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In Part 1, we defined the 'Idealize' phase. Now, we practice spotting it."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Red Flag is INTENSITY. Healthy relationships are a slow burn. Love Bombing is a forest fire."
+        }
+      ]
+    },
+    {
+      "screenId": "A2-3-P2-S2",
+      "screenType": "Exercises",
+      "title": "Spotting the Red Flags",
+      "exercises": [
+        {
+          "exerciseId": "A2-3-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: You meet someone online. Before meeting in person, they text you: 'I deleted the app. I know you're the one. I don't need to look anymore.'",
+          "question": "What is this behavior?",
+          "options": [
+            "Commitment.",
+            "Love Bombing (Premature Commitment).",
+            "Honesty.",
+            "Politeness."
+          ],
+          "correct": "Love Bombing (Premature Commitment).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Committing *before* meeting is a fantasy, not reality. They are falling in love with the *idea* of you (or the Supply you represent).",
+            "incorrect": "It feels like commitment, but it's 'Premature.' Real commitment requires knowing the person first."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P2-E2",
+          "type": "multiple-choice",
+          "question": "Why do Love Bombers often use 'Future Faking' (planning weddings/vacations) within the first few weeks?",
+          "options": [
+            "To save money on travel bookings.",
+            "To lock you into a 'fantasy future' so you ignore the red flags in the 'present'.",
+            "Because they are good planners.",
+            "To test your memory."
+          ],
+          "correct": "To lock you into a 'fantasy future' so you ignore the red flags in the 'present'.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you are dreaming about the wedding, you won't notice that they just insulted the waiter.",
+            "incorrect": "It's not about planning; it's about distraction. The fantasy future acts as a blinder to current behavior."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P2-E3",
+          "type": "true-false",
+          "scene": "Scenario: A new partner says, 'I've never told anyone this before, but...' and shares a very traumatic story on the first date.",
+          "question": "Is this always a sign of trust?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. This is often 'False Vulnerability' designed to make *you* share your secrets (Data Mining) and create instant, unearned intimacy.",
+            "incorrect": "While it *can* be trust, on a first date it is usually a manipulation tactic to force reciprocity."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P2-E4",
+          "type": "fill-in",
+          "sentence": "The Love Bomber respects no (--------). If you say 'no,' they try harder.",
+          "options": [
+            "boundaries",
+            "money",
+            "laws",
+            "time"
+          ],
+          "answers": [
+            "boundaries"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If you say 'I'm busy,' they show up at your work with lunch. This isn't romantic; it's a boundary violation.",
+            "incorrect": "The core issue is boundaries. They view your 'no' as a challenge to be overcome."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P2-E5",
+          "type": "scenario",
+          "scene": "Scenario: Your friends warn you that your new partner is moving too fast. Your partner says: 'They're just jealous that you found true happiness. They want you to be miserable like them.'",
+          "question": "This tactic is called:",
+          "options": [
+            "Isolation (Triangulation).",
+            "Defense.",
+            "Honesty.",
+            "Support."
+          ],
+          "correct": "Isolation (Triangulation).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They are driving a wedge between you and your support system (Isolation) by questioning your friends' motives.",
+            "incorrect": "It's not support; it's control. By dismissing your friends as 'jealous,' they ensure you only listen to the manipulator."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P2-E6",
+          "type": "matching",
+          "question": "Match the tactic to the 'Red Flag' feeling:",
+          "pairs": [
+            {
+              "term": "Future Faking",
+              "definition": "Feeling: 'It's too good to be true.'"
+            },
+            {
+              "term": "Boundary Testing",
+              "definition": "Feeling: 'They are smothering me.'"
+            },
+            {
+              "term": "Premature Commitment",
+              "definition": "Feeling: 'This is moving too fast.'"
+            },
+            {
+              "term": "Isolation",
+              "definition": "Feeling: 'It's us against the world.'"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Trust your gut. If you feel smothered, it's because you are being suffocated, not loved.",
+            "incorrect": "Pay attention to the feeling. 'Us against the world' is the feeling of Isolation."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to reveal the purpose of the 'Soulmate' script:",
+          "words": [
+            "logic",
+            "bypass",
+            "to",
+            "Designed",
+            "your"
+          ],
+          "correct": "Designed to bypass your logic",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If you believe in 'destiny,' you stop checking for compatibility or character flaws.",
+            "incorrect": "The script targets your emotion to shut down your logical brain."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P2-E8",
+          "type": "scenario",
+          "scene": "Scenario: You tell a new date, 'I'm really busy with work this week, so I can't meet up.' They reply: 'I understand, but I just *had* to see you, so I brought lunch to your office.'",
+          "question": "This is an example of:",
+          "options": [
+            "A romantic gesture.",
+            "Boundary Violation.",
+            "Supportive behavior.",
+            "A Misunderstanding."
+          ],
+          "correct": "Boundary Violation.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You set a clear boundary ('I can't meet'). They ignored it. In the beginning, this looks like 'passion,' but it is actually a test to see if you will allow them to override your 'no'.",
+            "incorrect": "It looks romantic, but it ignores your explicit statement ('I can't meet'). A healthy partner respects your time."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P2-E9",
+          "type": "multiple-choice",
+          "question": "Why do Love Bombers often tell you that their ex-partners were 'crazy,' 'abusive,' or 'psycho'?",
+          "options": [
+            "They have bad luck in love.",
+            "They are being honest.",
+            "To play the 'Victim' and preemptively discredit their exes in case you talk to them.",
+            "To make you laugh."
+          ],
+          "correct": "To play the 'Victim' and preemptively discredit their exes in case you talk to them.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is the 'Crazy Ex' narrative. It makes you feel special ('I'm the one who will save them') and isolates you from the truth of their past behavior.",
+            "incorrect": "It's a tactical lie. If *all* their exes are 'crazy,' the common denominator is the narcissist."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P2-E10",
+          "type": "fill-in",
+          "sentence": "A Love Bomber creates (--------) dependency by monopolizing your time and attention.",
+          "options": [
+            "financial",
+            "emotional",
+            "physical",
+            "legal"
+          ],
+          "answers": [
+            "emotional"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. By texting constantly and demanding all your time, they become the center of your world. When they pull away (Devaluation), you crash emotionally.",
+            "incorrect": "While financial dependency can happen later, the first goal of Love Bombing is *emotional* dependency."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P2-E11",
+          "type": "true-false",
+          "scene": "Scenario: You receive 50+ text messages a day from someone you just met. They get angry if you don't reply instantly.",
+          "question": "Is this 'Digital Love Bombing'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is 'text-bombing.' It creates a sense of urgency and trains you to be constantly available to them.",
+            "incorrect": "Normal communication respects your time. This is surveillance and control masked as enthusiasm."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P2-E12",
+          "type": "scenario",
+          "scene": "Scenario: On the second date, they say, 'I want to take care of you. You shouldn't have to work so hard. Why don't you quit your job and let me support us?'",
+          "question": "This is a trap for:",
+          "options": [
+            "True Love.",
+            "Financial Dependency.",
+            "Retirement.",
+            "Generosity."
+          ],
+          "correct": "Financial Dependency.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you quit your job, you lose your independence. You become trapped. A healthy partner supports your career; a controller tries to end it.",
+            "incorrect": "It sounds generous, but the *result* is you having no money of your own. That is the trap."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P2-E13",
+          "type": "matching",
+          "question": "Match the Love Bombing sign to its underlying danger:",
+          "pairs": [
+            {
+              "term": "Instant 'Soulmates'",
+              "definition": "Bypassing logic/vetting."
+            },
+            {
+              "term": "Constant Texting",
+              "definition": "Training compliance/availability."
+            },
+            {
+              "term": "Hating your Friends",
+              "definition": "Isolation."
+            },
+            {
+              "term": "Expensive Gifts",
+              "definition": "Creating obligation/debt."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Every 'romantic' action has a tactical purpose: Blindness, Compliance, Isolation, or Obligation.",
+            "incorrect": "Think about the *result*. Texting trains you to answer. Gifts train you to owe them."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P2-E14",
+          "type": "scenario",
+          "scene": "Scenario: You say, 'I love jazz.' They say, 'No way! Jazz is my life!' You say, 'I want to live in Japan.' They say, 'I was just looking at apartments in Tokyo!'",
+          "question": "This is unlikely to be a coincidence. It is:",
+          "options": [
+            "Fate.",
+            "Identity Mirroring.",
+            "A twin flame connection.",
+            "Good listening skills."
+          ],
+          "correct": "Identity Mirroring.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are reflecting your own personality back to you to make you feel 'understood.' It is a disguise.",
+            "incorrect": "It's not fate. They are shape-shifting. Later, they will likely hate jazz and Japan once they have secured you."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Radar",
+          "scene": "You can now spot the difference between 'Romance' (slow, respectful) and 'Love Bombing' (fast, boundary-breaking). You know that 'Too Good to Be True' usually is.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "Accepting the Love Bomb.",
+            "The 'Love Bomb' Simulation: Resisting the rush.",
+            "Learning to mirror them back.",
+            "Writing a love letter."
+          ],
+          "correct": "The 'Love Bomb' Simulation: Resisting the rush.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Knowing the signs is step one. Resisting the chemical rush of dopamine in a simulation is step two.",
+            "incorrect": "We don't mirror them. We learn to stand firm against the rush."
+          }
+        }
+      ]
+    }
+  ]
+}

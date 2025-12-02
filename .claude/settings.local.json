@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Read(//d/duolingo/lingo/**)",
+      "Bash(npx shadcn@latest init:*)",
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(cat:*)",
+      "Bash(npm install:*)",
+      "Bash(npx prisma:*)",
+      "Bash(npm run:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npx convex:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(git clone:*)",
+      "Bash(git config:*)",
+      "Bash(unzip:*)",
+      "Bash(timeout:*)",
+      "Bash(taskkill:*)",
+      "Bash(copy page.tsx page.tsx.backup)",
+      "Bash(node:*)",
+      "Bash(copy:*)",
+      "Bash(move:*)",
+      "Bash(npx tsc:*)",
+      "Bash(git branch:*)",
+      "Bash(find:*)",
+      "Bash(test:*)",
+      "Bash(dir:*)",
+      "Bash(ls -la \"d:\\duolingo\\duolearn\\public\\icons\"\" 2>/dev/null && echo \"---\" && ls -la \"d:duolingoduolearnpublicsplash\"\")",
+      "Bash(curl:*)",
+      "Bash(python:*)",
+      "Bash(tasklist:*)",
+      "Bash(findstr:*)",
+      "Bash(netstat:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

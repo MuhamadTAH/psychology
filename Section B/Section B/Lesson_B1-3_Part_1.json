@@ -1,0 +1,345 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B1",
+  "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis",
+  "lessonId": "B1-3",
+  "lessonTitle": "The Double Bind: The Illusion of Choice",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: \"Heads I Win, Tails You Lose\"",
+  "objective": "To define the 'Double Bind' as a manipulation tactic that offers the Illusion of Choice ('A or B') while ensuring the manipulator wins regardless of the selection.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B1-3-P1-S1",
+      "screenType": "Learn",
+      "title": "The Illusion of Choice",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Humans hate being ordered to do things. We love having a choice. Manipulators exploit this by giving you the **Illusion of Choice**."
+        },
+        {
+          "type": "paragraph",
+          "text": "Instead of saying 'Do X,' they say 'Do you want to do X now or later?' You feel free because you chose the *time*, but you are trapped because you agreed to the *action*."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Formula: Choice A (They Win) + Choice B (They Win) = You Lose."
+        }
+      ]
+    },
+    {
+      "screenId": "B1-3-P1-S2",
+      "screenType": "Exercises",
+      "title": "Defining the Bind",
+      "exercises": [
+        {
+          "exerciseId": "B1-3-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is a 'Double Bind'?",
+          "options": [
+            "A knot.",
+            "A situation where a person is confronted with two irreconcilable demands or a choice between two undesirable courses of action.",
+            "A type of hypnosis.",
+            "Being tied up."
+          ],
+          "correct": "A situation where a person is confronted with two irreconcilable demands or a choice between two undesirable courses of action.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is a 'no-win' situation. 'Heads I win, Tails you lose.'",
+            "incorrect": "It refers to a psychological bind where every exit is blocked."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: A parent says to a child: 'Do you want to brush your teeth *before* you put on pajamas or *after*?'",
+          "question": "Why is this effective?",
+          "options": [
+            "It gives the child total freedom.",
+            "It creates an Illusion of Choice. The child focuses on the *order* of events, forgetting they have no choice about *brushing teeth*.",
+            "It is confusing.",
+            "It creates fear."
+          ],
+          "correct": "It creates an Illusion of Choice. The child focuses on the *order* of events, forgetting they have no choice about *brushing teeth*.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the 'Ericksonian Double Bind.' You bind the resistance (the 'No') by offering a trivial choice (Time/Method).",
+            "incorrect": "They have no freedom regarding the task, only the timing. It bypasses the 'No'."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P1-E3",
+          "type": "fill-in",
+          "sentence": "The Double Bind replaces 'Yes/No' with '(--------) or (--------)'.",
+          "options": [
+            "A",
+            "B",
+            "Maybe",
+            "Never"
+          ],
+          "answers": [
+            "A",
+            "B"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It removes the option to refuse. The question is no longer 'Will you buy?' but 'Will you pay cash or credit?'",
+            "incorrect": "It forces a selection between two positives (for the manipulator)."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'If you loved me, you would stay. If you leave, you never loved me.'",
+          "question": "Is this a Toxic Double Bind?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Option A: Stay (Compliance). Option B: Leave (Guilt/Invalidation). Both options serve the manipulator's narrative.",
+            "incorrect": "It defines 'Love' as 'Compliance.' It creates a trap where leaving proves you are the bad guy."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P1-E5",
+          "type": "matching",
+          "question": "Match the Double Bind Type:",
+          "pairs": [
+            {
+              "term": "The Sales Bind",
+              "definition": "\"Do you prefer the Basic or Premium package?\" (Assumes purchase)"
+            },
+            {
+              "term": "The Guilt Bind",
+              "definition": "\"You can go out, if you don't mind leaving me all alone.\""
+            },
+            {
+              "term": "The Competence Bind",
+              "definition": "\"Maybe this is too difficult for you to handle right now.\""
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Sales assumes 'Yes.' Guilt attaches a cost to 'Yes.' Competence challenges the ego to say 'Yes.'",
+            "incorrect": "Look at the trap. Sales = Money. Guilt = Emotion. Competence = Ego."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the defense:",
+          "words": [
+            "the",
+            "options",
+            "Reject",
+            "third",
+            "choice",
+            "create",
+            "a"
+          ],
+          "correct": "Reject the options create a third choice",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. When offered A or B, choose C (None of the above). Step outside the frame.",
+            "incorrect": "Don't pick A or B. Make your own option."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "A question like 'Do you want to sign now or after coffee?' that presupposes the main action (Signing).",
+          "question": "What is this sales tactic called?",
+          "options": [
+            "The Assumptive Close / Alternative Close",
+            "The Hard Sell",
+            "The Silent Treatment",
+            "Gaslighting"
+          ],
+          "correct": "The Assumptive Close / Alternative Close",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It assumes the sale is made and only negotiates the details.",
+            "incorrect": "It is a specific close technique. It bypasses the decision to buy."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: A boss says, 'I know you're busy, but this project requires someone with *your* specific talent. I wouldn't trust anyone else.'",
+          "question": "This is a 'Compliment Bind.' What is the trap?",
+          "options": [
+            "If you say 'No' to the work, you are admitting you don't have the talent.",
+            "They are being nice.",
+            "They want to promote you.",
+            "It isn't a trap."
+          ],
+          "correct": "If you say 'No' to the work, you are admitting you don't have the talent.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They linked the task to your identity (Talented). Refusing the task feels like rejecting the compliment.",
+            "incorrect": "It uses Flattery to lock you into compliance. 'Only you' creates obligation."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are leading a team. You say: 'We can work late tonight to finish, or come in on Saturday. It's up to you.'",
+          "question": "Is this 'Dark'?",
+          "options": [
+            "Yes, if 'Not finishing' isn't an option but the deadline is fake.",
+            "No, it's just flexible scheduling.",
+            "Yes, working is bad.",
+            "No, everyone loves Saturday work."
+          ],
+          "correct": "Yes, if 'Not finishing' isn't an option but the deadline is fake.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If the deadline is real, it's a hard choice. If the deadline is fake/arbitrary, you are using a False Dilemma to force overwork.",
+            "incorrect": "Choice is good, but only if the constraints are real. Manufacturing urgency is dark."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P1-E10",
+          "type": "fill-in",
+          "sentence": "The Double Bind attacks your (--------) by making you feel like you are making the decision.",
+          "options": [
+            "autonomy",
+            "money",
+            "friends",
+            "car"
+          ],
+          "answers": [
+            "autonomy"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You feel in control ('I chose the blue one!'), so you don't resist the manipulator ('I bought a car!').",
+            "incorrect": "It hijacks your sense of agency/autonomy."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P1-E11",
+          "type": "multiple-choice",
+          "question": "What is the 'Damned if you do, Damned if you don't' Bind?",
+          "options": [
+            "A paradox where every choice leads to punishment.",
+            "A good movie.",
+            "Being grounded.",
+            "Losing a game."
+          ],
+          "correct": "A paradox where every choice leads to punishment.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Used by abusers to create anxiety. 'If you speak, you are annoying. If you are silent, you are moody.' You can't win.",
+            "incorrect": "This creates 'Learned Helplessness.' The victim stops trying."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P1-E12",
+          "type": "scenario",
+          "scene": "Scenario: 'You can either apologize now, or we can talk about this all night.'",
+          "question": "This uses the threat of:",
+          "options": [
+            "Time exhaustion.",
+            "Physical pain.",
+            "Money loss.",
+            "Hunger."
+          ],
+          "correct": "Time exhaustion.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The choice is 'Submit' or 'Suffer.' Most people choose submission to save time.",
+            "incorrect": "The threat is the loss of sleep/time. It creates urgency to submit."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P1-E13",
+          "type": "true-false",
+          "scene": "Scenario: 'Are you going to be a good boy and eat your vegetables?'",
+          "question": "Is this an Identity Bind?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Good boy' = 'Eats vegetables.' If you don't eat, you are 'Bad.' It binds action to morality.",
+            "incorrect": "It links the behavior to the identity/character of the target."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P1-E14",
+          "type": "matching",
+          "question": "Match the response to the Double Bind:",
+          "pairs": [
+            {
+              "term": "Meta-Commentary",
+              "definition": "\"I notice you are only giving me two choices.\""
+            },
+            {
+              "term": "Refusal",
+              "definition": "\"Neither.\""
+            },
+            {
+              "term": "Counter-Offer",
+              "definition": "\"How about I do X instead?\""
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Call it out (Meta). Reject it (Refusal). Negotiate (Counter).",
+            "incorrect": "Meta-commentary exposes the game. Refusal stops it."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Trap",
+          "scene": "You now see the trap. They offer you two doors, but they own the building. You must learn to build your own door.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Spotting False Choices (Real-world examples).",
+            "Opening doors.",
+            "Being decisive.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: Spotting False Choices (Real-world examples).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We need to train your brain to pause when offered a binary choice.",
+            "incorrect": "Next up: Practical detection of the False Dilemma."
+          }
+        }
+      ]
+    }
+  ]
+}

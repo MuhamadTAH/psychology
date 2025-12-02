@@ -1,0 +1,341 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A5",
+  "unitTitle": "The Vulnerable Mind: Why We Fall For It",
+  "lessonId": "A5-4",
+  "lessonTitle": "Traumatic Bonding: The Chemistry of Abuse",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Cycle of Abuse",
+  "objective": "To identify the three phases of the Cycle of Abuse (Tension, Explosion, Honeymoon) and define 'Trauma Bonding' as a biological addiction to the relief of pain.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A5-4-P1-S1",
+      "screenType": "Learn",
+      "title": "The Addiction of Fear",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Why do people stay in abusive relationships? It isn't because they like pain. It is because they are addicted to the **relief** that comes after the pain."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is the **Trauma Bond**. The abuser creates terror (Cortisol) and then offers comfort (Dopamine/Oxytocin). Your brain bonds to them as your only source of safety."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Cycle has 3 phases: 1. Tension Building (Walking on Eggshells), 2. Explosion (The Abuse), 3. Honeymoon (The Apology & Love Bombing)."
+        }
+      ]
+    },
+    {
+      "screenId": "A5-4-P1-S2",
+      "screenType": "Exercises",
+      "title": "Mapping the Cycle",
+      "exercises": [
+        {
+          "exerciseId": "A5-4-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is a 'Trauma Bond'?",
+          "options": [
+            "A shared traumatic event (like a car crash).",
+            "A strong emotional attachment to an abuser, formed by a cycle of reward and punishment (Intermittent Reinforcement).",
+            "Being best friends.",
+            "Two people who hate each other."
+          ],
+          "correct": "A strong emotional attachment to an abuser, formed by a cycle of reward and punishment (Intermittent Reinforcement).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is a biological addiction. The brain confuses 'fear' and 'relief' with 'love'.",
+            "incorrect": "It is not just a shared event. It is a specific dynamic where the abuser becomes the only 'cure' for the pain they caused."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P1-E2",
+          "type": "matching",
+          "question": "Match the Cycle Phase to the Behavior:",
+          "pairs": [
+            {
+              "term": "Tension Building",
+              "definition": "Walking on eggshells, trying to avoid a fight."
+            },
+            {
+              "term": "Explosion",
+              "definition": "The incident of abuse (verbal, physical, or emotional)."
+            },
+            {
+              "term": "Honeymoon",
+              "definition": "Apologies, gifts, and promises to change."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The Honeymoon phase is the hook. It convinces you that the 'nice' version is the 'real' them.",
+            "incorrect": "The cycle loops. The Honeymoon always leads back to Tension."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P1-E3",
+          "type": "fill-in",
+          "sentence": "The most dangerous phase for the victim's resolve is the (--------) Phase.",
+          "options": [
+            "Explosion",
+            "Honeymoon",
+            "Tension",
+            "Work"
+          ],
+          "answers": [
+            "Honeymoon"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. During the Explosion, you want to leave. During the Honeymoon, you have 'Hope.' Hope keeps you trapped.",
+            "incorrect": "Pain makes you want to leave. The Honeymoon makes you want to stay. It is the adhesive."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P1-E4",
+          "type": "scenario",
+          "scene": "Scenario: Your partner screams at you for an hour (Explosion). An hour later, they are crying, hugging you, and saying 'I can't live without you.' You feel a rush of relief and love.",
+          "question": "What is happening in your brain?",
+          "options": [
+            "True Love.",
+            "A chemical release of Oxytocin and Dopamine caused by the sudden cessation of pain (The Relief Response).",
+            "Forgiveness.",
+            "Memory loss."
+          ],
+          "correct": "A chemical release of Oxytocin and Dopamine caused by the sudden cessation of pain (The Relief Response).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The abuser took you to the edge of fear, then pulled you back. Your body releases bonding chemicals to calm down. This bonds you to the abuser.",
+            "incorrect": "It feels like love, but it is biological relief. You are bonding to the person who stopped the torture."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P1-E5",
+          "type": "true-false",
+          "scene": "Scenario: 'They only hit me once. The rest of the time they are amazing.'",
+          "question": "Is this relationship safe?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct/False. Abuse does not need to be constant to be effective. 'Intermittent' abuse is actually *more* addictive than constant abuse.",
+            "incorrect": "The 'amazing' times are part of the cycle. They are the bait."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to define Intermittent Reinforcement:",
+          "words": [
+            "creates",
+            "rewards",
+            "addiction",
+            "Unpredictable"
+          ],
+          "correct": "Unpredictable rewards creates addiction",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Like a slot machine. If you won every time, you'd get bored. If you never won, you'd quit. Random wins keep you playing forever.",
+            "incorrect": "It is the unpredictability that creates the obsession."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "The psychological phenomenon where hostages develop positive feelings for their captors as a survival strategy.",
+          "question": "What is this called?",
+          "options": [
+            "Stockholm Syndrome",
+            "Narcissism",
+            "Freedom",
+            "Panic"
+          ],
+          "correct": "Stockholm Syndrome",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. In an abusive relationship, you are a hostage. You bond with the captor to avoid being hurt. It is a survival instinct.",
+            "incorrect": "Trauma Bonding is the modern term for this dynamic in relationships."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: You try to leave. They switch from 'Rage' (Explosion) to 'Sobs' (Honeymoon/Pity Play) instantly.",
+          "question": "This proves:",
+          "options": [
+            "They are truly sorry.",
+            "They are manipulating your empathy to reset the cycle.",
+            "They are bipolar.",
+            "You should stay."
+          ],
+          "correct": "They are manipulating your empathy to reset the cycle.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They know that 'Anger' drives you away, so they switch to 'Pity' to pull you back. It is a tactical shift.",
+            "incorrect": "Genuine sorrow doesn't switch on and off like a light. It is a hook."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are in the 'Honeymoon' phase. Everything is perfect. You remember the abuse from last week, but it feels like a bad dream.",
+          "question": "Do you leave now?",
+          "options": [
+            "No, wait until it gets bad again.",
+            "Yes. Leaving during the 'good times' is the only way to break the cycle, even though it feels wrong.",
+            "Enjoy the good times.",
+            "Ask them to apologize again."
+          ],
+          "correct": "Yes. Leaving during the 'good times' is the only way to break the cycle, even though it feels wrong.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you wait for the 'bad times,' you will be too weak/scared to leave. You must leave when things are calm.",
+            "incorrect": "Waiting for the 'bad' locks you back into the Trauma Bond. You must leave when you have clarity."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P1-E10",
+          "type": "fill-in",
+          "sentence": "Over time, the (--------) Phase gets shorter, and the Explosion Phase gets longer.",
+          "options": [
+            "Honeymoon",
+            "Tension",
+            "Work",
+            "Sleep"
+          ],
+          "answers": [
+            "Honeymoon"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. In the beginning, the Honeymoon is months long. By the end, it might be 5 minutes of peace. The cycle degrades.",
+            "incorrect": "The relief (Honeymoon) becomes scarcer, making you more desperate for it."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P1-E11",
+          "type": "multiple-choice",
+          "question": "Why do victims feel 'withdrawal' when they leave an abuser?",
+          "options": [
+            "Because they made a mistake.",
+            "Because their body is chemically addicted to the Cortisol/Dopamine cycle. They physically crave the chaos.",
+            "Because true love hurts.",
+            "Because they are bored."
+          ],
+          "correct": "Because their body is chemically addicted to the Cortisol/Dopamine cycle. They physically crave the chaos.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Peace feels 'boring' or 'wrong' to an addicted nervous system. The craving for the 'High' of the honeymoon pulls them back.",
+            "incorrect": "It is not a mistake. It is a detox symptom. You have to sweat it out."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'If I just behave perfectly and walk on eggshells, I can prevent the Explosion.'",
+          "question": "Is this true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The Explosion is inevitable. It is caused by the abuser's internal state, not your behavior. You cannot control it.",
+            "incorrect": "This belief keeps the victim trying harder and harder to manage the unmanageable."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: You are afraid to bring up a small issue because you don't want to 'ruin the good mood.'",
+          "question": "This is a sign of:",
+          "options": [
+            "Tension Building (Walking on Eggshells).",
+            "Respect.",
+            "Love.",
+            "Patience."
+          ],
+          "correct": "Tension Building (Walking on Eggshells).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You are sensing the fragility of the peace. You are suppressing your needs to avoid the Explosion.",
+            "incorrect": "Healthy relationships can handle small issues. This is fear-based suppression."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P1-E14",
+          "type": "matching",
+          "question": "Match the Chemical to the Experience:",
+          "pairs": [
+            {
+              "term": "Cortisol",
+              "definition": "Stress/Fear (During Tension & Explosion)."
+            },
+            {
+              "term": "Dopamine",
+              "definition": "Reward/Craving (During Honeymoon)."
+            },
+            {
+              "term": "Oxytocin",
+              "definition": "Bonding (The 'cuddle chemical' released after the rescue)."
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The abuser controls your chemistry lab. They spike your stress, then give you the cure.",
+            "incorrect": "Think: Fear vs. Pleasure vs. Bond."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Chemical Hook",
+          "scene": "You now understand that 'Love' in an abusive relationship is often just 'Addiction.' The cycle is a machine designed to keep you trapped.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Breaking the Chemical Addiction (Detox strategies).",
+            "Buying them a gift.",
+            "Starting a fight.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: Breaking the Chemical Addiction (Detox strategies).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Knowing the cycle is step one. Breaking the addiction is step two.",
+            "incorrect": "Next up: How to detox from the person who hurts you."
+          }
+        }
+      ]
+    }
+  ]
+}

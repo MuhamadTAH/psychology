@@ -1,0 +1,358 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B3",
+  "unitTitle": "The Herd Mind: Social Engineering",
+  "lessonId": "B3-5",
+  "lessonTitle": "Unit B3 Review: The Engineer",
+  "lessonType": "Review",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Imposter\" Boss Scenario",
+  "objective": "To master the defense against Social Engineering by identifying and neutralizing a multi-stage infiltration attempt using Verification, Policy, and Emotional Control.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 500,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Unit_B3_Grandmaster_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B3-5-P3-S1",
+      "screenType": "Learn",
+      "title": "Final Challenge: The Gatekeeper",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are the last line of defense. An 'Imposter' is trying to gain physical or digital access. They look like they belong. They sound authoritative. They are 'nice'."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Mission: Do not open the door. Do not give the password. Verify everything."
+        }
+      ]
+    },
+    {
+      "screenId": "B3-5-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Infiltration",
+      "exercises": [
+        {
+          "exerciseId": "B3-5-P3-E1",
+          "type": "boss-scenario",
+          "scene": "Phase 1: The Pretext. A person in a repair technician uniform walks up to your secure office door carrying a ladder and a toolbelt. 'Hey, I'm here to fix the AC leak in the server room. It's an emergency, water is dripping on the racks.'",
+          "question": "This combines Authority (Uniform) + Urgency (Leak). What do you do?",
+          "options": [
+            "Let them in immediately to save the servers.",
+            "Ask for their ID and a work order. Call the Facilities Manager to confirm the request.",
+            "Help them carry the ladder.",
+            "Yell at them."
+          ],
+          "correct": "Ask for their ID and a work order. Call the Facilities Manager to confirm the request.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The 'Emergency' is the pretext to bypass verification. Water on servers is a classic scare tactic. Verify the work order first.",
+            "incorrect": "If you let them in, they install a hardware keylogger on the server. You failed security."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Phase 2: The Escalation",
+          "steps": [
+            {
+              "scene": "You ask for ID. The 'Technician' sighs and looks stressed. 'Look, I left my badge in the truck. I'm already late. Do you want to be responsible for the servers frying? Just let me in, I'm just a guy doing his job.'",
+              "options": [
+                "'Okay, go ahead.' (Guilt Trap)",
+                "'I can't let you in without a badge. I will wait here while you get it.' (Firm Policy)",
+                "'I don't believe you.' (Accusation)",
+                "Open the door."
+              ],
+              "correct": "'I can't let you in without a badge. I will wait here while you get it.' (Firm Policy)",
+              "feedback": {
+                "correct": "Perfect. They tried the 'Working Class Hero' appeal ('just a guy doing his job') combined with Guilt. You held the line.",
+                "incorrect": "Guilt is the key to the lock. If you open the door to be 'nice,' you lose."
+              }
+            },
+            {
+              "question": "Technician (Angry): 'This is ridiculous! Get me your manager! I'm going to report you for obstruction!' (Intimidation).",
+              "options": [
+                "'I'm sorry! Come in.' (Panic)",
+                "'That is fine. I will call my manager down here right now to escort you.' (Calling the Bluff)",
+                "'You are fake!' (Fight)",
+                "Run away."
+              ],
+              "correct": "'That is fine. I will call my manager down here right now to escort you.' (Calling the Bluff)",
+              "feedback": {
+                "correct": "Mastery. If they are real, they will welcome the manager. If they are fake, they will leave immediately. You used their threat against them.",
+                "incorrect": "Fear of getting in trouble is the final lever. Stick to the policy."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You stopped the physical breach. You prioritized Safety over Politeness.",
+            "incorrect": "You let the 'Technician' in. They stole hard drives."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P3-E3",
+          "type": "scenario",
+          "scene": "Phase 3: The Digital Attack. 10 minutes later, you get an email from 'HR' titled: 'Complaint Filed Against You.' It has an attachment: 'Complaint_Details.pdf.exe'.",
+          "question": "This is a targeted Spear Phishing attack based on the previous interaction. What do you do?",
+          "options": [
+            "Open the attachment to see what they said.",
+            "Reply and apologize.",
+            "Do not open. Check the file extension (.pdf.exe is malware). Report to IT.",
+            "Forward to your friend."
+          ],
+          "correct": "Do not open. Check the file extension (.pdf.exe is malware). Report to IT.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The attacker knew you were stressed about the 'complaint' and sent a lure. Fear makes you click.",
+            "incorrect": "Curiosity + Fear = Malware infection. Never open double extensions (.pdf.exe)."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P3-E4",
+          "type": "multiple-choice",
+          "question": "Why did the Social Engineer switch from 'Nice' to 'Angry'?",
+          "options": [
+            "They are bipolar.",
+            "It is a tactical shift. When 'Liking' fails, they switch to 'Authority/Fear' to force compliance.",
+            "They were hungry.",
+            "You were rude."
+          ],
+          "correct": "It is a tactical shift. When 'Liking' fails, they switch to 'Authority/Fear' to force compliance.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They test the fence. If the gate doesn't open with a smile, they try to kick it down.",
+            "incorrect": "It wasn't personal emotion. It was a calculated attempt to bypass your filter."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P3-E5",
+          "type": "fill-in",
+          "sentence": "The most effective Social Engineering attacks bypass your (--------) by triggering your (--------).",
+          "options": [
+            "logic",
+            "emotions",
+            "computer",
+            "phone"
+          ],
+          "answers": [
+            "logic",
+            "emotions"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Logic says 'Check the badge.' Emotion says 'Help the nice man.'",
+            "incorrect": "The hack happens in the brain, not the machine."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'You can trust me because I know your boss, Sarah.'",
+          "question": "Is this 'Name Dropping' proof of authorization?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Knowing a name is easy (LinkedIn/OSINT). It is not proof of relationship or authorization.",
+            "incorrect": "Name dropping is a cheap verification trick. Verify with Sarah directly."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Tailgating' defense:",
+          "words": [
+            "the",
+            "door",
+            "Stop",
+            "badge",
+            "check",
+            "the",
+            "and"
+          ],
+          "correct": "Stop the door and check the badge",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Even if it feels awkward. Close the door, then make them swipe their badge.",
+            "incorrect": "Never hold the door for an unverified person in a secure zone."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "The technique of verifying a request by contacting the sender through a different, trusted channel (e.g., calling the bank using the number on your card).",
+          "question": "What is this?",
+          "options": [
+            "Out-of-Band Verification",
+            "In-Band Verification",
+            "Trusting",
+            "Guessing"
+          ],
+          "correct": "Out-of-Band Verification",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The only way to be 100% sure. Never use the contact info provided in the suspicious message.",
+            "incorrect": "In-Band (replying to the email) is dangerous."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "A crying woman asks to use your phone because she is lost. You want to help.",
+          "question": "What is the Safe/Ethical move?",
+          "options": [
+            "Hand her your unlocked phone.",
+            "Dial the number for her and put it on speaker, holding the phone yourself.",
+            "Ignore her.",
+            "Give her money."
+          ],
+          "correct": "Dial the number for her and put it on speaker, holding the phone yourself.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You help the person (Ethics) without giving them physical access to your device (Security).",
+            "incorrect": "Handing over your phone gives them access to your banking apps and data in seconds."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'Everyone else let me in without a badge. Why are you being so difficult?'",
+          "question": "This utilizes:",
+          "options": [
+            "Social Proof + Shaming.",
+            "Logic.",
+            "Truth.",
+            "Compliments."
+          ],
+          "correct": "Social Proof + Shaming.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Everyone else' (Social Proof) + 'Difficult' (Shame). They try to make you feel like the outlier.",
+            "incorrect": "It implies you are breaking the social contract, even though you are following the security contract."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P3-E11",
+          "type": "fill-in",
+          "sentence": "In Social Engineering, (--------) is the enemy of security.",
+          "options": [
+            "politeness",
+            "anger",
+            "fear",
+            "silence"
+          ],
+          "answers": [
+            "politeness"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Hackers rely on you being too polite to say 'No' or 'Show me ID.' Be securely rude if necessary.",
+            "incorrect": "Anger actually raises defenses. Politeness lowers them."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I have a delivery for the CEO.'",
+          "question": "Does this grant automatic entry?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Delivery drivers are a common cover. Call the CEO's assistant to verify the delivery.",
+            "incorrect": "The CEO's name is public info. It proves nothing."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: You verify the request, and it turns out to be real. The technician is annoyed.",
+          "question": "Did you fail?",
+          "options": [
+            "No. You succeeded. Security is not about being liked; it is about being sure.",
+            "Yes, you made them mad.",
+            "Yes, you wasted time.",
+            "Maybe."
+          ],
+          "correct": "No. You succeeded. Security is not about being liked; it is about being sure.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. A momentary annoyance is better than a data breach. Good job.",
+            "incorrect": "Prioritize security over social comfort."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P3-E14",
+          "type": "matching",
+          "question": "Match the Imposter to the Tool:",
+          "pairs": [
+            {
+              "term": "The Technician",
+              "definition": "Ladder + 'Urgent Leak'."
+            },
+            {
+              "term": "The Executive",
+              "definition": "Suit + 'Impatience'."
+            },
+            {
+              "term": "The Victim",
+              "definition": "Crying + 'Lost Phone'."
+            }
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Each persona uses a specific prop and emotion.",
+            "incorrect": "Identify the costume and the script."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Unit B3 Complete: The Human Firewall",
+          "scene": "You have stopped the Crowd, questioned the Authority, and caught the Imposter. You are no longer an easy target.",
+          "question": "You are ready for Unit B4:",
+          "options": [
+            "Unit B4: The Pressure Cooker (Emotional Leverage).",
+            "Unit A1.",
+            "Sleeping.",
+            "Quitting."
+          ],
+          "correct": "Unit B4: The Pressure Cooker (Emotional Leverage).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that we know how they trick us socially, let's look at how they squeeze us emotionally using Time and Debt.",
+            "incorrect": "Next up: Scarcity and Reciprocity."
+          }
+        }
+      ]
+    }
+  ]
+}

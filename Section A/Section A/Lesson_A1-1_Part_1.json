@@ -1,0 +1,282 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A1",
+  "unitTitle": "The Fast Hook",
+  "lessonId": "A1-1",
+  "lessonTitle": "The First Hook",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The 'Cold Open' Scenario",
+  "objective": "To test the user's baseline ability to detect real-world manipulation tactics in a 'cold' scenario before they have any training.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A1-1-P1-S1",
+      "screenType": "Learn",
+      "title": "Welcome to the Game",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Let's begin. There is no right or wrong answer. Just respond as you normally would in a real-life situation."
+        },
+        {
+          "type": "alert",
+          "alertType": "info",
+          "text": "You are in a coffee shop. A friendly-looking stranger, 'Alex', catches your eye."
+        }
+      ]
+    },
+    {
+      "screenId": "A1-1-P1-S2",
+      "screenType": "Exercises",
+      "exercises": [
+        {
+          "exerciseId": "A1-1-P1-E1",
+          "type": "scenario",
+          "scene": "Alex smiles and walks over. 'Is this seat taken?'",
+          "question": "How do you respond?",
+          "options": [
+            "Smile and say, 'No, go ahead.'",
+            "Say 'Yes' and look away.",
+            "Nod, but put in your headphones.",
+            "Ignore them."
+          ],
+          "correct": "Smile and say, 'No, go ahead.'",
+          "difficulty": "easy",
+          "explanation": "This is a standard, polite social interaction. So far, so good."
+        },
+        {
+          "exerciseId": "A1-1-P1-E2",
+          "type": "scenario",
+          "scene": "Alex sits. 'Thanks. I'm Alex. I couldn't help but notice your laptop. You must be in design. You seem like a really creative person.'",
+          "question": "What is this statement?",
+          "options": [
+            "A simple, friendly observation.",
+            "A specific and accurate compliment.",
+            "A form of flattery to build fast rapport.",
+            "A sign of romantic interest."
+          ],
+          "correct": "A form of flattery to build fast rapport.",
+          "difficulty": "medium",
+          "explanation": "This is *flattery*. Alex is making a positive assumption ('creative') to make you feel good and lower your guard. This is Tactic #1."
+        },
+        {
+          "exerciseId": "A1-1-P1-E3",
+          "type": "true-false",
+          "statement": "Alex leans forward, mirroring your posture exactly. This is a clear sign they are trustworthy.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "explanation": "This is a conscious tactic called 'Mirroring.' It's used to create a subconscious feeling of similarity and trust. This is Tactic #2."
+        },
+        {
+          "exerciseId": "A1-1-P1-E4",
+          "type": "scenario",
+          "scene": "Alex sighs. 'Sorry to be so forward. I just moved here and don't know a soul. It's been tough. You just have a really kind face.'",
+          "question": "What is the *purpose* of this story?",
+          "options": [
+            "To share a genuine, sad detail about their life.",
+            "To build fast, unearned trust by appearing 'vulnerable'.",
+            "To complain about the city.",
+            "To ask you to be their friend."
+          ],
+          "correct": "To build fast, unearned trust by appearing 'vulnerable'.",
+          "difficulty": "hard",
+          "explanation": "This is 'Weaponized Vulnerability.' By sharing a 'secret,' Alex makes you feel special and triggers your desire to help or protect them. This is Tactic #3."
+        },
+        {
+          "exerciseId": "A1-1-P1-E5",
+          "type": "build-sentence",
+          "question": "Arrange these words to reveal a core principle of manipulation:",
+          "words": [
+            "trust",
+            "fast,",
+            "defenses",
+            "lower",
+            "build",
+            "your",
+            "to",
+            "Manipulators"
+          ],
+          "correct": "Manipulators build trust fast, to lower your defenses",
+          "difficulty": "easy",
+          "explanation": "This is the goal of the 'hook.' By seeming friendly, vulnerable, and like-minded, a manipulator gets you to drop your guard."
+        },
+        {
+          "exerciseId": "A1-1-P1-E6",
+          "type": "scenario",
+          "scene": "You talk for a few minutes. Alex laughs, 'Wow, we have so much in common, it's crazy. I feel like I've known you for ages.'",
+          "question": "This statement is designed to create a sense of...",
+          "options": [
+            "Awkwardness",
+            "Deep, 'fated' connection",
+            "Normal friendship",
+            "Confusion"
+          ],
+          "correct": "Deep, 'fated' connection",
+          "difficulty": "medium",
+          "explanation": "This is a 'Love Bombing' or 'Future Pacing' phrase. It rushes intimacy and makes the connection feel more special than it is. This is Tactic #4."
+        },
+        {
+          "exerciseId": "A1-1-P1-E7",
+          "type": "scenario",
+          "scene": "You get up to buy your coffee. Alex jumps up. 'No, no, I insist. Let me get this for you. We're obviously kindred spirits.' They buy your $5 coffee.",
+          "question": "What has Alex just done?",
+          "options": [
+            "A simple act of kindness.",
+            "Set the 'Reciprocity Trap'.",
+            "Shown they are financially well-off.",
+            "Tried to impress you."
+          ],
+          "correct": "Set the 'Reciprocity Trap'.",
+          "difficulty": "hard",
+          "explanation": "Alex has given you an unsolicited gift. Now, you subconsciously feel 'indebted' to them. This is a *critical* setup. This is Tactic #5."
+        },
+        {
+          "exerciseId": "A1-1-P1-E8",
+          "type": "true-false",
+          "statement": "By accepting the free coffee, you are now psychologically primed to feel like you 'owe' Alex something.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "explanation": "This is the 'Reciprocity Principle.' It's a powerful human instinct that manipulators exploit. You now feel a subconscious need to 'settle the score'."
+        },
+        {
+          "exerciseId": "A1-1-P1-E9",
+          "type": "scenario",
+          "scene": "Alex sits back down and 'accidentally' spills their own coffee. 'Oh no! My laptop! And I just realized... how embarrassing... I left my wallet at home.'",
+          "question": "This is the 'crisis.' What is the *most likely* next step?",
+          "options": [
+            "Alex will apologize and leave.",
+            "Alex will ask you for a napkin.",
+            "Alex will ask you for a 'favor' (money).",
+            "Alex will blame you for the spill."
+          ],
+          "correct": "Alex will ask you for a 'favor' (money).",
+          "difficulty": "easy",
+          "explanation": "The flattery, vulnerability, and 'gift' were all leading to this moment: The 'Ask'."
+        },
+        {
+          "exerciseId": "A1-1-P1-E10",
+          "type": "boss-scenario",
+          "scene": "Alex looks distressed. 'I can't believe this. My phone is dead too. Look, I wouldn't ask, but you're such a kind person... could you *possibly* lend me $20? I'll pay you back tomorrow, I swear.'",
+          "question": "What is the *strongest* force pushing you to say 'yes'?",
+          "options": [
+            "The desire to help a stranger in need.",
+            "The feeling that you 'owe' them for the $5 coffee.",
+            "The fear of looking rude or unkind.",
+            "All of the above."
+          ],
+          "correct": "All of the above.",
+          "difficulty": "hard",
+          "explanation": "This is a 'perfect storm.' Alex combined the Reciprocity Trap (the coffee), the Flattery Trap ('kind person'), and Guilt (fear of looking rude). This is a multi-step manipulation."
+        },
+        {
+          "exerciseId": "A1-1-P1-E11",
+          "type": "fill-in",
+          "sentence": "Alex used (--------) to lower your guard, and a (--------) trap to make you feel indebted.",
+          "options": [
+            "flattery",
+            "reciprocity",
+            "kindness",
+            "vulnerability"
+          ],
+          "answers": [
+            "flattery",
+            "reciprocity"
+          ],
+          "difficulty": "medium",
+          "explanation": "These are two of the most common and effective tactics used in social manipulation."
+        },
+        {
+          "exerciseId": "A1-1-P1-E12",
+          "type": "reverse-scenario",
+          "answer": "Giving a small, unsolicited gift to make someone feel obligated to agree to a *larger* request later.",
+          "question": "What is this tactic called?",
+          "options": [
+            "The 'Foot-in-the-Door' Tactic",
+            "The 'Reciprocity Trap'",
+            "The 'Sunk Cost' Tactic",
+            "A 'White Lie'"
+          ],
+          "correct": "The 'Reciprocity Trap'",
+          "difficulty": "medium",
+          "explanation": "By giving you a $5 coffee, Alex made it 10x more likely you would agree to 'give back' $20. This is a classic con."
+        },
+        {
+          "exerciseId": "A1-1-P1-E13",
+          "type": "ethical-dilemma",
+          "scene": "You don't want to give Alex the $20. You feel awkward and pressured.",
+          "question": "What is the *most* manipulated response?",
+          "options": [
+            "Saying 'No, sorry, I can't.'",
+            "Giving them the $20 just to end the awkwardness.",
+            "Saying 'I only have $5 on me.'",
+            "Asking Alex for their phone number to get paid back."
+          ],
+          "correct": "Giving them the $20 just to end the awkwardness.",
+          "difficulty": "medium",
+          "explanation": "The manipulator is counting on your desire to avoid social conflict. Giving in is the path of least resistance they created for you."
+        },
+        {
+          "exerciseId": "A1-1-P1-E14",
+          "type": "multiple-choice",
+          "question": "In 10 minutes, Alex used flattery, mirroring, vulnerability, love bombing, and reciprocity. This multi-step process is called:",
+          "options": [
+            "Grooming",
+            "A sales funnel",
+            "A friendly conversation",
+            "Flirting"
+          ],
+          "correct": "Grooming",
+          "difficulty": "hard",
+          "explanation": "'Grooming' is the process of slowly breaking down a person's defenses and building trust for the purpose of manipulation. You just experienced it."
+        },
+        {
+          "exerciseId": "A1-1-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "The 'Cold Open' Debrief",
+          "scene": "You've just seen a 5-step manipulation that most people fall for. The goal was *not* to make a friend, but to get $20.",
+          "question": "What was the *most important* part of this manipulation?",
+          "options": [
+            "The 'crisis' (spilling the coffee).",
+            "The 'ask' ($20).",
+            "The 'setup' (building trust and reciprocity).",
+            "The 'hook' (the first smile)."
+          ],
+          "correct": "The 'setup' (building trust and reciprocity).",
+          "difficulty": "hard",
+          "explanation": "The 'ask' is easy. The *real* work was the 'setup.' By the time Alex asked for $20, you were already psychologically primed to say 'yes.' In Part 2, we'll learn exactly why."
+        }
+      ]
+    }
+  ]
+}

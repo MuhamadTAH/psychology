@@ -1,0 +1,342 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A4",
+  "unitTitle": "The Void Behind the Mask: Psychopathy",
+  "lessonId": "A4-2",
+  "lessonTitle": "The Super-Charm: Glibness & Superficiality",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "Why Psychopaths are Charming",
+  "objective": "To define 'Glibness' and 'Superficial Charm' as primary tools of the Psychopath, distinguishing them from genuine charisma or connection.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A4-2-P1-S1",
+      "screenType": "Learn",
+      "title": "The Mask of Sanity",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "We expect monsters to look scary. In reality, Psychopaths are often the most charming people in the room."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is called **Superficial Charm**. It is a performance. Because they have no social anxiety or fear, they can project total confidence and say exactly what you want to hear."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Key Term: **Glibness**. The ability to speak smoothly, fluently, and persuasively, but with zero depth or sincerity."
+        }
+      ]
+    },
+    {
+      "screenId": "A4-2-P1-S2",
+      "screenType": "Exercises",
+      "title": "Decoding the Charm",
+      "exercises": [
+        {
+          "exerciseId": "A4-2-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the difference between 'Genuine Charisma' and 'Superficial Charm'?",
+          "options": [
+            "Genuine Charisma connects with others; Superficial Charm is a performance to manipulate.",
+            "Superficial Charm is louder.",
+            "There is no difference.",
+            "Charisma costs money."
+          ],
+          "correct": "Genuine Charisma connects with others; Superficial Charm is a performance to manipulate.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Genuine charisma comes from empathy and shared emotion. Psychopathic charm is a simulation used to lower your guard.",
+            "incorrect": "One is real connection; the other is a 'Mask of Sanity' worn to deceive."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: You meet a stranger. Within 5 minutes, they are telling entertaining stories, making intense eye contact, and making you feel like the most interesting person in the world.",
+          "question": "This 'Instant Intensity' is a red flag for:",
+          "options": [
+            "True Love.",
+            "A Psychopathic 'Charm Offensive' (Grooming).",
+            "Social Anxiety.",
+            "Boredom."
+          ],
+          "correct": "A Psychopathic 'Charm Offensive' (Grooming).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Psychopaths have 'Low Arousal' (no anxiety), so they can push social boundaries instantly. They 'groom' you with focus.",
+            "incorrect": "Real connection takes time to build safety. Instant intensity is a sign of a predator closing the distance."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P1-E3",
+          "type": "fill-in",
+          "sentence": "A psychopath uses (--------) to talk their way out of trouble smoothly, without pausing to think.",
+          "options": [
+            "glibness",
+            "honesty",
+            "fear",
+            "tears"
+          ],
+          "answers": [
+            "glibness"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Glibness' is the slick, oily ability to have a quick answer for everything. They never stutter or look ashamed.",
+            "incorrect": "It is a specific linguistic trait called Glibness (superficial smoothness)."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I didn't mean to hurt you. I just forgot. But hey, remember that time we went to the beach? That was great.'",
+          "question": "Is this Glibness?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They pivoted from 'abuse' to 'fun memory' instantly. A glib person surfs over the surface of deep issues without diving in.",
+            "incorrect": "They are skating over the problem. Glibness is about avoiding depth/accountability with smooth talk."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P1-E5",
+          "type": "matching",
+          "question": "Match the Charm to the Intent:",
+          "pairs": [
+            {
+              "term": "The Intense Stare",
+              "definition": "To dominate/hypnotize."
+            },
+            {
+              "term": "The Sad Story",
+              "definition": "To gain Pity (The Pity Play)."
+            },
+            {
+              "term": "The Future Promise",
+              "definition": "To create False Hope."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Every charming action has a predatory utility. Staring dominates. Pity disarms. Hope hooks.",
+            "incorrect": "Look at the function. Why are they doing it? To gain control."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to describe the Psychopath's social skill:",
+          "words": [
+            "chameleons",
+            "perfect",
+            "are",
+            "social",
+            "They"
+          ],
+          "correct": "They are perfect social chameleons",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Because they have no real 'Self,' they can mimic *your* self perfectly. They become whatever you need them to be.",
+            "incorrect": "They blend in. They mimic the environment to hunt safely."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "A smile that uses the mouth muscles but does not reach the eyes (Orbicularis Oculi).",
+          "question": "What is this physical sign of fake charm?",
+          "options": [
+            "The Predator Grin",
+            "The Duchenne Smile",
+            "The Pan Am Smile / Social Mask",
+            "The Frown"
+          ],
+          "correct": "The Pan Am Smile / Social Mask",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Also known as a 'Non-Duchenne' smile. Psychopaths often smile to signal 'I am nice,' but the eyes remain dead/watchful.",
+            "incorrect": "A Duchenne smile is real (eyes crinkle). The fake smile stops at the cheeks."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: You catch them in a lie. Instead of getting embarrassed, they laugh, tell a joke, and compliment your detective skills.",
+          "question": "Why do they do this?",
+          "options": [
+            "They are embarrassed.",
+            "They have no shame (Low Arousal). They use humor/charm to distract you from the lie.",
+            "They are innocent.",
+            "They are stupid."
+          ],
+          "correct": "They have no shame (Low Arousal). They use humor/charm to distract you from the lie.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A normal person blushes (shame). A psychopath feels no physiological shame, so they pivot to 'Charm' to smooth it over.",
+            "incorrect": "They are not embarrassed. Their heart rate barely changes when caught lying."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P1-E9",
+          "type": "multiple-choice",
+          "question": "What is 'Duper's Delight'?",
+          "options": [
+            "A type of candy.",
+            "The flash of pleasure/smugness a manipulator shows when they successfully fool someone.",
+            "Being happy.",
+            "Being sad."
+          ],
+          "correct": "The flash of pleasure/smugness a manipulator shows when they successfully fool someone.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Watch for a micro-expression of a smirk when you believe their lie. They enjoy the power of deception.",
+            "incorrect": "It is the specific joy of 'duping' (tricking) a victim."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P1-E10",
+          "type": "fill-in",
+          "sentence": "Psychopaths use (--------) to hide the Void.",
+          "options": [
+            "charm",
+            "money",
+            "anger",
+            "sleep"
+          ],
+          "answers": [
+            "charm"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If you saw the emptiness inside, you would run. The Charm is the paint on the trap.",
+            "incorrect": "Charm is the primary camouflage of the high-functioning psychopath."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P1-E11",
+          "type": "ethical-dilemma",
+          "scene": "A charismatic business partner suggests a 'grey area' deal that will make millions but hurt people. They smile: 'Don't worry, I'll handle the details.'",
+          "question": "This Glibness is a sign of:",
+          "options": [
+            "Competence.",
+            "Psychopathic Risk-Taking and Lack of Conscience.",
+            "Friendship.",
+            "Leadership."
+          ],
+          "correct": "Psychopathic Risk-Taking and Lack of Conscience.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Their calm demeanor about causing harm is not leadership; it is pathology. They are inviting you into the cage.",
+            "incorrect": "It looks like confidence, but it is actually a dangerous lack of moral inhibition."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I can sell ice to an Eskimo.'",
+          "question": "Is this phrase often a red flag for high Machiavellian/Psychopathic traits?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It implies they take pride in manipulation and convincing people to act against their own interests.",
+            "incorrect": "It shows they view interaction as a game of dominance, not exchange."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: A job candidate has a perfect resume, perfect eye contact, and compliments the interviewer perfectly. They have no gaps, no weaknesses, and tell amazing stories.",
+          "question": "This 'Perfect' presentation might be:",
+          "options": [
+            "The ideal candidate.",
+            "The Mask of Sanity (Too perfect to be real).",
+            "Nervousness.",
+            "Luck."
+          ],
+          "correct": "The Mask of Sanity (Too perfect to be real).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Humans have flaws. Humans have anxiety. A performance that is 100% flawless and slick is often a sign of a fabricated persona.",
+            "incorrect": "Real people are 'lumpy' and anxious. Predators are smooth."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P1-E14",
+          "type": "matching",
+          "question": "Match the tactic to the feeling it induces:",
+          "pairs": [
+            {
+              "term": "Glibness",
+              "definition": "Feeling: 'They are so slick/smooth.'"
+            },
+            {
+              "term": "Superficial Charm",
+              "definition": "Feeling: 'They are too nice.'"
+            },
+            {
+              "term": "Predatory Stare",
+              "definition": "Feeling: 'I am being hunted/studied.'"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Trust your gut feelings. If they feel 'slick,' they are glib. If they feel 'too nice,' it is superficial.",
+            "incorrect": "Your intuition detects the mismatch before your brain does."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Charm Trap",
+          "scene": "You have defined the Super-Charm. It is a weapon used to lower your defenses. It relies on Glibness (verbal smoothness) and low anxiety.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Detecting the 'Mask of Sanity' (Real-world scenarios of fake charm).",
+            "How to be glib.",
+            "A lesson on Guilt.",
+            "Sleeping."
+          ],
+          "correct": "Practice: Detecting the 'Mask of Sanity' (Real-world scenarios of fake charm).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now you need to learn to spot the cracks in the mask.",
+            "incorrect": "Next up: Practical detection of the fake persona."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B5",
+  "unitTitle": "Section B Grand Review: The Master Tactician",
+  "lessonId": "B5-5",
+  "lessonTitle": "The Section B Boss Fight",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Master Influencer\" Boss Scenario",
+  "objective": "To demonstrate mastery of all Section B concepts by defeating a 'Master Influencer' who uses advanced, combined tactics from NLP, Framing, Social Engineering, and Leverage.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 1000,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Section_B_Mastery_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B5-5-P3-S1",
+      "screenType": "Learn",
+      "title": "Final Challenge: The Master",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are about to face 'The Master Influencer.' They do not use one tactic; they use a symphony. They will Charm you (Liking), Frame you (Perception), Rush you (Scarcity), and Bind you (Language)."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Deconstruct the spell. Name the tactic. Refuse the bait. Walk away with your autonomy intact."
+        }
+      ]
+    },
+    {
+      "screenId": "B5-5-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Masterpiece",
+      "exercises": [
+        {
+          "exerciseId": "B5-5-P3-E1",
+          "type": "boss-scenario",
+          "scene": "Phase 1: The Setup. A charismatic leader, 'Julian,' invites you to an exclusive gala. 'I've been watching you. You have a rare energy (Flattery). Most people here are sheep, but you... you see the matrix (Us vs. Them).'",
+          "question": "Identify the 3-hit combo used to build rapid rapport:",
+          "options": [
+            "Flattery + Isolation + Identity Mirroring.",
+            "Honesty + Logic + Kindness.",
+            "Gaslighting + Fear + Anger.",
+            "Scarcity + Debt + Truth."
+          ],
+          "correct": "Flattery + Isolation + Identity Mirroring.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. He flatters your ego ('rare energy'), Isolates you from the 'sheep,' and Mirrors your desire to be special. He is grooming you.",
+            "incorrect": "It is not honesty. It is a calculated seduction of your ego."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Phase 2: The Frame Trap",
+          "steps": [
+            {
+              "scene": "Julian introduces you to a 'VIP' (Fake Authority). 'This is Senator X. He only talks to visionaries. Don't disappoint me.' (Pressure). The Senator offers you a 'Once in a Lifetime' deal (Scarcity) that requires a $10k deposit tonight.",
+              "options": [
+                "Pay it. You don't want to disappoint Julian.",
+                "Ask for details. 'What is the ROI? Can I see the prospectus?' (Due Diligence).",
+                "Refuse. 'I don't make decisions at parties.'",
+                "Feel special."
+              ],
+              "correct": "Ask for details. 'What is the ROI? Can I see the prospectus?' (Due Diligence).",
+              "feedback": {
+                "correct": "Perfect. You ignored the 'VIP' frame and the 'Scarcity' pressure. You drilled down for facts (Meta Model).",
+                "incorrect": "Feeling special is the trap. Paying to maintain status is the mistake."
+              }
+            },
+            {
+              "question": "Julian intervenes: 'I thought you were a player. Players take risks. Sheep ask for paperwork. Which one are you?' (Double Bind / Identity Attack).",
+              "options": [
+                "'I'm a player!' (Ego Trap)",
+                "'I am a smart investor who reads contracts. If that makes me a sheep, so be it.' (Reframing Identity).",
+                "'You're right, I'm sorry.' (Submission)",
+                "Get angry."
+              ],
+              "correct": "'I am a smart investor who reads contracts. If that makes me a sheep, so be it.' (Reframing Identity).",
+              "feedback": {
+                "correct": "Mastery. You rejected the 'Player vs. Sheep' binary. You created a third identity: 'Smart Investor.' You broke the frame.",
+                "incorrect": "If you try to prove you are a 'Player,' you hand him your wallet."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Frame War. You refused to let them define who you are.",
+            "incorrect": "You paid $10k to prove you weren't a 'sheep.' You got fleeced."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P3-E3",
+          "type": "scenario",
+          "scene": "Phase 3: The Linguistic Bind. Julian sighs. 'I'm not saying *you have to join*. I'm just wondering if you are *ready to be rich*.'",
+          "question": "This sentence contains:",
+          "options": [
+            "Negative Command ('You have to join') + Presupposition ('Ready to be rich').",
+            "A question.",
+            "Politeness.",
+            "Logic."
+          ],
+          "correct": "Negative Command ('You have to join') + Presupposition ('Ready to be rich').",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The subconscious hears 'Have to join.' The question presupposes that joining = wealth.",
+            "incorrect": "It is not a question; it is a command wrapped in a question."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P3-E4",
+          "type": "scenario",
+          "scene": "Phase 4: The Climax. Julian uses Fear-Then-Relief. 'Actually, the deal is closed. You missed it.' (Fear). 'Wait... I can make one exception for you, but you must sign NOW.' (Relief).",
+          "question": "What is the final counter-move?",
+          "options": [
+            "Sign instantly out of relief.",
+            "Thank him profusely.",
+            "Recognize the manipulation. The 'Exception' is the trap. Say: 'If it was closed, keep it closed. I'm walking away.'",
+            "Beg."
+          ],
+          "correct": "Recognize the manipulation. The 'Exception' is the trap. Say: 'If it was closed, keep it closed. I'm walking away.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The 'Fear-Relief' rollercoaster is designed to break your will. Walking away shatters the illusion.",
+            "incorrect": "Relief makes you compliant. Do not act on the relief."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P3-E5",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the Master Defense:",
+          "words": [
+            "Emotion",
+            "the",
+            "is",
+            "enemy",
+            "logic",
+            "of"
+          ],
+          "correct": "Emotion is the enemy of logic",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The Master Influencer uses emotion (Fear, Ego, Hope) to kill your logic. Keep your emotions cold.",
+            "incorrect": "Stay cold. Stay logical."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P3-E6",
+          "type": "multiple-choice",
+          "question": "What was the 'Trojan Horse' in this scenario?",
+          "options": [
+            "The Gala Invitation (The Gift).",
+            "The Contract.",
+            "The Water.",
+            "The Senator."
+          ],
+          "correct": "The Gala Invitation (The Gift).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The invite (Reciprocity) got you into the room. Once inside, the pressure began.",
+            "incorrect": "The Trojan Horse gets you in the gate."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P3-E7",
+          "type": "case-analysis",
+          "caseTitle": "Section B Victory",
+          "scene": "You walked out of the Gala. You kept your money. Julian chased you, then insulted you. You felt nothing.",
+          "question": "You are ready for Section C:",
+          "options": [
+            "Section C: The Defensive Mindset (Building the Fortress).",
+            "Section A.",
+            "Quitting.",
+            "Sleep."
+          ],
+          "correct": "Section C: The Defensive Mindset (Building the Fortress).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You know the Tools. Now we build the permanent Mindset (Body Language, Grey Rock, Inoculation) to keep them out forever.",
+            "incorrect": "Next up: The Fortress."
+          }
+        }
+      ]
+    }
+  ]
+}

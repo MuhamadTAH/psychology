@@ -1,0 +1,332 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A4",
+  "unitTitle": "The Void Behind the Mask: Psychopathy",
+  "lessonId": "A4-2",
+  "lessonTitle": "The Super-Charm: Glibness & Superficiality",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Detecting the \"Mask of Sanity\"",
+  "objective": "To practice identifying the specific behavioral cues of Superficial Charm (Glibness, Grandiosity, Pathological Lying) in real-world scenarios.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A4-2-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Slick Surface",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A Psychopath is like a shallow pond that looks deep because of the reflection. You must learn to throw a stone and see how shallow it really is."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Look for **Glibness**: Is the answer *too* fast? Is the story *too* perfect? Is the emotion *too* theatrical?"
+        }
+      ]
+    },
+    {
+      "screenId": "A4-2-P2-S2",
+      "screenType": "Exercises",
+      "title": "Spotting the Fake",
+      "exercises": [
+        {
+          "exerciseId": "A4-2-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: You ask a new employee about a gap in their resume. They instantly launch into a complex, exciting story about 'secret government work' that you can't verify.",
+          "question": "This is a red flag for:",
+          "options": [
+            "Pathological Lying / Grandiosity.",
+            "A cool life.",
+            "Honesty.",
+            "Shyness."
+          ],
+          "correct": "Pathological Lying / Grandiosity.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Psychopaths often invent grandiose pasts to explain failures. The story is 'glib' (smooth) but unverifiable.",
+            "incorrect": "It is too convenient. Grandiose lies are a hallmark of the Mask of Sanity."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is the ' Chameleon Effect'?",
+          "options": [
+            "Changing skin color.",
+            "The ability to change personality, accent, or values instantly to mirror the person they are talking to.",
+            "Being moody.",
+            "Liking lizards."
+          ],
+          "correct": "The ability to change personality, accent, or values instantly to mirror the person they are talking to.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Because they have no true 'Self,' they can mimic anyone perfectly. They are the ultimate actors.",
+            "incorrect": "It refers to social camouflage. They adapt to the environment to hunt."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P2-E3",
+          "type": "true-false",
+          "scene": "Scenario: 'I love animals! I volunteer at the shelter!' (But you notice they kick a stray dog when they think no one is looking).",
+          "question": "Is the 'Animal Lover' persona a common mask?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Psychopaths know that humans trust 'animal lovers.' They wear this mask to signal empathy they do not feel.",
+            "incorrect": "The action (kicking) reveals the truth. The words ('I love animals') are the mask."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P2-E4",
+          "type": "fill-in",
+          "sentence": "If someone's charm feels 'turned on' like a (--------), be careful.",
+          "options": [
+            "light switch",
+            "car",
+            "faucet",
+            "fire"
+          ],
+          "answers": [
+            "light switch"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Real charm warms up. Fake charm clicks on instantly when they need something.",
+            "incorrect": "Look for the mechanical nature of it. On/Off."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P2-E5",
+          "type": "scenario",
+          "scene": "Scenario: You catch them in a lie. They don't apologize. Instead, they spin a new, even bigger lie to cover the first one, without hesitation.",
+          "question": "This is:",
+          "options": [
+            "Compulsive / Pathological Lying.",
+            "Panic.",
+            "Creativity.",
+            "Forgetfulness."
+          ],
+          "correct": "Compulsive / Pathological Lying.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They treat reality as flexible. If Lie A fails, they try Lie B. The goal is not truth; it is winning the moment.",
+            "incorrect": "Panic causes stuttering. This is smooth. It is a reflex."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P2-E6",
+          "type": "matching",
+          "question": "Match the 'Tell' to the Meaning:",
+          "pairs": [
+            {
+              "term": "Too Perfect",
+              "definition": "It is a script/performance."
+            },
+            {
+              "term": "Too Fast",
+              "definition": "They are rushing to secure the victim."
+            },
+            {
+              "term": "Too Intense",
+              "definition": "They are simulating emotion (Overacting)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Real humans are messy, slow, and moderate. Predators are Perfect, Fast, and Intense.",
+            "incorrect": "Trust the 'Too Much' feeling. It signals artificiality."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define Glibness:",
+          "words": [
+            "without",
+            "depth",
+            "Smoothness",
+            "substance",
+            "or"
+          ],
+          "correct": "Smoothness without depth or substance",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It sounds good, but it means nothing. It is a shiny wrapper on an empty box.",
+            "incorrect": "Focus on the 'Surface' quality."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "Using complex vocabulary or jargon to sound intelligent and confuse the victim, while actually saying nothing of value.",
+          "question": "What is this verbal smokescreen?",
+          "options": [
+            "Intellectual Bullying / Word Salad",
+            "Being smart",
+            "Teaching",
+            "Honesty"
+          ],
+          "correct": "Intellectual Bullying / Word Salad",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They hide their lack of substance behind big words. It creates an illusion of authority.",
+            "incorrect": "It is not intelligence. It is a performance of intelligence to dominate the conversation."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P2-E9",
+          "type": "scenario",
+          "scene": "Scenario: A date tells you: 'I used to be a spy / model / millionaire.' But they live in a basement and borrow money from you.",
+          "question": "This is:",
+          "options": [
+            "Grandiose Delusion / Lying.",
+            "Bad luck.",
+            "Modesty.",
+            "Truth."
+          ],
+          "correct": "Grandiose Delusion / Lying.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Psychopaths often invent a 'Secret Life' to explain away their mediocrity or failures.",
+            "incorrect": "The reality (borrowing money) contradicts the story (millionaire). Trust the reality."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P2-E10",
+          "type": "fill-in",
+          "sentence": "To spot the mask, watch how they treat people who have zero (--------) to them.",
+          "options": [
+            "utility",
+            "money",
+            "looks",
+            "time"
+          ],
+          "answers": [
+            "utility"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The mask slips when they deal with 'useless' people (waiters, clerks, the homeless).",
+            "incorrect": "Utility is the key. If they can't use you, they stop acting nice."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P2-E11",
+          "type": "ethical-dilemma",
+          "scene": "You interview a candidate who is charming, funny, and perfect. But your 'gut' feels cold and uneasy.",
+          "question": "Do you hire them?",
+          "options": [
+            "No. The 'gut' detects micro-signals of danger (The Uncanny Valley). Trust it.",
+            "Yes. Logic says they are qualified.",
+            "Yes, but watch them.",
+            "Maybe."
+          ],
+          "correct": "No. The 'gut' detects micro-signals of danger (The Uncanny Valley). Trust it.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. 'The Gift of Fear.' Your subconscious picks up on the dead eyes and predatory gaze before your conscious mind does.",
+            "incorrect": "Ignoring your intuition with a psychopath is dangerous. The 'creepy' feeling is a survival signal."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I never get nervous. I am always cool.'",
+          "question": "Is this a brag or a warning sign?",
+          "options": [
+            "Warning Sign",
+            "Brag"
+          ],
+          "correct": "Warning Sign",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Zero anxiety is not normal. It indicates a lack of fear response (Primary Psychopathy).",
+            "incorrect": "It sounds cool, but biologically, lack of nervousness often correlates with lack of conscience."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: You ask a direct question about their past. They answer with a charming joke but never answer the question.",
+          "question": "This is:",
+          "options": [
+            "Deflection by Charm.",
+            "Humor.",
+            "Forgetfulness.",
+            "Honesty."
+          ],
+          "correct": "Deflection by Charm.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Glibness allows them to dodge accountability with a smile. You laugh, but you learn nothing.",
+            "incorrect": "It is a dodge. They are hiding the past."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P2-E14",
+          "type": "multiple-choice",
+          "question": "Why is 'Boredom' a trigger for the Psychopath's mask to slip?",
+          "options": [
+            "Because maintaining the 'Nice Person' act is work. When bored, they get lazy and the predator peeks through.",
+            "They fall asleep.",
+            "They get hungry.",
+            "They cry."
+          ],
+          "correct": "Because maintaining the 'Nice Person' act is work. When bored, they get lazy and the predator peeks through.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Watch them when they are bored. The smile vanishes, and the 'Dead Face' appears.",
+            "incorrect": "The mask requires energy. Boredom reveals the emptiness underneath."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Crack in the Mask",
+          "scene": "You have learned that 'Perfect' is fake. You know that 'Glibness' is a shield. You trust your gut over their smile.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Interview' Trap (Simulation).",
+            "Hiring them.",
+            "Becoming a liar.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Interview' Trap (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you sit across from a Glib Psychopath and see through the charm? Let's test it.",
+            "incorrect": "Next up: A high-stakes interaction with a Super-Charmer."
+          }
+        }
+      ]
+    }
+  ]
+}

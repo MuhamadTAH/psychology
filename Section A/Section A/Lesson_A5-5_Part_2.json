@@ -1,0 +1,607 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A5",
+  "unitTitle": "The Vulnerable Mind: Why We Fall For It",
+  "lessonId": "A5-5",
+  "lessonTitle": "Unit 5 & Section A Grand Review",
+  "lessonType": "Review",
+  "lessonPart": 2,
+  "lessonPartTitle": "The 'Gauntlet' (Mixed Scenarios)",
+  "objective": "To test rapid identification and defense strategies against a randomized mix of tactics from the entire Foundation Section (Units A1-A5).",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 300,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A5-5-P2-S1",
+      "screenType": "Learn",
+      "title": "The Section A Gauntlet",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You have studied the Predators and the Prey. Now, they all come at once."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "In this Gauntlet, you must identify the tactic (e.g., Gaslighting, Love Bombing) or the trait (e.g., Narcissism, Psychopathy) in rapid-fire scenarios."
+        }
+      ]
+    },
+    {
+      "screenId": "A5-5-P2-S2",
+      "screenType": "Exercises",
+      "title": "Rapid Fire Review",
+      "exercises": [
+        {
+          "exerciseId": "A5-5-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: 'I've already spent $10,000 on this scam... I have to keep paying to get my money back.'",
+          "question": "This logic is:",
+          "options": [
+            "The Sunk Cost Fallacy.",
+            "Good business.",
+            "Loyalty.",
+            "Hope."
+          ],
+          "correct": "The Sunk Cost Fallacy.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You are throwing good money after bad. The $10k is gone. Cut the loss.",
+            "incorrect": "The logic keeps you trapped. It is the Sunk Cost bias."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E2",
+          "type": "multiple-choice",
+          "question": "Which Dark Triad member uses 'Strategic Deception' and believes 'The End Justifies the Means'?",
+          "options": [
+            "The Machiavellian.",
+            "The Narcissist.",
+            "The Psychopath.",
+            "The Empath."
+          ],
+          "correct": "The Machiavellian.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are the Chessmasters. They lie for profit, not ego.",
+            "incorrect": "Narcissists lie for ego. Psychopaths lie for thrills. Machiavellians lie for strategy."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E3",
+          "type": "scenario",
+          "scene": "Scenario: You set a boundary. They respond: 'Wow, you used to be cool. Now you're so uptight. I guess you changed.'",
+          "question": "This tactic is:",
+          "options": [
+            "Shaming / Resistance to Boundaries.",
+            "Truth.",
+            "Concern.",
+            "Feedback."
+          ],
+          "correct": "Shaming / Resistance to Boundaries.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They frame your growth (boundaries) as a decline (uptight) to force you back into compliance.",
+            "incorrect": "You didn't become 'uptight'; you became safe. They hate that."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E4",
+          "type": "fill-in",
+          "sentence": "The (--------) Method involves being boring, unreactive, and dull to starve a manipulator of Supply.",
+          "options": [
+            "Grey Rock",
+            "Red Wall",
+            "Blue Sky",
+            "Green Light"
+          ],
+          "answers": [
+            "Grey Rock"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Be a rock. Offer no emotional foothold.",
+            "incorrect": "It's Grey Rock. Boring, solid, unmoving."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E5",
+          "type": "true-false",
+          "scene": "Scenario: 'I never said that. You're imagining things.'",
+          "question": "Is this Gaslighting?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Denial of reality + attacking memory = Gaslighting.",
+            "incorrect": "This is the definition of Gaslighting."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: A new partner wants to move in after 2 weeks. 'Why wait when we know it's destiny?'",
+          "question": "This is:",
+          "options": [
+            "Love Bombing / Future Faking.",
+            "Romance.",
+            "Efficiency.",
+            "Safety."
+          ],
+          "correct": "Love Bombing / Future Faking.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Speed is the red flag. They are rushing to lock you down before the mask slips.",
+            "incorrect": "Real love respects time. This is a trap."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E7",
+          "type": "matching",
+          "question": "Match the Phrase to the Tactic:",
+          "pairs": [
+            {
+              "term": "'You're too sensitive.'",
+              "definition": "Trivializing (Gaslighting)."
+            },
+            {
+              "term": "'I'm the victim here!'",
+              "definition": "DARVO."
+            },
+            {
+              "term": "'Everyone hates you.'",
+              "definition": "Triangulation / Isolation."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Trivializing minimizes. DARVO reverses. Triangulation isolates.",
+            "incorrect": "Look at the function of the phrase."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "A person who lacks a conscience, feels no fear, and uses people for stimulation.",
+          "question": "What is this?",
+          "options": [
+            "Psychopath",
+            "Narcissist",
+            "Machiavellian",
+            "Savior"
+          ],
+          "correct": "Psychopath",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The lack of fear (low arousal) and conscience defines the Psychopath.",
+            "incorrect": "Narcissists feel shame. Machiavellians feel strategy. Psychopaths feel nothing."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E9",
+          "type": "scenario",
+          "scene": "Scenario: You catch them cheating. They say: 'I wouldn't have done it if you cooked better.'",
+          "question": "This is:",
+          "options": [
+            "Blame-Shifting.",
+            "A culinary critique.",
+            "The Truth.",
+            "An apology."
+          ],
+          "correct": "Blame-Shifting.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They shifted the blame for *their* action onto *your* behavior. It is absurd but effective if you are insecure.",
+            "incorrect": "Cooking has nothing to do with loyalty. It is a distraction."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E10",
+          "type": "ethical-dilemma",
+          "scene": "You want to save a friend from a narcissist. You attack the narcissist publicly.",
+          "question": "What happens?",
+          "options": [
+            "The narcissist uses your attack to paint you as 'crazy' and isolates your friend further (You lose).",
+            "The friend thanks you.",
+            "The narcissist apologizes.",
+            "You win."
+          ],
+          "correct": "The narcissist uses your attack to paint you as 'crazy' and isolates your friend further (You lose).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Never attack a manipulator directly while the victim is under their spell. You become the common enemy.",
+            "incorrect": "Direct attacks feed the 'Us vs. Them' narrative. You played into their hands."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E11",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the danger of the 'Savior Complex':",
+          "words": [
+            "cannot",
+            "people",
+            "save",
+            "You",
+            "from",
+            "themselves"
+          ],
+          "correct": "You cannot save people from themselves",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Trying to save someone who doesn't want to be saved is not love; it is control (and exhaustion).",
+            "incorrect": "Accept their autonomy to fail."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E12",
+          "type": "multiple-choice",
+          "question": "What is 'Narcissistic Supply'?",
+          "options": [
+            "Attention/Validation (Positive or Negative) that feeds the ego.",
+            "Food.",
+            "Money.",
+            "Drugs."
+          ],
+          "correct": "Attention/Validation (Positive or Negative) that feeds the ego.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is the fuel. Without it, they collapse.",
+            "incorrect": "It is psychological fuel."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: You stop giving Supply. The manipulator explodes in rage.",
+          "question": "This is called:",
+          "options": [
+            "Extinction Burst.",
+            "True colors.",
+            "Panic attack.",
+            "Love."
+          ],
+          "correct": "Extinction Burst.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The behavior spikes before it stops. Hold the line.",
+            "incorrect": "It is a desperate attempt to re-establish control."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E14",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm only telling you this for your own good.'",
+          "question": "Is this often a cover for control/insults?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Compassionate' manipulation is hard to spot. They wrap the knife in velvet.",
+            "incorrect": "If it hurts, it's not for your good. It's for their control."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E15",
+          "type": "fill-in",
+          "sentence": "Trauma Bonding is an addiction to the cycle of (--------) and (--------).",
+          "options": [
+            "abuse",
+            "relief",
+            "love",
+            "hate"
+          ],
+          "answers": [
+            "abuse",
+            "relief"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The pain creates the need; the relief creates the bond. It is biological.",
+            "incorrect": "It's not love/hate. It is the specific mechanism of Pain followed by Rescue."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E16",
+          "type": "scenario",
+          "scene": "Scenario: A friend asks for a loan. You say no. They say: 'I guess our friendship doesn't mean much to you.'",
+          "question": "This is:",
+          "options": [
+            "Emotional Blackmail (Quid Pro Quo).",
+            "A fact.",
+            "Sadness.",
+            "negotiation."
+          ],
+          "correct": "Emotional Blackmail (Quid Pro Quo).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are holding the friendship hostage for cash.",
+            "incorrect": "Friendship is not a subscription service you pay for."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E17",
+          "type": "reverse-scenario",
+          "answer": "A tactic where the manipulator recruits third parties to validate their abuse or convey messages.",
+          "question": "What are these third parties called?",
+          "options": [
+            "Flying Monkeys",
+            "Friends",
+            "Allies",
+            "Therapists"
+          ],
+          "correct": "Flying Monkeys",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. From Wizard of Oz. They do the Witch's bidding.",
+            "incorrect": "They aren't real friends. They are pawns."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E18",
+          "type": "scenario",
+          "scene": "Scenario: You meet a 'Perfect Match.' They love everything you love. They mirror your exact values.",
+          "question": "Is this luck?",
+          "options": [
+            "No. It is Identity Mirroring / Data Mining.",
+            "Yes.",
+            "Maybe.",
+            "It is fate."
+          ],
+          "correct": "No. It is Identity Mirroring / Data Mining.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. No two people are identical. Perfection is a red flag for a constructed persona.",
+            "incorrect": "Fate is rare. Manipulation is common."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E19",
+          "type": "multiple-choice",
+          "question": "What is the 'Halo Effect'?",
+          "options": [
+            "Assuming a good-looking/charming person is also honest and smart.",
+            "Seeing angels.",
+            "Being religious.",
+            "Wearing a hat."
+          ],
+          "correct": "Assuming a good-looking/charming person is also honest and smart.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Beauty blinds us to danger. Ted Bundy was handsome.",
+            "incorrect": "It is a cognitive bias where one good trait outshines the bad."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E20",
+          "type": "scenario",
+          "scene": "Scenario: You try to leave. They say: 'I've changed! I'm going to therapy! I found God!'",
+          "question": "This is:",
+          "options": [
+            "The False Redemption Arc / Hoovering.",
+            "A miracle.",
+            "True change.",
+            "Nice."
+          ],
+          "correct": "The False Redemption Arc / Hoovering.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Predators mimic redemption to regain access. True change takes years, not days.",
+            "incorrect": "Don't buy the ticket to the sequel. It's the same movie."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E21",
+          "type": "fill-in",
+          "sentence": "Your (--------) does not require their agreement.",
+          "options": [
+            "reality",
+            "money",
+            "car",
+            "dog"
+          ],
+          "answers": [
+            "reality"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You don't need a Gaslighter to admit they lied. You just need to know they lied.",
+            "incorrect": "Stop fighting for consensus. Trust your own perception."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E22",
+          "type": "true-false",
+          "scene": "Scenario: 'I didn't mean to hurt you.'",
+          "question": "Does intent matter if the behavior doesn't change?",
+          "options": [
+            "No",
+            "Yes"
+          ],
+          "correct": "No",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Accidental' abuse that happens every week is not accidental. It is negligence. Impact > Intent.",
+            "incorrect": "Intent is an excuse. Look at the pattern."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E23",
+          "type": "scenario",
+          "scene": "Scenario: You share a secret. They don't share one back.",
+          "question": "This creates:",
+          "options": [
+            "Information Asymmetry (Leverage).",
+            "Trust.",
+            "Intimacy.",
+            "Fun."
+          ],
+          "correct": "Information Asymmetry (Leverage).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They have ammo; you have nothing. This is how Machiavellians build power.",
+            "incorrect": "Intimacy is mutual. This is extraction."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E24",
+          "type": "multiple-choice",
+          "question": "What is 'Word Salad'?",
+          "options": [
+            "Circular, confusing speech used to exhaust you.",
+            "A nice meal.",
+            "Talking loud.",
+            "Singing."
+          ],
+          "correct": "Circular, confusing, nonsensical speech used to exhaust the victim.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you are confused, you stop fighting. It is a smoke grenade of words.",
+            "incorrect": "It is a weaponized distraction technique."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E25",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm the only one who really loves you. Your family doesn't get you.'",
+          "question": "This is:",
+          "options": [
+            "Isolation.",
+            "Love.",
+            "Truth.",
+            "Kindness."
+          ],
+          "correct": "Isolation.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They sever your support system so you have nowhere to run.",
+            "incorrect": "It masks itself as 'Us vs. The World,' but it is 'Me owning You.'"
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E26",
+          "type": "ethical-dilemma",
+          "scene": "You realize you are addicted to a toxic person. You crave their text.",
+          "question": "What do you do?",
+          "options": [
+            "Treat it like a drug addiction. Go No Contact and ride out the withdrawal.",
+            "Text them.",
+            "Blame yourself.",
+            "Drink."
+          ],
+          "correct": "Treat it like a drug addiction. Go No Contact and ride out the withdrawal.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You are detoxing. The craving is chemical, not emotional. It will pass.",
+            "incorrect": "Contact resets the clock. You must starve the addiction."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E27",
+          "type": "matching",
+          "question": "Match the Defense:",
+          "pairs": [
+            {
+              "term": "For Gaslighting",
+              "definition": "Reality Anchors (Journal)."
+            },
+            {
+              "term": "For Love Bombing",
+              "definition": "Time and Boundaries."
+            },
+            {
+              "term": "For Supply Seeking",
+              "definition": "Grey Rock."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Write it down. Slow it down. Shut it down.",
+            "incorrect": "Match the tool to the threat."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E28",
+          "type": "scenario",
+          "scene": "Scenario: They discard you and instantly date someone else.",
+          "question": "This proves:",
+          "options": [
+            "You were an appliance. You broke, they got a new one.",
+            "They found true love.",
+            "You weren't good enough.",
+            "Bad timing."
+          ],
+          "correct": "You were an appliance. You broke, they got a new one.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. It hurts, but it is the truth. Parasites need a host. It was never about you; it was about the fuel.",
+            "incorrect": "Don't personalize it. It is mechanical replacement."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E29",
+          "type": "reverse-scenario",
+          "answer": "The ability to know what someone feels without feeling it yourself (used for strategy).",
+          "question": "What is this?",
+          "options": [
+            "Cold / Cognitive Empathy",
+            "Warm Empathy",
+            "Sympathy",
+            "Love"
+          ],
+          "correct": "Cold / Cognitive Empathy",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is the Machiavellian superpower. Data without distress.",
+            "incorrect": "It is not warm. It is clinical."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P2-E30",
+          "type": "case-analysis",
+          "caseTitle": "Gauntlet Complete",
+          "scene": "You have survived the Section A Gauntlet. You have faced the darkness and found your own light (Awareness).",
+          "question": "You are ready for the Final Boss of Section A:",
+          "options": [
+            "The 'Master Manipulator' Boss Fight (Simulation).",
+            "Quitting.",
+            "Sleeping.",
+            "Lesson 1."
+          ],
+          "correct": "The 'Master Manipulator' Boss Fight (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. One final test to prove you can stand alone.",
+            "incorrect": "The Final Boss awaits."
+          }
+        }
+      ]
+    }
+  ]
+}

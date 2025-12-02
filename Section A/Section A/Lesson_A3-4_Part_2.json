@@ -1,0 +1,421 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A3",
+  "unitTitle": "The Grand Chessmaster: Machiavellianism",
+  "lessonId": "A3-4",
+  "lessonTitle": "The Detached Operator: Lack of Empathy vs. Regulation",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Spotting Emotional Detachment",
+  "objective": "To practice identifying the physical and behavioral signs of 'Cold Empathy' and 'Instrumental Emotion,' differentiating genuine feelings from calculated performances.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A3-4-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Uncanny Valley",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A Machiavellian operator is acting. Like any actor, they sometimes slip."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Look for the **Mismatch**. Does the mouth smile, but the eyes remain dead? Do they cry without tears? Is the emotion 'too perfect' or 'too delayed'?"
+        }
+      ]
+    },
+    {
+      "screenId": "A3-4-P2-S2",
+      "screenType": "Exercises",
+      "title": "Reading the Mask",
+      "exercises": [
+        {
+          "exerciseId": "A3-4-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: You tell a friend bad news. They pause for a second, then their face arranges itself into a sad expression, and they say the 'perfect' comforting words.",
+          "question": "This 'Lag' suggests:",
+          "options": [
+            "They are processing deep grief.",
+            "Cognitive Empathy (They had to *think* about the correct reaction before showing it).",
+            "They didn't hear you.",
+            "They are tired."
+          ],
+          "correct": "Cognitive Empathy (They had to *think* about the correct reaction before showing it).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Emotional empathy is instant (reflex). Cognitive empathy has a processing delay. The 'Lag' reveals the calculation.",
+            "incorrect": "Deep grief is usually immediate shock. A pause followed by a 'perfect' mask suggests a performance."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is the 'Dead Eyes' phenomenon?",
+          "options": [
+            "A medical condition.",
+            "When a person smiles with their mouth, but the muscles around their eyes (orbicularis oculi) do not move.",
+            "Wearing sunglasses.",
+            "Being blind."
+          ],
+          "correct": "When a person smiles with their mouth, but the muscles around their eyes (orbicularis oculi) do not move.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. A genuine smile (Duchenne smile) engages the eyes. A fake smile stops at the mouth. It signals a 'Social Mask'.",
+            "incorrect": "It refers to the lack of warmth or engagement in the eyes during an emotional display."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E3",
+          "type": "true-false",
+          "scene": "Scenario: 'I only cry when people are watching.'",
+          "question": "Is this a sign of Machiavellianism?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If emotion is only present when there is an audience, it is a performance tool, not an internal state.",
+            "incorrect": "Private emotion is genuine. Public-only emotion is theater."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E4",
+          "type": "fill-in",
+          "sentence": "A Detached Operator views an emotional outburst not as a loss of control, but as a (--------) maneuver.",
+          "options": [
+            "tactical",
+            "sad",
+            "accidental",
+            "loving"
+          ],
+          "answers": [
+            "tactical"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They might scream or cry *on purpose* to shock you, end a conversation, or gain sympathy.",
+            "incorrect": "It is rarely accidental. It is a tactic to change the game state."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E5",
+          "type": "scenario",
+          "scene": "Scenario: A boss fires an employee. The boss says, 'This is so hard for me,' but they are checking their watch.",
+          "question": "This is:",
+          "options": [
+            "Incongruence (Action contradicts Words).",
+            "Genuine empathy.",
+            "Multitasking.",
+            "Stress."
+          ],
+          "correct": "Incongruence (Action contradicts Words).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The body language (checking watch) reveals the true state (boredom/impatience), while the words fake the emotion (sadness).",
+            "incorrect": "If it was hard, they wouldn't care about the time. The body doesn't lie."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E6",
+          "type": "matching",
+          "question": "Match the Emotion to the Machiavellian Goal:",
+          "pairs": [
+            {
+              "term": "Fake Anger",
+              "definition": "To intimidate or silence questioning."
+            },
+            {
+              "term": "Fake Sadness",
+              "definition": "To evade accountability (Pity Play)."
+            },
+            {
+              "term": "Fake Excitement",
+              "definition": "To create 'False Rapport' (Love Bombing)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Anger shuts you up. Sadness gets you off their back. Excitement hooks you in.",
+            "incorrect": "Think: What does this emotion *achieve* for them?"
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E7",
+          "type": "scenario",
+          "scene": "Scenario: You are negotiating. The other person suddenly packs up their bag to leave (The Walkout). You panic and offer a better deal. They immediately sit back down and smile.",
+          "question": "The 'Walkout' was:",
+          "options": [
+            "A real decision to leave.",
+            "A theatrical performance to trigger your fear of loss.",
+            "An accident.",
+            "They forgot something."
+          ],
+          "correct": "A theatrical performance to trigger your fear of loss.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If they really wanted to leave, they would have left. The 'performance' of leaving was designed to break your resolve.",
+            "incorrect": "The immediate return and smile confirms it was a bluff. It was a calculated emotional pressure tactic."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E8",
+          "type": "build-sentence",
+          "question": "Arrange these words to define 'Instrumental Emotion':",
+          "words": [
+            "tool",
+            "a",
+            "feelings",
+            "Using",
+            "as"
+          ],
+          "correct": "Using feelings as a tool",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Feelings aren't 'experienced'; they are 'used' to hammer a nail or turn a screw.",
+            "incorrect": "The emotion is an instrument (tool) to achieve an end."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E9",
+          "type": "reverse-scenario",
+          "answer": "A person who remains unnaturally calm during a crisis while everyone else is panicking.",
+          "question": "This high level of regulation can indicate:",
+          "options": [
+            "High Machiavellianism / Detachment.",
+            "They are asleep.",
+            "They are stupid.",
+            "They are happy."
+          ],
+          "correct": "High Machiavellianism / Detachment.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. While it can be leadership, extreme detachment in crisis suggests a lack of emotional 'contagion.' They are observing, not feeling.",
+            "incorrect": "It's not stupidity. They perceive the danger but suppress the fear response to calculate the advantage."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: A friend asks detailed questions about your trauma. 'Tell me exactly how it felt when he left you.' They lean in, fascinated.",
+          "question": "Are they being empathetic?",
+          "options": [
+            "Yes, they care.",
+            "No, they are 'mining' your pain for data/curiosity (Voyeurism).",
+            "They are bored.",
+            "They want to date you."
+          ],
+          "correct": "No, they are 'mining' your pain for data/curiosity (Voyeurism).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Empathy usually involves sharing the pain (looking sad). Fascination or 'hunger' for details suggests they are studying you like a lab rat.",
+            "incorrect": "True empathy is painful. Fascination is intellectual. They are collecting data on your triggers."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E11",
+          "type": "fill-in",
+          "sentence": "If a person's words say 'I care,' but their eyes look (--------), believe the eyes.",
+          "options": [
+            "bored",
+            "happy",
+            "sad",
+            "angry"
+          ],
+          "answers": [
+            "bored"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Micro-expressions of boredom or contempt often leak through the mask of concern.",
+            "incorrect": "Look for the mismatch. The eyes reveal the internal state (indifference)."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: You accuse them of hurting you. They stare at you blankly until you feel awkward and stop talking.",
+          "question": "Is this 'The Blank Stare' a weapon?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is an intimidation tactic. It denies you the 'mirror' of human reaction, making you feel isolated and 'crazy' for being emotional.",
+            "incorrect": "It's not passivity. It's an active refusal to engage, designed to make you crumble."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: You get exciting news. Your partner says 'That's great' in a flat monotone, then changes the subject.",
+          "question": "This lack of 'Mirroring' indicates:",
+          "options": [
+            "They are tired.",
+            "They are withholding validation to destabilize you.",
+            "They are jealous.",
+            "All of the above."
+          ],
+          "correct": "All of the above.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A healthy partner mirrors your joy. A Detached Operator withholds it to keep you insecure (starving for approval).",
+            "incorrect": "It is a power move. By not mirroring, they signal 'Your joy is not important to me.'"
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E14",
+          "type": "ethical-dilemma",
+          "scene": "You need to fire a nice employee who is bad at the job. You can be cold (efficient) or warm (painful).",
+          "question": "What is the 'Machiavellian' view of efficiency?",
+          "options": [
+            "Be cold. Emotions waste time. 'You're fired, leave now.'",
+            "Be warm. 'I'm so sorry...'",
+            "Keep them.",
+            "Cry with them."
+          ],
+          "correct": "Be cold. Emotions waste time. 'You're fired, leave now.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. To a Machiavellian, the goal is 'Employee Gone.' Emotional processing is 'Inefficiency.' They cut the tie cleanly and move on.",
+            "incorrect": "Warmth prolongs the interaction. Machiavellians prioritize the result over the feelings."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E15",
+          "type": "multiple-choice",
+          "question": "What is the 'Switch'?",
+          "options": [
+            "A light switch.",
+            "The moment the manipulator thinks you aren't looking, and their face instantly changes from 'Warm' to 'Cold'.",
+            "A Nintendo console.",
+            "A change in plans."
+          ],
+          "correct": "The moment the manipulator thinks you aren't looking, and their face instantly changes from 'Warm' to 'Cold'.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Catching the 'Switch' is the ultimate proof of a mask. Real emotion fades slowly. Fake emotion vanishes instantly.",
+            "incorrect": "It refers to the instant dropping of the performance."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E16",
+          "type": "scenario",
+          "scene": "Scenario: Someone says, 'I love you so much,' but their arms are crossed and they are leaning away from you.",
+          "question": "Which message is true?",
+          "options": [
+            "The words ('I love you').",
+            "The body language (Closed/Distancing).",
+            "Both.",
+            "Neither."
+          ],
+          "correct": "The body language (Closed/Distancing).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Body language is harder to fake than words. When they conflict, trust the body.",
+            "incorrect": "Words are easy lies. The body reveals the subconscious detachment."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E17",
+          "type": "fill-in",
+          "sentence": "Machiavellians use (--------) questions to gather intel while giving nothing back.",
+          "options": [
+            "probing",
+            "stupid",
+            "loud",
+            "funny"
+          ],
+          "answers": [
+            "probing"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They ask questions not to connect, but to map your psychology. 'Why did you do that? How did that feel?'",
+            "incorrect": "They are probing your defenses."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E18",
+          "type": "true-false",
+          "scene": "Scenario: You feel 'lonely' even when you are with them.",
+          "question": "Is this a sign of interacting with a Detached Operator?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Because there is no emotional bridge, you are technically alone in the room. Your subconscious feels the void.",
+            "incorrect": "This is a major red flag. Connection requires two people. Detachment means only one person is present."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E19",
+          "type": "scenario",
+          "scene": "Scenario: A CEO cuts healthcare for 1,000 employees. In the interview, they talk about 'fiscal responsibility' without mentioning the people.",
+          "question": "This is:",
+          "options": [
+            "Dehumanization / Abstraction.",
+            "Forgetfulness.",
+            "Kindness.",
+            "Stupidity."
+          ],
+          "correct": "Dehumanization / Abstraction.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. By turning people into 'numbers' or 'fiscal issues,' they detach from the suffering they cause. This is a necessary tool for ruthless strategy.",
+            "incorrect": "They didn't forget; they abstracted. It protects them from guilt."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P2-E20",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Mask Cracked",
+          "scene": "You have learned to spot the Dead Eyes, the Incongruence, and the Switch. You know that just because someone *says* the right thing, doesn't mean they *feel* it.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Robot' Negotiation (Simulation).",
+            "Trusting blindly.",
+            "Crying.",
+            "Lesson A2-1."
+          ],
+          "correct": "The 'Robot' Negotiation (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you negotiate with someone who has no emotional leverage points? Let's find out.",
+            "incorrect": "Next up: Testing your skills against a pure utilitarian negotiator."
+          }
+        }
+      ]
+    }
+  ]
+}

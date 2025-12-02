@@ -1,0 +1,357 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A3",
+  "unitTitle": "The Grand Chessmaster: Machiavellianism",
+  "lessonId": "A3-1",
+  "lessonTitle": "\"The End Justifies the Means\": The Core Philosophy",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Philosophy: Cynicism & Strategy",
+  "objective": "To define Machiavellianism as a strategic, calculating approach to social interaction where results matter more than morality.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A3-1-P1-S1",
+      "screenType": "Learn",
+      "title": "The Cold Calculator",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You have mastered the **Narcissist** (The Addict). Now you meet the **Machiavellian** (The Strategist)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Narcissists want *attention*. Machiavellians want *power*. They view life not as a stage, but as a **Chessboard**. Every person is a piece to be moved."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Their Motto: 'The End Justifies the Means.' If lying gets the result, lying is the correct move."
+        }
+      ]
+    },
+    {
+      "screenId": "A3-1-P1-S2",
+      "screenType": "Exercises",
+      "title": "Defining the Strategist",
+      "exercises": [
+        {
+          "exerciseId": "A3-1-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the core difference between a Narcissist and a Machiavellian?",
+          "options": [
+            "A Narcissist wants to be *loved/admired*; a Machiavellian wants to be *effective/powerful*.",
+            "Narcissists are evil; Machiavellians are good.",
+            "Machiavellians cry a lot.",
+            "Narcissists are smarter."
+          ],
+          "correct": "A Narcissist wants to be *loved/admired*; a Machiavellian wants to be *effective/powerful*.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. A Narcissist needs you to clap for them. A Machiavellian doesn't care if you clap, as long as you do what they want.",
+            "incorrect": "It comes down to *motivation*. One is emotional (Ego), the other is strategic (Control)."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P1-E2",
+          "type": "true-false",
+          "scene": "Scenario: You catch someone lying. They don't get angry or defensive. They calmly explain, 'I lied because it was the only way to get the project approved.'",
+          "question": "Is this a Machiavellian response?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They aren't ashamed. They view the lie as a logical *tool* that worked. This is 'Strategic Deception'.",
+            "incorrect": "A Narcissist would deny the lie to protect their image. A Machiavellian admits it if it makes logical sense."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P1-E3",
+          "type": "fill-in",
+          "sentence": "To a Machiavellian, morality is a (--------), not a rule.",
+          "options": [
+            "weakness",
+            "strength",
+            "law",
+            "gift"
+          ],
+          "answers": [
+            "weakness"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They believe that caring about 'right and wrong' limits your options and makes you predictable (and therefore weak).",
+            "incorrect": "They view standard morality as a handicap that prevents you from doing 'whatever it takes' to win."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P1-E4",
+          "type": "matching",
+          "question": "Match the mindset to the personality:",
+          "pairs": [
+            {
+              "term": "Narcissist",
+              "definition": "'Look at me!'"
+            },
+            {
+              "term": "Machiavellian",
+              "definition": "'Control the board.'"
+            },
+            {
+              "term": "Healthy Person",
+              "definition": "'Let's work together.'"
+            }
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The Narcissist performs. The Machiavellian plots. The Healthy person cooperates.",
+            "incorrect": "Think of the goal. One wants attention, one wants control."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P1-E5",
+          "type": "scenario",
+          "scene": "Scenario: A manager fires an employee to save money. The manager feels no guilt, saying, 'It was a necessary calculation for the budget.'",
+          "question": "This demonstrates:",
+          "options": [
+            "Cold Empathy (Rationality over Emotion).",
+            "Narcissistic Rage.",
+            "Love Bombing.",
+            "Sadism."
+          ],
+          "correct": "Cold Empathy (Rationality over Emotion).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Machiavellians are often 'High Functioning' because they can make hard decisions without emotional baggage. They prioritize the *result*.",
+            "incorrect": "It's not rage or sadism (enjoying pain). It is simply a cold, mathematical calculation."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange the words to form the Machiavellian Golden Rule:",
+          "words": [
+            "means",
+            "justifies",
+            "The",
+            "end",
+            "the"
+          ],
+          "correct": "The end justifies the means",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If the goal (The End) is valuable, any method used to get there (The Means) is acceptable.",
+            "incorrect": "This is the core philosophy. The outcome matters more than the method."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P1-E7",
+          "type": "multiple-choice",
+          "question": "What is 'Cynicism' in this context?",
+          "options": [
+            "Being grumpy.",
+            "The belief that all humans are driven *only* by self-interest, and anyone acting 'nice' is manipulating you.",
+            "A type of comedy.",
+            "Trusting everyone."
+          ],
+          "correct": "The belief that all humans are driven *only* by self-interest, and anyone acting 'nice' is manipulating you.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. A Machiavellian assumes *everyone* is playing a game. They don't believe in genuine altruism, so they feel justified in manipulating you first.",
+            "incorrect": "It's a worldview. They believe the world is a battlefield of egos, so they must arm themselves."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P1-E8",
+          "type": "ethical-dilemma",
+          "scene": "You are in a negotiation. You know the other side is desperate. A Machiavellian advises you: 'Crush them. Offer half of what it's worth. They have no choice.'",
+          "question": "Why is this 'Dark'?",
+          "options": [
+            "It isn't; it's just business.",
+            "It exploits vulnerability for maximum gain (Zero-Sum Game) rather than seeking a fair deal.",
+            "Because you will lose money.",
+            "Because it is illegal."
+          ],
+          "correct": "It exploits vulnerability for maximum gain (Zero-Sum Game) rather than seeking a fair deal.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Machiavellianism sees life as a Zero-Sum Game: 'For me to win, you must lose.' Ethical influence seeks a Win-Win.",
+            "incorrect": "Just because it's 'business' doesn't mean it's ethical. Exploiting desperation is a hallmark of dark psychology."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P1-E9",
+          "type": "scenario",
+          "scene": "Scenario: A co-worker, 'Sarah,' acts friendly to everyone, but you notice she only helps people who have power or influence. She ignores interns.",
+          "question": "Sarah is viewing people as:",
+          "options": [
+            "Friends.",
+            "Pawns / Assets.",
+            "Threats.",
+            "Family."
+          ],
+          "correct": "Pawns / Assets.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. She is assessing 'Utility.' If you are useful (a Bishop or Rook), she uses you. If you are useless (a Pawn), she ignores you.",
+            "incorrect": "Friends treat people equally. Machiavellians treat people based on their *utility*."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P1-E10",
+          "type": "reverse-scenario",
+          "answer": "Hiding your true intentions and wearing a 'mask of sanity' or friendliness to gain an advantage.",
+          "question": "What is this strategic behavior?",
+          "options": [
+            "Strategic Deception",
+            "Narcissistic Rage",
+            "Trauma Bonding",
+            "Hoovering"
+          ],
+          "correct": "Strategic Deception",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Unlike a Narcissist who masks to hide *shame*, a Machiavellian masks to hide *plans*. They want you to think they are harmless until it's too late.",
+            "incorrect": "It's not rage or bonding. It is calculated deception to lower your guard."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P1-E11",
+          "type": "fill-in",
+          "sentence": "A Machiavellian plays the (--------) game, waiting months or years for a payoff.",
+          "options": [
+            "long",
+            "short",
+            "loud",
+            "angry"
+          ],
+          "answers": [
+            "long"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Narcissists are impulsive (they want Supply NOW). Machiavellians are patient. They plant seeds today to harvest power next year.",
+            "incorrect": "Impulsivity is the enemy of strategy. They are patient hunters."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P1-E12",
+          "type": "micro-sim",
+          "scenarioTitle": "The 'Robot' Test",
+          "steps": [
+            {
+              "scene": "You tell a friend about a sad breakup. They look at you blankly and say, 'Well, statistically, most relationships fail. You should have seen this coming.'",
+              "options": [
+                "'You are so mean!' (Emotional)",
+                "'That's true, but I'm sad.' (Vulnerable)",
+                "'I'm looking for empathy right now, not analysis.' (Boundary)",
+                "'You're right.' (Submission)"
+              ],
+              "correct": "'I'm looking for empathy right now, not analysis.' (Boundary)",
+              "feedback": {
+                "correct": "Perfect. You identified that they are responding with 'Cognitive Empathy' (Analysis) rather than 'Emotional Empathy' (Feeling). You corrected them.",
+                "incorrect": "They aren't trying to be mean; they are just detached. Calling them mean doesn't compute. You need to ask for what you need."
+              }
+            },
+            {
+              "question": "They reply: 'Empathy won't fix the problem. Logic will. Here is what you did wrong...'",
+              "options": [
+                "Listen to their advice. (They might be right)",
+                "'Stop! I don't want advice!' (Fight)",
+                "'I appreciate the logic, but I need to process the emotion first.' (Assertive)",
+                "Cry harder. (Victim)"
+              ],
+              "correct": "'I appreciate the logic, but I need to process the emotion first.' (Assertive)",
+              "feedback": {
+                "correct": "Mastery. You validated their language (Logic) while maintaining your need (Emotion). This earns a Machiavellian's respect.",
+                "incorrect": "Fighting logic with emotion makes you look 'weak' to them. You must speak their language: Utility."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You handled the 'Robot.' Machiavellians struggle to feel your pain, but they can understand it if you frame it as a 'necessary process.'",
+            "incorrect": "You got emotional with a calculator. It doesn't work."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P1-E13",
+          "type": "true-false",
+          "scene": "Scenario: A Machiavellian will never help you.",
+          "question": "Is this statement true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. They *will* help you, but only if it benefits *them*. This is called a 'Transactional Alliance.' They are great allies, as long as your goals align.",
+            "incorrect": "They aren't monsters; they are traders. If helping you helps them, they will be the best helper you have."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P1-E14",
+          "type": "multiple-choice",
+          "question": "Machiavelli famously said: 'It is better to be feared than...'",
+          "options": [
+            "Loved.",
+            "Hated.",
+            "Ignored.",
+            "Paid."
+          ],
+          "correct": "Loved.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. '...if you cannot be both.' He believed love is fickle, but fear is predictable and durable.",
+            "incorrect": "Love is volatile. Fear (respect/consequence) is a stronger leash for control."
+          }
+        },
+        {
+          "exerciseId": "A3-1-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Chessboard",
+          "scene": "You have met the Grand Chessmaster. They are cynical, strategic, and detached. They view you as a piece on the board.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Playing Chess.",
+            "Practice: Spotting the 'Game' (When someone is calculating your utility).",
+            "Becoming a narcissist.",
+            "Ignoring strategy."
+          ],
+          "correct": "Practice: Spotting the 'Game' (When someone is calculating your utility).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You need to learn how to feel when you are being 'assessed' for use.",
+            "incorrect": "The next step is application: Spotting the calculation in real-time."
+          }
+        }
+      ]
+    }
+  ]
+}

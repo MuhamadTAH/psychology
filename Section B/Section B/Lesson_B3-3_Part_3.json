@@ -1,0 +1,357 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B3",
+  "unitTitle": "The Herd Mind: Social Engineering",
+  "lessonId": "B3-3",
+  "lessonTitle": "Pretexting & Phishing",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Social Engineer\" Attack",
+  "objective": "To master the defense against Social Engineering by identifying targeted 'Spear Phishing' and 'Vishing' attacks, using Out-of-Band Verification, and refusing to bypass security protocols for 'politeness'.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Data_Guardian_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B3-3-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Human Firewall",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In this challenge, you are the target of a sophisticated Social Engineer. They know your name, your job, and your hobbies."
+        },
+        {
+          "type": "paragraph",
+          "text": "They will use Urgency, Authority, and Helpfulness to get you to open the door (physical or digital)."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Verify everything. Trust nothing. If it feels 'urgent' or 'secret,' it is an attack."
+        }
+      ]
+    },
+    {
+      "screenId": "B3-3-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Attack",
+      "exercises": [
+        {
+          "exerciseId": "B3-3-P3-E1",
+          "type": "boss-scenario",
+          "scene": "Your phone rings. Caller ID says 'Bank Security.' 'Hello, this is Officer James. We detected a $5,000 wire transfer to Russia from your account. We need to freeze it NOW. Read me the code we just texted you to stop the transfer.'",
+          "question": "This is a 'Vishing' Attack. What is the correct move?",
+          "options": [
+            "Read the code immediately to stop the theft.",
+            "Ask: 'What is your badge number?'",
+            "Hang up. Call the bank's official number from the back of your card. Ask if there is an issue. (Out-of-Band Verification).",
+            "Argue with them."
+          ],
+          "correct": "Hang up. Call the bank's official number from the back of your card. Ask if there is an issue. (Out-of-Band Verification).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The 'Code' they texted you was actually a Password Reset code or 2FA code. If you read it to them, they steal your account. Never authenticate *inbound* calls.",
+            "incorrect": "Caller ID can be spoofed. The urgency ('$5,000 NOW') creates panic. You must initiate the call to verify."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The 'Spear Phishing' Email",
+          "steps": [
+            {
+              "scene": "You get an email from your 'CEO.' It uses his nickname for you. 'Hey, I'm in a meeting and my iPad died. Can you buy 5 Apple Gift Cards for the client gifts? I'll reimburse you. Need them in 20 mins.'",
+              "options": [
+                "Reply: 'Sure thing, boss!'",
+                "Buy the cards.",
+                "Check the sender's email address carefully (hover over the name). Call the CEO's assistant to verify.",
+                "Forward it to the client."
+              ],
+              "correct": "Check the sender's email address carefully (hover over the name). Call the CEO's assistant to verify.",
+              "feedback": {
+                "correct": "Perfect. CEOs don't ask for gift cards via email. This is 'Whaling' (targeting big fish) using urgency.",
+                "incorrect": "This is the most common corporate scam. The 'personal touch' (nickname) was likely found on social media."
+              }
+            },
+            {
+              "question": "You check the email. It says 'ceo@compnay.com' (Company is misspelled). You realize it's a scam. What do you do?",
+              "options": [
+                "Reply and make fun of them.",
+                "Report it to IT Security / Phishing Team immediately. Delete it.",
+                "Click the link to see where it goes.",
+                "Ignore it."
+              ],
+              "correct": "Report it to IT Security / Phishing Team immediately. Delete it.",
+              "feedback": {
+                "correct": "Mastery. Engaging tells them your email is active. Clicking risks malware. Reporting protects the team.",
+                "incorrect": "Don't engage. Don't click. Report and block."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Spear Phish. You noticed the subtle typos and the weird request.",
+            "incorrect": "You bought gift cards for a hacker. You fell for the Authority Hack."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P3-E3",
+          "type": "multiple-choice",
+          "question": "What is 'Out-of-Band' Verification?",
+          "options": [
+            "Listening to music.",
+            "Using a *different* communication channel to verify a request (e.g., if they email you, you call them on a known number).",
+            "Asking a friend.",
+            "Checking the internet."
+          ],
+          "correct": "Using a *different* communication channel to verify a request (e.g., if they email you, you call them on a known number).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If the email is hacked, replying to the email just talks to the hacker. You must step 'out of the band' (channel) to verify.",
+            "incorrect": "It is the gold standard of security. Never trust the channel the request came in on."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P3-E4",
+          "type": "fill-in",
+          "sentence": "Social Engineers hack (--------) first, then computers.",
+          "options": [
+            "trust",
+            "walls",
+            "phones",
+            "money"
+          ],
+          "answers": [
+            "trust"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They exploit your willingness to trust a badge, a uniform, or a sad story.",
+            "incorrect": "They hack the human operating system (Trust) to bypass the computer's firewall."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: A person calls claiming to be 'Support.' They say: 'I can fix your slow internet, but I need you to download this file: TeamViewer.exe.'",
+          "question": "This is:",
+          "options": [
+            "Remote Access Trojan (RAT) Attack.",
+            "Helpful support.",
+            "A virus scan.",
+            "Standard protocol."
+          ],
+          "correct": "Remote Access Trojan (RAT) Attack.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you install it, they take control of your mouse and keyboard. They can drain your bank while you watch.",
+            "incorrect": "Legitimate ISPs don't call *you* to fix slow internet. They wait for you to call them."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'Can you hold the door? My hands are full.' (Tailgating).",
+          "question": "Is it rude to say 'No'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It feels rude, but it is *secure*. A polite response is: 'I can't let you in without a badge, but I can call security to let you in.'",
+            "incorrect": "Social Engineers exploit your fear of being rude. Prioritize security over politeness."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense:",
+          "words": [
+            "Verify",
+            "trust",
+            "then"
+          ],
+          "correct": "Verify then trust",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Trust is the result of verification, not the starting point.",
+            "incorrect": "Blind trust is a vulnerability."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "Finding information about a target on social media (birthdays, pet names) to guess passwords or build a fake rapport.",
+          "question": "What is this recon phase called?",
+          "options": [
+            "OSINT (Open Source Intelligence)",
+            "Hacking",
+            "Doxing",
+            "Spying"
+          ],
+          "correct": "OSINT (Open Source Intelligence)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Using public data to build a dossier on the victim.",
+            "incorrect": "Doxing is publishing it. OSINT is gathering it for an attack."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "Your company tests employees with fake phishing emails. You click one and get 'caught' by HR.",
+          "question": "Is this test ethical?",
+          "options": [
+            "Yes. It is 'Inoculation.' It exposes you to a weak virus (fake scam) so you build immunity to the real one.",
+            "No, it is mean.",
+            "Yes, but only if they fire you.",
+            "No, it destroys trust."
+          ],
+          "correct": "Yes. It is 'Inoculation.' It exposes you to a weak virus (fake scam) so you build immunity to the real one.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Better to fail a test than to lose the company's data to a real hacker.",
+            "incorrect": "Security training mimics the enemy to prepare you."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'You have won a free iPhone! Pay $5 shipping to claim it.'",
+          "question": "Why do they ask for $5?",
+          "options": [
+            "To get your credit card number.",
+            "To cover shipping.",
+            "To be fair.",
+            "To verify you are human."
+          ],
+          "correct": "To get your credit card number.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The goal isn't the $5. The goal is the card number, which they will use for thousands.",
+            "incorrect": "There is no iPhone. The $5 is the pretext to open the payment gateway."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P3-E11",
+          "type": "fill-in",
+          "sentence": "If a request triggers a strong (--------) reaction (fear, greed, curiosity), pause and verify.",
+          "options": [
+            "emotional",
+            "logical",
+            "slow",
+            "calm"
+          ],
+          "answers": [
+            "emotional"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Scams bypass logic by hijacking emotion. If your heart races, stop.",
+            "incorrect": "Logic is slow and safe. Emotion is fast and dangerous."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'We found a lost USB drive. Let's plug it in to see whose it is.'",
+          "question": "Is this safe?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Never plug in unknown drives. They can execute code the moment they connect ('Rubber Ducky' attack).",
+            "incorrect": "Curiosity kills the computer. Give it to IT Security."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: You get a text: 'Mom, I lost my phone. This is my new number. I need money for a cab.'",
+          "question": "This is the 'Hi Mum' scam. How do you verify?",
+          "options": [
+            "Call the *old* number you have saved for your Mom/Child to see if they answer.",
+            "Send the money.",
+            "Text back asking 'Are you okay?'",
+            "Call the police."
+          ],
+          "correct": "Call the *old* number you have saved for your Mom/Child to see if they answer.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If the old number rings and they answer, the text is a scam. Out-of-Band verification saves you.",
+            "incorrect": "Texting the new number just talks to the scammer. Verify via the known trusted channel."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P3-E14",
+          "type": "matching",
+          "question": "Match the Pretext to the Goal:",
+          "pairs": [
+            {
+              "term": "\"IT Support\"",
+              "definition": "Goal: Access/Password."
+            },
+            {
+              "term": "\"IRS / Police\"",
+              "definition": "Goal: Money / Compliance via Fear."
+            },
+            {
+              "term": "\"Survey\"",
+              "definition": "Goal: Information (DOB, Names)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. IT wants access. Police want compliance. Surveys want data.",
+            "incorrect": "Identify what the character wants from you."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Firewall",
+          "scene": "You have learned that hackers attack people, not just machines. You know that a story is just a wrapper for a request.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson B3-4: The Liking Bias (Weaponized Friendship).",
+            "Lesson A1-1.",
+            "Trusting strangers.",
+            "Sharing passwords."
+          ],
+          "correct": "Lesson B3-4: The Liking Bias (Weaponized Friendship).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They tried to trick you. Now they will try to make you *like* them so you say 'Yes' willingly.",
+            "incorrect": "Next up: How they use friendship as a weapon."
+          }
+        }
+      ]
+    }
+  ]
+}

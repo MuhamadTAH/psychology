@@ -1,0 +1,361 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B4",
+  "unitTitle": "The Pressure Cooker: Emotional Leverage",
+  "lessonId": "B4-4",
+  "lessonTitle": "Hope-Mongering: Selling the Dream",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Miracle Cure\" Scam",
+  "objective": "To master the defense against Hope-Mongering by identifying 'Miracle' claims, resisting the urge to believe in magic solutions, and demanding empirical evidence.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Skeptic_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B4-4-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: Killing the Dream",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This is the hardest challenge because you *want* the lie to be true. The manipulator will offer you a shortcut to your biggest dream."
+        },
+        {
+          "type": "paragraph",
+          "text": "They will use 'Secret Knowledge,' 'Testimonials,' and 'Urgency' to stop you from checking the facts."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Kill the hope. Demand the data. If they can't prove it, walk away."
+        }
+      ]
+    },
+    {
+      "screenId": "B4-4-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Snake Oil Salesman",
+      "exercises": [
+        {
+          "exerciseId": "B4-4-P3-E1",
+          "type": "boss-scenario",
+          "scene": "A charismatic friend pitches you: 'I found a loophole in the crypto market. It generates 50% returns monthly, guaranteed. The banks hate this. I can only get two people in. Do you want the spot?'",
+          "question": "This is a Ponzi Scheme pitch. What is the strategic move?",
+          "options": [
+            "Invest $500 to test it.",
+            "Ask: 'Can you show me the audited trade history for the last 2 years?' (Due Diligence).",
+            "Say 'Yes' immediately.",
+            "Call the police."
+          ],
+          "correct": "Ask: 'Can you show me the audited trade history for the last 2 years?' (Due Diligence).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You ignored the 'Secret' (Loophole) and the 'Urgency' (Only two spots). You asked for the 'Data' (Audited History). If it's a scam, they will have an excuse for why they can't show it.",
+            "incorrect": "Testing it with money is gambling. The 'Guaranteed Return' is the biggest red flag in finance."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Wellness Guru",
+          "steps": [
+            {
+              "scene": "Guru: 'You look tired. It's because of the toxins in your water. My $500 filter removes the 'negative frequencies' that cause fatigue.'",
+              "options": [
+                "'I am tired! I'll take it.' (Confirmation Bias)",
+                "'What specific toxins does it remove, and what lab tested this?' (The Drill Down)",
+                "'I love frequencies!' (Magical Thinking)",
+                "Buy two."
+              ],
+              "correct": "'What specific toxins does it remove, and what lab tested this?' (The Drill Down)",
+              "feedback": {
+                "correct": "Perfect. You ignored the Technobabble ('frequencies') and asked for specifics. Scammers hate specifics.",
+                "incorrect": "You bought the feeling, not the product. 'Toxins' and 'Frequencies' are classic vague words used to sell hope."
+              }
+            },
+            {
+              "question": "Guru: 'You are so skeptical. That negative energy is why you are sick. Open your mind.' (Shifting to Identity Attack).",
+              "options": [
+                "'Maybe I am too negative...' (Submission)",
+                "'My mind is open to evidence. If there is no evidence, I'm not interested.' (Holding Frame)",
+                "'You are a fraud.' (Attack)",
+                "Apologize."
+              ],
+              "correct": "'My mind is open to evidence. If there is no evidence, I'm not interested.' (Holding Frame)",
+              "feedback": {
+                "correct": "Mastery. They tried to frame 'Logic' as 'Negativity.' You reframed 'Logic' as 'Openness to Evidence.' You won.",
+                "incorrect": "Don't let them shame you for thinking critical thoughts."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Guru. You realized that 'Open Mind' is often code for 'Stop Thinking.'",
+            "incorrect": "You paid $500 for magic water. You let your desperation for health override your logic."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why do Hope-Mongers often use 'Secret Knowledge' (e.g., 'What doctors won't tell you')?",
+          "options": [
+            "To make you feel like an 'Insider' (Ego) and to explain why there is no public proof for their claims.",
+            "Because doctors are dumb.",
+            "Because they are smart.",
+            "To be quiet."
+          ],
+          "correct": "To make you feel like an 'Insider' (Ego) and to explain why there is no public proof for their claims.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It serves two purposes: Flattery (You are special enough to know) and Cover (The reason there is no proof is because of a 'Conspiracy').",
+            "incorrect": "It creates a conspiracy narrative to bulletproof the lie against fact-checking."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P3-E4",
+          "type": "fill-in",
+          "sentence": "Hope-Mongers sell the (--------) without the (--------).",
+          "options": [
+            "result",
+            "work",
+            "pain",
+            "joy"
+          ],
+          "answers": [
+            "result",
+            "work"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They promise the 'Beach Body' without the 'Diet/Exercise.' They promise the 'Million Dollars' without the 'Business Plan.'",
+            "incorrect": "Real success requires work. Scams promise results for free."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'This relationship will be different. I've never felt this way before. I'll change for you.' (Said by a serial cheater).",
+          "question": "This is:",
+          "options": [
+            "The 'Special Person' Myth / Future Faking.",
+            "True Love.",
+            "A miracle.",
+            "Honesty."
+          ],
+          "correct": "The 'Special Person' Myth / Future Faking.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They claim *you* are special enough to change their nature. It appeals to your ego ('I am the one who saved them').",
+            "incorrect": "Past behavior is the best predictor of future behavior. Words are not magic."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'Quantum energy healing works because we don't understand quantum physics yet.'",
+          "question": "Is this the 'Argument from Ignorance'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They use a scientific gap ('we don't know everything') to justify a specific lie ('so my magic must be real').",
+            "incorrect": "Just because science doesn't know *everything* doesn't mean *anything* is true."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense against hype:",
+          "words": [
+            "Extraordinary",
+            "claims",
+            "evidence",
+            "extraordinary",
+            "require"
+          ],
+          "correct": "Extraordinary claims require extraordinary evidence",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. (Carl Sagan). If they promise a miracle, they need miracle-level proof, not just a story from 'Bob in Ohio.'",
+            "incorrect": "Big claims need big proof."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A bias where we interpret vague information (like a horoscope) as being highly specific and accurate to us.",
+          "question": "What is this?",
+          "options": [
+            "The Barnum Effect / Forer Effect",
+            "Confirmation Bias",
+            "Sunk Cost",
+            "Gaslighting"
+          ],
+          "correct": "The Barnum Effect / Forer Effect",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Hope-Mongers use this to fake 'insight.' 'You have a great need for other people to like you.' Everyone does.",
+            "incorrect": "It makes you feel 'seen' by a stranger."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are selling a course. Is it ethical to show *only* the 5 star reviews and hide the refunds?",
+          "question": "Is this 'Dark'?",
+          "options": [
+            "Yes, it is 'Selection Bias' / 'Survivorship Bias' manipulation.",
+            "No, it's just marketing.",
+            "Yes, you should show only bad reviews.",
+            "No, refunds don't matter."
+          ],
+          "correct": "Yes, it is 'Selection Bias' / 'Survivorship Bias' manipulation.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. While common, it distorts reality. It creates false hope that 'everyone succeeds.' Ethical marketing admits the difficulty.",
+            "incorrect": "Hiding the failure rate is a lie by omission."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'Just manifest it! If you doubt it, you block it.'",
+          "question": "This tactic creates:",
+          "options": [
+            "A Closed Logic Loop (Self-Sealing Argument).",
+            "Empowerment.",
+            "Wealth.",
+            "Peace."
+          ],
+          "correct": "A Closed Logic Loop (Self-Sealing Argument).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If it works, they take credit. If it fails, they blame your 'doubt.' The system can never be proven wrong.",
+            "incorrect": "It traps you. You can't criticize the product because criticism is 'negative energy' that causes failure."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P3-E11",
+          "type": "fill-in",
+          "sentence": "Hope-Mongers trade your (--------) for their (--------).",
+          "options": [
+            "reality",
+            "fantasy",
+            "money",
+            "cars"
+          ],
+          "answers": [
+            "reality",
+            "fantasy"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You give them real resources (time/money) in exchange for a fantasy that never arrives.",
+            "incorrect": "The trade is Real for Fake."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'Join us, and you will save the world.'",
+          "question": "Is this the 'Messianic Trap'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They offer you a 'Higher Purpose' to get you to work for free or do unethical things. Cults use this.",
+            "incorrect": "They appeal to your desire to be a hero."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: You see a 'Before and After' photo. The 'After' photo has better lighting, posture, and a tan.",
+          "question": "You should:",
+          "options": [
+            "Recognize the manipulation of presentation.",
+            "Believe the product works.",
+            "Buy it.",
+            "Ignore the lighting."
+          ],
+          "correct": "Recognize the manipulation of presentation.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Visuals deceive. Often the change is just lighting and sucking in the gut, not the product.",
+            "incorrect": "Always audit the visual evidence."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P3-E14",
+          "type": "matching",
+          "question": "Match the Buzzword to the Trap:",
+          "pairs": [
+            {
+              "term": "Natural",
+              "definition": "Appeal to Nature Fallacy (Natural != Safe)."
+            },
+            {
+              "term": "Exclusive",
+              "definition": "Appeal to Ego (Snob Appeal)."
+            },
+            {
+              "term": "Guaranteed",
+              "definition": "False Certainty (Nothing is 100%)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Arsenic is natural. Exclusive means expensive. Guarantees are usually fake.",
+            "incorrect": "Look at the assumption behind the word."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Dream Wakes Up",
+          "scene": "You have rejected the fake cure. You accepted that life is hard and there are no magic beans. You are safe.",
+          "question": "You are ready for the Unit 4 Review:",
+          "options": [
+            "Lesson B4-5: Unit B4 Review: The Lever.",
+            "Lesson A1-1.",
+            "Dreaming.",
+            "Sleeping."
+          ],
+          "correct": "Lesson B4-5: Unit B4 Review: The Lever.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We have covered Scarcity, Reciprocity, Fear, and Hope. Now we test them all.",
+            "incorrect": "Next up: The Unit Review."
+          }
+        }
+      ]
+    }
+  ]
+}

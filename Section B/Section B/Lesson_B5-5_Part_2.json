@@ -1,0 +1,612 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B5",
+  "unitTitle": "Section B Grand Review: The Master Tactician",
+  "lessonId": "B5-5",
+  "lessonTitle": "The Section B Boss Fight",
+  "lessonType": "Review",
+  "lessonPart": 2,
+  "lessonPartTitle": "The 'Gauntlet' (Mixed Scenarios)",
+  "objective": "To test rapid identification and defense strategies against a randomized mix of NLP, Framing, Social Engineering, and Leverage tactics in high-speed scenarios.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 300,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B5-5-P2-S1",
+      "screenType": "Learn",
+      "title": "The Final Gauntlet",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In this Gauntlet, the manipulator will switch tools instantly. They might use a 'Double Bind' followed by 'Scarcity' followed by 'Love Bombing'."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Name the tactic. Break the spell. Move fast."
+        }
+      ]
+    },
+    {
+      "screenId": "B5-5-P2-S2",
+      "screenType": "Exercises",
+      "title": "Rapid Fire Defense",
+      "exercises": [
+        {
+          "exerciseId": "B5-5-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm not saying you *have to sign today*.'",
+          "question": "This sentence contains:",
+          "options": [
+            "A Negative Embedded Command.",
+            "A Double Bind.",
+            "A Reframe.",
+            "Honesty."
+          ],
+          "correct": "A Negative Embedded Command.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The subconscious ignores 'not' and hears 'sign today.'",
+            "incorrect": "It is a linguistic trick to bypass resistance."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is 'Salting the Jar'?",
+          "options": [
+            "Putting money in a tip jar to create fake Social Proof.",
+            "Cooking.",
+            "Saving money.",
+            "Stealing."
+          ],
+          "correct": "Putting money in a tip jar to create fake Social Proof.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It makes it look like 'everyone is tipping,' so you should too.",
+            "incorrect": "It is manufactured consensus."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E3",
+          "type": "scenario",
+          "scene": "Scenario: 'If you really cared about the team, you would work this weekend.'",
+          "question": "This combines:",
+          "options": [
+            "Guilt (Moral Bind) + Identity Attack.",
+            "Logic.",
+            "Kindness.",
+            "Truth."
+          ],
+          "correct": "Guilt (Moral Bind) + Identity Attack.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It links 'working for free' to 'caring.' If you refuse, you are 'selfish.'",
+            "incorrect": "It is coercion wrapped in morality."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E4",
+          "type": "fill-in",
+          "sentence": "The (--------) Effect makes a $50 item look cheap next to a $500 item.",
+          "options": [
+            "contrast",
+            "halo",
+            "scarcity",
+            "fear"
+          ],
+          "answers": [
+            "contrast"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Relative value drives decision making.",
+            "incorrect": "It is the Contrast Principle."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E5",
+          "type": "true-false",
+          "scene": "Scenario: 'You can leave anytime you want.'",
+          "question": "Does reminding people of their freedom increase compliance?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The 'But You Are Free' technique lowers resistance because the person doesn't feel coerced.",
+            "incorrect": "It feels like freedom, but it is a tactic to get a 'Yes'."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: A stranger asks to borrow your phone for an 'emergency.'",
+          "question": "The Safe Move:",
+          "options": [
+            "Dial the number for them on speaker.",
+            "Hand them the phone.",
+            "Run away.",
+            "Say no."
+          ],
+          "correct": "Dial the number for them on speaker.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Help the human, protect the device. Never unlock your phone for a stranger.",
+            "incorrect": "Handing over an unlocked phone is a security breach."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E7",
+          "type": "matching",
+          "question": "Match the Tactic to the Example:",
+          "pairs": [
+            {
+              "term": "Door-in-the-Face",
+              "definition": "Ask for $100, settle for $10."
+            },
+            {
+              "term": "Foot-in-the-Door",
+              "definition": "Ask for $1, get $10 later."
+            },
+            {
+              "term": "Lowball",
+              "definition": "Agree to $10, then add hidden fees."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Big to Small (Door). Small to Big (Foot). Change the deal (Lowball).",
+            "incorrect": "Review the direction of the request."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E8",
+          "type": "build-sentence",
+          "question": "Arrange the words to define 'Plausible Deniability':",
+          "words": [
+            "without",
+            "blame",
+            "harm",
+            "Causing",
+            "taking"
+          ],
+          "correct": "Causing harm without taking blame",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The master manipulator sets up the fall so they can say 'I didn't do it.'",
+            "incorrect": "It protects the reputation."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E9",
+          "type": "reverse-scenario",
+          "answer": "Using a 'Fake Crisis' to force a victim to bypass security protocols (e.g., 'The server is melting down, let me in!').",
+          "question": "What is this?",
+          "options": [
+            "Urgency Hacking",
+            "Love Bombing",
+            "Anchoring",
+            "Mirroring"
+          ],
+          "correct": "Urgency Hacking",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Urgency overrides protocol.",
+            "incorrect": "It relies on the desire to help in a crisis."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'We are soulmates. We shouldn't have secrets. What's your password?'",
+          "question": "This uses Liking to:",
+          "options": [
+            "Erode boundaries (Privacy).",
+            "Build trust.",
+            "Be helpful.",
+            "Be funny."
+          ],
+          "correct": "Erode boundaries (Privacy).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They frame privacy as 'secrecy' and 'distrust.' It is a control tactic.",
+            "incorrect": "Healthy love respects privacy."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E11",
+          "type": "multiple-choice",
+          "question": "What is the 'Gish Gallop'?",
+          "options": [
+            "Overwhelming an opponent with too many arguments to refute.",
+            "Speaking slowly.",
+            "Running away.",
+            "A horse race."
+          ],
+          "correct": "Overwhelming an opponent with too many arguments to refute.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It buries the truth in a mountain of lies.",
+            "incorrect": "It is a firehose of falsehoods."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'You are the only one who can help me.'",
+          "question": "Is this an 'Ego Bind'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It traps you by flattering your uniqueness. If you say no, you aren't special.",
+            "incorrect": "It appeals to vanity to force labor."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: 'I don't know if you are *smart enough* to understand this investment.'",
+          "question": "This is:",
+          "options": [
+            "The Challenge Close (Attacking Ego).",
+            "Honesty.",
+            "Kindness.",
+            "A question."
+          ],
+          "correct": "The Challenge Close (Attacking Ego).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They challenge your intelligence so you buy the product to prove them wrong.",
+            "incorrect": "It isn't honest doubt. It is a calculated insult."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E14",
+          "type": "fill-in",
+          "sentence": "The antidote to Scarcity is an (--------) Mindset.",
+          "options": [
+            "abundance",
+            "scarcity",
+            "angry",
+            "fearful"
+          ],
+          "answers": [
+            "abundance"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. There is always another deal. There is always another bus.",
+            "incorrect": "Scarcity creates panic. Abundance creates peace."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E15",
+          "type": "matching",
+          "question": "Match the Fallacy:",
+          "pairs": [
+            {
+              "term": "Ad Hominem",
+              "definition": "Attack the person."
+            },
+            {
+              "term": "Straw Man",
+              "definition": "Attack a fake argument."
+            },
+            {
+              "term": "Red Herring",
+              "definition": "Distract with a new topic."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Review the definitions in Unit B5-1.",
+            "incorrect": "Match the tactic to the definition."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E16",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm only telling you this because I like you. The price goes up tomorrow.'",
+          "question": "This combines:",
+          "options": [
+            "Liking (Rapport) + Scarcity (Time).",
+            "Truth + Justice.",
+            "Fear + Anger.",
+            "Logic + Math."
+          ],
+          "correct": "Liking (Rapport) + Scarcity (Time).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They use the 'Friend' frame to deliver the 'Urgency' threat.",
+            "incorrect": "It is a classic sales combo."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E17",
+          "type": "reverse-scenario",
+          "answer": "A phrase like 'It's interesting you say that...' used to buy time and detach emotionally.",
+          "question": "What is this?",
+          "options": [
+            "A Buffer / Pattern Interrupt",
+            "A Lie",
+            "Agreement",
+            "Submission"
+          ],
+          "correct": "A Buffer / Pattern Interrupt",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It creates a pause. It stops you from reacting impulsively.",
+            "incorrect": "It is not agreement. It is a neutral holding statement."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E18",
+          "type": "scenario",
+          "scene": "Scenario: 'You don't want to *fail*, do you?'",
+          "question": "This uses:",
+          "options": [
+            "Negative Command + Fear + Tag Question.",
+            "Kindness.",
+            "Logic.",
+            "Hope."
+          ],
+          "correct": "Negative Command + Fear + Tag Question.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. 'Don't fail' implants the image of failure. 'Do you?' demands agreement.",
+            "incorrect": "It is a complex verbal trap."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E19",
+          "type": "ethical-dilemma",
+          "scene": "You want to help a friend quit smoking. You Frame it as 'Gaining Freedom' rather than 'Quitting'.",
+          "question": "Is this manipulation?",
+          "options": [
+            "Yes, but it is ethical 'Reframing' for a positive outcome.",
+            "No, it is just words.",
+            "Yes, it is evil.",
+            "Maybe."
+          ],
+          "correct": "Yes, but it is ethical 'Reframing' for a positive outcome.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You are shaping their perception to help them achieve their own goal. This is leadership.",
+            "incorrect": "It is active influence, but the intent creates the ethics."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E20",
+          "type": "fill-in",
+          "sentence": "The (--------) is not the Territory.",
+          "options": [
+            "map",
+            "world",
+            "word",
+            "lie"
+          ],
+          "answers": [
+            "map"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The words (Map) are not the reality (Territory). NLP changes the Map.",
+            "incorrect": "Korzybski's famous quote."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E21",
+          "type": "scenario",
+          "scene": "Scenario: You ask for a refund. They say: 'You are giving up on your dreams so easily? I thought you were a winner.'",
+          "question": "This combines Hope with:",
+          "options": [
+            "Shaming / Identity Attack.",
+            "Customer Service.",
+            "Logic.",
+            "Kindness."
+          ],
+          "correct": "Shaming / Identity Attack.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They attack your identity ('Winner' vs 'Quitter') to force you to keep buying the fake hope.",
+            "incorrect": "It is the 'Sunk Cost' of the ego."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E22",
+          "type": "multiple-choice",
+          "question": "What is 'The Flinch'?",
+          "options": [
+            "A visible reaction of shock to an offer to de-legitimize the Anchor.",
+            "Being scared.",
+            "Hitting someone.",
+            "Running away."
+          ],
+          "correct": "A visible reaction of shock to an offer to de-legitimize the Anchor.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It signals 'That number is crazy' without saying it.",
+            "incorrect": "It is a negotiation tactic to reset the price range."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E23",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm just asking questions.' (JAQing off).",
+          "question": "Is this a way to spread lies without taking responsibility?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It plants the idea while allowing Plausible Deniability.",
+            "incorrect": "It pretends to be curiosity, but it is actually accusation."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E24",
+          "type": "scenario",
+          "scene": "Scenario: 'This offer is only for the Top 1% of earners. Most people don't qualify.'",
+          "question": "This combines Scarcity with:",
+          "options": [
+            "Ego / Identity Trap.",
+            "Logic.",
+            "Fear.",
+            "Kindness."
+          ],
+          "correct": "Ego / Identity Trap.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It challenges your status. It is 'The Velvet Rope.'",
+            "incorrect": "It targets vanity."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E25",
+          "type": "matching",
+          "question": "Match the Pretext to the Goal:",
+          "pairs": [
+            {
+              "term": "\"IT Support\"",
+              "definition": "Goal: Access/Password."
+            },
+            {
+              "term": "\"IRS / Police\"",
+              "definition": "Goal: Money / Compliance via Fear."
+            },
+            {
+              "term": "\"Survey\"",
+              "definition": "Goal: Information (DOB, Names)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. IT wants access. Police want compliance. Surveys want data.",
+            "incorrect": "Identify what the character wants from you."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E26",
+          "type": "scenario",
+          "scene": "Scenario: 'You can leave anytime you want... but you will never find a family like this again.'",
+          "question": "This is a:",
+          "options": [
+            "Double Bind / Fear Appeal.",
+            "Fact.",
+            "Nice goodbye.",
+            "Permission."
+          ],
+          "correct": "Double Bind / Fear Appeal.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Choice A: Stay (Submit). Choice B: Leave (Be alone forever). It uses the fear of isolation to force you to stay.",
+            "incorrect": "It sounds like permission, but the threat makes leaving psychologically impossible."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E27",
+          "type": "reverse-scenario",
+          "answer": "A technique where you mirror the other person's breathing, posture, and tone to create deep, subconscious rapport.",
+          "question": "What is this?",
+          "options": [
+            "Matching / Mirroring",
+            "Mocking",
+            "Stalking",
+            "Leading"
+          ],
+          "correct": "Matching / Mirroring",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It triggers the Liking Bias. 'They are like me, so they are safe.'",
+            "incorrect": "It builds rapport, not confusion."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E28",
+          "type": "build-sentence",
+          "question": "Arrange the words to define 'The Assumptive Close':",
+          "words": [
+            "not",
+            "Ask",
+            "if",
+            "when",
+            "but"
+          ],
+          "correct": "Ask when not if",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Do you want delivery Tuesday or Wednesday?' assumes you bought it.",
+            "incorrect": "Never ask 'Do you want to buy?' That allows a 'No'."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E29",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm not arguing, I'm educating you.'",
+          "question": "This Reframe attempts to:",
+          "options": [
+            "Establish dominance (Teacher/Student frame).",
+            "Be helpful.",
+            "Apologize.",
+            "Leave."
+          ],
+          "correct": "Establish dominance (Teacher/Student frame).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It reframes conflict as 'Education,' placing them in the superior role.",
+            "incorrect": "It is condescending, not helpful."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P2-E30",
+          "type": "case-analysis",
+          "caseTitle": "Gauntlet Complete",
+          "scene": "You have survived the 30 scenarios. You have faced every weapon in the Section B arsenal.",
+          "question": "You are ready for the Final Challenge:",
+          "options": [
+            "The 'Master Influencer' Boss Fight (The Ultimate Simulation).",
+            "Lesson A1-1.",
+            "Sleeping.",
+            "Buying a book."
+          ],
+          "correct": "The 'Master Influencer' Boss Fight (The Ultimate Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The final test is to enter the mind of the Master Tactician. Are you ready?",
+            "incorrect": "Next up: The Final Boss of Section B."
+          }
+        }
+      ]
+    }
+  ]
+}

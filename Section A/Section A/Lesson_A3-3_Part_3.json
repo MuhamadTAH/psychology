@@ -1,0 +1,359 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A3",
+  "unitTitle": "The Grand Chessmaster: Machiavellianism",
+  "lessonId": "A3-3",
+  "lessonTitle": "Weak Point Practice – Identifying \"Cynical\" Logic",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Double-Cross\"",
+  "objective": "To master the defense against betrayal by understanding that Machiavellian alliances shift instantly when interests diverge, and learning to spot the signs of a 'Double-Cross'.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Iron_Clad_Strategy_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A3-3-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: Et Tu, Brute?",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The most dangerous knife is the one in your back. In the Machiavellian world, **Loyalty** is just a calculation: 'Do I need you more than I need to betray you?'"
+        },
+        {
+          "type": "paragraph",
+          "text": "When the math changes, the alliance ends. This is the **Double-Cross**."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "In this challenge, your 'friends' will turn on you. Your goal is to spot the shift *before* they strike."
+        }
+      ]
+    },
+    {
+      "screenId": "A3-3-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Betrayal",
+      "exercises": [
+        {
+          "exerciseId": "A3-3-P3-E1",
+          "type": "boss-scenario",
+          "scene": "You and a colleague, 'Mark,' have been allies for years. You are both up for the same promotion. Mark invites you for drinks and asks: 'Hypothetically, if you got the job, what is the *first* thing you would cut from the budget?'",
+          "question": "This is not a friendly chat. This is:",
+          "options": [
+            "Intel Gathering for a Sabotage Strike.",
+            "Friendly curiosity.",
+            "Team planning.",
+            "A celebration."
+          ],
+          "correct": "Intel Gathering for a Sabotage Strike.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The 'Interest' has changed. You are now rivals. He is looking for controversial opinions to leak to the team to ruin your reputation before the decision.",
+            "incorrect": "Never share strategy with a direct rival, even a 'friend.' The math has changed."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Pivot",
+          "steps": [
+            {
+              "scene": "Your boss is under investigation. Your 'loyal' assistant suddenly starts cc'ing HR on every email they send you.",
+              "options": [
+                "'Why are you doing that?' (Confrontation)",
+                "'Good idea, keep everyone in the loop.' (Feigned Ignorance)",
+                "'Stop cc'ing HR.' (Order)",
+                "Panic."
+              ],
+              "correct": "'Good idea, keep everyone in the loop.' (Feigned Ignorance)",
+              "feedback": {
+                "correct": "Smart move. They are distancing themselves from you to survive the investigation (The Pivot). Confronting them warns them you know.",
+                "incorrect": "They are building a paper trail to protect themselves and possibly implicate you. Do not give them a reaction."
+              }
+            },
+            {
+              "question": "The assistant asks: 'Can you sign this document saying you authorized the expense?' (It was their expense).",
+              "options": [
+                "'Sure, I trust you.' (Trap Triggered)",
+                "'I need to review the receipts first.' (Due Diligence)",
+                "'No, that's your expense.' (Direct Refusal)",
+                "Sign it."
+              ],
+              "correct": "'No, that's your expense.' (Direct Refusal)",
+              "feedback": {
+                "correct": "Mastery. They tried to make you the 'Fall Guy.' You refused the bag. The alliance is officially over.",
+                "incorrect": "If you sign, you go down for their crime. Trusting them now is fatal."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Pivot. When the ship sinks, the rats (opportunists) don't just leave; they bite the captain on the way out.",
+            "incorrect": "You were set up. You are now holding the evidence for someone else's mistake."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P3-E3",
+          "type": "fill-in",
+          "sentence": "In politics and business, there are no permanent friends, only permanent (--------).",
+          "options": [
+            "interests",
+            "enemies",
+            "laws",
+            "lies"
+          ],
+          "answers": [
+            "interests"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. (Lord Palmerston). As long as your interests align, they are loyal. When interests diverge, they are enemies. It's just math.",
+            "incorrect": "Not enemies. Interests. It is impersonal."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P3-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I would never betray you, we are family.'",
+          "question": "Should you trust this statement from a Machiavellian?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct/False. Words are wind. Only trust the *leverage* you have. If they have nothing to lose by betraying you, they might.",
+            "incorrect": "Machiavellians use 'family' and 'loyalty' language to lower your guard before the strike."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: You and a partner agree to split profits 50/50. You do all the work. Just before the payout, they find a loophole to cut you out.",
+          "question": "They justify this by saying: 'I took the risk, so I deserve the reward.' This is:",
+          "options": [
+            "Rationalization of Theft.",
+            "Fair business.",
+            "A misunderstanding.",
+            "Legal."
+          ],
+          "correct": "Rationalization of Theft.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are rewriting the narrative to justify greed. They convinced themselves they *deserve* it, so they feel no guilt.",
+            "incorrect": "It violates the agreement. It is theft wrapped in a 'risk' excuse."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P3-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to reveal the source of betrayal:",
+          "words": [
+            "never",
+            "Betrayal",
+            "enemies",
+            "comes",
+            "from"
+          ],
+          "correct": "Betrayal never comes from enemies",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. An enemy attacks; they don't betray. Only a friend (or ally) can betray you because only they have your trust.",
+            "incorrect": "Watch your friends closely. Your enemies are predictable; your friends are dangerous."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P3-E7",
+          "type": "reverse-scenario",
+          "answer": "Keeping different parts of your life/business separate so that if one person betrays you, they can't destroy everything.",
+          "question": "What is this defense strategy?",
+          "options": [
+            "Compartmentalization",
+            "Paranoia",
+            "Isolation",
+            "Gaslighting"
+          ],
+          "correct": "Compartmentalization",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Like a ship with bulkheads. If one ally breaches the hull (betrays you), the ship doesn't sink because the damage is contained.",
+            "incorrect": "It's not paranoia; it's structural safety. Don't give one person all the keys."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P3-E8",
+          "type": "multiple-choice",
+          "question": "What is 'Mutually Assured Destruction' (M.A.D.) in a social context?",
+          "options": [
+            "Ensuring that if they betray you, you have enough dirt to destroy them too, so they stay loyal out of fear.",
+            "Destroying everything together.",
+            "Getting angry.",
+            "A nuclear war."
+          ],
+          "correct": "Ensuring that if they betray you, you have enough dirt to destroy them too, so they stay loyal out of fear.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is the strongest Machiavellian peace treaty. 'I won't hit you because you can hit me back.'",
+            "incorrect": "It creates stability through fear of consequence."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You discover your business partner is secretly planning to oust you. You have the power to oust them *first* tonight.",
+          "question": "Do you launch the Preemptive Strike?",
+          "options": [
+            "Yes. 'Do unto others *before* they do unto you.' (Machiavellian Survival).",
+            "No. Wait and try to talk it out. (High Risk).",
+            "Quit.",
+            "Tell them you know and hope they stop."
+          ],
+          "correct": "Yes. 'Do unto others *before* they do unto you.' (Machiavellian Survival).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. In a survival scenario against a traitor, hesitation is death. You must act while you still have the leverage.",
+            "incorrect": "Talking warns them. Hoping is not a strategy. If the betrayal is in motion, you must strike or leave immediately."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: A 'friend' constantly makes 'jokes' that humiliate you in front of important people. When you ask them to stop, they say 'I'm just trying to humble you.'",
+          "question": "This is:",
+          "options": [
+            "A Frenemy (Rival disguised as a friend).",
+            "Good advice.",
+            "Tough love.",
+            "Comedy."
+          ],
+          "correct": "A Frenemy (Rival disguised as a friend).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are sabotaging your status under the guise of friendship. This is a slow-motion betrayal.",
+            "incorrect": "It's not love. It's sabotage. They are actively lowering your social value."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P3-E11",
+          "type": "true-false",
+          "scene": "Scenario: You should forgive a strategic betrayer if they apologize.",
+          "question": "Is this wise?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. Strategic betrayal reveals character. If they did it once for profit, they will do it again when the price is right. Forgive, but never trust again.",
+            "incorrect": "The apology is likely just a tactic to regain access. The betrayal was a calculated choice, not a mistake."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P3-E12",
+          "type": "scenario",
+          "scene": "Scenario: 'I didn't tell you the whole truth because I needed you to agree, and I knew you wouldn't if you knew the risks.'",
+          "question": "This logic justifies:",
+          "options": [
+            "Manipulation by Omission.",
+            "Protection.",
+            "Leadership.",
+            "Sales."
+          ],
+          "correct": "Manipulation by Omission.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They denied your 'Informed Consent.' They stole your choice to achieve their goal.",
+            "incorrect": "This is not protection. It is treating you like a tool to be used, rather than a person with a choice."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P3-E13",
+          "type": "fill-in",
+          "sentence": "The Double-Cross often happens when you have ceased to be (--------) to the manipulator.",
+          "options": [
+            "useful",
+            "nice",
+            "rich",
+            "smart"
+          ],
+          "answers": [
+            "useful"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. When your utility drops to zero, the alliance ends. Or worse, your destruction becomes useful.",
+            "incorrect": "It's not about being nice. It's about utility. If you aren't useful, you are discardable."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P3-E14",
+          "type": "matching",
+          "question": "Match the Betrayal Sign to the Behavior:",
+          "pairs": [
+            {
+              "term": "Distance",
+              "definition": "Sudden lack of communication or eye contact."
+            },
+            {
+              "term": "Secrecy",
+              "definition": "Hiding screens, private meetings with rivals."
+            },
+            {
+              "term": "Criticism",
+              "definition": "Sudden fault-finding to justify the coming break."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They pull away (Distance), hide the plot (Secrecy), and build a case against you (Criticism) to justify the betrayal.",
+            "incorrect": "Watch for the shift. If a warm ally turns cold and critical, the knife is coming."
+          }
+        },
+        {
+          "exerciseId": "A3-3-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Knife Removed",
+          "scene": "You have faced the Cynic. You know that their 'Logic' is just an excuse for selfishness. You know that alliances are temporary and trust must be verified.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson A3-4: The Detached Operator (Lack of Empathy).",
+            "Lesson A2-1.",
+            "Revenge.",
+            "Becoming a hermit."
+          ],
+          "correct": "Lesson A3-4: The Detached Operator (Lack of Empathy).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that you understand their Logic and Strategy, we must understand their Emotion (or lack thereof).",
+            "incorrect": "Next up: The chilling calmness of the Machiavellian operator."
+          }
+        }
+      ]
+    }
+  ]
+}

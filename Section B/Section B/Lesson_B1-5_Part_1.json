@@ -1,0 +1,426 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B1",
+  "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis",
+  "lessonId": "B1-5",
+  "lessonTitle": "Unit B1 Review: The Hypnotist",
+  "lessonType": "Review",
+  "lessonPart": 1,
+  "lessonPartTitle": "Unit B1 Core Concepts Review",
+  "objective": "To synthesize and test comprehensive knowledge of NLP tactics, including Pacing and Leading, Embedded Commands, Double Binds, and the Milton Model.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B1-5-P1-S1",
+      "screenType": "Learn",
+      "title": "Unit B1 Review",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You have learned the language of the Silver Tongue. You know how they Pace your reality, Lead your actions, hide commands in stories, and trap you with false choices."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "This review covers all concepts from Lesson B1-1 to B1-4. Pass this to unlock the Unit B1 Gauntlet."
+        }
+      ]
+    },
+    {
+      "screenId": "B1-5-P1-S2",
+      "screenType": "Exercises",
+      "title": "Concept Check",
+      "exercises": [
+        {
+          "exerciseId": "B1-5-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the core principle of 'Pacing and Leading' (B1-1)?",
+          "options": [
+            "You must validate the person's current reality (Pace) before you can guide them to a new behavior (Lead).",
+            "You should walk fast.",
+            "You should disagree with them to show dominance.",
+            "You should speak loudly."
+          ],
+          "correct": "You must validate the person's current reality (Pace) before you can guide them to a new behavior (Lead).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Without Pacing (building the bridge), Leading (crossing the bridge) fails.",
+            "incorrect": "It's about alignment. Agreement builds the bridge for influence."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: 'It's noisy in here (Fact). We are tired (Fact). Let's go somewhere quiet (Suggestion).'",
+          "question": "This is an example of:",
+          "options": [
+            "A 'Yes Set' (3-Step Pacing).",
+            "Gaslighting.",
+            "A Double Bind.",
+            "A mistake."
+          ],
+          "correct": "A 'Yes Set' (3-Step Pacing).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Fact + Fact -> Lead. Your brain says 'Yes' to the facts, so it says 'Yes' to the suggestion.",
+            "incorrect": "It uses Pacing to build momentum for the Lead."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E3",
+          "type": "fill-in",
+          "sentence": "An Embedded Command is hidden using (--------) Marking (tone, pause, gesture).",
+          "options": [
+            "analog",
+            "digital",
+            "red",
+            "loud"
+          ],
+          "answers": [
+            "analog"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The words are Digital (content). The tone is Analog (meaning). The command lives in the Analog layer.",
+            "incorrect": "It refers to the non-verbal emphasis that highlights the command."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'Do you want to sign the contract now or after lunch?'",
+          "question": "Is this a Double Bind?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It gives you a choice of *time*, but removes the choice of *action* (signing). Both paths lead to 'Yes.'",
+            "incorrect": "It is the classic Illusion of Choice. The outcome (signing) is presupposed."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E5",
+          "type": "matching",
+          "question": "Match the Milton Model Pattern to the Example:",
+          "pairs": [
+            {
+              "term": "Mind Read",
+              "definition": "\"I know you are curious.\""
+            },
+            {
+              "term": "Lost Performative",
+              "definition": "\"It is important to agree.\""
+            },
+            {
+              "term": "Nominalization",
+              "definition": "\"Success is waiting.\""
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Mind Read claims knowledge. Lost Performative hides the judge. Nominalization freezes a verb into a noun.",
+            "incorrect": "Review Lesson B1-4. These are the tools of vagueness."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E6",
+          "type": "scenario",
+          "scene": "Scenario: 'Don't *think of a blue tree*.'",
+          "question": "What did your brain just do?",
+          "options": [
+            "Thought of a blue tree.",
+            "Stayed blank.",
+            "Thought of a red tree.",
+            "Ignored it."
+          ],
+          "correct": "Thought of a blue tree.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The brain cannot process a negative command without first visualizing the object. This is how 'Negative Commands' plant ideas.",
+            "incorrect": "To negate the image, you must first create it. The seed is planted."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense against NLP:",
+          "words": [
+            "implicit",
+            "Make",
+            "the",
+            "explicit"
+          ],
+          "correct": "Make the implicit explicit",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Drag the hidden command into the light. 'Are you asking me to buy this?'",
+            "incorrect": "Don't let the meaning stay hidden. Expose it."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E8",
+          "type": "reverse-scenario",
+          "answer": "A vague statement so general that anyone can find personal meaning in it (e.g., horoscopes).",
+          "question": "What is this?",
+          "options": [
+            "Barnum Statement",
+            "Fact",
+            "Lie",
+            "Detail"
+          ],
+          "correct": "Barnum Statement",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'You have a need for other people to like you.' Everyone feels this. It builds fake rapport.",
+            "incorrect": "It is named after P.T. Barnum. 'Something for everyone.'"
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E9",
+          "type": "scenario",
+          "scene": "Scenario: You try to argue. The manipulator says, 'I understand your hesitation (Pace)... and that's why we need to move forward (Lead).'",
+          "question": "They used 'And' instead of 'But.' Why?",
+          "options": [
+            "To maintain flow. 'But' erases the Pace. 'And' connects it to the Lead.",
+            "They have bad grammar.",
+            "They are confused.",
+            "It means nothing."
+          ],
+          "correct": "To maintain flow. 'But' erases the Pace. 'And' connects it to the Lead.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. 'But' creates conflict ('I hear you, but you're wrong'). 'And' creates linkage ('I hear you, and here is the solution').",
+            "incorrect": "It is a specific NLP conjunction choice. 'But' breaks rapport."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E10",
+          "type": "ethical-dilemma",
+          "scene": "You use 'Pacing' to calm down a terrified child. 'You are scared (Pace). It's okay (Lead).'",
+          "question": "Is this 'Dark'?",
+          "options": [
+            "No. The intent is to help/soothe.",
+            "Yes. All influence is dark.",
+            "Only if the child pays you.",
+            "No, because children don't count."
+          ],
+          "correct": "No. The intent is to help/soothe.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Influence is a neutral tool. Helping someone regulate their emotions is a positive use of Pacing.",
+            "incorrect": "Intent defines the morality. Calming a child is leadership, not manipulation."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E11",
+          "type": "fill-in",
+          "sentence": "The (--------) Model asks specific questions (Who? How?) to defeat the vague Milton Model.",
+          "options": [
+            "Meta",
+            "Beta",
+            "Alpha",
+            "Data"
+          ],
+          "answers": [
+            "Meta"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Milton goes up (Vague). Meta goes down (Specific). You need the Meta Model to drill for truth.",
+            "incorrect": "It is the Meta Model. It restores the deleted information."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'My friend John said *you should buy this*.'",
+          "question": "Is this a 'Quote Pattern'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Putting the command in quotes distances the speaker from the order, bypassing resistance.",
+            "incorrect": "It allows them to say the command without taking responsibility for it."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: You feel like you are in a trance. You are agreeing to everything.",
+          "question": "What should you do?",
+          "options": [
+            "Pattern Interrupt (Drop something, stand up, ask a weird question).",
+            "Keep listening.",
+            "Nod harder.",
+            "Sign the paper."
+          ],
+          "correct": "Pattern Interrupt (Drop something, stand up, ask a weird question).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You must break the physical/mental rhythm to snap out of the 'Yes Set.'",
+            "incorrect": "Don't stay in the loop. Disrupt the flow immediately."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E14",
+          "type": "multiple-choice",
+          "question": "What is 'Tag Question'?",
+          "options": [
+            "Adding 'Isn't it?' or 'Don't you?' to the end of a statement to force agreement.",
+            "Playing a game.",
+            "Asking for a name tag.",
+            "Being rude."
+          ],
+          "correct": "Adding 'Isn't it?' or 'Don't you?' to the end of a statement to force agreement.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'It's a nice day, isn't it?' forces a 'Yes' response.",
+            "incorrect": "It turns a statement into a compliance trap."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E15",
+          "type": "matching",
+          "question": "Match the Defense to the Attack:",
+          "pairs": [
+            {
+              "term": "Attack: \"A or B?\" (Double Bind)",
+              "definition": "Defense: \"Neither. I choose C.\""
+            },
+            {
+              "term": "Attack: \"You know what I mean.\" (Mind Read)",
+              "definition": "Defense: \"I don't. Tell me specifically.\""
+            },
+            {
+              "term": "Attack: \"Imagine buying...\" (Command)",
+              "definition": "Defense: \"Are you asking me to buy?\" (Explicit)"
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Reject the choice. Challenge the vagueness. Expose the command.",
+            "incorrect": "Match the specific counter-move to the tactic."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E16",
+          "type": "scenario",
+          "scene": "Scenario: 'You can *relax*... while you listen.'",
+          "question": "The hidden command is:",
+          "options": [
+            "Relax.",
+            "Listen.",
+            "You can.",
+            "While."
+          ],
+          "correct": "Relax.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is usually marked by a tone shift. 'Listen' is the conscious task; 'Relax' is the subconscious instruction.",
+            "incorrect": "Look for the state they want you to enter."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E17",
+          "type": "fill-in",
+          "sentence": "A (--------) Inflection at the end of a sentence signals authority/command.",
+          "options": [
+            "downward",
+            "upward",
+            "loud",
+            "fast"
+          ],
+          "answers": [
+            "downward"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Going down says 'Do it.' Going up says 'Will you?'",
+            "incorrect": "Up is for questions. Down is for orders."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E18",
+          "type": "reverse-scenario",
+          "answer": "The belief that 'The Map is not the Territory.' Words are just symbols, not reality.",
+          "question": "What is this concept?",
+          "options": [
+            "General Semantics / NLP Core",
+            "Gaslighting",
+            "Lying",
+            "Truth"
+          ],
+          "correct": "General Semantics / NLP Core",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Manipulators change your Map (words) to change how you navigate the Territory (life).",
+            "incorrect": "It is the foundational philosophy of NLP."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E19",
+          "type": "true-false",
+          "scene": "Scenario: 'Try to resist.'",
+          "question": "Does 'Try' imply failure?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Try' presupposes difficulty and likely failure. 'Do' presupposes success.",
+            "incorrect": "The word 'Try' programs the brain for struggle."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P1-E20",
+          "type": "case-analysis",
+          "caseTitle": "Unit B1 Knowledge Check Complete",
+          "scene": "You have reviewed the Silver Tongue. You know how language is used to program the mind.",
+          "question": "You are ready for Part 2:",
+          "options": [
+            "The Unit B1 Gauntlet (Language Patterns).",
+            "Lesson A1-1.",
+            "Talking to a wall.",
+            "Sleep."
+          ],
+          "correct": "The Unit B1 Gauntlet (Language Patterns).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now we test your ear. Can you hear the commands in real-time?",
+            "incorrect": "Next up: The Gauntlet."
+          }
+        }
+      ]
+    }
+  ]
+}

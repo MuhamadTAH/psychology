@@ -1,0 +1,265 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B5",
+  "unitTitle": "Section B Grand Review: The Master Tactician",
+  "lessonId": "B5-3",
+  "lessonTitle": "The \"Salesman\" Simulation",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "The Walk Away (Victory)",
+  "objective": "To master the ultimate negotiation tactic by demonstrating 'Outcome Independence', executing a strategic 'Walk Away', and reversing the power dynamic.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Closer_Crusher_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B5-3-P3-S1",
+      "screenType": "Learn",
+      "title": "The Ultimate Power Move",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In any negotiation, the person who needs the deal *less* has the most power. This is called **Outcome Independence**."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you are willing to walk away, the manipulator's leverage (Scarcity, Pressure) evaporates. Often, the moment you touch the doorknob is the moment they offer the real price."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Pack your bags. Stand up. Leave. See if they chase you."
+        }
+      ]
+    },
+    {
+      "screenId": "B5-3-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Exit",
+      "exercises": [
+        {
+          "exerciseId": "B5-3-P3-E1",
+          "type": "boss-scenario",
+          "scene": "The Closer slams the table. 'This is the final offer! Take it or leave it! If you walk out that door, the deal is dead forever!'",
+          "question": "This is the 'Ultimatum.' What is your move?",
+          "options": [
+            "Sit down and sign. The risk is too high.",
+            "Stand up, shake their hand, and say: 'Then I guess it's dead. Thank you for your time.' And walk to the door.",
+            "Argue: 'That's not fair!'",
+            "Beg for one more chance."
+          ],
+          "correct": "Stand up, shake their hand, and say: 'Then I guess it's dead. Thank you for your time.' And walk to the door.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You called the bluff. If the deal is truly dead, you avoided a bad contract. If they are bluffing (90% chance), they will stop you before you leave the parking lot.",
+            "incorrect": "Submitting to an Ultimatum guarantees you get the worst possible terms. You must be willing to kill the deal to save it."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Chase",
+          "steps": [
+            {
+              "scene": "You open the door to leave. The Closer yells: 'Wait! Sit down! Let me call my manager one last time. I think I can get you the employee rate.'",
+              "options": [
+                "Run back to the chair immediately and say 'Thank you!' (Eager)",
+                "Stay at the door. 'I have another meeting in 20 minutes. You have 2 minutes to give me the final number.' (Holding Frame)",
+                "Leave anyway.",
+                "Apologize for leaving."
+              ],
+              "correct": "Stay at the door. 'I have another meeting in 20 minutes. You have 2 minutes to give me the final number.' (Holding Frame)",
+              "feedback": {
+                "correct": "Perfect. Do not sit down. Standing keeps the pressure on *them*. You have reversed the Scarcity—now *your time* is the scarce resource.",
+                "incorrect": "Running back shows you were bluffing. Staying at the door shows you are still halfway gone."
+              }
+            },
+            {
+              "question": "They give you the number. It is exactly what you wanted. They look defeated.",
+              "options": [
+                "Sign it immediately. (Victory)",
+                "Push for more just to be mean. (Greed)",
+                "Say 'I'll think about it' just to hurt them. (Cruelty)",
+                "Buy them a drink."
+              ],
+              "correct": "Sign it immediately. (Victory)",
+              "feedback": {
+                "correct": "Mastery. Once you get your target, close the deal. Don't be a sore winner. Be professional.",
+                "incorrect": "Pushing past the win can blow up the deal. Take the win and go."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You executed the Walk Away. You turned their pressure back on them.",
+            "incorrect": "You folded at the door. You taught them that your 'No' means 'Maybe'."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why does 'Walking Away' reverse the Scarcity dynamic?",
+          "options": [
+            "It makes the seller realize *you* are the scarce resource (the buyer with money), and they are about to lose you.",
+            "It makes you look fast.",
+            "It saves gas money.",
+            "It doesn't."
+          ],
+          "correct": "It makes the seller realize *you* are the scarce resource (the buyer with money), and they are about to lose you.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They tried to make the *product* scarce. By leaving, you made the *sale* scarce. Fear of loss shifts to them.",
+            "incorrect": "It flips the script. You become the prize."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P3-E4",
+          "type": "fill-in",
+          "sentence": "You cannot fake the Walk Away. You must be truly (--------) to the outcome.",
+          "options": [
+            "indifferent",
+            "attached",
+            "angry",
+            "sad"
+          ],
+          "answers": [
+            "indifferent"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you are bluffing, your body language will betray you. You must genuinely be okay with *not* getting the deal.",
+            "incorrect": "Indifference is the ultimate shield."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P3-E5",
+          "type": "true-false",
+          "scene": "Scenario: 'If you leave now, I can't guarantee this price when you come back.'",
+          "question": "Is this usually a lie?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Prices don't change arbitrarily. They say this to stop you from comparing prices elsewhere. When you return, the price is usually still there.",
+            "incorrect": "It is a standard 'Fear of Loss' line. Ignore it."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P3-E6",
+          "type": "scenario",
+          "scene": "Scenario: You walk away. They *don't* chase you.",
+          "question": "What does this mean?",
+          "options": [
+            "You lost.",
+            "The deal was real, but it wasn't right for you. You saved yourself from a bad fit.",
+            "You should run back and beg.",
+            "They are mean."
+          ],
+          "correct": "The deal was real, but it wasn't right for you. You saved yourself from a bad fit.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Sometimes walking away means... walking away. And that is a victory too. Not every deal is meant to happen.",
+            "incorrect": "Never chase a deal you just rejected. That destroys your negotiation power forever."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define 'Leverage':",
+          "words": [
+            "need",
+            "Ability",
+            "without",
+            "to",
+            "survive",
+            "the"
+          ],
+          "correct": "Ability to survive without the need",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Leverage is not about force; it is about options. If you have other options, you have leverage.",
+            "incorrect": "Need destroys leverage."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A tactic where the seller acts offended by your low offer to shame you into raising it.",
+          "question": "What is this?",
+          "options": [
+            "The Flinch (Offensive)",
+            "The Hug",
+            "The Walk Away",
+            "The Pivot"
+          ],
+          "correct": "The Flinch (Offensive)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Sellers Flinch too. 'Wow, I can't believe you'd insult me with that offer!' Don't fall for the shame. Stick to the data.",
+            "incorrect": "It is theatrical indignation."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You walk away. The Closer calls you later and says, 'Okay, I'll do it, but I'll lose my commission. My kids won't eat.' (Guilt).",
+          "question": "Do you sign?",
+          "options": [
+            "Yes, save the kids.",
+            "No. Stick to the price. Their commission structure is not your responsibility.",
+            "Pay extra.",
+            "Apologize."
+          ],
+          "correct": "No. Stick to the price. Their commission structure is not your responsibility.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is the 'Last Ditch Guilt Trip.' It is unprofessional and likely a lie. Stick to the business terms.",
+            "incorrect": "Don't let empathy corrupt a contract. You are negotiating a product, not their family life."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P3-E10",
+          "type": "case-analysis",
+          "caseTitle": "Simulation Complete: The Deal Closed",
+          "scene": "You faced the Master Salesman. You spotted the Anchor, broke the Frame, resisted the Scarcity, and executed the Walk Away. You got the deal on *your* terms.",
+          "question": "You are ready for the next Boss:",
+          "options": [
+            "Lesson B5-4: The 'Politician' Simulation (Mass Manipulation).",
+            "Lesson A1-1.",
+            "Running for office.",
+            "Voting."
+          ],
+          "correct": "Lesson B5-4: The 'Politician' Simulation (Mass Manipulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You beat the 1-on-1 manipulator. Now, can you spot the manipulation used on *millions* of people at once?",
+            "incorrect": "Next up: The Rhetoric of the Politician."
+          }
+        }
+      ]
+    }
+  ]
+}

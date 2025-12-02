@@ -1,0 +1,342 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A5",
+  "unitTitle": "The Vulnerable Mind: Why We Fall For It",
+  "lessonId": "A5-1",
+  "lessonTitle": "The \"Hook\" Points: Needs & Insecurities",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "Identifying Your Emotional Needs",
+  "objective": "To identify the specific internal 'Hooks' (unmet needs for Validation, Safety, or Love) that manipulators attach themselves to.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A5-1-P1-S1",
+      "screenType": "Learn",
+      "title": "The Lock and The Key",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A manipulator cannot control you unless you have a 'Hook'—a handle they can grab onto. That handle is usually a deep, unmet emotional need."
+        },
+        {
+          "type": "paragraph",
+          "text": "They don't create your needs; they mirror them. If you need to feel smart, they play the student. If you need to feel safe, they play the protector."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "To defend yourself, you must know your own needs better than they do. If you don't know what you are hungry for, you will eat poison."
+        }
+      ]
+    },
+    {
+      "screenId": "A5-1-P1-S2",
+      "screenType": "Exercises",
+      "title": "Mapping the Hooks",
+      "exercises": [
+        {
+          "exerciseId": "A5-1-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is a 'Hook' in the context of manipulation?",
+          "options": [
+            "A sharp object.",
+            "An internal vulnerability or unmet need (like loneliness or insecurity) that a manipulator exploits to attach themselves to you.",
+            "A fishing term.",
+            "A bad habit."
+          ],
+          "correct": "An internal vulnerability or unmet need (like loneliness or insecurity) that a manipulator exploits to attach themselves to you.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is the 'in.' Without a hook, their tactics slide right off you.",
+            "incorrect": "It's a metaphor. It is the internal gap they fill to make you dependent on them."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: You feel unrecognized at work. A new colleague says: 'You are the unsung hero of this place. I'm the only one who sees your genius.'",
+          "question": "Which 'Hook' are they targeting?",
+          "options": [
+            "The Need for Validation / Recognition.",
+            "The Need for Money.",
+            "The Need for Safety.",
+            "The Need for Fun."
+          ],
+          "correct": "The Need for Validation / Recognition.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They identified that you feel invisible, so they offered you visibility. This makes them instantly valuable to you.",
+            "incorrect": "They aren't offering money or safety. They are offering 'Ego Food' (Validation)."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P1-E3",
+          "type": "fill-in",
+          "sentence": "A manipulator does not create your desire; they (--------) it.",
+          "options": [
+            "mirror",
+            "ignore",
+            "hate",
+            "buy"
+          ],
+          "answers": [
+            "mirror"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They hold up a mirror that shows you exactly what you want to see.",
+            "incorrect": "They pay close attention to your desire so they can reflect it back to you."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I've never met anyone who understands me like you do.'",
+          "question": "If you are lonely, is this phrase a 'Super-Hook'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Loneliness creates a hunger for connection. This phrase creates instant 'False Intimacy' to satisfy that hunger.",
+            "incorrect": "If you are secure, this phrase sounds clingy. If you are lonely, it sounds like salvation."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P1-E5",
+          "type": "matching",
+          "question": "Match the Need to the Bait:",
+          "pairs": [
+            {
+              "term": "Need for Safety",
+              "definition": "Bait: 'I will take care of everything. You don't have to worry.'"
+            },
+            {
+              "term": "Need for Excitement",
+              "definition": "Bait: 'Let's run away together. Life is boring without risk.'"
+            },
+            {
+              "term": "Need to be Needed (Rescuer)",
+              "definition": "Bait: 'I'm so broken. Only you can fix me.'"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They tailor the bait to the specific hunger of the victim.",
+            "incorrect": "Look at the promise. Safety offers peace. Excitement offers thrill. Rescuing offers purpose."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the danger of unmet needs:",
+          "words": [
+            "your",
+            "makes",
+            "hunger",
+            "blind",
+            "You"
+          ],
+          "correct": "Your hunger makes you blind",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you are starving, you will eat from a trash can. If you are emotionally starving, you will accept attention from a predator.",
+            "incorrect": "The need blinds you to the red flags."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "A person who feels unworthy of love, so they work extra hard to 'earn' it by doing favors for toxic people.",
+          "question": "What is this trait?",
+          "options": [
+            "People Pleasing / Fawning",
+            "Narcissism",
+            "Confidence",
+            "Laziness"
+          ],
+          "correct": "People Pleasing / Fawning",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is a trauma response. Manipulators love People Pleasers because they give endless supply with zero effort.",
+            "incorrect": "It is the opposite of Narcissism. It is self-abandonment to please others."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: You are insecure about your intelligence. The manipulator constantly asks for your advice and says, 'You are so much smarter than me.'",
+          "question": "This is:",
+          "options": [
+            "Ego-Stroking (Targeting Intellectual Insecurity).",
+            "The Truth.",
+            "Annoying.",
+            "Random."
+          ],
+          "correct": "Ego-Stroking (Targeting Intellectual Insecurity).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They found your insecurity (intelligence) and are patching it with flattery. You become addicted to them because they make you feel smart.",
+            "incorrect": "It targets a specific insecurity. If you were confident, it wouldn't work as well."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P1-E9",
+          "type": "multiple-choice",
+          "question": "Why is the 'Rescuer' personality type (someone who loves to help) a prime target for Psychopaths?",
+          "options": [
+            "Because Rescuers have lots of money.",
+            "Because Rescuers ignore red flags in their desire to 'fix' or 'heal' the damaged person (The Pity Play).",
+            "Because Rescuers are mean.",
+            "Because Psychopaths want to be healed."
+          ],
+          "correct": "Because Rescuers ignore red flags in their desire to 'fix' or 'heal' the damaged person (The Pity Play).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The Psychopath plays the 'Broken Victim.' The Rescuer jumps in to fix them. The trap shuts.",
+            "incorrect": "Psychopaths don't want healing; they want a servant. The Rescuer volunteers for the job."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P1-E10",
+          "type": "fill-in",
+          "sentence": "The best defense against manipulation is high (--------).",
+          "options": [
+            "self-worth",
+            "walls",
+            "voices",
+            "debts"
+          ],
+          "answers": [
+            "self-worth"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you validate *yourself*, you don't need their flattery. You are not hungry, so you don't take the bait.",
+            "incorrect": "Walls keep people out, but self-worth lets you interact safely. It is the immune system of the mind."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P1-E11",
+          "type": "ethical-dilemma",
+          "scene": "You realize you are staying in a toxic friendship because you are afraid of being alone.",
+          "question": "What is the hard truth?",
+          "options": [
+            "You are using the friend to soothe your anxiety, just as they are using you. You must face the solitude to heal.",
+            "It's better to be abused than alone.",
+            "You should find a new friend immediately.",
+            "Blame the friend for everything."
+          ],
+          "correct": "You are using the friend to soothe your anxiety, just as they are using you. You must face the solitude to heal.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is taking accountability for your own 'Hook.' Your fear of loneliness is the chain they hold you with.",
+            "incorrect": "Being alone is safe. Abuse is dangerous. Jumping to a new friend brings the same vulnerability."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm just an empath. I attract narcissists because I have too much light.'",
+          "question": "Is this a complete explanation?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct/False. Narcissists target everyone. Empaths/People Pleasers *let them stay* because of weak boundaries. It's not just 'light'; it's a lack of 'gates'.",
+            "incorrect": "It is a comforting myth. The hard truth is that 'attracting' them is random; 'keeping' them is a boundary issue."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: You have a high need for 'Control' and 'Order.' A manipulator acts chaotic and helpless.",
+          "question": "Why is this a trap for you?",
+          "options": [
+            "You will step in to organize their life, taking on their responsibilities.",
+            "You will hate them.",
+            "You will leave.",
+            "They will learn from you."
+          ],
+          "correct": "You will step in to organize their life, taking on their responsibilities.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They weaponize incompetence. Your need for order forces you to do their work for them. You become the servant.",
+            "incorrect": "You might hate the chaos, but your *need* to fix it traps you."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P1-E14",
+          "type": "matching",
+          "question": "Match the Internal Void to the Manipulator's Mask:",
+          "pairs": [
+            {
+              "term": "You feel Unlovable",
+              "definition": "They become the Perfect Lover (Love Bombing)."
+            },
+            {
+              "term": "You feel Weak",
+              "definition": "They become the Protector/Tyrant."
+            },
+            {
+              "term": "You feel Boring",
+              "definition": "They become the Adventurer (Risk)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They fill your gap. If you feel unlovable, their 'Love Bombing' feels like a miracle.",
+            "incorrect": "Identify what you feel you lack. That is exactly what they will pretend to be."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Mirror",
+          "scene": "You have turned the lens inward. You know that manipulators don't just break in; they enter through doors you left unlocked (your needs).",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Mapping Your Own Weak Points (Self-Audit).",
+            "Blaming the victim.",
+            "Calling the police.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: Mapping Your Own Weak Points (Self-Audit).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You need to audit your own emotional walls to find the cracks before a manipulator does.",
+            "incorrect": "Next up: A tactical self-assessment of your vulnerabilities."
+          }
+        }
+      ]
+    }
+  ]
+}

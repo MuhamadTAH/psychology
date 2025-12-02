@@ -1,0 +1,343 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A5",
+  "unitTitle": "The Vulnerable Mind: Why We Fall For It",
+  "lessonId": "A5-2",
+  "lessonTitle": "Cognitive Biases: The Brain's Backdoors",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Halo Effect & Confirmation Bias",
+  "objective": "To define and identify 'Cognitive Biases' (specifically the Halo Effect and Confirmation Bias) as the primary psychological 'backdoors' used by manipulators to bypass critical thinking.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A5-2-P1-S1",
+      "screenType": "Learn",
+      "title": "The Brain's Shortcuts",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Your brain is lazy. To save energy, it uses shortcuts called **Cognitive Biases**. These shortcuts usually help us make fast decisions."
+        },
+        {
+          "type": "paragraph",
+          "text": "However, manipulators know these shortcuts. They hack your brain's operating system to make you say 'Yes' before you even think about it."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Core Concept: You aren't falling for their lies because you are stupid; you are falling for them because your brain is working exactly as designed."
+        }
+      ]
+    },
+    {
+      "screenId": "A5-2-P1-S2",
+      "screenType": "Exercises",
+      "title": "Identifying the Glitch",
+      "exercises": [
+        {
+          "exerciseId": "A5-2-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is a 'Cognitive Bias'?",
+          "options": [
+            "Being prejudiced.",
+            "A systematic error in thinking that occurs when people are processing and interpreting information.",
+            "A brain disease.",
+            "Being smart."
+          ],
+          "correct": "A systematic error in thinking that occurs when people are processing and interpreting information.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is a 'glitch' in how we process reality. It is automatic and subconscious.",
+            "incorrect": "It's not just prejudice; it's a structural flaw in how the human brain handles data."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: You meet a very handsome, well-dressed person. You immediately assume they are also smart, kind, and successful, even though they haven't said a word.",
+          "question": "This is an example of:",
+          "options": [
+            "The Halo Effect.",
+            "Confirmation Bias.",
+            "True Love.",
+            "Intuition."
+          ],
+          "correct": "The Halo Effect.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The 'Halo Effect' is when one positive trait (Beauty) bleeds over to create a 'Halo' of other positive traits (Kindness, Intelligence) that may not exist.",
+            "incorrect": "It's not intuition. It's a bias where 'What is beautiful is good.'"
+          }
+        },
+        {
+          "exerciseId": "A5-2-P1-E3",
+          "type": "fill-in",
+          "sentence": "The Halo Effect explains why Psychopaths put so much effort into their (--------) and charm.",
+          "options": [
+            "appearance",
+            "soul",
+            "car",
+            "work"
+          ],
+          "answers": [
+            "appearance"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If they look perfect, your brain assumes they *are* perfect. It buys them time to set the trap.",
+            "incorrect": "They don't care about their soul. They care about the *image* (appearance)."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I knew he was a cheater! See? He looked at his phone!' (Ignoring the 50 times he didn't look at his phone).",
+          "question": "Is this Confirmation Bias?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Confirmation Bias is the tendency to search for, interpret, and recall information that confirms your pre-existing beliefs while ignoring evidence that contradicts them.",
+            "incorrect": "You are cherry-picking evidence to support what you already believe. That is Confirmation Bias."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P1-E5",
+          "type": "matching",
+          "question": "Match the Bias to the Manipulator's Tactic:",
+          "pairs": [
+            {
+              "term": "Halo Effect",
+              "definition": "Tactic: Dressing impeccably and using Superficial Charm."
+            },
+            {
+              "term": "Confirmation Bias",
+              "definition": "Tactic: Love Bombing (Giving you evidence that 'This is True Love')."
+            },
+            {
+              "term": "Authority Bias",
+              "definition": "Tactic: Wearing a uniform or using a fancy title."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They dress well to trigger the Halo. They Love Bomb to trigger Confirmation. They use titles to trigger Authority.",
+            "incorrect": "Think about the trigger. Beauty -> Halo. Evidence -> Confirmation. Title -> Authority."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the brain's goal:",
+          "words": [
+            "prefers",
+            "comfort",
+            "truth",
+            "over",
+            "The",
+            "brain"
+          ],
+          "correct": "The brain prefers comfort over truth",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Truth requires energy and pain. Comfort (Biases) is easy. Manipulators sell comfort.",
+            "incorrect": "Our brains are lazy. We want the easy answer."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "The tendency to trust someone simply because they are famous, have a degree, or wear a suit.",
+          "question": "What is this bias?",
+          "options": [
+            "Authority Bias",
+            "Halo Effect",
+            "Sunk Cost Fallacy",
+            "Reciprocity"
+          ],
+          "correct": "Authority Bias",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. We are evolutionarily programmed to follow the 'Leader.' Manipulators hijack this by faking the symbols of leadership.",
+            "incorrect": "It's similar to the Halo Effect, but specific to power/status symbols (Authority)."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: A 'Guru' speaks with absolute confidence. Even though their words make no sense (Word Salad), the audience nods along.",
+          "question": "Why is the audience nodding?",
+          "options": [
+            "Because they understand.",
+            "Because the 'Confidence Heuristic' makes us assume confident people are competent.",
+            "Because they are asleep.",
+            "Because the Guru is right."
+          ],
+          "correct": "Because the 'Confidence Heuristic' makes us assume confident people are competent.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. We equate confidence with correctness. Psychopaths have zero anxiety, so they appear supremely confident, bypassing our doubt.",
+            "incorrect": "They don't understand. They *assume* the Guru knows something they don't because he looks so sure."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "You realize you hired someone just because they went to the same college as you (Affinity Bias), and they are actually incompetent.",
+          "question": "What is the rational move?",
+          "options": [
+            "Keep them. It would be mean to fire a fellow alum.",
+            "Admit your bias, evaluate them on data alone, and fire them if they don't perform.",
+            "Promote them.",
+            "Ignore the problem."
+          ],
+          "correct": "Admit your bias, evaluate them on data alone, and fire them if they don't perform.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. 'Affinity Bias' (liking people like us) blinds us to red flags. You must strip away the affinity and look at the data.",
+            "incorrect": "Keeping them is succumbing to the bias. You must correct the error."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P1-E10",
+          "type": "fill-in",
+          "sentence": "Confirmation Bias makes you (--------) red flags because they contradict the 'Perfect Story' you want to believe.",
+          "options": [
+            "delete",
+            "highlight",
+            "see",
+            "fear"
+          ],
+          "answers": [
+            "delete"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Your brain literally 'deletes' the bad data (the insults, the lies) to preserve the happy feeling of the Love Bomb.",
+            "incorrect": "You don't see them. You actively filter them out to protect your ego."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P1-E11",
+          "type": "multiple-choice",
+          "question": "Why is the 'Horn Effect' dangerous?",
+          "options": [
+            "It makes you hate horns.",
+            "It is the opposite of the Halo Effect: One 'bad' trait (e.g., being ugly or awkward) makes you assume the person is bad/untrustworthy.",
+            "It makes you loud.",
+            "It hurts your ears."
+          ],
+          "correct": "It is the opposite of the Halo Effect: One 'bad' trait (e.g., being ugly or awkward) makes you assume the person is bad/untrustworthy.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. We often reject honest allies because they are awkward, while embracing slick predators because they are charming.",
+            "incorrect": "It blinds you to good people who have bad presentation."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm not biased. I see things exactly as they are.'",
+          "question": "Is this person safe from manipulation?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct/False. This is the 'Bias Blind Spot.' Thinking you are unbiased makes you the *most* vulnerable, because you stop checking your own thinking.",
+            "incorrect": "Everyone has bias. Denying it means you are flying blind."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: A scammer tells you what you *want* to hear ('You are special'). A friend tells you what you *need* to hear ('That's a scam'). You get angry at the friend.",
+          "question": "Why?",
+          "options": [
+            "The friend is mean.",
+            "Confirmation Bias. The lie felt good (confirmed your desire); the truth felt bad (challenged your desire).",
+            "The scammer is honest.",
+            "You are tired."
+          ],
+          "correct": "Confirmation Bias. The lie felt good (confirmed your desire); the truth felt bad (challenged your desire).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. We attack the truth when it threatens a comforting delusion. This is 'Shooting the Messenger.'",
+            "incorrect": "The friend challenged your bias. The scammer fed it."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P1-E14",
+          "type": "matching",
+          "question": "Match the antidote to the bias:",
+          "pairs": [
+            {
+              "term": "Halo Effect Antidote",
+              "definition": "Judge by actions over time, not first impressions."
+            },
+            {
+              "term": "Confirmation Bias Antidote",
+              "definition": "Actively look for evidence that you are *wrong*."
+            },
+            {
+              "term": "Authority Bias Antidote",
+              "definition": "Verify credentials and question the command."
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Slow down time. Seek disconfirming evidence. Verify authority.",
+            "incorrect": "To fight Confirmation Bias, you must try to prove yourself wrong."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Glitch",
+          "scene": "You now see the cracks in your own software. Your brain wants to believe the pretty lie (Halo) and ignore the ugly truth (Confirmation Bias).",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Spotting Mental Errors in Real Time (Self-Correction).",
+            "Being biased.",
+            "A lesson on fashion.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: Spotting Mental Errors in Real Time (Self-Correction).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We need to train you to catch your brain in the act of making a mistake.",
+            "incorrect": "Next up: How to debug your own mind in real-time."
+          }
+        }
+      ]
+    }
+  ]
+}

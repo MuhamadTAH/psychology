@@ -1,0 +1,333 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B4",
+  "unitTitle": "The Pressure Cooker: Emotional Leverage",
+  "lessonId": "B4-1",
+  "lessonTitle": "Scarcity: The Fear of Loss",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Pausing the Panic",
+  "objective": "To practice identifying specific Scarcity tactics (The Phantom Competitor, The Take-Away, Exploding Offers) in real-time and applying the 'Pause' defense.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B4-1-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The 24-Hour Rule",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Scarcity works by triggering a primal 'resource panic.' Your brain thinks: 'If I don't get it now, I will starve/lose.' The only defense is to stop the clock."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Defense: When you feel urgency, do the opposite. Slow down. Institute a mandatory '24-Hour Pause' before any big decision."
+        }
+      ]
+    },
+    {
+      "screenId": "B4-1-P2-S2",
+      "screenType": "Exercises",
+      "title": "Spotting the Fake Clock",
+      "exercises": [
+        {
+          "exerciseId": "B4-1-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: A real estate agent says: 'I have another couple coming to see the house in an hour. If you want it, you need to offer now.'",
+          "question": "This is:",
+          "options": [
+            "The Phantom Competitor (Artificial Scarcity).",
+            "A helpful warning.",
+            "A lie.",
+            "A fact."
+          ],
+          "correct": "The Phantom Competitor (Artificial Scarcity).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The 'other couple' might be real, or they might be a ghost. The agent uses them to force you to bid against your own fear of loss.",
+            "incorrect": "Assume the competitor is a phantom until proven otherwise. It is a pressure tactic."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is an 'Exploding Offer'?",
+          "options": [
+            "A bomb.",
+            "A job offer or deal that expires in a very short time (e.g., 'Sign by 5 PM or the deal is gone').",
+            "A great deal.",
+            "A fireworks sale."
+          ],
+          "correct": "A job offer or deal that expires in a very short time (e.g., 'Sign by 5 PM or the deal is gone').",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It forces a decision before you can do due diligence or find a better option. It limits your data.",
+            "incorrect": "It is a high-pressure deadline designed to stop comparison shopping."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P2-E3",
+          "type": "fill-in",
+          "sentence": "Scarcity makes you focus on (--------) the item, rather than the (--------) of the item.",
+          "options": [
+            "obtaining",
+            "utility",
+            "hating",
+            "cost"
+          ],
+          "answers": [
+            "obtaining",
+            "utility"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. (Cialdini). The joy of possessing a scarce item is not the same as the joy of *using* it. We fight for the prize, even if the prize is useless.",
+            "incorrect": "The chase (obtaining) replaces the logic (utility)."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm breaking up with you.' (The manipulator says this every week).",
+          "question": "Is this Scarcity applied to a relationship?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. By constantly threatening to leave (removing access), they make you fight to keep them. It makes them the 'Scarce Resource.'",
+            "incorrect": "It creates a 'fear of loss' loop. You value them more because you are always about to lose them."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P2-E5",
+          "type": "matching",
+          "question": "Match the Tactic to the Goal:",
+          "pairs": [
+            {
+              "term": "Deadline",
+              "definition": "Forces action by limiting time."
+            },
+            {
+              "term": "Exclusivity",
+              "definition": "Forces action by limiting access (Status)."
+            },
+            {
+              "term": "Competition",
+              "definition": "Forces action by creating rivalry."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Time -> Hurry. Access -> Status. Rivals -> Fight.",
+            "incorrect": "Identify the constraint. Is it the clock, the club, or the crowd?"
+          }
+        },
+        {
+          "exerciseId": "B4-1-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: A website says 'Only 2 tickets left!' You buy them. You refresh the page, and it still says 'Only 2 tickets left!'",
+          "question": "This proves:",
+          "options": [
+            "It was Fake Scarcity (Code).",
+            "They restocked quickly.",
+            "Magic.",
+            "A glitch."
+          ],
+          "correct": "It was Fake Scarcity (Code).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Many sites use code to display 'Low Stock' messages permanently to trigger FOMO.",
+            "incorrect": "It is not a glitch. It is a conversion optimization tactic."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense against urgency:",
+          "words": [
+            "power",
+            "is",
+            "Time",
+            "take",
+            "it"
+          ],
+          "correct": "Time is power take it",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'I need time to think.' If they say 'No,' the answer is 'No deal.' Never let someone rush your money.",
+            "incorrect": "Slowing down restores your power."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "When a manipulator suddenly stops texting or calling to make you panic and chase them.",
+          "question": "What is this?",
+          "options": [
+            "The Pull-Back / Strategic Withdrawal",
+            "Ghosting",
+            "Love Bombing",
+            "Honesty"
+          ],
+          "correct": "The Pull-Back / Strategic Withdrawal",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They gave you abundance (Love Bombing), then created scarcity (Silence). You chase the scarcity.",
+            "incorrect": "It creates artificial value. 'Why did they leave? I must get them back.'"
+          }
+        },
+        {
+          "exerciseId": "B4-1-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are selling a limited edition art print. There really are only 50 copies.",
+          "question": "Is marketing this as 'Limited Supply' manipulation?",
+          "options": [
+            "No. It is a fact. Scarcity is real here.",
+            "Yes, all scarcity is evil.",
+            "Yes, you should print more.",
+            "No, but you shouldn't mention it."
+          ],
+          "correct": "No. It is a fact. Scarcity is real here.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Real scarcity is a valid value driver. Dark Psychology is when scarcity is *invented*.",
+            "incorrect": "Transparency is ethical. 'Fake Limited Edition' is unethical."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'This offer is only for the Top 1% of earners. Most people don't qualify.'",
+          "question": "This combines Scarcity with:",
+          "options": [
+            "Ego / Identity Trap.",
+            "Logic.",
+            "Fear.",
+            "Kindness."
+          ],
+          "correct": "Ego / Identity Trap.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. It challenges your status. You buy it to prove you are in the 'Top 1%,' not because you want the product. It is 'The Velvet Rope.'",
+            "incorrect": "It targets vanity. 'Are you good enough for this scarce item?'"
+          }
+        },
+        {
+          "exerciseId": "B4-1-P2-E11",
+          "type": "fill-in",
+          "sentence": "If you feel a physical rush of (--------) to buy/act, you are being triggered by Scarcity.",
+          "options": [
+            "anxiety",
+            "calm",
+            "boredom",
+            "sleep"
+          ],
+          "answers": [
+            "anxiety"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Scarcity feels like a tight chest or racing heart. It is the fear of loss.",
+            "incorrect": "Calm means you are thinking. Anxiety means you are reacting."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I have a waiting list of clients.'",
+          "question": "Does this increase the perceived competence of the professional?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Busy' = 'In Demand' = 'Good.' If a doctor has no wait time, we wonder if they are bad. Manipulators fake a waiting list.",
+            "incorrect": "We assume popular things are high quality (Social Proof + Scarcity)."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: You are negotiating a salary. The boss says: 'We have a lot of candidates interested in this role.'",
+          "question": "The defense is:",
+          "options": [
+            "Call the bluff. 'I understand. I have other interviews too.' (Mutual Scarcity).",
+            "Panic and accept a lower salary.",
+            "Beg.",
+            "Get angry."
+          ],
+          "correct": "Call the bluff. 'I understand. I have other interviews too.' (Mutual Scarcity).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Fight fire with fire. Show that *you* are also a scarce resource. If you are abundant (desperate), you lose value.",
+            "incorrect": "Panic lowers your value. Calm confidence raises it."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P2-E14",
+          "type": "multiple-choice",
+          "question": "Why is the 'McRib' marketing strategy effective?",
+          "options": [
+            "It creates Artificial Scarcity. It is only available for a short time, so people rush to eat it.",
+            "It tastes good.",
+            "It is cheap.",
+            "It is healthy."
+          ],
+          "correct": "It creates Artificial Scarcity. It is only available for a short time, so people rush to eat it.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If the McRib were always available, no one would care. The 'Limited Time' makes it an event.",
+            "incorrect": "It works because it goes away. Scarcity drives demand."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Mirage",
+          "scene": "You can now see the clock is fake. You know the 'lines' are staged. You know the 'sold out' signs are code.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'FOMO' Simulation (Resisting the urge to jump).",
+            "Buying tickets.",
+            "Running.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'FOMO' Simulation (Resisting the urge to jump).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you stand still while everyone else runs? Let's test it.",
+            "incorrect": "Next up: Defeating the Fear Of Missing Out."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B4",
+  "unitTitle": "The Pressure Cooker: Emotional Leverage",
+  "lessonId": "B4-2",
+  "lessonTitle": "Weaponized Reciprocity: The Debt Trap",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Obligation\" Escape",
+  "objective": "To master the defense against Weaponized Reciprocity by identifying 'Unsolicited Favors' as manipulation, neutralizing the feeling of debt, and refusing to engage in unequal exchanges.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Debt_Breaker_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B4-2-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Gift Horse",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Rule of Reciprocity is so strong that we will often do things we hate just to avoid feeling 'indebted.' Manipulators count on this."
+        },
+        {
+          "type": "paragraph",
+          "text": "In this challenge, you will be offered gifts, favors, and 'special deals.' Your brain will scream 'Pay them back!' You must scream back: 'I didn't ask for this!'"
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Accept the gift freely without accepting the obligation, OR reject the gift entirely."
+        }
+      ]
+    },
+    {
+      "screenId": "B4-2-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Free Lunch",
+      "exercises": [
+        {
+          "exerciseId": "B4-2-P3-E1",
+          "type": "boss-scenario",
+          "scene": "A vendor invites you to a luxury box at a sports game. 'No business talk, just fun!' At the game, they casually mention: 'I'm really hoping we can close that deal next week. I'd hate to lose this partnership.'",
+          "question": "This is the 'Wining and Dining' trap. What is your move?",
+          "options": [
+            "Agree to the deal. You are enjoying their hospitality.",
+            "Feel guilty and hint that you will sign.",
+            "Separate the Hospitality from the Business. 'Thank you for the game. Regarding the deal, we will evaluate it strictly on the numbers next week.'",
+            "Leave immediately."
+          ],
+          "correct": "Separate the Hospitality from the Business. 'Thank you for the game. Regarding the deal, we will evaluate it strictly on the numbers next week.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You accepted the gift (Hospitality) but rejected the debt (The Deal). A professional vendor accepts this. A manipulator will get angry.",
+            "incorrect": "If you let the game influence the deal, you are paying $50,000 for a $500 ticket. That is a bad trade."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Unsolicited Help",
+          "steps": [
+            {
+              "scene": "A neighbor mows your lawn while you are at work. You didn't ask them to. They knock on your door: 'I mowed your lawn! Looks great, right?'",
+              "options": [
+                "'Oh my gosh, thank you! How much do I owe you?' (Trap Triggered)",
+                "'Wow, thank you! That was very kind of you.' (Accepting the Gift)",
+                "'I didn't ask you to do that.' (Aggressive)",
+                "Ignore them."
+              ],
+              "correct": "'Wow, thank you! That was very kind of you.' (Accepting the Gift)",
+              "feedback": {
+                "correct": "Perfect. You accepted it as a 'Kindness,' not a 'Contract.' You offered gratitude, not money.",
+                "incorrect": "Asking 'How much?' turns it into a transaction you didn't approve. Don't open your wallet yet."
+              }
+            },
+            {
+              "question": "Neighbor: 'Yeah, it was hard work. Hey, I need a ride to the airport tomorrow at 4 AM. Can you take me? Since I helped you out?'",
+              "options": [
+                "'I guess I have to...' (Submission)",
+                "'I appreciate the lawn, but I can't do 4 AM. I can help you call an Uber.' (Boundary)",
+                "'You only mowed my lawn to use me!' (Accusation)",
+                "Yes."
+              ],
+              "correct": "'I appreciate the lawn, but I can't do 4 AM. I can help you call an Uber.' (Boundary)",
+              "feedback": {
+                "correct": "Mastery. You refused the 'Unequal Exchange' (Lawn < 4 AM Airport Run). You kept the gratitude but rejected the obligation.",
+                "incorrect": "You traded a $30 lawn service for 3 hours of sleep and a drive. Bad trade. You were manipulated."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You broke the Reciprocity Loop. You didn't let an unasked favor control your schedule.",
+            "incorrect": "You let them guilt you into a massive favor. You are now their servant."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why does 'Reciprocal Concessions' (Door-in-the-Face) work so well?",
+          "options": [
+            "Because we see 'compromise' as a virtue. If they back down, we feel social pressure to back down too.",
+            "Because we like them.",
+            "Because they are scary.",
+            "It doesn't work."
+          ],
+          "correct": "Because we see 'compromise' as a virtue. If they back down, we feel social pressure to back down too.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. We are trained to meet people in the middle. Manipulators start 'Way Out' so the 'Middle' is exactly where they want to be.",
+            "incorrect": "It exploits our social training to be fair."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P3-E4",
+          "type": "fill-in",
+          "sentence": "A favor done with the expectation of a return favor is not a gift; it is a (--------).",
+          "options": [
+            "loan",
+            "debt",
+            "love",
+            "fun"
+          ],
+          "answers": [
+            "loan"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Or a 'Debt.' If they are keeping score, it is a transaction. Treat it like business.",
+            "incorrect": "It is not love. It is accounting."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'I stayed late to help you!' (They stayed 10 minutes). 'Now you need to cover my shift.' (8 hours).",
+          "question": "This is:",
+          "options": [
+            "The Unequal Exchange.",
+            "Fair.",
+            "Teamwork.",
+            "Kindness."
+          ],
+          "correct": "The Unequal Exchange.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are trading pennies for dollars. Reciprocity often distorts value.",
+            "incorrect": "10 minutes does not equal 8 hours. Don't let guilt blind you to the math."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: A manipulator says, 'After all I've done for you...'",
+          "question": "Is this the 'activator' phrase for Reciprocity Guilt?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are calling in the debt. They are reminding you of the ledger to force compliance.",
+            "incorrect": "It is a specific trigger phrase designed to make you feel small and ungrateful."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense:",
+          "words": [
+            "is",
+            "a",
+            "obligation",
+            "No",
+            "gift",
+            "an"
+          ],
+          "correct": "No gift is an obligation",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If it was a gift, it was free. If it requires payment, it was a sale. You have the right to refuse a sale.",
+            "incorrect": "Don't let them blur the line between 'Gift' and 'Contract'."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "When a company gives you a 'Free Trial' but requires a credit card, knowing you will forget to cancel.",
+          "question": "What is this?",
+          "options": [
+            "The Inertia Trap / Forced Continuity",
+            "Generosity",
+            "The Door-in-the-Face",
+            "Scarcity"
+          ],
+          "correct": "The Inertia Trap / Forced Continuity",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They give you the 'Gift' (Trial) to get the 'Data' (Card). They bank on your laziness (Inertia) to keep paying.",
+            "incorrect": "It uses Reciprocity (Free Trial) to start the billing cycle."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "A friend buys you expensive gifts you can't afford to repay. You feel uncomfortable.",
+          "question": "What do you do?",
+          "options": [
+            "Accept them and feel guilty.",
+            "Buy them expensive gifts on credit.",
+            "Tell them: 'I appreciate this, but I can't reciprocate at this level. Please stop, or I can't accept them.'",
+            "Ghost them."
+          ],
+          "correct": "Tell them: 'I appreciate this, but I can't reciprocate at this level. Please stop, or I can't accept them.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is the 'Leveling' conversation. You are resetting the expectations of the relationship to equality.",
+            "incorrect": "Going into debt to match a rich friend is the Reciprocity Trap in action. Stop the cycle."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: A street performer puts the hat in your face and says loudly, 'Support the arts!'",
+          "question": "This combines Reciprocity (Performance) with:",
+          "options": [
+            "Public Shaming / Social Pressure.",
+            "Talent.",
+            "Kindness.",
+            "Logic."
+          ],
+          "correct": "Public Shaming / Social Pressure.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If you don't pay, you look cheap in front of the crowd. It forces the transaction.",
+            "incorrect": "It is aggressive monetization of social norms."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P3-E11",
+          "type": "fill-in",
+          "sentence": "The Rule of Reciprocity was designed for (--------), not exploitation.",
+          "options": [
+            "survival",
+            "war",
+            "money",
+            "pain"
+          ],
+          "answers": [
+            "survival"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'I share my food today; you share yours tomorrow.' It kept humans alive. Manipulators hack this survival code.",
+            "incorrect": "It is a pro-social instinct that is being abused."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I forgave you for X, so you have to forgive me for Y.'",
+          "question": "Is this Weaponized Reciprocity?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Forgiveness should be about the specific incident, not a 'token' to be traded for future immunity.",
+            "incorrect": "It turns forgiveness into a currency. 'I let you get away with it, so let me get away with it.'"
+          }
+        },
+        {
+          "exerciseId": "B4-2-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: You are negotiating. They say: 'I've already come down $1,000. You haven't moved an inch. Be fair.'",
+          "question": "The defense is:",
+          "options": [
+            "'You started way too high. Your 'movement' was just getting to a realistic price. I don't owe you for stopping your gouging.'",
+            "Move $500.",
+            "Apologize.",
+            "Leave."
+          ],
+          "correct": "'You started way too high. Your 'movement' was just getting to a realistic price. I don't owe you for stopping your gouging.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Do not reward them for setting a High Anchor and then retreating. That is the 'Concession Trap.'",
+            "incorrect": "If you move just because they moved, you fall for the Anchor/Contrast/Reciprocity combo."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P3-E14",
+          "type": "matching",
+          "question": "Match the type of Reciprocity:",
+          "pairs": [
+            {
+              "term": "Positive Reciprocity",
+              "definition": "You help me, I help you (Healthy)."
+            },
+            {
+              "term": "Negative Reciprocity",
+              "definition": "You hurt me, I hurt you (Revenge)."
+            },
+            {
+              "term": "Weaponized Reciprocity",
+              "definition": "I force a gift on you to control you (Manipulation)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Not all reciprocity is bad. Healthy relationships thrive on Positive Reciprocity. Manipulation uses the Weaponized form.",
+            "incorrect": "Distinguish between mutual aid and a trap."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Debt Paid",
+          "scene": "You have learned to cut the strings. You can accept a gift without accepting the guilt. You are debt-free.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson B4-3: Fear-Mongering (The Boogeyman).",
+            "Lesson A1-1.",
+            "Buying lunch.",
+            "Smiling."
+          ],
+          "correct": "Lesson B4-3: Fear-Mongering (The Boogeyman).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that we've handled 'Greed/Guilt' (Reciprocity) and 'Time' (Scarcity), we must handle the biggest lever of all: Fear.",
+            "incorrect": "Next up: The manufacture of Fear."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B3",
+  "unitTitle": "The Herd Mind: Social Engineering",
+  "lessonId": "B3-3",
+  "lessonTitle": "Pretexting & Phishing",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: Creating a Fake Scenario",
+  "objective": "To define 'Pretexting' as the act of creating a fabricated scenario to steal information, and to identify its digital variants (Phishing, Vishing, Smishing, Baiting).",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 150,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B3-3-P1-S1",
+      "screenType": "Learn",
+      "title": "The Art of the Con",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Social Engineers don't usually 'hack' computers with code; they hack *people* with stories."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is called **Pretexting**. It is the act of creating an invented scenario (the pretext) to engage a victim and trick them into revealing information or performing an action."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Rule: If the story makes you feel Fear, Curiosity, or Greed, it is likely a Pretext."
+        }
+      ]
+    },
+    {
+      "screenId": "B3-3-P1-S2",
+      "screenType": "Exercises",
+      "title": "Defining the Pretext",
+      "exercises": [
+        {
+          "exerciseId": "B3-3-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is **Pretexting**?",
+          "options": [
+            "Texting before calling.",
+            "The practice of presenting oneself as someone else (or lying about the situation) to obtain private information.",
+            "Writing a book preface.",
+            "Being honest."
+          ],
+          "correct": "The practice of presenting oneself as someone else (or lying about the situation) to obtain private information.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is acting. The scammer plays a character (IT Support, Bank Teller, CEO) to fool you.",
+            "incorrect": "It isn't about texting; it's about the 'Pretext' (the fake reason/story)."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: A stranger calls you. 'Hi, I'm surveying pet owners for a new dog park. What is your dog's name and your mother's maiden name?'",
+          "question": "What is the goal of this Pretext?",
+          "options": [
+            "To build a dog park.",
+            "To steal your security question answers (Data Mining).",
+            "To make friends.",
+            "To sell dog food."
+          ],
+          "correct": "To steal your security question answers (Data Mining).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They wrap the theft in a harmless wrapper (a survey). They are stealing the keys to your bank account.",
+            "incorrect": "The dog park is the lie (the Pretext). The data theft is the reality."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P1-E3",
+          "type": "fill-in",
+          "sentence": "Phishing is just (--------) used via email.",
+          "options": [
+            "pretexting",
+            "hacking",
+            "coding",
+            "loving"
+          ],
+          "answers": [
+            "pretexting"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Phishing is the digital version of the con. The email contains the fake story.",
+            "incorrect": "It relies on psychology (storytelling), not coding skills."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'We need you to verify your account immediately or it will be locked.'",
+          "question": "Is Urgency a key component of Pretexting?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Urgency stops you from verifying the story. If you had time to think, you would realize banks don't email you for passwords.",
+            "incorrect": "Urgency is the engine of the con."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P1-E5",
+          "type": "matching",
+          "question": "Match the Attack Type:",
+          "pairs": [
+            {
+              "term": "Phishing",
+              "definition": "Fake emails (Mass attack)."
+            },
+            {
+              "term": "Vishing",
+              "definition": "Fake phone calls (Voice Phishing)."
+            },
+            {
+              "term": "Smishing",
+              "definition": "Fake texts (SMS Phishing)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Learn the medium. Email = Phishing. Phone = Vishing. Text = Smishing.",
+            "incorrect": "It refers to the delivery method of the pretext."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the Social Engineer's goal:",
+          "words": [
+            "human",
+            "Hack",
+            "computer",
+            "the",
+            "not",
+            "the"
+          ],
+          "correct": "Hack the human not the computer",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Humans are the weakest link in security. It is easier to ask for a password than to crack encryption.",
+            "incorrect": "They target the person's trust, not the machine's firewall."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "Following an authorized person into a secure building by relying on their politeness to hold the door.",
+          "question": "What is this physical pretext called?",
+          "options": [
+            "Tailgating / Piggybacking",
+            "Dumpster Diving",
+            "Phishing",
+            "Shoulder Surfing"
+          ],
+          "correct": "Tailgating / Piggybacking",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The pretext is 'I forgot my badge' or just looking busy. It exploits social norms (politeness) to bypass security.",
+            "incorrect": "Dumpster diving is looking for trash. Tailgating is walking in behind someone."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: Someone leaves a USB drive labeled 'Executive Salaries' in the company parking lot.",
+          "question": "This tactic is called:",
+          "options": [
+            "Baiting.",
+            "A mistake.",
+            "Information sharing.",
+            "Phishing."
+          ],
+          "correct": "Baiting.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This exploits curiosity. When you plug it in to look at the files, it installs malware. It is a physical trap.",
+            "incorrect": "It wasn't lost; it was placed there. The label 'Salaries' is the bait to trigger curiosity."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P1-E9",
+          "type": "multiple-choice",
+          "question": "What is **Quid Pro Quo** in social engineering?",
+          "options": [
+            "Offering a benefit (service/info) in exchange for information.",
+            "Stealing money.",
+            "Speaking Latin.",
+            "Threatening someone."
+          ],
+          "correct": "Offering a benefit (service/info) in exchange for information.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Example: 'I'm from IT support. If you give me your password, I can fix your slow internet.' They offer a 'fix' to get the data.",
+            "incorrect": "It means 'something for something.' It relies on the victim's desire for a quick solution."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P1-E10",
+          "type": "fill-in",
+          "sentence": "Social Engineers often use (--------) names and details found on social media to build trust.",
+          "options": [
+            "specific",
+            "fake",
+            "random",
+            "angry"
+          ],
+          "answers": [
+            "specific"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If they know your pet's name or your boss's name, you assume they are insiders. This is called OSINT (Open Source Intelligence).",
+            "incorrect": "Random details don't build trust. Specific, personal details do."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P1-E11",
+          "type": "scenario",
+          "scene": "Scenario: 'This is the CEO. I'm in a meeting and I need you to wire $50,000 to this vendor immediately. Don't call me.'",
+          "question": "This is a specialized attack called:",
+          "options": [
+            "Whaling / CEO Fraud.",
+            "Normal business.",
+            "Vishing.",
+            "Baiting."
+          ],
+          "correct": "Whaling / CEO Fraud.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Whaling' targets high-level executives or uses their identity. It relies on Authority Bias to bypass verification.",
+            "incorrect": "It is not normal. CEOs rarely bypass accounting protocols via urgent emails."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm from the Help Desk. We detected a virus on your computer.'",
+          "question": "Is this a Pretext?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the most common Vishing pretext. They create fear (virus) to sell a fake solution (giving them access).",
+            "incorrect": "Microsoft/Apple do not call you about viruses. This is always a scam."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P1-E13",
+          "type": "matching",
+          "question": "Match the Tactic to the Psychological Trigger:",
+          "pairs": [
+            {
+              "term": "Phishing Email: \"Account Locked\"",
+              "definition": "Trigger: Fear"
+            },
+            {
+              "term": "Baiting: \"Free USB Drive\"",
+              "definition": "Trigger: Curiosity"
+            },
+            {
+              "term": "Tailgating: \"Hold the door please\"",
+              "definition": "Trigger: Politeness / Liking"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Fear forces action. Curiosity opens doors. Politeness lowers defenses.",
+            "incorrect": "Analyze the emotion. Why did the victim say yes?"
+          }
+        },
+        {
+          "exerciseId": "B3-3-P1-E14",
+          "type": "scenario",
+          "scene": "Scenario: A 'Watering Hole' attack infects a website that a specific group of people visits (e.g., a company intranet or industry blog).",
+          "question": "Why is this effective?",
+          "options": [
+            "It exploits the Trust users have in that specific site.",
+            "It is easy to do.",
+            "It targets everyone.",
+            "It is cheap."
+          ],
+          "correct": "It exploits the Trust users have in that specific site.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Instead of chasing the victim, the attacker poisons the 'water' where the victim goes to drink. It relies on established trust.",
+            "incorrect": "It is highly targeted, not random. It attacks a trusted location."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Storyteller",
+          "scene": "You understand that every scam starts with a story. The story explains why they need the info, why it's urgent, and why you should trust them.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Spotting the Discrepancy (Finding the holes in the story).",
+            "Writing fiction.",
+            "Learning to code.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: Spotting the Discrepancy (Finding the holes in the story).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We need to train you to spot the glitches in the pretext. Why is the URL wrong? Why is the tone off?",
+            "incorrect": "Next up: Detecting the flaws in the fake scenario."
+          }
+        }
+      ]
+    }
+  ]
+}

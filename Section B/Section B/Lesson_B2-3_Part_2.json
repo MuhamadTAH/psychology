@@ -1,0 +1,340 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B2",
+  "unitTitle": "The Frame Game: Controlling Perception",
+  "lessonId": "B2-3",
+  "lessonTitle": "The Contrast Principle",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Spotting Relative Value Traps",
+  "objective": "To practice identifying specific Contrast tactics (The Decoy Effect, Price Relativity, Comparison Traps) in sales, relationships, and negotiations.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B2-3-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Ugly Friend",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Manipulators often introduce a third option—a 'Decoy'—that is obviously terrible. Its only job is to make the option *they* want you to pick look superior."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Ignore the Decoy. Evaluate every option on its own merit, not by comparing it to the trash."
+        }
+      ]
+    },
+    {
+      "screenId": "B2-3-P2-S2",
+      "screenType": "Exercises",
+      "title": "The Comparison Game",
+      "exercises": [
+        {
+          "exerciseId": "B2-3-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: At the movies. Small Popcorn: $3. Medium Popcorn: $6.50. Large Popcorn: $7.",
+          "question": "What is the role of the Medium Popcorn?",
+          "options": [
+            "It is a popular size.",
+            "It is a **Decoy** designed to make the Large look like a great deal (only $0.50 more!).",
+            "It is priced fairly.",
+            "It is a mistake."
+          ],
+          "correct": "It is a **Decoy** designed to make the Large look like a great deal (only $0.50 more!).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. No one buys the Medium. It exists solely to push you from Small ($3) to Large ($7) by making the Large feel like 'free value.'",
+            "incorrect": "The Medium is priced irrationally high to manipulate the perception of the Large."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is the **Decoy Effect** (Asymmetric Dominance)?",
+          "options": [
+            "Hunting ducks.",
+            "Introducing a third option that is inferior to one of the existing options to shift preference toward the superior option.",
+            "Lying about quality.",
+            "A type of fishing."
+          ],
+          "correct": "Introducing a third option that is inferior to one of the existing options to shift preference toward the superior option.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you can't decide between A and B, I add C (which is worse than B). Suddenly, B looks amazing.",
+            "incorrect": "It is a specific cognitive bias where a 'dummy' option steers the choice."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P2-E3",
+          "type": "fill-in",
+          "sentence": "We do not judge value in isolation; we judge value by (--------).",
+          "options": [
+            "comparison",
+            "weight",
+            "color",
+            "love"
+          ],
+          "answers": [
+            "comparison"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Is $100 expensive? It depends. For a candy bar, yes. For a car, no. Comparison creates the value.",
+            "incorrect": "The brain needs a reference point to determine value."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: You drive 20 minutes to save $10 on a $20 shirt. You would *not* drive 20 minutes to save $10 on a $1,000 TV.",
+          "question": "Is this irrational?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. $10 is $10. Your wealth changes by the same amount. But because of **Relativity**, $10 feels huge next to $20 and tiny next to $1,000.",
+            "incorrect": "It is irrational. The value of time and money should be constant, but Contrast warps it."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P2-E5",
+          "type": "matching",
+          "question": "Match the Scenario to the Contrast Trap:",
+          "pairs": [
+            {
+              "term": "Dating",
+              "definition": "\"I'm better than your ex who beat you.\""
+            },
+            {
+              "term": "Sales",
+              "definition": "\"This house is expensive, but look at this ugly one for the same price.\""
+            },
+            {
+              "term": "Negotiation",
+              "definition": "\"I asked for $100, but I'll accept $50.\""
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Dating uses 'The Low Bar.' Sales uses 'The Ugly Decoy.' Negotiation uses 'Reciprocal Concession.'",
+            "incorrect": "Look at the comparison point. The abuser, the ugly house, the high price."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: A partner yells at you for forgetting chores. You cry. They stop yelling and say calmly: 'I'm not mad anymore. Let's watch a movie.' You feel overwhelming gratitude.",
+          "question": "Why?",
+          "options": [
+            "They are nice.",
+            "The **Contrast** between 'Fear' and 'Calm' creates an artificial high (Relief).",
+            "You love movies.",
+            "The chores are done."
+          ],
+          "correct": "The **Contrast** between 'Fear' and 'Calm' creates an artificial high (Relief).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If they had just been calm all day, you wouldn't feel grateful. The abuse *created* the contrast that made the 'normalcy' feel like a gift.",
+            "incorrect": "It's not niceness; it's the cessation of pain. This is a key component of Trauma Bonding."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Goldilocks Effect':",
+          "words": [
+            "avoid",
+            "extremes",
+            "Humans",
+            "the",
+            "middle",
+            "pick",
+            "and"
+          ],
+          "correct": "Humans avoid extremes and pick the middle",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Salespeople offer a Cheap item (too bad) and a Luxury item (too expensive) to force you to buy the Middle item (the target).",
+            "incorrect": "We fear the edges. The middle feels safe."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "Showing a client the most expensive, high-end option first to reset their price expectations upward.",
+          "question": "What is this?",
+          "options": [
+            "The Setup / Top-Down Selling",
+            "The Lowball",
+            "Gaslighting",
+            "The Hook"
+          ],
+          "correct": "The Setup / Top-Down Selling",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you see a $5,000 suit first, the $1,000 suit seems reasonable. If you saw a $100 suit first, the $1,000 suit would seem insane.",
+            "incorrect": "It anchors the high end. It is the opposite of lowballing."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "You want your boss to approve a risky project. You present three options: A (Terrible), B (Yours), C (Impossible).",
+          "question": "Is this manipulation?",
+          "options": [
+            "Yes. You are rigging the deck (The Decoy Effect) to force choice B.",
+            "No, you gave them choices.",
+            "Yes, but it is bad strategy.",
+            "No, it is leadership."
+          ],
+          "correct": "Yes. You are rigging the deck (The Decoy Effect) to force choice B.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You are not offering genuine choices. You are using A and C as psychological fences to herd the boss to B.",
+            "incorrect": "It is effective, but it is manipulation. A fair presentation offers viable alternatives."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P2-E10",
+          "type": "fill-in",
+          "sentence": "Manipulators use (--------) comparisons to lower your standards.",
+          "options": [
+            "downward",
+            "upward",
+            "fair",
+            "happy"
+          ],
+          "answers": [
+            "downward"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'At least I don't beat you.' 'At least I have a job.' By comparing themselves to the bottom, they look good without being good.",
+            "incorrect": "They don't compare up (to better people). They compare down (to worse people)."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P2-E11",
+          "type": "multiple-choice",
+          "question": "How do you defeat the Contrast Principle?",
+          "options": [
+            "Evaluate the item/person in isolation (The Vacuum Test).",
+            "Compare it to more things.",
+            "Buy the middle one.",
+            "Ask a friend."
+          ],
+          "correct": "Evaluate the item/person in isolation (The Vacuum Test).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Ask: 'If I had never seen the expensive one, would I still want this one at this price?' Remove the comparison.",
+            "incorrect": "More comparisons can confuse you. Isolate the variable."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'This job pays less, but the people are nicer than your last job.'",
+          "question": "Is this using Contrast to sell a pay cut?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are contrasting 'Emotional Value' against 'Financial Loss.' It makes the lower salary seem like a fair trade.",
+            "incorrect": "They are using your past bad experience to make a mediocre current offer look good."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: You are in a job interview. You are the last candidate. The person before you was rude and unqualified. You are average.",
+          "question": "You will likely look:",
+          "options": [
+            "Amazing (Contrast Effect).",
+            "Average.",
+            "Bad.",
+            "Tired."
+          ],
+          "correct": "Amazing (Contrast Effect).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Following a disaster makes competence look like brilliance.",
+            "incorrect": "The interviewer judges you relative to the previous candidate, not on an absolute scale."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P2-E14",
+          "type": "matching",
+          "question": "Match the Retail Trick:",
+          "pairs": [
+            {
+              "term": "Was $100, Now $50",
+              "definition": "Price Anchoring / Contrast."
+            },
+            {
+              "term": "Buy One Get One Free",
+              "definition": "Perceived Gain (Free > Discount)."
+            },
+            {
+              "term": "Add-on Item ($5 socks with $200 shoes)",
+              "definition": "Triviality (Contrast)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The 'Was' price sets the anchor. 'Free' bypasses logic. 'Add-ons' feel small next to the big purchase.",
+            "incorrect": "They all use relativity to distort value."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Decoy Destroyed",
+          "scene": "You have learned that 'Better' does not mean 'Good.' A bad option makes a mediocre option look better. You must judge value absolutely.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Comparison' Trap (Simulation).",
+            "Going shopping.",
+            "Buying popcorn.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Comparison' Trap (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you make a decision without being swayed by a rigged comparison? Let's find out.",
+            "incorrect": "Next up: The Comparison Trap."
+          }
+        }
+      ]
+    }
+  ]
+}

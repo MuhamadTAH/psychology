@@ -1,0 +1,339 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B5",
+  "unitTitle": "Section B Grand Review: The Master Tactician",
+  "lessonId": "B5-4",
+  "lessonTitle": "The \"Politician\" Simulation",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Speech: Analyzing Mass Manipulation",
+  "objective": "To deconstruct mass manipulation tactics by analyzing a political speech for 'Us vs. Them' framing, 'Glittering Generalities', and 'Fear-Mongering'.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B5-4-P1-S1",
+      "screenType": "Learn",
+      "title": "The Crowd Controller",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are about to face 'The Politician.' They do not need to trick *you* individually; they need to trick the *herd*."
+        },
+        {
+          "type": "paragraph",
+          "text": "They use **Tribalism** (Us vs. Them), **Vague Populism** (The Milton Model), and **Fear** to bypass individual logic and trigger mob psychology."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Boss Ability: **The Rally**. Creating an emotional contagion where you agree just because everyone else is cheering."
+        }
+      ]
+    },
+    {
+      "screenId": "B5-4-P1-S2",
+      "screenType": "Exercises",
+      "title": "Deconstruct the Speech",
+      "exercises": [
+        {
+          "exerciseId": "B5-4-P1-E1",
+          "type": "boss-scenario",
+          "scene": "The Politician stands at the podium: 'My friends, *They* (the elites/outsiders) want to take away your way of life! *They* laugh at you. But *I* will be your shield!'",
+          "question": "Identify the primary tactic:",
+          "options": [
+            "Tribalism / 'Us vs. Them' Framing.",
+            "Economic Policy.",
+            "Logic.",
+            "Friendship."
+          ],
+          "correct": "Tribalism / 'Us vs. Them' Framing.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They create a common enemy ('They') to unite the tribe ('Us'). It triggers the primal defense instinct.",
+            "incorrect": "There is no policy here. It is purely emotional division."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P1-E2",
+          "type": "scenario",
+          "scene": "Politician: 'We will restore *Honor*, *Justice*, and *Greatness* to our land!' (The crowd cheers wildly).",
+          "question": "Why is the crowd cheering for words that mean nothing?",
+          "options": [
+            "Because they are **Glittering Generalities** (Nominalizations). Everyone projects their own meaning onto the vague words.",
+            "Because the politician explained the plan in detail.",
+            "Because they are paid actors.",
+            "Because they are bored."
+          ],
+          "correct": "Because they are **Glittering Generalities** (Nominalizations). Everyone projects their own meaning onto the vague words.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Honor' is a Milton Model word. It is an empty container. The crowd fills it with their own desires.",
+            "incorrect": "There is no detail. The vagueness *is* the power."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P1-E3",
+          "type": "multiple-choice",
+          "question": "What is a 'Dog Whistle' in political rhetoric?",
+          "options": [
+            "A sound only dogs can hear.",
+            "Coded language that seems normal to the general public but communicates a specific (often controversial) message to a target group.",
+            "A loud microphone.",
+            "A type of whistle."
+          ],
+          "correct": "Coded language that seems normal to the general public but communicates a specific (often controversial) message to a target group.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Example: 'States' Rights' was often a dog whistle for segregation. It allows Plausible Deniability while signaling to the base.",
+            "incorrect": "It is a metaphor for coded speech."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P1-E4",
+          "type": "fill-in",
+          "sentence": "The Politician uses the (--------) Effect: 'I repeat this lie so often that you begin to believe it is true.'",
+          "options": [
+            "illusory truth",
+            "halo",
+            "horn",
+            "reciprocity"
+          ],
+          "answers": [
+            "illusory truth"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Repetition creates familiarity. Familiarity feels like truth. (The Illusory Truth Effect).",
+            "incorrect": "It's not about beauty (Halo). It's about frequency."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P1-E5",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm just a regular guy like you. I drink beer and watch football.' (Said by a billionaire).",
+          "question": "Is this the 'Plain Folks' appeal?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They fake Similarity to trigger the Liking Bias. They want you to forget the power imbalance.",
+            "incorrect": "It creates a false sense of 'one of us'."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P1-E6",
+          "type": "scenario",
+          "scene": "Politician: 'My opponent says we should cut the budget. Why does he want our children to starve?'",
+          "question": "This logic is:",
+          "options": [
+            "The Straw Man Fallacy.",
+            "A fair point.",
+            "A direct quote.",
+            "Math."
+          ],
+          "correct": "The Straw Man Fallacy.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They distorted the opponent's argument (Cutting Budget) into a monster (Starving Children) to make it easy to attack.",
+            "incorrect": "It is a distortion, not a quote. They are fighting a scarecrow."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P1-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define 'Manufactured Consent':",
+          "words": [
+            "Manipulation",
+            "opinion",
+            "of",
+            "media",
+            "public",
+            "by",
+            "mass"
+          ],
+          "correct": "Manipulation of public opinion by mass media",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. (Chomsky). If the media repeats the same frame everywhere, the public 'consents' to it, thinking it was their own idea.",
+            "incorrect": "It is systemic gaslighting."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P1-E8",
+          "type": "reverse-scenario",
+          "answer": "A technique where the speaker answers a question by attacking the questioner's character or motive.",
+          "question": "What is this?",
+          "options": [
+            "Ad Hominem / Deflection",
+            "The Pivot",
+            "The Spin",
+            "The truth"
+          ],
+          "correct": "Ad Hominem / Deflection",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'You're fake news!' It destroys the messenger so they don't have to answer the message.",
+            "incorrect": "It attacks the person (Hominem), not the topic."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are a speechwriter. Your candidate wants to use a 'Scapegoat' (blaming a minority group) to gain votes.",
+          "question": "Is this 'Dark'?",
+          "options": [
+            "Yes. It is the darkest form of Social Engineering. It incites violence for power.",
+            "No, it's just politics.",
+            "Yes, but it works.",
+            "No, if the group is bad."
+          ],
+          "correct": "Yes. It is the darkest form of Social Engineering. It incites violence for power.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Scapegoating is the mechanic of genocide. It creates a 'Common Enemy' to unify the tribe through hate.",
+            "incorrect": "Just because it works doesn't mean it isn't evil."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P1-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'We must surrender our privacy to ensure our safety.'",
+          "question": "This is:",
+          "options": [
+            "The False Dilemma (Security vs. Liberty).",
+            "A fact.",
+            "Good policy.",
+            "Kindness."
+          ],
+          "correct": "The False Dilemma (Security vs. Liberty).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They frame it as 'Either/Or' to force you to give up rights. Often, you can have both, or neither.",
+            "incorrect": "It restricts the options to force a trade."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P1-E11",
+          "type": "fill-in",
+          "sentence": "The Politician uses (--------) to make complex problems seem simple.",
+          "options": [
+            "slogans",
+            "books",
+            "math",
+            "silence"
+          ],
+          "answers": [
+            "slogans"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Make America Great Again,' 'Hope and Change.' Slogans bypass critical thinking about *how* the problem will be solved.",
+            "incorrect": "Complex problems rarely have 3-word solutions."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'The old ways were better. We need to go back.'",
+          "question": "Is this the Appeal to Tradition fallacy?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It weaponizes Nostalgia. It ignores the bad parts of the past and idealizes it to criticize the present.",
+            "incorrect": "It is a logic trap. Old does not mean good."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: A large crowd is cheering. You don't agree with the speaker, but you find yourself clapping anyway.",
+          "question": "This is:",
+          "options": [
+            "Emotional Contagion (The Herd Mind).",
+            "Agreement.",
+            "Politeness.",
+            "Fear."
+          ],
+          "correct": "Emotional Contagion (The Herd Mind).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Humans mimic the group. The energy of the rally overrides your individual judgment.",
+            "incorrect": "You didn't agree; you assimilated."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P1-E14",
+          "type": "matching",
+          "question": "Match the Political Tactic:",
+          "pairs": [
+            {
+              "term": "Dog Whistle",
+              "definition": "Secret code for the base."
+            },
+            {
+              "term": "Straw Man",
+              "definition": "Attacking a fake argument."
+            },
+            {
+              "term": "Gaslighting",
+              "definition": "Denying reality ('The economy is great!')."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Code, Distortion, Denial.",
+            "incorrect": "Review the definitions."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Rally",
+          "scene": "You have analyzed the speech. You see the 'Us vs. Them,' the 'Vague Hope,' and the 'Fear.' You are immune to the hype.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: The Debate (Defense against rhetorical attacks).",
+            "Voting.",
+            "Running for office.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: The Debate (Defense against rhetorical attacks).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that you can analyze a speech, can you win an argument against a Politician?",
+            "incorrect": "Next up: Verbal combat."
+          }
+        }
+      ]
+    }
+  ]
+}

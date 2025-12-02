@@ -1,0 +1,347 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B4",
+  "unitTitle": "The Pressure Cooker: Emotional Leverage",
+  "lessonId": "B4-4",
+  "lessonTitle": "Hope-Mongering: Selling the Dream",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: Exploiting Desperation with Impossible Promises",
+  "objective": "To define 'Hope-Mongering' as a manipulation tactic that offers impossible solutions to desperate problems, bypassing critical thinking by targeting the victim's deepest desires.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 150,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B4-4-P1-S1",
+      "screenType": "Learn",
+      "title": "The Miracle Cure",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Fear makes you run away. Hope makes you run toward. Manipulators know that if you are desperate (for money, love, or health), you will believe *anything* that promises a cure."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is **Hope-Mongering**. They sell you a dream that is mathematically or physically impossible ('Lose 30lbs in a week,' 'Make $10k tomorrow')."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Trap: You don't buy the lie because it's credible. You buy it because you *need* it to be true."
+        }
+      ]
+    },
+    {
+      "screenId": "B4-4-P1-S2",
+      "screenType": "Exercises",
+      "title": "Defining False Hope",
+      "exercises": [
+        {
+          "exerciseId": "B4-4-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is **Hope-Mongering**?",
+          "options": [
+            "Being optimistic.",
+            "The act of using false promises, impossible cures, or exaggerated claims to exploit vulnerable people for profit or control.",
+            "Selling flowers.",
+            "Giving good advice."
+          ],
+          "correct": "The act of using false promises, impossible cures, or exaggerated claims to exploit vulnerable people for profit or control.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is the weaponization of optimism. It targets the 'pain point' of the victim and offers a magic eraser.",
+            "incorrect": "It is not optimism. Optimism is 'We can do this with hard work.' Hope-Mongering is 'You can do this with magic/zero effort.'"
+          }
+        },
+        {
+          "exerciseId": "B4-4-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: An ad says: 'Secret Loophole discovered! Make $5,000/day working 10 minutes from home!'",
+          "question": "This tactic targets:",
+          "options": [
+            "Greed and Laziness (The desire for high reward with low effort).",
+            "Logic.",
+            "Fear.",
+            "Charity."
+          ],
+          "correct": "Greed and Laziness (The desire for high reward with low effort).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The promise of 'Something for Nothing' is the hallmark of a scam. It appeals to the wish for an easy life.",
+            "incorrect": "It defies logic. If it were true, everyone would do it."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P1-E3",
+          "type": "fill-in",
+          "sentence": "Desperation turns off your (--------) detector.",
+          "options": [
+            "lie",
+            "love",
+            "happy",
+            "food"
+          ],
+          "answers": [
+            "lie"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. When you are desperate (e.g., dying, bankrupt, lonely), you suspend disbelief. You *want* to be fooled.",
+            "incorrect": "Desperation blinds you to deception."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I can bring your ex back in 24 hours with this spell.'",
+          "question": "Is this Hope-Mongering?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Psychic scams target the heartbroken. They sell 'Hope' to people who are grieving.",
+            "incorrect": "It is a classic emotional con. It sells a solution to grief."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P1-E5",
+          "type": "matching",
+          "question": "Match the Scam to the Desperation:",
+          "pairs": [
+            {
+              "term": "Ponzi Scheme",
+              "definition": "Targets: Financial Desperation / Greed."
+            },
+            {
+              "term": "Miracle Diet Pill",
+              "definition": "Targets: Body Image Insecurity."
+            },
+            {
+              "term": "Romance Scam",
+              "definition": "Targets: Loneliness."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Every scam maps to a specific human pain point.",
+            "incorrect": "Identify the hole the victim is trying to fill."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Too Good to Be True' rule:",
+          "words": [
+            "is",
+            "probably",
+            "be",
+            "true,",
+            "If",
+            "it",
+            "to",
+            "good",
+            "too",
+            "it"
+          ],
+          "correct": "If it is too good to be true, it probably is",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The oldest rule in the book. There are no shortcuts to physics or economics.",
+            "incorrect": "Your brain wants it to be true. You must override that wish."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "A manipulator who promises a grand vision (Future Faking) to get followers to work for free or give up their lives.",
+          "question": "What archetype is this?",
+          "options": [
+            "The Cult Leader / Visionary Narcissist",
+            "The Honest Boss",
+            "The Teacher",
+            "The Victim"
+          ],
+          "correct": "The Cult Leader / Visionary Narcissist",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They sell 'Utopia.' The price is your autonomy. Examples: Elizabeth Holmes, Keith Raniere.",
+            "incorrect": "Honest leaders promise hard work, not magic."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: A 'Guru' claims they have a 'Secret System' that 'They' (the government/banks) don't want you to know.",
+          "question": "This tactic uses:",
+          "options": [
+            "Information Scarcity + Hope-Mongering (The Secret Knowledge).",
+            "Transparency.",
+            "Education.",
+            "History."
+          ],
+          "correct": "Information Scarcity + Hope-Mongering (The Secret Knowledge).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. By claiming it is 'Secret,' they increase its value. By claiming 'They' are hiding it, they create an 'Us vs. Them' bond.",
+            "incorrect": "It is not education; it is conspiracy marketing. It makes the victim feel like an 'insider.'"
+          }
+        },
+        {
+          "exerciseId": "B4-4-P1-E9",
+          "type": "multiple-choice",
+          "question": "Why do Multi-Level Marketing (MLM) schemes often target stay-at-home parents?",
+          "options": [
+            "They target the desire for 'Financial Freedom' and 'Community' in an isolated demographic.",
+            "They like parents.",
+            "Parents have lots of free time.",
+            "It is random."
+          ],
+          "correct": "They target the desire for 'Financial Freedom' and 'Community' in an isolated demographic.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They sell the dream of 'Being your own Boss' to people who feel stuck. The hope of freedom is the hook.",
+            "incorrect": "It is highly targeted. They sell 'Empowerment' as a product."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P1-E10",
+          "type": "fill-in",
+          "sentence": "Pseudo-science uses scientific-sounding words (e.g., 'Quantum,' 'Energy,' 'Frequency') to bypass your (--------) filter.",
+          "options": [
+            "skepticism",
+            "fear",
+            "love",
+            "hunger"
+          ],
+          "answers": [
+            "skepticism"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is 'Technobabble.' It sounds smart, so you assume it is true, even if it means nothing.",
+            "incorrect": "It disguises magic as science to fool your logical mind."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P1-E11",
+          "type": "true-false",
+          "scene": "Scenario: 'I can change him. My love is strong enough to cure his addiction/narcissism.'",
+          "question": "Is this Self-Inflicted Hope-Mongering?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is the 'Savior's Delusion.' You are selling *yourself* a false hope to justify staying in a bad situation.",
+            "incorrect": "Manipulators encourage this, but often the victim generates the hope themselves."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P1-E12",
+          "type": "scenario",
+          "scene": "Scenario: A gambler loses all their money. They think: 'I just need one big win to fix everything.'",
+          "question": "This is:",
+          "options": [
+            "The Desperation Loop.",
+            "A plan.",
+            "Logic.",
+            "Fun."
+          ],
+          "correct": "The Desperation Loop.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Hope keeps them playing long after logic says 'quit.' The hope of the 'Big Win' destroys them.",
+            "incorrect": "It is the opposite of a plan. It is magical thinking."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P1-E13",
+          "type": "ethical-dilemma",
+          "scene": "A friend with a terminal illness is buying 'magic water' online. It costs their life savings.",
+          "question": "Do you intervene?",
+          "options": [
+            "Yes. They are being exploited by a predator. Gently present the facts, but accept they might not listen.",
+            "No. Let them have hope.",
+            "Buy it for them.",
+            "Yell at them."
+          ],
+          "correct": "Yes. They are being exploited by a predator. Gently present the facts, but accept they might not listen.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. While hope is comforting, financial ruin helps no one. Protect the victim from the predator, even if it's painful.",
+            "incorrect": "False hope that drains resources is not kindness; it is theft."
+          }
+        },
+        {
+          "exerciseId": "B4-4-P1-E14",
+          "type": "matching",
+          "question": "Match the Promise to the Trap:",
+          "pairs": [
+            {
+              "term": "\"Passive Income\"",
+              "definition": "Trap: Paying for a course that teaches nothing."
+            },
+            {
+              "term": "\"Twin Flame\"",
+              "definition": "Trap: Staying in an abusive relationship."
+            },
+            {
+              "term": "\"Detox\"",
+              "definition": "Trap: Buying useless supplements."
+            }
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The promise is the shiny wrapper. The trap is the product inside.",
+            "incorrect": "Look at the outcome. Who gets paid?"
+          }
+        },
+        {
+          "exerciseId": "B4-4-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Carrot",
+          "scene": "You have identified the Carrot. You know that if someone offers you a 'Magic Key' to life, they are stealing your wallet.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: The 'Too Good to Be True' Audit (Fact-checking the dream).",
+            "Buying magic beans.",
+            "Dreaming.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: The 'Too Good to Be True' Audit (Fact-checking the dream).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We need to train you to look at the 'fine print' of the dream.",
+            "incorrect": "Next up: How to audit a miracle."
+          }
+        }
+      ]
+    }
+  ]
+}

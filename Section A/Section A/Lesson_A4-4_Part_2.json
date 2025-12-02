@@ -1,0 +1,333 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A4",
+  "unitTitle": "The Void Behind the Mask: Psychopathy",
+  "lessonId": "A4-4",
+  "lessonTitle": "The Absence of Conscience: Remorse vs. Regret",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: \"Crocodile Tears\" vs. Real Remorse",
+  "objective": "To practice identifying the specific linguistic and behavioral signs of fake remorse (Crocodile Tears, Non-Apologies, The Switch) versus genuine accountability.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A4-4-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Apology Test",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Psychopaths are excellent actors. They can cry on command. But they often make small mistakes in their performance."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The key tell is **Restitution**. A person with a conscience tries to *fix* the damage. A psychopath tries to *fix* your mood (so you stop bothering them)."
+        }
+      ]
+    },
+    {
+      "screenId": "A4-4-P2-S2",
+      "screenType": "Exercises",
+      "title": "Spotting the Fake",
+      "exercises": [
+        {
+          "exerciseId": "A4-4-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: You confront a partner about lying. They cry hysterically, fall to the floor, and scream 'I am such a monster! I don't deserve you!' You end up comforting them.",
+          "question": "This tactic is:",
+          "options": [
+            "Genuine self-hatred.",
+            "The Pity Play (Centering the narrative on their pain to avoid accountability).",
+            "A breakdown.",
+            "True Love."
+          ],
+          "correct": "The Pity Play (Centering the narrative on their pain to avoid accountability).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They hijacked the confrontation. Instead of discussing their lie, the conversation became about their 'suffering.' You comforted the person who hurt you.",
+            "incorrect": "It looks like self-hatred, but it is a defense mechanism. It forces you into the 'Rescuer' role."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is a 'Non-Apology'?",
+          "options": [
+            "Saying nothing.",
+            "A statement that sounds like an apology but accepts no blame (e.g., 'I'm sorry you got upset').",
+            "A written apology.",
+            "Sending flowers."
+          ],
+          "correct": "A statement that sounds like an apology but accepts no blame (e.g., 'I'm sorry you got upset').",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It shifts the responsibility to your *reaction* rather than their *action*.",
+            "incorrect": "It is a specific linguistic trick. 'I'm sorry if I offended you' means 'You are too sensitive.'"
+          }
+        },
+        {
+          "exerciseId": "A4-4-P2-E3",
+          "type": "true-false",
+          "scene": "Scenario: 'I said I was sorry! Why are you still talking about this? You are holding a grudge!'",
+          "question": "Is this a sign of genuine remorse?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Genuine remorse understands that healing takes time. A psychopath views an apology as a 'Get Out of Jail Free' card and gets angry if it doesn't work instantly.",
+            "incorrect": "They want the *result* (silence), not the *healing*. Impatience is a sign of fake remorse."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P2-E4",
+          "type": "fill-in",
+          "sentence": "Real remorse includes (--------). Fake remorse includes only (--------).",
+          "options": [
+            "action",
+            "words",
+            "tears",
+            "money"
+          ],
+          "answers": [
+            "action",
+            "words"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Changed behavior is the only proof of remorse. Words are easy.",
+            "incorrect": "Look for the change in behavior. Tears and words are cheap."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P2-E5",
+          "type": "matching",
+          "question": "Match the Apology to the Translation:",
+          "pairs": [
+            {
+              "term": "'I'm sorry, BUT...'",
+              "definition": "I am justifying my action (No apology)."
+            },
+            {
+              "term": "'I'm sorry you feel that way.'",
+              "definition": "Your feelings are the problem (Gaslighting)."
+            },
+            {
+              "term": "'I was wrong. How can I fix it?'",
+              "definition": "Accountability (Rare)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'But' negates the apology. 'You feel' blames the victim. 'How can I fix it' accepts responsibility.",
+            "incorrect": "Listen for the qualifier. A real apology has no 'but'."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: A colleague steals your credit. When caught, they say: 'I was just under so much pressure! You know how stressed I am!'",
+          "question": "This is:",
+          "options": [
+            "Contextualizing (Minimizing).",
+            "A valid reason.",
+            "Leadership.",
+            "Empathy."
+          ],
+          "correct": "Contextualizing (Minimizing).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are using their 'stress' to minimize the maliciousness of the theft. Everyone is stressed; not everyone steals.",
+            "incorrect": "It is an excuse, not a reason. It asks you to pity the thief."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the purpose of Crocodile Tears:",
+          "words": [
+            "manipulate",
+            "to",
+            "performance",
+            "A",
+            "sympathy"
+          ],
+          "correct": "A performance to manipulate sympathy",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The tears are a tool. The goal is to trigger your empathy so you drop your defenses.",
+            "incorrect": "It is acting. The emotion is not felt; it is displayed."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "A sudden, complete cessation of crying/sadness the moment they get what they want (or realize the tactic isn't working).",
+          "question": "What is this phenomenon?",
+          "options": [
+            "The Switch",
+            "Emotional Regulation",
+            "Bipolar Disorder",
+            "Healing"
+          ],
+          "correct": "The Switch",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Real emotion fades gradually. Fake emotion shuts off like a light switch. This is the 'Mask Drop'.",
+            "incorrect": "It happens too fast to be regulation or healing. It proves the emotion was instrumental."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P2-E9",
+          "type": "scenario",
+          "scene": "Scenario: You are in court. A criminal cries about their difficult childhood. They show zero emotion about the victim.",
+          "question": "This suggests:",
+          "options": [
+            "Psychopathic Self-Centrism.",
+            "They are misunderstood.",
+            "They are rehabilitated.",
+            "They are sad."
+          ],
+          "correct": "Psychopathic Self-Centrism.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They feel sorry for *themselves* (Regret), but have no space in their mind for the *victim* (Remorse). The Void is evident.",
+            "incorrect": "Focus on what is missing. They are crying for themselves, not the person they hurt."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P2-E10",
+          "type": "fill-in",
+          "sentence": "An apology without (--------) is just manipulation.",
+          "options": [
+            "change",
+            "tears",
+            "money",
+            "words"
+          ],
+          "answers": [
+            "change"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If the behavior repeats, the apology was a lie. Change is the only metric that matters.",
+            "incorrect": "Tears are easy. Money is easy. Changing behavior requires a conscience."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P2-E11",
+          "type": "ethical-dilemma",
+          "scene": "A toxic partner apologizes profoundly and buys you a gift. You feel relief, but your 'gut' says they haven't changed.",
+          "question": "What should you do?",
+          "options": [
+            "Trust the 'Gut' (Intuition) and maintain boundaries. Observe behavior over time.",
+            "Accept the apology to avoid conflict.",
+            "Accept the gift but stay angry.",
+            "Love Bomb them back."
+          ],
+          "correct": "Trust the 'Gut' (Intuition) and maintain boundaries. Observe behavior over time.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The 'relief' is the dopamine hit they want you to feel. Your gut recognizes the pattern of the cycle. Trust the pattern.",
+            "incorrect": "Accepting it resets the cycle. You need to see sustained change before trusting again."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I promise I will never do it again.' (They do it again next week).",
+          "question": "Did they lie?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. For a Psychopath, a promise is just a word used to end a conversation. It has no binding power.",
+            "incorrect": "They lied. They knew they would do it again if it suited them."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: You catch them cheating. They say: 'I only did it because you've been so distant lately. I needed connection.'",
+          "question": "This is:",
+          "options": [
+            "Blame-Shifting (Turning the victim into the cause).",
+            "A valid reason.",
+            "Love.",
+            "Honesty."
+          ],
+          "correct": "Blame-Shifting (Turning the victim into the cause).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are justifying the betrayal by blaming your behavior. A healthy person communicates; a predator cheats and blames.",
+            "incorrect": "Distance is a reason to talk, not to cheat. This is an excuse to avoid guilt."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P2-E14",
+          "type": "multiple-choice",
+          "question": "Why do Psychopaths often give 'oversized' gifts after abuse?",
+          "options": [
+            "To 'buy' forgiveness and reset the cycle (Love Bombing).",
+            "Because they are generous.",
+            "Because they forgot the abuse.",
+            "To show off."
+          ],
+          "correct": "To 'buy' forgiveness and reset the cycle (Love Bombing).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It is cheaper to buy a necklace than to change their personality. It confuses the victim.",
+            "incorrect": "It is a transaction. The gift is the price of your silence."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The fake Tears",
+          "scene": "You can now spot the 'Non-Apology,' the 'Pity Play,' and the 'Switch.' You know that tears do not equal truth.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Pity Play' Defense (Simulation).",
+            "Trusting everyone.",
+            "Crying.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Pity Play' Defense (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The final test is to stand firm when a predator pretends to be a victim.",
+            "incorrect": "Next up: How to defend against weaponized vulnerability."
+          }
+        }
+      ]
+    }
+  ]
+}

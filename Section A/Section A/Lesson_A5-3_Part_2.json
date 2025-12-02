@@ -1,0 +1,334 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A5",
+  "unitTitle": "The Vulnerable Mind: Why We Fall For It",
+  "lessonId": "A5-3",
+  "lessonTitle": "The \"Savior\" Complex & Codependency",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Distinguishing \"Helping\" from \"Enabling\"",
+  "objective": "To practice identifying the specific behaviors that cross the line from 'Support' to 'Enabling', and to recognize when 'Helping' is actually a trauma response to control anxiety.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A5-3-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Enabling Trap",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Helping is doing something for someone that they *cannot* do for themselves. Enabling is doing something for someone that they *can and should* do for themselves."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Rule of Thumb: If you are working harder on their problem than they are, you are not helping; you are enabling."
+        }
+      ]
+    },
+    {
+      "screenId": "A5-3-P2-S2",
+      "screenType": "Exercises",
+      "title": "Helper or Enabler?",
+      "exercises": [
+        {
+          "exerciseId": "A5-3-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: Your partner is late for work every day. You start waking them up, making their coffee, and pushing them out the door so they don't get fired.",
+          "question": "This is:",
+          "options": [
+            "Being a supportive partner.",
+            "Enabling (Over-functioning).",
+            "Teamwork.",
+            "Kindness."
+          ],
+          "correct": "Enabling (Over-functioning).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are an adult capable of setting an alarm. By taking over their morning routine, you prevent them from facing the natural consequence (being late/fired), so they never learn.",
+            "incorrect": "It feels supportive, but you are managing their basic adult responsibilities. This creates dependency."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is the primary emotion that drives a Codependent Savior to 'fix' things?",
+          "options": [
+            "Love.",
+            "Anxiety (Fear of what will happen if they don't fix it).",
+            "Boredom.",
+            "Happiness."
+          ],
+          "correct": "Anxiety (Fear of what will happen if they don't fix it).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You aren't helping because you want to; you are helping because you are *afraid* of the chaos/anger that will happen if you don't. You are managing *your* anxiety, not their problem.",
+            "incorrect": "It often masks itself as love, but the root driver is Anxiety/Fear of consequences."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P2-E3",
+          "type": "true-false",
+          "scene": "Scenario: 'I just need to help them get back on their feet one last time.' (Said for the 5th time).",
+          "question": "Is this Enabling?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If the 'crisis' is a repeating pattern, your 'help' is part of the cycle. You are funding the dysfunction.",
+            "incorrect": "Once is help. Five times is a lifestyle subsidy."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P2-E4",
+          "type": "fill-in",
+          "sentence": "When you enable a manipulator, you are stealing their (--------).",
+          "options": [
+            "money",
+            "autonomy",
+            "joy",
+            "car"
+          ],
+          "answers": [
+            "autonomy"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. It sounds harsh, but by doing it for them, you are silently saying, 'You are too weak/stupid to do this yourself.' It keeps them weak.",
+            "incorrect": "You aren't stealing money; you are giving it. You are stealing their ability to grow up (Autonomy)."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P2-E5",
+          "type": "matching",
+          "question": "Match the Action to the Category:",
+          "pairs": [
+            {
+              "term": "Empowering",
+              "definition": "Teaching them how to fish."
+            },
+            {
+              "term": "Enabling",
+              "definition": "Fishing for them every day."
+            },
+            {
+              "term": "Rescuing",
+              "definition": "Fishing for them and complaining about how tired you are."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Empowering teaches skills. Enabling creates dependency. Rescuing adds martyrdom to the mix.",
+            "incorrect": "Look at the long-term result. Does it make them independent or dependent?"
+          }
+        },
+        {
+          "exerciseId": "A5-3-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: A friend complains about their toxic relationship for hours but rejects every solution you offer ('Yes, but...').",
+          "question": "What is happening?",
+          "options": [
+            "They are looking for solutions.",
+            "They are 'Help-Rejecting Complainers' using you for emotional regulation (Supply).",
+            "They are confused.",
+            "They value your advice."
+          ],
+          "correct": "They are 'Help-Rejecting Complainers' using you for emotional regulation (Supply).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They don't want a solution; they want an audience. You are the 'trash can' for their anxiety. Trying to 'fix' this is a waste of energy.",
+            "incorrect": "If they wanted a solution, they would try one. The goal is the complaint itself."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the sign of over-giving:",
+          "words": [
+            "of",
+            "Resentment",
+            "sign",
+            "is",
+            "the",
+            "neglect",
+            "self"
+          ],
+          "correct": "Resentment is the sign of self neglect",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you feel resentful ('I do everything for them!'), it means you have crossed your own boundaries. Resentment is your alarm system.",
+            "incorrect": "Resentment doesn't mean they are bad; it means you are giving too much."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "Pretending not to know how to do a simple task (like cleaning or paperwork) so someone else will do it for you.",
+          "question": "What is this manipulation?",
+          "options": [
+            "Weaponized Incompetence",
+            "Laziness",
+            "Stupidity",
+            "Delegation"
+          ],
+          "correct": "Weaponized Incompetence",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It exploits the Savior's need for 'perfection' or 'speed.' 'Fine, I'll just do it myself!' is exactly what they want you to say.",
+            "incorrect": "It is a strategic performance of inability to force you into the Rescuer role."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "Your adult sibling asks for rent money again. If you say no, they might end up on the street.",
+          "question": "Is saying 'No' ethical?",
+          "options": [
+            "Yes. Boundaries are ethical. You can offer non-monetary help (finding a shelter/job ad), but funding their lifestyle keeps them stuck.",
+            "No. Family helps family no matter what.",
+            "Yes, because you should hate them.",
+            "No, you are rich."
+          ],
+          "correct": "Yes. Boundaries are ethical. You can offer non-monetary help (finding a shelter/job ad), but funding their lifestyle keeps them stuck.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is 'Tough Love.' Sometimes the most loving thing is to let someone face reality so they are forced to grow.",
+            "incorrect": "Blind loyalty ('family no matter what') is a recipe for mutual destruction. Ethics requires healthy limits."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: You feel 'guilty' when you are relaxing because your partner is having a crisis (again).",
+          "question": "This is a sign of:",
+          "options": [
+            "Enmeshment / Codependency.",
+            "Empathy.",
+            "Laziness.",
+            "Focus."
+          ],
+          "correct": "Enmeshment / Codependency.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You have lost the boundary between 'Me' and 'Them.' You feel responsible for their emotions. Their crisis becomes your crisis.",
+            "incorrect": "Empathy is feeling *for* them. Enmeshment is losing your ability to feel *separate* from them."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P2-E11",
+          "type": "fill-in",
+          "sentence": "You teach people how to (--------) you by what you stop, what you allow, and what you reinforce.",
+          "options": [
+            "treat",
+            "hate",
+            "pay",
+            "love"
+          ],
+          "answers": [
+            "treat"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If you allow them to exploit you, you are teaching them that exploitation is acceptable.",
+            "incorrect": "It is the core of boundaries. Your behavior sets the instruction manual."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'If I don't do it, no one will.'",
+          "question": "Is this the 'Martyr's Mantra'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This belief justifies over-functioning. Often, if you *don't* do it, the other person *will* finally have to step up.",
+            "incorrect": "It creates a self-fulfilling prophecy. You do it, so they don't have to."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: You set a boundary: 'I can't lend you money.' The manipulator says: 'I guess you don't care if I starve.'",
+          "question": "This tactic is:",
+          "options": [
+            "The Rescue Hook (Catastrophizing).",
+            "A fact.",
+            "A joke.",
+            "Fairness."
+          ],
+          "correct": "The Rescue Hook (Catastrophizing).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They escalate the consequence to 'Starvation/Death' to trigger your Savior anxiety and force you to pay.",
+            "incorrect": "It is emotional blackmail. Not lending money does not equal 'I want you to starve.'"
+          }
+        },
+        {
+          "exerciseId": "A5-3-P2-E14",
+          "type": "multiple-choice",
+          "question": "Why do Saviors struggle to leave toxic relationships?",
+          "options": [
+            "They think they can 'win' by fixing the partner.",
+            "They like pain.",
+            "They are stupid.",
+            "They are bored."
+          ],
+          "correct": "They think they can 'win' by fixing the partner.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The 'Fixed Partner' is the trophy. Leaving feels like 'failing' the project. They are addicted to the *potential*, not the reality.",
+            "incorrect": "It's not about pain; it's about the ego-boost of being the 'Healer' who succeeded where others failed."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Helper's Dilemma",
+          "scene": "You can now tell the difference between 'Helping' (Growth) and 'Enabling' (Decay). You know that Resentment is a sign you are doing too much.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Rescue' Scenario (Simulation).",
+            "Saving the world.",
+            "Becoming a doctor.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Rescue' Scenario (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you resist the urge to save someone who is drowning on purpose? Let's find out.",
+            "incorrect": "Next up: A simulation of high-pressure guilt and crisis."
+          }
+        }
+      ]
+    }
+  ]
+}

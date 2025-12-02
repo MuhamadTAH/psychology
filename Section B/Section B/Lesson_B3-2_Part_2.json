@@ -1,0 +1,333 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B3",
+  "unitTitle": "The Herd Mind: Social Engineering",
+  "lessonId": "B3-2",
+  "lessonTitle": "The Authority Hack",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Questioning the Badge",
+  "objective": "To practice identifying fake authority signals (Costumes, Titles, Props) and applying verification strategies ('Trust but Verify') to prevent social engineering attacks.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B3-2-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: Trust but Verify",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Manipulators rely on your fear of being 'rude' to authority. They know you won't ask a 'policeman' for his badge number or a 'CEO' for her ID."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Defense: **Verification**. Asking for proof is not rude; it is security. Real authority figures are not offended by verification."
+        }
+      ]
+    },
+    {
+      "screenId": "B3-2-P2-S2",
+      "screenType": "Exercises",
+      "title": "Spotting the Fake Leader",
+      "exercises": [
+        {
+          "exerciseId": "B3-2-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: You receive a call. 'This is John from IT. We detected a virus on your computer. I need your password to fix it.'",
+          "question": "This is an Authority Hack because:",
+          "options": [
+            "IT support never asks for passwords.",
+            "They used the title 'IT' to bypass your security clearance.",
+            "They created urgency ('Virus').",
+            "All of the above."
+          ],
+          "correct": "All of the above.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is a classic Social Engineering attack (Vishing). They use Title + Fear to get access.",
+            "incorrect": "It hits all the buttons: Authority (IT), Fear (Virus), and a Request (Password)."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P2-E2",
+          "type": "multiple-choice",
+          "question": "Why is 'I was just following orders' (The Nuremberg Defense) a dangerous mindset?",
+          "options": [
+            "It allows people to commit atrocities or unethical acts by offloading responsibility to the Authority figure.",
+            "It is lazy.",
+            "It is illegal.",
+            "It is boring."
+          ],
+          "correct": "It allows people to commit atrocities or unethical acts by offloading responsibility to the Authority figure.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. When we enter 'Agentic State' (Milgram), we stop viewing ourselves as responsible for our actions.",
+            "incorrect": "It is the psychological mechanism behind many historical crimes."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P2-E3",
+          "type": "true-false",
+          "scene": "Scenario: A person in a nurse's scrub tries to enter a restricted area. They aren't wearing a badge.",
+          "question": "Should you hold the door for them?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is 'Tailgating.' Scrubs can be bought online. Never let the *costume* override the *security protocol*.",
+            "incorrect": "Politeness is the hacker's best friend. Ask to see the badge."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P2-E4",
+          "type": "fill-in",
+          "sentence": "Real authority provides (--------). Fake authority demands (--------).",
+          "options": [
+            "proof",
+            "obedience",
+            "money",
+            "silence"
+          ],
+          "answers": [
+            "proof",
+            "obedience"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A real cop will show a badge. A fake cop will get angry that you asked.",
+            "incorrect": "Look at the reaction to verification. Anger is a red flag."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P2-E5",
+          "type": "scenario",
+          "scene": "Scenario: Someone cuts in line and says, 'I have to get through, I'm a doctor.'",
+          "question": "If they don't look like they are in an emergency, they are using:",
+          "options": [
+            "The Title Hack (Status entitlement).",
+            "The Truth.",
+            "Emergency powers.",
+            "Kindness."
+          ],
+          "correct": "The Title Hack (Status entitlement).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. People use titles to get special treatment in non-professional settings. Verify the emergency before yielding."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P2-E6",
+          "type": "matching",
+          "question": "Match the Prop to the Context:",
+          "pairs": [
+            {
+              "term": "Clipboard / Tablet",
+              "definition": "Inspector / Official Business"
+            },
+            {
+              "term": "Ladder / Toolbelt",
+              "definition": "Maintenance / Invisible Worker"
+            },
+            {
+              "term": "Earpiece / Suit",
+              "definition": "Security / Secret Service"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Invisible' authority figures (maintenance) are often ignored, allowing them access to sensitive areas.",
+            "incorrect": "Think about who carries these items. They act as a 'Key' to specific zones."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the 'Verification' rule:",
+          "words": [
+            "is",
+            "not",
+            "Verification",
+            "rudeness",
+            "safety",
+            "is"
+          ],
+          "correct": "Verification is not rudeness is safety",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. (Or 'Verification is safety not rudeness'). You must reframe asking for ID as a safety protocol, not a personal insult.",
+            "incorrect": "Don't let social pressure stop you from checking credentials."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "Using a deep voice, interrupting others, and taking up physical space to subconsciously signal dominance.",
+          "question": "What is this behavior?",
+          "options": [
+            "Non-Verbal Authority / Power Posing",
+            "Shyness",
+            "Listening",
+            "Respect"
+          ],
+          "correct": "Non-Verbal Authority / Power Posing",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Animals do this to signal alpha status. Humans do it in boardrooms.",
+            "incorrect": "It creates a biological signal of 'Leader' that bypasses logic."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "Your boss tells you to do something unethical. 'I take full responsibility. Just do it.'",
+          "question": "Do you do it?",
+          "options": [
+            "No. 'I was just following orders' is not a legal defense. You are liable for your own actions.",
+            "Yes, if they take responsibility.",
+            "Yes, they are the boss.",
+            "Maybe."
+          ],
+          "correct": "No. 'I was just following orders' is not a legal defense. You are liable for your own actions.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The Milgram Experiment showed we want to obey, but history shows we are punished for it. Authority does not erase morality.",
+            "incorrect": "They can't take 'full responsibility' for your crime. You will both go down."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'Don't you know who I am?' (The Intimidation Hack).",
+          "question": "The best response is:",
+          "options": [
+            "Panic and apologize.",
+            "Calmly ask for ID. 'I'm afraid I don't. May I see some identification?'",
+            "Guess who they are.",
+            "Run away."
+          ],
+          "correct": "Calmly ask for ID. 'I'm afraid I don't. May I see some identification?'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This question is a bluff used to bypass security. Calling the bluff usually deflates the ego.",
+            "incorrect": "If you apologize, they win. If you check ID, you regain control."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P2-E11",
+          "type": "fill-in",
+          "sentence": "We often mistake (--------) for competence.",
+          "options": [
+            "confidence",
+            "silence",
+            "fear",
+            "kindness"
+          ],
+          "answers": [
+            "confidence"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The 'Confidence Heuristic.' If they look sure, we assume they are right. Con artists are 100% confident.",
+            "incorrect": "Competence is skill. Confidence is a feeling. They are not the same."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: A scammer uses a 'spoofed' number that says 'IRS' on your Caller ID.",
+          "question": "Is this Digital Authority?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The Caller ID is the 'Digital Badge.' We trust the screen. Always hang up and call the official number back.",
+            "incorrect": "Technology can wear costumes too. Never trust the caller ID alone."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: A person in a suit cuts to the front of the airport line. 'I'm in a rush.'",
+          "question": "Why do people let them through?",
+          "options": [
+            "The Suit signals 'VIP/Important Business.' We defer to status markers.",
+            "They are nice.",
+            "They paid.",
+            "Airport rules."
+          ],
+          "correct": "The Suit signals 'VIP/Important Business.' We defer to status markers.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If they were in pajamas, people would yell. The suit acts as a 'Status Shield.'",
+            "incorrect": "It's not a rule. It is social deference to wealth symbols."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P2-E14",
+          "type": "multiple-choice",
+          "question": "What is 'Credibility' hijacking?",
+          "options": [
+            "Using jargon or big words to sound like an expert when you aren't.",
+            "Stealing a car.",
+            "Being honest.",
+            "Wearing a hat."
+          ],
+          "correct": "Using jargon or big words to sound like an expert when you aren't.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Technobabble' creates the illusion of expertise. If you don't understand them, you assume they are smarter than you.",
+            "incorrect": "It's a linguistic authority hack."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Emperor's Clothes",
+          "scene": "You have learned that uniforms, titles, and confidence are often costumes. You know that real authority validates itself.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Milgram' Simulation (Resisting the order to harm).",
+            "Buying a suit.",
+            "Becoming a boss.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Milgram' Simulation (Resisting the order to harm).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you say 'No' to a man in a lab coat who orders you to do something wrong? Let's find out.",
+            "incorrect": "Next up: The ultimate test of obedience vs. morality."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,333 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B1",
+  "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis",
+  "lessonId": "B1-4",
+  "lessonTitle": "The \"Milton Model\": Weaponized Vague Language",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Drilling Down into Fluff",
+  "objective": "To practice identifying vague language patterns (Nominalizations, Unspecified Verbs, Mind Reads) and using the 'Meta Model' to challenge them with specific questions.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B1-4-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Meta Model",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The antidote to the Milton Model (Vagueness) is the **Meta Model** (Specificity). When a manipulator uses 'Fluff,' you must use a drill."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Tool: The Challenge Question. 'Who specifically?' 'How specifically?' 'According to whom?'"
+        }
+      ]
+    },
+    {
+      "screenId": "B1-4-P2-S2",
+      "screenType": "Exercises",
+      "title": "Drilling Down",
+      "exercises": [
+        {
+          "exerciseId": "B1-4-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: 'They say this is the best option.'",
+          "question": "How do you challenge this 'Lost Performative'?",
+          "options": [
+            "'Who is *They*, specifically?'",
+            "'Why is it the best?'",
+            "'I agree.'",
+            "'That's interesting.'"
+          ],
+          "correct": "'Who is *They*, specifically?'",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The manipulator hides the source of the opinion ('They'). You must force them to reveal the source. Often, 'They' doesn't exist.",
+            "incorrect": "Asking 'Why' accepts the premise. You need to find the *source* of the statement first."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is an 'Unspecified Verb'?",
+          "options": [
+            "A verb that describes an action but leaves out *how* it is done (e.g., 'This will *change* your life').",
+            "A noun.",
+            "A loud noise.",
+            "A lie."
+          ],
+          "correct": "A verb that describes an action but leaves out *how* it is done (e.g., 'This will *change* your life').",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Change' how? For better or worse? By doing what? The vagueness allows you to imagine a positive change.",
+            "incorrect": "It is an action word (verb) that lacks detail."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P2-E3",
+          "type": "scenario",
+          "scene": "Scenario: 'We need to improve *communication* around here.' (Nominalization).",
+          "question": "What is the Meta Model challenge?",
+          "options": [
+            "'Yes, we do.'",
+            "'Who needs to communicate what to whom, and how?' (Turning the noun back into a verb).",
+            "'Communication is key.'",
+            "'You are right.'"
+          ],
+          "correct": "'Who needs to communicate what to whom, and how?' (Turning the noun back into a verb).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. 'Communication' is a frozen noun. You must thaw it out into specific actions to solve the problem.",
+            "incorrect": "Agreeing with the vague noun solves nothing. You need the specifics of the action."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'You know exactly what I'm talking about.'",
+          "question": "Is this a 'Mind Read' designed to stop you from asking questions?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They pretend to know your thoughts ('You know...') to pressure you into agreeing. If you say 'No, I don't,' you break the spell.",
+            "incorrect": "It is a pressure tactic. It assumes shared knowledge that might not exist."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P2-E5",
+          "type": "matching",
+          "question": "Match the Fluff to the Drill:",
+          "pairs": [
+            {
+              "term": "\"Everyone knows...\"",
+              "definition": "Drill: \"Everyone? Name one person who doesn't.\""
+            },
+            {
+              "term": "\"It is obvious...\"",
+              "definition": "Drill: \"Obvious to whom?\""
+            },
+            {
+              "term": "\"This hurts me...\"",
+              "definition": "Drill: \"How specifically does it hurt you?\""
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Universal Quantifiers ('Everyone') are challenged by counter-examples. Lost Performatives ('It is') are challenged by asking for the source.",
+            "incorrect": "Find the missing information and ask for it."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P2-E6",
+          "type": "fill-in",
+          "sentence": "The Meta Model recovers (--------) information from the speaker's deep structure.",
+          "options": [
+            "deleted",
+            "added",
+            "false",
+            "fun"
+          ],
+          "answers": [
+            "deleted"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The speaker 'deleted' the details to be vague. Your questions recover the deleted data.",
+            "incorrect": "The information isn't added; it was left out (deleted)."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P2-E7",
+          "type": "scenario",
+          "scene": "Scenario: 'You are making me angry.'",
+          "question": "This is 'Cause-Effect' distortion. How do you challenge it?",
+          "options": [
+            "'I'm sorry.'",
+            "'How specifically does my action cause you to choose anger?'",
+            "'You are mean.'",
+            "Stop talking."
+          ],
+          "correct": "'How specifically does my action cause you to choose anger?'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You challenge the link. You cannot *make* someone angry; they choose to react with anger. This question returns responsibility to them.",
+            "incorrect": "Apologizing accepts the false premise that you control their emotions."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P2-E8",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the goal of the Meta Model:",
+          "words": [
+            "from",
+            "Reconnect",
+            "language",
+            "to",
+            "experience"
+          ],
+          "correct": "Reconnect language to experience",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Vague language floats in the air. Specific language connects to ground-level reality (experience).",
+            "incorrect": "We want to ground the words in sensory facts."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P2-E9",
+          "type": "reverse-scenario",
+          "answer": "A statement like 'All men are liars' or 'Women are too emotional.'",
+          "question": "What is this pattern?",
+          "options": [
+            "Universal Quantifier (Generalization)",
+            "Mind Reading",
+            "Nominalization",
+            "Tag Question"
+          ],
+          "correct": "Universal Quantifier (Generalization)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Words like All, Every, Always, Never. They create a rigid, false reality. Challenge: 'All men? Every single one?'",
+            "incorrect": "It takes one example and applies it to the universe. It is a generalization."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'It would be bad if you didn't sign today.'",
+          "question": "The challenge is:",
+          "options": [
+            "'Bad for whom?'",
+            "'Why?'",
+            "'Okay.'",
+            "'Is it?'"
+          ],
+          "correct": "'Bad for whom?'",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They deleted the person. It might be bad for *them* (loss of commission), but good for *you*. Find out who loses.",
+            "incorrect": "'Why' invites more fluff. 'For whom' demands a specific person."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P2-E11",
+          "type": "multiple-choice",
+          "question": "Why do cult leaders use 'Nominalizations' like 'The Truth,' 'The Way,' or 'The Awakening'?",
+          "options": [
+            "Because they are meaningless containers. The follower pours their own meaning in, feeling 'understood' by the leader.",
+            "Because they are specific.",
+            "Because they are short words.",
+            "No reason."
+          ],
+          "correct": "Because they are meaningless containers. The follower pours their own meaning in, feeling 'understood' by the leader.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. 'The Truth' sounds profound but means nothing. It is a blank check for the mind.",
+            "incorrect": "They aren't specific; they are infinite. Infinite meaning = Infinite control."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'You shouldn't do that.'",
+          "question": "Is this a 'Modal Operator of Necessity'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Words like Should, Must, Have to. They imply a rule without stating the consequence. Challenge: 'What would happen if I did?'",
+            "incorrect": "It implies necessity. Challenge the consequence."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: 'I know you are unhappy.' (Mind Read).",
+          "question": "What is the best response?",
+          "options": [
+            "'How do you know that?' (Demand Evidence).",
+            "'You're right.'",
+            "'I'm not unhappy!' (Defensive).",
+            "Crying."
+          ],
+          "correct": "'How do you know that?' (Demand Evidence).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Force them to reveal their observation ('Because you are frowning'). If they can't, they are projecting.",
+            "incorrect": "Don't accept the premise. Make them show their work."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P2-E14",
+          "type": "fill-in",
+          "sentence": "When you use the Meta Model, you move from the (--------) structure to the (--------) structure of language.",
+          "options": [
+            "surface",
+            "deep",
+            "loud",
+            "quiet"
+          ],
+          "answers": [
+            "surface",
+            "deep"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The Surface Structure is what is said (The deletions). The Deep Structure is what is meant (The full truth).",
+            "incorrect": "You are digging down. Surface -> Deep."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Drill",
+          "scene": "You have learned to question the fluff. You know that 'Everyone' is a generalization and 'It is bad' is a missing opinion.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Guru' Simulation (Debating a master of vague speech).",
+            "Becoming a Guru.",
+            "Chanting.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Guru' Simulation (Debating a master of vague speech).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you hold your ground against someone who speaks entirely in riddles and metaphors? Let's see.",
+            "incorrect": "Next up: Facing the ultimate vague speaker."
+          }
+        }
+      ]
+    }
+  ]
+}

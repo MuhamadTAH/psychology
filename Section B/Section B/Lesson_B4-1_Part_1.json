@@ -1,0 +1,343 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B4",
+  "unitTitle": "The Pressure Cooker: Emotional Leverage",
+  "lessonId": "B4-1",
+  "lessonTitle": "Scarcity: The Fear of Loss",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: \"Limited Time Only\" (Artificial Urgency)",
+  "objective": "To define 'Scarcity' as a psychological trigger where perceived limited availability increases value, and to identify 'Artificial Urgency' tactics used to force impulsive decisions.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B4-1-P1-S1",
+      "screenType": "Learn",
+      "title": "The Fear of Missing Out",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The human brain is wired to fear loss more than it desires gain. If something is rare, we assume it is valuable."
+        },
+        {
+          "type": "paragraph",
+          "text": "Manipulators exploit this by creating **Artificial Scarcity**. They pretend an item, an opportunity, or their time is running out to trigger panic. When you panic, you stop thinking and start grabbing."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Rule: If you must decide 'Now,' the answer should be 'No.' Urgency is the enemy of logic."
+        }
+      ]
+    },
+    {
+      "screenId": "B4-1-P1-S2",
+      "screenType": "Exercises",
+      "title": "Defining Scarcity",
+      "exercises": [
+        {
+          "exerciseId": "B4-1-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the **Scarcity Principle**?",
+          "options": [
+            "The belief that things are more attractive when their availability is limited.",
+            "Being hungry.",
+            "Having no money.",
+            "A type of fear."
+          ],
+          "correct": "The belief that things are more attractive when their availability is limited.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We want what we can't have. If it's disappearing, our desire for it spikes.",
+            "incorrect": "It's not about poverty (lack of money). It's about the psychological value of rarity."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: A website shows a countdown timer: 'Offer expires in 05:00 minutes!'",
+          "question": "This tactic is:",
+          "options": [
+            "Artificial Urgency (Time Scarcity).",
+            "Helpful.",
+            "A technical error.",
+            "Honesty."
+          ],
+          "correct": "Artificial Urgency (Time Scarcity).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The timer creates a 'Panic Loop.' You focus on the clock instead of the value of the product.",
+            "incorrect": "It is not helpful; it is manipulative. The digital product won't actually 'run out' in 5 minutes."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P1-E3",
+          "type": "fill-in",
+          "sentence": "Scarcity triggers the fear of (--------).",
+          "options": [
+            "loss",
+            "gain",
+            "joy",
+            "sleep"
+          ],
+          "answers": [
+            "loss"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Loss Aversion.' Losing $100 feels twice as bad as winning $100 feels good. We act to avoid the loss of opportunity.",
+            "incorrect": "It's not about gain. It's about not losing the chance."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I usually don't date, but I'll make an exception for you this one time.'",
+          "question": "Is this Scarcity applied to people?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is 'Playing Hard to Get.' They frame their attention as a rare commodity to increase its value.",
+            "incorrect": "It creates the illusion that they are a 'Limited Edition' prize."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P1-E5",
+          "type": "matching",
+          "question": "Match the Scarcity Type:",
+          "pairs": [
+            {
+              "term": "Time Scarcity",
+              "definition": "\"Sale ends at midnight!\""
+            },
+            {
+              "term": "Quantity Scarcity",
+              "definition": "\"Only 2 seats left!\""
+            },
+            {
+              "term": "Exclusivity",
+              "definition": "\"Invitation only.\""
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Time limits the *when*. Quantity limits the *amount*. Exclusivity limits the *who*.",
+            "incorrect": "Look at the constraint. Is it the clock, the stock, or the access?"
+          }
+        },
+        {
+          "exerciseId": "B4-1-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the manipulator's goal:",
+          "words": [
+            "thinking",
+            "Replace",
+            "panic",
+            "with",
+            "logical"
+          ],
+          "correct": "Replace logical thinking with panic",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. When the brain panics about missing out (FOMO), the logic center shuts down.",
+            "incorrect": "Panic destroys logic. They want you irrational."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "A tactic where a seller claims another buyer is 'just about to buy it' to force you to commit immediately.",
+          "question": "What is this?",
+          "options": [
+            "The Phantom Competitor",
+            "Social Proof",
+            "Gaslighting",
+            "The Truth"
+          ],
+          "correct": "The Phantom Competitor",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Real estate agents and car dealers use this constantly. The fear of losing the item to 'someone else' forces the sale.",
+            "incorrect": "It is a specific Scarcity tactic involving a fake rival."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: A 'Guru' says, 'I am only taking 5 students this year.' (They actually take 500).",
+          "question": "Why lie about the number?",
+          "options": [
+            "To create Artificial Scarcity.",
+            "They can't count.",
+            "To be humble.",
+            "To save money."
+          ],
+          "correct": "To create Artificial Scarcity.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If they said 'Unlimited spots,' the course would seem less valuable. Scarcity equals Value in the human mind.",
+            "incorrect": "It increases the perceived value and urgency of the course."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are selling a house. You actually have two interested buyers. Is it ethical to tell Buyer A about Buyer B?",
+          "question": "Is this 'Dark'?",
+          "options": [
+            "No, if it is true. It is transparency.",
+            "Yes, using competition is always dark.",
+            "Yes, you should lie and say there are 10 buyers.",
+            "No, but you shouldn't mention it."
+          ],
+          "correct": "No, if it is true. It is transparency.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Stating facts ('There is another offer') is honest negotiation. Fabricating a buyer ('The Phantom Competitor') is manipulation.",
+            "incorrect": "Truth is the dividing line. Real scarcity is a market fact. Fake scarcity is a trick."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P1-E10",
+          "type": "fill-in",
+          "sentence": "Scarcity hinders our ability to (--------), but it increases our desire to (--------).",
+          "options": [
+            "think",
+            "act",
+            "sleep",
+            "eat"
+          ],
+          "answers": [
+            "think",
+            "act"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. (Cialdini). We think *less* but want *more*. It is a dangerous combination.",
+            "incorrect": "It speeds up action by shutting down thought."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P1-E11",
+          "type": "multiple-choice",
+          "question": "What is 'Romeo and Juliet Effect'?",
+          "options": [
+            "Parental interference (creating a barrier/scarcity) makes a relationship feel more intense and desirable.",
+            "Loving someone.",
+            "Being Italian.",
+            "Dying young."
+          ],
+          "correct": "Parental interference (creating a barrier/scarcity) makes a relationship feel more intense and desirable.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Psychological Reactance. If you tell me I *can't* have it (Scarcity), I want it more to prove my freedom.",
+            "incorrect": "Barriers increase desire. The scarcity of access fuels the passion."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P1-E12",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm not sure if I can sell this to you... I might need to keep it.'",
+          "question": "This tactic is:",
+          "options": [
+            "The Take-Away.",
+            "Indecision.",
+            "Generosity.",
+            "Honesty."
+          ],
+          "correct": "The Take-Away.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. By pulling the offer back, they make you chase it. You fight to 'win' the right to buy.",
+            "incorrect": "It turns the dynamic. You stop evaluating the item and start evaluating if you can *get* it."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P1-E13",
+          "type": "true-false",
+          "scene": "Scenario: Information that is censored is viewed as less valuable.",
+          "question": "Is this true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct/False. Censored information is viewed as *more* valuable and *more* true (Scarcity of Information). We want forbidden knowledge.",
+            "incorrect": "Banning a book makes it a bestseller. Scarcity creates value."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P1-E14",
+          "type": "matching",
+          "question": "Match the feeling to the tactic:",
+          "pairs": [
+            {
+              "term": "FOMO (Fear Of Missing Out)",
+              "definition": "\"Everyone is going, tickets are sold out!\""
+            },
+            {
+              "term": "Urgency",
+              "definition": "\"Last chance to buy!\""
+            },
+            {
+              "term": "Exclusivity",
+              "definition": "\"I chose YOU for this secret offer.\""
+            }
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. FOMO is social scarcity. Urgency is time scarcity. Exclusivity is access scarcity.",
+            "incorrect": "Identify the specific emotion being targeted."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Panic Button",
+          "scene": "You understand that Scarcity creates a panic response that overrides logic. 'Limited Time' usually means 'Don't Think'.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Pausing the Panic (Real-world defense).",
+            "Buying everything.",
+            "Running fast.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: Pausing the Panic (Real-world defense).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We need to train your brain to hit 'Pause' when it feels the 'Rush'.",
+            "incorrect": "Next up: How to stop the FOMO reaction."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B5",
+  "unitTitle": "Section B Grand Review: The Master Tactician",
+  "lessonId": "B5-4",
+  "lessonTitle": "The \"Politician\" Simulation",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "The Vote (Decision)",
+  "objective": "To master decision-making in a high-manipulation environment by filtering out emotional noise, rejecting false dilemmas, and choosing based on verified facts rather than tribal loyalty.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Citizen_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B5-4-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Ballot Box",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You have deconstructed the Speech and survived the Debate. Now comes the hardest part: The Decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Politician wants you to vote out of **Fear** ('The other guy will destroy you') or **Tribe** ('Blue/Red Team'). They want you to ignore the facts."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Filter out the Rhetoric. Vote based on Policy and Character, not Panic and Loyalty."
+        }
+      ]
+    },
+    {
+      "screenId": "B5-4-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: Election Day",
+      "exercises": [
+        {
+          "exerciseId": "B5-4-P3-E1",
+          "type": "boss-scenario",
+          "scene": "The Politician makes a final plea: 'This is the most important election of our lifetime! If you don't vote for me, the [Enemy Group] will destroy everything you love! There is no other choice!'",
+          "question": "This is the 'Apocalyptic Close.' What is your mental defense?",
+          "options": [
+            "Panic and vote for them.",
+            "Recognize the 'False Dilemma' and 'Fear-Mongering.' Reject the fear. Evaluate their actual track record calmly.",
+            "Vote for the other guy out of spite.",
+            "Don't vote."
+          ],
+          "correct": "Recognize the 'False Dilemma' and 'Fear-Mongering.' Reject the fear. Evaluate their actual track record calmly.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Every election is framed as 'The End of the World' to drive turnout. Ignore the apocalypse narrative. Look at the policy.",
+            "incorrect": "Panic voting is emotional voting. Do not let them hijack your amygdala."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Bandwagon",
+          "steps": [
+            {
+              "scene": "Polls show your preferred candidate is losing by a huge margin. Everyone says, 'It's over. Why bother voting?' (Apathy / Spiral of Silence).",
+              "options": [
+                "Stay home. It's useless.",
+                "Vote for the winner to be on the 'winning team.'",
+                "Vote for your candidate anyway. Social Proof does not determine truth or value.",
+                "Post angry comments online."
+              ],
+              "correct": "Vote for your candidate anyway. Social Proof does not determine truth or value.",
+              "feedback": {
+                "correct": "Perfect. You resisted the 'Spiral of Silence.' Your vote is your voice, regardless of the crowd's volume.",
+                "incorrect": "Apathy is a form of surrender. Voting for the winner just to fit in is the Bandwagon Effect."
+              }
+            },
+            {
+              "question": "A friend says: 'If you vote for that third party, you are throwing your vote away!' (Shaming/Strategy).",
+              "options": [
+                "'You're right.' (Submission)",
+                "'My vote is my endorsement of values, not a strategic bet on a horse race. I vote for what I believe in.' (Principled Stance)",
+                "'You are a sheep.' (Attack)",
+                "Lie about who you voted for."
+              ],
+              "correct": "'My vote is my endorsement of values, not a strategic bet on a horse race. I vote for what I believe in.' (Principled Stance)",
+              "feedback": {
+                "correct": "Mastery. You rejected the 'Strategic Voting' shame. You framed voting as an act of integrity, not calculation.",
+                "incorrect": "Lying hides your power. Attacking creates division. Stand by your choice."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Bandwagon. You voted with your brain, not the crowd.",
+            "incorrect": "You let the crowd decide for you. You were herded."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why do Politicians use 'Identity Politics' (e.g., 'Real Americans do X')?",
+          "options": [
+            "To define the 'In-Group' and the 'Out-Group.' It makes you feel that voting differently means losing your identity.",
+            "To be nice.",
+            "To help immigrants.",
+            "To teach history."
+          ],
+          "correct": "To define the 'In-Group' and the 'Out-Group.' It makes you feel that voting differently means losing your identity.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It binds your vote to your self-worth. 'If I don't vote this way, I am not a Real American.' It is deep manipulation.",
+            "incorrect": "It is a division tactic, not education."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P3-E4",
+          "type": "fill-in",
+          "sentence": "To defeat political manipulation, you must consume information from (--------) sources.",
+          "options": [
+            "diverse",
+            "one",
+            "loud",
+            "scary"
+          ],
+          "answers": [
+            "diverse"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you only watch one channel, you are in an Echo Chamber (Confirmation Bias). You must see how the 'Other Side' frames the story to find the truth in the middle.",
+            "incorrect": "One source = Indoctrination. Diverse sources = Perspective."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'He's not perfect, but he's *our* guy.'",
+          "question": "This is:",
+          "options": [
+            "Tribalism / In-Group Bias.",
+            "Logic.",
+            "Criticism.",
+            "Hate."
+          ],
+          "correct": "Tribalism / In-Group Bias.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It excuses bad behavior because 'he belongs to the tribe.' It blinds you to corruption.",
+            "incorrect": "It's not logic. Logic would say 'He is bad, so I won't support him.'"
+          }
+        },
+        {
+          "exerciseId": "B5-4-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'Just trust the plan.'",
+          "question": "Is this a demand for blind faith?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Trust the plan' (without seeing the plan) is a Cult tactic. In a democracy, plans must be transparent and verified.",
+            "incorrect": "Trust must be earned with transparency."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Single Issue' trap:",
+          "words": [
+            "complex",
+            "reduces",
+            "reality",
+            "It",
+            "slogan",
+            "to",
+            "a"
+          ],
+          "correct": "It reduces complex reality to a slogan",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Build the Wall' or 'Tax the Rich' simplifies complex economics/geopolitics into a chant. It stops thinking.",
+            "incorrect": "Slogans are for rallying, not governing."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "Using a celebrity or respected figure to endorse a candidate, transferring their 'Halo' to the politician.",
+          "question": "What is this?",
+          "options": [
+            "Authority Transfer / Halo Effect",
+            "Logic",
+            "Policy",
+            "Debate"
+          ],
+          "correct": "Authority Transfer / Halo Effect",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'I like this actor, so I will vote for who they like.' It is irrational but effective.",
+            "incorrect": "Actors are not policy experts. It is purely emotional transfer."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "Your candidate wins, but you find out they cheated. Do you accept the win?",
+          "question": "The Integrity Test:",
+          "options": [
+            "Yes, winning is everything. (Machiavellian).",
+            "No. Demand an investigation. Fair process is more important than 'My Team' winning. (Democratic Integrity).",
+            "Ignore it.",
+            "Blame the other side."
+          ],
+          "correct": "No. Demand an investigation. Fair process is more important than 'My Team' winning. (Democratic Integrity).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you only support democracy when you win, you don't support democracy; you support power. Integrity means holding 'your side' accountable.",
+            "incorrect": "Accepting a cheated win destroys the system for everyone."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'The media is lying to you! Only *I* tell the truth!'",
+          "question": "This is:",
+          "options": [
+            "Information Control / Cult Tactic.",
+            "Honesty.",
+            "Bravery.",
+            "News."
+          ],
+          "correct": "Information Control / Cult Tactic.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Discrediting all other sources is the first step to brainwashing. If you only listen to one source, you are in a cult.",
+            "incorrect": "It is not brave; it is isolating."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P3-E11",
+          "type": "fill-in",
+          "sentence": "A politician sells (--------) to the fearful and (--------) to the angry.",
+          "options": [
+            "safety, revenge",
+            "money, food",
+            "love, hugs",
+            "truth, lies"
+          ],
+          "answers": [
+            "safety",
+            "revenge"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'I will protect you' (Safety). 'I will punish them' (Revenge). These are the two most powerful political products.",
+            "incorrect": "They sell emotion, not goods."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'You voted for *them*? Unfriend me.'",
+          "question": "Is this social coercion?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Cutting ties over a vote is a way to punish dissent and enforce tribal purity. It increases polarization.",
+            "incorrect": "It is not healthy debate. It is social punishment."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: You realize both candidates are using manipulation tactics.",
+          "question": "What do you do?",
+          "options": [
+            "Give up and don't vote.",
+            "Use 'Critical Thinking' to strip away the tactics and compare their actual policies/records. Vote for the best (or least bad) option.",
+            "Vote randomly.",
+            "Cry."
+          ],
+          "correct": "Use 'Critical Thinking' to strip away the tactics and compare their actual policies/records. Vote for the best (or least bad) option.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Awareness doesn't mean cynicism. It means clarity. You can see the game and still make a move.",
+            "incorrect": "Apathy helps the manipulator. You must participate, but with open eyes."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P3-E14",
+          "type": "matching",
+          "question": "Match the Rhetoric to the Reality:",
+          "pairs": [
+            {
+              "term": "\"We are a family.\"",
+              "definition": "Reality: You are a voting bloc."
+            },
+            {
+              "term": "\"I will fight for you.\"",
+              "definition": "Reality: I will fight for my own power."
+            },
+            {
+              "term": "\"Believe me.\"",
+              "definition": "Reality: Verify me."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Translate the slogan. Family = Bloc. Fight = Power. Believe = Check.",
+            "incorrect": "Don't accept the surface meaning."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Citizen",
+          "scene": "You have navigated the swamp of politics. You didn't fall for the fear, the hate, or the hype. You made a choice based on your own values.",
+          "question": "You are ready for the Final Boss of Section B:",
+          "options": [
+            "Lesson B5-5: The Section B Boss Fight (The Master Influencer).",
+            "Lesson A1-1.",
+            "Sleeping.",
+            "Quitting."
+          ],
+          "correct": "Lesson B5-5: The Section B Boss Fight (The Master Influencer).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. One final test. Can you handle a manipulator who uses Language, Framing, Social Proof, Leverage, AND Rhetoric all at once?",
+            "incorrect": "Next up: The Ultimate Test of Section B."
+          }
+        }
+      ]
+    }
+  ]
+}

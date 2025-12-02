@@ -1,0 +1,333 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B4",
+  "unitTitle": "The Pressure Cooker: Emotional Leverage",
+  "lessonId": "B4-5",
+  "lessonTitle": "Unit B4 Review: The Lever",
+  "lessonType": "Review",
+  "lessonPart": 2,
+  "lessonPartTitle": "The 'Gauntlet' (Pressure Tactics)",
+  "objective": "To test rapid identification and defense strategies against a randomized mix of Emotional Leverage tactics, including Artificial Urgency, Weaponized Reciprocity, and Fear Appeals.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 300,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B4-5-P2-S1",
+      "screenType": "Learn",
+      "title": "The Pressure Gauntlet",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In the Gauntlet, you will be squeezed. They will use Fear, Greed, Guilt, and Time against you."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Identify the specific lever they are pulling. Is it Scarcity? Reciprocity? Or Hope?"
+        }
+      ]
+    },
+    {
+      "screenId": "B4-5-P2-S2",
+      "screenType": "Exercises",
+      "title": "Rapid Fire Pressure",
+      "exercises": [
+        {
+          "exerciseId": "B4-5-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: 'I can only hold this price for you until 5 PM.'",
+          "question": "This is:",
+          "options": [
+            "Time Scarcity / Artificial Deadline.",
+            "Generosity.",
+            "Truth.",
+            "A good deal."
+          ],
+          "correct": "Time Scarcity / Artificial Deadline.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The deadline forces you to act without thinking. It is almost always fake.",
+            "incorrect": "Prices rarely change at 5 PM. It is a pressure tactic."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is 'Weaponized Reciprocity'?",
+          "options": [
+            "Doing a favor for someone so they feel obligated to do a bigger favor for you.",
+            "Helping people.",
+            "Trading.",
+            "Being nice."
+          ],
+          "correct": "Doing a favor for someone so they feel obligated to do a bigger favor for you.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It turns a social norm into a trap. The debt is psychological.",
+            "incorrect": "It is not about helping; it is about leverage."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P2-E3",
+          "type": "scenario",
+          "scene": "Scenario: 'If you don't sign this, your competitors will get ahead of you.'",
+          "question": "This appeal uses:",
+          "options": [
+            "Fear (Loss Aversion).",
+            "Hope.",
+            "Love.",
+            "Logic."
+          ],
+          "correct": "Fear (Loss Aversion).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are triggering the fear of losing status or market share.",
+            "incorrect": "It is not hopeful. It is a threat of falling behind."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P2-E4",
+          "type": "fill-in",
+          "sentence": "To defeat Scarcity, you must assume there is always (--------).",
+          "options": [
+            "abundance",
+            "scarcity",
+            "danger",
+            "time"
+          ],
+          "answers": [
+            "abundance"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you believe resources are abundant (another house, another deal), Scarcity loses its power.",
+            "incorrect": "Abundance mindset kills the fear of missing out."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P2-E5",
+          "type": "true-false",
+          "scene": "Scenario: A free gift in the mail.",
+          "question": "Is this a Reciprocity Trap?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You didn't ask for it, but now you feel bad throwing it away without donating.",
+            "incorrect": "It is unsolicited giving designed to trigger repayment."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: 'Everyone is buying this stock!'",
+          "question": "This combines Social Proof with:",
+          "options": [
+            "FOMO (Scarcity).",
+            "Logic.",
+            "Calm.",
+            "Patience."
+          ],
+          "correct": "FOMO (Scarcity).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If 'everyone' is buying, the supply must be running out. It triggers panic buying.",
+            "incorrect": "It creates urgency, not patience."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P2-E7",
+          "type": "matching",
+          "question": "Match the Tactic to the Trigger:",
+          "pairs": [
+            {
+              "term": "Limited Edition",
+              "definition": "Scarcity (Exclusivity)."
+            },
+            {
+              "term": "Free Sample",
+              "definition": "Reciprocity (Debt)."
+            },
+            {
+              "term": "Miracle Cure",
+              "definition": "Hope (Desperation)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Exclusivity targets ego. Free samples target guilt. Miracles target pain.",
+            "incorrect": "Match the offer to the psychological button."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P2-E8",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense against urgency:",
+          "words": [
+            "decisions",
+            "make",
+            "bad",
+            "Fast",
+            "decisions"
+          ],
+          "correct": "Fast decisions make bad decisions",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Speed kills logic. If they force speed, it's because the logic is flawed.",
+            "incorrect": "Slow down to see the truth."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P2-E9",
+          "type": "reverse-scenario",
+          "answer": "Claiming another buyer is about to purchase the item to force you to bid higher.",
+          "question": "What is this tactic?",
+          "options": [
+            "The Phantom Competitor",
+            "The Honest Broker",
+            "The Friend",
+            "The Helper"
+          ],
+          "correct": "The Phantom Competitor",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It creates artificial rivalry. You bid against a ghost.",
+            "incorrect": "It is a specific Scarcity play."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'I can cure your depression in 3 days.'",
+          "question": "This is:",
+          "options": [
+            "Hope-Mongering / The Miracle Cure.",
+            "Medical advice.",
+            "Truth.",
+            "Kindness."
+          ],
+          "correct": "Hope-Mongering / The Miracle Cure.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It exploits suffering by promising an impossible shortcut.",
+            "incorrect": "Real healing takes time. Miracles are usually scams."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P2-E11",
+          "type": "ethical-dilemma",
+          "scene": "You want to ask for a raise. Do you mention a (real) job offer from another company?",
+          "question": "Is this manipulation?",
+          "options": [
+            "No. It is Leverage / Market Value.",
+            "Yes, it is a threat.",
+            "Yes, it is mean.",
+            "No, lie about the amount."
+          ],
+          "correct": "No. It is Leverage / Market Value.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Stating facts about your market value is negotiation, not manipulation. It proves your scarcity.",
+            "incorrect": "It feels like a threat, but it is a business reality. You have options."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P2-E12",
+          "type": "fill-in",
+          "sentence": "When you feel the urge to repay a manipulator, realize it is a (--------), not a gift.",
+          "options": [
+            "trap",
+            "hug",
+            "friend",
+            "loan"
+          ],
+          "answers": [
+            "trap"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The 'gift' was the cheese in the mousetrap.",
+            "incorrect": "It wasn't a loan because you didn't ask for it. It was a trap."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: 'I did you a huge favor last year. Now I need you to lie for me.'",
+          "question": "This is:",
+          "options": [
+            "Calling in the Debt (Corruption).",
+            "Friendship.",
+            "Fair.",
+            "Loyalty."
+          ],
+          "correct": "Calling in the Debt (Corruption).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They saved the favor to use as leverage for something unethical. This is the 'Debt of Corruption.'",
+            "incorrect": "Friends don't ask friends to compromise their ethics."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P2-E14",
+          "type": "true-false",
+          "scene": "Scenario: 'This information is classified.'",
+          "question": "Does this increase its value?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Information Scarcity makes us want to know the secret. It feels more 'true' because it is hidden.",
+            "incorrect": "Forbidden fruit tastes sweeter."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Squeeze",
+          "scene": "You can now feel when the walls are closing in. The clock, the debt, the fear. You know how to push back.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'High-Stakes Sales' Boss Scenario (Simulation).",
+            "Buying a car.",
+            "Running away.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'High-Stakes Sales' Boss Scenario (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you survive a room where every lever is being pulled at once? Let's find out.",
+            "incorrect": "Next up: The ultimate pressure test."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A5",
+  "unitTitle": "The Vulnerable Mind: Why We Fall For It",
+  "lessonId": "A5-2",
+  "lessonTitle": "Cognitive Biases: The Brain's Backdoors",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Spotting Mental Errors in Real Time",
+  "objective": "To practice identifying specific cognitive biases (Sunk Cost, Anchoring, Scarcity, Social Proof) in real-world scenarios to prevent manipulation.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A5-2-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: Debugging the Code",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Manipulators don't just use emotion; they use math. They know that if they frame a choice in a specific way, your brain is statistically likely to pick the wrong answer."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "In this practice, you must catch your brain in the act of falling for a shortcut."
+        }
+      ]
+    },
+    {
+      "screenId": "A5-2-P2-S2",
+      "screenType": "Exercises",
+      "title": "Bias Detection Drill",
+      "exercises": [
+        {
+          "exerciseId": "A5-2-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: You've spent 5 years in a toxic relationship. You think: 'I can't leave now. I've put so much time into this. If I leave, those 5 years were wasted.'",
+          "question": "This is the:",
+          "options": [
+            "Sunk Cost Fallacy.",
+            "True Love.",
+            "Loyalty.",
+            "Optimism."
+          ],
+          "correct": "Sunk Cost Fallacy.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Your brain is valuing the *past investment* (which is gone) over your *future happiness*. The 5 years are gone whether you stay or leave.",
+            "incorrect": "It's not loyalty; it's a logical error. You are throwing good time after bad time to avoid admitting a loss."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P2-E2",
+          "type": "scenario",
+          "scene": "Scenario: A car salesman says, 'The original price was $50,000, but for you, it's $30,000.' You think it's a great deal.",
+          "question": "What bias is being used?",
+          "options": [
+            "Anchoring Bias.",
+            "Generosity.",
+            "The Halo Effect.",
+            "Confirmation Bias."
+          ],
+          "correct": "Anchoring Bias.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They set a high 'Anchor' ($50k) so the real price ($30k) feels low. If they started at $30k, you might think it was expensive.",
+            "incorrect": "It's not generosity. They manipulated your baseline reference point (the Anchor)."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P2-E3",
+          "type": "fill-in",
+          "sentence": "The (--------) Principle states that we look to others to determine correct behavior. 'If everyone else is doing it, it must be right.'",
+          "options": [
+            "Social Proof",
+            "Authority",
+            "Scarcity",
+            "Liking"
+          ],
+          "answers": [
+            "Social Proof"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is why scammers use 'Fake Reviews' or 'Paid Crowds.' We are herd animals.",
+            "incorrect": "It is Social Proof (The Herd Mind). Authority is about leaders; Social Proof is about peers."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'Only 2 spots left! Buy now!'",
+          "question": "Is this utilizing the Scarcity Bias?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Scarcity (fear of missing out) bypasses logic. We want what we can't have. Manipulators manufacture fake scarcity to rush you.",
+            "incorrect": "It is the definition of Artificial Scarcity. It creates urgency."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P2-E5",
+          "type": "matching",
+          "question": "Match the Bias to the Example:",
+          "pairs": [
+            {
+              "term": "Confirmation Bias",
+              "definition": "Ignoring red flags because you want them to be 'The One'."
+            },
+            {
+              "term": "Authority Bias",
+              "definition": "Obeying a man in a lab coat without question."
+            },
+            {
+              "term": "Reciprocity Bias",
+              "definition": "Feeling you *must* buy something because they gave you a free sample."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Confirmation filters data. Authority blindly trusts rank. Reciprocity creates debt.",
+            "incorrect": "Think about the trigger. Lab coat = Authority. Free sample = Debt/Reciprocity."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: You judge a stranger's mistake as 'They are a bad person.' You judge your *own* mistake as 'I was just tired.'",
+          "question": "This double standard is:",
+          "options": [
+            "Fundamental Attribution Error.",
+            "Narcissism.",
+            "Gaslighting.",
+            "Fairness."
+          ],
+          "correct": "Fundamental Attribution Error.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. We judge others by their *character*, but ourselves by our *situation*. This prevents us from having empathy or seeing reality clearly.",
+            "incorrect": "It is a universal cognitive bias, not just narcissism. It distorts how we judge people."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the 'Gambler's Fallacy':",
+          "words": [
+            "change",
+            "must",
+            "luck",
+            "Thinking",
+            "past",
+            "because",
+            "of",
+            "events"
+          ],
+          "correct": "Thinking luck must change because of past events",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'I've lost 10 times in a row, so I'm due for a win.' No, you aren't. Probability has no memory. Manipulators use this to keep you gambling (or dating them).",
+            "incorrect": "The universe doesn't 'owe' you a win. Each event is independent."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "When incompetent people overestimate their competence because they lack the knowledge to know how bad they are.",
+          "question": "What is this effect?",
+          "options": [
+            "Dunning-Kruger Effect",
+            "Imposter Syndrome",
+            "Halo Effect",
+            "Genius"
+          ],
+          "correct": "Dunning-Kruger Effect",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A stupid person doesn't know they are stupid. This makes them incredibly confident, which can fool you (Confidence Heuristic).",
+            "incorrect": "Imposter Syndrome is the opposite (smart people feeling fake). Dunning-Kruger is dumb people feeling smart."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "A salesperson uses the 'Door-in-the-Face' technique: They ask for $1,000 (knowing you'll say no), then ask for $100 (the real goal). You feel relieved and say yes.",
+          "question": "How do you defeat this?",
+          "options": [
+            "Recognize the contrast trick. The $100 isn't 'cheap'; it's just cheaper than the anchor. Judge the $100 on its own merit.",
+            "Say yes to be nice.",
+            "Get angry.",
+            "Give $50."
+          ],
+          "correct": "Recognize the contrast trick. The $100 isn't 'cheap'; it's just cheaper than the anchor. Judge the $100 on its own merit.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This exploits 'Perceptual Contrast.' Disconnect the two offers. Is the item worth $100? If not, say no.",
+            "incorrect": "Don't let the first number influence the second. Reset your brain."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'Everyone agrees with me. I haven't met a single person who likes your idea.'",
+          "question": "If this is a lie, what Bias are they exploiting?",
+          "options": [
+            "Social Proof / Bandwagon Effect.",
+            "Authority.",
+            "Sunk Cost.",
+            "Scarcity."
+          ],
+          "correct": "Social Proof / Bandwagon Effect.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are faking a 'Consensus' to make you feel isolated and wrong. Humans are terrified of being the outlier.",
+            "incorrect": "It's about the herd. They claim the herd is against you to force compliance."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P2-E11",
+          "type": "fill-in",
+          "sentence": "The (--------) Effect means we react differently depending on how a choice is presented (e.g., '90% survival rate' vs '10% death rate').",
+          "options": [
+            "framing",
+            "mirror",
+            "fear",
+            "logic"
+          ],
+          "answers": [
+            "framing"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Manipulators 'frame' the request to highlight the gain or hide the loss. 'It's an investment' sounds better than 'It's a cost'.",
+            "incorrect": "It is the Frame. It shapes how you see the picture."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: You notice one negative comment on your post and ignore 100 positive ones.",
+          "question": "Is this 'Negativity Bias'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Our brains are wired to focus on threats (negativity) more than safety (positivity). Manipulators use one criticism to ruin your whole day.",
+            "incorrect": "It is an evolutionary survival mechanism. Bad things stick; good things slide off."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P2-E13",
+          "type": "multiple-choice",
+          "question": "What is the 'Availability Heuristic'?",
+          "options": [
+            "Being available to date.",
+            "Overestimating the likelihood of events that are easy to remember (e.g., fearing plane crashes because they are on the news, but ignoring car crashes).",
+            "Using a calendar.",
+            "Being smart."
+          ],
+          "correct": "Overestimating the likelihood of events that are easy to remember (e.g., fearing plane crashes because they are on the news, but ignoring car crashes).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Manipulators use vivid, scary stories to make you fear things that are statistically unlikely (Fearmongering).",
+            "incorrect": "It's not about availability of time. It's about the 'availability' of the memory in your brain."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P2-E14",
+          "type": "scenario",
+          "scene": "Scenario: A cult leader says, 'The world out there is evil. Only *we* are enlightened. You are special because you are one of *us*.'",
+          "question": "This triggers:",
+          "options": [
+            "In-Group Bias (Us vs. Them).",
+            "Sunk Cost.",
+            "Reciprocity.",
+            "Anchoring."
+          ],
+          "correct": "In-Group Bias (Us vs. Them).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. We are wired to favor our 'Tribe.' By creating a distinct 'Us,' they make you hostile to 'Them' (your family/friends).",
+            "incorrect": "This is the foundation of cult control. Tribalism overrides logic."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: System Debugged",
+          "scene": "You now see the glitches. Sunk Cost keeps you stuck. Anchoring sets the price. Social Proof herds you. Scarcity rushes you.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Sunk Cost' Trap (Simulation).",
+            "Gambling.",
+            "Buying a car.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Sunk Cost' Trap (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you walk away from a bad investment after you've already paid? This is the hardest test for the human brain.",
+            "incorrect": "Next up: The Simulation where walking away is the only win."
+          }
+        }
+      ]
+    }
+  ]
+}

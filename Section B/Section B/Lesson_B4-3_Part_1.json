@@ -1,0 +1,193 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B4",
+  "unitTitle": "The Pressure Cooker: Emotional Leverage",
+  "lessonId": "B4-3",
+  "lessonTitle": "Fear-Mongering: The Boogeyman",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: Creating a Problem to Sell the Solution",
+  "objective": "To define 'Fear-Mongering' as a manipulation tactic that fabricates or exaggerates threats to bypass critical thinking, forcing the victim to accept the manipulator's 'solution'.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B4-3-P1-S1",
+      "screenType": "Learn",
+      "title": "The Amygdala Hijack",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Fear is the strongest human emotion. When you are afraid, your brain shuts down its logic center (Prefrontal Cortex) and activates its survival center (Amygdala)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Manipulators know this. They use **Fear-Mongering** to invent a 'Boogeyman' (a threat). Once you are panicked, they offer themselves as the *only* protection."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Formula: Create the Disease -> Sell the Cure."
+        }
+      ]
+    },
+    {
+      "screenId": "B4-3-P1-S2",
+      "screenType": "Exercises",
+      "title": "Defining the Threat",
+      "exercises": [
+        {
+          "exerciseId": "B4-3-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is **Fear-Mongering**?",
+          "options": [
+            "Selling Halloween costumes.",
+            "The action of deliberately arousing public fear or alarm about a particular issue to manipulate behavior.",
+            "Being brave.",
+            "Watching scary movies."
+          ],
+          "correct": "The action of deliberately arousing public fear or alarm about a particular issue to manipulate behavior.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It creates a state of alarm where the victim is willing to do anything to feel safe again.",
+            "incorrect": "It is not entertainment. It is the strategic use of panic."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: A politician says, 'Those people [The Other Group] want to destroy your way of life and hurt your children! Vote for me, and I will stop them!'",
+          "question": "This is:",
+          "options": [
+            "The 'Us vs. Them' Fear Appeal.",
+            "Policy debate.",
+            "Kindness.",
+            "History."
+          ],
+          "correct": "The 'Us vs. Them' Fear Appeal.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They create a monster ('Those people') to position themselves as the Hero. Without the fear, they have no platform.",
+            "incorrect": "It is not a debate on facts. It is an emotional hijack using tribal fear."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P1-E3",
+          "type": "fill-in",
+          "sentence": "Fear bypasses (--------). A scared person cannot think clearly.",
+          "options": [
+            "logic",
+            "emotion",
+            "pain",
+            "food"
+          ],
+          "answers": [
+            "logic"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Fear puts the brain in 'Fight or Flight.' You cannot do math or analyze contracts when you are running from a tiger.",
+            "incorrect": "Fear amplifies emotion; it bypasses logic/reason."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'If you leave me, you will be alone forever. No one else will ever love you.'",
+          "question": "Is this Fear-Mongering?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The 'Boogeyman' here is 'Eternal Loneliness.' The manipulator positions themselves as the only shield against that fate.",
+            "incorrect": "It is a classic emotional threat designed to paralyze you from leaving."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P1-E5",
+          "type": "matching",
+          "question": "Match the Fear to the 'Cure':",
+          "pairs": [
+            {
+              "term": "Fear of Sickness",
+              "definition": "Cure: The Miracle Supplement."
+            },
+            {
+              "term": "Fear of Crime",
+              "definition": "Cure: The Expensive Alarm System."
+            },
+            {
+              "term": "Fear of Hell/Damnation",
+              "definition": "Cure: Absolute Obedience to the Leader."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Every fake cure needs a fake (or exaggerated) disease to sell it.",
+            "incorrect": "Identify the problem they invented to sell their solution."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the 'Fear-Then-Relief' tactic:",
+          "words": [
+            "creates",
+            "compliance",
+            "Relief",
+            "after",
+            "fear"
+          ],
+          "correct": "Relief after fear creates compliance",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. (Dolinski). If I scare you, then suddenly stop, you are so flooded with relief that you will agree to anything I ask next.",
+            "incorrect": "The relief is the vulnerable moment. The fear sets it up."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "Creating a false problem (e.g., 'Your computer has a virus!') so the victim pays for help they don't need.",
+          "question": "What is this?",
+          "options": [
+            "The Manufactured Crisis",
+            "Tech Support",
+            "Good Luck",
+            "Reciprocity"
+          ],
+          "correct": "The Manufactured Crisis",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The virus isn't real. The fear is real. The payment is real.",
+            "incorrect": "It is a scam based on fabricating a threat."
+          }
+        }
+      ]
+    }
+  ]
+}

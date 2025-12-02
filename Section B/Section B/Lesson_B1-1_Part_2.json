@@ -1,0 +1,332 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B1",
+  "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis",
+  "lessonId": "B1-1",
+  "lessonTitle": "Pacing and Leading",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Spotting the \"Yes Set\"",
+  "objective": "To practice identifying the 'Yes Set' technique and other Pacing strategies in real-time conversations to prevent subconscious compliance.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B1-1-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Yes Trap",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A 'Yes Set' is a series of undeniable statements (facts) designed to get your brain into a pattern of agreement. Once you say 'Yes' three times mentally, you are primed to say 'Yes' to the suggestion."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Look for the pattern: Fact -> Fact -> Fact -> Suggestion."
+        }
+      ]
+    },
+    {
+      "screenId": "B1-1-P2-S2",
+      "screenType": "Exercises",
+      "title": "Breaking the Pattern",
+      "exercises": [
+        {
+          "exerciseId": "B1-1-P2-E1",
+          "type": "scenario",
+          "scene": "Salesperson: 'It's been a long day (Fact). You work hard (Fact). You probably just want to make this easy and sign here (Lead).'",
+          "question": "This is:",
+          "options": [
+            "A 'Yes Set' (Pacing and Leading).",
+            "Polite conversation.",
+            "A logical argument.",
+            "A question."
+          ],
+          "correct": "A 'Yes Set' (Pacing and Leading).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They stated two things you *must* agree with, then slid in the command ('sign here') as if it were just another fact.",
+            "incorrect": "It's not polite; it's structural. They are building a rhythm of agreement to hide the command."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P2-E2",
+          "type": "multiple-choice",
+          "question": "Why do Hypnotists start by describing your current physical sensations ('You are sitting in the chair, feeling the weight of your arms...')?",
+          "options": [
+            "To bore you.",
+            "To Pace your current reality so deeply that you trust their voice to Lead you into a trance.",
+            "To make sure you are comfortable.",
+            "To check if you are awake."
+          ],
+          "correct": "To Pace your current reality so deeply that you trust their voice to Lead you into a trance.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. By describing what is undeniably true *right now*, they bypass your critical factor. Your brain says, 'Yes, that is true,' and opens the door.",
+            "incorrect": "It is about establishing authority over your reality. If they can describe it, they can direct it."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P2-E3",
+          "type": "fill-in",
+          "sentence": "To break a Pacing loop, you must (--------) the pattern (e.g., disagree or change the subject).",
+          "options": [
+            "interrupt",
+            "agree",
+            "follow",
+            "love"
+          ],
+          "answers": [
+            "interrupt"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A 'Pattern Interrupt' (like dropping a pen or asking a random question) snaps you out of the trance.",
+            "incorrect": "Agreeing deepens the trance. You must break the flow."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I know you're skeptical. I would be too. It sounds crazy.'",
+          "question": "Is this Pacing?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is 'Pacing the Objection.' By saying it first, they steal your argument and align with you against it.",
+            "incorrect": "They are validating your skepticism to disarm it. It is a powerful Pacing move."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P2-E5",
+          "type": "matching",
+          "question": "Match the Pacing Tactic to the Example:",
+          "pairs": [
+            {
+              "term": "Visual Pacing",
+              "definition": "\"I can see that you are upset.\""
+            },
+            {
+              "term": "Auditory Pacing",
+              "definition": "\"I hear what you are saying.\""
+            },
+            {
+              "term": "Kinesthetic Pacing",
+              "definition": "\"I feel like this is heavy for you.\""
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Good influencers match the *sensory language* (VAK) of the target. If you say 'I see,' they say 'I see.'",
+            "incorrect": "Match the sense. See = Visual. Hear = Auditory. Feel = Kinesthetic."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: You are arguing. They match your breathing rate and tone perfectly, then slowly lower their voice and slow their breath.",
+          "question": "What happens to you?",
+          "options": [
+            "You unconsciously slow down and calm down (You follow the Lead).",
+            "You get angrier.",
+            "You fall asleep.",
+            "Nothing."
+          ],
+          "correct": "You unconsciously slow down and calm down (You follow the Lead).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is non-verbal Pacing and Leading. Humans subconsciously mimic each other to stay in rapport. They led you to calm.",
+            "incorrect": "If the Pacing was established correctly, you will follow them down. It is a biological link."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the 'Yes Set':",
+          "words": [
+            "momentum",
+            "of",
+            "Creating",
+            "agreement",
+            "a"
+          ],
+          "correct": "Creating a momentum of agreement",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Once the brain starts saying 'Yes,' it wants to keep saying 'Yes.' It is inertia.",
+            "incorrect": "It creates momentum. Stopping ('No') requires effort."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "A technique where you state a fact that is undeniably true ('You are here') to make your next statement ('You are relaxing') accepted as true.",
+          "question": "What is this?",
+          "options": [
+            "The Truism Trap / Pacing",
+            "Gaslighting",
+            "Lying",
+            "Debating"
+          ],
+          "correct": "The Truism Trap / Pacing",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Truisms (undeniable facts) build the 'Yes Set' instantly.",
+            "incorrect": "It isn't lying; it starts with truth to sell the suggestion."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P2-E9",
+          "type": "scenario",
+          "scene": "Scenario: A psychic says, 'You have a scar on your knee (Generic/Pace). You worry about money sometimes (Generic/Pace). You are looking for love (Lead/Prediction).'",
+          "question": "This relies on:",
+          "options": [
+            "Cold Reading (Pacing common experiences).",
+            "Magic.",
+            "Telepathy.",
+            "Research."
+          ],
+          "correct": "Cold Reading (Pacing common experiences).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They 'Pace' experiences that *everyone* has, making you feel understood, so you accept their 'Lead' (the prediction).",
+            "incorrect": "It is a statistical trick. Almost everyone has a scar on their knee. It establishes authority."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P2-E10",
+          "type": "fill-in",
+          "sentence": "If you feel like you are in a 'rhythm' with someone and can't say no, (--------) the rhythm.",
+          "options": [
+            "break",
+            "keep",
+            "love",
+            "trust"
+          ],
+          "answers": [
+            "break"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Break the rhythm physically (stand up, move) or verbally (ask a weird question). This shatters the 'Yes Set'.",
+            "incorrect": "The rhythm is the trap. You must disrupt it to regain critical thinking."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P2-E11",
+          "type": "ethical-dilemma",
+          "scene": "You are negotiating a raise. You start by listing 3 undeniable wins you got for the company (Pacing) before asking for the money (Leading).",
+          "question": "Is this ethical?",
+          "options": [
+            "Yes. It is persuasive communication based on facts.",
+            "No. It is mind control.",
+            "Only if you lie.",
+            "No, you should just ask."
+          ],
+          "correct": "Yes. It is persuasive communication based on facts.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Using the 'Yes Set' with facts to highlight value is standard, ethical persuasion. It becomes dark if you lie.",
+            "incorrect": "It is not mind control; it is effective framing. You are reminding them of reality before making a request."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I know you don't want to buy this today.'",
+          "question": "Can a negative statement be a Pace?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If the person *doesn't* want to buy, stating that fact matches their reality. It builds trust.",
+            "incorrect": "Pacing matches *reality*, even if reality is negative ('You are angry,' 'You don't want this')."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: They match your breathing. You speed up your breathing. They speed up. You slow down. They slow down.",
+          "question": "This confirms:",
+          "options": [
+            "They are consciously mirroring you (and you are now Leading them).",
+            "They are asthmatic.",
+            "They are mocking you.",
+            "Nothing."
+          ],
+          "correct": "They are consciously mirroring you (and you are now Leading them).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You 'tested the connection.' By changing your state, you reversed the dynamic. Now *you* are Leading.",
+            "incorrect": "This is how you catch a mirror. Change your state and see if they follow."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P2-E14",
+          "type": "multiple-choice",
+          "question": "What is the 'But' Reversal?",
+          "options": [
+            "Using 'But' to erase the Pace ('I hear you, but...'). This breaks rapport.",
+            "Using 'But' to agree.",
+            "A dance move.",
+            "Being rude."
+          ],
+          "correct": "Using 'But' to erase the Pace ('I hear you, but...'). This breaks rapport.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A master influencer uses 'And' instead of 'But.' ('I hear you, *and* we need to move forward'). 'But' deletes the validation.",
+            "incorrect": "'But' creates conflict. 'And' maintains the bridge (Pace -> Lead)."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Rhythm",
+          "scene": "You can now hear the rhythm of agreement. Fact, Fact, Fact... Trap. You know how to interrupt it.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Rapport' Trap (Simulation).",
+            "Learning to dance.",
+            "A lecture on grammar.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Rapport' Trap (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you resist someone who feels *exactly* like you? Let's test it.",
+            "incorrect": "Next up: Surviving a high-level Pacing attack."
+          }
+        }
+      ]
+    }
+  ]
+}

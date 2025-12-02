@@ -1,0 +1,191 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B2",
+  "unitTitle": "The Frame Game: Controlling Perception",
+  "lessonId": "B2-4",
+  "lessonTitle": "Labeling & Altercasting",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Rejecting the Assigned Role",
+  "objective": "To practice identifying specific Altercasting tactics (Positive, Negative, Role-Based) in real-time and applying the 'Role Rejection' defense to maintain autonomy.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B2-4-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: Breaking the Cast",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Manipulators write a script where you play the 'compliant servant' or the 'generous friend.' If you accept the role, you must follow the script."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Defense: **Reject the Role**. You can accept a compliment ('Thanks, I am smart') without accepting the obligation ('But I still won't do your work')."
+        }
+      ]
+    },
+    {
+      "screenId": "B2-4-P2-S2",
+      "screenType": "Exercises",
+      "title": "Spotting the Script",
+      "exercises": [
+        {
+          "exerciseId": "B2-4-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: Your boss says, 'I'm giving this extra project to you because you are the only one *reliable* enough to handle it without complaining.'",
+          "question": "This is:",
+          "options": [
+            "A genuine compliment.",
+            "Positive Altercasting (The 'Reliable' Trap).",
+            "A promotion.",
+            "Fairness."
+          ],
+          "correct": "Positive Altercasting (The 'Reliable' Trap).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They labeled you 'Reliable' and explicitly defined 'Reliable' as 'someone who doesn't complain.' It creates a trap where complaining destroys your status.",
+            "incorrect": "It sounds like a compliment, but it's a leash. It forces you to do extra work silently to keep the label."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P2-E2",
+          "type": "multiple-choice",
+          "question": "Why is Negative Altercasting ('Don't be a baby') effective?",
+          "options": [
+            "It makes you want to cry.",
+            "It triggers a desire to disprove the negative label by acting 'tough' (doing what they want).",
+            "It is true.",
+            "It is funny."
+          ],
+          "correct": "It triggers a desire to disprove the negative label by acting 'tough' (doing what they want).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. To prove you aren't a 'baby,' you stop complaining. To prove you aren't 'cheap,' you spend money. You dance to their tune.",
+            "incorrect": "It works by leveraging your ego to prove them wrong."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P2-E3",
+          "type": "fill-in",
+          "sentence": "Altercasting works by creating (--------) pressure to live up to an expectation.",
+          "options": [
+            "social",
+            "physical",
+            "financial",
+            "legal"
+          ],
+          "answers": [
+            "social"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We all want to be seen as consistent and good. Altercasting exploits this social desire.",
+            "incorrect": "It is internal social pressure, not external force."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'A good mother would never leave her children.'",
+          "question": "Is this Role-Based Altercasting?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It defines the role 'Good Mother' in a way that serves the manipulator (preventing divorce/separation). It weaponizes the identity.",
+            "incorrect": "It binds a specific action (staying) to a core identity (Mother)."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P2-E5",
+          "type": "matching",
+          "question": "Match the Label to the Trap:",
+          "pairs": [
+            {
+              "term": "\"You're open-minded.\"",
+              "definition": "Trap: You must accept my radical idea."
+            },
+            {
+              "term": "\"You're a team player.\"",
+              "definition": "Trap: You must sacrifice for the group."
+            },
+            {
+              "term": "\"You're strong.\"",
+              "definition": "Trap: You must endure abuse without complaining."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Open-minded' stops judgment. 'Team player' stops boundaries. 'Strong' stops complaints.",
+            "incorrect": "Look at what behavior the label *forbids*."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: A salesperson says, 'This package is for serious investors who understand value, not for tire-kickers.'",
+          "question": "They are forcing you to choose between:",
+          "options": [
+            "Being a 'Serious Investor' (Buying) or a 'Tire-Kicker' (Leaving).",
+            "Red or Blue.",
+            "Cash or Credit.",
+            "Truth or Lie."
+          ],
+          "correct": "Being a 'Serious Investor' (Buying) or a 'Tire-Kicker' (Leaving).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is an Identity Dilemma. To claim the positive identity (Serious), you must pay.",
+            "incorrect": "It filters the audience by ego."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense:",
+          "words": [
+            "accept",
+            "Don't",
+            "for",
+            "role",
+            "cast",
+            "you",
+            "the"
+          ],
+          "correct": "Don't accept the role cast for you",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You are the writer of your own life. Do not let them hand you a script.",
+            "incorrect": "Reject the casting call."
+          }
+        }
+      ]
+    }
+  ]
+}

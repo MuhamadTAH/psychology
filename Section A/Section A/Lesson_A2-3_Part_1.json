@@ -1,0 +1,340 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A2",
+  "unitTitle": "The Manipulator's Playbook: Narcissism & Gaslighting",
+  "lessonId": "A2-3",
+  "lessonTitle": "Tactic Deep Dive: Love Bombing",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The 'Idealize' Phase",
+  "objective": "To define Love Bombing as a manipulative strategy of overwhelming affection used to create rapid dependency and gather data on the target.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A2-3-P1-S1",
+      "screenType": "Learn",
+      "title": "The Addiction Factory",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Before a manipulator can abuse you, they must addict you. This is done through **Love Bombing**."
+        },
+        {
+          "type": "paragraph",
+          "text": "Love Bombing is not just 'being nice.' It is an overwhelming, high-speed campaign of affection, flattery, and attention designed to lower your defenses and create a chemical dependency (Dopamine) in your brain."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Crucial Rule: If it feels 'too good to be true' and 'too fast to be real,' it is likely a trap."
+        }
+      ]
+    },
+    {
+      "screenId": "A2-3-P1-S2",
+      "screenType": "Exercises",
+      "title": "Identifying the Hook",
+      "exercises": [
+        {
+          "exerciseId": "A2-3-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the primary difference between **Love Bombing** and a healthy 'Honeymoon Phase'?",
+          "options": [
+            "Love Bombing involves expensive gifts.",
+            "Love Bombing moves at an unnaturally fast pace ('soulmates' in a week) and respects no boundaries.",
+            "Healthy relationships don't have a honeymoon phase.",
+            "Love Bombing only happens online."
+          ],
+          "correct": "Love Bombing moves at an unnaturally fast pace ('soulmates' in a week) and respects no boundaries.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Healthy relationships grow *gradually*. Love Bombing is an *instant* explosion of intensity that demands immediate commitment.",
+            "incorrect": "Money isn't the key. Speed and lack of boundaries are the defining features of the Love Bomb."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P1-E2",
+          "type": "fill-in",
+          "sentence": "Love Bombing is not about love; it is about (--------) gathering.",
+          "options": [
+            "data",
+            "money",
+            "food",
+            "friend"
+          ],
+          "answers": [
+            "data"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. While they flatter you, they are mining you for information: your insecurities, your past traumas, and your deepest desires. They will use this data later to manipulate you.",
+            "incorrect": "It's not just money. They ask deep questions early on to gather *data* on your weaknesses."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P1-E3",
+          "type": "scenario",
+          "scene": "Scenario: You meet someone on Monday. By Wednesday, they are texting you 50 times a day. By Friday, they say: 'I've never felt this way about anyone. We are destined to be together.'",
+          "question": "This behavior is:",
+          "options": [
+            "Romantic and passionate.",
+            "A massive red flag for Love Bombing.",
+            "A sign they are lonely.",
+            "Normal dating in the modern world."
+          ],
+          "correct": "A massive red flag for Love Bombing.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This 'Future Faking' and intensity is designed to lock you down before you spot their red flags.",
+            "incorrect": "It might feel romantic, but it is a calculated tactic to bypass your critical thinking."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: A Love Bomber asks you, 'What was your worst childhood memory?' on the first date.",
+          "question": "Are they doing this to build genuine intimacy?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. They are looking for your **vulnerabilities**. If you say 'abandonment,' they now know exactly how to hurt you later (by threatening to leave).",
+            "incorrect": "Real intimacy takes time. This is 'False Intimacy' used to mine data."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P1-E5",
+          "type": "matching",
+          "question": "Match the Love Bombing phrase to its hidden intent:",
+          "pairs": [
+            {
+              "term": "'We are soulmates.'",
+              "definition": "Creating a false sense of destiny."
+            },
+            {
+              "term": "'You are the only one who understands me.'",
+              "definition": "Isolating you from others."
+            },
+            {
+              "term": "'My ex was crazy.'",
+              "definition": "Playing the victim / Triangulation."
+            },
+            {
+              "term": "'I want to take care of you.'",
+              "definition": "Creating financial/emotional dependency."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Every romantic phrase has a tactical shadow. 'You are the only one' subtly implies 'Don't talk to anyone else.'",
+            "incorrect": "Look deeper. 'Only one' creates an 'Us vs. Them' dynamic (Isolation)."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to describe the chemical effect of Love Bombing:",
+          "words": [
+            "targets",
+            "dopamine",
+            "It",
+            "receptors",
+            "your"
+          ],
+          "correct": "It targets your dopamine receptors",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Constant praise and attention flood your brain with dopamine. When they stop (Devaluation), you go into literal chemical withdrawal.",
+            "incorrect": "It's not about 'love' in the heart; it's about *dopamine* in the brain."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P1-E7",
+          "type": "multiple-choice",
+          "question": "What is **Mirroring** in the context of Love Bombing?",
+          "options": [
+            "Copying your body language only.",
+            "Becoming a reflection of *your* perfect partner by pretending to like everything you like.",
+            "Looking in a mirror together.",
+            "Being honest about their flaws."
+          ],
+          "correct": "Becoming a reflection of *your* perfect partner by pretending to like everything you like.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you love hiking, they love hiking. If you love jazz, they love jazz. They have no 'self,' so they mirror yours to hook you.",
+            "incorrect": "It's deeper than body language. It's 'Identity Mirroring.' They fake their entire personality to match yours."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P1-E8",
+          "type": "case-analysis",
+          "caseTitle": "The 'Us vs. The World' Trap",
+          "scene": "The Love Bomber tells you: 'Your friends just don't get us. They are jealous of our love. We don't need them. We have each other.'",
+          "question": "This is a combination of Flattery and what dangerous tactic?",
+          "options": [
+            "Isolation",
+            "Generosity",
+            "Mirroring",
+            "Discarding"
+          ],
+          "correct": "Isolation",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. By framing your friends as 'jealous enemies,' they manipulate you into cutting off your support system. This creates total dependency on the manipulator.",
+            "incorrect": "This is **Isolation**. They are severing your ties to the outside world so they have total control."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P1-E9",
+          "type": "reverse-scenario",
+          "answer": "Promising a wonderful future (marriage, vacations, kids) very early on to distract you from current bad behavior.",
+          "question": "What is this tactic called?",
+          "options": [
+            "Future Faking",
+            "Gaslighting",
+            "Stonewalling",
+            "Projection"
+          ],
+          "correct": "Future Faking",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. **Future Faking** sells you a dream. You stay in the relationship hoping for the 'future,' ignoring the abusive 'present.'",
+            "incorrect": "This is 'Future Faking.' They hold the future hostage to get compliance today."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P1-E10",
+          "type": "fill-in",
+          "sentence": "Love Bombing ends the moment they feel they have (--------) you.",
+          "options": [
+            "secured",
+            "lost",
+            "helped",
+            "paid"
+          ],
+          "answers": [
+            "secured"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Once you are committed (married, moved in, pregnant, or signed a contract), the Love Bombing stops abruptly, and the Devaluation begins.",
+            "incorrect": "They don't stop when they lose you; they stop when they *have* you trapped."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P1-E11",
+          "type": "ethical-dilemma",
+          "scene": "You meet someone who is genuinely enthusiastic and kind. You are afraid they are Love Bombing you.",
+          "question": "How do you ethically test this?",
+          "options": [
+            "Ghost them to see if they get angry.",
+            "Set a small boundary (e.g., 'I can't text while at work') and observe their reaction.",
+            "Accuse them of being a narcissist.",
+            "Love Bomb them back."
+          ],
+          "correct": "Set a small boundary (e.g., 'I can't text while at work') and observe their reaction.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. A healthy person will respect the boundary ('No problem!'). A Love Bomber will feel rejected and might lash out or guilt-trip you. The boundary is the litmus test.",
+            "incorrect": "Ghosting is cruel. Accusing is aggressive. Setting a **boundary** reveals the truth safely."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: A new boss constantly praises you publicly, saying you are 'better than the whole team combined' in your first week.",
+          "question": "Is this Love Bombing?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is **Professional Love Bombing**. It isolates you from your team (Triangulation) and sets impossible standards. You will be devalued the moment you make a mistake.",
+            "incorrect": "Love Bombing happens at work too. Being praised as 'the savior' in week one is a trap, not a compliment."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: They buy you a car after one month of dating. You say, 'This is too much, I can't accept this.' They reply, 'I guess my love isn't good enough for you.'",
+          "question": "This reaction confirms:",
+          "options": [
+            "They are just generous.",
+            "It was a **Love Bombing Trap** designed to create obligation.",
+            "They are insecure.",
+            "You were rude."
+          ],
+          "correct": "It was a **Love Bombing Trap** designed to create obligation.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Genuine generosity accepts 'no.' Love Bombing uses gifts as leverage. Their guilt-trip reveals the gift was actually a transaction.",
+            "incorrect": "The guilt-trip ('I guess my love...') proves it wasn't a gift; it was a purchase of control."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P1-E14",
+          "type": "multiple-choice",
+          "question": "Why do victims often stay in abusive relationships long after the Love Bombing stops?",
+          "options": [
+            "They like the abuse.",
+            "They are chasing the 'High' of the Idealization Phase (Intermittent Reinforcement).",
+            "They forgot the beginning.",
+            "They are weak."
+          ],
+          "correct": "They are chasing the 'High' of the Idealization Phase (Intermittent Reinforcement).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Like a gambler at a slot machine, they remember the 'jackpot' (Love Bombing) and keep pulling the lever (enduring abuse) hoping it will return.",
+            "incorrect": "It's not weakness; it's chemical addiction to the cycle. They want the 'nice version' of the partner back."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Setup",
+          "scene": "You now recognize the 'Idealize' phase. It is not love; it is a **Dopamine Trap** involving Mirroring, Future Faking, and Excessive Attention.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "How to Love Bomb others.",
+            "Practice: Spotting the specific signs that a compliment is actually a trap.",
+            "A history lesson.",
+            "Ignoring red flags."
+          ],
+          "correct": "Practice: Spotting the specific signs that a compliment is actually a trap.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We need to train your radar to distinguish between 'This feels good' and 'This is a trap.'",
+            "incorrect": "Next up is practical detection: Spotting the 'Too Good to Be True' moments."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,357 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A5",
+  "unitTitle": "The Vulnerable Mind: Why We Fall For It",
+  "lessonId": "A5-1",
+  "lessonTitle": "The \"Hook\" Points: Needs & Insecurities",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Perfect Match\" Simulation",
+  "objective": "To master the defense against the 'Perfect Match' trap by recognizing when someone is mirroring your internal void rather than genuinely connecting with you.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Mirror_Breaker_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A5-1-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: Breaking the Mirror",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A manipulator does not want to date you; they want to *become* you. They scan your insecurities and create a persona that fits perfectly into your empty spaces."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you feel lonely, they are your shadow. If you feel weak, they are your shield. If you feel misunderstood, they are your voice."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Trap: 'Perfection' is not human. If someone fits you perfectly after one week, it is a camouflage tactic, not destiny."
+        }
+      ]
+    },
+    {
+      "screenId": "A5-1-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Soulmate Trap",
+      "exercises": [
+        {
+          "exerciseId": "A5-1-P3-E1",
+          "type": "boss-scenario",
+          "scene": "You are insecure about your art career. A new partner says: 'I've never met anyone with your vision. You are going to change the world. I will dedicate my life to managing your success. We are a power couple.'",
+          "question": "They are targeting your 'Need for Significance.' What is the danger?",
+          "options": [
+            "They are supportive.",
+            "They are binding their identity to your success (Enmeshment). Once you rely on them for validation, they will own your career.",
+            "They want a job.",
+            "They are an art critic."
+          ],
+          "correct": "They are binding their identity to your success (Enmeshment). Once you rely on them for validation, they will own your career.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is the 'Manager/Muse' trap. They build you up so they can control you. If you try to leave, they will threaten to destroy the career they 'built' for you.",
+            "incorrect": "Support encourages independence. This creates dependency. 'I will dedicate my life' is a red flag for enmeshment."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The 'Rescuer' Test",
+          "steps": [
+            {
+              "scene": "You have a 'Savior Complex.' A date tells you a tragic story: 'My ex was crazy, my boss hates me, and I'm about to be evicted. I just need one person to believe in me.'",
+              "options": [
+                "'I believe in you! You can stay with me.' (Trap Triggered)",
+                "'That sounds really hard. What is your plan to fix it?' (Boundary)",
+                "'You sound like a loser.' (Cruelty)",
+                "'Let me pay your rent.' (Enabling)"
+              ],
+              "correct": "'That sounds really hard. What is your plan to fix it?' (Boundary)",
+              "feedback": {
+                "correct": "Perfect. You offered empathy ('That sounds hard') but put the responsibility back on them ('What is your plan?'). A parasite hates this question.",
+                "incorrect": "Inviting them in or paying is exactly what they want. You just signed a contract to be their parent."
+              }
+            },
+            {
+              "question": "They reply: 'I don't have a plan. I'm just so overwhelmed. I thought you were different... I thought you were kind.' (The Guilt Hook).",
+              "options": [
+                "'I am kind! I'll help.' (Submission)",
+                "'Kindness doesn't mean solving your problems for you. I can help you brainstorm, but I can't save you.' (Holding Frame)",
+                "'Fine, leave me alone.' (Anger)",
+                "Apologize profusely."
+              ],
+              "correct": "'Kindness doesn't mean solving your problems for you. I can help you brainstorm, but I can't save you.' (Holding Frame)",
+              "feedback": {
+                "correct": "Mastery. You defined 'Kindness' on your terms, not theirs. You rejected the guilt trip.",
+                "incorrect": "Defending your character ('I am kind!') means they hooked you. Don't debate your goodness."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Pity Trap. You realized that a person with endless tragedies is usually the creator of those tragedies.",
+            "incorrect": "You became the Rescuer. Now you are responsible for a grown adult."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why does 'Identity Mirroring' feel so good?",
+          "options": [
+            "Because it validates your ego. It feels like you are finally 'seen' and 'understood' perfectly.",
+            "Because it is honest.",
+            "Because opposites attract.",
+            "Because it is boring."
+          ],
+          "correct": "Because it validates your ego. It feels like you are finally 'seen' and 'understood' perfectly.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. We all want to be understood. The manipulator fakes this understanding to bypass your critical thinking.",
+            "incorrect": "It is not honest; it is a reflection. It feels good because it is Narcissistic Supply for *you*."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P3-E4",
+          "type": "fill-in",
+          "sentence": "If a relationship feels like a (--------), it is likely a fantasy created by a manipulator.",
+          "options": [
+            "movie",
+            "job",
+            "chore",
+            "fight"
+          ],
+          "answers": [
+            "movie"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Real life has friction and boredom. Movies are scripted. If it feels scripted and perfect, it is a performance.",
+            "incorrect": "If it feels like a movie (perfect pacing, dialogue, romance), be suspicious."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P3-E5",
+          "type": "true-false",
+          "scene": "Scenario: 'I hate drama. I just want peace.' (Said by someone whose life is constant chaos).",
+          "question": "Is this a lie?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Manipulators signal virtues (hating drama) to distract you from their reality (creating drama). Judge by actions, not declarations.",
+            "incorrect": "People who actually hate drama don't talk about it; they just live peacefully."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P3-E6",
+          "type": "scenario",
+          "scene": "Scenario: You have a fear of 'Abandonment.' The manipulator creates a fight and threatens to leave, then waits for you to beg them to stay.",
+          "question": "This is:",
+          "options": [
+            "Trauma Bonding / Fear Conditioning.",
+            "A normal breakup.",
+            "Conflict resolution.",
+            "Bad timing."
+          ],
+          "correct": "Trauma Bonding / Fear Conditioning.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They trigger your specific fear (Abandonment) to make you panic, then they 'forgive' you to relieve the panic. This cycle creates a chemical addiction.",
+            "incorrect": "It is not normal. It is calculated emotional torture to reinforce control."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P3-E7",
+          "type": "matching",
+          "question": "Match the Hook to the Trap:",
+          "pairs": [
+            {
+              "term": "You need Flattery",
+              "definition": "Trap: Love Bombing"
+            },
+            {
+              "term": "You need to Help",
+              "definition": "Trap: The Pity Play"
+            },
+            {
+              "term": "You fear Conflict",
+              "definition": "Trap: Intimidation/Rage"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Your need dictates their tactic. If you fear conflict, they will yell until you submit.",
+            "incorrect": "Analyze the link. The need creates the opening for the specific weapon."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P3-E8",
+          "type": "build-sentence",
+          "question": "Arrange the words to describe the antidote to mirroring:",
+          "words": [
+            "takes",
+            "time",
+            "Real",
+            "connection"
+          ],
+          "correct": "Real connection takes time",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You cannot know someone in a week. Any 'deep' connection formed instantly is an illusion.",
+            "incorrect": "Time is the enemy of the manipulator. The mask gets heavy over time."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P3-E9",
+          "type": "reverse-scenario",
+          "answer": "A dynamic where you feel 'addicted' to a partner who treats you badly, often because of Intermittent Reinforcement.",
+          "question": "What is this bond?",
+          "options": [
+            "Trauma Bond",
+            "True Love",
+            "Friendship",
+            "Networking"
+          ],
+          "correct": "Trauma Bond",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It feels like love, but it is addiction. It is forged in the cycle of abuse (Fear -> Relief).",
+            "incorrect": "Love is stable. Trauma bonds are volatile and addictive."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: You feel 'bored' by a nice person who respects your boundaries. You miss the 'spark' of your toxic ex.",
+          "question": "What does this tell you about your own mind?",
+          "options": [
+            "You are healed.",
+            "Your nervous system is dysregulated; you are mistaking anxiety for passion.",
+            "The nice person is the wrong one.",
+            "You should call your ex."
+          ],
+          "correct": "Your nervous system is dysregulated; you are mistaking anxiety for passion.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. After abuse, peace feels like boredom. You must detox from the drama addiction to appreciate healthy love.",
+            "incorrect": "It's not that the nice person is wrong; it's that your 'picker' is calibrated to chaos."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P3-E11",
+          "type": "ethical-dilemma",
+          "scene": "A manipulator targets your friend, who has low self-esteem. Your friend loves the attention.",
+          "question": "Do you intervene?",
+          "options": [
+            "Yes, aggressively attack the manipulator.",
+            "Gently ask questions like 'Does it feel too fast?' to trigger your friend's critical thinking, but respect their autonomy.",
+            "Cut off the friend.",
+            "Join them."
+          ],
+          "correct": "Gently ask questions like 'Does it feel too fast?' to trigger your friend's critical thinking, but respect their autonomy.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you attack, you push them closer. You must help them see the 'Hook' themselves (Socratic Method).",
+            "incorrect": "Aggression feeds the 'Us vs. Them' narrative. You must be a safe harbor, not a judge."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P3-E12",
+          "type": "fill-in",
+          "sentence": "If you have a (--------) to be right, a manipulator will start arguments just to watch you dance.",
+          "options": [
+            "need",
+            "fear",
+            "money",
+            "hope"
+          ],
+          "answers": [
+            "need"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The 'Need to be Right' is a huge Hook. They will say something stupid just to provoke you into a 3-hour debate (Supply).",
+            "incorrect": "It's a compulsion. If you can't let a wrong statement slide, you are easily controlled."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P3-E13",
+          "type": "true-false",
+          "scene": "Scenario: 'You are the only person who can handle me.'",
+          "question": "Is this a compliment?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It sounds like a compliment to your strength, but it is a trap to make you endure abuse that others would reject.",
+            "incorrect": "It means 'You are the only one with boundaries weak enough to stay.'"
+          }
+        },
+        {
+          "exerciseId": "A5-1-P3-E14",
+          "type": "multiple-choice",
+          "question": "What is the ultimate goal of 'Self-Audit' (Lesson A5-1)?",
+          "options": [
+            "To blame yourself.",
+            "To close your emotional gates so you can choose who enters, rather than being invaded.",
+            "To become a robot.",
+            "To stop dating."
+          ],
+          "correct": "To close your emotional gates so you can choose who enters, rather than being invaded.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Awareness gives you choice. If you know you are a 'Rescuer,' you can choose *not* to rescue the next sob story.",
+            "incorrect": "It's not about blame; it's about security. You are patching the holes in your firewall."
+          }
+        },
+        {
+          "exerciseId": "A5-1-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Mirror Shattered",
+          "scene": "You have identified your Needs. You know that a 'Perfect Match' is a red flag. You know that your hunger is their weapon.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson A5-2: Cognitive Biases (The Brain's Backdoors).",
+            "Lesson A1-1.",
+            "Falling in love.",
+            "Sleeping."
+          ],
+          "correct": "Lesson A5-2: Cognitive Biases (The Brain's Backdoors).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that we've looked at Emotional Needs, we must look at Mental Errors (Cognitive Biases) that blind us.",
+            "incorrect": "Next up: How your brain tricks you into believing lies."
+          }
+        }
+      ]
+    }
+  ]
+}

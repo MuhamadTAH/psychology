@@ -1,0 +1,294 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A1",
+  "unitTitle": "The Fast Hook",
+  "lessonId": "A1-1",
+  "lessonTitle": "The First Hook",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "The 'Debrief' - You've Been Manipulated",
+  "objective": "To deconstruct the 'Coffee Shop' scenario, name the tactics used, and explain *why* they were effective.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "complete",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A1-1-P2-S1",
+      "screenType": "Learn",
+      "title": "Let's Break It Down",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Feeling a bit confused? That's the goal. You just experienced a 'grooming' script. It was designed to feel like a normal, friendly conversation, but every single step was a tactic."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The manipulator's goal is to make their tactics *invisible*. Our goal is to make them *obvious*. Let's learn to name what you just saw."
+        }
+      ]
+    },
+    {
+      "screenId": "A1-1-P2-S2",
+      "screenType": "Exercises",
+      "exercises": [
+        {
+          "exerciseId": "A1-1-P2-E1",
+          "type": "multiple-choice",
+          "question": "In Part 1, Alex called you 'creative' and 'kind' without knowing you. What is this tactic?",
+          "options": [
+            "Flattery",
+            "A lucky guess",
+            "A genuine compliment",
+            "Small talk"
+          ],
+          "correct": "Flattery",
+          "difficulty": "easy",
+          "explanation": "This is *Flattery*. It's designed to make you feel good and lower your critical thinking."
+        },
+        {
+          "exerciseId": "A1-1-P2-E2",
+          "type": "matching",
+          "question": "Match the tactic from the scenario with its definition:",
+          "pairs": [
+            {
+              "term": "Flattery",
+              "definition": "Using compliments to lower someone's defenses."
+            },
+            {
+              "term": "Mirroring",
+              "definition": "Copying body language to create subconscious trust."
+            },
+            {
+              "term": "Reciprocity Trap",
+              "definition": "Giving a small gift to make someone feel indebted."
+            },
+            {
+              "term": "Weaponized Vulnerability",
+              "definition": "Sharing a 'sad story' to build unearned, fast trust."
+            },
+            {
+              "term": "Grooming",
+              "definition": "The *entire process* of preparing someone for manipulation."
+            }
+          ],
+          "difficulty": "medium",
+          "explanation": "These 5 terms are the exact script Alex used. Naming them is the first step to defeating them."
+        },
+        {
+          "exerciseId": "A1-1-P2-E3",
+          "type": "true-false",
+          "statement": "Alex's story about 'just moving here' and 'being lonely' was a genuine attempt to make a friend.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "explanation": "It was *Weaponized Vulnerability*. The story was a tool to make you feel sorry for them and see them as harmless."
+        },
+        {
+          "exerciseId": "A1-1-P2-E4",
+          "type": "fill-in",
+          "sentence": "The free $5 coffee was a ___ trap, designed to make you feel ___ to Alex.",
+          "options": [
+            "reciprocity",
+            "indebted",
+            "flattery",
+            "kind",
+            "financial",
+            "equal"
+          ],
+          "answers": [
+            "reciprocity",
+            "indebted"
+          ],
+          "difficulty": "medium",
+          "explanation": "The 'Reciprocity Principle' is one of the most powerful. You now felt you 'owed' them, making it hard to refuse the $20 'ask' later."
+        },
+        {
+          "exerciseId": "A1-1-P2-E5",
+          "type": "build-sentence",
+          "question": "Arrange these words to reveal a core principle of manipulation:",
+          "words": [
+            "trust",
+            "fast,",
+            "defenses",
+            "lower",
+            "build",
+            "your",
+            "to",
+            "Manipulators"
+          ],
+          "correct": "Manipulators build trust fast, to lower your defenses",
+          "difficulty": "medium",
+          "explanation": "This is the whole point of 'grooming.' The trust is fake, built only to get past your natural 'No'."
+        },
+        {
+          "exerciseId": "A1-1-P2-E6",
+          "type": "reverse-scenario",
+          "answer": "Alex consciously copied your posture and said, 'Wow, we have so much in common!'",
+          "question": "What was the psychological goal of these actions?",
+          "options": [
+            "To build a feeling of deep, subconscious rapport.",
+            "To prove they were paying attention.",
+            "To show they were also a 'creative person'.",
+            "To make the conversation last longer."
+          ],
+          "correct": "To build a feeling of deep, subconscious rapport.",
+          "difficulty": "medium",
+          "explanation": "This is *Mirroring* and *Pacing*. These tactics bypass your logic and make you *feel* like you've known them for ages."
+        },
+        {
+          "exerciseId": "A1-1-P2-E7",
+          "type": "multiple-choice",
+          "question": "Why did Alex *combine* so many tactics (Flattery + Vulnerability + Reciprocity)?",
+          "options": [
+            "Because they are a very complex person.",
+            "Because a single tactic is easy to spot; a combination is not.",
+            "Because they didn't know which one would work.",
+            "Because they were genuinely nice, vulnerable, and generous."
+          ],
+          "correct": "Because a single tactic is easy to spot; a combination is not.",
+          "difficulty": "hard",
+          "explanation": "This is a key concept. The tactics are layered. By the time they ask for $20, your defenses are already down from 3-4 other 'small' manipulations."
+        },
+        {
+          "exerciseId": "A1-1-P2-E8",
+          "type": "case-analysis",
+          "caseTitle": "Debrief: The 'Ask'",
+          "scene": "In Part 1, Alex asked for $20. This was the 'goal' of the manipulation. Why was it so effective?",
+          "question": "What was the *strongest* psychological force at play?",
+          "options": [
+            "Your fear of looking 'mean' or 'rude' if you said no.",
+            "Your feeling of 'debt' from the free coffee.",
+            "Your 'trust' from the mirroring and vulnerability.",
+            "All of the above, working together."
+          ],
+          "correct": "All of the above, working together.",
+          "difficulty": "hard",
+          "explanation": "Alex created a 'perfect storm.' You felt indebted, you trusted them, and you were afraid of causing social conflict. Saying 'yes' was the easiest way out."
+        },
+        {
+          "exerciseId": "A1-1-P2-E9",
+          "type": "true-false",
+          "statement": "A 'Boss Scenario' in this app means a situation where only one manipulation tactic is used.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "explanation": "A 'Boss Scenario' (like the one you just faced) is a complex situation that *combines* multiple tactics at once."
+        },
+        {
+          "exerciseId": "A1-1-P2-E10",
+          "type": "ethical-dilemma",
+          "scene": "You see someone *else* being manipulated by 'Alex' in the same coffee shop next week.",
+          "question": "What is the most *ethically responsible* action?",
+          "options": [
+            "Do nothing. It's not your problem.",
+            "Go over and loudly call Alex a manipulator.",
+            "Find a way to privately interrupt and warn the other person.",
+            "Ask Alex to teach you their tactics."
+          ],
+          "correct": "Find a way to privately interrupt and warn the other person.",
+          "difficulty": "hard",
+          "explanation": "This is the 'light' side of this knowledge. The goal isn't just to protect yourself, but to protect others. Publicly shaming Alex could be dangerous; a private interruption is best."
+        },
+        {
+          "exerciseId": "A1-1-P2-E11",
+          "type": "fill-in",
+          "sentence": "The *entire process* of building trust to prepare someone for manipulation is called (--------).",
+          "options": [
+            "grooming",
+            "flirting",
+            "talking",
+            "gaslighting"
+          ],
+          "answers": [
+            "grooming"
+          ],
+          "difficulty": "medium",
+          "explanation": "'Grooming' isn't just for major crimes; it happens on a small scale in everyday cons. Alex 'groomed' you for the $20."
+        },
+        {
+          "exerciseId": "A1-1-P2-E12",
+          "type": "reverse-scenario",
+          "answer": "The manipulator makes you feel like *you* are the 'bad person' for not complying.",
+          "question": "This is a form of what?",
+          "options": [
+            "Reciprocity",
+            "Guilt-tripping",
+            "Flattery",
+            "Mirroring"
+          ],
+          "correct": "Guilt-tripping",
+          "difficulty": "medium",
+          "explanation": "Alex did this by saying, 'I wouldn't ask, but you're such a kind person...' The unspoken threat is: 'If you say no, you are *not* a kind person.'"
+        },
+        {
+          "exerciseId": "A1-1-P2-E13",
+          "type": "build-sentence",
+          "question": "Arrange these words into a key defense principle:",
+          "words": [
+            "is",
+            "defense",
+            "your",
+            "awareness",
+            "best"
+          ],
+          "correct": "Awareness is your best defense",
+          "difficulty": "easy",
+          "explanation": "You can't fight what you can't see. By completing this part, you've started building your awareness."
+        },
+        {
+          "exerciseId": "A1-1-P2-E14",
+          "type": "multiple-choice",
+          "question": "What was the *real* purpose of Part 1 (The 'Cold Open')?",
+          "options": [
+            "To teach you how to make friends in a coffee shop.",
+            "To prove that you are 'bad' at psychology.",
+            "To get you to 'fail' so you can see your own blind spots.",
+            "To give you a very easy first lesson."
+          ],
+          "correct": "To get you to 'fail' so you can see your own blind spots.",
+          "difficulty": "medium",
+          "explanation": "Exactly. You can't fix a blind spot until you know it's there. Now you know. In Part 3, we'll make a promise."
+        },
+        {
+          "exerciseId": "A1-1-P2-E15",
+          "type": "true-false",
+          "statement": "Now that I've learned these terms, I am immune to manipulation.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "explanation": "There is no 'immunity.' There is only *awareness* and *practice*. This is a lifelong skill. Let's move on."
+        }
+      ]
+    }
+  ]
+}

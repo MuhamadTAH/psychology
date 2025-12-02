@@ -1,0 +1,343 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A5",
+  "unitTitle": "The Vulnerable Mind: Why We Fall For It",
+  "lessonId": "A5-3",
+  "lessonTitle": "The \"Savior\" Complex & Codependency",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "Why We Try to \"Fix\" Broken People",
+  "objective": "To define the 'Savior Complex' and 'Codependency' as internal vulnerabilities that attract manipulators, distinguishing between healthy helping and compulsive fixing.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A5-3-P1-S1",
+      "screenType": "Learn",
+      "title": "The Trap of the 'Good Person'",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Narcissists and Psychopaths are predators looking for prey. But they don't just look for 'weak' people; they look for 'helpful' people."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you have a **Savior Complex**, you feel a compulsive need to 'fix,' 'save,' or 'heal' damaged people. You derive your self-worth from being the 'Strong One' who endures chaos."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Danger: A predator does not want to be fixed. They want to be fed. By trying to save them, you are feeding them."
+        }
+      ]
+    },
+    {
+      "screenId": "A5-3-P1-S2",
+      "screenType": "Exercises",
+      "title": "Diagnosing the Savior",
+      "exercises": [
+        {
+          "exerciseId": "A5-3-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the 'Savior Complex'?",
+          "options": [
+            "Being a doctor.",
+            "A psychological need to 'fix' or 'rescue' others to feel worthy, needed, or in control.",
+            "Being very nice.",
+            "Religious faith."
+          ],
+          "correct": "A psychological need to 'fix' or 'rescue' others to feel worthy, needed, or in control.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is not just altruism; it is a *need*. If you aren't helping, you feel useless or anxious.",
+            "incorrect": "It goes beyond being nice. It is a compulsion to intervene in other people's problems."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P1-E2",
+          "type": "true-false",
+          "scene": "Scenario: 'I prefer dating people with 'potential' or 'problems' because normal people are boring.'",
+          "question": "Is this a sign of Codependency?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If stability feels 'boring,' your nervous system is addicted to the 'project.' You are looking for someone to work on, not be with.",
+            "incorrect": "Healthy relationships are about who the person *is*, not who they *could be* if you fixed them."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P1-E3",
+          "type": "fill-in",
+          "sentence": "Codependency is the addiction to (--------) another person's life.",
+          "options": [
+            "managing",
+            "watching",
+            "ignoring",
+            "hating"
+          ],
+          "answers": [
+            "managing"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You focus entirely on *their* problems, *their* mood, and *their* needs, to avoid facing your own.",
+            "incorrect": "It is an active state of management and control over someone else's chaos."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P1-E4",
+          "type": "scenario",
+          "scene": "Scenario: Your partner creates a crisis (e.g., loses their job due to laziness). You immediately jump in to fix up their resume, call contacts, and pay their rent.",
+          "question": "This behavior is:",
+          "options": [
+            "Supportive.",
+            "Enabling / Over-functioning.",
+            "Mean.",
+            "Lazy."
+          ],
+          "correct": "Enabling / Over-functioning.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You are doing work *for* them that they should do for themselves. This prevents them from feeling the consequences of their actions.",
+            "incorrect": "Support is cheering them on. Enabling is doing the work for them. You are 'Over-functioning' so they can 'Under-function'."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P1-E5",
+          "type": "matching",
+          "question": "Match the Mindset to the Role:",
+          "pairs": [
+            {
+              "term": "Healthy Helper",
+              "definition": "\"I can help you, but I can't do it for you.\""
+            },
+            {
+              "term": "The Savior",
+              "definition": "\"I will fix this for you because you can't.\""
+            },
+            {
+              "term": "The Narcissist",
+              "definition": "\"Fix me. I am entitled to your help.\""
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The Savior assumes the other person is helpless. The Healthy Helper empowers them.",
+            "incorrect": "The Savior takes responsibility away from the person. The Narcissist demands it."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the limit of your power:",
+          "words": [
+            "save",
+            "people",
+            "You",
+            "cannot",
+            "themselves",
+            "from"
+          ],
+          "correct": "You cannot save people from themselves",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If someone is self-destructive, your love cannot stop them. Trying to do so will only destroy you.",
+            "incorrect": "This is the hard truth Saviors refuse to accept."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "Feeling resentful because you do everything for everyone, but no one does anything for you (even though you never ask).",
+          "question": "What is this feeling?",
+          "options": [
+            "The Martyr's Resentment",
+            "True Altruism",
+            "Narcissism",
+            "Luck"
+          ],
+          "correct": "The Martyr's Resentment",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You give to get validation. When you don't get it, you feel used. But you set the dynamic up by over-giving.",
+            "incorrect": "Altruism expects nothing back. The Martyr keeps score."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: A Narcissist says, 'I'm so damaged, I destroy everything I touch.' The Savior hears: 'Please love me enough to heal me.'",
+          "question": "What should the Savior actually hear?",
+          "options": [
+            "'This is a warning. I am dangerous. Stay away.'",
+            "'I need a hug.'",
+            "'I am humble.'",
+            "'I am lying.'"
+          ],
+          "correct": "'This is a warning. I am dangerous. Stay away.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. When a predator tells you they are dangerous, believe them. Do not view it as a challenge to your loving ability.",
+            "incorrect": "It is not a cry for help; it is a disclaimer. 'I told you I was bad' will be their excuse later."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P1-E9",
+          "type": "multiple-choice",
+          "question": "Why are Saviors and Narcissists a 'Perfect Match'?",
+          "options": [
+            "They have the same hobbies.",
+            "The Narcissist needs a servant/mother/host; The Savior needs someone to serve/mother/host. Their neuroses fit like a lock and key.",
+            "They are both evil.",
+            "They are both happy."
+          ],
+          "correct": "The Narcissist needs a servant/mother/host; The Savior needs someone to serve/mother/host. Their neuroses fit like a lock and key.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. It is a symbiotic dysfunction. One wants to take; the other compulsively gives.",
+            "incorrect": "It's not about hobbies. It's about the mechanics of need."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P1-E10",
+          "type": "fill-in",
+          "sentence": "When you save someone from the (--------) of their actions, you rob them of the lesson.",
+          "options": [
+            "consequences",
+            "joys",
+            "money",
+            "love"
+          ],
+          "answers": [
+            "consequences"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Pain is a teacher. If you pay their bail or hide their mistakes, they never learn. You are keeping them sick.",
+            "incorrect": "You aren't robbing them of joy; you are robbing them of the feedback loop of reality."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P1-E11",
+          "type": "ethical-dilemma",
+          "scene": "A friend calls you every night to complain about the same problem but never takes your advice. You feel drained.",
+          "question": "What is the healthy boundary?",
+          "options": [
+            "Say: 'I love you, but I can't talk about this specific issue anymore unless we are discussing new solutions.'",
+            "Keep listening forever to be a good friend.",
+            "Scream at them.",
+            "Ghost them."
+          ],
+          "correct": "Say: 'I love you, but I can't talk about this specific issue anymore unless we are discussing new solutions.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They are using you as an 'Emotional Trash Can' to dump anxiety, not to solve the problem. You must close the lid.",
+            "incorrect": "Listening forever enables the loop. It harms you and doesn't help them."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'If I just love them enough, they will change.'",
+          "question": "Is this 'The Savior's Lie'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Love is not a cure for personality disorders or addiction. This belief keeps you trapped in a hopeless cycle.",
+            "incorrect": "People change because *they* want to, not because you love them hard enough."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: You stop fixing their problems. They get angry and say, 'You don't care about me anymore!'",
+          "question": "This proves:",
+          "options": [
+            "They only valued you for your utility (what you did for them).",
+            "You are mean.",
+            "They are hurt.",
+            "They are independent."
+          ],
+          "correct": "They only valued you for your utility (what you did for them).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. When the service stops, the 'love' stops. The relationship was transactional.",
+            "incorrect": "Setting a boundary is not mean. Their anger reveals their entitlement."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P1-E14",
+          "type": "matching",
+          "question": "Match the Drama Triangle Role:",
+          "pairs": [
+            {
+              "term": "Rescuer",
+              "definition": "\"Let me help you!\" (Enables)"
+            },
+            {
+              "term": "Victim",
+              "definition": "\"Poor me!\" (Refuses responsibility)"
+            },
+            {
+              "term": "Persecutor",
+              "definition": "\"It's all your fault!\" (Blames)"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The Rescuer enables the Victim. When the Rescuer gets tired, they become the Persecutor (angry). The roles cycle.",
+            "incorrect": "Study the 'Karpman Drama Triangle.' You must step *off* the triangle to be healthy."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The White Knight",
+          "scene": "You have identified the Savior Complex. You know that trying to 'fix' people is a sign of your own unhealed need for control and worth.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Distinguishing 'Helping' from 'Enabling' (Real-world scenarios).",
+            "Fixing more people.",
+            "Ignoring everyone.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: Distinguishing 'Helping' from 'Enabling' (Real-world scenarios).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Helping is good. Enabling is destructive. We need to learn the difference.",
+            "incorrect": "Next up: How to help without hurting."
+          }
+        }
+      ]
+    }
+  ]
+}

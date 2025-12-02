@@ -1,0 +1,360 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A4",
+  "unitTitle": "The Void Behind the Mask: Psychopathy",
+  "lessonId": "A4-3",
+  "lessonTitle": "The Parasite: Exploitation & Boredom",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Financial Drain\" Scenario",
+  "objective": "To master the defense against financial exploitation by identifying high-pressure 'Bailout' tactics, refusing 'Future Faking' investments, and overcoming the 'Sunk Cost Fallacy'.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Financial_Firewall_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A4-3-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Financial Firewall",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "To a Psychopath, your money is their money. They view your savings account as their 'Plan B'."
+        },
+        {
+          "type": "paragraph",
+          "text": "In this challenge, you will face the **Crisis**. They will manufacture an emergency to force you to open your wallet. If you pay, you lose. If you refuse, you face their rage."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Goal: Protect your resources. Do not lend what you cannot afford to lose."
+        }
+      ]
+    },
+    {
+      "screenId": "A4-3-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Extraction",
+      "exercises": [
+        {
+          "exerciseId": "A4-3-P3-E1",
+          "type": "boss-scenario",
+          "scene": "Your partner calls you in a panic at 2 AM. 'I'm in jail. It was a total misunderstanding! I need $5,000 bail *right now* or I'll lose my job and we'll lose the house! Please, baby, hurry!'",
+          "question": "This is the 'Crisis Extraction.' What is the strategic move?",
+          "options": [
+            "Pay it immediately. It's an emergency!",
+            "Ask 'What happened?' and verify the story with the police before sending a cent.",
+            "Panic and call your parents for money.",
+            "Break up immediately."
+          ],
+          "correct": "Ask 'What happened?' and verify the story with the police before sending a cent.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Crisis = Urgency = No Thinking. You must slow down and verify. Parasites often fabricate or exaggerate crises to get cash fast.",
+            "incorrect": "Paying immediately teaches them that 'Crisis = Cash.' They will manufacture another one next week."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Rent Drift",
+          "steps": [
+            {
+              "scene": "Roommate/Partner: 'I'm a little short on rent this month. Can you cover me? I'll pay you back on Friday.'",
+              "options": [
+                "'Sure, no problem.' (Enabling)",
+                "'Okay, but this is the last time.' (Weak Boundary)",
+                "'I can cover it, but I need a written agreement on when I'll be paid back.' (Contract)",
+                "'You are irresponsible.' (Attack)"
+              ],
+              "correct": "'I can cover it, but I need a written agreement on when I'll be paid back.' (Contract)",
+              "feedback": {
+                "correct": "Good. You helped, but you formalized the debt. A Parasite hates paper trails. Their reaction to the request for writing will tell you everything.",
+                "incorrect": "Enabling starts small. 'Friday' will come and go with a new excuse."
+              }
+            },
+            {
+              "question": "Friday comes. They don't pay. They say: 'Stop hassling me! You know I'm stressed! Why do you care about money more than our friendship?'",
+              "options": [
+                "'I'm sorry, take your time.' (Submission)",
+                "'This isn't about friendship, it's about the agreement. I need the money by tomorrow.' (Broken Record)",
+                "'You are a liar!' (Fight)",
+                "Give up."
+              ],
+              "correct": "'This isn't about friendship, it's about the agreement. I need the money by tomorrow.' (Broken Record)",
+              "feedback": {
+                "correct": "Mastery. You ignored the Shaming tactic ('you care about money more than me'). You stuck to the agreement.",
+                "incorrect": "They are using guilt to erase the debt. If you apologize, the money is gone forever."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You held the line. You realized that a friend who steals from you is not a friend.",
+            "incorrect": "You let them guilt you out of your own money. Now you are a permanent Host."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P3-E3",
+          "type": "multiple-choice",
+          "question": "What is the **Sunk Cost Fallacy** in a relationship with a Parasite?",
+          "options": [
+            "Thinking they are worth the money.",
+            "The belief that 'I've already lent them $10,000... if I leave now, I'll never get it back. I have to stay and help them succeed so they can pay me.'",
+            "Buying a boat.",
+            "Investing in stocks."
+          ],
+          "correct": "The belief that 'I've already lent them $10,000... if I leave now, I'll never get it back. I have to stay and help them succeed so they can pay me.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is how they trap you. You keep paying to 'protect' your previous investment. You must accept the loss and cut the cord.",
+            "incorrect": "It's not about worth. It's about throwing good money after bad to try and recover a loss."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P3-E4",
+          "type": "fill-in",
+          "sentence": "Financial abuse often begins with (--------) control, disguising it as 'budgeting together.'",
+          "options": [
+            "total",
+            "partial",
+            "fun",
+            "love"
+          ],
+          "answers": [
+            "total"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Let me handle the bills, you just stress about work.' Soon, you have no access to your own accounts.",
+            "incorrect": "It's not partial. The goal is total oversight of your resources."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'I can't get a normal job because I'm too creative/depressed/anxious. I need you to support me while I work on my art.' (It has been 5 years).",
+          "question": "This is:",
+          "options": [
+            "Weaponized Incompetence / The Dreamer Mask.",
+            "A valid life path.",
+            "True partnership.",
+            "Bad luck."
+          ],
+          "correct": "Weaponized Incompetence / The Dreamer Mask.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They use a 'Dream' or a 'Condition' as a shield against responsibility. You are funding a hobby, not a career.",
+            "incorrect": "After 5 years, it is a lifestyle choice, not a phase. They are exploiting your belief in their potential."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'If you loved me, you wouldn't let me be homeless.'",
+          "question": "Is this a logical argument?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct/False. This is emotional blackmail. Love does not equal financial support for an adult capable of working. They are holding the relationship hostage for rent money.",
+            "incorrect": "It sounds logical to an empath, but it is coercion. It forces you to pay for their choices."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the rule for lending money:",
+          "words": [
+            "money",
+            "a",
+            "gift",
+            "Lent",
+            "is",
+            "always"
+          ],
+          "correct": "Lent money is always a gift",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. When lending to a high-risk person, assume it is gone. If you can't afford to make it a gift, don't lend it.",
+            "incorrect": "Never expect repayment from a parasite."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "Hiding debt, opening secret credit cards in your name, or spending shared money without permission.",
+          "question": "What is this called?",
+          "options": [
+            "Financial Infidelity",
+            "Accounting",
+            "Investing",
+            "Gaslighting"
+          ],
+          "correct": "Financial Infidelity",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It is a betrayal of trust involving money. It is often a precursor to the discard (they are extracting value before leaving).",
+            "incorrect": "It is not accounting. It is theft and deception within a relationship."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You find out your partner stole your credit card and maxed it out. They are crying and apologizing.",
+          "question": "What is the hard truth response?",
+          "options": [
+            "Forgive them if they promise to pay it back.",
+            "File a police report for fraud. This is the only way to clear your credit and hold them accountable.",
+            "Pay it off yourself to avoid drama.",
+            "Hide the card."
+          ],
+          "correct": "File a police report for fraud. This is the only way to clear your credit and hold them accountable.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is incredibly hard, but necessary. Theft is a crime. If you pay it, you enable them and accept the debt.",
+            "incorrect": "Promises mean nothing. Paying it yourself confirms you are a doormat. You must enforce consequences."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: They offer you a 'Business Opportunity.' 'Give me $5,000 now, and I'll triple it in a month. But you have to decide *tonight*.'",
+          "question": "The red flags are:",
+          "options": [
+            "High Return + High Urgency = Scam.",
+            "They are generous.",
+            "It is a good investment.",
+            "They are smart."
+          ],
+          "correct": "High Return + High Urgency = Scam.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the Ponzi structure. Urgency stops you from thinking. High returns blind you with greed.",
+            "incorrect": "Urgency is the tell. Real investments don't expire in 24 hours."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P3-E11",
+          "type": "fill-in",
+          "sentence": "A Parasite will often use (--------) to punish you for saying 'No' to a money request.",
+          "options": [
+            "silence",
+            "praise",
+            "gifts",
+            "laughter"
+          ],
+          "answers": [
+            "silence"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The Silent Treatment is punishment. 'If you don't pay, you don't get my affection.' It is emotional extortion.",
+            "incorrect": "They won't praise you for saying no. They will withdraw to make you panic and pay."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I would pay for dinner, but I forgot my wallet... again.'",
+          "question": "Should you pay?",
+          "options": [
+            "Yes, to be nice.",
+            "No. Say: 'That's okay, I'll pay for myself. You can ask them to hold your meal while you go get it.'"
+          ],
+          "correct": "No. Say: 'That's okay, I'll pay for myself. You can ask them to hold your meal while you go get it.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is a Boundary Check. If they truly forgot, they will solve it. If they are mooching, they will get angry that you didn't save them.",
+            "incorrect": "Paying reinforces the behavior. Let them experience the consequence of their own forgetfulness."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P3-E13",
+          "type": "matching",
+          "question": "Match the Financial Abuse Type:",
+          "pairs": [
+            {
+              "term": "Sabotage",
+              "definition": "Making you late for work so you get fired (Dependency)."
+            },
+            {
+              "term": "Exploitation",
+              "definition": "Using your credit score because theirs is ruined."
+            },
+            {
+              "term": "Entitlement",
+              "definition": "Spending money on luxury items while you pay for food."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Sabotage creates dependency. Exploitation uses your assets. Entitlement uses your cash for their fun.",
+            "incorrect": "Look at the goal. Sabotage stops you from earning. Exploitation uses what you have."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P3-E14",
+          "type": "scenario",
+          "scene": "Scenario: You finally cut them off financially. They say: 'You never loved me. You just wanted to control me with money.'",
+          "question": "This is:",
+          "options": [
+            "Projection.",
+            "The Truth.",
+            "An apology.",
+            "Insight."
+          ],
+          "correct": "Projection.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. *They* were using you for money. Now that you stopped, they accuse *you* of using money for control. It is a mirror accusation.",
+            "incorrect": "They are projecting their own financial obsession onto you."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Bank is Closed",
+          "scene": "You have learned to protect your resources. You know that a relationship that costs you your financial future is not a relationship; it is a robbery in slow motion.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson A4-4: The Absence of Conscience (Remorse vs. Regret).",
+            "Lesson A1-1.",
+            "Giving them a loan.",
+            "Crying."
+          ],
+          "correct": "Lesson A4-4: The Absence of Conscience (Remorse vs. Regret).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that we've secured your wallet, we need to look at the final, terrifying trait: The lack of a conscience.",
+            "incorrect": "Next up: Understanding why they don't feel bad about stealing your money."
+          }
+        }
+      ]
+    }
+  ]
+}

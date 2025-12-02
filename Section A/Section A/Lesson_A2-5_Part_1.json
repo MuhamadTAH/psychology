@@ -1,0 +1,427 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A2",
+  "unitTitle": "The Manipulator's Playbook: Narcissism & Gaslighting",
+  "lessonId": "A2-5",
+  "lessonTitle": "Unit 2 Review",
+  "lessonType": "Review",
+  "lessonPart": 1,
+  "lessonPartTitle": "Unit 2 Core Concepts Review",
+  "objective": "To synthesize and test knowledge of Narcissism types, Supply mechanics, Love Bombing tactics, and Gaslighting techniques.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A2-5-P1-S1",
+      "screenType": "Learn",
+      "title": "Unit 2 Review",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You have explored the mind of the Narcissist. You know what they are (Empty), what they need (Supply), how they catch you (Love Bombing), and how they keep you (Gaslighting)."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "This review covers all concepts from Lesson A2-1 to A2-4. Pass this to unlock the Unit 2 Gauntlet."
+        }
+      ]
+    },
+    {
+      "screenId": "A2-5-P1-S2",
+      "screenType": "Exercises",
+      "title": "Concept Check",
+      "exercises": [
+        {
+          "exerciseId": "A2-5-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the core psychological definition of a Narcissist (A2-1)?",
+          "options": [
+            "Someone who loves themselves too much.",
+            "A person with a deep core wound of shame who relies on external validation (Supply) to function.",
+            "A confident leader.",
+            "Someone who likes mirrors."
+          ],
+          "correct": "A person with a deep core wound of shame who relies on external validation (Supply) to function.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is not self-love; it is the absence of self-worth masked by a false persona.",
+            "incorrect": "They don't love themselves; they loathe their true self. They love the *image* reflected in your eyes."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E2",
+          "type": "matching",
+          "question": "Match the Narcissistic Mask to its behavior:",
+          "pairs": [
+            {
+              "term": "Grandiose (Overt)",
+              "definition": "Arrogant, demanding, aggressive ('I am the best')."
+            },
+            {
+              "term": "Vulnerable (Covert)",
+              "definition": "Victimhood, passive-aggressive, martyrdom ('I suffer the most')."
+            },
+            {
+              "term": "Healthy Confidence",
+              "definition": "Internal self-worth that does not require comparison."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Both Grandiose and Covert are masks for the same wound. One demands admiration; the other demands pity.",
+            "incorrect": "Remember: Grandiose pushes *out* (superiority). Covert pulls *in* (victimhood)."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E3",
+          "type": "fill-in",
+          "sentence": "Narcissistic Supply is the (--------) the narcissist needs to avoid psychological collapse.",
+          "options": [
+            "fuel",
+            "money",
+            "time",
+            "logic"
+          ],
+          "answers": [
+            "fuel"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Supply' (Attention) is the fuel. Without it, the engine stops and they face their internal shame.",
+            "incorrect": "It acts as fuel or oxygen. It is a survival need for their false self."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: You get angry and scream at a narcissist. They smile slightly.",
+          "question": "Is your anger a form of Narcissistic Supply?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is 'Negative Supply.' Your anger proves they have power over your emotions. It validates their impact.",
+            "incorrect": "They don't just want praise. They want *reaction*. Anger is a very potent form of attention."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E5",
+          "type": "multiple-choice",
+          "question": "What is the 'Grey Rock' method (A2-2)?",
+          "options": [
+            "Throwing rocks at them.",
+            "Becoming uninteresting, unresponsive, and boring to starve them of Supply.",
+            "Ignoring them until they apologize.",
+            "Acting sad so they pity you."
+          ],
+          "correct": "Becoming uninteresting, unresponsive, and boring to starve them of Supply.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. By becoming a 'Grey Rock,' you offer no fuel (emotion). The narcissist eventually gets bored and leaves.",
+            "incorrect": "It's not ignoring (which is aggressive). It is being *present* but *empty* of reaction."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E6",
+          "type": "scenario",
+          "scene": "Scenario: A new partner says, 'I've never met anyone like you. We are soulmates. Let's get married.' (It has been 2 weeks).",
+          "question": "This is the red flag for:",
+          "options": [
+            "Love Bombing (Idealization Phase).",
+            "True Love.",
+            "Honesty.",
+            "Devaluation."
+          ],
+          "correct": "Love Bombing (Idealization Phase).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The intensity and speed are the giveaway. It is a 'High Speed' seduction tactic.",
+            "incorrect": "Real love takes time. This is the 'Idealize' phase of the abuse cycle."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E7",
+          "type": "fill-in",
+          "sentence": "The Love Bomber uses (--------) to gather data on your weaknesses.",
+          "options": [
+            "false intimacy",
+            "anger",
+            "silence",
+            "fear"
+          ],
+          "answers": [
+            "false intimacy"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They share fake secrets to make you share real ones. This is data mining for later abuse.",
+            "incorrect": "It feels like closeness/intimacy, but it is a strategic extraction of information."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E8",
+          "type": "reverse-scenario",
+          "answer": "Promising a future that will never happen (marriage, trips, success) to keep you hooked in the present.",
+          "question": "What is this tactic?",
+          "options": [
+            "Future Faking",
+            "Gaslighting",
+            "Hoovering",
+            "Triangulation"
+          ],
+          "correct": "Future Faking",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They sell you a fantasy future. You pay for it with compliance today.",
+            "incorrect": "This is Future Faking. The future is the carrot on the stick."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E9",
+          "type": "scenario",
+          "scene": "Scenario: You confront them about a lie. They say: 'You're crazy. That never happened. You need to see a doctor.'",
+          "question": "This is the definition of:",
+          "options": [
+            "Gaslighting.",
+            "A difference of opinion.",
+            "Defensive Lying.",
+            "Concern."
+          ],
+          "correct": "Gaslighting.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are not just denying the fact; they are attacking your *sanity* and ability to perceive reality.",
+            "incorrect": "Lying hides the truth. Gaslighting hides *reality* by making you doubt your own mind."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E10",
+          "type": "multiple-choice",
+          "question": "What does the acronym **DARVO** stand for (A2-4)?",
+          "options": [
+            "Deny, Argue, Reverse, Victim, Offender",
+            "Deny, Attack, Reverse Victim and Offender",
+            "Defend, Ask, Reply, Verify, Observe",
+            "Don't Argue, Run, Vanish, Observe"
+          ],
+          "correct": "Deny, Attack, Reverse Victim and Offender",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. It is the standard gaslighting script: 'I didn't do it (Deny), You are crazy (Attack), You are abusing me (Reverse).'",
+            "incorrect": "It stands for Deny, Attack, Reverse Victim and Offender. It turns the perpetrator into the victim."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E11",
+          "type": "matching",
+          "question": "Match the Gaslighting Phrase to its Category:",
+          "pairs": [
+            {
+              "term": "'You're too sensitive.'",
+              "definition": "Trivializing (Minimizing feelings)"
+            },
+            {
+              "term": "'I never said that.'",
+              "definition": "Denial / History Rewriting"
+            },
+            {
+              "term": "'You made me do it.'",
+              "definition": "Blame-Shifting"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Trivializing attacks emotion. Denial attacks memory. Blame-shifting attacks responsibility.",
+            "incorrect": "Look at the intent. One minimizes, one erases, one shifts fault."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E12",
+          "type": "ethical-dilemma",
+          "scene": "You are being gaslighted. You start recording conversations to prove to yourself what was said.",
+          "question": "What is this recording called?",
+          "options": [
+            "A Reality Anchor.",
+            "Paranoia.",
+            "A trap.",
+            "Gossip."
+          ],
+          "correct": "A Reality Anchor.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. When your memory is under attack, you need external, objective proof (an Anchor) to hold onto sanity.",
+            "incorrect": "It feels like paranoia, but in this context, it is a necessary tool for survival."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E13",
+          "type": "build-sentence",
+          "question": "Arrange the phases of the Narcissistic Cycle:",
+          "words": [
+            "Discard",
+            "Idealize",
+            "Devalue"
+          ],
+          "correct": "Idealize Devalue Discard",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They Hook you (Idealize), Control you (Devalue), and Replace you (Discard).",
+            "incorrect": "The order is crucial. They must build you up before they can tear you down."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E14",
+          "type": "scenario",
+          "scene": "Scenario: A narcissist accuses you of being 'selfish' immediately after they demanded you do a favor for them.",
+          "question": "This defense mechanism is called:",
+          "options": [
+            "Projection.",
+            "Introversion.",
+            "Sublimation.",
+            "Logic."
+          ],
+          "correct": "Projection.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are the selfish ones, but they 'project' that trait onto you to avoid feeling shame.",
+            "incorrect": "They are taking their own negative trait and pasting it onto you. That is Projection."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E15",
+          "type": "fill-in",
+          "sentence": "The narcissist treats people as (--------) to be used and discarded.",
+          "options": [
+            "appliances",
+            "gods",
+            "equals",
+            "partners"
+          ],
+          "answers": [
+            "appliances"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You are a toaster. You exist to provide toast (Supply). If you stop, you are broken.",
+            "incorrect": "They do not see others as equals or partners. They see functional objects."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E16",
+          "type": "scenario",
+          "scene": "Scenario: The narcissist tells you, 'None of your friends actually like you. I'm the only one who tells you the truth.'",
+          "question": "What is the goal of this tactic?",
+          "options": [
+            "Isolation.",
+            "Honesty.",
+            "Socializing.",
+            "Networking."
+          ],
+          "correct": "Isolation.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. By making you mistrust your support system, they isolate you so you only rely on them for reality.",
+            "incorrect": "This is not honesty. It is a strategic move to sever your connections to the outside world."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E17",
+          "type": "reverse-scenario",
+          "answer": "Attempting to suck a victim back into the relationship after the Discard using pity, nostalgia, or promises of change.",
+          "question": "What is this tactic?",
+          "options": [
+            "Hoovering",
+            "Vacuuming",
+            "Idealizing",
+            "Discarding"
+          ],
+          "correct": "Hoovering",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Named after the vacuum cleaner. They try to suck you back in to extract more Supply.",
+            "incorrect": "It is a return to the Idealize phase, but the specific tactic of re-engagement is Hoovering."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E18",
+          "type": "multiple-choice",
+          "question": "What is 'Word Salad'?",
+          "options": [
+            "A healthy lunch.",
+            "Circular, confusing, nonsensical speech used to exhaust the victim.",
+            "Using fancy words to sound smart.",
+            "Speaking a foreign language."
+          ],
+          "correct": "Circular, confusing, nonsensical speech used to exhaust the victim.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They talk in circles until you are too tired to hold them accountable.",
+            "incorrect": "It is a weaponized confusion tactic designed to hide the truth in noise."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E19",
+          "type": "scenario",
+          "scene": "Scenario: A narcissist uses a third person ('Triangulation') to validate their abuse. 'Even *Sarah* thinks you're overreacting.'",
+          "question": "What is the third person called in this dynamic?",
+          "options": [
+            "A Flying Monkey.",
+            "A Judge.",
+            "A Therapist.",
+            "A Friend."
+          ],
+          "correct": "A Flying Monkey.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Named after the Witch's minions in Wizard of Oz. They are proxies recruited by the narcissist to do their dirty work.",
+            "incorrect": "They are not a neutral judge. They have been manipulated to take the narcissist's side."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P1-E20",
+          "type": "case-analysis",
+          "caseTitle": "Unit 2 Knowledge Check Complete",
+          "scene": "You have reviewed the Architect (Narcissist), the Fuel (Supply), the Trap (Love Bombing), and the Prison (Gaslighting).",
+          "question": "You are now ready for Part 2:",
+          "options": [
+            "The Unit 2 Gauntlet (Mixed Scenarios).",
+            "Retaking the course.",
+            "Giving up.",
+            "Trusting everyone."
+          ],
+          "correct": "The Unit 2 Gauntlet (Mixed Scenarios).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Knowledge is useless without application. Part 2 will throw rapid-fire scenarios at you to test your detection speed.",
+            "incorrect": "The next step is the Gauntlet: Applying these concepts in high-speed simulations."
+          }
+        }
+      ]
+    }
+  ]
+}

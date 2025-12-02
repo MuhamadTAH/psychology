@@ -1,0 +1,337 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B3",
+  "unitTitle": "The Herd Mind: Social Engineering",
+  "lessonId": "B3-5",
+  "lessonTitle": "Unit B3 Review: The Engineer",
+  "lessonType": "Review",
+  "lessonPart": 1,
+  "lessonPartTitle": "Unit B3 Core Concepts Review",
+  "objective": "To synthesize and test comprehensive knowledge of Social Engineering tactics, including Social Proof, Authority Bias, Pretexting, and the Liking Bias.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B3-5-P1-S1",
+      "screenType": "Learn",
+      "title": "Unit B3 Review",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You have learned how Social Engineers hack the human operating system. They fake the Crowd (Social Proof), the Boss (Authority), the Story (Pretexting), and the Friendship (Liking)."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "This review covers all concepts from Lesson B3-1 to B3-4. Pass this to unlock the Unit B3 Gauntlet."
+        }
+      ]
+    },
+    {
+      "screenId": "B3-5-P1-S2",
+      "screenType": "Exercises",
+      "title": "Social Check",
+      "exercises": [
+        {
+          "exerciseId": "B3-5-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is **Social Proof**?",
+          "options": [
+            "Proving you have friends.",
+            "The psychological phenomenon where people assume the actions of others reflect correct behavior.",
+            "Social Media.",
+            "Being popular."
+          ],
+          "correct": "The psychological phenomenon where people assume the actions of others reflect correct behavior.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If everyone is looking up, you look up. It is the Herd Instinct.",
+            "incorrect": "It is not about popularity; it is about conformity."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: A scammer puts $20 in their own tip jar before opening.",
+          "question": "This is:",
+          "options": [
+            "Salting the Jar (Manufactured Social Proof).",
+            "Saving money.",
+            "A mistake.",
+            "Charity."
+          ],
+          "correct": "Salting the Jar (Manufactured Social Proof).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It signals that 'tipping is normal here,' triggering others to follow.",
+            "incorrect": "It creates a visual cue for the herd."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P1-E3",
+          "type": "fill-in",
+          "sentence": "We are most influenced by people who are (--------) to us.",
+          "options": [
+            "similar",
+            "different",
+            "richer",
+            "taller"
+          ],
+          "answers": [
+            "similar"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Similarity Bias.' We trust our own tribe more than experts or leaders.",
+            "incorrect": "Sameness creates trust."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm calling from the IRS. You owe taxes.'",
+          "question": "Is this an Authority Hack?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They use the title 'IRS' to trigger fear and automatic obedience.",
+            "incorrect": "Impersonating authority is the core of Vishing."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P1-E5",
+          "type": "matching",
+          "question": "Match the Tactic to the Definition:",
+          "pairs": [
+            {
+              "term": "Astroturfing",
+              "definition": "Fake grassroots support."
+            },
+            {
+              "term": "Tailgating",
+              "definition": "Following someone into a secure area."
+            },
+            {
+              "term": "Pretexting",
+              "definition": "Creating a fake scenario to steal info."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Astroturfing fakes the crowd. Tailgating fakes the access. Pretexting fakes the story.",
+            "incorrect": "Review the definitions."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P1-E6",
+          "type": "scenario",
+          "scene": "Scenario: You receive an email from 'Amazon-Support@gmail.com' saying your account is locked.",
+          "question": "The Discrepancy is:",
+          "options": [
+            "The sender address (gmail.com instead of amazon.com).",
+            "The urgency.",
+            "The font.",
+            "Nothing."
+          ],
+          "correct": "The sender address (gmail.com instead of amazon.com).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Official companies use their own domain. This is Phishing.",
+            "incorrect": "Always check the domain, not the display name."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P1-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense against Authority:",
+          "words": [
+            "Verify",
+            "trust",
+            "then"
+          ],
+          "correct": "Verify then trust",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Never trust a badge or title without verifying it first.",
+            "incorrect": "Trust is the result, not the starting point."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P1-E8",
+          "type": "reverse-scenario",
+          "answer": "Finding personal information on social media to make a scam more convincing.",
+          "question": "What is this called?",
+          "options": [
+            "OSINT (Open Source Intelligence)",
+            "Hacking",
+            "Doxing",
+            "Spying"
+          ],
+          "correct": "OSINT (Open Source Intelligence)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Information is ammo. They gather it publicly to use it privately.",
+            "incorrect": "It is legal intelligence gathering for illegal purposes."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "You know a co-worker is using 'Canned Laughter' in their presentation to trick people into liking their bad ideas.",
+          "question": "Is this manipulation?",
+          "options": [
+            "Yes. It manufactures a fake consensus.",
+            "No, it's just funny.",
+            "Maybe.",
+            "No."
+          ],
+          "correct": "Yes. It manufactures a fake consensus.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It triggers a biological urge to laugh along, bypassing critical judgment of the content.",
+            "incorrect": "It is a specific Social Proof hack."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P1-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm on your side. I'm fighting my manager to get you this deal.'",
+          "question": "This is:",
+          "options": [
+            "The 'Us vs. Them' Tactic.",
+            "True friendship.",
+            "A lie.",
+            "Bad management."
+          ],
+          "correct": "The 'Us vs. Them' Tactic.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They create a fake enemy (the manager) to bond with you. It builds instant rapport.",
+            "incorrect": "It creates a conspiracy of two."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P1-E11",
+          "type": "fill-in",
+          "sentence": "Social Engineers exploit the human desire to be (--------).",
+          "options": [
+            "helpful",
+            "mean",
+            "rich",
+            "fast"
+          ],
+          "answers": [
+            "helpful"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We want to be nice. We want to hold the door. They use our kindness against us.",
+            "incorrect": "They exploit agreeableness, not hostility."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm just like you.'",
+          "question": "Is this always true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Instant similarity is usually 'Mirroring.' They are copying you to lower your defenses.",
+            "incorrect": "It is a camouflage tactic."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: A salesperson compliments your watch, your shoes, and your taste.",
+          "question": "They are using:",
+          "options": [
+            "Flattery / Liking Bias.",
+            "Fashion sense.",
+            "Honesty.",
+            "Boredom."
+          ],
+          "correct": "Flattery / Liking Bias.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Compliments are 'softeners.' If you like them, you buy from them.",
+            "incorrect": "It is strategic praise."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P1-E14",
+          "type": "matching",
+          "question": "Match the Defense:",
+          "pairs": [
+            {
+              "term": "Against Authority",
+              "definition": "Verify the badge/ID."
+            },
+            {
+              "term": "Against Social Proof",
+              "definition": "Ignore the crowd, check the facts."
+            },
+            {
+              "term": "Against Liking",
+              "definition": "Separate the person from the deal."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Verify leaders. Ignore herds. Separate friends from money.",
+            "incorrect": "Match the antidote to the poison."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Engineer",
+          "scene": "You have reviewed the social hacks. You know that people are the 'Human Firewall' and the weakest link.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "The Unit B3 Gauntlet (Social Hacks).",
+            "Hacking code.",
+            "Buying a computer.",
+            "Lesson A1-1."
+          ],
+          "correct": "The Unit B3 Gauntlet (Social Hacks).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you spot the fake friend and the fake boss in real-time? Let's test it.",
+            "incorrect": "Next up: The Gauntlet."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B4",
+  "unitTitle": "The Pressure Cooker: Emotional Leverage",
+  "lessonId": "B4-2",
+  "lessonTitle": "Weaponized Reciprocity: The Debt Trap",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: Unequal Exchanges (The Free Sample)",
+  "objective": "To define 'Weaponized Reciprocity' as the tactic of giving unsolicited gifts to create a debt of obligation, and to recognize how this leads to unfair exchanges.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B4-2-P1-S1",
+      "screenType": "Learn",
+      "title": "The Free Lunch",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "There is no such thing as a free lunch. The **Rule of Reciprocity** says we *must* repay debts. It is the glue of society."
+        },
+        {
+          "type": "paragraph",
+          "text": "Manipulators weaponize this rule. They force a 'gift' onto you (a free sample, a compliment, a small favor) that you didn't ask for, just to trigger your obligation to say 'Yes' to their larger request later."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Trap: You trade a $5 favor for a $50 obligation because the feeling of debt is so uncomfortable."
+        }
+      ]
+    },
+    {
+      "screenId": "B4-2-P1-S2",
+      "screenType": "Exercises",
+      "title": "Defining the Debt",
+      "exercises": [
+        {
+          "exerciseId": "B4-2-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the **Rule of Reciprocity**?",
+          "options": [
+            "Treating others how you want to be treated.",
+            "The universal social norm that we should try to repay, in kind, what another person has provided us.",
+            "Being nice.",
+            "Sharing toys."
+          ],
+          "correct": "The universal social norm that we should try to repay, in kind, what another person has provided us.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If someone invites you to a party, you feel you *must* invite them to yours. It creates a web of indebtedness.",
+            "incorrect": "It is more specific than the Golden Rule. It is about repayment of debt."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: A religious group hands you a 'free flower' in the airport. You try to give it back, but they refuse. 'It is our gift to you.' Then they ask for a donation.",
+          "question": "Why do they refuse to take the flower back?",
+          "options": [
+            "They have too many flowers.",
+            "To trigger the Reciprocity Rule. You cannot feel 'indebted' unless you *accept* the gift.",
+            "They are generous.",
+            "It is wilting."
+          ],
+          "correct": "To trigger the Reciprocity Rule. You cannot feel 'indebted' unless you *accept* the gift.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. (Cialdini/Hare Krishnas). Once you hold the gift, the psychological debt is activated. You donate $5 just to relieve the pressure.",
+            "incorrect": "If you don't accept the gift, the rule doesn't work. They force acceptance."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P1-E3",
+          "type": "fill-in",
+          "sentence": "The rule of reciprocity allows for (--------) exchanges: A small favor can trigger a large return favor.",
+          "options": [
+            "unequal",
+            "fair",
+            "happy",
+            "slow"
+          ],
+          "answers": [
+            "unequal"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. A $1 soda can buy a $10 raffle ticket. The discomfort of owing *anything* makes us willing to pay *more* than the debt is worth to clear it.",
+            "incorrect": "The power of the tactic lies in its unfairness (Inequality)."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I listened to your problems for an hour, so you owe me a ride to the airport.'",
+          "question": "Is this Weaponized Reciprocity?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They turned an act of friendship (listening) into a transactional debt. They kept score.",
+            "incorrect": "Friendship is not a ledger. Demanding specific repayment turns it into a business deal."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P1-E5",
+          "type": "matching",
+          "question": "Match the Gift to the Trap:",
+          "pairs": [
+            {
+              "term": "The Free Sample",
+              "definition": "Creates obligation to buy the full product."
+            },
+            {
+              "term": "The Unsolicited Favor",
+              "definition": "Doing something you didn't ask for to demand something you don't want."
+            },
+            {
+              "term": "The Concession",
+              "definition": "Lowering a request so you feel obligated to say 'Yes' (Door-in-the-Face)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Sample -> Buy. Favor -> Return Favor. Retreat -> Agreement.",
+            "incorrect": "Look at the mechanism. How does the 'gift' trigger the 'payment'?"
+          }
+        },
+        {
+          "exerciseId": "B4-2-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense:",
+          "words": [
+            "transaction",
+            "Redefine",
+            "gift",
+            "as",
+            "a",
+            "the"
+          ],
+          "correct": "Redefine the gift as a transaction",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you see the 'Free Sample' as a sales device (an ad), not a gift, you feel no obligation to repay it.",
+            "incorrect": "Change the label. Gifts require repayment. Sales tactics do not."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "A tactic where a negotiator makes a large request, gets rejected, then makes a smaller request. You feel obligated to say 'Yes' because they made a concession.",
+          "question": "What is this?",
+          "options": [
+            "Reciprocal Concessions (Door-in-the-Face)",
+            "Anchoring",
+            "Gaslighting",
+            "Liking"
+          ],
+          "correct": "Reciprocal Concessions (Door-in-the-Face)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They 'gave up' their big demand, so you must 'give up' your refusal. It is Reciprocity applied to negotiation.",
+            "incorrect": "It is the mechanism behind Door-in-the-Face."
+          }
+        }
+      ]
+    }
+  ]
+}

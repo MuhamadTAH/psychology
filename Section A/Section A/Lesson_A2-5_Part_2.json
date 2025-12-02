@@ -1,0 +1,607 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A2",
+  "unitTitle": "The Manipulator's Playbook: Narcissism & Gaslighting",
+  "lessonId": "A2-5",
+  "lessonTitle": "Unit 2 Review",
+  "lessonType": "Review",
+  "lessonPart": 2,
+  "lessonPartTitle": "The 'Gauntlet' (Mixed Tactic Scenarios)",
+  "objective": "To test rapid identification and defense strategies against a randomized mix of Narcissistic, Love Bombing, and Gaslighting tactics.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 300,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A2-5-P2-S1",
+      "screenType": "Learn",
+      "title": "The Gauntlet",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Theory is easy. Real life is messy. In the Gauntlet, the tactics will come at you fast and mixed together."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "You must identify if the manipulator is hooking you (Love Bombing), draining you (Supply), or confusing you (Gaslighting)."
+        }
+      ]
+    },
+    {
+      "screenId": "A2-5-P2-S2",
+      "screenType": "Exercises",
+      "title": "Rapid Fire Scenarios",
+      "exercises": [
+        {
+          "exerciseId": "A2-5-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: A new date says, 'I've never told anyone this, but I feel like I've known you for a thousand years. We must be twin flames.'",
+          "question": "This is an example of:",
+          "options": [
+            "A spiritual connection.",
+            "Love Bombing (Magical Thinking/Destiny Trap).",
+            "Honesty.",
+            "Gaslighting."
+          ],
+          "correct": "Love Bombing (Magical Thinking/Destiny Trap).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Creating a 'destiny' narrative bypasses your logic and makes you afraid to reject 'fate.'",
+            "incorrect": "It feels spiritual, but it is a standard Love Bombing script to accelerate intimacy."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E2",
+          "type": "multiple-choice",
+          "question": "When a narcissist provokes an argument just to see you cry, they are harvesting:",
+          "options": [
+            "Positive Supply.",
+            "Negative Supply.",
+            "Financial Supply.",
+            "No Supply."
+          ],
+          "correct": "Negative Supply.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Your tears prove they have power over you. This is high-grade fuel for them.",
+            "incorrect": "It's not positive (praise), but it is definitely Supply. Pain is a reaction they crave."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E3",
+          "type": "scenario",
+          "scene": "Scenario: You confront your partner about a lie. They respond: 'I only lied because I was afraid you'd yell at me like you always do! You're so scary!'",
+          "question": "This tactic is:",
+          "options": [
+            "DARVO (Reverse Victim & Offender).",
+            "A genuine apology.",
+            "Love Bombing.",
+            "Hoovering."
+          ],
+          "correct": "DARVO (Reverse Victim & Offender).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They admitted the lie but blamed *you* for it. Now they are the victim of your 'scary' reaction.",
+            "incorrect": "This is a reversal. They are making *you* the bad guy for their lie."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E4",
+          "type": "matching",
+          "question": "Match the behavior to the Mask:",
+          "pairs": [
+            {
+              "term": "Screaming 'I am the best!'",
+              "definition": "Grandiose Narcissist"
+            },
+            {
+              "term": "Crying 'I am the worst...'",
+              "definition": "Covert Narcissist"
+            },
+            {
+              "term": "Saying 'I made a mistake.'",
+              "definition": "Healthy Person"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The Grandiose expands. The Covert collapses. The Healthy person takes accountability.",
+            "incorrect": "Look at the direction. Grandiose goes up (superiority). Covert goes down (victimhood)."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E5",
+          "type": "scenario",
+          "scene": "Scenario: A colleague ignores your emails for three days, then walks by your desk and rolls their eyes when you ask about it.",
+          "question": "This is:",
+          "options": [
+            "The Silent Treatment (Negative/Covert Supply).",
+            "Being busy.",
+            "Gaslighting.",
+            "Future Faking."
+          ],
+          "correct": "The Silent Treatment (Negative/Covert Supply).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The eye-roll confirms it is deliberate. They are punishing you and getting Supply from your anxiety.",
+            "incorrect": "It's not just busy; the eye-roll makes it a passive-aggressive punishment."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E6",
+          "type": "fill-in",
+          "sentence": "The 'Grey Rock' method works because it denies the narcissist their (--------).",
+          "options": [
+            "supply",
+            "money",
+            "rights",
+            "job"
+          ],
+          "answers": [
+            "supply"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. No emotion = No Supply. You become a boring rock.",
+            "incorrect": "The goal is to cut the emotional food source (Supply)."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E7",
+          "type": "true-false",
+          "scene": "Scenario: 'You are remembering it wrong. I never promised to take you to the airport. You need to get your head checked.'",
+          "question": "Is this Gaslighting?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Denying a promise + Attacking sanity ('get head checked') = Textbook Gaslighting.",
+            "incorrect": "This is a direct attack on your memory and mental health."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E8",
+          "type": "scenario",
+          "scene": "Scenario: A narcissist says, 'Everyone else thinks you're difficult to work with. I'm the only one who defends you.'",
+          "question": "This tactic is:",
+          "options": [
+            "Triangulation / Isolation.",
+            "Support.",
+            "Projection.",
+            "Love Bombing."
+          ],
+          "correct": "Triangulation / Isolation.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They use 'everyone else' (Triangulation) to make you feel insecure and isolate you, making them your 'only' ally.",
+            "incorrect": "It looks like support, but it's a threat. It isolates you from the group."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E9",
+          "type": "reverse-scenario",
+          "answer": "An intense, temporary spike in abuse or drama that happens immediately after you set a boundary or go Grey Rock.",
+          "question": "What is this called?",
+          "options": [
+            "Extinction Burst",
+            "Discard Phase",
+            "Hoovering",
+            "Devaluation"
+          ],
+          "correct": "Extinction Burst",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Like a tantrum, it gets worse before it stops. They are testing if the boundary is real.",
+            "incorrect": "It's not a Discard; it's a desperate attempt to re-establish control."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: Six months after a breakup, your ex texts: 'I found an old shirt of yours. It smells like you. Made me sad. Hope you are well.'",
+          "question": "This is:",
+          "options": [
+            "Hoovering.",
+            "Politeness.",
+            "Closure.",
+            "An accident."
+          ],
+          "correct": "Hoovering.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The shirt is the excuse. The goal is to trigger nostalgia and open the door for more Supply.",
+            "incorrect": "They didn't need to text you to return a shirt. The emotional language ('sad') is the hook."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E11",
+          "type": "build-sentence",
+          "question": "Arrange these words to form the antidote to Gaslighting:",
+          "words": [
+            "journal",
+            "reality",
+            "Keep",
+            "a",
+            "anchor",
+            "as",
+            "a"
+          ],
+          "correct": "Keep a journal as a reality anchor",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Writing things down creates external proof that your memory is real.",
+            "incorrect": "You need an 'anchor' outside of your own mind."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E12",
+          "type": "scenario",
+          "scene": "Scenario: You say, 'Please don't speak to me like that.' They reply: 'Wow, you are so sensitive. It was just a joke. You have no sense of humor.'",
+          "question": "This is:",
+          "options": [
+            "Trivializing / Minimizing.",
+            "Apologizing.",
+            "Projection.",
+            "Future Faking."
+          ],
+          "correct": "Trivializing / Minimizing.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are invalidating your boundary by labeling your reaction as 'too sensitive' rather than their behavior as 'rude'.",
+            "incorrect": "It's not projection. It is minimizing the impact of their abuse."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E13",
+          "type": "multiple-choice",
+          "question": "Why do narcissists mirror your interests (e.g., 'I love hiking too!') during Love Bombing?",
+          "options": [
+            "To fake compatibility and lower your guard.",
+            "Because they actually love hiking.",
+            "To compete with you.",
+            "To learn a new hobby."
+          ],
+          "correct": "To fake compatibility and lower your guard.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It creates a false sense of 'soulmate' connection.",
+            "incorrect": "They usually drop the hobby the moment the Idealization phase ends."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E14",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm going to be the CEO of this company in a year, and then I'll buy us a mansion. You just need to support me now by paying the rent.'",
+          "question": "This combines Grandiosity with:",
+          "options": [
+            "Future Faking (Financial Exploitation).",
+            "Love Bombing.",
+            "Gaslighting.",
+            "Honesty."
+          ],
+          "correct": "Future Faking (Financial Exploitation).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They sell a grandiose future to extract money from you in the present.",
+            "incorrect": "This is a specific type of Future Faking involving money."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E15",
+          "type": "ethical-dilemma",
+          "scene": "You have gone 'No Contact' with a narcissist. They send a letter saying they are dying and need to see you one last time. (You suspect it's a lie).",
+          "question": "What is the safest response?",
+          "options": [
+            "Maintain No Contact. If it's true, contacting them won't save them. If it's false, it's a trap.",
+            "Go see them immediately.",
+            "Call their doctor.",
+            "Send a hateful reply."
+          ],
+          "correct": "Maintain No Contact. If it's true, contacting them won't save them. If it's false, it's a trap.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is the 'Christmas Cancer' tactic. It is almost always a Hoover. Breaking No Contact resets your healing.",
+            "incorrect": "Going to see them gives them exactly what they want: Access. You must protect yourself."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E16",
+          "type": "fill-in",
+          "sentence": "J.A.D.E. stands for: Do not Justify, (--------), Defend, or Explain.",
+          "options": [
+            "Argue",
+            "Ask",
+            "Attack",
+            "Accept"
+          ],
+          "answers": [
+            "Argue"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Arguing with a narcissist is feeding them Supply. Don't do it.",
+            "incorrect": "It stands for Argue. Any engagement is a win for them."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E17",
+          "type": "scenario",
+          "scene": "Scenario: You ask a simple question. The narcissist talks for 10 minutes in circles, using complex words, bringing up the past, and confusing you until you forget your question.",
+          "question": "This is:",
+          "options": [
+            "Word Salad.",
+            "Intelligence.",
+            "Detailed explanation.",
+            "Gaslighting."
+          ],
+          "correct": "Word Salad.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The goal is confusion and exhaustion, not communication.",
+            "incorrect": "It's not intelligence; it's a smoke screen to hide the lack of a real answer."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E18",
+          "type": "matching",
+          "question": "Match the Narcissistic Cycle Phase to the feeling:",
+          "pairs": [
+            {
+              "term": "Idealization",
+              "definition": "Euphoria, 'Too Good to Be True'."
+            },
+            {
+              "term": "Devaluation",
+              "definition": "Confusion, Walking on Eggshells."
+            },
+            {
+              "term": "Discard",
+              "definition": "Devastation, Shock."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Recognizing your own feelings helps you identify the phase.",
+            "incorrect": "Walking on eggshells happens when you are trying to avoid criticism (Devaluation)."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E19",
+          "type": "true-false",
+          "scene": "Scenario: A narcissist accuses you of being 'selfish.' You check your behavior and realize you have given them everything and taken nothing.",
+          "question": "Is this Projection?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are projecting their own selfishness onto you to avoid feeling guilty.",
+            "incorrect": "It is classic Projection. They accuse you of exactly what they are doing."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E20",
+          "type": "scenario",
+          "scene": "Scenario: 'I know I hurt you, but I'm just so damaged from my childhood. I can't help it.'",
+          "question": "This is:",
+          "options": [
+            "The Pity Play (Covert Manipulation).",
+            "Taking accountability.",
+            "A valid excuse.",
+            "Healing."
+          ],
+          "correct": "The Pity Play (Covert Manipulation).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are using their trauma as a 'Get Out of Jail Free' card to avoid accountability.",
+            "incorrect": "It sounds like an explanation, but it's an excuse. 'I can't help it' means 'I won't change'."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E21",
+          "type": "multiple-choice",
+          "question": "What is the 'Smear Campaign'?",
+          "options": [
+            "Spreading lies about you to others to destroy your reputation and isolate you.",
+            "Cleaning the house.",
+            "A political term.",
+            "Painting a portrait."
+          ],
+          "correct": "Spreading lies about you to others to destroy your reputation and isolate you.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It usually happens after the Discard or when they lose control. It destroys your support network.",
+            "incorrect": "It's a preemptive strike to ruin your credibility so no one believes your story."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E22",
+          "type": "reverse-scenario",
+          "answer": "You stop viewing the narcissist as a partner and start viewing them as a 'broken robot' who can only output abuse.",
+          "question": "This mindset shift is called:",
+          "options": [
+            "Radical Acceptance / Detachment.",
+            "Devaluation.",
+            "Gaslighting.",
+            "Mean."
+          ],
+          "correct": "Radical Acceptance / Detachment.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Emotional detachment allows you to observe their behavior without getting hurt. You stop expecting them to be human.",
+            "incorrect": "It's not mean; it's realistic. You are accepting the reality of their limitation."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E23",
+          "type": "scenario",
+          "scene": "Scenario: They treat the waiter terribly, but treat you like a queen/king.",
+          "question": "What does this tell you?",
+          "options": [
+            "They are stressed.",
+            "How they treat the waiter is who they *really* are. You are next.",
+            "They are protective of you.",
+            "The waiter was bad."
+          ],
+          "correct": "How they treat the waiter is who they *really* are. You are next.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The mask slips with service workers. Once the Love Bombing ends, you will be treated like the waiter.",
+            "incorrect": "Character is how you treat those who can do nothing for you. This is a major red flag."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E24",
+          "type": "fill-in",
+          "sentence": "Your (--------) does not require their agreement.",
+          "options": [
+            "reality",
+            "money",
+            "car",
+            "job"
+          ],
+          "answers": [
+            "reality"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is the anti-gaslighting mantra. You know what happened. You don't need them to admit it.",
+            "incorrect": "It's about your perception of truth. You don't need a consensus to know the truth."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E25",
+          "type": "scenario",
+          "scene": "Scenario: 'If you leave me, I will hurt myself.'",
+          "question": "This is:",
+          "options": [
+            "Coercive Control (The ultimate guilt trap).",
+            "Love.",
+            "A cry for help.",
+            "Romance."
+          ],
+          "correct": "Coercive Control (The ultimate guilt trap).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Using self-harm as a threat to force you to stay is the highest form of emotional manipulation and coercion.",
+            "incorrect": "It is not love. It is holding you hostage with their life. Call emergency services, but do not stay."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E26",
+          "type": "true-false",
+          "scene": "Scenario: You catch them cheating. They say, 'I wouldn't have cheated if you paid more attention to me.'",
+          "question": "Is this Blame-Shifting?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They turned their choice (cheating) into your fault (lack of attention).",
+            "incorrect": "This is the definition of Blame-Shifting. Making you responsible for their bad actions."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E27",
+          "type": "multiple-choice",
+          "question": "Why is 'Intermittent Reinforcement' (Hot and Cold behavior) so addictive?",
+          "options": [
+            "It creates a 'gambling' addiction in the brain (Dopamine loops).",
+            "It builds trust.",
+            "It is normal.",
+            "It shows they are complex."
+          ],
+          "correct": "It creates a 'gambling' addiction in the brain (Dopamine loops).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Unpredictable rewards release more dopamine than predictable ones. You stay hooked waiting for the 'win' (the nice days).",
+            "incorrect": "It destroys trust, but increases addiction. It's the same psychology as a slot machine."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E28",
+          "type": "scenario",
+          "scene": "Scenario: A Covert Narcissist 'accidentally' forgets to tell you about a party where your friends are meeting, so you miss it.",
+          "question": "This is:",
+          "options": [
+            "Passive-Aggressive Sabotage.",
+            "An accident.",
+            "Memory loss.",
+            "Kindness."
+          ],
+          "correct": "Passive-Aggressive Sabotage.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They sabotage your social life (Supply) without looking aggressive. They can claim 'I forgot!' to maintain the mask.",
+            "incorrect": "Covert narcissists use 'forgetfulness' as a weapon to hurt you without taking blame."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E29",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the Narcissist's goal:",
+          "words": [
+            "Control",
+            "Supply",
+            "over",
+            "your",
+            "emotion"
+          ],
+          "correct": "Control over your emotion",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If they control your emotion, they own you. Supply is the proof of that control.",
+            "incorrect": "It's about emotional dominance."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P2-E30",
+          "type": "case-analysis",
+          "caseTitle": "Gauntlet Complete",
+          "scene": "You have survived 30 rapid-fire scenarios. You have seen the masks, the traps, and the exits.",
+          "question": "You are ready for the Final Challenge of Unit 2:",
+          "options": [
+            "The 'Narcissist' Boss Scenario (A complex, multi-stage simulation).",
+            "Going back to sleep.",
+            "Trusting everyone.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Narcissist' Boss Scenario (A complex, multi-stage simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It's time to face the final Boss. You will need every tool you have learned.",
+            "incorrect": "The final test awaits. Get ready."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A1",
+  "unitTitle": "The Fast Hook",
+  "lessonId": "A1-3",
+  "lessonTitle": "The \"Bootcamp\" - Definitions, History & Ethics",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "The 'Why' & 'Who' (Ethics & History)",
+  "objective": "To establish an ethical framework ('The Why') and explore the historical origins of dark psychology ('The Who').",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "complete",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A1-3-P2-S1",
+      "screenType": "Learn",
+      "title": "The Bootcamp: Part 2",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You've learned the 'What' (the definitions). Now you'll learn the 'Why' (the ethics) and the 'Who' (the history)."
+        },
+        {
+          "exerciseId": "A1-3-P2-E1",
+          "type": "ethical-dilemma",
+          "scene": "A friend is in a new relationship and is being 'love-bombed' (excessive flattery, gifts, fast intimacy) but they are happy.",
+          "question": "What is the most 'ethically aware' action?",
+          "options": [
+            "Tell them their partner is a manipulator and they should break up.",
+            "Do nothing. It's not your business.",
+            "Gently ask them, 'It's great you're so happy! Is the pace ever a bit much?'",
+            "Use love-bombing tactics on your own partner."
+          ],
+          "correct": "Gently ask them, 'It's great you're so happy! Is the pace ever a bit much?'",
+          "difficulty": "medium",
+          "explanation": "This is the 'Do No Harm' principle. You don't 'attack' (which causes defense), you 'inquire' (which causes reflection). This is using awareness to *help*."
+        },
+        {
+          "exerciseId": "A1-3-P2-E2",
+          "type": "true-false",
+          "statement": "The 'Prime Directive' of this app is: 'Use this knowledge for awareness, defense, and personal growth, not to harm or exploit others.'",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "explanation": "This is our 'Ethical Compass.' Learning this is about building a shield, not a sword."
+        },
+        {
+          "exerciseId": "A1-3-P2-E3",
+          "type": "multiple-choice",
+          "question": "Who is considered the 'father' of 'ends justifies the means' philosophy, making him a core figure in Dark Psychology history?",
+          "options": [
+            "Sigmund Freud",
+            "Carl Jung",
+            "Niccolò Machiavelli",
+            "Abraham Maslow"
+          ],
+          "correct": "Niccolò Machiavelli",
+          "difficulty": "easy",
+          "explanation": "Machiavelli's book 'The Prince' is a famous historical 'playbook' on using deception, fear, and manipulation to maintain power. This is the 'Who'."
+        },
+        {
+          "exerciseId": "A1-3-P2-E4",
+          "type": "matching",
+          "question": "Match the historical concept with its description:",
+          "pairs": [
+            {
+              "term": "Machiavellianism",
+              "definition": "A philosophy that 'the end justifies the means' (deception is fine)."
+            },
+            {
+              "term": "Propaganda",
+              "definition": "Using mass media to manipulate public opinion (e.g., in wartime)."
+            },
+            {
+              "term": "Gaslighting (Origin)",
+              "definition": "From a 1938 play/film where a husband dims lights to make his wife think she's insane."
+            },
+            {
+              "term": "The 'Dark Triad'",
+              "definition": "A modern term for 3 traits: Narcissism, Machiavellianism, Psychopathy."
+            }
+          ],
+          "difficulty": "medium",
+          "explanation": "These tactics aren't new. They have just been 're-branded' over time. What was 'propaganda' then is now 'fake news' or 'viral campaigns'."
+        },
+        {
+          "exerciseId": "A1-3-P2-E5",
+          "type": "fill-in",
+          "sentence": "The 'Dark Triad' consists of (--------), Machiavellianism, and (--------).",
+          "options": [
+            "Narcissism",
+            "Psychopathy",
+            "Kindness",
+            "Empathy",
+            "Neuroticism"
+          ],
+          "answers": [
+            "Narcissism",
+            "Psychopathy"
+          ],
+          "difficulty": "medium",
+          "explanation": "These are the three personality traits most associated with manipulative and exploitative behavior in modern psychology."
+        },
+        {
+          "exerciseId": "A1-3-P2-E6",
+          "type": "ethical-dilemma",
+          "scene": "You are in a job interview. You *know* the interviewer values 'teamwork' above all.",
+          "question": "Is it 'unethical' to mirror their body language and constantly mention 'teamwork' (a form of Pacing)?",
+          "options": [
+            "Yes. It's manipulation, you are faking it.",
+            "No. An interview is a transparent 'persuasion' game. This is just social skill.",
+            "It's only okay if you *also* flatter them.",
+            "It's 'dark' but necessary to get a job."
+          ],
+          "correct": "No. An interview is a transparent 'persuasion' game. This is just social skill.",
+          "difficulty": "hard",
+          "explanation": "This is the 'grey area.' The *intent* is not to exploit, and the *context* is transparent (you both know you're 'selling' yourself). This is persuasion, not 'dark' manipulation."
+        },
+        {
+          "exerciseId": "A1-3-P2-E7",
+          "type": "true-false",
+          "statement": "The historical figure Machiavelli would have *agreed* with the 'Coffee Shop' con-artist 'Alex'.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "explanation": "Yes. Alex had a goal ($20) and used deception (flattery, vulnerability) to get it. 'The end justifies the means.' This is pure Machiavellianism in action."
+        },
+        {
+          "exerciseId": "A1-3-P2-E8",
+          "type": "case-analysis",
+          "caseTitle": "Wartime Propaganda",
+          "scene": "During WWI, posters showed 'enemy' soldiers as 'monsters' or 'brutes' to build fear and hatred. This encouraged men to enlist and the public to support the war.",
+          "question": "This is a large-scale example of what?",
+          "options": [
+            "Emotional manipulation (using fear) and deception (dehumanizing the enemy).",
+            "A logical argument for war.",
+            "A form of flattery (praising your own country).",
+            "A simple recruitment drive."
+          ],
+          "correct": "Emotional manipulation (using fear) and deception (dehumanizing the enemy).",
+          "difficulty": "hard",
+          "explanation": "This is 'Dark Psychology' at a mass scale. 'Propaganda' is just manipulation for nations. It uses fear and 'us vs. them' to control behavior."
+        },
+        {
+          "exerciseId": "A1-3-P2-E9",
+          "type": "multiple-choice",
+          "question": "The term 'Gaslighting' comes from a 1938 play. What did the manipulator do in the story?",
+          "options": [
+            "He used a gaslight to find lost keys.",
+            "He was a gas station attendant who lied.",
+            "He dimmed the gas lights in the house, then told his wife she was 'imagining it'.",
+            "He lit a fire to threaten his wife."
+          ],
+          "correct": "He dimmed the gas lights in the house, then told his wife she was 'imagining it'.",
+          "difficulty": "easy",
+          "explanation": "This is the origin. The goal was to make her *doubt her own senses* and reality, making her completely dependent on him. That is the core of 'gaslighting'."
+        },
+        {
+          "exerciseId": "A1-3-P2-E10",
+          "type": "build-sentence",
+          "question": "Arrange these words into Machiavelli's core philosophy:",
+          "words": [
+            "means",
+            "the",
+            "justifies",
+            "The",
+            "end"
+          ],
+          "correct": "The end justifies the means",
+          "difficulty": "medium",
+          "explanation": "This is the 'Manipulator's Creed.' If the goal is 'good' (to them), any method (lying, cheating, harming) is okay. This is a *major* ethical blind spot."
+        },
+        {
+          "exerciseId": "A1-3-P2-E11",
+          "type": "reverse-scenario",
+          "answer": "A personality trait marked by a high sense of self-importance, a need for admiration, and a lack of empathy.",
+          "question": "This is the definition of what 'Dark Triad' trait?",
+          "options": [
+            "Machiavellianism",
+            "Psychopathy",
+            "Narcissism",
+            "Kindness"
+          ],
+          "correct": "Narcissism",
+          "difficulty": "medium",
+          "explanation": "We will spend a *lot* of time on Narcissism, as it's one of the most common sources of manipulation in personal relationships."
+        },
+        {
+          "exerciseId": "A1-3-P2-E12",
+          "type": "ethical-dilemma",
+          "scene": "Your friend is applying for the same job as you. You *know* the interviewer hates long answers.",
+          "question": "You *don't* tell your friend this 'secret'. Is this 'dark' manipulation?",
+          "options": [
+            "Yes. You are manipulating the outcome by withholding information.",
+            "No. It's a competition. You have no 'ethical duty' to help your friend in this case.",
+            "Yes, and you should tell your friend *bad* advice to make it worse.",
+            "No, because you are both friends."
+          ],
+          "correct": "Yes. You are manipulating the outcome by withholding information.",
+          "difficulty": "hard",
+          "explanation": "This is 'passive' manipulation. You aren't *doing* harm, but you are *allowing* harm (or failure) to happen for your own gain. This is a 'grey area' that leans 'dark'."
+        },
+        {
+          "exerciseId": "A1-3-P2-E13",
+          "type": "true-false",
+          "statement": "Historically, 'Dark Psychology' tactics have only been used by evil dictators.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "explanation": "This is a major myth. These tactics are used every day in advertising, in office politics, and in family dynamics. The 'Coffee Shop' is proof."
+        },
+        {
+          "exerciseId": "A1-3-P2-E14",
+          "type": "multiple-choice",
+          "question": "Why are we studying 'Ethics' and 'History' together in this part?",
+          "options": [
+            "Because they are both boring.",
+            "Because history is full of ethical dilemmas.",
+            "Because history shows *why* we need ethics; it shows the *damage* these tactics cause.",
+            "Because they are the same thing."
+          ],
+          "correct": "Because history shows *why* we need ethics; it shows the *damage* these tactics cause.",
+          "difficulty": "medium",
+          "explanation": "Exactly. History (like propaganda) shows the devastating *consequences* of manipulation. This is why the 'Ethical Compass' is so important."
+        },
+        {
+          "exerciseId": "A1-3-P2-E15",
+          "type": "fill-in",
+          "sentence": "In Part 3, you will face the '(--------)-Test' which will combine all 3 topics: (--------), Ethics, and (--------).",
+          "options": [
+            "Mega",
+            "Definitions",
+            "History",
+            "Final",
+            "Easy",
+            "Flattery"
+          ],
+          "answers": [
+            "Mega",
+            "Definitions",
+            "History"
+          ],
+          "difficulty": "easy",
+          "explanation": "You've learned the 'What,' the 'Why,' and the 'Who.' Get ready to put it all together in the Part 3 challenge."
+        }
+      ]
+    }
+  ]
+}

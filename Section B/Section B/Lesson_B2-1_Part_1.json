@@ -1,0 +1,343 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B2",
+  "unitTitle": "The Frame Game: Controlling Perception",
+  "lessonId": "B2-1",
+  "lessonTitle": "Framing 101: The Lens of Reality",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: Whoever Sets the Frame Wins the Argument",
+  "objective": "To define 'Framing' as the art of setting the context or 'lens' through which information is perceived, understanding that whoever defines the frame controls the meaning.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B2-1-P1-S1",
+      "screenType": "Learn",
+      "title": "The Lens is Everything",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A picture has no meaning until you put a frame around it. A *small* frame focuses on details. A *large* frame shows the big picture."
+        },
+        {
+          "type": "paragraph",
+          "text": "In communication, the **Frame** is the context. Is this a 'problem' or an 'opportunity'? Is this 'expensive' or an 'investment'? The person who sets the frame wins the argument before it even begins."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Rule: Do not argue with the content (the picture). Argue with the context (the frame)."
+        }
+      ]
+    },
+    {
+      "screenId": "B2-1-P1-S2",
+      "screenType": "Exercises",
+      "title": "Defining the Frame",
+      "exercises": [
+        {
+          "exerciseId": "B2-1-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is a **Frame** in psychology?",
+          "options": [
+            "A wooden border for art.",
+            "The mental structure or context that shapes how we interpret information.",
+            "A lie.",
+            "Being trapped."
+          ],
+          "correct": "The mental structure or context that shapes how we interpret information.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is the lens. If I frame a glass as 'half full,' you feel happy. If I frame it as 'half empty,' you feel sad. The water level is the same; the frame changed the feeling.",
+            "incorrect": "It's not a physical object. It is the psychological context that gives meaning to facts."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: A store sells a jacket for $200. It seems expensive. They put a sign next to it: 'Regular Price $400, Now 50% Off.'",
+          "question": "What did the sign do?",
+          "options": [
+            "It lowered the value.",
+            "It set a 'Price Anchor' Frame, making $200 feel cheap by comparison.",
+            "It lied.",
+            "It made the jacket better."
+          ],
+          "correct": "It set a 'Price Anchor' Frame, making $200 feel cheap by comparison.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The frame changed from 'Is $200 a lot?' to 'Look how much I am saving!' The fact ($200) stayed the same; the perception changed.",
+            "incorrect": "It didn't change the jacket. It changed the context of the price."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P1-E3",
+          "type": "fill-in",
+          "sentence": "The person who sets the (--------) controls the conversation.",
+          "options": [
+            "frame",
+            "volume",
+            "time",
+            "food"
+          ],
+          "answers": [
+            "frame"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If I frame the debate as 'Safety vs. Danger,' you have to argue for Safety. If I frame it as 'Freedom vs. Tyranny,' you have to argue for Freedom. The frame dictates the winning side.",
+            "incorrect": "It's not about volume. It's about the boundaries of the discussion."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I know you are too busy to help me.'",
+          "question": "Is this a Frame?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This creates a 'Challenge Frame.' To prove you are *not* too busy (or selfish), you might agree to help. They framed your refusal as a character flaw before you even spoke.",
+            "incorrect": "It is a specific frame called the 'Negative Frame' designed to trigger a correction."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P1-E5",
+          "type": "matching",
+          "question": "Match the Frame to the Meaning:",
+          "pairs": [
+            {
+              "term": "The Problem Frame",
+              "definition": "\"Why is this broken? Whose fault is it?\" (Past Focus)"
+            },
+            {
+              "term": "The Outcome Frame",
+              "definition": "\"What do we want? How do we get there?\" (Future Focus)"
+            },
+            {
+              "term": "The Feedback Frame",
+              "definition": "\"There is no failure, only learning.\""
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Leaders use the Outcome Frame. Victims use the Problem Frame. Innovators use the Feedback Frame.",
+            "incorrect": "Look at the focus. Blame vs. Goal vs. Lesson."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the power of Reframing:",
+          "words": [
+            "meaning",
+            "Changing",
+            "context",
+            "changes",
+            "the",
+            "the"
+          ],
+          "correct": "Changing the context changes the meaning",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. A scream in a haunted house is scary. A scream on a rollercoaster is fun. The context (frame) decides the emotion.",
+            "incorrect": "The event stays the same. The context alters the perception."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "A rhetorical tactic where you define the debate terms so the opponent loses no matter what they say (e.g., 'When did you stop hitting your wife?').",
+          "question": "What is this?",
+          "options": [
+            "The Loaded Frame / Complex Question",
+            "Gaslighting",
+            "Pacing",
+            "Honesty"
+          ],
+          "correct": "The Loaded Frame / Complex Question",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The frame assumes guilt. If you answer 'Yesterday,' you are guilty. If you answer 'Never,' you sound defensive. You must reject the frame.",
+            "incorrect": "It loads the question with a presupposition (Frame) that traps the answerer."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: You make a mistake. Boss A says: 'You messed up.' Boss B says: 'You found a way that doesn't work.'",
+          "question": "Boss B is using:",
+          "options": [
+            "Reframing (Failure -> Learning).",
+            "Lying.",
+            "Blindness.",
+            "Anger."
+          ],
+          "correct": "Reframing (Failure -> Learning).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Boss B changed the frame from 'Blame' to 'Discovery.' This keeps morale high while acknowledging the result.",
+            "incorrect": "It's not lying; it's a perspective shift (Edison style). 'I didn't fail; I found 10,000 ways that won't work.'"
+          }
+        },
+        {
+          "exerciseId": "B2-1-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are selling a used car with high mileage. You frame it as 'Road Tested and Reliable' instead of 'Old.'",
+          "question": "Is this manipulation?",
+          "options": [
+            "Yes, but it is standard marketing (Reframing) as long as you disclose the actual mileage.",
+            "No, it is truth.",
+            "Yes, it is a scam.",
+            "No, cars don't age."
+          ],
+          "correct": "Yes, but it is standard marketing (Reframing) as long as you disclose the actual mileage.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Reframing highlights the positive aspect of a fact. Lying would be changing the odometer. Reframing is 'Spin.'",
+            "incorrect": "It is manipulation of perception, but ethical if the facts remain true."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P1-E10",
+          "type": "fill-in",
+          "sentence": "If you accept the other person's (--------), you have already lost the argument.",
+          "options": [
+            "frame",
+            "money",
+            "car",
+            "voice"
+          ],
+          "answers": [
+            "frame"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If they say 'Why are you being defensive?' and you say 'I'm not!', you accepted the 'Defensive' frame. You must say, 'I am not defensive; I am passionate.'",
+            "incorrect": "The frame is the battlefield. Don't fight on their terrain."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P1-E11",
+          "type": "multiple-choice",
+          "question": "What is 'Pre-Framing'?",
+          "options": [
+            "Setting the context *before* the interaction begins to guide the outcome.",
+            "Framing a picture.",
+            "Speaking last.",
+            "Apologizing."
+          ],
+          "correct": "Setting the context *before* the interaction begins to guide the outcome.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Before I tell you the price, remember this product lasts for 20 years.' This pre-frames the price as an investment, not a cost.",
+            "incorrect": "It happens at the start. It primes the brain for how to interpret the coming data."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I don't want to fight.'",
+          "question": "Does this set a frame?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It sets the 'Peace Frame.' Now, if you disagree or raise your voice, *you* are the one breaking the peace. It traps you in politeness.",
+            "incorrect": "Every sentence sets a frame. This one frames the speaker as the 'Peacemaker' and any opposition as 'War'."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: A politician is asked about a scandal. They answer: 'The real issue here is not X, it is Y.'",
+          "question": "This is:",
+          "options": [
+            "Deflection / Reframing the Narrative.",
+            "Answering the question.",
+            "Confusion.",
+            "Lying."
+          ],
+          "correct": "Deflection / Reframing the Narrative.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They refused the 'Scandal Frame' and moved the conversation to the 'Issue Frame' where they are stronger.",
+            "incorrect": "They explicitly did not answer the question. They moved the goalposts."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P1-E14",
+          "type": "matching",
+          "question": "Match the Frame to the Focus:",
+          "pairs": [
+            {
+              "term": "Time Frame",
+              "definition": "\"This will save us time in the long run.\""
+            },
+            {
+              "term": "Value Frame",
+              "definition": "\"It's expensive, but it's the best quality.\""
+            },
+            {
+              "term": "Identity Frame",
+              "definition": "\"Smart people choose this option.\""
+            }
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You can frame by Time, Value, or Identity. Each targets a different trigger.",
+            "incorrect": "Match the content. Long run = Time. Quality = Value. Smart people = Identity."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Lens",
+          "scene": "You now understand that Reality is subjective. The Frame dictates the meaning. The person holding the frame controls the view.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Spotting the 'Pre-Frame' (Real-world examples).",
+            "Building picture frames.",
+            "Ignoring context.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: Spotting the 'Pre-Frame' (Real-world examples).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We need to train you to hear the frame *before* the argument starts.",
+            "incorrect": "Next up: Practical detection of the context trap."
+          }
+        }
+      ]
+    }
+  ]
+}

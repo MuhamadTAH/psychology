@@ -1,0 +1,352 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A4",
+  "unitTitle": "The Void Behind the Mask: Psychopathy",
+  "lessonId": "A4-2",
+  "lessonTitle": "The Super-Charm: Glibness & Superficiality",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Interview\" Trap",
+  "objective": "To master the defense against Superficial Charm by learning to 'drill down' into glib answers, resist the 'Halo Effect', and spot the cracks in a perfect persona.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Truth_Seeker_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A4-2-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Perfect Candidate",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are about to interview a master manipulator. They will be charming, funny, and seemingly perfect."
+        },
+        {
+          "type": "paragraph",
+          "text": "Your goal is to stop being a 'Fan' and start being a 'Journalist.' You must ignore the smile and drill down into the details."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Trap: If you accept their vague, shiny answers, you lose. You must demand specifics."
+        }
+      ]
+    },
+    {
+      "screenId": "A4-2-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Interview",
+      "exercises": [
+        {
+          "exerciseId": "A4-2-P3-E1",
+          "type": "boss-scenario",
+          "scene": "You ask the candidate about a project failure on their resume. They smile confidently: 'That project was actually a great learning experience! I led the team through a challenging transition and we came out stronger. It was amazing.'",
+          "question": "This answer is 'Glib.' What is missing?",
+          "options": [
+            "Humility.",
+            "Specific details about *what* went wrong and *what* they actually did.",
+            "A joke.",
+            "Confidence."
+          ],
+          "correct": "Specific details about *what* went wrong and *what* they actually did.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They used 'buzzwords' (transition, stronger, amazing) to hide the failure. There is no substance, only shine.",
+            "incorrect": "Confidence is there. Detail is missing. Glibness is style without substance."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Drill Down",
+          "steps": [
+            {
+              "scene": "Candidate: 'I transformed the sales department single-handedly. It was a revolution.'",
+              "options": [
+                "'Wow, that's impressive!' (Fan)",
+                "'You are hired.' (Submission)",
+                "'Can you walk me through the specific steps you took, week by week?' (The Drill Down)",
+                "'I don't believe you.' (Attack)"
+              ],
+              "correct": "'Can you walk me through the specific steps you took, week by week?' (The Drill Down)",
+              "feedback": {
+                "correct": "Perfect. A liar has a headline ('I transformed it') but no details. Asking for the 'process' forces them off-script.",
+                "incorrect": "Accepting the headline feeds their ego. You need to verify the work."
+              }
+            },
+            {
+              "question": "Candidate: 'Oh, well, it was a holistic approach... lots of synergy... you know how it is.' (Vague / Word Salad).",
+              "options": [
+                "'I understand.' (Letting them off the hook)",
+                "'I'm asking for one specific metric you changed.' (Holding Frame)",
+                "'You are lying.' (Accusation)",
+                "Smile and nod."
+              ],
+              "correct": "'I'm asking for one specific metric you changed.' (Holding Frame)",
+              "feedback": {
+                "correct": "Mastery. You refused to accept the 'Word Salad.' You demanded a fact. If they can't give one, they are lying.",
+                "incorrect": "They are stalling. Don't let them escape into vagueness."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You pierced the bubble. Glibness collapses under specific questioning.",
+            "incorrect": "You bought the hype. Now you have hired a fraud."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why do Psychopaths often use excessive eye contact (The Predatory Stare) during interviews?",
+          "options": [
+            "They are listening closely.",
+            "To simulate intimacy and dominance, forcing you to look away or submit.",
+            "They forgot their glasses.",
+            "They love you."
+          ],
+          "correct": "To simulate intimacy and dominance, forcing you to simulate you to look away or submit.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Normal eye contact breaks occasionally. Unbroken staring is a dominance display designed to hypnotize or intimidate.",
+            "incorrect": "It is unnatural. It creates a high-pressure 'spotlight' on you."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P3-E4",
+          "type": "fill-in",
+          "sentence": "The (--------) Effect causes us to assume that a charming, good-looking person is also competent and honest.",
+          "options": [
+            "Halo",
+            "Horn",
+            "Devil",
+            "God"
+          ],
+          "answers": [
+            "Halo"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Psychopaths rely on this bias. They polish the surface so you assume the interior is clean.",
+            "incorrect": "It is the 'Halo' effect. One good trait (charm) shines so bright it hides the bad traits."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: A date asks you deep questions about your fears, but shares nothing real about themselves. They just mirror your answers.",
+          "question": "This is:",
+          "options": [
+            "A Deep Connection.",
+            "Data Mining / Investigation Phase.",
+            "Shyness.",
+            "Therapy."
+          ],
+          "correct": "Data Mining / Investigation Phase.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are building a dossier on you. They mirror you to make you feel 'seen' while they remain hidden.",
+            "incorrect": "It feels like connection, but it is one-way extraction."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'I have never made a mistake in my career.'",
+          "question": "If a candidate says this, is it a sign of competence?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct/False. It is a sign of Grandiosity and Pathological Lying. Everyone makes mistakes. Only a Narcissist/Psychopath claims perfection.",
+            "incorrect": "It is a major red flag for lack of accountability."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the defense against Glibness:",
+          "words": [
+            "Slow",
+            "the",
+            "down",
+            "interaction"
+          ],
+          "correct": "Slow down the interaction",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Glibness relies on speed. If you pause, think, and ask for clarification, their smooth talk falls apart.",
+            "incorrect": "Don't let them set the pace. Speed kills critical thinking."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A fleeting micro-expression of contempt or boredom that appears when they think you aren't looking.",
+          "question": "What is this?",
+          "options": [
+            "The Mask Slip",
+            "The Duchenne Smile",
+            "The Halo Effect",
+            "The Hook"
+          ],
+          "correct": "The Mask Slip",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Maintaining the 'Nice Person' mask is hard work. When they relax, the true face (contempt/emptiness) shows.",
+            "incorrect": "It's not a smile. It's the crack in the armor."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You suspect your charismatic boss is a psychopath defrauding investors. You have no concrete proof, just a 'gut feeling' about their glibness.",
+          "question": "What is the safest move?",
+          "options": [
+            "Accuse them publicly.",
+            "Ignore your gut.",
+            "Quietly update your resume and document everything legally while planning an exit.",
+            "Join the fraud."
+          ],
+          "correct": "Quietly update your resume and document everything legally while planning an exit.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Accusing a psychopath without proof is suicide. Staying is dangerous. The only win is a safe, strategic exit.",
+            "incorrect": "Never attack a predator without a weapon (proof). Never stay on a sinking ship."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: They tell a story where they are the 'Hero' who saved the day, or the 'Victim' who was wronged by everyone.",
+          "question": "What role is missing?",
+          "options": [
+            "The Villain.",
+            "The Bystander.",
+            "The Flawed Human (Accountability).",
+            "The Winner."
+          ],
+          "correct": "The Flawed Human (Accountability).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Real stories have nuance. Psychopathic stories are cartoons: 'I am perfect, they are evil.' They never admit a minor fault.",
+            "incorrect": "They always paint themselves as 100% good or 100% victimized. The gray area of humanity is missing."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P3-E11",
+          "type": "multiple-choice",
+          "question": "Why is 'Pity' a weapon for a Psychopath?",
+          "options": [
+            "It isn't.",
+            "It bypasses your defenses. We don't suspect 'weak' people of being predators (The Pity Play).",
+            "They are actually sad.",
+            "They want a hug."
+          ],
+          "correct": "It bypasses your defenses. We don't suspect 'weak' people of being predators (The Pity Play).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'The Wolf in Sheep's Clothing.' If you pity them, you let them in. Ted Bundy used a fake cast to get women to help him.",
+            "incorrect": "Pity is the ultimate camouflage for a predator."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P3-E12",
+          "type": "fill-in",
+          "sentence": "If you feel (--------) or (--------) after talking to them, but you can't explain why, trust your gut.",
+          "options": [
+            "happy",
+            "drained",
+            "confused",
+            "safe"
+          ],
+          "answers": [
+            "drained",
+            "confused"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Cognitive dissonance (confusion) and energy drain are physical signs that you are being manipulated.",
+            "incorrect": "You shouldn't feel safe. Your body knows the truth before your mind does."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P3-E13",
+          "type": "true-false",
+          "scene": "Scenario: 'I lie because it's fun to see if people believe me.'",
+          "question": "Is this a sign of 'Duper's Delight'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They lie for the thrill of controlling your reality. It is a game.",
+            "incorrect": "It is the definition of the delight found in deception."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P3-E14",
+          "type": "scenario",
+          "scene": "Scenario: You try to pin them down on a specific detail. They answer with a joke, a compliment, and a question back to you.",
+          "question": "This is:",
+          "options": [
+            "The Triple Deflect.",
+            "Conversation skills.",
+            "Flirting.",
+            "Honesty."
+          ],
+          "correct": "The Triple Deflect.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Humor to distract, Flattery to disarm, Question to redirect. They are slippery.",
+            "incorrect": "It is a sophisticated evasion tactic. They avoided the detail."
+          }
+        },
+        {
+          "exerciseId": "A4-2-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Mask Removed",
+          "scene": "You have faced the Super-Charm. You know that 'Glibness' is a red flag, not a green light. You know how to drill down for details.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson A4-3: The Parasite (Exploitation & Boredom).",
+            "Lesson A1-1.",
+            "Being charmed.",
+            "Giving them money."
+          ],
+          "correct": "Lesson A4-3: The Parasite (Exploitation & Boredom).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They hook you with charm so they can feed off you. Next, we learn how they live as parasites.",
+            "incorrect": "Next up: Understanding their parasitic lifestyle."
+          }
+        }
+      ]
+    }
+  ]
+}

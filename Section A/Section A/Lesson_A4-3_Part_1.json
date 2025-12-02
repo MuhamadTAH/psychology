@@ -1,0 +1,342 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A4",
+  "unitTitle": "The Void Behind the Mask: Psychopathy",
+  "lessonId": "A4-3",
+  "lessonTitle": "The Parasite: Exploitation & Boredom",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Need for Stimulation",
+  "objective": "To define 'Chronic Boredom' as the primary driver of psychopathic behavior and identify the 'Parasitic Lifestyle' as a core trait.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A4-3-P1-S1",
+      "screenType": "Learn",
+      "title": "The Boredom Trap",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A primary psychopath has a low resting heart rate and low emotional arousal. This means normal life feels like 'watching paint dry' to them."
+        },
+        {
+          "type": "paragraph",
+          "text": "To feel alive, they need **extreme stimulation**. They create chaos, take risks, and destroy peace just to cure their boredom."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Warning: If you give them a peaceful life, they will burn it down just to see the fire."
+        }
+      ]
+    },
+    {
+      "screenId": "A4-3-P1-S2",
+      "screenType": "Exercises",
+      "title": "Identifying the Parasite",
+      "exercises": [
+        {
+          "exerciseId": "A4-3-P1-E1",
+          "type": "multiple-choice",
+          "question": "Why does a Psychopath often ruin holidays, birthdays, or peaceful weekends?",
+          "options": [
+            "They are clumsy.",
+            "They suffer from 'Chronic Boredom' and peace is painful to them. Drama provides stimulation.",
+            "They forgot the date.",
+            "They are just grumpy."
+          ],
+          "correct": "They suffer from 'Chronic Boredom' and peace is painful to them. Drama provides stimulation.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Peace offers no dopamine. Chaos offers high stimulation. They ruin the day to 'feed' their boredom.",
+            "incorrect": "It is not accidental. Peace feels like death to a low-arousal nervous system. They create drama to feel alive."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P1-E2",
+          "type": "fill-in",
+          "sentence": "A Psychopath views other people as (--------) to be used for money, sex, or entertainment.",
+          "options": [
+            "resources",
+            "friends",
+            "leaders",
+            "gods"
+          ],
+          "answers": [
+            "resources"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the 'Parasitic' mindset. They do not bond with you; they feed off you.",
+            "incorrect": "They don't see humanity. They see utility (resources)."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P1-E3",
+          "type": "scenario",
+          "scene": "Scenario: A new friend crashes on your couch for 'a few days.' Six months later, they are still there, eating your food, paying no rent, and borrowing your car.",
+          "question": "This is a classic sign of:",
+          "options": [
+            "A Parasitic Lifestyle.",
+            "Bad luck.",
+            "Friendship.",
+            "Laziness."
+          ],
+          "correct": "A Parasitic Lifestyle.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Psychopaths often feel entitled to live off others without effort. They exploit your kindness to survive.",
+            "incorrect": "It's not just laziness; it's exploitation. They are actively draining your resources without guilt."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I get bored easily. I need excitement or I go crazy.'",
+          "question": "Is this a common statement from a Psychopath?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is a confession of their low arousal state. They are warning you that they will create chaos to fix their boredom.",
+            "incorrect": "They often admit this openly. Believe them."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P1-E5",
+          "type": "matching",
+          "question": "Match the Behavior to the Underlying Need:",
+          "pairs": [
+            {
+              "term": "Reckless Driving / Drug Use",
+              "definition": "Need for Stimulation (Risk)"
+            },
+            {
+              "term": "Borrowing money and never paying it back",
+              "definition": "Parasitic Lifestyle"
+            },
+            {
+              "term": "Starting a fight for no reason",
+              "definition": "Alleviating Boredom"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Risk cures numbness. Theft feeds the parasite. Conflict cures boredom.",
+            "incorrect": "Look at the function. Why are they doing it? To feel something or get something for free."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the Psychopath's financial strategy:",
+          "words": [
+            "is",
+            "money",
+            "money",
+            "Your",
+            "my"
+          ],
+          "correct": "Your money is my money",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They have no boundary between 'yours' and 'theirs.' If they can take it, it belongs to them.",
+            "incorrect": "They view ownership as a matter of ability, not law. 'If I can trick you out of it, I deserve it.'"
+          }
+        },
+        {
+          "exerciseId": "A4-3-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "A person who jumps from job to job, relationship to relationship, never finishing anything, and leaving a trail of debt.",
+          "question": "What trait does this describe?",
+          "options": [
+            "Impulsivity and Irresponsibility",
+            "Ambition",
+            "Bad Luck",
+            "Creativity"
+          ],
+          "correct": "Impulsivity and Irresponsibility",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They lack 'Long-Term Goals.' They live entirely in the present moment of gratification.",
+            "incorrect": "It's not bad luck. It's a refusal to endure the 'boredom' of stability and responsibility."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: You lend them $500. When you ask for it back, they get angry: 'You are so greedy! Why do you care about money so much? I thought we were friends!'",
+          "question": "This tactic is:",
+          "options": [
+            "Shaming / Deflection.",
+            "A valid point.",
+            "Apologizing.",
+            "Forgetfulness."
+          ],
+          "correct": "Shaming / Deflection.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They turn your boundary (repayment) into a character flaw (greed) to avoid paying. They punish you for asking.",
+            "incorrect": "Asking for your own money back is not greed. They are gaslighting you to keep the cash."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P1-E9",
+          "type": "multiple-choice",
+          "question": "Why do Psychopaths target 'Nurturing' or 'Generous' people?",
+          "options": [
+            "Because they want to learn how to be nice.",
+            "Because generous people are the easiest hosts for a Parasite.",
+            "Because they fall in love easily.",
+            "Because they like nice people."
+          ],
+          "correct": "Because generous people are the easiest hosts for a Parasite.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They look for people who have a hard time saying 'no' or who derive self-worth from helping others.",
+            "incorrect": "They don't want to learn kindness. They want to exploit it."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P1-E10",
+          "type": "ethical-dilemma",
+          "scene": "A 'charming' friend asks you to sign a loan for them because they have 'bad credit due to an ex.'",
+          "question": "What is the safest move?",
+          "options": [
+            "Sign it. Friends help friends.",
+            "Refuse. Their bad credit is a sign of their past behavior. If you sign, you pay.",
+            "Give them cash instead.",
+            "Ask them to promise to pay."
+          ],
+          "correct": "Refuse. Their bad credit is a sign of their past behavior. If you sign, you pay.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Past behavior predicts future behavior. The 'crazy ex' excuse is a lie. You will be left with the debt.",
+            "incorrect": "Promises from a parasite are worthless. Protect your financial survival."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P1-E11",
+          "type": "fill-in",
+          "sentence": "A Psychopath will often use (--------) Faking to get money. 'Invest in me now, and we'll be rich later.'",
+          "options": [
+            "Future",
+            "Past",
+            "Love",
+            "Fear"
+          ],
+          "answers": [
+            "Future"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Future Faking isn't just for romance; it's for fraud. They sell you a dream to steal your reality (cash).",
+            "incorrect": "It is the promise of a payout that never comes."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I don't steal. I just... outsmart people.'",
+          "question": "Is this how a Psychopath justifies theft?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They view theft as a battle of wits. If you were 'dumb' enough to let them take it, they 'earned' it.",
+            "incorrect": "They don't feel like criminals. They feel like winners of a game."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: You try to set a boring routine with them. They cheat, quit their job, or start a fight within a week.",
+          "question": "Why?",
+          "options": [
+            "They crave novelty and cannot tolerate routine (Low Boredom Threshold).",
+            "They are bad at planning.",
+            "They are unlucky.",
+            "They are tired."
+          ],
+          "correct": "They crave novelty and cannot tolerate routine (Low Boredom Threshold).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Routine provides no dopamine. They need 'newness' (new partners, new jobs, new chaos) to function.",
+            "incorrect": "It is a biological intolerance for sameness. Stability feels like a cage."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P1-E14",
+          "type": "matching",
+          "question": "Match the Trap to the Tactic:",
+          "pairs": [
+            {
+              "term": "The Mooch",
+              "definition": "Slowly testing how much you will pay for (dinner, then rent, then car)."
+            },
+            {
+              "term": "The Crisis",
+              "definition": "Manufacturing an emergency so you *have* to send money instantly."
+            },
+            {
+              "term": "The Investment",
+              "definition": "Promising huge returns for a small loan (Ponzi logic)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They test limits (Mooch), use urgency (Crisis), or use greed (Investment) to open your wallet.",
+            "incorrect": "Look at the mechanism. Crisis = Urgency. Mooch = Slow Creep. Investment = Greed."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Hungry Ghost",
+          "scene": "You understand that the Psychopath is an empty vessel that must consume resources and stimulation to survive.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Identifying Parasitic Lifestyles (Real-world red flags).",
+            "Giving them money.",
+            "Being bored.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: Identifying Parasitic Lifestyles (Real-world red flags).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You need to spot the 'Mooch' before they move into your house.",
+            "incorrect": "Next up: Practical detection of the financial predator."
+          }
+        }
+      ]
+    }
+  ]
+}

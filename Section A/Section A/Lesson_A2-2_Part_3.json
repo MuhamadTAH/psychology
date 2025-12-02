@@ -1,0 +1,354 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A2",
+  "unitTitle": "The Manipulator's Playbook: Narcissism & Gaslighting",
+  "lessonId": "A2-2",
+  "lessonTitle": "Narcissistic Supply: The Addict & The Fuel",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The 'Supply' Scenario",
+  "objective": "To master the 'Starvation' strategy (Grey Rock) in high-pressure simulations, resisting the urge to provide Positive or Negative Supply.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Supply_Breaker_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A2-2-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: Starve the Beast",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You know the theory: Narcissists are addicted to reaction (Supply). The only way to win is to stop feeding them."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is called the **Grey Rock Method**. You must become as uninteresting and unresponsive as a rock. No anger, no joy, no defense. Just... nothing."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Warning: When you cut the fuel, the narcissist will panic (Extinction Burst). They will try *everything* to get a reaction. In this Challenge, you must survive the burst."
+        }
+      ]
+    },
+    {
+      "screenId": "A2-2-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Fuel Cut",
+      "exercises": [
+        {
+          "exerciseId": "A2-2-P3-E1",
+          "type": "boss-scenario",
+          "scene": "The Narcissist sees you are calm and happy. They hate this (no Supply). They say: 'You know, everyone at work thinks you're lazy. I defended you, but it's getting hard.'",
+          "question": "They are fishing for Negative Supply (Insecurity/Defense). What is the **Grey Rock** response?",
+          "options": [
+            "'Who said that?! That's a lie!' (Anger/Fear)",
+            "'I work harder than anyone!' (Defense)",
+            "'Hmm. That's interesting.' (Neutral/Boring)",
+            "'You are just trying to hurt me.' (Accusation)"
+          ],
+          "correct": "'Hmm. That's interesting.' (Neutral/Boring)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This gives them *nothing*. You acknowledge the sound of their voice but refuse to accept the emotional package.",
+            "incorrect": "Defending yourself ('I work hard!') proves they controlled your emotions. That is Supply. You must be boring."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Bait",
+          "steps": [
+            {
+              "scene": "Narcissist: 'I can't believe you wore that. It makes you look desperate.' (An insult designed to provoke).",
+              "options": [
+                "'What is your problem today?!'",
+                "'Okay.' (Continue looking at phone)",
+                "'Do you really think so?' (Insecurity)",
+                "'You are projecting again.'"
+              ],
+              "correct": "'Okay.' (Continue looking at phone)",
+              "feedback": {
+                "correct": "Perfect. You acknowledged the statement but gave zero emotional weight to it. The fuel line is empty.",
+                "incorrect": "Any question or defense gives them Supply. 'Okay' is the ultimate shut-down."
+              }
+            },
+            {
+              "question": "Narcissist (Escalating): 'Wow, so you're ignoring me now? You think you're better than me?' (They are fishing for a fight).",
+              "options": [
+                "'I'm not ignoring you, I'm just busy.' (Justification)",
+                "'Yes, I am.' (Fight)",
+                "(Shrug) 'Just reading this article.' (Boring Fact)",
+                "'You are being a narcissist.'"
+              ],
+              "correct": "(Shrug) 'Just reading this article.' (Boring Fact)",
+              "feedback": {
+                "correct": "Masterful. You didn't defend yourself or attack them. You just stated a boring fact. They are starving.",
+                "incorrect": "Don't justify ('I'm not ignoring...'). Don't fight. Just be a grey rock."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the bait. By refusing to JADE (Justify, Argue, Defend, Explain), you denied them Supply.",
+            "incorrect": "You engaged. Engagement is Supply."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P3-E3",
+          "type": "multiple-choice",
+          "question": "What does the acronym **J.A.D.E.** stand for (behaviors you must AVOID)?",
+          "options": [
+            "Justify, Argue, Defend, Explain",
+            "Joke, Ask, Deflect, Escape",
+            "Jump, Attack, Deny, Eat",
+            "Justify, Attack, Defend, Empathize"
+          ],
+          "correct": "Justify, Argue, Defend, Explain",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Never JADE. If you do any of these, you are taking the bait and giving Supply.",
+            "incorrect": "It stands for Justify, Argue, Defend, Explain. These are defensive reactions that feed the narcissist."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P3-E4",
+          "type": "fill-in",
+          "sentence": "When you stop giving Supply, the narcissist will likely have an (--------) Burst (a temporary spike in aggression/drama).",
+          "options": [
+            "extinction",
+            "emotional",
+            "ego",
+            "anger"
+          ],
+          "answers": [
+            "extinction"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Like a toddler screaming louder when you ignore them, the 'Extinction Burst' is a desperate attempt to force the tap back open.",
+            "incorrect": "It is a specific psychological term: 'Extinction Burst.' It means the behavior gets worse before it stops."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P3-E5",
+          "type": "true-false",
+          "scene": "Scenario: You are 'Grey Rocking.' The narcissist suddenly switches from insults to crying: 'I just feel like you don't love me anymore!'",
+          "question": "Is this genuine sadness?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is a **Mask Switch**. The 'Grandiose' (anger) failed to get Supply, so they switched to 'Covert' (pity) to see if that works. It's a tactic.",
+            "incorrect": "It is highly unlikely to be genuine if it happened immediately after an aggression failed. It's a tactical switch to extract Pity Supply."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P3-E6",
+          "type": "scenario",
+          "scene": "Scenario: The narcissist gives you a very expensive gift in public. Everyone is watching. They smile at you expectantly.",
+          "question": "This is a trap for Positive Supply. What is the safest response?",
+          "options": [
+            "Refuse it loudly to show dominance.",
+            "Polite, boring gratitude: 'Thank you. That was thoughtful.' (Then move on)",
+            "Gush and cry with happiness (Love Bombing them back).",
+            "Ask how much it cost."
+          ],
+          "correct": "Polite, boring gratitude: 'Thank you. That was thoughtful.' (Then move on)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You give the *minimum* social requirement (politeness) without the *emotional* payoff (gushing/worship) they wanted. You are 'boring' but 'polite'.",
+            "incorrect": "Refusing causes drama (Negative Supply). Gushing gives Positive Supply. Boring politeness starves them safely."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to describe the goal of Grey Rock:",
+          "words": [
+            "to",
+            "boring",
+            "Become",
+            "too",
+            "abuse",
+            "to"
+          ],
+          "correct": "Become too boring to abuse",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Narcissists need entertainment (drama). If you are boring, they will go find another toy.",
+            "incorrect": "The goal is not to fight back, but to become uninteresting (boring)."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "You stop reacting to their insults. They try to make you jealous. You don't react. They try to make you guilty. You don't react. Finally, they stop calling you.",
+          "question": "What has happened?",
+          "options": [
+            "They have been cured.",
+            "The Source has been Depleted / Discarded.",
+            "They are planning a surprise party.",
+            "They have won."
+          ],
+          "correct": "The Source has been Depleted / Discarded.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You proved you are a 'broken appliance' (you provide no fuel). They have discarded you to find a working Source. You are free.",
+            "incorrect": "They didn't win; they left because the mine ran dry. This is the goal of 'No Contact' or 'Grey Rock'."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are Grey Rocking a narcissist parent. They start telling other family members that you are 'cold,' 'cruel,' and 'abandoning them.' (The Smear Campaign).",
+          "question": "How do you handle this without breaking Grey Rock?",
+          "options": [
+            "Call every family member and explain the psychology of narcissism.",
+            "Confront the parent screaming.",
+            "Maintain your boring, polite consistency. Let your actions over time prove the lies wrong.",
+            "Post about it on Facebook."
+          ],
+          "correct": "Maintain your boring, polite consistency. Let your actions over time prove the lies wrong.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you react to the Smear Campaign, you give them Supply. By staying calm and consistent, you prove you aren't 'crazy' or 'cruel'.",
+            "incorrect": "Trying to 'expose' them usually makes you look like the crazy one (which is what they want). Consistency is the only defense."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P3-E10",
+          "type": "multiple-choice",
+          "question": "Why is 'Negative Supply' (Reaction) dangerous for *you*?",
+          "options": [
+            "It isn't.",
+            "It keeps you emotionally entangled and addicted to the cycle of abuse.",
+            "It costs money.",
+            "It makes you tired."
+          ],
+          "correct": "It keeps you emotionally entangled and addicted to the cycle of abuse.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. As long as you are fighting them, you are *engaged* with them. The narcissist keeps you hooked through conflict.",
+            "incorrect": "The danger is psychological entanglement. Conflict is a form of intimacy for a narcissist."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P3-E11",
+          "type": "scenario",
+          "scene": "Scenario: The narcissist says, 'I guess I'm just a terrible person then.' (The Pity Play).",
+          "question": "What is the **Grey Rock** response?",
+          "options": [
+            "'No, you're not! Don't say that!' (Reassurance Supply)",
+            "'Yes, you are!' (Anger Supply)",
+            "'You are behaving badly.' (Lecture Supply)",
+            "'You are entitled to your opinion.' (No Supply)"
+          ],
+          "correct": "'You are entitled to your opinion.' (No Supply)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is a neutral statement. You are neither agreeing nor disagreeing. You are refusing to step into the 'Judge' role.",
+            "incorrect": "Reassuring them feeds the Covert mask. Agreeing feeds the Victim complex. Neutrality starves them."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P3-E12",
+          "type": "case-analysis",
+          "caseTitle": "The Vampire Analogy",
+          "scene": "Think of the Narcissist as an energy vampire. They cannot generate their own life force (Self-Worth). They must drink yours.",
+          "question": "In this analogy, what is 'Grey Rock'?",
+          "options": [
+            "A wooden stake through the heart.",
+            "Becoming a stone statue that has no blood to drink.",
+            "Offering them animal blood instead.",
+            "Becoming a vampire yourself."
+          ],
+          "correct": "Becoming a stone statue that has no blood to drink.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. A vampire cannot feed on a rock. If you offer no emotion (blood), they must leave to find a human victim.",
+            "incorrect": "Grey Rock isn't an attack (stake). It is a removal of the resource (emotion)."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P3-E13",
+          "type": "fill-in",
+          "sentence": "The narcissist's biggest fear is not being hated; it is being (--------).",
+          "options": [
+            "irrelevant",
+            "rich",
+            "feared",
+            "loved"
+          ],
+          "answers": [
+            "irrelevant"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Irrelevance means they don't exist. Hate proves they matter. Irrelevance destroys the ego.",
+            "incorrect": "They *want* to be feared or loved. They *fear* being nothing (irrelevant)."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P3-E14",
+          "type": "true-false",
+          "scene": "Scenario: You successfully Grey Rock for 3 weeks. The narcissist leaves you alone.",
+          "question": "Is it safe to 'drop the mask' and show emotion to them again?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct/False. It is *never* safe. The moment you show emotion (supply), they will hook back in. You must remain a Grey Rock forever, or go No Contact.",
+            "incorrect": "Once an addict, always an addict. If you show a 'spark,' they will try to light the fire again."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: Supply Broken",
+          "scene": "You have learned what Supply is, how to spot the extraction attempts, and how to cut the fuel line using Grey Rock.",
+          "question": "You are now ready for the next weapon in their arsenal:",
+          "options": [
+            "Lesson A2-3: Love Bombing (How they hook you in the first place).",
+            "Lesson A1-1: The Basics.",
+            "Lesson B1: Brainwashing.",
+            "Giving up."
+          ],
+          "correct": "Lesson A2-3: Love Bombing (How they hook you in the first place).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that you know how they *feed* (Supply), we need to examine how they *catch* you. Next up: The drug of Love Bombing.",
+            "incorrect": "The logical next step is learning the specific tactics of entrapment: Love Bombing."
+          }
+        }
+      ]
+    }
+  ]
+}

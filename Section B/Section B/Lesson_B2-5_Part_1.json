@@ -1,0 +1,342 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B2",
+  "unitTitle": "The Frame Game: Controlling Perception",
+  "lessonId": "B2-5",
+  "lessonTitle": "Unit B2 Review: The Architect",
+  "lessonType": "Review",
+  "lessonPart": 1,
+  "lessonPartTitle": "Unit B2 Core Concepts Review",
+  "objective": "To synthesize and test comprehensive knowledge of Framing, Anchoring, The Contrast Principle, and Identity Labeling (Altercasting).",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B2-5-P1-S1",
+      "screenType": "Learn",
+      "title": "Unit B2 Review",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You have learned that Reality is not objective; it is curated. The Architect controls the Frame, sets the Anchor, and rigs the Comparison."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "This review covers all concepts from Unit B2. Pass this to unlock the Unit B2 Gauntlet."
+        }
+      ]
+    },
+    {
+      "screenId": "B2-5-P1-S2",
+      "screenType": "Exercises",
+      "title": "Concept Check",
+      "exercises": [
+        {
+          "exerciseId": "B2-5-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is a 'Frame' in psychology?",
+          "options": [
+            "A picture holder.",
+            "The mental context or 'lens' through which information is interpreted (e.g., 'Problem' vs. 'Challenge').",
+            "A lie.",
+            "A strict rule."
+          ],
+          "correct": "The mental context or 'lens' through which information is interpreted (e.g., 'Problem' vs. 'Challenge').",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The facts don't change, but the Frame changes how we feel about the facts.",
+            "incorrect": "It defines the meaning of the event. Context is everything."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P1-E2",
+          "type": "fill-in",
+          "sentence": "In a negotiation, the first number spoken becomes the (--------).",
+          "options": [
+            "anchor",
+            "price",
+            "winner",
+            "limit"
+          ],
+          "answers": [
+            "anchor"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The first number creates gravity. All adjustments are made relative to that starting point.",
+            "incorrect": "It anchors the perception of value."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P1-E3",
+          "type": "scenario",
+          "scene": "Scenario: 'You are usually so generous. I know you'll help me.'",
+          "question": "This uses 'Labeling' (Altercasting) to:",
+          "options": [
+            "Force you to live up to the label 'Generous' or risk looking inconsistent.",
+            "Compliment you.",
+            "Make you angry.",
+            "Ask a question."
+          ],
+          "correct": "Force you to live up to the label 'Generous' or risk looking inconsistent.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is 'Positive Labeling.' They assign you a role (Generous) to compel a specific behavior (Giving).",
+            "incorrect": "It feels like a compliment, but it is a behavioral trap."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: A store puts a $5,000 watch next to a $500 watch.",
+          "question": "Is this the Contrast Principle?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The $500 watch looks 'cheap' next to the $5,000 one. In isolation, $500 is expensive.",
+            "incorrect": "This is the classic retail contrast. The expensive item sells the cheaper item."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P1-E5",
+          "type": "matching",
+          "question": "Match the Tactic to the Definition:",
+          "pairs": [
+            {
+              "term": "Pre-Framing",
+              "definition": "Setting expectations *before* the interaction ('This will be expensive')."
+            },
+            {
+              "term": "Re-Framing",
+              "definition": "Changing the meaning of an event *after* it happens ('It's not a failure, it's a lesson')."
+            },
+            {
+              "term": "De-Framing",
+              "definition": "Destroying the opponent's frame ('That is a ridiculous comparison')."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Pre-framing prepares. Re-framing transforms. De-framing destroys.",
+            "incorrect": "Look at the timing. Before, During, or Destruction."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to define 'The Decoy Effect':",
+          "words": [
+            "bad",
+            "A",
+            "makes",
+            "option",
+            "good",
+            "look",
+            "great",
+            "option",
+            "a"
+          ],
+          "correct": "A bad option makes a good option look great",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. We don't judge value in a vacuum. The 'Ugly Decoy' pushes us toward the target choice.",
+            "incorrect": "The bad option isn't meant to be chosen; it is meant to be compared."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "Reacting with visible shock or silence to a price offer to make the other person feel insecure about their number.",
+          "question": "What is this tactic?",
+          "options": [
+            "The Flinch",
+            "The Smile",
+            "The Anchor",
+            "The Hug"
+          ],
+          "correct": "The Flinch",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The Flinch signals 'That is crazy' without using words. It pressures them to lower the price.",
+            "incorrect": "It is a non-verbal rejection tactic."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: 'If you care about your family's safety, you will buy this system.'",
+          "question": "This sets a:",
+          "options": [
+            "Fear / Moral Frame.",
+            "Logic Frame.",
+            "Fun Frame.",
+            "Time Frame."
+          ],
+          "correct": "Fear / Moral Frame.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It links the product to 'Safety' and 'Love.' Refusing the product is framed as 'endangering your family.'",
+            "incorrect": "It appeals to emotion (Fear/Love), not logic."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are negotiating. You know the other side is desperate. Do you use an 'Extreme Low Anchor' to crush them?",
+          "question": "The Ethical vs. Machiavellian choice:",
+          "options": [
+            "Machiavellian: Yes, exploit the weakness. Ethical: No, offer a fair price for value.",
+            "Machiavellian: No. Ethical: Yes.",
+            "Both: Yes.",
+            "Both: No."
+          ],
+          "correct": "Machiavellian: Yes, exploit the weakness. Ethical: No, offer a fair price for value.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Anchoring is a tool. Using it to exploit desperation creates a 'Win-Lose' (Machiavellian). Using it to find fair value creates 'Win-Win' (Ethical).",
+            "incorrect": "Exploitation destroys long-term trust. Fairness builds it."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P1-E10",
+          "type": "fill-in",
+          "sentence": "To defeat the Contrast Principle, use the (--------) Test: Judge the item in isolation.",
+          "options": [
+            "vacuum",
+            "mirror",
+            "speed",
+            "friend"
+          ],
+          "answers": [
+            "vacuum"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Remove the 'Decoy' and the 'Anchor.' Ask: 'Is this worth it on its own?'",
+            "incorrect": "Judge it in a vacuum, free from the rigged comparisons."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P1-E11",
+          "type": "multiple-choice",
+          "question": "What is 'Altercasting'?",
+          "options": [
+            "Forcing someone into a social role (e.g., 'Helper', 'Expert') to compel them to act in ways that fit that role.",
+            "Fishing.",
+            "Changing clothes.",
+            "Acting in a play."
+          ],
+          "correct": "Forcing someone into a social role (e.g., 'Helper', 'Expert') to compel them to act in ways that fit that role.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If I cast you as the 'Expert,' you feel pressured to solve my problem. If I cast you as the 'Bad Guy,' you defend yourself.",
+            "incorrect": "It is psychological casting. 'Alter' (Other) + 'Casting' (Role)."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I know you are too smart to fall for that.'",
+          "question": "Is this Altercasting?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They cast you as 'Smart.' If you 'fall for that' (disagree with them), you lose the label of 'Smart.' It traps your ego.",
+            "incorrect": "It restricts your options by linking agreement to intelligence."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: A negotiator asks for $10,000 (High). You say no. They say, 'Okay, how about $500?' (Low).",
+          "question": "This tactic is:",
+          "options": [
+            "Door-in-the-Face (Rejection-then-Retreat).",
+            "Foot-in-the-Door.",
+            "Lowball.",
+            "Gaslighting."
+          ],
+          "correct": "Door-in-the-Face (Rejection-then-Retreat).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The big request ($10k) was a door-slammer. It existed only to make the $500 look small.",
+            "incorrect": "Foot-in-the-Door starts small. This started huge."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P1-E14",
+          "type": "matching",
+          "question": "Match the Counter-Move:",
+          "pairs": [
+            {
+              "term": "Negative Frame ('You're lazy')",
+              "definition": "Reframe ('I am efficient')."
+            },
+            {
+              "term": "Extreme Anchor ('$1 million')",
+              "definition": "Total Rejection / Laugh."
+            },
+            {
+              "term": "Comparison Trap ('Look at the expensive one')",
+              "definition": "Ignore the Decoy."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Don't accept the label. Don't accept the number. Don't accept the comparison.",
+            "incorrect": "Match the defense to the specific psychological trick."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Architect's Blueprint",
+          "scene": "You have reviewed the tools of perception. You know that the person who frames the question controls the answer.",
+          "question": "You are ready for Part 2:",
+          "options": [
+            "The Unit B2 Gauntlet (Context Shifting).",
+            "Lesson A1-1.",
+            "Building a house.",
+            "Painting."
+          ],
+          "correct": "The Unit B2 Gauntlet (Context Shifting).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now we test your ability to spot Frames, Anchors, and Labels in rapid succession.",
+            "incorrect": "Next up: The Gauntlet."
+          }
+        }
+      ]
+    }
+  ]
+}

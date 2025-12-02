@@ -1,0 +1,606 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B2",
+  "unitTitle": "The Frame Game: Controlling Perception",
+  "lessonId": "B2-5",
+  "lessonTitle": "Unit B2 Review: The Architect",
+  "lessonType": "Review",
+  "lessonPart": 2,
+  "lessonPartTitle": "The 'Gauntlet' (Context Shifting)",
+  "objective": "To test rapid identification and defense strategies against a randomized mix of Framing, Anchoring, Contrast, and Altercasting tactics.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 300,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B2-5-P2-S1",
+      "screenType": "Learn",
+      "title": "The Frame Gauntlet",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In the Gauntlet, the manipulator will try to shift the ground beneath your feet. They will set high prices, force negative identities, and use decoys."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Do not accept their context. Reject the Anchor. Break the Frame."
+        }
+      ]
+    },
+    {
+      "screenId": "B2-5-P2-S2",
+      "screenType": "Exercises",
+      "title": "Rapid Fire Frames",
+      "exercises": [
+        {
+          "exerciseId": "B2-5-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: 'The standard price is $10,000, but for you, I can do $2,000.'",
+          "question": "This is:",
+          "options": [
+            "High Anchor + Reciprocal Concession.",
+            "A great deal.",
+            "Generosity.",
+            "A mistake."
+          ],
+          "correct": "High Anchor + Reciprocal Concession.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The $10k anchor makes $2k look cheap. The drop frames it as a 'favor' you should repay with a purchase.",
+            "incorrect": "It is not generous. It is a framed discount based on an artificial starting point."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is 'Labeling' (Altercasting)?",
+          "options": [
+            "Forcing a role onto someone (e.g., 'You are smart') to compel behavior that fits the role.",
+            "Naming a folder.",
+            "Insulting someone.",
+            "Being polite."
+          ],
+          "correct": "Forcing a role onto someone (e.g., 'You are smart') to compel behavior that fits the role.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If I label you 'Helpful,' you feel pressure to help. If I label you 'Difficult,' you feel pressure to comply.",
+            "incorrect": "It is not just naming. It is assigning a behavioral script."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E3",
+          "type": "true-false",
+          "scene": "Scenario: 'Don't worry, I'm not going to overcharge you.'",
+          "question": "Is this a 'Negation Frame'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. By saying 'overcharge,' they plant the idea of price in your head while pretending to deny it. It raises suspicion.",
+            "incorrect": "It introduces the negative concept ('overcharge') into the frame."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E4",
+          "type": "fill-in",
+          "sentence": "To defeat the Contrast Principle, use the (--------) Test: Judge the item in isolation.",
+          "options": [
+            "vacuum",
+            "mirror",
+            "speed",
+            "friend"
+          ],
+          "answers": [
+            "vacuum"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Remove the Decoy. Remove the Anchor. Is the item worth the price on its own?",
+            "incorrect": "You must judge it in a vacuum, without the rigged comparison."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E5",
+          "type": "scenario",
+          "scene": "Scenario: You complain about a delay. They say: 'Would you rather it be fast or would you rather it be right?'",
+          "question": "This is a:",
+          "options": [
+            "False Dichotomy (False Choice).",
+            "Valid question.",
+            "Apology.",
+            "Fact."
+          ],
+          "correct": "False Dichotomy (False Choice).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They framed it as 'Speed vs. Quality.' In reality, you can have both, or they could have managed expectations better.",
+            "incorrect": "It limits your options to two extremes to excuse their failure."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E6",
+          "type": "matching",
+          "question": "Match the Frame to the Tactic:",
+          "pairs": [
+            {
+              "term": "Anchoring",
+              "definition": "Setting the starting number."
+            },
+            {
+              "term": "Reframing",
+              "definition": "Changing the meaning of an event."
+            },
+            {
+              "term": "Decoy Effect",
+              "definition": "Using a bad option to sell a specific good option."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Anchor = Start. Reframe = Meaning. Decoy = Comparison.",
+            "incorrect": "Review the definitions."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define 'Pre-Framing':",
+          "words": [
+            "Setting",
+            "before",
+            "expectations",
+            "event",
+            "the"
+          ],
+          "correct": "Setting expectations before the event",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'This is going to be amazing' frames the event positively. 'This is going to be boring' frames it negatively.",
+            "incorrect": "It happens *before* the experience to bias the perception."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "Reacting with shock ('The Flinch') to a first offer to make the other person feel their number is unreasonable.",
+          "question": "What is this defense?",
+          "options": [
+            "De-Anchoring",
+            "Gaslighting",
+            "Mirroring",
+            "Smiling"
+          ],
+          "correct": "De-Anchoring",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The Flinch breaks the Anchor's grip on reality. It tells them: 'Try again.'",
+            "incorrect": "It is a specific counter-move to Anchoring."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E9",
+          "type": "scenario",
+          "scene": "Scenario: 'I know you are a person of integrity.'",
+          "question": "They are Altercasting you as 'Honest' to:",
+          "options": [
+            "Make it harder for you to lie or refuse a request.",
+            "Compliment you.",
+            "Make you laugh.",
+            "Be nice."
+          ],
+          "correct": "Make it harder for you to lie or refuse a request.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Once you accept the 'Integrity' label, you are bound to act in ways that support it.",
+            "incorrect": "It constrains your behavior. You want to keep the positive label."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E10",
+          "type": "fill-in",
+          "sentence": "If you don't like the choices, (--------) the menu.",
+          "options": [
+            "reject",
+            "eat",
+            "read",
+            "love"
+          ],
+          "answers": [
+            "reject"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Don't pick A or B. Reject the whole set of options if they are rigged.",
+            "incorrect": "You are not forced to choose from their list."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E11",
+          "type": "ethical-dilemma",
+          "scene": "You are selling a house. You list it for $500k (high). You accept $450k (fair).",
+          "question": "Is this ethical?",
+          "options": [
+            "Yes, it is standard negotiation (High Anchor).",
+            "No, it is lying.",
+            "Yes, but you should have asked for $1M.",
+            "No, give it away."
+          ],
+          "correct": "Yes, it is standard negotiation (High Anchor).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Negotiation assumes a starting range. As long as the house is real, the price strategy is fair play.",
+            "incorrect": "It is not deception; it is positioning."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'You're just saying that because you're emotional.'",
+          "question": "Is this an 'Invalidation Frame'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It frames your argument as 'Emotion' rather than 'Fact,' allowing them to dismiss it.",
+            "incorrect": "It attacks the source (you), not the argument."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: A car dealer sells you a $30,000 car, then asks: 'Do you want the $500 rust protection?'",
+          "question": "You say Yes because:",
+          "options": [
+            "Compared to $30,000, $500 feels like nothing (Contrast).",
+            "It is a good deal.",
+            "You are rich.",
+            "You love rust."
+          ],
+          "correct": "Compared to $30,000, $500 feels like nothing (Contrast).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the 'Add-on' trap. In isolation, $500 is a lot. Next to the car, it is invisible.",
+            "incorrect": "It is the Contrast Principle at work."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E14",
+          "type": "multiple-choice",
+          "question": "What is 'Relative Deprivation'?",
+          "options": [
+            "Feeling poor because you compare yourself to someone richer.",
+            "Being hungry.",
+            "Losing family.",
+            "Being tired."
+          ],
+          "correct": "Feeling poor because you compare yourself to someone richer.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Happiness is often determined by who you compare yourself to (Reference Point), not your actual status.",
+            "incorrect": "It is a psychological state caused by upward comparison."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E15",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm not arguing, I'm educating you.'",
+          "question": "This Reframe attempts to:",
+          "options": [
+            "Establish dominance (Teacher/Student frame).",
+            "Be helpful.",
+            "Apologize.",
+            "Leave."
+          ],
+          "correct": "Establish dominance (Teacher/Student frame).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It reframes conflict as 'Education,' placing them in the superior role.",
+            "incorrect": "It is condescending, not helpful."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E16",
+          "type": "reverse-scenario",
+          "answer": "Using the words 'We' and 'Us' to create a false sense of team unity.",
+          "question": "What is this?",
+          "options": [
+            "Forced Teaming / In-Group Framing",
+            "Gaslighting",
+            "Love Bombing",
+            "Anchoring"
+          ],
+          "correct": "Forced Teaming / In-Group Framing",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'We're in this together' makes it harder for you to say 'No' to the request.",
+            "incorrect": "It forces a shared identity."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E17",
+          "type": "scenario",
+          "scene": "Scenario: 'Only a coward would refuse this dare.'",
+          "question": "This is:",
+          "options": [
+            "Negative Altercasting (Labeling you a Coward to force action).",
+            "A game.",
+            "Truth.",
+            "Fun."
+          ],
+          "correct": "Negative Altercasting (Labeling you a Coward to force action).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They assign a negative label ('Coward') that can only be removed by compliance.",
+            "incorrect": "It traps your ego. You act to disprove the label."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E18",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Power Frame':",
+          "words": [
+            "need",
+            "the",
+            "Who",
+            "least",
+            "needs",
+            "power",
+            "has"
+          ],
+          "correct": "Who needs the least has power",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The person willing to walk away controls the negotiation. Neediness kills leverage.",
+            "incorrect": "Detachment is power. Need is weakness."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E19",
+          "type": "true-false",
+          "scene": "Scenario: 'It's just $5 a day.' (Instead of $150 a month).",
+          "question": "Is this a 'Reframing' of price?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is 'Amortization.' It reframes a large cost into a trivial daily expense.",
+            "incorrect": "It changes the context of the cost to make it feel smaller."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E20",
+          "type": "matching",
+          "question": "Match the Anchor to the goal:",
+          "pairs": [
+            {
+              "term": "Extreme Anchor",
+              "definition": "To stretch the negotiation range."
+            },
+            {
+              "term": "Precise Anchor",
+              "definition": "To signal accuracy and firmness."
+            },
+            {
+              "term": "Time Anchor",
+              "definition": "To create urgency."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Extreme moves the middle. Precise builds trust. Time forces action.",
+            "incorrect": "Review the types of Anchors."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E21",
+          "type": "scenario",
+          "scene": "Scenario: A politician says, 'We are fighting for *Freedom*.' (Freedom is the Frame).",
+          "question": "If you disagree with their war, you are framed as:",
+          "options": [
+            "Against Freedom.",
+            "Smart.",
+            "Safe.",
+            "Fast."
+          ],
+          "correct": "Against Freedom.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. By framing the war as 'Freedom,' they make dissent look like 'Tyranny.' You must break the frame to argue.",
+            "incorrect": "They trapped you in a Moral Frame."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E22",
+          "type": "fill-in",
+          "sentence": "Questions are more powerful than statements because they (--------) the listener's focus.",
+          "options": [
+            "direct",
+            "stop",
+            "hide",
+            "break"
+          ],
+          "answers": [
+            "direct"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'What is the problem?' focuses on the negative. 'What is the solution?' focuses on the positive. The question sets the frame.",
+            "incorrect": "Questions are the steering wheel of conversation."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E23",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm not asking you to decide now. I'm just asking you to *imagine* owning this.'",
+          "question": "This is:",
+          "options": [
+            "The 'As If' Frame.",
+            "Lying.",
+            "Gaslighting.",
+            "Fair."
+          ],
+          "correct": "The 'As If' Frame.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It removes the pressure of 'decision' but gets your brain to simulate the experience of ownership.",
+            "incorrect": "It lowers resistance by moving the frame to 'Imagination'."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E24",
+          "type": "multiple-choice",
+          "question": "Why is 'Door-in-the-Face' effective?",
+          "options": [
+            "Because the second request looks small compared to the first (Contrast) and creates a pressure to reciprocate the concession.",
+            "It is scary.",
+            "It is loud.",
+            "It hurts."
+          ],
+          "correct": "Because the second request looks small compared to the first (Contrast) and creates a pressure to reciprocate the concession.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Rejection -> Retreat -> Concession. It triggers Reciprocity and Contrast.",
+            "incorrect": "It combines two principles for maximum effect."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E25",
+          "type": "true-false",
+          "scene": "Scenario: 'You are the only one who can help me.'",
+          "question": "Is this an 'Ego Bind'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It frames you as 'Unique/Special' but traps you. If you say no, you aren't special.",
+            "incorrect": "It appeals to vanity to force labor."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E26",
+          "type": "scenario",
+          "scene": "Scenario: A menu lists a 'Chef's Special' for $200. You order the $50 steak.",
+          "question": "The $200 item was:",
+          "options": [
+            "A Decoy / Anchor.",
+            "Real.",
+            "Tasty.",
+            "Cheap."
+          ],
+          "correct": "A Decoy / Anchor.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It exists to make the $50 steak feel affordable.",
+            "incorrect": "They didn't expect you to buy it. It served its purpose."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E27",
+          "type": "ethical-dilemma",
+          "scene": "You use 'Pre-Framing' to calm a panicked crowd. 'This is a drill. Remain calm.' (It is not a drill).",
+          "question": "Is this ethical?",
+          "options": [
+            "Yes, if it prevents a stampede and saves lives.",
+            "No, lying is always wrong.",
+            "Maybe.",
+            "No."
+          ],
+          "correct": "Yes, if it prevents a stampede and saves lives.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The 'Drill Frame' creates order. The 'Fire Frame' creates chaos. Leaders choose the frame that saves lives.",
+            "incorrect": "In crisis, Utility often outweighs Truth."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E28",
+          "type": "reverse-scenario",
+          "answer": "When a manipulator compares you to their 'crazy ex' to make you feel stable/superior.",
+          "question": "What is this?",
+          "options": [
+            "The 'Low Bar' Contrast",
+            "Love",
+            "Honesty",
+            "Fear"
+          ],
+          "correct": "The 'Low Bar' Contrast",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They use the 'Crazy Ex' as a foil to make you feel special. Later, you will be the 'Crazy Ex' for the next person.",
+            "incorrect": "It frames the ex as the problem, not the manipulator."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E29",
+          "type": "scenario",
+          "scene": "Scenario: 'We can't afford to lose this client.'",
+          "question": "This frames the situation as:",
+          "options": [
+            "A Crisis / Threat.",
+            "An opportunity.",
+            "Fun.",
+            "Easy."
+          ],
+          "correct": "A Crisis / Threat.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Loss Aversion kicks in. People work harder to avoid loss than to gain profit.",
+            "incorrect": "It triggers fear."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P2-E30",
+          "type": "case-analysis",
+          "caseTitle": "Gauntlet Complete",
+          "scene": "You have survived the House of Mirrors. You know that every price, every label, and every choice is a construct.",
+          "question": "You are ready for the Final Challenge of Unit B2:",
+          "options": [
+            "The 'Spin Doctor' Boss Scenario (Simulation).",
+            "Lesson A1-1.",
+            "Buying a car.",
+            "Sleep."
+          ],
+          "correct": "The 'Spin Doctor' Boss Scenario (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you out-frame a master manipulator in a crisis? Let's find out.",
+            "incorrect": "Next up: The Final Boss."
+          }
+        }
+      ]
+    }
+  ]
+}

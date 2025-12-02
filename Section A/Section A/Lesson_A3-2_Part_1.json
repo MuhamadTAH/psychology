@@ -1,0 +1,336 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A3",
+  "unitTitle": "The Grand Chessmaster: Machiavellianism",
+  "lessonId": "A3-2",
+  "lessonTitle": "The Long Game: Strategic Deception",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: Winning the War, Not the Battle",
+  "objective": "To define 'Strategic Deception' and the 'Long Game' as methods of sacrificing immediate gratification or ego to secure a larger future victory.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A3-2-P1-S1",
+      "screenType": "Learn",
+      "title": "The Long Game",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Narcissists need to win *now*. Machiavellians are willing to lose today to win next year."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is the **Long Game**. It involves **Strategic Deception**: hiding your true strength, your true intentions, and even your intelligence until the moment you strike."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Key Tactic: 'Appear weak when you are strong, and strong when you are weak.' (Sun Tzu)"
+        }
+      ]
+    },
+    {
+      "screenId": "A3-2-P1-S2",
+      "screenType": "Exercises",
+      "title": "Defining Strategy",
+      "exercises": [
+        {
+          "exerciseId": "A3-2-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the primary difference between a 'Liar' and a 'Strategic Deceiver'?",
+          "options": [
+            "A Liar lies to avoid trouble; a Strategist deceives to create a specific future outcome.",
+            "Strategists never lie.",
+            "Liars are bad people; Strategists are good people.",
+            "There is no difference."
+          ],
+          "correct": "A Liar lies to avoid trouble; a Strategist deceives to create a specific future outcome.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Impulsive lying is defensive. Strategic deception is offensive—it constructs a trap or an advantage.",
+            "incorrect": "Think about *intent*. A liar reacts to the present. A strategist constructs the future."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: You are smarter than your boss. A Machiavellian advises you: 'Play dumb. Ask for their advice. Make them feel like the genius.'",
+          "question": "Why is this good advice?",
+          "options": [
+            "It feeds the boss's ego (Supply) so they don't see you as a threat, allowing you to rise quietly.",
+            "It is nice to make people feel smart.",
+            "You might actually learn something.",
+            "It shows you are humble."
+          ],
+          "correct": "It feeds the boss's ego (Supply) so they don't see you as a threat, allowing you to rise quietly.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is 'Conceal Your Intentions' (Law 3). If you outshine the master, you become a target. If you play dumb, you are safe.",
+            "incorrect": "It's not about being nice or humble. It is a calculated move to remove a target from your back."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P1-E3",
+          "type": "fill-in",
+          "sentence": "In the Long Game, you must be willing to lose a (--------) to win the (--------).",
+          "options": [
+            "battle",
+            "war",
+            "friend",
+            "dollar"
+          ],
+          "answers": [
+            "battle",
+            "war"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You might lose an argument, a deal, or even a job today, if it sets you up for a massive victory later.",
+            "incorrect": "Think bigger. It's not about friends or money; it's about the scale of the conflict (Battle vs. War)."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: A Machiavellian reveals a small, embarrassing secret about themselves to a rival.",
+          "question": "Is this a mistake?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. This is **Strategic Vulnerability**. By revealing a small weakness, they earn your trust and make you lower your guard.",
+            "incorrect": "It is calculated. They gave you a 'pawn' (a small secret) to take your 'king' (your total trust)."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P1-E5",
+          "type": "matching",
+          "question": "Match the Strategy to the Animal Metaphor (Machiavelli):",
+          "pairs": [
+            {
+              "term": "The Lion",
+              "definition": "Use Force/Fear to scare off wolves."
+            },
+            {
+              "term": "The Fox",
+              "definition": "Use Cunning/Traps to avoid snares."
+            },
+            {
+              "term": "The Sheep",
+              "definition": "The victim who gets eaten."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A Prince must be both a Fox (smart) and a Lion (strong). Being only one makes you vulnerable.",
+            "incorrect": "The Fox sees the trap. The Lion scares the wolves. You need both."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to define Strategic Silence:",
+          "words": [
+            "Say",
+            "necessary",
+            "always",
+            "less",
+            "than"
+          ],
+          "correct": "Always say less than necessary",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The more you speak, the more you reveal. Silence makes you appear mysterious and powerful (Law 4).",
+            "incorrect": "Silence protects your intentions. Words give them away."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "Allowing your opponent to believe they are smarter than you, so they get arrogant and make a mistake.",
+          "question": "What is this tactic?",
+          "options": [
+            "Playing the Fool",
+            "Gaslighting",
+            "Narcissism",
+            "Honesty"
+          ],
+          "correct": "Playing the Fool",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'The best way to be smart is to play dumb.' Arrogant opponents get sloppy. You wait for the mistake.",
+            "incorrect": "Gaslighting is about reality. Playing the Fool is about ego management."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: You want to introduce a new idea, but you know your boss hates your ideas. You casually mention the idea to the boss's favorite employee instead.",
+          "question": "This is an example of:",
+          "options": [
+            "Inception / Indirect Influence.",
+            "Cowardice.",
+            "Gossiping.",
+            "Being lazy."
+          ],
+          "correct": "Inception / Indirect Influence.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You planted the seed in fertile ground. If the favorite employee pitches it, the boss will accept it. You sacrificed credit for the *result*.",
+            "incorrect": "Direct attacks fail against resistant targets. Indirect influence bypasses the ego defense."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P1-E9",
+          "type": "multiple-choice",
+          "question": "What is a 'Trojan Horse' tactic in social dynamics?",
+          "options": [
+            "Giving a gift that contains a trap or a way to gain access.",
+            "Owning a horse.",
+            "Attacking directly.",
+            "Building a wall."
+          ],
+          "correct": "Giving a gift that contains a trap or a way to gain access.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Like the Greeks, you offer a 'gift' (compliance, flattery, a favor) to get inside the gates. Once inside, you strike.",
+            "incorrect": "It refers to a disguised attack. The 'gift' lowers the defenses."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P1-E10",
+          "type": "fill-in",
+          "sentence": "A Machiavellian never destroys an enemy if they can turn them into an (--------).",
+          "options": [
+            "asset",
+            "friend",
+            "enemy",
+            "ghost"
+          ],
+          "answers": [
+            "asset"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Destroying an enemy wastes resources. Converting them into an asset (through blackmail, bribery, or alliance) adds to your power.",
+            "incorrect": "They don't want friends. They want *assets* (useful tools)."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P1-E11",
+          "type": "ethical-dilemma",
+          "scene": "You are playing the Long Game. You have to let a bad project fail so that the incompetent manager gets fired, allowing you to take over and fix it.",
+          "question": "Is 'Strategic Inaction' ethical?",
+          "options": [
+            "Yes, if the long-term result is better for everyone.",
+            "No, you have a duty to stop the failure *now*, even if it keeps the bad manager in power.",
+            "It depends on how much money is lost.",
+            "Yes, because you get a promotion."
+          ],
+          "correct": "No, you have a duty to stop the failure *now*, even if it keeps the bad manager in power.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is the ethical 'Light' path. Sabotage by inaction harms the team. A Machiavellian would let it burn.",
+            "incorrect": "Justifying the damage for a 'future good' is the slippery slope of Machiavellianism. Ethics usually requires minimizing harm *now*."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I will help you today, but I will never let you forget you owe me.'",
+          "question": "Is this the Long Game?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. This is clumsy intimidation. A true Strategist helps you *generously* so you feel a deep, internal obligation. They don't need to remind you; the debt speaks for itself.",
+            "incorrect": "Overtly holding a debt over someone breeds resentment. The Long Game builds *gratitude* (which binds tighter than fear)."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: You want to know if someone is trustworthy. You tell them a fake secret (a 'Barium Meal' test) to see if it leaks.",
+          "question": "This is:",
+          "options": [
+            "Information Testing / Counter-Intelligence.",
+            "Lying for no reason.",
+            "Paranoia.",
+            "Gossip."
+          ],
+          "correct": "Information Testing / Counter-Intelligence.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If the fake secret comes back to you, you know exactly who the leak is. It is a strategic test of loyalty.",
+            "incorrect": "It's not paranoia if it's a calculated test. It's a standard counter-intelligence tactic."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P1-E14",
+          "type": "multiple-choice",
+          "question": "Why is 'Plausible Deniability' crucial for the Long Game?",
+          "options": [
+            "It allows you to execute dark tactics without getting caught or ruining your reputation.",
+            "It sounds cool.",
+            "It makes you feel better.",
+            "It is a legal requirement."
+          ],
+          "correct": "It allows you to execute dark tactics without getting caught or ruining your reputation.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'I didn't tell him to do that; he acted on his own.' You must always have an exit strategy that keeps your hands clean.",
+            "incorrect": "It protects the most valuable asset: Reputation. If you are caught, the game is over."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Board is Set",
+          "scene": "You understand Strategic Deception. It is not lying for fun; it is lying for *profit*. It requires patience, masking, and cold empathy.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Deception & Alliances (Spotting the 'Trojan Horse' in real life).",
+            "How to play chess.",
+            "Being nice.",
+            "Quitting the game."
+          ],
+          "correct": "Practice: Deception & Alliances (Spotting the 'Trojan Horse' in real life).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We need to train you to spot when someone is 'Playing the Fool' or planting a 'Trojan Horse' in your life.",
+            "incorrect": "Next up: Applying these concepts to detect deception in alliances."
+          }
+        }
+      ]
+    }
+  ]
+}

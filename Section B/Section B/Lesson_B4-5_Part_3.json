@@ -1,0 +1,258 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B4",
+  "unitTitle": "The Pressure Cooker: Emotional Leverage",
+  "lessonId": "B4-5",
+  "lessonTitle": "Unit B4 Review: The Lever",
+  "lessonType": "Review",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"High-Stakes Sales\" Boss Scenario",
+  "objective": "To master the defense against high-pressure sales tactics by identifying and neutralizing Scarcity, Reciprocity, and Fear appeals in a complex negotiation simulation.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 500,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Unit_B4_Grandmaster_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B4-5-P3-S1",
+      "screenType": "Learn",
+      "title": "Final Challenge: The Boiler Room",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are entering a 'Boiler Room' sales simulation. The opponent is a Master Closer."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Do not buy. Do not sign. Do not agree. Spot the levers and dismantle them."
+        }
+      ]
+    },
+    {
+      "screenId": "B4-5-P3-S2",
+      "screenType": "Exercises",
+      "exercises": [
+        {
+          "exerciseId": "B4-5-P3-E1",
+          "type": "boss-scenario",
+          "scene": "Phase 1: The Hook (Reciprocity). The Closer buys you a lavish dinner and gives you a 'Free Gift' (a watch). Then they present the contract.",
+          "question": "You feel obligated to sign. What is your move?",
+          "options": [
+            "Sign. They spent so much money on you.",
+            "Refuse the watch. Reframe the dinner as a 'Sales Meeting.' Judge the contract on its own merit.",
+            "Take the watch and sign.",
+            "Run away."
+          ],
+          "correct": "Refuse the watch. Reframe the dinner as a 'Sales Meeting.' Judge the contract on its own merit.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You accepted the hospitality but rejected the debt. You separated the 'Person' (Nice) from the 'Deal' (Business).",
+            "incorrect": "Signing because of dinner is a $50,000 mistake for a $100 steak. That is the trap."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Phase 2: The Squeeze (Scarcity)",
+          "steps": [
+            {
+              "scene": "Closer: 'This deal expires at midnight. My boss is pulling it off the table tomorrow.' (Artificial Urgency).",
+              "options": [
+                "'Okay, where do I sign?' (Panic)",
+                "'If it expires tonight, the answer is No. I don't make rushed decisions.' (Call Bluff)",
+                "'Can I have 10 more minutes?' (Bargaining)",
+                "Cry."
+              ],
+              "correct": "'If it expires tonight, the answer is No. I don't make rushed decisions.' (Call Bluff)",
+              "feedback": {
+                "correct": "Perfect. If they want the sale, they will extend the deadline. If they let you walk, the deal was bad anyway.",
+                "incorrect": "Asking for 10 minutes accepts the pressure. Reject the timeline entirely."
+              }
+            },
+            {
+              "question": "Closer: 'I have another buyer on the other line right now.' (Phantom Competitor).",
+              "options": [
+                "'Sell it to them.' (Walk Away Power)",
+                "'I'll pay double!' (Auction Fever)",
+                "'Who is it?' (Curiosity)",
+                "Panic."
+              ],
+              "correct": "'Sell it to them.' (Walk Away Power)",
+              "feedback": {
+                "correct": "Mastery. You called the bluff. If the other buyer were real, they wouldn't be talking to you. You stripped them of leverage.",
+                "incorrect": "Bidding against a ghost is how you overpay."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Squeeze. You realized that 'Now or Never' is a lie.",
+            "incorrect": "You panicked and bought a bad deal."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P3-E3",
+          "type": "scenario",
+          "scene": "Phase 3: The Fear. 'If you don't buy this insurance, your family will be destitute when you die. Do you want them to starve?'",
+          "question": "This is:",
+          "options": [
+            "Fear-Mongering / Moral Bind.",
+            "Financial advice.",
+            "Love.",
+            "Logic."
+          ],
+          "correct": "Fear-Mongering / Moral Bind.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are using your love for your family as a weapon to extort money.",
+            "incorrect": "It is emotional manipulation, not financial planning."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P3-E4",
+          "type": "ethical-dilemma",
+          "scene": "You are the seller. You have one item left. Do you tell the customer 'It's the last one'?",
+          "question": "Is this ethical?",
+          "options": [
+            "Yes, if it is true. It is honest information.",
+            "No, scarcity is always manipulation.",
+            "Yes, even if you have 50 in the back.",
+            "No."
+          ],
+          "correct": "Yes, if it is true. It is honest information.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Truthful scarcity helps the buyer make an informed decision. Lying about scarcity is the dark tactic.",
+            "incorrect": "Truth is the boundary. Facts are not manipulation."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P3-E5",
+          "type": "multiple-choice",
+          "question": "What is 'The Assumptive Close'?",
+          "options": [
+            "Acting as if the deal is already done ('When do you want delivery?').",
+            "Asking if they want to buy.",
+            "Leaving.",
+            "Assuming they are rich."
+          ],
+          "correct": "Acting as if the deal is already done ('When do you want delivery?').",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It bypasses the 'Yes/No' decision and moves straight to logistics.",
+            "incorrect": "It assumes the 'Yes' has already happened."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm doing this for you.'",
+          "question": "Is this usually a cover for self-interest?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Manipulators frame their greed as altruism. 'I'm selling you this junk to help you.'",
+            "incorrect": "Always ask: 'What's in it for them?'"
+          }
+        },
+        {
+          "exerciseId": "B4-5-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense against Pressure:",
+          "words": [
+            "slow",
+            "answer",
+            "is",
+            "The",
+            "down"
+          ],
+          "correct": "The answer is slow down",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Pressure requires speed. If you slow down, the pressure evaporates.",
+            "incorrect": "Speed kills logic. Brakes save lives."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "Using the promise of a massive future reward (that doesn't exist) to get free work/money now.",
+          "question": "What is this?",
+          "options": [
+            "Hope-Mongering / Future Faking",
+            "Investment",
+            "Reciprocity",
+            "Scarcity"
+          ],
+          "correct": "Hope-Mongering / Future Faking",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They sell the dream to steal the present.",
+            "incorrect": "It targets hope, not fear or debt."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P3-E9",
+          "type": "scenario",
+          "scene": "Scenario: You say 'No.' The Closer says: 'I guess you don't care about your future.'",
+          "question": "This is:",
+          "options": [
+            "Shaming / Identity Attack.",
+            "Advice.",
+            "Truth.",
+            "Help."
+          ],
+          "correct": "Shaming / Identity Attack.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are attacking your self-image to force compliance.",
+            "incorrect": "It is an insult disguised as concern."
+          }
+        },
+        {
+          "exerciseId": "B4-5-P3-E10",
+          "type": "case-analysis",
+          "caseTitle": "Section B Complete: The Shield Up",
+          "scene": "You have mastered the Tools of Influence. Language (B1), Frames (B2), Crowds (B3), and Levers (B4). You are now hard to trick.",
+          "question": "What is the next Section?",
+          "options": [
+            "Section C: The Defensive Mindset (Grey Rock, Body Language, etc).",
+            "Section A.",
+            "Quitting.",
+            "Sleep."
+          ],
+          "correct": "Section C: The Defensive Mindset (Grey Rock, Body Language, etc).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You know the attacks. Now we build the permanent defense.",
+            "incorrect": "Next up: Building the fortress."
+          }
+        }
+      ]
+    }
+  ]
+}

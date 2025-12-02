@@ -1,0 +1,341 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B5",
+  "unitTitle": "Section B Grand Review: The Master Tactician",
+  "lessonId": "B5-2",
+  "lessonTitle": "Social & Emotional Levers Review",
+  "lessonType": "Review",
+  "lessonPart": 1,
+  "lessonPartTitle": "Social & Emotional Levers (Units B3 & B4)",
+  "objective": "To synthesize and test comprehensive knowledge of Social Engineering (Social Proof, Authority) and Emotional Leverage (Scarcity, Reciprocity, Fear/Hope).",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B5-2-P1-S1",
+      "screenType": "Learn",
+      "title": "The Pressure Systems",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You have learned how manipulators use the **Herd** (Social Proof) and the **Badge** (Authority) to bypass your judgment."
+        },
+        {
+          "type": "paragraph",
+          "text": "You also know how they use the **Clock** (Scarcity) and the **Gift** (Reciprocity) to force your hand. Now, we review these powerful levers."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "This review covers all concepts from Units B3 and B4. Pass this to unlock the Pressure Gauntlet."
+        }
+      ]
+    },
+    {
+      "screenId": "B5-2-P1-S2",
+      "screenType": "Exercises",
+      "title": "Concept Check: Levers",
+      "exercises": [
+        {
+          "exerciseId": "B5-2-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the core mechanism of **Social Proof**?",
+          "options": [
+            "We follow the herd when we are uncertain.",
+            "We hate people.",
+            "We like being alone.",
+            "We trust no one."
+          ],
+          "correct": "We follow the herd when we are uncertain.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Uncertainty drives the herd instinct. If everyone is running, we run.",
+            "incorrect": "It relies on conformity and trust in the group's wisdom."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: A website says 'Only 2 tickets left at this price!'",
+          "question": "This is:",
+          "options": [
+            "Scarcity (Artificial Urgency).",
+            "A glitch.",
+            "Helpful.",
+            "Generous."
+          ],
+          "correct": "Scarcity (Artificial Urgency).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It triggers FOMO (Fear Of Missing Out) to bypass price comparison.",
+            "incorrect": "It is a pressure tactic designed to stop you from thinking."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P1-E3",
+          "type": "fill-in",
+          "sentence": "We obey the (--------) of authority (uniforms, titles) more than the person.",
+          "options": [
+            "symbols",
+            "truth",
+            "soul",
+            "voice"
+          ],
+          "answers": [
+            "symbols"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A lab coat or a badge grants access, even if the person is a fraud.",
+            "incorrect": "We react to the props (symbols) of power."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I bought you a coffee, so you should help me move this weekend.'",
+          "question": "Is this Weaponized Reciprocity?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are trading a small favor (coffee) for a large one (labor). It exploits your desire not to feel 'indebted'.",
+            "incorrect": "This is an unequal exchange driven by the Reciprocity Rule."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P1-E5",
+          "type": "matching",
+          "question": "Match the Tactic to the Trigger:",
+          "pairs": [
+            {
+              "term": "Scarcity",
+              "definition": "Fear of Loss (FOMO)."
+            },
+            {
+              "term": "Authority",
+              "definition": "Obedience Reflex."
+            },
+            {
+              "term": "Reciprocity",
+              "definition": "Obligation / Debt."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Scarcity uses Fear. Authority uses Obedience. Reciprocity uses Debt.",
+            "incorrect": "Identify the psychological button being pushed."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P1-E6",
+          "type": "scenario",
+          "scene": "Scenario: 'The economy is collapsing! Buy my gold bars to survive.'",
+          "question": "This combines:",
+          "options": [
+            "Fear-Mongering (Problem) + Hope-Mongering (Solution).",
+            "Financial advice.",
+            "Honesty.",
+            "Friendship."
+          ],
+          "correct": "Fear-Mongering (Problem) + Hope-Mongering (Solution).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They create the disease (Panic) to sell the cure (Gold).",
+            "incorrect": "It creates a funnel from Fear to Purchase."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P1-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense against Authority:",
+          "words": [
+            "rudeness",
+            "not",
+            "Verification",
+            "is"
+          ],
+          "correct": "Verification is not rudeness",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Asking for ID is a safety protocol, not an insult.",
+            "incorrect": "Never let politeness compromise security."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P1-E8",
+          "type": "reverse-scenario",
+          "answer": "A marketing tactic where fake reviews or paid actors create the illusion of popularity.",
+          "question": "What is this?",
+          "options": [
+            "Astroturfing",
+            "Marketing",
+            "Truth",
+            "Polling"
+          ],
+          "correct": "Astroturfing",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Fake Grass.' It creates artificial Social Proof.",
+            "incorrect": "It is deception."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "You want a raise. You mention you have another job offer (Truth).",
+          "question": "Is this manipulation?",
+          "options": [
+            "No. It is Leverage / Market Reality.",
+            "Yes, it is a threat.",
+            "Yes, it is mean.",
+            "No, lie about the amount."
+          ],
+          "correct": "No. It is Leverage / Market Reality.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Stating facts about your market scarcity is negotiation, not manipulation.",
+            "incorrect": "Leverage is not always dark. Facts are neutral."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P1-E10",
+          "type": "fill-in",
+          "sentence": "Social Engineers hack the (--------), not the computer.",
+          "options": [
+            "human",
+            "wall",
+            "code",
+            "lock"
+          ],
+          "answers": [
+            "human"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The human is the weakest link in security.",
+            "incorrect": "They bypass the firewall by tricking the user."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P1-E11",
+          "type": "multiple-choice",
+          "question": "What is 'Whaling'?",
+          "options": [
+            "Phishing attacks targeting high-level executives (CEOs).",
+            "Fishing.",
+            "Being loud.",
+            "Swimming."
+          ],
+          "correct": "Phishing attacks targeting high-level executives (CEOs).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Spear Phishing targets individuals. Whaling targets the 'Big Fish.'",
+            "incorrect": "It is a specific cyber-attack term."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'Hope' is a tool for manipulation.",
+          "question": "Is this true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Hope-Mongering' sells impossible dreams to desperate people.",
+            "incorrect": "Hope bypasses critical thinking."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: A negotiator says, 'I'm taking this offer off the table in 1 minute.'",
+          "question": "This is:",
+          "options": [
+            "The Take-Away / Exploding Offer.",
+            "Kindness.",
+            "Logic.",
+            "A gift."
+          ],
+          "correct": "The Take-Away / Exploding Offer.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Removing the option triggers Psychological Reactance. You want it because you can't have it.",
+            "incorrect": "It forces an impulsive decision."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P1-E14",
+          "type": "matching",
+          "question": "Match the Defense:",
+          "pairs": [
+            {
+              "term": "Against Scarcity",
+              "definition": "The 24-Hour Rule (Pause)."
+            },
+            {
+              "term": "Against Authority",
+              "definition": "Verify the ID."
+            },
+            {
+              "term": "Against Reciprocity",
+              "definition": "Refuse the Gift."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Pause the clock. Check the badge. Reject the debt.",
+            "incorrect": "Match the antidote to the pressure."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Pressure System",
+          "scene": "You have reviewed the social and emotional hacks. You know that panic and debt are tools of control.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Breaking the Spell (Real-time defense against pressure).",
+            "Panic.",
+            "Buying.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: Breaking the Spell (Real-time defense against pressure).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now we test your ability to stay calm when the pressure is high.",
+            "incorrect": "Next up: Practical defense against leverage."
+          }
+        }
+      ]
+    }
+  ]
+}

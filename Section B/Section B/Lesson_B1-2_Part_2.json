@@ -1,0 +1,333 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B1",
+  "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis",
+  "lessonId": "B1-2",
+  "lessonTitle": "Embedded Commands & Subliminals",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Detecting Tonal Shifts and Emphasis",
+  "objective": "To practice identifying 'Analog Marking' (tonal shifts, pauses, gestures) used to highlight hidden commands within normal conversation.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B1-2-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: Hearing the Italics",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "An embedded command is useless if the subconscious mind doesn't notice it. Manipulators use **Analog Marking** to highlight the command."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Watch for the Shift: A sudden drop in voice volume, a split-second pause, or a specific hand gesture. These are the triggers."
+        }
+      ]
+    },
+    {
+      "screenId": "B1-2-P2-S2",
+      "screenType": "Exercises",
+      "title": "Spotting the Mark",
+      "exercises": [
+        {
+          "exerciseId": "B1-2-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: Your boss says rapidly: 'I know you're busy, but maybe you can... *finish this tonight*... before you go.' (The bold text was spoken slower and deeper).",
+          "question": "What just happened?",
+          "options": [
+            "They got tired.",
+            "Analog Marking (Tonal Shift). The brain registers the slow, deep words as a command, separate from the rest of the sentence.",
+            "They forgot what they were saying.",
+            "They were asking a question."
+          ],
+          "correct": "Analog Marking (Tonal Shift). The brain registers the slow, deep words as a command, separate from the rest of the sentence.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The shift in speed and pitch acts like a highlighter. The sentence was a request; the tone was an order.",
+            "incorrect": "It wasn't fatigue. The deliberate slowing down draws subconscious focus to the command 'finish this tonight'."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P2-E2",
+          "type": "multiple-choice",
+          "question": "Why do manipulators often use a 'Downward Inflection' (Command Tonality) at the end of a question?",
+          "options": [
+            "To sound happy.",
+            "To turn a request into an order. It signals subconscious authority.",
+            "It is an accident.",
+            "To ask for information."
+          ],
+          "correct": "To turn a request into an order. It signals subconscious authority.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If the voice goes up, it asks. If it goes down, it tells. 'Can you do this?' (Down) is heard as 'Do this.'",
+            "incorrect": "Upward inflection is for questions. Downward inflection is for commands. It removes the choice."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P2-E3",
+          "type": "fill-in",
+          "sentence": "A (--------) before a word creates anticipation and emphasis.",
+          "options": [
+            "pause",
+            "scream",
+            "laugh",
+            "cough"
+          ],
+          "answers": [
+            "pause"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The 'Pregnant Pause.' The brain waits for the next word, giving it extra weight. 'You might... *buy*... this.'",
+            "incorrect": "Silence (a pause) draws attention more effectively than noise."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: A person touches their own chest when saying 'Trust' and points at you when saying 'Problem.'",
+          "question": "Is this 'Spatial Anchoring'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are spatially linking 'Good/Trust' to themselves and 'Bad/Problem' to you. It is a non-verbal association tactic.",
+            "incorrect": "This is classic anchoring. They are mapping concepts to physical locations in space."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P2-E5",
+          "type": "matching",
+          "question": "Match the Analog Mark to the Method:",
+          "pairs": [
+            {
+              "term": "Volume Shift",
+              "definition": "Whispering the command word."
+            },
+            {
+              "term": "Visual Shift",
+              "definition": "Raise eyebrows or nod while saying the command."
+            },
+            {
+              "term": "Touch",
+              "definition": "Touching your arm while saying 'Connect'."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Whispering forces you to lean in. Nodding signals agreement. Touch creates a physical anchor.",
+            "incorrect": "Look at the channel. Auditory (Volume), Visual ( eyebrows), Kinesthetic (Touch)."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: 'I don't want you to *think about buying* yet.'",
+          "question": "The negative word 'Don't' is used here to:",
+          "options": [
+            "Stop you from buying.",
+            "Bypass resistance. The command 'Think about buying' enters the mind because the brain ignores the 'Don't'.",
+            "Be polite.",
+            "Warn you."
+          ],
+          "correct": "Bypass resistance. The command 'Think about buying' enters the mind because the brain ignores the 'Don't'.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is the 'Negative Command.' To process the sentence, you must imagine buying. The seed is planted.",
+            "incorrect": "They want you to buy. The 'Don't' is just to lower your defenses."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Ambiguity' tactic:",
+          "words": [
+            "mind",
+            "blanks",
+            "the",
+            "The",
+            "fills",
+            "in"
+          ],
+          "correct": "The mind fills in the blanks",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If a command is vague ('You know what to do'), the victim fills it with their own desires or fears.",
+            "incorrect": "Ambiguity forces the victim to do the work of persuading themselves."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "A technique where a manipulator tells a story about 'someone else' to deliver a message to you without being direct.",
+          "question": "What is this?",
+          "options": [
+            "The 'My Friend John' Technique / Metaphor",
+            "Gaslighting",
+            "Lying",
+            "A Joke"
+          ],
+          "correct": "The 'My Friend John' Technique / Metaphor",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'My friend John just *quit his job* and he's so happy.' The command 'Quit your job' is hidden in the story.",
+            "incorrect": "It's not just a story. It is a proxy message aimed at your subconscious."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "You want your team to work harder. You use embedded commands: 'When you *finish early*, you feel great.'",
+          "question": "Is this ethical?",
+          "options": [
+            "No. All hidden influence is bad.",
+            "Yes, if the goal is positive and you aren't harming them (Motivation vs. Manipulation).",
+            "Only if you pay them more.",
+            "No, you should yell."
+          ],
+          "correct": "Yes, if the goal is positive and you aren't harming them (Motivation vs. Manipulation).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Leaders use this to motivate. Cult leaders use it to enslave. The tool is neutral; the intent defines the morality.",
+            "incorrect": "Influence is part of leadership. Using it for their benefit (feeling great/finishing) is ethical."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: A date says, 'People often *fall in love*... quickly.' They look directly into your eyes on the bold words.",
+          "question": "They are linking the command 'Fall in love' to:",
+          "options": [
+            "You.",
+            "People in general.",
+            "The waiter.",
+            "No one."
+          ],
+          "correct": "You.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The sentence says 'People,' but the eye contact says 'You.' This creates a 'Selectional Restriction Violation' (confusion that applies the rule to you).",
+            "incorrect": "The eye contact is the Analog Marker. It targets the command at you."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P2-E11",
+          "type": "fill-in",
+          "sentence": "Analog Marking targets the (--------) hemisphere of the brain (Emotional/Spatial), while words target the Left (Logical).",
+          "options": [
+            "Right",
+            "Left",
+            "Front",
+            "Back"
+          ],
+          "answers": [
+            "Right"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Tone and gesture speak to the Right Brain (Feeling). Words speak to the Left Brain (Thinking). Marking distracts the Left so the Right can accept the order.",
+            "incorrect": "The Right brain handles non-verbal, emotional cues."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'You don't have to *decide now*.'",
+          "question": "Does this sentence contain a hidden command?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The command 'Decide now' is embedded. The conscious mind hears 'You don't have to,' but the seed of 'Decide now' is planted.",
+            "incorrect": "Even though it is negated, the command 'Decide now' is present and processed."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: You feel a sudden urge to do something that you didn't want to do 5 minutes ago, after talking to a charismatic person.",
+          "question": "You should:",
+          "options": [
+            "Do it. It must be your idea.",
+            "Pause. Recognize that 'Sudden Impulses' are often the result of Subliminals. Wait 24 hours.",
+            "Ask them if they hypnotized you.",
+            "Ignore it."
+          ],
+          "correct": "Pause. Recognize that 'Sudden Impulses' are often the result of Subliminals. Wait 24 hours.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Subliminal influence fades with time. If the urge disappears in an hour, it wasn't yours.",
+            "incorrect": "It feels like your idea, but the timing is suspicious. Wait for the influence to wear off."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P2-E14",
+          "type": "multiple-choice",
+          "question": "What is a 'Phonological Ambiguity'?",
+          "options": [
+            "Words that sound like other words (e.g., 'Here' vs 'Hear', 'Buy' vs 'By') used to send double meanings.",
+            "Speaking quietly.",
+            "A phone call.",
+            "Stuttering."
+          ],
+          "correct": "Words that sound like other words (e.g., 'Here' vs 'Hear', 'Buy' vs 'By') used to send double meanings.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. 'By now' sounds like 'Buy now.' The subconscious hears both.",
+            "incorrect": "It uses homophones (sound-alikes) to hide commands."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Hidden Script",
+          "scene": "You can now hear the 'Italics' in speech. You know that tone and pauses are not accidental.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Hidden Order' Simulation (Resisting subliminal pressure).",
+            "Lesson A1-1.",
+            "Being loud.",
+            "Writing a letter."
+          ],
+          "correct": "The 'Hidden Order' Simulation (Resisting subliminal pressure).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you spot the command when it is buried in a friendly conversation? Let's test it.",
+            "incorrect": "Next up: A simulation where the commands are invisible to the untrained ear."
+          }
+        }
+      ]
+    }
+  ]
+}

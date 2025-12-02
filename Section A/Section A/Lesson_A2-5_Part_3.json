@@ -1,0 +1,448 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A2",
+  "unitTitle": "The Manipulator's Playbook: Narcissism & Gaslighting",
+  "lessonId": "A2-5",
+  "lessonTitle": "Unit 2 Review",
+  "lessonType": "Review",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The 'Narcissist' Boss Scenario",
+  "objective": "To master the defense against a full Narcissistic Cycle (Idealize, Devalue, Discard) in a complex, high-pressure simulation.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 500,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Unit_2_Grandmaster_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A2-5-P3-S1",
+      "screenType": "Learn",
+      "title": "Final Challenge: The Boss",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are about to enter a simulation of a relationship with 'The Boss'—a sophisticated narcissist who uses every tool in the book."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your goal is to spot the phase (Idealize, Devalue, Discard) and apply the correct defense (Boundaries, Grey Rock, Reality Anchors) without getting hooked."
+        }
+      ]
+    },
+    {
+      "screenId": "A2-5-P3-S2",
+      "screenType": "Exercises",
+      "exercises": [
+        {
+          "exerciseId": "A2-5-P3-E1",
+          "type": "boss-scenario",
+          "scene": "Phase 1 (Week 1): The Boss calls you into their office. 'I've been watching you. You are the only person here with any actual intelligence. I'm going to groom you for the top. Ignore the others; they are dead weight. It's you and me against this company.'",
+          "question": "Identify the 3 tactics used in this 'Hook':",
+          "options": [
+            "Flattery, Isolation (Us vs. Them), Future Faking.",
+            "Honesty, Leadership, Mentorship.",
+            "Gaslighting, Threats, Fear.",
+            "Love Bombing, Discard, Hoovering."
+          ],
+          "correct": "Flattery, Isolation (Us vs. Them), Future Faking.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Flattery ('only one with intelligence'), Isolation ('ignore the others'), Future Faking ('groom you for the top'). This is the Setup.",
+            "incorrect": "It looks like mentorship, but the 'Us vs. Them' isolation is the red flag. This is Love Bombing."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Phase 1: The Boundary Test",
+          "steps": [
+            {
+              "scene": "The Boss texts you at 11:00 PM on Saturday: 'I have a brilliant idea for the project. Call me right now. We need to discuss this.'",
+              "options": [
+                "Call immediately. (Submission)",
+                "Ignore it until Monday. (Ghosting)",
+                "Reply: 'I'm out with friends, but I'll review it first thing Monday morning.' (Boundary)",
+                "Reply: 'You are crossing a line!' (Attack)"
+              ],
+              "correct": "Reply: 'I'm out with friends, but I'll review it first thing Monday morning.' (Boundary)",
+              "feedback": {
+                "correct": "Perfect. You acknowledged the message but refused the urgency. You maintained your time.",
+                "incorrect": "Calling feeds the 'Urgency' trap. Attacking causes drama. Ignoring it completely might trigger rage too early. A polite boundary is the test."
+              }
+            },
+            {
+              "question": "Boss replies: 'Wow. I thought you were dedicated. I guess I was wrong about your potential.' (The Guilt/Devalue Test).",
+              "options": [
+                "Call immediately and apologize! (You failed)",
+                "'I am dedicated. I'll see you Monday.' (Holding Frame)",
+                "'That's unfair!' (J.A.D.E.)",
+                "'I quit.' (Escalation)"
+              ],
+              "correct": "'I am dedicated. I'll see you Monday.' (Holding Frame)",
+              "feedback": {
+                "correct": "Mastery. You refused to accept the guilt trip. You re-stated your truth ('I am dedicated') without breaking your boundary.",
+                "incorrect": "They are testing if your anxiety is stronger than your boundary. If you call, they own you."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the first test. The narcissist now knows you have a spine, but they will try harder.",
+            "incorrect": "You folded. Once you answer a call at 11 PM, that becomes the new expectation."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E3",
+          "type": "scenario",
+          "scene": "Phase 2 (Month 2): The Devaluation begins. In a meeting, you present the idea the Boss praised last week. The Boss laughs: 'This is childish. Did you even think this through? I expected better.'",
+          "question": "This is 'Gaslighting' combined with:",
+          "options": [
+            "Public Humiliation (Grandiosity).",
+            "Constructive Criticism.",
+            "Love Bombing.",
+            "Hoovering."
+          ],
+          "correct": "Public Humiliation (Grandiosity).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They changed the reality (Gaslighting: 'I never liked this') and used the audience to humiliate you (Supply).",
+            "incorrect": "It's not constructive; it's destructive. It contradicts their previous praise to destabilize you."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E4",
+          "type": "ethical-dilemma",
+          "scene": "The Boss asks you to lie to a client. 'If you don't do this, the team loses their bonuses. Don't be selfish.'",
+          "question": "This is Coercion mixed with Projection ('Selfish'). What is the only safe move?",
+          "options": [
+            "Lie for them. (Complicity)",
+            "Refuse politely but firmly. Document the request. Be prepared to be painted as the 'bad guy'.",
+            "Scream at them.",
+            "Tell the client secretly."
+          ],
+          "correct": "Refuse politely but firmly. Document the request. Be prepared to be painted as the 'bad guy'.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you lie, they have blackmail material on you forever. You must hold your ethics, even if they punish you for it.",
+            "incorrect": "Complicity is a trap. Once you break the law for them, you can never leave."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: You try 'Grey Rock' (being boring). The Boss calls you into the office and screams: 'You have an attitude problem! You're disrespectful! Everyone hates working with you!'",
+          "question": "This rage is called an (--------) Burst, and they are using (--------) (Everyone hates you) to validate it.",
+          "options": [
+            "Extinction / Triangulation",
+            "Emotional / Love Bombing",
+            "Anger / Flattery",
+            "Ego / Projection"
+          ],
+          "correct": "Extinction / Triangulation",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The 'Extinction Burst' (Rage) happens because you stopped feeding them Supply. They use 'Everyone' (Triangulation) to add weight to the attack.",
+            "incorrect": "Identify the mechanics. Rage = Burst. 'Everyone' = Triangulation."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: During the rage, you stay calm and say, 'I hear that you are upset. I will return to my work.'",
+          "question": "Did you win this interaction?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You refused to provide Negative Supply (Fear/Anger). You held your frame. To a narcissist, this is a defeat.",
+            "incorrect": "Winning isn't changing their mind; it's controlling your own reaction."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E7",
+          "type": "matching",
+          "question": "Match the Boss's statement to the translation:",
+          "pairs": [
+            {
+              "term": "'I'm the only one who defends you.'",
+              "definition": "Isolation tactic."
+            },
+            {
+              "term": "'You're crazy.'",
+              "definition": "Gaslighting."
+            },
+            {
+              "term": "'After all I've done for you...'",
+              "definition": "Guilt Trip / Historical Debt."
+            },
+            {
+              "term": "'I guess I'm just a bad boss.'",
+              "definition": "Covert Pity Play."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You can now translate the Manipulator's dictionary.",
+            "incorrect": "Review the definitions. 'Only one' = Isolation. 'Bad boss' = Victim."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E8",
+          "type": "scenario",
+          "scene": "Phase 3: The Discard. The Boss hires a new, younger employee and starts Love Bombing *them* right in front of you, while ignoring you completely.",
+          "question": "What is the purpose of this display?",
+          "options": [
+            "They genuinely like the new person.",
+            "Triangulation: To make you jealous and trigger you to fight for their attention (Supply).",
+            "Business strategy.",
+            "Coincidence."
+          ],
+          "correct": "Triangulation: To make you jealous and trigger you to fight for their attention (Supply).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They want you to compete. If you look jealous or hurt, they win. If you look indifferent, they lose.",
+            "incorrect": "It is theater. The new person is just a prop to hurt you."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E9",
+          "type": "build-sentence",
+          "question": "Arrange the words to describe the 'Discard':",
+          "words": [
+            "final",
+            "act",
+            "is",
+            "cruelty",
+            "The",
+            "of",
+            "control"
+          ],
+          "correct": "The final act of cruelty is control",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They discard you cruelly to ensure you leave broken, rather than leaving strong.",
+            "incorrect": "The cruelty is not accidental; it is the final attempt to control your emotion."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E10",
+          "type": "reverse-scenario",
+          "answer": "The Boss realizes you don't care about the new hire. Suddenly, they offer you a promotion and a raise, apologizing for 'being stressed lately.'",
+          "question": "What is this tactic?",
+          "options": [
+            "Hoovering",
+            "A genuine change of heart",
+            "Gaslighting",
+            "Closure"
+          ],
+          "correct": "Hoovering",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The Discard didn't hurt you, so they panic and try to suck you back in (Hoover) to regain control.",
+            "incorrect": "Narcissists don't change. They adjust tactics. This is a trap to restart the cycle."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E11",
+          "type": "fill-in",
+          "sentence": "The only way to win the game with a Narcissist is not to (--------).",
+          "options": [
+            "play",
+            "lose",
+            "cry",
+            "fight"
+          ],
+          "answers": [
+            "play"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. As seen in 'WarGames': The only winning move is not to play. No Contact or strict Grey Rock are the only exits.",
+            "incorrect": "Fighting or crying is playing. You must exit the game board entirely."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E12",
+          "type": "case-analysis",
+          "caseTitle": "The Smear Campaign",
+          "scene": "You quit the job. You hear the Boss is telling everyone you were fired for theft (a lie).",
+          "question": "Why do they do this, and what should you do?",
+          "options": [
+            "To protect the company. You should sue immediately.",
+            "To destroy your credibility so you can't expose them. You should live your truth and ignore the noise.",
+            "Because they are crazy. You should scream at them.",
+            "Because it's true."
+          ],
+          "correct": "To destroy your credibility so you can't expose them. You should live your truth and ignore the noise.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. It is a preemptive strike. Engaging makes you look guilty/crazy. Success and stability are the best revenge.",
+            "incorrect": "Suing is an option, but emotionally, you must detach. Fighting the rumors often spreads them. Be the person who clearly wouldn't do that."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E13",
+          "type": "true-false",
+          "scene": "Scenario: You leave the Narcissist. You feel bored, empty, and crave their chaos.",
+          "question": "Does this mean you made a mistake?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. This is **Withdrawal**. Your brain is detoxing from the dopamine/cortisol rollercoaster. Boredom is a sign of safety.",
+            "incorrect": "Peace feels like boredom to an addict. It is a sign of healing, not a mistake."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E14",
+          "type": "multiple-choice",
+          "question": "Which 'Dark Triad' trait makes the Narcissist dangerous in the long term?",
+          "options": [
+            "Their lack of empathy (they will never care if they hurt you).",
+            "Their fashion sense.",
+            "Their money.",
+            "Their charm."
+          ],
+          "correct": "Their lack of empathy (they will never care if they hurt you).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Without empathy, there is no limit to what they will do to protect their ego. They are emotionally dangerous.",
+            "incorrect": "The core danger is that you are projecting humanity onto someone who cannot feel it for you."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E15",
+          "type": "scenario",
+          "scene": "Scenario: Years later, you see the Boss doing the *exact same thing* to a new employee.",
+          "question": "This confirms:",
+          "options": [
+            "It was never about you. It was a script.",
+            "They have changed.",
+            "The new employee is better than you.",
+            "You should warn them."
+          ],
+          "correct": "It was never about you. It was a script.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Narcissism is a repetition compulsion. They are stuck in a loop. You are free.",
+            "incorrect": "They haven't changed. It confirms that you were just an actor in a play that runs on loop."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E16",
+          "type": "ethical-dilemma",
+          "scene": "You have escaped. You see the Narcissist winning an award.",
+          "question": "How do you handle the injustice?",
+          "options": [
+            "Obsess over it.",
+            "Radical Acceptance: The world rewards charm, but you have peace. Focus on your lane.",
+            "Heckle them.",
+            "Write a blog about them."
+          ],
+          "correct": "Radical Acceptance: The world rewards charm, but you have peace. Focus on your lane.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Narcissists often 'win' socially but lose interpersonally. Focusing on their external success keeps you trapped. Focus on your internal peace.",
+            "incorrect": "Justice is not always immediate. Obsessing over them keeps the Supply line open. Let go."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E17",
+          "type": "multiple-choice",
+          "question": "What is a 'Reality Anchor'?",
+          "options": [
+            "A journal, friend, or therapist who validates your truth against Gaslighting.",
+            "A boat.",
+            "A heavy weight.",
+            "A stubborn attitude."
+          ],
+          "correct": "A journal, friend, or therapist who validates your truth against Gaslighting.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You need external points of reference to survive the distortion field.",
+            "incorrect": "It is a psychological tool to keep you grounded in facts."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E18",
+          "type": "true-false",
+          "scene": "Scenario: You can 'fix' a narcissist if you love them enough.",
+          "question": "Is this true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct/False. Narcissism is a personality structure, not a mood. You cannot love someone into empathy. Trying to 'fix' them destroys you.",
+            "incorrect": "This is the 'Rescuer' fantasy. It is the trap that keeps you in the cycle."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E19",
+          "type": "fill-in",
+          "sentence": "The ultimate defense against a Narcissist is strong (--------) and high self-worth.",
+          "options": [
+            "boundaries",
+            "walls",
+            "weapons",
+            "voices"
+          ],
+          "answers": [
+            "boundaries"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Boundaries keep the bad out. Self-worth keeps you from needing their crumbs.",
+            "incorrect": "Walls shut everyone out. Boundaries let good in and keep bad out."
+          }
+        },
+        {
+          "exerciseId": "A2-5-P3-E20",
+          "type": "case-analysis",
+          "caseTitle": "Unit 2 Complete: The Grandmaster",
+          "scene": "You have faced the Narcissist and won by not playing. You understand the Mask, the Supply, the Bomb, and the Gaslight.",
+          "question": "You are ready for Unit 3:",
+          "options": [
+            "Unit 3: The Grand Chessmaster (Machiavellianism).",
+            "Retiring.",
+            "Becoming a hermit.",
+            "Forgetting everything."
+          ],
+          "correct": "Unit 3: The Grand Chessmaster (Machiavellianism).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You mastered the Emotional Manipulator (Narcissist). Now you face the Strategic Manipulator (Machiavellian).",
+            "incorrect": "The next level is the cold, calculated strategy of Machiavellianism."
+          }
+        }
+      ]
+    }
+  ]
+}

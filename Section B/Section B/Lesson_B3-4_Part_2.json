@@ -1,0 +1,340 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B3",
+  "unitTitle": "The Herd Mind: Social Engineering",
+  "lessonId": "B3-4",
+  "lessonTitle": "The Liking Bias: Weaponized Friendship",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Separating the Person from the Request",
+  "objective": "To practice identifying specific Liking tactics (Mirroring, Compliments, Similarity) in real-time and applying the 'Separation' defense to judge requests objectively.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B3-4-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Halo Check",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "It is easy to buy a bad car from a nice person. It is easy to sign a bad deal with a charming friend."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Defense: **Separation**. Mentally separate the person from the transaction. Would you buy this car if a rude stranger were selling it?"
+        }
+      ]
+    },
+    {
+      "screenId": "B3-4-P2-S2",
+      "screenType": "Exercises",
+      "title": "Spotting the Friend Trap",
+      "exercises": [
+        {
+          "exerciseId": "B3-4-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: A salesperson spends 20 minutes talking about your shared hometown and favorite sports team. Then they offer you a 'special deal' that is slightly above your budget.",
+          "question": "Why did they spend 20 minutes chatting?",
+          "options": [
+            "To be nice.",
+            "To build Rapport/Similarity so you would feel guilty saying 'No' to a friend.",
+            "They were bored.",
+            "They are lonely."
+          ],
+          "correct": "To build Rapport/Similarity so you would feel guilty saying 'No' to a friend.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They invested time to create a social bond. Rejecting the deal now feels like rejecting the *person*.",
+            "incorrect": "It wasn't idle chat. It was strategic bonding to lower your price resistance."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is the 'Unlimited Similarity' tactic?",
+          "options": [
+            "Faking interest in *everything* the target likes (e.g., 'I love that band too!', 'I also grew up there!').",
+            "Being twins.",
+            "Looking in a mirror.",
+            "Being honest."
+          ],
+          "correct": "Faking interest in *everything* the target likes (e.g., 'I love that band too!', 'I also grew up there!').",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you like jazz, they like jazz. If you hate cats, they hate cats. They become your mirror image to trigger the Liking Bias.",
+            "incorrect": "It is a fabrication of shared identity."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P2-E3",
+          "type": "fill-in",
+          "sentence": "To defeat the Liking Bias, you must judge the (--------), not the messenger.",
+          "options": [
+            "message",
+            "smile",
+            "shoes",
+            "hair"
+          ],
+          "answers": [
+            "message"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Ignore the smile. Look at the contract. Is the *deal* good? Or is the *person* just nice?",
+            "incorrect": "The messenger (the person) is the distraction. The message (the deal) is the reality."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm on your side. I'm fighting my manager to get you this price.'",
+          "question": "Is this the 'Us vs. Them' tactic?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They create a fake enemy (the manager) to align with you. Now you are 'teammates' fighting for a deal, which makes you trust them.",
+            "incorrect": "It creates a conspiracy of two. It builds instant camaraderie."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P2-E5",
+          "type": "matching",
+          "question": "Match the Compliment to the Goal:",
+          "pairs": [
+            {
+              "term": "\"You are so smart.\"",
+              "definition": "Goal: To make you feel superior/validated."
+            },
+            {
+              "term": "\"You have great taste.\"",
+              "definition": "Goal: To sell you an expensive item."
+            },
+            {
+              "term": "\"You are so kind.\"",
+              "definition": "Goal: To make it hard for you to say 'No' (Identity Trap)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Intelligence compliments target ego. Taste compliments target wallet. Kindness compliments target compliance.",
+            "incorrect": "Analyze the function of the praise."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: You are negotiating. You realize you really *like* the opponent. You want to give them a break.",
+          "question": "What should you do?",
+          "options": [
+            "Give them a break.",
+            "Pause. Ask: 'If I disliked this person, would I still accept this deal?' (The Vacuum Test).",
+            "Invite them to dinner.",
+            "Sign immediately."
+          ],
+          "correct": "Pause. Ask: 'If I disliked this person, would I still accept this deal?' (The Vacuum Test).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You must mentally swap the charming person for an unlikable one. If the deal looks bad with the unlikable person, it is a bad deal.",
+            "incorrect": "Don't let your feelings for the person subsidize the transaction."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define 'The Halo Effect':",
+          "words": [
+            "Beauty",
+            "assumption",
+            "goodness",
+            "creates",
+            "the",
+            "of"
+          ],
+          "correct": "Beauty creates the assumption of goodness",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. We assume attractive people are honest. Scammers dress beautifully for this reason.",
+            "incorrect": "We judge books by their covers. Con artists make sure the cover is beautiful."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "A specific type of compliment that attributes a positive trait to you ('You are a generous person') to force you to act in accordance with that trait.",
+          "question": "What is this?",
+          "options": [
+            "Altercasting / Labeling",
+            "Gaslighting",
+            "Negging",
+            "Honesty"
+          ],
+          "correct": "Altercasting / Labeling",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'You are generous' creates a pressure to *prove* you are generous by giving money.",
+            "incorrect": "It casts you in a role (Alter) that serves the manipulator."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "A friend is selling a Multi-Level Marketing (MLM) product. It is overpriced and low quality. They ask you to buy to 'support their dream.'",
+          "question": "Do you buy it?",
+          "options": [
+            "Yes, support your friends.",
+            "No. 'I support you, but this product isn't for me.' (Separating Person from Product).",
+            "Buy it and throw it away.",
+            "Yell at them."
+          ],
+          "correct": "No. 'I support you, but this product isn't for me.' (Separating Person from Product).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Buying a bad product validates the scam. True friendship does not require financial exploitation.",
+            "incorrect": "Buying out of guilt is the MLM business model. Support them emotionally, not financially."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'I usually don't do this, but because I like you, I'll waive the fee.'",
+          "question": "This is:",
+          "options": [
+            "The 'Special Favor' Tactic.",
+            "True Love.",
+            "A mistake.",
+            "Luck."
+          ],
+          "correct": "The 'Special Favor' Tactic.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They frame a standard discount as a personal favor based on 'Liking.' It creates Reciprocity debt.",
+            "incorrect": "It wasn't because they like you. It was because they wanted the sale."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P2-E11",
+          "type": "fill-in",
+          "sentence": "Manipulators use (--------) to lower your guard before delivering the attack.",
+          "options": [
+            "charm",
+            "anger",
+            "sleep",
+            "pain"
+          ],
+          "answers": [
+            "charm"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Charm is the anesthetic. It numbs your critical thinking so you don't feel the sting of the manipulation.",
+            "incorrect": "Anger raises defenses. Charm lowers them."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: A stranger touches your arm lightly while asking for a favor.",
+          "question": "Does this increase compliance?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The 'Midas Touch' effect. Light, non-threatening touch creates a subconscious bond and increases compliance rates.",
+            "incorrect": "It is a powerful biological hack. Touch releases oxytocin."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: A con artist researches your social media to find out you love dogs. They bring a dog to the meeting.",
+          "question": "This is:",
+          "options": [
+            "Targeted Mirroring / Spear Phishing.",
+            "Coincidence.",
+            "Kindness.",
+            "Fun."
+          ],
+          "correct": "Targeted Mirroring / Spear Phishing.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They engineered the environment to trigger your Liking Bias. The dog is a prop.",
+            "incorrect": "It was not random. It was calculated based on your data."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P2-E14",
+          "type": "matching",
+          "question": "Match the Defense:",
+          "pairs": [
+            {
+              "term": "For Flattery",
+              "definition": "Accept the compliment, reject the influence."
+            },
+            {
+              "term": "For Similarity",
+              "definition": "Check if the shared interest is real or mirrored."
+            },
+            {
+              "term": "For Liking",
+              "definition": "Separate the seller from the product."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Neutralize the ego boost. Verify the connection. Judge the deal objectively.",
+            "incorrect": "Match the specific antidote to the liking trigger."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Charm Broken",
+          "scene": "You can now see that 'Friendship' can be a strategy. You know that compliments can be contracts.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Charming Con-Man' Simulation.",
+            "Making friends.",
+            "Buying a car.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Charming Con-Man' Simulation.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you say 'No' to someone who feels like your best friend? Let's find out.",
+            "incorrect": "Next up: The ultimate test of separating emotion from logic."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A4",
+  "unitTitle": "The Void Behind the Mask: Psychopathy",
+  "lessonId": "A4-4",
+  "lessonTitle": "The Absence of Conscience: Remorse vs. Regret",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "Understanding the \"Moral Void\"",
+  "objective": "To define the 'Moral Void' of psychopathy and distinguish between 'Remorse' (empathy for the victim) and 'Regret' (concern for oneself).",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A4-4-P1-S1",
+      "screenType": "Learn",
+      "title": "The Missing Chip",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A Narcissist has a conscience, but ignores it to protect their ego. A Psychopath simply *does not have one*."
+        },
+        {
+          "type": "paragraph",
+          "text": "They are morally colorblind. They understand that society *has* rules, but they do not feel the internal pressure (Guilt) to follow them."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Key Distinction: **Remorse** is feeling bad for the person you hurt. **Regret** is feeling bad that you got caught."
+        }
+      ]
+    },
+    {
+      "screenId": "A4-4-P1-S2",
+      "screenType": "Exercises",
+      "title": "Defining the Void",
+      "exercises": [
+        {
+          "exerciseId": "A4-4-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is a 'Conscience'?",
+          "options": [
+            "A fear of the police.",
+            "The internal voice that produces guilt or shame when you violate your own moral code or hurt others.",
+            "A list of laws.",
+            "Being shy."
+          ],
+          "correct": "The internal voice that produces guilt or shame when you violate your own moral code or hurt others.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is an internal emotional brake system. Psychopaths lack these brakes.",
+            "incorrect": "It is not external (police); it is internal (guilt)."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P1-E2",
+          "type": "true-false",
+          "scene": "Scenario: A Psychopath hurts you. They say 'Sorry.'",
+          "question": "Does this mean they feel guilty?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They know 'Sorry' is the password to make you stop being angry. It is a tool, not a feeling.",
+            "incorrect": "Words are easy. Without a conscience, the word 'Sorry' is just a sound they make to get what they want."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P1-E3",
+          "type": "matching",
+          "question": "Match the Reaction to the Emotion:",
+          "pairs": [
+            {
+              "term": "Remorse",
+              "definition": "I feel pain because I hurt *you*."
+            },
+            {
+              "term": "Regret",
+              "definition": "I feel pain because *I* got in trouble."
+            },
+            {
+              "term": "Indifference",
+              "definition": "I feel nothing."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Psychopaths feel Regret (for themselves) but not Remorse (for others).",
+            "incorrect": "Remorse is other-focused. Regret is self-focused."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P1-E4",
+          "type": "scenario",
+          "scene": "Scenario: You catch an employee stealing. They cry: 'I can't believe I lost this job! My life is ruined! What will I do?'",
+          "question": "This demonstrates:",
+          "options": [
+            "Remorse (Care for the victim/company).",
+            "Regret (Care for self/consequences).",
+            "Happiness.",
+            "Confusion."
+          ],
+          "correct": "Regret (Care for self/consequences).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are crying about *their* loss (the job), not the harm they caused (the theft). It is entirely self-centered.",
+            "incorrect": "They didn't mention the company or the harm. They only mentioned their own ruined life."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P1-E5",
+          "type": "fill-in",
+          "sentence": "A Psychopath knows the (--------) to the song, but they cannot hear the (--------).",
+          "options": [
+            "words",
+            "music",
+            "lies",
+            "truth"
+          ],
+          "answers": [
+            "words",
+            "music"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They can speak the language of morality (words), but they don't feel the emotional resonance (music).",
+            "incorrect": "This is a classic analogy for psychopathy."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to describe the Psychopath's view of rules:",
+          "words": [
+            "for",
+            "Rules",
+            "are",
+            "others",
+            "you,",
+            "not",
+            "me"
+          ],
+          "correct": "Rules are for you, not me",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They believe they are above the social contract. Rules are tools to control *you*.",
+            "incorrect": "They view rules as constraints for 'sheep,' not for 'wolves.'"
+          }
+        },
+        {
+          "exerciseId": "A4-4-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "Using a fake display of guilt or sadness to manipulate the victim into dropping boundaries.",
+          "question": "What is this tactic?",
+          "options": [
+            "Weaponized Remorse / Crocodile Tears",
+            "True Apology",
+            "Gaslighting",
+            "Stonewalling"
+          ],
+          "correct": "Weaponized Remorse / Crocodile Tears",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Crocodile Tears' refers to the myth that crocodiles cry to lure prey. It is a performance of sadness.",
+            "incorrect": "It isn't true. It is a weaponized simulation of guilt."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: A partner cheats. When caught, they say: 'I'm sorry, I promise I'll change. Don't leave me.' The next day, they seem perfectly happy and annoyed that you are still sad.",
+          "question": "The rapid recovery indicates:",
+          "options": [
+            "They have processed their emotions quickly.",
+            "The apology was a tactical maneuver, not an emotional state (The Switch).",
+            "They are bipolar.",
+            "They are innocent."
+          ],
+          "correct": "The apology was a tactical maneuver, not an emotional state (The Switch).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Genuine remorse lingers. Tactical remorse vanishes the moment the threat (you leaving) is gone.",
+            "incorrect": "You can't process deep guilt in 24 hours. The emotion was never real."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P1-E9",
+          "type": "multiple-choice",
+          "question": "Why is it dangerous to project a conscience onto a Psychopath?",
+          "options": [
+            "It isn't.",
+            "You will assume they have limits ('They wouldn't go *that* far'), but they have no limits.",
+            "It makes them mad.",
+            "It makes you mean."
+          ],
+          "correct": "You will assume they have limits ('They wouldn't go *that* far'), but they have no limits.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Your conscience tells you some things are 'unthinkable.' To them, nothing is unthinkable if it works.",
+            "incorrect": "It creates a 'Blind Spot.' You cannot predict their behavior if you assume they share your morals."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P1-E10",
+          "type": "ethical-dilemma",
+          "scene": "You are negotiating with a Psychopath. You appeal to their sense of 'Fairness.'",
+          "question": "Will this work?",
+          "options": [
+            "Yes, everyone likes fairness.",
+            "No. 'Fairness' creates a Win-Win. They want a Win-Lose. You are speaking the wrong language.",
+            "Maybe.",
+            "Yes, if you cry."
+          ],
+          "correct": "No. 'Fairness' creates a Win-Win. They want a Win-Lose. You are speaking the wrong language.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You are appealing to a moral construct they do not possess. Appeal to 'Leverage,' not 'Fairness'.",
+            "incorrect": "They view fairness as a weakness to be exploited."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P1-E11",
+          "type": "fill-in",
+          "sentence": "A Psychopath views (--------) as a weakness in others, not a virtue.",
+          "options": [
+            "guilt",
+            "anger",
+            "strength",
+            "power"
+          ],
+          "answers": [
+            "guilt"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They see your conscience as a leash that others use to control you. They are 'free' from it.",
+            "incorrect": "They respect power. They despise guilt."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I did it because I could.'",
+          "question": "Is this a sufficient reason for a Psychopath?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Opportunity + Desire = Action. There is no 'Moral Filter' in between.",
+            "incorrect": "For a normal person, 'Is it right?' is the filter. For a psychopath, 'Can I get away with it?' is the only filter."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: A killer describes their crime. They talk about the logistics (time, weapon, escape) excitedly, but describe the victim as an object.",
+          "question": "This emotional disconnect is called:",
+          "options": [
+            "Cold Empathy / Detachment.",
+            "Fear.",
+            "Guilt.",
+            "Love."
+          ],
+          "correct": "Cold Empathy / Detachment.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are intellectually engaged but emotionally vacant. The victim is just a prop in their movie.",
+            "incorrect": "There is no fear or guilt. It is purely instrumental."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P1-E14",
+          "type": "matching",
+          "question": "Match the apology to the meaning:",
+          "pairs": [
+            {
+              "term": "\"I'm sorry you feel that way.\"",
+              "definition": "Gaslighting / Non-Apology."
+            },
+            {
+              "term": "\"I'm sorry I got caught.\"",
+              "definition": "Regret (Self-Preservation)."
+            },
+            {
+              "term": "\"I am horrified that I hurt you.\"",
+              "definition": "Remorse (Empathy) - (Rarely true for Psychopaths)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Analyze the apology. Who is the focus? 'You feel' = Blaming you. 'I got caught' = Self. 'I hurt you' = Other.",
+            "incorrect": "Listen to the words carefully. Most apologies from manipulators are self-serving."
+          }
+        },
+        {
+          "exerciseId": "A4-4-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Empty Chest",
+          "scene": "You have defined the Moral Void. You know that a lack of conscience makes them dangerous because they have no internal 'Stop' sign.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: 'Crocodile Tears' vs. Real Remorse (Spotting fake apologies).",
+            "Forgiving them.",
+            "How to cry.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: 'Crocodile Tears' vs. Real Remorse (Spotting fake apologies).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You need to learn the difference between a performance of sadness and real change.",
+            "incorrect": "Next up: How to tell if an apology is real."
+          }
+        }
+      ]
+    }
+  ]
+}

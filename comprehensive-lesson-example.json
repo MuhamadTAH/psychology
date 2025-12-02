@@ -1,0 +1,154 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A1",
+  "unitTitle": "The Unseen Influence",
+  "lessonId": "A1-1",
+  "lessonTitle": "Understanding Covert Manipulation",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "objective": "Learn to recognize subtle manipulation tactics and understand their psychological foundations",
+  "gamification": {
+    "progressRings": [
+      {"ringId": "learn", "status": "incomplete", "label": "Learn"},
+      {"ringId": "practice", "status": "incomplete", "label": "Practice"},
+      {"ringId": "challenge", "status": "incomplete", "label": "Challenge"}
+    ],
+    "pointsValue": 50,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Manipulation Awareness"
+  },
+  "contentScreens": [
+    {
+      "screenType": "exercise-block",
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "question": "What is the primary characteristic of covert manipulation?",
+          "options": [
+            "Hidden or disguised intent",
+            "Loud and obvious tactics",
+            "Physical force",
+            "Direct commands"
+          ],
+          "correct": "Hidden or disguised intent",
+          "explanation": "Covert manipulation works by hiding the true intent and making the manipulation difficult to detect."
+        },
+        {
+          "type": "true-false",
+          "question": "Covert manipulation always involves lying.",
+          "correct": "False",
+          "explanation": "Covert manipulation can use truthful information presented in misleading ways, not just lies."
+        },
+        {
+          "type": "matching",
+          "question": "Match the manipulation tactics with their definitions",
+          "options": ["Gaslighting", "Love bombing", "Triangulation", "Projection"],
+          "correct": [
+            "Making someone question their reality",
+            "Overwhelming with affection to control",
+            "Using third parties to create jealousy",
+            "Accusing others of one's own behavior"
+          ],
+          "explanation": "Understanding these core tactics helps identify manipulation patterns."
+        },
+        {
+          "type": "fill-in",
+          "question": "The goal of covert manipulation is to influence someone's ___ without them noticing.",
+          "correct": "behavior",
+          "options": ["behavior", "appearance", "weather", "schedule"],
+          "explanation": "Manipulators aim to change behavior, thoughts, or emotions subtly."
+        },
+        {
+          "type": "scenario",
+          "scene": "Your colleague Sarah frequently compliments you in front of your boss, but later makes subtle criticisms about your work when you're alone together.",
+          "question": "What manipulation tactic is Sarah likely using?",
+          "options": [
+            "Two-faced behavior to control perception",
+            "Genuine concern for improvement",
+            "Friendly constructive criticism",
+            "Random mood swings"
+          ],
+          "correct": "Two-faced behavior to control perception",
+          "explanation": "This is a classic manipulation pattern where public praise masks private undermining."
+        },
+        {
+          "type": "reverse-scenario",
+          "scene": "You notice someone always agrees with you enthusiastically, mirrors your opinions, and quickly adopts your interests.",
+          "question": "What should you consider about this behavior?",
+          "options": [
+            "It may be mirroring to gain trust and influence",
+            "They genuinely share all your interests",
+            "It's normal friendship behavior",
+            "They're just very agreeable by nature"
+          ],
+          "correct": "It may be mirroring to gain trust and influence",
+          "explanation": "Excessive mirroring can be a manipulation tactic to create false rapport and lower defenses."
+        },
+        {
+          "type": "ethical-dilemma",
+          "dilemma": "You discovered your friend has been subtly manipulating your mutual friends to exclude another person from group activities. You have evidence, but exposing it might break up the friend group.",
+          "question": "What is the most ethical response?",
+          "options": [
+            "Address it privately with the friend first, giving them a chance to change",
+            "Immediately tell everyone and expose the manipulation",
+            "Stay silent to preserve group harmony",
+            "Join in the manipulation to stay on good terms"
+          ],
+          "correct": "Address it privately with the friend first, giving them a chance to change",
+          "explanation": "Private confrontation allows for change while maintaining dignity. Public exposure should be reserved for situations where private approaches fail or safety is at risk."
+        },
+        {
+          "type": "case-analysis",
+          "case": "Marcus, a team lead, consistently takes credit for his team's ideas in meetings while privately telling team members their contributions weren't significant. When confronted, he says 'I thought you wanted me to present our work as a unified team effort' and acts hurt.",
+          "question": "What manipulation tactics is Marcus using?",
+          "options": [
+            "Credit theft combined with DARVO (Deny, Attack, Reverse Victim and Offender)",
+            "Normal leadership representation",
+            "Miscommunication about roles",
+            "Genuine misunderstanding"
+          ],
+          "correct": "Credit theft combined with DARVO (Deny, Attack, Reverse Victim and Offender)",
+          "explanation": "Marcus steals credit, then when confronted, denies wrongdoing and positions himself as the victim."
+        },
+        {
+          "type": "build-sentence",
+          "prompt": "Arrange the words to describe a key defense against manipulation",
+          "words": ["Trust", "your", "own", "perceptions", "and", "feelings", "always", "never", "sometimes"],
+          "correct": "Trust your own perceptions and feelings",
+          "explanation": "Trusting your own perceptions is fundamental to resisting gaslighting and other manipulation tactics."
+        },
+        {
+          "type": "micro-sim",
+          "steps": [
+            {
+              "situation": "Your partner says: 'You're too sensitive. I was just joking. You always overreact to everything.'",
+              "question": "What's your best immediate response?",
+              "options": [
+                "Name the behavior: 'I'm not overreacting. Dismissing my feelings is not okay.'",
+                "Apologize for being too sensitive",
+                "Leave the room in silence",
+                "Joke back to lighten the mood"
+              ],
+              "correct": "Name the behavior: 'I'm not overreacting. Dismissing my feelings is not okay.'",
+              "explanation": "Naming the behavior clearly establishes boundaries."
+            },
+            {
+              "situation": "They respond: 'Wow, now you're attacking me for trying to have a conversation. Why are you being so hostile?'",
+              "question": "How do you respond to this DARVO tactic?",
+              "options": [
+                "'I'm setting a boundary, not attacking. This is a deflection from the original issue.'",
+                "Apologize for seeming hostile",
+                "Get angry and raise your voice",
+                "Drop the issue to avoid conflict"
+              ],
+              "correct": "'I'm setting a boundary, not attacking. This is a deflection from the original issue.'",
+              "explanation": "Recognizing and naming the deflection prevents falling into the manipulation cycle."
+            }
+          ],
+          "explanation": "Multi-step scenarios show how manipulation escalates and how to maintain boundaries through the progression."
+        }
+      ]
+    }
+  ]
+}

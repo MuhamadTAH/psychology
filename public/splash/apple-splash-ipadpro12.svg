@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2048" height="2732" viewBox="0 0 2048 2732" xmlns="http://www.w3.org/2000/svg">
+  <rect width="2048" height="2732" fill="#1cb0f6"/>
+  <circle cx="1024" cy="1366" r="307.2" fill="white" opacity="0.2"/>
+  <text x="1024" y="1366" font-family="Arial, sans-serif" font-size="245.76" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">DuoLearn</text>
+  <text x="1024" y="1857.52" font-family="Arial, sans-serif" font-size="92.16" fill="white" text-anchor="middle" dominant-baseline="middle">Master Languages & Psychology</text>
+</svg>

@@ -1,0 +1,346 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B3",
+  "unitTitle": "The Herd Mind: Social Engineering",
+  "lessonId": "B3-1",
+  "lessonTitle": "Social Proof: The Power of the Crowd",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: Manufacturing Consensus",
+  "objective": "To define 'Social Proof' as a psychological trigger that causes people to copy the actions of others, and to identify how manipulators manufacture fake consensus (Astroturfing, Salted Tip Jars) to force compliance.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B3-1-P1-S1",
+      "screenType": "Learn",
+      "title": "The Herd Instinct",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When humans are unsure what to do, they look around to see what everyone else is doing. This is **Social Proof**."
+        },
+        {
+          "type": "paragraph",
+          "text": "Manipulators exploit this by *manufacturing* a crowd. They hire fake fans, write fake reviews, or seed 'tip jars' with their own money to make you believe 'everyone' is complying."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Trap: You think you are following the crowd, but you are actually following a script written by one person."
+        }
+      ]
+    },
+    {
+      "screenId": "B3-1-P1-S2",
+      "screenType": "Exercises",
+      "title": "Defining the Crowd",
+      "exercises": [
+        {
+          "exerciseId": "B3-1-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is **Social Proof**?",
+          "options": [
+            "Proving you have friends.",
+            "The psychological phenomenon where people assume the actions of others in an attempt to reflect correct behavior for a given situation.",
+            "Social Media.",
+            "Being popular."
+          ],
+          "correct": "The psychological phenomenon where people assume the actions of others in an attempt to reflect correct behavior for a given situation.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If 99 people run to the exit, you will run too, even if you don't see a fire. It is an evolutionary survival mechanism.",
+            "incorrect": "It is not about popularity; it is about conformity and correctness."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: A bartender puts $20 of their own money into the tip jar before the bar opens.",
+          "question": "Why do they do this?",
+          "options": [
+            "To save money.",
+            "To create **Artificial Social Proof**. It signals to customers that 'tipping is the norm' and 'people tip cash'.",
+            "They lost a bet.",
+            "To hide it."
+          ],
+          "correct": "To create **Artificial Social Proof**. It signals to customers that 'tipping is the norm' and 'people tip cash'.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. An empty jar signals 'No one tips.' A full jar signals 'Everyone tips.' We follow the herd.",
+            "incorrect": "It is a visual cue to manipulate behavior. It is 'Salting the Jar'."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P1-E3",
+          "type": "fill-in",
+          "sentence": "We are most influenced by people who we perceive as (--------) to us.",
+          "options": [
+            "similar",
+            "superior",
+            "scary",
+            "rich"
+          ],
+          "answers": [
+            "similar"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is 'Similarity Bias.' We follow our own tribe. That's why ads use 'normal people' testimonials.",
+            "incorrect": "While we follow authority (superior), Social Proof works best when the crowd looks like *us*."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'Over 1 Million Served.'",
+          "question": "Is this a Social Proof appeal?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It doesn't say the burger is good. It says 'A million people ate it, so it must be safe/good.' It replaces quality with quantity.",
+            "incorrect": "It relies entirely on the volume of the crowd to persuade you."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P1-E5",
+          "type": "matching",
+          "question": "Match the Tactic to the Definition:",
+          "pairs": [
+            {
+              "term": "Astroturfing",
+              "definition": "Fake grassroots support (e.g., paying people to pretend to be activists/fans)."
+            },
+            {
+              "term": "Canned Laughter",
+              "definition": "Laugh tracks in sitcoms that trick your brain into finding jokes funnier."
+            },
+            {
+              "term": "The Line",
+              "definition": "Creating an artificial line outside a club to make it look popular."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Astroturfing creates fake movements. Canned Laughter creates fake joy. The Line creates fake demand.",
+            "incorrect": "Think about the mechanism. Fake grass = Astroturf. Fake line = Scarcity/Proof."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the Bystander Effect:",
+          "words": [
+            "people",
+            "help",
+            "The",
+            "present,",
+            "less",
+            "likely",
+            "to",
+            "more",
+            "the"
+          ],
+          "correct": "The more people present, the less likely to help",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If everyone else is ignoring the victim, Social Proof tells you: 'It must not be an emergency.'",
+            "incorrect": "We look to the crowd to interpret the emergency. If the crowd is passive, we become passive."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "A marketing tactic where a company pays people to write positive reviews or creates bot accounts to boost a rating.",
+          "question": "What is this?",
+          "options": [
+            "Review Farming / Astroturfing",
+            "Good Marketing",
+            "Honesty",
+            "Socializing"
+          ],
+          "correct": "Review Farming / Astroturfing",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 90% of people read reviews. Manipulating them creates a false reality of consensus.",
+            "incorrect": "It is deception. It manufactures a crowd that doesn't exist."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: You are walking by a street performer. No one is watching. You keep walking. Five minutes later, a crowd gathers. You stop to watch.",
+          "question": "Why did you stop the second time?",
+          "options": [
+            "The performer got better.",
+            "Social Proof validated the performance as 'worth watching'.",
+            "You were tired.",
+            "You like crowds."
+          ],
+          "correct": "Social Proof validated the performance as 'worth watching'.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The crowd signaled Value. Without the crowd, you didn't want to risk being the only one (Social Risk).",
+            "incorrect": "The performance didn't change. The *social signal* changed."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are launching a new app. You have no users. You create 100 fake accounts to make the community look active so real users will join.",
+          "question": "Is this ethical?",
+          "options": [
+            "Yes, 'Fake it 'til you make it.'",
+            "No, it is fraud/deception.",
+            "Yes, everyone does it.",
+            "No, but do it anyway."
+          ],
+          "correct": "No, it is fraud/deception.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is 'Seeding.' While common, it is a lie about the product's adoption. Ethical growth relies on real value.",
+            "incorrect": "Just because it works (Reddit did this) doesn't make it transparent or ethical."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P1-E10",
+          "type": "fill-in",
+          "sentence": "Social Proof creates a (--------) shortcut. We assume the crowd knows something we don't.",
+          "options": [
+            "heuristic",
+            "physical",
+            "visual",
+            "slow"
+          ],
+          "answers": [
+            "heuristic"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. A Heuristic is a mental shortcut. 'Crowd = Good' saves the brain from analyzing the data itself.",
+            "incorrect": "It is a cognitive shortcut (heuristic), not a physical one."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P1-E11",
+          "type": "multiple-choice",
+          "question": "What is the 'Bandwagon Effect'?",
+          "options": [
+            "Playing music.",
+            "The tendency to do (or believe) things because many other people do (or believe) the same.",
+            "Driving a wagon.",
+            "Being original."
+          ],
+          "correct": "The tendency to do (or believe) things because many other people do (or believe) the same.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. As the 'Bandwagon' fills up, the pressure to jump on increases. It creates momentum.",
+            "incorrect": "It is about mass adoption and the fear of being left behind."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P1-E12",
+          "type": "scenario",
+          "scene": "Scenario: 'Everyone is buying this stock! You have to get in now!'",
+          "question": "This combines Social Proof with:",
+          "options": [
+            "Scarcity / FOMO.",
+            "Logic.",
+            "Patience.",
+            "Generosity."
+          ],
+          "correct": "Scarcity / FOMO.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Everyone is doing it' (Social Proof) + 'Get in now' (Scarcity) = Irrational Exuberance (Bubbles).",
+            "incorrect": "This is the recipe for a financial bubble. It bypasses due diligence."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P1-E13",
+          "type": "true-false",
+          "scene": "Scenario: You are in an elevator. Everyone turns to face the back wall.",
+          "question": "Will you likely turn to face the back wall too?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Experiments show almost everyone turns. The pressure to conform to the immediate group norm is overpowering.",
+            "incorrect": "We underestimate our own conformity. The social pressure to fit in is primal."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P1-E14",
+          "type": "matching",
+          "question": "Match the Social Proof Source to the Strength:",
+          "pairs": [
+            {
+              "term": "Celebrity Endorsement",
+              "definition": "High Visibility / Halo Effect."
+            },
+            {
+              "term": "Expert Endorsement",
+              "definition": "High Authority / Credibility."
+            },
+            {
+              "term": "Peer Endorsement ('People like you')",
+              "definition": "High Relatability / Similarity."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. We trust experts for facts, celebrities for aspirations, and peers for relevance.",
+            "incorrect": "Similarity is often the strongest trigger for behavior change."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Herd",
+          "scene": "You now understand that 'Consensus' can be faked. The crowd might be paid actors, bots, or simply other confused people following the first person.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Spotting the 'Bandwagon' (Real-world examples).",
+            "Following the crowd.",
+            "Buying likes.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: Spotting the 'Bandwagon' (Real-world examples).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We need to train you to see the strings behind the 'Popular' movement.",
+            "incorrect": "Next up: Practical detection of manufactured popularity."
+          }
+        }
+      ]
+    }
+  ]
+}

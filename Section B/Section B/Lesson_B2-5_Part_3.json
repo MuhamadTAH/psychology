@@ -1,0 +1,347 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B2",
+  "unitTitle": "The Frame Game: Controlling Perception",
+  "lessonId": "B2-5",
+  "lessonTitle": "Unit B2 Review: The Architect",
+  "lessonType": "Review",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Spin Doctor\" Boss Scenario",
+  "objective": "To master the defense against advanced Framing manipulation by identifying and neutralizing 'Spin,' 'Anchoring,' 'Altercasting,' and 'Reframing' in a high-pressure crisis simulation.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 500,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Unit_B2_Grandmaster_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B2-5-P3-S1",
+      "screenType": "Learn",
+      "title": "Final Challenge: The Spin Room",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are entering a Crisis Simulation. Your opponent is 'The Spin Doctor,' a master of perception management. They will try to frame you as the villain, the fool, or the failure."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Do not accept their Frame. Do not accept their Anchor. Do not accept their Label. Define your own reality."
+        }
+      ]
+    },
+    {
+      "screenId": "B2-5-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Crisis",
+      "exercises": [
+        {
+          "exerciseId": "B2-5-P3-E1",
+          "type": "boss-scenario",
+          "scene": "Phase 1: The Pre-Frame. Before the meeting starts, The Spin Doctor says loudly to the group: 'I know [Your Name] has been struggling lately, but let's all be supportive today.'",
+          "question": "This 'Poisoned Well' frames you as incompetent. How do you shatter it?",
+          "options": [
+            "'I haven't been struggling!' (Defensive)",
+            "Ignore it.",
+            "'Actually, my team just hit record numbers this quarter. I'm excited to share the strategy.' (Fact-Based Reframe)",
+            "'You are the one struggling.' (Attack)"
+          ],
+          "correct": "'Actually, my team just hit record numbers this quarter. I'm excited to share the strategy.' (Fact-Based Reframe)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You rejected the 'Struggle Frame' with hard data ('record numbers') and pivoted to the 'Success Frame.' You ignored the bait.",
+            "incorrect": "Defense validates the accusation. Silence accepts the label. You must replace their frame with a better one."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Phase 2: The Anchor Trap",
+          "steps": [
+            {
+              "scene": "The Spin Doctor proposes a budget: 'We need to cut costs. I propose we cut your department's budget by 50%. It's the only way to save the company.' (Extreme Low Anchor + Crisis Frame).",
+              "options": [
+                "'50% is impossible! Maybe 20%?' (Splitting the Difference)",
+                "'I reject that premise entirely. A 50% cut destroys the department, which destroys revenue. We need to discuss growth, not suicide.' (Re-Anchoring)",
+                "'Okay, if it saves the company.' (Submission)",
+                "Panic."
+              ],
+              "correct": "'I reject that premise entirely. A 50% cut destroys the department, which destroys revenue. We need to discuss growth, not suicide.' (Re-Anchoring)",
+              "feedback": {
+                "correct": "Perfect. You realized '50%' was an absurd Anchor designed to make '20%' look good. You rejected the range and reframed 'Savings' as 'Suicide'.",
+                "incorrect": "If you negotiate from 50%, you lose. You must reject the premise that the cut is necessary."
+              }
+            },
+            {
+              "question": "Spin Doctor: 'Wow. I didn't realize you cared more about your department than the survival of the company.' (Identity Bind / Guilt).",
+              "options": [
+                "'I do care about the company!' (J.A.D.E.)",
+                "'My department *is* the survival of the company. Cutting it is negligent. I am protecting the bottom line.' (Reframing Integrity)",
+                "'You are manipulating me.' (Calling it out)",
+                "Apologize."
+              ],
+              "correct": "'My department *is* the survival of the company. Cutting it is negligent. I am protecting the bottom line.' (Reframing Integrity)",
+              "feedback": {
+                "correct": "Mastery. They tried to frame you as 'Selfish.' You reframed yourself as 'The Protector of Profit.' You flipped the script.",
+                "incorrect": "Defending your character is a trap. Defend the *logic*."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Anchor. You realized that extreme demands are usually bluffs.",
+            "incorrect": "You let them frame 'destruction' as 'saving.' You lost the budget."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P3-E3",
+          "type": "scenario",
+          "scene": "Phase 3: The Decoy. 'Fine. If you won't cut the budget, we have to fire your assistant, Bob. It's either the budget or Bob.'",
+          "question": "This is a False Dilemma. What is Option C?",
+          "options": [
+            "Fire Bob.",
+            "Cut the budget.",
+            "'Neither. We can find savings in the marketing overlap, which saves more money than firing Bob.' (Creative Solution)",
+            "Quit."
+          ],
+          "correct": "'Neither. We can find savings in the marketing overlap, which saves more money than firing Bob.' (Creative Solution)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. 'A or B' is a trap. There is always a 'C.' You found the money elsewhere.",
+            "incorrect": "Don't choose your poison. Reject the menu."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P3-E4",
+          "type": "multiple-choice",
+          "question": "Why does The Spin Doctor use 'We' language ('We need to sacrifice') when they really mean 'You'?",
+          "options": [
+            "To share the pain.",
+            "To hide their own lack of sacrifice behind a mask of 'Team Unity.'",
+            "They are nice.",
+            "It's grammar."
+          ],
+          "correct": "To hide their own lack of sacrifice behind a mask of 'Team Unity.'",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'We need to tighten our belts' usually means 'You starve, I eat.' It diffuses responsibility.",
+            "incorrect": "It is a linguistic trick to enforce compliance."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P3-E5",
+          "type": "true-false",
+          "scene": "Scenario: 'A real leader would make the tough call.'",
+          "question": "Is this Altercasting?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are casting you in the role of 'Leader,' but defining 'Leader' as 'Someone who does what I want.'",
+            "incorrect": "It forces you to comply to keep the title."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P3-E6",
+          "type": "ethical-dilemma",
+          "scene": "You win the argument. The Spin Doctor looks defeated. 'Okay, you win. I guess I'm just not smart enough to run this meeting.' (Pity Frame).",
+          "question": "Do you comfort them?",
+          "options": [
+            "Yes, be gracious.",
+            "No. This is a 'Victim Pivot.' Stay professional: 'Glad we agreed. Let's move to the next item.'",
+            "Mock them.",
+            "Apologize."
+          ],
+          "correct": "No. This is a 'Victim Pivot.' Stay professional: 'Glad we agreed. Let's move to the next item.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you comfort them, you lose the power you just gained. They want you to feel guilty for winning.",
+            "incorrect": "Don't apologize for competence. Don't fall for the sudden vulnerability."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the Master Frame:",
+          "words": [
+            "Meaning",
+            "Reality",
+            "follows",
+            "Context",
+            "follows"
+          ],
+          "correct": "Meaning follows Context follows Reality",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Reality happens -> Context is set -> Meaning is derived. If you change the Context, you change the Meaning.",
+            "incorrect": "Control the Context (Frame) to control the Meaning."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "Using a high price on a menu item that no one buys, just to make the second-highest item look affordable.",
+          "question": "What is this item called?",
+          "options": [
+            "The Anchor Item",
+            "The Special",
+            "The Loss Leader",
+            "The Trap"
+          ],
+          "correct": "The Anchor Item",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The $100 steak sells the $50 steak.",
+            "incorrect": "It is there to anchor the price perception."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P3-E9",
+          "type": "scenario",
+          "scene": "Scenario: 'You can help me, or you can prove you don't care.'",
+          "question": "How do you break this Double Bind?",
+          "options": [
+            "Help them.",
+            "'I care about you, *and* I cannot help you right now. The two are not connected.' (Disconnecting the Link).",
+            "Get angry.",
+            "Say 'I don't care.'"
+          ],
+          "correct": "'I care about you, *and* I cannot help you right now. The two are not connected.' (Disconnecting the Link).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You rejected the logical link between 'Action' and 'Emotion.'",
+            "incorrect": "Accepting the link traps you. Disconnect the wires."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P3-E10",
+          "type": "fill-in",
+          "sentence": "Reframing turns a (--------) into an opportunity.",
+          "options": [
+            "problem",
+            "truth",
+            "lie",
+            "fact"
+          ],
+          "answers": [
+            "problem"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'This isn't a disaster; it's a chance to rebuild better.' Same facts, different energy.",
+            "incorrect": "It's about alchemy. Turning lead into gold."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P3-E11",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm not arguing, I'm just explaining.'",
+          "question": "Is this a Reframe of aggression?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are 'Mansplaining' or dominating, but framing it as 'Education.'",
+            "incorrect": "It re-labels the conflict to make you look like the one who doesn't understand."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P3-E12",
+          "type": "scenario",
+          "scene": "Scenario: A car dealer throws in 'Free floor mats' at the end of a $30,000 deal.",
+          "question": "This utilizes:",
+          "options": [
+            "Contrast (The mats are cheap, but feel like a win).",
+            "Generosity.",
+            "Love.",
+            "Mistake."
+          ],
+          "correct": "Contrast (The mats are cheap, but feel like a win).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. $50 mats feel like a gift next to $30,000. It closes the deal on a high note.",
+            "incorrect": "It costs them nothing relative to the profit. It buys your goodwill."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P3-E13",
+          "type": "multiple-choice",
+          "question": "What is the danger of 'Relative Deprivation'?",
+          "options": [
+            "It makes you spend money you don't have to keep up with people you don't like.",
+            "It makes you save money.",
+            "It makes you happy.",
+            "It has no effect."
+          ],
+          "correct": "It makes you spend money you don't have to keep up with people you don't like.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Keeping up with the Joneses is a Contrast Trap. You judge your life by theirs, not by your own needs.",
+            "incorrect": "It fuels consumerism and unhappiness."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P3-E14",
+          "type": "scenario",
+          "scene": "Scenario: 'You're the only one who complains about this.' (Isolation Frame).",
+          "question": "The defense is:",
+          "options": [
+            "'Then I am the only one with the courage to speak up.' (Positive Reframe).",
+            "Shut up.",
+            "Apologize.",
+            "Check with others."
+          ],
+          "correct": "'Then I am the only one with the courage to speak up.' (Positive Reframe).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You took the uniqueness ('Only one') and made it a virtue ('Courage'), not a vice ('Complainer').",
+            "incorrect": "Don't let them shame you into silence. Own the frame."
+          }
+        },
+        {
+          "exerciseId": "B2-5-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Unit B2 Complete: The Architect Defeated",
+          "scene": "You have dismantled the Spin Doctor. You see the Frames, the Anchors, and the Decoys. You define your own reality.",
+          "question": "You are ready for Unit B3:",
+          "options": [
+            "Unit B3: The Herd Mind (Social Engineering).",
+            "Lesson A1-1.",
+            "Following the crowd.",
+            "Sleeping."
+          ],
+          "correct": "Unit B3: The Herd Mind (Social Engineering).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We have mastered Language (B1) and Perception (B2). Now we look at the Group. How do they use the *Crowd* to control you?",
+            "incorrect": "Next up: Social Proof and Authority."
+          }
+        }
+      ]
+    }
+  ]
+}

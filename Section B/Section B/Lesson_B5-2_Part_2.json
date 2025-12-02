@@ -1,0 +1,333 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B5",
+  "unitTitle": "Section B Grand Review: The Master Tactician",
+  "lessonId": "B5-2",
+  "lessonTitle": "Social & Emotional Levers Review",
+  "lessonType": "Review",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Breaking the Spell",
+  "objective": "To practice real-time defense strategies against high-pressure emotional manipulation (Scarcity, Reciprocity, Fear) by applying techniques like 'The Pause', 'Verification', and 'Refusal'.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B5-2-P2-S1",
+      "screenType": "Learn",
+      "title": "The Pressure Chamber",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When a manipulator pulls a lever (Fear, Urgency, Debt), your brain wants to react instinctively. To win, you must override that instinct."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Universal Defense: **Stop. Breathe. Think.** If you feel pressure, the answer is 'Wait'."
+        }
+      ]
+    },
+    {
+      "screenId": "B5-2-P2-S2",
+      "screenType": "Exercises",
+      "title": "Defusing the Bomb",
+      "exercises": [
+        {
+          "exerciseId": "B5-2-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: 'This deal ends in 5 minutes. If you walk away, it's gone forever.'",
+          "question": "The Defense is:",
+          "options": [
+            "Buy it.",
+            "Ask for 10 minutes.",
+            "'If I have to decide in 5 minutes, the answer is No. I need 24 hours.' (The Pause).",
+            "Panic."
+          ],
+          "correct": "'If I have to decide in 5 minutes, the answer is No. I need 24 hours.' (The Pause).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You must kill the urgency. If the deal is real, they will wait. If it's a trap, they will panic.",
+            "incorrect": "Asking for 10 minutes accepts the frame of urgency. You need to step out of the pressure entirely."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is the best response to an 'Unsolicited Gift' (Reciprocity Trap)?",
+          "options": [
+            "Accept it and pay them back immediately.",
+            "Refuse it politely, or accept it as a 'Marketing Gimmick' with zero obligation attached.",
+            "Take it and feel guilty.",
+            "Yell at them."
+          ],
+          "correct": "Refuse it politely, or accept it as a 'Marketing Gimmick' with zero obligation attached.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You can say 'No thank you.' Or, if you take the free cheese sample, realize it is an ad, not a gift. You owe the grocery store nothing.",
+            "incorrect": "Paying them back confirms the contract. Guilt is the trap."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P2-E3",
+          "type": "scenario",
+          "scene": "Scenario: 'Everyone else signed the petition. Why are you being difficult?'",
+          "question": "This combines Social Proof with:",
+          "options": [
+            "Shaming / Isolation.",
+            "Logic.",
+            "Kindness.",
+            "Truth."
+          ],
+          "correct": "Shaming / Isolation.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are using the herd to crush your individuality. The defense is to be comfortable being the 'Outlier'.",
+            "incorrect": "It creates a social cost for non-compliance."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P2-E4",
+          "type": "fill-in",
+          "sentence": "Fear makes you trade your (--------) for safety.",
+          "options": [
+            "freedom",
+            "money",
+            "shoes",
+            "lunch"
+          ],
+          "answers": [
+            "freedom"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Whether it's a dictator or an abusive partner, the trade is always 'Obey me and I will protect you.'",
+            "incorrect": "The cost of false safety is autonomy (freedom)."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P2-E5",
+          "type": "true-false",
+          "scene": "Scenario: 'I am the only one who can help you.'",
+          "question": "Is this a form of Scarcity?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is 'Monopoly Scarcity.' They are positioning themselves as the *only* source of a solution, making them invaluable.",
+            "incorrect": "It creates dependency. Always check if other options exist (they usually do)."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: A stranger asks to borrow your phone. 'It's an emergency.'",
+          "question": "The Safe Move:",
+          "options": [
+            "Hand them the phone unlocked.",
+            "Say 'No.'",
+            "Dial the number for them and put it on speaker, holding the phone yourself.",
+            "Run."
+          ],
+          "correct": "Dial the number for them and put it on speaker, holding the phone yourself.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You address the 'Emergency' (Humanity) without surrendering 'Control' (Security).",
+            "incorrect": "Never unlock your device for a stranger. That is a total security breach."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the antidote to 'Hope-Mongering':",
+          "words": [
+            "True",
+            "good",
+            "Too",
+            "to",
+            "be"
+          ],
+          "correct": "Too good to be True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If the promise is impossible (1000% returns, instant weight loss), it is a lie. Trust physics, not magic.",
+            "incorrect": "Your greed wants it to be true. Your logic knows it isn't."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "A technique where a seller creates a false sense of rivalry (e.g., 'Another buyer is coming at 3 PM') to force a sale.",
+          "question": "What is this?",
+          "options": [
+            "The Phantom Competitor",
+            "The Silent Treatment",
+            "The Hook",
+            "The Mirror"
+          ],
+          "correct": "The Phantom Competitor",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You are bidding against a ghost. Call the bluff: 'Okay, sell it to them.'",
+            "incorrect": "It uses Scarcity + Social Proof to trigger auction fever."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "A friend keeps 'forgetting' their wallet, forcing you to pay. They always promise to pay you back but never do.",
+          "question": "How do you stop this?",
+          "options": [
+            "Pay again and resent them.",
+            "Stop inviting them out.",
+            "Set a boundary: 'I can't cover you this time. You'll have to ask the restaurant for help.' (Consequences).",
+            "Steal their wallet."
+          ],
+          "correct": "Set a boundary: 'I can't cover you this time. You'll have to ask the restaurant for help.' (Consequences).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. As long as you rescue them, they will never bring their wallet. You must let them face the consequence of their action.",
+            "incorrect": "Paying enables the behavior. They are using 'Feigned Incompetence' to exploit your wallet."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'I worked all weekend on this for you.' (They didn't ask you to).",
+          "question": "This is:",
+          "options": [
+            "The Martyr / Reciprocity Trap.",
+            "Love.",
+            "Efficiency.",
+            "Kindness."
+          ],
+          "correct": "The Martyr / Reciprocity Trap.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are manufacturing a debt. 'I suffered for you, now you must suffer for me.'",
+            "incorrect": "Unsolicited suffering is manipulation, not kindness."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P2-E11",
+          "type": "fill-in",
+          "sentence": "If you feel a sudden rush of (--------) to buy something, stop. That is the manipulator's chemical weapon.",
+          "options": [
+            "anxiety",
+            "calm",
+            "sleep",
+            "joy"
+          ],
+          "answers": [
+            "anxiety"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Scarcity = Anxiety. Anxiety tells you to 'Act Now.' Logic tells you to 'Think First.'",
+            "incorrect": "Calm decisions are usually good. Anxious decisions are usually bad."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'If you don't donate, these puppies will starve.'",
+          "question": "Is this the 'False Dilemma' fear tactic?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It frames the choice as 'Your Money or Death.' In reality, the charity has other funds. It exploits guilt and urgency.",
+            "incorrect": "It puts the weight of life and death on your $10. That is manipulation."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: You receive a call from 'The Sheriff's Office' demanding gift cards to pay a warrant.",
+          "question": "The red flags are:",
+          "options": [
+            "Authority (Sheriff) + Fear (Warrant) + Strange Payment Method (Gift Cards).",
+            "None. Pay it.",
+            "It is real.",
+            "They are nice."
+          ],
+          "correct": "Authority (Sheriff) + Fear (Warrant) + Strange Payment Method (Gift Cards).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Police *never* take gift cards. This is a fear-based Vishing attack.",
+            "incorrect": "The payment method is the biggest tell. Authority figures don't take iTunes cards."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P2-E14",
+          "type": "matching",
+          "question": "Match the Tactic to the Defense:",
+          "pairs": [
+            {
+              "term": "Fake Authority",
+              "definition": "Verify independently (Call the office)."
+            },
+            {
+              "term": "Fake Scarcity",
+              "definition": "Wait 24 hours."
+            },
+            {
+              "term": "Fake Consensus (Bandwagon)",
+              "definition": "Trust your own eyes/data."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Verification kills fake authority. Time kills fake scarcity. Data kills fake social proof.",
+            "incorrect": "Match the specific shield to the specific weapon."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Pressure Release",
+          "scene": "You have practiced neutralizing the pressure. You know that when someone pushes you, the correct response is to step back, not push back.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Pressure Test' (Simulation).",
+            "A quiz.",
+            "A nap.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Pressure Test' (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you keep your head when everyone around you is losing theirs? Let's test it.",
+            "incorrect": "Next up: The final pressure simulation."
+          }
+        }
+      ]
+    }
+  ]
+}

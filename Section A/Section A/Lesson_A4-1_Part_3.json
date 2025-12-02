@@ -1,0 +1,380 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A4",
+  "unitTitle": "The Void Behind the Mask: Psychopathy",
+  "lessonId": "A4-1",
+  "lessonTitle": "The Biological Predator",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Fearless\" Simulation",
+  "objective": "To master the interaction with a Primary Psychopath by recognizing that fear/guilt tactics will fail, and instead using leverage, consequences, and 'Grey Rock' boredom.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Predator_Proof_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A4-1-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: Into the Cage",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are about to simulate an interaction with a **Primary Psychopath**. Remember: They do not feel fear. Threats will not work. They do not feel guilt. Pity will not work."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Be boring, be unmovable, and focus on **Consequences**, not Conscience."
+        }
+      ]
+    },
+    {
+      "screenId": "A4-1-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Predator",
+      "exercises": [
+        {
+          "exerciseId": "A4-1-P3-E1",
+          "type": "boss-scenario",
+          "scene": "You catch a Psychopath stealing from the company. You confront them. They stare at you calmly and say: 'If you tell anyone, I will make sure you never work in this industry again.'",
+          "question": "This is 'Cold Intimidation.' What is your move?",
+          "options": [
+            "Get angry and scream at them.",
+            "Get scared and promise not to tell.",
+            "Maintain eye contact, say 'I understand your position,' then leave and report them immediately with evidence.",
+            "Try to reason with them about why stealing is wrong."
+          ],
+          "correct": "Maintain eye contact, say 'I understand your position,' then leave and report them immediately with evidence.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Do not fight (they like it). Do not submit (they own you). Do not moralize (they don't care). **Act** swiftly with evidence.",
+            "incorrect": "Reasoning implies they care about morals. Anger implies they hurt you. Fear implies they won. Action is the only language they respect."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Stare",
+          "steps": [
+            {
+              "scene": "You are in a meeting. The Psychopath is staring at you intensely without blinking (The Predatory Gaze). It feels uncomfortable.",
+              "options": [
+                "Stare back aggressively to show dominance.",
+                "Look down at your feet (Submission).",
+                "Look at them neutrally, then check your notes calmly (Indifference).",
+                "Ask 'What are you looking at?' (Reaction)."
+              ],
+              "correct": "Look at them neutrally, then check your notes calmly (Indifference).",
+              "feedback": {
+                "correct": "Perfect. Staring back invites a fight (Stimulation). Looking down shows fear (Prey). Indifference shows they are **boring**.",
+                "incorrect": "Don't play their game. If you react, you are providing stimulation. Be boring."
+              }
+            },
+            {
+              "question": "They smile slowly. 'You're quiet today. Something wrong?' (Baiting).",
+              "options": [
+                "'I'm just focusing on the work.' (Grey Rock)",
+                "'Why do you care?' (Defensive)",
+                "'You're creeping me out.' (Vulnerable)",
+                "Ignore them completely."
+              ],
+              "correct": "'I'm just focusing on the work.' (Grey Rock)",
+              "feedback": {
+                "correct": "Mastery. You gave a non-answer. It is polite but empty. There is no 'hook' for them to grab.",
+                "incorrect": "Calling them creepy tells them their tactic is working. Ignoring them completely can be seen as a challenge. Neutrality is safer."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Gaze. You refused to be Prey or Rival. You were just a Rock.",
+            "incorrect": "You reacted. To a predator, a reaction is an invitation to chase."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why is it dangerous to tell a Psychopath 'You are hurting my feelings'?",
+          "options": [
+            "They will apologize.",
+            "They will feel guilty.",
+            "You are giving them a map of your weak points, which they will target later for amusement.",
+            "They will leave."
+          ],
+          "correct": "You are giving them a map of your weak points, which they will target later for amusement.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Information is ammo. Telling them 'X hurts me' guarantees they will do X again when they are bored.",
+            "incorrect": "They don't feel guilt. They feel **utility**. You just made yourself useful as a toy."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P3-E4",
+          "type": "fill-in",
+          "sentence": "You cannot punish a Psychopath with (--------); you can only punish them with (--------).",
+          "options": [
+            "guilt",
+            "consequences",
+            "love",
+            "anger"
+          ],
+          "answers": [
+            "guilt",
+            "consequences"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They have no internal judge (Guilt). They only respect external barriers (Consequences/Jail/Loss).",
+            "incorrect": "Guilt is internal. They lack it. You must use external force (law, rules, boundaries)."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: A Psychopath is driving recklessly to scare you. They are laughing.",
+          "question": "What is the goal?",
+          "options": [
+            "To get to the destination faster.",
+            "Stimulation. Your fear is 'Negative Supply' that alleviates their chronic boredom.",
+            "They are bad drivers.",
+            "To impress you."
+          ],
+          "correct": "Stimulation. Your fear is 'Negative Supply' that alleviates their chronic boredom.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The 'Primary' psychopath has low arousal. They need extreme situations (your terror) to feel 'alive'.",
+            "incorrect": "It's not about the destination. It's about feeding off your high arousal state."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'I promise I'll change. I've found God/Therapy/Meditation.'",
+          "question": "Should you believe a Primary Psychopath who says this?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. Psychopathy is a neurological structure, not a habit. They often mimic 'redemption arcs' because they know society loves a comeback story. It is a mask.",
+            "incorrect": "They learn the *language* of therapy to become better manipulators, not better people."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the Psychopath's weakness:",
+          "words": [
+            "Overconfidence",
+            "is",
+            "Achilles",
+            "their",
+            "Heel"
+          ],
+          "correct": "Overconfidence is their Achilles Heel",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Because they lack fear, they take stupid risks. They believe they are smarter than everyone and will eventually get caught.",
+            "incorrect": "They don't fear getting caught, which leads to sloppy mistakes."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A tactic where the predator acts helpless or injured (like 'Ted Bundy' with his fake cast) to lure a victim closer.",
+          "question": "What is this?",
+          "options": [
+            "The Pity Play / Wolf in Sheep's Clothing",
+            "Love Bombing",
+            "Gaslighting",
+            "Narcissistic Rage"
+          ],
+          "correct": "The Pity Play / Wolf in Sheep's Clothing",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Normal people have an urge to help the weak. Predators exploit this instinct to close the distance.",
+            "incorrect": "This is a specific ambush tactic. 'Help me' is the lure."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You realize your charming new friend is a Psychopath. They haven't hurt you yet, but you see them manipulating others.",
+          "question": "What is the safest exit?",
+          "options": [
+            "Confront them: 'I know what you are!'",
+            "Warn everyone they know.",
+            "The 'Slow Fade.' Become boring, busy, and uninteresting until they discard you.",
+            "Stay friends to stay safe."
+          ],
+          "correct": "The 'Slow Fade.' Become boring, busy, and uninteresting until they discard you.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Confrontation triggers a 'Predatory Challenge.' Warning others makes you a target. 'Boring' makes you useless. Let *them* leave *you*.",
+            "incorrect": "If you confront a predator, you become the prey. You want to be invisible, not a hero."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: You catch them in a lie. Instead of denying it, they smile and say, 'Yeah, I did. So what? What are you going to do about it?'",
+          "question": "This is:",
+          "options": [
+            "Radical Honesty.",
+            "The Mask Drop (Intimidation).",
+            "A joke.",
+            "Trust."
+          ],
+          "correct": "The Mask Drop (Intimidation).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They know you have no leverage, so they drop the mask. The smile is the threat. They are showing you that social rules don't apply to them.",
+            "incorrect": "It's not honesty; it's a power flex. They are daring you to act."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P3-E11",
+          "type": "fill-in",
+          "sentence": "A Psychopath does not have (--------), but they can learn to (--------) it perfectly.",
+          "options": [
+            "empathy",
+            "fake",
+            "money",
+            "fear"
+          ],
+          "answers": [
+            "empathy",
+            "fake"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is 'Cognitive Empathy.' They study humans like an anthropologist studies monkeys. They know exactly when to cry.",
+            "incorrect": "They don't *feel* it. They *perform* it."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P3-E12",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Charm Switch",
+          "steps": [
+            {
+              "scene": "You threaten to leave. The Psychopath instantly switches from 'Cold' to 'Super Charming.' 'Wait, you're right. I've been a jerk. Let me take you to dinner.'",
+              "options": [
+                "Believe them. They realized my value!",
+                "Accept the dinner but stay suspicious.",
+                "Recognize the 'Instrumental Charm.' Refuse the dinner. Leave.",
+                "Ask for an apology."
+              ],
+              "correct": "Recognize the 'Instrumental Charm.' Refuse the dinner. Leave.",
+              "feedback": {
+                "correct": "Mastery. The charm is a tool to regain control. The instant switch proves it is fake. Real change takes time; fake change is instant.",
+                "incorrect": "If you accept, you teach them that 'Charm' fixes 'Abuse.' The cycle will repeat."
+              }
+            },
+            {
+              "question": "They see the charm isn't working. Their face goes blank. 'Fine. Go. You'll be back.' (The Mask Drop).",
+              "options": [
+                "'Is that a threat?' (React)",
+                "'Maybe.' (Ambiguity)",
+                "Leave silently. (No Contact)",
+                "Cry."
+              ],
+              "correct": "Leave silently. (No Contact)",
+              "feedback": {
+                "correct": "Perfect. The mask dropped because the tool (charm) failed. Do not engage with the threat. Just go.",
+                "incorrect": "Any word you speak gives them a hook. Silence is the strongest answer."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Charm Switch. You saw the mechanic behind the smile.",
+            "incorrect": "You got hooked by the sudden warmth. It was a trap."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P3-E13",
+          "type": "matching",
+          "question": "Match the Reaction to the Meaning:",
+          "pairs": [
+            {
+              "term": "They are bored.",
+              "definition": "Dangerous (Seeking Stimulation)."
+            },
+            {
+              "term": "They are calm in crisis.",
+              "definition": "Biological Low Arousal."
+            },
+            {
+              "term": "They stare without blinking.",
+              "definition": "Predatory Dominance."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Boredom is the most dangerous state for a psychopath. It means they need to 'break' something to feel good.",
+            "incorrect": "Boredom = Danger. Calm = Biology. Stare = Dominance."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P3-E14",
+          "type": "multiple-choice",
+          "question": "Why do Psychopaths often move constantly or change jobs/partners frequently?",
+          "options": [
+            "They are ambitious.",
+            "Chronic Boredom and a Parasitic Lifestyle (burning bridges).",
+            "They are unlucky.",
+            "They like travel."
+          ],
+          "correct": "Chronic Boredom and a Parasitic Lifestyle (burning bridges).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They exploit a resource (job/partner) until it is dry or boring, then move on. They leave a trail of destruction.",
+            "incorrect": "It's not ambition; it's predation. They are nomads of exploitation."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Void",
+          "scene": "You have looked into the void. You know that some people simply do not have a conscience. You know that 'Fear' and 'Love' are languages they do not speak.",
+          "question": "In Lesson A4-2, we will examine their camouflage:",
+          "options": [
+            "The Super-Charm: Glibness & Superficiality.",
+            "How to be mean.",
+            "Lesson A1-1.",
+            "Sleeping."
+          ],
+          "correct": "The Super-Charm: Glibness & Superficiality.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. How do they hide the void? With 'Glibness' and 'Superficial Charm.' We will learn to spot the fake smile.",
+            "incorrect": "Next up: The Mask of Sanity."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,332 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B3",
+  "unitTitle": "The Herd Mind: Social Engineering",
+  "lessonId": "B3-3",
+  "lessonTitle": "Pretexting & Phishing",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Spotting the Discrepancy",
+  "objective": "To practice identifying specific flaws and 'tells' in fabricated scenarios (Pretexting), such as urgency, emotional pressure, and logical inconsistencies.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B3-3-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Glitch in the Matrix",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A pretext is a lie, and lies are hard to maintain. The manipulator often messes up the details."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Look for the **Discrepancy**: Why is the 'CEO' calling from a blocked number? Why does 'IT Support' sound angry? Why is the 'emergency' happening via email?"
+        }
+      ]
+    },
+    {
+      "screenId": "B3-3-P2-S2",
+      "screenType": "Exercises",
+      "title": "Fact-Checking the Story",
+      "exercises": [
+        {
+          "exerciseId": "B3-3-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: You get an email from 'Netflix': 'Your payment failed. Click here to update.' The sender address is 'support@netflix-billing-update.com'.",
+          "question": "What is the Discrepancy?",
+          "options": [
+            "The URL/Sender Address. Official emails come from the main domain (netflix.com), not a hyphenated subdomain.",
+            "Netflix doesn't have billing.",
+            "The font is wrong.",
+            "It's not a discrepancy."
+          ],
+          "correct": "The URL/Sender Address. Official emails come from the main domain (netflix.com), not a hyphenated subdomain.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the #1 tell in Phishing. Always check the *actual* email address, not just the display name.",
+            "incorrect": "Look at the domain. Scammers buy 'look-alike' domains to trick you."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P2-E2",
+          "type": "multiple-choice",
+          "question": "Why do Social Engineers use 'Urgency' (e.g., 'Act Now or Account Suspended')?",
+          "options": [
+            "To be helpful.",
+            "To induce 'Cognitive Tunneling.' Fear makes you focus on the threat and ignore the red flags (like the weird URL).",
+            "Because they are busy.",
+            "It's a law."
+          ],
+          "correct": "To induce 'Cognitive Tunneling.' Fear makes you focus on the threat and ignore the red flags (like the weird URL).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Panic creates blindness. If you are scared of losing your account, you stop checking for validity.",
+            "incorrect": "It is a biological hack. Stress hormones shut down critical thinking."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P2-E3",
+          "type": "fill-in",
+          "sentence": "A legitimate organization will never ask for your (--------) via email or phone.",
+          "options": [
+            "password",
+            "name",
+            "address",
+            "feedback"
+          ],
+          "answers": [
+            "password"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. No admin needs your password; they have backend access. Asking for a password is the ultimate red flag.",
+            "incorrect": "They might ask for feedback or address, but never the key (password)."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: A 'Tech Support' caller gets angry when you ask for their employee ID.",
+          "question": "Is this a sign of a scam?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Real professionals are used to verification. Scammers use anger/intimidation to force you to stop asking questions.",
+            "incorrect": "Anger is a control tactic. It signals that their cover is threatened."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P2-E5",
+          "type": "matching",
+          "question": "Match the Pretext to the Emotional Hook:",
+          "pairs": [
+            {
+              "term": "\"You won a lottery!\"",
+              "definition": "Greed / Excitement."
+            },
+            {
+              "term": "\"Your grandchild is in jail!\"",
+              "definition": "Fear / Protective Instinct."
+            },
+            {
+              "term": "\"Can you help me carry these boxes?\"",
+              "definition": "Helpfulness / Politeness."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Lottery hooks greed. Jail hooks fear. Boxes hook kindness. All are traps.",
+            "incorrect": "Analyze the emotion they are trying to trigger."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: A stranger walks into your office holding a cup of coffee and talking on the phone. They smile and walk past the receptionist without stopping.",
+          "question": "They are using props (Phone/Coffee) to project:",
+          "options": [
+            "Busyness and Familiarity.",
+            "Hunger.",
+            "Anger.",
+            "Laziness."
+          ],
+          "correct": "Busyness and Familiarity.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you look busy and comfortable, people assume you belong there. Asking you to stop feels like interrupting important work.",
+            "incorrect": "The props are part of the costume. They signal 'I work here.'"
+          }
+        },
+        {
+          "exerciseId": "B3-3-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Spear Phishing' tactic:",
+          "words": [
+            "Targeted",
+            "using",
+            "personal",
+            "attacks",
+            "data"
+          ],
+          "correct": "Targeted attacks using personal data",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Phishing is a net (random). Spear Phishing is a harpoon (targeted). They use your name, job, or hobbies to make the lie believable.",
+            "incorrect": "It is customized deception."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "Looking over someone's shoulder to steal their PIN or password at an ATM or coffee shop.",
+          "question": "What is this called?",
+          "options": [
+            "Shoulder Surfing",
+            "Dumpster Diving",
+            "Vishing",
+            "Tailgating"
+          ],
+          "correct": "Shoulder Surfing",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is a low-tech visual hack. Always cover your hand.",
+            "incorrect": "It relies on line-of-sight."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "You receive an email from your 'Boss' asking you to buy gift cards for a client *right now*. You know the boss is on vacation.",
+          "question": "What do you do?",
+          "options": [
+            "Call the boss on their personal cell to verify.",
+            "Reply to the email.",
+            "Buy the cards.",
+            "Ignore it."
+          ],
+          "correct": "Call the boss on their personal cell to verify.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Use 'Out-of-Band' verification. Contact them through a different channel (phone) than the one the request came from (email).",
+            "incorrect": "Replying to the email just talks to the scammer. You need a separate verification channel."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'Hi, I'm from the electric company. We are in the neighborhood checking meters. Can I come in?'",
+          "question": "If they have no appointment, this is likely:",
+          "options": [
+            "A Pretext for burglary or casing the house.",
+            "Friendly service.",
+            "A mistake.",
+            "Truth."
+          ],
+          "correct": "A Pretext for burglary or casing the house.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Utilities rarely send unannounced inspectors inside homes. They are testing your physical security.",
+            "incorrect": "Never let unverified strangers into your home. Ask for ID and call the company."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P2-E11",
+          "type": "fill-in",
+          "sentence": "Social Engineers exploit the human desire to be (--------).",
+          "options": [
+            "helpful",
+            "mean",
+            "rich",
+            "fast"
+          ],
+          "answers": [
+            "helpful"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We are social animals. We want to open doors, answer questions, and fix problems. They weaponize our kindness.",
+            "incorrect": "They don't exploit meanness; they exploit agreeableness."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: A USB drive is left in the company parking lot labeled 'Payroll 2024'.",
+          "question": "Is this a trap?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is 'Baiting.' Curiosity makes you plug it in, which installs malware.",
+            "incorrect": "It was not lost. It was placed there to hack the network via curiosity."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P2-E13",
+          "type": "multiple-choice",
+          "question": "What is 'Pre-texting' specifically?",
+          "options": [
+            "Creating a fictional backstory or scenario to manipulate someone into giving up information.",
+            "Sending a text before calling.",
+            "Writing a book.",
+            "Being honest."
+          ],
+          "correct": "Creating a fictional backstory or scenario to manipulate someone into giving up information.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It creates a context where giving the information seems logical and safe.",
+            "incorrect": "It's about the 'text' (story) before the 'con'."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P2-E14",
+          "type": "scenario",
+          "scene": "Scenario: A caller asks: 'Can you hear me okay?'",
+          "question": "Why might this be a trap?",
+          "options": [
+            "They are recording your 'Yes' to authorize fraudulent charges (Voice Signature Scam).",
+            "They have a bad connection.",
+            "They are polite.",
+            "They are deaf."
+          ],
+          "correct": "They are recording your 'Yes' to authorize fraudulent charges (Voice Signature Scam).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Be careful saying 'Yes' to strangers on the phone. It can be edited into a verbal contract.",
+            "incorrect": "It sounds like a connection check, but it is a specific recording tactic."
+          }
+        },
+        {
+          "exerciseId": "B3-3-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Glitch Found",
+          "scene": "You can now spot the flaws in the story. The URL is wrong, the urgency is fake, and the request is dangerous.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Social Engineer' Attack (Simulation).",
+            "Hacking a computer.",
+            "Watching a movie.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Social Engineer' Attack (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you defend your data against a live human hacker? Let's find out.",
+            "incorrect": "Next up: A simulation of a targeted Vishing/Phishing attack."
+          }
+        }
+      ]
+    }
+  ]
+}

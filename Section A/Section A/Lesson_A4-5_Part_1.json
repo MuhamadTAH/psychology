@@ -1,0 +1,422 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A4",
+  "unitTitle": "The Void Behind the Mask: Psychopathy",
+  "lessonId": "A4-5",
+  "lessonTitle": "Unit 4 Review: The Predator",
+  "lessonType": "Review",
+  "lessonPart": 1,
+  "lessonPartTitle": "Unit 4 Core Concepts Review",
+  "objective": "To synthesize and test knowledge of Psychopathic traits, including low arousal, superficial charm, parasitic lifestyle, and lack of remorse.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A4-5-P1-S1",
+      "screenType": "Learn",
+      "title": "Unit 4 Review",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You have stared into the Void. You know the Predator (Primary), the Sociopath (Secondary), the Mask (Charm), and the Trap (Pity)."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "This review covers all concepts from Lesson A4-1 to A4-4. Pass this to unlock the final Unit 4 Gauntlet."
+        }
+      ]
+    },
+    {
+      "screenId": "A4-5-P1-S2",
+      "screenType": "Exercises",
+      "title": "Concept Check",
+      "exercises": [
+        {
+          "exerciseId": "A4-5-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the primary biological difference between a Primary Psychopath and a normal person?",
+          "options": [
+            "They have a larger brain.",
+            "They have a reduced fear response (low amygdala activity) and low emotional arousal.",
+            "They are always smarter.",
+            "They sleep more."
+          ],
+          "correct": "They have a reduced fear response (low amygdala activity) and low emotional arousal.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Their 'fear center' is quiet. This allows them to take extreme risks and ignore consequences.",
+            "incorrect": "It is not about intelligence or sleep. It is a neurological deficit in processing fear."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E2",
+          "type": "fill-in",
+          "sentence": "Primary Psychopaths are (--------) (Nature). Secondary Psychopaths/Sociopaths are (--------) (Nurture).",
+          "options": [
+            "born",
+            "made",
+            "rich",
+            "poor"
+          ],
+          "answers": [
+            "born",
+            "made"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Primary is genetic (cold). Secondary is environmental/trauma-based (hot).",
+            "incorrect": "Think: Nature vs. Nurture. Born vs. Made."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E3",
+          "type": "true-false",
+          "scene": "Scenario: 'I hurt you because I was bored.'",
+          "question": "Is boredom a primary motivator for a Psychopath?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Chronic boredom (due to low arousal) drives them to create chaos just to feel 'alive'.",
+            "incorrect": "Boredom is painful for them. They need high stimulation (your pain) to fix it."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E4",
+          "type": "matching",
+          "question": "Match the Dark Triad member to their 'Fuel':",
+          "pairs": [
+            {
+              "term": "Narcissist",
+              "definition": "Admiration (Ego)"
+            },
+            {
+              "term": "Machiavellian",
+              "definition": "Utility (Power)"
+            },
+            {
+              "term": "Psychopath",
+              "definition": "Stimulation (Thrill)"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Narcissists need love. Machiavellians need control. Psychopaths need action.",
+            "incorrect": "Psychopaths are sensation seekers. They hunt for the thrill."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E5",
+          "type": "scenario",
+          "scene": "Scenario: A person smiles warmly while describing a car accident where someone died. Their eyes are flat.",
+          "question": "This emotional mismatch is called:",
+          "options": [
+            "Incongruence / The Mask of Sanity.",
+            "Sadness.",
+            "Shock.",
+            "Empathy."
+          ],
+          "correct": "Incongruence / The Mask of Sanity.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are performing the 'correct' emotion (smiling/talking), but the micro-expressions don't match the content.",
+            "incorrect": "It is not shock. It is a failure to simulate the correct emotion perfectly."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E6",
+          "type": "multiple-choice",
+          "question": "What is 'Glibness'?",
+          "options": [
+            "Being shy.",
+            "Superficial charm and verbal smoothness; the ability to lie without hesitation.",
+            "Being angry.",
+            "Being rich."
+          ],
+          "correct": "Superficial charm and verbal smoothness; the ability to lie without hesitation.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Slick.' They have a quick answer for everything because they have no anxiety to slow them down.",
+            "incorrect": "It describes a smooth, oily verbal style."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E7",
+          "type": "fill-in",
+          "sentence": "A Psychopath views people as (--------) to be used and discarded.",
+          "options": [
+            "objects",
+            "partners",
+            "gods",
+            "equals"
+          ],
+          "answers": [
+            "objects"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Objectification is total. You are a toy, a wallet, or an obstacle. You are never a person.",
+            "incorrect": "They lack the empathy to see you as human."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E8",
+          "type": "reverse-scenario",
+          "answer": "A lifestyle where the individual relies on others for financial support, often through manipulation or theft, while refusing to work.",
+          "question": "What is this trait?",
+          "options": [
+            "Parasitic Lifestyle",
+            "Entrepreneurship",
+            "Bad Luck",
+            "Retirement"
+          ],
+          "correct": "Parasitic Lifestyle",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They feel entitled to your resources. They are the 'Mooch' who never leaves.",
+            "incorrect": "It is active exploitation, not bad luck."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E9",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm sorry you got offended.'",
+          "question": "This is a:",
+          "options": [
+            "Non-Apology.",
+            "Genuine Apology.",
+            "Compliment.",
+            "Question."
+          ],
+          "correct": "Non-Apology.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It blames your reaction ('you got offended'), not their action. It is Gaslighting disguised as politeness.",
+            "incorrect": "A real apology accepts blame for the action."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E10",
+          "type": "ethical-dilemma",
+          "scene": "You realize your new partner is a 'Secondary Psychopath' (Sociopath) who breaks things when angry.",
+          "question": "Can you fix them with enough love?",
+          "options": [
+            "No. You are not a rehabilitation center. You must prioritize your safety and leave.",
+            "Yes, love cures trauma.",
+            "Maybe, if you are patient.",
+            "Yes, if you give them money."
+          ],
+          "correct": "No. You are not a rehabilitation center. You must prioritize your safety and leave.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The 'Savior Complex' is a trap. Volatile aggression is dangerous. You cannot love someone into emotional regulation.",
+            "incorrect": "Love does not cure neurological or deep-seated personality disorders. Safety first."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E11",
+          "type": "matching",
+          "question": "Match the Aggression Type:",
+          "pairs": [
+            {
+              "term": "Instrumental Aggression",
+              "definition": "Cold, planned violence to get a goal (Primary Psychopath)."
+            },
+            {
+              "term": "Reactive Aggression",
+              "definition": "Hot, impulsive violence due to anger (Secondary Psychopath)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Cold = Tool. Hot = Reaction.",
+            "incorrect": "Think about the temperature. Planned is cold. Emotional is hot."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'If you tell anyone what I did, I will destroy you.'",
+          "question": "Is this 'Intimidation' a sign of fear?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. For a Psychopath, it is not fear; it is 'Damage Control.' It is a calculated move to silence a witness.",
+            "incorrect": "They aren't scared of you. They are managing a risk."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E13",
+          "type": "multiple-choice",
+          "question": "Why is 'Pity' the Psychopath's favorite weapon?",
+          "options": [
+            "It is the 'Trojan Horse' to your empathy. If you pity them, you lower your guard.",
+            "They are actually sad.",
+            "They like crying.",
+            "It creates fear."
+          ],
+          "correct": "It is the 'Trojan Horse' to your empathy. If you pity them, you lower your guard.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'The Wolf in Sheep's Clothing.' Pity allows the predator to get close enough to bite.",
+            "incorrect": "It disarms you. You don't fight a victim; you help them. That's the trap."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E14",
+          "type": "scenario",
+          "scene": "Scenario: They cry to get out of trouble, then stop crying instantly when you say 'Okay, I forgive you.'",
+          "question": "This is:",
+          "options": [
+            "The Switch (Evidence of fake emotion).",
+            "Healing.",
+            "Bipolar.",
+            "Relief."
+          ],
+          "correct": "The Switch (Evidence of fake emotion).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The emotion was a tool. The job is done, so the tool is put away.",
+            "incorrect": "Real relief takes time to settle. Instant switching proves it was a performance."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E15",
+          "type": "fill-in",
+          "sentence": "A Psychopath has no (--------), so they do not feel guilt.",
+          "options": [
+            "conscience",
+            "brain",
+            "heart",
+            "money"
+          ],
+          "answers": [
+            "conscience"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The internal 'moral brake' is missing. They know the rules, but don't feel them.",
+            "incorrect": "It is the Conscience (Superego) that is absent or weak."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E16",
+          "type": "reverse-scenario",
+          "answer": "A deliberate attempt to confuse you, deny reality, and make you doubt your sanity.",
+          "question": "What is this?",
+          "options": [
+            "Gaslighting",
+            "Love Bombing",
+            "Triangulation",
+            "Hoovering"
+          ],
+          "correct": "Gaslighting",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Gaslighting is the tool of control for all Dark Triad types, including Psychopaths.",
+            "incorrect": "It targets your sanity."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E17",
+          "type": "scenario",
+          "scene": "Scenario: You try to 'Grey Rock' a Psychopath. They get bored and leave.",
+          "question": "Did the tactic work?",
+          "options": [
+            "Yes.",
+            "No.",
+            "Maybe.",
+            "They will come back."
+          ],
+          "correct": "Yes.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The goal of Grey Rock is to be boring so the predator moves on to more interesting prey. Boredom is their kryptonite.",
+            "incorrect": "If they left, you won. You successfully starved them of stimulation."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E18",
+          "type": "multiple-choice",
+          "question": "What is 'Cognitive Empathy'?",
+          "options": [
+            "Knowing what someone feels without feeling it.",
+            "Feeling someone's pain.",
+            "Being nice.",
+            "Being mean."
+          ],
+          "correct": "Knowing what someone feels without feeling it.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Psychopaths have high Cognitive Empathy (they can read you) but zero Emotional Empathy (they don't care).",
+            "incorrect": "It is intellectual data, not emotional resonance."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E19",
+          "type": "true-false",
+          "scene": "Scenario: 'I can't help it, I'm just damaged.'",
+          "question": "Is this often a Pity Play?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They use the 'Damaged' label to excuse future abuse and lower your expectations.",
+            "incorrect": "It is a license to abuse. 'I told you I was damaged' becomes the excuse for everything."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P1-E20",
+          "type": "case-analysis",
+          "caseTitle": "Unit 4 Knowledge Check Complete",
+          "scene": "You have dissected the Predator. You know the Void, the Charm, the Parasitism, and the fake Remorse.",
+          "question": "You are ready for Part 2:",
+          "options": [
+            "The Unit 4 Gauntlet (Mixed Scenarios).",
+            "Retaking the course.",
+            "Giving up.",
+            "Sleep."
+          ],
+          "correct": "The Unit 4 Gauntlet (Mixed Scenarios).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Knowledge is useless without application. Part 2 will throw rapid-fire scenarios at you to test your detection speed.",
+            "incorrect": "The next step is the Gauntlet: Applying these concepts in high-speed simulations."
+          }
+        }
+      ]
+    }
+  ]
+}

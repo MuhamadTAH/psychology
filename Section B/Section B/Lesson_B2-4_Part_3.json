@@ -1,0 +1,355 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B2",
+  "unitTitle": "The Frame Game: Controlling Perception",
+  "lessonId": "B2-4",
+  "lessonTitle": "Labeling & Altercasting",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Identity\" Trap",
+  "objective": "To master the defense against Altercasting by identifying 'Identity Binds,' refusing to accept manipulative roles, and maintaining boundaries even when threatened with negative labels.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Role_Breaker_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B2-4-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Casting Call",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In this challenge, the manipulator will try to 'cast' you in a movie you didn't audition for. They will hand you a script: 'The Generous Friend,' 'The Loyal Employee,' or 'The Good Partner.'"
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: **Throw away the script.** You define who you are, not them. Refuse to play the role."
+        }
+      ]
+    },
+    {
+      "screenId": "B2-4-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Identity Bind",
+      "exercises": [
+        {
+          "exerciseId": "B2-4-P3-E1",
+          "type": "boss-scenario",
+          "scene": "A manipulator wants you to cover their shift. 'I'm asking you because you are the only one who is *actually responsible* around here. The others are lazy. I knew I could count on you.'",
+          "question": "This is the 'Flattery Trap.' How do you respond?",
+          "options": [
+            "'Thanks, I am responsible. I'll do it.' (Accepted Role)",
+            "'I appreciate the compliment, but being responsible also means managing my own schedule. I can't cover you.' (Role Rejection).",
+            "'You're right, everyone else is lazy.' (Triangulation)",
+            "'I'm not responsible.' (Denial)"
+          ],
+          "correct": "'I appreciate the compliment, but being responsible also means managing my own schedule. I can't cover you.' (Role Rejection).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You accepted the compliment ('Responsible') but redefined what it means to suit *your* needs, not theirs.",
+            "incorrect": "If you accept their definition of 'Responsible' (doing their work), you lose. You must redefine the term."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The 'Good Person' Trap",
+          "steps": [
+            {
+              "scene": "A friend asks for a large loan. 'I know you'll help me because you're a *good person*, not like those selfish people who ignored me.'",
+              "options": [
+                "'I am a good person! Here is the money.' (Ego Trap)",
+                "'Being a good person doesn't mean having no boundaries. I can't lend money.' (Boundary)",
+                "'I'm broke.' (Lie)",
+                "'Those other people are mean.' (Distraction)"
+              ],
+              "correct": "'Being a good person doesn't mean having no boundaries. I can't lend money.' (Boundary)",
+              "feedback": {
+                "correct": "Perfect. They tried to link 'Goodness' to 'Compliance.' You broke the link.",
+                "incorrect": "If you pay to prove you are 'Good,' they will charge you for that label forever."
+              }
+            },
+            {
+              "question": "Friend: 'Wow. I guess I was wrong about you. I thought you were different.' (The Take-Away).",
+              "options": [
+                "'Wait! I am different! I'll pay!' (Panic)",
+                "'I'm sorry you feel that way.' (Indifference)",
+                "'You are manipulating me.' (Call Out)",
+                "Cry."
+              ],
+              "correct": "'I'm sorry you feel that way.' (Indifference)",
+              "feedback": {
+                "correct": "Mastery. They tried to punish you by removing the 'Good Person' label. You showed that you don't need their validation.",
+                "incorrect": "Chasing the label validates their power over your identity. Let them think what they want."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Identity Trap. You defined your own character.",
+            "incorrect": "You paid for a label. You let them define 'Goodness' as 'Submission'."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why is 'Negative Altercasting' (e.g., 'Don't be such a prude') effective?",
+          "options": [
+            "It makes you want to prove them wrong by doing exactly what they want (Reactance).",
+            "It is nice.",
+            "It is true.",
+            "It creates confusion."
+          ],
+          "correct": "It makes you want to prove them wrong by doing exactly what they want (Reactance).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. To prove you aren't a 'prude,' you lower your boundaries. To prove you aren't 'cheap,' you spend money.",
+            "incorrect": "It targets your insecurity about being seen negatively."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P3-E4",
+          "type": "fill-in",
+          "sentence": "When someone says 'A real man/woman would do X,' they are weaponizing your (--------).",
+          "options": [
+            "identity",
+            "money",
+            "time",
+            "car"
+          ],
+          "answers": [
+            "identity"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are holding your gender/identity hostage until you pay the ransom (compliance).",
+            "incorrect": "It hits at the core of who you think you are."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'I need someone with *vision* to invest in this.'",
+          "question": "This filters out:",
+          "options": [
+            "Skeptics (who are labeled 'blind').",
+            "Rich people.",
+            "Visionaries.",
+            "Artists."
+          ],
+          "correct": "Skeptics (who are labeled 'blind').",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you ask critical questions, you lack 'vision.' It silences due diligence.",
+            "incorrect": "It selects for people who want to be seen as visionaries (Ego)."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'You're the only one I can trust.'",
+          "question": "Is this an Isolation Trap?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It burdens you with the sole responsibility for their well-being. If you leave or say no, you are 'betraying' the trust.",
+            "incorrect": "It feels like a compliment, but it is a cage."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense:",
+          "words": [
+            "validation",
+            "labels",
+            "reject",
+            "Internal",
+            "external"
+          ],
+          "correct": "Internal validation rejects external labels",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you know who you are, their labels (Good/Bad/Smart/Selfish) don't stick.",
+            "incorrect": "You must source your identity from within."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A tactic where the manipulator acts helpless to force you into the role of 'The Rescuer/Parent.'",
+          "question": "What is this?",
+          "options": [
+            "Feigned Incompetence / The Child Role",
+            "Laziness",
+            "Leadership",
+            "Love"
+          ],
+          "correct": "Feigned Incompetence / The Child Role",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. By playing 'Child,' they force you to play 'Parent.' You do the work; they get the care.",
+            "incorrect": "It creates a parent-child dynamic in an adult relationship."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "A manipulator calls you 'Selfish' for setting a boundary.",
+          "question": "Do you argue?",
+          "options": [
+            "No. Accept the label. 'If protecting my time is selfish, then I am selfish.' (Radical Acceptance).",
+            "Yes, prove you are generous.",
+            "Apologize.",
+            "Attack them."
+          ],
+          "correct": "No. Accept the label. 'If protecting my time is selfish, then I am selfish.' (Radical Acceptance).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Owning the 'Shadow' label destroys their weapon. If you don't care about being called selfish, they can't control you.",
+            "incorrect": "Arguing proves the label hurts. Acceptance neutralizes it."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'We need a *strong* leader to make the hard choices (firing people).'",
+          "question": "This frames cruelty as:",
+          "options": [
+            "Strength.",
+            "Weakness.",
+            "Failure.",
+            "Fun."
+          ],
+          "correct": "Strength.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They want you to do the dirty work, so they label it 'Strength.' You feel proud to be the executioner.",
+            "incorrect": "It rebrands empathy as weakness and cruelty as strength."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P3-E11",
+          "type": "fill-in",
+          "sentence": "Altercasting works because we have a deep desire to be (--------) with how others see us.",
+          "options": [
+            "consistent",
+            "angry",
+            "rich",
+            "wrong"
+          ],
+          "answers": [
+            "consistent"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Cognitive Dissonance makes us want to align our actions with the labels people give us.",
+            "incorrect": "We hate being inconsistent. If they call us 'Helpful,' we help."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'You're not like the others. You're special.'",
+          "question": "Is this the 'Us vs. Them' Altercast?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It separates you from the herd (Them) and aligns you with the manipulator (Us). It isolates you.",
+            "incorrect": "It makes you feel elite, but it cuts off your connection to reality (the others)."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: 'I know you'll do the right thing.' (Said before you make a decision).",
+          "question": "This is:",
+          "options": [
+            "Moral Pressure.",
+            "Faith.",
+            "Hope.",
+            "Luck."
+          ],
+          "correct": "Moral Pressure.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They have pre-defined 'The Right Thing' as 'What they want.' If you decide differently, you did the 'Wrong Thing.'",
+            "incorrect": "It traps your conscience."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P3-E14",
+          "type": "matching",
+          "question": "Match the Label to the Response:",
+          "pairs": [
+            {
+              "term": "\"You're selfish.\"",
+              "definition": "Response: \"I am self-preserving.\""
+            },
+            {
+              "term": "\"You're crazy.\"",
+              "definition": "Response: \"I am angry, and that is valid.\""
+            },
+            {
+              "term": "\"You're the expert.\"",
+              "definition": "Response: \"I am, so listen to my 'No'.\""
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Don't deny the label; transform it. Use their energy against them (Aikido).",
+            "incorrect": "Reframe the identity on your terms."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Mask Removed",
+          "scene": "You have learned that roles are just costumes. You don't have to wear the costume they hand you. You can write your own script.",
+          "question": "You are ready for the Unit 2 Review:",
+          "options": [
+            "Lesson B2-5: Unit B2 Review (The Architect).",
+            "Lesson A1-1.",
+            "Acting class.",
+            "Giving up."
+          ],
+          "correct": "Lesson B2-5: Unit B2 Review (The Architect).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We have covered Framing, Anchoring, Contrast, and Labeling. Now we test them all.",
+            "incorrect": "Next up: The final exam for Perception Control."
+          }
+        }
+      ]
+    }
+  ]
+}

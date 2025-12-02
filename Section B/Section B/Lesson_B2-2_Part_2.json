@@ -1,0 +1,333 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B2",
+  "unitTitle": "The Frame Game: Controlling Perception",
+  "lessonId": "B2-2",
+  "lessonTitle": "Anchoring: The Price of Perception",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Resetting the Anchor",
+  "objective": "To practice identifying Anchoring attempts in real-time and using specific counter-tactics (The Flinch, Re-Anchoring, Refusing the Range) to neutralize the bias.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B2-2-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: Pulling Up the Anchor",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Once an Anchor is set, it has gravity. If you just say 'That's too high,' you are still arguing against *their* number. You are trapped in their gravity well."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Defense: You must physically or emotionally reject the Anchor immediately. Do not treat it as a serious number. Flinch, Laugh, or Ignore."
+        }
+      ]
+    },
+    {
+      "screenId": "B2-2-P2-S2",
+      "screenType": "Exercises",
+      "title": "Counter-Tactics",
+      "exercises": [
+        {
+          "exerciseId": "B2-2-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: You ask the price of a service. The consultant says: '$5,000.' You expected $2,000.",
+          "question": "What is the strongest first reaction?",
+          "options": [
+            "Say 'Okay, let me think about it.' (Polite)",
+            "The Flinch: Visibly react with shock/surprise ('$5,000?!').",
+            "Counter-offer $4,000.",
+            "Nod."
+          ],
+          "correct": "The Flinch: Visibly react with shock/surprise ('$5,000?!').",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The Flinch de-legitimizes the Anchor. It signals: 'That number is not even in the realm of reality.' It forces *them* to justify it.",
+            "incorrect": "Being polite or nodding validates the Anchor. You must reject it immediately to break its power."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P2-E2",
+          "type": "multiple-choice",
+          "question": "Why is 'Splitting the Difference' (Meeting in the middle) a trap?",
+          "options": [
+            "It is fair.",
+            "Because if they set an extreme Anchor (e.g., $100 for a $10 item), meeting in the middle ($55) still gives them a massive win.",
+            "Because math is hard.",
+            "It takes too long."
+          ],
+          "correct": "Because if they set an extreme Anchor (e.g., $100 for a $10 item), meeting in the middle ($55) still gives them a massive win.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Manipulators set extreme Anchors *because* they know you will try to be fair and meet in the middle. The 'middle' of a distorted range is still distorted.",
+            "incorrect": "It *feels* fair, but it is mathematically rigged against you if the starting number was fake."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P2-E3",
+          "type": "fill-in",
+          "sentence": "To reset an Anchor, you must (--------) the range entirely.",
+          "options": [
+            "reject",
+            "accept",
+            "calculate",
+            "fear"
+          ],
+          "answers": [
+            "reject"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Do not negotiate *down* from their number. Say: 'I cannot work with that number at all. We need to start over.'",
+            "incorrect": "Accepting the range means you lost. You must reject the playing field."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: A specific number (e.g., '$4,875') is more persuasive than a round number (e.g., '$5,000').",
+          "question": "Is this 'Precision Anchoring'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Precise numbers imply calculation and accuracy. Round numbers imply a guess. People are less likely to negotiate against a precise number.",
+            "incorrect": "Precision creates an illusion of validity."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P2-E5",
+          "type": "matching",
+          "question": "Match the Counter-Tactic to the Goal:",
+          "pairs": [
+            {
+              "term": "The Flinch",
+              "definition": "To shock the opponent and de-legitimize their number."
+            },
+            {
+              "term": "The Pivot",
+              "definition": "To shift focus from Price to Value ('Let's talk about what you get')."
+            },
+            {
+              "term": "The Counter-Anchor",
+              "definition": "To set an extreme number in the opposite direction."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Flinch breaks the spell. Pivot changes the subject. Counter-Anchor resets the range.",
+            "incorrect": "Match the action to the outcome."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: You are negotiating a salary. They offer $50k. You want $80k. If you say '$60k,' you have failed.",
+          "question": "Why?",
+          "options": [
+            "Because $60k is too much.",
+            "Because you anchored *yourself* too close to their low number. You should have Counter-Anchored at $90k to pull the middle up.",
+            "Because you should take what you can get.",
+            "Because money is evil."
+          ],
+          "correct": "Because you anchored *yourself* too close to their low number. You should have Counter-Anchored at $90k to pull the middle up.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If they pull low, you must pull high. If you start in the middle ($60k), you will end up at $55k. You need to stretch the range.",
+            "incorrect": "Negotiation is physics. You need an equal and opposite force to move the center."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Adjustment Heuristic':",
+          "words": [
+            "We",
+            "from",
+            "anchor",
+            "adjust",
+            "the",
+            "away"
+          ],
+          "correct": "We adjust away from the anchor",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. We start at the anchor and move away until we reach a 'reasonable' zone. But we usually stop too early.",
+            "incorrect": "The adjustment is the mental process. The anchor is the starting line."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "Deliberately setting a deadline or time limit (e.g., 'I need an answer by 5 PM') to force a rushed decision.",
+          "question": "What is this?",
+          "options": [
+            "Time Anchoring / Artificial Urgency",
+            "Social Proof",
+            "Gaslighting",
+            "Love Bombing"
+          ],
+          "correct": "Time Anchoring / Artificial Urgency",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The time is the anchor. If you accept '5 PM' as real, you panic. If you reject it ('I'll tell you tomorrow'), you regain control.",
+            "incorrect": "It creates pressure by limiting the resource of Time."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are selling a car. A buyer asks, 'Is this a good price?' You know it is high.",
+          "question": "Is it ethical to use a 'Comparison Anchor' ('It's cheaper than a new one!')?",
+          "options": [
+            "Yes, comparison is a valid sales tool.",
+            "No, you must tell them it is overpriced.",
+            "Yes, lie about the engine.",
+            "No, give it for free."
+          ],
+          "correct": "Yes, comparison is a valid sales tool.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Framing the price against a higher standard (a new car) is ethical persuasion. It provides context. Lying about the condition would be unethical.",
+            "incorrect": "Comparison is context. It helps the buyer understand value."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'I usually charge $10,000, but I like you, so I'll do it for $2,000.'",
+          "question": "This tactic combines Anchoring with:",
+          "options": [
+            "Reciprocity (The Favor).",
+            "Fear.",
+            "Gaslighting.",
+            "Silence."
+          ],
+          "correct": "Reciprocity (The Favor).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The $10k Anchor makes the $2k look cheap, AND it frames the discount as a 'gift' you should be grateful for.",
+            "incorrect": "It creates a debt. 'I gave you a huge discount (Favor), so you should buy (Repayment).'"
+          }
+        },
+        {
+          "exerciseId": "B2-2-P2-E11",
+          "type": "fill-in",
+          "sentence": "An Anchor is only effective if it is (--------) to the discussion.",
+          "options": [
+            "relevant",
+            "random",
+            "quiet",
+            "secret"
+          ],
+          "answers": [
+            "relevant"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If I say 'The temperature is 90 degrees, pay me $50,' it doesn't work. The anchor must seem relevant (e.g., 'Competitors charge $100').",
+            "incorrect": "The brain needs a logical link to grab the anchor."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I don't want to lowball you.'",
+          "question": "Is this often a setup for a lowball?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is a 'Negation Frame.' By mentioning 'lowball,' they put the concept in your mind while pretending to avoid it.",
+            "incorrect": "It creates a false sense of fairness before the unfair offer."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: A partner does the dishes once. You thank them. Next week, they don't do them. You complain. They say: 'I did them last week! I do so much around here!'",
+          "question": "They are using that one event as:",
+          "options": [
+            "An Anchor for their contribution.",
+            "A lie.",
+            "A joke.",
+            "A gift."
+          ],
+          "correct": "An Anchor for their contribution.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They anchored their identity as 'Helpful' based on one data point. They want credit for the Anchor, not the reality.",
+            "incorrect": "It biases the perception of their effort. 'I did it once' becomes 'I do it all the time.'"
+          }
+        },
+        {
+          "exerciseId": "B2-2-P2-E14",
+          "type": "multiple-choice",
+          "question": "What is 'Bracketing'?",
+          "options": [
+            "Giving a range (e.g., 'I expect between $80k and $100k').",
+            "Building a shelf.",
+            "Yelling.",
+            "Walking away."
+          ],
+          "correct": "Giving a range (e.g., 'I expect between $80k and $100k').",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This anchors the *bottom* of your expectation ($80k) as the absolute minimum. It moves the negotiation field upward.",
+            "incorrect": "It creates a playing field where even the lowest number is a win for you."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Weight Lifted",
+          "scene": "You can now spot the Anchor. You know to Flinch, Reject, and Re-Anchor. You don't split the difference on a rigged deal.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Negotiation' Simulation (High-stakes bargaining).",
+            "Paying full price.",
+            "Lesson A1-1.",
+            "Quitting."
+          ],
+          "correct": "The 'Negotiation' Simulation (High-stakes bargaining).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you hold your ground when a skilled negotiator tries to anchor you to a loss? Let's see.",
+            "incorrect": "Next up: The Negotiation Boss Fight."
+          }
+        }
+      ]
+    }
+  ]
+}

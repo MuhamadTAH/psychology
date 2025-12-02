@@ -1,0 +1,607 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B1",
+  "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis",
+  "lessonId": "B1-5",
+  "lessonTitle": "Unit B1 Review: The Hypnotist",
+  "lessonType": "Review",
+  "lessonPart": 2,
+  "lessonPartTitle": "The 'Gauntlet' (Language Patterns)",
+  "objective": "To test rapid identification and defense strategies against a randomized mix of NLP tactics, linguistic traps, and covert hypnosis techniques.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 300,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B1-5-P2-S1",
+      "screenType": "Learn",
+      "title": "The Language Gauntlet",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You know the theory. Now you must prove you can hear it in real-time. In this Gauntlet, commands are hidden, choices are rigged, and sentences are foggy."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Identify the Pattern. Is it a Pace? A Lead? A Bind? Or just Fluff?"
+        }
+      ]
+    },
+    {
+      "screenId": "B1-5-P2-S2",
+      "screenType": "Exercises",
+      "title": "Rapid Fire Linguistics",
+      "exercises": [
+        {
+          "exerciseId": "B1-5-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: 'You are sitting here (Fact). You are listening to me (Fact). And you can *feel comfortable* about this deal (Suggestion).'",
+          "question": "This pattern is:",
+          "options": [
+            "The Yes Set (Pacing and Leading).",
+            "Gaslighting.",
+            "Double Bind.",
+            "Honesty."
+          ],
+          "correct": "The Yes Set (Pacing and Leading).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Fact + Fact -> Lead. It builds a rhythm of agreement.",
+            "incorrect": "It uses the current reality to verify the suggestion."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is the function of a 'Tag Question' (e.g., 'It's great, *isn't it*?')?",
+          "options": [
+            "To force agreement and compliance.",
+            "To ask for an opinion.",
+            "To be polite.",
+            "To show uncertainty."
+          ],
+          "correct": "To force agreement and compliance.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It turns a statement into a trap where 'No' feels rude or awkward.",
+            "incorrect": "It isn't asking for a real opinion. It assumes the answer is 'Yes'."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E3",
+          "type": "true-false",
+          "scene": "Scenario: 'I don't know if you are *ready to buy* yet.'",
+          "question": "Is this a Challenge Bind?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It challenges your ego/readiness. To prove you are 'ready,' you must buy.",
+            "incorrect": "It uses doubt to trigger your need to prove yourself."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E4",
+          "type": "fill-in",
+          "sentence": "To break a trance, you must (--------) the pattern.",
+          "options": [
+            "interrupt",
+            "follow",
+            "agree",
+            "love"
+          ],
+          "answers": [
+            "interrupt"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Drop a pen. Ask a weird question. Break the flow.",
+            "incorrect": "Following deepens the trance. Interruption breaks it."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'Do you want to start the project Monday or Tuesday?'",
+          "question": "This is:",
+          "options": [
+            "The Illusion of Choice (Double Bind).",
+            "Flexible scheduling.",
+            "A direct order.",
+            "A question."
+          ],
+          "correct": "The Illusion of Choice (Double Bind).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The choice is 'When,' not 'If.' Starting is presupposed.",
+            "incorrect": "They removed the option to say 'No'."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E6",
+          "type": "matching",
+          "question": "Match the Milton Pattern to the sentence:",
+          "pairs": [
+            {
+              "term": "Mind Read",
+              "definition": "\"I know you are wondering about the price.\""
+            },
+            {
+              "term": "Lost Performative",
+              "definition": "\"It is important to buy now.\""
+            },
+            {
+              "term": "Cause-Effect",
+              "definition": "\"Listening to me makes you trust me.\""
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You are spotting the structure. Mind Read claims knowledge. Lost Performative hides the judge. Cause-Effect creates fake logic.",
+            "incorrect": "Review the definitions. Cause-Effect links X to Y."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to create a Negative Command:",
+          "words": [
+            "Don't",
+            "how",
+            "think",
+            "easy",
+            "about",
+            "is",
+            "this"
+          ],
+          "correct": "Don't think about how easy this is",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Your brain has to think about 'how easy this is' to process the sentence.",
+            "incorrect": "The negative word 'Don't' is ignored by the subconscious."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "A technique where you mirror the other person's breathing, posture, and tone to create deep, subconscious rapport.",
+          "question": "What is this?",
+          "options": [
+            "Matching / Mirroring",
+            "Mocking",
+            "Stalking",
+            "Leading"
+          ],
+          "correct": "Matching / Mirroring",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the foundation of influence. People like people who are like them.",
+            "incorrect": "It's not mocking; it is subtle alignment."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E9",
+          "type": "scenario",
+          "scene": "Scenario: 'People can *learn quickly*.' (Spoken while looking at you).",
+          "question": "This uses:",
+          "options": [
+            "Selectional Restriction Violation (Ambiguous 'People' applied to 'You').",
+            "A direct order.",
+            "A lie.",
+            "A question."
+          ],
+          "correct": "Selectional Restriction Violation (Ambiguous 'People' applied to 'You').",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They say 'People,' but the eye contact says 'You.' It allows them to command you without being direct.",
+            "incorrect": "It's not a direct order; it's indirect suggestion using Analog Marking."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E10",
+          "type": "ethical-dilemma",
+          "scene": "You use the 'Illusion of Choice' to get a stubborn patient to take their medicine. 'Apple juice or Orange juice with your pill?'",
+          "question": "Is this ethical?",
+          "options": [
+            "Yes, the intent is benevolent (Health).",
+            "No, all manipulation is bad.",
+            "Yes, because juice is tasty.",
+            "No, force them."
+          ],
+          "correct": "Yes, the intent is benevolent (Health).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Parenting and Medicine often use ethical manipulation to help those who cannot help themselves.",
+            "incorrect": "Context and Intent matter. Saving a life justifies the tactic."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E11",
+          "type": "fill-in",
+          "sentence": "Analog Marking uses (--------) shifts to hide commands.",
+          "options": [
+            "tonal",
+            "written",
+            "color",
+            "smell"
+          ],
+          "answers": [
+            "tonal"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Tone, volume, and pause are the highlighters of speech.",
+            "incorrect": "It is auditory or visual (gesture), not written."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I wouldn't tell you to *do it*.'",
+          "question": "Does the subconscious hear 'Do it'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The negation is filtered out. The command remains.",
+            "incorrect": "The subconscious doesn't process 'Not' well. It focuses on the verb."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: 'You know what I mean.'",
+          "question": "The Meta Model Challenge is:",
+          "options": [
+            "'I don't know. What specifically do you mean?'",
+            "'Yes I do.'",
+            "Nod.",
+            "'Maybe.'"
+          ],
+          "correct": "'I don't know. What specifically do you mean?'",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Refuse to fill in the blank. Force them to define their terms.",
+            "incorrect": "Agreeing lets them off the hook. You must play dumb."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E14",
+          "type": "multiple-choice",
+          "question": "What is 'Future Pacing'?",
+          "options": [
+            "Describing a future where the person has already agreed/bought, to make it feel real.",
+            "Walking fast.",
+            "Looking at a watch.",
+            "Predicting the lottery."
+          ],
+          "correct": "Describing a future where the person has already agreed/bought, to make it feel real.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Imagine how good you will feel *after* you sign.' It transports the brain past the decision point.",
+            "incorrect": "It places the solution in the future timeline."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E15",
+          "type": "reverse-scenario",
+          "answer": "Words like 'Success,' 'Freedom,' 'Love' that have no specific meaning but trigger emotional agreement.",
+          "question": "What are these?",
+          "options": [
+            "Nominalizations",
+            "Verbs",
+            "Adjectives",
+            "Facts"
+          ],
+          "correct": "Nominalizations",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They are abstract nouns. They act as buckets for the listener's own meaning.",
+            "incorrect": "They aren't verbs. They are frozen concepts."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E16",
+          "type": "scenario",
+          "scene": "Scenario: 'Try to stop thinking about ice cream.'",
+          "question": "What are you thinking about?",
+          "options": [
+            "Ice cream.",
+            "Pizza.",
+            "Nothing.",
+            "Work."
+          ],
+          "correct": "Ice cream.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The command 'think about ice cream' must be executed before you can try to stop it.",
+            "incorrect": "You can't not think of it."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E17",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense against Double Binds:",
+          "words": [
+            "Refuse",
+            "options",
+            "the",
+            "provided"
+          ],
+          "correct": "Refuse the provided options",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Don't pick A or B. Pick C.",
+            "incorrect": "You must step outside the provided frame."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E18",
+          "type": "matching",
+          "question": "Match the Inflection to the Meaning:",
+          "pairs": [
+            {
+              "term": "Upward Inflection",
+              "definition": "Question / Uncertainty."
+            },
+            {
+              "term": "Downward Inflection",
+              "definition": "Command / Authority."
+            },
+            {
+              "term": "Flat Inflection",
+              "definition": "Statement / Boredom."
+            }
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Commands go down. Questions go up.",
+            "incorrect": "Listen to the pitch at the end of the sentence."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E19",
+          "type": "scenario",
+          "scene": "Scenario: 'It is important to do this.' (Lost Performative).",
+          "question": "The Challenge:",
+          "options": [
+            "'Important to whom?'",
+            "'Yes it is.'",
+            "'Why?'",
+            "'Okay.'"
+          ],
+          "correct": "'Important to whom?'",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Find the missing person. Is it important to *me* or to *you*?",
+            "incorrect": "'Why' invites more fluff. 'To whom' identifies the beneficiary."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E20",
+          "type": "fill-in",
+          "sentence": "The conscious mind can process (--------) bits of info per second. The subconscious processes millions.",
+          "options": [
+            "40-50",
+            "1000",
+            "Zero",
+            "Infinite"
+          ],
+          "answers": [
+            "40-50"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The conscious bandwidth is tiny. NLP overwhelms it to speak to the massive subconscious processor.",
+            "incorrect": "Conscious attention is very limited."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E21",
+          "type": "true-false",
+          "scene": "Scenario: 'My friend said *you are smart*.'",
+          "question": "Does this bypass your modesty filter?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Because 'someone else' said it, you don't reject the compliment. But the speaker gets the credit for delivering it.",
+            "incorrect": "Quote patterns bypass ego defenses."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E22",
+          "type": "scenario",
+          "scene": "Scenario: 'If you *buy now*, you will save money.'",
+          "question": "This is a:",
+          "options": [
+            "Cause-Effect statement.",
+            "Command.",
+            "Question.",
+            "Lie."
+          ],
+          "correct": "Cause-Effect statement.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If X, then Y. It links the action (buy) to the benefit (save).",
+            "incorrect": "It creates a logical bridge for the brain to cross."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E23",
+          "type": "multiple-choice",
+          "question": "What is 'Ambiguity' useful for?",
+          "options": [
+            "Creating a 'Transderivational Search' (Trance) where the listener looks inward for meaning.",
+            "Nothing.",
+            "Being clear.",
+            "Science."
+          ],
+          "correct": "Creating a 'Transderivational Search' (Trance) where the listener looks inward for meaning.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Confusion forces the brain to go inside to find an answer. This internal focus is a trance state.",
+            "incorrect": "It is a tool for induction."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E24",
+          "type": "scenario",
+          "scene": "Scenario: 'You can *relax*... and *listen*.'",
+          "question": "The commands are:",
+          "options": [
+            "Relax / Listen.",
+            "You / Can.",
+            "And / While.",
+            "None."
+          ],
+          "correct": "Relax / Listen.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The verbs are the directives.",
+            "incorrect": "Look for the action words."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E25",
+          "type": "ethical-dilemma",
+          "scene": "You are a leader. You use 'We' instead of 'I' to create a sense of shared identity (In-Group).",
+          "question": "Is this manipulation?",
+          "options": [
+            "Yes, but it is pro-social (Leadership).",
+            "No.",
+            "Yes, it is evil.",
+            "Maybe."
+          ],
+          "correct": "Yes, but it is pro-social (Leadership).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Language shapes reality. 'We' builds a team. It is a tool of influence used for good.",
+            "incorrect": "It is manipulation (shaping perception), but ethical if the goal is shared success."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E26",
+          "type": "reverse-scenario",
+          "answer": "A statement that is undeniably true, used to build agreement.",
+          "question": "What is this?",
+          "options": [
+            "Truism",
+            "Lie",
+            "Command",
+            "Question"
+          ],
+          "correct": "Truism",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'You are breathing.' 'You are here.' Truisms pace reality.",
+            "incorrect": "It builds the Yes Set."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E27",
+          "type": "scenario",
+          "scene": "Scenario: 'You don't want to *fail*, do you?'",
+          "question": "This uses:",
+          "options": [
+            "Negative Command + Fear + Tag Question.",
+            "Kindness.",
+            "Logic.",
+            "Hope."
+          ],
+          "correct": "Negative Command + Fear + Tag Question.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. 'Don't fail' implants the image of failure. 'Do you?' demands agreement.",
+            "incorrect": "It is a complex verbal trap."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E28",
+          "type": "fill-in",
+          "sentence": "To defend against NLP, move from the (--------) mind to the (--------) mind.",
+          "options": [
+            "subconscious",
+            "conscious",
+            "happy",
+            "sad"
+          ],
+          "answers": [
+            "subconscious",
+            "conscious"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Wake up. Analyze the sentence structure. Stop drifting.",
+            "incorrect": "You must engage critical thinking (Conscious) to filter the suggestions."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E29",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm not saying you should do it.'",
+          "question": "Does this phrase usually precede a command to do it?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'I'm not saying' is a form of negation that allows them to say it safely.",
+            "incorrect": "It is a 'softener' for the command."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P2-E30",
+          "type": "case-analysis",
+          "caseTitle": "Gauntlet Complete",
+          "scene": "You have survived the linguistic minefield. You can hear the hidden structure of speech.",
+          "question": "You are ready for the Final Challenge of Unit B1:",
+          "options": [
+            "The 'Cult Leader' Boss Scenario (Simulation).",
+            "Lesson A1-1.",
+            "Giving up.",
+            "Sleeping."
+          ],
+          "correct": "The 'Cult Leader' Boss Scenario (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The Cult Leader is the ultimate master of the Milton Model and NLP. Can you resist the indoctrination?",
+            "incorrect": "Next up: The Final Boss."
+          }
+        }
+      ]
+    }
+  ]
+}

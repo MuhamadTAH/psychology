@@ -1,0 +1,284 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A1",
+  "unitTitle": "The Fast Hook",
+  "lessonId": "A1-3",
+  "lessonTitle": "The \"Bootcamp\" - Definitions, History & Ethics",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Core Definitions (What is Dark Psychology?)",
+  "objective": "To formally define the core concepts of Dark Psychology (Manipulation, Coercion, Persuasion) and distinguish them from benign influence.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A1-3-P1-S1",
+      "screenType": "Learn",
+      "title": "The Bootcamp: Part 1",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In the last lessons, you *experienced* tactics in the 'hook' scenarios. You felt how they work."
+        },
+        {
+          "type": "paragraph",
+          "text": "Now, we build your armor. This is the 'Bootcamp'—where we formally *define* what these weapons are. To defeat an enemy, you must know its name. Let's begin."
+        }
+      ]
+    },
+    {
+      "screenId": "A1-3-P1-S2",
+      "screenType": "Exercises",
+      "exercises": [
+        {
+          "exerciseId": "A1-3-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the *primary* factor that separates 'Dark Psychology' from 'Light Psychology' (like therapy)?",
+          "options": [
+            "How effective it is.",
+            "The *intent* (to control vs. to empower).",
+            "How famous the person is.",
+            "The amount of money involved."
+          ],
+          "correct": "The *intent* (to control vs. to empower).",
+          "difficulty": "easy",
+          "explanation": "This is the core concept. Both a therapist and a con-artist use psychology. One intends to heal, the other intends to harm or exploit. Intent is everything."
+        },
+        {
+          "exerciseId": "A1-3-P1-E2",
+          "type": "true-false",
+          "statement": "Any attempt to 'persuade' someone is a form of 'dark' manipulation.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "explanation": "This is a myth. 'Persuasion' (like a debate or a sales pitch) is often transparent. It becomes 'manipulation' when it's deceptive, hidden, and exploits weaknesses."
+        },
+        {
+          "exerciseId": "A1-3-P1-E3",
+          "type": "matching",
+          "question": "Match the core term to its definition:",
+          "pairs": [
+            {
+              "term": "Persuasion",
+              "definition": "Using emotion or logic to convince someone *transparently*."
+            },
+            {
+              "term": "Manipulation",
+              "definition": "Using *hidden* influence or deception to control someone's choice."
+            },
+            {
+              "term": "Coercion",
+              "definition": "Using *threats* or force (implied or real) to control someone."
+            }
+          ],
+          "difficulty": "medium",
+          "explanation": "This is the 'Big 3'. Persuasion (transparent), Manipulation (hidden), Coercion (force). Understanding this is your first layer of defense."
+        },
+        {
+          "exerciseId": "A1-3-P1-E4",
+          "type": "scenario",
+          "scene": "Your boss says, 'If you don't finish this report by Friday, don't bother coming in on Monday.'",
+          "question": "This is a clear example of:",
+          "options": [
+            "Persuasion",
+            "Manipulation",
+            "Coercion",
+            "Flattery"
+          ],
+          "correct": "Coercion",
+          "difficulty": "easy",
+          "explanation": "The implied threat of 'you're fired' is a form of force. Coercion is about removing choice through fear."
+        },
+        {
+          "exerciseId": "A1-3-P1-E5",
+          "type": "scenario",
+          "scene": "Your friend says, 'If you *really* cared about me, you would lend me the money.'",
+          "question": "This is a clear example of:",
+          "options": [
+            "Persuasion (a logical argument)",
+            "Manipulation (a hidden guilt-trip)",
+            "Coercion (a direct threat)",
+            "A simple request"
+          ],
+          "correct": "Manipulation (a hidden guilt-trip)",
+          "difficulty": "medium",
+          "explanation": "This is a guilt-trip, a form of emotional manipulation. It's hidden. They aren't asking for money, they are *attacking your character* to get the money."
+        },
+        {
+          "exerciseId": "A1-3-P1-E6",
+          "type": "scenario",
+          "scene": "A politician says, 'My plan will create 10,000 jobs and make this city safer for your families. I urge you to vote for me.'",
+          "question": "Assuming the claims are debatable, this is a form of:",
+          "options": [
+            "Persuasion",
+            "Manipulation",
+            "Coercion",
+            "Gaslighting"
+          ],
+          "correct": "Persuasion",
+          "difficulty": "medium",
+          "explanation": "This is persuasion. The attempt to influence is *transparent*. The politician is openly stating their case to win your vote. You are free to agree or disagree."
+        },
+        {
+          "exerciseId": "A1-3-P1-E7",
+          "type": "fill-in",
+          "sentence": "Manipulation requires (--------) (like deceit), while Coercion requires (--------) (like threats).",
+          "options": [
+            "deception",
+            "force",
+            "honesty",
+            "kindness",
+            "money"
+          ],
+          "answers": [
+            "deception",
+            "force"
+          ],
+          "difficulty": "medium",
+          "explanation": "This is the key mechanical difference. Manipulation is a 'trick,' Coercion is a 'push'."
+        },
+        {
+          "exerciseId": "A1-3-P1-E8",
+          "type": "true-false",
+          "statement": "The 'Flattery' and 'Reciprocity Trap' Alex used in the Coffee Shop are forms of Coercion.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "explanation": "They are forms of *Manipulation*. Alex didn't *force* or *threaten* you. Alex *tricked* you by lowering your defenses and making you feel indebted."
+        },
+        {
+          "exerciseId": "A1-3-P1-E9",
+          "type": "build-sentence",
+          "question": "Arrange these words into the 'Golden Rule' of this lesson:",
+          "words": [
+            "is",
+            "the",
+            "Dark",
+            "Psychology",
+            "Intent",
+            "of",
+            "language"
+          ],
+          "correct": "Intent is the language of Dark Psychology",
+          "difficulty": "medium",
+          "explanation": "This is the rule. Always ask yourself: What is the *true intent* behind their words?"
+        },
+        {
+          "exerciseId": "A1-3-P1-E10",
+          "type": "multiple-choice",
+          "question": "What is 'Gaslighting'?",
+          "options": [
+            "A form of persuasion using facts.",
+            "A form of coercion using physical threats.",
+            "A form of manipulation that makes you doubt your own reality or memory.",
+            "A form of flattery."
+          ],
+          "correct": "A form of manipulation that makes you doubt your own reality or memory.",
+          "difficulty": "medium",
+          "explanation": "We will have a whole unit on this. Gaslighting ('That never happened,' 'You're crazy') is one of the most 'dark' forms of manipulation."
+        },
+        {
+          "exerciseId": "A1-3-P1-E11",
+          "type": "reverse-scenario",
+          "answer": "This tactic is *hidden* and uses *deception* to get a 'yes'.",
+          "question": "This is the definition of...?",
+          "options": [
+            "Coercion",
+            "Manipulation",
+            "Persuasion",
+            "Honesty"
+          ],
+          "correct": "Manipulation",
+          "difficulty": "medium",
+          "explanation": "Persuasion is *open*. Manipulation is *hidden*. Coercion is *forced*."
+        },
+        {
+          "exerciseId": "A1-3-P1-E12",
+          "type": "case-analysis",
+          "caseTitle": "The 'Team Player' Trap",
+          "scene": "A boss needs someone to work the weekend. Instead of asking directly, the boss says in a meeting, 'I'm *so* worried we'll lose this client. This project means everything. It's a shame not everyone is as 'all-in' as I am.' The boss then looks around the room.",
+          "question": "This is a combination of a guilt-trip (Manipulation) and...?",
+          "options": [
+            "Implied Coercion (a threat to your job's 'safety')",
+            "Open Persuasion (a logical argument)",
+            "Flattery (praising the team)",
+            "Honesty (sharing feelings)"
+          ],
+          "correct": "Implied Coercion (a threat to your job's 'safety')",
+          "difficulty": "hard",
+          "explanation": "This is an advanced, combined tactic. It's manipulation (guilt) *and* coercion (the implied threat: 'If you're not 'all-in,' your job is at risk')."
+        },
+        {
+          "exerciseId": "A1-3-P1-E13",
+          "type": "true-false",
+          "statement": "Manipulation can sometimes be 'benign' (harmless), like convincing a sad friend to go to a party you *know* they will enjoy.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "hard",
+          "explanation": "This is a high-level concept. Remember *intent*? If the intent is genuinely for *their* benefit (and not your own), it's a 'grey area' that most would not consider 'dark'."
+        },
+        {
+          "exerciseId": "A1-3-P1-E14",
+          "type": "multiple-choice",
+          "question": "What is the *opposite* of manipulation?",
+          "options": [
+            "Silence",
+            "Transparent & Direct Communication",
+            "Better persuasion",
+            "Coercion"
+          ],
+          "correct": "Transparent & Direct Communication",
+          "difficulty": "medium",
+          "explanation": "The antidote to 'dark' (hidden, deceptive) communication is 'light' (transparent, direct) communication. 'I need help' is 'light'. 'If you were a *good* friend...' is 'dark'."
+        },
+        {
+          "exerciseId": "A1-3-P1-E15",
+          "type": "fill-in",
+          "sentence": "In Part 2, we will cover the (--------) and (--------) of these tactics.",
+          "options": [
+            "ethics",
+            "history",
+            "cost",
+            "colors"
+          ],
+          "answers": [
+            "ethics",
+            "history"
+          ],
+          "difficulty": "easy",
+          "explanation": "You've learned the 'what.' Next, you'll learn the 'why' (ethics) and the 'who' (history)."
+        }
+      ]
+    }
+  ]
+}

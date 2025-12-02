@@ -1,0 +1,341 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A2",
+  "unitTitle": "The Manipulator's Playbook: Narcissism & Gaslighting",
+  "lessonId": "A2-2",
+  "lessonTitle": "Narcissistic Supply: The Addict & The Fuel",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Identifying 'Supply' Sources",
+  "objective": "To practice identifying specific behaviors used to extract Positive and Negative Supply, and to recognize the 'Source' dynamic in relationships.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A2-2-P2-S1",
+      "screenType": "Exercises",
+      "title": "Practice: Spot the Fuel",
+      "exercises": [
+        {
+          "exerciseId": "A2-2-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: A colleague walks by your desk and sighs loudly, 'I stayed here until 9 PM last night fixing everyone's mistakes. I guess no one else cares about this company.'",
+          "question": "What type of Supply are they fishing for?",
+          "options": [
+            "Positive Supply (Praise/Martyrdom)",
+            "Negative Supply (Anger)",
+            "Information Supply",
+            "Financial Supply"
+          ],
+          "correct": "Positive Supply (Praise/Martyrdom)",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are playing the 'Martyr' to extract praise ('Wow, you work so hard!') or pity ('That's so unfair!').",
+            "incorrect": "They aren't trying to make you angry (yet). They want validation for their 'sacrifice'."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P2-E2",
+          "type": "scenario",
+          "scene": "Scenario: You are having a calm, happy day. Your partner suddenly brings up a mistake you made 3 years ago and accuses you of never loving them.",
+          "question": "Why ruin a happy moment?",
+          "options": [
+            "They genuinely forgot to mention it earlier.",
+            "They are extracting Negative Supply because peace is 'boring' to an addict.",
+            "They want to break up.",
+            "They are trying to help you improve."
+          ],
+          "correct": "They are extracting Negative Supply because peace is 'boring' to an addict.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A peaceful day provides zero Supply. Provoking a fight gives them an immediate rush of intense emotion (fuel).",
+            "incorrect": "It's not about the mistake from 3 years ago. It's about generating immediate drama *now*."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P2-E3",
+          "type": "multiple-choice",
+          "question": "Which of these is the **most potent** form of Supply for a narcissist?",
+          "options": [
+            "A polite compliment from a stranger.",
+            "Your visible devastation and crying after they discard you.",
+            "A paycheck.",
+            "A like on Facebook."
+          ],
+          "correct": "Your visible devastation and crying after they discard you.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Seeing that they have the power to *destroy* you emotionally is the ultimate proof of their superiority and existence.",
+            "incorrect": "While compliments are nice, 'Negative Supply' (your pain) is often more intense and validating for them."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: A narcissist is being incredibly charming, buying drinks for everyone at the bar, and telling funny stories.",
+          "question": "Is this generosity, or is it a transaction for Supply?",
+          "options": [
+            "Generosity",
+            "Transaction for Supply"
+          ],
+          "correct": "Transaction for Supply",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are purchasing 'Admiration.' The moment the crowd stops clapping, the generosity will vanish.",
+            "incorrect": "It looks like generosity, but the *intent* is to harvest admiration from the crowd."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P2-E5",
+          "type": "matching",
+          "question": "Match the behavior to the type of Supply it seeks:",
+          "pairs": [
+            {
+              "term": "Public Charity Work",
+              "definition": "Admiration (Positive Supply)"
+            },
+            {
+              "term": "Picking a Fight",
+              "definition": "Anger/Chaos (Negative Supply)"
+            },
+            {
+              "term": "Playing the Victim",
+              "definition": "Pity/Sympathy (Covert Supply)"
+            },
+            {
+              "term": "Smear Campaign",
+              "definition": "Control/Revenge (Power Supply)"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Recognizing the *goal* of the behavior helps you detach from the emotional trigger.",
+            "incorrect": "Think about the reaction they want. Charity = 'You're great.' Fight = 'I hate you' (Reaction). Victim = 'Poor you.'"
+          }
+        },
+        {
+          "exerciseId": "A2-2-P2-E6",
+          "type": "fill-in",
+          "sentence": "When you refuse to give a narcissist Supply (by staying calm), they often suffer a (--------) and fly into a rage.",
+          "options": [
+            "panic attack",
+            "narcissistic injury",
+            "moment of clarity",
+            "depression"
+          ],
+          "answers": [
+            "narcissistic injury"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Narcissistic Injury' is the deep pain they feel when their mask is ignored or challenged. Rage is the defense mechanism.",
+            "incorrect": "It's not panic or clarity. It is a specific ego-wound called 'Narcissistic Injury.'"
+          }
+        },
+        {
+          "exerciseId": "A2-2-P2-E7",
+          "type": "scenario",
+          "scene": "Scenario: You try the 'Grey Rock' method (giving no reaction). The narcissist escalates, starts insulting your family, and breaks a plate.",
+          "question": "What is happening here?",
+          "options": [
+            "The Grey Rock method failed.",
+            "An 'Extinction Burst': They are panicking because the fuel line is cut and are trying anything to get a reaction.",
+            "They just really hate plates.",
+            "They have suddenly gone crazy."
+          ],
+          "correct": "An 'Extinction Burst': They are panicking because the fuel line is cut and are trying anything to get a reaction.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. An 'Extinction Burst' is when a behavior spikes in intensity right before it stops. They are desperate for *any* Supply.",
+            "incorrect": "The method is *working*, which is why they are panicking. They are ramping up the stimulus to force a reaction."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P2-E8",
+          "type": "build-sentence",
+          "question": "Arrange these words to define your role to a narcissist:",
+          "words": [
+            "not",
+            "a",
+            "are",
+            "person,",
+            "are",
+            "a",
+            "You",
+            "battery",
+            "you"
+          ],
+          "correct": "You are not a person, you are a battery",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "This metaphor is crucial. You are an appliance that holds a charge (emotional energy). They plug in to drain you.",
+            "incorrect": "The core concept is objectification. You are a battery/source, not a human partner."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "You see a narcissist fishing for compliments ('I look so ugly today...'). You know it's a trap for Supply.",
+          "question": "What is the most 'ethically aware' boundary?",
+          "options": [
+            "Give them the compliment to keep the peace.",
+            "Cruelly agree: 'Yeah, you do look tired.'",
+            "Stay neutral: 'You look fine to me,' and change the subject.",
+            "Lecture them on their narcissism."
+          ],
+          "correct": "Stay neutral: 'You look fine to me,' and change the subject.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You don't feed the beast (praise), but you don't poke it (insult). You stay neutral and boring.",
+            "incorrect": "Insulting them creates Negative Supply (drama). Praising them reinforces the trap. Neutrality breaks the cycle."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P2-E10",
+          "type": "multiple-choice",
+          "question": "What is a 'Secondary Source' of Supply?",
+          "options": [
+            "A spouse or partner.",
+            "A person who provides occasional Supply (colleague, neighbor, friend) but isn't the main target.",
+            "A pet.",
+            "A bank account."
+          ],
+          "correct": "A person who provides occasional Supply (colleague, neighbor, friend) but isn't the main target.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The narcissist keeps Secondary Sources around to boost their ego when the Primary Source (partner) is worn out.",
+            "incorrect": "The spouse is usually the 'Primary Source' (high volume). Secondary sources are backups."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P2-E11",
+          "type": "reverse-scenario",
+          "answer": "The narcissist accuses you of 'abusing' them because you refused to give them a compliment they fished for.",
+          "question": "This reaction is an example of:",
+          "options": [
+            "DARVO (Deny, Attack, Reverse Victim and Offender)",
+            "Love Bombing",
+            "Hoovering",
+            "A sincere apology"
+          ],
+          "correct": "DARVO (Deny, Attack, Reverse Victim and Offender)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. By withholding Supply, *you* became the 'abuser' in their narrative. They reversed the roles to gain victim status (Supply).",
+            "incorrect": "This is DARVO. They are attacking you for setting a boundary and claiming *they* are the victim."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: A narcissist says, 'I don't care what anyone thinks of me.'",
+          "question": "Is this statement true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is the exact opposite of the truth. They care *only* about what people think of them. It is their oxygen.",
+            "incorrect": "This is a lie they tell to seem strong. Their entire existence depends on external validation."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: You notice that a friend only calls you when they have a crisis or a huge success to brag about. They never ask about your life.",
+          "question": "You are functioning as:",
+          "options": [
+            "A best friend.",
+            "A Supply Dispenser (Vending Machine).",
+            "A therapist.",
+            "A mentor."
+          ],
+          "correct": "A Supply Dispenser (Vending Machine).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The interaction is one-way. They come to you to get a reaction (comfort or praise), then leave. You are an object to them.",
+            "incorrect": "Friendship is reciprocal. This is parasitic. You are being used for Supply."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P2-E14",
+          "type": "fill-in",
+          "sentence": "The narcissist does not want a relationship; they want (--------).",
+          "options": [
+            "regulation",
+            "intimacy",
+            "honesty",
+            "growth"
+          ],
+          "answers": [
+            "regulation"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They use you to 'regulate' their own self-esteem. You are an external emotional regulator, not a partner.",
+            "incorrect": "They fear intimacy. They want you to manage their emotions for them (Regulation)."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P2-E15",
+          "type": "multiple-choice",
+          "question": "If Supply is the 'Fuel,' what is the 'Engine'?",
+          "options": [
+            "The narcissist's deep shame and emptiness.",
+            "Their job.",
+            "Their car.",
+            "Their family."
+          ],
+          "correct": "The narcissist's deep shame and emptiness.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The emptiness drives the hunger. They need the fuel (Supply) to keep the engine running and avoid feeling the shame.",
+            "incorrect": "The 'Engine' is their internal psychological state—specifically, the void where their self-worth should be."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P2-E16",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: Spotting the Extraction",
+          "scene": "You can now see the Matrix. Every interaction—a brag, a fight, a sob story—is a transaction for Supply. They are extracting energy from you.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "Giving them more Supply.",
+            "The 'Supply' Scenario: Starving the Narcissist (Simulation).",
+            "Becoming a narcissist.",
+            "Ignoring the problem."
+          ],
+          "correct": "The 'Supply' Scenario: Starving the Narcissist (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The final test is to apply this knowledge. Can you cut the fuel line without blowing up the relationship? Let's find out.",
+            "incorrect": "The next step is the Challenge: Applying the 'Starvation' (Grey Rock) technique in a simulation."
+          }
+        }
+      ]
+    }
+  ]
+}

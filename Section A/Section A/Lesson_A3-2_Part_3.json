@@ -1,0 +1,355 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A3",
+  "unitTitle": "The Grand Chessmaster: Machiavellianism",
+  "lessonId": "A3-2",
+  "lessonTitle": "The Long Game: Strategic Deception",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Trojan Horse\" Scenario",
+  "objective": "To master the defense against infiltration, sabotage, and false alliances by identifying 'Trojan Horse' tactics in high-stakes simulations.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Gatekeeper_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A3-2-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Enemy Within",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The most dangerous enemy is not the one attacking the gate; it is the one you invited inside."
+        },
+        {
+          "type": "paragraph",
+          "text": "In this challenge, you will face the **Trojan Horse**: A tactic where a manipulator offers a 'gift' (help, alliance, information) to gain access to your inner circle and destroy you from within."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your goal: Accept the gift, but verify the intent. Do not let the enemy open the gates at night."
+        }
+      ]
+    },
+    {
+      "screenId": "A3-2-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: Defend the Gates",
+      "exercises": [
+        {
+          "exerciseId": "A3-2-P3-E1",
+          "type": "boss-scenario",
+          "scene": "A rival who has always hated you suddenly smiles. 'I realized I was wrong about you. I want to support your promotion. Here is a file with all my private client data to help you prepare.'",
+          "question": "This is the 'Trojan Horse.' What is the likely trap?",
+          "options": [
+            "It is a genuine peace offering.",
+            "The data is fake/corrupted. If you use it, you will be fired for incompetence or theft.",
+            "They are quitting the job.",
+            "They are in love with you."
+          ],
+          "correct": "The data is fake/corrupted. If you use it, you will be fired for incompetence or theft.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. By using their 'gift' (the data), you take ownership of the error. They can then claim 'I never gave that to them; they stole it!' Plausible Deniability.",
+            "incorrect": "Rivals rarely become allies overnight without a clear reason. The 'gift' is likely poisoned."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Fake Ally",
+          "steps": [
+            {
+              "scene": "A new employee, 'Sam,' starts badmouthing the boss to you. 'The boss is such an idiot, right? I hate how they treat us.'",
+              "options": [
+                "'Yeah, totally! I hate them too.' (Venting)",
+                "'I think they are doing their best.' (Neutral)",
+                "'I don't talk about people behind their backs.' (Defensive)",
+                "'Sam, be careful who you say that to.' (Warning)"
+              ],
+              "correct": "'I think they are doing their best.' (Neutral)",
+              "feedback": {
+                "correct": "Perfect. This is an 'Agent Provocateur' tactic. Sam might be a spy trying to get you to say something negative so they can report you.",
+                "incorrect": "If you agree, Sam now has leverage (blackmail) on you. Never vent to an unverified ally."
+              }
+            },
+            {
+              "question": "Sam pushes harder: 'Come on, I know you hate the new policy. Everyone trusts me. You can tell me.'",
+              "options": [
+                "'Okay, fine. The policy is stupid.' (Submission)",
+                "'I focus on my work, not the politics.' (Grey Rock)",
+                "'Why are you asking me this?' (Suspicion)",
+                "Walk away."
+              ],
+              "correct": "'I focus on my work, not the politics.' (Grey Rock)",
+              "feedback": {
+                "correct": "Mastery. You refused to give them 'ammo.' A Machiavellian spy feeds on information. You starved them.",
+                "incorrect": "Asking 'Why?' engages. Submission destroys you. Boredom (Grey Rock) protects you."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the spy. False intimacy ('You can trust me') is the primary tool of the infiltrator.",
+            "incorrect": "You gave them leverage. Now they own you."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why does a Trojan Horse tactic work so well?",
+          "options": [
+            "Because people are greedy for 'free gifts' or 'easy help.'",
+            "Because horses are nice.",
+            "Because people are naturally suspicious.",
+            "Because it is illegal."
+          ],
+          "correct": "Because people are greedy for 'free gifts' or 'easy help.'",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It exploits the victim's desire for an easy win. 'Beware of Greeks bearing gifts.'",
+            "incorrect": "It targets greed and laziness. If you accept the 'easy help,' you accept the hidden control."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P3-E4",
+          "type": "fill-in",
+          "sentence": "Access is (--------). Never give a rival access to your inner circle.",
+          "options": [
+            "power",
+            "love",
+            "fun",
+            "easy"
+          ],
+          "answers": [
+            "power"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The goal of the Trojan Horse is Access. Once inside the walls, they can do maximum damage.",
+            "incorrect": "It's about control. If they have access to your secrets/data, they have power over you."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P3-E5",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm only telling you this gossip about the boss because I'm your friend.'",
+          "question": "Is this usually true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. They are trading gossip to buy your trust (Reciprocity). If they gossip *to* you, they will gossip *about* you.",
+            "incorrect": "This is 'Strategic Vulnerability' used to lower your guard. It creates a false bond."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P3-E6",
+          "type": "scenario",
+          "scene": "Scenario: You delegate a task to a team member who secretly wants your job. They say, 'I'll handle it, don't worry.' They don't update you until the deadline.",
+          "question": "What is the likely outcome?",
+          "options": [
+            "A perfect project.",
+            "Strategic Incompetence / Sabotage at the last minute so you miss the deadline.",
+            "They will quit.",
+            "They will ask for a raise."
+          ],
+          "correct": "Strategic Incompetence / Sabotage at the last minute so you miss the deadline.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. By hiding the progress (Omission), they ensure you cannot fix their 'mistakes' in time. You take the fall for the failure.",
+            "incorrect": "They want you to fail. Waiting until the deadline ensures maximum damage to your reputation."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to reveal the defense against infiltration:",
+          "words": [
+            "verify",
+            "Trust",
+            "but"
+          ],
+          "correct": "Trust but verify",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You can accept the help, but check the work. You can accept the file, but scan for viruses.",
+            "incorrect": "Blind trust is fatal. Verification is the shield."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A trap where you use a seductive or attractive agent (a 'Honey Pot') to lure a target into compromising themselves.",
+          "question": "This is a form of:",
+          "options": [
+            "Sexual/Emotional Trojan Horse",
+            "Gaslighting",
+            "Narcissism",
+            "Honesty"
+          ],
+          "correct": "Sexual/Emotional Trojan Horse",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The 'Gift' is the relationship/sex. The 'Trap' is the blackmail or intelligence gathering.",
+            "incorrect": "It is a classic spycraft tactic. The target opens their defenses for pleasure, letting the enemy in."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You know a rival is trying to infiltrate your team. You could expose them publicly (Drama) or feed them false information (Counter-Espionage).",
+          "question": "What is the Machiavellian vs. Ethical choice?",
+          "options": [
+            "Machiavellian: Feed false info. Ethical: Remove them from the team quietly.",
+            "Machiavellian: Scream at them. Ethical: Ignore them.",
+            "Both would fire them.",
+            "Machiavellian: Trust them. Ethical: Trust them."
+          ],
+          "correct": "Machiavellian: Feed false info. Ethical: Remove them from the team quietly.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The Ethical leader protects the team by removing the threat. The Machiavellian *uses* the threat to trick the rival's boss.",
+            "incorrect": "Public exposure creates chaos. Quiet removal is efficient. Using them is strategic."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: A 'Double Agent' is someone who pretends to work for you but actually works for your rival.",
+          "question": "How do you catch them?",
+          "options": [
+            "Ask them if they are a spy.",
+            "Use a 'Barium Meal' / Canary Trap (Feed them unique false info and see if it leaks).",
+            "Trust your gut.",
+            "Fire everyone."
+          ],
+          "correct": "Use a 'Barium Meal' / Canary Trap (Feed them unique false info and see if it leaks).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is the scientific method of catching a leak. Different versions of a lie to different people reveals the traitor.",
+            "incorrect": "Asking works on honest people, not spies. You need objective proof."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P3-E11",
+          "type": "multiple-choice",
+          "question": "Why do Machiavellians rarely attack directly?",
+          "options": [
+            "They are scared.",
+            "Direct attacks create resistance and reveal their position. Deception keeps the target confused and compliant.",
+            "They don't have weapons.",
+            "They want to be nice."
+          ],
+          "correct": "Direct attacks create resistance and reveal their position. Deception keeps the target confused and compliant.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Never attempt to win by force what can be won by deception.' It saves resources.",
+            "incorrect": "It's not fear; it's efficiency. A direct attack is costly. A Trojan Horse is cheap."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I didn't ruin the project on purpose! I just made a mistake! You can't blame me for trying!'",
+          "question": "Does this defense work if the sabotage was Machiavellian?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct (It works). This is 'Plausible Deniability.' Incompetence is not a crime, so they escape punishment. A smart saboteur always looks like a fool.",
+            "incorrect": "It works perfectly. You can't fire someone for 'trying,' but you can be destroyed by their 'mistake.'"
+          }
+        },
+        {
+          "exerciseId": "A3-2-P3-E13",
+          "type": "matching",
+          "question": "Match the Infiltration Tactic to the Counter-Measure:",
+          "pairs": [
+            {
+              "term": "The Trojan Horse (Gift)",
+              "definition": "Refuse the gift or verify the content."
+            },
+            {
+              "term": "The Fake Ally (Spy)",
+              "definition": "Information Starvation (Grey Rock)."
+            },
+            {
+              "term": "Sabotage (Incompetence)",
+              "definition": "Micromanagement or removal of access."
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Defenses must match the attack. Verify gifts. Starve spies. Contain incompetence.",
+            "incorrect": "Think about the mechanic. If they are 'incompetent,' do not give them independence."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P3-E14",
+          "type": "scenario",
+          "scene": "Scenario: You are winning an argument. The Machiavellian suddenly agrees with you: 'You are absolutely right. I was wrong. I will fix it immediately.'",
+          "question": "Why did they surrender so fast?",
+          "options": [
+            "They realized the truth.",
+            "Strategic Surrender: To stop the conflict, lower your guard, and buy time to plot a new angle.",
+            "They are weak.",
+            "They love you."
+          ],
+          "correct": "Strategic Surrender: To stop the conflict, lower your guard, and buy time to plot a new angle.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Surrender is a tool of power.' By surrendering, they control the timing of the end of the battle. They live to fight another day.",
+            "incorrect": "They didn't change their mind; they changed their tactic. Fighting a losing battle is a waste of energy."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Gates are Secure",
+          "scene": "You have learned how Machiavellians play the Long Game using Deception, Alliances, and Infiltration. You know that 'Access is Power.'",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson A3-3: Weak Point Practice (Identifying Cynical Logic).",
+            "Lesson A2-1.",
+            "Opening the gates.",
+            "Sleeping."
+          ],
+          "correct": "Lesson A3-3: Weak Point Practice (Identifying Cynical Logic).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You can spot the strategy. Now you need to spot the *thinking patterns* (Logic) that justify it.",
+            "incorrect": "Next up: Deconstructing the logic of the Cynic."
+          }
+        }
+      ]
+    }
+  ]
+}

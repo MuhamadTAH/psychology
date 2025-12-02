@@ -1,0 +1,354 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B1",
+  "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis",
+  "lessonId": "B1-5",
+  "lessonTitle": "Unit B1 Review: The Hypnotist",
+  "lessonType": "Review",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Cult Leader\" Boss Scenario",
+  "objective": "To master the defense against advanced NLP manipulation by identifying and neutralizing a combination of Pacing, Embedded Commands, Double Binds, and Milton Model patterns in a high-stakes simulation.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 500,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Unit_B1_Grandmaster_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B1-5-P3-S1",
+      "screenType": "Learn",
+      "title": "Final Challenge: The Cult Leader",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are about to enter a simulation with 'The Leader.' This archetype uses every linguistic trick to bypass your logic and control your behavior."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Spot the invisible strings. When they try to put you in a trance, wake up. When they offer a trap, break the frame."
+        }
+      ]
+    },
+    {
+      "screenId": "B1-5-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Leader",
+      "exercises": [
+        {
+          "exerciseId": "B1-5-P3-E1",
+          "type": "boss-scenario",
+          "scene": "The Leader looks at you warmly. 'I know you have been *searching for answers* (Mind Read). You feel *tired of the struggle* (Pace). You are ready to *surrender to peace* (Lead/Command).'",
+          "question": "Identify the 3-step tactic:",
+          "options": [
+            "Pacing + Pacing + Leading (The Yes Set).",
+            "Gaslighting + Anger + Fear.",
+            "Honesty + Empathy + Kindness.",
+            "Double Bind + Scarcity."
+          ],
+          "correct": "Pacing + Pacing + Leading (The Yes Set).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They validated your internal state (Searching, Tired) to build rapport, then slid in the command ('Surrender').",
+            "incorrect": "It's not gaslighting. It's a rhythm of agreement designed to lower your guard."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Phase 1: The Love Bomb",
+          "steps": [
+            {
+              "scene": "Leader: 'You are special. I saw it the moment you walked in. You have a light that others don't understand.'",
+              "options": [
+                "'Thank you! I feel that way too.' (Hooked)",
+                "'What do you mean by 'Light' specifically?' (Meta Model Challenge)",
+                "'You are creepy.' (Attack)",
+                "Smile and nod."
+              ],
+              "correct": "'What do you mean by 'Light' specifically?' (Meta Model Challenge)",
+              "feedback": {
+                "correct": "Perfect. 'Light' is a vague Nominalization. By asking for a specific definition, you force them to explain the fluff or reveal the manipulation.",
+                "incorrect": "Accepting the vague compliment hooks your ego. You must drill down."
+              }
+            },
+            {
+              "question": "Leader: 'You know what I mean. That inner potential. Do you want to *unlock it now* or *keep hiding it*?' (Double Bind).",
+              "options": [
+                "'I want to unlock it!' (Submission)",
+                "'I am not hiding anything, and I don't need your key.' (Rejecting the Premise)",
+                "'I'll do it later.' (Accepting the Frame)",
+                "Stay silent."
+              ],
+              "correct": "'I am not hiding anything, and I don't need your key.' (Rejecting the Premise)",
+              "feedback": {
+                "correct": "Mastery. You rejected the false choice (Unlock vs. Hide). You asserted that you are already whole.",
+                "incorrect": "Choosing 'Now' or 'Later' accepts the premise that you are 'Hiding' potential."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Hook. You refused to be seduced by vague flattery.",
+            "incorrect": "You accepted the compliment and the trap. Now you are a follower."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P3-E3",
+          "type": "scenario",
+          "scene": "Scenario: 'People like us... we see the truth. They (the outsiders) are asleep. Don't listen to them.'",
+          "question": "This utilizes:",
+          "options": [
+            "In-Group Bias + Isolation + Presupposition.",
+            "Logic + Facts.",
+            "Kindness + Charity.",
+            "Confusion."
+          ],
+          "correct": "In-Group Bias + Isolation + Presupposition.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'People like us' creates a tribe. 'They are asleep' discredits critics. 'Don't listen' is the command.",
+            "incorrect": "It creates an 'Us vs. Them' dynamic to isolate you from reality."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P3-E4",
+          "type": "fill-in",
+          "sentence": "The Leader uses (--------) Language to allow you to project your own dreams onto their words.",
+          "options": [
+            "vague",
+            "specific",
+            "angry",
+            "fast"
+          ],
+          "answers": [
+            "vague"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'The Milton Model.' If they promised a specific thing (e.g., '$100'), they could fail. If they promise 'Abundance,' they can never be proven wrong.",
+            "incorrect": "Specificity is the enemy of the cult leader. Vagueness is their shield."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P3-E5",
+          "type": "true-false",
+          "scene": "Scenario: 'I wouldn't ask you to *give everything* if it wasn't for your own good.'",
+          "question": "Is 'give everything' an Embedded Command?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The negation ('wouldn't ask') is filtered out by the subconscious. The command 'Give everything' lands directly.",
+            "incorrect": "The sentence structure hides the order, but the brain hears it."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P3-E6",
+          "type": "ethical-dilemma",
+          "scene": "You see the Leader using these tactics on a vulnerable group. They are happy but being exploited financially.",
+          "question": "Do you speak up?",
+          "options": [
+            "Yes, scream 'It's a scam!' immediately.",
+            "No, walk away.",
+            "Yes, but use the 'Socratic Method' (Questions) to help them see the manipulation themselves. Direct attack reinforces their bond.",
+            "Join them to save them."
+          ],
+          "correct": "Yes, but use the 'Socratic Method' (Questions) to help them see the manipulation themselves. Direct attack reinforces their bond.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you attack the Leader, the group will defend him (In-Group Bias). If you ask 'How specifically does this money help?', you plant a seed of doubt.",
+            "incorrect": "Direct attacks trigger the 'Persecution Complex' of the cult."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P3-E7",
+          "type": "scenario",
+          "scene": "Scenario: 'You can leave anytime you want... but you will never find a family like this again.'",
+          "question": "This is a:",
+          "options": [
+            "Double Bind / Fear Appeal.",
+            "Fact.",
+            "Nice goodbye.",
+            "Permission."
+          ],
+          "correct": "Double Bind / Fear Appeal.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Choice A: Stay (Submit). Choice B: Leave (Be alone forever). It uses the fear of isolation to force you to stay.",
+            "incorrect": "It sounds like permission, but the threat ('never find family again') makes leaving psychologically impossible."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P3-E8",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the ultimate defense:",
+          "words": [
+            "Question",
+            "the",
+            "premise",
+            "authority",
+            "of"
+          ],
+          "correct": "Question the premise of authority",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Why is this person in charge? Who gave them power? If you question the source, the spell breaks.",
+            "incorrect": "Don't just question the command; question the commander."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P3-E9",
+          "type": "reverse-scenario",
+          "answer": "A sentence that implies a fact without stating it (e.g., 'When you realize I am right, you will apologize').",
+          "question": "What is this?",
+          "options": [
+            "Presupposition",
+            "Lie",
+            "Truth",
+            "Guess"
+          ],
+          "correct": "Presupposition",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It presupposes that 'I am right.' To answer the sentence, you must accept that premise.",
+            "incorrect": "It's a linguistic trap that buries the assumption."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: The Leader speaks in a monotone, rhythmic voice, matching your breathing.",
+          "question": "They are trying to:",
+          "options": [
+            "Induce a trance state (Hypnosis).",
+            "Bore you.",
+            "Sing.",
+            "Calm down."
+          ],
+          "correct": "Induce a trance state (Hypnosis).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Rhythm and Pacing lower the brain's frequency (Alpha State), making you more suggestible.",
+            "incorrect": "It's not boredom; it's induction. A trance state bypasses critical filters."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P3-E11",
+          "type": "multiple-choice",
+          "question": "What is the 'Confusion Technique' used for?",
+          "options": [
+            "To make you feel stupid.",
+            "To overload the conscious mind so the subconscious mind grabs the first clear command offered.",
+            "To be funny.",
+            "To waste time."
+          ],
+          "correct": "To overload the conscious mind so the subconscious mind grabs the first clear command offered.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. When the brain is confused, it panics and looks for stability. The manipulator provides a simple command ('Trust me') as the life raft.",
+            "incorrect": "Confusion is the setup. The command is the punchline."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'Don't think about how much this costs. Think about the value.'",
+          "question": "Is this a 'Reframe'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are moving the frame from 'Cost' (Pain) to 'Value' (Gain). They are directing your focus.",
+            "incorrect": "It redirects your attention away from the negative."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: 'You are free to leave, but if you do, you will lose your salvation.'",
+          "question": "This is a:",
+          "options": [
+            "Freedom Bind (Illusion of Free Will).",
+            "Fair deal.",
+            "Fact.",
+            "Kind offer."
+          ],
+          "correct": "Freedom Bind (Illusion of Free Will).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They offer physical freedom but attach spiritual/emotional death to it. It makes leaving impossible for the believer.",
+            "incorrect": "It looks like a choice, but the cost is infinite."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P3-E14",
+          "type": "matching",
+          "question": "Match the NLP Pattern to the Defense:",
+          "pairs": [
+            {
+              "term": "Embedded Command",
+              "definition": "Defense: Ignore the emphasis, focus on the content."
+            },
+            {
+              "term": "Presupposition",
+              "definition": "Defense: Challenge the assumption ('Why do you assume X?')."
+            },
+            {
+              "term": "Confusion",
+              "definition": "Defense: Pause and ask for clarity ('Stop. Explain that simply.')."
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Ignore the tone. Question the assumption. Pause the chaos.",
+            "incorrect": "Match the specific antidote to the poison."
+          }
+        },
+        {
+          "exerciseId": "B1-5-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Unit B1 Complete: The Master of Language",
+          "scene": "You have defeated the Hypnotist. You can hear the hidden commands, spot the false choices, and cut through the fog.",
+          "question": "You are ready for Unit B2:",
+          "options": [
+            "Unit B2: The Frame Game (Controlling Perception).",
+            "Retaking the course.",
+            "Becoming a mime.",
+            "Lesson A1-1."
+          ],
+          "correct": "Unit B2: The Frame Game (Controlling Perception).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You have mastered the *words*. Now we will master the *context*. How do they frame reality to win before they speak?",
+            "incorrect": "Next up: The art of Framing and Anchoring."
+          }
+        }
+      ]
+    }
+  ]
+}

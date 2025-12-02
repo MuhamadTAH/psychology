@@ -1,0 +1,344 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B1",
+  "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis",
+  "lessonId": "B1-1",
+  "lessonTitle": "Pacing and Leading",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: Matching Reality to Guide It",
+  "objective": "To define 'Pacing and Leading' as an NLP technique used to establish rapport by mirroring a target's reality (Pacing) before directing their behavior (Leading).",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B1-1-P1-S1",
+      "screenType": "Learn",
+      "title": "The Art of Agreement",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "People resist commands, but they follow friends. To influence someone, you must first prove you are 'like them' or 'with them'."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is **Pacing**: Matching the other person's behavior, mood, or beliefs to create a subconscious bond. Once they feel understood, you switch to **Leading**: Guiding them where you want to go."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Formula: Pace + Pace + Pace -> Lead. (Agree, Agree, Agree -> Command)."
+        }
+      ]
+    },
+    {
+      "screenId": "B1-1-P1-S2",
+      "screenType": "Exercises",
+      "title": "Defining the Technique",
+      "exercises": [
+        {
+          "exerciseId": "B1-1-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is **Pacing** in NLP?",
+          "options": [
+            "Walking back and forth.",
+            "Aligning your behavior, words, or mood with the other person to establish rapport.",
+            "Speaking very fast.",
+            "Running away."
+          ],
+          "correct": "Aligning your behavior, words, or mood with the other person to establish rapport.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is the act of 'getting in step' with the other person. It signals safety and sameness.",
+            "incorrect": "It is not physical walking. It is psychological alignment."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: You are angry. A manipulator says: 'I can see you are incredibly frustrated (Pace). It makes total sense why you are mad (Pace). Let's sit down and fix this (Lead).'",
+          "question": "Why did this work?",
+          "options": [
+            "Because they validated your reality first (Pacing), reducing your resistance to their suggestion (Leading).",
+            "Because they ordered you to sit.",
+            "Because they are bossy.",
+            "It didn't work."
+          ],
+          "correct": "Because they validated your reality first (Pacing), reducing your resistance to their suggestion (Leading).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If they had just said 'Sit down' (Lead) while you were angry, you would have fought back. The Pacing lowered your guard.",
+            "incorrect": "The order (Sit down) only worked because of the validation (Pacing) that came before it."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P1-E3",
+          "type": "fill-in",
+          "sentence": "You cannot (--------) someone until you have first (--------) them.",
+          "options": [
+            "lead",
+            "paced",
+            "fight",
+            "hurt"
+          ],
+          "answers": [
+            "lead",
+            "paced"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Pacing builds the bridge; Leading crosses it. Without the bridge, the suggestion falls into the void.",
+            "incorrect": "Attempting to Lead without Pacing creates resistance (Reactance)."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: Mirroring someone's body language is a physical form of Pacing.",
+          "question": "Is this true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If they lean back, you lean back. This physical Pacing tells their subconscious, 'We are the same.'",
+            "incorrect": "It is the most common form. Physical mirroring creates physiological rapport."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P1-E5",
+          "type": "matching",
+          "question": "Match the NLP Step to the Action:",
+          "pairs": [
+            {
+              "term": "Pace (Verbal)",
+              "definition": "\"It sounds like you are really stressed.\""
+            },
+            {
+              "term": "Pace (Non-Verbal)",
+              "definition": "Matching their breathing rate or posture."
+            },
+            {
+              "term": "Lead",
+              "definition": "\"Take a deep breath and tell me about it.\""
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You validate the current state (Pace) to guide them to a new state (Lead).",
+            "incorrect": "The statement of fact is the Pace. The command is the Lead."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the goal of NLP:",
+          "words": [
+            "map",
+            "reality",
+            "Change",
+            "victim's",
+            "the",
+            "of"
+          ],
+          "correct": "Change the victim's map of reality",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. NLP assumes 'The Map is not the Territory.' If you change how someone perceives reality (their Map), you change their behavior.",
+            "incorrect": "It's about altering perception (the Map)."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "Agreeing with a person's complaints to make them feel understood, so they stop complaining and listen to you.",
+          "question": "What is this tactic?",
+          "options": [
+            "Pacing the Resistance",
+            "Gaslighting",
+            "Fighting",
+            "Ignoring"
+          ],
+          "correct": "Pacing the Resistance",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You don't fight the resistance; you join it. 'You're right, this sucks.' Once they feel heard, the resistance vanishes.",
+            "incorrect": "It's not Gaslighting (denying reality). It is validating reality to change it."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: A salesperson says, 'It's hot today (Fact). It's been a long week (Fact). You probably just want to relax (Assumption/Lead).'",
+          "question": "Why do they state two obvious facts first?",
+          "options": [
+            "To create a 'Yes Set' (Getting your brain in the habit of agreeing).",
+            "To check the weather.",
+            "They are bored.",
+            "To make small talk."
+          ],
+          "correct": "To create a 'Yes Set' (Getting your brain in the habit of agreeing).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is the '3-Yes' Pattern. Fact (Yes) + Fact (Yes) -> Suggestion (Yes). Your brain wants to stay consistent.",
+            "incorrect": "It is not idle chatter. Every statement is designed to elicit a mental 'Yes'."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are a therapist. A patient is panicking. You Pace their panic ('It feels like the world is ending') before Leading them to calm.",
+          "question": "Is this manipulation?",
+          "options": [
+            "No. It is 'Influence' used for healing (The Light Side).",
+            "Yes. Any influence is evil.",
+            "Only if you charge money.",
+            "It depends on the weather."
+          ],
+          "correct": "No. It is 'Influence' used for healing (The Light Side).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The technique is neutral. The *intent* (healing vs. exploitation) determines if it is Dark Psychology or Therapy.",
+            "incorrect": "Influence is a tool. A hammer can build a house or break a skull."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P1-E10",
+          "type": "fill-in",
+          "sentence": "Pacing builds (--------). Leading utilizes it.",
+          "options": [
+            "rapport",
+            "anger",
+            "fear",
+            "money"
+          ],
+          "answers": [
+            "rapport"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Rapport is the bank account. Pacing makes the deposit. Leading makes the withdrawal.",
+            "incorrect": "It builds connection (Rapport). Leading spends that connection."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P1-E11",
+          "type": "multiple-choice",
+          "question": "What happens if you Lead without Pacing?",
+          "options": [
+            "Resistance / Reactance (The target pushes back).",
+            "They obey immediately.",
+            "They fall asleep.",
+            "They like you."
+          ],
+          "correct": "Resistance / Reactance (The target pushes back).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Calm down!' usually makes people angrier because it invalidates their current state (Failed Pacing).",
+            "incorrect": "Direct commands trigger the brain's defense mechanism (Reactance)."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P1-E12",
+          "type": "scenario",
+          "scene": "Scenario: A con artist copies your accent and slang words.",
+          "question": "They are using:",
+          "options": [
+            "Verbal Mirroring (Pacing).",
+            "Mockery.",
+            "Learning a language.",
+            "Being rude."
+          ],
+          "correct": "Verbal Mirroring (Pacing).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We subconsciously trust people who sound like us. It signals 'In-Group' status.",
+            "incorrect": "They aren't mocking you; they are blending in with you."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P1-E13",
+          "type": "true-false",
+          "scene": "Scenario: 'You are sitting here, reading this, thinking about what you will learn.'",
+          "question": "Is this a Pacing statement?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It describes your undeniable current reality. It forces your brain to verify it as 'True,' establishing credibility.",
+            "incorrect": "It is a classic hypnosis opening. State the undeniable present to gain agreement."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P1-E14",
+          "type": "matching",
+          "question": "Match the Pacing Type:",
+          "pairs": [
+            {
+              "term": "Emotional Pacing",
+              "definition": "Matching the mood (Sad with Sad)."
+            },
+            {
+              "term": "Cognitive Pacing",
+              "definition": "Matching the belief ('You are right to think that')."
+            },
+            {
+              "term": "Physical Pacing",
+              "definition": "Matching the posture (Crossing legs)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You can pace Feelings, Thoughts, or Bodies.",
+            "incorrect": "Match the domain. Mood = Emotion. Belief = Cognitive. Posture = Physical."
+          }
+        },
+        {
+          "exerciseId": "B1-1-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Bridge",
+          "scene": "You now understand the mechanism. Pacing builds the bridge of Rapport. Leading walks the target across it to your goal.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Spotting the 'Yes Set' (Real-world examples).",
+            "How to walk.",
+            "Being quiet.",
+            "A lesson on Narcissism."
+          ],
+          "correct": "Practice: Spotting the 'Yes Set' (Real-world examples).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We need to train you to hear when someone is trapping you in a loop of 'Yes'.",
+            "incorrect": "Next up: Practical detection of the Agreement Trap."
+          }
+        }
+      ]
+    }
+  ]
+}

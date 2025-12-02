@@ -1,0 +1,42 @@
+﻿======================================================================
+CHECKING LESSON TITLES INSIDE FILES
+======================================================================
+
+[OK] B1-1: 'Pacing and Leading'
+[OK] B1-2: 'Embedded Commands & Subliminals'
+[OK] B1-3: 'The Double Bind: The Illusion of Choice'
+[FAIL] B1-4:
+       Expected: 'The Milton Model'
+       Got:      'The "Milton Model": Weaponized Vague Language'
+[OK] B1-5: 'Unit B1 Review: The Hypnotist'
+[OK] B2-1: 'Framing 101: The Lens of Reality'
+[OK] B2-2: 'Anchoring: The Price of Perception'
+[OK] B2-3: 'The Contrast Principle'
+[OK] B2-4: 'Labeling & Altercasting'
+[OK] B2-5: 'Unit B2 Review: The Architect'
+[OK] B3-1: 'Social Proof: The Power of the Crowd'
+[OK] B3-2: 'The Authority Hack'
+[OK] B3-3: 'Pretexting & Phishing'
+[OK] B3-4: 'The Liking Bias: Weaponized Friendship'
+[OK] B3-5: 'Unit B3 Review: The Engineer'
+[OK] B4-1: 'Scarcity: The Fear of Loss'
+[OK] B4-2: 'Weaponized Reciprocity: The Debt Trap'
+[OK] B4-3: 'Fear-Mongering: The Boogeyman'
+[OK] B4-4: 'Hope-Mongering: Selling the Dream'
+[OK] B4-5: 'Unit B4 Review: The Lever'
+[OK] B5-1: 'Language & Framing Review'
+[OK] B5-2: 'Social & Emotional Levers Review'
+[FAIL] B5-3:
+       Expected: 'Salesman Simulation'
+       Got:      'The "Salesman" Simulation'
+[FAIL] B5-4:
+       Expected: 'Politician Simulation'
+       Got:      'The "Politician" Simulation'
+[OK] B5-5: 'The Section B Boss Fight'
+
+======================================================================
+RESULT: Found 3 issues
+  - B1-4: Title mismatch
+  - B5-3: Title mismatch
+  - B5-4: Title mismatch
+======================================================================

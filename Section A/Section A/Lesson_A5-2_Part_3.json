@@ -1,0 +1,356 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A5",
+  "unitTitle": "The Vulnerable Mind: Why We Fall For It",
+  "lessonId": "A5-2",
+  "lessonTitle": "Cognitive Biases: The Brain's Backdoors",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Sunk Cost\" Trap",
+  "objective": "To master the defense against the Sunk Cost Fallacy by learning to cut losses early, ignore past investments, and make decisions based solely on future utility.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Bias_Breaker_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A5-2-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: Cutting the Cord",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Sunk Cost Fallacy is the gambler's curse. It whispers: 'You've already spent so much... just a little more and it will pay off.'"
+        },
+        {
+          "type": "paragraph",
+          "text": "Manipulators use this to keep you in bad relationships or scams for years. They know you hate to lose what you've already invested."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Ignore the Past. The money/time is gone. Ask only: 'Is the FUTURE worth it?'"
+        }
+      ]
+    },
+    {
+      "screenId": "A5-2-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Trap",
+      "exercises": [
+        {
+          "exerciseId": "A5-2-P3-E1",
+          "type": "boss-scenario",
+          "scene": "You have invested $5,000 in a friend's business. It is failing. They ask for another $5,000 to 'save it.' They say: 'If you don't give it, the first $5,000 is wasted for nothing.'",
+          "question": "This is the Sunk Cost Trap. What is the rational move?",
+          "options": [
+            "Give the $5,000 to save the investment.",
+            "Accept the $5,000 loss as gone. Evaluate the business as a *new* investment. If it's bad, give $0.",
+            "Get angry.",
+            "Ask for a refund."
+          ],
+          "correct": "Accept the $5,000 loss as gone. Evaluate the business as a *new* investment. If it's bad, give $0.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The first $5,000 is gone forever. The only question is: 'Is this business worth investing $5,000 into *today*?' If no, walk away.",
+            "incorrect": "Giving more money to a bad idea is 'Throwing good money after bad.' You lose $10,000 instead of $5,000."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Bad Date",
+          "steps": [
+            {
+              "scene": "You bought expensive tickets ($200) for a concert. On the day of the show, you have a terrible flu and it's raining. You think: 'I have to go, or I wasted $200.'",
+              "options": [
+                "Go to the concert miserably.",
+                "Stay home. The $200 is gone either way. Why add 'suffering' to the cost?",
+                "Try to sell them.",
+                "Cry."
+              ],
+              "correct": "Stay home. The $200 is gone either way. Why add 'suffering' to the cost?",
+              "feedback": {
+                "correct": "Perfect. If you go, you lose $200 AND have a bad time. If you stay, you lose $200 but have a restful time. Staying is the 'profit' choice.",
+                "incorrect": "Going doesn't bring the money back. It just makes you miserable."
+              }
+            },
+            {
+              "question": "Your date texts: 'I can't believe you're bailing after I bought a new outfit! You owe me!' (Sunk Cost Guilt).",
+              "options": [
+                "'I'm so sorry! I'll come!' (Submission)",
+                "'I'm sick. My health is more important than an outfit. I'm staying home.' (Boundary)",
+                "'You are selfish.' (Attack)",
+                "Pay them for the outfit."
+              ],
+              "correct": "'I'm sick. My health is more important than an outfit. I'm staying home.' (Boundary)",
+              "feedback": {
+                "correct": "Mastery. You refused to let *their* sunk cost (the outfit) dictate *your* health decisions. You held the line.",
+                "incorrect": "Apologizing validates their manipulation. Their outfit is their choice/cost, not yours."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Sunk Cost trap. You prioritized your well-being over 'wasted' resources.",
+            "incorrect": "You let the 'loss' control your action. You doubled your suffering."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why is the 'Foot-in-the-Door' technique effective?",
+          "options": [
+            "It uses the 'Consistency Bias.' Once you say 'Yes' to a small request, your brain wants to be consistent, so you say 'Yes' to a big one.",
+            "It is polite.",
+            "It is scary.",
+            "It uses mirrors."
+          ],
+          "correct": "It uses the 'Consistency Bias.' Once you say 'Yes' to a small request, your brain wants to be consistent, so you say 'Yes' to a big one.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Manipulators get you to agree to a coffee, then a dinner, then a loan. Breaking the chain feels 'inconsistent' to the brain.",
+            "incorrect": "It's about internal consistency. We hate to contradict our past actions."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P3-E4",
+          "type": "fill-in",
+          "sentence": "To defeat Scarcity Bias ('Only 1 left!'), you must realize that the urgency is usually (--------).",
+          "options": [
+            "fake",
+            "real",
+            "helpful",
+            "expensive"
+          ],
+          "answers": [
+            "fake"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Manufactured Scarcity is a marketing trick. There is almost always another option. Slow down.",
+            "incorrect": "If the urgency feels high, assume it is artificial until proven otherwise."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P3-E5",
+          "type": "true-false",
+          "scene": "Scenario: 'We've been together for 10 years. I can't leave him now, even though he hits me. 10 years is a long time.'",
+          "question": "Is this the Sunk Cost Fallacy?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the most tragic form. The 10 years are gone. The only question is: Do you want the *next* 10 years to be the same?",
+            "incorrect": "Time spent is not a reason to continue suffering. It is a reason to leave *now* to save the remaining time."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P3-E6",
+          "type": "scenario",
+          "scene": "Scenario: You enter a high-pressure sales seminar. The room is hot, loud, and everyone is cheering. The speaker says, 'Everyone who wants to be rich, stand up!'",
+          "question": "They are hacking your brain using:",
+          "options": [
+            "Social Proof and Physical Arousal.",
+            "Logic.",
+            "Kindness.",
+            "Boredom."
+          ],
+          "correct": "Social Proof and Physical Arousal.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Heat/Noise creates physical stress. 'Everyone standing' creates Social Proof. Your critical thinking shuts down.",
+            "incorrect": "There is no logic here. It is biological manipulation of the herd instinct."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the 'Ben Franklin Effect':",
+          "words": [
+            "who",
+            "you",
+            "helps",
+            "you",
+            "Someone",
+            "will",
+            "you",
+            "like",
+            "more"
+          ],
+          "correct": "Someone who helps you will like you more",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you do a favor for someone, your brain rationalizes: 'I must like them, otherwise I wouldn't have helped them.' Manipulators ask *you* for favors to make *you* like them.",
+            "incorrect": "Doing favors creates a bond in the *doer*, not just the receiver."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A bias where you assume someone is 'smart' just because they are rich or famous.",
+          "question": "What is this?",
+          "options": [
+            "The Halo Effect (Wealth Variant)",
+            "Sunk Cost",
+            "Negativity Bias",
+            "Dunning-Kruger"
+          ],
+          "correct": "The Halo Effect (Wealth Variant)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Wealth is the 'Halo.' We assume rich people know secrets we don't. Often, they are just lucky or ruthless.",
+            "incorrect": "It is a specific type of Halo Effect. Money = Competence in our biased brains."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You realize your favorite charity is actually a scam. You have donated $1,000 and told all your friends to donate.",
+          "question": "What do you do?",
+          "options": [
+            "Keep quiet. It's embarrassing to admit you were tricked (Confirmation Bias defense).",
+            "Publicly admit the mistake, stop donating, and warn your friends. (Ego Death).",
+            "Donate more to hope it becomes real.",
+            "Start your own scam."
+          ],
+          "correct": "Publicly admit the mistake, stop donating, and warn your friends. (Ego Death).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You must overcome the 'Ego Defense' mechanism that wants to hide the error. Admitting you were fooled is a sign of strength.",
+            "incorrect": "Silence protects the scammer. Admitting the error kills the bias."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'But he has potential! I can change him!'",
+          "question": "This is:",
+          "options": [
+            "The Gambler's Fallacy applied to people.",
+            "True Love.",
+            "Good judgment.",
+            "Patience."
+          ],
+          "correct": "The Gambler's Fallacy applied to people.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You are betting on a 'future win' (potential) despite a history of 'losses' (abuse). The odds are not in your favor.",
+            "incorrect": "You are gambling your life on potential. Look at the track record (Reality)."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P3-E11",
+          "type": "fill-in",
+          "sentence": "To break a cognitive bias, you must slow down and engage (--------) thinking.",
+          "options": [
+            "System 2",
+            "System 1",
+            "fast",
+            "emotional"
+          ],
+          "answers": [
+            "System 2"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. (Kahneman). System 1 is fast/emotional (Biased). System 2 is slow/logical (Rational). You must manually engage System 2.",
+            "incorrect": "System 1 is the problem. You need the slow, analytical System 2."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: A manipulator says, 'You owe me because I listened to your story.'",
+          "question": "Is this valid Reciprocity?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. Listening is basic human decency, not a transaction. This is 'Weaponized Reciprocity'—creating debt where there is none.",
+            "incorrect": "Don't let them monetize basic kindness. You don't owe them your obedience for listening."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: You see a product labeled 'Doctor Recommended.' You buy it without reading the ingredients.",
+          "question": "You fell for:",
+          "options": [
+            "Authority Bias.",
+            "Sunk Cost.",
+            "Scarcity.",
+            "Liking."
+          ],
+          "correct": "Authority Bias.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The word 'Doctor' shut down your critical thinking. Manipulators use titles to bypass scrutiny.",
+            "incorrect": "It's about the title. Authority commands obedience."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P3-E14",
+          "type": "multiple-choice",
+          "question": "What is the 'Ikea Effect'?",
+          "options": [
+            "We love furniture.",
+            "We overvalue things (or relationships) we helped create/build, even if they are flawed.",
+            "We hate building things.",
+            "We like Swedish food."
+          ],
+          "correct": "We overvalue things (or relationships) we helped create/build, even if they are flawed.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you 'worked hard' on a toxic relationship, you value it *more* because of your effort. This traps you.",
+            "incorrect": "It's about effort investment. We love our own labor."
+          }
+        },
+        {
+          "exerciseId": "A5-2-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The System Reboot",
+          "scene": "You have learned to debug your brain. You know that 'Free' is a trap, 'Scarcity' is a trick, and 'Sunk Cost' is an illusion.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson A5-3: The 'Savior' Complex & Codependency.",
+            "Lesson A1-1.",
+            "Gambling.",
+            "Buying things."
+          ],
+          "correct": "Lesson A5-3: The 'Savior' Complex & Codependency.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that your logic is fixed, we must fix your heart. Why do you want to save people who hurt you?",
+            "incorrect": "Next up: The trap of the Rescuer."
+          }
+        }
+      ]
+    }
+  ]
+}

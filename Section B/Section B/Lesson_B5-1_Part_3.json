@@ -1,0 +1,357 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B5",
+  "unitTitle": "Section B Grand Review: The Master Tactician",
+  "lessonId": "B5-1",
+  "lessonTitle": "Language & Framing Review",
+  "lessonType": "Review",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The Debate",
+  "objective": "To master verbal self-defense by identifying and neutralizing logical fallacies (Ad Hominem, Straw Man), rhetorical traps (Gish Gallop), and frame battles in a high-pressure debate simulation.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 500,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Debate_Master_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B5-1-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Arena",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are stepping onto the debate stage. Your opponent does not care about truth; they care about *winning*. They will twist your words, attack your character, and flood the zone with noise."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Do not get angry. Do not defend against lies. Hold your frame and return to the facts."
+        }
+      ]
+    },
+    {
+      "screenId": "B5-1-P3-S2",
+      "screenType": "Exercises",
+      "exercises": [
+        {
+          "exerciseId": "B5-1-P3-E1",
+          "type": "boss-scenario",
+          "scene": "Opponent: 'My opponent says we should improve safety, but what they *really* mean is they want to destroy our freedom and wrap us all in bubble wrap!'",
+          "question": "This is a 'Straw Man' Argument. What is the counter?",
+          "options": [
+            "'I don't want to destroy freedom!' (Defensive)",
+            "'You are a liar.' (Attack)",
+            "'That is a ridiculous exaggeration (Straw Man). I said we need seatbelts, not bubble wrap. Let's stick to reality.' (Correction + Pivot)",
+            "Stay silent."
+          ],
+          "correct": "'That is a ridiculous exaggeration (Straw Man). I said we need seatbelts, not bubble wrap. Let's stick to reality.' (Correction + Pivot)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You named the distortion ('ridiculous exaggeration') and re-stated your true position. You refused to defend the fake position they assigned you.",
+            "incorrect": "Defending against the 'Bubble Wrap' accusation validates it. Ignore the straw man; restate your real plan."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Character Assassin",
+          "steps": [
+            {
+              "scene": "Opponent: 'Why should we listen to your plan? You were fired from your last job.' (Ad Hominem Attack).",
+              "options": [
+                "'I wasn't fired! I quit!' (J.A.D.E.)",
+                "'My employment history is irrelevant. The data supports this plan. Let's look at the numbers.' (Bridge/Pivot)",
+                "'You are a jerk.' (Mud Wrestling)",
+                "Leave the stage."
+              ],
+              "correct": "'My employment history is irrelevant. The data supports this plan. Let's look at the numbers.' (Bridge/Pivot)",
+              "feedback": {
+                "correct": "Perfect. Ad Hominem attacks are distractions. If you defend your history, you lose the frame. Pivot back to the *Data*.",
+                "incorrect": "If you defend your job history, the audience forgets your plan. Stay on target."
+              }
+            },
+            {
+              "question": "Opponent: 'See? They're dodging the question! They're hiding something!' (Meta-Frame: You are dishonest).",
+              "options": [
+                "'I'm not hiding anything!' (Reactive)",
+                "'I'm not dodging; I'm prioritizing. The audience cares about the project results, not my resume. Here is the projection...' (Frame Control)",
+                "'Fine, I was fired.' (Submission)",
+                "Yell."
+              ],
+              "correct": "'I'm not dodging; I'm prioritizing. The audience cares about the project results, not my resume. Here is the projection...' (Frame Control)",
+              "feedback": {
+                "correct": "Mastery. You reframed 'Dodging' as 'Prioritizing the Audience.' You made yourself the professional and them the gossip.",
+                "incorrect": "Do not let them define your silence as 'guilt.' Define it as 'focus.'"
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Character Assassination. You kept the debate on your terms.",
+            "incorrect": "You got dragged into the mud. Once you argue about your character, you lose the argument about the facts."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P3-E3",
+          "type": "multiple-choice",
+          "question": "What is the 'Gish Gallop'?",
+          "options": [
+            "Speaking very slowly.",
+            "Overwhelming an opponent with an excessive number of arguments (even weak ones) so they cannot refute them all in time.",
+            "A horse race.",
+            "Being polite."
+          ],
+          "correct": "Overwhelming an opponent with an excessive number of arguments (even weak ones) so they cannot refute them all in time.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If they tell 10 lies in 1 minute, and it takes you 1 minute to disprove 1 lie, you lose on time. Don't debunk them all; pick the weakest one and destroy it.",
+            "incorrect": "It is a 'firehose' strategy of falsehoods."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P3-E4",
+          "type": "fill-in",
+          "sentence": "When you are losing the argument on facts, switch the argument to (--------).",
+          "options": [
+            "feelings",
+            "math",
+            "science",
+            "truth"
+          ],
+          "answers": [
+            "feelings"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is the manipulator's rule. 'Facts' can be proven wrong. 'Feelings' ('I feel attacked') cannot be disproven. It shifts the ground.",
+            "incorrect": "Switching to math would lose. Switching to emotion creates a shield."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'Are we going to move forward, or are we going to let fear paralyze us like last time?'",
+          "question": "This frames 'Caution' as:",
+          "options": [
+            "Wisdom.",
+            "Cowardice / Paralysis.",
+            "Leadership.",
+            "Money."
+          ],
+          "correct": "Cowardice / Paralysis.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It creates a binary: Move = Brave. Wait = Coward. It attacks the identity of anyone who wants to pause.",
+            "incorrect": "It frames 'Waiting' as a character flaw."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'I have a question, but I don't want you to get defensive.'",
+          "question": "Is this a 'Trap Frame'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If you answer normally, you are fine. If you answer with *any* emotion, they say: 'See? You got defensive!' It primes you to fail.",
+            "incorrect": "It plants the seed of 'Defensiveness' before the interaction starts."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Red Herring':",
+          "words": [
+            "distraction",
+            "A",
+            "off",
+            "track",
+            "throws",
+            "opponent",
+            "that",
+            "the"
+          ],
+          "correct": "A distraction that throws the opponent off track",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If they are losing the argument about 'Budget,' they bring up 'Morale.' If you follow the Red Herring, they escape the Budget argument.",
+            "incorrect": "It leads the hound (you) away from the fox (the truth)."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "Attacking the opponent's motive instead of their argument (e.g., 'You only say that because you're paid to').",
+          "question": "What is this fallacy?",
+          "options": [
+            "Bulverism / Appeal to Motive",
+            "Straw Man",
+            "Gaslighting",
+            "True"
+          ],
+          "correct": "Bulverism / Appeal to Motive",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. C.S. Lewis coined 'Bulverism.' Instead of proving *that* you are wrong, they explain *why* you are wrong (your bias).",
+            "incorrect": "It dismisses the argument by attacking the source's intent."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "Your opponent makes a valid point that hurts your case. Do you acknowledge it?",
+          "question": "The Ethical vs. Machiavellian choice:",
+          "options": [
+            "Ethical: 'That is a valid point, however...' (Nuance). Machiavellian: 'That is a lie/distraction.' (Denial).",
+            "Both: 'You are stupid.'",
+            "Ethical: 'I lose.' Machiavellian: 'I win.'",
+            "Both: Ignore it."
+          ],
+          "correct": "Ethical: 'That is a valid point, however...' (Nuance). Machiavellian: 'That is a lie/distraction.' (Denial).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The 'Light' debater engages with reality (Nuance). The 'Dark' debater creates their own reality (Denial).",
+            "incorrect": "Admitting a point gains credibility. Denying it gains control."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'Either we launch this product now, or we go bankrupt.'",
+          "question": "How do you break this False Dilemma?",
+          "options": [
+            "Launch now.",
+            "Accept bankruptcy.",
+            "'Those are extreme options. Let's look at Option C: A soft launch to test the market first.' (Expanding the Frame).",
+            "Panic."
+          ],
+          "correct": "'Those are extreme options. Let's look at Option C: A soft launch to test the market first.' (Expanding the Frame).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Reject the binary. There is always a middle path. Don't let fear limit your vision.",
+            "incorrect": "Black-and-white thinking is a trap. The world is grey."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P3-E11",
+          "type": "fill-in",
+          "sentence": "In a debate, the person who stays (--------) wins the status game.",
+          "options": [
+            "calm",
+            "loud",
+            "angry",
+            "sad"
+          ],
+          "answers": [
+            "calm"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. High emotion signals 'Loss of Control.' Calmness signals 'Authority.' The audience trusts the calmest person.",
+            "incorrect": "Anger makes you look unstable. Calmness makes you look like a leader."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'Asking 'Why?' repeatedly is a form of aggression.'",
+          "question": "Is this true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It puts the other person on the defensive, forcing them to justify themselves endlessly while you offer nothing. It is an interrogation tactic.",
+            "incorrect": "It frames you as the Judge and them as the Defendant."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: 'You're just saying that because you're a man/woman/young/old.'",
+          "question": "This is:",
+          "options": [
+            "Identity Attack / Genetic Fallacy.",
+            "Valid critique.",
+            "Science.",
+            "Polite."
+          ],
+          "correct": "Identity Attack / Genetic Fallacy.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They dismiss your argument based on *who you are*, not *what you said*.",
+            "incorrect": "It invalidates your perspective based on unchangeable traits."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P3-E14",
+          "type": "matching",
+          "question": "Match the Defense to the Attack:",
+          "pairs": [
+            {
+              "term": "Attack: Ad Hominem",
+              "definition": "Defense: \"Let's stick to the issue, not my personality.\""
+            },
+            {
+              "term": "Attack: Straw Man",
+              "definition": "Defense: \"That is not what I said. I said X.\""
+            },
+            {
+              "term": "Attack: Gish Gallop",
+              "definition": "Defense: \"You said a lot there. Let's focus on this one wrong point.\""
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Ignore the insults. Correct the distortions. Focus the flood.",
+            "incorrect": "Match the counter-move. Don't let them define the topic."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Microphone Drop",
+          "scene": "You have survived the debate stage. You kept your cool, spotted the fallacies, and held your frame.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson B5-2: Social & Emotional Levers Review.",
+            "Lesson A1-1.",
+            "Shouting.",
+            "Running."
+          ],
+          "correct": "Lesson B5-2: Social & Emotional Levers Review.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We have reviewed Language (B1) and Framing (B2). Now we review the Crowd (B3) and the Lever (B4).",
+            "incorrect": "Next up: Reviewing Social Proof and Scarcity."
+          }
+        }
+      ]
+    }
+  ]
+}

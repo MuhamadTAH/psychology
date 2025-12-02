@@ -1,0 +1,355 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A4",
+  "unitTitle": "The Void Behind the Mask: Psychopathy",
+  "lessonId": "A4-5",
+  "lessonTitle": "Unit 4 Review: The Predator",
+  "lessonType": "Review",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The 'Serial Manipulator' Boss Scenario",
+  "objective": "To master the defense against a Serial Manipulator by identifying the repetition compulsion, resisting the 'Hoover' attempt, and executing a 'No Contact' exit strategy.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 500,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Unit_4_Predator_Proof_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A4-5-P3-S1",
+      "screenType": "Learn",
+      "title": "Final Challenge: The Cycle Breaker",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are about to face the final test. The Serial Manipulator does not change; they cycle. They move from victim to victim, using the same script."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Recognize the pattern. Do not be the next victim. Do not be the 'recycling bin' they return to when bored."
+        }
+      ]
+    },
+    {
+      "screenId": "A4-5-P3-S2",
+      "screenType": "Exercises",
+      "exercises": [
+        {
+          "exerciseId": "A4-5-P3-E1",
+          "type": "boss-scenario",
+          "scene": "Phase 1: The Return. An ex who discarded you cruelly 6 months ago texts you: 'I saw this movie and thought of you. I miss our talks. I've changed a lot.'",
+          "question": "This is:",
+          "options": [
+            "Hoovering (Testing the waters for Supply).",
+            "True Love.",
+            "Closure.",
+            "An accident."
+          ],
+          "correct": "Hoovering (Testing the waters for Supply).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are bored with their current source and are checking if you are still available as backup fuel. 'I've changed' is the standard bait.",
+            "incorrect": "It's not love; it's resource management. They are checking if the old appliance (you) still works."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Digital Hoover",
+          "steps": [
+            {
+              "scene": "They comment on your social media photo: 'Looking amazing! Hope you're happy.' (Public Hoover).",
+              "options": [
+                "Delete the comment and block them. (No Contact)",
+                "Reply: 'Thanks!' (Polite)",
+                "Reply: 'Go away!' (Anger)",
+                "Like the comment. (Validation)"
+              ],
+              "correct": "Delete the comment and block them. (No Contact)",
+              "feedback": {
+                "correct": "Mastery. Any reply (even anger) tells them you are still emotionally engaged. Deleting and blocking signals that they do not exist to you.",
+                "incorrect": "Politeness keeps the door open. Anger gives them Negative Supply. Blocking is the only true 'No'."
+              }
+            },
+            {
+              "question": "They DM you from a fake account: 'Why did you block me? I just wanted to apologize! You are so immature!' (The Switch).",
+              "options": [
+                "Reply: 'Leave me alone.' (Engagement)",
+                "Block the fake account immediately without a word. (Whack-a-Mole)",
+                "Explain why you blocked them. (J.A.D.E.)",
+                "Feel guilty."
+              ],
+              "correct": "Block the fake account immediately without a word. (Whack-a-Mole)",
+              "feedback": {
+                "correct": "Perfect. They switched to insults because the charm failed. Do not explain. Just block. Silence is the ultimate power.",
+                "incorrect": "Explaining validates their harassment. Guilt is their weapon. Silence is your shield."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Hoover. You realized that 'Closing the Door' is an action, not a conversation.",
+            "incorrect": "You engaged. Now they know they can still trigger you."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P3-E3",
+          "type": "scenario",
+          "scene": "Phase 2: The New Victim. You see them with a new partner. They are doing the *exact same things* they did with you (same trips, same gifts, same love bombing).",
+          "question": "This confirms:",
+          "options": [
+            "They are a Serial Manipulator running a script.",
+            "They finally found 'The One'.",
+            "You were the problem.",
+            "They are happy."
+          ],
+          "correct": "They are a Serial Manipulator running a script.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Psychopathy is repetitive. They don't have a personality; they have a playbook. They are just running 'Play #1' on a new person.",
+            "incorrect": "It's not about the new person. It's about the cycle. The new person will be devalued just like you were."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P3-E4",
+          "type": "ethical-dilemma",
+          "scene": "You want to warn the new victim. 'He/She is a psychopath! Run!'",
+          "question": "Why is this dangerous?",
+          "options": [
+            "The new victim is being Love Bombed and won't believe you. The Psychopath will use your warning to paint you as the 'Crazy Ex' (Triangulation).",
+            "It isn't; it's helpful.",
+            "The new victim is evil too.",
+            "You should do it anyway."
+          ],
+          "correct": "The new victim is being Love Bombed and won't believe you. The Psychopath will use your warning to paint you as the 'Crazy Ex' (Triangulation).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You play right into their hands. 'See? I told you my ex was crazy/jealous.' You validate the smear campaign.",
+            "incorrect": "Logic doesn't work against Dopamine. The new victim must learn the hard way. Save yourself."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P3-E5",
+          "type": "multiple-choice",
+          "question": "What is the 'Parasitic Void'?",
+          "options": [
+            "The internal emptiness that drives the Psychopath to consume people like resources.",
+            "A space movie.",
+            "Being hungry.",
+            "A bank account."
+          ],
+          "correct": "The internal emptiness that drives the Psychopath to consume people like resources.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They consume your love, money, and energy because they cannot generate their own. They are a black hole.",
+            "incorrect": "It is the core psychological state of the predator."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'I am the only person who can handle them.'",
+          "question": "Is this the 'Rescuer Trap'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The predator makes you feel special for 'tolerating' them. It is a trap to keep you attached to a toxic person.",
+            "incorrect": "You aren't special to them; you are just 'durable' supply."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the only win condition:",
+          "words": [
+            "game",
+            "The",
+            "is",
+            "only",
+            "win",
+            "exit",
+            "to",
+            "the"
+          ],
+          "correct": "The only win is to exit the game",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You cannot 'beat' a psychopath at their own game. You win by playing a different game (a happy life without them).",
+            "incorrect": "Fighting creates a bond. Leaving breaks it."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P3-E8",
+          "type": "scenario",
+          "scene": "Scenario: You leave. They spread terrible lies about you to everyone you know (Smear Campaign).",
+          "question": "The 'Grey Rock' response to a Smear Campaign is:",
+          "options": [
+            "Live your life well. Be happy. Let your character speak for itself.",
+            "Post angry defenses on social media.",
+            "Call everyone and scream.",
+            "Hide in a hole."
+          ],
+          "correct": "Live your life well. Be happy. Let your character speak for itself.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you look happy and sane, the lies ('They are crazy/unstable') fall apart. If you react with rage, you confirm the lies.",
+            "incorrect": "Defensiveness looks like guilt. Happiness looks like innocence."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P3-E9",
+          "type": "reverse-scenario",
+          "answer": "A deliberate performance of 'changing for the better' (therapy, religion, sobriety) just long enough to hook you back in.",
+          "question": "What is this tactic?",
+          "options": [
+            "The False Redemption Arc",
+            "True Healing",
+            "Growth",
+            "Miracle"
+          ],
+          "correct": "The False Redemption Arc",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Psychopaths don't change personality; they change masks. They mimic redemption to regain access.",
+            "incorrect": "Real change takes years, not days. This is a strategic pivot."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P3-E10",
+          "type": "fill-in",
+          "sentence": "A Psychopath's memory is (--------). They rewrite the past to fit their current goal.",
+          "options": [
+            "fluid",
+            "perfect",
+            "honest",
+            "bad"
+          ],
+          "answers": [
+            "fluid"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'History Rewriting.' If they need to be the victim, they rewrite the story so you attacked them. They believe their own rewrite in the moment.",
+            "incorrect": "It's not bad memory; it's motivated fabrication."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P3-E11",
+          "type": "scenario",
+          "scene": "Scenario: You are bored by their drama. You don't react. They look at you with 'Dead Eyes' and walk away.",
+          "question": "This moment is:",
+          "options": [
+            "The Discard (You are out of fuel).",
+            "A pause.",
+            "Love.",
+            "Rest."
+          ],
+          "correct": "The Discard (You are out of fuel).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The moment you stop providing Supply (Emotion), you become a useless object. They discard you without a backward glance.",
+            "incorrect": "It's not a pause. It is the end of your utility."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'We can still be friends.'",
+          "question": "Is this a trap?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They keep exes as 'friends' to use as backup Supply or to triangulate new partners. It keeps the door open.",
+            "incorrect": "It sounds nice, but it is strategic hoarding of people."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P3-E13",
+          "type": "matching",
+          "question": "Match the Exit Strategy:",
+          "pairs": [
+            {
+              "term": "No Contact",
+              "definition": "Block everywhere. No exceptions."
+            },
+            {
+              "term": "Grey Rock",
+              "definition": "If you must interact, be boring."
+            },
+            {
+              "term": "Reality Anchor",
+              "definition": "Journaling to keep sanity."
+            }
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. These are the Three Shields against the Predator.",
+            "incorrect": "Block = No Contact. Boring = Grey Rock. Truth = Anchor."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P3-E14",
+          "type": "multiple-choice",
+          "question": "What is the final lesson of the Predator Unit?",
+          "options": [
+            "Evil exists, and your best defense is Awareness and Boundaries.",
+            "Everyone is evil.",
+            "You should be afraid.",
+            "Manipulate them back."
+          ],
+          "correct": "Evil exists, and your best defense is Awareness and Boundaries.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You cannot fix them. You can only see them coming and close the gate. Awareness is your shield.",
+            "incorrect": "Not everyone is evil. But predators exist. Fear is not the goal; preparedness is."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Unit 4 Complete: Predator Proof",
+          "scene": "You have completed the Dark Triad. You know the Narcissist (Ego), the Machiavellian (Strategy), and the Psychopath (Void). You have the tools to defend yourself.",
+          "question": "What is the final step of the curriculum?",
+          "options": [
+            "Unit A5: Love Bombing (Recap).",
+            "The Grand Finale / Certification.",
+            "Start Over.",
+            "Sleep."
+          ],
+          "correct": "Unit A5: Love Bombing (Recap).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Wait... actually, according to the original plan, we have covered the main personality types. Unit A5 in the 'Gamified' plan was Love Bombing, but we covered that in A2-3. We are now ready for the **Ethics & Mastery** phase (Section D in original plan, or potentially a new synthesis).",
+            "incorrect": "You have mastered the basics. Now you must integrate them."
+          }
+        }
+      ]
+    }
+  ]
+}

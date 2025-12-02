@@ -1,0 +1,332 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A4",
+  "unitTitle": "The Void Behind the Mask: Psychopathy",
+  "lessonId": "A4-3",
+  "lessonTitle": "The Parasite: Exploitation & Boredom",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Identifying Parasitic Lifestyles",
+  "objective": "To practice identifying the specific red flags of financial and emotional parasitism (The Mooch, The Crisis, The Investment) in real-world relationships.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A4-3-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Wallet Inspector",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A Parasite never asks for everything at once. They test your boundaries with small requests."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Look for the **Entitlement**. They don't feel grateful for your help; they feel *entitled* to it because they view you as a resource, not a person."
+        }
+      ]
+    },
+    {
+      "screenId": "A4-3-P2-S2",
+      "screenType": "Exercises",
+      "title": "Spotting the Mooch",
+      "exercises": [
+        {
+          "exerciseId": "A4-3-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: On the first date, they 'forgot' their wallet. On the second date, their card is 'declined.' By the third date, they ask you to pay because 'payday is tomorrow.'",
+          "question": "This pattern is:",
+          "options": [
+            "Bad luck.",
+            "Testing the Fence (Checking if you are a generous target).",
+            "Forgetfulness.",
+            "True Love."
+          ],
+          "correct": "Testing the Fence (Checking if you are a generous target).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Once is an accident. Twice is a coincidence. Three times is a pattern. They are testing your willingness to pay.",
+            "incorrect": "It's not bad luck. It is a calculated test to see if you will cover them without complaint."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P2-E2",
+          "type": "multiple-choice",
+          "question": "Why do Parasitic Psychopaths often quit jobs suddenly?",
+          "options": [
+            "Because the job gets 'boring' or requires actual effort, which they resent.",
+            "Because they are too smart for the job.",
+            "Because the boss was mean.",
+            "Because they won the lottery."
+          ],
+          "correct": "Because the job gets 'boring' or requires actual effort, which they resent.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They feel entitled to success without work. When the 'newness' wears off and expectations set in, they leave to find an easier host.",
+            "incorrect": "It's not about intelligence. It's about an allergy to sustained effort and boredom."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P2-E3",
+          "type": "true-false",
+          "scene": "Scenario: 'I have a huge inheritance coming next month, so I can pay you back double if you lend me rent money now.'",
+          "question": "Is this likely 'Future Faking'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The 'Inheritance,' 'Settlement,' or 'Big Deal' is almost always a lie designed to make you feel safe lending money.",
+            "incorrect": "It is a classic con. The 'Big Payout' is the carrot on the stick."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P2-E4",
+          "type": "fill-in",
+          "sentence": "A Parasite does not want a partner; they want a (--------).",
+          "options": [
+            "host",
+            "friend",
+            "leader",
+            "student"
+          ],
+          "answers": [
+            "host"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Like a biological parasite, they need a Host organism to sustain them. They attach, drain, and move on.",
+            "incorrect": "They don't want equality (friend/partner). They want sustenance (Host)."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P2-E5",
+          "type": "matching",
+          "question": "Match the Excuse to the Reality:",
+          "pairs": [
+            {
+              "term": "'My ex stole all my money.'",
+              "definition": "Pity Play (Victimhood)"
+            },
+            {
+              "term": "'I'm too talented for a 9-5 job.'",
+              "definition": "Grandiosity (Entitlement)"
+            },
+            {
+              "term": "'I forgot my wallet.'",
+              "definition": "Testing Boundaries"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Each excuse masks the core trait: They believe they shouldn't have to work or pay.",
+            "incorrect": "Analyze the function. 'Too talented' = I'm special. 'Ex stole' = Poor me."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: You ask them to contribute to rent. They explode: 'I do everything around here! You only care about money! You are so selfish!'",
+          "question": "This reaction is:",
+          "options": [
+            "Deflection and Projection.",
+            "A valid argument.",
+            "Love.",
+            "Fear."
+          ],
+          "correct": "Deflection and Projection.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They are projecting their own selfishness onto you. They use rage to make you afraid to ask for money again.",
+            "incorrect": "They aren't doing 'everything.' They are likely doing nothing. The rage protects their free ride."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the 'Crisis' tactic:",
+          "words": [
+            "urgency",
+            "creates",
+            "The",
+            "compliance",
+            "crisis"
+          ],
+          "correct": "The crisis creates urgency compliance",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'I need money NOW or I go to jail!' The urgency stops you from thinking logically. You pay to stop the crisis.",
+            "incorrect": "Urgency bypasses logic. They manufacture crises to force your hand."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "A person who lives in your house, eats your food, creates drama, and contributes nothing but excuses.",
+          "question": "What is this person?",
+          "options": [
+            "A Parasitic Psychopath (The Hobosexual)",
+            "A struggling artist",
+            "A good roommate",
+            "A victim of the economy"
+          ],
+          "correct": "A Parasitic Psychopath (The Hobosexual)",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Hobosexual' is a slang term for someone who dates you just for a place to live. It is a form of parasitism.",
+            "incorrect": "Struggling people try to help or feel gratitude. Parasites feel entitled."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "A friend asks for a large loan for a 'sure thing' investment. You suspect it's a scam or bad idea.",
+          "question": "How do you refuse without triggering rage?",
+          "options": [
+            "Use the 'Policy' Shield: 'I have a personal rule: I never lend money to friends. I value the friendship too much.'",
+            "Say 'You are a scammer.'",
+            "Say 'I'm broke.' (Lie)",
+            "Give a small amount."
+          ],
+          "correct": "Use the 'Policy' Shield: 'I have a personal rule: I never lend money to friends. I value the friendship too much.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Blaming a 'rule' makes it impersonal. It is harder for them to argue with a policy than a personal rejection.",
+            "incorrect": "Lying ('I'm broke') can be disproven. Accusing them causes a fight. The 'Policy' is the safest shield."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: They steal $20 from your wallet. You catch them. They say: 'I was going to put it back! I just needed gas. Why are you making a big deal over $20?'",
+          "question": "This is:",
+          "options": [
+            "Minimizing (Trivializing).",
+            "An apology.",
+            "A confession.",
+            "Honesty."
+          ],
+          "correct": "Minimizing (Trivializing).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They minimize the crime ('it's just $20') to shame you for reacting. Theft is theft, regardless of the amount.",
+            "incorrect": "It's not an apology. They are attacking your reaction to distract from the theft."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P2-E11",
+          "type": "fill-in",
+          "sentence": "If you support a Parasite, you are not helping them; you are (--------) them.",
+          "options": [
+            "enabling",
+            "saving",
+            "loving",
+            "teaching"
+          ],
+          "answers": [
+            "enabling"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Giving money to a parasite ensures they never have to change. You are funding their dysfunction.",
+            "incorrect": "You aren't saving them. You are preventing them from facing the consequences of their life."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P2-E12",
+          "type": "multiple-choice",
+          "question": "Why do Parasites often ruin your property (borrowing cars and crashing them, staining clothes)?",
+          "options": [
+            "Lack of Empathy and Entitlement. They don't respect your things because they don't respect you.",
+            "They are clumsy.",
+            "They have bad luck.",
+            "They hate objects."
+          ],
+          "correct": "Lack of Empathy and Entitlement. They don't respect your things because they don't respect you.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. To them, your property is just another resource to be used up. They feel no guilt for damaging it.",
+            "incorrect": "It's not bad luck. It's a fundamental lack of care for anything that isn't theirs."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P2-E13",
+          "type": "true-false",
+          "scene": "Scenario: 'I can't get a job because the system is rigged against people like me.'",
+          "question": "Is this a common Parasitic justification?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They portray themselves as victims of 'The System' to justify opting out of work and living off you.",
+            "incorrect": "It's the ultimate external blame. 'The world is unfair, so you must support me.'"
+          }
+        },
+        {
+          "exerciseId": "A4-3-P2-E14",
+          "type": "scenario",
+          "scene": "Scenario: You stop giving them money. They instantly discard you and move in with someone else the next day.",
+          "question": "This proves:",
+          "options": [
+            "The relationship was purely transactional.",
+            "They fall in love fast.",
+            "They are lucky.",
+            "You were a bad partner."
+          ],
+          "correct": "The relationship was purely transactional.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The Host stopped providing resources, so the Parasite moved to a new Host. It was never about you.",
+            "incorrect": "It's not love. It's survival. They secured a new food source immediately."
+          }
+        },
+        {
+          "exerciseId": "A4-3-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Leech Detected",
+          "scene": "You can now spot the signs: The Mooch, the Crisis, the Entitlement, and the Future Faking.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Financial Drain' Scenario (Simulation).",
+            "Giving them a loan.",
+            "Opening a joint account.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Financial Drain' Scenario (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you protect your wallet from a master manipulator? Let's find out.",
+            "incorrect": "Next up: A high-pressure financial extraction simulation."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+﻿======================================================================
+SECTION B VERIFICATION REPORT
+======================================================================
+
+[FILE COUNT]
+   Expected: 75 files
+   Found:    75 files
+   Status:   PASS
+
+[SYLLABUS VERIFICATION]
+
+Unit B1 - Lesson B1-1: Pacing and Leading
+   [OK] Lesson_B1-1_Part_1.json
+   [OK] Lesson_B1-1_Part_2.json
+   [OK] Lesson_B1-1_Part_3.json
+
+Unit B1 - Lesson B1-2: Embedded Commands
+   [OK] Lesson_B1-2_Part_1.json
+   [OK] Lesson_B1-2_Part_2.json
+   [OK] Lesson_B1-2_Part_3.json
+
+Unit B1 - Lesson B1-3: The Double Bind
+   [OK] Lesson_B1-3_Part_1.json
+   [OK] Lesson_B1-3_Part_2.json
+   [OK] Lesson_B1-3_Part_3.json
+
+Unit B1 - Lesson B1-4: The Milton Model
+   [OK] Lesson_B1-4_Part_1.json
+   [OK] Lesson_B1-4_Part_2.json
+   [OK] Lesson_B1-4_Part_3.json
+
+Unit B1 - Lesson B1-5: Review: The Hypnotist
+   [OK] Lesson_B1-5_Part_1.json
+   [OK] Lesson_B1-5_Part_2.json
+   [OK] Lesson_B1-5_Part_3.json
+
+Unit B2 - Lesson B2-1: Framing 101
+   [OK] Lesson_B2-1_Part_1.json
+   [OK] Lesson_B2-1_Part_2.json
+   [OK] Lesson_B2-1_Part_3.json
+
+Unit B2 - Lesson B2-2: Anchoring
+   [OK] Lesson_B2-2_Part_1.json
+   [OK] Lesson_B2-2_Part_2.json
+   [OK] Lesson_B2-2_Part_3.json
+
+Unit B2 - Lesson B2-3: Contrast Principle
+   [OK] Lesson_B2-3_Part_1.json
+   [OK] Lesson_B2-3_Part_2.json
+   [OK] Lesson_B2-3_Part_3.json
+
+Unit B2 - Lesson B2-4: Labeling & Altercasting
+   [OK] Lesson_B2-4_Part_1.json
+   [OK] Lesson_B2-4_Part_2.json
+   [OK] Lesson_B2-4_Part_3.json
+
+Unit B2 - Lesson B2-5: Review: The Architect
+   [OK] Lesson_B2-5_Part_1.json
+   [OK] Lesson_B2-5_Part_2.json
+   [OK] Lesson_B2-5_Part_3.json
+
+Unit B3 - Lesson B3-1: Social Proof
+   [OK] Lesson_B3-1_Part_1.json
+   [OK] Lesson_B3-1_Part_2.json
+   [OK] Lesson_B3-1_Part_3.json
+
+Unit B3 - Lesson B3-2: Authority Hack
+   [OK] Lesson_B3-2_Part_1.json
+   [OK] Lesson_B3-2_Part_2.json
+   [OK] Lesson_B3-2_Part_3.json
+
+Unit B3 - Lesson B3-3: Pretexting & Phishing
+   [OK] Lesson_B3-3_Part_1.json
+   [OK] Lesson_B3-3_Part_2.json
+   [OK] Lesson_B3-3_Part_3.json
+
+Unit B3 - Lesson B3-4: Liking Bias
+   [OK] Lesson_B3-4_Part_1.json
+   [OK] Lesson_B3-4_Part_2.json
+   [OK] Lesson_B3-4_Part_3.json
+
+Unit B3 - Lesson B3-5: Review: The Engineer
+   [OK] Lesson_B3-5_Part_1.json
+   [OK] Lesson_B3-5_Part_2.json
+   [OK] Lesson_B3-5_Part_3.json
+
+Unit B4 - Lesson B4-1: Scarcity
+   [OK] Lesson_B4-1_Part_1.json
+   [OK] Lesson_B4-1_Part_2.json
+   [OK] Lesson_B4-1_Part_3.json
+
+Unit B4 - Lesson B4-2: Reciprocity
+   [OK] Lesson_B4-2_Part_1.json
+   [OK] Lesson_B4-2_Part_2.json
+   [OK] Lesson_B4-2_Part_3.json
+
+Unit B4 - Lesson B4-3: Fear-Mongering
+   [OK] Lesson_B4-3_Part_1.json
+   [OK] Lesson_B4-3_Part_2.json
+   [OK] Lesson_B4-3_Part_3.json
+
+Unit B4 - Lesson B4-4: Hope-Mongering
+   [OK] Lesson_B4-4_Part_1.json
+   [OK] Lesson_B4-4_Part_2.json
+   [OK] Lesson_B4-4_Part_3.json
+
+Unit B4 - Lesson B4-5: Review: The Lever
+   [OK] Lesson_B4-5_Part_1.json
+   [OK] Lesson_B4-5_Part_2.json
+   [OK] Lesson_B4-5_Part_3.json
+
+Unit B5 - Lesson B5-1: Language & Framing Review
+   [OK] Lesson_B5-1_Part_1.json
+   [OK] Lesson_B5-1_Part_2.json
+   [OK] Lesson_B5-1_Part_3.json
+
+Unit B5 - Lesson B5-2: Social & Emotional Levers Review
+   [OK] Lesson_B5-2_Part_1.json
+   [OK] Lesson_B5-2_Part_2.json
+   [OK] Lesson_B5-2_Part_3.json
+
+Unit B5 - Lesson B5-3: Salesman Simulation
+   [OK] Lesson_B5-3_Part_1.json
+   [OK] Lesson_B5-3_Part_2.json
+   [OK] Lesson_B5-3_Part_3.json
+
+Unit B5 - Lesson B5-4: Politician Simulation
+   [OK] Lesson_B5-4_Part_1.json
+   [OK] Lesson_B5-4_Part_2.json
+   [OK] Lesson_B5-4_Part_3.json
+
+Unit B5 - Lesson B5-5: Section B Boss Fight
+   [OK] Lesson_B5-5_Part_1.json
+   [OK] Lesson_B5-5_Part_2.json
+   [OK] Lesson_B5-5_Part_3.json
+
+[CRITICAL CHECKS]
+
+   [FAIL] B2-4 position incorrect (found at index 24, expected 27)
+   [OK] B3-3 'Pretexting & Phishing' has all 3 parts
+
+======================================================================
+RESULT: Issues found. Please review the report above.
+======================================================================

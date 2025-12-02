@@ -1,0 +1,342 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A2",
+  "unitTitle": "The Manipulator's Playbook: Narcissism & Gaslighting",
+  "lessonId": "A2-2",
+  "lessonTitle": "Narcissistic Supply: The Addict & The Fuel",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: What is 'Supply'?",
+  "objective": "To define 'Narcissistic Supply' as the core motivation for all narcissistic behavior and identify the two main types: Positive and Negative.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A2-2-P1-S1",
+      "screenType": "Learn",
+      "title": "The Addiction Model",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "To understand a narcissist, you must stop seeing them as an 'emotionally complex human' and start seeing them as an **Addict**."
+        },
+        {
+          "type": "paragraph",
+          "text": "They are addicted to **Narcissistic Supply**. This is any form of attention that confirms their existence and superiority. Without it, they face psychological collapse."
+        },
+        {
+          "type": "alert",
+          "alertType": "info",
+          "text": "Crucial Rule: They do not care if the attention is good (Praise) or bad (Fear). They only care that *they caused it*."
+        }
+      ]
+    },
+    {
+      "screenId": "A2-2-P1-S2",
+      "screenType": "Exercises",
+      "exercises": [
+        {
+          "exerciseId": "A2-2-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the simplest definition of **Narcissistic Supply**?",
+          "options": [
+            "Money and expensive gifts.",
+            "Any form of attention or validation that feeds the narcissist's ego.",
+            "Genuine love and connection.",
+            "A supply of medical drugs."
+          ],
+          "correct": "Any form of attention or validation that feeds the narcissist's ego.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is 'ego-fuel.' It proves they matter. Without it, they feel empty and dead.",
+            "incorrect": "While they like money, 'Supply' is psychological. It is the attention and reaction they get from others."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P1-E2",
+          "type": "true-false",
+          "scene": "Scenario: You stop arguing with a narcissist and just stare at them blankly (The 'Grey Rock' method). They get furious.",
+          "question": "Are they angry because they aren't getting Supply?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Your silence is 'starvation.' Even an argument is food to them. Silence is nothing.",
+            "incorrect": "They aren't angry about the topic; they are angry because the 'fuel line' (your reaction) has been cut."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P1-E3",
+          "type": "matching",
+          "question": "Match the type of Supply to the reaction:",
+          "pairs": [
+            {
+              "term": "Positive Supply",
+              "definition": "Admiration, Praise, Flattery, Love."
+            },
+            {
+              "term": "Negative Supply",
+              "definition": "Fear, Anger, Tears, Frustration."
+            },
+            {
+              "term": "No Supply",
+              "definition": "Silence, Indifference, Ignoring them."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Most people don't realize that your *anger* is just as tasty to them as your *praise*. It makes them feel powerful.",
+            "incorrect": "Remember: Anger is still attention. Silence is the only thing that isn't Supply."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P1-E4",
+          "type": "fill-in",
+          "sentence": "To a narcissist, people are not humans; they are (--------).",
+          "options": [
+            "friends",
+            "enemies",
+            "appliances",
+            "gods",
+            "leaders"
+          ],
+          "answers": [
+            "appliances"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is the 'Toaster' analogy. You don't have a relationship with your toaster; you use it to get toast (Supply). If it breaks, you replace it.",
+            "incorrect": "They don't see you as a friend or enemy (which implies humanity). They see you as an object (an appliance) that performs a function."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P1-E5",
+          "type": "scenario",
+          "scene": "Scenario: A narcissist deliberately starts a fight right before your birthday party, making you cry.",
+          "question": "Why did they do this?",
+          "options": [
+            "Because they were genuinely upset about something.",
+            "To extract **Negative Supply** (your tears) and sabotage an event where *you* would be the center of attention.",
+            "It was an accident.",
+            "Because they hate birthdays."
+          ],
+          "correct": "To extract **Negative Supply** (your tears) and sabotage an event where *you* would be the center of attention.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If they can't be the center of attention (Positive Supply), they will ruin the event so they are the center of the drama (Negative Supply).",
+            "incorrect": "It's rarely an accident. By making you cry, they prove they are powerful enough to ruin your day. That feeling of power is their drug."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to reveal the narcissist's motto:",
+          "words": [
+            "exist",
+            "only",
+            "serve",
+            "You",
+            "to",
+            "me"
+          ],
+          "correct": "You only exist to serve me",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "This is the 'Appliance' mindset. An appliance only exists to serve a function. When it stops serving, it is discarded.",
+            "incorrect": "The core belief is that your existence is conditional on your utility to them."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P1-E7",
+          "type": "multiple-choice",
+          "question": "Why is **Negative Supply** (making you angry/afraid) sometimes *better* for them than Positive Supply?",
+          "options": [
+            "It isn't; they always prefer praise.",
+            "Because it's easier to get (anyone can be annoying) and it proves they have **control** over your emotions.",
+            "Because they are sadists.",
+            "Because they want you to leave them."
+          ],
+          "correct": "Because it's easier to get (anyone can be annoying) and it proves they have **control** over your emotions.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Praise requires them to do something good (hard work). Causing drama is easy and instantly proves they control your emotional state.",
+            "incorrect": "Positive supply takes effort to earn. Negative supply is a 'cheap' and fast way to feel powerful."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P1-E8",
+          "type": "reverse-scenario",
+          "answer": "The person or object that provides the fuel (admiration, status, sex, money, or fear).",
+          "question": "In narcissistic terms, this person is called the...",
+          "options": [
+            "Source",
+            "Victim",
+            "Partner",
+            "Friend"
+          ],
+          "correct": "Source",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You are a 'Source' of Supply. There are Primary Sources (spouses) and Secondary Sources (colleagues, fans).",
+            "incorrect": "To them, you aren't a partner or friend. You are a 'Source'—like an oil well or a battery."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P1-E9",
+          "type": "true-false",
+          "scene": "Scenario: A narcissist is ignored by everyone at a party.",
+          "question": "Is this considered a 'psychological injury' to them?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Being ignored is the worst possible outcome. It implies they don't matter. This causes 'Narcissistic Injury' and often leads to rage.",
+            "incorrect": "It's not just annoying; it's threatening to their ego. They *need* to be noticed to feel alive."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P1-E10",
+          "type": "fill-in",
+          "sentence": "For a narcissist, (--------) is better than indifference.",
+          "options": [
+            "hatred",
+            "love",
+            "silence",
+            "peace"
+          ],
+          "answers": [
+            "hatred"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you hate them, you are thinking about them. You are obsessed with them. That counts as Supply.",
+            "incorrect": "Indifference (not caring) is the enemy. Hatred is still an intense form of attention."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P1-E11",
+          "type": "ethical-dilemma",
+          "scene": "You realize your boss is provoking arguments just to get 'Negative Supply' from the team.",
+          "question": "What is the most effective defense strategy?",
+          "options": [
+            "Argue back to prove them wrong.",
+            "Complain to HR immediately.",
+            "The 'Grey Rock' Method: Become boring, unresponsive, and give zero emotional reaction.",
+            "Quit dramatically."
+          ],
+          "correct": "The 'Grey Rock' Method: Become boring, unresponsive, and give zero emotional reaction.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. By cutting off the emotional reaction (the Supply), you become 'boring' to the addict. They will likely stop targeting you and move to an easier source.",
+            "incorrect": "Arguing feeds them. HR might not understand. 'Grey Rock' starves the beast."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P1-E12",
+          "type": "scenario",
+          "scene": "Scenario: A narcissist posts a controversial or offensive opinion online and then sits back to watch the comments fight.",
+          "question": "This behavior is farming for:",
+          "options": [
+            "The Truth",
+            "Negative Supply (Chaos/Attention)",
+            "Positive Supply (Agreement)",
+            "Information"
+          ],
+          "correct": "Negative Supply (Chaos/Attention)",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is 'Trolling' for Supply. The chaos proves they have the power to disrupt hundreds of people's emotions with one sentence.",
+            "incorrect": "They don't care about the truth. They care about the volume of the reaction."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P1-E13",
+          "type": "multiple-choice",
+          "question": "What happens when a 'Source' (a person) stops providing Supply?",
+          "options": [
+            "The narcissist goes to therapy.",
+            "The narcissist becomes humble.",
+            "The narcissist **devalues** and **discards** the Source to find a new one.",
+            "The narcissist apologizes."
+          ],
+          "correct": "The narcissist **devalues** and **discards** the Source to find a new one.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Just like a broken toaster, if you stop working (stop giving praise/reaction), you are thrown out and replaced.",
+            "incorrect": "They rarely look inward. They look outward for a replacement."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P1-E14",
+          "type": "matching",
+          "question": "Match the Supply Source to the Relationship:",
+          "pairs": [
+            {
+              "term": "Primary Source",
+              "definition": "Spouse/Partner (Daily, high-volume fuel)."
+            },
+            {
+              "term": "Secondary Source",
+              "definition": "Colleague/Neighbor (Occasional fuel)."
+            },
+            {
+              "term": "Tertiary Source",
+              "definition": "Stranger/Waiter (One-time fuel)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A narcissist maintains a 'stable' of sources to ensure they never run out of fuel.",
+            "incorrect": "Think of frequency. Primary is everyday (living together). Tertiary is random encounters."
+          }
+        },
+        {
+          "exerciseId": "A2-2-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Addiction",
+          "scene": "You now understand the engine: Narcissism is an addiction to **Supply** (Attention). They treat people as **Appliances** to get it. Positive (praise) and Negative (fear) are both fuel.",
+          "question": "In Part 2, what will we learn?",
+          "options": [
+            "How to give them more Supply.",
+            "Practice: Identifying which *specific* actions are attempts to extract Supply.",
+            "A history lesson on Freud.",
+            "How to build self-esteem."
+          ],
+          "correct": "Practice: Identifying which *specific* actions are attempts to extract Supply.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that you know what Supply is, you need to practice spotting the 'extraction' tactics in real life.",
+            "incorrect": "The next step is practical application: Spotting the extraction attempts."
+          }
+        }
+      ]
+    }
+  ]
+}

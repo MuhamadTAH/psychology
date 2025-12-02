@@ -1,0 +1,53 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "Psychological Tactics",
+  "unitId": "B2",
+  "unitTitle": "Advanced Persuasion Techniques",
+  "lessonId": "B2-3",
+  "lessonTitle": "The Art of Subtle Influence",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice and Application",
+  "objective": "Master subtle influence tactics through real-world scenarios",
+  "gamification": {
+    "progressRings": [
+      {"ringId": "learn", "status": "complete", "label": "Learn"},
+      {"ringId": "practice", "status": "incomplete", "label": "Practice"}
+    ],
+    "pointsValue": 75,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Subtle Influencer"
+  },
+  "contentScreens": [
+    {
+      "screenType": "exercise-block",
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "question": "Which technique creates subtle social pressure without direct commands?",
+          "options": [
+            "Implied expectations",
+            "Direct orders",
+            "Written contracts",
+            "Loud demands"
+          ],
+          "correct": "Implied expectations",
+          "explanation": "Implied expectations work by creating social pressure without explicit demands."
+        },
+        {
+          "type": "scenario",
+          "scene": "During a meeting, your colleague repeatedly says 'Most successful people already use this approach' when suggesting their idea.",
+          "question": "What persuasion tactic are they using?",
+          "options": [
+            "Social proof and bandwagon effect",
+            "Direct command",
+            "Logical reasoning",
+            "Statistical analysis"
+          ],
+          "correct": "Social proof and bandwagon effect",
+          "explanation": "Invoking what 'most people' do creates pressure to conform."
+        }
+      ]
+    }
+  ]
+}

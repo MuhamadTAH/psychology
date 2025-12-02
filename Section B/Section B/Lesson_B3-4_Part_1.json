@@ -1,0 +1,195 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B3",
+  "unitTitle": "The Herd Mind: Social Engineering",
+  "lessonId": "B3-4",
+  "lessonTitle": "The Liking Bias: Weaponized Friendship",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: We Say Yes to People We Like",
+  "objective": "To define the 'Liking Bias' as a psychological trigger where compliance is increased by affection, and to identify the factors manipulators use to manufacture it (Similarity, Compliments, Physical Attractiveness).",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B3-4-P1-S1",
+      "screenType": "Learn",
+      "title": "The Friendly Trap",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "It is hard to say 'No' to a friend. It is easy to say 'No' to a stranger. Manipulators know this, so their first goal is to become your 'friend' as fast as possible."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is the **Liking Bias**. We automatically attribute good intentions to people we like. Manipulators hack this by faking **Similarity** ('I love that band too!'), offering **Compliments**, and being **Physically Attractive**."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Rule: If you like a stranger *too much, too soon*, ask yourself: 'Did they design this interaction to make me like them?'"
+        }
+      ]
+    },
+    {
+      "screenId": "B3-4-P1-S2",
+      "screenType": "Exercises",
+      "title": "Defining the Bias",
+      "exercises": [
+        {
+          "exerciseId": "B3-4-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the **Liking Bias**?",
+          "options": [
+            "Liking ice cream.",
+            "The psychological tendency to be more likely to say 'yes' to a request if we know and like the person asking.",
+            "Being popular.",
+            "A Facebook feature."
+          ],
+          "correct": "The psychological tendency to be more likely to say 'yes' to a request if we know and like the person asking.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is a shortcut. 'I like you -> You are safe -> I will help you.' Manipulators hijack this shortcut.",
+            "incorrect": "It is a compliance trigger based on affection."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: A salesperson notices your golf clubs in the back seat. They say: 'No way! I play every weekend. What's your handicap?'",
+          "question": "Why did they bring this up?",
+          "options": [
+            "They want to play with you.",
+            "To manufacture **Similarity**. We like people who are like us.",
+            "It was random.",
+            "They are bored."
+          ],
+          "correct": "To manufacture **Similarity**. We like people who are like us.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Similarity' is one of the strongest drivers of Liking. By claiming to share your hobby, they move from 'Stranger' to 'Friend'.",
+            "incorrect": "It is strategic. Finding common ground builds immediate rapport."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P1-E3",
+          "type": "fill-in",
+          "sentence": "We tend to believe that (--------) people are also smarter, kinder, and more honest.",
+          "options": [
+            "attractive",
+            "angry",
+            "sad",
+            "slow"
+          ],
+          "answers": [
+            "attractive"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the 'Halo Effect' (Lesson B1-4). Good looks create a 'Halo' of positive assumptions. Con artists dress well for this reason.",
+            "incorrect": "Beauty biases judgment. We automatically trust attractive people more."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'Tupperware Parties' (selling products to friends in a home setting).",
+          "question": "Does this rely on the Liking Bias?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You buy the container not because you need it, but because you like the host (your friend) and don't want to disappoint them.",
+            "incorrect": "It weaponizes friendship for profit. The social pressure to buy is stronger than the product's value."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P1-E5",
+          "type": "matching",
+          "question": "Match the Factor to the Liking Trigger:",
+          "pairs": [
+            {
+              "term": "Physical Attractiveness",
+              "definition": "Halo Effect (Good looking = Good person)."
+            },
+            {
+              "term": "Similarity",
+              "definition": "\"We are the same\" (Tribe)."
+            },
+            {
+              "term": "Compliments",
+              "definition": "Ego Gratification (We like people who like us)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Looks, Sameness, and Praise are the three pillars of instant Liking.",
+            "incorrect": "Review the triggers. Why do you like someone? Usually because they are pretty, like you, or nice to you."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the danger of the 'Good Cop':",
+          "words": [
+            "someone",
+            "on",
+            "side",
+            "is",
+            "your",
+            "Never",
+            "assume"
+          ],
+          "correct": "Never assume someone is on your side",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. In 'Good Cop/Bad Cop,' the Good Cop is just as dangerous as the Bad Cop. They use kindness to get the confession.",
+            "incorrect": "Friendliness is a tactic. Do not mistake it for loyalty."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "A technique where a manipulator mirrors your body language, tone, and values to make you feel 'understood' and safe.",
+          "question": "What is this called?",
+          "options": [
+            "Mirroring / Chameleon Effect",
+            "Gaslighting",
+            "Negging",
+            "Hostility"
+          ],
+          "correct": "Mirroring / Chameleon Effect",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. We naturally like people who reflect us. It validates our own existence.",
+            "incorrect": "It creates a subconscious bond of 'Liking'."
+          }
+        }
+      ]
+    }
+  ]
+}

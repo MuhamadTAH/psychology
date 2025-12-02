@@ -1,0 +1,334 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B2",
+  "unitTitle": "The Frame Game: Controlling Perception",
+  "lessonId": "B2-1",
+  "lessonTitle": "Framing 101: The Lens of Reality",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Spotting the \"Pre-Frame\"",
+  "objective": "To practice identifying 'Pre-Framing' techniques (Setting Expectations, Poisoning the Well, Priming) used to bias perception before the main interaction begins.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B2-1-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: Setting the Stage",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The most powerful frame is the one set *before* you speak. This is called **Pre-Framing**."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "If a salesperson says 'This is our luxury line' before showing you the price, they have pre-framed it as expensive but high quality. If you complain about the price, you are arguing against quality."
+        }
+      ]
+    },
+    {
+      "screenId": "B2-1-P2-S2",
+      "screenType": "Exercises",
+      "title": "Catching the Pre-Frame",
+      "exercises": [
+        {
+          "exerciseId": "B2-1-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: Before you meet your new boss, a colleague whispers: 'He's really smart, but he hates lazy people.'",
+          "question": "What is the effect of this Pre-Frame?",
+          "options": [
+            "You will work extra hard to prove you aren't lazy (Compliance).",
+            "You will be lazy.",
+            "You will hate the boss.",
+            "Nothing."
+          ],
+          "correct": "You will work extra hard to prove you aren't lazy (Compliance).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The colleague set a 'Lazy Frame.' You are now anxious to disprove a negative label before you even met the boss.",
+            "incorrect": "It biases your behavior. You will act differently to fit the frame."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is 'Poisoning the Well'?",
+          "options": [
+            "Putting poison in water.",
+            "A Pre-Framing tactic where you share negative information about a rival *before* the target meets them, so everything the rival says is viewed with suspicion.",
+            "Being mean.",
+            "Cleaning a well."
+          ],
+          "correct": "A Pre-Framing tactic where you share negative information about a rival *before* the target meets them, so everything the rival says is viewed with suspicion.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Don't listen to him, he's a known liar.' Now, even if he tells the truth, you will think it's a lie. The well is poisoned.",
+            "incorrect": "It creates a lens of distrust that cannot be easily removed."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P2-E3",
+          "type": "fill-in",
+          "sentence": "To defeat a Pre-Frame, you must (--------) it immediately.",
+          "options": [
+            "challenge",
+            "accept",
+            "ignore",
+            "love"
+          ],
+          "answers": [
+            "challenge"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you let the frame stand ('He hates lazy people'), you are trapped in it. You must reject the premise.",
+            "incorrect": "Ignoring it lets it control the subconscious. Accepting it loses the game. Challenge the frame."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I have a little surprise for you.'",
+          "question": "Does this Pre-Frame the coming event as positive?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Surprise' implies something good. If they said 'I have some news,' it is neutral. If they said 'We need to talk,' it frames it as bad.",
+            "incorrect": "Words set the emotional temperature before the event happens."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P2-E5",
+          "type": "matching",
+          "question": "Match the Pre-Frame to the Goal:",
+          "pairs": [
+            {
+              "term": "\"This is going to be hard.\"",
+              "definition": "Lowers expectations (so mediocre results look good)."
+            },
+            {
+              "term": "\"You are open-minded, right?\"",
+              "definition": "Pressures you to agree to a radical idea."
+            },
+            {
+              "term": "\"Don't get mad, but...\"",
+              "definition": "Frames your reaction as 'unreasonable anger'."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Hard' manages disappointment. 'Open-minded' traps the ego. 'Don't get mad' invalidates feelings.",
+            "incorrect": "Look at the setup. What reaction are they trying to prevent?"
+          }
+        },
+        {
+          "exerciseId": "B2-1-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: A speaker starts with: 'Only the smartest people in the room will understand this next part.'",
+          "question": "This creates:",
+          "options": [
+            "An Ego Trap / Intelligence Frame.",
+            "Confusion.",
+            "Boredom.",
+            "Fear."
+          ],
+          "correct": "An Ego Trap / Intelligence Frame.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you disagree or don't understand, you admit you aren't 'smart.' It forces the audience to nod along to avoid looking stupid.",
+            "incorrect": "It targets vanity. Everyone wants to be in the 'smart' group."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Assumption Frame':",
+          "words": [
+            "act",
+            "is",
+            "Act",
+            "if",
+            "true",
+            "as",
+            "it"
+          ],
+          "correct": "Act as if it is true",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Let's assume we move forward. What would the first step be?' This skips the 'If' and moves to the 'How'.",
+            "incorrect": "It moves the conversation past the objection point."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "Framing a request as a 'favor' to make the other person feel generous, rather than obligated.",
+          "question": "What is this?",
+          "options": [
+            "The Benevolence Frame",
+            "The Victim Frame",
+            "The Power Frame",
+            "The Guilt Frame"
+          ],
+          "correct": "The Benevolence Frame",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Can you do me a huge favor?' frames the helper as a Hero. 'Do your job' frames them as a Servant. Heroes work harder.",
+            "incorrect": "It appeals to their goodness, not their duty."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "You need to give bad news. You Pre-Frame it: 'It's not as bad as we thought, but we have a challenge.'",
+          "question": "Is this ethical?",
+          "options": [
+            "Yes. It reduces panic (Crisis Management).",
+            "No. It minimizes the truth.",
+            "Yes, lying is kind.",
+            "No, panic is good."
+          ],
+          "correct": "Yes. It reduces panic (Crisis Management).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Leaders frame crises as 'Challenges' to keep the team focused. As long as the facts aren't hidden, the frame is helpful.",
+            "incorrect": "Framing is about emotional management. Panic solves nothing."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm not racist, but...'",
+          "question": "This Pre-Frame warns you that:",
+          "options": [
+            "They are about to say something racist.",
+            "They are not racist.",
+            "They are polite.",
+            "They are shy."
+          ],
+          "correct": "They are about to say something racist.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The 'But' cancels the first part. They are trying to innoculate themselves against the judgment before saying the offensive thing.",
+            "incorrect": "This is a classic disclaimer frame. It signals the opposite is coming."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P2-E11",
+          "type": "fill-in",
+          "sentence": "To control the outcome, you must control the (--------).",
+          "options": [
+            "beginning",
+            "end",
+            "middle",
+            "food"
+          ],
+          "answers": [
+            "beginning"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The Pre-Frame happens at the start. Once the conversation starts, the frame is set. It is hard to change it later.",
+            "incorrect": "The start determines the path. First impressions are frames."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'Are you brave enough to take this risk?'",
+          "question": "Does this frame 'Risk' as 'Courage'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It frames caution as 'Cowardice' and stupidity as 'Bravery.' It dares you to act.",
+            "incorrect": "It links the action to a positive identity trait (Bravery)."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: A negotiation starts with: 'We are all friends here. We just want what's fair.'",
+          "question": "This sets the:",
+          "options": [
+            "Cooperation Frame.",
+            "War Frame.",
+            "Money Frame.",
+            "Time Frame."
+          ],
+          "correct": "Cooperation Frame.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It makes aggressive negotiation look 'unfriendly' or 'unfair.' It limits your ability to fight hard.",
+            "incorrect": "It disarms you. If you attack a 'friend,' you look like the aggressor."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P2-E14",
+          "type": "multiple-choice",
+          "question": "What is 'Priming'?",
+          "options": [
+            "Exposure to a stimulus influences a response to a later stimulus without conscious guidance.",
+            "Painting a wall.",
+            "Getting ready for bed.",
+            "Eating breakfast."
+          ],
+          "correct": "Exposure to a stimulus influences a response to a later stimulus without conscious guidance.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If I show you pictures of old people, you will walk slower afterwards. Pre-framing is a form of Verbal Priming.",
+            "incorrect": "It is a psychological concept. It prepares the brain for a specific path."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Setup",
+          "scene": "You can now spot the Pre-Frame. You know that 'Don't get mad' means 'I did something bad.' You know that 'I'm not judging' means 'I am judging.'",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "Reframing the Narrative (Simulation).",
+            "Accepting the frame.",
+            "Painting a picture.",
+            "Lesson A1-1."
+          ],
+          "correct": "Reframing the Narrative (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You know how to spot a frame. Now you must learn how to *break* it and set your own.",
+            "incorrect": "Next up: Active Reframing in a conflict."
+          }
+        }
+      ]
+    }
+  ]
+}

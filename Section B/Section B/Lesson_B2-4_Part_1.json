@@ -1,0 +1,194 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B2",
+  "unitTitle": "The Frame Game: Controlling Perception",
+  "lessonId": "B2-4",
+  "lessonTitle": "Labeling & Altercasting",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: Forcing a Role onto Someone",
+  "objective": "To define 'Altercasting' (Labeling) as a technique where a manipulator assigns a specific role or trait to a target to constrain their behavior and force compliance.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B2-4-P1-S1",
+      "screenType": "Learn",
+      "title": "The Role You Didn't Choose",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "If someone says, 'You are such a helpful person,' it becomes very hard for you to say 'No' to their next request. Why? Because you want to stay consistent with the label."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is **Altercasting**. The manipulator casts you in a role (The Helper, The Expert, The Adult) that serves their script. If you refuse their request, you break character, which causes psychological distress."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Trap: Positive labels ('You're so smart') are often more controlling than negative labels ('You're stupid')."
+        }
+      ]
+    },
+    {
+      "screenId": "B2-4-P1-S2",
+      "screenType": "Exercises",
+      "title": "Defining the Label",
+      "exercises": [
+        {
+          "exerciseId": "B2-4-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is **Altercasting**?",
+          "options": [
+            "Fishing for compliments.",
+            "The tactic of assigning a specific role or identity to a person to force them to behave in a certain way.",
+            "Changing your own personality.",
+            "Casting a spell."
+          ],
+          "correct": "The tactic of assigning a specific role or identity to a person to force them to behave in a certain way.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Alter' (Other) + 'Casting' (Role). They write the script; you play the part.",
+            "incorrect": "It isn't about them; it's about casting *you* in a role that benefits them."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: A manipulator wants to borrow money. They start by saying: 'I know I can count on you because you are the most generous person I know.'",
+          "question": "This label ('Generous') is designed to:",
+          "options": [
+            "Make you feel good.",
+            "Trap you. If you say 'No' to the loan, you are admitting you aren't generous.",
+            "Tell the truth.",
+            "Make you laugh."
+          ],
+          "correct": "Trap you. If you say 'No' to the loan, you are admitting you aren't generous.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It creates an 'Identity Bind.' To keep the compliment, you must pay the price.",
+            "incorrect": "It feels like a compliment, but it is a cage. It restricts your ability to refuse."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P1-E3",
+          "type": "fill-in",
+          "sentence": "Labels act as invisible (--------) on your behavior.",
+          "options": [
+            "walls",
+            "wings",
+            "gifts",
+            "clouds"
+          ],
+          "answers": [
+            "walls"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If I label you 'calm,' you cannot get angry. If I label you 'loyal,' you cannot leave. The label walls you in.",
+            "incorrect": "They restrict movement. They don't set you free."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'You're the sensible one in this relationship.'",
+          "question": "Is this a trap to make you do all the boring/hard work?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Being the 'sensible one' means you have to pay the bills, clean the mess, and forgive the 'fun one' (the manipulator).",
+            "incorrect": "It sounds nice, but it assigns you the role of 'Parent' while they get to play 'Child'."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P1-E5",
+          "type": "matching",
+          "question": "Match the Label to the Expected Behavior:",
+          "pairs": [
+            {
+              "term": "\"You are so mature.\"",
+              "definition": "You must forgive my bad behavior."
+            },
+            {
+              "term": "\"You are a risk-taker.\"",
+              "definition": "You must buy this dangerous investment."
+            },
+            {
+              "term": "\"You are a professional.\"",
+              "definition": "You must not get angry or emotional."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Maturity = Forgiveness. Risk-taker = Gambling. Professional = Silence.",
+            "incorrect": "Think about what the role *forbids* you from doing."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange the words to define 'Positive Altercasting':",
+          "words": [
+            "good",
+            "traits",
+            "compliance",
+            "forcing",
+            "by",
+            "Assigning"
+          ],
+          "correct": "Assigning good traits forcing compliance",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'You are a good friend' forces you to do 'friend' things (favors).",
+            "incorrect": "It uses positive traits as the lever."
+          }
+        },
+        {
+          "exerciseId": "B2-4-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "A tactic where the manipulator assigns you a negative role (e.g., 'You're just being difficult') to put you on the defensive.",
+          "question": "What is this?",
+          "options": [
+            "Negative Altercasting / Frame Trap",
+            "Gaslighting",
+            "Love Bombing",
+            "Honesty"
+          ],
+          "correct": "Negative Altercasting / Frame Trap",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Instead of arguing the point, you argue against the label. 'I'm not difficult!' You lost the frame.",
+            "incorrect": "It forces you to defend your character instead of your argument."
+          }
+        }
+      ]
+    }
+  ]
+}

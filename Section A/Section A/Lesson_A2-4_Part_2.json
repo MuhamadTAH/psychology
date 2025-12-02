@@ -1,0 +1,359 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A2",
+  "unitTitle": "The Manipulator's Playbook: Narcissism & Gaslighting",
+  "lessonId": "A2-4",
+  "lessonTitle": "Tactic Deep Dive: Gaslighting",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Denial, Blame-Shifting, & Trivializing",
+  "objective": "To practice identifying specific Gaslighting techniques (Denial, Blame-Shifting, Trivializing, Countering) in real-time conversations.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A2-4-P2-S1",
+      "screenType": "Learn",
+      "title": "Technique Spotter",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Gaslighting is not random. It follows specific patterns designed to shut down your brain."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Look for the 'Big 3':\n1. **Denial:** 'That never happened.'\n2. **Blame-Shifting:** 'I did it because YOU made me.'\n3. **Trivializing:** 'You're too sensitive.'"
+        }
+      ]
+    },
+    {
+      "screenId": "A2-4-P2-S2",
+      "screenType": "Exercises",
+      "title": "Spotting the Pattern",
+      "exercises": [
+        {
+          "exerciseId": "A2-4-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: You confront a partner about coming home late. They reply: 'I was home on time! You must have fallen asleep and dreamt that. You've been so tired lately.'",
+          "question": "Which technique is this?",
+          "options": [
+            "Trivializing",
+            "Blame-Shifting",
+            "Countering (Attacking your memory/competence)",
+            "Withholding"
+          ],
+          "correct": "Countering (Attacking your memory/competence)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are 'Countering' your observation by attacking your memory ('you dreamt it') and your competence ('you're tired').",
+            "incorrect": "They aren't shifting blame to you (yet); they are attacking your ability to remember facts."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P2-E2",
+          "type": "scenario",
+          "scene": "Scenario: You catch a co-worker stealing your lunch. They say: 'I only took it because you left it there so long! If you were more organized, I wouldn't have to clean up after you!'",
+          "question": "This is a classic example of:",
+          "options": [
+            "Denial",
+            "Blame-Shifting",
+            "Trivializing",
+            "Forgetting"
+          ],
+          "correct": "Blame-Shifting",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They admitted the act but shifted the *fault* to you. 'I stole because YOU are disorganized.' You are now defending your organization instead of addressing the theft.",
+            "incorrect": "They aren't denying they took it. They are saying it is *your fault* they took it."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P2-E3",
+          "type": "multiple-choice",
+          "question": "What is the purpose of **Trivializing**?",
+          "options": [
+            "To make a joke.",
+            "To make your needs or feelings seem small, ridiculous, or unimportant so you stop asking for them.",
+            "To help you relax.",
+            "To change the subject."
+          ],
+          "correct": "To make your needs or feelings seem small, ridiculous, or unimportant so you stop asking for them.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Phrases like 'You're too sensitive' or 'Can't you take a joke?' are designed to make you feel foolish for having boundaries.",
+            "incorrect": "It's not about helping you. It's about invalidating your feelings so they don't have to deal with them."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: A parent says, 'I never hit you. You have such a vivid imagination. You always make up stories.'",
+          "question": "Is this Gaslighting?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the most severe form: denying a traumatic event ever occurred and labeling the victim a 'liar' or 'storyteller.'",
+            "incorrect": "This is textbook Gaslighting. Denying reality + attacking the victim's credibility."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P2-E5",
+          "type": "matching",
+          "question": "Match the Gaslighting phrase to the technique:",
+          "pairs": [
+            {
+              "term": "'You made me yell at you.'",
+              "definition": "Blame-Shifting"
+            },
+            {
+              "term": "'It wasn't that bad.'",
+              "definition": "Trivializing"
+            },
+            {
+              "term": "'I don't know what you're talking about.'",
+              "definition": "Denial/Withholding"
+            },
+            {
+              "term": "'You sound crazy right now.'",
+              "definition": "Pathologizing (attacking sanity)"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Learning to translate these phrases instantly breaks their power.",
+            "incorrect": "Look closely. 'Made me' = Blame. 'Not bad' = Trivial. 'Crazy' = Sanity attack."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P2-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to define Blame-Shifting:",
+          "words": [
+            "victim",
+            "Turn",
+            "offender",
+            "the",
+            "into",
+            "the"
+          ],
+          "correct": "Turn the victim into the offender",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is the goal. 'I hit you because you annoyed me.' Now *you* are the offender (annoying) and *they* are the victim (of annoyance).",
+            "incorrect": "They flip the script. They make themselves the victim of your reaction."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P2-E7",
+          "type": "scenario",
+          "scene": "Scenario: You bring up a serious issue. They pretend to be confused, ask you to repeat yourself ten times, and then say, 'You're not making any sense. Let's talk when you're lucid.'",
+          "question": "This tactic is:",
+          "options": [
+            "Active Listening",
+            "Withholding / Feigned Misunderstanding",
+            "Blame-Shifting",
+            "Trivializing"
+          ],
+          "correct": "Withholding / Feigned Misunderstanding",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. By pretending they *can't* understand you, they force you to explain until you are exhausted, then dismiss you as 'confused.'",
+            "incorrect": "They aren't trivializing the issue; they are refusing to engage with the communication itself."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P2-E8",
+          "type": "micro-sim",
+          "scenarioTitle": "Defense: The Trivializer",
+          "steps": [
+            {
+              "scene": "Gaslighter: 'Wow, you can't take a joke? You are so sensitive. Lighten up.'",
+              "options": [
+                "'I am NOT sensitive!' (Defensive)",
+                "'Maybe you're right...' (Submission)",
+                "'It didn't feel like a joke to me. Please don't say that again.' (Boundary)",
+                "'You are a jerk.' (Attack)"
+              ],
+              "correct": "'It didn't feel like a joke to me. Please don't say that again.' (Boundary)",
+              "feedback": {
+                "correct": "Perfect. You refused to debate your 'sensitivity.' You stated your reality ('didn't feel like a joke') and set a boundary.",
+                "incorrect": "Defending yourself ('I'm not sensitive!') validates their frame. You must reject the frame entirely."
+              }
+            },
+            {
+              "question": "Gaslighter: 'God, you're being so dramatic. Everyone else thought it was funny.' (Triangulation)",
+              "options": [
+                "'I don't care what everyone else thought. I didn't like it.' (Holding Frame)",
+                "'Who thought it was funny? Name them!' (Distraction)",
+                "'Am I really being dramatic?' (Doubt)",
+                "Storm out."
+              ],
+              "correct": "'I don't care what everyone else thought. I didn't like it.' (Holding Frame)",
+              "feedback": {
+                "correct": "Mastery. They tried to use social pressure (Triangulation) to gaslight you. You held your frame. Your feelings act as the final authority for you.",
+                "incorrect": "Asking 'Who?' gets you off topic. Asking 'Am I dramatic?' means the gaslighting worked."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived. Trivializing works by making you feel 'socially awkward' for having feelings. You rejected that shame.",
+            "incorrect": "You fell into the trap of debating your own feelings. Feelings are not up for debate."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P2-E9",
+          "type": "fill-in",
+          "sentence": "If a Gaslighter can convince you that you are (--------), they can dismiss everything you say.",
+          "options": [
+            "crazy",
+            "right",
+            "strong",
+            "happy"
+          ],
+          "answers": [
+            "crazy"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The label 'crazy' or 'unstable' is a master key. Once applied, your logic, evidence, and feelings no longer matter.",
+            "incorrect": "The goal is to discredit the witness. 'Crazy' is the ultimate discredit."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P2-E10",
+          "type": "reverse-scenario",
+          "answer": "Changing the subject to 'how' you are speaking (your tone) instead of 'what' you are saying (the facts).",
+          "question": "What is this diversion tactic?",
+          "options": [
+            "Tone Policing",
+            "Love Bombing",
+            "History Rewriting",
+            "Hoovering"
+          ],
+          "correct": "Tone Policing",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'I can't listen to you when you sound so angry.' Now the conversation is about your anger, not their bad behavior. It is a form of Blocking/Diverting.",
+            "incorrect": "This is 'Tone Policing.' It diverts attention from the content to the delivery."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P2-E11",
+          "type": "scenario",
+          "scene": "Scenario: You catch them in a lie. They scream: 'I can't believe you don't trust me! You are abusing me with your constant accusations! I'm the victim here!'",
+          "question": "This is a text-book example of:",
+          "options": [
+            "DARVO (Deny, Attack, Reverse Victim & Offender)",
+            "A heartfelt defense",
+            "Trivializing",
+            "Forgetting"
+          ],
+          "correct": "DARVO (Deny, Attack, Reverse Victim & Offender)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They Denied the lie, Attacked your character ('abusing me'), and Reversed roles so *you* are the offender and *they* are the victim.",
+            "incorrect": "It's not a defense; it's an inversion. They turned your valid accusation into an 'abuse' allegation against you."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P2-E12",
+          "type": "scenario",
+          "scene": "Scenario: 'Even your mother agrees with me that you're unstable. I talked to her yesterday and she's really worried about your mental state.'",
+          "question": "This tactic combines Gaslighting with:",
+          "options": [
+            "Triangulation (Using a 3rd party to validate the lie)",
+            "Love Bombing",
+            "Flattery",
+            "Active Listening"
+          ],
+          "correct": "Triangulation (Using a 3rd party to validate the lie)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. By bringing in an outside authority (your mother), they make the gaslighting feel like an objective fact ('Everyone agrees you are crazy').",
+            "incorrect": "It's not support. They are weaponizing your relationships against you to isolate you in your 'instability'."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P2-E13",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm only telling you that you're remembering it wrong because I love you. I'm worried about your brain. You seem confused lately.'",
+          "question": "Is this 'Compassionate' Gaslighting?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is the most insidious form. They frame their attack on your sanity as 'care' or 'concern,' making it very hard to defend against without looking ungrateful.",
+            "incorrect": "It frames itself as love, but the goal is to establish that your brain is 'confused' and theirs is 'clear'."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P2-E14",
+          "type": "ethical-dilemma",
+          "scene": "You are sure an event happened, but the Gaslighter denies it with total confidence. You start to doubt yourself.",
+          "question": "What is the most effective 'Reality Anchor' you can use?",
+          "options": [
+            "Ask the Gaslighter again.",
+            "Check your 'Reality Journal' (screenshots, notes, diary) where you documented the event immediately after it happened.",
+            "Argue until they admit it.",
+            " Assume you are wrong."
+          ],
+          "correct": "Check your 'Reality Journal' (screenshots, notes, diary) where you documented the event immediately after it happened.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Human memory is malleable; written records are not. Keeping a journal is the Kryptonite to gaslighting.",
+            "incorrect": "Asking them or arguing just invites more gaslighting. You need external, objective proof (for yourself, not them)."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: Pattern Recognition",
+          "scene": "You can now identify the techniques: Denial, Blame-Shifting, Trivializing, Countering, Tone Policing, and DARVO. You see the matrix.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Gaslighting' Defense Drill (Simulation).",
+            "Learning to lie better.",
+            "A lesson on Love Bombing.",
+            "Ignoring the red flags."
+          ],
+          "correct": "The 'Gaslighting' Defense Drill (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The final test is to hold onto your reality while a simulation tries to tear it away. Get ready.",
+            "incorrect": "We are moving to the Challenge phase: Defending your reality under pressure."
+          }
+        }
+      ]
+    }
+  ]
+}

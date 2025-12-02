@@ -1,0 +1,337 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B5",
+  "unitTitle": "Section B Grand Review: The Master Tactician",
+  "lessonId": "B5-3",
+  "lessonTitle": "The \"Salesman\" Simulation",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: The Counter-Offer",
+  "objective": "To practice specific counter-negotiation tactics (The Flinch, The Pivot, De-Anchoring) to neutralize high-pressure sales techniques and regain leverage.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B5-3-P2-S1",
+      "screenType": "Learn",
+      "title": "Turning the Tables",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Closer has thrown everything at you: Scarcity, Reciprocity, and Anchoring. Now it is your turn."
+        },
+        {
+          "type": "paragraph",
+          "text": "Defense is not enough. You must **Counter-Attack**. You must break their Anchor with a Flinch, reject their Scarcity with Patience, and neutralize their Reciprocity with Business Logic."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Key Move: Never accept their premise. If they say 'Buy now or lose it,' you say 'I'm willing to lose it to get the right deal.'"
+        }
+      ]
+    },
+    {
+      "screenId": "B5-3-P2-S2",
+      "screenType": "Exercises",
+      "title": "The Negotiation Dojo",
+      "exercises": [
+        {
+          "exerciseId": "B5-3-P2-E1",
+          "type": "boss-scenario",
+          "scene": "The Closer drops the price: 'Okay, fine. The normal price is $10,000, but I'll give it to you for $5,000. That's 50% off!' (Contrast + Anchor).",
+          "question": "How do you De-Anchor?",
+          "options": [
+            "'Wow, that's a great deal!'",
+            "'Can you do $4,500?'",
+            "The Flinch: Visibly react with shock. '$5,000?! That is still completely outside the market range.'",
+            "Silence."
+          ],
+          "correct": "The Flinch: Visibly react with shock. '$5,000?! That is still completely outside the market range.'",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You must reject the $10k anchor entirely. If you accept $5k as a 'discount,' you lose. You must frame $5k as 'expensive.'",
+            "incorrect": "Accepting the '50% off' frame means you accepted their fake starting price."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P2-E2",
+          "type": "scenario",
+          "scene": "Closer: 'If I can get you free shipping, will you sign *right now*?' (The Sharp Angle Close).",
+          "question": "They are trying to trap you. What is the counter?",
+          "options": [
+            "'Yes.'",
+            "'Maybe.'",
+            "'I appreciate the shipping offer, but I need to agree on the *base price* first. Let's stick to the main contract.' (The Pivot).",
+            "'Free shipping is good.'"
+          ],
+          "correct": "'I appreciate the shipping offer, but I need to agree on the *base price* first. Let's stick to the main contract.' (The Pivot).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Don't let a small concession (shipping) force a big commitment (signing). Keep the focus on the main issue (Price).",
+            "incorrect": "The 'Sharp Angle' trades a penny for a dollar. Don't take the bait."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P2-E3",
+          "type": "multiple-choice",
+          "question": "What is the 'Walk Away' bluff?",
+          "options": [
+            "Leaving the room to see if they chase you.",
+            "Pretending to leave.",
+            "Actually being willing to leave if the deal isn't right.",
+            "Running."
+          ],
+          "correct": "Actually being willing to leave if the deal isn't right.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It's only a bluff if you come back begging. True power is 'Outcome Independence.' If you are willing to walk, you control the deal.",
+            "incorrect": "If you are bluffing and they call it, you lose. You must mean it."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P2-E4",
+          "type": "fill-in",
+          "sentence": "In a negotiation, he who speaks (--------) loses.",
+          "options": [
+            "first",
+            "last",
+            "loudest",
+            "least"
+          ],
+          "answers": [
+            "first"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. (In the context of 'Silence'). After an offer is made, the next person to speak loses leverage. Use Strategic Silence.",
+            "incorrect": "Silence creates pressure. Let them fill it with a better offer."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P2-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'You said you wanted quality. This is the best quality. Are you saying you don't want quality?' (Double Bind/Consistency Trap).",
+          "question": "How do you escape?",
+          "options": [
+            "'I want quality, but I also want *value*. This price does not reflect the value.' (The 'And' Reframe).",
+            "'I guess I don't want quality.'",
+            "'You got me.'",
+            "'Yes.'"
+          ],
+          "correct": "'I want quality, but I also want *value*. This price does not reflect the value.' (The 'And' Reframe).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Don't choose between 'Quality' and 'Cheap.' Choose 'Value.' You stepped out of their binary trap.",
+            "incorrect": "They tried to trap you with your own words (Consistency). You expanded the definition."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P2-E6",
+          "type": "true-false",
+          "scene": "Scenario: The Closer starts packing up their bag. 'I guess we can't make a deal.'",
+          "question": "Should you stop them?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is 'The Take-Away.' Let them leave. 90% of the time, they will stop at the door and offer a better price.",
+            "incorrect": "Stopping them signals desperation. Let them go."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Broken Record' technique:",
+          "words": [
+            "boundary",
+            "explaining",
+            "Repeat",
+            "without",
+            "your"
+          ],
+          "correct": "Repeat your boundary without explaining",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'The price is too high.' 'But look at the quality!' 'The price is too high.' 'But it's limited time!' 'The price is too high.'",
+            "incorrect": "Explanations give them targets to argue with. Repetition is a wall."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "Refusing to answer a 'forced choice' question (e.g., 'Cash or Credit?') and instead proposing a new option.",
+          "question": "What is this?",
+          "options": [
+            "Breaking the Frame",
+            "The Pivot",
+            "The Flinch",
+            "Anchoring"
+          ],
+          "correct": "Breaking the Frame",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'I'm not paying yet. We haven't agreed on the price.' You rejected the 'Closing Frame' and returned to the 'Negotiation Frame.'",
+            "incorrect": "You stepped out of their reality tunnel."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "The Closer starts crying. 'If I don't make this sale, I'll lose my job.' (The Pity Play).",
+          "question": "Do you buy?",
+          "options": [
+            "Yes, to save them.",
+            "No. 'I am sorry to hear that, but I cannot buy a product I don't need. That is a separate issue.'",
+            "Mock them.",
+            "Buy two."
+          ],
+          "correct": "No. 'I am sorry to hear that, but I cannot buy a product I don't need. That is a separate issue.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Compassion is good, but financial martyrdom is bad. Their job security is not your responsibility. This is emotional blackmail.",
+            "incorrect": "Buying out of pity is 'Weaponized Reciprocity.' You are paying for their relief, not the product."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'My manager will kill me, but I'll give you the employee rate.'",
+          "question": "This is:",
+          "options": [
+            "The 'Conspiracy' Tactic.",
+            "Friendship.",
+            "Risk.",
+            "Truth."
+          ],
+          "correct": "The 'Conspiracy' Tactic.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They create a fake risk to make you feel special and indebted. They are 'breaking the rules' for *you*.",
+            "incorrect": "The manager likely approved that rate yesterday. It is theater."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P2-E11",
+          "type": "fill-in",
+          "sentence": "Never negotiate with your (--------). Negotiate with your (--------).",
+          "options": [
+            "emotions, logic",
+            "money, time",
+            "feet, hands",
+            "heart, soul"
+          ],
+          "answers": [
+            "emotions, logic"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If you feel excited, scared, or guilty, stop. Only negotiate when you are cold.",
+            "incorrect": "Emotion creates bad deals. Logic creates good deals."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: You can pause a negotiation for 24 hours at any time.",
+          "question": "Is this true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You always have the power to pause. If they say you don't ('Now or never'), it's a trap.",
+            "incorrect": "You control the clock, not them."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: 'You seem like a person who values quality over price.'",
+          "question": "They are using 'Labeling' to:",
+          "options": [
+            "Stop you from asking for a discount.",
+            "Compliment you.",
+            "Insult you.",
+            "Save time."
+          ],
+          "correct": "Stop you from asking for a discount.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you ask for a lower price now, you are admitting you don't value 'quality.' It traps you in the 'High Roller' identity.",
+            "incorrect": "It flatters you into overpaying."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P2-E14",
+          "type": "matching",
+          "question": "Match the Counter to the Closer:",
+          "pairs": [
+            {
+              "term": "The Closer: \"It's now or never.\"",
+              "definition": "The Counter: \"Then it's never.\""
+            },
+            {
+              "term": "The Closer: \"I thought you were smart.\"",
+              "definition": "The Counter: \"I am smart enough to wait.\""
+            },
+            {
+              "term": "The Closer: \"I did you a favor.\"",
+              "definition": "The Counter: \"I didn't ask for it.\""
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Call the bluff. Reframe the insult. Reject the debt.",
+            "incorrect": "Match the specific verbal parry to the attack."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Tables Turned",
+          "scene": "You have learned to counter-attack. You know how to flinch, pivot, and pause. The Closer is losing control.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Walk Away' (Boss Level Victory).",
+            "Buying two.",
+            "Apologizing.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Walk Away' (Boss Level Victory).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The ultimate win is leaving the room with your money and your dignity. Let's finish it.",
+            "incorrect": "Next up: The final act of the Salesman Simulation."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A5",
+  "unitTitle": "The Vulnerable Mind: Why We Fall For It",
+  "lessonId": "A5-3",
+  "lessonTitle": "The \"Savior\" Complex & Codependency",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Rescue\" Scenario",
+  "objective": "To master the defense against the 'Rescue Trap' by refusing to take responsibility for another adult's life, recognizing the 'Drama Triangle,' and maintaining boundaries during a manufactured crisis.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Sovereign_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A5-3-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: Step Off the Triangle",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The 'Rescue Trap' is seductive. It feels like love, but it is control. The manipulator plays the Victim to force you to be the Hero."
+        },
+        {
+          "type": "paragraph",
+          "text": "Your mission is to offer support *without* taking responsibility. You must hand the problem back to its owner."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Warning: When you refuse to rescue them, they will switch roles from 'Victim' to 'Persecutor' (they will attack you). Do not waver."
+        }
+      ]
+    },
+    {
+      "screenId": "A5-3-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Crisis",
+      "exercises": [
+        {
+          "exerciseId": "A5-3-P3-E1",
+          "type": "boss-scenario",
+          "scene": "Your partner calls you at work, screaming: 'I got fired again! My boss is a psycho! If you don't pay my rent this month, I'm going to be homeless! Why does this always happen to me?!'",
+          "question": "This is the 'Victim' hook. What is the Empowered (non-Enabling) response?",
+          "options": [
+            "'Don't worry, I'll pay it! I'll fix everything.' (Rescuer)",
+            "'Wow, that sounds incredibly stressful. I can't pay your rent, but I can help you look over your resume tonight.' (Support + Boundary)",
+            "'You are so lazy! This is your fault!' (Persecutor)",
+            "Ignore the call."
+          ],
+          "correct": "'Wow, that sounds incredibly stressful. I can't pay your rent, but I can help you look over your resume tonight.' (Support + Boundary)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You validated their feeling ('stressful') but refused the financial rescue ('can't pay'). You offered *tools* (resume help), not *solutions*.",
+            "incorrect": "Paying rent removes the consequence of getting fired. Attacking makes you the bad guy. You must offer support without enabling."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Guilt Switch",
+          "steps": [
+            {
+              "scene": "You refuse to pay the rent. They switch tactics: 'Fine. I guess I'll just live on the street. I thought you loved me, but I guess I'm alone in this world.' (The Pity Play).",
+              "options": [
+                "'Oh god, no! Here is the money.' (Submission)",
+                "'That is a choice you can make, but I hope you choose to look for a new job instead.' (Detachment)",
+                "'Stop manipulating me!' (Reaction)",
+                "Cry."
+              ],
+              "correct": "'That is a choice you can make, but I hope you choose to look for a new job instead.' (Detachment)",
+              "feedback": {
+                "correct": "Mastery. You refused to pick up the guilt. You reminded them that their outcome ('living on the street') is a result of *their* choice, not your lack of love.",
+                "incorrect": "Giving in confirms that 'Guilt = Money.' Reacting defensively feeds the drama. You must stay detached."
+              }
+            },
+            {
+              "question": "They escalate to Rage: 'You are selfish! You have money and you won't help! You are just like my abusive ex!' (The Persecutor).",
+              "options": [
+                "'I'm not selfish! I do everything for you!' (J.A.D.E.)",
+                "'I am not willing to be spoken to like this. We can talk when you are calm.' (Exit)",
+                "'You are the abuser!' (Fight)",
+                "Apologize."
+              ],
+              "correct": "'I am not willing to be spoken to like this. We can talk when you are calm.' (Exit)",
+              "feedback": {
+                "correct": "Perfect. You set a boundary on the abuse and removed your presence. You did not defend yourself against the lie ('selfish').",
+                "incorrect": "Defending yourself validates their accusation. Leaving the conversation creates a consequence for the abuse."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You stepped off the Drama Triangle. You refused to be the Rescuer, the Victim, or the Persecutor.",
+            "incorrect": "You got sucked back in. The cycle continues."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why does 'Doing Nothing' feel so hard for a Savior?",
+          "options": [
+            "Because they are lazy.",
+            "Because their anxiety spikes when they aren't 'managing' the chaos. Inaction feels like danger.",
+            "Because they hate people.",
+            "Because they are bored."
+          ],
+          "correct": "Because their anxiety spikes when they aren't 'managing' the chaos. Inaction feels like danger.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The compulsion to help is actually a compulsion to soothe *your own* anxiety about the situation.",
+            "incorrect": "It's not laziness; it's active anxiety management. You have to sit with the discomfort of letting them fail."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P3-E4",
+          "type": "fill-in",
+          "sentence": "The only way to help a parasitic person grow is to allow them to hit (--------).",
+          "options": [
+            "rock bottom",
+            "success",
+            "happiness",
+            "traffic"
+          ],
+          "answers": [
+            "rock bottom"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Rock Bottom' is the place where the pain of *staying the same* becomes greater than the pain of *changing*. Rescuers prevent Rock Bottom.",
+            "incorrect": "If you cushion every fall, they never feel the impact necessary to spark change."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: A friend asks you to lie to their partner to cover up an affair. 'If you don't cover for me, my marriage will end and it will be your fault!'",
+          "question": "This is:",
+          "options": [
+            "Triangulation / Moral Blackmail.",
+            "Friendship.",
+            "A fun secret.",
+            "Loyalty."
+          ],
+          "correct": "Triangulation / Moral Blackmail.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are making *you* responsible for the consequences of *their* cheating. If the marriage ends, it is because they cheated, not because you refused to lie.",
+            "incorrect": "True loyalty does not require compromising your integrity. This is complicity."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'I can't leave him. He would die without me.'",
+          "question": "Is this a fact or a Codependent delusion?",
+          "options": [
+            "Fact",
+            "Delusion"
+          ],
+          "correct": "Delusion",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Adults survive without partners every day. This belief feeds the Savior's ego ('I am essential') and justifies staying.",
+            "incorrect": "Unless they are on life support, they will figure it out. Thinking they can't live without you is arrogance disguised as care."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define Healthy Support:",
+          "words": [
+            "carrying",
+            "is",
+            "walking",
+            "not",
+            "Support",
+            "beside,"
+          ],
+          "correct": "Support is walking beside, not carrying",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You walk with them, but you do not carry their load. If you carry them, their muscles atrophy.",
+            "incorrect": "Carrying them weakens them. Walking beside them respects their strength."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A relationship where one person functions as a 'parent' (responsible, worried) and the other as a 'child' (rebellious, helpless).",
+          "question": "What is this dynamic?",
+          "options": [
+            "Parentification / Codependency",
+            "True Love",
+            "Partnership",
+            "Mentorship"
+          ],
+          "correct": "Parentification / Codependency",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It kills intimacy. You cannot be romantically attracted to someone you are parenting.",
+            "incorrect": "Partners are equals. Parents and children are hierarchical."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You see a stranger being manipulated by a salesperson. You want to jump in and save them.",
+          "question": "Do you intervene?",
+          "options": [
+            "Yes, save everyone.",
+            "No, unless there is imminent physical danger. Respect their autonomy to make mistakes. You can't save the world.",
+            "Yell at the salesperson.",
+            "Buy the product for them."
+          ],
+          "correct": "No, unless there is imminent physical danger. Respect their autonomy to make mistakes. You can't save the world.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The Savior impulse wants to control *everyone's* outcome. Sometimes, people need to make bad purchases to learn.",
+            "incorrect": "Unsolicited rescuing is intrusive. Focus on your own life."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'You changed. You used to be so nice (compliant). Now you are selfish (have boundaries).'",
+          "question": "How do you interpret this?",
+          "options": [
+            "You are becoming a bad person.",
+            "It is proof your boundaries are working. Manipulators hate change.",
+            "You should apologize.",
+            "You should go back to being 'nice'."
+          ],
+          "correct": "It is proof your boundaries are working. Manipulators hate change.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. When a manipulator calls you 'selfish,' it usually means you have stopped doing what they want. Take it as a compliment.",
+            "incorrect": "Don't let them define 'nice.' To them, 'nice' means 'obedient'."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P3-E11",
+          "type": "fill-in",
+          "sentence": "The Savior Complex is often a way to avoid facing your own (--------).",
+          "options": [
+            "pain",
+            "happiness",
+            "money",
+            "success"
+          ],
+          "answers": [
+            "pain"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Focusing on *their* mess distracts you from *your* mess. It is a form of avoidance.",
+            "incorrect": "If you fixed your own life, you wouldn't be so obsessed with theirs."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: You finally say 'No' to a request. You feel intense guilt.",
+          "question": "Does the guilt mean you did something wrong?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. Guilt is a symptom of breaking a conditioning pattern, not a moral failing. Feel the guilt and do it anyway.",
+            "incorrect": "Guilt is just a feeling. It does not mean you are bad. It means you are changing the rules."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: You stop enabling. The manipulator hits 'Rock Bottom' and loses their apartment.",
+          "question": "Did you cause this?",
+          "options": [
+            "Yes, it's your fault.",
+            "No. Their choices caused this. You simply stepped out of the way of the consequences.",
+            "Maybe.",
+            "You are cruel."
+          ],
+          "correct": "No. Their choices caused this. You simply stepped out of the way of the consequences.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You removed the cushion. Gravity did the rest. You are not responsible for gravity.",
+            "incorrect": "You are not the cause of their life. You were just the buffer. Removing the buffer reveals the reality."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P3-E14",
+          "type": "multiple-choice",
+          "question": "What is the goal of 'Interdependence' (Healthy) vs 'Codependence' (Unhealthy)?",
+          "options": [
+            "Two whole people supporting each other vs. Two broken people propping each other up.",
+            "Living alone.",
+            "Never helping.",
+            "Being selfish."
+          ],
+          "correct": "Two whole people supporting each other vs. Two broken people propping each other up.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Interdependence relies on two strong pillars. Codependence is two weak pillars leaning on each other—if one moves, both fall.",
+            "incorrect": "It's about structural integrity. You must be able to stand alone to stand together healthily."
+          }
+        },
+        {
+          "exerciseId": "A5-3-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Savior Retires",
+          "scene": "You have resigned from your job as General Manager of the Universe. You know that letting people fail is sometimes the only way to let them succeed.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson A5-4: Traumatic Bonding (The Chemistry of Abuse).",
+            "Lesson A1-1.",
+            "Saving more people.",
+            "Buying a cape."
+          ],
+          "correct": "Lesson A5-4: Traumatic Bonding (The Chemistry of Abuse).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that we've addressed the 'Savior' drive, we must address the 'Addiction' drive. Why is it so hard to leave?",
+            "incorrect": "Next up: The chemical chains that bind you to the abuser."
+          }
+        }
+      ]
+    }
+  ]
+}

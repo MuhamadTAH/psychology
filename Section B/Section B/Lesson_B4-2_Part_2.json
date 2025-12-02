@@ -1,0 +1,334 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B4",
+  "unitTitle": "The Pressure Cooker: Emotional Leverage",
+  "lessonId": "B4-2",
+  "lessonTitle": "Weaponized Reciprocity: The Debt Trap",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Refusing the Gift",
+  "objective": "To practice identifying specific Reciprocity tactics (Unsolicited Favors, Concessions) in real-time and applying the 'Redefinition' defense to neutralize the feeling of debt.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B4-2-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: Breaking the Loop",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The manipulator counts on you feeling 'rude' if you refuse a gift. But remember: A gift with strings attached is not a gift; it is a bribe."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Defense: **Redefine**. Mentally label the 'gift' as a 'sales tactic.' Once you see it as a trick, the obligation to repay it disappears."
+        }
+      ]
+    },
+    {
+      "screenId": "B4-2-P2-S2",
+      "screenType": "Exercises",
+      "title": "Spotting the Strings",
+      "exercises": [
+        {
+          "exerciseId": "B4-2-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: A street hustler puts a 'free' bracelet on your wrist before you can say no. Then they ask for a donation.",
+          "question": "What is the strongest move?",
+          "options": [
+            "Take it off and hand it back firmly. If they refuse, put it on the ground and walk away.",
+            "Pay $5 to avoid the scene.",
+            "Keep it and say thank you.",
+            "Yell."
+          ],
+          "correct": "Take it off and hand it back firmly. If they refuse, put it on the ground and walk away.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You did not ask for it. By forcing it on you, they violated your boundary. You owe them nothing.",
+            "incorrect": "Paying confirms the scam works. Keeping it accepts the debt. You must reject the transaction entirely."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P2-E2",
+          "type": "multiple-choice",
+          "question": "Why is 'The Rejection-Then-Retreat' (Door-in-the-Face) technique a form of Reciprocity?",
+          "options": [
+            "Because when they back down from the big request, you feel obligated to 'meet them halfway' and accept the small request.",
+            "It isn't.",
+            "Because they are nice.",
+            "Because they are tired."
+          ],
+          "correct": "Because when they back down from the big request, you feel obligated to 'meet them halfway' and accept the small request.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They made a concession (retreating). Social rules say you should make a reciprocal concession (agreeing).",
+            "incorrect": "It exploits the social rule of 'compromise'."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P2-E3",
+          "type": "fill-in",
+          "sentence": "To defeat Weaponized Reciprocity, accept the gift but reject the (--------).",
+          "options": [
+            "obligation",
+            "wrapper",
+            "joy",
+            "color"
+          ],
+          "answers": [
+            "obligation"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. (Cialdini). If you can't return the item (like a free sample you ate), accept it as a 'sales promotion,' not a 'favor.' Promotions carry no debt.",
+            "incorrect": "The obligation is the trap. The gift is just the bait."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: A negotiator buys you an expensive lunch before the meeting starts.",
+          "question": "Is this a tactical move?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is hard to be aggressive or say 'No' to someone who just fed you. It triggers the primitive 'Guest/Host' bond.",
+            "incorrect": "It is rarely just kindness. It creates a subconscious debt of gratitude."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P2-E5",
+          "type": "matching",
+          "question": "Match the Scenario to the Reciprocity Trap:",
+          "pairs": [
+            {
+              "term": "The Unexpected Discount",
+              "definition": "\"I'm not supposed to do this, but I'll knock off 10%.\""
+            },
+            {
+              "term": "The Secret",
+              "definition": "\"I'll tell you a secret if you promise not to tell.\""
+            },
+            {
+              "term": "The Compliment",
+              "definition": "\"You are the smartest person I've met all day.\""
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Discount = Financial Debt. Secret = Trust Debt. Compliment = Ego Debt.",
+            "incorrect": "Identify what is being 'given' to trigger the return."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: A colleague covers for you when you are late. Next week, they ask you to lie to the boss for them.",
+          "question": "This is:",
+          "options": [
+            "The 'Favors Shark' Trap.",
+            "Fair.",
+            "Friendship.",
+            "Teamwork."
+          ],
+          "correct": "The 'Favors Shark' Trap.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They did a small favor (covering time) to demand a huge, unethical payment (lying). The exchange is unequal.",
+            "incorrect": "True friends don't ask you to risk your job to repay a kindness."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Unequal Exchange':",
+          "words": [
+            "favor",
+            "big",
+            "triggers",
+            "A",
+            "return",
+            "small",
+            "a"
+          ],
+          "correct": "A small favor triggers a big return",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The manipulator invests pennies to harvest dollars. The psychological weight of debt is heavier than the gift.",
+            "incorrect": "The imbalance is the profit margin of the scam."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "Refusing a gift or favor politely at the start to avoid the feeling of obligation later.",
+          "question": "What is this defense?",
+          "options": [
+            "The Preemptive Refusal",
+            "Rudeness",
+            "Gaslighting",
+            "Mirroring"
+          ],
+          "correct": "The Preemptive Refusal",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'No thank you, I'm not hungry.' 'No thanks, I can carry it.' Stopping the favor stops the debt.",
+            "incorrect": "It's not rude; it's boundaries. It prevents the cycle from starting."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "A vendor sends you tickets to a sports game. Your company is deciding which vendor to hire next week.",
+          "question": "Do you accept the tickets?",
+          "options": [
+            "No. It is a conflict of interest (Bribery). Return them.",
+            "Yes, but don't let it affect your decision.",
+            "Yes, and hire them.",
+            "Give them to a friend."
+          ],
+          "correct": "No. It is a conflict of interest (Bribery). Return them.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Even if you *think* you can remain objective, the subconscious Reciprocity Rule will bias you toward them. Return them to stay neutral.",
+            "incorrect": "Accepting the gift creates a psychological debt, even if you try to ignore it. It corrupts the decision."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'I scratched your back, now you scratch mine.'",
+          "question": "This phrase signals:",
+          "options": [
+            "Transactional Relationships.",
+            "True Love.",
+            "Itchy skin.",
+            "Kindness."
+          ],
+          "correct": "Transactional Relationships.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are keeping score. This is not altruism; it is a contract.",
+            "incorrect": "It is the explicit statement of Reciprocity."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P2-E11",
+          "type": "fill-in",
+          "sentence": "The most effective way to neutralize Reciprocity is to realize the giver is not 'nice,' they are (--------).",
+          "options": [
+            "investing",
+            "loving",
+            "scared",
+            "lost"
+          ],
+          "answers": [
+            "investing"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are investing a resource to get a return. Once you see it as business, the emotion fades.",
+            "incorrect": "It's an investment strategy, not an act of love."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: You can repay a manipulator's 'gift' with a 'thank you' and nothing else.",
+          "question": "Is this allowed?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. A 'thank you' acknowledges the gesture without accepting the debt. You are not legally or morally bound to give more.",
+            "incorrect": "Social pressure says you owe more, but you don't. A verbal thanks settles the score."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: A cult gives 'Love Bombing' (affection) to a new recruit. The recruit feels they must give 'Loyalty' in return.",
+          "question": "This is Reciprocity of:",
+          "options": [
+            "Emotion.",
+            "Money.",
+            "Labor.",
+            "Goods."
+          ],
+          "correct": "Emotion.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Emotional gifts (love, belonging) create the deepest debts. The victim feels they 'owe' their life to the group.",
+            "incorrect": "It trades feeling for obedience."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P2-E14",
+          "type": "multiple-choice",
+          "question": "Why do manipulators hate anonymous gifts?",
+          "options": [
+            "Because they can't claim the credit, so they can't collect the debt.",
+            "Because they like secrets.",
+            "Because they are humble.",
+            "They love them."
+          ],
+          "correct": "Because they can't claim the credit, so they can't collect the debt.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you don't know who gave it, you don't know who to repay. Reciprocity requires a named donor.",
+            "incorrect": "Anonymous giving is altruistic. Named giving is often strategic."
+          }
+        },
+        {
+          "exerciseId": "B4-2-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Debt Cancelled",
+          "scene": "You have learned to spot the strings attached to the gift. You know that 'No' is a complete sentence, even after a free lunch.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Obligation' Escape (Simulation).",
+            "Paying them back.",
+            "Buying gifts.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Obligation' Escape (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you walk away from a 'generous' manipulator without paying? Let's find out.",
+            "incorrect": "Next up: Breaking the chains of obligation."
+          }
+        }
+      ]
+    }
+  ]
+}

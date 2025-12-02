@@ -1,0 +1,342 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A5",
+  "unitTitle": "The Vulnerable Mind: Why We Fall For It",
+  "lessonId": "A5-5",
+  "lessonTitle": "Unit 5 & Section A Grand Review",
+  "lessonType": "Review",
+  "lessonPart": 1,
+  "lessonPartTitle": "Section A Core Concepts (Triad + Vulnerabilities)",
+  "objective": "To synthesize and test comprehensive knowledge of Section A: The Dark Triad (Narcissism, Machiavellianism, Psychopathy) and Internal Vulnerabilities (Needs, Biases, Codependency).",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A5-5-P1-S1",
+      "screenType": "Learn",
+      "title": "Section A: The Foundation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You have completed the Foundation. You know the faces of the enemy (The Dark Triad) and the cracks in your own armor (Vulnerabilities)."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "This review covers EVERYTHING: Narcissists, Machiavellians, Psychopaths, Gaslighting, Love Bombing, and Cognitive Biases. Prepare yourself."
+        }
+      ]
+    },
+    {
+      "screenId": "A5-5-P1-S2",
+      "screenType": "Exercises",
+      "title": "The Triad & The Target",
+      "exercises": [
+        {
+          "exerciseId": "A5-5-P1-E1",
+          "type": "matching",
+          "question": "Match the Predator to their Core Motivation:",
+          "pairs": [
+            {
+              "term": "Narcissist",
+              "definition": "Admiration (Feeding the Ego)."
+            },
+            {
+              "term": "Machiavellian",
+              "definition": "Control (Playing the Game)."
+            },
+            {
+              "term": "Psychopath",
+              "definition": "Stimulation (Feeding the Void)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Ego, Strategy, and Boredom. These are the three engines of dark behavior.",
+            "incorrect": "Narcissists need praise. Machiavellians need power. Psychopaths need thrills."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P1-E2",
+          "type": "fill-in",
+          "sentence": "A manipulator does not create your needs; they (--------) them.",
+          "options": [
+            "mirror",
+            "hate",
+            "ignore",
+            "buy"
+          ],
+          "answers": [
+            "mirror"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They scan for what you lack (safety, love, excitement) and reflect it back to you. This is the 'Hook.'",
+            "incorrect": "They don't ignore your needs; they weaponize them."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P1-E3",
+          "type": "multiple-choice",
+          "question": "What is the 'Savior Complex'?",
+          "options": [
+            "A desire to be a doctor.",
+            "A compulsion to 'fix' or 'rescue' damaged people to feel worthy or needed.",
+            "A religious belief.",
+            "Being nice."
+          ],
+          "correct": "A compulsion to 'fix' or 'rescue' damaged people to feel worthy or needed.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is a trap. Predators look for Saviors because Saviors tolerate abuse in the name of 'healing.'",
+            "incorrect": "It is a specific psychological drive to derive self-worth from helping the helpless."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I hurt you because I love you.'",
+          "question": "Is this Gaslighting?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It redefines reality. Love protects; it does not hurt. Linking abuse to love is a mind-control tactic.",
+            "incorrect": "It is a contradiction used to confuse the victim."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P1-E5",
+          "type": "scenario",
+          "scene": "Scenario: A colleague says, 'Everyone agrees that your idea was bad.' You ask who 'everyone' is, and they can't name anyone.",
+          "question": "This is:",
+          "options": [
+            "Triangulation (The Phantom Army).",
+            "Feedback.",
+            "Honesty.",
+            "Helpful."
+          ],
+          "correct": "Triangulation (The Phantom Army).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They invent a crowd to back up their opinion. It isolates you and makes you doubt your competence.",
+            "incorrect": "If they can't name names, the 'crowd' doesn't exist."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P1-E6",
+          "type": "reverse-scenario",
+          "answer": "The tendency to value a relationship *more* because you have already invested time/money into it, making it hard to leave.",
+          "question": "What is this bias?",
+          "options": [
+            "Sunk Cost Fallacy",
+            "Halo Effect",
+            "Confirmation Bias",
+            "Love Bombing"
+          ],
+          "correct": "Sunk Cost Fallacy",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'I can't leave after 5 years.' This thought keeps you trapped. The time is gone; don't waste more.",
+            "incorrect": "It's about past investment. You are trying to 'save' a lost bet."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P1-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define 'Cold Empathy':",
+          "words": [
+            "what",
+            "feel",
+            "know",
+            "They",
+            "you",
+            "without",
+            "it",
+            "feeling"
+          ],
+          "correct": "They know what you feel without feeling it",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is the Machiavellian/Psychopathic superpower. They understand your buttons, but they don't feel your pain.",
+            "incorrect": "It is cognitive, not emotional."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: You set a boundary. They rage, then cry, then act cold, then bring you a gift. All in one hour.",
+          "question": "What are they doing?",
+          "options": [
+            "Testing the Fence (Checking which manipulation tactic works).",
+            "Having a bad day.",
+            "They are confused.",
+            "They love you."
+          ],
+          "correct": "Testing the Fence (Checking which manipulation tactic works).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They are cycling through tools (Intimidation, Pity, Punishment, Bribery) to see which one unlocks the door.",
+            "incorrect": "It's not random emotion; it's a rapid-fire test of your defenses."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "A friend is being Love Bombed. They are high on dopamine.",
+          "question": "What is the most effective way to help?",
+          "options": [
+            "Attack the partner (Us vs. Them trap).",
+            "Remain a steady presence and ask Socratic questions ('Does it feel fast?'). Be a safe harbor for the crash.",
+            "Ghost them.",
+            "Join them."
+          ],
+          "correct": "Remain a steady, non-judgmental presence so they have a 'safe harbor' when the Devaluation starts.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You cannot fight the dopamine. You can only be there when the high wears off.",
+            "incorrect": "Attacking the partner pushes your friend away. You must play the Long Game."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P1-E10",
+          "type": "multiple-choice",
+          "question": "What is 'Hoovering'?",
+          "options": [
+            "Cleaning the house.",
+            "Attempting to suck a victim back into the relationship after the Discard.",
+            "Leaving forever.",
+            "A type of dance."
+          ],
+          "correct": "Attempting to suck a victim back into the relationship after the Discard.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They return when they are bored or low on Supply. It restarts the cycle.",
+            "incorrect": "It is named after the vacuum. It pulls you back in."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P1-E11",
+          "type": "fill-in",
+          "sentence": "To defeat a manipulator, you must move from being (--------) to being (--------).",
+          "options": [
+            "reactive",
+            "proactive",
+            "sad",
+            "happy"
+          ],
+          "answers": [
+            "reactive",
+            "proactive"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Reactive means they control you (they poke, you jump). Proactive means you control yourself (you set the boundary).",
+            "incorrect": "Stop reacting to their drama. Start acting on your values."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I am not responsible for other people's emotions.'",
+          "question": "Is this the antidote to the Guilt Trip?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You are responsible for your actions, not their feelings about your actions. This distinction breaks the guilt loop.",
+            "incorrect": "Guilt relies on you feeling responsible for their sadness. You aren't."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: They steal from you. When caught, they say: 'I only did it because you don't support my dreams!'",
+          "question": "This is:",
+          "options": [
+            "Blame-Shifting.",
+            "Truth.",
+            "Love.",
+            "Logic."
+          ],
+          "correct": "Blame-Shifting.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Theft is their action. They are shifting the *cause* to your behavior to avoid guilt.",
+            "incorrect": "Your support has nothing to do with their theft."
+          }
+        },
+        {
+          "exerciseId": "A5-5-P1-E14",
+          "type": "matching",
+          "question": "Match the 'Mask' to the Reality:",
+          "pairs": [
+            {
+              "term": "The 'Nice Guy/Girl'",
+              "definition": "Covert Narcissism (Transactional Niceness)."
+            },
+            {
+              "term": "The 'Helpless Victim'",
+              "definition": "Parasitic Psychopathy (The Mooch)."
+            },
+            {
+              "term": "The 'Perfect Soulmate'",
+              "definition": "Mirroring (Love Bombing)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Niceness is a transaction. Helplessness is a job. Perfection is a mirror.",
+            "incorrect": "Look behind the mask. What is the function?"
+          }
+        },
+        {
+          "exerciseId": "A5-5-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Section A Complete: The Foundation",
+          "scene": "You have studied the Predators (Unit 2, 3, 4) and the Prey (Unit 1, 5). You are ready to stop studying and start fighting.",
+          "question": "In Part 2, we face the ultimate test:",
+          "options": [
+            "The Section A Gauntlet (Mixed Scenarios from ALL units).",
+            "Going home.",
+            "A nap.",
+            "Buying a car."
+          ],
+          "correct": "The Section A Gauntlet (Mixed Scenarios from ALL units).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the mid-term exam. Can you tell a Narcissist from a Psychopath? Can you spot a Hook vs. a Trap? Let's go.",
+            "incorrect": "Next up: The Gauntlet."
+          }
+        }
+      ]
+    }
+  ]
+}

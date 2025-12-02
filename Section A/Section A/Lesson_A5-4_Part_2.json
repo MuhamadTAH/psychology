@@ -1,0 +1,338 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A5",
+  "unitTitle": "The Vulnerable Mind: Why We Fall For It",
+  "lessonId": "A5-4",
+  "lessonTitle": "Traumatic Bonding: The Chemistry of Abuse",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Breaking the Chemical Addiction",
+  "objective": "To practice identifying withdrawal symptoms (Euphoric Recall, Cognitive Dissonance) and applying detox strategies (No Contact, Reality Anchoring) to break the trauma bond.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A5-4-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Detox",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Leaving an abuser feels like quitting a drug. Your brain will scream for one last 'hit' of dopamine (contact)."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Trap: Your brain will only remember the 'Good Times' (Euphoric Recall) to trick you into going back. You must force it to remember the 'Bad Times'."
+        }
+      ]
+    },
+    {
+      "screenId": "A5-4-P2-S2",
+      "screenType": "Exercises",
+      "title": "Breaking the Bond",
+      "exercises": [
+        {
+          "exerciseId": "A5-4-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: You left the abuser 3 days ago. You feel physically sick, anxious, and can't sleep. You think: 'I must have made a mistake. I miss them so much. This pain proves I love them.'",
+          "question": "What is actually happening?",
+          "options": [
+            "True Love.",
+            "Chemical Withdrawal (Detox).",
+            "A mistake.",
+            "Telepathy."
+          ],
+          "correct": "Chemical Withdrawal (Detox).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The pain is not proof of love; it is proof of addiction. Your body is crashing from the lack of cortisol/dopamine spikes.",
+            "incorrect": "It feels like love, but it is withdrawal. Treat it like the flu, not a sign to return."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is 'Euphoric Recall'?",
+          "options": [
+            "Remembering only the good moments (The Honeymoon) while forgetting the abuse, leading to a desire to return.",
+            "A happiness drug.",
+            "Having a good memory.",
+            "Being optimistic."
+          ],
+          "correct": "Remembering only the good moments (The Honeymoon) while forgetting the abuse, leading to a desire to return.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Your brain filters out the pain to protect you, but this makes you vulnerable. You remember the flowers, not the screaming.",
+            "incorrect": "It is a selective memory bias. It tricks you into thinking the relationship was better than it was."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P2-E3",
+          "type": "fill-in",
+          "sentence": "To fight Euphoric Recall, you must keep a (--------) List of every abusive thing they did.",
+          "options": [
+            "reality",
+            "love",
+            "shopping",
+            "wish"
+          ],
+          "answers": [
+            "reality"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. When you miss them, read the list. Remind your brain of the insults, the lies, and the fear. Re-anchor to the bad reality.",
+            "incorrect": "It's not a wish list. It's a list of the 'Bad Times' to counter the fake 'Good Times'."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'We can still be friends. I just want to text you occasionally.'",
+          "question": "Is this safe during detox?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Just one text' is like 'Just one drink' to an alcoholic. It resets the withdrawal clock. You need Total No Contact.",
+            "incorrect": "Friendship is the gateway back to abuse. You cannot heal while still interacting with the source of the trauma."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P2-E5",
+          "type": "matching",
+          "question": "Match the Detox Symptom to the Coping Strategy:",
+          "pairs": [
+            {
+              "term": "Euphoric Recall (Missing them)",
+              "definition": "Read the 'List of Abuse'."
+            },
+            {
+              "term": "Obsessive Thoughts (Rumination)",
+              "definition": "Distraction / 'Thought Stopping'."
+            },
+            {
+              "term": "Isolation",
+              "definition": "Reach out to a safe friend."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Counter the false memory with facts. Counter the loop with action. Counter the loneliness with safe people.",
+            "incorrect": "Match the problem to the solution. Rumination needs interruption."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P2-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the rule of No Contact:",
+          "words": [
+            "No",
+            "new",
+            "memories",
+            "create"
+          ],
+          "correct": "Create no new memories",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Every interaction creates a new memory that extends the grieving process. Stop adding fuel to the fire.",
+            "incorrect": "The goal is to starve the bond. New memories feed it."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P2-E7",
+          "type": "scenario",
+          "scene": "Scenario: You feel a sudden urge to check their social media.",
+          "question": "This is:",
+          "options": [
+            "Pain Shopping.",
+            "Curiosity.",
+            "Closure.",
+            "Research."
+          ],
+          "correct": "Pain Shopping.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Checking their profile will either make you sad (if they look happy) or angry. You are 'shopping' for pain. Don't buy it.",
+            "incorrect": "It's not closure; it's reopening the wound."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "The feeling of holding two opposing beliefs at once: 'He loves me' and 'He hurts me.'",
+          "question": "What is this mental state?",
+          "options": [
+            "Cognitive Dissonance",
+            "Clarity",
+            "Peace",
+            "Hatred"
+          ],
+          "correct": "Cognitive Dissonance",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The brain tries to resolve this tension by making excuses for the abuser ('He hurts me *because* he loves me').",
+            "incorrect": "It causes extreme stress. The goal of detox is to resolve the dissonance: 'He hurts me because he is abusive.'"
+          }
+        },
+        {
+          "exerciseId": "A5-4-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "You run into the abuser in public. They look sad and say, 'Can we just talk for 5 minutes?'",
+          "question": "What is the safest move?",
+          "options": [
+            "Say 'No' and keep walking. (Hard Boundary)",
+            "Talk for 5 minutes to be polite.",
+            "Scream at them.",
+            "Run away."
+          ],
+          "correct": "Say 'No' and keep walking. (Hard Boundary)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. 5 minutes becomes 5 hours. They are looking for an opening. Politeness is not required with an abuser.",
+            "incorrect": "Politeness is the trap. Screaming is Supply. Ignoring/Refusing is safety."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'I just need closure. If I can just explain to them how much they hurt me, they will understand.'",
+          "question": "Will this work?",
+          "options": [
+            "No. They know they hurt you. They don't care. Closure comes from you, not them.",
+            "Yes, communication solves everything.",
+            "Maybe.",
+            "Yes, if you cry."
+          ],
+          "correct": "No. They know they hurt you. They don't care. Closure comes from you, not them.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Seeking closure from a psychopath is like asking a thief to refund your money out of the goodness of their heart. It won't happen.",
+            "incorrect": "You are looking for empathy from someone who has none. Closure is accepting they will never understand."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P2-E11",
+          "type": "fill-in",
+          "sentence": "Healing is not linear; it is (--------). You will have good days and bad days.",
+          "options": [
+            "cyclical",
+            "fast",
+            "easy",
+            "perfect"
+          ],
+          "answers": [
+            "cyclical"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Expect relapses in thinking. Don't shame yourself for missing them; just get back on the wagon.",
+            "incorrect": "It's not a straight line. It's a spiral upwards."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'If I was stronger, I wouldn't have been abused.'",
+          "question": "Is this Victim Blaming?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Abuse is the fault of the abuser. Being strong/smart does not make you immune to manipulation, just as being fit doesn't make you immune to the flu.",
+            "incorrect": "Do not internalize their blame. Your only 'mistake' was trusting a predator."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: You start dating a nice, boring person. You feel no 'spark' (anxiety).",
+          "question": "What should you do?",
+          "options": [
+            "Give it time. Your brain is re-calibrating to 'Healthy' instead of 'Toxic'.",
+            "Dump them. No spark means no love.",
+            "Create drama to feel something.",
+            "Go back to the ex."
+          ],
+          "correct": "Give it time. Your brain is re-calibrating to 'Healthy' instead of 'Toxic'.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. After a trauma bond, safety feels boring. You need to detox from the chaos before you can appreciate peace.",
+            "incorrect": "The 'spark' in a toxic relationship was fear, not love. Don't chase the anxiety."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P2-E14",
+          "type": "matching",
+          "question": "Match the Recovery Stage:",
+          "pairs": [
+            {
+              "term": "Withdrawal",
+              "definition": "Physical pain, obsession, craving."
+            },
+            {
+              "term": "Anger",
+              "definition": "Realizing the injustice (The fog lifts)."
+            },
+            {
+              "term": "Indifference",
+              "definition": "Freedom (You no longer care)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The goal is not Hate (which is still attachment); the goal is Indifference.",
+            "incorrect": "Anger is a healthy step, but not the destination. Indifference is the end."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Detox",
+          "scene": "You have the tools to break the bond. No Contact, Reality Lists, and Patience.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Relapse' Prevention Drill (Simulation).",
+            "Calling the abuser.",
+            "Watching a movie.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Relapse' Prevention Drill (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The hardest part isn't leaving; it's staying gone. Can you resist the Hoover?",
+            "incorrect": "Next up: Preventing the return."
+          }
+        }
+      ]
+    }
+  ]
+}

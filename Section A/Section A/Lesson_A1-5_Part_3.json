@@ -1,0 +1,397 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A1",
+  "unitTitle": "The Fast Hook",
+  "lessonId": "A1-5",
+  "lessonTitle": "Unit 1 Review",
+  "lessonType": "Review",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: Final Scenarios",
+  "objective": "To serve as the final 'boss test' for Unit 1, requiring the user to identify and defend against the most complex, combined-tactic scenarios.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "complete",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "complete",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Unit_1_Mastery_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A1-5-P3-S1",
+      "screenType": "Learn",
+      "title": "Part 3: The Final Challenge",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You've completed the knowledge check and survived the 'Gauntlet.' This is the final test for Unit 1."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "These are the 20 most difficult scenarios, combining everything you've learned: Flattery, Rapport, Guilt, Gaslighting, History, and Ethics. Pass this, and you've mastered the foundations. Good luck."
+        }
+      ]
+    },
+    {
+      "screenId": "A1-5-P3-S2",
+      "screenType": "Exercises",
+      "exercises": [
+        {
+          "exerciseId": "A1-5-P3-E1",
+          "type": "boss-scenario",
+          "scene": "A family member: 'You're the only one I can *trust* (Flattery). You're so good at this... which is why I'm *so hurt* you won't 'loan' me money for my 'business idea' (Guilt). You *always* doubt me!' (Gaslighting)",
+          "question": "What is this 3-hit 'Boss' combo?",
+          "options": [
+            "Flattery + Guilt-Trip + Gaslighting",
+            "Flattery + Reciprocity + Honesty",
+            "Guilt-Trip + Gaslighting + A Direct Request",
+            "Gaslighting + Flattery + A Genuine Complaint"
+          ],
+          "correct": "Flattery + Guilt-Trip + Gaslighting",
+          "difficulty": "hard",
+          "explanation": "This is the 'Full House.' (1) Flattery ('trust'), (2) Guilt ('hurt'), (3) Gaslighting ('you always doubt me'). This is a 10/10 manipulation."
+        },
+        {
+          "exerciseId": "A1-5-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "The 'Rematch' - The Coffee Shop",
+          "steps": [
+            {
+              "scene": "(REMATCH) 'Alex' sits down. 'I couldn't help but notice... you seem like a really creative person.' What's your *defensive* response?",
+              "options": [
+                "'Stop flattering me, you con-artist!' (Aggressive)",
+                "'Wow, thank you so much! I am!' (You are trapped)",
+                "'Thanks. What's on your mind?' (Acknowledge & Pivot)",
+                "'I'm not creative at all.' (Defensive)"
+              ],
+              "correct": "'Thanks. What's on your mind?' (Acknowledge & Pivot)",
+              "feedback": "Perfect. You *acknowledge* the flattery (which is polite) but *pivot* immediately to the 'ask,' showing you won't be 'softened'."
+            },
+            {
+              "question": "(REMATCH) 'Alex' buys your $5 coffee while you're in the restroom. 'I insisted!' How do you break the 'Reciprocity Trap'?",
+              "options": [
+                "'Wow, thank you! I owe you one!' (You are trapped)",
+                "'Oh, you shouldn't have. Thanks.' (You are still trapped)",
+                "'I can't accept that.' (Rude, but effective)",
+                "'Thanks, Alex. Let me buy your next one *right now*.' (You 'settle the debt' immediately)"
+              ],
+              "correct": "'Thanks, Alex. Let me buy your next one *right now*.' (You 'settle the debt' immediately)",
+              "feedback": "This is an advanced defense. By 'settling the debt' immediately (or refusing the gift), you *break* the Reciprocity link. They now have no power over you."
+            },
+            {
+              "question": "(REMATCH) Alex spills their coffee. 'Oh no! My wallet... you're such a kind person, could you lend me $20?'",
+              "options": [
+                "'I... I guess so...' (You lost)",
+                "'Wow, so this was all a trick?' (Aggressive)",
+                "'Sorry, I can't. But I hope your day gets better.' (Firm Boundary)",
+                "'I'll give you $5, since you bought the coffee.' (Negotiating)"
+              ],
+              "correct": "'Sorry, I can't. But I hope your day gets better.' (Firm Boundary)",
+              "feedback": "Perfect. You've passed the 'Rematch.' You set a *firm, polite boundary*. You are not responsible for their 'crisis.' You have mastered the 'Alex' scenario."
+            }
+          ],
+          "difficulty": "hard",
+          "explanation": "This is the 'Coffee Shop Rematch.' You've used the 'Acknowledge & Pivot' and 'Settle the Debt' defenses to win."
+        },
+        {
+          "exerciseId": "A1-5-P3-E3",
+          "type": "micro-sim",
+          "scenarioTitle": "The 'Rematch' - The Guilt Trip",
+          "steps": [
+            {
+              "scene": "(REMATCH) 'Casey' calls. 'I guess that *movie* is more important to you.' What is the *strongest* boundary-setting response?",
+              "options": [
+                "'You're right, it is. Bye.' (Aggressive)",
+                "'Oh no, it's not! I'll come over!' (You are trapped)",
+                "'You're trying to guilt-trip me!' (Accusatory)",
+                "'Casey, that's not fair. I want to see the movie, but I'm happy to help *tomorrow*. What's *really* going on?'"
+              ],
+              "correct": "'Casey, that's not fair. I want to see the movie, but I'm happy to help *tomorrow*. What's *really* going on?'",
+              "feedback": "Perfect. (1) Name the Tactic ('not fair'), (2) State Your Boundary ('tomorrow'), (3) Ask for Direct Communication ('What's really going on?')."
+            },
+            {
+              "question": "(REMATCH) Casey: 'Fine! I'll just... I'll just *walk*! At *night*!' (The Martyr Complex). How do you respond?",
+              "options": [
+                "'Oh my god, don't! I'm coming right now!' (You lost)",
+                "'Okay, have a good walk.' (Cold, but effective)",
+                "'That's not safe, Casey, and that's not what I said. I *can* help you tomorrow. That's a passive-aggressive threat, and it's not okay.'",
+                "'Why are you doing this to me?!'"
+              ],
+              "correct": "'That's not safe, Casey, and that's not what I said. I *can* help you tomorrow. That's a passive-aggressive threat, and it's not okay.'",
+              "feedback": "This is the 'Mastery' response. You *reject the role* of 'Rescuer.' You *name the tactic* ('passive-aggressive threat') and *re-state your boundary* ('help you tomorrow'). You have passed the 'Casey' scenario."
+            }
+          ],
+          "difficulty": "hard",
+          "explanation": "This is the 'Casey Rematch.' You've used a 'Boundary' and 'Named the Tactic' to win."
+        },
+        {
+          "exerciseId": "A1-5-P3-E4",
+          "type": "case-analysis",
+          "caseTitle": "The 'Dark Triad' Politician",
+          "scene": "A politician gives a speech. (1) 'Our nation is in crisis! *They* are the enemy!' (Fear-mongering). (2) 'But *we* are the *true* patriots, the *smartest* people!' (Flattery). (3) 'Our opponents are weak, foolish, and *always* lie!' (Gaslighting/Denial).",
+          "question": "This is a form of mass-scale 'Propaganda' (A1-3). This politician is *acting* like...?",
+          "options": [
+            "A Machiavellian (using fear/division as a *tool* to win power).",
+            "An Empath (sharing real feelings).",
+            "A 'Light' Leader (being honest).",
+            "A 'Rescuer' (trying to help)."
+          ],
+          "correct": "A Machiavellian (using fear/division as a *tool* to win power).",
+          "difficulty": "hard",
+          "explanation": "This is Machiavellianism (A1-3). The politician is using 'dark' tactics (Fear, Flattery, Gaslighting) as *tools*. The 'end' (winning the election) 'justifies the means' (dividing the nation)."
+        },
+        {
+          "exerciseId": "A1-5-P3-E5",
+          "type": "multiple-choice",
+          "question": "Which of the 'Big 3' (A1-3) is *always* the most 'ethical' and 'light'?",
+          "options": [
+            "Manipulation (hidden)",
+            "Coercion (forced)",
+            "Persuasion (transparent)",
+            "None of them."
+          ],
+          "correct": "Persuasion (transparent)",
+          "difficulty": "easy",
+          "explanation": "Final definition check. Persuasion is 'light' because it's *transparent* and respects your *choice*."
+        },
+        {
+          "exerciseId": "A1-5-P3-E6",
+          "type": "true-false",
+          "statement": "The 'Prime Directive' (A1-3) means: 'It is okay to use 'dark' tactics, as long as you *win*.'",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "explanation": "False. That is the *Machiavellian* creed. Our 'Prime Directive' is 'Do No Harm. Use awareness for *defense*.'"
+        },
+        {
+          "exerciseId": "A1-5-P3-E7",
+          "type": "fill-in",
+          "sentence": "Flattery (A1-2) attacks the (--------). Guilt (A1-4) attacks the (--------).",
+          "options": [
+            "ego",
+            "conscience",
+            "wallet",
+            "job"
+          ],
+          "answers": [
+            "ego",
+            "conscience"
+          ],
+          "difficulty": "easy",
+          "explanation": "Final check. Flattery 'pulls' (ego). Guilt 'pushes' (conscience)."
+        },
+        {
+          "exerciseId": "A1-5-P3-E8",
+          "type": "build-sentence",
+          "question": "Arrange these words into the 'Flattery' defense (A1-2):",
+          "words": [
+            "the",
+            "flattery",
+            "and",
+            "the",
+            "Separate",
+            "'ask.'"
+          ],
+          "correct": "Separate the flattery and the 'ask.'",
+          "difficulty": "easy",
+          "explanation": "Final check. This is the 'Golden Rule' of flattery defense."
+        },
+        {
+          "exerciseId": "A1-5-P3-E9",
+          "type": "build-sentence",
+          "question": "Arrange these words into the 'Guilt' defense (A1-4):",
+          "words": [
+            "for",
+            "responsible",
+            "not",
+            "are",
+            "You",
+            "emotions",
+            "others'"
+          ],
+          "correct": "You are not responsible for others' emotions",
+          "difficulty": "easy",
+          "explanation": "Final check. This is the 'Golden Rule' of emotional defense."
+        },
+        {
+          "exerciseId": "A1-5-P3-E10",
+          "type": "multiple-choice",
+          "question": "The term 'Gaslighting' (A1-3/A1-4) comes from a play where a man tries to make his wife believe she is...?",
+          "options": [
+            "A genius",
+            "Insane / Crazy",
+            "A good friend",
+            "Wealthy"
+          ],
+          "correct": "Insane / Crazy",
+          "difficulty": "easy",
+          "explanation": "Final check. Gaslighting's goal is to *destroy your reality*."
+        },
+        {
+          "exerciseId": "A1-5-P3-E11",
+          "type": "true-false",
+          "statement": "The 'Dark Triad' (A1-3) consists of Flattery, Guilt, and Gaslighting.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "explanation": "Final check. False. It is *personalities*: Narcissism, Machiavellianism, Psychopathy."
+        },
+        {
+          "exerciseId": "A1-5-P3-E12",
+          "type": "boss-scenario",
+          "scene": "A 'friend' is mirroring your posture. 'You are *so* smart (Flattery). That's why I'm *crushed* you won't help me... *after all I've done for you* (Guilt). You must just be *imagining* I was ever a good friend!' (Gaslighting)",
+          "question": "What is the *strongest* defense against this 4-hit 'Boss' combo?",
+          "options": [
+            "Give in immediately. (You lose)",
+            "(Subtly change posture, breaking the mirror) 'That's not fair, and it's not true. I can't help you, but I'm not a bad friend.'",
+            "Start crying. (You lose)",
+            "Accuse them: 'You're a gaslighting, guilt-tripping narcissist!'"
+          ],
+          "correct": "(Subtly change posture, breaking the mirror) 'That's not fair, and it's not true. I can't help you, but I'm not a bad friend.'",
+          "difficulty": "hard",
+          "explanation": "This is the 'Mastery' defense. (1) Break the Mirror (non-verbal), (2) Name the Tactic ('not fair'), (3) Reject the Gaslight ('not true'), (4) State the Boundary ('I can't help')."
+        },
+        {
+          "exerciseId": "A1-5-P3-E13",
+          "type": "multiple-choice",
+          "question": "What is the 'Halo Effect' (A1-2)?",
+          "options": [
+            "A 'good' trait (like 'nice') makes you *assume* other 'good' traits (like 'honest').",
+            "A 'bad' trait makes you assume other 'bad' traits.",
+            "A 'guilt-trip' about religion.",
+            "A tactic used by 'Alex' in A1-1."
+          ],
+          "correct": "A 'good' trait (like 'nice') makes you *assume* other 'good' traits (like 'honest').",
+          "difficulty": "medium",
+          "explanation": "Flattery (A1-2) *creates* a 'Halo Effect.' Alex (A1-1) seemed 'nice' (from flattery), so you *assumed* they were 'trustworthy.' This was the trap."
+        },
+        {
+          "exerciseId": "A1-5-P3-E14",
+          "type": "ethical-dilemma",
+          "scene": "You *know* how to use flattery, mirroring, and pacing (A1-2).",
+          "question": "When is it 'ethically' okay to use these 'rapport' skills?",
+          "options": [
+            "To *deceive* a date into liking you (Dark).",
+            "To *transparently* build a *real* connection (Light).",
+            "To *trick* your boss into giving you a raise (Dark).",
+            "It is *never* ethical to use these skills."
+          ],
+          "correct": "To *transparently* build a *real* connection (Light).",
+          "difficulty": "medium",
+          "explanation": "This is the 'Light' path. 'Rapport' is a normal social skill. It only becomes 'dark' when the *intent* is *hidden* and *exploitative*."
+        },
+        {
+          "exerciseId": "A1-5-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "The 'Martyr' Friend",
+          "scene": "Your friend 'Casey' (A1-4) used the 'Martyr Complex' ('I'll just walk... at night...').",
+          "question": "What is the *goal* of the 'Martyr'?",
+          "options": [
+            "To make you feel like the 'Persecutor' (the 'bad guy').",
+            "To make you feel like the 'Rescuer' (the 'good guy').",
+            "Both A and B. They make you the 'bad guy' *until* you become the 'RescEuer'.",
+            "To genuinely go for a walk."
+          ],
+          "correct": "Both A and B. They make you the 'bad guy' *until* you become the 'RescEuer'.",
+          "difficulty": "hard",
+          "explanation": "This is the 'Drama Triangle' from A1-4. The 'Martyr' (Victim) *forces* you to be the 'Persecutor' ('You're letting me walk!'). You can only 'escape' by becoming the 'Rescuer' ('I'm coming!')."
+        },
+        {
+          "exerciseId": "A1-5-P3-E16",
+          "type": "true-false",
+          "statement": "The 'Prime Directive' (A1-3) means: 'It is okay to use manipulation to 'help' someone, even if they don't want it.'",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "explanation": "This is a 'dark' 'Rescuer' mentality. The 'light' path is to *respect* autonomy. You can *offer* help (Persuasion), but you cannot *force* it (Coercion/Manipulation)."
+        },
+        {
+          "exerciseId": "A1-5-P3-E17",
+          "type": "multiple-choice",
+          "question": "What is the *best* 'test' if you suspect 'Mirroring' (A1-2)?",
+          "options": [
+            "Accuse them: 'Stop copying me!'",
+            "Subtly change your *own* posture and see if they *follow*.",
+            "Copy *them* to see if they notice.",
+            "Say nothing and leave."
+          ],
+          "correct": "Subtly change your *own* posture and see if they *follow*.",
+          "difficulty": "hard",
+          "explanation": "This is the 'Mastery' defense. It's 'covert' (hidden). You *test* them without being aggressive. If they follow, you've confirmed the tactic."
+        },
+        {
+          "exerciseId": "A1-5-P3-E18",
+          "type": "case-analysis",
+          "caseTitle": "The 'Gaslighting' Combo",
+          "scene": "In A1-4, Casey said, 'You're just overreacting!' (Gaslighting) and 'I'm just sad!' (Guilt-Trip / Victim).",
+          "question": "Why is this 'Gaslight/Victim' combo so effective?",
+          "options": [
+            "Because it's true.",
+            "Because it makes *you* the 'attacker' and *them* the 'victim'.",
+            "Because it is very funny.",
+            "Because it is a form of flattery."
+          ],
+          "correct": "Because it makes *you* the 'attacker' and *them* the 'victim'.",
+          "difficulty": "hard",
+          "explanation": "This is 'Flipping the Script.' You came with a valid complaint, and you *left* feeling guilty for 'attacking' a 'sad' person. This is a 10/10 defensive manipulation."
+        },
+        {
+          "exerciseId": "A1-5-P3-E19",
+          "type": "ethical-dilemma",
+          "scene": "You have completed Unit 1. You now 'see' these tactics (Flattery, Guilt) *everywhere*.",
+          "question": "What is the 'ethically-aware' takeaway from Unit 1?",
+          "options": [
+            "That *everyone* is a 'dark' manipulator and no one can be trusted.",
+            "That these tactics are 'tools.' The *intent* (to help vs. to harm) is what makes them 'dark' or 'light'.",
+            "That you are now a 'master' and can't be manipulated.",
+            "That you should use these tactics to get what you want."
+          ],
+          "correct": "That these tactics are 'tools.' The *intent* (to help vs. to harm) is what makes them 'dark' or 'light'.",
+          "difficulty": "hard",
+          "explanation": "This is the 'Mastery' insight. 'Rapport' is a tool. 'Flattery' is a tool. 'Guilt' is a tool. The 'intent' (A1-3) is what defines them as 'dark' or 'light'."
+        },
+        {
+          "exerciseId": "A1-5-P3-E20",
+          "type": "case-analysis",
+          "caseTitle": "Unit 1 Complete",
+          "scene": "You have passed the 'Final Challenge.' You have completed all 5 lessons of Unit A1. You've been 'hooked,' 'teased' with tactics, 'bootcamped' in theory, 'hooked' again, and passed the 'Review.'",
+          "question": "You have earned the 'Unit 1 Mastery Badge.' What is the next logical step?",
+          "options": [
+            "Lesson A2-1: (Start the next Unit)",
+            "Restart Unit 1.",
+            "Quit the app.",
+            "This is the end of the app."
+          ],
+          "correct": "Lesson A2-1: (Start the next Unit)",
+          "difficulty": "easy",
+          "explanation": "Congratulations. You have mastered the 'Foundations.' It's time to move on to the 'core' tactics in Unit 2, starting with the most famous 'Dark Triad' trait: Narcissism."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A5",
+  "unitTitle": "The Vulnerable Mind: Why We Fall For It",
+  "lessonId": "A5-4",
+  "lessonTitle": "Traumatic Bonding: The Chemistry of Abuse",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Relapse\" Prevention Drill",
+  "objective": "To master the defense against relapse triggers (Hoovering, Flying Monkeys, Nostalgia) and maintain 'No Contact' during the withdrawal phase.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Detox_Master_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A5-4-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Pull",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Leaving is an event. Staying away is a process. The Trauma Bond will try to pull you back in through chemical craving and external manipulation."
+        },
+        {
+          "type": "paragraph",
+          "text": "In this challenge, the abuser will attempt to 'Hoover' you back, and your own mind will betray you with 'Good Memories.'"
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Do not break No Contact. Do not believe the 'Changed Man/Woman' act. Do not feed the addiction."
+        }
+      ]
+    },
+    {
+      "screenId": "A5-4-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: Holding the Line",
+      "exercises": [
+        {
+          "exerciseId": "A5-4-P3-E1",
+          "type": "boss-scenario",
+          "scene": "It has been 2 weeks of No Contact. You receive a text from an unknown number: 'I'm in the hospital. I have nobody else. Please just call me to say goodbye.'",
+          "question": "This is the 'Medical Hoax.' What is the strategic move?",
+          "options": [
+            "Call them immediately. (Compassion Trap)",
+            "Do nothing. If it's real, doctors will handle it. If it's fake, it's a trap. Maintain No Contact.",
+            "Text back: 'Are you okay?' (Engagement)",
+            "Go to the hospital."
+          ],
+          "correct": "Do nothing. If it's real, doctors will handle it. If it's fake, it's a trap. Maintain No Contact.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is the hardest test. Manipulators frequently fake medical emergencies to force contact. Breaking No Contact resets the trauma bond.",
+            "incorrect": "If you respond, they know that 'Illness = Access.' They will use this tactic forever. Doctors manage health; you manage your safety."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Flying Monkey",
+          "steps": [
+            {
+              "scene": "A mutual friend calls you: 'I saw your ex. They look terrible. They are crying all the time and really working on themselves. Maybe you should talk to them?'",
+              "options": [
+                "'They are faking it!' (Defensive)",
+                "'Really? Maybe I was too harsh...' (Doubt)",
+                "'I appreciate your concern, but I am not discussing that relationship. Please respect my boundary.' (Shut Down)",
+                "'Tell me more.' (Curiosity)"
+              ],
+              "correct": "'I appreciate your concern, but I am not discussing that relationship. Please respect my boundary.' (Shut Down)",
+              "feedback": {
+                "correct": "Perfect. The friend is a 'Flying Monkey' (recruited agent). You must set a boundary with the friend, or they will ferry information back to the abuser.",
+                "incorrect": "Asking for info or defending yourself feeds the drama. You must close the channel."
+              }
+            },
+            {
+              "question": "Friend: 'But they have a letter for you. Can I just drop it off?'",
+              "options": [
+                "'Okay, just leave it in the mailbox.' (Curiosity Trap)",
+                "'No. Do not bring me anything from them. Throw it away.' (Hard Boundary)",
+                "'Read it to me.'",
+                "Scream at the friend."
+              ],
+              "correct": "'No. Do not bring me anything from them. Throw it away.' (Hard Boundary)",
+              "feedback": {
+                "correct": "Mastery. The letter is a 'Love Bombing' vector. Reading it opens the wound. Refusing it keeps the infection out.",
+                "incorrect": "If you read the letter, the words will trigger the chemical longing (Dopamine). Don't touch it."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You neutralized the Flying Monkey. You realized that 'nice' messengers can still carry poison.",
+            "incorrect": "You let the message through. Now you are thinking about the abuser, and the craving has returned."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why does 'Just being friends' never work with a Trauma Bond?",
+          "options": [
+            "Because you can't be friends with an addict while you are the drug.",
+            "It works fine.",
+            "Because they are mean.",
+            "Because they are busy."
+          ],
+          "correct": "Because you can't be friends with an addict while you are the drug.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The chemical pathways of abuse are still active. Friendship keeps the cortisol/dopamine cycle alive, preventing detox.",
+            "incorrect": "It's not about personality; it's about neurochemistry. Contact triggers the addiction."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P3-E4",
+          "type": "fill-in",
+          "sentence": "Relapse starts in the (--------) long before it happens in reality.",
+          "options": [
+            "mind",
+            "phone",
+            "car",
+            "heart"
+          ],
+          "answers": [
+            "mind"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Relapse starts when you begin fantasizing about the 'Good Times' (Euphoric Recall) and ignoring the abuse.",
+            "incorrect": "It starts with a thought pattern. By the time you pick up the phone, the relapse is already underway."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: You find an old photo of the two of you looking happy. You feel a wave of sadness and think, 'Maybe it wasn't that bad.'",
+          "question": "What must you do immediately?",
+          "options": [
+            "Call them.",
+            "Stare at the photo and cry.",
+            "Reality Check: Read your list of abusive incidents to remind your brain of the truth.",
+            "Post the photo online."
+          ],
+          "correct": "Reality Check: Read your list of abusive incidents to remind your brain of the truth.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Counter the 'Euphoric Recall' (Fake News) with 'Evidence' (Real News). The photo is a snapshot of a lie.",
+            "incorrect": "Staring at the photo deepens the trance. You need a shock of reality to break the nostalgia."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'I am strong enough to handle a coffee with them now.'",
+          "question": "Is this thought a trap?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the addict's bargaining. 'I can handle just one drink.' No, you can't. The bond is dormant, not dead.",
+            "incorrect": "It feels like strength, but it is rationalization. Re-exposure re-activates the neural pathways of the bond."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the 'Hoover' tactic:",
+          "words": [
+            "Sucking",
+            "relationship",
+            "you",
+            "back",
+            "into",
+            "the"
+          ],
+          "correct": "Sucking you back into the relationship",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Named after the vacuum cleaner. They use promises, threats, or crises to suck you back in.",
+            "incorrect": "It is an active attempt to reclaim the resource (you)."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "The feeling that you are 'going crazy' or 'empty' without the chaos of the relationship.",
+          "question": "What is this?",
+          "options": [
+            "Withdrawal / Detox",
+            "True Love",
+            "Boredom",
+            "Depression"
+          ],
+          "correct": "Withdrawal / Detox",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Your body is screaming for the cortisol spike. Peace feels 'wrong' because your baseline is set to 'Chaos'.",
+            "incorrect": "It mimics depression, but it is chemical withdrawal from the stress cycle."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You see your abuser in public. They spot you and start walking over with a smile.",
+          "question": "What is the correct move?",
+          "options": [
+            "Stand your ground and fight.",
+            "Smile back to be polite.",
+            "Turn around and leave immediately. Do not engage. (Physical Boundary).",
+            "Freeze."
+          ],
+          "correct": "Turn around and leave immediately. Do not engage. (Physical Boundary).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You owe them nothing. Engagement risks a 'Hoover.' Leaving physically removes the danger.",
+            "incorrect": "Politeness is dangerous. Fighting gives Supply. Flight is the smartest tactical move."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: They send a Venmo/CashApp payment of $1 just to send a message: 'Please talk to me.'",
+          "question": "This is:",
+          "options": [
+            "Desperation / Stalking.",
+            "Romantic.",
+            "Creative.",
+            "Funny."
+          ],
+          "correct": "Desperation / Stalking.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are bypassing your blocks. This is not love; it is a refusal to accept your 'No.' Block them on the payment app too.",
+            "incorrect": "It is intrusive. It shows they will violate digital boundaries to force contact."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P3-E11",
+          "type": "fill-in",
+          "sentence": "The antidote to Trauma Bonding is (--------) and time.",
+          "options": [
+            "distance",
+            "revenge",
+            "explanations",
+            "anger"
+          ],
+          "answers": [
+            "distance"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You cannot heal in the same environment that made you sick. Distance breaks the chemical loop.",
+            "incorrect": "Revenge keeps you close. Explanations don't work. Distance is the cure."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I should check their social media just to see if they are miserable without me.'",
+          "question": "Is this Pain Shopping?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If they look happy, you hurt. If they look sad, you feel tempted to rescue. You lose either way.",
+            "incorrect": "Looking at the abuser is feeding the addiction. Stop shopping for pain."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: You start dating again. The new person is nice, consistent, and respectful. You feel bored and no 'spark.'",
+          "question": "What is happening?",
+          "options": [
+            "They are not the one.",
+            "Your brain is recalibrating. You are used to 'Spark = Danger.' Safety feels boring to a traumatized brain.",
+            "You need to create drama.",
+            "You are broken."
+          ],
+          "correct": "Your brain is recalibrating. You are used to 'Spark = Danger.' Safety feels boring to a traumatized brain.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. 'Boring' is good. 'Boring' is safe. Give your nervous system time to learn that love doesn't have to hurt.",
+            "incorrect": "Do not mistake 'Lack of Trauma' for 'Lack of Chemistry.' Give it time."
+          }
+        },
+        {
+          "exerciseId": "A5-4-P3-E14",
+          "type": "matching",
+          "question": "Match the Hoover Tactic to the Intent:",
+          "pairs": [
+            {
+              "term": "The 'Apology' Letter",
+              "definition": "To trigger Guilt/Hope."
+            },
+            {
+              "term": "The 'Crisis' Call",
+              "definition": "To trigger the Savior Complex."
+            },
+            {
+              "term": "The 'Accidental' Text",
+              "definition": "To trigger Curiosity."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Every contact attempt is a key trying to unlock a specific door (Guilt, Savior, Curiosity).",
+            "incorrect": "Analyze the hook. Why did they choose that specific method?"
+          }
+        },
+        {
+          "exerciseId": "A5-4-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Chain Broken",
+          "scene": "You have resisted the Hoover. You have survived the Withdrawal. You are standing alone, but you are free.",
+          "question": "You are ready for the Grand Finale of Section A:",
+          "options": [
+            "Lesson A5-5: Section A Grand Review (The Master Manipulator Boss Fight).",
+            "Lesson A1-1.",
+            "Texting your ex.",
+            "Sleeping."
+          ],
+          "correct": "Lesson A5-5: Section A Grand Review (The Master Manipulator Boss Fight).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You have built the Foundation. Now you must face the ultimate test of Section A.",
+            "incorrect": "Next up: The Final Boss of the Foundation Section."
+          }
+        }
+      ]
+    }
+  ]
+}

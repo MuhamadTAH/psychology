@@ -1,0 +1,341 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B3",
+  "unitTitle": "The Herd Mind: Social Engineering",
+  "lessonId": "B3-2",
+  "lessonTitle": "The Authority Hack",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: Symbols of Power",
+  "objective": "To define 'Authority Bias' and identify the specific symbols (Uniforms, Titles, Confidence) manipulators use to hack our obedience reflex.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B3-2-P1-S1",
+      "screenType": "Learn",
+      "title": "The Obedience Reflex",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "From childhood, we are trained to obey parents, teachers, and police. This creates an automatic 'Obedience Reflex' to Authority."
+        },
+        {
+          "type": "paragraph",
+          "text": "Social Engineers hack this reflex by faking the **Symbols of Authority**. If they look like a leader, you follow them, often without asking for ID."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Rule: We obey the *symbol* (the suit, the badge, the clipboard), not necessarily the person."
+        }
+      ]
+    },
+    {
+      "screenId": "B3-2-P1-S2",
+      "screenType": "Exercises",
+      "title": "Decoding the Badge",
+      "exercises": [
+        {
+          "exerciseId": "B3-2-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is **Authority Bias**?",
+          "options": [
+            "Hating the police.",
+            "The tendency to attribute greater accuracy to the opinion of an authority figure (unrelated to its content) and be more influenced by that opinion.",
+            "Being a boss.",
+            "Writing a book."
+          ],
+          "correct": "The tendency to attribute greater accuracy to the opinion of an authority figure (unrelated to its content) and be more influenced by that opinion.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If a doctor tells you to jump, you jump. If a random person tells you to jump, you ignore them. The *title* changes the compliance.",
+            "incorrect": "It is a cognitive shortcut where 'Status = Truth'."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: A man in a high-vis vest and a hard hat walks confidently into a restricted construction site. No one stops him.",
+          "question": "Why did this work?",
+          "options": [
+            "He worked there.",
+            "The 'Uniform' (Vest/Hat) signaled authority. Our brains assume 'If he is wearing that, he belongs here.'",
+            "He was invisible.",
+            "Luck."
+          ],
+          "correct": "The 'Uniform' (Vest/Hat) signaled authority. Our brains assume 'If he is wearing that, he belongs here.'",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is a classic Social Engineering hack. The 'Costume' bypasses the security check in people's minds.",
+            "incorrect": "Clothes make the man—or at least, the access. The visual symbol overrides suspicion."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P1-E3",
+          "type": "fill-in",
+          "sentence": "Authority is often judged by (--------) rather than substance.",
+          "options": [
+            "symbols",
+            "truth",
+            "weight",
+            "fun"
+          ],
+          "answers": [
+            "symbols"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The car, the suit, the watch, the title. These are symbols. Manipulators rent the symbols to steal the power.",
+            "incorrect": "Substance takes time to verify. Symbols are instant."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm a Doctor.' (Said by someone with a PhD in Art History giving medical advice).",
+          "question": "Is this an Authority Hack?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are using the *title* 'Doctor' to borrow authority in a field (Medicine) where they have no expertise. It relies on the listener not asking 'Doctor of what?'",
+            "incorrect": "The title creates a Halo Effect of competence that bleeds into unrelated areas."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P1-E5",
+          "type": "matching",
+          "question": "Match the Symbol to the Effect:",
+          "pairs": [
+            {
+              "term": "The Uniform (Police/Security)",
+              "definition": "Triggers immediate physical obedience."
+            },
+            {
+              "term": "The Business Suit",
+              "definition": "Triggers respect and deference (Status)."
+            },
+            {
+              "term": "The Clipboard",
+              "definition": "Triggers the assumption of 'Official Business'."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. We are conditioned to respect these specific visual cues.",
+            "incorrect": "Think about what the item represents. Security = Force. Suit = Money. Clipboard = Process."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the danger of blind obedience:",
+          "words": [
+            "thinking",
+            "stops",
+            "Authority",
+            "critical"
+          ],
+          "correct": "Authority stops critical thinking",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. When the leader speaks, the brain stops analyzing and starts following. This is dangerous if the leader is a fake.",
+            "incorrect": "It acts as an 'off switch' for logic."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "Acting with total certainty and arrogance so that people assume you must be right, even if you are wrong.",
+          "question": "What is this trait?",
+          "options": [
+            "The Confidence Heuristic",
+            "Narcissism",
+            "Gaslighting",
+            "Intelligence"
+          ],
+          "correct": "The Confidence Heuristic",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. We unconsciously equate 'Confidence' with 'Competence.' Con artists exploit this by never showing doubt.",
+            "incorrect": "It creates an 'Air of Authority.' Doubt signals weakness; certainty signals power."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: A scammer calls you. 'This is Officer Miller from the IRS. You owe back taxes. Pay now or we send a squad car.'",
+          "question": "This tactic uses Authority to create:",
+          "options": [
+            "Fear and Urgency (Panic).",
+            "Respect.",
+            "Friendship.",
+            "Safety."
+          ],
+          "correct": "Fear and Urgency (Panic).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The title 'Officer' creates authority. The threat 'Squad Car' creates terror. This shuts down your ability to ask: 'Does the IRS call people?' (They don't).",
+            "incorrect": "It is a fear-based compliance tactic."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are a manager. Is it ethical to wear a suit to a meeting to signal authority?",
+          "question": "Is this 'Dark'?",
+          "options": [
+            "No. Using symbols to establish legitimate leadership is standard 'Impression Management'.",
+            "Yes, clothes are lies.",
+            "Yes, you should wear pajamas.",
+            "Only if the suit is expensive."
+          ],
+          "correct": "No. Using symbols to establish legitimate leadership is standard 'Impression Management'.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you *have* the authority, signaling it helps the team follow. It becomes 'Dark' only if you *impersonate* authority you don't have.",
+            "incorrect": "Dress for the role you play. That is social intelligence, not manipulation."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P1-E10",
+          "type": "fill-in",
+          "sentence": "The hardest authority to question is the one you (--------) with.",
+          "options": [
+            "agree",
+            "fight",
+            "live",
+            "work"
+          ],
+          "answers": [
+            "agree"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If an 'Expert' confirms what you already believe (Confirmation Bias), you never ask for their credentials.",
+            "incorrect": "We question enemies. We blindly follow friends/allies."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P1-E11",
+          "type": "multiple-choice",
+          "question": "What did the 'Milgram Experiment' prove about authority?",
+          "options": [
+            "People hate hurting others.",
+            "Normal people will shock a stranger to death if a man in a lab coat tells them it is 'necessary'.",
+            "Scientists are evil.",
+            "Electricity is dangerous."
+          ],
+          "correct": "Normal people will shock a stranger to death if a man in a lab coat tells them it is 'necessary'.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 65% of participants went to the maximum voltage. We outsource our conscience to Authority figures.",
+            "incorrect": "It proved the terrifying power of the 'Expert Command'."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm the CEO, so do what I say.'",
+          "question": "Is 'Because I said so' a logical argument?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is a 'Fallacy of Authority' (Ad Verecundiam). Position does not make a statement true; facts do.",
+            "incorrect": "It is a command, not an argument. It relies on rank, not reason."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: A person holding a clipboard stands outside a store. People automatically walk around them or stop when waved down.",
+          "question": "The Clipboard is:",
+          "options": [
+            "A Totem of Official Business.",
+            "A writing tool.",
+            "A weapon.",
+            "A gift."
+          ],
+          "correct": "A Totem of Official Business.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The prop signals 'I am working/checking/monitoring.' It grants invisible permission to be in public spaces.",
+            "incorrect": "Props act as authority signals. A clipboard, a headset, or a ladder grant access."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P1-E14",
+          "type": "matching",
+          "question": "Match the Status Signal:",
+          "pairs": [
+            {
+              "term": "Deep Voice",
+              "definition": "Evolutionary signal of testosterone/dominance."
+            },
+            {
+              "term": "Taking Up Space",
+              "definition": "Power Posing (Dominance)."
+            },
+            {
+              "term": "Interrupting",
+              "definition": "Verbal Dominance."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Authority is physical and vocal. Manipulators train themselves to take up space and speak lower.",
+            "incorrect": "It's about animal dominance signals."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Uniform",
+          "scene": "You now see the symbols. The suit, the title, the tone. You know that these are costumes that can be worn by anyone.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Questioning the Badge (Real-world verification).",
+            "Buying a uniform.",
+            "Becoming a cop.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: Questioning the Badge (Real-world verification).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. How do you challenge authority without getting arrested or fired? We will learn the safe way to say 'Verify'.",
+            "incorrect": "Next up: Practical defense against fake authority."
+          }
+        }
+      ]
+    }
+  ]
+}

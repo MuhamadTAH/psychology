@@ -1,0 +1,168 @@
+﻿======================================================================
+SECTION A VERIFICATION REPORT
+======================================================================
+
+[FILE COUNT]
+   Expected: 75 files
+   Found:    75 files
+   Status:   PASS
+
+[COMPLETENESS CHECK]
+
+   [MISSING FILES] (75):
+      - Lesson_A1-1_Part_1.json
+      - Lesson_A1-1_Part_2.json
+      - Lesson_A1-1_Part_3.json
+      - Lesson_A1-2_Part_1.json
+      - Lesson_A1-2_Part_2.json
+      - Lesson_A1-2_Part_3.json
+      - Lesson_A1-3_Part_1.json
+      - Lesson_A1-3_Part_2.json
+      - Lesson_A1-3_Part_3.json
+      - Lesson_A1-4_Part_1.json
+      - Lesson_A1-4_Part_2.json
+      - Lesson_A1-4_Part_3.json
+      - Lesson_A1-5_Part_1.json
+      - Lesson_A1-5_Part_2.json
+      - Lesson_A1-5_Part_3.json
+      - Lesson_A2-1_Part_1.json
+      - Lesson_A2-1_Part_2.json
+      - Lesson_A2-1_Part_3.json
+      - Lesson_A2-2_Part_1.json
+      - Lesson_A2-2_Part_2.json
+      - Lesson_A2-2_Part_3.json
+      - Lesson_A2-3_Part_1.json
+      - Lesson_A2-3_Part_2.json
+      - Lesson_A2-3_Part_3.json
+      - Lesson_A2-4_Part_1.json
+      - Lesson_A2-4_Part_2.json
+      - Lesson_A2-4_Part_3.json
+      - Lesson_A2-5_Part_1.json
+      - Lesson_A2-5_Part_2.json
+      - Lesson_A2-5_Part_3.json
+      - Lesson_A3-1_Part_1.json
+      - Lesson_A3-1_Part_2.json
+      - Lesson_A3-1_Part_3.json
+      - Lesson_A3-2_Part_1.json
+      - Lesson_A3-2_Part_2.json
+      - Lesson_A3-2_Part_3.json
+      - Lesson_A3-3_Part_1.json
+      - Lesson_A3-3_Part_2.json
+      - Lesson_A3-3_Part_3.json
+      - Lesson_A3-4_Part_1.json
+      - Lesson_A3-4_Part_2.json
+      - Lesson_A3-4_Part_3.json
+      - Lesson_A3-5_Part_1.json
+      - Lesson_A3-5_Part_2.json
+      - Lesson_A3-5_Part_3.json
+      - Lesson_A4-1_Part_1.json
+      - Lesson_A4-1_Part_2.json
+      - Lesson_A4-1_Part_3.json
+      - Lesson_A4-2_Part_1.json
+      - Lesson_A4-2_Part_2.json
+      - Lesson_A4-2_Part_3.json
+      - Lesson_A4-3_Part_1.json
+      - Lesson_A4-3_Part_2.json
+      - Lesson_A4-3_Part_3.json
+      - Lesson_A4-4_Part_1.json
+      - Lesson_A4-4_Part_2.json
+      - Lesson_A4-4_Part_3.json
+      - Lesson_A4-5_Part_1.json
+      - Lesson_A4-5_Part_2.json
+      - Lesson_A4-5_Part_3.json
+      - Lesson_A5-1_Part_1.json
+      - Lesson_A5-1_Part_2.json
+      - Lesson_A5-1_Part_3.json
+      - Lesson_A5-2_Part_1.json
+      - Lesson_A5-2_Part_2.json
+      - Lesson_A5-2_Part_3.json
+      - Lesson_A5-3_Part_1.json
+      - Lesson_A5-3_Part_2.json
+      - Lesson_A5-3_Part_3.json
+      - Lesson_A5-4_Part_1.json
+      - Lesson_A5-4_Part_2.json
+      - Lesson_A5-4_Part_3.json
+      - Lesson_A5-5_Part_1.json
+      - Lesson_A5-5_Part_2.json
+      - Lesson_A5-5_Part_3.json
+
+   [UNEXPECTED FILES] (75):
+      - Lesson_A1-1_Part_1.json.json
+      - Lesson_A1-1_Part_2.json.json
+      - Lesson_A1-1_Part_3.json.json
+      - Lesson_A1-2_Part_1.json.json
+      - Lesson_A1-2_Part_2.json.json
+      - Lesson_A1-2_Part_3.json.json
+      - Lesson_A1-3_Part_1.json.json
+      - Lesson_A1-3_Part_2.json.json
+      - Lesson_A1-3_Part_3.json.json
+      - Lesson_A1-4_Part_1.json.json
+      - Lesson_A1-4_Part_2.json.json
+      - Lesson_A1-4_Part_3.json.json
+      - Lesson_A1-5_Part_1.json.json
+      - Lesson_A1-5_Part_2.json.json
+      - Lesson_A1-5_Part_3.json.json
+      - Lesson_A2-1_Part_1.json.json
+      - Lesson_A2-1_Part_2.json.json
+      - Lesson_A2-1_Part_3.json.json
+      - Lesson_A2-2_Part_1.json.json
+      - Lesson_A2-2_Part_2.json.json
+      - Lesson_A2-2_Part_3.json.json
+      - Lesson_A2-3_Part_1.json.json
+      - Lesson_A2-3_Part_2.json.json
+      - Lesson_A2-3_Part_3.json.json
+      - Lesson_A2-4_Part_1.json.json
+      - Lesson_A2-4_Part_2.json.json
+      - Lesson_A2-4_Part_3.json.json
+      - Lesson_A2-5_Part_1.json.json
+      - Lesson_A2-5_Part_2.json.json
+      - Lesson_A2-5_Part_3.json.json
+      - Lesson_A3-1_Part_1.json.json
+      - Lesson_A3-1_Part_2.json.json
+      - Lesson_A3-1_Part_3.json.json
+      - Lesson_A3-2_Part_1.json.json
+      - Lesson_A3-2_Part_2.json.json
+      - Lesson_A3-2_Part_3.json.json
+      - Lesson_A3-3_Part_1.json.json
+      - Lesson_A3-3_Part_2.json.json
+      - Lesson_A3-3_Part_3.json.json
+      - Lesson_A3-4_Part_1.json.json
+      - Lesson_A3-4_Part_2.json.json
+      - Lesson_A3-4_Part_3.json.json
+      - Lesson_A3-5_Part_1.json.json
+      - Lesson_A3-5_Part_2.json.json
+      - Lesson_A3-5_Part_3.json.json
+      - Lesson_A4-1_Part_1.json.json
+      - Lesson_A4-1_Part_2.json.json
+      - Lesson_A4-1_Part_3.json.json
+      - Lesson_A4-2_Part_1.json.json
+      - Lesson_A4-2_Part_2.json.json
+      - Lesson_A4-2_Part_3.json.json
+      - Lesson_A4-3_Part_1.json.json
+      - Lesson_A4-3_Part_2.json.json
+      - Lesson_A4-3_Part_3.json.json
+      - Lesson_A4-4_Part_1.json.json
+      - Lesson_A4-4_Part_2.json.json
+      - Lesson_A4-4_Part_3.json.json
+      - Lesson_A4-5_Part_1.json.json
+      - Lesson_A4-5_Part_2.json.json
+      - Lesson_A4-5_Part_3.json.json
+      - Lesson_A5-1_Part_1.json.json
+      - Lesson_A5-1_Part_2.json.json
+      - Lesson_A5-1_Part_3.json.json
+      - Lesson_A5-2_Part_1.json.json
+      - Lesson_A5-2_Part_2.json.json
+      - Lesson_A5-2_Part_3.json.json
+      - Lesson_A5-3_Part_1.json.json
+      - Lesson_A5-3_Part_2.json.json
+      - Lesson_A5-3_Part_3.json.json
+      - Lesson_A5-4_Part_1.json.json
+      - Lesson_A5-4_Part_2.json.json
+      - Lesson_A5-4_Part_3.json.json
+      - Lesson_A5-5_Part_1.json.json
+      - Lesson_A5-5_Part_2.json.json
+      - Lesson_A5-5_Part_3.json.json
+
+======================================================================
+RESULT: Issues found. Please review above.
+======================================================================

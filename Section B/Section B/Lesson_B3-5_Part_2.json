@@ -1,0 +1,606 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B3",
+  "unitTitle": "The Herd Mind: Social Engineering",
+  "lessonId": "B3-5",
+  "lessonTitle": "Unit B3 Review: The Engineer",
+  "lessonType": "Review",
+  "lessonPart": 2,
+  "lessonPartTitle": "The 'Gauntlet' (Social Hacks)",
+  "objective": "To test rapid identification and defense strategies against a randomized mix of Social Engineering tactics, including Social Proof, Authority Bias, Pretexting, and Liking.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 300,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B3-5-P2-S1",
+      "screenType": "Learn",
+      "title": "The Social Gauntlet",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In the Gauntlet, the attacks come from all sides. Is it a fake crowd? A fake boss? A fake friend? You must decide instantly."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Identify the psychological trigger. Are they using the Herd, the Badge, the Story, or the Bond?"
+        }
+      ]
+    },
+    {
+      "screenId": "B3-5-P2-S2",
+      "screenType": "Exercises",
+      "title": "Rapid Fire Social Engineering",
+      "exercises": [
+        {
+          "exerciseId": "B3-5-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: A stranger in a nurse's uniform runs up to a locked door. 'Hold the door! I have an emergency!'",
+          "question": "This uses:",
+          "options": [
+            "Authority (Uniform) + Urgency (Emergency) + Liking (Helpfulness).",
+            "Honesty.",
+            "Hospital policy.",
+            "Bad security."
+          ],
+          "correct": "Authority (Uniform) + Urgency (Emergency) + Liking (Helpfulness).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is a 'Tailgating' attack. The uniform disarms suspicion, the urgency bypasses verification, and your desire to help opens the door.",
+            "incorrect": "It exploits human nature to bypass security protocols."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is 'Salting the Tip Jar'?",
+          "options": [
+            "Putting your own money in the jar to create Social Proof ('Everyone tips here').",
+            "Adding flavor.",
+            "Stealing tips.",
+            "Cleaning."
+          ],
+          "correct": "Putting your own money in the jar to create Social Proof ('Everyone tips here').",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It signals to the herd that tipping is the norm.",
+            "incorrect": "It manufactures a consensus of generosity."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E3",
+          "type": "scenario",
+          "scene": "Scenario: You get a text: 'USPS: Your package delivery failed. Click here to update.'",
+          "question": "This is:",
+          "options": [
+            "Smishing (SMS Phishing) using a 'Delivery Pretext'.",
+            "A real message.",
+            "Good service.",
+            "Vishing."
+          ],
+          "correct": "Smishing (SMS Phishing) using a 'Delivery Pretext'.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It uses curiosity ('Where is my package?') to get you to click a malicious link.",
+            "incorrect": "Vishing is Voice. Smishing is SMS."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E4",
+          "type": "fill-in",
+          "sentence": "We assume that if many people are doing something, it must be (--------).",
+          "options": [
+            "correct",
+            "wrong",
+            "expensive",
+            "loud"
+          ],
+          "answers": [
+            "correct"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Social Proof relies on the assumption that the crowd possesses wisdom.",
+            "incorrect": "We follow the herd to be 'correct' and safe."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E5",
+          "type": "true-false",
+          "scene": "Scenario: 'You are the only one who hasn't signed the birthday card.'",
+          "question": "Is this Social Proof pressure?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It isolates you as the 'Outlier.' The pressure to conform is high.",
+            "incorrect": "It uses the group norm to force compliance."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: A 'Tech Support' caller gets angry when you ask for their name. 'I don't have time for this! Do you want your computer fixed or not?'",
+          "question": "This reaction is:",
+          "options": [
+            "A huge red flag. Real professionals accept verification. Scammers use anger to regain control.",
+            "Understandable stress.",
+            "Professionalism.",
+            "Confidence."
+          ],
+          "correct": "A huge red flag. Real professionals accept verification. Scammers use anger to regain control.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Anger is a distraction tactic. They are trying to scare you into compliance.",
+            "incorrect": "Legitimate support agents are trained to provide ID."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E7",
+          "type": "matching",
+          "question": "Match the Tactic to the Medium:",
+          "pairs": [
+            {
+              "term": "Vishing",
+              "definition": "Phone Call"
+            },
+            {
+              "term": "Phishing",
+              "definition": "Email"
+            },
+            {
+              "term": "Shoulder Surfing",
+              "definition": "Physical Observation"
+            }
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. V=Voice. Ph=Email. Shoulder=Visual.",
+            "incorrect": "Identify how the attack is delivered."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E8",
+          "type": "build-sentence",
+          "question": "Arrange the words to define 'OSINT':",
+          "words": [
+            "Source",
+            "Open",
+            "Intelligence",
+            "Gathering"
+          ],
+          "correct": "Open Source Intelligence Gathering",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Using public info (Facebook, LinkedIn) to build a profile on a target.",
+            "incorrect": "It stands for Open Source Intelligence."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E9",
+          "type": "reverse-scenario",
+          "answer": "A technique where a salesperson mirrors your body language and speech patterns to make you trust them.",
+          "question": "What is this?",
+          "options": [
+            "The Chameleon Effect / Mirroring",
+            "Gaslighting",
+            "Anchoring",
+            "Pretexting"
+          ],
+          "correct": "The Chameleon Effect / Mirroring",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It triggers the Liking Bias. 'They are like me, so they are safe.'",
+            "incorrect": "It builds rapport, not confusion."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm not supposed to do this, but I'll give you the employee discount because you seem cool.'",
+          "question": "This combines:",
+          "options": [
+            "Liking + Reciprocity + Secret/Scarcity.",
+            "Truth.",
+            "Laziness.",
+            "Policy."
+          ],
+          "correct": "Liking + Reciprocity + Secret/Scarcity.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They frame it as a 'Secret Favor' based on 'Liking.' Now you feel special and indebted.",
+            "incorrect": "It creates a conspiracy between you and the seller."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E11",
+          "type": "fill-in",
+          "sentence": "The (--------) Heuristic makes us assume confident people are competent.",
+          "options": [
+            "Confidence",
+            "Fear",
+            "Loud",
+            "Smart"
+          ],
+          "answers": [
+            "Confidence"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. We follow people who look like they know where they are going, even if they are lost.",
+            "incorrect": "Confidence masks incompetence."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: A website has 10,000 reviews, but they are all 5 stars and posted on the same day.",
+          "question": "Is this a sign of Astroturfing?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Real reviews are messy and spread out. Perfect patterns indicate bots or paid farms.",
+            "incorrect": "It is manufactured consensus."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: 'Everyone in the office is donating $20.'",
+          "question": "This creates:",
+          "options": [
+            "A Social Norm / Pressure.",
+            "A law.",
+            "Excitement.",
+            "Friendship."
+          ],
+          "correct": "A Social Norm / Pressure.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It sets the 'Anchor' at $20 and makes refusal look like a violation of the group norm.",
+            "incorrect": "It defines the standard behavior for the herd."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E14",
+          "type": "multiple-choice",
+          "question": "What is the 'Trojan Horse' in social engineering?",
+          "options": [
+            "A gift (USB drive, favor, info) used to gain access to a target.",
+            "A wooden statue.",
+            "A computer virus.",
+            "A type of car."
+          ],
+          "correct": "A gift (USB drive, favor, info) used to gain access to a target.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You accept the gift, and the attacker enters with it.",
+            "incorrect": "It relies on the victim voluntarily bringing the threat inside."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E15",
+          "type": "scenario",
+          "scene": "Scenario: You verify a caller's ID by asking for a number to call back. They say: 'I'm on a secure line, I can't receive calls. Just tell me the code.'",
+          "question": "This excuse is:",
+          "options": [
+            "A red flag. They are trying to block verification.",
+            "Reasonable security.",
+            "True.",
+            "Standard."
+          ],
+          "correct": "A red flag. They are trying to block verification.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Any excuse to prevent Out-of-Band Verification is a sign of a scam.",
+            "incorrect": "Real security can always be verified through a main switchboard."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E16",
+          "type": "reverse-scenario",
+          "answer": "A targeted email attack that uses specific personal details (name, job, hobbies) to trick a specific person.",
+          "question": "What is this?",
+          "options": [
+            "Spear Phishing",
+            "Phishing",
+            "Whaling",
+            "Spam"
+          ],
+          "correct": "Spear Phishing",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Phishing is a net. Spear Phishing is a harpoon. It is customized.",
+            "incorrect": "Whaling targets CEOs. Spear Phishing targets individuals."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E17",
+          "type": "ethical-dilemma",
+          "scene": "You are raising money. Is it ethical to put $100 bills in the donation box to encourage higher donations?",
+          "question": "Is this 'Salting' manipulation?",
+          "options": [
+            "Yes, it creates a false impression of the average donation (Social Proof Anchor).",
+            "No, it is just decoration.",
+            "Yes, but it is for charity.",
+            "No, money is money."
+          ],
+          "correct": "Yes, it creates a false impression of the average donation (Social Proof Anchor).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. It is a benign manipulation, but it is still manipulation. It tricks the brain into thinking $100 is normal.",
+            "incorrect": "Intent matters, but the mechanic is deceptive."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E18",
+          "type": "scenario",
+          "scene": "Scenario: A person compliments your outfit, your hair, and your work. Then they ask for a favor.",
+          "question": "This is:",
+          "options": [
+            "Softeners / Liking Bias.",
+            "Flirting.",
+            "Kindness.",
+            "Politeness."
+          ],
+          "correct": "Softeners / Liking Bias.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are building up your ego bank account so they can make a withdrawal.",
+            "incorrect": "It is transactional praise."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E19",
+          "type": "build-sentence",
+          "question": "Arrange the words to define 'Pluralistic Ignorance':",
+          "words": [
+            "is",
+            "no",
+            "one",
+            "wrong",
+            "else",
+            "reacting",
+            "Nothing",
+            "because"
+          ],
+          "correct": "Nothing is wrong because no one else is reacting",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. We judge the danger of a situation by the reaction of others. If they are calm, we stay calm, even in a fire.",
+            "incorrect": "We outsource our alarm system to the herd."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E20",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm just the messenger. Don't shoot me.'",
+          "question": "Does this diffuse anger?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It removes 'Agency.' If they are just a tool of authority, you can't be mad at them. It is a deflection tactic.",
+            "incorrect": "It shifts the blame up the chain of command."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E21",
+          "type": "scenario",
+          "scene": "Scenario: A stranger asks to use your phone. 'My battery died and I need to call my mom.'",
+          "question": "The risk is:",
+          "options": [
+            "They will install malware, transfer money, or steal data while 'calling.'",
+            "They will steal the phone.",
+            "They will call long distance.",
+            "None."
+          ],
+          "correct": "They will install malware, transfer money, or steal data while 'calling.'",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Never unlock your device for a stranger. Dial the number for them on speaker if you must help.",
+            "incorrect": "Physical access to an unlocked phone is 'Game Over' for security."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E22",
+          "type": "multiple-choice",
+          "question": "What is 'The Outlier'?",
+          "options": [
+            "The person who resists the crowd and breaks the spell of Groupthink.",
+            "A statistic.",
+            "A liar.",
+            "A person outside."
+          ],
+          "correct": "The person who resists the crowd and breaks the spell of Groupthink.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. One dissenting voice empowers others to speak. Be the Outlier.",
+            "incorrect": "It refers to non-conformity."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E23",
+          "type": "fill-in",
+          "sentence": "Authority Bias makes us stop (--------) and start obeying.",
+          "options": [
+            "thinking",
+            "working",
+            "sleeping",
+            "talking"
+          ],
+          "answers": [
+            "thinking"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. When the 'Leader' speaks, the brain offloads the cognitive load. We go on autopilot.",
+            "incorrect": "Obedience replaces critical thought."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E24",
+          "type": "scenario",
+          "scene": "Scenario: 'You don't want to be the only one who didn't contribute, do you?'",
+          "question": "This utilizes:",
+          "options": [
+            "Social Pressure / Shame.",
+            "Logic.",
+            "Kindness.",
+            "Law."
+          ],
+          "correct": "Social Pressure / Shame.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The threat of social exclusion is a powerful biological lever.",
+            "incorrect": "It targets the fear of being an outcast."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E25",
+          "type": "matching",
+          "question": "Match the Hack to the Defense:",
+          "pairs": [
+            {
+              "term": "Phishing",
+              "definition": "Check the sender domain."
+            },
+            {
+              "term": "Vishing",
+              "definition": "Call back on a verified number."
+            },
+            {
+              "term": "Tailgating",
+              "definition": "Stop them and ask for ID."
+            }
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Verify the email. Verify the call. Verify the person.",
+            "incorrect": "Verification is the universal defense."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E26",
+          "type": "scenario",
+          "scene": "Scenario: A website uses a countdown timer that resets every time you refresh the page.",
+          "question": "This is:",
+          "options": [
+            "Fake Urgency.",
+            "A glitch.",
+            "Time travel.",
+            "Helpful."
+          ],
+          "correct": "Fake Urgency.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It is designed to stop you from thinking. The scarcity is a lie.",
+            "incorrect": "It creates panic for profit."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E27",
+          "type": "reverse-scenario",
+          "answer": "A specific type of Phishing targeting high-level executives (CEOs/CFOs).",
+          "question": "What is this?",
+          "options": [
+            "Whaling",
+            "Spear Phishing",
+            "Vishing",
+            "Fishing"
+          ],
+          "correct": "Whaling",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Targeting the 'Big Fish.'",
+            "incorrect": "Spear Phishing is any targeted attack. Whaling is C-Suite specific."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E28",
+          "type": "true-false",
+          "scene": "Scenario: 'If you have nothing to hide, you have nothing to fear.'",
+          "question": "Is this a manipulative frame used to bypass privacy boundaries?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It suggests that privacy is proof of guilt. It pressures you to expose yourself to prove innocence.",
+            "incorrect": "Privacy is a right, not a confession."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E29",
+          "type": "scenario",
+          "scene": "Scenario: You feel bad for a stranger who has a sad story, so you let them into the building.",
+          "question": "They hacked your:",
+          "options": [
+            "Empathy.",
+            "Badge.",
+            "Phone.",
+            "Computer."
+          ],
+          "correct": "Empathy.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The 'Pity Play' is a key tool for physical access. They bypassed the lock using your heart.",
+            "incorrect": "They hacked the human, not the tech."
+          }
+        },
+        {
+          "exerciseId": "B3-5-P2-E30",
+          "type": "case-analysis",
+          "caseTitle": "Gauntlet Complete",
+          "scene": "You have survived the social hacks. You know the Crowd can be fake and the Authority can be a costume.",
+          "question": "You are ready for the Final Challenge of Unit B3:",
+          "options": [
+            "The 'Imposter' Boss Scenario (Simulation).",
+            "Lesson A1-1.",
+            "Buying a fake ID.",
+            "Sleeping."
+          ],
+          "correct": "The 'Imposter' Boss Scenario (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The final test is to stop an active infiltration attempt. Can you catch the Imposter?",
+            "incorrect": "Next up: The Final Boss."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,357 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B2",
+  "unitTitle": "The Frame Game: Controlling Perception",
+  "lessonId": "B2-3",
+  "lessonTitle": "The Contrast Principle",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Comparison\" Trap",
+  "objective": "To master the defense against the Contrast Principle by learning to isolate options from their decoys, reject 'Low Bar' comparisons, and evaluate true value.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Contrast_Breaker_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B2-3-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Vacuum Test",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In this challenge, you will be presented with choices that are rigged. The manipulator will show you a 'Horrible' option to make the 'Mediocre' option look like a 'Great' option."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Use the **Vacuum Test**. Ask: 'If I had never seen the bad option, would I still want this one?'"
+        }
+      ]
+    },
+    {
+      "screenId": "B2-3-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Setup",
+      "exercises": [
+        {
+          "exerciseId": "B2-3-P3-E1",
+          "type": "boss-scenario",
+          "scene": "You ask your boss for a raise to market rate ($80k). The Boss says: 'I can't do $80k. Look, I just had to fire Bob. At least you still have a job. I can give you $65k.'",
+          "question": "This is the 'Survival Contrast.' What is your move?",
+          "options": [
+            "Feel grateful you aren't Bob and take the $65k. (Trap Triggered)",
+            "Get angry about Bob.",
+            "'I appreciate that I am employed, but Bob's situation is not relevant to my performance value. The market rate is $80k.' (Vacuum Test)",
+            "Quit immediately."
+          ],
+          "correct": "'I appreciate that I am employed, but Bob's situation is not relevant to my performance value. The market rate is $80k.' (Vacuum Test)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You separated your value from the 'Decoy' (Bob's firing). The comparison to unemployment is designed to make underpayment look like a win.",
+            "incorrect": "Comparing yourself to the fired guy lowers your standard. Compare yourself to the Market."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Apartment Hunt",
+          "steps": [
+            {
+              "scene": "Agent: 'This first apartment is $2,500.' It is small, dirty, and far away. You hate it.",
+              "options": [
+                "'This is disgusting.' (Emotion)",
+                "'Okay, next.' (Neutral)",
+                "'Why would you show me this?' (Confusion)",
+                "Leave."
+              ],
+              "correct": "'Okay, next.' (Neutral)",
+              "feedback": {
+                "correct": "Good. You didn't react emotionally. You recognized it might be a 'Setup Property' (Decoy).",
+                "incorrect": "Getting angry or confused wastes energy. This property exists only to make the next one look good."
+              }
+            },
+            {
+              "question": "Agent: 'Okay, how about this one? It's $2,700, but it's clean and close.' (It is actually overpriced for the market, but looks amazing compared to the dump).",
+              "options": [
+                "'Wow! It's perfect! I'll take it!' (Contrast Effect)",
+                "'It is better than the last one, but is it worth $2,700 objectively? I need to check other listings.' (Vacuum Test)",
+                "'I'll take the first one.'",
+                "Sign the lease."
+              ],
+              "correct": "'It is better than the last one, but is it worth $2,700 objectively? I need to check other listings.' (Vacuum Test)",
+              "feedback": {
+                "correct": "Mastery. You refused to judge it against the 'Dump.' You judged it against the 'Market.' The Dump was a trick to make you overpay.",
+                "incorrect": "Don't buy it just because it isn't garbage. 'Better' does not mean 'Good'."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Real Estate Setup. You bought value, not relief.",
+            "incorrect": "You overpaid because you were running away from the bad option."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P3-E3",
+          "type": "multiple-choice",
+          "question": "What is 'Relative Deprivation'?",
+          "options": [
+            "Being poor.",
+            "Feeling poor/unhappy because you are comparing yourself to someone with *more*, even if you have enough.",
+            "Being hungry.",
+            "Losing a family member."
+          ],
+          "correct": "Feeling poor/unhappy because you are comparing yourself to someone with *more*, even if you have enough.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Manipulators use this to make you dissatisfied. 'Look what *they* have. Don't you deserve that?'",
+            "incorrect": "It is a psychological state caused by upward comparison."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P3-E4",
+          "type": "fill-in",
+          "sentence": "Manipulators control your happiness by controlling your (--------) points.",
+          "options": [
+            "reference",
+            "credit",
+            "talking",
+            "pain"
+          ],
+          "answers": [
+            "reference"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If your reference point is 'The Worst Case Scenario,' you will accept mediocrity. If your reference is 'Perfection,' you will never be happy.",
+            "incorrect": "They shift the benchmark (Reference Point) to manipulate your feeling of gratitude or lack."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: A partner hits a wall next to your head. Later they say: 'You should be grateful I didn't hit *you*.'",
+          "question": "This uses Contrast to:",
+          "options": [
+            "Make violence seem like mercy.",
+            "Apologize.",
+            "Show strength.",
+            "Make a joke."
+          ],
+          "correct": "Make violence seem like mercy.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is the 'Low Bar' of abuse. By comparing 'Violence to Wall' vs. 'Violence to You,' they frame intimidation as restraint.",
+            "incorrect": "It creates a debt of gratitude for *not* being battered. It is a severe manipulation."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'I could have fired you for that mistake, but I'm nice, so I'll just write you up.'",
+          "question": "Is this the 'Bad Cop / Good Cop' dynamic played by one person?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They present the 'Bad Option' (Firing) first to make the 'Punishment' (Write-up) feel like a gift.",
+            "incorrect": "It frames the punishment as mercy."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense:",
+          "words": [
+            "market",
+            "Compare",
+            "to",
+            "not",
+            "decoy",
+            "the",
+            "the"
+          ],
+          "correct": "Compare to the market not the decoy",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Compare the price to the *real world* value, not the fake option they showed you.",
+            "incorrect": "Ignore the decoy. Look at objective reality."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "Introducing a third, inferior option (Option C) that is similar to Option B, but worse, to make Option B look like the winner.",
+          "question": "What is this specific effect?",
+          "options": [
+            "Asymmetric Dominance Effect (The Decoy)",
+            "Gaslighting",
+            "Foot-in-the-Door",
+            "Scarcity"
+          ],
+          "correct": "Asymmetric Dominance Effect (The Decoy)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Option C is dominated by B. It exists only to push you to B. It is useless on its own.",
+            "incorrect": "It is the technical term for the Decoy Effect."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You need to deliver bad news to a client. You consider starting with a 'Fake Worse News' ('We lost everything... just kidding, we only lost 10%') to soften the blow.",
+          "question": "Is this ethical?",
+          "options": [
+            "No. It causes unnecessary panic and erodes trust.",
+            "Yes, it makes them happy.",
+            "Yes, humor is good.",
+            "No, lie completely."
+          ],
+          "correct": "No. It causes unnecessary panic and erodes trust.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Using Contrast to manipulate emotion around serious news is unprofessional. Just state the facts clearly.",
+            "incorrect": "Relief based on a lie is not real relief. It damages credibility."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'You're lucky I'm with you. My ex was a model.'",
+          "question": "This Contrast is designed to:",
+          "options": [
+            "Lower your self-esteem (Devaluation).",
+            "Make you feel proud.",
+            "Be honest.",
+            "Share history."
+          ],
+          "correct": "Lower your self-esteem (Devaluation).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They compare you to a 'High Anchor' (The Model) to make you feel 'less than' and lucky to have them.",
+            "incorrect": "It's not about the ex. It's about putting you in your place."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P3-E11",
+          "type": "fill-in",
+          "sentence": "A bad option makes a (--------) option look good.",
+          "options": [
+            "mediocre",
+            "perfect",
+            "bad",
+            "sad"
+          ],
+          "answers": [
+            "mediocre"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Contrast elevates the average. An average meal tastes like a feast if you haven't eaten in days.",
+            "incorrect": "It doesn't make it perfect; it just masks its flaws."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: The Decoy is meant to be bought.",
+          "question": "Is this true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If you buy the Decoy (the Medium Popcorn), the manipulator failed. It exists only to steer you to the Target (Large).",
+            "incorrect": "The Decoy is a signpost, not a destination."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: A police officer says: 'I could arrest you for this (High Anchor), but I'm just going to write you a ticket (Low Anchor).'",
+          "question": "The result is:",
+          "options": [
+            "You feel relieved and thank them.",
+            "You get angry.",
+            "You run.",
+            "You argue."
+          ],
+          "correct": "You feel relieved and thank them.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You thank them for fining you money, because they *didn't* put you in jail. Contrast creates compliance.",
+            "incorrect": "Without the threat of arrest, you would be annoyed by the ticket. With the threat, the ticket is a 'win'."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P3-E14",
+          "type": "matching",
+          "question": "Match the Tactic to the Defense:",
+          "pairs": [
+            {
+              "term": "Door-in-the-Face",
+              "definition": "Defense: Judge the second request on its own merit."
+            },
+            {
+              "term": "Comparison Trap",
+              "definition": "Defense: The Vacuum Test (Judge in isolation)."
+            },
+            {
+              "term": "Decoy Effect",
+              "definition": "Defense: Ignore the third option."
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Disconnect the sequence. Is the request fair *now*? Is the item good *alone*?",
+            "incorrect": "Don't let the context decide the value."
+          }
+        },
+        {
+          "exerciseId": "B2-3-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Vacuum",
+          "scene": "You have learned to strip away the decoys, the comparisons, and the 'what ifs.' You judge reality as it is.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson B2-4: Labeling & Altercasting (Forcing a Role).",
+            "Lesson A1-1.",
+            "Buying a house.",
+            "Comparing prices."
+          ],
+          "correct": "Lesson B2-4: Labeling & Altercasting (Forcing a Role).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that we've framed the *object*, we will frame *you*. How do they force you into a role you didn't choose?",
+            "incorrect": "Next up: Assigning identity as a control mechanism."
+          }
+        }
+      ]
+    }
+  ]
+}

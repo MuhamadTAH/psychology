@@ -1,0 +1,359 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B4",
+  "unitTitle": "The Pressure Cooker: Emotional Leverage",
+  "lessonId": "B4-3",
+  "lessonTitle": "Fear-Mongering: The Boogeyman",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Doomsday\" Pitch",
+  "objective": "To master the defense against Fear-Mongering by identifying 'Doomsday' scenarios, calculating true probability, and resisting the urge to buy 'safety' from a manipulator.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Fear_Extinguisher_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B4-3-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: Facing the Apocalypse",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In this challenge, the manipulator will try to convince you that the world (or your world) is ending. They will use vivid, terrifying imagery to shut down your logic."
+        },
+        {
+          "type": "paragraph",
+          "text": "They will position themselves as the **Only Savior**. If you reject them, you choose doom."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Ignore the 'Story' (the scary future). Focus on the 'Probability' (the facts)."
+        }
+      ]
+    },
+    {
+      "screenId": "B4-3-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Collapse",
+      "exercises": [
+        {
+          "exerciseId": "B4-3-P3-E1",
+          "type": "boss-scenario",
+          "scene": "A Financial Guru says: 'The banks are secretly bankrupt. The dollar will collapse next Tuesday. Your savings will be zero. You MUST buy my Crypto-Gold package today to survive.'",
+          "question": "This is the 'Doomsday Pitch.' What is your move?",
+          "options": [
+            "Buy the package. Better safe than sorry.",
+            "Panic and call your bank.",
+            "Reject the Fear. 'If the global economy collapses, your crypto token won't save me. This is probability neglect.'",
+            "Ask for a discount."
+          ],
+          "correct": "Reject the Fear. 'If the global economy collapses, your crypto token won't save me. This is probability neglect.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You identified that the solution (Crypto-Gold) doesn't even match the threat (Total Collapse). The fear was just a sales funnel.",
+            "incorrect": "Panic buying is exactly what they want. Claims of 'Total Collapse' are almost always sales tactics for alternative assets."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Health Scare",
+          "steps": [
+            {
+              "scene": "A wellness influencer says: 'Doctors are hiding the truth. Your gut is leaking toxins into your brain right now. You are slowly dying.'",
+              "options": [
+                "'Oh no! What do I do?' (Panic)",
+                "'I feel fine. Do you have a peer-reviewed study for that?' (Verification)",
+                "'I knew it!' (Confirmation Bias)",
+                "Buy their detox tea."
+              ],
+              "correct": "'I feel fine. Do you have a peer-reviewed study for that?' (Verification)",
+              "feedback": {
+                "correct": "Perfect. You demanded evidence for the invisible threat ('leaking toxins'). Vague medical threats are a common Fear tactic.",
+                "incorrect": "Asking 'What do I do?' accepts the premise that you are sick. You just entered the sales funnel."
+              }
+            },
+            {
+              "question": "Influencer: 'Studies are controlled by Big Pharma! Look at this photo of a sick colon. Do you want to end up like that?' (Vividness Effect).",
+              "options": [
+                "'That is gross! I'll buy the detox.' (Visceral Reaction)",
+                "'Scary pictures are not data. I'm sticking with my doctor.' (Logic Override)",
+                "'You're right, doctors are evil.' (Paranoia)",
+                "Scream."
+              ],
+              "correct": "'Scary pictures are not data. I'm sticking with my doctor.' (Logic Override)",
+              "feedback": {
+                "correct": "Mastery. The 'Vividness Effect' uses gross/scary images to bypass stats. You stayed logical. You rejected the conspiracy theory.",
+                "incorrect": "Buying based on a scary picture is 'Probability Neglect.' You ignored the science because the image triggered disgust."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Health Scare. You realized they were selling fear, not health.",
+            "incorrect": "You bought a placebo to cure a fake disease. The fear worked."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why do manipulators present themselves as the 'Only Solution'?",
+          "options": [
+            "To create a monopoly on safety. If you are the only lifeboat, people *must* pay you.",
+            "Because they are actually the only solution.",
+            "Because they are lonely.",
+            "To be helpful."
+          ],
+          "correct": "To create a monopoly on safety. If you are the only lifeboat, people *must* pay you.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'I am the only one who can save you' is the hallmark of a Cult Leader or Con Artist. Real solutions are usually available from multiple sources.",
+            "incorrect": "There is rarely only one solution to a real problem."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P3-E4",
+          "type": "fill-in",
+          "sentence": "The more (--------) the threat, the harder it is to disprove.",
+          "options": [
+            "vague",
+            "specific",
+            "loud",
+            "colorful"
+          ],
+          "answers": [
+            "vague"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Toxins,' 'Energies,' 'Them,' 'Dark Forces.' You cannot disprove a threat that isn't defined. Vague threats create indefinite anxiety.",
+            "incorrect": "Specific threats can be fact-checked. Vague threats linger in the imagination."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'If you don't reply to this email, your account will be deleted in 1 hour.'",
+          "question": "This combines Fear with:",
+          "options": [
+            "Time Scarcity (Urgency).",
+            "Reciprocity.",
+            "Liking.",
+            "Flattery."
+          ],
+          "correct": "Time Scarcity (Urgency).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Fear of deletion + 1 Hour limit = Panic Click. This is the standard Phishing formula.",
+            "incorrect": "It forces speed, which causes errors."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'You are lucky I'm protecting you. No one else would put up with you.'",
+          "question": "Is this Fear-Mongering?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The threat is 'Unlovability.' They are creating the fear that you are damaged goods, so you are afraid to leave them.",
+            "incorrect": "It frames the world outside the relationship as hostile."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Inoculation' defense:",
+          "words": [
+            "fear",
+            "Exposure",
+            "immunity",
+            "builds",
+            "to"
+          ],
+          "correct": "Exposure builds immunity to fear",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If you expose yourself to the fear source logically (research it), the emotional reaction decreases. You realize the monster is a shadow.",
+            "incorrect": "Avoidance increases fear. Exposure reduces it."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A logical fallacy where the manipulator claims that if you don't do X, a terrible chain of events will inevitably lead to Y (Disaster).",
+          "question": "What is this?",
+          "options": [
+            "Slippery Slope",
+            "Straw Man",
+            "Ad Hominem",
+            "Gaslighting"
+          ],
+          "correct": "Slippery Slope",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'If you skip breakfast, you'll fail school, become homeless, and die.' It exaggerates consequence to create fear.",
+            "incorrect": "It connects a small action to a huge disaster without evidence."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You need to warn a friend about their dangerous partner. Do you use Fear ('He will kill you!')?",
+          "question": "Is this effective?",
+          "options": [
+            "No. High fear often causes 'Denial' or 'Freezing.' Use questions to help them see the danger themselves.",
+            "Yes, scare them straight.",
+            "Yes, scream at them.",
+            "No, ignore it."
+          ],
+          "correct": "No. High fear often causes 'Denial' or 'Freezing.' Use questions to help them see the danger themselves.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Fear-mongering often backfires (Terror Management Theory). People cling to their partner for safety when scared. Empowerment works better than terror.",
+            "incorrect": "Scaring a victim often makes them retreat into the relationship."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'I heard layoffs are coming. But *I* can protect you if you join my team.'",
+          "question": "This is:",
+          "options": [
+            "The Protection Racket (Mafia tactic).",
+            "Kindness.",
+            "Team building.",
+            "Honesty."
+          ],
+          "correct": "The Protection Racket (Mafia tactic).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Nice job you have here. Shame if something happened to it.' They create the insecurity (layoff rumor) to sell the protection (their team).",
+            "incorrect": "It is not kindness. It is leveraging fear for loyalty."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P3-E11",
+          "type": "fill-in",
+          "sentence": "Fear makes you trade your (--------) for safety.",
+          "options": [
+            "freedom",
+            "pain",
+            "shoes",
+            "fear"
+          ],
+          "answers": [
+            "freedom"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Citizens give up rights during war. Victims give up autonomy during abuse. Fear is the currency of tyranny.",
+            "incorrect": "The trade is always Freedom for Security."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: A manipulator says, 'I'm the only one who tells you the truth. Everyone else lies to you.'",
+          "question": "Is this Isolation via Fear?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They make you afraid of the outside world (The Liars) so you only trust the manipulator.",
+            "incorrect": "It creates a paranoid worldview where only the manipulator is safe."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: You are about to sign a contract. The other party says, 'I have a bad feeling about this clause... it could bankrupt you. But if you sign this *other* version, you're safe.'",
+          "question": "They are using 'Intuition' to:",
+          "options": [
+            "Install a fear anchor.",
+            "Help you.",
+            "Predict the future.",
+            "Save money."
+          ],
+          "correct": "Install a fear anchor.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They planted a 'Bad Feeling' on one option to herd you toward the other option. It is subtle emotional contamination.",
+            "incorrect": "It's not intuition; it's a tactic. They tainted option A with fear."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P3-E14",
+          "type": "matching",
+          "question": "Match the solution to the fear:",
+          "pairs": [
+            {
+              "term": "Fear of Missing Out",
+              "definition": "Solution: Abundance Mindset."
+            },
+            {
+              "term": "Fear of Rejection",
+              "definition": "Solution: Self-Validation."
+            },
+            {
+              "term": "Fear of Catastrophe",
+              "definition": "Solution: Probability Assessment."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Internal strength cures external fear.",
+            "incorrect": "Match the internal fix to the external threat."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Fear Extinguisher",
+          "scene": "You have learned that fear is a fog. It hides the truth. When you blow away the fog with logic, the monster disappears.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson B4-4: Hope-Mongering (Selling the Dream).",
+            "Lesson A1-1.",
+            "Being scared.",
+            "Buying a bunker."
+          ],
+          "correct": "Lesson B4-4: Hope-Mongering (Selling the Dream).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The opposite of the Stick (Fear) is the Carrot (Hope). How do they use your dreams against you?",
+            "incorrect": "Next up: The trap of the Miracle Cure."
+          }
+        }
+      ]
+    }
+  ]
+}

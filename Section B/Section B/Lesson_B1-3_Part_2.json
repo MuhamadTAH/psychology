@@ -1,0 +1,332 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B1",
+  "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis",
+  "lessonId": "B1-3",
+  "lessonTitle": "The Double Bind: The Illusion of Choice",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Spotting False Choices",
+  "objective": "To practice identifying specific Double Bind tactics (The Alternative Close, The Guilt Bind, The Competence Bind) in real-time to avoid falling for the Illusion of Choice.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B1-3-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Trap of 'Or'",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The most dangerous word in a manipulator's vocabulary is **'Or'**. When they say 'A or B,' they are trying to stop you from seeing 'C' (Refusal)."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Whenever you are given two choices, pause. Ask yourself: 'Is there a third option they aren't mentioning?'"
+        }
+      ]
+    },
+    {
+      "screenId": "B1-3-P2-S2",
+      "screenType": "Exercises",
+      "title": "Breaking the Binary",
+      "exercises": [
+        {
+          "exerciseId": "B1-3-P2-E1",
+          "type": "scenario",
+          "scene": "Salesperson: 'Would you prefer the delivery on Tuesday or Thursday?' (You haven't agreed to buy yet).",
+          "question": "This is the:",
+          "options": [
+            "Alternative Close / Assumptive Close.",
+            "Polite scheduling.",
+            "A mistake.",
+            "Generosity."
+          ],
+          "correct": "Alternative Close / Assumptive Close.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They skipped the 'Buying Decision' and moved straight to the 'Delivery Decision.' If you pick a day, you bought the product.",
+            "incorrect": "It assumes the sale is made. It creates a false urgency to pick a time."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is the 'Guilt Bind'?",
+          "options": [
+            "A bind where one choice is compliance and the other choice is framed as 'hurting' the manipulator.",
+            "Feeling guilty for no reason.",
+            "A legal contract.",
+            "Being arrested."
+          ],
+          "correct": "A bind where one choice is compliance and the other choice is framed as 'hurting' the manipulator.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Go ahead and have fun, if you don't mind leaving me here all alone.' Choice A: Stay (Comply). Choice B: Go (Be 'Cruel').",
+            "incorrect": "It weaponizes empathy. It forces you to choose between your freedom and your conscience."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P2-E3",
+          "type": "true-false",
+          "scene": "Scenario: 'If you were really committed to this job, you wouldn't mind working weekends.'",
+          "question": "Is this a Competence/Identity Bind?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The choice is: 'Work weekends' OR 'Admit you aren't committed.' It attacks your identity to force compliance.",
+            "incorrect": "It links the unreasonable demand (weekends) to a positive identity trait (committed)."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P2-E4",
+          "type": "fill-in",
+          "sentence": "A Double Bind creates a (--------) Dilemma: You lose if you do, and you lose if you don't.",
+          "options": [
+            "False",
+            "True",
+            "Happy",
+            "Safe"
+          ],
+          "answers": [
+            "False"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The dilemma is fake because there are usually other options (like saying 'No') that the manipulator hides.",
+            "incorrect": "It feels real, but it is false. You can always refuse to play."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P2-E5",
+          "type": "matching",
+          "question": "Match the Double Bind to the Hidden Meaning:",
+          "pairs": [
+            {
+              "term": "\"Start now or later?\"",
+              "definition": "Meaning: You ARE starting."
+            },
+            {
+              "term": "\"Cash or Credit?\"",
+              "definition": "Meaning: You ARE paying."
+            },
+            {
+              "term": "\"My place or yours?\"",
+              "definition": "Meaning: We ARE going home together."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The 'Assumption' is hidden in the choice. To answer the question, you must accept the assumption.",
+            "incorrect": "Look at what is *not* asked. They didn't ask 'If'."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: A partner says, 'You can wear that outfit if you want to look cheap.'",
+          "question": "What are the two choices?",
+          "options": [
+            "A: Wear it and be 'cheap.' B: Change and be 'obedient.'",
+            "A: Wear it. B: Don't.",
+            "A: Look good. B: Look bad.",
+            "There is no choice."
+          ],
+          "correct": "A: Wear it and be 'cheap.' B: Change and be 'obedient.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is a 'Punishment Bind.' Whatever you choose, you lose dignity. The only win is to call out the insult.",
+            "incorrect": "It frames your autonomy as a character flaw ('cheap')."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense against False Choices:",
+          "words": [
+            "frame",
+            "the",
+            "Step",
+            "of",
+            "outside"
+          ],
+          "correct": "Step outside of the frame",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The manipulator frames the shot. You must step out of the camera view. Create Option C.",
+            "incorrect": "Don't pick A or B. Pick C."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "A rhetorical device where the speaker presents two extreme options as the *only* possibilities (e.g., 'Either you are with us, or you are with the terrorists').",
+          "question": "What is this?",
+          "options": [
+            "False Dichotomy / Black-and-White Thinking",
+            "Double Bind",
+            "Gaslighting",
+            "Love Bombing"
+          ],
+          "correct": "False Dichotomy / Black-and-White Thinking",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. It erases the middle ground (nuance). Manipulators hate the middle ground because that is where compromise lives.",
+            "incorrect": "It is a specific logical fallacy used to force polarization."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "You need a toddler to eat veggies. You say: 'Do you want 3 carrots or 4?'",
+          "question": "Is this manipulation?",
+          "options": [
+            "Yes, but it is 'Benevolent Influence' (Parenting).",
+            "No, it is a real choice.",
+            "Yes, it is evil.",
+            "No, carrots are good."
+          ],
+          "correct": "Yes, but it is 'Benevolent Influence' (Parenting).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It *is* a Double Bind (you removed the option of '0 carrots'), but the intent is care, not exploitation.",
+            "incorrect": "The technique is the same as a salesman, but the *intent* makes it ethical parenting."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'Are you going to help me, or are you going to be selfish like usual?'",
+          "question": "How do you answer?",
+          "options": [
+            "'I'm not selfish!' (Trap Triggered)",
+            "'I am not going to help you, and I am not selfish. I am busy.' (Rejecting the Premise)",
+            "'I'll help.' (Submission)",
+            "'You are mean.' (Reaction)"
+          ],
+          "correct": "'I am not going to help you, and I am not selfish. I am busy.' (Rejecting the Premise)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Mastery. You rejected the label 'Selfish' AND the demand 'Help.' You separated the two linked concepts.",
+            "incorrect": "If you defend yourself ('I'm not selfish'), you usually end up helping to prove it. Don't take the bait."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P2-E11",
+          "type": "fill-in",
+          "sentence": "The manipulator controls the (--------), not the choice.",
+          "options": [
+            "options",
+            "result",
+            "truth",
+            "laws"
+          ],
+          "answers": [
+            "options"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They let you choose, but they rigged the menu. A magician forces a card by making you think you picked it.",
+            "incorrect": "They control the *list* of choices you see."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'We can do it my way, or we can fail.'",
+          "question": "Is this a Threat Bind?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They frame any alternative to their plan as 'Failure' or 'Disaster.' It uses fear to limit your vision.",
+            "incorrect": "It frames the choice as 'Obedience vs. Catastrophe'."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: You ask for a raise. Boss says: 'We can give you a raise and fire your friend to pay for it, or you can keep your current salary.'",
+          "question": "This is:",
+          "options": [
+            "The Moral Double Bind.",
+            "A budget issue.",
+            "Honesty.",
+            "Kindness."
+          ],
+          "correct": "The Moral Double Bind.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They pitted your 'Greed' against your 'Loyalty.' If you take the raise, you are the bad guy. They weaponized your conscience.",
+            "incorrect": "It is a manufactured dilemma to shut you up. Budgets are rarely that binary."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P2-E14",
+          "type": "multiple-choice",
+          "question": "What is the 'Meta-Commentary' defense?",
+          "options": [
+            "Talking about the technique itself. 'I notice you are creating a false choice.'",
+            "Talking about the weather.",
+            "Yelling.",
+            "Walking away."
+          ],
+          "correct": "Talking about the technique itself. 'I notice you are creating a false choice.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Going 'Meta' (talking about the conversation) destroys the covert power of the tactic. It brings the manipulation into the light.",
+            "incorrect": "It means commenting on the structure of the question, not the content."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Options Expanded",
+          "scene": "You can now spot when someone limits your menu. You know that 'A or B' creates blindness to 'C'.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "Breaking the Bind (Simulation).",
+            "Accepting option A.",
+            "Accepting option B.",
+            "Lesson A1-1."
+          ],
+          "correct": "Breaking the Bind (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you negotiate your way out of a rigged trap? Let's find out.",
+            "incorrect": "Next up: The practical simulation of escaping the trap."
+          }
+        }
+      ]
+    }
+  ]
+}

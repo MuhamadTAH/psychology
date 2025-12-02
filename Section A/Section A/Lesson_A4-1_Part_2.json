@@ -1,0 +1,330 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A4",
+  "unitTitle": "The Void Behind the Mask: Psychopathy",
+  "lessonId": "A4-1",
+  "lessonTitle": "The Biological Predator",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Spotting \"Cold\" vs. \"Hot\" Aggression",
+  "objective": "To practice identifying the difference between reactive, emotional aggression (Hot/Sociopathic) and instrumental, predatory aggression (Cold/Psychopathic) in real-world scenarios.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A4-1-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: Ice vs. Fire",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Most people think 'danger' looks like screaming. That is incorrect. The most dangerous predator is silent."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Rule: If they are screaming, they are losing control (Hot). If they are smiling while hurting you, they are in total control (Cold)."
+        }
+      ]
+    },
+    {
+      "screenId": "A4-1-P2-S2",
+      "screenType": "Exercises",
+      "title": "Spotting the predator",
+      "exercises": [
+        {
+          "exerciseId": "A4-1-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: You fire an employee. They scream, cry, throw a stapler, and beg for their job back.",
+          "question": "This reaction suggests:",
+          "options": [
+            "Primary Psychopathy (Cold).",
+            "Secondary Psychopathy / Emotional Dysregulation (Hot).",
+            "Professionalism.",
+            "Calmness."
+          ],
+          "correct": "Secondary Psychopathy / Emotional Dysregulation (Hot).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is 'Reactive Aggression.' They are overwhelmed by emotion and fear. They have lost control.",
+            "incorrect": "A Primary Psychopath would likely not scream. They would calmly plan revenge."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P2-E2",
+          "type": "scenario",
+          "scene": "Scenario: You fire a different employee. They stare at you with a blank expression, say 'I understand,' and calmly walk out. Two weeks later, your computer system is hacked and destroyed.",
+          "question": "This reaction suggests:",
+          "options": [
+            "Primary Psychopathy (Cold/Instrumental Aggression).",
+            "Sadness.",
+            "Forgiveness.",
+            "Fear."
+          ],
+          "correct": "Primary Psychopathy (Cold/Instrumental Aggression).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They felt no immediate rage. They simply calculated the most effective way to destroy you later. Revenge is a dish served cold.",
+            "incorrect": "The lack of immediate reaction is the tell. The delayed, calculated destruction is the hallmark of the Primary Psychopath."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P2-E3",
+          "type": "multiple-choice",
+          "question": "What is 'Instrumental Aggression'?",
+          "options": [
+            "Playing a musical instrument aggressively.",
+            "Using violence or harm as a deliberate tool to achieve a goal (e.g., hurting someone to get their wallet).",
+            "Accidental harm.",
+            "Self-defense."
+          ],
+          "correct": "Using violence or harm as a deliberate tool to achieve a goal (e.g., hurting someone to get their wallet).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It is goal-oriented. 'I hurt you not because I am angry, but because I want what you have.'",
+            "incorrect": "It is distinct from 'Reactive Aggression' (emotional). It is calculated."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'If you leave me, I will kill myself.'",
+          "question": "Is this typically a Primary Psychopath tactic?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct/False. This is usually a Borderline or Secondary Psychopath trait (fear of abandonment/high emotion). A Primary Psychopath is more likely to say: 'If you leave me, I will kill *you*.'",
+            "incorrect": "Suicide threats usually stem from desperate emotional dysregulation (Hot), not cold predation."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P2-E5",
+          "type": "matching",
+          "question": "Match the Aggression Type to the Trait:",
+          "pairs": [
+            {
+              "term": "Hot Aggression",
+              "definition": "Impulsive, loud, messy, reactive."
+            },
+            {
+              "term": "Cold Aggression",
+              "definition": "Planned, silent, precise, proactive."
+            }
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. One is an explosion (Hot). The other is a sniper shot (Cold).",
+            "incorrect": "Think temperature. Anger burns hot. Calculation runs cold."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P2-E6",
+          "type": "fill-in",
+          "sentence": "A Primary Psychopath has a (--------) resting heart rate compared to the average person.",
+          "options": [
+            "lower",
+            "higher",
+            "faster",
+            "variable"
+          ],
+          "answers": [
+            "lower"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Their low arousal level means they need extreme stimulation to feel 'normal.' It also keeps them calm in crisis.",
+            "incorrect": "They are biologically under-aroused. This is why they seek danger."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P2-E7",
+          "type": "scenario",
+          "scene": "Scenario: You are in a car accident. The other driver gets out, checks their car, looks at your injury, and calls their insurance company calmly without asking if you are okay.",
+          "question": "This behavior demonstrates:",
+          "options": [
+            "Profound lack of Empathy (The Void).",
+            "Shock.",
+            "Politeness.",
+            "Fear."
+          ],
+          "correct": "Profound lack of Empathy (The Void).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. In a crisis, normal people feel concern. A psychopath feels efficiency. You are just an obstacle to their insurance claim.",
+            "incorrect": "Shock usually involves confusion or panic. This is cold, organized indifference."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P2-E8",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the Psychopath's gaze:",
+          "words": [
+            "predatory",
+            "is",
+            "stare",
+            "The",
+            "intense",
+            "and"
+          ],
+          "correct": "The stare is intense and predatory",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They hold eye contact longer than social norms allow. It is a dominance display.",
+            "incorrect": "It is often described as 'reptilian' or unblinking."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P2-E9",
+          "type": "reverse-scenario",
+          "answer": "Using charm, compliments, and mirroring to lower a target's defenses before striking.",
+          "question": "This is the definition of:",
+          "options": [
+            "Predatory Grooming",
+            "Genuine Kindness",
+            "Anxiety",
+            "Shyness"
+          ],
+          "correct": "Predatory Grooming",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Unlike a hot-headed sociopath, a cold predator plans the attack. Grooming is the preparation phase.",
+            "incorrect": "It looks like kindness, but the intent is consumption."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: A child hurts an animal and shows no guilt, only curiosity.",
+          "question": "This is a classic early warning sign of:",
+          "options": [
+            "Primary Psychopathy (The Macdonald Triad).",
+            "Normal curiosity.",
+            "A future veterinarian.",
+            "Anxiety."
+          ],
+          "correct": "Primary Psychopathy (The Macdonald Triad).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Cruelty to animals without remorse is a major indicator of a lack of empathy hardware.",
+            "incorrect": "It is not normal. It signals a broken empathy circuit."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P2-E11",
+          "type": "multiple-choice",
+          "question": "Why do Primary Psychopaths often succeed in corporate business?",
+          "options": [
+            "They are good at math.",
+            "Their fearlessness and lack of empathy allow them to make ruthless decisions (firing, cutting costs) that 'empaths' struggle with.",
+            "They work harder.",
+            "They are nice."
+          ],
+          "correct": "Their fearlessness and lack of empathy allow them to make ruthless decisions (firing, cutting costs) that 'empaths' struggle with.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. In a cutthroat environment, lack of conscience is a competitive advantage.",
+            "incorrect": "It's not about hard work; it's about the ability to ignore human cost."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: A criminal is caught. They cry and say, 'I had a bad childhood!'",
+          "question": "If they are a Primary Psychopath, is this genuine?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. Primary Psychopaths learn that 'victim stories' work on normal people. They simulate remorse to get a lighter sentence.",
+            "incorrect": "They are mimicking emotions they know *you* value. It is a performance."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P2-E13",
+          "type": "fill-in",
+          "sentence": "A Secondary Psychopath acts out of (--------). A Primary Psychopath acts out of (--------).",
+          "options": [
+            "pain",
+            "boredom",
+            "love",
+            "fear"
+          ],
+          "answers": [
+            "pain",
+            "boredom"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Secondary = Trauma/Pain response. Primary = Need for Stimulation/Boredom.",
+            "incorrect": "One is reactive (pain). The other is proactive (seeking stimulation)."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P2-E14",
+          "type": "ethical-dilemma",
+          "scene": "You are in a negotiation. The other person seems 'too calm' and makes risky demands without blinking.",
+          "question": "How do you handle a High-Risk / Low-Fear opponent?",
+          "options": [
+            "Try to scare them.",
+            "Appeal to their mercy.",
+            "Use leverage and consequences (Cold Logic). Do not bluff.",
+            "Get angry."
+          ],
+          "correct": "Use leverage and consequences (Cold Logic). Do not bluff.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Fear tactics don't work on the fearless. Mercy doesn't work on the heartless. Only tangible loss/gain matters.",
+            "incorrect": "You cannot scare someone with a broken amygdala. Bluffs will be called immediately."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Temperature Check",
+          "scene": "You can now tell the difference between 'Hot' (Dysregulated) and 'Cold' (Predatory). You know that silence is often more dangerous than screaming.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Fearless' Simulation (Dealing with a risk-taker).",
+            "Running away.",
+            "A lesson on Love Bombing.",
+            "Crying."
+          ],
+          "correct": "The 'Fearless' Simulation (Dealing with a risk-taker).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you handle someone who doesn't feel fear? Let's find out.",
+            "incorrect": "Next up: Interacting with a biological risk-taker."
+          }
+        }
+      ]
+    }
+  ]
+}

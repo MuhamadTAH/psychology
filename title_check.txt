@@ -1,0 +1,58 @@
+﻿======================================================================
+CHECKING LESSON TITLES INSIDE FILES
+======================================================================
+
+[ERROR] B1-1: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B1-2: Could not read file - 'utf-8' codec can't decode byte 0x8e in position 10: invalid start byte
+[ERROR] B1-3: Could not read file - 'utf-8' codec can't decode byte 0x8e in position 10: invalid start byte
+[ERROR] B1-4: Could not read file - 'utf-8' codec can't decode byte 0x8e in position 10: invalid start byte
+[ERROR] B1-5: Could not read file - 'utf-8' codec can't decode byte 0x8e in position 10: invalid start byte
+[ERROR] B2-1: Could not read file - 'utf-8' codec can't decode byte 0x8c in position 10: invalid start byte
+[ERROR] B2-2: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B2-3: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B2-4: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B2-5: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B3-1: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B3-2: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B3-3: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B3-4: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B3-5: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B4-1: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B4-2: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B4-3: Could not read file - 'utf-8' codec can't decode byte 0x8c in position 10: invalid start byte
+[ERROR] B4-4: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B4-5: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B5-1: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B5-2: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B5-3: Could not read file - 'utf-8' codec can't decode byte 0x8c in position 10: invalid start byte
+[ERROR] B5-4: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+[ERROR] B5-5: Could not read file - 'utf-8' codec can't decode byte 0x8d in position 10: invalid start byte
+
+======================================================================
+RESULT: Found 25 issues
+  - B1-1: Read error
+  - B1-2: Read error
+  - B1-3: Read error
+  - B1-4: Read error
+  - B1-5: Read error
+  - B2-1: Read error
+  - B2-2: Read error
+  - B2-3: Read error
+  - B2-4: Read error
+  - B2-5: Read error
+  - B3-1: Read error
+  - B3-2: Read error
+  - B3-3: Read error
+  - B3-4: Read error
+  - B3-5: Read error
+  - B4-1: Read error
+  - B4-2: Read error
+  - B4-3: Read error
+  - B4-4: Read error
+  - B4-5: Read error
+  - B5-1: Read error
+  - B5-2: Read error
+  - B5-3: Read error
+  - B5-4: Read error
+  - B5-5: Read error
+======================================================================

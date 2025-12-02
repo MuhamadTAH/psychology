@@ -1,0 +1,359 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B2",
+  "unitTitle": "The Frame Game: Controlling Perception",
+  "lessonId": "B2-1",
+  "lessonTitle": "Framing 101: The Lens of Reality",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: Reframing the Narrative",
+  "objective": "To master the skill of 'Active Reframing'—taking a negative label or context imposed by a manipulator and changing the meaning to regain control of the conversation.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Frame_Master_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B2-1-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: Flip the Script",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Manipulators try to trap you in a **Negative Frame** (e.g., 'You are lazy'). If you defend yourself ('I'm not lazy!'), you reinforce their frame."
+        },
+        {
+          "type": "paragraph",
+          "text": "To win, you must **Reframe**. You must take the same behavior and give it a new, positive meaning ('I am not lazy; I am efficient')."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Never accept a negative label. Catch it, rename it, and hand it back."
+        }
+      ]
+    },
+    {
+      "screenId": "B2-1-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Spin Doctor",
+      "exercises": [
+        {
+          "exerciseId": "B2-1-P3-E1",
+          "type": "boss-scenario",
+          "scene": "Your boss attacks you in a meeting: 'You are being *rigid* and *uncooperative* because you won't agree to this bad deal.'",
+          "question": "They set a 'Negative Identity Frame.' How do you Reframe it?",
+          "options": [
+            "'I'm not rigid!' (Defensive)",
+            "'I am being *principled* and *careful* to protect the company's assets.' (Positive Reframe)",
+            "'You are the rigid one.' (Attack)",
+            "Apologize."
+          ],
+          "correct": "'I am being *principled* and *careful* to protect the company's assets.' (Positive Reframe)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You took the behavior (saying no) and changed the label from 'Rigid' (Bad) to 'Principled' (Good). You are now the hero of the story.",
+            "incorrect": "Defending yourself ('I'm not...') accepts their premise that rigidity is the topic. You must change the topic."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The 'Selfish' Trap",
+          "steps": [
+            {
+              "scene": "Partner: 'You are so *selfish* for wanting to go to the gym instead of watching TV with me.'",
+              "options": [
+                "'I am not selfish.' (Denial)",
+                "'I am prioritizing my *health* so I can be my best self for us.' (Reframe: Self-Care)",
+                "'You are lazy.' (Attack)",
+                "Stay home."
+              ],
+              "correct": "'I am prioritizing my *health* so I can be my best self for us.' (Reframe: Self-Care)",
+              "feedback": {
+                "correct": "Perfect. You turned 'Selfishness' into 'Health/Self-Care.' It is hard to argue against health.",
+                "incorrect": "Denial fights the frame. Reframing destroys it."
+              }
+            },
+            {
+              "question": "Partner: 'But you care about the gym more than me.' (Guilt Frame).",
+              "options": [
+                "'That's not true.' (Weak)",
+                "'I care about *balance*. A healthy relationship allows for individual hobbies.' (Reframe: Balance)",
+                "'Maybe I do.' (Fight)",
+                "Cancel the membership."
+              ],
+              "correct": "'I care about *balance*. A healthy relationship allows for individual hobbies.' (Reframe: Balance)",
+              "feedback": {
+                "correct": "Mastery. You moved the frame from 'Competition' (Gym vs. Partner) to 'Balance' (Gym + Partner).",
+                "incorrect": "Don't accept the 'Either/Or' frame. Change it to 'And'."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You successfully Reframed the attack. You protected your autonomy without attacking them.",
+            "incorrect": "You accepted the label 'Selfish' by defending against it. You lost the frame."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P3-E3",
+          "type": "multiple-choice",
+          "question": "What is 'Content Reframing'?",
+          "options": [
+            "Changing the picture in the frame (e.g., 'This isn't a problem; it's a challenge').",
+            "Changing the literal frame.",
+            "Lying about facts.",
+            "Ignoring the person."
+          ],
+          "correct": "Changing the picture in the frame (e.g., 'This isn't a problem; it's a challenge').",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You accept the fact (the situation exists) but change what it *means*.",
+            "incorrect": "It's about meaning. 'Problem' becomes 'Challenge.' 'Failure' becomes 'Feedback.'"
+          }
+        },
+        {
+          "exerciseId": "B2-1-P3-E4",
+          "type": "fill-in",
+          "sentence": "If you control the (--------), you control the emotional reaction.",
+          "options": [
+            "meaning",
+            "weather",
+            "clock",
+            "volume"
+          ],
+          "answers": [
+            "meaning"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Events are neutral. Meaning is applied. If you define the meaning, you define the emotion.",
+            "incorrect": "It's about the definition/meaning of the event."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'This car is $50,000. That is too expensive.'",
+          "question": "How do you Reframe this using the 'Time Frame'?",
+          "options": [
+            "'It is cheaper than a Ferrari.'",
+            "'If you divide it by 10 years of use, it costs less than a cup of coffee a day.' (amortization).",
+            "'You are too poor.'",
+            "'It is a good car.'"
+          ],
+          "correct": "'If you divide it by 10 years of use, it costs less than a cup of coffee a day.' (amortization).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You expanded the frame from 'Price Now' to 'Cost Over Time.' $50k looks big; $3/day looks small.",
+            "incorrect": "Comparing to a Ferrari is a 'Contrast Frame,' not a 'Time Frame'."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'You're not *stubborn*; you are *determined*.'",
+          "question": "Is this a Reframe?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Stubborn' is negative. 'Determined' is positive. Same behavior, different frame.",
+            "incorrect": "It takes a vice and paints it as a virtue."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Context Reframe':",
+          "words": [
+            "behavior",
+            "useful",
+            "Every",
+            "is",
+            "somewhere"
+          ],
+          "correct": "Every behavior is useful somewhere",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Being loud is bad in a library (Context A) but good at a concert (Context B). Change the context to change the value.",
+            "incorrect": "Context determines value. Dirt in the garden is good; dirt on the floor is bad."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A tactic where you agree with the opponent's premise but change the conclusion. 'Yes, the price is high, which is why you get the best service.'",
+          "question": "What is this?",
+          "options": [
+            "Agreement Frame / Pivot",
+            "Denial",
+            "Gaslighting",
+            "Submission"
+          ],
+          "correct": "Agreement Frame / Pivot",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Yes, and...' You validate the fact (Price) but link it to a positive (Service) instead of a negative (Cost).",
+            "incorrect": "Denial fights the fact. The Agreement Frame uses the fact as leverage."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are late to a meeting. You can say 'Sorry I'm late' (Guilt Frame) or 'Thank you for your patience' (Gratitude Frame).",
+          "question": "Which is the stronger leadership move?",
+          "options": [
+            "'Thank you for your patience.' It frames the waiting as a virtue of the team, rather than a failure of the leader.",
+            "'Sorry I'm late.' It shows submission.",
+            "Don't acknowledge it.",
+            "Blame traffic."
+          ],
+          "correct": "'Thank you for your patience.' It frames the waiting as a virtue of the team, rather than a failure of the leader.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Apologizing focuses on your error. Thanking focuses on their good character. It keeps the vibe positive.",
+            "incorrect": "Apologizing lowers your status. Reframing elevates the team."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: A manipulator says, 'You're too sensitive.' (Frame: You are weak).",
+          "question": "Reframe this:",
+          "options": [
+            "'I'm not sensitive!'",
+            "'I am *perceptive*. I notice things you miss.' (Frame: I am aware).",
+            "'You are mean.'",
+            "Cry."
+          ],
+          "correct": "'I am *perceptive*. I notice things you miss.' (Frame: I am aware).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You turned 'weakness' into 'superpower.' Perceptive is a leadership trait.",
+            "incorrect": "Defending against 'sensitive' validates the weakness. Claim the strength instead."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P3-E11",
+          "type": "fill-in",
+          "sentence": "The person who asks the (--------) controls the frame.",
+          "options": [
+            "questions",
+            "favors",
+            "time",
+            "money"
+          ],
+          "answers": [
+            "questions"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Questions direct focus. 'Why did you fail?' frames it as failure. 'What did you learn?' frames it as education.",
+            "incorrect": "Statements defend the frame. Questions set the frame."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'We have a problem.' vs 'We have a challenge.'",
+          "question": "Does this single word change the brain's chemical response?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Problem' triggers cortisol (Stress/Fear). 'Challenge' triggers dopamine (Motivation/Action).",
+            "incorrect": "Words are triggers for brain chemistry. Leaders choose dopamine words."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: 'You are obsessive.'",
+          "question": "Reframe this to a positive:",
+          "options": [
+            "'I am *passionate* and *detail-oriented*.'",
+            "'I am not.'",
+            "'You are lazy.'",
+            "'I guess I am.'"
+          ],
+          "correct": "'I am *passionate* and *detail-oriented*.'",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Obsessive is a vice. Passionate is a virtue. Detail-oriented is a skill.",
+            "incorrect": "Don't deny. Transform."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P3-E14",
+          "type": "matching",
+          "question": "Match the Negative Label to the Positive Reframe:",
+          "pairs": [
+            {
+              "term": "Bossy",
+              "definition": "Reframe: Leadership Potential"
+            },
+            {
+              "term": "Fearful",
+              "definition": "Reframe: Cautious / Prudent"
+            },
+            {
+              "term": "Aggressive",
+              "definition": "Reframe: Assertive / Go-Getter"
+            }
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Every shadow has a light side. Find the light side of the trait.",
+            "incorrect": "Find the positive utility of the behavior."
+          }
+        },
+        {
+          "exerciseId": "B2-1-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Frame Master",
+          "scene": "You have learned that words paint pictures. You can now take a 'black' picture and paint it 'gold' by changing the frame.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson B2-2: Anchoring (The Price of Perception).",
+            "Lesson A1-1.",
+            "Being quiet.",
+            "Painting a wall."
+          ],
+          "correct": "Lesson B2-2: Anchoring (The Price of Perception).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Anchoring is a specific type of Framing used with numbers and values. It dictates the starting point.",
+            "incorrect": "Next up: How the first number spoken controls the negotiation."
+          }
+        }
+      ]
+    }
+  ]
+}

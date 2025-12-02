@@ -1,0 +1,333 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A3",
+  "unitTitle": "The Grand Chessmaster: Machiavellianism",
+  "lessonId": "A3-2",
+  "lessonTitle": "The Long Game: Strategic Deception",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Deception & Alliances",
+  "objective": "To practice identifying and countering strategic deception, false alliances, and 'Trojan Horse' tactics in high-stakes environments.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A3-2-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Hidden War",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You know the theory: Deception is a tool, not a sin. Alliances are transactions, not friendships."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "In this practice, look for the **Hidden Agenda**. When someone offers help, ask: 'What is the price?' When someone plays dumb, ask: 'What are they hiding?'"
+        }
+      ]
+    },
+    {
+      "screenId": "A3-2-P2-S2",
+      "screenType": "Exercises",
+      "title": "Spotting the Trojan Horse",
+      "exercises": [
+        {
+          "exerciseId": "A3-2-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: A rival colleague offers to 'help' you with a critical presentation. 'I'll make the slides look pretty for you, don't worry about it.'",
+          "question": "This is a potential 'Trojan Horse.' What is the risk?",
+          "options": [
+            "They will do a bad job on purpose (Sabotage).",
+            "They will add their own name to the credit slide.",
+            "They will change the data to make you look incompetent during the meeting.",
+            "All of the above."
+          ],
+          "correct": "All of the above.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Giving a rival access to your work is like opening the city gates. They can sabotage you from the inside with 'plausible deniability.'",
+            "incorrect": "Never trust a rival bearing gifts. Access is power."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P2-E2",
+          "type": "multiple-choice",
+          "question": "Why is 'Strategic Incompetence' (playing dumb) such a powerful defensive tool?",
+          "options": [
+            "It makes people feel sorry for you.",
+            "It lowers expectations and makes people underestimate you, so they speak freely around you.",
+            "It gets you fired.",
+            "It is funny."
+          ],
+          "correct": "It lowers expectations and makes people underestimate you, so they speak freely around you.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you seem harmless and dim, the 'Lions' won't attack you, and they will reveal their secrets in front of you.",
+            "incorrect": "It's not about pity; it's about camouflage. The smartest person in the room often acts like the quietest."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P2-E3",
+          "type": "true-false",
+          "scene": "Scenario: You want to form an alliance with a powerful person. You approach them and say: 'I admire you so much. Can we be friends?'",
+          "question": "Is this a Machiavellian approach?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct/False. This is weak. A Machiavellian approaches with **Utility**. 'I can solve your X problem.' Power respects power, not fandom.",
+            "incorrect": "This is how a fan approaches. A Strategist offers value (a trade)."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P2-E4",
+          "type": "fill-in",
+          "sentence": "In an alliance, you must always know your partner's (--------). If you don't know what they want, you are the pawn.",
+          "options": [
+            "interest",
+            "name",
+            "fear",
+            "family"
+          ],
+          "answers": [
+            "interest"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Self-Interest' is the only glue that holds a Machiavellian alliance together. Know their price.",
+            "incorrect": "It's not about personal details. It's about their goal/interest."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P2-E5",
+          "type": "scenario",
+          "scene": "Scenario: You are in a meeting. Everyone is arguing. One person stays silent, taking notes, and nodding at everyone.",
+          "question": "What is this person likely doing?",
+          "options": [
+            "They are bored.",
+            "Gathering Intel and letting others exhaust themselves (The Observer Strategy).",
+            "They are shy.",
+            "They don't understand."
+          ],
+          "correct": "Gathering Intel and letting others exhaust themselves (The Observer Strategy).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Silence is an active strategy. By the end, they will have all the data and no enemies.",
+            "incorrect": "Don't mistake silence for weakness. They are conserving energy while others burn theirs."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P2-E6",
+          "type": "matching",
+          "question": "Match the Deception Type to its Utility:",
+          "pairs": [
+            {
+              "term": "Omission",
+              "definition": "Leaving out key details to guide the target's conclusion."
+            },
+            {
+              "term": "Diversion",
+              "definition": "Changing the subject to avoid a trap."
+            },
+            {
+              "term": "Feigned Ignorance",
+              "definition": "Pretending not to know to avoid responsibility."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Omission is subtle. Diversion is active. Ignorance is defensive.",
+            "incorrect": "Review the definitions. Omission is silence. Diversion is noise."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the 'Common Enemy' tactic:",
+          "words": [
+            "enemy",
+            "unites",
+            "A",
+            "common",
+            "allies",
+            "divided"
+          ],
+          "correct": "A common enemy unites divided allies",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you want to unite a team (or destroy a rival), give them someone to hate together. It creates instant bonding.",
+            "incorrect": "Focus on unification. Hatred is a stronger binding agent than love in politics."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "Intentionally feeding false information to a suspected leak to see where it ends up.",
+          "question": "What is this counter-intelligence tactic called?",
+          "options": [
+            "The Barium Meal / Canary Trap",
+            "Gaslighting",
+            "Love Bombing",
+            "The Silent Treatment"
+          ],
+          "correct": "The Barium Meal / Canary Trap",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you tell Person A 'The code is Blue' and Person B 'The code is Red,' and the news reports 'Red,' you know Person B is the traitor.",
+            "incorrect": "This is a specific spycraft tactic called the Canary Trap (or Barium Meal)."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P2-E9",
+          "type": "scenario",
+          "scene": "Scenario: Your boss asks for your honest opinion on their bad idea. You know they have a fragile ego.",
+          "question": "What is the Strategic Move?",
+          "options": [
+            "Tell the brutal truth (Radical Honesty).",
+            "Lie and say it's perfect (Flattery).",
+            "Use 'Strategic Ambiguity': 'It's a bold vision. I think we can make it work if we adjust X.'",
+            "Remain silent."
+          ],
+          "correct": "Use 'Strategic Ambiguity': 'It's a bold vision. I think we can make it work if we adjust X.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You validated their ego ('bold vision') but pivoted to the fix ('adjust X'). Brutal truth gets you fired. Lying sets you up for failure.",
+            "incorrect": "Honesty is suicide with a narcissist. Flattery leads to a bad product. Ambiguity protects you."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P2-E10",
+          "type": "fill-in",
+          "sentence": "Never outshine the (--------). (Law 1 of Power)",
+          "options": [
+            "master",
+            "servant",
+            "friend",
+            "enemy"
+          ],
+          "answers": [
+            "master"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If you make your boss look bad by being too smart, they will destroy you out of insecurity.",
+            "incorrect": "Always make those above you feel superior. It is the safest camouflage."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P2-E11",
+          "type": "ethical-dilemma",
+          "scene": "You find out a co-worker is being fired next week. They ask you, 'Am I safe?'",
+          "question": "What is the Strategic (Machiavellian) answer vs. the Ethical answer?",
+          "options": [
+            "Strategic: 'I don't know.' (Plausible Deniability). Ethical: 'I can't say.'",
+            "Strategic: 'Yes, you are safe.' (Lie). Ethical: 'No.'",
+            "Strategic: 'No.' (Truth). Ethical: 'Yes.'",
+            "Both would say 'Yes.'"
+          ],
+          "correct": "Strategic: 'I don't know.' (Plausible Deniability). Ethical: 'I can't say.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. A Strategist avoids the trap. Saying 'Yes' is a lie that burns a bridge. Saying 'No' violates confidentiality. 'I don't know' protects you.",
+            "incorrect": "Lying ('Yes') creates a future enemy. Telling the truth ('No') betrays the boss. Neutrality is the shield."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I trust you because we have been friends for 10 years.'",
+          "question": "Is this a safe assumption in the Dark Game?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. Time does not equal loyalty. Interests change. A Machiavellian knows that 'Best Friends' can become 'Worst Enemies' if their goals diverge.",
+            "incorrect": "Assuming safety based on history is a sentimental weakness. Monitor the *current* interests."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: Someone creates a false rumor about you. You know who did it.",
+          "question": "What is the Long Game response?",
+          "options": [
+            "Confront them publicly immediately.",
+            "Spread a rumor about them.",
+            "Do nothing visibly. Gather evidence. Wait for them to overreach, then expose the lie with proof at the critical moment.",
+            "Quit."
+          ],
+          "correct": "Do nothing visibly. Gather evidence. Wait for them to overreach, then expose the lie with proof at the critical moment.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Reaction feeds the rumor. Silence makes them sloppy. The counter-strike must be timed perfectly (Maximum Impact).",
+            "incorrect": "Immediate confrontation looks defensive. Strategic patience allows you to set a trap."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P2-E14",
+          "type": "multiple-choice",
+          "question": "What is 'Signaling'?",
+          "options": [
+            "Using traffic lights.",
+            "Subtly communicating your status, values, or intentions without saying them directly (e.g., wearing a specific watch to signal wealth).",
+            "Talking loudly.",
+            "Using hand gestures."
+          ],
+          "correct": "Subtly communicating your status, values, or intentions without saying them directly (e.g., wearing a specific watch to signal wealth).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Machiavellians are masters of signals. They signal 'Virtue' to hide 'Vice.' They signal 'Power' to avoid fights.",
+            "incorrect": "It's about non-verbal communication of value."
+          }
+        },
+        {
+          "exerciseId": "A3-2-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Fog of War",
+          "scene": "You have practiced spotting deception, testing alliances, and managing reputation. You know that in the Dark Game, nothing is what it seems.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Trojan Horse' Scenario (Simulation).",
+            "Trusting strangers.",
+            "Playing checkers.",
+            "Giving up."
+          ],
+          "correct": "The 'Trojan Horse' Scenario (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The final test is to survive a sophisticated infiltration attempt. Can you spot the enemy inside the gates?",
+            "incorrect": "Next up: A simulation of betrayal and infiltration."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,429 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A3",
+  "unitTitle": "The Grand Chessmaster: Machiavellianism",
+  "lessonId": "A3-5",
+  "lessonTitle": "Unit 3 Review: The Chessboard",
+  "lessonType": "Review",
+  "lessonPart": 1,
+  "lessonPartTitle": "Unit 3 Core Concepts Review",
+  "objective": "To synthesize and test knowledge of Machiavellian philosophy, strategic deception, cynical logic, and emotional detachment.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A3-5-P1-S1",
+      "screenType": "Learn",
+      "title": "Unit 3 Review",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You have studied the Grand Chessmaster. You know their philosophy (The End Justifies the Means), their strategy (The Long Game), their logic (Cynicism), and their superpower (Detachment)."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "This review covers all concepts from Lesson A3-1 to A3-4. Pass this to unlock the Unit 3 Gauntlet."
+        }
+      ]
+    },
+    {
+      "screenId": "A3-5-P1-S2",
+      "screenType": "Exercises",
+      "title": "Concept Check",
+      "exercises": [
+        {
+          "exerciseId": "A3-5-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the core difference between a Narcissist (Unit A2) and a Machiavellian (Unit A3)?",
+          "options": [
+            "Narcissists want *attention* (Ego); Machiavellians want *power* (Control).",
+            "Machiavellians are nicer.",
+            "Narcissists plan ahead; Machiavellians are impulsive.",
+            "There is no difference."
+          ],
+          "correct": "Narcissists want *attention* (Ego); Machiavellians want *power* (Control).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. A Narcissist needs applause. A Machiavellian prefers to be invisible if it helps them win.",
+            "incorrect": "Machiavellians are the planners. Narcissists are the impulsive ones seeking immediate supply."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E2",
+          "type": "fill-in",
+          "sentence": "The Machiavellian Motto is: 'The (--------) justifies the (--------).'",
+          "options": [
+            "end",
+            "means",
+            "king",
+            "pawn",
+            "truth"
+          ],
+          "answers": [
+            "end",
+            "means"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If the goal is valuable, any method used to get it (lying, stealing, harming) is acceptable to them.",
+            "incorrect": "It's about the result vs. the method. The End justifies the Means."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E3",
+          "type": "true-false",
+          "scene": "Scenario: 'I lied to you, but it was for the success of the project. It wasn't personal.'",
+          "question": "Is this 'Strategic Deception'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They view the lie as a necessary tool to achieve the goal. They feel no guilt because the 'math' works out.",
+            "incorrect": "To them, it's not a sin; it's a strategy. It is impersonal calculation."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E4",
+          "type": "matching",
+          "question": "Match the Concept to the Definition:",
+          "pairs": [
+            {
+              "term": "Cold Empathy",
+              "definition": "Knowing what someone feels without feeling it yourself."
+            },
+            {
+              "term": "The Long Game",
+              "definition": "Sacrificing short-term wins for long-term power."
+            },
+            {
+              "term": "Cynicism",
+              "definition": "The belief that everyone is selfish, justifying your own selfishness."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Cold Empathy gives them data. The Long Game gives them patience. Cynicism gives them permission.",
+            "incorrect": "Review the definitions. Cold Empathy = Cognitive. Long Game = Strategy. Cynicism = Logic."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E5",
+          "type": "scenario",
+          "scene": "Scenario: A negotiator suddenly packs up to leave (The Walkout), hoping you will panic and offer a better deal.",
+          "question": "This is an example of:",
+          "options": [
+            "Instrumental Emotion (Using 'anger' as a tool).",
+            "Genuine quitting.",
+            "Narcissistic Rage.",
+            "Confusion."
+          ],
+          "correct": "Instrumental Emotion (Using 'anger' as a tool).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The emotion (anger/leaving) is an *instrument* to achieve a goal (a better price).",
+            "incorrect": "If they really wanted to quit, they would just leave. The performance is the tactic."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E6",
+          "type": "multiple-choice",
+          "question": "What is 'Strategic Vulnerability'?",
+          "options": [
+            "Being weak.",
+            "Sharing a small, calculated secret/weakness to gain the other person's trust.",
+            "Crying in public.",
+            "Telling the complete truth."
+          ],
+          "correct": "Sharing a small, calculated secret/weakness to gain the other person's trust.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. By revealing a pawn, they capture your king (your trust). It simulates intimacy.",
+            "incorrect": "It is not weakness. It is a calculated risk to disarm you."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "A tactic where you give a 'gift' (help, info, access) that actually allows you to infiltrate or sabotage a rival.",
+          "question": "What is this called?",
+          "options": [
+            "The Trojan Horse",
+            "Gaslighting",
+            "Love Bombing",
+            "The Silent Treatment"
+          ],
+          "correct": "The Trojan Horse",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Beware of Greeks bearing gifts.' The gift is the container for the attack.",
+            "incorrect": "It is not Love Bombing (which creates dependency). This is specifically for infiltration/sabotage."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E8",
+          "type": "build-sentence",
+          "question": "Arrange these words to define Machiavellian alliances:",
+          "words": [
+            "friends,",
+            "No",
+            "permanent",
+            "only",
+            "interests",
+            "permanent"
+          ],
+          "correct": "No permanent friends, only permanent interests",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are loyal to the *goal*, not the *person*. If the goal changes, the loyalty ends.",
+            "incorrect": "Friendship implies permanent loyalty. Interests are temporary."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E9",
+          "type": "scenario",
+          "scene": "Scenario: A manager creates conflict between two employees so they are too busy fighting to notice the manager's theft.",
+          "question": "This is:",
+          "options": [
+            "Divide and Conquer.",
+            "Team Building.",
+            "Bad Management.",
+            "Gaslighting."
+          ],
+          "correct": "Divide and Conquer.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A united team is dangerous. A divided team is weak and distracted.",
+            "incorrect": "It is intentional, not just 'bad management.' It protects the manager's power."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E10",
+          "type": "fill-in",
+          "sentence": "To a Machiavellian, people are not humans; they are (--------) on a chessboard.",
+          "options": [
+            "pieces",
+            "friends",
+            "gods",
+            "enemies"
+          ],
+          "answers": [
+            "pieces"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Dehumanization is key. You move a piece, sacrifice a piece, or promote a piece based on utility.",
+            "incorrect": "They don't view others as having agency. They are objects to be moved."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E11",
+          "type": "ethical-dilemma",
+          "scene": "You find a 'loophole' that lets you break a promise legally. The Machiavellian logic is 'It's legal, so I should do it.'",
+          "question": "What is the flaw in this logic?",
+          "options": [
+            "It destroys Reputation and Trust, which are long-term assets.",
+            "You might go to jail.",
+            "It costs money.",
+            "It is too easy."
+          ],
+          "correct": "It destroys Reputation and Trust, which are long-term assets.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. A legal win can be a reputational loss. The Strategist knows that Trust is currency.",
+            "incorrect": "It's legal, so no jail. But the social cost is high."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E12",
+          "type": "multiple-choice",
+          "question": "What is 'Plausible Deniability'?",
+          "options": [
+            "Setting up a situation so you can claim 'I didn't know' or 'I didn't do it' if things go wrong.",
+            "Being honest.",
+            "Denying everything angrily.",
+            "A legal term for theft."
+          ],
+          "correct": "Setting up a situation so you can claim 'I didn't know' or 'I didn't do it' if things go wrong.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It is the art of keeping your hands clean while getting dirty work done (often by pawns).",
+            "incorrect": "It's not just denying; it's *setting up* the denial beforehand."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E13",
+          "type": "true-false",
+          "scene": "Scenario: 'I don't feel your pain, but I understand it, so I can manipulate it.'",
+          "question": "Is this Cognitive Empathy?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the definition. Knowing the button exists vs. feeling the button press.",
+            "incorrect": "If they felt the pain, they would stop. Because they only 'know' it, they can use it."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E14",
+          "type": "matching",
+          "question": "Match the Animal Metaphor:",
+          "pairs": [
+            {
+              "term": "The Lion",
+              "definition": "Uses strength/fear to crush enemies."
+            },
+            {
+              "term": "The Fox",
+              "definition": "Uses cunning/traps to outsmart enemies."
+            },
+            {
+              "term": "The Sheep",
+              "definition": "The naive victim."
+            }
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Machiavelli said a Prince must be both Lion and Fox.",
+            "incorrect": "Review the metaphors. Strength vs. Cunning."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E15",
+          "type": "scenario",
+          "scene": "Scenario: You ask a friend a question. They stay silent and stare at you.",
+          "question": "This 'Strategic Silence' forces you to:",
+          "options": [
+            "Keep talking and reveal more information (over-sharing) to break the tension.",
+            "Leave.",
+            "Fight them.",
+            "Laugh."
+          ],
+          "correct": "Keep talking and reveal more information (over-sharing) to break the tension.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Silence creates a vacuum. Humans rush to fill it. The Strategist waits and collects the intel.",
+            "incorrect": "Most people don't leave; they get anxious and babble."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E16",
+          "type": "reverse-scenario",
+          "answer": "You share a secret with them, but they don't share one with you. They now have leverage, and you have none.",
+          "question": "What is this state called?",
+          "options": [
+            "Information Asymmetry",
+            "True Friendship",
+            "Paranoia",
+            "Love Bombing"
+          ],
+          "correct": "Information Asymmetry",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The balance of power is tilted. They know more about you than you know about them.",
+            "incorrect": "This is the opposite of friendship (reciprocity). It is a power imbalance."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E17",
+          "type": "scenario",
+          "scene": "Scenario: 'Everyone cheats. If I don't cheat, I'm the sucker.'",
+          "question": "This is the logical trap of:",
+          "options": [
+            "Cynicism / The Race to the Bottom.",
+            "Wisdom.",
+            "Honesty.",
+            "Optimism."
+          ],
+          "correct": "Cynicism / The Race to the Bottom.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It justifies bad behavior by assuming the worst in others. It ensures the system stays corrupt.",
+            "incorrect": "It's not wisdom; it's rationalization for unethical behavior."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E18",
+          "type": "multiple-choice",
+          "question": "What is 'The Robot' persona?",
+          "options": [
+            "A costume.",
+            "A state of high Emotional Regulation where the operator responds only to logic and utility, ignoring emotional pleas.",
+            "A sci-fi character.",
+            "Someone who can't talk."
+          ],
+          "correct": "A state of high Emotional Regulation where the operator responds only to logic and utility, ignoring emotional pleas.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. To negotiate with the Robot, you must speak 'Value,' not 'Feelings.'",
+            "incorrect": "It is a psychological state of detachment, not a literal robot."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E19",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the Machiavellian view of feelings:",
+          "words": [
+            "tool",
+            "a",
+            "feelings",
+            "Using",
+            "as"
+          ],
+          "correct": "Using feelings as a tool",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Instrumental Emotion. Feelings are used to achieve an outcome, not just expressed.",
+            "incorrect": "They use feelings; they aren't used *by* them."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P1-E20",
+          "type": "case-analysis",
+          "caseTitle": "Unit 3 Knowledge Check Complete",
+          "scene": "You have reviewed the Philosophy, Strategy, Logic, and Emotion of the Grand Chessmaster.",
+          "question": "You are now ready for Part 2:",
+          "options": [
+            "The Unit 3 Gauntlet (Mixed Scenarios).",
+            "Retaking the course.",
+            "Giving up.",
+            "Playing chess."
+          ],
+          "correct": "The Unit 3 Gauntlet (Mixed Scenarios).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Knowledge is useless without application. Part 2 will throw rapid-fire scenarios at you to test your detection speed.",
+            "incorrect": "The next step is the Gauntlet: Applying these concepts in high-speed simulations."
+          }
+        }
+      ]
+    }
+  ]
+}

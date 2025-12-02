@@ -1,0 +1,342 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B2",
+  "unitTitle": "The Frame Game: Controlling Perception",
+  "lessonId": "B2-2",
+  "lessonTitle": "Anchoring: The Price of Perception",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: The First Number is the Anchor",
+  "objective": "To define 'Anchoring' as a cognitive bias where the first piece of information offered heavily influences decision-making, and to learn how manipulators use it to distort value.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B2-2-P1-S1",
+      "screenType": "Learn",
+      "title": "The Heavy Weight",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When you are unsure of the value of something, your brain grabs onto the first number it hears. That number becomes the **Anchor**."
+        },
+        {
+          "type": "paragraph",
+          "text": "If I say a car is worth $50,000, and then offer it to you for $30,000, it feels cheap. If I started at $10,000, then $30,000 would feel expensive."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Rule: He who speaks the first number sets the battlefield."
+        }
+      ]
+    },
+    {
+      "screenId": "B2-2-P1-S2",
+      "screenType": "Exercises",
+      "title": "Identifying the Anchor",
+      "exercises": [
+        {
+          "exerciseId": "B2-2-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the **Anchoring Bias**?",
+          "options": [
+            "A sailing term.",
+            "The human tendency to rely too heavily on the first piece of information offered (the 'anchor') when making decisions.",
+            "Being stubborn.",
+            "Holding onto the past."
+          ],
+          "correct": "The human tendency to rely too heavily on the first piece of information offered (the 'anchor') when making decisions.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Once the anchor is set, all future negotiations adjust around it. It biases the entire conversation.",
+            "incorrect": "It is a cognitive bias. The first number pulls your perception toward it like a magnet."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: A lawyer asks a jury: 'Do you think the damages should be higher or lower than **$10 million**?'",
+          "question": "What did the lawyer just do?",
+          "options": [
+            "Asked a fair question.",
+            "Set an Anchor at $10 million to bias the jury toward a high number.",
+            "Made a guess.",
+            "Confused the jury."
+          ],
+          "correct": "Set an Anchor at $10 million to bias the jury toward a high number.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Even if the jury thinks $10 million is too high, their adjustment will likely stop at $6 million or $8 million—much higher than if the lawyer had said $1 million.",
+            "incorrect": "The number $10 million isn't random. It pulls the final decision upward."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P1-E3",
+          "type": "fill-in",
+          "sentence": "To control a negotiation, you should be the (--------) one to mention a number.",
+          "options": [
+            "first",
+            "last",
+            "loudest",
+            "nicest"
+          ],
+          "answers": [
+            "first"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Many people wait to speak, thinking it gives them information. But speaking first lets you set the Anchor, forcing the other person to argue against *your* reality.",
+            "incorrect": "If you speak last, you are reacting to their Anchor. Speak first to set the frame."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'This normally costs $1,000, but for you, it's $500.'",
+          "question": "Is $1,000 the Anchor?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. $1,000 sets the 'Value' in your mind. $500 is the 'Price.' Because the Price is lower than the Value Anchor, it feels like a deal.",
+            "incorrect": "Without the $1,000 anchor, $500 is just a number. The anchor creates the context of 'savings'."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P1-E5",
+          "type": "matching",
+          "question": "Match the Anchor Type to the Example:",
+          "pairs": [
+            {
+              "term": "Price Anchor",
+              "definition": "\"Original Price: $100.\""
+            },
+            {
+              "term": "Time Anchor",
+              "definition": "\"This usually takes 6 months to finish.\""
+            },
+            {
+              "term": "Moral Anchor",
+              "definition": "\"A good person would donate $50.\""
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Price sets financial expectations. Time sets patience. Moral sets guilt.",
+            "incorrect": "Look at the domain. Money, Time, or Character."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the goal of Anchoring:",
+          "words": [
+            "bias",
+            "the",
+            "To",
+            "adjustment",
+            "process"
+          ],
+          "correct": "To bias the adjustment process",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. People adjust away from the anchor, but they rarely adjust enough. The bias remains.",
+            "incorrect": "The goal is to limit how far the target can move away from your number."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "A technique where you make an extreme request (the Anchor) knowing it will be rejected, so your second, smaller request looks reasonable.",
+          "question": "What is this?",
+          "options": [
+            "Door-in-the-Face Technique",
+            "Foot-in-the-Door",
+            "Love Bombing",
+            "Gaslighting"
+          ],
+          "correct": "Door-in-the-Face Technique",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You slam the 'Door' on the big request, but the Anchor makes the small request feel tiny by comparison. It utilizes the Contrast Principle.",
+            "incorrect": "Foot-in-the-Door starts small. Door-in-the-Face starts HUGE (The Anchor) to make the real request look small."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: A partner says, 'Most husbands don't help at all. I'm just asking you to do the dishes.'",
+          "question": "The 'Most husbands don't help' statement serves as:",
+          "options": [
+            "A Fact.",
+            "A Low Anchor (Setting the bar low so their request seems reasonable).",
+            "A Compliment.",
+            "A Joke."
+          ],
+          "correct": "A Low Anchor (Setting the bar low so their request seems reasonable).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. By anchoring 'Standard Behavior' at zero, doing the dishes looks like a huge contribution. It frames the request as minimal.",
+            "incorrect": "It sets the comparison point. 'Zero' is the anchor."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are selling a house. You list it at $500k even though it's worth $450k, so you can 'negotiate down' to the real price.",
+          "question": "Is this ethical?",
+          "options": [
+            "Yes, it is standard negotiation strategy (Anchoring).",
+            "No, it is lying.",
+            "Yes, because everyone is rich.",
+            "No, prices should be fixed."
+          ],
+          "correct": "Yes, it is standard negotiation strategy (Anchoring).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. As long as you don't lie about the *features* of the house, setting a high asking price is an accepted use of Anchoring.",
+            "incorrect": "Negotiation assumes a starting position. It is not deception; it is positioning."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P1-E10",
+          "type": "fill-in",
+          "sentence": "If you let the other person set the Anchor, you are fighting (--------).",
+          "options": [
+            "uphill",
+            "downhill",
+            "fairly",
+            "safely"
+          ],
+          "answers": [
+            "uphill"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You have to work hard to drag the price back down to reality. They have the high ground.",
+            "incorrect": "The Anchor sets the gravity. You have to fight against it."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P1-E11",
+          "type": "multiple-choice",
+          "question": "What is 'Salary Anchoring'?",
+          "options": [
+            "Getting paid in boat parts.",
+            "When a recruiter asks 'What is your current salary?' to set a low baseline for their offer.",
+            "Asking for a million dollars.",
+            "Being fired."
+          ],
+          "correct": "When a recruiter asks 'What is your current salary?' to set a low baseline for their offer.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you say '$50k,' they will offer '$55k.' If you refused to answer, you could have anchored at '$80k.'",
+            "incorrect": "They use your past to limit your future. Never reveal your current salary first."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I can only give you 5 minutes.' (Time Anchor).",
+          "question": "Does this increase the perceived value of their time?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Scarcity creates value. By anchoring the time as 'short,' they force you to be efficient and respectful.",
+            "incorrect": "It frames them as 'Important/Busy' and you as the 'Petitioner'."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: A charity asks: 'Would you like to donate $100, $50, or $25?'",
+          "question": "Why is $100 listed first?",
+          "options": [
+            "To make $25 look like a 'small, painless' amount (The Contrast Effect).",
+            "Because they want $100.",
+            "It is alphabetical.",
+            "No reason."
+          ],
+          "correct": "To make $25 look like a 'small, painless' amount (The Contrast Effect).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If they just asked for $25, it might seem like a lot. Compared to $100 (The Anchor), it seems tiny.",
+            "incorrect": "The high number pulls the average donation up. The low number becomes the 'easy' out."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P1-E14",
+          "type": "matching",
+          "question": "Match the Reaction to the Anchor:",
+          "pairs": [
+            {
+              "term": "Acceptance",
+              "definition": "You negotiate around their number (You lose)."
+            },
+            {
+              "term": "The Flinch",
+              "definition": "You react with shock to de-legitimize their Anchor."
+            },
+            {
+              "term": "Re-Anchoring",
+              "definition": "You ignore their number and state a new, extreme number."
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Never accept an unfair Anchor. Flinch to break its power, then Re-Anchor to reset the field.",
+            "incorrect": "Don't just argue 'lower.' Set a new pole in the ground."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Weight",
+          "scene": "You now see the weight. The first number creates gravity. You know that $50 is only 'cheap' if the Anchor was $100.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Resetting the Anchor (How to fight back).",
+            "Buying expensive things.",
+            "Being quiet.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: Resetting the Anchor (How to fight back).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Knowing about Anchors is not enough. You must learn how to pull them out of the ground.",
+            "incorrect": "Next up: Practical defense against the price trap."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,608 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A4",
+  "unitTitle": "The Void Behind the Mask: Psychopathy",
+  "lessonId": "A4-5",
+  "lessonTitle": "Unit 4 Review: The Predator",
+  "lessonType": "Review",
+  "lessonPart": 2,
+  "lessonPartTitle": "The 'Gauntlet' (Psychopathy Scenarios)",
+  "objective": "To test rapid identification and defense strategies against a randomized mix of Psychopathic behaviors, including predatory aggression, glibness, and weaponized pity.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 300,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A4-5-P2-S1",
+      "screenType": "Learn",
+      "title": "The Gauntlet",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The predator hides in plain sight. In this Gauntlet, you will face 30 scenarios testing your ability to see past the Mask of Sanity."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Speed is key. Trust your gut. Is this a person, or a performance?"
+        }
+      ]
+    },
+    {
+      "screenId": "A4-5-P2-S2",
+      "screenType": "Exercises",
+      "title": "Rapid Fire Scenarios",
+      "exercises": [
+        {
+          "exerciseId": "A4-5-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: A fire alarm goes off. Everyone panics. One person sits calmly, finishes their coffee, and walks out slowly without checking on anyone.",
+          "question": "This low arousal response suggests:",
+          "options": [
+            "Primary Psychopathy (Biological Fearlessness).",
+            "Heroism.",
+            "Panic.",
+            "Deafness."
+          ],
+          "correct": "Primary Psychopathy (Biological Fearlessness).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Their amygdala does not process threat signals like a normal brain. They remain cool while others burn.",
+            "incorrect": "It is not heroism (helping others). It is a biological lack of fear response."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is 'Instrumental Aggression' (A4-1)?",
+          "options": [
+            "Getting angry because you are hurt.",
+            "Using violence/harm as a calculated tool to get what you want (Cold).",
+            "Playing drums loudly.",
+            "Self-defense."
+          ],
+          "correct": "Using violence/harm as a calculated tool to get what you want (Cold).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It is goal-oriented. 'I hurt you to get your wallet,' not 'I hurt you because I hate you.'",
+            "incorrect": "Reactive aggression is emotional. Instrumental aggression is practical."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E3",
+          "type": "scenario",
+          "scene": "Scenario: You catch a partner cheating. They say: 'I'm sorry you're upset, but you have to admit, we haven't been close lately.'",
+          "question": "This is:",
+          "options": [
+            "A Non-Apology combined with Blame-Shifting.",
+            "A sincere apology.",
+            "Couples therapy.",
+            "Validation."
+          ],
+          "correct": "A Non-Apology combined with Blame-Shifting.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They apologize for your *feeling* ('you're upset'), then blame *you* for the cause ('we haven't been close').",
+            "incorrect": "It puts the responsibility on you. A real apology owns the action."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'Psychopaths are legally insane.'",
+          "question": "Is this true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct/False. They know right from wrong (sanity). They just don't care (conscience). They are legally responsible for their actions.",
+            "incorrect": "The 'Mask of Sanity' proves they are rational, just immoral."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E5",
+          "type": "scenario",
+          "scene": "Scenario: You meet someone. Within 10 minutes, they are mirroring your body language, your interests, and your values perfectly.",
+          "question": "This 'Instant Intimacy' is:",
+          "options": [
+            "The Predator's Grooming Phase.",
+            "True Love.",
+            "Coincidence.",
+            "Social Anxiety."
+          ],
+          "correct": "The Predator's Grooming Phase.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are 'scanning' you and reflecting your ideal self back to you to lower your defenses.",
+            "incorrect": "Real intimacy is slow. Instant mirroring is a hunting tactic."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E6",
+          "type": "fill-in",
+          "sentence": "A Psychopath's greatest fear is (--------).",
+          "options": [
+            "boredom",
+            "love",
+            "failure",
+            "heights"
+          ],
+          "answers": [
+            "boredom"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The void inside demands constant stimulation. Boredom feels like death to them.",
+            "incorrect": "They don't fear typical things. They fear the lack of stimulation."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E7",
+          "type": "matching",
+          "question": "Match the Emotion to the Reality:",
+          "pairs": [
+            {
+              "term": "Remorse",
+              "definition": "Caring about the victim."
+            },
+            {
+              "term": "Regret",
+              "definition": "Caring about the punishment."
+            },
+            {
+              "term": "Empathy",
+              "definition": "Sharing the feeling."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Psychopaths only feel Regret (Self-preservation). They mimic Remorse.",
+            "incorrect": "Review Lesson A4-4. Remorse is for others; Regret is for self."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E8",
+          "type": "scenario",
+          "scene": "Scenario: A manager fires 50 people to boost their bonus. They sleep soundly that night.",
+          "question": "This indicates:",
+          "options": [
+            "Lack of Conscience.",
+            "Good business.",
+            "Stress management.",
+            "Fatigue."
+          ],
+          "correct": "Lack of Conscience.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A normal person would feel guilt or stress about harming 50 families. A psychopath feels nothing.",
+            "incorrect": "It's not stress management; it's the absence of the stressor (Guilt)."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E9",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the Psychopath's view of kindness:",
+          "words": [
+            "is",
+            "exploited",
+            "to",
+            "be",
+            "Kindness",
+            "weakness",
+            "a"
+          ],
+          "correct": "Kindness is a weakness to be exploited",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They view your empathy as an unguarded gate. They do not respect it; they use it.",
+            "incorrect": "They don't value kindness. They value utility."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E10",
+          "type": "reverse-scenario",
+          "answer": "A person who moves into your home, stops working, creates drama, and refuses to leave.",
+          "question": "What is this lifestyle?",
+          "options": [
+            "Parasitic Lifestyle",
+            "Depression",
+            "Artist",
+            "Tradition"
+          ],
+          "correct": "Parasitic Lifestyle",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They are feeding off your resources (The Host).",
+            "incorrect": "Depression involves guilt/withdrawal. Parasitism involves entitlement/usage."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E11",
+          "type": "ethical-dilemma",
+          "scene": "A charming acquaintance asks for a 'small loan' because their bank account is 'frozen by mistake.'",
+          "question": "What is the safest response?",
+          "options": [
+            "Refuse. This is a classic 'Foot-in-the-Door' test for financial exploitation.",
+            "Give it. It's small.",
+            "Ask for proof.",
+            "Call the bank."
+          ],
+          "correct": "Refuse. This is a classic 'Foot-in-the-Door' test for financial exploitation.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you give small money, they will manufacture a bigger crisis for big money. It is a test of compliance.",
+            "incorrect": "Never verify their lies for them. Just say 'No' to the boundary crossing."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E12",
+          "type": "scenario",
+          "scene": "Scenario: They are telling a story. You catch them in a contradiction. They don't pause; they smoothly invent a new detail to explain it.",
+          "question": "This is:",
+          "options": [
+            "Glibness / Pathological Lying.",
+            "A bad memory.",
+            "Truth.",
+            "Stress."
+          ],
+          "correct": "Glibness / Pathological Lying.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They treat truth as flexible. The goal is to keep the conversation moving, not to be accurate.",
+            "incorrect": "A bad memory pauses to think. Glibness flows like water."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E13",
+          "type": "multiple-choice",
+          "question": "What is 'The Predatory Stare'?",
+          "options": [
+            "Unblinking, intense eye contact used to dominate and intimidate.",
+            "Flirting.",
+            "A vision problem.",
+            "Interest."
+          ],
+          "correct": "Unblinking, intense eye contact used to dominate and intimidate.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It triggers a primal 'prey response' in the victim. It signals 'I am hunting you.'",
+            "incorrect": "It is not romantic. It is invasive."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E14",
+          "type": "true-false",
+          "scene": "Scenario: 'You can change a psychopath if you are patient enough.'",
+          "question": "Is this true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Psychopathy is a neurological structure. You cannot love someone into growing a conscience.",
+            "incorrect": "This is the 'Savior Trap.' It leads to destruction."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E15",
+          "type": "scenario",
+          "scene": "Scenario: You threaten to leave. They suddenly cry and say, 'I'm so damaged, I need you to save me.'",
+          "question": "This is:",
+          "options": [
+            "The Pity Play (Weaponized Vulnerability).",
+            "Real breakthrough.",
+            "Therapy.",
+            "Honesty."
+          ],
+          "correct": "The Pity Play (Weaponized Vulnerability).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are using your empathy as a leash to pull you back in.",
+            "incorrect": "It's not a breakthrough; it's a tactic to prevent you from escaping."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E16",
+          "type": "matching",
+          "question": "Match the Tactic to the Defense:",
+          "pairs": [
+            {
+              "term": "Pity Play",
+              "definition": "Defense: Compassionate Detachment (Don't Rescue)."
+            },
+            {
+              "term": "Glibness",
+              "definition": "Defense: Slow down and ask for specifics."
+            },
+            {
+              "term": "Crisis",
+              "definition": "Defense: Verify before acting."
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Don't rescue the victim. Don't buy the story. Don't panic at the crisis.",
+            "incorrect": "Match the counter-move. Slow down the talker. Detach from the crier."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E17",
+          "type": "scenario",
+          "scene": "Scenario: They switch from 'Crying' to 'Rage' in one second when you say 'No.'",
+          "question": "This proves:",
+          "options": [
+            "The emotion was fake (Instrumental).",
+            "They are bipolar.",
+            "They are passionate.",
+            "You were mean."
+          ],
+          "correct": "The emotion was fake (Instrumental).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'The Switch' reveals the performance. Real emotion has inertia; fake emotion stops instantly when it fails.",
+            "incorrect": "It's not passion. It's a failed manipulation tactic being replaced by a new one (Intimidation)."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E18",
+          "type": "fill-in",
+          "sentence": "The 'Mask of Sanity' hides the (--------) beneath.",
+          "options": [
+            "void",
+            "pain",
+            "love",
+            "fear"
+          ],
+          "answers": [
+            "void"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. There is no 'true self' hiding in there. There is just a hunger for stimulation.",
+            "incorrect": "It's not pain or fear. It is emptiness."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E19",
+          "type": "reverse-scenario",
+          "answer": "A calculated risk-taker who uses charm to defraud investors, feels no guilt, and moves to the next scam when caught.",
+          "question": "What is this?",
+          "options": [
+            "A Corporate Psychopath",
+            "A bad businessman",
+            "A Narcissist",
+            "A leader"
+          ],
+          "correct": "A Corporate Psychopath",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They flourish in business because they can lie without sweating.",
+            "incorrect": "Narcissists need praise. This person needs *profit* and *thrills*."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E20",
+          "type": "scenario",
+          "scene": "Scenario: 'I hurt you because I love you too much.'",
+          "question": "This statement is:",
+          "options": [
+            "Gaslighting / Paradoxical Logic.",
+            "True love.",
+            "Romantic.",
+            "An apology."
+          ],
+          "correct": "Gaslighting / Paradoxical Logic.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They redefine 'harm' as 'love' to confuse you. Love does not hurt.",
+            "incorrect": "It is a contradiction used to justify abuse."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E21",
+          "type": "multiple-choice",
+          "question": "Why is 'Grey Rock' (Boredom) the only effective weapon against a Psychopath?",
+          "options": [
+            "Because they need Stimulation. If you are boring, you are useless to them.",
+            "Because they like rocks.",
+            "Because it makes them happy.",
+            "It isn't effective."
+          ],
+          "correct": "Because they need Stimulation. If you are boring, you are useless to them.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Starve the need for drama, and the predator moves on.",
+            "incorrect": "It's about utility. A boring toy is a discarded toy."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E22",
+          "type": "scenario",
+          "scene": "Scenario: You catch them stealing. They stare at you blankly. 'So what?'",
+          "question": "This reaction shows:",
+          "options": [
+            "The Mask Drop (Intimidation).",
+            "Confusion.",
+            "Guilt.",
+            "Fear."
+          ],
+          "correct": "The Mask Drop (Intimidation).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They know they are caught, so they drop the 'Nice' mask and show the 'Predator' face to scare you into silence.",
+            "incorrect": "They are not confused. They are daring you to do something about it."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E23",
+          "type": "ethical-dilemma",
+          "scene": "You see a Psychopath charming a new victim at a party. Do you warn the victim?",
+          "question": "The safest choice is:",
+          "options": [
+            "No. The victim is currently under the 'Love Bomb' spell and won't believe you. You will become the target of the Psychopath.",
+            "Yes, shout it out loud.",
+            "Attack the Psychopath.",
+            "Follow them home."
+          ],
+          "correct": "No. The victim is currently under the 'Love Bomb' spell and won't believe you. You will become the target of the Psychopath.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. It is tragic, but intervening usually backfires. Triangulation will make you look like the 'Crazy Enemy.' Protect yourself.",
+            "incorrect": "The victim trusts the predator, not you. You will be painted as jealous or crazy."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E24",
+          "type": "fill-in",
+          "sentence": "A Psychopath does not have relationships; they have (--------).",
+          "options": [
+            "transactions",
+            "love",
+            "family",
+            "peace"
+          ],
+          "answers": [
+            "transactions"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Everything is a trade. 'I give you charm; you give me money/sex/status.'",
+            "incorrect": "There is no emotional bond, only exchange of value."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E25",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm not bad, I'm just misunderstood.'",
+          "question": "This is:",
+          "options": [
+            "The Victim Stance.",
+            "Truth.",
+            "Insight.",
+            "Humility."
+          ],
+          "correct": "The Victim Stance.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They use the complexity of their 'darkness' to intrigue and trap rescuers.",
+            "incorrect": "They are understood perfectly by victims; they are predators."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E26",
+          "type": "true-false",
+          "scene": "Scenario: You can negotiate with a Psychopath using 'Win-Win' logic.",
+          "question": "Is this effective?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. They play a 'Zero-Sum Game.' For them to win, you must lose. They view 'Win-Win' as a missed opportunity to take everything.",
+            "incorrect": "They want to dominate, not cooperate."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E27",
+          "type": "scenario",
+          "scene": "Scenario: You leave them. They don't chase you. They instantly replace you.",
+          "question": "This confirms:",
+          "options": [
+            "You were just a 'Source' of Supply. The appliance broke, so they got a new one.",
+            "They are respecting your space.",
+            "They are heartbroken.",
+            "They are shy."
+          ],
+          "correct": "You were just a 'Source' of Supply. The appliance broke, so they got a new one.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The speed of replacement is the final proof of their lack of attachment.",
+            "incorrect": "It's not respect. It's efficiency. They need fuel, and you stopped providing it."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E28",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the Psychopath's empathy:",
+          "words": [
+            "but",
+            "feel",
+            "know",
+            "don't",
+            "They",
+            "it"
+          ],
+          "correct": "They know but don't feel it",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Cognitive Empathy (Knowing) without Emotional Empathy (Feeling).",
+            "incorrect": "It is data, not emotion."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E29",
+          "type": "multiple-choice",
+          "question": "What is 'The Smear Campaign'?",
+          "options": [
+            "Preemptive destruction of your reputation so no one believes your story.",
+            "Cleaning.",
+            "Art.",
+            "Politics."
+          ],
+          "correct": "Preemptive destruction of your reputation so no one believes your story.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Before you can expose them, they tell everyone *you* are the crazy one.",
+            "incorrect": "It is a strategic attack on your credibility."
+          }
+        },
+        {
+          "exerciseId": "A4-5-P2-E30",
+          "type": "case-analysis",
+          "caseTitle": "Gauntlet Complete",
+          "scene": "You have survived the mind of the Predator. You see the Void. You know the Danger.",
+          "question": "You are ready for the Final Challenge of Unit 4:",
+          "options": [
+            "The 'Serial Manipulator' Boss Scenario (Simulation).",
+            "Lesson A1-1.",
+            "Giving up.",
+            "Trusting."
+          ],
+          "correct": "The 'Serial Manipulator' Boss Scenario (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The final test is to survive a relationship with a 'Serial' user who cycles through people like tissues.",
+            "incorrect": "Next up: The final boss."
+          }
+        }
+      ]
+    }
+  ]
+}

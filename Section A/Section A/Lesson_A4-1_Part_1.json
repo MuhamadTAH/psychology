@@ -1,0 +1,348 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A4",
+  "unitTitle": "The Void Behind the Mask: Psychopathy",
+  "lessonId": "A4-1",
+  "lessonTitle": "The Biological Predator",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "Primary vs. Secondary Psychopathy (Born vs. Made)",
+  "objective": "To define Psychopathy as a distinct neurological condition involving a lack of fear and conscience, and to distinguish between Primary (Genetic) and Secondary (Environmental) types.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A4-1-P1-S1",
+      "screenType": "Learn",
+      "title": "The Void",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You have met the Ego (Narcissist) and the Strategist (Machiavellian). Now you meet the **Predator**."
+        },
+        {
+          "type": "paragraph",
+          "text": "Psychopathy is not just 'being mean.' It is a distinct neurological condition marked by a **total absence of conscience and fear**. To a psychopath, other people are simply objects to be used for stimulation."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Core Concept: The Narcissist hides a wound. The Psychopath has no wound. They have a Void."
+        }
+      ]
+    },
+    {
+      "screenId": "A4-1-P1-S2",
+      "screenType": "Exercises",
+      "title": "Defining the Predator",
+      "exercises": [
+        {
+          "exerciseId": "A4-1-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the defining neurological characteristic of a **Primary Psychopath**?",
+          "options": [
+            "They are very sad.",
+            "They have a reduced or absent Fear Response (Low Arousal).",
+            "They have too much empathy.",
+            "They are always angry."
+          ],
+          "correct": "They have a reduced or absent Fear Response (Low Arousal).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Their amygdala (fear center) does not light up like a normal person's. They literally do not feel fear or anxiety.",
+            "incorrect": "It is not sadness or anger. It is the *absence* of fear that allows them to take extreme risks without sweating."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P1-E2",
+          "type": "matching",
+          "question": "Match the Dark Triad member to their motivation:",
+          "pairs": [
+            {
+              "term": "Narcissist",
+              "definition": "Admiration (Ego)"
+            },
+            {
+              "term": "Machiavellian",
+              "definition": "Power (Strategy)"
+            },
+            {
+              "term": "Psychopath",
+              "definition": "Stimulation / Dominance (The Void)"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Narcissists need you to love them. Machiavellians need you to obey. Psychopaths need you to *entertain* them.",
+            "incorrect": "Think about the goal. The Psychopath is bored and needs stimulation."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P1-E3",
+          "type": "fill-in",
+          "sentence": "Primary Psychopathy is largely (--------) (Nature). Secondary Psychopathy is largely (--------) (Nurture).",
+          "options": [
+            "genetic",
+            "environmental",
+            "magical",
+            "fake"
+          ],
+          "answers": [
+            "genetic",
+            "environmental"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Primary Psychopaths are 'born.' Secondary Psychopaths (Sociopaths) are 'made' through trauma.",
+            "incorrect": "Primary is biological (born). Secondary is environmental (made)."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I know hurting you is wrong, but I just don't care. It feels good to win.'",
+          "question": "Is this the mindset of a Psychopath?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They understand 'right and wrong' intellectually (they aren't insane), but they lack the *emotional* hardware (Conscience) to care.",
+            "incorrect": "They know the rules; they just view them as optional."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P1-E5",
+          "type": "scenario",
+          "scene": "Scenario: You confront a partner about a betrayal. A Narcissist would get defensive/angry. A Machiavellian would lie strategically.",
+          "question": "What might a Psychopath do?",
+          "options": [
+            "Cry uncontrollably.",
+            "Stare at you blankly, then smile and say, 'You look funny when you're mad.'",
+            "Apologize sincerely.",
+            "Run away."
+          ],
+          "correct": "Stare at you blankly, then smile and say, 'You look funny when you're mad.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is the 'Predatory Stare.' They feel no guilt. Instead, they are *amused* by your pain. It is entertainment to them.",
+            "incorrect": "They don't feel shame or guilt. They often feel boredom or amusement during your crisis."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to describe the Psychopath's view of people:",
+          "words": [
+            "prey",
+            "world",
+            "hunting",
+            "ground",
+            "is",
+            "a",
+            "The",
+            "full",
+            "of"
+          ],
+          "correct": "The world is a hunting ground full of prey",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They divide the world into two categories: Predators (Them) and Prey (Everyone else).",
+            "incorrect": "It is a predatory worldview. Dominate or be dominated."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "A term often used interchangeably with 'Secondary Psychopath,' referring to someone whose anti-social behavior is caused by trauma, abuse, or bad environment.",
+          "question": "What is this term?",
+          "options": [
+            "Sociopath",
+            "Narcissist",
+            "Empath",
+            "Machiavellian"
+          ],
+          "correct": "Sociopath",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Psychopath' usually implies born (Cold). 'Sociopath' usually implies made (Hot/Erratic).",
+            "incorrect": "The 'made' version is commonly called a Sociopath."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P1-E8",
+          "type": "multiple-choice",
+          "question": "What is 'The Mask of Sanity'?",
+          "options": [
+            "A horror movie.",
+            "The ability of a psychopath to mimic normal human behavior so perfectly that they appear charming, rational, and sane.",
+            "A medical mask.",
+            "Being crazy."
+          ],
+          "correct": "The ability of a psychopath to mimic normal human behavior so perfectly that they appear charming, rational, and sane.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. (Hervey Cleckley). They are not raving madmen. They are the charming CEO, the helpful neighbor, the perfect date.",
+            "incorrect": "It refers to their camouflage. They wear 'sanity' like a costume."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "A Psychopath is CEO. They cut safety regulations to boost stock price, knowing people might get hurt.",
+          "question": "How do they feel about the potential victims?",
+          "options": [
+            "Deeply guilty.",
+            "Worried about lawsuits only (Practical concern, not Moral concern).",
+            "Sad.",
+            "Angry."
+          ],
+          "correct": "Worried about lawsuits only (Practical concern, not Moral concern).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They understand *consequences* (losing money/jail), but they do not understand *morality* (hurting people). People are just numbers.",
+            "incorrect": "Guilt requires a conscience. They don't have one."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P1-E10",
+          "type": "scenario",
+          "scene": "Scenario: A 'Secondary Psychopath' (Sociopath) gets angry. They scream, break things, and act impulsively.",
+          "question": "How is this different from a 'Primary Psychopath'?",
+          "options": [
+            "It isn't.",
+            "A Primary Psychopath is 'Cold' and calculated. A Secondary Psychopath is 'Hot' and erratic.",
+            "The Primary is louder.",
+            "The Secondary is nicer."
+          ],
+          "correct": "A Primary Psychopath is 'Cold' and calculated. A Secondary Psychopath is 'Hot' and erratic.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The 'Born' predator is ice cold (low arousal). The 'Made' sociopath is emotionally dysregulated (hot).",
+            "incorrect": "The difference is temperature. Primary = Ice. Secondary = Fire."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P1-E11",
+          "type": "fill-in",
+          "sentence": "A Psychopath has no (--------) for others, only (--------) for themselves.",
+          "options": [
+            "empathy",
+            "interest",
+            "fear",
+            "hate"
+          ],
+          "answers": [
+            "empathy",
+            "interest"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Their emotional world is entirely self-referential. You exist only as a tool for their gratification.",
+            "incorrect": "They lack Empathy (feeling for you). They have high Interest (feeling for themselves)."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I can spot a psychopath because they look evil.'",
+          "question": "Is this true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They often look better than normal. They take care of their appearance, make intense eye contact, and have 'Super-Charm.'",
+            "incorrect": "The 'evil look' is a movie myth. In real life, they look like your dream partner."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P1-E13",
+          "type": "matching",
+          "question": "Match the Trait to the Behavior:",
+          "pairs": [
+            {
+              "term": "Lack of Remorse",
+              "definition": "Hurting someone and sleeping soundly."
+            },
+            {
+              "term": "Impulsivity",
+              "definition": "Doing whatever feels good *now* regardless of risk."
+            },
+            {
+              "term": "Parasitic Lifestyle",
+              "definition": "Living off others' money/effort."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. These are items from the 'Hare Psychopathy Checklist' (PCL-R).",
+            "incorrect": "No remorse = good sleep after bad deeds. Impulsivity = Now > Later."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P1-E14",
+          "type": "scenario",
+          "scene": "Scenario: You try to scare a Primary Psychopath. 'If you do that, you will lose everything!' They smile.",
+          "question": "Why aren't they scared?",
+          "options": [
+            "They are brave.",
+            "They have a biological deficit in the amygdala. They literally cannot feel the physical sensation of fear.",
+            "They are stupid.",
+            "They are deaf."
+          ],
+          "correct": "They have a biological deficit in the amygdala. They literally cannot feel the physical sensation of fear.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. It's not bravery (overcoming fear); it's fearlessness (absence of fear). Threats often excite them rather than deter them.",
+            "incorrect": "It is biological. Their brain does not process threat signals like yours does."
+          }
+        },
+        {
+          "exerciseId": "A4-1-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Predator Revealed",
+          "scene": "You have defined the Psychopath: A biological predator with no conscience, low fear, and a need for stimulation. They wear a Mask of Sanity.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Spotting 'Cold' vs. 'Hot' Aggression (Real-world examples).",
+            "How to be a psychopath.",
+            "A lesson on Narcissism.",
+            "Sleeping."
+          ],
+          "correct": "Practice: Spotting 'Cold' vs. 'Hot' Aggression (Real-world examples).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now you need to learn to spot the difference between an angry person (Hot) and a dangerous predator (Cold).",
+            "incorrect": "Next up: Distinguishing between emotional dysregulation and predatory calculation."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B5",
+  "unitTitle": "Section B Grand Review: The Master Tactician",
+  "lessonId": "B5-2",
+  "lessonTitle": "Social & Emotional Levers Review",
+  "lessonType": "Review",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Pressure Test\"",
+  "objective": "To master the defense against combined emotional leverage tactics by identifying 'The Squeeze' (Time + Social Pressure + Debt) and maintaining autonomy in a high-stakes simulation.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Pressure_Proof_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B5-2-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Pressure Chamber",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In this challenge, you will face a 'Cluster Attack.' The manipulator will not use just one lever; they will use all of them."
+        },
+        {
+          "type": "paragraph",
+          "text": "They will make you feel **Rushed** (Scarcity), **Indebted** (Reciprocity), **Stupid** (Authority), and **Alone** (Social Proof)."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Do not break. Slow the time. Reject the debt. Question the crowd."
+        }
+      ]
+    },
+    {
+      "screenId": "B5-2-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The 'Inner Circle'",
+      "exercises": [
+        {
+          "exerciseId": "B5-2-P3-E1",
+          "type": "boss-scenario",
+          "scene": "You are invited to a private dinner by a 'Guru.' He bought your meal ($100). He says: 'I am launching a new venture. Everyone at this table is in. We launch at midnight. I need your answer now. Are you with us, or are you out?'",
+          "question": "Identify the 3 Levers being used:",
+          "options": [
+            "Reciprocity (Dinner) + Social Proof (Everyone is in) + Scarcity (Midnight).",
+            "Gaslighting + Fear + Anger.",
+            "Love Bombing + Hate + Logic.",
+            "Honesty + Integrity + Patience."
+          ],
+          "correct": "Reciprocity (Dinner) + Social Proof (Everyone is in) + Scarcity (Midnight).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. He bought the meal to create debt. He used the group to create peer pressure. He set a deadline to kill your critical thinking.",
+            "incorrect": "It is a coordinated attack on your autonomy using Debt, Herd, and Time."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Walk Away",
+          "steps": [
+            {
+              "scene": "You say: 'I need 24 hours to think.' The Guru frowns. 'I thought you were a decision-maker. Everyone else here made a decision. Maybe you aren't right for the Inner Circle.'",
+              "options": [
+                "'I am a decision maker! I'm in!' (Ego Trap)",
+                "'You're right, I'm not worthy.' (Submission)",
+                "'A decision maker gathers facts. If the offer is good, it will be good tomorrow. If it requires a blind 'Yes' tonight, the answer is No.' (Frame Control)",
+                "Apologize."
+              ],
+              "correct": "'A decision maker gathers facts. If the offer is good, it will be good tomorrow. If it requires a blind 'Yes' tonight, the answer is No.' (Frame Control)",
+              "feedback": {
+                "correct": "Perfect. You redefined 'Decision Maker' from 'Impulsive' to 'Smart.' You called the bluff on the deadline.",
+                "incorrect": "Defending your ego ('I am a decision maker!') plays right into their hand. You must reject their definition."
+              }
+            },
+            {
+              "question": "Guru: 'Fine. Walk away. But don't come crying to me when we are all rich and you are stuck in your 9-5.' (Fear-Mongering/FOMO).",
+              "options": [
+                "'Wait! I'll sign!' (Panic)",
+                "'I am comfortable with that risk. Enjoy your dinner.' (Outcome Independence)",
+                "'You are a scammer.' (Fight)",
+                "Stay and argue."
+              ],
+              "correct": "'I am comfortable with that risk. Enjoy your dinner.' (Outcome Independence)",
+              "feedback": {
+                "correct": "Mastery. The only way to win is to be willing to lose the 'opportunity.' Outcome Independence destroys their leverage.",
+                "incorrect": "If you show fear of missing out, they will reel you back in. You must be indifferent."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Inner Circle. You realized that high-pressure 'opportunities' are usually traps.",
+            "incorrect": "You let your Ego and FOMO make a $10,000 mistake."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why do manipulators combine **Reciprocity** and **Authority**?",
+          "options": [
+            "Because it is confusing.",
+            "Because it makes it doubly hard to say 'No.' You feel 'ungrateful' (Reciprocity) and 'disobedient' (Authority) at the same time.",
+            "They don't.",
+            "To be funny."
+          ],
+          "correct": "Because it makes it doubly hard to say 'No.' You feel 'ungrateful' (Reciprocity) and 'disobedient' (Authority) at the same time.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A boss who buys you a gift and then asks for an unethical favor is using this combo. It attacks your conscience from two sides.",
+            "incorrect": "It creates a 'double bind' of obligation and deference."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P3-E4",
+          "type": "fill-in",
+          "sentence": "To defeat Emotional Leverage, you must disconnect the (--------) from the (--------).",
+          "options": [
+            "feeling, action",
+            "money, bank",
+            "love, hate",
+            "car, road"
+          ],
+          "answers": [
+            "feeling, action"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Feel the fear (feeling), but do not sign the paper (action). Feel the guilt (feeling), but do not say yes (action).",
+            "incorrect": "You cannot stop the feeling (amygdala), but you can control the action (behavior)."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'I did this huge favor for you (Reciprocity), and now you won't help me? You are putting the whole team at risk (Fear/Social Proof).'",
+          "question": "The defense is:",
+          "options": [
+            "Apologize and help.",
+            "Say: 'I appreciate the favor you did, but I cannot do what you are asking. We need to find another solution for the team.'",
+            "Get angry.",
+            "Cry."
+          ],
+          "correct": "Say: 'I appreciate the favor you did, but I cannot do what you are asking. We need to find another solution for the team.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Acknowledge the debt (validating the feeling) but refuse the specific payment method (maintaining the boundary).",
+            "incorrect": "Don't let them set the exchange rate. You can repay a favor in a different way that doesn't violate your boundaries."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'If you really trusted me, you wouldn't ask for a contract.'",
+          "question": "Is this a 'Trust Bind'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They frame 'Verification' as 'Distrust.' Real professionals *want* a contract. Manipulators hate paper trails.",
+            "incorrect": "It is a tactic to avoid accountability. 'Trust' should be documented."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Walk Away' mindset:",
+          "words": [
+            "need",
+            "deal",
+            "bad",
+            "Never",
+            "a"
+          ],
+          "correct": "Never need a bad deal",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If you *need* it, you will accept bad terms. You must always be able to survive without it.",
+            "incorrect": "Neediness is weakness. Optionality is strength."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "Using a 'Fake Crisis' to force a victim to bypass security protocols (e.g., 'The server is melting down, let me in!').",
+          "question": "What is this Social Engineering tactic?",
+          "options": [
+            "Urgency Hacking",
+            "Love Bombing",
+            "Anchoring",
+            "Mirroring"
+          ],
+          "correct": "Urgency Hacking",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Urgency overrides protocol. The 'Crisis' is the lever used to pry open the door.",
+            "incorrect": "It relies on the target's desire to be helpful in a crisis."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "A charity uses pictures of starving children to trigger Guilt and Fear to get donations.",
+          "question": "Is this manipulation?",
+          "options": [
+            "Yes, it is 'Emotional Leverage,' but society accepts it because the cause is good.",
+            "No, it is just facts.",
+            "Yes, it is evil.",
+            "No, pictures are neutral."
+          ],
+          "correct": "Yes, it is 'Emotional Leverage,' but society accepts it because the cause is good.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It *is* a manipulation tactic (Fear/Guilt appeal). It is considered ethical only because the *end* (saving children) justifies the *means* (emotional distress).",
+            "incorrect": "It is not neutral. It is designed to bypass logic and trigger an emotional wallet opening."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'This is the last car on the lot at this price.'",
+          "question": "You should assume:",
+          "options": [
+            "It is true.",
+            "It is a Scarcity Tactic until proven otherwise.",
+            "The car is bad.",
+            "The dealer is nice."
+          ],
+          "correct": "It is a Scarcity Tactic until proven otherwise.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Verification is key. Check the inventory online. Check other dealers. Don't take their word for it.",
+            "incorrect": "Assume it is a tactic. Scarcity is the oldest trick in the book."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P3-E11",
+          "type": "fill-in",
+          "sentence": "When you feel pressure, (--------) the interaction.",
+          "options": [
+            "pause",
+            "speed",
+            "end",
+            "start"
+          ],
+          "answers": [
+            "pause"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You don't have to say 'No' forever, just 'No for now.' Pausing kills the manipulator's momentum.",
+            "incorrect": "Speed helps them. Pausing helps you."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'Everyone agrees with me except you.'",
+          "question": "Is this Gaslighting via Social Proof?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It invents a 'Consensus' to make you feel like the 'Crazy Outlier.' It attacks your perception of social reality.",
+            "incorrect": "It is a lie designed to isolate you."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: You are in a 'Timeshare Presentation.' They keep you in a room for 4 hours, give you free food, and use multiple closers.",
+          "question": "This environment is designed to:",
+          "options": [
+            "Educate you.",
+            "Create 'Ego Depletion' (Fatigue) + Reciprocity + Social Pressure.",
+            "Feed you.",
+            "Make friends."
+          ],
+          "correct": "Create 'Ego Depletion' (Fatigue) + Reciprocity + Social Pressure.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Fatigue lowers willpower. Food creates debt. Closers apply pressure. It is a psychological kill box.",
+            "incorrect": "They want you tired, full, and guilty. A tired brain signs anything to leave."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P3-E14",
+          "type": "matching",
+          "question": "Match the defense mantra:",
+          "pairs": [
+            {
+              "term": "For Scarcity",
+              "definition": "\"There is always another deal.\""
+            },
+            {
+              "term": "For Reciprocity",
+              "definition": "\"I don't owe you for unasked favors.\""
+            },
+            {
+              "term": "For Fear",
+              "definition": "\"Check the probability, not the story.\""
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Internalize these mantras. Abundance, Boundaries, Logic.",
+            "incorrect": "Match the mindset to the threat."
+          }
+        },
+        {
+          "exerciseId": "B5-2-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Unbreakable",
+          "scene": "You have survived the pressure. You know that 'Urgency' is a red flag, and 'Debt' is a trap. You are ready for the final tests.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson B5-3: The 'Salesman' Simulation (Boss Level).",
+            "Lesson A1-1.",
+            "Giving up.",
+            "Buying a boat."
+          ],
+          "correct": "Lesson B5-3: The 'Salesman' Simulation (Boss Level).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now we move to the 'Special Bosses.' First up: The Salesman.",
+            "incorrect": "Next up: Applying all tools against a Master Salesman."
+          }
+        }
+      ]
+    }
+  ]
+}

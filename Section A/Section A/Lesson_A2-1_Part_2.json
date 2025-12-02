@@ -1,0 +1,304 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A2",
+  "unitTitle": "The Manipulator's Playbook: Narcissism & Gaslighting",
+  "lessonId": "A2-1",
+  "lessonTitle": "Narcissism: The Architect of Self",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Grandiose vs. Vulnerable Narcissism",
+  "objective": "Practice identifying the two main narcissistic 'masks' (Grandiose and Covert) and recognize the core emotion they use to manipulate you.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A2-1-P2-S1",
+      "screenType": "Exercises",
+      "title": "Practice: Grandiose vs. Vulnerable",
+      "exercises": [
+        {
+          "exerciseId": "A2-1-P2-E1",
+          "type": "multiple-choice",
+          "question": "Review: What is the primary source of 'Supply' a **Grandiose (Overt)** Narcissist seeks?",
+          "options": [
+            "Financial stability.",
+            "Pity and sympathy from others.",
+            "Admiration, obedience, and perceived superiority.",
+            "A sense of internal peace."
+          ],
+          "correct": "Admiration, obedience, and perceived superiority.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The Grandiose type demands you confirm their superiority. Their mask is *arrogance*.",
+            "incorrect": "Incorrect. Pity and sympathy are the currency of the *Covert* (Vulnerable) type."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P2-E2",
+          "type": "scenario",
+          "scene": "Scenario: You give your colleague 'Alex' some minor, objective feedback about a project deadline. Alex immediately explodes, saying: 'How DARE you question my competence? I'm the only reason this project is afloat! You are a small-minded amateur!'",
+          "question": "What narcissistic mask is Alex wearing?",
+          "options": [
+            "Vulnerable (Covert)",
+            "Grandiose (Overt)",
+            "A Healthy, Confident person",
+            "An Empath"
+          ],
+          "correct": "Grandiose (Overt)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The immediate explosion, denial of fault, and attempt to assert **superiority** are classic Grandiose traits. The mask is *Rage*.",
+            "incorrect": "Incorrect. The Grandiose type attacks back to prove they are 'above' you. A Covert type would use withdrawal or victimhood."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P2-E3",
+          "type": "scenario",
+          "scene": "Scenario: You give your friend 'Jamie' the same minor, objective feedback about a shared task. Jamie immediately starts crying, saying: 'I knew I was useless. I'm just too sensitive for this world. I guess I'll just quit and fail on my own so I don't drag everyone down with me.'",
+          "question": "What narcissistic mask is Jamie wearing?",
+          "options": [
+            "Grandiose (Overt)",
+            "Vulnerable (Covert)",
+            "A Healthy, Confident person",
+            "A Psychopath"
+          ],
+          "correct": "Vulnerable (Covert)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Jamie is using **victimhood** and **guilt** to get 'Supply' (your pity and rescue). The mask is *Shame* or *Sadness*.",
+            "incorrect": "Incorrect. Jamie is trying to manipulate you by making you feel sorry for them (getting Pity/Sympathy Supply). This is the Covert style."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P2-E4",
+          "type": "multiple-choice",
+          "question": "Which emotion is the **Grandiose (Overt)** Narcissist most likely to use to get you to comply or back down?",
+          "options": [
+            "Pity and self-pity.",
+            "Grief and sorrow.",
+            "Anger, threat, and intimidation.",
+            "Empathy."
+          ],
+          "correct": "Anger, threat, and intimidation.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They use the threat of **rage** or **punishment** to control you and confirm their dominance.",
+            "incorrect": "Pity and self-pity are the tools of the *Covert* type."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P2-E5",
+          "type": "multiple-choice",
+          "question": "Which emotion is the **Vulnerable (Covert)** Narcissist most likely to use to get you to comply or 'rescue' them?",
+          "options": [
+            "Open contempt and arrogance.",
+            "Guilt, shame, and martyrdom.",
+            "Aggressive demands.",
+            "Sarcasm."
+          ],
+          "correct": "Guilt, shame, and martyrdom.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They make you feel **guilty** for their suffering, forcing you to step in as their 'Rescuer' to stop the flow of their self-pity.",
+            "incorrect": "Open contempt and arrogance are used by the *Grandiose* type. The Covert type uses *covert* (hidden) emotional manipulation."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P2-E6",
+          "type": "matching",
+          "question": "Match the core **Defense Reaction** to the type when they are criticized:",
+          "pairs": [
+            {
+              "term": "Grandiose/Overt",
+              "definition": "Reaction = **Rage/Attack** (Denial of fault)"
+            },
+            {
+              "term": "Vulnerable/Covert",
+              "definition": "Reaction = **Withdrawal/Sulking** (Oversized self-pity)"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Perfect. One attacks outward (Rage), the other collapses inward (Pity), but both are designed to shut down the criticism and get Supply.",
+            "incorrect": "Remember the masks: The Grandiose mask attacks (Rage), the Covert mask retreats (Pity/Sulking)."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P2-E7",
+          "type": "build-sentence",
+          "question": "Complete the statement about the **Grandiose** approach:",
+          "words": [
+            "prove",
+            "best",
+            "They",
+            "they",
+            "are",
+            "the"
+          ],
+          "correct": "They prove they are the best",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Their life is a constant competition to prove their mask is real.",
+            "incorrect": "The Grandiose type seeks to *prove* their superiority."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P2-E8",
+          "type": "build-sentence",
+          "question": "Complete the statement about the **Covert** approach:",
+          "words": [
+            "the",
+            "draw",
+            "pity",
+            "They",
+            "Rescuer",
+            "to"
+          ],
+          "correct": "They draw pity to the Rescuer",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They position themselves as a victim so you step in as the Rescuer, providing their Supply (pity and compliance).",
+            "incorrect": "The Covert type's goal is to make you pity them and become their Rescuer."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P2-E9",
+          "type": "scenario",
+          "scene": "Scenario: You are having dinner with your partner 'Taylor,' who starts a conversation about a celebrity's recent failure. Taylor says, 'I feel so sorry for them. They clearly didn't have the emotional support I give you. It must be agonizing to know you failed simply because you weren't good enough. Unlike me, who always follows through.'",
+          "question": "Which mask is Taylor wearing, and why?",
+          "options": [
+            "Grandiose (Overt) - They are overtly putting the celebrity down and exalting themselves as 'always following through.'",
+            "Vulnerable (Covert) - They are using pity for the celebrity to draw attention to how much emotional support *they* give you.",
+            "A mix of both, making it impossible to tell.",
+            "They are genuinely expressing sympathy."
+          ],
+          "correct": "Grandiose (Overt) - They are overtly putting the celebrity down and exalting themselves as 'always following through.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Although they use the word 'pity,' the primary function is **exaltation** (I'm better because I follow through) and **devaluation** (the celebrity failed because they weren't good enough). This is Grandiose.",
+            "incorrect": "The core of the statement is about asserting their own superiority ('Unlike me, who always follows through'), which is the goal of the Grandiose mask."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P2-E10",
+          "type": "multiple-choice",
+          "question": "If a narcissist always seeks roles where they are perceived as the **'Moral Hero'** or **'Spiritual Martyr'** (e.g., constantly volunteering for extremely difficult, thankless tasks they constantly complain about), which mask are they using?",
+          "options": [
+            "Grandiose (Overt)",
+            "Vulnerable (Covert)",
+            "The Victim Mask",
+            "The Helper Mask"
+          ],
+          "correct": "Vulnerable (Covert)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The Covert mask often uses 'martyrdom' to draw pity and praise. They are suffering **for** others, which makes them special and untouchable by criticism. Their Supply is 'Thank you for your sacrifice.'",
+            "incorrect": "The Grandiose type wants to be the 'Boss,' not the 'Martyr.' The martyr role is classic Covert."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P2-E11",
+          "type": "scenario",
+          "scene": "Scenario: You ask your co-worker 'Morgan' (who wears a Grandiose mask) to stay late to fix an error they made. Morgan says, 'I can't believe *I* made an error. This must be the first one in five years. You know, I had an offer last week from [Competitor X] who recognizes my real value. I guess I'll just check their offer now.'",
+          "question": "What is Morgan's primary goal in this situation?",
+          "options": [
+            "To inform you they are considering a job change.",
+            "To accept responsibility and apologize.",
+            "To use the threat of abandonment and assertion of superiority to avoid accountability.",
+            "To distract you with irrelevant gossip."
+          ],
+          "correct": "To use the threat of abandonment and assertion of superiority to avoid accountability.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They deflect accountability by asserting their rarity ('first one in five years') and using the **threat of leaving** to make you value them more and drop the criticism.",
+            "incorrect": "They are not accepting responsibility; they are deflecting it by making themselves seem irreplaceable."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P2-E12",
+          "type": "multiple-choice",
+          "question": "What is the **core, unshakeable belief** that drives **ALL** narcissistic behavior, regardless of the mask?",
+          "options": [
+            "The belief that they are fundamentally superior to everyone else.",
+            "The belief that they are incapable of making mistakes.",
+            "The deep, secret belief that they are **fundamentally flawed and worthless**.",
+            "The need to acquire wealth."
+          ],
+          "correct": "The deep, secret belief that they are **fundamentally flawed and worthless**.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Exactly. The mask (Grandiose or Covert) is constructed *entirely* to prevent this deep, fragile wound (the sense of worthlessness) from being exposed. The Supply feeds the mask, not the wound.",
+            "incorrect": "Their outward actions suggest superiority, but that is the **mask**. The root cause is a profound, core wound of shame and worthlessness."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: Your neighbor 'Chris' (who wears a Covert mask) constantly talks about their difficult life and how nobody else has problems as bad as theirs. When you mention you're stressed, Chris cuts you off: 'Oh, you're stressed? I wish I had your problems. I have [list of major issues] and I'm still showing up. I guess I'm just built differently.'",
+          "question": "This is an example of which Covert manipulation tactic?",
+          "options": [
+            "Gaslighting",
+            "Pity Pushing (Making their pain bigger than yours)",
+            "Love Bombing",
+            "Overt Rage"
+          ],
+          "correct": "Pity Pushing (Making their pain bigger than yours)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The Covert mask elevates its own suffering to attract maximum sympathy, using it as a weapon to shut down your needs and shift focus back to them. This is the **Competition of Suffering**.",
+            "incorrect": "Overt Rage is Grandiose. This is a subtle attempt to get pity supply by invalidating your experience."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P2-E14",
+          "type": "true-false",
+          "question": "True or False: A Grandiose Narcissist will **never** switch to a Vulnerable (Covert) mask if their Overt mask fails (i.e., if they can't get admiration, they might try to get pity).",
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "False. Narcissists are manipulative chameleons. They will switch masks instantly if one is not getting the required Supply. The switch is a sign of desperation.",
+            "incorrect": "False. The mask is just a tool. If the hammer (Grandiose rage) doesn't work, they'll pick up the scalpel (Covert pity) to get what they want."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P2-E15",
+          "type": "multiple-choice",
+          "question": "Why is the **Vulnerable (Covert) mask** often harder for most people to identify than the Grandiose mask?",
+          "options": [
+            "They are louder and more attention-seeking.",
+            "Their victim act is a subtle form of emotional blackmail that looks like genuine suffering, triggering empathy.",
+            "They only operate in private settings.",
+            "They are much rarer than the Grandiose type."
+          ],
+          "correct": "Their victim act is a subtle form of emotional blackmail that looks like genuine suffering, triggering empathy.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The Covert mask is so effective because it exploits your normal human capacity for **empathy** and **guilt**, making you the one who feels bad for trying to hold them accountable.",
+            "incorrect": "The Covert act is successful because it triggers genuine compassion, masking the manipulation underneath."
+          }
+        }
+      ]
+    }
+  ]
+}

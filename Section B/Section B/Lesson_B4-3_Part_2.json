@@ -1,0 +1,334 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B4",
+  "unitTitle": "The Pressure Cooker: Emotional Leverage",
+  "lessonId": "B4-3",
+  "lessonTitle": "Fear-Mongering: The Boogeyman",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Fact-Checking the Fear",
+  "objective": "To practice identifying specific Fear tactics (Catastrophizing, The Slippery Slope, Fear-Then-Relief) and applying the 'Probability Check' defense.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B4-3-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Logic Shield",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Fear shuts down the logic center of the brain. To defeat it, you must manually turn logic back on."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Defense: Ask **'How likely is this?'** (Probability) instead of **'Is it possible?'** (Possibility). Almost anything is possible; very few things are likely."
+        }
+      ]
+    },
+    {
+      "screenId": "B4-3-P2-S2",
+      "screenType": "Exercises",
+      "title": "Calming the Panic",
+      "exercises": [
+        {
+          "exerciseId": "B4-3-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: A salesperson says: 'If you don't buy this extended warranty, your engine could explode next week and cost you $5,000!'",
+          "question": "This is:",
+          "options": [
+            "Catastrophizing (Focusing on the worst-case scenario).",
+            "Friendly advice.",
+            "A guarantee.",
+            "Optimism."
+          ],
+          "correct": "Catastrophizing (Focusing on the worst-case scenario).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They take a low-probability event (engine explosion) and treat it as imminent to sell you 'protection.'",
+            "incorrect": "It's not advice; it's a threat of financial ruin designed to panic you."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is the **Slippery Slope** fallacy?",
+          "options": [
+            "Walking on ice.",
+            "An argument that suggests a minor action will lead to a catastrophic chain reaction (e.g., 'If you let him stay out late once, he'll become a criminal').",
+            "A type of slide.",
+            "Being careful."
+          ],
+          "correct": "An argument that suggests a minor action will lead to a catastrophic chain reaction (e.g., 'If you let him stay out late once, he'll become a criminal').",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Manipulators use this to blow small boundaries out of proportion. 'If we give an inch, they take a mile.'",
+            "incorrect": "It is a logical fallacy used to create fear of small changes."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P2-E3",
+          "type": "fill-in",
+          "sentence": "Fear triggers the (--------) in the brain, bypassing the Prefrontal Cortex (Logic).",
+          "options": [
+            "amygdala",
+            "foot",
+            "heart",
+            "eyes"
+          ],
+          "answers": [
+            "amygdala"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The Amygdala is the 'Fight or Flight' alarm. When it rings, thinking stops.",
+            "incorrect": "It is the brain's fear center (Amygdala)."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P2-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'Better safe than sorry.'",
+          "question": "Is this phrase often used to justify irrational fear-mongering?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. While sometimes true, manipulators use it to sell unnecessary 'safety' products or restrictive laws. It shuts down cost-benefit analysis.",
+            "incorrect": "It is a thought-terminating cliché used to bypass the question: 'Is the safety worth the cost?'"
+          }
+        },
+        {
+          "exerciseId": "B4-3-P2-E5",
+          "type": "matching",
+          "question": "Match the Fear Tactic to the Defense:",
+          "pairs": [
+            {
+              "term": "Catastrophizing",
+              "definition": "Defense: \"What is the actual probability of that happening?\""
+            },
+            {
+              "term": "False Dilemma (Do or Die)",
+              "definition": "Defense: \"Are there other options besides ruin?\""
+            },
+            {
+              "term": "Urgent Threat",
+              "definition": "Defense: \"I need time to verify this threat.\""
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Check probability. Check options. Check facts.",
+            "incorrect": "Match the antidote to the poison."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: A politician says, 'They are coming to take your jobs!'",
+          "question": "This utilizes:",
+          "options": [
+            "Tribal Fear / Scapegoating.",
+            "Economic theory.",
+            "Love.",
+            "Hope."
+          ],
+          "correct": "Tribal Fear / Scapegoating.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It identifies an 'Enemy' to fear, creating group cohesion through shared anxiety.",
+            "incorrect": "It isn't economic theory. It is emotional manipulation using the 'Other'."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the cost of fear:",
+          "words": [
+            "Fear",
+            "trade",
+            "freedom",
+            "you",
+            "makes",
+            "safety",
+            "for"
+          ],
+          "correct": "Fear makes you trade freedom for safety",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. When scared, people willingly give up rights, money, or autonomy to a 'Protector.'",
+            "incorrect": "The trade is Freedom for Safety."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "A technique where the manipulator creates a state of high anxiety, then suddenly removes it to create compliance (e.g., 'Good Cop/Bad Cop').",
+          "question": "What is this?",
+          "options": [
+            "Fear-Then-Relief",
+            "Love Bombing",
+            "Anchoring",
+            "Mirroring"
+          ],
+          "correct": "Fear-Then-Relief",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The relief floods the brain, making the victim pliable and grateful to the person who stopped the fear.",
+            "incorrect": "It relies on the contrast between Terror and Safety."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "You see a child running toward a busy street. You scream 'STOP! CAR!'",
+          "question": "Is this manipulation?",
+          "options": [
+            "No. It is a Warning of Real Danger.",
+            "Yes, you used fear.",
+            "Yes, you yelled.",
+            "No, cars aren't real."
+          ],
+          "correct": "No. It is a Warning of Real Danger.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Fear is a survival mechanism. Triggering it for *survival* is ethical. Triggering it for *profit/control* is manipulation.",
+            "incorrect": "Using fear to save a life is the biological purpose of fear."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'You're going to die alone if you leave me.'",
+          "question": "This is:",
+          "options": [
+            "Emotional Terrorism / Coercive Control.",
+            "A prediction.",
+            "Love.",
+            "Fact."
+          ],
+          "correct": "Emotional Terrorism / Coercive Control.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. It uses the primal fear of isolation to hold you hostage in the relationship.",
+            "incorrect": "It is not love. It is a threat designed to paralyze you."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P2-E11",
+          "type": "fill-in",
+          "sentence": "The antidote to fear is (--------) and facts.",
+          "options": [
+            "information",
+            "running",
+            "hiding",
+            "screaming"
+          ],
+          "answers": [
+            "information"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Fear thrives in the unknown. Investigating the threat usually shrinks it.",
+            "incorrect": "Action (running) is a reaction to fear. Information cures it."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: Manipulators want you to verify their claims.",
+          "question": "True or False?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They rely on you accepting the threat at face value. Verification destroys the illusion of danger.",
+            "incorrect": "They hate verification. They love panic."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: A news headline reads: 'Is your toaster killing you? Tune in at 11.'",
+          "question": "This is:",
+          "options": [
+            "A Teaser / Fear-Mongering for views.",
+            "Public service.",
+            "Science.",
+            "Cooking advice."
+          ],
+          "correct": "A Teaser / Fear-Mongering for views.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If it were a real emergency, they would say 'Don't use your toaster!' They use the question to keep you watching (Ad Revenue).",
+            "incorrect": "It prioritizes 'Attention' over 'Information'."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P2-E14",
+          "type": "multiple-choice",
+          "question": "What is 'Probability Neglect'?",
+          "options": [
+            "Ignoring the low odds of an event because the event is scary (e.g., fearing sharks more than cars).",
+            "Being bad at math.",
+            "Forgetting numbers.",
+            "Ignoring people."
+          ],
+          "correct": "Ignoring the low odds of an event because the event is scary (e.g., fearing sharks more than cars).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. We fear the *magnitude* of the event (Shark Attack!) and ignore the *probability* (1 in 3 million). Manipulators sell protection against high-drama, low-risk events.",
+            "incorrect": "It is an emotional override of statistical reasoning."
+          }
+        },
+        {
+          "exerciseId": "B4-3-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Boogeyman Unmasked",
+          "scene": "You have learned to look at the monster under the bed and see that it is just a pile of clothes. Fear loses power when examined.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Doomsday' Pitch (Simulation).",
+            "Buying insurance.",
+            "Hiding.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Doomsday' Pitch (Simulation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you keep your cool when someone tells you the world is ending? Let's find out.",
+            "incorrect": "Next up: Surviving the ultimate fear pitch."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B5",
+  "unitTitle": "Section B Grand Review: The Master Tactician",
+  "lessonId": "B5-1",
+  "lessonTitle": "Language & Framing Review",
+  "lessonType": "Review",
+  "lessonPart": 1,
+  "lessonPartTitle": "NLP & Context Control (Units B1 & B2)",
+  "objective": "To synthesize and test comprehensive knowledge of Linguistic Tactics (NLP, Embedded Commands, Double Binds) and Perception Control (Framing, Anchoring, Contrast).",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B5-1-P1-S1",
+      "screenType": "Learn",
+      "title": "The Architect of Reality",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In Section B, you learned that reality is pliable. Words can program the mind (NLP), and context can change the meaning of facts (Framing)."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "This review consolidates the tools of the 'Silver Tongue' and the 'Frame Game.' You must know how to spot the hidden command and the rigged context."
+        }
+      ]
+    },
+    {
+      "screenId": "B5-1-P1-S2",
+      "screenType": "Exercises",
+      "title": "Concept Check: Language & Frames",
+      "exercises": [
+        {
+          "exerciseId": "B5-1-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the core formula for **Pacing and Leading** (NLP)?",
+          "options": [
+            "Command -> Command -> Command.",
+            "Validate Reality (Pace) -> Validate Reality (Pace) -> Suggest New Behavior (Lead).",
+            "Ask a question -> Wait -> Leave.",
+            "Lie -> Lie -> Truth."
+          ],
+          "correct": "Validate Reality (Pace) -> Validate Reality (Pace) -> Suggest New Behavior (Lead).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You must build the bridge of agreement (Pacing) before you can cross it (Leading).",
+            "incorrect": "Commands create resistance. Pacing lowers resistance."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: 'You are sitting here (Fact), listening to me (Fact), and you can *begin to relax* (Suggestion).'",
+          "question": "This is:",
+          "options": [
+            "A Yes Set.",
+            "Gaslighting.",
+            "A Double Bind.",
+            "A mistake."
+          ],
+          "correct": "A Yes Set.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It uses undeniable facts to create a rhythm of 'Yes,' making the brain accept the final suggestion.",
+            "incorrect": "It builds momentum for compliance."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P1-E3",
+          "type": "fill-in",
+          "sentence": "An Embedded Command is hidden using (--------) Marking (like a drop in tone or a pause).",
+          "options": [
+            "analog",
+            "digital",
+            "red",
+            "loud"
+          ],
+          "answers": [
+            "analog"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The words are Digital. The emphasis is Analog. The subconscious hears the emphasis.",
+            "incorrect": "It is the non-verbal highlight."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm not saying you *have to buy this*.'",
+          "question": "Does the subconscious hear the command 'buy this'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The brain cannot process the negation ('Not') without first imagining the action ('Buy'). The seed is planted.",
+            "incorrect": "Negation is a conscious filter. The image enters regardless."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P1-E5",
+          "type": "matching",
+          "question": "Match the Linguistic Trap:",
+          "pairs": [
+            {
+              "term": "Double Bind",
+              "definition": "\"A or B?\" (Both lead to Yes)."
+            },
+            {
+              "term": "Mind Read",
+              "definition": "\"I know you are wondering...\""
+            },
+            {
+              "term": "Nominalization",
+              "definition": "Abstract words like \"Success\" or \"Freedom\"."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Double Binds rig the choice. Mind Reads fake empathy. Nominalizations hide the details.",
+            "incorrect": "Review the definitions in Unit B1."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P1-E6",
+          "type": "scenario",
+          "scene": "Scenario: A salesperson shows you a $1,000 suit first, then a $100 tie. The tie seems cheap.",
+          "question": "This utilizes:",
+          "options": [
+            "The Contrast Principle.",
+            "Scarcity.",
+            "Reciprocity.",
+            "Logic."
+          ],
+          "correct": "The Contrast Principle.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The high price of the suit changes your perception of the tie's value. In isolation, $100 is a lot for a tie.",
+            "incorrect": "It is about relative value."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P1-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define 'Framing':",
+          "words": [
+            "context",
+            "meaning",
+            "The",
+            "determines",
+            "the"
+          ],
+          "correct": "The context determines the meaning",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you change the frame (context), you change how the victim feels about the fact.",
+            "incorrect": "Reality is neutral. The Frame gives it value."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P1-E8",
+          "type": "reverse-scenario",
+          "answer": "The cognitive bias where the first number spoken becomes the reference point for all future negotiations.",
+          "question": "What is this?",
+          "options": [
+            "Anchoring",
+            "Framing",
+            "Mirroring",
+            "Gaslighting"
+          ],
+          "correct": "Anchoring",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The Anchor has gravity. You negotiate away from it, but it pulls you back.",
+            "incorrect": "It sets the baseline."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "You want to help a friend quit smoking. You Frame it as 'Gaining Freedom' rather than 'Quitting'.",
+          "question": "Is this manipulation?",
+          "options": [
+            "Yes, but it is ethical 'Reframing' for a positive outcome.",
+            "No, it is just words.",
+            "Yes, it is evil.",
+            "Maybe."
+          ],
+          "correct": "Yes, but it is ethical 'Reframing' for a positive outcome.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You are shaping their perception to help them achieve their own goal. This is leadership.",
+            "incorrect": "It is active influence (manipulation of perception), but the intent creates the ethics."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P1-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'I know you are a person of integrity, so I know you'll do the right thing.'",
+          "question": "This is:",
+          "options": [
+            "Altercasting (Labeling).",
+            "A compliment.",
+            "A question.",
+            "A fact."
+          ],
+          "correct": "Altercasting (Labeling).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They assigned you the role of 'Integrity' to force you to comply with their version of the 'Right Thing.'",
+            "incorrect": "It traps you in a positive label."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P1-E11",
+          "type": "fill-in",
+          "sentence": "To defeat the Double Bind, you must (--------) the options provided.",
+          "options": [
+            "reject",
+            "accept",
+            "love",
+            "fear"
+          ],
+          "answers": [
+            "reject"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Step out of the frame. 'I choose neither A nor B. I choose C.'",
+            "incorrect": "If you choose from their menu, you lose."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'We can do it my way, or we can fail.'",
+          "question": "Is this a False Dilemma?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It presents only two options (Obedience or Disaster) when many others exist.",
+            "incorrect": "It erases the middle ground."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: You ask for the price. They say, 'It costs less than a cup of coffee a day.'",
+          "question": "This is:",
+          "options": [
+            "Reframing (Amortization).",
+            "Lying.",
+            "Anchoring.",
+            "Scarcity."
+          ],
+          "correct": "Reframing (Amortization).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They changed the frame from 'Total Cost' (High) to 'Daily Cost' (Low).",
+            "incorrect": "It changes the time-frame to minimize the pain of paying."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P1-E14",
+          "type": "matching",
+          "question": "Match the Counter-Move:",
+          "pairs": [
+            {
+              "term": "Against Vague Language",
+              "definition": "The Meta Model ('Who specifically?')."
+            },
+            {
+              "term": "Against Anchoring",
+              "definition": "The Flinch (Rejecting the number)."
+            },
+            {
+              "term": "Against Contrast",
+              "definition": "The Vacuum Test (Isolate the item)."
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Drill down on fluff. Flinch at anchors. Isolate from decoys.",
+            "incorrect": "Match the specific defense to the mechanism."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Toolkit",
+          "scene": "You have reviewed the verbal and psychological tools of the manipulator. You know how they twist words and context.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: Verbal Defense (The 'Verbal Judo' Gauntlet).",
+            "Being silent.",
+            "Buying things.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: Verbal Defense (The 'Verbal Judo' Gauntlet).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now we test your ability to verbally parry these attacks in real-time.",
+            "incorrect": "Next up: Practical application of linguistic defense."
+          }
+        }
+      ]
+    }
+  ]
+}

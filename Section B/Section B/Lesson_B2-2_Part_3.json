@@ -1,0 +1,357 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B2",
+  "unitTitle": "The Frame Game: Controlling Perception",
+  "lessonId": "B2-2",
+  "lessonTitle": "Anchoring: The Price of Perception",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Negotiation\" Simulation",
+  "objective": "To master the defense against Anchoring by resetting unfair price points, resisting the urge to 'Split the Difference', and maintaining leverage in a high-stakes negotiation.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Anchor_Breaker_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B2-2-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The High Stakes",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are entering a negotiation. The opponent is a master of Anchoring. They will start with an absurd number to skew your perception."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Do not let their number become the baseline. Reject it. Set your own."
+        }
+      ]
+    },
+    {
+      "screenId": "B2-2-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Deal",
+      "exercises": [
+        {
+          "exerciseId": "B2-2-P3-E1",
+          "type": "boss-scenario",
+          "scene": "You are selling a service worth $5,000. The client opens: 'We have a strict budget. We can offer $1,500, and that's generous compared to others.'",
+          "question": "This is an 'Extreme Low Anchor.' How do you respond?",
+          "options": [
+            "'Okay, maybe $3,000?' (Splitting the Difference)",
+            "Laugh (The Flinch) and say: 'I'm afraid we are too far apart to even begin. My services start at $5,000.' (Total Rejection)",
+            "'I can't do $1,500, but I can do $4,500.' (Defensive)",
+            "Walk away without a word."
+          ],
+          "correct": "Laugh (The Flinch) and say: 'I'm afraid we are too far apart to even begin. My services start at $5,000.' (Total Rejection)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You must completely invalidate the $1,500 anchor. Do not negotiate *up* from their number. Force them to negotiate *up* to your range.",
+            "incorrect": "If you say $3,000, you let them drag you down by $2,000 just by saying a low number. Don't validate the insult."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Salary Negotiation",
+          "steps": [
+            {
+              "scene": "Recruiter: 'We usually pay $60k for this role, but we really like you.' (Anchor: $60k). You know the market rate is $85k.",
+              "options": [
+                "'Could you do $70k?' (Splitting Difference)",
+                "'I appreciate that, but based on my research and the value I bring, I am looking for $90k.' (Counter-Anchor)",
+                "'Okay, $60k is fine.' (Submission)",
+                "'That is insulting.' (Anger)"
+              ],
+              "correct": "'I appreciate that, but based on my research and the value I bring, I am looking for $90k.' (Counter-Anchor)",
+              "feedback": {
+                "correct": "Perfect. You ignored their $60k and set a new Anchor at $90k. Now the 'middle' is $75k-$80k, which is closer to your goal.",
+                "incorrect": "If you ask for $70k, they will talk you down to $65k. You started too low."
+              }
+            },
+            {
+              "question": "Recruiter: '$90k is way over our budget. We might be able to stretch to $70k, but that is the absolute ceiling.' (The Bluff).",
+              "options": [
+                "'Okay, I'll take $70k.' (Fold)",
+                "'I understand budgets are tight. However, if we can't reach $85k on salary, I would need 5 extra vacation days and a signing bonus to bridge the gap.' (Pivot to Value)",
+                "'Fine, $80k.' (Haggling)",
+                "Leave."
+              ],
+              "correct": "'I understand budgets are tight. However, if we can't reach $85k on salary, I would need 5 extra vacation days and a signing bonus to bridge the gap.' (Pivot to Value)",
+              "feedback": {
+                "correct": "Mastery. You accepted their constraint (Budget) but maintained your value ($85k worth) by trading other currencies (Time/Bonus). You did not lower your worth.",
+                "incorrect": "Folding at $70k leaves money on the table. Haggling without leverage looks weak."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You reset the Anchor. You controlled the range.",
+            "incorrect": "You let their budget dictate your value. You lost."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why do experienced negotiators use 'Precise Numbers' (e.g., $4,850 instead of $5,000)?",
+          "options": [
+            "It signals that the number is calculated, thoughtful, and firm, making it harder to challenge.",
+            "They like math.",
+            "To be confusing.",
+            "It creates a discount."
+          ],
+          "correct": "It signals that the number is calculated, thoughtful, and firm, making it harder to challenge.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A round number feels like a guess. A precise number feels like a fact.",
+            "incorrect": "It builds credibility for the Anchor."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P3-E4",
+          "type": "fill-in",
+          "sentence": "If you cannot agree on the price, change the (--------) of the deal (e.g., time, scope, quality).",
+          "options": [
+            "terms",
+            "location",
+            "person",
+            "font"
+          ],
+          "answers": [
+            "terms"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Price is just one variable. If the Price Anchor is stuck, move the other variables.",
+            "incorrect": "Don't get stuck on one number. Negotiate the whole package."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'I can only offer you this price *today*.'",
+          "question": "This combines Anchoring with:",
+          "options": [
+            "Scarcity / Artificial Urgency.",
+            "Generosity.",
+            "Truth.",
+            "Love."
+          ],
+          "correct": "Scarcity / Artificial Urgency.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They anchor the price AND limit the time to stop you from thinking.",
+            "incorrect": "It is a pressure tactic."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: You make the first offer. You set it aggressively high.",
+          "question": "Is this a risk?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If the Anchor is *too* extreme (absurd), the other party might walk away immediately. It must be 'Defensibly High.'",
+            "incorrect": "An absurd anchor kills the deal. A high anchor stretches it."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense:",
+          "words": [
+            "not",
+            "reality",
+            "an",
+            "offer,",
+            "An",
+            "anchor",
+            "is"
+          ],
+          "correct": "An anchor is an offer, not reality",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Just because they said it, doesn't make it true. It is just a starting bid.",
+            "incorrect": "Treat it as a suggestion, not a fact."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "Reacting with visible shock, silence, or disgust to an offer to make the other person feel their number is offensive.",
+          "question": "What is this?",
+          "options": [
+            "The Flinch",
+            "The Smile",
+            "The Anchor",
+            "The Nod"
+          ],
+          "correct": "The Flinch",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The Flinch is a non-verbal rejection.",
+            "incorrect": "It signals 'That number is impossible.'"
+          }
+        },
+        {
+          "exerciseId": "B2-2-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are buying a car from a friend. They ask: 'What do you think it's worth?' They don't know the value.",
+          "question": "Do you set a Low Anchor to get a deal?",
+          "options": [
+            "Yes. Business is business.",
+            "No. With a friend, transparency maintains trust. Tell them the fair market value.",
+            "Yes, lie about the condition.",
+            "Refuse to answer."
+          ],
+          "correct": "No. With a friend, transparency maintains trust. Tell them the fair market value.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Exploiting a friend's ignorance destroys the relationship. Ethics > Profit in friendship.",
+            "incorrect": "Lowballing a friend is a quick way to lose a friend."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: A partner says, 'You've been working late every night this week.' (Fact). 'You're neglecting me.' (Frame).",
+          "question": "How do you Re-Anchor the time?",
+          "options": [
+            "'I'm sorry.'",
+            "'I worked late 3 nights, not every night. And we spent the weekend together.' (Fact-Check / Reality Anchor).",
+            "'You are needy.'",
+            "'I'll quit my job.'"
+          ],
+          "correct": "'I worked late 3 nights, not every night. And we spent the weekend together.' (Fact-Check / Reality Anchor).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They anchored 'Every Night' to create guilt. You reset the anchor to '3 Nights' to restore perspective.",
+            "incorrect": "Correct the data before you accept the guilt."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P3-E11",
+          "type": "fill-in",
+          "sentence": "In a negotiation, the person who can (--------) away has the most power.",
+          "options": [
+            "walk",
+            "run",
+            "talk",
+            "pay"
+          ],
+          "answers": [
+            "walk"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you are tethered to the deal, you must accept their Anchor. If you can walk, their Anchor means nothing.",
+            "incorrect": "Walk away power forces them to chase you."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm not sure if I can afford that...'",
+          "question": "Is this a weak response to an Anchor?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It implies you *want* to buy but lack ability. It invites them to 'help' you with financing. A strong response is: 'That is not the right price.'",
+            "incorrect": "Don't plead poverty. Challenge value."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: They offer $100. You want $200. They say: 'Let's just split the difference and say $150.'",
+          "question": "What should you do?",
+          "options": [
+            "Agree. It's fair.",
+            "Say: 'I can't do $150. The lowest I can go is $190.' (Resetting the Middle).",
+            "Get angry.",
+            "Walk away."
+          ],
+          "correct": "Say: 'I can't do $150. The lowest I can go is $190.' (Resetting the Middle).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Do not accept their 'Middle.' Create a new 'Middle' closer to your goal.",
+            "incorrect": "Splitting the difference on their terms is a loss."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P3-E14",
+          "type": "matching",
+          "question": "Match the Anchor to the Tactic:",
+          "pairs": [
+            {
+              "term": "High Anchor",
+              "definition": "Seller starting high to make the final price look cheap."
+            },
+            {
+              "term": "Low Anchor",
+              "definition": "Buyer starting low to lower expectations."
+            },
+            {
+              "term": "Emotional Anchor",
+              "definition": "Starting with a guilt trip to lower resistance."
+            }
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. High for sellers. Low for buyers. Emotional for manipulators.",
+            "incorrect": "Identify the direction of the pull."
+          }
+        },
+        {
+          "exerciseId": "B2-2-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Weight Removed",
+          "scene": "You have learned to lift the Anchor. You know that the first number is just a suggestion, not a law.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson B2-3: The Contrast Principle (Door-in-the-Face).",
+            "Lesson A1-1.",
+            "Spending money.",
+            "Sleeping."
+          ],
+          "correct": "Lesson B2-3: The Contrast Principle (Door-in-the-Face).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Contrast is the sister of Anchoring. How do they make one thing look good by showing you something bad first?",
+            "incorrect": "Next up: Relative Perception."
+          }
+        }
+      ]
+    }
+  ]
+}

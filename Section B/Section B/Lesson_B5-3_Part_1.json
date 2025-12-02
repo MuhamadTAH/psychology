@@ -1,0 +1,336 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B5",
+  "unitTitle": "Section B Grand Review: The Master Tactician",
+  "lessonId": "B5-3",
+  "lessonTitle": "The \"Salesman\" Simulation",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Pitch: Analyzing a Multi-Layered Attack",
+  "objective": "To deconstruct a high-level sales pitch by identifying the layered use of Reciprocity, Pacing, Embedded Commands, and Framing in real-time.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B5-3-P1-S1",
+      "screenType": "Learn",
+      "title": "The Kill Zone",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are about to face 'The Closer.' A Master Salesman does not use just one trick. They weave Language (B1), Frames (B2), Crowd dynamics (B3), and Urgency (B4) into a single web."
+        },
+        {
+          "type": "paragraph",
+          "text": "In this part, you must simply **Survive the Pitch**. Do not buy. Just identify the weapons being used against you."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Boss Ability: **The Stack**. Using 3+ manipulation tactics in a single sentence to overload your processing."
+        }
+      ]
+    },
+    {
+      "screenId": "B5-3-P1-S2",
+      "screenType": "Exercises",
+      "title": "Deconstruct the Pitch",
+      "exercises": [
+        {
+          "exerciseId": "B5-3-P1-E1",
+          "type": "boss-scenario",
+          "scene": "The Closer greets you warmly. 'Thanks for coming in. Here, have a cold water and a premium chocolate. It's hot outside (Fact), traffic was bad (Fact), so just *relax* (Command).'",
+          "question": "Identify the 3 tactics used in this opening:",
+          "options": [
+            "Reciprocity (Gift) + Pacing (Facts) + Embedded Command ('Relax').",
+            "Gaslighting + Fear + Anger.",
+            "Honesty + Generosity + Logic.",
+            "Scarcity + Authority + Guilt."
+          ],
+          "correct": "Reciprocity (Gift) + Pacing (Facts) + Embedded Command ('Relax').",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They gave you a gift to create debt (Reciprocity), Paced your reality (Weather/Traffic), and slid in a command to lower your guard ('Relax').",
+            "incorrect": "It's a 'Stack.' The gift creates obligation. The facts build the Yes Set. The command induces trance."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P1-E2",
+          "type": "scenario",
+          "scene": "Closer: 'I don't know if this *premium package* is right for you... it's usually for our most elite clients.'",
+          "question": "This combines:",
+          "options": [
+            "The Take-Away + Ego Trap (Exclusivity).",
+            "Honesty.",
+            "A bad sales pitch.",
+            "Insult."
+          ],
+          "correct": "The Take-Away + Ego Trap (Exclusivity).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They pull it away ('I don't know') to trigger Reactance, and frame it as 'Elite' so you want to prove you are worthy.",
+            "incorrect": "They want you to chase the status. It is 'The Velvet Rope' tactic."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P1-E3",
+          "type": "multiple-choice",
+          "question": "Why did the Closer say: 'Let me check with my manager to see if I can get you a special deal'?",
+          "options": [
+            "To help you.",
+            "To create an 'Us vs. Them' alliance (Liking) and a 'Time Delay' to wear you down.",
+            "The manager is the real boss.",
+            "They forgot the price."
+          ],
+          "correct": "To create an 'Us vs. Them' alliance (Liking) and a 'Time Delay' to wear you down.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They pretend to fight *for* you against the 'mean manager.' It builds trust. Also, making you wait increases your Sunk Cost (Time).",
+            "incorrect": "The 'manager' is often in on it (or doesn't exist). It is theater."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P1-E4",
+          "type": "fill-in",
+          "sentence": "The Closer asks: 'Do you care about your family's financial (--------)?'",
+          "options": [
+            "safety",
+            "fun",
+            "colors",
+            "car"
+          ],
+          "answers": [
+            "safety"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the 'Moral Bind.' If you say 'No,' you are a bad person. If you say 'Yes,' you must buy the product.",
+            "incorrect": "It creates a trap where 'Buying' = 'Loving Family.'"
+          }
+        },
+        {
+          "exerciseId": "B5-3-P1-E5",
+          "type": "true-false",
+          "scene": "Scenario: 'Most people in your neighborhood are upgrading to this system.'",
+          "question": "Is this Social Proof?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It triggers the 'Bandwagon Effect.' You don't want to be the only one left behind (Outlier).",
+            "incorrect": "It leverages your neighbors to pressure you."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P1-E6",
+          "type": "scenario",
+          "scene": "Closer: 'Imagine... waking up tomorrow with *zero debt*. How good does that feel?'",
+          "question": "This is:",
+          "options": [
+            "Future Pacing / Hypnotic Visualization.",
+            "Financial planning.",
+            "A question.",
+            "Lying."
+          ],
+          "correct": "Future Pacing / Hypnotic Visualization.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They transport you past the 'Cost' (Paying) to the 'Benefit' (Relief). Once you feel the relief, you will pay to keep it.",
+            "incorrect": "It isn't planning; it's emotional induction. They are selling the *feeling* of freedom."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P1-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define 'The Assumptive Close':",
+          "words": [
+            "not",
+            "Ask",
+            "if",
+            "when",
+            "but"
+          ],
+          "correct": "Ask when not if",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Do you want delivery Tuesday or Wednesday?' assumes you bought it.",
+            "incorrect": "Never ask 'Do you want to buy?' That allows a 'No'."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P1-E8",
+          "type": "reverse-scenario",
+          "answer": "Asking a high price ($5,000), getting rejected, then offering the 'real' price ($2,000) to make it look like a deal.",
+          "question": "What is this sequence?",
+          "options": [
+            "Anchor -> Rejection -> Retreat (Door-in-the-Face)",
+            "Foot-in-the-Door",
+            "Gaslighting",
+            "Love Bombing"
+          ],
+          "correct": "Anchor -> Rejection -> Retreat (Door-in-the-Face)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It uses Contrast (5k vs 2k) and Reciprocity (I lowered the price, so you should say Yes).",
+            "incorrect": "It combines multiple laws of influence."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "The Closer says: 'Honestly, I shouldn't tell you this, but the price goes up 20% tomorrow.' (You suspect it's a lie).",
+          "question": "How do you test the 'Scarcity'?",
+          "options": [
+            "Call the bluff. 'I'm willing to risk it. I'll decide next week.'",
+            "Buy now to save money.",
+            "Call the police.",
+            "Get angry."
+          ],
+          "correct": "Call the bluff. 'I'm willing to risk it. I'll decide next week.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If the price rise is fake, they will find a way to 'extend' the offer to keep you. If they let you walk, it might be real (but you still kept your power).",
+            "incorrect": "Panic buying validates the tactic. Always test the deadline."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P1-E10",
+          "type": "scenario",
+          "scene": "Closer: 'You look like a smart person who knows value.'",
+          "question": "This is:",
+          "options": [
+            "Altercasting / Labeling.",
+            "A fact.",
+            "Politeness.",
+            "Observation."
+          ],
+          "correct": "Altercasting / Labeling.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They label you 'Smart.' If you don't buy the 'Value' deal, you are proving yourself 'Not Smart.' It traps your ego.",
+            "incorrect": "It is a constraint on your behavior using identity."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P1-E11",
+          "type": "fill-in",
+          "sentence": "The Salesman sells the (--------), not the product.",
+          "options": [
+            "emotion",
+            "logic",
+            "plastic",
+            "specs"
+          ],
+          "answers": [
+            "emotion"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They sell Safety, Status, or Relief. The product is just the vehicle for the emotion.",
+            "incorrect": "Logic doesn't sell. Emotion sells. Logic justifies."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'Just sign here, here, and here. It's standard.' (Speeding you up).",
+          "question": "Is this a trance induction?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Rapid physical commands ('Sign here') create a compliance rhythm. You stop reading and start obeying.",
+            "incorrect": "Speed prevents thinking. Slow down to read the fine print."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P1-E13",
+          "type": "matching",
+          "question": "Match the Closer's Phrase to the Tactic:",
+          "pairs": [
+            {
+              "term": "\"I'm on your side.\"",
+              "definition": "Fake Us vs. Them (Rapport)."
+            },
+            {
+              "term": "\"It's only $1 a day.\"",
+              "definition": "Reframing (Amortization)."
+            },
+            {
+              "term": "\"Don't decide yet.\"",
+              "definition": "Negative Command (Lowering resistance)."
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They build rapport, minimize cost, and bypass resistance simultaneously.",
+            "incorrect": "Analyze the function of the phrase."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P1-E14",
+          "type": "multiple-choice",
+          "question": "What is the 'Sharp Angle' close?",
+          "options": [
+            "When the customer asks for a concession ('Can you include delivery?'), the Closer says: 'If I do, will you sign *right now*?'",
+            "Using geometry.",
+            "Yelling.",
+            "Walking away."
+          ],
+          "correct": "When the customer asks for a concession ('Can you include delivery?'), the Closer says: 'If I do, will you sign *right now*?'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They trade a small concession for the biggest prize: The Signature. It traps you in your own request.",
+            "incorrect": "It uses your request as the closing mechanism."
+          }
+        },
+        {
+          "exerciseId": "B5-3-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Pitch Analyzed",
+          "scene": "You have dissected the pitch. You see the Reciprocity, the Framing, and the Scarcity. The Closer is good, but you are awake.",
+          "question": "In Part 2, we will practice:",
+          "options": [
+            "Practice: The Counter-Offer (Defense and Negotiation).",
+            "Buying the product.",
+            "Leaving.",
+            "Lesson A1-1."
+          ],
+          "correct": "Practice: The Counter-Offer (Defense and Negotiation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that you survived the attack, it is time to counter-attack. How do you turn the tables?",
+            "incorrect": "Next up: Taking back control of the deal."
+          }
+        }
+      ]
+    }
+  ]
+}

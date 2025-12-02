@@ -1,0 +1,267 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A1",
+  "unitTitle": "The Fast Hook",
+  "lessonId": "A1-1",
+  "lessonTitle": "The First Hook",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "The Promise - Learn to Fight Back",
+  "objective": "To solidify the 'hook' by giving the user a clear promise of the skills they will build, focusing on awareness and defense.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "complete",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "complete",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Observer_Badge_Level_1"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A1-1-P3-S1",
+      "screenType": "Learn",
+      "title": "The Promise",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You've been hooked and you've seen the debrief. You now see how a manipulator's script works."
+        },
+        {
+          "type": "alert",
+          "alertType": "info",
+          "text": "Falling for the 'Coffee Shop' scenario doesn't make you weak; it makes you *human*. These tactics are designed to exploit normal human kindness. Now, let's promise to turn that weakness into a strength."
+        }
+      ]
+    },
+    {
+      "screenId": "A1-1-P3-S2",
+      "screenType": "Exercises",
+      "exercises": [
+        {
+          "exerciseId": "A1-1-P3-E2",
+          "type": "true-false",
+          "statement": "The best way to defend yourself is to learn how manipulators think.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "explanation": "To defend a castle, you must understand how an attacker thinks. We are learning the 'Dark' psychology to build our 'Light' defense."
+        },
+        {
+          "exerciseId": "A1-1-P3-E3",
+          "type": "fill-in",
+          "sentence": "This app will teach you to spot ___ tactics and build ___ boundaries.",
+          "options": [
+            "covert",
+            "strong",
+            "obvious",
+            "weak",
+            "friendly"
+          ],
+          "answers": [
+            "covert",
+            "strong"
+          ],
+          "difficulty": "medium",
+          "explanation": "The most dangerous tactics are 'covert' (hidden). Your best defense is a set of 'strong' personal and emotional boundaries."
+        },
+        {
+          "exerciseId": "A1-1-P3-E4",
+          "type": "build-sentence",
+          "question": "Arrange these words into our core philosophy:",
+          "words": [
+            "is",
+            "power,",
+            "is",
+            "not",
+            "offense",
+            "Knowledge",
+            "defense"
+          ],
+          "correct": "Knowledge is power, defense is not offense",
+          "difficulty": "medium",
+          "explanation": "This is a key ethical concept. Learning these skills is about protecting yourself, not about harming others."
+        },
+        {
+          "exerciseId": "A1-1-P3-E5",
+          "type": "multiple-choice",
+          "question": "In the next Unit, you will start learning specific tactics. What is the *first* one you'll likely study?",
+          "options": [
+            "Advanced sales techniques",
+            "Workplace politics",
+            "Narcissism and Gaslighting",
+            "How to make friends"
+          ],
+          "correct": "Narcissism and Gaslighting",
+          "difficulty": "easy",
+          "explanation": "Exactly. We will start with the 'core' tactics that you saw your 'friend' Alex use on a small scale."
+        },
+        {
+          "exerciseId": "A1-1-P3-E6",
+          "type": "scenario",
+          "scene": "A user of this app learns the 'Reciprocity Trap' tactic.",
+          "question": "What is the *ethical* way to use this knowledge?",
+          "options": [
+            "To use it to get small favors from co-workers.",
+            "To *recognize* when it's being used on you and politely decline.",
+            "To give people gifts so they always 'owe' you.",
+            "To avoid all gifts from everyone, forever."
+          ],
+          "correct": "To *recognize* when it's being used on you and politely decline.",
+          "difficulty": "medium",
+          "explanation": "The promise is about *defense*. You will learn to spot the trap and say, 'Thank you, but I'm good,' breaking the cycle of 'debt'."
+        },
+        {
+          "exerciseId": "A1-1-P3-E7",
+          "type": "true-false",
+          "statement": "The rest of this app will be mostly reading long texts about history.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "explanation": "This app teaches by 'doing.' You will learn through hundreds of interactive exercises, scenarios, and simulations, just like this one."
+        },
+        {
+          "exerciseId": "A1-1-P3-E8",
+          "type_comment": "This exercise 'links' to the next lesson in the user's plan (A1-2)",
+          "type": "multiple-choice",
+          "question": "You already learned a bit about 'Flattery.' What is the *danger* of excessive, vague flattery?",
+          "options": [
+            "It can make you feel good.",
+            "It's a tool to make you drop your guard and comply with requests.",
+            "It's a sign the person is very nice.",
+            "It has no danger."
+          ],
+          "correct": "It's a tool to make you drop your guard and comply with requests.",
+          "difficulty": "medium",
+          "explanation": "Correct. In Lesson A1-2, we will dive deep into 'Flattery & Rapport' as a dedicated tactic."
+        },
+        {
+          "exerciseId": "A1-1-P3-E9",
+          "type": "reverse-scenario",
+          "answer": "A 'Boss Scenario'",
+          "question": "What does this term mean in this app?",
+          "options": [
+            "A simulation of talking to your boss.",
+            "A test that is impossibly difficult.",
+            "A complex scenario that *combines multiple tactics* at once.",
+            "A simple, easy-to-pass quiz."
+          ],
+          "correct": "A complex scenario that *combines multiple tactics* at once.",
+          "difficulty": "medium",
+          "explanation": "You've already passed one! The 'Coffee Shop' was a 'Boss Scenario' because it combined 5 different tactics."
+        },
+        {
+          "exerciseId": "A1-1-P3-E10",
+          "type": "build-sentence",
+          "question": "Arrange these words into the *manipulator's* mindset:",
+          "words": [
+            "means",
+            "the",
+            "justifies",
+            "The",
+            "end"
+          ],
+          "correct": "The end justifies the means",
+          "difficulty": "medium",
+          "explanation": "This is the core of Machiavellianism, which we'll cover later. It means 'It's okay to do bad things to get what I want.'"
+        },
+        {
+          "exerciseId": "A1-1-P3-E11",
+          "type": "ethical-dilemma",
+          "scene": "You are about to start Lesson A1-2. You are tempted to use these tactics yourself.",
+          "question": "What is the 'Prime Directive' of this app?",
+          "options": [
+            "Win at all costs.",
+            "Do no harm. Use this knowledge for awareness and defense.",
+            "Practice on your friends to get good.",
+            "Only manipulate people who deserve it."
+          ],
+          "correct": "Do no harm. Use this knowledge for awareness and defense.",
+          "difficulty": "medium",
+          "explanation": "This is the 'Ethical Compass.' We are learning this to build a 'shield,' not a 'sword.' This is the promise."
+        },
+        {
+          "exerciseId": "A1-1-P3-E12",
+          "type": "fill-in",
+          "sentence": "This app will train you to move from (--------) to (--------).",
+          "options": [
+            "victim",
+            "defender",
+            "aggressor",
+            "student",
+            "expert",
+            "follower"
+          ],
+          "answers": [
+            "victim",
+            "defender"
+          ],
+          "difficulty": "medium",
+          "explanation": "The 'victim' is unaware. The 'defender' is aware and prepared. That is the journey we are on."
+        },
+        {
+          "exerciseId": "A1-1-P3-E13",
+          "type": "multiple-choice",
+          "question": "Why did this lesson *start* with a 'Hook' scenario where you failed?",
+          "options": [
+            "To be mean and make you feel bad.",
+            "To prove the app is too hard for you.",
+            "To *show* you your blind spots, so you'd be motivated to learn.",
+            "To trick you into buying premium features."
+          ],
+          "correct": "To *show* you your blind spots, so you'd be motivated to learn.",
+          "difficulty": "easy",
+          "explanation": "Exactly. You can't fix a problem you don't know you have. Now you've seen the threat, and you've made the promise. You're ready."
+        },
+        {
+          "exerciseId": "A1-1-P3-E14",
+          "type": "true-false",
+          "statement": "By the end of this app, I will be able to spot 'Alex' from a mile away and know exactly what to do.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "explanation": "That is the promise. You will learn to see the patterns, name the tactics, and deploy a defense. This is what we will do together."
+        },
+        {
+          "exerciseId": "A1-1-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Hook",
+          "scene": "You've completed all 3 parts of 'The First Hook.' You were tested, debriefed, and given the promise. You have learned to identify 5 core tactics: Flattery, Mirroring, Reciprocity, Vulnerability, and Grooming.",
+          "question": "You are now ready to begin your first *real* tactical lesson:",
+          "options": [
+            "Lesson A1-2: Tactic Teaser: Flattery & Rapport",
+            "Lesson B1-1: Advanced Brainwashing",
+            "Lesson D5-1: How to Rule the World",
+            "Lesson A1-1: Part 4 (This lesson is over)"
+          ],
+          "correct": "Lesson A1-2: Tactic Teaser: Flattery & Rapport",
+          "difficulty": "easy",
+          "explanation": "Congratulations. You've completed your 'bootcamp.' It's time to start your real training. Click next to begin Lesson A1-2."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A3",
+  "unitTitle": "The Grand Chessmaster: Machiavellianism",
+  "lessonId": "A3-4",
+  "lessonTitle": "The Detached Operator: Lack of Empathy vs. Regulation",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Robot\" Negotiation",
+  "objective": "To master the interaction with a Detached Operator by suppressing emotional reactions, using 'Cognitive Empathy' to predict their moves, and negotiating with pure logic and leverage.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Ice_King_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A3-4-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: Speak Their Language",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A Narcissist feeds on your emotion. A Machiavellian (The Robot) ignores it."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you cry, beg, or get angry, you lose. To win this challenge, you must shut down your own 'Emotional Empathy' and engage your 'Cognitive Empathy.' You must think like a machine."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Do not appeal to their heart (it is closed). Appeal to their **Interest** (it is always open)."
+        }
+      ]
+    },
+    {
+      "screenId": "A3-4-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Negotiation",
+      "exercises": [
+        {
+          "exerciseId": "A3-4-P3-E1",
+          "type": "boss-scenario",
+          "scene": "You are asking for a raise from a Machiavellian boss. You say: 'I need more money because my rent went up and I'm really stressed.' They stare at you blankly.",
+          "question": "Why did this fail?",
+          "options": [
+            "They didn't hear you.",
+            "You appealed to Pity/Emotion, which has zero value to a Detached Operator.",
+            "They are evil.",
+            "You weren't loud enough."
+          ],
+          "correct": "You appealed to Pity/Emotion, which has zero value to a Detached Operator.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Your stress is irrelevant to their bottom line. You spoke 'Human,' not 'Machine.'",
+            "incorrect": "They heard you; they just didn't care. Emotional pleas are noise to a strategist."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Leverage Pivot",
+          "steps": [
+            {
+              "scene": "Boss: 'I can't give you a raise. The budget is tight.' (The Shut Down).",
+              "options": [
+                "'Please! I really need it!' (Begging)",
+                "'That's not fair! I work so hard!' (Anger)",
+                "'I understand the budget is tight. However, my recent project saved the company $50k.' (Logic/Value)",
+                "Cry."
+              ],
+              "correct": "'I understand the budget is tight. However, my recent project saved the company $50k.' (Logic/Value)",
+              "feedback": {
+                "correct": "Perfect. You used Cognitive Empathy ('I understand the budget') and pivoted to Value ($50k). You are speaking their language.",
+                "incorrect": "Begging and Anger confirm you are weak/emotional. You must present cold, hard value."
+              }
+            },
+            {
+              "question": "Boss: 'That's true. But $50k isn't that much.' (Minimizing).",
+              "options": [
+                "'It is to me!' (Emotional)",
+                "'If I leave, it will cost you $20k to recruit and train a replacement. A $5k raise is cheaper.' (Leverage)",
+                "'You are greedy.' (Insult)",
+                "Walk away."
+              ],
+              "correct": "'If I leave, it will cost you $20k to recruit and train a replacement. A $5k raise is cheaper.' (Leverage)",
+              "feedback": {
+                "correct": "Mastery. You presented a 'Cost-Benefit Analysis.' You showed them that paying you is the *logical* choice to save money. You won.",
+                "incorrect": "Don't make it personal ('greedy'). Make it mathematical. Show them the cost of losing you."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Robot. You didn't ask for a favor; you proposed a transaction.",
+            "incorrect": "You tried to guilt-trip a calculator. It failed."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P3-E3",
+          "type": "multiple-choice",
+          "question": "What is 'Emotional Contagion'?",
+          "options": [
+            "A virus.",
+            "When you 'catch' the emotion of the person you are talking to (e.g., they panic, so you panic).",
+            "Being sick.",
+            "Laughing."
+          ],
+          "correct": "When you 'catch' the emotion of the person you are talking to (e.g., they panic, so you panic).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Machiavellians are immune to this. You must learn to be immune too, or they will use their fake calm to destabilize you.",
+            "incorrect": "It is the automatic transfer of feelings. You must block it to think clearly."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P3-E4",
+          "type": "fill-in",
+          "sentence": "To defeat a Detached Operator, you must detach from the (--------).",
+          "options": [
+            "outcome",
+            "money",
+            "truth",
+            "law"
+          ],
+          "answers": [
+            "outcome"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. 'Outcome Independence.' If you are desperate for the deal, they smell it and exploit you. If you are willing to walk away, you have power.",
+            "incorrect": "You must detach from the *need* for a specific result. Desperation is blood in the water."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: You are breaking up with a Detached Operator. You are crying. They are calmly eating a sandwich.",
+          "question": "What should you do?",
+          "options": [
+            "Scream 'Do you even care?!'",
+            "Try to make them cry.",
+            "Realize they are incapable of mirroring your pain, stop crying, and handle the logistics of the breakup calmly.",
+            "Throw the sandwich."
+          ],
+          "correct": "Realize they are incapable of mirroring your pain, stop crying, and handle the logistics of the breakup calmly.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Screaming won't make them care. It just feeds their superiority. Accept the ice and finish the business.",
+            "incorrect": "They don't care. Your screams just confirm their belief that you are 'irrational.' Save your dignity."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm not arguing with you. I'm just stating facts.'",
+          "question": "Is this a common tactic to invalidate emotions?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They frame their *opinion* as 'Fact' and your *opinion* as 'Emotion.' It establishes them as the superior intellect.",
+            "incorrect": "They use the label 'Fact' to dismiss your valid perspective."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the Machiavellian view of people:",
+          "words": [
+            "chess",
+            "pieces",
+            "People",
+            "are"
+          ],
+          "correct": "People are chess pieces",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You don't hate a chess piece, and you don't love it. You move it. If it gets taken, you sacrifice it.",
+            "incorrect": "This is the core of dehumanization. People are objects of utility."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A negotiation tactic where you react to their offer with visible shock or silence to make them feel insecure and lower their price.",
+          "question": "What is this?",
+          "options": [
+            "The Flinch",
+            "The Hug",
+            "The Smile",
+            "The Nod"
+          ],
+          "correct": "The Flinch",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It is a performed emotion (shock) used to manipulate the other person's confidence.",
+            "incorrect": "It is a deliberate non-verbal cue that signals 'That offer is insulting' without saying a word."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "Your company is selling a product that harms people. Your Machiavellian boss says, 'It's legal, and the shareholders need the profit.'",
+          "question": "How do you respond to this 'Cold Logic'?",
+          "options": [
+            "Agree. Profit is the only goal.",
+            "Get angry and quit.",
+            "Counter with 'Risk Logic': 'If this harms people, the lawsuits and bad PR will destroy shareholder value long-term.'",
+            "Ignore it."
+          ],
+          "correct": "Counter with 'Risk Logic': 'If this harms people, the lawsuits and bad PR will destroy shareholder value long-term.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You fought logic with *better* logic. You translated 'Ethics' into 'Shareholder Value.' This is the only way to persuade them.",
+            "incorrect": "They don't care about 'harm.' They care about 'profit.' You must show that harm *destroys* profit."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: A manipulator uses 'Cognitive Empathy' to describe your pain perfectly: 'I know you feel abandoned and scared.' Then they ask for money.",
+          "question": "This proves that:",
+          "options": [
+            "They really understand you.",
+            "Understanding is not Caring. They used the understanding to unlock your wallet.",
+            "They are a therapist.",
+            "They are kind."
+          ],
+          "correct": "Understanding is not Caring. They used the understanding to unlock your wallet.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is the most dangerous trap. Just because they 'get' you, doesn't mean they 'love' you. They 'get' you so they can 'use' you.",
+            "incorrect": "Understanding without care is just analysis. It's a tool for extraction."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P3-E11",
+          "type": "fill-in",
+          "sentence": "Don't listen to their words. Watch their (--------).",
+          "options": [
+            "hands",
+            "feet",
+            "actions",
+            "lips"
+          ],
+          "answers": [
+            "actions"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Words are part of the mask. Actions reveal the strategy.",
+            "incorrect": "Ignore the speech. Look at the result of their behavior."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: You can defeat a Detached Operator by making them feel guilty.",
+          "question": "Is this true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct/False. They do not have the hardware for guilt. Trying to guilt-trip them is like trying to drown a fish.",
+            "incorrect": "Guilt requires Emotional Empathy. They lack it. You are wasting your energy."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P3-E13",
+          "type": "matching",
+          "question": "Match the Defense to the Attack:",
+          "pairs": [
+            {
+              "term": "They use Silence.",
+              "definition": "You use Silence back (Mirroring)."
+            },
+            {
+              "term": "They use Pity.",
+              "definition": "You use Facts."
+            },
+            {
+              "term": "They use Logic.",
+              "definition": "You use Leverage."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Don't fill their silence. Don't buy their pity. Don't argue logic without leverage.",
+            "incorrect": "Silence defeats silence. Facts defeat pity. Leverage defeats logic."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P3-E14",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm not cold. I'm just pragmatic. Someone has to make the hard choices.'",
+          "question": "This is a rationalization for:",
+          "options": [
+            "Lack of Empathy.",
+            "Leadership.",
+            "Heroism.",
+            "Kindness."
+          ],
+          "correct": "Lack of Empathy.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They rebrand their empathy deficit as 'strength' or 'pragmatism.'",
+            "incorrect": "It is the mask of the 'Hard Man.' It hides the inability to connect."
+          }
+        },
+        {
+          "exerciseId": "A3-4-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Robot Defeated",
+          "scene": "You have learned to negotiate with the ice. You know that against a Detached Operator, you must leave your heart at the door and bring your calculator.",
+          "question": "You are ready for the Unit 3 Review:",
+          "options": [
+            "Lesson A3-5: The Unit 3 Review (The Chessboard).",
+            "Lesson A1-1.",
+            "Quitting.",
+            "Crying."
+          ],
+          "correct": "Lesson A3-5: The Unit 3 Review (The Chessboard).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You have mastered Machiavellian Philosophy, Strategy, Logic, and Detachment. Now we test it all.",
+            "incorrect": "Next up: The final exam for the Grand Chessmaster unit."
+          }
+        }
+      ]
+    }
+  ]
+}

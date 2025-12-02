@@ -1,0 +1,281 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A1",
+  "unitTitle": "The Fast Hook",
+  "lessonId": "A1-4",
+  "lessonTitle": "The Second Hook",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "A New Scenario (The Guilt Trip)",
+  "objective": "To test the user's ability to detect emotional manipulation (guilt-tripping) in a high-stakes personal scenario.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A1-4-P1-S1",
+      "screenType": "Learn",
+      "title": "The Second Hook",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You handled a stranger ('Alex'). But what happens when the manipulator is someone you know and trust? The stakes are much higher."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Let's begin. You have plans to go to a movie with your friend 'Casey' tonight. Casey calls you, sounding very upset..."
+        }
+      ]
+    },
+    {
+      "screenId": "A1-4-P1-S2",
+      "screenType": "Exercises",
+      "exercises": [
+        {
+          "exerciseId": "A1-4-P1-E1",
+          "type": "scenario",
+          "scene": "Casey: 'Hey... you're not *busy*, are you? It sounds like you're busy, I'll just go...'",
+          "question": "This opening is a 'primer' designed to make you...",
+          "options": [
+            "Feel guilty and defensive immediately.",
+            "Hang up the phone.",
+            "Feel happy and excited.",
+            "Ask them for a favor."
+          ],
+          "correct": "Feel guilty and defensive immediately.",
+          "difficulty": "easy",
+          "explanation": "This is a passive-aggressive 'hook.' They *want* you to say, 'No, no, I'm not busy! What's wrong?' This puts them in control."
+        },
+        {
+          "exerciseId": "A1-4-P1-E2",
+          "type": "scenario",
+          "scene": "You: 'No, I can talk! I'm just getting ready for our movie. What's up?' Casey: (Sighs) 'The... the *movie*. Oh. I see. I guess that's more important.'",
+          "question": "What is the *tactic* Casey is using here?",
+          "options": [
+            "A Guilt-Trip (diminishing your plans).",
+            "Forgetting about the movie.",
+            "Honest communication.",
+            "Flattery."
+          ],
+          "correct": "A Guilt-Trip (diminishing your plans).",
+          "difficulty": "medium",
+          "explanation": "By dismissing the movie as 'less important' (without saying why), Casey is *implying* you are a bad friend for prioritizing it. This is Tactic #1: The Guilt-Trip."
+        },
+        {
+          "exerciseId": "A1-4-P1-E3",
+          "type": "true-false",
+          "statement": "This is an example of 'Weaponized Vulnerability.' Casey is using a 'sad' tone to make you feel responsible for their emotions.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "explanation": "This is Tactic #2. Just like 'Alex' in the coffee shop, Casey is using a 'vulnerable' state (a sad sigh) to pull you in and make you feel responsible."
+        },
+        {
+          "exerciseId": "A1-4-P1-E4",
+          "type": "scenario",
+          "scene": "You: 'What's wrong, Casey?' Casey: 'Oh, nothing... it's just... my car is making a weird noise and I just... I *really* need you to drive me to the auto shop *right now*. But, you know, the *movie*...'",
+          "question": "What is the *real* 'ask' here?",
+          "options": [
+            "For you to skip your plans and solve their problem.",
+            "For advice on car mechanics.",
+            "To know what time the movie starts.",
+            "For you to pay for their car."
+          ],
+          "correct": "For you to skip your plans and solve their problem.",
+          "difficulty": "easy",
+          "explanation": "The 'ask' is hidden inside a guilt-trip. The manipulator makes *you* feel like you have to *offer* to cancel your plans."
+        },
+        {
+          "exerciseId": "A1-4-P1-E5",
+          "type": "fill-in",
+          "sentence": "A 'guilt-trip' works by making you feel (--------) and (--------) for not doing what the manipulator wants.",
+          "options": [
+            "selfish",
+            "responsible",
+            "happy",
+            "proud",
+            "angry"
+          ],
+          "answers": [
+            "selfish",
+            "responsible"
+          ],
+          "difficulty": "medium",
+          "explanation": "The goal is to make you feel like a 'bad person' for having your own needs, forcing you to comply to prove you're a 'good person'."
+        },
+        {
+          "exerciseId": "A1-4-P1-E6",
+          "type": "scenario",
+          "scene": "You: 'The shop is on the other side of town! That'll take hours. We'll miss the movie for sure.' Casey: (Coldly) 'Wow. Okay. I see how it is. After all those times I helped you move? Unbelievable.'",
+          "question": "This is a very powerful tactic. What is it?",
+          "options": [
+            "A 'Historical' Guilt-Trip (using past favors as a weapon).",
+            "A simple misunderstanding.",
+            "A 'Gaslighting' attempt.",
+            "A compliment."
+          ],
+          "correct": "A 'Historical' Guilt-Trip (using past favors as a weapon).",
+          "difficulty": "hard",
+          "explanation": "This is a 'Reciprocity Trap' turned into a guilt-trip. Casey is implying that your friendship is 'transactional' and that you 'owe' them. This is Tactic #3."
+        },
+        {
+          "exerciseId": "A1-4-P1-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words into a core 'guilt' concept:",
+          "words": [
+            "your",
+            "own",
+            "Guilt-trips",
+            "against",
+            "turn",
+            "morals",
+            "you"
+          ],
+          "correct": "Guilt-trips turn your own morals against you",
+          "difficulty": "medium",
+          "explanation": "A manipulator knows you *want* to be a 'good friend.' They use that desire against you to control your behavior."
+        },
+        {
+          "exerciseId": "A1-4-P1-E8",
+          "type": "true-false",
+          "statement": "This scenario is 'darker' than the 'Coffee Shop' because the manipulation is coming from a trusted friend, not a stranger.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "explanation": "Emotional manipulation is *most* effective when it comes from people you love and trust, because you *care* what they think of you."
+        },
+        {
+          "exerciseId": "A1-4-P1-E9",
+          "type": "reverse-scenario",
+          "answer": "'If you *really* loved me, you would...' or 'I guess I'm just not as *important* as...'",
+          "question": "These are classic opening lines for what tactic?",
+          "options": [
+            "Flattery",
+            "A Guilt-Trip",
+            "A Direct Request",
+            "Gaslighting"
+          ],
+          "correct": "A Guilt-Trip",
+          "difficulty": "medium",
+          "explanation": "These phrases aren't requests; they are *challenges* to your character. They force you to 'prove' your love or loyalty by complying."
+        },
+        {
+          "exerciseId": "A1-4-P1-E10",
+          "type": "scenario",
+          "scene": "You: 'Casey, that's not fair! You're making me feel terrible!' Casey: 'What? I'm not doing *anything*! I'm just *sad*. You're the one who's overreacting and being defensive!'",
+          "question": "This is a 2-hit combo. A Guilt-Trip ('I'm just sad') combined with...?",
+          "options": [
+            "Gaslighting ('You're overreacting').",
+            "Flattery ('You're so smart').",
+            "Honesty.",
+            "A direct threat (Coercion)."
+          ],
+          "correct": "Gaslighting ('You're overreacting').",
+          "difficulty": "hard",
+          "explanation": "This is Tactic #4: Gaslighting. Casey is denying your reality. You *are* being guilt-tripped, but Casey is telling you you're 'overreacting' to make you doubt your own feelings."
+        },
+        {
+          "exerciseId": "A1-4-P1-E11",
+          "type": "ethical-dilemma",
+          "scene": "You feel trapped. You will feel 'guilty' if you go to the movie, but 'resentful' if you give in to Casey.",
+          "question": "What is the *most* manipulated response (the one Casey wants)?",
+          "options": [
+            "'(Sigh) Fine. I'll skip the movie. I'm on my way.'",
+            "'Casey, I can't help you *now*, but I can help you *tomorrow*.'",
+            "'You're trying to guilt-trip me, and it's not fair.'",
+            "'I'm going to the movie. I'll talk to you later.'"
+          ],
+          "correct": "'(Sigh) Fine. I'll skip the movie. I'm on my way.'",
+          "difficulty": "medium",
+          "explanation": "The manipulator wants you to abandon your *own* needs to serve *theirs*. Giving in rewards their bad behavior and proves the tactics worked."
+        },
+        {
+          "exerciseId": "A1-4-P1-E12",
+          "type": "boss-scenario",
+          "scene": "You try to set a boundary: 'Casey, I can't drive you right now.' Casey: 'Fine! Go. Have fun. I'll just... I'll just walk to the auto shop, I guess. It's only 5 miles. At night. It's... *fine*.' (Hangs up)",
+          "question": "This 'Boss Scenario' is a combination of a Guilt-Trip and...?",
+          "options": [
+            "The 'Martyr Complex' / Passive-Aggression",
+            "Flattery",
+            "A genuine 'okay' response.",
+            "Radical Honesty"
+          ],
+          "correct": "The 'Martyr Complex' / Passive-Aggression",
+          "difficulty": "hard",
+          "explanation": "This is a 'checkmate' move. Casey is playing the 'martyr' ('I'll just walk...'). The goal is to make *you* feel so overwhelmingly guilty that *you* call *them* back, apologizing."
+        },
+        {
+          "exerciseId": "A1-4-P1-E13",
+          "type": "fill-in",
+          "sentence": "Unlike 'Alex' (Flattery), 'Casey' used (--------) as their primary weapon.",
+          "options": [
+            "guilt",
+            "money",
+            "threats",
+            "kindness"
+          ],
+          "answers": [
+            "guilt"
+          ],
+          "difficulty": "easy",
+          "explanation": "Flattery 'pulls' you in by making you feel good. Guilt 'pushes' you by making you feel bad. Both are forms of manipulation."
+        },
+        {
+          "exerciseId": "A1-4-P1-E14",
+          "type": "true-false",
+          "statement": "The *real* conflict in this scenario is about car oil.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "hard",
+          "explanation": "This is a critical insight. The oil is the *excuse*. The real conflict is a *power-struggle* over your boundaries. Casey is testing to see if their 'needs' can control your 'plans'."
+        },
+        {
+          "exerciseId": "A1-4-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "The 'Second Hook' Debrief",
+          "scene": "You just experienced a 4-tactic emotional manipulation: Guilt-Tripping, Weaponized Vulnerability, Historical Guilt (Reciprocity), and Gaslighting. This is much more personal and 'messy' than the 'Coffee Shop' con.",
+          "question": "You've been 'hooked' again. What is the next logical step?",
+          "options": [
+            "Part 2: The Debrief - How Guilt is Weaponized",
+            "A lesson on car mechanics.",
+            "Lesson A2-1: Narcissism",
+            "Never speak to Casey again."
+          ],
+          "correct": "Part 2: The Debrief - How Guilt is Weaponized",
+          "difficulty": "easy",
+          "explanation": "You've felt the hook. Now it's time for the debrief. In Part 2, we will break down *why* guilt is such an effective weapon."
+        }
+      ]
+    }
+  ]
+}

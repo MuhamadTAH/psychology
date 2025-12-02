@@ -1,0 +1,355 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B1",
+  "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis",
+  "lessonId": "B1-2",
+  "lessonTitle": "Embedded Commands & Subliminals",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Hidden Order\" Simulation",
+  "objective": "To master the defense against Embedded Commands and Subliminals by spotting 'Marked' language and maintaining autonomy in high-pressure environments.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Subconscious_Shield_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B1-2-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Invisible Puppet Strings",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are about to enter a simulation with a Master Hypnotist. They will not give you orders; they will give you suggestions wrapped in stories."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Hear the *Command*, not the *Content*. If they say 'relax,' do not relax. Stay sharp."
+        }
+      ]
+    },
+    {
+      "screenId": "B1-2-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Hypnotist",
+      "exercises": [
+        {
+          "exerciseId": "B1-2-P3-E1",
+          "type": "boss-scenario",
+          "scene": "A negotiator says softly: 'I'm curious if you can... *see the value*... in this offer.' (Pause before/after bold text, downward inflection).",
+          "question": "This is an Embedded Command. What is your defense?",
+          "options": [
+            "Agree immediately.",
+            "Say 'Yes, I see it.' (Compliance)",
+            "Ignore the command. Consciously analyze the numbers. 'The value depends on the ROI, not my feelings.' (Logical Override)",
+            "Stare at them."
+          ],
+          "correct": "Ignore the command. Consciously analyze the numbers. 'The value depends on the ROI, not my feelings.' (Logical Override)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You stripped the command ('see the value') of its power by switching to analytical mode. You refused to hallucinate value where there was none.",
+            "incorrect": "If you say 'I see it,' you have accepted the command. You must evaluate, not hallucinate."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Storyteller",
+          "steps": [
+            {
+              "scene": "A salesperson tells a story: 'My last client was hesitant, but then he decided to *trust me completely*... and he made millions.' (Marked out).",
+              "options": [
+                "'Wow, that's amazing!' (Awe)",
+                "'I'm not him. I need to see the data.' (Differentiation)",
+                "'I want to make millions too!' (Greed)",
+                "Nod along."
+              ],
+              "correct": "'I'm not him. I need to see the data.' (Differentiation)",
+              "feedback": {
+                "correct": "Perfect. The story contained the command 'trust me completely.' You rejected the command by differentiating yourself from the character in the story.",
+                "incorrect": "Nodding accepts the premise. The story is a delivery mechanism for the order 'trust me'."
+              }
+            },
+            {
+              "question": "Salesperson: 'You don't want to *miss out* like the people who doubted me.' (Negative Command + Fear).",
+              "options": [
+                "'I'm scared of missing out.' (Submission)",
+                "'Fear of missing out isn't a strategy. The numbers have to work.' (Frame Control)",
+                "'You are right.' (Agreement)",
+                "Sign the check."
+              ],
+              "correct": "'Fear of missing out isn't a strategy. The numbers have to work.' (Frame Control)",
+              "feedback": {
+                "correct": "Mastery. You named the emotion (Fear/FOMO) and dismissed it. The command 'miss out' failed to trigger you.",
+                "incorrect": "Reacting to the fear means the command worked. You must stay in logic."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Storyteller. You heard the orders hidden in the narrative.",
+            "incorrect": "You got lost in the story and obeyed the hidden commands."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why do Embedded Commands use 'You' instead of 'I'?",
+          "options": [
+            "Because 'You' speaks to the listener's identity. 'You can *feel good*' directs the listener's internal state.",
+            "It is polite.",
+            "Grammar rules.",
+            "To be confusing."
+          ],
+          "correct": "Because 'You' speaks to the listener's identity. 'You can *feel good*' directs the listener's internal state.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'I feel good' is a statement. 'You feel good' is a command (or a suggestion).",
+            "incorrect": "It targets the listener directly."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P3-E4",
+          "type": "fill-in",
+          "sentence": "If a sentence is confusing (ambiguous), your (--------) mind shuts down, and your (--------) mind takes over to find meaning.",
+          "options": [
+            "conscious",
+            "subconscious",
+            "happy",
+            "sad"
+          ],
+          "answers": [
+            "conscious",
+            "subconscious"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is the 'Confusion Technique.' While your logic struggles to understand, the manipulator slips in the command.",
+            "incorrect": "Confusion disables the guard (Conscious). The Subconscious is wide open."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'People can *change their minds*... easily.' (Marked).",
+          "question": "What is the intent?",
+          "options": [
+            "To state a fact.",
+            "To command you to change your mind about your 'No'.",
+            "To talk about psychology.",
+            "To complain."
+          ],
+          "correct": "To command you to change your mind about your 'No'.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are telling you to change your mind without asking you to. It reduces the friction of resistance.",
+            "incorrect": "It's not a fact; it's a directive aimed at your current resistance."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm wondering... will you *do it now* or later?'",
+          "question": "Is this a Double Bind Command?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Whether you choose 'now' or 'later,' you have accepted the command 'Do it.'",
+            "incorrect": "It presupposes the action. The only choice is the timing."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense against Subliminals:",
+          "words": [
+            "Make",
+            "implicit",
+            "explicit",
+            "the"
+          ],
+          "correct": "Make the implicit explicit",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If they hint, ask directly. 'Are you asking me to buy this?' Bringing it to the surface destroys the covert power.",
+            "incorrect": "Don't let it stay hidden. Drag the meaning into the light."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A hidden message that suggests a feeling or action without stating it (e.g., 'It's getting late...' implying 'Go home').",
+          "question": "What is this?",
+          "options": [
+            "Implication / Subtext",
+            "Lying",
+            "Direct Order",
+            "Question"
+          ],
+          "correct": "Implication / Subtext",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Subtext allows for Plausible Deniability. 'I didn't tell you to leave! I just said it was late!'",
+            "incorrect": "It isn't lying. It is communicating between the lines."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You want to date someone. You use embedded commands to say 'You might *feel attracted* to me.'",
+          "question": "Is this ethical?",
+          "options": [
+            "Yes, it's just flirting.",
+            "No. It is attempting to bypass their conscious choice and manufacture consent. (Dark Psychology).",
+            "Only if it works.",
+            "Yes, everyone does it."
+          ],
+          "correct": "No. It is attempting to bypass their conscious choice and manufacture consent. (Dark Psychology).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Flirting is playful and open. NLP Seduction is covert and controlling. It disrespects their autonomy.",
+            "incorrect": "Manipulating attraction is not the same as creating connection."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'Don't *look at that mess*.'",
+          "question": "What did you just do?",
+          "options": [
+            "Looked at the mess.",
+            "Ignored it.",
+            "Closed your eyes.",
+            "Left the room."
+          ],
+          "correct": "Looked at the mess.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The Negative Command forces you to look. Manipulators use this to draw attention to things they pretend to hide.",
+            "incorrect": "Your brain has to process 'mess' to know what not to look at. By then, you've looked."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P3-E11",
+          "type": "fill-in",
+          "sentence": "If you feel a sudden emotion that doesn't match the situation, check for (--------) markers.",
+          "options": [
+            "analog",
+            "digital",
+            "color",
+            "loud"
+          ],
+          "answers": [
+            "analog"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Did they smile when you felt sad? Did they touch you when you felt trust? The external cue caused the internal shift.",
+            "incorrect": "Look for the trigger in their tone or body language."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I wouldn't tell you to *do this* if it wasn't right.'",
+          "question": "Is the command 'do this' neutralized by 'I wouldn't tell you'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. The command still lands. The negation ('wouldn't') shields the speaker, but the subconscious hears the order.",
+            "incorrect": "The negation is for the conscious mind. The command is for the subconscious."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: You ask 'Why?' They answer: 'Because *it feels right*.'",
+          "question": "This is an appeal to:",
+          "options": [
+            "Logic.",
+            "Emotion / Intuition (Right Brain).",
+            "Facts.",
+            "Law."
+          ],
+          "correct": "Emotion / Intuition (Right Brain).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are shifting the decision from Logic (Left Brain) to Feeling (Right Brain). If you accept 'feels right,' they win.",
+            "incorrect": "It is the opposite of logic. It validates impulsive decision making."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P3-E14",
+          "type": "matching",
+          "question": "Match the Hidden Command to the Surface Sentence:",
+          "pairs": [
+            {
+              "term": "\"You don't have to *agree*.\"",
+              "definition": "Command: Agree."
+            },
+            {
+              "term": "\"Imagine *success*.\"",
+              "definition": "Command: Feel Successful."
+            },
+            {
+              "term": "\"Try to *stop*.\"",
+              "definition": "Command: Continue (Try implies failure)."
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Peel back the surface. The verb is the order.",
+            "incorrect": "Look at the action word. That is what the brain latches onto."
+          }
+        },
+        {
+          "exerciseId": "B1-2-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Mind Firewall",
+          "scene": "You have learned to filter out the hidden orders. You hear the tone, see the pause, and reject the command.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson B1-3: The Double Bind (The Illusion of Choice).",
+            "Lesson A1-1.",
+            "Obeying orders.",
+            "Sleeping."
+          ],
+          "correct": "Lesson B1-3: The Double Bind (The Illusion of Choice).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that you can spot single commands, we will look at how they trap you with fake choices.",
+            "incorrect": "Next up: How manipulators make you choose between two losing options."
+          }
+        }
+      ]
+    }
+  ]
+}

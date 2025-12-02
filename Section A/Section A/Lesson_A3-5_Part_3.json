@@ -1,0 +1,451 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A3",
+  "unitTitle": "The Grand Chessmaster: Machiavellianism",
+  "lessonId": "A3-5",
+  "lessonTitle": "Unit 3 Review: The Chessboard",
+  "lessonType": "Review",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The 'Grandmaster' Boss Scenario",
+  "objective": "To master the Machiavellian skillset by navigating a complex, multi-stage simulation involving betrayal, strategic alliances, and high-stakes deception.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 500,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Unit_3_Grandmaster_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A3-5-P3-S1",
+      "screenType": "Learn",
+      "title": "Final Challenge: The Throne Room",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are entering the final simulation for Unit 3. You are no longer dealing with petty narcissists; you are dealing with Architects of Power."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Survive the coup. Identify the traitor. Secure your position. Do not let emotion cloud your judgment."
+        }
+      ]
+    },
+    {
+      "screenId": "A3-5-P3-S2",
+      "screenType": "Exercises",
+      "exercises": [
+        {
+          "exerciseId": "A3-5-P3-E1",
+          "type": "boss-scenario",
+          "scene": "The CEO invites you to a private dinner. 'I am planning to fire the VP (your mentor). I want you to take their place. But you must provide the evidence of their incompetence.'",
+          "question": "This is the 'Loyalty Test.' What is the trap?",
+          "options": [
+            "It is a genuine offer.",
+            "If you betray your mentor, the CEO owns you (Complicity). If you refuse, you go down with the mentor.",
+            "The CEO is testing your mentor.",
+            "You should ask for a raise."
+          ],
+          "correct": "If you betray your mentor, the CEO owns you (Complicity). If you refuse, you go down with the mentor.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is a 'Devil's Bargain.' The CEO wants to dirty your hands so you can never challenge them. The strategic move is to stall or warn the mentor anonymously.",
+            "incorrect": "It is not a gift; it is a chain. Betrayal makes you a pawn."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Whisper Campaign",
+          "steps": [
+            {
+              "scene": "You hear a rumor that *you* are planning to leave the company. You didn't start it. A 'friendly' colleague asks: 'Is it true you're leaving?'",
+              "options": [
+                "'No! Who said that?' (Panic)",
+                "'Why do you ask?' (Information Gathering)",
+                "'Yes, I hate it here.' (Venting)",
+                "'That is an interesting rumor.' (Ambiguity)"
+              ],
+              "correct": "'That is an interesting rumor.' (Ambiguity)",
+              "feedback": {
+                "correct": "Mastery. You neither confirmed nor denied. You killed the drama with boredom. Panic or denial feeds the fire.",
+                "incorrect": "Asking 'Who?' shows fear. Venting gives them ammo. Ambiguity protects you."
+              }
+            },
+            {
+              "question": "Colleague: 'Well, if you *were* leaving, I'd love to have your client list.' (The Reveal).",
+              "options": [
+                "'Sure, here it is.' (Submission)",
+                "'I'm not leaving, so that won't be necessary.' (Boundary)",
+                "'You started the rumor!' (Accusation)",
+                "'Maybe later.' (Weakness)"
+              ],
+              "correct": "'I'm not leaving, so that won't be necessary.' (Boundary)",
+              "feedback": {
+                "correct": "Perfect. You identified the 'Vulture' circling. You shut down the rumor and the request in one move.",
+                "incorrect": "Accusing them gives them a chance to Gaslight you. Deny the premise (leaving) to deny the request."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Whisper Campaign. Rumors are tests of stability.",
+            "incorrect": "You reacted emotionally to a strategic probe. You failed."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E3",
+          "type": "multiple-choice",
+          "question": "In a power struggle, why is 'Isolation' the first move?",
+          "options": [
+            "Because people are annoying.",
+            "Because a target without allies cannot defend themselves or verify reality.",
+            "To save money.",
+            "To be efficient."
+          ],
+          "correct": "Because a target without allies cannot defend themselves or verify reality.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Divide and Conquer.' Before you attack the King, you remove his Knights. Isolation precedes destruction.",
+            "incorrect": "It is strategic. Allies provide defense and sanity checks."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E4",
+          "type": "true-false",
+          "scene": "Scenario: 'I have files on everyone in this office. Just in case.'",
+          "question": "Is this person playing the Long Game?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is 'Deterrence.' They are signaling Mutually Assured Destruction (M.A.D.). 'Don't hit me, or I hit back hard.'",
+            "incorrect": "Hoarding leverage ('files') is the hallmark of a defensive Strategist."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: You are negotiating a merger. The other CEO acts drunk and incompetent at dinner.",
+          "question": "This is likely:",
+          "options": [
+            "They are an alcoholic.",
+            "The 'Columbo' Strategy (Feigned Incompetence) to make you lower your guard and reveal secrets.",
+            "They are tired.",
+            "They trust you."
+          ],
+          "correct": "The 'Columbo' Strategy (Feigned Incompetence) to make you lower your guard and reveal secrets.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Play the Fool to catch the Wise.' If you think they are drunk, you will get sloppy. They are listening to every word.",
+            "incorrect": "Never underestimate an opponent who *acts* weak. It is almost always a mask."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E6",
+          "type": "ethical-dilemma",
+          "scene": "To save your department from layoffs, you must lie to the board about next quarter's projections. If you don't, 50 people lose their jobs.",
+          "question": "The Machiavellian Utilitarian Logic dictates:",
+          "options": [
+            "Lie. The 'End' (50 jobs saved) justifies the 'Means' (one lie).",
+            "Tell the truth. Integrity matters more than jobs.",
+            "Quit.",
+            "Ask the employees to vote."
+          ],
+          "correct": "Lie. The 'End' (50 jobs saved) justifies the 'Means' (one lie).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. A Machiavellian calculates the 'Greater Good' mathematically. 1 Lie < 50 Livelihoods. (Note: This is still a Trap, as you are now corrupt).",
+            "incorrect": "Telling the truth is Deontological Ethics (Rules-based). Machiavellians use Consequentialism (Results-based)."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E7",
+          "type": "matching",
+          "question": "Match the Power Move to the Defense:",
+          "pairs": [
+            {
+              "term": "Information Hoarding",
+              "definition": "Build your own Intel network."
+            },
+            {
+              "term": "Strategic Silence",
+              "definition": "Ask open-ended questions and wait."
+            },
+            {
+              "term": "False Alliance",
+              "definition": "Test loyalty with a 'Barium Meal'."
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Don't beg for info; find it. Don't fill silence; use it. Don't trust; verify.",
+            "incorrect": "Match the counter-move. How do you defeat the tactic?"
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E8",
+          "type": "build-sentence",
+          "question": "Arrange these words to define the ultimate power:",
+          "words": [
+            "seen",
+            "is",
+            "never",
+            "Power",
+            "best",
+            "when"
+          ],
+          "correct": "Power is best when never seen",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The 'Grey Cardinal' rules from the shadows. Overt power attracts target. Covert power lasts longer.",
+            "incorrect": "If people see your power, they resist it. Invisible influence is supreme."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E9",
+          "type": "reverse-scenario",
+          "answer": "A person who acts as a 'friend' to both sides of a conflict, gathering intel from both and ensuring the war continues so they remain necessary.",
+          "question": "What is this role?",
+          "options": [
+            "The Agent Provocateur / War Profiteer",
+            "The Peacemaker",
+            "The Narcissist",
+            "The Hero"
+          ],
+          "correct": "The Agent Provocateur / War Profiteer",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Chaos is a ladder.' They profit from the conflict. If peace breaks out, they lose their utility.",
+            "incorrect": "A Peacemaker ends the war. This person feeds it."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: Your rival makes a catastrophic mistake. You have the email proof. They beg you not to send it to the boss.",
+          "question": "The Strategic Choice (Long Game):",
+          "options": [
+            "Send it immediately (Destroy them).",
+            "Keep the email. Don't send it. Let them know you have it. (Leverage).",
+            "Delete it. (Mercy).",
+            " blackmail them for money."
+          ],
+          "correct": "Keep the email. Don't send it. Let them know you have it. (Leverage).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you destroy them, they are gone. If you hold the email, you 'own' them. They are now an asset who must protect you to protect themselves.",
+            "incorrect": "Destruction is final. Leverage is perpetual. A dead enemy is useless; a controlled enemy is a tool."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E11",
+          "type": "fill-in",
+          "sentence": "In a high-stakes game, never confuse (--------) with weakness.",
+          "options": [
+            "patience",
+            "fear",
+            "love",
+            "anger"
+          ],
+          "answers": [
+            "patience"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The Grandmaster waits. The Amateur rushes. Do not mistake the Tiger's stillness for sleep.",
+            "incorrect": "Patience is a weapon. Fear causes action; patience delays it for the right moment."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I am totally transparent. I have no secrets.'",
+          "question": "Is this a lie?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Total transparency is a mask. Everyone has secrets. Claiming otherwise is 'Strategic Honesty' designed to hide the *big* secret.",
+            "incorrect": "No one is totally transparent. This is a performance of virtue."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E13",
+          "type": "multiple-choice",
+          "question": "Why is 'Emotional Detachment' critical during a crisis?",
+          "options": [
+            "It allows you to process information without panic bias.",
+            "It makes you look cool.",
+            "It stops you from crying.",
+            "It scares people."
+          ],
+          "correct": "It allows you to process information without panic bias.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Panic narrows vision. Detachment opens it. You can see the exits that others miss because they are too busy being afraid.",
+            "incorrect": "It's about cognitive function. Emotion floods the brain; detachment clears it."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E14",
+          "type": "scenario",
+          "scene": "Scenario: You are offered a 'Golden Handcuffs' deal: A huge salary, but you must sign a non-compete that destroys your career if you leave.",
+          "question": "This is:",
+          "options": [
+            "A Trap.",
+            "A great opportunity.",
+            "Generosity.",
+            "Safety."
+          ],
+          "correct": "A Trap.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are buying your freedom. If you can never leave, you have no leverage. You are a high-paid prisoner.",
+            "incorrect": "It looks like money, but it is actually ownership."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Scenario: The 'King's Hand'",
+          "scene": "The Boss promotes you to 'Right Hand.' You do all the work. They take all the credit. They tell you: 'We are a team. Your time will come.'",
+          "question": "What is your true role?",
+          "options": [
+            "The Heir Apparent.",
+            "The Scapegoat / Shadow.",
+            "The Partner.",
+            "The Friend."
+          ],
+          "correct": "The Scapegoat / Shadow.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You are the 'Shadow.' You do the work, they shine. If things go wrong, you are the 'Scapegoat.' Your time will never come.",
+            "incorrect": "They will never give up the throne. You are being used to prop them up."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E16",
+          "type": "ethical-dilemma",
+          "scene": "You have the power to destroy a Machiavellian who destroyed you. Revenge is easy.",
+          "question": "The 'Grandmaster' choice is:",
+          "options": [
+            "Take revenge.",
+            "Walk away and build something new. Success is the only revenge that matters.",
+            "Slander them.",
+            "Hire a hitman."
+          ],
+          "correct": "Walk away and build something new. Success is the only revenge that matters.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Revenge keeps you attached to them. It wastes energy. The ultimate power move is Indifference and Success.",
+            "incorrect": "Revenge digs two graves. Detachment builds a new kingdom."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E17",
+          "type": "matching",
+          "question": "Match the End Game:",
+          "pairs": [
+            {
+              "term": "Narcissist",
+              "definition": "Ends up alone (Everyone leaves)."
+            },
+            {
+              "term": "Machiavellian",
+              "definition": "Ends up powerful but paranoid (Trusts no one)."
+            },
+            {
+              "term": "Ethical Leader",
+              "definition": "Ends up respected and secure."
+            }
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The Machiavellian wins the world but loses their peace. The price of using people is fearing them.",
+            "incorrect": "Look at the long-term cost. Paranoia is the tax on power gained by deceit."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E18",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm not doing this to hurt you. I'm doing it to teach you.'",
+          "question": "This is:",
+          "options": [
+            "Rationalization of Sadism.",
+            "Teaching.",
+            "Love.",
+            "Help."
+          ],
+          "correct": "Rationalization of Sadism.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are reframing their cruelty as 'education' to avoid guilt and demand gratitude from the victim.",
+            "incorrect": "Pain is not a teaching method in a healthy relationship. It is an excuse for abuse."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E19",
+          "type": "build-sentence",
+          "question": "Arrange the words to define True Power:",
+          "words": [
+            "is",
+            "over",
+            "yourself",
+            "True",
+            "power",
+            "mastery"
+          ],
+          "correct": "True power is mastery over yourself",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Machiavellians try to control the world. Grandmasters control themselves. If you cannot be provoked, you cannot be controlled.",
+            "incorrect": "External power is fragile. Internal mastery is unbreakable."
+          }
+        },
+        {
+          "exerciseId": "A3-5-P3-E20",
+          "type": "case-analysis",
+          "caseTitle": "Unit 3 Complete: The Grandmaster",
+          "scene": "You have survived the Court of Foxes. You know the Strategy, the Deception, the Logic, and the Cost. You are ready for the final descent.",
+          "question": "What is the next Unit?",
+          "options": [
+            "Unit 4: The Void (Psychopathy).",
+            "Unit 1 Review.",
+            "Quitting.",
+            "Sleep."
+          ],
+          "correct": "Unit 4: The Void (Psychopathy).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You have seen the Ego (Narcissist) and the Mind (Machiavellian). Now you must face the Absence of Soul (Psychopathy).",
+            "incorrect": "Next is the darkest unit: The Psychopath."
+          }
+        }
+      ]
+    }
+  ]
+}

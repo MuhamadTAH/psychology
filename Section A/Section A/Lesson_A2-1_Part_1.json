@@ -1,0 +1,336 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A2",
+  "unitTitle": "The Manipulator's Playbook: Narcissism & Gaslighting",
+  "lessonId": "A2-1",
+  "lessonTitle": "Narcissism: The Architect of Self",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "Defining Narcissism (What is it?)",
+  "objective": "To define 'Narcissism' as a core Dark Triad trait and distinguish it from simple confidence or high self-esteem.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A2-1-P1-S1",
+      "screenType": "Learn",
+      "title": "Tactic Deep Dive: Narcissism",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Welcome to Unit 2. You've seen the 'tactics' (Flattery, Guilt). Now we study the 'architects' who use them."
+        },
+        {
+          "type": "paragraph",
+          "text": "The first and most common is the 'Narcissist.' This is not just someone who is 'confident' or 'vain.' Narcissism is a deep-seated personality structure."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The key: A confident person is 'full.' A narcissist is 'empty' and *needs* you to fill them up. This 'need' is the engine for all their manipulation."
+        }
+      ]
+    },
+    {
+      "screenId": "A2-1-P1-S2",
+      "screenType": "Exercises",
+      "exercises": [
+        {
+          "exerciseId": "A2-1-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the *core definition* of a narcissist in this context?",
+          "options": [
+            "Someone who is just very confident and successful.",
+            "Someone with a deep-seated lack of self-worth who *needs* constant external validation (praise, admiration).",
+            "Someone who is shy and quiet.",
+            "Someone who is just very 'selfish' in a normal way."
+          ],
+          "correct": "Someone with a deep-seated lack of self-worth who *needs* constant external validation (praise, admiration).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "This is the key. They are an 'empty' cup that *needs* you to fill it. This 'need' is called 'Narcissistic Supply'.",
+            "incorrect": "Confidence is not narcissism. A confident person *has* self-worth. A narcissist *chases* self-worth from others."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P1-E2",
+          "type": "true-false",
+          "statement": "'Narcissistic Supply' is the 'food' a narcissist needs: praise, admiration, attention, or even the 'power' of making you feel bad.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Supply' is anything that proves they 'exist' and have an *effect* on others. This is their primary addiction.",
+            "incorrect": "This is true. 'Supply' is the 'food' a narcissist needs: praise, admiration, attention, or even the 'power' of making you feel bad."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P1-E3",
+          "type": "matching",
+          "question": "Match the term to its correct definition:",
+          "pairs": [
+            {
+              "term": "Healthy Confidence",
+              "definition": "'I know my worth.' (Internal validation)"
+            },
+            {
+              "term": "Narcissism",
+              "definition": "'You must *tell me* my worth.' (External validation)"
+            },
+            {
+              "term": "Narcissistic Supply",
+              "definition": "The 'praise' or 'power' a narcissist needs from others."
+            },
+            {
+              "term": "The 'Dark Triad'",
+              "definition": "Narcissism, Machiavellianism, Psychopathy"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is the core difference. Confidence is 'I am good.' Narcissism is 'Tell me I am good, or I'll punish you.'",
+            "incorrect": "Remember: Confidence is *internal* ('I know my worth'). Narcissism is *external* ('You must tell me my worth')."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P1-E4",
+          "type": "scenario",
+          "scene": "You get a promotion. A 'Confident' friend says: 'That's amazing! Congratulations, you earned it!'",
+          "question": "A 'Narcissist' friend is more likely to say:",
+          "options": [
+            "'That's cool. I just closed a *way* bigger deal, though.' (One-upping)",
+            "'Wow, that's great!' (and mean it).",
+            "'How much money? Is it more than *me*?' (Comparing)",
+            "Both A and C are likely narcissistic responses."
+          ],
+          "correct": "Both A and C are likely narcissistic responses.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A narcissist cannot celebrate your 'win' because it makes them feel 'less-than.' They must either *compete* ('one-upping') or *compare* to re-establish their superiority.",
+            "incorrect": "This is a trap. A 'Confident' person can be happy for you. A 'Narcissist' sees your win as *their loss* and must immediately make the conversation about *them*."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P1-E5",
+          "type": "fill-in",
+          "sentence": "A narcissist *fakes* (--------) to get (--------) from you.",
+          "options": [
+            "empathy",
+            "supply",
+            "money",
+            "anger",
+            "confidence"
+          ],
+          "answers": [
+            "empathy",
+            "supply"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "This is their script. They 'fake' empathy (like 'Alex' in A1-1) to get 'supply' (admiration, trust, or even your money).",
+            "incorrect": "Think about 'Alex' (A1-1). They *faked* vulnerability and kindness (empathy) to get *supply* (your trust and $20)."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P1-E6",
+          "type": "true-false",
+          "statement": "There is only one 'type' of narcissist: the loud, arrogant, 'look at me' person.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is a myth. That is an 'Overt' or 'Grandiose' narcissist. There is a *second*, more dangerous type we'll cover.",
+            "incorrect": "This is a myth. That is an 'Overt' or 'Grandiose' narcissist. There is also a 'Covert' (hidden) one, who plays the 'victim'."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P1-E7",
+          "type": "multiple-choice",
+          "question": "What is a 'Grandiose' (or 'Overt') Narcissist?",
+          "options": [
+            "The 'classic' type: Arrogant, entitled, 'I am the best,' needs constant admiration. (e.g., a celebrity 'diva')",
+            "The 'victim' type: 'No one *understands* me, I'm too sensitive...' (e.g., 'Casey' in A1-4)",
+            "A normal, confident person.",
+            "Someone who is very shy."
+          ],
+          "correct": "The 'classic' type: Arrogant, entitled, 'I am the best,' needs constant admiration. (e.g., a celebrity 'diva')",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the 'Grandiose' type. They are easy to spot. They are openly 'better' than you and demand you agree.",
+            "incorrect": "This is the 'Grandiose' (Overt) type. They are openly arrogant. The 'victim' type is the *other* kind, which we'll cover next."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P1-E8",
+          "type": "multiple-choice",
+          "question": "What is a 'Covert' (or 'Vulnerable') Narcissist?",
+          "options": [
+            "The 'classic' arrogant type.",
+            "The 'victim' type: 'No one *understands* me, I'm too sensitive...'",
+            "An empathetic and caring person.",
+            "A Machiavellian who wants power."
+          ],
+          "correct": "The 'victim' type: 'No one *understands* me, I'm too sensitive...'",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This type is harder to spot. They get 'supply' by being a 'victim' or 'martyr,' making you feel sorry for them and 'rescue' them.",
+            "incorrect": "That's the 'Grandiose' type. The 'Covert' type is the opposite: they get supply by playing the 'victim' or 'martyr,' *not* by being arrogant."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P1-E9",
+          "type": "scenario",
+          "scene": "In Lesson A1-4, your friend 'Casey' used a 'Martyr Complex' ('I'll just walk...').",
+          "question": "This 'victim' behavior is a classic tactic of which narcissistic type?",
+          "options": [
+            "Grandiose Narcissist",
+            "Covert Narcissist",
+            "A Healthy Person",
+            "A Psychopath"
+          ],
+          "correct": "Covert Narcissist",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. 'Casey' (A1-4) was showing classic 'Covert Narcissist' traits, using guilt and victimhood to get 'supply' (your compliance and pity).",
+            "incorrect": "Incorrect. A 'Grandiose' narcissist would have *demanded* you drive them ('My time is more important!'). 'Casey' played the *victim* to get supply."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P1-E10",
+          "type": "matching",
+          "question": "Match the Narcissist type to their main 'supply' source:",
+          "pairs": [
+            {
+              "term": "Grandiose/Overt",
+              "definition": "Supply = Admiration, Fear, 'Being the Best'"
+            },
+            {
+              "term": "Vulnerable/Covert",
+              "definition": "Supply = Pity, Sympathy, 'Being the Rescued Victim'"
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Both are 'empty' and need supply, but they get it in opposite ways. One gets it by being 'above' you, the other by being 'below' you.",
+            "incorrect": "This is a key concept. 'Grandiose' gets supply from *admiration*. 'Covert' gets supply from *pity*."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P1-E11",
+          "type": "true-false",
+          "statement": "Deep down, both 'Grandiose' and 'Covert' narcissists feel a profound lack of self-worth and an 'emptiness' they need you to fill.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is the *most important* concept. The 'arrogance' (Grandiose) and the 'victimhood' (Covert) are just two different *masks* covering the same internal emptiness.",
+            "incorrect": "This is true. The 'arrogance' (Grandiose) and the 'victimhood' (Covert) are just two different *masks* covering the same internal emptiness."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P1-E12",
+          "type": "build-sentence",
+          "question": "Arrange these words into the narcissist's core 'need':",
+          "words": [
+            "is",
+            "their",
+            "Supply'",
+            "'Narcissistic",
+            "addiction"
+          ],
+          "correct": "'Narcissistic Supply' is their addiction",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is why their behavior is so 'driven.' They are 'addicted' to validation from others.",
+            "incorrect": "Remember: The 'need' for 'Narcissistic Supply' (praise, pity, power) is an *addiction*."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P1-E13",
+          "type": "reverse-scenario",
+          "answer": "A person who is genuinely confident and has high *internal* self-worth.",
+          "question": "Who is the *least* likely person to be a narcissist?",
+          "options": [
+            "The 'Grandiose' boss (Overt Narcissist)",
+            "The 'Covert' victim (Covert Narcissist)",
+            "The 'Confident' friend (Healthy)",
+            "The 'Machiavellian' colleague (Dark Triad)"
+          ],
+          "correct": "The 'Confident' friend (Healthy)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Genuine confidence comes from *inside*. Narcissism is a *performance* to get validation from *outside*.",
+            "incorrect": "This is a trap. The 'Confident' friend is the *least* likely, because true confidence comes from *inside*. Narcissism is a performance to get *external* validation."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P1-E14",
+          "type": "ethical-dilemma",
+          "scene": "You realize your friend might be a 'Covert' Narcissist, constantly playing the 'victim' (like 'Casey' in A1-4) to get you to do things.",
+          "question": "What is the 'ethically-aware' (and strongest) response?",
+          "options": [
+            "Tell them they are a 'Covert Narcissist' and need help.",
+            "Feel sorry for them and keep 'rescuing' them (giving them supply).",
+            "Start setting firm, polite boundaries ('I can't help you, Casey.').",
+            "Use their tactics back on them."
+          ],
+          "correct": "Start setting firm, polite boundaries ('I can't help you, Casey.').",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This is the 'light' path. You are not their 'Rescuer.' The only defense is a *boundary*. This stops the flow of 'supply' (your compliance).",
+            "incorrect": "This is the 'Rescuer' trap. By 'rescuing' them, you are *feeding* their narcissism (giving them 'supply'). The only defense is a *boundary*."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: The Two Masks",
+          "scene": "You've now defined Narcissism. You know it's an 'emptiness' that needs 'Supply.' You've also learned the two main 'masks' they wear to get it: 'Grandiose' (the 'arrogant' mask) and 'Covert' (the 'victim' mask).",
+          "question": "In Part 2, what will we practice?",
+          "options": [
+            "How to become a 'Grandiose' narcissist.",
+            "Practice: Telling the *difference* between 'Grandiose' and 'Vulnerable' in real scenarios.",
+            "A lesson on Machiavellianism.",
+            "A review of 'Flattery'."
+          ],
+          "correct": "Practice: Telling the *difference* between 'Grandiose' and 'Vulnerable' in real scenarios.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You've learned the 'what.' Now you'll practice the 'how' in Part 2: 'Practice: Grandiose vs. Vulnerable'.",
+            "incorrect": "The next logical step is to *practice* what you've just learned. We will now practice telling the two 'masks' apart in real-world scenarios."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B4",
+  "unitTitle": "The Pressure Cooker: Emotional Leverage",
+  "lessonId": "B4-1",
+  "lessonTitle": "Scarcity: The Fear of Loss",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"FOMO\" Simulation",
+  "objective": "To master the defense against FOMO (Fear Of Missing Out) by recognizing artificial urgency, resisting 'Exploding Offers', and valuing autonomy over participation.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_FOMO_Killer_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B4-1-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: Standing Still",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "FOMO is not just a feeling; it is a biological survival drive. Your brain thinks that being left behind means death."
+        },
+        {
+          "type": "paragraph",
+          "text": "Manipulators trigger this drive to make you buy bad products, join bad groups, or stay in bad relationships. They make you feel like the train is leaving the station."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Let the train leave. Realize that there is always another train."
+        }
+      ]
+    },
+    {
+      "screenId": "B4-1-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Rush",
+      "exercises": [
+        {
+          "exerciseId": "B4-1-P3-E1",
+          "type": "boss-scenario",
+          "scene": "You are looking at a dream apartment. The agent says: 'I have three other offers on the table right now. If you don't sign the lease and transfer the deposit in the next 10 minutes, you lose it.'",
+          "question": "This is the 'Exploding Offer.' What is the strategic move?",
+          "options": [
+            "Sign immediately. You can't lose this place!",
+            "Say: 'If I have to decide in 10 minutes, the answer is No. I need 24 hours to review the lease.' (Call the Bluff)",
+            "Offer more money to beat the others.",
+            "Panic and cry."
+          ],
+          "correct": "Say: 'If I have to decide in 10 minutes, the answer is No. I need 24 hours to review the lease.' (Call the Bluff)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. An 'Exploding Offer' is almost always a trap to hide flaws in the contract. If they really have 3 other offers, why are they pressuring *you*? Real value waits.",
+            "incorrect": "Signing under duress is a mistake. You might be signing a lease with terrible terms. If you lose it, you lose it. There are other apartments."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Exclusive Club",
+          "steps": [
+            {
+              "scene": "A friend invites you to an 'Exclusive Investment Group.' 'We only have one spot left. It's usually $5,000, but for you, it's $1,000. But you have to join tonight.'",
+              "options": [
+                "'I'm in!' (FOMO Triggered)",
+                "'Why is there a deadline?' (Suspicion)",
+                "'I appreciate the offer, but I never make financial decisions at night. I'll let you know tomorrow.' (The Pause)",
+                "'I don't have the money.' (Weakness)"
+              ],
+              "correct": "'I appreciate the offer, but I never make financial decisions at night. I'll let you know tomorrow.' (The Pause)",
+              "feedback": {
+                "correct": "Perfect. You neutralized the urgency with a personal policy. If it's a scam, they will push harder. If it's real, tomorrow is fine.",
+                "incorrect": "Joining immediately skips due diligence. Scams thrive in the dark and in a rush."
+              }
+            },
+            {
+              "question": "Friend: 'Come on, don't be scared. Everyone else is already in. You're going to miss the crypto boom!' (Social Proof + Scarcity).",
+              "options": [
+                "'Okay, fine.' (Submission)",
+                "'I'm okay with missing out. My answer is No.' (JOMO - Joy of Missing Out)",
+                "'You are pressuring me.' (Confrontation)",
+                "Ask for a loan."
+              ],
+              "correct": "'I'm okay with missing out. My answer is No.' (JOMO - Joy of Missing Out)",
+              "feedback": {
+                "correct": "Mastery. You flipped FOMO into JOMO. By being willing to 'miss out,' you become immune to the manipulation.",
+                "incorrect": "Submission feeds the predator. Confrontation escalates. Indifference is the shield."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Ponzi Scheme. The urgency was the red flag.",
+            "incorrect": "You bought into a scam because you were afraid of being 'left behind.' You lost $1,000."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why is the 'Take-Away' technique (Removing the offer) so effective?",
+          "options": [
+            "It triggers 'Psychological Reactance.' When our freedom to choose is threatened, we fight to regain it by wanting the item *more*.",
+            "It makes the seller look cool.",
+            "It lowers the price.",
+            "It creates trust."
+          ],
+          "correct": "It triggers 'Psychological Reactance.' When our freedom to choose is threatened, we fight to regain it by wanting the item *more*.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Like a child who only wants the toy when it is taken away. We value what we are about to lose.",
+            "incorrect": "It destroys trust but increases desire. It relies on our childish instinct to hoard."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P3-E4",
+          "type": "fill-in",
+          "sentence": "The antidote to Scarcity is an (--------) Mindset.",
+          "options": [
+            "abundance",
+            "scarcity",
+            "angry",
+            "fearful"
+          ],
+          "answers": [
+            "abundance"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'There are other houses. There are other partners. There are other deals.' If you believe this, Scarcity tactics fail.",
+            "incorrect": "Scarcity makes you think 'This is the only one.' Abundance reminds you the world is full of options."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: A date cancels on you last minute. 'I'm so busy, I might not be free for another month.'",
+          "question": "They are trying to:",
+          "options": [
+            "Increase their value by limiting access (Scarcity).",
+            "Be polite.",
+            "End the relationship.",
+            "Be honest."
+          ],
+          "correct": "Increase their value by limiting access (Scarcity).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They want you to chase them. If you chase, they become the 'Prize.' If you say 'Okay, let me know when you're free' and go out with friends, you win.",
+            "incorrect": "If they liked you, they would make time. This is a power play."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'I have a secret that I can only tell you.'",
+          "question": "Is this 'Information Scarcity'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Exclusive information feels more valuable than public information. It builds a conspiratorial bond.",
+            "incorrect": "It makes you feel like an 'Insider,' which strokes your ego."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Walk Away' power:",
+          "words": [
+            "can",
+            "negotiate",
+            "You",
+            "cannot",
+            "if",
+            "walk",
+            "cannot",
+            "you",
+            "away"
+          ],
+          "correct": "You cannot negotiate if you cannot walk away",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you *need* the deal, you have zero leverage. You must be willing to lose it to win it.",
+            "incorrect": "Walk away power is the ultimate trump card against Scarcity."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A tactic where a seller lists an item as 'Out of Stock' or 'Sold Out' just to build hype and demand.",
+          "question": "What is this?",
+          "options": [
+            "Artificial Scarcity / The Velvet Rope",
+            "Bad Supply Chain",
+            "Honesty",
+            "Anchoring"
+          ],
+          "correct": "Artificial Scarcity / The Velvet Rope",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Supreme and luxury brands do this. The empty shelf sells the next shipment.",
+            "incorrect": "It is intentional. Unavailability creates mystique."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are a doctor. Patients take their health more seriously if you tell them 'This treatment is running out.'",
+          "question": "Is lying about scarcity ethical if it helps them?",
+          "options": [
+            "No. Lying destroys trust. Use honest scarcity ('Health degrades with time') instead.",
+            "Yes, the end justifies the means.",
+            "Yes, fear is good.",
+            "Maybe."
+          ],
+          "correct": "No. Lying destroys trust. Use honest scarcity ('Health degrades with time') instead.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You can use the *natural* scarcity of health/time without fabricating supply issues. Trust is paramount in medicine.",
+            "incorrect": "Fabricating facts is a slippery slope. Stick to the truth of the consequences."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'This is a limited edition. Only 100 made.'",
+          "question": "Why does this make you want it?",
+          "options": [
+            "It signals status/uniqueness.",
+            "It is better quality.",
+            "It is cheaper.",
+            "It is bigger."
+          ],
+          "correct": "It signals status/uniqueness.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Humans use possessions to signal status. Owning something rare proves you are special/connected.",
+            "incorrect": "It might be the same quality as the mass-market version. The value is in the rarity, not the utility."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P3-E11",
+          "type": "fill-in",
+          "sentence": "The ultimate defense against FOMO is (--------).",
+          "options": [
+            "gratitude",
+            "greed",
+            "speed",
+            "fear"
+          ],
+          "answers": [
+            "gratitude"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you are grateful for what you have, you don't fear missing out on what you don't have. Contentment kills Scarcity.",
+            "incorrect": "Greed fuels FOMO. Gratitude extinguishes it."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm too busy to talk right now.' (Said by someone who is playing video games).",
+          "question": "Is this 'Strategic Unavailability'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They manufacture busyness to seem important and high-value. It makes you wait for them.",
+            "incorrect": "It increases their perceived value by lowering their supply."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: You bid on an auction. You keep bidding higher than you planned because you don't want to 'lose' to the other bidder.",
+          "question": "This is:",
+          "options": [
+            "Auction Fever (Scarcity + Social Proof + Competition).",
+            "Smart investing.",
+            "Fun.",
+            "Generosity."
+          ],
+          "correct": "Auction Fever (Scarcity + Social Proof + Competition).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The desire to 'Win' overtakes the value of the item. You are paying for the victory, not the product.",
+            "incorrect": "It is irrational. You are overpaying to avoid the pain of losing."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P3-E14",
+          "type": "matching",
+          "question": "Match the Defense:",
+          "pairs": [
+            {
+              "term": "Fake Deadline",
+              "definition": "Defense: \"Then I have to pass.\""
+            },
+            {
+              "term": "Phantom Competitor",
+              "definition": "Defense: \"I hope they enjoy the house.\""
+            },
+            {
+              "term": "Exclusivity Trap",
+              "definition": "Defense: \"I don't need to be special.\""
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Call the bluff. If you are willing to lose the item, the manipulator loses their leverage.",
+            "incorrect": "The defense is always 'Indifference to Loss'."
+          }
+        },
+        {
+          "exerciseId": "B4-1-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Clock Stopped",
+          "scene": "You have learned to pause the panic. You know that 'Now or Never' usually means 'Never is better.' You value your time over their pressure.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson B4-2: Weaponized Reciprocity (The Debt Trap).",
+            "Lesson A1-1.",
+            "Hurrying.",
+            "Running."
+          ],
+          "correct": "Lesson B4-2: Weaponized Reciprocity (The Debt Trap).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that we've handled 'Scarcity,' we must handle 'Generosity.' Why is a free gift dangerous?",
+            "incorrect": "Next up: The trap of the 'Free Sample'."
+          }
+        }
+      ]
+    }
+  ]
+}

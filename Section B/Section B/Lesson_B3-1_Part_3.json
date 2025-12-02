@@ -1,0 +1,361 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B3",
+  "unitTitle": "The Herd Mind: Social Engineering",
+  "lessonId": "B3-1",
+  "lessonTitle": "Social Proof: The Power of the Crowd",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Outlier\" Test",
+  "objective": "To master the defense against Social Proof by resisting 'Groupthink', identifying 'Pluralistic Ignorance', and maintaining individual judgment when the herd is wrong.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Lone_Wolf_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B3-1-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Lone Wolf",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The hardest thing for a human to do is to stand alone against a crowd. Evolution wired us to follow the herd because the lone wolf dies."
+        },
+        {
+          "type": "paragraph",
+          "text": "Manipulators use this fear. They create a 'Fake Majority' to force you to agree. In this challenge, you must be the **Outlier**."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Trust your own senses over the consensus of the group. If the crowd is walking off a cliff, stop walking."
+        }
+      ]
+    },
+    {
+      "screenId": "B3-1-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Conformity Trap",
+      "exercises": [
+        {
+          "exerciseId": "B3-1-P3-E1",
+          "type": "boss-scenario",
+          "scene": "You are in a meeting. The Boss proposes a terrible, illegal idea. Everyone else nods and says, 'Great idea, Boss!' The Boss looks at you: 'Do you agree?'",
+          "question": "This is the 'Asch Conformity' test. What is the strongest move?",
+          "options": [
+            "Nod and agree to stay safe. (Compliance)",
+            "'I'm not sure...' (Weakness)",
+            "'I have concerns about the legality of this. I cannot support it.' (The Outlier)",
+            "Stay silent."
+          ],
+          "correct": "'I have concerns about the legality of this. I cannot support it.' (The Outlier)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. It takes immense courage to be the only dissenting voice. But often, once one person speaks up, others will follow (breaking the spell).",
+            "incorrect": "Compliance makes you complicit. Silence is consent. You must break the unanimity to break the Groupthink."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The False Review",
+          "steps": [
+            {
+              "scene": "You are buying a course. The website has 5,000 5-star reviews, but they all look generic ('Great!', 'Wow!'). The price is high.",
+              "options": [
+                "Buy it. 5,000 people can't be wrong.",
+                "Check the 1-star reviews first.",
+                "Trust the testimonials on the front page.",
+                "Ask the seller if it's good."
+              ],
+              "correct": "Check the 1-star reviews first.",
+              "feedback": {
+                "correct": "Perfect. Manipulators buy positive reviews (Astroturfing). The 1-star reviews reveal the truth (scams, no refunds, bad content).",
+                "incorrect": "Positive reviews are easily faked. Negative reviews reveal the hidden risks."
+              }
+            },
+            {
+              "question": "You find a 1-star review saying 'This is a scam.' The Seller replies to it: 'This person is a known hater and competitor. Ignore them.'",
+              "options": [
+                "Believe the Seller. The reviewer is just a hater.",
+                "Investigate the claim. Ad Hominem attacks on critics are a red flag.",
+                "Buy the course to spite the hater.",
+                "Ask for a discount."
+              ],
+              "correct": "Investigate the claim. Ad Hominem attacks on critics are a red flag.",
+              "feedback": {
+                "correct": "Mastery. Honest sellers address the *issue*, not the *person*. Attacking the critic ('Hater') is a tactic to discredit the truth.",
+                "incorrect": "Blindly trusting the Seller's defense is dangerous. The 'Hater' label is a tool to dismiss valid criticism."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Review Farm. You looked for the 'Signal' in the 'Noise'.",
+            "incorrect": "You bought the hype. You followed the fake herd into a trap."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why does the 'Bystander Effect' happen?",
+          "options": [
+            "People are evil.",
+            "Diffusion of Responsibility. Everyone assumes someone *else* will act, so no one acts.",
+            "People are blind.",
+            "Fear of police."
+          ],
+          "correct": "Diffusion of Responsibility. Everyone assumes someone *else* will act, so no one acts.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. To break it, you must point to one specific person and say: 'YOU, call 911.' You must re-assign responsibility.",
+            "incorrect": "It's not malice; it's psychological paralysis caused by the group dynamic."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P3-E4",
+          "type": "fill-in",
+          "sentence": "Manipulators use 'Salting the Tip Jar' to create the illusion that (--------) has already happened.",
+          "options": [
+            "giving",
+            "stealing",
+            "fighting",
+            "leaving"
+          ],
+          "answers": [
+            "giving"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If the jar is empty, people think 'No one gives.' If it has money, people think 'Giving is normal.'",
+            "incorrect": "It establishes the social norm of generosity before you even arrive."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: A stock is crashing. Everyone is selling in a panic. You know the company is solid.",
+          "question": "What is the 'Contrarian' move?",
+          "options": [
+            "Sell with the crowd (Safety in numbers).",
+            "Buy while the price is low (Resisting Social Proof).",
+            "Cry.",
+            "Call the police."
+          ],
+          "correct": "Buy while the price is low (Resisting Social Proof).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Be greedy when others are fearful.' Warren Buffett wins because he ignores the herd's panic.",
+            "incorrect": "Following the panic locks in your loss. The herd is often wrong at the extremes."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'Everyone is doing it.'",
+          "question": "Is this a valid logical argument?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the 'Ad Populum' fallacy. Just because something is popular (e.g., smoking in the 1950s) does not mean it is smart or safe.",
+            "incorrect": "Popularity does not equal truth. History is full of popular mistakes."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense against Groupthink:",
+          "words": [
+            "own",
+            "Trust",
+            "eyes,",
+            "your",
+            "crowd",
+            "not",
+            "the"
+          ],
+          "correct": "Trust your own eyes, not the crowd",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. In the Asch Experiment, people denied what they saw to fit in. You must value your perception over your belonging.",
+            "incorrect": "The crowd's opinion is just data, not reality. Verify it yourself."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A manufactured movement designed to look like a grassroots uprising, funded by a corporation or government.",
+          "question": "What is this?",
+          "options": [
+            "Astroturfing",
+            "Democracy",
+            "Marketing",
+            "Social Proof"
+          ],
+          "correct": "Astroturfing",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Fake Grass.' It makes you think 'the people' support this, so you should too.",
+            "incorrect": "It is a specific type of fake Social Proof."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are in a group chat. Everyone is bullying one person. You want to say something, but you fear they will turn on you.",
+          "question": "What do you do?",
+          "options": [
+            "Stay silent to protect yourself.",
+            "Join in so you don't look weak.",
+            "Speak up: 'This isn't cool. Let's stop.' (Breaking the Consensus).",
+            "Leave the chat quietly."
+          ],
+          "correct": "Speak up: 'This isn't cool. Let's stop.' (Breaking the Consensus).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. It only takes one 'Outlier' to break the Mob Mentality. You might be attacked, but you break the spell for others.",
+            "incorrect": "Silence enables the mob. Joining in destroys your integrity. Leaving is safe but passive."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm the only one who thinks this is a bad idea.'",
+          "question": "What should you do?",
+          "options": [
+            "Assume you are wrong.",
+            "Speak your mind. Groupthink happens because people self-censor.",
+            "Stay quiet.",
+            "Quit."
+          ],
+          "correct": "Speak your mind. Groupthink happens because people self-censor.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Often, everyone thinks it's a bad idea, but everyone thinks everyone *else* likes it (Pluralistic Ignorance).",
+            "incorrect": "Your voice might liberate the room. Silence guarantees the mistake."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P3-E11",
+          "type": "fill-in",
+          "sentence": "Manipulators use (--------) Laughter to trick you into thinking something is funny.",
+          "options": [
+            "canned",
+            "loud",
+            "fake",
+            "real"
+          ],
+          "answers": [
+            "canned"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Laugh tracks work. Hearing laughter triggers a mirror neuron response, making you smile even if the joke is bad.",
+            "incorrect": "It is a mechanical trigger for social bonding."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'The most popular product is always the best quality.'",
+          "question": "Is this reliable?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Popularity often just means 'Best Marketing' or 'Lowest Common Denominator.' Quality is separate.",
+            "incorrect": "McDonald's is popular; it is not the best food. Do not confuse scale with quality."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: A nightclub makes people wait outside in a line, even though the club is half-empty inside.",
+          "question": "Why?",
+          "options": [
+            "To create the Illusion of Demand (Social Proof + Scarcity).",
+            "They are cleaning.",
+            "Fire safety.",
+            "The bouncer is slow."
+          ],
+          "correct": "To create the Illusion of Demand (Social Proof + Scarcity).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The line *is* the ad. If people are waiting, it must be the place to be.",
+            "incorrect": "It creates a 'Velvet Rope' effect. Exclusivity triggers desire."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P3-E14",
+          "type": "matching",
+          "question": "Match the Tactic to the Social Trigger:",
+          "pairs": [
+            {
+              "term": "\"Everyone is switching to X.\"",
+              "definition": "Fear of Missing Out (FOMO)."
+            },
+            {
+              "term": "\"9 out of 10 Doctors.\"",
+              "definition": "Trust in Authority."
+            },
+            {
+              "term": "\"Join the winning team.\"",
+              "definition": "Desire for Status."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. FOMO drives urgency. Authority drives trust. Status drives belonging.",
+            "incorrect": "Identify the emotional hook. What are they offering?"
+          }
+        },
+        {
+          "exerciseId": "B3-1-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Lone Wolf",
+          "scene": "You have learned to resist the pull of the herd. You know that 'everyone' can be wrong, and 'popular' can be fake.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson B3-2: The Authority Hack (Questioning the Badge).",
+            "Lesson A1-1.",
+            "Following orders.",
+            "Buying a uniform."
+          ],
+          "correct": "Lesson B3-2: The Authority Hack (Questioning the Badge).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Social Proof comes from peers. Authority comes from leaders. How do manipulators fake leadership?",
+            "incorrect": "Next up: How symbols of power silence our questions."
+          }
+        }
+      ]
+    }
+  ]
+}

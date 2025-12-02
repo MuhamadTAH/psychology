@@ -1,0 +1,345 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B5",
+  "unitTitle": "Section B Grand Review: The Master Tactician",
+  "lessonId": "B5-5",
+  "lessonTitle": "The Section B Boss Fight",
+  "lessonType": "Review",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Ultimate Toolkit Review",
+  "objective": "To synthesize all concepts from Section B (Language, Framing, Social Engineering, Leverage) into a cohesive 'Master Influencer' defense strategy.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B5-5-P1-S1",
+      "screenType": "Learn",
+      "title": "Section B Grand Review",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You have completed Section B: The Tools of Influence. You now know *how* the machine works."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Language (NLP):** Pacing, Leading, Embedded Commands, Double Binds.",
+            "**Framing:** Anchoring, Contrast, Labeling, Reframing.",
+            "**The Herd:** Social Proof, Authority, Pretexting, Liking.",
+            "**Leverage:** Scarcity, Reciprocity, Fear, Hope."
+          ]
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Master Influencer does not use just one tool. They combine them into a symphony of control. Prepare for the final test."
+        }
+      ]
+    },
+    {
+      "screenId": "B5-5-P1-S2",
+      "screenType": "Exercises",
+      "title": "The Master Check",
+      "exercises": [
+        {
+          "exerciseId": "B5-5-P1-E1",
+          "type": "multiple-choice",
+          "question": "Which NLP tactic is used to lower resistance by matching the target's reality?",
+          "options": [
+            "Leading",
+            "Pacing",
+            "Anchoring",
+            "Blocking"
+          ],
+          "correct": "Pacing",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You must Pace (match) before you can Lead (guide). It builds the bridge of rapport.",
+            "incorrect": "Leading is the goal. Pacing is the setup."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm not saying you *must buy this now*.'",
+          "question": "This sentence contains:",
+          "options": [
+            "A Negative Embedded Command.",
+            "A Double Bind.",
+            "A Reframe.",
+            "A lie."
+          ],
+          "correct": "A Negative Embedded Command.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The negation ('not saying') is filtered out. The command ('buy this now') lands.",
+            "incorrect": "It's not a Double Bind (choice). It is a command hidden in a negative structure."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P1-E3",
+          "type": "fill-in",
+          "sentence": "The person who sets the (--------) controls the meaning of the event.",
+          "options": [
+            "frame",
+            "price",
+            "time",
+            "food"
+          ],
+          "answers": [
+            "frame"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Framing determines if a situation is a 'Crisis' or an 'Opportunity.'",
+            "incorrect": "The Frame dictates the reality."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P1-E4",
+          "type": "matching",
+          "question": "Match the Tool to the Effect:",
+          "pairs": [
+            {
+              "term": "Anchoring",
+              "definition": "Sets the baseline for value."
+            },
+            {
+              "term": "Social Proof",
+              "definition": "Triggers the herd instinct."
+            },
+            {
+              "term": "Scarcity",
+              "definition": "Triggers fear of loss (panic)."
+            },
+            {
+              "term": "Reciprocity",
+              "definition": "Triggers obligation (debt)."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Each tool pulls a different psychological lever.",
+            "incorrect": "Review the Units. Anchors weigh down. Herds push. Scarcity rushes. Reciprocity binds."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P1-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'You can sign the contract now, or we can lose the deal and you can explain it to your boss.'",
+          "question": "This combines:",
+          "options": [
+            "Double Bind + Fear/Threat.",
+            "Kindness + Logic.",
+            "Pacing + Leading.",
+            "Hope + Charity."
+          ],
+          "correct": "Double Bind + Fear/Threat.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The choices are 'Obey' or 'Suffer.' It is a coercive Double Bind.",
+            "incorrect": "It uses Fear (boss) to force the choice."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P1-E6",
+          "type": "true-false",
+          "scene": "Scenario: A stranger in a suit cuts in line. You let them.",
+          "question": "Is this Authority Bias?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You obeyed the symbol (Suit), not the person.",
+            "incorrect": "We defer to symbols of status automatically."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P1-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense against pressure:",
+          "words": [
+            "logic",
+            "destroys",
+            "Speed",
+            "down",
+            "Slow"
+          ],
+          "correct": "Speed destroys logic Slow down",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Or 'Speed destroys logic.' The universal defense against Section B tactics is to slow down.",
+            "incorrect": "Manipulators need speed. You need time."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P1-E8",
+          "type": "reverse-scenario",
+          "answer": "Creating a fake scenario (story) to trick a victim into giving up information.",
+          "question": "What is this Social Engineering term?",
+          "options": [
+            "Pretexting",
+            "Phishing",
+            "Vishing",
+            "Framing"
+          ],
+          "correct": "Pretexting",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The 'Pretext' is the lie/story. Phishing is just one way to deliver it.",
+            "incorrect": "It is the act of creating the scenario."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P1-E9",
+          "type": "ethical-dilemma",
+          "scene": "You use 'Mirroring' to comfort a grieving friend. You use 'Framing' to help them see the loss as a new beginning.",
+          "question": "Is this 'Dark'?",
+          "options": [
+            "No. The intent is healing/support (Light Side).",
+            "Yes. All techniques are evil.",
+            "Yes, you should just be quiet.",
+            "No, because you are smart."
+          ],
+          "correct": "No. The intent is healing/support (Light Side).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The tools are neutral. The intent (Healing vs. Exploitation) determines the morality.",
+            "incorrect": "Using influence to help others regulate emotion is empathy in action."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P1-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm only telling you this because I like you.'",
+          "question": "This phrase activates:",
+          "options": [
+            "Liking Bias + Reciprocity (Special Favor).",
+            "Truth.",
+            "Fear.",
+            "Logic."
+          ],
+          "correct": "Liking Bias + Reciprocity (Special Favor).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It creates a 'Secret Bond' (Liking) and frames the info as a 'Gift' (Reciprocity).",
+            "incorrect": "It's a specific 'Insider' frame."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P1-E11",
+          "type": "fill-in",
+          "sentence": "The (--------) Effect uses a bad option to make a target option look good.",
+          "options": [
+            "decoy",
+            "halo",
+            "horn",
+            "sunk"
+          ],
+          "answers": [
+            "decoy"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The Decoy exists only to manipulate the comparison.",
+            "incorrect": "It's the Decoy Effect (Asymmetric Dominance)."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P1-E12",
+          "type": "multiple-choice",
+          "question": "What is the 'Milton Model'?",
+          "options": [
+            "Artfully vague language that allows the listener to project their own meaning.",
+            "A specific sales script.",
+            "A type of hypnosis watch.",
+            "Being precise."
+          ],
+          "correct": "Artfully vague language that allows the listener to project their own meaning.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Change,' 'Hope,' 'Success.' These are empty containers.",
+            "incorrect": "It relies on ambiguity, not precision."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P1-E13",
+          "type": "scenario",
+          "scene": "Scenario: A 'Guru' says, 'Only 5 spots left to learn the secret of wealth!'",
+          "question": "This combines:",
+          "options": [
+            "Scarcity (5 spots) + Hope-Mongering (Secret Wealth).",
+            "Truth + Logic.",
+            "Fear + Anger.",
+            "Kindness."
+          ],
+          "correct": "Scarcity (5 spots) + Hope-Mongering (Secret Wealth).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Scarcity pushes you; Hope pulls you.",
+            "incorrect": "It's a classic marketing squeeze."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P1-E14",
+          "type": "true-false",
+          "scene": "Scenario: 'Verification is rude.'",
+          "question": "Is this a belief Social Engineers want you to have?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If you believe checking ID is rude, you won't do it. They exploit your politeness.",
+            "incorrect": "Verification is safety. Politeness is the vulnerability."
+          }
+        },
+        {
+          "exerciseId": "B5-5-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Section B Complete: The Arsenal",
+          "scene": "You have mastered the toolkit. You know every weapon in the manipulator's arsenal.",
+          "question": "You are ready for Part 2:",
+          "options": [
+            "The Section B Gauntlet (Mixed Scenarios).",
+            "Lesson A1-1.",
+            "Sleeping.",
+            "Quitting."
+          ],
+          "correct": "The Section B Gauntlet (Mixed Scenarios).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now we mix them all up. Can you spot a Double Bind hidden in a Love Bomb? Let's see.",
+            "incorrect": "Next up: The Gauntlet."
+          }
+        }
+      ]
+    }
+  ]
+}

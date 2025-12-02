@@ -1,0 +1,400 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A2",
+  "unitTitle": "The Manipulator's Playbook: Narcissism & Gaslighting",
+  "lessonId": "A2-1",
+  "lessonTitle": "Narcissism: The Architect of Self",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "The Narcissistic Cycle & Defense Mechanisms",
+  "objective": "To understand the three-phase cycle of idealization, devaluation, and discard, and to identify the core defense mechanisms (Projection, Blame-shifting) narcissists use to avoid accountability.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 150,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Narcissism_Architect"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A2-1-P3-S1",
+      "screenType": "Learn",
+      "title": "The Three-Phase Script",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The narcissist’s interaction with you is not organic; it follows a predictable, three-phase script. Understanding this script allows you to exit the relationship early."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Phase 1: Idealization (The Hook)"
+        },
+        {
+          "type": "list",
+          "listType": "bullet",
+          "items": [
+            "**Love Bombing:** The narcissist rushes the relationship, making you feel like soulmates. You are 'the best thing that ever happened to them.'",
+            "**Goal:** To establish you as a perfect, irreplaceable source of **Narcissistic Supply**."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Phase 2: Devaluation (The Control)"
+        },
+        {
+          "type": "list",
+          "listType": "bullet",
+          "items": [
+            "Once invested, the narcissist sees your flaws (your humanity). Since they cannot tolerate imperfection, they begin to subtly (or overtly) criticize you.",
+            "**Goal:** To break your self-esteem and make you work harder to return to the 'Idealized' phase, thus giving them control and more Supply."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Phase 3: Discard (The Replacement)"
+        },
+        {
+          "type": "list",
+          "listType": "bullet",
+          "items": [
+            "You are worn out, or you have challenged their authority. They find a new source of Supply (a new person to Idealize).",
+            "**Goal:** To abruptly end the relationship with cruelty, often leaving you confused and feeling worthless, creating drama (which itself is a form of Supply)."
+          ]
+        },
+        {
+          "type": "alert",
+          "alertType": "info",
+          "text": "The cycle is not personal. It is just the process of them finding and draining a power source. When you realize the cycle, you realize it’s not about you."
+        }
+      ]
+    },
+    {
+      "screenId": "A2-1-P3-S2",
+      "screenType": "Learn",
+      "title": "Narcissistic Defense Mechanisms",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Narcissists cannot take accountability because admitting a flaw exposes their deep-seated shame (the core wound we identified in Part 2). They rely on extreme defense mechanisms."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Defense 1: Projection"
+        },
+        {
+          "type": "paragraph",
+          "text": "Instead of saying 'I am angry,' they say 'Why are you always angry?' **Projection** is when they dump their own unacceptable thoughts, feelings, or actions onto you. It’s an instant shield that turns the tables."
+        },
+        {
+          "type": "example",
+          "title": "Projection Example",
+          "text": "A cheating spouse accusing their faithful partner of cheating. A lying co-worker claiming you are the one who is untrustworthy."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Defense 2: Blame-shifting & Word Salad"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is the refusal to take responsibility. They will: 1) Shift the blame entirely ('It was your fault I yelled, because you made me late'). 2) Confuse you with **Word Salad**: a jumble of circular, irrelevant arguments that leave you exhausted and confused, making you drop the topic."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "If a conversation leaves you feeling like you are talking to a brick wall or going in circles, you are likely witnessing Projection or Word Salad."
+        }
+      ]
+    },
+    {
+      "screenId": "A2-1-P3-S3",
+      "screenType": "Exercises",
+      "title": "Challenge: The Cycle & Defenses",
+      "exercises": [
+        {
+          "exerciseId": "A2-1-P3-E1",
+          "type": "multiple-choice",
+          "question": "Which phase of the cycle involves the narcissist making you feel like you are the 'only person who truly understands them' and that your relationship is a 'once-in-a-lifetime' connection?",
+          "options": [
+            "Devaluation",
+            "Discard",
+            "Idealization (Love Bombing)",
+            "Hoovering"
+          ],
+          "correct": "Idealization (Love Bombing)",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is the **Idealization** phase, designed to hook you by making you feel uniquely special and bonded.",
+            "incorrect": "Incorrect. This phase is designed to elevate you to a status of perfection before the inevitable fall."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P3-E2",
+          "type": "scenario",
+          "scene": "Scenario: After six months, your partner starts to 'forget' your shared interests, openly critiques your clothing choices, and says things like, 'You used to be so much more fun before we got serious.'",
+          "question": "Which phase of the cycle is this behavior characteristic of?",
+          "options": [
+            "Idealization",
+            "Devaluation",
+            "Discard",
+            "Hoovering"
+          ],
+          "correct": "Devaluation",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The narcissist has stopped seeing you as perfect and is now actively chipping away at your self-esteem, making you feel unworthy of their 'love' so you work harder for their approval.",
+            "incorrect": "This is **Devaluation**, the phase where they purposefully break down your self-worth."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P3-E3",
+          "type": "scenario",
+          "scene": "Scenario: You finally confront your manager about a severe failure of accountability. She laughs and says, 'I've already promoted someone else to handle that, and honestly, I only kept you around because I felt bad. You're simply not capable of this level of work.'",
+          "question": "Which phase of the cycle does this abrupt and cruel rejection represent?",
+          "options": [
+            "Idealization",
+            "Devaluation",
+            "Discard",
+            "Hoovering"
+          ],
+          "correct": "Discard",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The **Discard** is often swift, brutal, and includes a final, harsh devaluation to ensure you are left devastated and confused, maximizing the Supply from the dramatic exit.",
+            "incorrect": "The manager has replaced you and is abandoning the relationship with a final cruel blow. This is the **Discard**."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P3-E4",
+          "type": "multiple-choice",
+          "question": "You ask your friend why they lied about a debt. They yell: 'Lying? You're the one who is obsessed with money! I've seen how you treat cashiers! You're the most dishonest person I know!' What defense mechanism is being used?",
+          "options": [
+            "Blame-shifting",
+            "Word Salad",
+            "Projection",
+            "Gaslighting"
+          ],
+          "correct": "Projection",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are immediately dumping their own fault ('lying') onto you ('you're the most dishonest') to avoid accepting the criticism.",
+            "incorrect": "This is **Projection**, instantly swapping roles so they are the 'accuser' and you are the 'guilty' one."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: Your neighbor repeatedly refuses to return your tools. When you confront them, they launch into a 10-minute rant about how their childhood trauma makes them forget things, how the government is corrupt, and how their astrological sign prevents them from being detail-oriented.",
+          "question": "What two defense mechanisms are they using to make you drop the subject?",
+          "options": [
+            "Gaslighting and Idealization",
+            "Projection and Rage",
+            "Blame-shifting and Word Salad",
+            "Devaluation and Discard"
+          ],
+          "correct": "Blame-shifting and Word Salad",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They **Blame-shift** (to trauma/astrology) and use **Word Salad** (irrelevant rants) to confuse and exhaust you until you give up on the confrontation.",
+            "incorrect": "This is classic Blame-shifting (refusing accountability) mixed with confusing, exhausting talk (Word Salad)."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P3-E6",
+          "type": "multiple-choice",
+          "question": "A narcissist's core goal with Projection is not just to blame you, but to protect their fragile inner self by:",
+          "options": [
+            "Apologizing profusely.",
+            "Making sure they never have to acknowledge the flaw belongs to them.",
+            "Changing the subject completely.",
+            "Confusing you until you forget."
+          ],
+          "correct": "Making sure they never have to acknowledge the flaw belongs to them.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. By projecting, they instantaneously deny ownership of the flaw, protecting the mask and the underlying wound.",
+            "incorrect": "The primary psychological function of Projection is to make the flaw external to their self-perception."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P3-E7",
+          "type": "scenario",
+          "scene": "Scenario: Six months after the Discard, the narcissist texts you: 'I know I messed up. I've been thinking about all the great times we had and I feel like I ruined the one good thing in my life. I hope you're doing well. I miss my best friend.'",
+          "question": "What is this behavior called, and what phase of the cycle does it represent?",
+          "options": [
+            "Idealization (Love Bombing)",
+            "Hoovering (Attempted Re-Idealization)",
+            "Devaluation (Guilt Trip)",
+            "Discard (Finality)"
+          ],
+          "correct": "Hoovering (Attempted Re-Idealization)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. **Hoovering** is the act of attempting to 'vacuum' you back into the cycle, usually by triggering nostalgia ('great times') or pity ('I ruined the one good thing'). It's an attempt to return to Phase 1.",
+            "incorrect": "This is **Hoovering**, designed to lure you back into the cycle for more Supply."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P3-E8",
+          "type": "multiple-choice",
+          "question": "Which of the following describes a key difference between **Projection** and **Blame-shifting**?",
+          "options": [
+            "Projection is always physical; Blame-shifting is always verbal.",
+            "Projection makes the fault *yours*; Blame-shifting makes the fault *something else* (e.g., traffic, stress, the weather).",
+            "Projection is only used by Grandiose narcissists; Blame-shifting is only used by Covert narcissists.",
+            "There is no difference; they are the same thing."
+          ],
+          "correct": "Projection makes the fault *yours*; Blame-shifting makes the fault *something else* (e.g., traffic, stress, the weather).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Excellent. **Projection** is a direct swap of roles (I'm cheating, so you are the cheater). **Blame-shifting** redirects accountability to a third party or circumstance (I was late because of the weather).",
+            "incorrect": "Remember the key difference: Projection lands the flaw directly on *you*. Blame-shifting lands it on *anything but them*."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P3-E9",
+          "type": "matching",
+          "question": "Match the Tactic to the Primary Phase:",
+          "pairs": [
+            {
+              "term": "Love Bombing",
+              "definition": "Phase 1: Idealization"
+            },
+            {
+              "term": "Subtle Criticisms",
+              "definition": "Phase 2: Devaluation"
+            },
+            {
+              "term": "Silent Treatment & Ghosting",
+              "definition": "Phase 3: Discard"
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Perfect. Recognizing the tactic allows you to identify which part of the cycle you are currently experiencing.",
+            "incorrect": "Review the phases: Hook (Idealization), Control (Devaluation), Exit (Discard)."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P3-E10",
+          "type": "multiple-choice",
+          "question": "Which term best describes a conversation that loops endlessly, introducing unrelated past events and shifting goalposts, until you give up on the original topic?",
+          "options": [
+            "A Healthy Debate",
+            "Projection",
+            "Word Salad",
+            "Blame-shifting"
+          ],
+          "correct": "Word Salad",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. **Word Salad** is a deliberate confusion tactic used to wear you down and win the argument through exhaustion, not logic.",
+            "incorrect": "Word Salad is a key technique to escape accountability by confusing the issue."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P3-E11",
+          "type": "true-false",
+          "question": "True or False: The goal of Hoovering is to apologize, make amends, and start a healthy relationship.",
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "False. The goal of **Hoovering** is to temporarily replenish their Supply by pulling you back into the cycle. The Devaluation phase will always follow.",
+            "incorrect": "Hoovering is a tactical maneuver, not an act of genuine remorse or change."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P3-E12",
+          "type": "scenario",
+          "scene": "Scenario: You catch your business partner skimming money. They respond: 'I had to do it because our accountant has been making mistakes, and if I hadn't taken control, we would have gone under. You should be thanking me!'",
+          "question": "This is primarily an example of:",
+          "options": [
+            "Hoovering",
+            "Idealization",
+            "Blame-shifting",
+            "Projection"
+          ],
+          "correct": "Blame-shifting",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They are refusing accountability for their theft by placing the reason for their actions onto a third party ('the accountant') and reframing the action as a heroic 'rescue' (Blame-shifting).",
+            "incorrect": "This is **Blame-shifting**, as they are deflecting responsibility onto an external factor (the accountant)."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P3-E13",
+          "type": "multiple-choice",
+          "question": "What is the only phase of the cycle that the narcissist views as a 'success' because it validates their self-concept and feeds the mask?",
+          "options": [
+            "Discard",
+            "Devaluation",
+            "Idealization",
+            "Hoovering"
+          ],
+          "correct": "Idealization",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. **Idealization** is the only phase where you are treating them as the perfect, god-like figure they believe they are, providing the most powerful form of Supply.",
+            "incorrect": "While the others provide Supply, Idealization is the period of maximum validation for their false self."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P3-E14",
+          "type": "build-sentence",
+          "question": "The ultimate goal of all narcissistic defense mechanisms is to:",
+          "words": [
+            "The",
+            "core",
+            "shame",
+            "conceal",
+            "wound",
+            "and"
+          ],
+          "correct": "conceal the core shame wound",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Exactly. Every manipulation—Projection, Blame-shifting, Rage—is a panicked attempt to keep that deep, core feeling of worthlessness hidden.",
+            "incorrect": "All defenses serve the purpose of concealing the feeling that they are fundamentally flawed."
+          }
+        },
+        {
+          "exerciseId": "A2-1-P3-E15",
+          "type": "multiple-choice",
+          "question": "A narcissist's use of **Projection** reveals that the trait they are accusing you of is the very trait they:",
+          "options": [
+            "Secretly admire.",
+            "Wish you had more of.",
+            "Are terrified is true about themselves.",
+            "Have no control over."
+          ],
+          "correct": "Are terrified is true about themselves.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Projection is a psychological defense where they offload the fear that *they* are the dishonest, angry, or damaged one, transferring the feeling to you.",
+            "incorrect": "They are projecting their own internal, unbearable fear onto you."
+          }
+        }
+      ]
+    }
+  ]
+}

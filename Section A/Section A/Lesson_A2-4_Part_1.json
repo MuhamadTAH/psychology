@@ -1,0 +1,351 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A2",
+  "unitTitle": "The Manipulator's Playbook: Narcissism & Gaslighting",
+  "lessonId": "A2-4",
+  "lessonTitle": "Tactic Deep Dive: Gaslighting",
+  "lessonType": "Normal",
+  "lessonPart": 1,
+  "lessonPartTitle": "The Concept: 'That Never Happened'",
+  "objective": "To define 'Gaslighting' as a systematic attack on reality and perception, distinguishing it from simple lying or disagreement.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "pending",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "A2-4-P1-S1",
+      "screenType": "Learn",
+      "title": "Tactic Deep Dive: Gaslighting",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You've met the Narcissist (A2-1). Now we examine their most dangerous weapon: **Gaslighting**."
+        },
+        {
+          "type": "paragraph",
+          "text": "Lying is about hiding the truth. Gaslighting is about **destroying your ability to see the truth**."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "The Goal: To make you doubt your memory, your perception, and eventually, your sanity, so you rely entirely on the manipulator's version of reality."
+        }
+      ]
+    },
+    {
+      "screenId": "A2-4-P1-S2",
+      "screenType": "Exercises",
+      "title": "Gaslighting Basics",
+      "exercises": [
+        {
+          "exerciseId": "A2-4-P1-E1",
+          "type": "multiple-choice",
+          "question": "What is the core difference between a 'Lie' and 'Gaslighting'?",
+          "options": [
+            "A Lie tries to hide a specific fact; Gaslighting attacks your *perception* of reality itself.",
+            "A Lie is verbal; Gaslighting is physical.",
+            "Gaslighting is only used by politicians.",
+            "They are exactly the same thing."
+          ],
+          "correct": "A Lie tries to hide a specific fact; Gaslighting attacks your *perception* of reality itself.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. A liar says 'I didn't eat the cookie.' A gaslighter says 'You're crazy, there never was a cookie.' It attacks your mind.",
+            "incorrect": "Think about the *target*. A lie targets the truth. Gaslighting targets *you* and your sanity."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P1-E2",
+          "type": "scenario",
+          "scene": "Scenario: You saw your partner text an ex. You confront them. They reply: 'I never texted them! You're just insecure and imagining things again. You need help.'",
+          "question": "This is an example of:",
+          "options": [
+            "Defensive Lying",
+            "Gaslighting (Denial + Attack on Sanity)",
+            "Honesty",
+            "A Misunderstanding"
+          ],
+          "correct": "Gaslighting (Denial + Attack on Sanity)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They didn't just deny the act; they attacked your **sanity** ('imagining things') and character ('insecure') to invalidate your evidence.",
+            "incorrect": "A defensive lie would be 'It wasn't what it looked like.' This response attacks *your mind* ('You are imagining things'). That makes it Gaslighting."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P1-E3",
+          "type": "fill-in",
+          "sentence": "The ultimate goal of Gaslighting is to create (--------) in the victim, so they rely on the manipulator for reality.",
+          "options": [
+            "dependency",
+            "anger",
+            "strength",
+            "wealth"
+          ],
+          "answers": [
+            "dependency"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If you can't trust your own brain, you have to trust theirs. This creates total control and dependency.",
+            "incorrect": "The goal isn't just anger; it's to make you feel unable to function without them (Dependency)."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P1-E4",
+          "type": "true-false",
+          "scene": "Scenario: A boss tells you on Monday: 'Finish this by Friday.' On Wednesday, they yell: 'Why isn't this done? I told you Wednesday!' When you remind them of Monday, they say: 'I never said Friday. You're just bad at listening.'",
+          "question": "Is this Gaslighting?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. This is 'History Rewriting.' They confidently state a falsehood about the past to make you doubt your memory.",
+            "incorrect": "This is classic Gaslighting. They are altering the past ('I never said Friday') to make the failure *your* fault."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P1-E5",
+          "type": "matching",
+          "question": "Match the Gaslighting phrase to its hidden meaning:",
+          "pairs": [
+            {
+              "term": "'You're too sensitive.'",
+              "definition": "Your emotions are wrong/invalid."
+            },
+            {
+              "term": "'That never happened.'",
+              "definition": "Your memory is broken."
+            },
+            {
+              "term": "'You're crazy.'",
+              "definition": "Your sanity is gone."
+            },
+            {
+              "term": "'It was just a joke.'",
+              "definition": "Your perception of malice is wrong."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Each phrase targets a different part of your internal system (Emotions, Memory, Sanity, Perception).",
+            "incorrect": "Look closely. 'Sensitive' attacks feelings. 'Never happened' attacks memory. 'Crazy' attacks sanity."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P1-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to reveal the Gaslighter's strategy:",
+          "words": [
+            "reality",
+            "to",
+            "control",
+            "Erode",
+            "the",
+            "victim"
+          ],
+          "correct": "Erode reality to control the victim",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It is a slow erosion. You don't realize it's happening until you have lost your sense of self.",
+            "incorrect": "The strategy is to *erode reality* first, which leads to *controlling the victim*."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P1-E7",
+          "type": "reverse-scenario",
+          "answer": "A tactic where the manipulator hides your keys or wallet, then helps you find them, claiming you are 'forgetful' and 'losing it.'",
+          "question": "What is this physical form of Gaslighting called?",
+          "options": [
+            "The 'Dimming Light' / Ambient Gaslighting",
+            "The Reciprocity Trap",
+            "Love Bombing",
+            "The Silent Treatment"
+          ],
+          "correct": "The 'Dimming Light' / Ambient Gaslighting",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This mimics the original 1938 play (moving pictures, dimming lights). It involves altering the *physical environment* to prove the victim is insane.",
+            "incorrect": "This isn't Reciprocity (gifts). This is staging the environment to create evidence of your 'insanity'."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P1-E8",
+          "type": "scenario",
+          "scene": "Scenario: You confront a friend about a mean comment. They laugh and say, 'Wow, I was just joking. You have absolutely no sense of humor. You always ruin the fun.'",
+          "question": "This is an example of:",
+          "options": [
+            "Trivializing (minimizing your feelings)",
+            "A genuine joke",
+            "Apologizing",
+            "Flattery"
+          ],
+          "correct": "Trivializing (minimizing your feelings)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Trivializing' makes your valid hurt feelings seem small or ridiculous. They shift the problem from *their insult* to *your reaction*.",
+            "incorrect": "It's not a joke if it hurts and they don't care. This is a tactic to invalidate your emotions so you stop complaining."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P1-E9",
+          "type": "multiple-choice",
+          "question": "Why is Gaslighting often described as a 'slow creep'?",
+          "options": [
+            "Because it happens overnight.",
+            "Because it starts subtly (small denials) and escalates over months/years until the victim is destabilized.",
+            "Because manipulators move slowly.",
+            "Because it only works on slow people."
+          ],
+          "correct": "Because it starts subtly (small denials) and escalates over months/years until the victim is destabilized.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It is the 'Boiling Frog' effect. If they started with big lies, you'd leave. Small denials wear you down over time.",
+            "incorrect": "Gaslighting takes time. It requires wearing down the victim's defenses gradually so they don't notice the shift in reality."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P1-E10",
+          "type": "fill-in",
+          "sentence": "Gaslighting requires a power imbalance. The victim must value the manipulator's (--------) more than their own.",
+          "options": [
+            "opinion",
+            "money",
+            "car",
+            "time"
+          ],
+          "answers": [
+            "opinion"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If you didn't care what they thought, their denial wouldn't matter. Gaslighting works because you *trust* them.",
+            "incorrect": "It's about *opinion* and perception. You must value their view of reality above your own for the tactic to work."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P1-E11",
+          "type": "ethical-dilemma",
+          "scene": "You realize your parent has been gaslighting you for years ('I never said that,' 'You're remembering it wrong').",
+          "question": "What is the first step to breaking the spell?",
+          "options": [
+            "Argue harder to prove you are right.",
+            "Start writing things down (keeping a 'Reality Journal') to trust your own memory.",
+            "Gaslight them back.",
+            "Accept that you are crazy."
+          ],
+          "correct": "Start writing things down (keeping a 'Reality Journal') to trust your own memory.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You cannot win an argument with a Gaslighter because they reject reality. You must re-establish trust in *yourself* first via evidence (journaling).",
+            "incorrect": "Arguing just gives them more fuel to call you 'crazy' or 'emotional.' You need to validate *yourself* internally first."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P1-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I am doing this because I love you. You're not capable of making these decisions on your own.'",
+          "question": "Is this Gaslighting?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is 'Compassionate Gaslighting.' They frame their control and your disempowerment as 'love,' making it hard for you to fight back.",
+            "incorrect": "It looks like care, but it's actually disempowerment. Telling an adult they are 'not capable' is an attack on their competence and reality."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P1-E13",
+          "type": "matching",
+          "question": "Match the Gaslighting Technique to its description:",
+          "pairs": [
+            {
+              "term": "Withholding",
+              "definition": "Pretending not to understand or refusing to listen ('I'm not having this conversation again')."
+            },
+            {
+              "term": "Countering",
+              "definition": "Questioning your memory of events ('Are you sure? You have a bad memory')."
+            },
+            {
+              "term": "Blocking/Diverting",
+              "definition": "Changing the subject to stop your thought process ('You're just imagining things')."
+            },
+            {
+              "term": "Trivializing",
+              "definition": "Making your needs or feelings seem unimportant ('You're too sensitive')."
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. These are the mechanics. Withholding shuts down speech. Countering attacks memory. Trivializing attacks feelings.",
+            "incorrect": "Withholding is refusal to engage. Countering challenges the facts. Trivializing minimizes the emotion."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P1-E14",
+          "type": "scenario",
+          "scene": "Scenario: You bring up a concern. The manipulator says: 'We talked about this weeks ago and you agreed I was right. Don't you remember?' (You do *not* remember agreeing).",
+          "question": "This is an attempt to:",
+          "options": [
+            "Remind you of the truth.",
+            "Rewrite history to force compliance.",
+            "Help you with your memory.",
+            "Make a new agreement."
+          ],
+          "correct": "Rewrite history to force compliance.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. By claiming you *already* agreed, they bypass the argument entirely and make you doubt your mind. It forces you to submit to a fake past.",
+            "incorrect": "They are fabricating an agreement that never happened. This is History Rewriting."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P1-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 1 Complete: Reality Check",
+          "scene": "You have defined Gaslighting: The systematic dismantling of a victim's reality. You know the signs: Denial, Trivializing, and History Rewriting.",
+          "question": "In Part 2, what will we practice?",
+          "options": [
+            "How to gaslight others.",
+            "Practice: Identifying these specific techniques (Denial, Blame-Shifting) in real-world conversations.",
+            "A lesson on Flattery.",
+            "A review of Narcissism."
+          ],
+          "correct": "Practice: Identifying these specific techniques (Denial, Blame-Shifting) in real-world conversations.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You know the theory. Now you need to spot the techniques in action to build your 'Reality Shield' in Part 2.",
+            "incorrect": "The next step is application. We need to practice spotting the specific techniques like Denial and Blame-Shifting in scenarios."
+          }
+        }
+      ]
+    }
+  ]
+}

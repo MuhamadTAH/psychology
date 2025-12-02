@@ -1,0 +1,356 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B3",
+  "unitTitle": "The Herd Mind: Social Engineering",
+  "lessonId": "B3-2",
+  "lessonTitle": "The Authority Hack",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Milgram\" Simulation",
+  "objective": "To master the defense against unethical authority by resisting the 'Agentic State', rejecting the 'Just Following Orders' excuse, and maintaining personal agency under pressure.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Sovereign_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B3-2-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: Breaking the Chain of Command",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Milgram Experiment proved that 65% of people will hurt a stranger if a 'Scientist' tells them to. They enter the **Agentic State**: viewing themselves as a tool of the authority, not as a person responsible for their actions."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Stay in the **Autonomous State**. You are always responsible for what you do, no matter who told you to do it."
+        }
+      ]
+    },
+    {
+      "screenId": "B3-2-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Illegal Order",
+      "exercises": [
+        {
+          "exerciseId": "B3-2-P3-E1",
+          "type": "boss-scenario",
+          "scene": "Your Boss calls you into the office. They hand you a stack of documents. 'These are the safety reports for the new product. They have some... errors. I need you to shred them. Right now. I take full responsibility.'",
+          "question": "This is the 'Milgram' Test. What do you do?",
+          "options": [
+            "Shred them. The boss took responsibility.",
+            "Say: 'I cannot shred legal documents. That is a crime, and I will not be a party to it.' (Refusal).",
+            "Shred them, but keep a copy.",
+            "Ask for a raise first."
+          ],
+          "correct": "Say: 'I cannot shred legal documents. That is a crime, and I will not be a party to it.' (Refusal).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. 'I was following orders' is not a legal defense. If you shred them, *you* go to jail. You must break the chain of obedience.",
+            "incorrect": "The boss's 'responsibility' does not protect you from the law. You are the one holding the shredder."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Security Breach",
+          "steps": [
+            {
+              "scene": "A man in a suit with an earpiece walks up to your secure office door. 'I'm Secret Service. We have a threat. Open this door immediately.' He flashes a badge too fast for you to see.",
+              "options": [
+                "Open the door immediately. (Panic)",
+                "'Please hold the badge up to the glass so I can verify it, and tell me your badge number so I can call to confirm.' (Verification)",
+                "'You don't look like Secret Service.' (Challenge)",
+                "Run away."
+              ],
+              "correct": "'Please hold the badge up to the glass so I can verify it, and tell me your badge number so I can call to confirm.' (Verification)",
+              "feedback": {
+                "correct": "Perfect. Real law enforcement will wait for verification. A Social Engineer relies on your panic to get the door open fast.",
+                "incorrect": "Panic is the enemy. If you open the door without verifying, you have failed security."
+              }
+            },
+            {
+              "question": "The man gets angry. 'Do you know who I am?! I will have your job for this! Open the door NOW!' (Intimidation).",
+              "options": [
+                "'I'm sorry!' (Open the door)",
+                "'I am following security protocol. I am calling the police to verify your status now.' (Holding the Line)",
+                "'Go away!' (Yelling)",
+                "Cower."
+              ],
+              "correct": "'I am following security protocol. I am calling the police to verify your status now.' (Holding the Line)",
+              "feedback": {
+                "correct": "Mastery. Anger is a sign of a fake. A real agent knows protocol. By calling the police, you call the bluff.",
+                "incorrect": "Threats are used when authority is fake. Do not yield to anger."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the breach. You valued 'Protocol' over 'Politeness.'",
+            "incorrect": "You let an intruder in because you were afraid of being rude to a 'Suit'."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why is it physically difficult to say 'No' to an authority figure?",
+          "options": [
+            "Because we are wired to fear expulsion from the tribe (Social Death).",
+            "Because we are weak.",
+            "Because they are taller.",
+            "It isn't difficult."
+          ],
+          "correct": "Because we are wired to fear expulsion from the tribe (Social Death).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Evolution taught us that disobeying the Alpha leads to death. You are fighting millions of years of biology.",
+            "incorrect": "It is not weakness; it is instinct. You have to override the instinct with logic."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P3-E4",
+          "type": "fill-in",
+          "sentence": "When you obey an unethical order, you enter the (--------) State, believing you are not responsible.",
+          "options": [
+            "agentic",
+            "happy",
+            "sad",
+            "free"
+          ],
+          "answers": [
+            "agentic"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Milgram coined this term. You see yourself as an 'Agent' of someone else's will, rather than a free actor.",
+            "incorrect": "It is the 'Agentic' state. You must stay in the 'Autonomous' state."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: A 'Doctor' calls the nurse station. 'I am Dr. Smith. I need you to give patient X 20mg of Astroten immediately. I'll sign the papers later.' (This is a lethal dose).",
+          "question": "What should the nurse do?",
+          "options": [
+            "Give the drug. He is a doctor.",
+            "Refuse. 'I cannot administer medication without a written order and verification of the dose.'",
+            "Ask the patient.",
+            "Do half the dose."
+          ],
+          "correct": "Refuse. 'I cannot administer medication without a written order and verification of the dose.'",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. (Hofling Hospital Experiment). Nurses often gave the lethal dose because of the 'Doctor' title. Safety protocols exist to stop this.",
+            "incorrect": "Never bypass safety for authority. The title does not override the rules of biology."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'Legitimate authority fears verification.'",
+          "question": "Is this true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct/False. Legitimate authority *welcomes* verification. A real cop is happy to show a badge. Only a fake gets angry.",
+            "incorrect": "Anger at verification is the number one sign of a fraud."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense against Intimidation:",
+          "words": [
+            "politeness",
+            "safety",
+            "Never",
+            "trade",
+            "for"
+          ],
+          "correct": "Never trade safety for politeness",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Manipulators use your desire to be 'nice' to get past your boundaries. Be rude if you have to be safe.",
+            "incorrect": "Safety first. Manners second."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "Creating a fake email from the 'CEO' asking for an urgent wire transfer.",
+          "question": "What is this Social Engineering attack?",
+          "options": [
+            "CEO Fraud / Whaling",
+            "Phishing",
+            "Gaslighting",
+            "Spam"
+          ],
+          "correct": "CEO Fraud / Whaling",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It relies entirely on Authority Bias. Employees are afraid to say 'No' to the CEO's urgent request.",
+            "incorrect": "Phishing is general. Whaling targets big fish using authority."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "Your team is pressuring you to sign off on a project you know is unsafe. 'Everyone else signed it. Don't be the holdout.'",
+          "question": "This combines Social Proof with Authority. What do you do?",
+          "options": [
+            "Sign it. Safety in numbers.",
+            "Refuse. 'I cannot sign my name to something I know is unsafe.' (Integrity).",
+            "Sign it but tell someone secretly.",
+            "Quit."
+          ],
+          "correct": "Refuse. 'I cannot sign my name to something I know is unsafe.' (Integrity).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If the bridge collapses, your signature is on it. The crowd will not save you from the guilt or the lawsuit.",
+            "incorrect": "Groupthink creates disasters (like the Challenger explosion). Be the brake."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'Don't you trust me?'",
+          "question": "How do you answer this manipulation?",
+          "options": [
+            "'Yes, of course.'",
+            "'Trust is not the issue. Verification is the policy.'",
+            "'No, you are a liar.'",
+            "Stay silent."
+          ],
+          "correct": "'Trust is not the issue. Verification is the policy.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They tried to make it personal. You kept it procedural. This de-personalizes the conflict.",
+            "incorrect": "Saying 'No' starts a fight. Saying 'Yes' opens the door. Pivot to 'Policy'."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P3-E11",
+          "type": "fill-in",
+          "sentence": "Symbols of authority (uniforms, titles) are (--------), not proof.",
+          "options": [
+            "props",
+            "laws",
+            "truth",
+            "gods"
+          ],
+          "answers": [
+            "props"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A prop can be bought. Proof must be verified.",
+            "incorrect": "They are theater. Don't confuse the costume with the power."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P3-E12",
+          "type": "multiple-choice",
+          "question": "What is the 'Pause' defense?",
+          "options": [
+            "Stopping to think. Authority demands speed ('Do it NOW'). Slowing down kills the panic reflex.",
+            "Falling asleep.",
+            "A button on a remote.",
+            "Being lazy."
+          ],
+          "correct": "Stopping to think. Authority demands speed ('Do it NOW'). Slowing down kills the panic reflex.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'I need a minute to check.' This phrase destroys most Authority scams.",
+            "incorrect": "Urgency is the manipulator's best friend. The Pause is their enemy."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: A person in a suit commands you to give up your seat on the train.",
+          "question": "You should:",
+          "options": [
+            "Obey. They look important.",
+            "Ask 'Why?'",
+            "Ignore the suit. Treat them like any other passenger.",
+            "Run."
+          ],
+          "correct": "Ignore the suit. Treat them like any other passenger.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The suit is not a rank. In public, you are equals.",
+            "incorrect": "Don't let the symbol dictate your rights."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P3-E14",
+          "type": "matching",
+          "question": "Match the Tactic to the Counter:",
+          "pairs": [
+            {
+              "term": "Intimidation",
+              "definition": "Counter: Stay calm and cite policy."
+            },
+            {
+              "term": "Urgency",
+              "definition": "Counter: The Pause."
+            },
+            {
+              "term": "Title Dropping",
+              "definition": "Counter: Verification."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Policy beats anger. Pause beats rush. Verification beats titles.",
+            "incorrect": "Match the specific antidote."
+          }
+        },
+        {
+          "exerciseId": "B3-2-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Sovereign",
+          "scene": "You have learned to question the badge. You know that true authority protects; false authority demands.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson B3-3: Pretexting & Phishing (The 'Fake Scenario').",
+            "Lesson A1-1.",
+            "Obeying.",
+            "Sleeping."
+          ],
+          "correct": "Lesson B3-3: Pretexting & Phishing (The 'Fake Scenario').",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that you can spot the fake boss, let's spot the fake situation.",
+            "incorrect": "Next up: The stories hackers tell to steal your data."
+          }
+        }
+      ]
+    }
+  ]
+}

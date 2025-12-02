@@ -1,0 +1,357 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B1",
+  "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis",
+  "lessonId": "B1-4",
+  "lessonTitle": "The \"Milton Model\": Weaponized Vague Language",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Guru\" Simulation",
+  "objective": "To master the defense against the Milton Model by refusing to accept abstract concepts ('Success', 'Alignment', 'Truth') without specific definitions, and breaking the trance of vague authority.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Fog_Cutter_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B1-4-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: Pierce the Fog",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You are about to face 'The Guru.' They will speak in deep, profound sentences that mean absolutely nothing. Their goal is to make you nod along in a trance."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Do not nod. Do not agree. Ask: 'How specifically?' until they give you a real answer or reveal they have none."
+        }
+      ]
+    },
+    {
+      "screenId": "B1-4-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Guru",
+      "exercises": [
+        {
+          "exerciseId": "B1-4-P3-E1",
+          "type": "boss-scenario",
+          "scene": "The Guru looks into your eyes: 'You are blocking your own abundance because your vibration is not aligned with the frequency of success.'",
+          "question": "This is a 'Word Salad' of Nominalizations. What is the Meta Model defense?",
+          "options": [
+            "'Oh no! How do I fix my vibration?' (Submission)",
+            "'You are right. I feel blocked.' (Acceptance)",
+            "'How specifically do I align a vibration? And what specifically do you mean by success?' (Drill Down)",
+            "Leave."
+          ],
+          "correct": "'How specifically do I align a vibration? And what specifically do you mean by success?' (Drill Down)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You refused to accept the abstract concepts ('vibration', 'success') as real things. You demanded the verb (the action).",
+            "incorrect": "If you accept the premise that you have a 'vibration' that is 'blocked,' they can sell you the cure. You must challenge the premise."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Vague Promise",
+          "steps": [
+            {
+              "scene": "Manager: 'If you just *trust the process*, you will be *rewarded* soon.'",
+              "options": [
+                "'Okay, I trust you.' (Blind Faith)",
+                "'What specific process? And what specific reward on what specific date?' (The Audit)",
+                "'I hope so.' (Passive)",
+                "'You are lying.' (Attack)"
+              ],
+              "correct": "'What specific process? And what specific reward on what specific date?' (The Audit)",
+              "feedback": {
+                "correct": "Perfect. 'Process' and 'Reward' are empty containers. You forced them to put concrete details inside.",
+                "incorrect": "Trusting a vague process is how people get exploited. Specificity is security."
+              }
+            },
+            {
+              "question": "Manager: 'Why do you have to be so negative? Don't you have *faith* in the team?' (Shifting to Morality).",
+              "options": [
+                "'I'm sorry, I do have faith.' (Guilt Trip worked)",
+                "'Faith is not a contract. I need details to do my job.' (Holding Frame)",
+                "'The team is great.' (Deflection)",
+                "Quit."
+              ],
+              "correct": "'Faith is not a contract. I need details to do my job.' (Holding Frame)",
+              "feedback": {
+                "correct": "Mastery. They tried to use a 'Nominalization' (Faith) to shame you. You rejected it. Business runs on contracts, not faith.",
+                "incorrect": "They switched the frame from 'Business' to 'Religion' (Faith). Don't follow them there."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Fog. You realized that a promise without a date is just a lie.",
+            "incorrect": "You accepted the 'Reward' without knowing what it was. You bought a mystery box."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why does the 'Milton Model' work so well on intelligent people?",
+          "options": [
+            "It doesn't.",
+            "Because intelligent people have active imaginations. They do the work of filling in the blanks with their own brilliant ideas, thinking the speaker is brilliant too.",
+            "Because intelligent people are gullible.",
+            "Because it is logical."
+          ],
+          "correct": "Because intelligent people have active imaginations. They do the work of filling in the blanks with their own brilliant ideas, thinking the speaker is brilliant too.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The listener projects their own intelligence onto the vague speaker. It is a 'Projection Trap.'",
+            "incorrect": "Intelligence is not a shield; it can be a weakness if you over-interpret meaning where there is none."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P3-E4",
+          "type": "fill-in",
+          "sentence": "Vagueness creates (--------). Specificity creates (--------).",
+          "options": [
+            "trance",
+            "clarity",
+            "sleep",
+            "anger"
+          ],
+          "answers": [
+            "trance",
+            "clarity"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. To hypnotize, go vague. To de-hypnotize, go specific.",
+            "incorrect": "Vagueness induces the 'transderivational search' (trance). Clarity wakes you up."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'Everyone knows that this is the wrong direction.' (Universal Quantifier).",
+          "question": "The Challenge:",
+          "options": [
+            "'Who is everyone?'",
+            "'Is it?'",
+            "'I agree.'",
+            "'You are wrong.'"
+          ],
+          "correct": "'Who is everyone?'",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Force them to name the crowd. Usually, 'Everyone' is just 'Me and my one friend.'",
+            "incorrect": "Don't accept the phantom army. Make them count the soldiers."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'You will understand when you are older.'",
+          "question": "Is this a 'Patronizing Mind Read'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They claim to know your future mental state. It is a dismissal tactic to stop the argument.",
+            "incorrect": "It asserts superior knowledge to shut you down."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the Meta Model's power:",
+          "words": [
+            "The",
+            "is",
+            "map",
+            "territory",
+            "not",
+            "the"
+          ],
+          "correct": "The map is not the territory",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. (Korzybski). The words (Map) are not the reality (Territory). The Meta Model checks the Map against the Territory.",
+            "incorrect": "Words are just symbols. You must check if they match reality."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A phrase that implies knowledge without stating it, like 'I'm glad you finally *realized* the truth.' (Implies you didn't know it before).",
+          "question": "What is this?",
+          "options": [
+            "A Factive Presupposition",
+            "A Lie",
+            "A Compliment",
+            "A Question"
+          ],
+          "correct": "A Factive Presupposition",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The word 'realized' presupposes that the 'truth' is a fact. It forces you to accept their version of 'truth' to accept the compliment.",
+            "incorrect": "It smuggles an assumption into the sentence."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "A politician uses vague slogans ('Hope,' 'Change,' 'Greatness') to rally a crowd.",
+          "question": "Is this manipulation?",
+          "options": [
+            "Yes, it is the Milton Model used for mass influence. Whether it is 'bad' depends on the policy behind the words.",
+            "No, it is just speaking.",
+            "Yes, all politicians are evil.",
+            "No, they mean it."
+          ],
+          "correct": "Yes, it is the Milton Model used for mass influence. Whether it is 'bad' depends on the policy behind the words.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Slogans are 'Nominalizations.' They are empty containers so every voter can project their own wish into them.",
+            "incorrect": "It is absolutely manipulation (shaping perception). The ethics depend on the outcome."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'You are hurting me.' (Cause-Effect).",
+          "question": "How do you challenge this without being mean?",
+          "options": [
+            "'No I'm not.'",
+            "'I am not touching you.'",
+            "'How specifically does my action of [X] cause you to feel pain?'",
+            "'You are too sensitive.'"
+          ],
+          "correct": "'How specifically does my action of [X] cause you to feel pain?'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. This forces them to trace the link. Often, they can't, because the pain comes from their interpretation, not your action.",
+            "incorrect": "Denial ('No I'm not') is a fight. Specificity ('How specifically?') is an investigation."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P3-E11",
+          "type": "fill-in",
+          "sentence": "The Guru speaks in (--------) to avoid being pinned down to a specific meaning.",
+          "options": [
+            "riddles",
+            "facts",
+            "lies",
+            "numbers"
+          ],
+          "answers": [
+            "riddles"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If they speak in riddles (metaphors), they can never be proven wrong. 'The river flows uphill' sounds deep, but means nothing.",
+            "incorrect": "Facts can be checked. Riddles cannot."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'Clearly, we have no other choice.'",
+          "question": "Is this a 'Lost Performative'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Clearly' to whom? 'No choice' according to whom? It presents an opinion as an objective fact from the universe.",
+            "incorrect": "It hides the judge. The speaker is the judge, but they hide behind the word 'Clearly.'"
+          }
+        },
+        {
+          "exerciseId": "B1-4-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: You ask for a raise. Boss: 'We value you highly, and we want to ensure you are compensated in a way that reflects your holistic contribution to the ecosystem.'",
+          "question": "Did they say 'Yes'?",
+          "options": [
+            "No. This is Word Salad.",
+            "Yes, they said 'value' and 'compensated'.",
+            "Maybe.",
+            "It sounds like a yes."
+          ],
+          "correct": "No. This is Word Salad.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They used positive words ('value,' 'ecosystem') but promised zero dollars. It is a non-answer designed to make you feel good while getting nothing.",
+            "incorrect": "Don't listen to the tone. Listen to the commitment. There was no number."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P3-E14",
+          "type": "matching",
+          "question": "Match the Question to the Fluff:",
+          "pairs": [
+            {
+              "term": "\"I just want what's best.\"",
+              "definition": "Question: \"Best for whom?\""
+            },
+            {
+              "term": "\"It's inappropriate.\"",
+              "definition": "Question: \"According to what standard?\""
+            },
+            {
+              "term": "\"You make me sad.\"",
+              "definition": "Question: \"How do I make you sad?\""
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Define 'Best.' Define 'Inappropriate.' Define the mechanism of 'Making' sadness.",
+            "incorrect": "Drill into the missing reference."
+          }
+        },
+        {
+          "exerciseId": "B1-4-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Fog Cutter",
+          "scene": "You have learned to cut through the fog. You know that 'Love' is a noun, but 'Loving' is a verb. You demand the verb.",
+          "question": "You are ready for the Unit B1 Review:",
+          "options": [
+            "Lesson B1-5: Unit B1 Review (The Hypnotist).",
+            "Lesson A1-1.",
+            "Listening to a speech.",
+            "Sleeping."
+          ],
+          "correct": "Lesson B1-5: Unit B1 Review (The Hypnotist).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We have covered Pacing, Leading, Embedded Commands, Double Binds, and the Milton Model. Now we test it all.",
+            "incorrect": "Next up: The final exam for the Silver Tongue unit."
+          }
+        }
+      ]
+    }
+  ]
+}

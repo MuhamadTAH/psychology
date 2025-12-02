@@ -1,0 +1,357 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B1",
+  "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis",
+  "lessonId": "B1-3",
+  "lessonTitle": "The Double Bind: The Illusion of Choice",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: Breaking the Bind",
+  "objective": "To master the defense against the Double Bind by learning to reject binary choices, use Meta-Commentary to expose the trap, and maintain autonomy under pressure.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Choice_Breaker_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B1-3-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Third Door",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In this challenge, you will face manipulators who try to trap you in a 'Lose-Lose' scenario. They will say: 'Choose A or B.' Both benefit them."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: Do not choose A. Do not choose B. Choose C: Reject the premise. Step outside the frame."
+        }
+      ]
+    },
+    {
+      "screenId": "B1-3-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Escape Artist",
+      "exercises": [
+        {
+          "exerciseId": "B1-3-P3-E1",
+          "type": "boss-scenario",
+          "scene": "A manipulative partner says: 'You can go out with your friends tonight if you want to be selfish, or you can stay home and show me you care.'",
+          "question": "This is the 'Moral Bind.' What is the strongest defense?",
+          "options": [
+            "Stay home. (Compliance)",
+            "Go out and feel guilty. (Trap)",
+            "'I am going out, and I also care about you. Those two things are not opposites.' (Rejecting the Link)",
+            "'You are controlling!' (Attack)"
+          ],
+          "correct": "'I am going out, and I also care about you. Those two things are not opposites.' (Rejecting the Link)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You broke the link between 'Going Out' and 'Being Selfish.' You refused to accept their definition of reality.",
+            "incorrect": "Choosing A or B accepts the premise that 'Going Out = Selfish.' You must reject the premise."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Salary Trap",
+          "steps": [
+            {
+              "scene": "Boss: 'We can give you the title of 'Manager' (without a raise), or you can keep your current title. Which do you want?'",
+              "options": [
+                "'I want the title!' (Ego Trap)",
+                "'I'll keep my current title.' (Stagnation)",
+                "'I want the title AND the raise that comes with the increased responsibility.' (Option C)",
+                "'This isn't fair.' (Complaining)"
+              ],
+              "correct": "'I want the title AND the raise that comes with the increased responsibility.' (Option C)",
+              "feedback": {
+                "correct": "Perfect. They tried to make you trade Money for Status. You demanded both. You stepped out of their frame.",
+                "incorrect": "Accepting the title without pay is a classic 'Ego Bind.' You do more work for free."
+              }
+            },
+            {
+              "question": "Boss: 'We don't have the budget for a raise right now. So, do you want the title or not?' (Pressure).",
+              "options": [
+                "'Okay, I'll take the title.' (Submission)",
+                "'I will wait until the budget opens up. Let's revisit this next quarter.' (Stalling/Refusal)",
+                "'You are lying.' (Accusation)",
+                "Quit."
+              ],
+              "correct": "'I will wait until the budget opens up. Let's revisit this next quarter.' (Stalling/Refusal)",
+              "feedback": {
+                "correct": "Mastery. You refused to work for free. By stalling, you force them to come back with a better offer later.",
+                "incorrect": "Taking the title now removes your leverage for a raise later."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You broke the Salary Bind. You realized that Status without Money is a trick.",
+            "incorrect": "You let your Ego make a bad financial decision."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why is 'Meta-Commentary' ('I notice you are forcing me to choose...') so effective against Double Binds?",
+          "options": [
+            "It makes you sound smart.",
+            "It exposes the hidden structure of the manipulation, forcing the manipulator to deny it or back down.",
+            "It changes the subject.",
+            "It confuses them."
+          ],
+          "correct": "It exposes the hidden structure of the manipulation, forcing the manipulator to deny it or back down.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Double Binds rely on being invisible. Shining a light on the trap destroys the trap.",
+            "incorrect": "It's not about sounding smart; it's about dragging the subtext into the text."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P3-E4",
+          "type": "fill-in",
+          "sentence": "In a negotiation, the person who defines the (--------) wins the game.",
+          "options": [
+            "choices",
+            "time",
+            "lunch",
+            "room"
+          ],
+          "answers": [
+            "choices"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If I say 'Red or Blue?', I control the color. If you say 'Green,' you take back control.",
+            "incorrect": "The power lies in setting the menu of options."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'Do you want to donate $10 to save the puppies, or do you not care about animals?'",
+          "question": "This is the 'Moral Trap.' How do you exit?",
+          "options": [
+            "Donate $10.",
+            "'I care about animals, but I am not donating today.' (Rejecting the Link)",
+            "'I hate puppies.'",
+            "Walk away silently."
+          ],
+          "correct": "'I care about animals, but I am not donating today.' (Rejecting the Link)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You accepted the positive identity ('I care') but rejected the action ('Donate'). You separated the bind.",
+            "incorrect": "Walking away works, but verbally separating the link is a stronger psychological defense."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: A Double Bind always sounds aggressive.",
+          "question": "Is this true?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct/False. It often sounds helpful or polite. 'Would you like to pay now to get it over with?' sounds nice, but it is a trap.",
+            "incorrect": "The softest voice often hides the hardest trap."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the ultimate freedom:",
+          "words": [
+            "ability",
+            "no",
+            "is",
+            "Freedom",
+            "say",
+            "to",
+            "the"
+          ],
+          "correct": "Freedom is the ability to say no",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If you cannot say 'No,' your 'Yes' is meaningless. The Double Bind tries to remove your 'No'.",
+            "incorrect": "Autonomy requires the option of refusal."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A question formatted to make 'No' sound like an insult or failure (e.g., 'Do you want to be a quitter?').",
+          "question": "What is this?",
+          "options": [
+            "The Loaded Question / Complex Equivalent",
+            "Gaslighting",
+            "A Joke",
+            "A Test"
+          ],
+          "correct": "The Loaded Question / Complex Equivalent",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They equate 'Quitting' (Action) with 'Being a Quitter' (Identity). It is a linguistic trap.",
+            "incorrect": "It loads the question with a presupposition that traps the answerer."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "A manipulator says: 'Tell me the truth. Do you hate me, or are you just crazy?'",
+          "question": "What is the correct move?",
+          "options": [
+            "Answer 'I hate you.'",
+            "Answer 'I'm crazy.'",
+            "Reject the binary. 'I don't hate you, and I'm not crazy. I am upset about your behavior.'",
+            "Silence."
+          ],
+          "correct": "Reject the binary. 'I don't hate you, and I'm not crazy. I am upset about your behavior.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Both options provided were traps. You created Option C: Valid criticism of behavior.",
+            "incorrect": "Answering either A or B destroys your position. You must refuse the menu."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'If you leave this room, we are done.' (The Ultimatum Bind).",
+          "question": "What does this signal?",
+          "options": [
+            "They love you.",
+            "They are losing control and are using the ultimate threat (Abandonment) to force compliance.",
+            "They are serious.",
+            "It is a game."
+          ],
+          "correct": "They are losing control and are using the ultimate threat (Abandonment) to force compliance.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. An ultimatum is a sign of desperation. If you stay, they own you. If you leave, you call their bluff.",
+            "incorrect": "It is control, not love. It is the nuclear option."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P3-E11",
+          "type": "fill-in",
+          "sentence": "To break a Double Bind, you must (--------) the assumptions behind the question.",
+          "options": [
+            "question",
+            "accept",
+            "love",
+            "fear"
+          ],
+          "answers": [
+            "question"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Why do I have to choose now?' 'Why are those the only options?' Questioning the premise breaks the frame.",
+            "incorrect": "Accepting the assumptions locks you in the cage."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'A real man would fix this car for me.'",
+          "question": "Is this a Gender Bind?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Fix car' = 'Real Man.' 'Don't fix' = 'Not a Man.' It attacks gender identity to get free labor.",
+            "incorrect": "It links a specific service to your identity as a man/woman."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: You are in a meeting. 'We can discuss the budget (which is boring), or we can approve it and go to lunch early.'",
+          "question": "This binds 'Approval' to:",
+          "options": [
+            "Pleasure / Reward (Lunch).",
+            "Logic.",
+            "Pain.",
+            "Duty."
+          ],
+          "correct": "Pleasure / Reward (Lunch).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They bribe the group with 'Lunch' to skip 'Due Diligence.' It pits responsibility against instant gratification.",
+            "incorrect": "It bypasses logic. It appeals to the stomach."
+          }
+        },
+        {
+          "exerciseId": "B1-3-P3-E14",
+          "type": "matching",
+          "question": "Match the Bind to the Goal:",
+          "pairs": [
+            {
+              "term": "Alternative Close",
+              "definition": "Goal: The Sale."
+            },
+            {
+              "term": "Love Bind ('If you loved me...')",
+              "definition": "Goal: Emotional Compliance."
+            },
+            {
+              "term": "Ultimatum ('Do it or else')",
+              "definition": "Goal: Total Submission."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Sales wants money. Love Binds want emotion. Ultimatums want surrender.",
+            "incorrect": "Identify the payout. What do they get if you choose A or B?"
+          }
+        },
+        {
+          "exerciseId": "B1-3-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Third Option",
+          "scene": "You have learned to see the invisible walls of the Double Bind. You know that when someone gives you two bad choices, the correct answer is 'Neither.'",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson B1-4: The 'Milton Model' (Weaponized Vague Language).",
+            "Lesson A1-1.",
+            "Choosing A.",
+            "Choosing B."
+          ],
+          "correct": "Lesson B1-4: The 'Milton Model' (Weaponized Vague Language).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Now that you can spot false choices, we will look at how they use 'Vague Language' to make you agree with things you don't understand.",
+            "incorrect": "Next up: The art of saying nothing while sounding profound."
+          }
+        }
+      ]
+    }
+  ]
+}

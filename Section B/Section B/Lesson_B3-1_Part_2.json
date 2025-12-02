@@ -1,0 +1,341 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B3",
+  "unitTitle": "The Herd Mind: Social Engineering",
+  "lessonId": "B3-1",
+  "lessonTitle": "Social Proof: The Power of the Crowd",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Spotting the \"Bandwagon\"",
+  "objective": "To practice identifying specific Social Proof tactics (Bandwagon Effect, Astroturfing, Salting the Jar) in real-world scenarios to avoid following a manipulated herd.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B3-1-P2-S1",
+      "screenType": "Learn",
+      "title": "Practice: The Fake Crowd",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The 'Bandwagon Effect' is the tendency to do something just because many other people are doing it. Manipulators know this, so they build a fake Bandwagon."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Look for the **Manufactured Consensus**. Is the crowd real? Are the reviews authentic? Or is it just noise designed to make you join in?"
+        }
+      ]
+    },
+    {
+      "screenId": "B3-1-P2-S2",
+      "screenType": "Exercises",
+      "title": "The Bandwagon Drill",
+      "exercises": [
+        {
+          "exerciseId": "B3-1-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: You are looking for a restaurant. One is empty. One is full. You choose the full one without checking the menu.",
+          "question": "You relied on:",
+          "options": [
+            "Social Proof (The Herd Heuristic).",
+            "Food quality analysis.",
+            "Price comparison.",
+            "Random chance."
+          ],
+          "correct": "Social Proof (The Herd Heuristic).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You assumed 'Full = Good' and 'Empty = Bad.' Manipulators exploit this by seating people near the window to make the place look busy.",
+            "incorrect": "You didn't check the food. You checked the *people*."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P2-E2",
+          "type": "multiple-choice",
+          "question": "What is the **Bandwagon Effect**?",
+          "options": [
+            "Playing music.",
+            "The cognitive bias where the rate of uptake of beliefs/trends increases the more they have already been adopted by others.",
+            "Driving a wagon.",
+            "Being a rebel."
+          ],
+          "correct": "The cognitive bias where the rate of uptake of beliefs/trends increases the more they have already been adopted by others.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It is a positive feedback loop. Popularity breeds more popularity. Manipulators fake the initial popularity to start the engine.",
+            "incorrect": "It is the psychological pressure to join the winning side."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P2-E3",
+          "type": "scenario",
+          "scene": "Scenario: A busker (street performer) puts their own money into their guitar case before they start playing.",
+          "question": "This tactic is called:",
+          "options": [
+            "Salting the Tip Jar.",
+            "Saving money.",
+            "Investing.",
+            "Charity."
+          ],
+          "correct": "Salting the Tip Jar.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It signals that 'tipping is the norm.' People rarely want to be the *first* to tip, but they are happy to follow others.",
+            "incorrect": "It creates artificial Social Proof to overcome the hesitation of the crowd."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P2-E4",
+          "type": "fill-in",
+          "sentence": "We are most influenced by people who are (--------) to us (Similarity Bias).",
+          "options": [
+            "similar",
+            "different",
+            "richer",
+            "louder"
+          ],
+          "answers": [
+            "similar"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Testimonials from 'people like you' work better than experts. Manipulators fake testimonials to match your demographic.",
+            "incorrect": "Difference creates distance. Similarity creates trust."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P2-E5",
+          "type": "matching",
+          "question": "Match the Fake Consensus Tactic:",
+          "pairs": [
+            {
+              "term": "Astroturfing",
+              "definition": "Fake grassroots support (paid actors pretending to be activists)."
+            },
+            {
+              "term": "Canned Laughter",
+              "definition": "Audio track of laughter to trick you into finding a joke funny."
+            },
+            {
+              "term": "Bot Farms",
+              "definition": "Computer programs creating thousands of fake 'Likes/Shares'."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Astroturfing mocks reality. Canned Laughter cues emotion. Bots inflate numbers.",
+            "incorrect": "They all manufacture the illusion of a crowd."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P2-E6",
+          "type": "scenario",
+          "scene": "Scenario: A smoke alarm goes off in a waiting room. You look around. No one else moves. You stay seated.",
+          "question": "This is:",
+          "options": [
+            "Pluralistic Ignorance.",
+            "Bravery.",
+            "Laziness.",
+            "Wisdom."
+          ],
+          "correct": "Pluralistic Ignorance.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Everyone is looking at everyone else to see if it's an emergency. Since no one is moving, everyone assumes it is safe. This can be fatal.",
+            "incorrect": "It is not bravery; it is conformity. You surrendered your judgment to the passive crowd."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define why Social Proof works:",
+          "words": [
+            "drives",
+            "the",
+            "herd",
+            "Uncertainty",
+            "instinct"
+          ],
+          "correct": "Uncertainty drives the herd instinct",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. When we are unsure (Uncertainty), we outsource our thinking to the group. Manipulators create uncertainty to trigger the herd response.",
+            "incorrect": "When we are certain, we don't look at others. Uncertainty is the trigger."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "A marketing strategy where a company hires people to stand in line outside a club to make it look exclusive and popular.",
+          "question": "What is this?",
+          "options": [
+            "The Velvet Rope Effect / Manufactured Demand",
+            "Scarcity",
+            "Gaslighting",
+            "Friendship"
+          ],
+          "correct": "The Velvet Rope Effect / Manufactured Demand",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The long line is an advertisement. 'If people are waiting, it must be good.'",
+            "incorrect": "It creates the illusion of demand through visible waiting."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are launching a product. Is it ethical to ask your friends to write the first 10 reviews?",
+          "question": "Is this 'Dark'?",
+          "options": [
+            "It is a 'Grey Area.' It is common (Seeding), but if they lie about the product, it becomes Dark (Deception).",
+            "No, it is perfectly fine.",
+            "Yes, it is illegal.",
+            "Only if they pay you."
+          ],
+          "correct": "It is a 'Grey Area.' It is common (Seeding), but if they lie about the product, it becomes Dark (Deception).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Seeding the pot is standard marketing. However, fabricating lies is manipulation. Transparency ('My friend wrote this') is the ethical path.",
+            "incorrect": "It relies on intent. Are you jumpstarting a good product or faking a bad one?"
+          }
+        },
+        {
+          "exerciseId": "B3-1-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: '9 out of 10 Dentists Recommend This Toothpaste.'",
+          "question": "This appeal relies on:",
+          "options": [
+            "Authority Social Proof (Expert Consensus).",
+            "Fear.",
+            "Reciprocity.",
+            "Liking."
+          ],
+          "correct": "Authority Social Proof (Expert Consensus).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It combines 'The Crowd' (9/10) with 'The Expert' (Dentists). It is a double-layered appeal.",
+            "incorrect": "It uses the status of 'Dentist' to validate the consensus."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P2-E11",
+          "type": "fill-in",
+          "sentence": "The Bystander Effect happens because responsibility is (--------) among the crowd.",
+          "options": [
+            "diffused",
+            "concentrated",
+            "increased",
+            "lost"
+          ],
+          "answers": [
+            "diffused"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. 'Diffusion of Responsibility.' If I am alone, I must help. If there are 10 of us, I assume someone else will help.",
+            "incorrect": "The responsibility feels spread out (diffused) until it disappears."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'Fastest Growing App of 2024!'",
+          "question": "Does this headline use the Bandwagon Effect?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It implies momentum. 'Everyone is joining, so you should too.' It triggers the fear of being left behind.",
+            "incorrect": "It appeals to the desire to be part of the 'Winning Team'."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: You see an influencer using a product. You buy it.",
+          "question": "Why?",
+          "options": [
+            "Parasocial Relationship + Halo Effect + Social Proof.",
+            "It was cheap.",
+            "You needed it.",
+            "Random chance."
+          ],
+          "correct": "Parasocial Relationship + Halo Effect + Social Proof.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You trust them like a 'friend' (Parasocial). They look good (Halo). They have millions of followers (Social Proof).",
+            "incorrect": "Influencer marketing is a sophisticated layering of social hacks."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P2-E14",
+          "type": "matching",
+          "question": "Match the Social Proof Source:",
+          "pairs": [
+            {
+              "term": "Peer",
+              "definition": "\"People like me use this.\""
+            },
+            {
+              "term": "Expert",
+              "definition": "\"Doctors use this.\""
+            },
+            {
+              "term": "Crowd",
+              "definition": "\"Everyone uses this.\""
+            }
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Similarity (Peer), Authority (Expert), Volume (Crowd). Each triggers a different trust circuit.",
+            "incorrect": "Identify the source of the validation."
+          }
+        },
+        {
+          "exerciseId": "B3-1-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Illusion",
+          "scene": "You see that crowds can be rented, reviews can be faked, and trends can be engineered. You are ready to stand alone.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Outlier' Test (Resisting the urge to conform).",
+            "Buying followers.",
+            "Joining a cult.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Outlier' Test (Resisting the urge to conform).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you be the one person who sits down when everyone else stands up? It is harder than you think.",
+            "incorrect": "Next up: A simulation of non-conformity."
+          }
+        }
+      ]
+    }
+  ]
+}

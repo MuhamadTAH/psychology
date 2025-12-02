@@ -1,0 +1,353 @@
+{
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A2",
+  "unitTitle": "The Manipulator's Playbook: Narcissism & Gaslighting",
+  "lessonId": "A2-3",
+  "lessonTitle": "Tactic Deep Dive: Love Bombing",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The 'Love Bomb' Simulation",
+  "objective": "To master the defense against Love Bombing by resisting the dopamine rush, enforcing boundaries against 'Soulmate' scripts, and spotting the transition to Devaluation.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Dopamine_Detox_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A2-3-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: Resist the Rush",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You know the signs: Too fast, too perfect, too intense. Now you must survive the simulation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Your goal in this challenge is to **slow down the pace**. A healthy partner will respect your speed. A Love Bomber will panic or push harder."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Warning: Resisting Love Bombing feels like turning down free money. Your brain will fight you. You must choose logic over dopamine."
+        }
+      ]
+    },
+    {
+      "screenId": "A2-3-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: Breaking the Spell",
+      "exercises": [
+        {
+          "exerciseId": "A2-3-P3-E1",
+          "type": "boss-scenario",
+          "scene": "It's the third date. They look deep into your eyes: 'I deleted my dating profile. I told my mom about you. I want you to move in with me next month. Why wait when we know it's destiny?'",
+          "question": "This is the 'Destiny Trap.' What is the strongest defense?",
+          "options": [
+            "'I feel the same way! Let's do it!' (Dopamine response)",
+            "'That's really intense... let's talk about it later.' (Avoidance)",
+            "'I'm flattered, but that is way too fast for me. I need to get to know you properly before making big decisions.' (Boundary)",
+            "'You are crazy.' (Attack)"
+          ],
+          "correct": "'I'm flattered, but that is way too fast for me. I need to get to know you properly before making big decisions.' (Boundary)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You validated their feeling (polite) but set a hard speed limit (boundary). A Love Bomber will hate this because it breaks the spell.",
+            "incorrect": "Agreeing is suicide. Avoiding it just delays the trap. You must explicitly name the speed ('too fast') and set the boundary."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Boundary Test",
+          "steps": [
+            {
+              "scene": "Love Bomber: 'I booked us a surprise weekend trip to Paris! We leave tomorrow! Surprise!' (You have work tomorrow).",
+              "options": [
+                "'Oh my god! Yes! I'll call in sick!'",
+                "'I have work, but... okay, I can't say no to Paris!'",
+                "'That's a huge surprise... but I have work. Please ask me before booking things.'",
+                "'Why would you do that without asking?'"
+              ],
+              "correct": "'That's a huge surprise... but I have work. Please ask me before booking things.'",
+              "feedback": {
+                "correct": "Perfect. It feels 'ungrateful' to say no to Paris, but this was a control move, not a gift. You prioritized your reality (work) over their fantasy.",
+                "incorrect": "If you go, you teach them that their whims override your responsibilities. You are now under their control."
+              }
+            },
+            {
+              "question": "Love Bomber (Pouting): 'I guess I just care about romance more than you. I tried to do something nice and you ruined it.'",
+              "options": [
+                "'I'm so sorry! You're right. Let's go.' (Guilt Submission)",
+                "'I didn't ruin it. You didn't ask. I can't go.' (Holding Frame)",
+                "'You are manipulating me!' (Accusation)",
+                "'Fine, I'll quit my job.' (Total Submission)"
+              ],
+              "correct": "'I didn't ruin it. You didn't ask. I can't go.' (Holding Frame)",
+              "feedback": {
+                "correct": "Mastery. They switched from 'Santa Claus' (Gift) to 'Victim' (Guilt) instantly. You refused to accept the guilt. You held your frame.",
+                "incorrect": "Apologizing accepts the 'blame' for their lack of planning. This is how the Devaluation phase begins."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived. Grand gestures without permission are not gifts; they are tests of compliance.",
+            "incorrect": "You failed the test. Accepting a boundary-breaking gift creates a 'debt' you cannot pay."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P3-E3",
+          "type": "multiple-choice",
+          "question": "In the 'Idealize' phase, the narcissist mirrors your values. If you say you love honesty, they will:",
+          "options": [
+            "Tell you they are a liar.",
+            "Over-share 'fake secrets' to perform 'Radical Honesty' and make you trust them.",
+            "Say nothing.",
+            "Change the subject."
+          ],
+          "correct": "Over-share 'fake secrets' to perform 'Radical Honesty' and make you trust them.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They will say, 'I've never been this honest with anyone.' It is a performance to match your specific value system.",
+            "incorrect": "They won't be actually honest. They will *perform* honesty to hook you."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P3-E4",
+          "type": "fill-in",
+          "sentence": "The Love Bomber wants you to make (--------) decisions based on (--------) emotions.",
+          "options": [
+            "permanent",
+            "temporary",
+            "logical",
+            "slow"
+          ],
+          "answers": [
+            "permanent",
+            "temporary"
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They want a permanent commitment (marriage, lease, pregnancy) based on a temporary dopamine high. Once you sign, the high ends.",
+            "incorrect": "They want *permanent* decisions (binding ones) based on fleeting feelings."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P3-E5",
+          "type": "true-false",
+          "scene": "Scenario: You successfully slow down the relationship. The Love Bomber stays calm, respects your pace, and stops texting as much to give you space.",
+          "question": "Is this person a Narcissist?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. A narcissist *cannot* handle a slow pace because they need constant Supply. If they respect your boundary and stay calm, they are likely a healthy person.",
+            "incorrect": "If they respect the boundary without punishment or withdrawal, they are passing the test. A narcissist would escalate or leave."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P3-E6",
+          "type": "case-analysis",
+          "caseTitle": "The 'Soulmate' Script",
+          "scene": "The Love Bomber says: 'We are Twin Flames. The universe brought us together. It's us against the world. No one has ever loved you like I do.'",
+          "question": "This script combines three tactics. Which one is MISSING?",
+          "options": [
+            "Magical Thinking (Fate/Universe)",
+            "Isolation (Us vs. World)",
+            "Comparison (No one loved you like I do)",
+            "Devaluation (You are stupid)"
+          ],
+          "correct": "Devaluation (You are stupid)",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Devaluation hasn't started yet. The script uses Magic, Isolation, and Comparison to elevate the narcissist to 'God' status in your life.",
+            "incorrect": "They are elevating you, not devaluing you (yet). That comes later."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange these words to reveal the defense against Future Faking:",
+          "words": [
+            "actions,",
+            "words",
+            "Trust",
+            "not"
+          ],
+          "correct": "Trust actions, not words",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Words are cheap. Future faking is entirely verbal. Only trust what they *do* consistently over time.",
+            "incorrect": "Never trust the words of a Love Bomber. They are simply reading a script."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "The narcissist suddenly stops the affection, ignores your texts for a day, and looks bored when you speak.",
+          "question": "What has just happened?",
+          "options": [
+            "They are busy.",
+            "The 'Idealize' Phase has ended; the 'Devaluation' Phase has begun.",
+            "They are planning a surprise.",
+            "They are depressed."
+          ],
+          "correct": "The 'Idealize' Phase has ended; the 'Devaluation' Phase has begun.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. The switch is often sudden. They have 'hooked' you, so they stop feeding you the drug. Now you will chase them to get it back.",
+            "incorrect": "This isn't being busy. It's a tactical withdrawal of affection to trigger your anxiety."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You have a friend who is being Love Bombed. They are high on dopamine and won't listen to your warnings.",
+          "question": "What is the best approach?",
+          "options": [
+            "Force them to break up.",
+            "Cut them off until they come to their senses.",
+            "Remain a steady, non-judgmental presence so they have a 'safe harbor' when the Devaluation starts.",
+            "Mock their new partner."
+          ],
+          "correct": "Remain a steady, non-judgmental presence so they have a 'safe harbor' when the Devaluation starts.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you attack the partner, you feed the 'Us vs. The World' narrative (Isolation). Stay close so they aren't isolated when the crash happens.",
+            "incorrect": "Attacking the partner pushes your friend deeper into the trap. You must play the long game."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: They ask for your banking passwords 'because we are going to be married anyway, so why have secrets?'",
+          "question": "This is a test of:",
+          "options": [
+            "Trust.",
+            "Financial Fusion and Boundary Erosion.",
+            "Convenience.",
+            "Love."
+          ],
+          "correct": "Financial Fusion and Boundary Erosion.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. They act like 'privacy' is 'secrecy.' It's a trap to gain total control over your resources before the mask slips.",
+            "incorrect": "It frames itself as trust, but it is actually an erasure of your individual identity and safety."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P3-E11",
+          "type": "multiple-choice",
+          "question": "What is the chemical consequence of Love Bombing followed by sudden withdrawal (Intermittent Reinforcement)?",
+          "options": [
+            "Boredom.",
+            "A 'Trauma Bond' (addiction to the abuser).",
+            "Relief.",
+            "Stability."
+          ],
+          "correct": "A 'Trauma Bond' (addiction to the abuser).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. The brain becomes addicted to the highs and lows. You stay not because you are happy, but because you are chemically addicted to the 'release' of the good moments.",
+            "incorrect": "This creates a 'Trauma Bond,' which is harder to break than a normal breakup. It mimics cocaine addiction."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P3-E12",
+          "type": "fill-in",
+          "sentence": "The Love Bomber creates a problem (Isolation) so they can be the only (--------).",
+          "options": [
+            "solution",
+            "problem",
+            "friend",
+            "enemy"
+          ],
+          "answers": [
+            "solution"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. If they isolate you from friends and family, they become your only source of validation, comfort, and reality. You are trapped.",
+            "incorrect": "They manufacture the loneliness so they can 'save' you from it."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P3-E13",
+          "type": "true-false",
+          "scene": "Scenario: You set a boundary. The Love Bomber respects it instantly and never pushes again.",
+          "question": "Is this Love Bombing?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct/False. A Love Bomber *cannot* respect a boundary because their goal is enmeshment. Respect is the sign of a healthy person.",
+            "incorrect": "If they respect boundaries, they aren't trying to consume you. That's a green flag."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P3-E14",
+          "type": "scenario",
+          "scene": "Scenario: The narcissist says, 'I love how you aren't like other girls/guys. You're different. The others were all crazy.'",
+          "question": "This is a 'Triangulation' tactic designed to:",
+          "options": [
+            "Compliment you.",
+            "Make you feel superior *now*, knowing you will have to work hard to avoid being labeled 'crazy' *later*.",
+            "Tell the truth.",
+            "Make conversation."
+          ],
+          "correct": "Make you feel superior *now*, knowing you will have to work hard to avoid being labeled 'crazy' *later*.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. It sets a trap: 'Don't be like the others.' If you ever complain or set a boundary, you become 'crazy' like the others.",
+            "incorrect": "It feels like a compliment, but it's a cage. It warns you of the penalty for non-compliance."
+          }
+        },
+        {
+          "exerciseId": "A2-3-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Idealization Ends",
+          "scene": "You have survived the Love Bombing simulation. You know that 'Fast' = 'Fake' and 'Perfect' = 'Predatory.' The narcissist has secured you. Now, the mask slips.",
+          "question": "What comes next in the Cycle?",
+          "options": [
+            "Lesson A2-4: Gaslighting (The tool of Devaluation).",
+            "Happily Ever After.",
+            "Lesson A1-1.",
+            "More Love Bombing."
+          ],
+          "correct": "Lesson A2-4: Gaslighting (The tool of Devaluation).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Once you are hooked, they don't need to be nice anymore. Now they need to control you. Gaslighting is the primary tool of the Devaluation phase.",
+            "incorrect": "The honeymoon is over. Now the psychological warfare begins. Next lesson: Gaslighting."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,356 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B3",
+  "unitTitle": "The Herd Mind: Social Engineering",
+  "lessonId": "B3-4",
+  "lessonTitle": "The Liking Bias: Weaponized Friendship",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The \"Charming Con-Man\"",
+  "objective": "To master the defense against the Liking Bias by identifying 'Grooming' tactics, resisting 'Reciprocity' pressure from friends, and prioritizing facts over feelings in a high-stakes social simulation.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "The_Charm_Shield_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "B3-4-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Best Friend",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The hardest person to say 'No' to is a friend. Manipulators know this, so they become your friend *before* they become your attacker."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Goal: In this challenge, you must refuse requests from someone you 'like.' You must value your own safety over their approval."
+        }
+      ]
+    },
+    {
+      "screenId": "B3-4-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: The Con",
+      "exercises": [
+        {
+          "exerciseId": "B3-4-P3-E1",
+          "type": "boss-scenario",
+          "scene": "You meet 'Alex' at a party. Alex is charming, funny, and loves all your hobbies. After 2 hours of laughing, Alex says: 'I left my wallet in my other coat. Can I borrow $100 for the tab? I'll Venmo you tomorrow.'",
+          "question": "This is the 'Affinity Fraud' setup. What is your move?",
+          "options": [
+            "Give the money. You are friends now.",
+            "Refuse politely. 'I don't lend cash, but I can buy you a drink.' (Partial Gift / Hard Boundary).",
+            "Give $50.",
+            "Ask for their ID."
+          ],
+          "correct": "Refuse politely. 'I don't lend cash, but I can buy you a drink.' (Partial Gift / Hard Boundary).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You separated the 'Friendship' (buying a drink) from the 'Financial Risk' ($100 cash). A con artist will vanish if they can't get cash. A real friend will understand.",
+            "incorrect": "You just met them. The 'friendship' is 2 hours old. It is a performance to get the $100."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Favor Bank",
+          "steps": [
+            {
+              "scene": "A colleague, 'Sam,' brings you coffee every day for a week without asking. You feel grateful.",
+              "options": [
+                "Enjoy the coffee.",
+                "Recognize the 'Reciprocity Debt' building up. Say 'Thanks, Sam, but you don't have to do this.'",
+                "Buy Sam a car.",
+                "Ignore Sam."
+              ],
+              "correct": "Recognize the 'Reciprocity Debt' building up. Say 'Thanks, Sam, but you don't have to do this.'",
+              "feedback": {
+                "correct": "Smart. You acknowledged the gift but tried to lower the 'debt.' Be ready for the 'ask.'",
+                "incorrect": "If you just enjoy it, the debt grows. Sam is investing in your compliance."
+              }
+            },
+            {
+              "question": "Sam: 'Hey, since I've been helping you out with coffee... can you cover my shift this weekend? I'm desperate.'",
+              "options": [
+                "'Of course! I owe you.' (Trap Triggered)",
+                "'I appreciate the coffee, Sam, but I can't work this weekend. I have plans.' (Separation)",
+                "'You only bought me coffee to use me!' (Accusation)",
+                "Do it and resent it."
+              ],
+              "correct": "'I appreciate the coffee, Sam, but I can't work this weekend. I have plans.' (Separation)",
+              "feedback": {
+                "correct": "Mastery. A $5 coffee does not equal a weekend of work. You separated the 'Gift' from the 'Request.' You broke the Reciprocity loop.",
+                "incorrect": "You traded your weekend for $25 worth of coffee. Bad deal."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Favor Bank. You realized that 'free' gifts are the most expensive.",
+            "incorrect": "You let guilt drive your decision. You paid a high price for cheap coffee."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P3-E3",
+          "type": "multiple-choice",
+          "question": "Why is 'Affinity Fraud' (scams within religious or social groups) so devastating?",
+          "options": [
+            "Because the victims lower their guard completely due to the shared group identity (Liking/Similarity).",
+            "Because the scammers are smart.",
+            "Because groups are rich.",
+            "It isn't."
+          ],
+          "correct": "Because the victims lower their guard completely due to the shared group identity (Liking/Similarity).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'He's one of us, so he must be honest.' This bias (In-Group Trust) bypasses due diligence.",
+            "incorrect": "It relies on trust, not intelligence."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P3-E4",
+          "type": "fill-in",
+          "sentence": "When a stranger mimics your body language, they are trying to bypass your (--------) brain.",
+          "options": [
+            "conscious",
+            "reptilian",
+            "happy",
+            "sad"
+          ],
+          "answers": [
+            "conscious"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Mirroring speaks to the subconscious/reptilian brain that says 'Same = Safe.' The conscious mind is slow to notice.",
+            "incorrect": "They are bypassing logic (conscious) to access instinct."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'I love you. You're the only one I can turn to. If you don't help me hide this [illegal item], I'll go to jail.'",
+          "question": "This combines Liking with:",
+          "options": [
+            "The Double Bind (Love vs. Safety).",
+            "Honesty.",
+            "Fun.",
+            "Logic."
+          ],
+          "correct": "The Double Bind (Love vs. Safety).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Choice A: Help (Crime). Choice B: Refuse (Betray Love). It forces you to prove your love by destroying your safety.",
+            "incorrect": "It is the ultimate trap. Love should never require crime."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P3-E6",
+          "type": "true-false",
+          "scene": "Scenario: A charming person is rude to the waiter but nice to you.",
+          "question": "Should you trust them?",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "correct": "No",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The 'Waiter Rule.' Character is how you treat those who can do nothing for you. Their niceness to you is a strategy, not a trait.",
+            "incorrect": "If they are rude to the waiter, they will be rude to you once you are no longer useful."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P3-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the defense against charm:",
+          "words": [
+            "fact",
+            "charm",
+            "Separating",
+            "from",
+            "is",
+            "wisdom"
+          ],
+          "correct": "Separating charm from fact is wisdom",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. A smile is not a fact. A compliment is not a contract. Strip away the charm to see the deal.",
+            "incorrect": "Don't let the packaging distract from the product."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P3-E8",
+          "type": "reverse-scenario",
+          "answer": "A manipulative compliment that includes a subtle insult to lower your self-esteem and make you seek their approval.",
+          "question": "What is this?",
+          "options": [
+            "Negging",
+            "Love Bombing",
+            "Gaslighting",
+            "Praise"
+          ],
+          "correct": "Negging",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'You're smart for a girl.' 'Nice shirt, did you get it at Goodwill?' It creates a craving for validation.",
+            "incorrect": "It is the opposite of pure flattery. It is a status attack."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You are in sales. Is it ethical to research a client's hobbies to build rapport?",
+          "question": "Is this 'Dark'?",
+          "options": [
+            "No, it is preparation and respect, as long as you don't lie about sharing the hobby.",
+            "Yes, it is stalking.",
+            "Yes, you should be random.",
+            "No, lie about everything."
+          ],
+          "correct": "No, it is preparation and respect, as long as you don't lie about sharing the hobby.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Showing interest in *them* is good business. Lying ('I love golf too!') is manipulation. Authenticity is the line.",
+            "incorrect": "Preparation shows care. Deception shows malice."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P3-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'We are soulmates. We shouldn't have secrets. What's your password?'",
+          "question": "This uses Liking to:",
+          "options": [
+            "Erode boundaries (Privacy).",
+            "Build trust.",
+            "Be helpful.",
+            "Be funny."
+          ],
+          "correct": "Erode boundaries (Privacy).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They frame privacy as 'secrecy' and 'distrust.' If you love them, you must have zero boundaries. This is a control tactic.",
+            "incorrect": "Healthy love respects privacy. This is an invasion."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P3-E11",
+          "type": "fill-in",
+          "sentence": "The goal of the 'Charming Con-Man' is to make you suspend your (--------) thinking.",
+          "options": [
+            "critical",
+            "emotional",
+            "fast",
+            "slow"
+          ],
+          "answers": [
+            "critical"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. If you like them, you don't check their math. You don't read the contract. You trust.",
+            "incorrect": "They want emotion high and logic low."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm just like you.'",
+          "question": "Is this always a red flag?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct/False. It is not *always* a red flag, but when it happens *instantly* and *totally*, it is suspicious (Mirroring). Real similarity is discovered slowly.",
+            "incorrect": "Context matters. Instant, total similarity is the red flag."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P3-E13",
+          "type": "scenario",
+          "scene": "Scenario: You refuse a request. The 'nice' person instantly becomes cold and mean.",
+          "question": "This proves:",
+          "options": [
+            "The niceness was a transaction/mask.",
+            "They are having a bad day.",
+            "You were rude.",
+            "They are shy."
+          ],
+          "correct": "The niceness was a transaction/mask.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The 'Switch' reveals the game. They were only nice to get the 'Yes.' When they got 'No,' the mask was useless.",
+            "incorrect": "It wasn't a mood swing. It was a failed strategy."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P3-E14",
+          "type": "matching",
+          "question": "Match the Tactic to the Danger:",
+          "pairs": [
+            {
+              "term": "Unlimited Similarity",
+              "definition": "Danger: False sense of safety/destiny."
+            },
+            {
+              "term": "Excessive Compliments",
+              "definition": "Danger: Ego blinding."
+            },
+            {
+              "term": "Forced Teaming ('We')",
+              "definition": "Danger: Loss of individual identity."
+            }
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'We' erases 'I.' Similarity erases caution. Compliments erase doubt.",
+            "incorrect": "Analyze the psychological effect."
+          }
+        },
+        {
+          "exerciseId": "B3-4-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Charm Proof",
+          "scene": "You have learned that a smile can hide teeth. You know to separate the friend from the favor. You are ready.",
+          "question": "You are ready for the next Lesson:",
+          "options": [
+            "Lesson B3-5: Unit B3 Review: The Engineer.",
+            "Lesson A1-1.",
+            "Being mean.",
+            "Smiling."
+          ],
+          "correct": "Lesson B3-5: Unit B3 Review: The Engineer.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. We have covered Social Proof, Authority, Pretexting, and Liking. Now we test them all.",
+            "incorrect": "Next up: The Unit Review."
+          }
+        }
+      ]
+    }
+  ]
+}

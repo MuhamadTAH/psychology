@@ -1,0 +1,333 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B5",
+  "unitTitle": "Section B Grand Review: The Master Tactician",
+  "lessonId": "B5-1",
+  "lessonTitle": "Language & Framing Review",
+  "lessonType": "Review",
+  "lessonPart": 2,
+  "lessonPartTitle": "Practice: Verbal Defense (The 'Verbal Judo' Gauntlet)",
+  "objective": "To practice real-time verbal self-defense tactics ('Verbal Judo') against NLP, Double Binds, and Negative Framing in a rapid-fire simulation.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 300,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B5-1-P2-S1",
+      "screenType": "Learn",
+      "title": "The Verbal Dojo",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Knowing the theory is useless if you freeze in the moment. **Verbal Judo** is the art of using the attacker's energy against them."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Rule 1: Never J.A.D.E. (Justify, Argue, Defend, Explain). Rule 2: Always Pivot, Reframe, or Drill Down."
+        }
+      ]
+    },
+    {
+      "screenId": "B5-1-P2-S2",
+      "screenType": "Exercises",
+      "title": "Rapid Fire Defense",
+      "exercises": [
+        {
+          "exerciseId": "B5-1-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: 'You might find yourself *agreeing with me*.' (Embedded Command).",
+          "question": "The Counter-Move:",
+          "options": [
+            "Agree.",
+            "'Are you telling me to agree?' (Make the Implicit Explicit).",
+            "Get angry.",
+            "Ignore it."
+          ],
+          "correct": "'Are you telling me to agree?' (Make the Implicit Explicit).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Drag the hidden command into the light. It forces them to deny it or admit it.",
+            "incorrect": "Ignoring it lets the command land in your subconscious. Expose it."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P2-E2",
+          "type": "scenario",
+          "scene": "Scenario: 'Are you going to sign now, or do you want to lose this opportunity?' (Double Bind + Fear).",
+          "question": "The Defense:",
+          "options": [
+            "Sign now.",
+            "Say 'I don't want to lose it.'",
+            "'I reject that choice. I will sign when I am ready, or not at all.' (Reject the Frame).",
+            "Panic."
+          ],
+          "correct": "'I reject that choice. I will sign when I am ready, or not at all.' (Reject the Frame).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Step outside the binary choice. Create Option C.",
+            "incorrect": "Don't pick A or B. They are both traps."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P2-E3",
+          "type": "multiple-choice",
+          "question": "What is the best response to a 'Mind Read' like 'I know you're just scared'?",
+          "options": [
+            "I'm not scared!",
+            "How do you know what I am feeling?",
+            "Maybe I am.",
+            "You are scared."
+          ],
+          "correct": "How do you know what I am feeling?",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Demand the evidence. This exposes that they are projecting, not observing.",
+            "incorrect": "Defending ('I'm not!') validates their frame that your emotions are the topic."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P2-E4",
+          "type": "fill-in",
+          "sentence": "To break a 'Yes Set' rhythm, you must (--------) the pattern.",
+          "options": [
+            "interrupt",
+            "continue",
+            "speed up",
+            "love"
+          ],
+          "answers": [
+            "interrupt"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Cough, drop a pen, or ask an unrelated question. Break the trance.",
+            "incorrect": "Any compliance maintains the trance."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P2-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'Everyone agrees that your plan is risky.' (Social Proof + Vague Authority).",
+          "question": "The Meta Model Challenge:",
+          "options": [
+            "'Who specifically is everyone?'",
+            "'No they don't.'",
+            "'It's not risky.'",
+            "'I guess I'll stop.'"
+          ],
+          "correct": "'Who specifically is everyone?'",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Force them to name names. The 'crowd' usually disappears.",
+            "incorrect": "Defending the plan accepts the premise that 'everyone' hates it."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P2-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'If you really cared, you would do this.'",
+          "question": "Is this a 'Moral Bind'?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It links 'Action X' to 'Identity Y (Caring).' If you don't act, you are bad.",
+            "incorrect": "It is a manipulation of conscience."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P2-E7",
+          "type": "scenario",
+          "scene": "Scenario: 'You're being difficult.' (Negative Frame).",
+          "question": "Reframe this:",
+          "options": [
+            "'I'm sorry.'",
+            "'I'm not being difficult.'",
+            "'I am being *thorough*.' (Positive Reframe).",
+            "'You are difficult.'"
+          ],
+          "correct": "'I am being *thorough*.' (Positive Reframe).",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Take the behavior (asking questions) and give it a noble label.",
+            "incorrect": "Denial ('I'm not') is weak. Reframing ('I am thorough') is strong."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "A phrase like 'It's interesting you say that...' used to buy time and detach emotionally.",
+          "question": "What is this?",
+          "options": [
+            "A Buffer / Pattern Interrupt",
+            "A Lie",
+            "Agreement",
+            "Submission"
+          ],
+          "correct": "A Buffer / Pattern Interrupt",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It creates a pause. It stops you from reacting impulsively.",
+            "incorrect": "It is not agreement. It is a neutral holding statement."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "A manipulator tries to confuse you with 'Word Salad' in a meeting. You can humiliate them or clarify the situation.",
+          "question": "The Ethical Defense:",
+          "options": [
+            "'I have no idea what you just said. Stop babbling.' (Humiliation).",
+            "'That was very abstract. Can you give me one specific example of what you mean?' (Meta Model / Clarification).",
+            "Laugh at them.",
+            "Stay silent."
+          ],
+          "correct": "'That was very abstract. Can you give me one specific example of what you mean?' (Meta Model / Clarification).",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This exposes the lack of substance without being unprofessional.",
+            "incorrect": "Humiliation creates an enemy. Clarification exposes the truth."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'I'm not saying you're incompetent.'",
+          "question": "The subconscious hears:",
+          "options": [
+            "'You are incompetent.'",
+            "'You are smart.'",
+            "Nothing.",
+            "A compliment."
+          ],
+          "correct": "'You are incompetent.'",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The negation fails. The concept 'Incompetent' has been introduced.",
+            "incorrect": "The brain processes the noun/adjective, not the 'not'."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P2-E11",
+          "type": "fill-in",
+          "sentence": "When dealing with a manipulator, (--------) is better than speed.",
+          "options": [
+            "slowness",
+            "anger",
+            "fear",
+            "joy"
+          ],
+          "answers": [
+            "slowness"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Slowing down destroys most NLP and pressure tactics.",
+            "incorrect": "Speed kills logic. Slowing down restores it."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'We have always done it this way.'",
+          "question": "Is this a valid argument?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'Appeal to Tradition' fallacy. Just because it is old doesn't mean it is right.",
+            "incorrect": "It is a logic trap used to stop innovation."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: 'You're just saying that because you're a man/woman.'",
+          "question": "This is:",
+          "options": [
+            "Genetic Fallacy / Identity Attack.",
+            "Truth.",
+            "Feminism.",
+            "Logic."
+          ],
+          "correct": "Genetic Fallacy / Identity Attack.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Dismissing an argument based on the source's origin (Gender, Race, Age) rather than the merit.",
+            "incorrect": "It invalidates the speaker to avoid the argument."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P2-E14",
+          "type": "matching",
+          "question": "Match the Counter:",
+          "pairs": [
+            {
+              "term": "\"You are overreacting.\"",
+              "definition": "Counter: \"I am reacting appropriately to a violation.\""
+            },
+            {
+              "term": "\"You are selfish.\"",
+              "definition": "Counter: \"I am self-protective.\""
+            },
+            {
+              "term": "\"You are crazy.\"",
+              "definition": "Counter: \"My reality does not require your agreement.\""
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Reframe the negative label into a positive or neutral boundary.",
+            "incorrect": "Don't accept the label. Return it."
+          }
+        },
+        {
+          "exerciseId": "B5-1-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Shield",
+          "scene": "You have practiced the verbal parry. You know how to deflect, reframe, and drill down.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The Debate (Boss Level).",
+            "Arguing on Twitter.",
+            "Yelling at walls.",
+            "Lesson A1-1."
+          ],
+          "correct": "The Debate (Boss Level).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Can you hold your frame against a master debater? Let's find out.",
+            "incorrect": "Next up: The verbal battlefield."
+          }
+        }
+      ]
+    }
+  ]
+}

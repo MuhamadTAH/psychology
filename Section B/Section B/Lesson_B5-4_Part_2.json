@@ -1,0 +1,333 @@
+{
+  "sectionId": "B",
+  "sectionTitle": "The Tools of Influence",
+  "unitId": "B5",
+  "unitTitle": "Section B Grand Review: The Master Tactician",
+  "lessonId": "B5-4",
+  "lessonTitle": "The \"Politician\" Simulation",
+  "lessonType": "Normal",
+  "lessonPart": 2,
+  "lessonPartTitle": "The Debate: Spotting Fallacies",
+  "objective": "To practice real-time identification and refutation of political rhetoric tactics, including Ad Hominem attacks, Straw Man arguments, and False Equivalence.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "pending",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": null
+  },
+  "contentScreens": [
+    {
+      "screenId": "B5-4-P2-S1",
+      "screenType": "Learn",
+      "title": "The Rhetorical Battlefield",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In a debate, the Politician's goal is not to find the truth; it is to win the audience. They do this by attacking *you* instead of your argument, or by attacking a *fake version* of your argument."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Your Defense: **Name the Fallacy**. Do not defend yourself against a lie; identify the lie and pivot back to the truth."
+        }
+      ]
+    },
+    {
+      "screenId": "B5-4-P2-S2",
+      "screenType": "Exercises",
+      "title": "Countering the Fallacy",
+      "exercises": [
+        {
+          "exerciseId": "B5-4-P2-E1",
+          "type": "scenario",
+          "scene": "Scenario: You argue for better healthcare. The Politician replies: 'My opponent wants to turn this country into a communist dictatorship where no one can own anything!'",
+          "question": "This is:",
+          "options": [
+            "A Straw Man Argument.",
+            "A valid concern.",
+            "Ad Hominem.",
+            "Gaslighting."
+          ],
+          "correct": "A Straw Man Argument.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. They distorted your real argument (healthcare) into an extreme, scary version (communism) that is easy to defeat.",
+            "incorrect": "It attacks a fake argument, not you personally (Ad Hominem) or reality (Gaslighting)."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P2-E2",
+          "type": "scenario",
+          "scene": "Scenario: 'You can't trust his plan for the economy; he cheated on his wife 10 years ago.'",
+          "question": "This is:",
+          "options": [
+            "Ad Hominem (Attack on the Person).",
+            "Relevant data.",
+            "A Straw Man.",
+            "Logic."
+          ],
+          "correct": "Ad Hominem (Attack on the Person).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. His marital fidelity has nothing to do with his economic math. It is a distraction to discredit the speaker.",
+            "incorrect": "It attacks the man, not the plan. That is the definition of Ad Hominem."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P2-E3",
+          "type": "multiple-choice",
+          "question": "What is 'Whataboutism' (Tu Quoque)?",
+          "options": [
+            "Deflecting criticism by accusing the accuser of a similar or worse offense (e.g., 'But what about *her* emails?').",
+            "Asking 'What about me?'",
+            "Being curious.",
+            "Apologizing."
+          ],
+          "correct": "Deflecting criticism by accusing the accuser of a similar or worse offense (e.g., 'But what about *her* emails?').",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It avoids the question by pointing the finger elsewhere. It creates a moral stalemate.",
+            "incorrect": "It is a deflection tactic used to avoid accountability."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P2-E4",
+          "type": "fill-in",
+          "sentence": "The (--------) Slope fallacy argues that a small step will inevitably lead to a catastrophic outcome.",
+          "options": [
+            "Slippery",
+            "Dangerous",
+            "Happy",
+            "Fast"
+          ],
+          "answers": [
+            "Slippery"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'If we ban assault rifles, soon they will ban kitchen knives!' It uses fear of the extreme to block the moderate.",
+            "incorrect": "It is the 'Slippery Slope.' It assumes a chain reaction without evidence."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P2-E5",
+          "type": "scenario",
+          "scene": "Scenario: 'Both sides are violent.' (One side threw a rock; the other side bombed a city).",
+          "question": "This creates:",
+          "options": [
+            "False Equivalence.",
+            "Fairness.",
+            "Truth.",
+            "Balance."
+          ],
+          "correct": "False Equivalence.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. It pretends two things are equal in scale or moral weight when they are not, to minimize the greater crime.",
+            "incorrect": "It isn't fair; it distorts reality by ignoring scale."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P2-E6",
+          "type": "true-false",
+          "scene": "Scenario: 'You're either with us, or you're against us.'",
+          "question": "Is this a False Dilemma?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. It erases neutrality, nuance, and third options. It forces polarization.",
+            "incorrect": "It is a binary trap. The world is rarely black and white."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P2-E7",
+          "type": "build-sentence",
+          "question": "Arrange the words to define the 'Gish Gallop' defense:",
+          "words": [
+            "one",
+            "Refute",
+            "point",
+            "the",
+            "weakest"
+          ],
+          "correct": "Refute the weakest one point",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You cannot answer 20 lies in 2 minutes. Pick the dumbest lie, destroy it, and say: 'Since this is false, the rest is likely false too.'",
+            "incorrect": "Don't chase every rabbit. Kill the lead rabbit."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P2-E8",
+          "type": "reverse-scenario",
+          "answer": "A tactic where the speaker repeats a lie so often that people start to believe it.",
+          "question": "What is this effect?",
+          "options": [
+            "Illusory Truth Effect",
+            "Gaslighting",
+            "Brainwashing",
+            "Marketing"
+          ],
+          "correct": "Illusory Truth Effect",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Repetition creates familiarity. Familiarity feels like truth to the brain.",
+            "incorrect": "It is a specific cognitive bias exploited by propaganda."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P2-E9",
+          "type": "ethical-dilemma",
+          "scene": "Your opponent uses a racist Dog Whistle. Do you call them a racist?",
+          "question": "The Strategic Move:",
+          "options": [
+            "No. Decode the whistle: 'When you say 'urban culture,' you are signaling a negative stereotype about race. Let's be clear.'",
+            "Yes, scream 'Racist!'",
+            "Ignore it.",
+            "Agree with them."
+          ],
+          "correct": "No. Decode the whistle: 'When you say 'urban culture,' you are signaling a negative stereotype about race. Let's be clear.'",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. Calling names (Racist) allows them to play the victim ('I'm being canceled!'). Decoding the signal exposes the tactic without losing the moral high ground.",
+            "incorrect": "Name-calling shuts down the debate. Decoding opens the truth."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P2-E10",
+          "type": "scenario",
+          "scene": "Scenario: 'Scientists have been wrong before! They used to think the earth was flat!' (Therefore, ignore climate change).",
+          "question": "This is:",
+          "options": [
+            "The Galileo Gambit / Appeal to Fallibility.",
+            "A good point.",
+            "Scientific method.",
+            "History."
+          ],
+          "correct": "The Galileo Gambit / Appeal to Fallibility.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Just because science *can* be wrong doesn't mean it *is* wrong about this specific, well-proven issue.",
+            "incorrect": "It uses a historical exception to try to disprove a modern rule."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P2-E11",
+          "type": "fill-in",
+          "sentence": "The Politician answers a question by asking a different question. This is called (--------).",
+          "options": [
+            "deflection",
+            "honesty",
+            "clarity",
+            "fear"
+          ],
+          "answers": [
+            "deflection"
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. 'You ask about the budget? Let me ask you: Do you hate our troops?' It shifts the heat.",
+            "incorrect": "It avoids the answer."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P2-E12",
+          "type": "true-false",
+          "scene": "Scenario: 'I'm just asking questions.' (JAQing off).",
+          "question": "Is this a way to spread lies without taking responsibility?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "True",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. 'Is the President an alien? I'm just asking.' It plants the idea while allowing Plausible Deniability.",
+            "incorrect": "It pretends to be curiosity, but it is actually accusation."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P2-E13",
+          "type": "scenario",
+          "scene": "Scenario: You point out a lie. The Politician says: 'Stop being so divisive! We need unity!'",
+          "question": "This is:",
+          "options": [
+            "Tone Policing / Shutting Down Dissent.",
+            "Leadership.",
+            "Peace-making.",
+            "Love."
+          ],
+          "correct": "Tone Policing / Shutting Down Dissent.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They frame 'Truth-Telling' as 'Division' to silence you. It protects their lie.",
+            "incorrect": "Unity built on lies is not unity; it is complicity."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P2-E14",
+          "type": "matching",
+          "question": "Match the Fallacy:",
+          "pairs": [
+            {
+              "term": "Ad Hominem",
+              "definition": "Attack the person."
+            },
+            {
+              "term": "Straw Man",
+              "definition": "Attack a fake argument."
+            },
+            {
+              "term": "Red Herring",
+              "definition": "Distract with a new topic."
+            }
+          ],
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Hominem = Human. Straw = Fake. Herring = Smell/Distraction.",
+            "incorrect": "Review the definitions."
+          }
+        },
+        {
+          "exerciseId": "B5-4-P2-E15",
+          "type": "case-analysis",
+          "caseTitle": "Part 2 Complete: The Debate Won",
+          "scene": "You have parried the attacks. You didn't chase the Red Herring. You didn't defend the Straw Man. You held the truth.",
+          "question": "In Part 3, we will face the Challenge:",
+          "options": [
+            "The 'Vote' (Decision Time).",
+            "Running for President.",
+            "Writing a speech.",
+            "Lesson A1-1."
+          ],
+          "correct": "The 'Vote' (Decision Time).",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. The final test is to make a clear decision in a world full of spin.",
+            "incorrect": "Next up: Making the final call."
+          }
+        }
+      ]
+    }
+  ]
+}
