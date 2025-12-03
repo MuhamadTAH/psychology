@@ -194,6 +194,8 @@ export default function WelcomePage() {
             <button
               onClick={() => {
                 setStatueState("suspicion");
+                setGlitch(true);
+                setTimeout(() => setGlitch(false), 500);
                 setShowGhostWarning(true);
               }}
               className="group w-full border-t border-b border-transparent hover:border-zinc-800 py-3 px-6 flex items-center justify-center uppercase tracking-widest text-xs text-gray-600 hover:text-red-500 transition-colors mt-8"
@@ -241,7 +243,16 @@ export default function WelcomePage() {
 
                   if (result.status === "complete") {
                     await setActive({ session: result.createdSessionId });
-                    router.push("/dark-psychology-dashboard");
+                    // Visual Success Feedback
+                    const btn = document.getElementById('login-btn');
+                    if (btn) {
+                      btn.innerText = "IDENTITY VERIFIED";
+                      btn.classList.remove('bg-white', 'text-black');
+                      btn.classList.add('bg-green-500', 'text-black', 'border-green-500');
+                    }
+                    setTimeout(() => {
+                      router.push("/dark-psychology-dashboard");
+                    }, 800);
                   }
                 } catch (err) {
                   setLoginError(true);
@@ -252,9 +263,10 @@ export default function WelcomePage() {
                   }, 1500);
                 }
               }}
+              id="login-btn"
               className={`w-full py-4 px-6 uppercase tracking-widest text-sm font-bold transition-all duration-200 mt-4 ${loginError
-                  ? 'bg-red-900/20 border border-red-600 text-red-500 animate-pulse'
-                  : 'bg-white text-black hover:bg-gray-200'
+                ? 'bg-red-900/20 border border-red-600 text-red-500 animate-pulse'
+                : 'bg-white text-black hover:bg-gray-200'
                 }`}
             >
               {loginError ? "ACCESS DENIED - INTRUDER ALERT" : "Verify Identity"}
