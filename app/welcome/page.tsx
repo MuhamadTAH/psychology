@@ -127,7 +127,7 @@ export default function WelcomePage() {
         <div className={`mb-8 relative transition-all duration-500 
           ${glitch ? '-translate-x-1 translate-y-1 opacity-80' : ''}
           ${statueState === 'evaluate' ? 'scale-125' : ''}
-          ${statueState === 'nod' ? 'animate-pulse' : ''}
+          ${statueState === 'nod' ? 'animate-nod' : ''}
         `}>
           {/* Abstract Geometric Bust Representation */}
           <div className="w-32 h-32 relative">
@@ -345,6 +345,15 @@ export default function WelcomePage() {
             left: 0;
             z-index: 20;
             pointer-events: none;
+          }
+
+          @keyframes nod {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+          }
+          
+          .animate-nod {
+            animation: nod 0.4s ease-in-out;
           }
         `}</style>
 
