@@ -17,6 +17,11 @@ export default function WelcomePage() {
   const [step, setStep] = useState<"coldOpen" | "identityVerification">("coldOpen");
   const [showGhostWarning, setShowGhostWarning] = useState(false);
 
+  // Identity Verification State
+  const [glitch, setGlitch] = useState(false);
+  const [textIndex, setTextIndex] = useState(0);
+  const fullText = "ACCESS TO THIS DATABASE IS RESTRICTED.";
+
   // Auto-advance from Cold Open after 3 seconds
   useEffect(() => {
     if (step === "coldOpen") {
@@ -24,6 +29,27 @@ export default function WelcomePage() {
         setStep("identityVerification");
       }, 3000);
       return () => clearTimeout(timer);
+    }
+  }, [step]);
+
+  // Typewriter effect
+  useEffect(() => {
+    if (step === "identityVerification" && textIndex < fullText.length) {
+      const timeout = setTimeout(() => {
+        setTextIndex(prev => prev + 1);
+      }, 50);
+      return () => clearTimeout(timeout);
+    }
+  }, [textIndex, step]);
+
+  // Random glitch effect
+  useEffect(() => {
+    if (step === "identityVerification") {
+      const interval = setInterval(() => {
+        setGlitch(true);
+        setTimeout(() => setGlitch(false), 200);
+      }, 4000);
+      return () => clearInterval(interval);
     }
   }, [step]);
 
