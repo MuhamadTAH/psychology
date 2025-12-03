@@ -329,7 +329,32 @@ export default function WelcomePage() {
           .animate-slide-up {
             animation: slide-up 0.5s ease-out forwards;
           }
+
+          @keyframes scan {
+            0% { top: -10%; opacity: 0; }
+            50% { opacity: 1; }
+            100% { top: 110%; opacity: 0; }
+          }
+
+          .animate-scan {
+            animation: scan 2s linear infinite;
+            background: linear-gradient(to bottom, transparent, #10b981, transparent);
+            height: 100px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            z-index: 20;
+            pointer-events: none;
+          }
         `}</style>
+
+        {/* Green Scan Line for Login Mode */}
+        {step === "loginForm" && (
+          <div className="animate-scan"></div>
+        )}
+
+        {/* Cold Overlay for Sign Up Evaluation */}
+        <div className={`absolute inset-0 bg-blue-900/20 pointer-events-none transition-opacity duration-500 ${statueState === 'evaluate' ? 'opacity-100' : 'opacity-0'}`}></div>
 
       </div>
     );
