@@ -245,12 +245,19 @@ export default function WelcomePage() {
                   }
                 } catch (err) {
                   setLoginError(true);
-                  setTimeout(() => setLoginError(false), 500);
+                  setGlitch(true);
+                  setTimeout(() => {
+                    setLoginError(false);
+                    setGlitch(false);
+                  }, 1500);
                 }
               }}
-              className="w-full bg-white text-black py-4 px-6 uppercase tracking-widest text-sm font-bold hover:bg-gray-200 transition-colors mt-4"
+              className={`w-full py-4 px-6 uppercase tracking-widest text-sm font-bold transition-all duration-200 mt-4 ${loginError
+                  ? 'bg-red-900/20 border border-red-600 text-red-500 animate-pulse'
+                  : 'bg-white text-black hover:bg-gray-200'
+                }`}
             >
-              Verify Identity
+              {loginError ? "ACCESS DENIED - INTRUDER ALERT" : "Verify Identity"}
             </button>
 
             <button
