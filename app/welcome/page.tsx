@@ -7,16 +7,17 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useSignIn, useSignUp } from "@clerk/nextjs";
-import { Shield, Eye, Lock, Terminal } from "lucide-react";
+import { Shield, Eye, Lock, Terminal, MessageSquare, Scale, CheckCircle, ArrowRight, ArrowDown } from "lucide-react";
 
 export default function WelcomePage() {
   const router = useRouter();
   const { signIn, setActive, isLoaded } = useSignIn();
   const { signUp } = useSignUp();
 
-  const [step, setStep] = useState<"coldOpen" | "identityVerification" | "loginForm" | "phase1">("coldOpen");
+  const [step, setStep] = useState<"coldOpen" | "identityVerification" | "loginForm" | "phase1_awareness" | "phase1_solution" | "phase1_ethics">("coldOpen");
   const [showGhostWarning, setShowGhostWarning] = useState(false);
-  const [statueState, setStatueState] = useState<"idle" | "nod" | "evaluate" | "suspicion">("idle");
+  const [statueState, setStatueState] = useState<"idle" | "nod" | "evaluate" | "suspicion" | "explain" | "judging">("idle");
+  const [ethicsAgreed, setEthicsAgreed] = useState(false);
 
   // Login Form State
   const [loginError, setLoginError] = useState(false);
@@ -182,7 +183,7 @@ export default function WelcomePage() {
             <button
               onClick={() => {
                 setStatueState("evaluate");
-                setTimeout(() => setStep("phase1"), 800);
+                setTimeout(() => setStep("phase1_awareness"), 800);
               }}
               className="group w-full border border-gray-600 bg-transparent hover:border-white hover:bg-zinc-900 transition-all duration-300 py-4 px-6 flex items-center justify-between uppercase tracking-wider text-sm text-gray-300 hover:text-white"
             >
@@ -332,7 +333,7 @@ export default function WelcomePage() {
                 <button
                   onClick={() => {
                     setShowGhostWarning(false);
-                    setStep("phase1");
+                    setStep("phase1_awareness");
                   }}
                   className="flex-1 py-3 px-6 bg-red-900/20 border border-red-600 text-red-500 text-xs font-mono uppercase tracking-widest hover:bg-red-900/40 transition-colors rounded-none"
                 >
@@ -409,13 +410,165 @@ export default function WelcomePage() {
     );
   }
 
-  // Phase 1: The Hook (Placeholder)
-  if (step === "phase1") {
+  // Phase 1.0: The Awareness ("The Hook")
+  if (step === "phase1_awareness") {
     return (
-      <div className="min-h-screen bg-black flex items-center justify-center">
-        <h1 className="text-4xl font-mono text-white tracking-widest uppercase animate-pulse">
+      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-fade-in">
+        {/* Statue: Idle (Observing) */}
+        <div className="mb-8 opacity-80">
+          <div className="w-24 h-24 relative">
+            <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+              <path d="M50 10 C 30 10, 25 35, 25 50 C 25 70, 35 80, 35 90 L 65 90 C 65 80, 75 70, 75 50 C 75 35, 70 10, 50 10" fill="#e5e5e5" />
+              <path d="M50 10 L 45 30 L 55 45 L 40 60 L 50 90" fill="none" stroke="#D4AF37" strokeWidth="1.5" />
+              <rect x="30" y="35" width="40" height="8" fill="#000" />
+            </svg>
+          </div>
+        </div>
+
+        {/* Visual: Puppet String (Abstract) */}
+        <div className="mb-12 relative w-full max-w-xs h-32 flex items-center justify-center">
+          <div className="absolute inset-0 border-t border-gray-800 animate-pulse"></div>
+          <div className="w-1 h-32 bg-gray-800 absolute top-0 left-1/2 -translate-x-1/2 origin-top animate-swing"></div>
+          <Eye size={48} className="text-white relative z-10" />
+        </div>
+
+        <h1 className="text-2xl md:text-3xl font-mono font-bold text-white tracking-widest uppercase mb-6">
           You are being played.
         </h1>
+        <p className="text-gray-400 font-mono text-xs md:text-sm max-w-md leading-relaxed mb-12">
+          Every day, hidden psychological scripts are used to influence your decisions. It’s time you saw the strings.
+        </p>
+
+        <button
+          onClick={() => {
+            setStep("phase1_solution");
+            setStatueState("explain");
+          }}
+          className="group border border-white bg-transparent hover:bg-white hover:text-black transition-all duration-300 py-4 px-8 flex items-center justify-center gap-3 uppercase tracking-widest text-sm font-mono"
+        >
+          <span>Explain</span>
+          <ArrowDown size={16} className="group-hover:translate-y-1 transition-transform" />
+        </button>
+
+        <style jsx>{`
+          @keyframes swing {
+            0%, 100% { transform: translateX(-50%) rotate(-5deg); }
+            50% { transform: translateX(-50%) rotate(5deg); }
+          }
+          .animate-swing {
+            animation: swing 3s ease-in-out infinite;
+          }
+          .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+          }
+          @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+        `}</style>
+      </div>
+    );
+  }
+
+  // Phase 1.1: The Solution ("The Arsenal")
+  if (step === "phase1_solution") {
+    return (
+      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-fade-in">
+        {/* Statue: Explain (Hand Gesture / Glowing) */}
+        <div className="mb-8 opacity-90">
+          <div className="w-24 h-24 relative">
+            <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+              <path d="M50 10 C 30 10, 25 35, 25 50 C 25 70, 35 80, 35 90 L 65 90 C 65 80, 75 70, 75 50 C 75 35, 70 10, 50 10" fill="#e5e5e5" />
+              <path d="M50 10 L 45 30 L 55 45 L 40 60 L 50 90" fill="none" stroke="#D4AF37" strokeWidth="1.5" />
+              <rect x="30" y="35" width="40" height="8" fill="#000" />
+              {/* Hand Gesture Representation */}
+              <circle cx="80" cy="70" r="10" fill="#fff" className="animate-pulse opacity-50" />
+            </svg>
+          </div>
+        </div>
+
+        {/* Visual: Shield/Speech */}
+        <div className="mb-12 relative w-full max-w-xs h-32 flex items-center justify-center gap-4">
+          <Shield size={48} className="text-gray-600" />
+          <ArrowRight size={24} className="text-gray-800" />
+          <MessageSquare size={48} className="text-white" />
+        </div>
+
+        <h1 className="text-2xl md:text-3xl font-mono font-bold text-white tracking-widest uppercase mb-6">
+          Master the Unspoken Rules.
+        </h1>
+        <p className="text-gray-400 font-mono text-xs md:text-sm max-w-md leading-relaxed mb-12">
+          Learn the advanced negotiation and persuasion tactics used by elite leaders. Stop being a spectator. Become the player.
+        </p>
+
+        <button
+          onClick={() => {
+            setStep("phase1_ethics");
+            setStatueState("judging");
+          }}
+          className="group border border-white bg-transparent hover:bg-white hover:text-black transition-all duration-300 py-4 px-8 flex items-center justify-center gap-3 uppercase tracking-widest text-sm font-mono"
+        >
+          <span>Start Training</span>
+          <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+        </button>
+      </div>
+    );
+  }
+
+  // Phase 1.2: The Ethics ("The Warning")
+  if (step === "phase1_ethics") {
+    return (
+      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-fade-in">
+        {/* Statue: Judging (Red Eyes) */}
+        <div className="mb-8 opacity-100">
+          <div className="w-24 h-24 relative">
+            <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_15px_rgba(220,38,38,0.2)]">
+              <path d="M50 10 C 30 10, 25 35, 25 50 C 25 70, 35 80, 35 90 L 65 90 C 65 80, 75 70, 75 50 C 75 35, 70 10, 50 10" fill="#2a0a0a" />
+              <path d="M50 10 L 45 30 L 55 45 L 40 60 L 50 90" fill="none" stroke="#D4AF37" strokeWidth="1.5" />
+              <rect x="30" y="35" width="40" height="4" fill="#ff0000" className="animate-pulse" />
+            </svg>
+          </div>
+        </div>
+
+        {/* Visual: Vault/Scale */}
+        <div className="mb-12 relative w-full max-w-xs h-32 flex items-center justify-center">
+          <Scale size={64} className="text-red-900" />
+        </div>
+
+        <h1 className="text-2xl md:text-3xl font-mono font-bold text-red-500 tracking-widest uppercase mb-6">
+          With Influence Comes Responsibility.
+        </h1>
+        <p className="text-gray-400 font-mono text-xs md:text-sm max-w-md leading-relaxed mb-12">
+          This curriculum teaches powerful psychological principles. We provide these tools for <span className="text-white font-bold">defensive purposes only</span>. Ethics are mandatory.
+        </p>
+
+        {/* Mandatory Checkbox */}
+        <div
+          onClick={() => setEthicsAgreed(!ethicsAgreed)}
+          className="flex items-center gap-4 mb-12 cursor-pointer group"
+        >
+          <div className={`w-6 h-6 border transition-colors flex items-center justify-center ${ethicsAgreed ? 'bg-white border-white' : 'border-gray-600 group-hover:border-white'}`}>
+            {ethicsAgreed && <CheckCircle size={16} className="text-black" />}
+          </div>
+          <span className={`font-mono text-xs uppercase tracking-wider ${ethicsAgreed ? 'text-white' : 'text-gray-500 group-hover:text-gray-300'}`}>
+            I Agree to the Code of Ethics
+          </span>
+        </div>
+
+        <button
+          onClick={() => {
+            // TODO: Proceed to Phase 2 (Assessment)
+            alert("Proceeding to Phase 2: Assessment");
+          }}
+          disabled={!ethicsAgreed}
+          className={`group border transition-all duration-300 py-4 px-8 flex items-center justify-center gap-3 uppercase tracking-widest text-sm font-mono ${ethicsAgreed
+              ? 'border-red-600 bg-red-900/20 text-red-500 hover:bg-red-900/40 cursor-pointer'
+              : 'border-gray-800 text-gray-800 cursor-not-allowed'
+            }`}
+        >
+          <span>Proceed</span>
+          <ArrowRight size={16} className={ethicsAgreed ? "group-hover:translate-x-1 transition-transform" : ""} />
+        </button>
       </div>
     );
   }
