@@ -456,7 +456,7 @@ export default function WelcomePage() {
             setStep("phase1_solution");
             setStatueState("explain");
           }}
-          className="group border border-white bg-transparent hover:bg-white hover:text-black transition-all duration-300 py-4 px-8 flex items-center justify-center gap-3 uppercase tracking-widest text-sm font-mono"
+          className="group border border-white bg-transparent text-white hover:bg-white hover:text-black transition-all duration-300 py-4 px-8 flex items-center justify-center gap-3 uppercase tracking-widest text-sm font-mono"
         >
           <span>Explain</span>
           <ArrowDown size={16} className="group-hover:translate-y-1 transition-transform" />
@@ -518,7 +518,7 @@ export default function WelcomePage() {
             setStep("phase1_ethics");
             setStatueState("judging");
           }}
-          className="group border border-white bg-transparent hover:bg-white hover:text-black transition-all duration-300 py-4 px-8 flex items-center justify-center gap-3 uppercase tracking-widest text-sm font-mono"
+          className="group border border-white bg-transparent text-white hover:bg-white hover:text-black transition-all duration-300 py-4 px-8 flex items-center justify-center gap-3 uppercase tracking-widest text-sm font-mono"
         >
           <span>Start Training</span>
           <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
