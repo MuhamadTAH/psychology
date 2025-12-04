@@ -425,7 +425,7 @@ export default function WelcomePage() {
   // Phase 1.0: The Awareness ("The Hook")
   if (step === "phase1_awareness") {
     return (
-      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-slide-in-right">
+      <div key="phase1_awareness" className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-slide-in-right">
         {/* Statue: Idle (Observing) */}
         <div className="mb-8 opacity-80">
           <div className="w-24 h-24 relative">
@@ -485,7 +485,7 @@ export default function WelcomePage() {
   // Phase 1.1: The Solution ("The Arsenal")
   if (step === "phase1_solution") {
     return (
-      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-slide-in-right">
+      <div key="phase1_solution" className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-slide-in-right">
         {/* Statue: Explain (Hand Gesture / Glowing) */}
         <div className="mb-8 opacity-90">
           <div className="w-24 h-24 relative">
@@ -530,7 +530,7 @@ export default function WelcomePage() {
   // Phase 1.2: The Ethics ("The Warning")
   if (step === "phase1_ethics") {
     return (
-      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-slide-in-right">
+      <div key="phase1_ethics" className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-slide-in-right">
         {/* Statue: Judging (Red Eyes) */}
         <div className="mb-8 opacity-100">
           <div className="w-24 h-24 relative">
