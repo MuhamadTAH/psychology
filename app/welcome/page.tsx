@@ -356,14 +356,6 @@ export default function WelcomePage() {
             font-family: 'JetBrains Mono', monospace;
           }
 
-          @keyframes slideInRight {
-            from { transform: translateX(100%); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-          }
-          .animate-slide-in-right {
-            animation: slideInRight 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-          }
-
           @keyframes shake {
             0%, 100% { transform: translateX(0); }
             10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
