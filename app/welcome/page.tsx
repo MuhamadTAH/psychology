@@ -14,14 +14,16 @@ export default function WelcomePage() {
   const { signIn, setActive, isLoaded } = useSignIn();
   const { signUp } = useSignUp();
 
-  const [step, setStep] = useState<"coldOpen" | "identityVerification" | "loginForm" | "phase1_awareness" | "phase1_solution" | "phase1_ethics" | "phase2_assessment" | "phase3_lockdown">("coldOpen");
+  const [step, setStep] = useState<"coldOpen" | "identityVerification" | "loginForm" | "phase1_awareness" | "phase1_solution" | "phase1_ethics" | "phase2_assessment" | "phase3_lockdown" | "phase3_result">("coldOpen");
   const [showGhostWarning, setShowGhostWarning] = useState(false);
   const [statueState, setStatueState] = useState<"idle" | "nod" | "evaluate" | "suspicion" | "explain" | "judging">("idle");
   const [ethicsAgreed, setEthicsAgreed] = useState(false);
 
   // Phase 2: Assessment State
   const [assessmentQuestion, setAssessmentQuestion] = useState(0);
-  const [assessmentScore, setAssessmentScore] = useState({ defense: 0, influence: 0 });
+  const [assessmentScore, setAssessmentScore] = useState({ defense: 0, influence: 0, strategic: 0 });
+  const [userArchetype, setUserArchetype] = useState<string | null>(null);
+  const [showComputing, setShowComputing] = useState(false);
 
   // Login Form State
   const [loginError, setLoginError] = useState(false);
@@ -588,32 +590,56 @@ export default function WelcomePage() {
     const questions = [
       {
         headline: "Why do you seek this knowledge?",
-        optionA: { text: "To detect hidden agendas.", type: "defense" },
-        optionB: { text: "To master high-level persuasion.", type: "influence" }
+        options: [
+          { text: "To protect myself from manipulation.", type: "defense" },
+          { text: "To master high-level persuasion.", type: "influence" }
+        ]
       },
       {
-        headline: "A colleague takes credit for your work. You...",
-        optionA: { text: "Strategically secure my credit.", type: "defense" },
-        optionB: { text: "Leverage the situation for advancement.", type: "influence" }
+        headline: "A colleague takes credit for your work in a meeting. You...",
+        options: [
+          { text: "Confront them immediately.", type: "aggressive" },
+          { text: "Wait and complain privately.", type: "passive" },
+          { text: "Ask a strategic question to expose their ignorance.", type: "strategic" }
+        ]
       },
       {
         headline: "What is your ultimate objective?",
-        optionA: { text: "Unshakeable Composure.", type: "defense" },
-        optionB: { text: "Commanding Authority.", type: "influence" }
+        options: [
+          { text: "Invulnerability.", type: "defense" },
+          { text: "Command & Authority.", type: "influence" }
+        ]
       }
     ];
 
     const currentQ = questions[assessmentQuestion];
 
     const handleAnswer = (type: string) => {
-      const newScore = { ...assessmentScore, [type]: assessmentScore[type as keyof typeof assessmentScore] + 1 };
+      const newScore = { ...assessmentScore };
+      if (type === 'defense' || type === 'influence' || type === 'strategic') {
+        newScore[type as keyof typeof assessmentScore] = (assessmentScore[type as keyof typeof assessmentScore] || 0) + 1;
+      }
       setAssessmentScore(newScore);
 
       if (assessmentQuestion < 2) {
         setAssessmentQuestion(prev => prev + 1);
       } else {
-        // Finished Assessment
-        setStep("phase3_lockdown");
+        // Finished Assessment - Calculate Result
+        setShowComputing(true);
+        setTimeout(() => {
+          // Determine archetype
+          let archetype = "TACTICAL ANALYST";
+          if (newScore.strategic >= 1) {
+            archetype = "DARK PSYCHOLOGIST";
+          } else if (newScore.defense > newScore.influence) {
+            archetype = "DEFENSIVE STRATEGIST";
+          } else if (newScore.influence > newScore.defense) {
+            archetype = "ASSERTIVE NEGOTIATOR";
+          }
+          setUserArchetype(archetype);
+          setShowComputing(false);
+          setStep("phase3_result");
+        }, 3000);
       }
     };
 
@@ -640,40 +666,113 @@ export default function WelcomePage() {
           </div>
 
           <h2 className="text-gray-500 font-mono text-xs uppercase tracking-widest mb-4">
-            Assessment {assessmentQuestion + 1} / 3
+            Assessment {assessmentQuestion + 1} / {questions.length}
           </h2>
 
           <h1 className="text-xl md:text-2xl font-mono font-bold text-white tracking-wider uppercase mb-12 max-w-lg">
             {currentQ.headline}
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
-            <button
-              onClick={() => handleAnswer(currentQ.optionA.type)}
-              className="group border border-white bg-transparent hover:bg-white hover:text-black p-8 flex flex-col items-center justify-center gap-4 transition-all duration-300"
-            >
-              <Shield size={32} className="text-white group-hover:text-black transition-colors" />
-              <span className="font-mono text-xs uppercase tracking-widest text-white group-hover:text-black transition-colors">
-                {currentQ.optionA.text}
-              </span>
-            </button>
-
-            <button
-              onClick={() => handleAnswer(currentQ.optionB.type)}
-              className="group border border-white bg-transparent hover:bg-white hover:text-black p-8 flex flex-col items-center justify-center gap-4 transition-all duration-300"
-            >
-              <Eye size={32} className="text-white group-hover:text-black transition-colors" />
-              <span className="font-mono text-xs uppercase tracking-widest text-white group-hover:text-black transition-colors">
-                {currentQ.optionB.text}
-              </span>
-            </button>
+          <div className={`grid gap-4 w-full max-w-2xl ${currentQ.options.length === 3 ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2'}`}>
+            {currentQ.options.map((option, idx) => (
+              <button
+                key={idx}
+                onClick={() => handleAnswer(option.type)}
+                className="group border border-white bg-transparent hover:bg-white hover:text-black p-6 flex items-center justify-center gap-4 transition-all duration-300"
+              >
+                {idx === 0 && <Shield size={24} className="text-white group-hover:text-black transition-colors" />}
+                {idx === 1 && <Eye size={24} className="text-white group-hover:text-black transition-colors" />}
+                {idx === 2 && <Terminal size={24} className="text-white group-hover:text-black transition-colors" />}
+                <span className="font-mono text-xs uppercase tracking-widest text-white group-hover:text-black transition-colors">
+                  {option.text}
+                </span>
+              </button>
+            ))}
           </div>
         </div>
       </div>
     );
   }
 
-  // Phase 3: Account Lockdown (Placeholder)
+  // Phase 2.5: Computing Animation
+  if (showComputing) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center p-6">
+        <div className="text-center">
+          <div className="mb-8">
+            <Terminal size={64} className="text-white mx-auto animate-pulse" />
+          </div>
+          <h1 className="text-2xl font-mono text-white tracking-widest uppercase mb-4 animate-pulse">
+            Computing...
+          </h1>
+          <div className="w-64 h-1 bg-gray-900 mx-auto relative overflow-hidden">
+            <div className="absolute h-full bg-white animate-scan-horizontal"></div>
+          </div>
+        </div>
+        <style jsx>{`
+          @keyframes scan-horizontal {
+            0% { width: 0%; left: 0%; }
+            50% { width: 100%; left: 0%; }
+            100% { width: 0%; left: 100%; }
+          }
+          .animate-scan-horizontal {
+            animation: scan-horizontal 2s ease-in-out infinite;
+          }
+        `}</style>
+      </div>
+    );
+  }
+
+  // Phase 3: The Analysis (Result)
+  if (step === "phase3_result") {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center p-6 text-center">
+        <div className="animate-slide-in-right max-w-md">
+          {/* Statue: Approving */}
+          <div className="mb-8 opacity-100">
+            <div className="w-24 h-24 relative mx-auto">
+              <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                <path d="M50 10 C 30 10, 25 35, 25 50 C 25 70, 35 80, 35 90 L 65 90 C 65 80, 75 70, 75 50 C 75 35, 70 10, 50 10" fill="#e5e5e5" />
+                <path d="M50 10 L 45 30 L 55 45 L 40 60 L 50 90" fill="none" stroke="#D4AF37" strokeWidth="1.5" className="animate-pulse" />
+                <rect x="30" y="35" width="40" height="8" fill="#000" />
+              </svg>
+            </div>
+          </div>
+
+          <h2 className="text-sm font-mono text-gray-500 uppercase tracking-widest mb-4">
+            Profile Generated
+          </h2>
+
+          <div className="border-2 border-white p-8 mb-12">
+            <h1 className="text-2xl md:text-3xl font-mono font-bold text-white tracking-widest uppercase">
+              {userArchetype}
+            </h1>
+          </div>
+
+          <p className="text-gray-400 font-mono text-xs mb-12">
+            Your custom curriculum is ready.
+          </p>
+
+          <button
+            onClick={() => {
+              // Reset for demo purposes
+              setStep("coldOpen");
+              setStatueState("idle");
+              setAssessmentQuestion(0);
+              setAssessmentScore({ defense: 0, influence: 0, strategic: 0 });
+              setEthicsAgreed(false);
+              setUserArchetype(null);
+            }}
+            className="border border-white bg-transparent text-white hover:bg-white hover:text-black py-4 px-8 text-xs font-mono uppercase tracking-widest transition-colors"
+          >
+            Enter The System
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // Phase 3: Account Lockdown (Old Placeholder - Keep for now)
   if (step === "phase3_lockdown") {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center p-6 text-center animate-fade-in">
@@ -694,7 +793,7 @@ export default function WelcomePage() {
               setStep("coldOpen");
               setStatueState("idle");
               setAssessmentQuestion(0);
-              setAssessmentScore({ defense: 0, influence: 0 });
+              setAssessmentScore({ defense: 0, influence: 0, strategic: 0 });
               setEthicsAgreed(false);
             }}
             className="border border-white py-3 px-6 text-xs font-mono uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
