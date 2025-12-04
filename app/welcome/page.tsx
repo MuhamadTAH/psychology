@@ -357,7 +357,7 @@ export default function WelcomePage() {
           }
 
           @keyframes slideInRight {
-            from { transform: translateX(50px); opacity: 0; }
+            from { transform: translateX(100%); opacity: 0; }
             to { transform: translateX(0); opacity: 1; }
           }
           .animate-slide-in-right {
@@ -651,20 +651,20 @@ export default function WelcomePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
           <button
             onClick={() => handleAnswer(currentQ.optionA.type)}
-            className="group border border-gray-700 hover:border-white bg-transparent hover:bg-white/5 p-8 flex flex-col items-center justify-center gap-4 transition-all duration-300"
+            className="group border border-white bg-transparent hover:bg-white hover:text-black p-8 flex flex-col items-center justify-center gap-4 transition-all duration-300"
           >
-            <Shield size={32} className="text-gray-600 group-hover:text-white transition-colors" />
-            <span className="font-mono text-xs uppercase tracking-widest text-gray-400 group-hover:text-white transition-colors">
+            <Shield size={32} className="text-white group-hover:text-black transition-colors" />
+            <span className="font-mono text-xs uppercase tracking-widest text-white group-hover:text-black transition-colors">
               {currentQ.optionA.text}
             </span>
           </button>
 
           <button
             onClick={() => handleAnswer(currentQ.optionB.type)}
-            className="group border border-gray-700 hover:border-white bg-transparent hover:bg-white/5 p-8 flex flex-col items-center justify-center gap-4 transition-all duration-300"
+            className="group border border-white bg-transparent hover:bg-white hover:text-black p-8 flex flex-col items-center justify-center gap-4 transition-all duration-300"
           >
-            <Eye size={32} className="text-gray-600 group-hover:text-white transition-colors" />
-            <span className="font-mono text-xs uppercase tracking-widest text-gray-400 group-hover:text-white transition-colors">
+            <Eye size={32} className="text-white group-hover:text-black transition-colors" />
+            <span className="font-mono text-xs uppercase tracking-widest text-white group-hover:text-black transition-colors">
               {currentQ.optionB.text}
             </span>
           </button>
