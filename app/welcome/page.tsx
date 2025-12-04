@@ -14,10 +14,14 @@ export default function WelcomePage() {
   const { signIn, setActive, isLoaded } = useSignIn();
   const { signUp } = useSignUp();
 
-  const [step, setStep] = useState<"coldOpen" | "identityVerification" | "loginForm" | "phase1_awareness" | "phase1_solution" | "phase1_ethics">("coldOpen");
+  const [step, setStep] = useState<"coldOpen" | "identityVerification" | "loginForm" | "phase1_awareness" | "phase1_solution" | "phase1_ethics" | "phase2_assessment" | "phase3_lockdown">("coldOpen");
   const [showGhostWarning, setShowGhostWarning] = useState(false);
   const [statueState, setStatueState] = useState<"idle" | "nod" | "evaluate" | "suspicion" | "explain" | "judging">("idle");
   const [ethicsAgreed, setEthicsAgreed] = useState(false);
+
+  // Phase 2: Assessment State
+  const [assessmentQuestion, setAssessmentQuestion] = useState(0);
+  const [assessmentScore, setAssessmentScore] = useState({ defense: 0, influence: 0 });
 
   // Login Form State
   const [loginError, setLoginError] = useState(false);
@@ -557,18 +561,139 @@ export default function WelcomePage() {
 
         <button
           onClick={() => {
-            // TODO: Proceed to Phase 2 (Assessment)
-            alert("Proceeding to Phase 2: Assessment");
+            setStep("phase2_assessment");
+            setStatueState("idle");
           }}
           disabled={!ethicsAgreed}
           className={`group border transition-all duration-300 py-4 px-8 flex items-center justify-center gap-3 uppercase tracking-widest text-sm font-mono ${ethicsAgreed
-              ? 'border-red-600 bg-red-900/20 text-red-500 hover:bg-red-900/40 cursor-pointer'
-              : 'border-gray-800 text-gray-800 cursor-not-allowed'
+            ? 'border-red-600 bg-red-900/20 text-red-500 hover:bg-red-900/40 cursor-pointer'
+            : 'border-gray-800 text-gray-800 cursor-not-allowed'
             }`}
         >
           <span>Proceed</span>
           <ArrowRight size={16} className={ethicsAgreed ? "group-hover:translate-x-1 transition-transform" : ""} />
         </button>
+      </div>
+    );
+  }
+
+  // Phase 2: The Assessment
+  if (step === "phase2_assessment") {
+    const questions = [
+      {
+        headline: "Why do you seek this knowledge?",
+        optionA: { text: "To protect myself from manipulation.", type: "defense" },
+        optionB: { text: "To influence others to my will.", type: "influence" }
+      },
+      {
+        headline: "A colleague takes credit for your work. You...",
+        optionA: { text: "Fortify my position against future attacks.", type: "defense" },
+        optionB: { text: "Turn the situation to my advantage.", type: "influence" }
+      },
+      {
+        headline: "What is your ultimate objective?",
+        optionA: { text: "Invulnerability.", type: "defense" },
+        optionB: { text: "Control.", type: "influence" }
+      }
+    ];
+
+    const currentQ = questions[assessmentQuestion];
+
+    const handleAnswer = (type: string) => {
+      const newScore = { ...assessmentScore, [type]: assessmentScore[type as keyof typeof assessmentScore] + 1 };
+      setAssessmentScore(newScore);
+
+      if (assessmentQuestion < 2) {
+        setAssessmentQuestion(prev => prev + 1);
+      } else {
+        // Finished Assessment
+        setStep("phase3_lockdown");
+      }
+    };
+
+    return (
+      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-fade-in">
+        {/* Progress Bar */}
+        <div className="w-full max-w-md h-1 bg-gray-900 mb-12 relative">
+          <div
+            className="h-full bg-white transition-all duration-500"
+            style={{ width: `${((assessmentQuestion + 1) / 3) * 100}%` }}
+          ></div>
+        </div>
+
+        {/* Statue: Idle (Observing) */}
+        <div className="mb-8 opacity-80">
+          <div className="w-20 h-20 relative">
+            <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+              <path d="M50 10 C 30 10, 25 35, 25 50 C 25 70, 35 80, 35 90 L 65 90 C 65 80, 75 70, 75 50 C 75 35, 70 10, 50 10" fill="#e5e5e5" />
+              <path d="M50 10 L 45 30 L 55 45 L 40 60 L 50 90" fill="none" stroke="#D4AF37" strokeWidth="1.5" />
+              <rect x="30" y="35" width="40" height="8" fill="#000" />
+            </svg>
+          </div>
+        </div>
+
+        <h2 className="text-gray-500 font-mono text-xs uppercase tracking-widest mb-4">
+          Assessment {assessmentQuestion + 1} / 3
+        </h2>
+
+        <h1 className="text-xl md:text-2xl font-mono font-bold text-white tracking-wider uppercase mb-12 max-w-lg">
+          {currentQ.headline}
+        </h1>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
+          <button
+            onClick={() => handleAnswer(currentQ.optionA.type)}
+            className="group border border-gray-700 hover:border-white bg-transparent hover:bg-white/5 p-8 flex flex-col items-center justify-center gap-4 transition-all duration-300"
+          >
+            <Shield size={32} className="text-gray-600 group-hover:text-white transition-colors" />
+            <span className="font-mono text-xs uppercase tracking-widest text-gray-400 group-hover:text-white transition-colors">
+              {currentQ.optionA.text}
+            </span>
+          </button>
+
+          <button
+            onClick={() => handleAnswer(currentQ.optionB.type)}
+            className="group border border-gray-700 hover:border-white bg-transparent hover:bg-white/5 p-8 flex flex-col items-center justify-center gap-4 transition-all duration-300"
+          >
+            <Eye size={32} className="text-gray-600 group-hover:text-white transition-colors" />
+            <span className="font-mono text-xs uppercase tracking-widest text-gray-400 group-hover:text-white transition-colors">
+              {currentQ.optionB.text}
+            </span>
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // Phase 3: Account Lockdown (Placeholder)
+  if (step === "phase3_lockdown") {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center p-6 text-center animate-fade-in">
+        <div className="max-w-md">
+          <h1 className="text-3xl font-mono text-white tracking-widest uppercase mb-4">
+            Analysis Complete.
+          </h1>
+          <p className="text-gray-400 font-mono text-sm mb-8">
+            Your psychological profile has been generated.
+            <br />
+            <span className="text-white font-bold">
+              Result: {assessmentScore.defense > assessmentScore.influence ? "DEFENSIVE STRATEGIST" : "INFLUENCE SPECIALIST"}
+            </span>
+          </p>
+          <button
+            onClick={() => {
+              // Reset for demo purposes as requested
+              setStep("coldOpen");
+              setStatueState("idle");
+              setAssessmentQuestion(0);
+              setAssessmentScore({ defense: 0, influence: 0 });
+              setEthicsAgreed(false);
+            }}
+            className="border border-white py-3 px-6 text-xs font-mono uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
+          >
+            Restart Simulation
+          </button>
+        </div>
       </div>
     );
   }
