@@ -29,6 +29,11 @@ export default function WelcomePage() {
   const [loginError, setLoginError] = useState(false);
   const [formData, setFormData] = useState({ identifier: "", password: "" });
 
+  // Phase 2: Reaction State (for showing character reactions after answers)
+  const [showReaction, setShowReaction] = useState(false);
+  const [selectedReaction, setSelectedReaction] = useState<string | null>(null);
+  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+
   // Identity Verification State
   const [glitch, setGlitch] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
@@ -680,9 +685,6 @@ export default function WelcomePage() {
     ];
 
     const currentQ = questions[assessmentQuestion];
-    const [showReaction, setShowReaction] = useState(false);
-    const [selectedReaction, setSelectedReaction] = useState<string | null>(null);
-    const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
 
     const handleAnswer = (option: any) => {
       // Show reaction first
