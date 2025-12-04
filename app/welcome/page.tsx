@@ -34,15 +34,15 @@ export default function WelcomePage() {
   const [textIndex, setTextIndex] = useState(0);
   const fullText = "ACCESS TO THIS DATABASE IS RESTRICTED.";
 
-  // Auto-advance from Cold Open after 3 seconds
-  useEffect(() => {
-    if (step === "coldOpen") {
-      const timer = setTimeout(() => {
-        setStep("identityVerification");
-      }, 3000);
-      return () => clearTimeout(timer);
-    }
-  }, [step]);
+  // Manual skip for Cold Open - removed auto-advance
+  // useEffect(() => {
+  //   if (step === "coldOpen") {
+  //     const timer = setTimeout(() => {
+  //       setStep("identityVerification");
+  //     }, 3000);
+  //     return () => clearTimeout(timer);
+  //   }
+  // }, [step]);
 
   // Typewriter effect
   useEffect(() => {
@@ -69,16 +69,20 @@ export default function WelcomePage() {
   if (step === "coldOpen") {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center">
-        <div className="flex justify-center">
+        <div className="flex justify-center relative" onClick={() => setStep("identityVerification")}>
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-64 h-64 object-contain glitch-video"
+            className="w-64 h-64 object-contain glitch-video cursor-pointer"
           >
             <source src="/welcome-animation.webm" type="video/webm" />
           </video>
+          {/* Skip hint */}
+          <div className="absolute bottom-0 text-gray-700 text-xs font-mono uppercase tracking-widest animate-pulse">
+            Click to continue
+          </div>
         </div>
         {/* CSS for glitch effect, specific to coldOpen */}
         <style jsx global>{`
@@ -610,6 +614,14 @@ export default function WelcomePage() {
             </div>
             <div className="absolute w-full h-1 bg-white/50 animate-scan-vertical"></div>
           </div>
+
+          {/* Skip Button */}
+          <button
+            onClick={() => setAssessmentQuestion(0)}
+            className="mt-8 border border-gray-700 bg-transparent text-gray-500 hover:border-white hover:text-white py-3 px-6 text-xs font-mono uppercase tracking-widest transition-colors"
+          >
+            Continue
+          </button>
         </div>
 
         <style jsx>{`
@@ -625,15 +637,15 @@ export default function WelcomePage() {
     );
   }
 
-  // Auto-advance from transition to first question
-  useEffect(() => {
-    if (step === "phase2_assessment" && assessmentQuestion === -1) {
-      const timer = setTimeout(() => {
-        setAssessmentQuestion(0);
-      }, 3000);
-      return () => clearTimeout(timer);
-    }
-  }, [step, assessmentQuestion]);
+  // Manual skip for Analyzing screen - removed auto-advance
+  // useEffect(() => {
+  //   if (step === "phase2_assessment" && assessmentQuestion === -1) {
+  //     const timer = setTimeout(() => {
+  //       setAssessmentQuestion(0);
+  //     }, 3000);
+  //     return () => clearTimeout(timer);
+  //   }
+  // }, [step, assessmentQuestion]);
 
   // Phase 2: The Assessment (Questions)
   if (step === "phase2_assessment") {
