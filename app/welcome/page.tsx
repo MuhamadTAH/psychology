@@ -20,7 +20,7 @@ export default function WelcomePage() {
   const [ethicsAgreed, setEthicsAgreed] = useState(false);
 
   // Phase 2: Assessment State
-  const [assessmentQuestion, setAssessmentQuestion] = useState(0);
+  const [assessmentQuestion, setAssessmentQuestion] = useState(-1);
   const [assessmentScore, setAssessmentScore] = useState({ defense: 0, influence: 0, strategic: 0 });
   const [userArchetype, setUserArchetype] = useState<string | null>(null);
   const [showComputing, setShowComputing] = useState(false);
@@ -585,63 +585,147 @@ export default function WelcomePage() {
     );
   }
 
-  // Phase 2: The Assessment
+  // Phase 2.0: The Transition
+  if (step === "phase2_assessment" && assessmentQuestion === -1) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center p-6">
+        <div className="text-center animate-slide-in-right">
+          {/* Statue: IDLE (Typing/Observing) */}
+          <div className="mb-12">
+            <div className="w-24 h-24 relative mx-auto">
+              <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                <path d="M50 10 C 30 10, 25 35, 25 50 C 25 70, 35 80, 35 90 L 65 90 C 65 80, 75 70, 75 50 C 75 35, 70 10, 50 10" fill="#e5e5e5" />
+                <path d="M50 10 L 45 30 L 55 45 L 40 60 L 50 90" fill="none" stroke="#D4AF37" strokeWidth="1.5" className="animate-pulse" />
+                <rect x="30" y="35" width="40" height="8" fill="#000" />
+              </svg>
+            </div>
+          </div>
+
+          <h1 className="text-2xl font-mono text-white tracking-widest uppercase mb-8 animate-pulse">
+            Analyzing Operative Profile...
+          </h1>
+
+          {/* Scanning Grid */}
+          <div className="relative w-full max-w-md h-64 mx-auto border border-gray-800 overflow-hidden">
+            <div className="absolute inset-0 grid grid-cols-8 grid-rows-8">
+              {Array.from({ length: 64 }).map((_, i) => (
+                <div key={i} className="border border-gray-900 animate-pulse" style={{ animationDelay: `${i * 20}ms` }}></div>
+              ))}
+            </div>
+            <div className="absolute w-full h-1 bg-white/50 animate-scan-vertical"></div>
+          </div>
+        </div>
+
+        <style jsx>{`
+          @keyframes scan-vertical {
+            0% { top: 0%; }
+            100% { top: 100%; }
+          }
+          .animate-scan-vertical {
+            animation: scan-vertical 2s linear infinite;
+          }
+        `}</style>
+      </div>
+    );
+  }
+
+  // Auto-advance from transition to first question
+  useEffect(() => {
+    if (step === "phase2_assessment" && assessmentQuestion === -1) {
+      const timer = setTimeout(() => {
+        setAssessmentQuestion(0);
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [step, assessmentQuestion]);
+
+  // Phase 2: The Assessment (Questions)
   if (step === "phase2_assessment") {
     const questions = [
       {
+        strategist: "First, state your intent.",
         headline: "Why do you seek this knowledge?",
         options: [
-          { text: "To protect myself from manipulation.", type: "defense" },
-          { text: "To master high-level persuasion.", type: "influence" }
+          { text: "To stop others from controlling me.", type: "defense", reaction: "A prudent choice. Shields up." },
+          { text: "To advance my career and lead others.", type: "influence", reaction: "Ambition is useful. We will sharpen it." },
+          { text: "To understand human behavior.", type: "psychology", reaction: null }
         ]
       },
       {
-        headline: "A colleague takes credit for your work in a meeting. You...",
+        strategist: "Honesty is required. How do you currently handle conflict?",
+        headline: "",
         options: [
-          { text: "Confront them immediately.", type: "aggressive" },
-          { text: "Wait and complain privately.", type: "passive" },
-          { text: "Ask a strategic question to expose their ignorance.", type: "strategic" }
+          { text: "I stay quiet to keep the peace.", type: "avoidance", reaction: "Silence is a vulnerability. We will fix that." },
+          { text: "I fight back immediately.", type: "confrontation", reaction: "Reactive emotion is a weakness. You must learn control." },
+          { text: "I wait for the right moment.", type: "strategy", reaction: "Good. Patience is a weapon." }
         ]
       },
       {
-        headline: "What is your ultimate objective?",
+        strategist: "Let us test your instincts.",
+        headline: "A counterpart smiles while delivering bad news. What does it mean?",
         options: [
-          { text: "Invulnerability.", type: "defense" },
-          { text: "Command & Authority.", type: "influence" }
+          { text: "They are nervous.", type: "wrong", correct: false, reaction: "Incorrect. You missed the micro-aggression. This is why you need training." },
+          { text: "They are hiding hostility.", type: "correct", correct: true, reaction: "Correct. Duper's Delight. You have potential." },
+          { text: "They are trying to soften the blow.", type: "wrong", correct: false, reaction: "Incorrect. You missed the micro-aggression. This is why you need training." }
         ]
       }
     ];
 
     const currentQ = questions[assessmentQuestion];
+    const [showReaction, setShowReaction] = useState(false);
+    const [selectedReaction, setSelectedReaction] = useState<string | null>(null);
+    const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
 
-    const handleAnswer = (type: string) => {
-      const newScore = { ...assessmentScore };
-      if (type === 'defense' || type === 'influence' || type === 'strategic') {
-        newScore[type as keyof typeof assessmentScore] = (assessmentScore[type as keyof typeof assessmentScore] || 0) + 1;
+    const handleAnswer = (option: any) => {
+      // Show reaction first
+      if (option.correct !== undefined) {
+        setIsCorrect(option.correct);
+        setStatueState(option.correct ? "nod" : "suspicion");
       }
-      setAssessmentScore(newScore);
+      setSelectedReaction(option.reaction);
+      setShowReaction(true);
 
-      if (assessmentQuestion < 2) {
-        setAssessmentQuestion(prev => prev + 1);
-      } else {
-        // Finished Assessment - Calculate Result
-        setShowComputing(true);
-        setTimeout(() => {
-          // Determine archetype
-          let archetype = "TACTICAL ANALYST";
-          if (newScore.strategic >= 1) {
-            archetype = "DARK PSYCHOLOGIST";
-          } else if (newScore.defense > newScore.influence) {
-            archetype = "DEFENSIVE STRATEGIST";
-          } else if (newScore.influence > newScore.defense) {
-            archetype = "ASSERTIVE NEGOTIATOR";
-          }
-          setUserArchetype(archetype);
-          setShowComputing(false);
+      // After 2 seconds, move to next question or finish
+      setTimeout(() => {
+        setShowReaction(false);
+        setStatueState("idle");
+        setIsCorrect(null);
+
+        if (assessmentQuestion < 2) {
+          setAssessmentQuestion(prev => prev + 1);
+        } else {
+          // Finished Assessment - Go to Phase 3
           setStep("phase3_result");
-        }, 3000);
-      }
+        }
+      }, 2500);
     };
+
+    if (showReaction) {
+      return (
+        <div className="min-h-screen bg-black flex items-center justify-center p-6 text-center">
+          <div className="max-w-md animate-slide-in-right">
+            {/* Statue with reaction */}
+            <div className={`mb-8 transition-all duration-500 ${isCorrect === false ? 'animate-shake' : ''}`}>
+              <div className="w-32 h-32 relative mx-auto">
+                <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                  <path d="M50 10 C 30 10, 25 35, 25 50 C 25 70, 35 80, 35 90 L 65 90 C 65 80, 75 70, 75 50 C 75 35, 70 10, 50 10"
+                    fill={isCorrect === false ? "#2a0a0a" : "#e5e5e5"}
+                    className="transition-colors duration-500" />
+                  <path d="M50 10 L 45 30 L 55 45 L 40 60 L 50 90" fill="none" stroke="#D4AF37" strokeWidth="1.5" className="animate-pulse" />
+                  <rect x="30" y="35" width="40" height={isCorrect === false ? "4" : "8"}
+                    fill={isCorrect === false ? "#ff0000" : "#000"}
+                    className="transition-all duration-300 animate-pulse" />
+                </svg>
+              </div>
+            </div>
+
+            <p className={`font-mono text-sm tracking-wider italic ${isCorrect === false ? 'text-red-500' : 'text-gray-300'}`}>
+              "{selectedReaction}"
+            </p>
+          </div>
+        </div>
+      );
+    }
 
     return (
       <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center">
@@ -654,7 +738,7 @@ export default function WelcomePage() {
             ></div>
           </div>
 
-          {/* Statue: Idle (Observing) */}
+          {/* Statue: Idle */}
           <div className="mb-8 opacity-80">
             <div className="w-20 h-20 relative">
               <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
@@ -665,24 +749,30 @@ export default function WelcomePage() {
             </div>
           </div>
 
-          <h2 className="text-gray-500 font-mono text-xs uppercase tracking-widest mb-4">
-            Assessment {assessmentQuestion + 1} / {questions.length}
+          <h2 className="text-gray-500 font-mono text-xs uppercase tracking-widest mb-2">
+            Assessment {assessmentQuestion + 1} / 3
           </h2>
 
-          <h1 className="text-xl md:text-2xl font-mono font-bold text-white tracking-wider uppercase mb-12 max-w-lg">
-            {currentQ.headline}
-          </h1>
+          <p className="text-gray-400 font-mono text-sm italic mb-8 max-w-lg">
+            "{currentQ.strategist}"
+          </p>
 
-          <div className={`grid gap-4 w-full max-w-2xl ${currentQ.options.length === 3 ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2'}`}>
+          {currentQ.headline && (
+            <h1 className="text-xl md:text-2xl font-mono font-bold text-white tracking-wider uppercase mb-12 max-w-lg">
+              {currentQ.headline}
+            </h1>
+          )}
+
+          <div className="grid grid-cols-1 gap-4 w-full max-w-2xl">
             {currentQ.options.map((option, idx) => (
               <button
                 key={idx}
-                onClick={() => handleAnswer(option.type)}
-                className="group border border-white bg-transparent hover:bg-white hover:text-black p-6 flex items-center justify-center gap-4 transition-all duration-300"
+                onClick={() => handleAnswer(option)}
+                className="group border border-white bg-transparent hover:bg-white hover:text-black p-6 flex items-center justify-start gap-4 transition-all duration-300 text-left"
               >
-                {idx === 0 && <Shield size={24} className="text-white group-hover:text-black transition-colors" />}
-                {idx === 1 && <Eye size={24} className="text-white group-hover:text-black transition-colors" />}
-                {idx === 2 && <Terminal size={24} className="text-white group-hover:text-black transition-colors" />}
+                <span className="font-mono text-xs uppercase tracking-wider text-white group-hover:text-black transition-colors">
+                  {String.fromCharCode(65 + idx)})
+                </span>
                 <span className="font-mono text-xs uppercase tracking-widest text-white group-hover:text-black transition-colors">
                   {option.text}
                 </span>
