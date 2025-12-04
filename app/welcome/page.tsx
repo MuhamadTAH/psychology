@@ -590,14 +590,10 @@ export default function WelcomePage() {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center p-6">
         <div className="text-center animate-slide-in-right">
-          {/* Statue: IDLE (Typing/Observing) */}
+          {/* CHARACTER PLACEHOLDER - The Strategist (IDLE) */}
           <div className="mb-12">
-            <div className="w-24 h-24 relative mx-auto">
-              <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-                <path d="M50 10 C 30 10, 25 35, 25 50 C 25 70, 35 80, 35 90 L 65 90 C 65 80, 75 70, 75 50 C 75 35, 70 10, 50 10" fill="#e5e5e5" />
-                <path d="M50 10 L 45 30 L 55 45 L 40 60 L 50 90" fill="none" stroke="#D4AF37" strokeWidth="1.5" className="animate-pulse" />
-                <rect x="30" y="35" width="40" height="8" fill="#000" />
-              </svg>
+            <div className="w-24 h-24 bg-gray-800 mx-auto border border-gray-600 flex items-center justify-center">
+              <span className="text-gray-600 text-xs">STATUE</span>
             </div>
           </div>
 
@@ -704,18 +700,16 @@ export default function WelcomePage() {
       return (
         <div className="min-h-screen bg-black flex items-center justify-center p-6 text-center">
           <div className="max-w-md animate-slide-in-right">
-            {/* Statue with reaction */}
+            {/* CHARACTER PLACEHOLDER - The Strategist with reaction */}
             <div className={`mb-8 transition-all duration-500 ${isCorrect === false ? 'animate-shake' : ''}`}>
-              <div className="w-32 h-32 relative mx-auto">
-                <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-                  <path d="M50 10 C 30 10, 25 35, 25 50 C 25 70, 35 80, 35 90 L 65 90 C 65 80, 75 70, 75 50 C 75 35, 70 10, 50 10"
-                    fill={isCorrect === false ? "#2a0a0a" : "#e5e5e5"}
-                    className="transition-colors duration-500" />
-                  <path d="M50 10 L 45 30 L 55 45 L 40 60 L 50 90" fill="none" stroke="#D4AF37" strokeWidth="1.5" className="animate-pulse" />
-                  <rect x="30" y="35" width="40" height={isCorrect === false ? "4" : "8"}
-                    fill={isCorrect === false ? "#ff0000" : "#000"}
-                    className="transition-all duration-300 animate-pulse" />
-                </svg>
+              <div className="w-32 h-32 bg-gray-800 mx-auto border flex items-center justify-center"
+                style={{
+                  borderColor: isCorrect === false ? '#ff0000' : '#666',
+                  backgroundColor: isCorrect === false ? '#2a0a0a' : '#1a1a1a'
+                }}>
+                <span className="text-gray-600 text-xs">
+                  {isCorrect === true ? 'NOD' : isCorrect === false ? 'JUDGING' : 'STATUE'}
+                </span>
               </div>
             </div>
 
@@ -738,14 +732,10 @@ export default function WelcomePage() {
             ></div>
           </div>
 
-          {/* Statue: Idle */}
+          {/* CHARACTER PLACEHOLDER - The Strategist (IDLE) */}
           <div className="mb-8 opacity-80">
-            <div className="w-20 h-20 relative">
-              <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-                <path d="M50 10 C 30 10, 25 35, 25 50 C 25 70, 35 80, 35 90 L 65 90 C 65 80, 75 70, 75 50 C 75 35, 70 10, 50 10" fill="#e5e5e5" />
-                <path d="M50 10 L 45 30 L 55 45 L 40 60 L 50 90" fill="none" stroke="#D4AF37" strokeWidth="1.5" />
-                <rect x="30" y="35" width="40" height="8" fill="#000" />
-              </svg>
+            <div className="w-20 h-20 bg-gray-800 mx-auto border border-gray-600 flex items-center justify-center">
+              <span className="text-gray-600 text-xs">STATUE</span>
             </div>
           </div>
 
