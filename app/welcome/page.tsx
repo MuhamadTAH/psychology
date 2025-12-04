@@ -356,6 +356,14 @@ export default function WelcomePage() {
             font-family: 'JetBrains Mono', monospace;
           }
 
+          @keyframes slideInRight {
+            from { transform: translateX(50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+          }
+          .animate-slide-in-right {
+            animation: slideInRight 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+          }
+
           @keyframes shake {
             0%, 100% { transform: translateX(0); }
             10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
@@ -417,7 +425,7 @@ export default function WelcomePage() {
   // Phase 1.0: The Awareness ("The Hook")
   if (step === "phase1_awareness") {
     return (
-      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-fade-in">
+      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-slide-in-right">
         {/* Statue: Idle (Observing) */}
         <div className="mb-8 opacity-80">
           <div className="w-24 h-24 relative">
@@ -477,7 +485,7 @@ export default function WelcomePage() {
   // Phase 1.1: The Solution ("The Arsenal")
   if (step === "phase1_solution") {
     return (
-      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-fade-in">
+      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-slide-in-right">
         {/* Statue: Explain (Hand Gesture / Glowing) */}
         <div className="mb-8 opacity-90">
           <div className="w-24 h-24 relative">
@@ -522,7 +530,7 @@ export default function WelcomePage() {
   // Phase 1.2: The Ethics ("The Warning")
   if (step === "phase1_ethics") {
     return (
-      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-fade-in">
+      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-slide-in-right">
         {/* Statue: Judging (Red Eyes) */}
         <div className="mb-8 opacity-100">
           <div className="w-24 h-24 relative">
@@ -582,18 +590,18 @@ export default function WelcomePage() {
     const questions = [
       {
         headline: "Why do you seek this knowledge?",
-        optionA: { text: "To protect myself from manipulation.", type: "defense" },
-        optionB: { text: "To influence others to my will.", type: "influence" }
+        optionA: { text: "To detect hidden agendas.", type: "defense" },
+        optionB: { text: "To master high-level persuasion.", type: "influence" }
       },
       {
         headline: "A colleague takes credit for your work. You...",
-        optionA: { text: "Fortify my position against future attacks.", type: "defense" },
-        optionB: { text: "Turn the situation to my advantage.", type: "influence" }
+        optionA: { text: "Strategically secure my credit.", type: "defense" },
+        optionB: { text: "Leverage the situation for advancement.", type: "influence" }
       },
       {
         headline: "What is your ultimate objective?",
-        optionA: { text: "Invulnerability.", type: "defense" },
-        optionB: { text: "Control.", type: "influence" }
+        optionA: { text: "Unshakeable Composure.", type: "defense" },
+        optionB: { text: "Commanding Authority.", type: "influence" }
       }
     ];
 
@@ -612,7 +620,7 @@ export default function WelcomePage() {
     };
 
     return (
-      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-fade-in">
+      <div key={assessmentQuestion} className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center animate-slide-in-right">
         {/* Progress Bar */}
         <div className="w-full max-w-md h-1 bg-gray-900 mb-12 relative">
           <div
