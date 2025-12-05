@@ -24,6 +24,7 @@ export default function WelcomePage() {
   const [assessmentScore, setAssessmentScore] = useState({ defense: 0, influence: 0, strategic: 0 });
   const [userArchetype, setUserArchetype] = useState<string | null>(null);
   const [showComputing, setShowComputing] = useState(false);
+  const [userAnswers, setUserAnswers] = useState<Record<number, string>>({}); // Track answers by question index
 
   // Login Form State
   const [loginError, setLoginError] = useState(false);
@@ -722,6 +723,9 @@ export default function WelcomePage() {
     const currentQ = questions[assessmentQuestion];
 
     const handleAnswer = (option: any) => {
+      // Track user's answer
+      setUserAnswers(prev => ({ ...prev, [assessmentQuestion]: option.type }));
+
       // Show reaction first
       if (option.correct !== undefined) {
         setIsCorrect(option.correct);
@@ -852,8 +856,52 @@ export default function WelcomePage() {
     );
   }
 
-  // Phase 3.0: The Calculation
+  // Phase 3.0: The Calculation (Dynamic Tag Injection)
   if (step === "phase3_calculation") {
+    // Generate dynamic messages based on user answers
+    const dynamicMessages = [];
+
+    // Q1: Intent (index 0)
+    if (userAnswers[0] === 'defense') {
+      dynamicMessages.push('OPTIMIZING SHIELD PROTOCOLS...');
+    } else if (userAnswers[0] === 'influence') {
+      dynamicMessages.push('CALIBRATING PERSUASION VECTORS...');
+    }
+
+    // Q2: Self-Sabotage (index 1)
+    if (userAnswers[1] === 'sabotage') {
+      dynamicMessages.push('DETECTING SUBCONSCIOUS LOOPS...');
+    }
+
+    // Q6: Conflict Avoidance (index 5)
+    if (userAnswers[5] === 'avoidance') {
+      dynamicMessages.push('CONFIDENCE TRAINING REQUIRED...');
+    }
+
+    // Q7: Micro-Test Wrong (index 6)
+    if (userAnswers[6] === 'wrong') {
+      dynamicMessages.push('VULNERABILITY DETECTED...');
+    }
+
+    // Always show
+    dynamicMessages.push('ENCRYPTING DATA...');
+
+    const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
+
+    useEffect(() => {
+      if (step === "phase3_calculation") {
+        const interval = setInterval(() => {
+          setCurrentMessageIndex(prev => {
+            if (prev < dynamicMessages.length - 1) {
+              return prev + 1;
+            }
+            return prev;
+          });
+        }, 800);
+        return () => clearInterval(interval);
+      }
+    }, [step]);
+
     return (
       <div className="min-h-screen bg-black flex items-center justify-center p-6">
         <div className="text-center animate-slide-in-right">
@@ -861,11 +909,25 @@ export default function WelcomePage() {
             <Terminal size={64} className="text-white mx-auto animate-pulse" />
           </div>
           <h1 className="text-2xl font-mono text-white tracking-widest uppercase mb-4 animate-pulse">
-            Calculating Curriculum...
+            Compiling Operative Profile...
           </h1>
-          <p className="text-gray-500 font-mono text-xs mb-8">
-            Building Operative Profile... Encrypting Data... Generating Strategy...
-          </p>
+
+          {/* Dynamic Messages */}
+          <div className="h-32 flex flex-col items-center justify-center mb-8">
+            {dynamicMessages.slice(0, currentMessageIndex + 1).map((msg, idx) => (
+              <p
+                key={idx}
+                className={`font-mono text-xs mb-2 transition-all duration-500 ${idx === currentMessageIndex ? 'text-white font-bold animate-pulse' : 'text-gray-700'
+                  }`}
+                style={{
+                  animation: idx === currentMessageIndex ? 'glitch 0.3s infinite' : 'none'
+                }}
+              >
+                {msg}
+              </p>
+            ))}
+          </div>
+
           <div className="w-64 h-1 bg-gray-900 mx-auto relative overflow-hidden">
             <div className="absolute h-full bg-white animate-scan-horizontal"></div>
           </div>
@@ -887,6 +949,10 @@ export default function WelcomePage() {
           }
           .animate-scan-horizontal {
             animation: scan-horizontal 2s ease-in-out infinite;
+          }
+          @keyframes glitch {
+            0%, 100% { text-shadow: 2px 0 #ff0000, -2px 0 #00ffff; }
+            50% { text-shadow: -2px 0 #ff0000, 2px 0 #00ffff; }
           }
         `}</style>
       </div>

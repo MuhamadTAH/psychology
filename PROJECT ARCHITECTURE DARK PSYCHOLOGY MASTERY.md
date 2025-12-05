@@ -2,7 +2,7 @@ PROJECT ARCHITECTURE: DARK PSYCHOLOGY MASTERY
 
 Module: Onboarding & First Launch (The Induction)
 
-Version: 1.4 (Fixed C-Reactions & Nav Logic)
+Version: 1.6 (Added Technical Animation Specs)
 Tone: "Elite Leadership Training" (Public) / "Psychological Warfare" (Internal)
 Visual Theme: Dark Mode, High Contrast, Terminal/System Aesthetic.
 
@@ -81,7 +81,7 @@ Goal: Sell the value ("Hook") while remaining App Store safe ("Camouflage").
 
 Screen 1.0: The Awareness (The Hook)
 
-Visual Asset: [Motion Graphic: A puppet string being cut or an eye opening].
+Animation Spec (See Sec 7): "The Severed String"
 
 Character State: IDLE (Observing).
 
@@ -93,7 +93,7 @@ Button: [ EXPLAIN ] (Right Arrow ->).
 
 Screen 2.0: The Solution (The Arsenal)
 
-Visual Asset: [Motion Graphic: A shield blocking a speech bubble].
+Animation Spec (See Sec 7): "The Kinetic Shield"
 
 Character State: EXPLAINING (Hand gesture).
 
@@ -105,7 +105,7 @@ Button: [ START TRAINING ] (Right Arrow ->).
 
 Screen 3.0: The Ethics (The Warning)
 
-Visual Asset: [Motion Graphic: A heavy vault door locking or a scale of justice].
+Animation Spec (See Sec 7): "The Heavy Vault"
 
 Character State: JUDGING (Intense stare).
 
@@ -271,11 +271,29 @@ If CORRECT: White Text/Nod. "Correct. Duper's Delight." -> Auto-advance to Phase
 
 Goal: Establish the "Discipline" loop and convert the user.
 
-Screen 5.0: The Calculation
+Screen 5.0: The Calculation (Dynamic Tag Injection)
 
-Visual: "CALCULATING CURRICULUM..." (Progress bar fills rapidly).
+Animation Spec (See Sec 7): "The Terminal Compiler"
 
-Text: "Building Operative Profile... Encrypting Data... Generating Strategy..."
+Visual: A high-speed "Terminal Scroll" animation. Lines of code/data rapidly scrolling up the screen.
+
+Headline: "COMPILING OPERATIVE PROFILE..."
+
+Dynamic Text (Flashes based on user choices):
+
+If Q4.1 = A (Defense): "OPTIMIZING SHIELD PROTOCOLS..."
+
+If Q4.1 = B (Influence): "CALIBRATING PERSUASION VECTORS..."
+
+If Q4.2 = A (Self-Sabotage): "DETECTING SUBCONSCIOUS LOOPS..."
+
+If Q4.6 = A (Avoidance): "CONFIDENCE TRAINING REQUIRED..."
+
+If Q4.7 = Wrong: "VULNERABILITY DETECTED..."
+
+Always: "ENCRYPTING DATA..."
+
+Transition: The text gltiches into the final result -> Screen 5.1.
 
 Screen 5.1: The Contract (Streak Setting)
 
@@ -309,10 +327,54 @@ Secondary Action: [ REMAIN CIVILIAN ] (Small, grey text - continues to restricte
 
 Strict Rule: To ensure approval, use the vocabulary on the Right.
 
-| ❌ BANNED (Internal) | ✅ SAFE (Public/App Store) |
-| Weapons | Tactics / Tools |
-| Manipulation | Influence / Persuasion |
-| Mind Control | Psychological Strategy |
-| Destroy / Attack | Defend / Outsmart |
-| Dangerous | Powerful |
-| Enemy | Counterpart / Opponent |
+BANNED: Weapons, Manipulation, Mind Control, Destroy, Enemy.
+
+SAFE: Tactics, Influence, Strategy, Outsmart, Counterpart.
+
+7. TECHNICAL ANIMATION SPECS (For AI/Dev)
+
+Copy and paste these specs directly to your developer to ensure high-end visuals.
+
+Spec A: Screen 1.0 - "The Severed String"
+
+Style: Flat Vector Minimalist (Kurzgesagt Noir).
+
+Elements: A single white vertical line (The String) connected to a small puppet handle (top).
+
+Action: A sharp, invisible "cut" snaps the string in the middle. The bottom half falls away with physics (gravity).
+
+Loop: Snap -> Fall -> Fade Out -> Reset.
+
+Colors: String (#FFFFFF), Background (#000000). No blood, no hands. Just the string breaking.
+
+Spec B: Screen 2.0 - "The Kinetic Shield"
+
+Style: Geometric / System UI.
+
+Elements: A jagged speech bubble (representing an attack) flies from Left to Right. A vertical bar (The Shield) appears instantly.
+
+Action: The bubble hits the bar and shatters into small pixels (particles). The bar glows slightly upon impact.
+
+Vibe: Heavy impact. Like a bullet hitting bulletproof glass.
+
+Colors: Shield (Blue-Grey #64748b), Attack (Red #ef4444).
+
+Spec C: Screen 3.0 - "The Heavy Vault"
+
+Style: Industrial / Skeuomorphic-Lite.
+
+Elements: A circular vault locking mechanism (3 concentric rings).
+
+Action: The rings spin in opposite directions. They click into place one by one (Chunk... Chunk... THUD). A center light turns from Red to Green.
+
+Vibe: Security. Finality. Weight.
+
+Spec D: Screen 5.0 - "The Terminal Compiler"
+
+Style: Matrix/Linux Boot Screen but in Monochrome.
+
+Elements: Scrolling text (Monospace font, size 10px).
+
+Action: Text scrolls upward at 60fps (very fast). Random hex codes and binary strings in the background. The "Dynamic Text" (e.g., "OPTIMIZING SHIELD") appears in BOLD WHITE overlaid on top of the scrolling grey text.
+
+Effect: Glitch/Chromatic Aberration (Red/Blue shift) on the bold text to make it pop.
