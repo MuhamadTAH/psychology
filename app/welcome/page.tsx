@@ -772,12 +772,12 @@ export default function WelcomePage() {
 
     return (
       <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center">
-        <div key={assessmentQuestion} className="animate-slide-in-right flex flex-col items-center w-full">
+        <div key={assessmentQuestion} className="animate-slide-in-right flex flex-col items-center max-w-2xl mx-auto">
           {/* Progress Bar */}
           <div className="w-full max-w-md h-1 bg-gray-900 mb-12 relative">
             <div
               className="h-full bg-white transition-all duration-500"
-              style={{ width: `${((assessmentQuestion + 1) / 3) * 100}%` }}
+              style={{ width: `${((assessmentQuestion + 1) / 7) * 100}%` }}
             ></div>
           </div>
 
