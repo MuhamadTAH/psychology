@@ -14,7 +14,7 @@ export default function WelcomePage() {
   const { signIn, setActive, isLoaded } = useSignIn();
   const { signUp } = useSignUp();
 
-  const [step, setStep] = useState<"coldOpen" | "identityVerification" | "loginForm" | "phase1_awareness" | "phase1_solution" | "phase1_ethics" | "phase2_assessment" | "phase3_lockdown" | "phase3_result">("coldOpen");
+  const [step, setStep] = useState<"coldOpen" | "identityVerification" | "loginForm" | "phase1_awareness" | "phase1_solution" | "phase1_ethics" | "phase2_assessment" | "phase3_calculation" | "phase3_commitment" | "phase3_paywall" | "phase3_lockdown" | "phase3_result">("coldOpen");
   const [showGhostWarning, setShowGhostWarning] = useState(false);
   const [statueState, setStatueState] = useState<"idle" | "nod" | "evaluate" | "suspicion" | "explain" | "judging">("idle");
   const [ethicsAgreed, setEthicsAgreed] = useState(false);
@@ -665,21 +665,56 @@ export default function WelcomePage() {
         ]
       },
       {
+        strategist: "The most dangerous manipulator is yourself.",
+        headline: "Do you destroy your own success just as you achieve it?",
+        options: [
+          { text: "Frequently.", type: "sabotage", reaction: "Self-sabotage is a subconscious script. We will rewrite it." },
+          { text: "Sometimes.", type: "sabotage", reaction: "Self-sabotage is a subconscious script. We will rewrite it." },
+          { text: "Rarely.", type: "confident", reaction: "Good. Confidence is vital." }
+        ]
+      },
+      {
+        strategist: "If you are prey, you attract predators.",
+        headline: "Do you find yourself constantly surrounded by toxic or narcissistic personalities?",
+        options: [
+          { text: "Yes, it keeps happening.", type: "vulnerable", reaction: "You are broadcasting vulnerability. We must change your frequency." },
+          { text: "Only in the workplace.", type: "workplace", reaction: null },
+          { text: "No, I spot them early.", type: "vigilant", reaction: "Excellent. Vigilance is working." }
+        ]
+      },
+      {
+        strategist: "Data point: High Emotional Intelligence correlates with executive leadership success.",
+        headline: "Are you prepared to do what is necessary to lead?",
+        options: [
+          { text: "I will do whatever it takes.", type: "ruthless", reaction: "Ruthlessness is a tool. Use it wisely." },
+          { text: "I want to lead, but ethically.", type: "ethical", reaction: "Ethics are a luxury of the powerful." },
+          { text: "I prefer to stay in the background.", type: "background", reaction: null }
+        ]
+      },
+      {
+        strategist: "Look at this image. What do you see first?",
+        headline: "[VISUAL PLACEHOLDER: Ambiguous Image]",
+        options: [
+          { text: "The Skull (The Threat).", type: "threat", reaction: "You are threat-focused. Good for defense." },
+          { text: "The Mirror (The Opportunity).", type: "opportunity", reaction: "You are opportunity-focused. Good for influence." }
+        ]
+      },
+      {
         strategist: "Honesty is required. How do you currently handle conflict?",
         headline: "",
         options: [
-          { text: "I stay quiet to keep the peace.", type: "avoidance", reaction: "Silence is a vulnerability. We will fix that." },
-          { text: "I fight back immediately.", type: "confrontation", reaction: "Reactive emotion is a weakness. You must learn control." },
-          { text: "I wait for the right moment.", type: "strategy", reaction: "Good. Patience is a weapon." }
+          { text: "I stay quiet to keep the peace.", type: "avoidance", reaction: "Silence is a vulnerability." },
+          { text: "I fight back immediately.", type: "confrontation", reaction: "Reactive emotion is a weakness." },
+          { text: "I wait for the right moment.", type: "strategy", reaction: "Patience is a weapon.", correct: true }
         ]
       },
       {
         strategist: "Let us test your instincts.",
         headline: "A counterpart smiles while delivering bad news. What does it mean?",
         options: [
-          { text: "They are nervous.", type: "wrong", correct: false, reaction: "Incorrect. You missed the micro-aggression. This is why you need training." },
-          { text: "They are hiding hostility.", type: "correct", correct: true, reaction: "Correct. Duper's Delight. You have potential." },
-          { text: "They are trying to soften the blow.", type: "wrong", correct: false, reaction: "Incorrect. You missed the micro-aggression. This is why you need training." }
+          { text: "They are nervous.", type: "wrong", correct: false, reaction: "Incorrect. You missed the micro-aggression." },
+          { text: "They are hiding hostility.", type: "correct", correct: true, reaction: "Correct. Duper's Delight." },
+          { text: "They are trying to soften the blow.", type: "wrong", correct: false, reaction: "Incorrect. You missed the micro-aggression." }
         ]
       }
     ];
@@ -701,11 +736,11 @@ export default function WelcomePage() {
         setStatueState("idle");
         setIsCorrect(null);
 
-        if (assessmentQuestion < 2) {
+        if (assessmentQuestion < 6) {
           setAssessmentQuestion(prev => prev + 1);
         } else {
           // Finished Assessment - Go to Phase 3
-          setStep("phase3_result");
+          setStep("phase3_calculation");
         }
       }, 2500);
     };
@@ -754,7 +789,7 @@ export default function WelcomePage() {
           </div>
 
           <h2 className="text-gray-500 font-mono text-xs uppercase tracking-widest mb-2">
-            Assessment {assessmentQuestion + 1} / 3
+            Assessment {assessmentQuestion + 1} / 7
           </h2>
 
           <p className="text-gray-400 font-mono text-sm italic mb-8 max-w-lg">
