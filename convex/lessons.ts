@@ -757,7 +757,15 @@ export const getAllDarkPsychologyLessons = query({
       console.log('✅ [CONVEX QUERY] Returning', lessons.length, 'lessons');
       console.log('═══════════════════════════════════════════════════════');
 
-      return lessons;
+      // Step 3: Return lesson data with fields at BOTH top level AND in lessonJSON
+      // Top level: For edit page (expects lesson.lessonId directly)
+      // lessonJSON: For section page (expects lesson.lessonJSON.sectionId)
+      return lessons.map(lesson => ({
+        ...lesson.lessonJSON,
+        _id: lesson._id,
+        title: lesson.title,
+        lessonJSON: lesson.lessonJSON, // Keep original nested structure for backward compatibility
+      }));
     } catch (error) {
       console.log('🔴🔴🔴 [FATAL ERROR] Exception in getAllDarkPsychologyLessons 🔴🔴🔴');
       console.log('🔴 [ERROR]', error);

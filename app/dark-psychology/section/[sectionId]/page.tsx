@@ -330,6 +330,7 @@ export default function SectionPage() {
   const startLesson = (lessonNumber: number, lessonId?: string, isReview: boolean = false) => {
     localStorage.setItem('currentLessonNumber', lessonNumber.toString());
     localStorage.setItem('lessonCategory', 'dark-psychology');
+    localStorage.setItem('darkPsychSectionId', sectionId); // Store section ID for back navigation
     if (lessonId) {
       localStorage.setItem('darkPsychLessonId', lessonId);
     }
@@ -436,12 +437,6 @@ export default function SectionPage() {
 
     // Total height = base position + unit offset + extra padding
     const totalHeight = lastLessonBasePosition.y + lastUnitOffset + 300;
-
-    console.log('🔍 [PATH HEIGHT] Calculation:');
-    console.log('  → Last unit index:', lastUnitIndex);
-    console.log('  → Last unit offset:', lastUnitOffset);
-    console.log('  → Last lesson base Y:', lastLessonBasePosition.y);
-    console.log('  → Total path height:', totalHeight);
 
     return totalHeight;
   })();
@@ -607,25 +602,12 @@ export default function SectionPage() {
                       y: basePosition.y + unitVerticalOffset
                     };
 
-                    // 🐛 DEBUG: Log lesson position calculation
-                    console.log(`🎯 [POSITION] Lesson ${lesson.number} (${lesson.lessonId}):`);
-                    console.log(`  → Unit index: ${unitIndex}, Position in unit: ${positionIndex}`);
-                    console.log(`  → Base position: x=${basePosition.x}%, y=${basePosition.y}px`);
-                    console.log(`  → Unit offset: ${unitVerticalOffset}px`);
-                    console.log(`  → Final position: x=${position.x}%, y=${position.y}px`);
-
                     // ✅ FIX: Use lessonId instead of number to avoid collision
                     const lessonUniqueId = lesson.lessonId || `${lesson.section}-${lesson.number}`;
                     const totalParts = lesson.totalParts || lesson.parts?.length || 1;
                     const completedParts = getCompletedParts(lessonUniqueId, totalParts);
                     // Check if ALL parts are completed
                     const completed = completedParts.length === totalParts;
-
-                    // 🐛 DEBUG: Log lesson details
-                    console.log(`[LESSON DEBUG] Unit: ${unit.unitId}, Lesson Number: ${lesson.number}, Unique ID: ${lessonUniqueId}`);
-                    console.log(`[LESSON DEBUG] Is Completed: ${completed}, Completed Parts:`, completedParts);
-                    console.log(`[LESSON DEBUG] Lesson Title: "${lesson.title}"`);
-                    console.log('---');
 
                     return (
                       <div

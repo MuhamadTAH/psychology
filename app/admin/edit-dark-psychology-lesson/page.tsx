@@ -8,59 +8,86 @@ import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
-import { DARK_PSYCHOLOGY_LESSONS } from "@/lib/darkPsychologyLessons";
+import { useQuery } from "convex/react";
+import { api } from "@/convex/_generated/api";
 
 function EditLessonContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const lessonNumber = searchParams.get("lessonNumber");
-  const lessonId = searchParams.get("lessonId"); // ✅ FIX: Also support lessonId
+  const lessonId = searchParams.get("lessonId");
 
   const [lesson, setLesson] = useState<any>(null);
   const [jsonInput, setJsonInput] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
 
-  // Step 1: Load the lesson on mount - ALWAYS fetch fresh data from API
+  // Step 1: Query Convex for Dark Psychology lessons
+  const dbLessons = useQuery(api.lessons.getAllDarkPsychologyLessons);
+
+  // Step 2: Load the lesson when data is available
   useEffect(() => {
-    if (lessonNumber || lessonId) {
-      console.log('🔄 [EDIT PAGE] Fetching fresh lesson data from API...');
-      console.log('🔄 [EDIT PAGE] Looking for:', lessonId ? `lessonId: ${lessonId}` : `lessonNumber: ${lessonNumber}`);
-
-      // Fetch fresh data from API instead of using cached import
-      fetch('/api/get-dark-psychology-lessons')
-        .then(res => res.json())
-        .then(data => {
-          console.log('✅ [EDIT PAGE] Received fresh lessons from API');
-
-          // ✅ FIX: Find by lessonId first, then fall back to lessonNumber
-          const foundLesson = lessonId
-            ? data.lessons?.find((l: any) => l.lessonId === lessonId)
-            : data.lessons?.find((l: any) => l.number === parseInt(lessonNumber!));
-
-          if (foundLesson) {
-            console.log('✅ [EDIT PAGE] Found lesson:', foundLesson.title || foundLesson.lessonTitle);
-            setLesson(foundLesson);
-
-            // Step: Show only parts with questions, remove practice and contentScreens
-            const cleanedLesson = { ...foundLesson };
-            delete cleanedLesson.practice;
-            delete cleanedLesson.contentScreens;
-
-            const formattedData = JSON.stringify(cleanedLesson, null, 2);
-
-            setJsonInput(formattedData);
-          } else {
-            console.error('❌ [EDIT PAGE] Lesson not found in API response');
-            setError("Lesson not found");
-          }
-        })
-        .catch(err => {
-          console.error('❌ [EDIT PAGE] Error fetching lessons:', err);
-          setError("Failed to load lesson data");
-        });
+    if (!dbLessons) {
+      console.log('⏳ [EDIT PAGE] Waiting for Convex data...');
+      return;
     }
-  }, [lessonNumber, lessonId]); // ✅ FIX: Watch both parameters
+
+    if (lessonNumber || lessonId) {
+      console.log('🔄 [EDIT PAGE] Searching for lesson in Convex database');
+      console.log('🔄 [EDIT PAGE] Looking for:', lessonId ? `lessonId: ${lessonId}` : `lessonNumber: ${lessonNumber}`);
+      console.log('📊 [EDIT PAGE] Total lessons in DB:', dbLessons.length);
+
+      // Step: Find ALL parts of the lesson by lessonId
+      // Multi-part lessons are stored as separate documents (Part 1, Part 2, etc.)
+      console.log('🔍 [EDIT PAGE] Filtering lessons...');
+      console.log('🔍 [EDIT PAGE] All lesson IDs in DB:', dbLessons.map((l: any) => l.lessonId));
+
+      const lessonParts = lessonId
+        ? dbLessons.filter((l: any) => {
+            const matches = l.lessonId === lessonId;
+            console.log(`  Checking lesson: ${l.lessonId} === ${lessonId}? ${matches}`);
+            return matches;
+          })
+        : [dbLessons.find((l: any) => l.number === parseInt(lessonNumber!))].filter(Boolean);
+
+      console.log('🔍 [EDIT PAGE] Found parts:', lessonParts.length);
+      console.log('🔍 [EDIT PAGE] Parts:', lessonParts.map((p: any) => ({ lessonId: p.lessonId, part: p.lessonPart })));
+
+      if (lessonParts.length > 0) {
+        // Sort parts by lessonPart number
+        lessonParts.sort((a: any, b: any) => (a.lessonPart || 0) - (b.lessonPart || 0));
+
+        console.log('✅ [EDIT PAGE] Found lesson with', lessonParts.length, 'parts');
+        console.log('📋 [EDIT PAGE] Lesson data:', {
+          lessonId: lessonParts[0].lessonId,
+          parts: lessonParts.map((p: any) => p.lessonPart),
+          sectionId: lessonParts[0].sectionId,
+          unitId: lessonParts[0].unitId,
+          title: lessonParts[0].lessonTitle
+        });
+
+        // For multi-part lessons, show all parts
+        if (lessonParts.length === 1) {
+          setLesson(lessonParts[0]);
+          setJsonInput(JSON.stringify(lessonParts[0], null, 2));
+        } else {
+          // Combine all parts into a single object for editing
+          const combinedLesson = {
+            lessonId: lessonParts[0].lessonId,
+            lessonTitle: lessonParts[0].lessonTitle,
+            sectionId: lessonParts[0].sectionId,
+            unitId: lessonParts[0].unitId,
+            parts: lessonParts
+          };
+          setLesson(combinedLesson);
+          setJsonInput(JSON.stringify(combinedLesson, null, 2));
+        }
+      } else {
+        console.error('❌ [EDIT PAGE] Lesson not found in Convex database');
+        setError(`Lesson not found. Available lessons: ${[...new Set(dbLessons.map((l: any) => l.lessonId))].join(', ')}`);
+      }
+    }
+  }, [dbLessons, lessonNumber, lessonId]);
 
   // Step 2: Handle save
   const handleSave = async () => {
@@ -251,36 +278,38 @@ function EditLessonContent() {
                 </Button>
                 <Button
                   onClick={async () => {
-                    // ✅ FIX: Reload fresh data from API using correct identifier
-                    console.log('🔄 [RELOAD] Reloading fresh data from API...');
-                    console.log('🔄 [RELOAD] Using:', lessonId ? `lessonId: ${lessonId}` : `lessonNumber: ${lessonNumber}`);
-                    try {
-                      const response = await fetch('/api/get-dark-psychology-lessons');
-                      const data = await response.json();
+                    console.log('🔄 [RELOAD] Reloading fresh data from Convex...');
 
-                      // ✅ FIX: Find by lessonId first, then fall back to lessonNumber
-                      const foundLesson = lessonId
-                        ? data.lessons?.find((l: any) => l.lessonId === lessonId)
-                        : data.lessons?.find((l: any) => l.number === parseInt(lessonNumber!));
+                    if (!dbLessons) {
+                      alert('❌ Database not loaded yet');
+                      return;
+                    }
 
-                      if (foundLesson) {
-                        console.log('✅ [RELOAD] Fresh lesson loaded:', foundLesson.title || foundLesson.lessonTitle);
-                        setLesson(foundLesson);
+                    const lessonParts = lessonId
+                      ? dbLessons.filter((l: any) => l.lessonId === lessonId)
+                      : [dbLessons.find((l: any) => l.number === parseInt(lessonNumber!))].filter(Boolean);
 
-                        // Remove practice and contentScreens
-                        const cleanedLesson = { ...foundLesson };
-                        delete cleanedLesson.practice;
-                        delete cleanedLesson.contentScreens;
+                    if (lessonParts.length > 0) {
+                      lessonParts.sort((a: any, b: any) => (a.lessonPart || 0) - (b.lessonPart || 0));
 
-                        setJsonInput(JSON.stringify(cleanedLesson, null, 2));
-                        alert('✅ Reloaded fresh data from file!');
+                      if (lessonParts.length === 1) {
+                        setLesson(lessonParts[0]);
+                        setJsonInput(JSON.stringify(lessonParts[0], null, 2));
                       } else {
-                        console.error('❌ [RELOAD] Lesson not found');
-                        alert('❌ Lesson not found');
+                        const combinedLesson = {
+                          lessonId: lessonParts[0].lessonId,
+                          lessonTitle: lessonParts[0].lessonTitle,
+                          sectionId: lessonParts[0].sectionId,
+                          unitId: lessonParts[0].unitId,
+                          parts: lessonParts
+                        };
+                        setLesson(combinedLesson);
+                        setJsonInput(JSON.stringify(combinedLesson, null, 2));
                       }
-                    } catch (err) {
-                      console.error('❌ [RELOAD] Error:', err);
-                      alert('Error reloading data');
+                      alert('✅ Reloaded fresh data from database!');
+                    } else {
+                      console.error('❌ [RELOAD] Lesson not found');
+                      alert('❌ Lesson not found');
                     }
                   }}
                   variant="secondary"

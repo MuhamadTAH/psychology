@@ -32,6 +32,18 @@ interface QuizData {
   // Sentence building fields
   words?: string[]; // Available words to build sentence
   correctSentence?: string; // The correct sentence order
+  // Micro-Sim fields
+  scenarioTitle?: string;
+  steps?: Array<{
+    scene?: string;
+    question?: string;
+    options: string[];
+    correct: string;
+    feedback: {
+      correct: string;
+      incorrect: string;
+    };
+  }>;
 }
 
 export default function YourLessonPage() {
@@ -61,6 +73,10 @@ export default function YourLessonPage() {
   const [availableWords, setAvailableWords] = useState<string[]>([]); // Words still available to select
   const [draggedWordIndex, setDraggedWordIndex] = useState<number | null>(null); // Track which word is being dragged from selected
   const [draggedAvailableIndex, setDraggedAvailableIndex] = useState<number | null>(null); // Track which word is being dragged from available
+
+  // Micro-Sim (chat-style conversation) states
+  const [microSimStep, setMicroSimStep] = useState(0); // Current step in the micro-sim
+  const [chatHistory, setChatHistory] = useState<Array<{speaker: 'villain' | 'user'; text: string}>>([]); // Chat conversation history
 
   // Lesson metadata
   const [currentLessonNumber, setCurrentLessonNumber] = useState<number | null>(null);
@@ -144,23 +160,71 @@ export default function YourLessonPage() {
   const parseQuestionText = (text: string) => {
     const parts = text.split('\n\n');
     if (parts.length >= 2) {
+      // Remove "Scenario:" prefix if present
+      let scene = parts[0];
+      if (scene.startsWith('Scenario:')) {
+        scene = scene.replace(/^Scenario:\s*/i, '');
+      }
       return {
-        scene: parts[0],
+        scene: scene,
         question: parts.slice(1).join('\n\n')
       };
     }
     return { scene: null, question: text };
   };
 
-  // Helper function to render markdown-style bold text
+  // Helper function to render markdown-style bold and italic text
   const renderTextWithBold = (text: string) => {
-    const parts = text.split(/(\*\*.*?\*\*)/g);
+    // Split by **bold**, *italic*, and (parentheses) patterns
+    const parts = text.split(/(\*\*.*?\*\*|\*.*?\*|\(.*?\))/g);
     return parts.map((part, index) => {
+      // Handle **bold** (double asterisks)
       if (part.startsWith('**') && part.endsWith('**')) {
         return <strong key={`bold-${index}`}>{part.slice(2, -2)}</strong>;
       }
+      // Handle *italic* (single asterisks)
+      if (part.startsWith('*') && part.endsWith('*') && part.length > 2) {
+        return <em key={`italic-${index}`}>{part.slice(1, -1)}</em>;
+      }
+      // Handle (parentheses) as bold anchors - key concepts
+      if (part.startsWith('(') && part.endsWith(')') && part.length > 2) {
+        return <span key={`parens-${index}`}>(<strong className="text-blue-400">{part.slice(1, -1)}</strong>)</span>;
+      }
       return <span key={`text-${index}`}>{part}</span>;
     });
+  };
+
+  // Helper function for options - plain text without parentheses styling
+  const renderOptionText = (text: string) => {
+    // Split by **bold** and *italic* patterns only (no parentheses)
+    const parts = text.split(/(\*\*.*?\*\*|\*.*?\*)/g);
+    return parts.map((part, index) => {
+      // Handle **bold** (double asterisks)
+      if (part.startsWith('**') && part.endsWith('**')) {
+        return <strong key={`bold-${index}`}>{part.slice(2, -2)}</strong>;
+      }
+      // Handle *italic* (single asterisks)
+      if (part.startsWith('*') && part.endsWith('*') && part.length > 2) {
+        return <em key={`italic-${index}`}>{part.slice(1, -1)}</em>;
+      }
+      return <span key={`text-${index}`}>{part}</span>;
+    });
+  };
+
+  // Step: Determine UI Mode based on exercise type
+  // This function decides which UI mode to use: Combat, Training, or Puzzle
+  const getUIMode = (question: QuizData) => {
+    // Combat Mode: scenario-based exercises with scene OR micro-sim
+    if (question.type === 'micro-sim') return 'combat';
+    if (question.type === 'scenario' || (parseQuestionText(question.question).scene !== null)) {
+      return 'combat';
+    }
+
+    // Puzzle Mode: matching exercises
+    if (question.type === 'matching') return 'puzzle';
+
+    // Training Mode: all other types (multiple-choice, true-false, fill-in, etc.)
+    return 'training';
   };
 
   // Step 5: Load and combine all questions from lesson data
@@ -193,7 +257,24 @@ export default function YourLessonPage() {
           if (data?.contentScreens && Array.isArray(data.contentScreens)) {
             data.contentScreens.forEach((screen: any) => {
               if (screen.exercises && Array.isArray(screen.exercises)) {
-                screen.exercises.forEach((exercise: any) => {
+                screen.exercises.forEach((exercise: any, exerciseIndex: number) => {
+                  console.log(`📝 [EXERCISE DEBUG] Type: ${exercise.type}, Has steps: ${!!exercise.steps}`);
+
+                  // Step: Handle micro-sim exercises specially
+                  // Micro-sims have a "steps" array and use a different data structure
+                  if (exercise.type === 'micro-sim' && Array.isArray(exercise.steps)) {
+                    console.log(`🎭 [MICRO-SIM] Loading with ${exercise.steps.length} steps`);
+                    const microSimQuestion: QuizData = {
+                      type: 'micro-sim',
+                      question: '', // Not used for micro-sims
+                      scenarioTitle: exercise.scenarioTitle || 'Micro-Simulation',
+                      steps: exercise.steps, // Keep the original steps array
+                    };
+                    combinedQuestions.push(microSimQuestion);
+                    return; // Skip the rest of the processing
+                  }
+
+                  // Step: Handle regular exercises (multiple-choice, scenario, etc.)
                   const questionText = exercise.scene
                     ? `${exercise.scene}\n\n${exercise.question || ''}`
                     : (exercise.question || '');
@@ -288,8 +369,27 @@ export default function YourLessonPage() {
 
     // Initialize sentence building question words (supports both types)
     if ((currentQuestion?.type === 'sentence-building' || currentQuestion?.type === 'build-sentence') && currentQuestion.words) {
+      // Lowercase all words to prevent capitalization cheat (unless proper nouns)
+      const lowercasedWords = currentQuestion.words.map(word => {
+        // Keep proper nouns capitalized (e.g., NLP, Gaslighting as technique names)
+        if (word === word.toUpperCase() || word.match(/^[A-Z]{2,}/)) {
+          return word; // Keep acronyms like NLP
+        }
+        return word.toLowerCase();
+      });
+
+      // Add 2 distractor words to make it harder
+      const distractors = ['reality', 'truth', 'mind', 'thought', 'belief', 'perception', 'experience', 'behavior'];
+      const randomDistractors = distractors
+        .filter(d => !lowercasedWords.includes(d)) // Don't add words already in the sentence
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 2);
+
+      // Combine correct words with distractors
+      const allWords = [...lowercasedWords, ...randomDistractors];
+
       // Shuffle the available words
-      const shuffled = [...currentQuestion.words];
+      const shuffled = [...allWords];
       for (let i = shuffled.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
@@ -320,7 +420,16 @@ export default function YourLessonPage() {
     let userAnswer = '';
 
     // Check answer based on question type
-    if (currentQuestion.type === 'fill-in-blank') {
+    if (currentQuestion.type === 'micro-sim' && currentQuestion.steps) {
+      // Micro-Sim: check if selected answer matches correct answer for current step
+      const currentStep = currentQuestion.steps[microSimStep];
+      if (currentStep && selectedAnswer) {
+        const selectedOptionIndex = selectedAnswer.charCodeAt(0) - 65; // A=0, B=1, etc.
+        const selectedOptionText = currentStep.options[selectedOptionIndex];
+        isCorrect = selectedOptionText === currentStep.correct;
+        userAnswer = selectedOptionText;
+      }
+    } else if (currentQuestion.type === 'fill-in-blank') {
       isCorrect = fillInAnswer.toLowerCase().trim() === currentQuestion.correctAnswer?.toLowerCase().trim();
       userAnswer = fillInAnswer;
     } else if (currentQuestion.type === 'multiple-choice') {
@@ -383,6 +492,39 @@ export default function YourLessonPage() {
   // Step 8: Handle moving to next question
   // Reset all states and move to next question or show final score
   const handleNext = async () => {
+    // Micro-Sim: Handle step progression within the same question
+    if (currentQuestion.type === 'micro-sim' && currentQuestion.steps) {
+      const currentStep = currentQuestion.steps[microSimStep];
+
+      // Add messages to chat history
+      if (currentStep && selectedAnswer) {
+        const selectedOptionIndex = selectedAnswer.charCodeAt(0) - 65;
+        const selectedOptionText = currentStep.options[selectedOptionIndex];
+
+        // Add villain's message and user's response to chat history
+        const newHistory = [
+          ...chatHistory,
+          { speaker: 'villain' as const, text: currentStep.scene || currentStep.question || '' },
+          { speaker: 'user' as const, text: selectedOptionText }
+        ];
+        setChatHistory(newHistory);
+      }
+
+      // Check if there are more steps in the micro-sim
+      if (microSimStep < currentQuestion.steps.length - 1) {
+        // Move to next step within the same micro-sim
+        setMicroSimStep(microSimStep + 1);
+        setSelectedAnswer(null);
+        setIsChecked(false);
+        setHadWrongAttempt(false);
+        return; // Stay on the same question
+      } else {
+        // Micro-sim complete, move to next question
+        setMicroSimStep(0);
+        setChatHistory([]);
+      }
+    }
+
     if (currentQuestionIndex < allQuestions.length - 1) {
       // Move to next question
       setCurrentQuestionIndex(currentQuestionIndex + 1);
@@ -584,7 +726,16 @@ export default function YourLessonPage() {
           <div className="flex items-center gap-4">
             {/* Close Button - X */}
             <button
-              onClick={() => router.push('/learn')}
+              onClick={() => {
+                // Step: Redirect based on lesson category
+                // Dark Psychology lessons go back to their section page, regular lessons go to /learn
+                if (lessonCategory === 'dark-psychology' && typeof window !== 'undefined') {
+                  const sectionId = localStorage.getItem('darkPsychSectionId') || 'B';
+                  router.push(`/dark-psychology/section/${sectionId}`);
+                } else {
+                  router.push('/learn');
+                }
+              }}
               className="text-gray-400 hover:text-white transition-colors"
             >
               <X className="h-6 w-6" strokeWidth={3} />
@@ -616,76 +767,112 @@ export default function YourLessonPage() {
 
       {/* Main Content Area */}
       <div className="max-w-2xl mx-auto px-4 pt-24 pb-32">
-        {/* Step 13: Character + Speech Bubble UI for ALL question types */}
-        {/* This section shows the character with speech bubble for every question */}
-        <div className="mb-6 md:mb-8">
-          {/* Title - "Chose the correct answer" */}
-          <h2 className="text-xl md:text-2xl font-bold text-white mb-6 md:mb-8 text-center">
-            {currentQuestion.type === 'sentence-building' || currentQuestion.type === 'build-sentence'
-              ? 'Translate this sentence'
-              : currentQuestion.type === 'matching'
-              ? 'Match the terms with their definitions'
-              : currentQuestion.type === 'fill-in'
-              ? 'Fill in the blank'
-              : 'Chose the correct answer'}
-          </h2>
+        {/* Step 13: Render UI based on mode (Combat/Training/Puzzle) */}
+        {/* This section dynamically switches between three different UI modes */}
+        {(() => {
+          const uiMode = getUIMode(currentQuestion);
 
-          {/* Character Area with Speech Bubble */}
-          <div className="flex items-center gap-4 md:gap-6 mb-6 md:mb-8">
-            {/* Character Circle with Blue Ring */}
-            <div className="flex-shrink-0">
-              <div className="relative">
-                {/* Character circle with dark background and blue ring */}
-                <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full bg-[#2c3e50] border-4 border-blue-500 flex items-center justify-center shadow-2xl">
-                  {/* Cat character image */}
-                  <img
-                    src="/cat animation/cat1.png"
-                    alt="Character"
-                    className="w-20 h-20 md:w-24 md:h-24 object-contain"
-                  />
+          // Combat Mode: Villain avatar, dark atmosphere, speech bubble
+          if (uiMode === 'combat') {
+            // Regular Scenario: Single scene with static speech bubble
+            const parsed = parseQuestionText(currentQuestion.question);
+            const questionText = parsed.scene ? parsed.question : currentQuestion.question;
+
+            return (
+              <div className="mb-6 md:mb-8">
+                {/* Combat Title - Red and intense */}
+                <h2 className="text-xl md:text-2xl font-bold text-red-500 mb-6 md:mb-8 text-center">
+                  ⚔️ Active Practice - Field Scenario
+                </h2>
+
+                {/* Villain Character with Speech Bubble */}
+                <div className="flex items-center gap-4 md:gap-6 mb-6 md:mb-8">
+                  {/* Villain Avatar - Red ring, dark background */}
+                  <div className="flex-shrink-0">
+                    <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full bg-[#1a0f0f] border-4 border-red-600 flex items-center justify-center shadow-2xl shadow-red-900/50">
+                      {/* Villain silhouette or icon */}
+                      <div className="text-6xl md:text-7xl">😈</div>
+                    </div>
+                  </div>
+
+                  {/* Speech Bubble - Darker, more ominous */}
+                  {parsed.scene && (
+                    <div className="flex-1 relative">
+                      <div className="bg-[#2a1f1f] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-red-900/30 relative">
+                        {/* Speech bubble pointer */}
+                        <div className="absolute left-0 top-1/2 transform -translate-x-2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#2a1f1f]"></div>
+
+                        {/* Scene text - red tint */}
+                        <p className="text-red-200 text-base md:text-lg italic">{renderTextWithBold(parsed.scene)}</p>
+                      </div>
+                    </div>
+                  )}
                 </div>
-              </div>
-            </div>
 
-            {/* Speech Bubble with Question */}
-            <div className="flex-1 relative">
-              <div className="bg-[#4a5568] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl relative">
-                {/* Speech bubble pointer (triangle) */}
-                <div className="absolute left-0 top-1/2 transform -translate-x-2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#4a5568]"></div>
-
-                {/* Question text with speaker icon */}
-                <div className="flex items-start gap-3">
-                  <p className="text-white text-base md:text-lg font-normal flex-1">
-                    {(() => {
-                      const parsed = parseQuestionText(currentQuestion.question);
-                      if (parsed.scene) {
-                        return (
-                          <>
-                            <span className="block mb-2">{renderTextWithBold(parsed.scene)}</span>
-                            <span className="block font-medium">{renderTextWithBold(parsed.question)}</span>
-                          </>
-                        );
-                      }
-                      return renderTextWithBold(currentQuestion.question);
-                    })()}
+                {/* Question - White text, bold */}
+                <div className="mt-12 mb-8 md:mt-14 md:mb-10">
+                  <p className="text-white text-lg md:text-xl font-bold text-center">
+                    {renderTextWithBold(questionText)}
                   </p>
-                  <button className="text-blue-400 hover:text-blue-300 transition-colors flex-shrink-0">
-                    <svg className="w-6 h-6 md:w-7 md:h-7" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
-                    </svg>
-                  </button>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+            );
+          }
+
+          // Training Mode: Mentor/Brain icon, clean cards, lighter background
+          if (uiMode === 'training') {
+            return (
+              <div className="mb-6 md:mb-8">
+                {/* Training Title - Blue and educational */}
+                <h2 className="text-xl md:text-2xl font-bold text-blue-400 mb-6 md:mb-8 text-center">
+                  📚 Theory Learning - The Lab
+                </h2>
+
+                {/* Clean Card Layout with Mentor Icon */}
+                <div className="bg-[#1e2a3a] rounded-2xl p-6 md:p-8 border-2 border-blue-900/30 shadow-xl mb-8">
+                  {/* Mentor Icon at top */}
+                  <div className="flex justify-center mb-6">
+                    <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-blue-900/30 border-3 border-blue-500 flex items-center justify-center">
+                      <div className="text-4xl md:text-5xl">🧠</div>
+                    </div>
+                  </div>
+
+                  {/* Question text - centered, clean */}
+                  <div className="text-center">
+                    <p className="text-white text-lg md:text-xl font-semibold leading-relaxed">
+                      {renderTextWithBold(currentQuestion.question)}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          }
+
+          // Puzzle Mode: No avatar, full screen, minimal UI
+          if (uiMode === 'puzzle') {
+            return (
+              <div className="mb-6 md:mb-8">
+                {/* Puzzle Title - Purple and pattern-focused */}
+                <h2 className="text-xl md:text-2xl font-bold text-purple-400 mb-6 md:mb-8 text-center">
+                  🧩 Pattern Recognition Exercise
+                </h2>
+
+                {/* Simple instruction text - no avatar */}
+                <div className="text-center mb-8">
+                  <p className="text-white text-lg md:text-xl font-semibold">
+                    Match the terms with their definitions
+                  </p>
+                </div>
+              </div>
+            );
+          }
+        })()}
 
         {/* ✅ In this section we achieved:
-            Character circle with blue ring glow effect matching the old system design.
-            Dark gray speech bubble with white text and triangle pointer.
-            "Chose the correct answer" title that changes based on question type.
-            Speaker icon in the speech bubble for audio playback.
-            Support for scene + question parsing with bold markdown rendering.
+            Three distinct UI modes that signal different learning contexts:
+            - Combat Mode: Dark, ominous, villain avatar with red accents
+            - Training Mode: Clean, educational, mentor icon with blue accents
+            - Puzzle Mode: Minimal, focused, no avatar with purple accents
         */}
 
 
@@ -694,13 +881,13 @@ export default function YourLessonPage() {
         {currentQuestion.type === 'matching' && currentQuestion.pairs && (
           <div className="space-y-4 md:space-y-6">
             {/* Headers */}
-            <div className="grid grid-cols-2 gap-3 md:gap-6 mb-2 md:mb-3">
-              <p className="text-xs md:text-sm font-semibold text-gray-400">Terms</p>
-              <p className="text-xs md:text-sm font-semibold text-gray-400">Definitions</p>
+            <div className="grid grid-cols-2 gap-4 md:gap-6 mb-2 md:mb-3">
+              <p className="text-xs md:text-sm font-semibold text-gray-400 text-center">Terms</p>
+              <p className="text-xs md:text-sm font-semibold text-gray-400 text-center">Definitions</p>
             </div>
 
-            {/* Rows - each row contains one term and one definition aligned by center */}
-            <div className="space-y-2 md:space-y-3">
+            {/* Rows - each row contains one term and one definition with consistent spacing */}
+            <div className="space-y-3 md:space-y-4">
               {(() => {
                 const unmatchedTerms = Object.keys(currentQuestion.pairs).filter(term => !matchedPairs[term]);
                 const unmatchedDefs = shuffledDefinitions.filter((def: any) => !Object.values(matchedPairs).includes(def));
@@ -718,87 +905,83 @@ export default function YourLessonPage() {
                   const isWrongDef = wrongMatch?.definition === definition;
 
                   return (
-                    <div key={`row-${index}`} className="grid grid-cols-2 gap-3 md:gap-6 items-center">
+                    <div key={`row-${index}`} className="grid grid-cols-2 gap-4 md:gap-6">
                       {/* Left - Term (can be text or image) */}
                       {term ? (
-                        <div className={isImagePath(term) ? 'flex justify-center' : ''}>
-                          <button
-                            onClick={() => setSelectedTerm(term)}
-                            className={`rounded-lg md:rounded-xl border-2 md:border-4 text-sm md:text-base font-semibold transition-all overflow-hidden ${
-                              isImagePath(term) ? 'p-1' : 'p-3 md:p-4 w-full'
-                            } ${
-                              isWrongTerm
-                                ? 'bg-[#1a2332] border-red-500 text-red-400 animate-shake'
-                                : isSelected
-                                ? 'bg-[#1a2332] border-[#58CC02] text-[#58CC02] scale-105'
-                                : 'bg-[#1a2332] border-gray-600 hover:border-gray-500 text-white'
-                            }`}
-                          >
-                            {isImagePath(term) ? (
-                              <img src={term} alt="Match item" className="w-28 h-28 md:w-32 md:h-32 object-cover rounded" />
-                            ) : (
-                              term
-                            )}
-                          </button>
-                        </div>
+                        <button
+                          onClick={() => setSelectedTerm(term)}
+                          className={`rounded-xl md:rounded-2xl border-2 md:border-3 text-sm md:text-base font-semibold transition-all overflow-hidden flex items-center justify-center min-h-[60px] md:min-h-[70px] ${
+                            isImagePath(term) ? 'p-2' : 'p-4 md:p-5'
+                          } ${
+                            isWrongTerm
+                              ? 'bg-[#1a2332] border-red-500 text-red-400 animate-shake'
+                              : isSelected
+                              ? 'bg-[#1a2332] border-[#58CC02] text-[#58CC02] scale-105'
+                              : 'bg-[#1a2332] border-gray-600 hover:border-gray-500 text-white'
+                          }`}
+                        >
+                          {isImagePath(term) ? (
+                            <img src={term} alt="Match item" className="w-24 h-24 md:w-28 md:h-28 object-cover rounded" />
+                          ) : (
+                            <span className="text-center">{term}</span>
+                          )}
+                        </button>
                       ) : (
                         <div />
                       )}
 
-                      {/* Right - Definition (can be text or image) */}
+                      {/* Right - Definition (can be text or image) - Center-aligned */}
                       {definition ? (
-                        <div className={isImagePath(definition) ? 'flex justify-center' : ''}>
-                          <button
-                            onClick={async () => {
-                              if (!selectedTerm) return;
+                        <button
+                          onClick={async () => {
+                            if (!selectedTerm) return;
 
-                              const correctDef = currentQuestion.pairs![selectedTerm];
-                              if (definition === correctDef) {
-                                setMatchedPairs({...matchedPairs, [selectedTerm]: definition});
-                                setSelectedTerm(null);
-                                setWrongMatch(null);
+                            const correctDef = currentQuestion.pairs![selectedTerm];
+                            if (definition === correctDef) {
+                              setMatchedPairs({...matchedPairs, [selectedTerm]: definition});
+                              setSelectedTerm(null);
+                              setWrongMatch(null);
 
-                                // Check if all matched
-                                if (Object.keys(matchedPairs).length + 1 === Object.keys(currentQuestion.pairs!).length) {
-                                  setCorrectAnswers(correctAnswers + 1);
+                              // Check if all matched
+                              if (Object.keys(matchedPairs).length + 1 === Object.keys(currentQuestion.pairs!).length) {
+                                setCorrectAnswers(correctAnswers + 1);
 
-                                  // Award XP for completing matching question
-                                  if (!isLessonAlreadyCompleted() && userEmail) {
-                                    try {
-                                      await addXPMutation({ amount: 5, email: userEmail });
-                                    } catch (error) {
-                                      console.error("Error adding XP:", error);
-                                    }
+                                // Award XP for completing matching question
+                                if (!isLessonAlreadyCompleted() && userEmail) {
+                                  try {
+                                    await addXPMutation({ amount: 5, email: userEmail });
+                                  } catch (error) {
+                                    console.error("Error adding XP:", error);
                                   }
-
-                                  setTimeout(() => handleNext(), 1000);
                                 }
-                              } else {
-                                setWrongMatch({term: selectedTerm, definition});
-                                setTimeout(() => {
-                                  setWrongMatch(null);
-                                  setSelectedTerm(null);
-                                }, 1000);
+
+                                setTimeout(() => handleNext(), 1000);
                               }
-                            }}
-                            disabled={!selectedTerm}
-                            className={`rounded-lg md:rounded-xl border-2 md:border-4 text-sm md:text-base transition-all overflow-hidden ${
-                              isImagePath(definition) ? 'p-1' : 'p-3 md:p-4 w-full'
-                            } ${
-                              isWrongDef
-                                ? 'bg-[#1a2332] border-red-500 text-red-400 animate-shake'
-                                : !selectedTerm
-                                ? 'bg-[#1a2332] border-gray-700 text-gray-500 cursor-not-allowed opacity-50'
-                                : 'bg-[#1a2332] border-gray-600 hover:border-[#58CC02] text-white cursor-pointer'
-                            }`}
-                          >
-                            {isImagePath(definition) ? (
-                              <img src={definition} alt="Match item" className="w-28 h-28 md:w-32 md:h-32 object-cover rounded" />
-                            ) : (
-                              definition
-                            )}
-                          </button>
-                        </div>
+                            } else {
+                              setWrongMatch({term: selectedTerm, definition});
+                              setTimeout(() => {
+                                setWrongMatch(null);
+                                setSelectedTerm(null);
+                              }, 1000);
+                            }
+                          }}
+                          disabled={!selectedTerm}
+                          className={`rounded-xl md:rounded-2xl border-2 md:border-3 text-sm md:text-base transition-all overflow-hidden flex items-center justify-center min-h-[60px] md:min-h-[70px] ${
+                            isImagePath(definition) ? 'p-2' : 'p-4 md:p-5'
+                          } ${
+                            isWrongDef
+                              ? 'bg-[#1a2332] border-red-500 text-red-400 animate-shake'
+                              : !selectedTerm
+                              ? 'bg-[#1a2332] border-gray-700 text-gray-500 cursor-not-allowed opacity-50'
+                              : 'bg-[#1a2332] border-gray-600 hover:border-[#58CC02] text-white cursor-pointer'
+                          }`}
+                        >
+                          {isImagePath(definition) ? (
+                            <img src={definition} alt="Match item" className="w-24 h-24 md:w-28 md:h-28 object-cover rounded" />
+                          ) : (
+                            <span className="text-center leading-relaxed">{definition}</span>
+                          )}
+                        </button>
                       ) : (
                         <div />
                       )}
@@ -863,132 +1046,161 @@ export default function YourLessonPage() {
           </div>
         )}
 
-        {/* Step 15.5: Render Multiple Choice Question */}
-        {/* Show question with 4 answer options in a grid */}
-        {currentQuestion.type === 'multiple-choice' && currentQuestion.options && (
-          <div className="space-y-4 md:space-y-6">
-            {/* Show image if present */}
-            {currentQuestion.image && (
-              <div className="flex justify-center mb-4 md:mb-6">
-                <img
-                  src={currentQuestion.image}
-                  alt="Question image"
-                  className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-xl border-4 border-gray-600"
-                />
+        {/* Step 15.5: Render Multiple Choice and Similar Question Types */}
+        {/* Show question with answer options in a grid */}
+        {/* Handles: multiple-choice, scenario, fill-in, true-false, reverse-scenario, ethical-dilemma, boss-scenario, case-analysis, micro-sim */}
+        {(() => {
+          // Micro-Sim: Render step options
+          if (currentQuestion.type === 'micro-sim' && currentQuestion.steps) {
+            const currentStep = currentQuestion.steps[microSimStep];
+            if (!currentStep) return null;
+
+            return (
+              <div className="space-y-3 md:space-y-4">
+                {currentStep.options.map((optionText, index) => {
+                  const optionId = String.fromCharCode(65 + index); // A, B, C, D
+                  const isSelected = selectedAnswer === optionId;
+                  const showCorrect = isChecked && optionText === currentStep.correct;
+                  const showWrong = isChecked && isSelected && optionText !== currentStep.correct;
+
+                  return (
+                    <button
+                      key={index}
+                      onClick={() => !isChecked && setSelectedAnswer(optionId)}
+                      disabled={isChecked}
+                      className={`w-full p-4 md:p-5 rounded-xl md:rounded-2xl border-2 md:border-3 transition-all text-left min-h-[60px] flex items-center ${
+                        showCorrect
+                          ? "border-[#58CC02] bg-green-900/40 text-[#58CC02]"
+                          : showWrong
+                          ? "border-red-500 bg-[#1a2332] text-red-400"
+                          : isSelected
+                          ? "border-[#58CC02] bg-[#1a2332] text-[#58CC02] scale-105"
+                          : "border-gray-600 bg-[#1a2332] text-white hover:border-gray-500"
+                      } ${!isChecked ? 'hover:scale-105 active:scale-95' : ''}`}
+                    >
+                      <span className="text-sm md:text-base font-semibold">
+                        {renderOptionText(optionText)}
+                      </span>
+                    </button>
+                  );
+                })}
               </div>
-            )}
+            );
+          }
 
-            <div className="grid grid-cols-2 gap-3 md:gap-4">
-              {currentQuestion.options.map((option) => {
-                const isSelected = selectedAnswer === option.id;
-                const showCorrect = isChecked && option.id === currentQuestion.correctAnswer;
-                const showWrong = isChecked && isSelected && option.id !== currentQuestion.correctAnswer;
+          // Regular multiple-choice and scenario types
+          if (['multiple-choice', 'scenario', 'fill-in', 'true-false', 'reverse-scenario', 'ethical-dilemma', 'boss-scenario', 'case-analysis'].includes(currentQuestion.type) && currentQuestion.options) {
+            return (
+              <div className="space-y-4 md:space-y-6">
+                {/* Show image if present */}
+                {currentQuestion.image && (
+                  <div className="flex justify-center mb-4 md:mb-6">
+                    <img
+                      src={currentQuestion.image}
+                      alt="Question image"
+                      className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-xl border-4 border-gray-600"
+                    />
+                  </div>
+                )}
 
-                return (
-                  <button
-                    key={option.id}
-                    onClick={() => !isChecked && setSelectedAnswer(option.id)}
-                    disabled={isChecked}
-                    className={`p-4 md:p-6 rounded-xl md:rounded-2xl border-2 md:border-4 transition-all flex items-center justify-center min-h-[100px] md:min-h-[120px] ${
-                      showCorrect
-                        ? "border-[#58CC02] bg-[#1a2332] text-[#58CC02]"
-                        : showWrong
-                        ? "border-red-500 bg-[#1a2332] text-red-400"
-                        : isSelected
-                        ? "border-[#58CC02] bg-[#1a2332] text-[#58CC02] scale-105"
-                        : "border-gray-600 bg-[#1a2332] text-white hover:border-gray-500"
-                    } ${!isChecked ? 'hover:scale-105 active:scale-95' : ''}`}
-                  >
-                    <span className="text-sm md:text-lg font-semibold text-center">
-                      {option.text}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        )}
+                <div className="grid grid-cols-2 gap-3 md:gap-4">
+                  {currentQuestion.options.map((option) => {
+                    const isSelected = selectedAnswer === option.id;
+                    const showCorrect = isChecked && option.id === currentQuestion.correctAnswer;
+                    const showWrong = isChecked && isSelected && option.id !== currentQuestion.correctAnswer;
 
-        {/* Step 15.7: Render Sentence Building Question - Matches plan.md design */}
-        {/* 3 input lines for building sentence, word bank below */}
+                    return (
+                      <button
+                        key={option.id}
+                        onClick={() => !isChecked && setSelectedAnswer(option.id)}
+                        disabled={isChecked}
+                        className={`p-4 md:p-6 rounded-xl md:rounded-2xl border-2 md:border-4 transition-all flex items-center justify-center min-h-[100px] md:min-h-[120px] ${
+                          showCorrect
+                            ? "border-[#58CC02] bg-green-900/40 text-[#58CC02]"
+                            : showWrong
+                            ? "border-red-500 bg-[#1a2332] text-red-400"
+                            : isSelected
+                            ? "border-[#58CC02] bg-[#1a2332] text-[#58CC02] scale-105"
+                            : "border-gray-600 bg-[#1a2332] text-white hover:border-gray-500"
+                        } ${!isChecked ? 'hover:scale-105 active:scale-95' : ''}`}
+                      >
+                        <span className="text-sm md:text-lg font-semibold text-center">
+                          {renderOptionText(option.text)}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          }
+        })()}
+
+        {/* Step 15.7: Render Sentence Building Question - Individual Ghost Slots */}
+        {/* Individual empty boxes for each word, showing exactly how many words needed */}
         {(currentQuestion.type === 'sentence-building' || currentQuestion.type === 'build-sentence') && currentQuestion.words && (
           <div className="space-y-6 md:space-y-8">
-            {/* 3 Input Lines - Matches plan.md design */}
-            <div className="space-y-3">
-              {[0, 1, 2].map((lineIndex) => (
-                <div
-                  key={lineIndex}
-                  className={`w-full border-b-2 ${
-                    isChecked && selectedWords.length > 0
-                      ? selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim()
-                        ? 'border-[#58CC02]'
-                        : 'border-red-500'
-                      : 'border-gray-500'
-                  } pb-2 min-h-[40px] flex items-center gap-2 flex-wrap`}
-                  onDragOver={(e) => e.preventDefault()}
-                  onDrop={(e) => {
-                    e.preventDefault();
-                    if (!isChecked && draggedAvailableIndex !== null) {
-                      const word = availableWords[draggedAvailableIndex];
-                      setSelectedWords([...selectedWords, word]);
-                      setAvailableWords(availableWords.filter((_, i) => i !== draggedAvailableIndex));
-                      setDraggedAvailableIndex(null);
-                    }
-                  }}
-                >
-                  {lineIndex === 0 && selectedWords.map((word, index) => (
+            {/* Ghost Slots - Individual boxes for each word */}
+            <div className="flex flex-wrap gap-2 md:gap-3 justify-center items-center min-h-[100px]">
+              {(() => {
+                // Calculate number of words in correct sentence
+                const correctWordCount = currentQuestion.correctSentence?.split(' ').length || currentQuestion.words.length;
+
+                return Array.from({ length: correctWordCount }).map((_, index) => {
+                  const word = selectedWords[index];
+                  const isFirstWord = index === 0;
+
+                  return (
                     <div
                       key={index}
-                      draggable={!isChecked}
-                      onDragStart={(e) => {
-                        if (!isChecked) {
-                          setDraggedWordIndex(index);
-                          e.dataTransfer.effectAllowed = 'move';
-                        }
-                      }}
-                      onDragOver={(e) => {
-                        e.preventDefault();
-                        e.dataTransfer.dropEffect = 'move';
-                      }}
+                      className={`min-w-[80px] md:min-w-[100px] h-12 md:h-14 rounded-xl border-2 flex items-center justify-center transition-all ${
+                        word
+                          ? isChecked
+                            ? selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim()
+                              ? 'bg-[#58CC02] border-[#46A302] text-white'
+                              : 'bg-red-500 border-red-700 text-white'
+                            : 'bg-white border-gray-300 text-gray-800'
+                          : 'border-dashed border-gray-600 bg-[#1a2332]'
+                      }`}
+                      onDragOver={(e) => e.preventDefault()}
                       onDrop={(e) => {
                         e.preventDefault();
-                        e.stopPropagation();
-                        if (!isChecked && draggedWordIndex !== null && draggedWordIndex !== index) {
+                        if (!isChecked && draggedAvailableIndex !== null && !word) {
+                          const droppedWord = availableWords[draggedAvailableIndex];
                           const newWords = [...selectedWords];
-                          const draggedWord = newWords[draggedWordIndex];
-                          newWords.splice(draggedWordIndex, 1);
-                          const targetIndex = draggedWordIndex < index ? index : index;
-                          newWords.splice(targetIndex, 0, draggedWord);
+                          newWords[index] = droppedWord;
                           setSelectedWords(newWords);
-                          setDraggedWordIndex(null);
+                          setAvailableWords(availableWords.filter((_, i) => i !== draggedAvailableIndex));
+                          setDraggedAvailableIndex(null);
                         }
                       }}
-                      onDragEnd={() => setDraggedWordIndex(null)}
-                      className={`transition-all ${draggedWordIndex === index ? 'opacity-50' : ''}`}
                     >
-                      <button
-                        onClick={() => {
-                          if (!isChecked) {
-                            setSelectedWords(selectedWords.filter((_, i) => i !== index));
-                            setAvailableWords([...availableWords, word]);
-                          }
-                        }}
-                        disabled={isChecked}
-                        className={`px-4 py-2 rounded-lg text-sm md:text-base font-semibold transition-all ${
-                          isChecked && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim()
-                            ? 'bg-[#58CC02] text-white border-2 border-[#46A302]'
-                            : 'bg-white text-gray-800 border-2 border-gray-300 hover:border-blue-400'
-                        }`}
-                      >
-                        {word}
-                      </button>
+                      {word ? (
+                        <button
+                          onClick={() => {
+                            if (!isChecked) {
+                              const newWords = [...selectedWords];
+                              newWords[index] = '';
+                              setSelectedWords(newWords.filter(w => w !== ''));
+                              setAvailableWords([...availableWords, word]);
+                            }
+                          }}
+                          disabled={isChecked}
+                          className="px-3 py-2 text-sm md:text-base font-semibold w-full h-full"
+                        >
+                          {/* Auto-capitalize first word for display */}
+                          {isFirstWord && word ? word.charAt(0).toUpperCase() + word.slice(1) : word}
+                        </button>
+                      ) : (
+                        <span className="text-transparent">·</span>
+                      )}
                     </div>
-                  ))}
-                </div>
-              ))}
+                  );
+                });
+              })()}
             </div>
 
-            {/* Word Bank - Available words to choose from (matches plan.md style) */}
+            {/* Word Bank - Available words to choose from with distractors */}
             <div className="flex flex-wrap gap-3 md:gap-4 justify-center">
               {availableWords.map((word, index) => (
                 <div
@@ -1008,12 +1220,16 @@ export default function YourLessonPage() {
                   <button
                     onClick={() => {
                       if (!isChecked) {
-                        setSelectedWords([...selectedWords, word]);
-                        setAvailableWords(availableWords.filter((_, i) => i !== index));
+                        // Add word to the next available slot
+                        const correctWordCount = currentQuestion.correctSentence?.split(' ').length || currentQuestion.words!.length;
+                        if (selectedWords.length < correctWordCount) {
+                          setSelectedWords([...selectedWords, word]);
+                          setAvailableWords(availableWords.filter((_, i) => i !== index));
+                        }
                       }
                     }}
                     disabled={isChecked}
-                    className="px-6 md:px-8 py-3 md:py-4 bg-white text-gray-800 border-2 border-gray-300 hover:border-blue-400 rounded-xl text-sm md:text-base font-semibold transition-all hover:scale-105 active:scale-95 shadow-sm hover:shadow-md"
+                    className="px-6 md:px-8 py-3 md:py-4 h-12 md:h-14 bg-white text-gray-800 border-2 border-gray-300 hover:border-blue-400 rounded-xl text-sm md:text-base font-semibold transition-all hover:scale-105 active:scale-95 shadow-sm hover:shadow-md"
                   >
                     {word}
                   </button>
@@ -1116,9 +1332,21 @@ export default function YourLessonPage() {
         {/* After Answer - Show feedback panel (matches plan.md design) */}
         {isChecked && currentQuestion.type !== 'matching' && (
           <div className={`border-t-4 px-6 py-6 ${
-            fillInAnswer.toLowerCase().trim() === currentQuestion.correctAnswer?.toLowerCase().trim() ||
-            selectedAnswer === currentQuestion?.correctAnswer ||
-            (currentQuestion.type === 'sentence-building' && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim())
+            // Check correctness based on question type
+            (() => {
+              if (currentQuestion.type === 'micro-sim' && currentQuestion.steps) {
+                const currentStep = currentQuestion.steps[microSimStep];
+                if (currentStep && selectedAnswer) {
+                  const selectedOptionIndex = selectedAnswer.charCodeAt(0) - 65;
+                  const selectedOptionText = currentStep.options[selectedOptionIndex];
+                  return selectedOptionText === currentStep.correct;
+                }
+                return false;
+              }
+              return fillInAnswer.toLowerCase().trim() === currentQuestion.correctAnswer?.toLowerCase().trim() ||
+                selectedAnswer === currentQuestion?.correctAnswer ||
+                (currentQuestion.type === 'sentence-building' && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim());
+            })()
             ? 'bg-[#58CC02] border-[#46A302]' : 'bg-red-500 border-red-700'
           }`}>
             <div className="max-w-4xl mx-auto">
@@ -1126,32 +1354,68 @@ export default function YourLessonPage() {
                 {/* Left side - Feedback message */}
                 <div className="flex items-start gap-3">
                   {/* Checkmark or X icon */}
-                  {(fillInAnswer.toLowerCase().trim() === currentQuestion.correctAnswer?.toLowerCase().trim() ||
-                    selectedAnswer === currentQuestion?.correctAnswer ||
-                    (currentQuestion.type === 'sentence-building' && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim())) ? (
-                    <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0">
-                      <Check className="h-6 w-6 text-[#58CC02]" strokeWidth={4} />
-                    </div>
-                  ) : (
-                    <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0">
-                      <X className="h-6 w-6 text-red-500" strokeWidth={4} />
-                    </div>
-                  )}
+                  {(() => {
+                    let isCorrect = false;
+                    if (currentQuestion.type === 'micro-sim' && currentQuestion.steps) {
+                      const currentStep = currentQuestion.steps[microSimStep];
+                      if (currentStep && selectedAnswer) {
+                        const selectedOptionIndex = selectedAnswer.charCodeAt(0) - 65;
+                        const selectedOptionText = currentStep.options[selectedOptionIndex];
+                        isCorrect = selectedOptionText === currentStep.correct;
+                      }
+                    } else {
+                      isCorrect = fillInAnswer.toLowerCase().trim() === currentQuestion.correctAnswer?.toLowerCase().trim() ||
+                        selectedAnswer === currentQuestion?.correctAnswer ||
+                        (currentQuestion.type === 'sentence-building' && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim());
+                    }
+
+                    return isCorrect ? (
+                      <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0">
+                        <Check className="h-6 w-6 text-[#58CC02]" strokeWidth={4} />
+                      </div>
+                    ) : (
+                      <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0">
+                        <X className="h-6 w-6 text-red-500" strokeWidth={4} />
+                      </div>
+                    );
+                  })()}
 
                   {/* Motivational message */}
                   <div>
-                    <p className="text-white font-bold text-lg md:text-2xl">
-                      {(fillInAnswer.toLowerCase().trim() === currentQuestion.correctAnswer?.toLowerCase().trim() ||
-                        selectedAnswer === currentQuestion?.correctAnswer ||
-                        (currentQuestion.type === 'sentence-building' && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim()))
-                        ? ['Nice catch!', 'Correct!', 'Awesome!', 'Amazing!', 'Perfect!', 'Excellent!', 'Great job!', 'Well done!'][Math.floor(Math.random() * 8)]
-                        : 'Incorrect'}
-                    </p>
-                    {currentQuestion.explanation && (
-                      <p className="text-white/90 text-sm mt-1">
-                        {currentQuestion.explanation}
-                      </p>
-                    )}
+                    {(() => {
+                      let isCorrect = false;
+                      let feedbackText = '';
+
+                      if (currentQuestion.type === 'micro-sim' && currentQuestion.steps) {
+                        const currentStep = currentQuestion.steps[microSimStep];
+                        if (currentStep && selectedAnswer) {
+                          const selectedOptionIndex = selectedAnswer.charCodeAt(0) - 65;
+                          const selectedOptionText = currentStep.options[selectedOptionIndex];
+                          isCorrect = selectedOptionText === currentStep.correct;
+                          feedbackText = isCorrect ? currentStep.feedback.correct : currentStep.feedback.incorrect;
+                        }
+                      } else {
+                        isCorrect = fillInAnswer.toLowerCase().trim() === currentQuestion.correctAnswer?.toLowerCase().trim() ||
+                          selectedAnswer === currentQuestion?.correctAnswer ||
+                          (currentQuestion.type === 'sentence-building' && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim());
+                        feedbackText = currentQuestion.explanation || '';
+                      }
+
+                      return (
+                        <>
+                          <p className="text-white font-bold text-lg md:text-2xl">
+                            {isCorrect
+                              ? ['Nice catch!', 'Correct!', 'Awesome!', 'Amazing!', 'Perfect!', 'Excellent!', 'Great job!', 'Well done!'][Math.floor(Math.random() * 8)]
+                              : 'Incorrect'}
+                          </p>
+                          {feedbackText && (
+                            <p className="text-white/90 text-sm mt-1">
+                              {feedbackText}
+                            </p>
+                          )}
+                        </>
+                      );
+                    })()}
                   </div>
                 </div>
 

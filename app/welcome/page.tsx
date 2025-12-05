@@ -661,7 +661,7 @@ export default function WelcomePage() {
         options: [
           { text: "To stop others from controlling me.", type: "defense", reaction: "A prudent choice. Shields up." },
           { text: "To advance my career and lead others.", type: "influence", reaction: "Ambition is useful. We will sharpen it." },
-          { text: "To understand human behavior.", type: "psychology", reaction: null }
+          { text: "To understand human behavior.", type: "psychology", reaction: "Knowledge is power. But application is control." }
         ]
       },
       {
@@ -688,7 +688,7 @@ export default function WelcomePage() {
         options: [
           { text: "I will do whatever it takes.", type: "ruthless", reaction: "Ruthlessness is a tool. Use it wisely." },
           { text: "I want to lead, but ethically.", type: "ethical", reaction: "Ethics are a luxury of the powerful." },
-          { text: "I prefer to stay in the background.", type: "background", reaction: null }
+          { text: "I prefer to stay in the background.", type: "background", reaction: "The shadow is a strategic position. We will teach you to strike from it." }
         ]
       },
       {
@@ -852,7 +852,161 @@ export default function WelcomePage() {
     );
   }
 
-  // Phase 3: The Analysis (Result)
+  // Phase 3.0: The Calculation
+  if (step === "phase3_calculation") {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center p-6">
+        <div className="text-center animate-slide-in-right">
+          <div className="mb-8">
+            <Terminal size={64} className="text-white mx-auto animate-pulse" />
+          </div>
+          <h1 className="text-2xl font-mono text-white tracking-widest uppercase mb-4 animate-pulse">
+            Calculating Curriculum...
+          </h1>
+          <p className="text-gray-500 font-mono text-xs mb-8">
+            Building Operative Profile... Encrypting Data... Generating Strategy...
+          </p>
+          <div className="w-64 h-1 bg-gray-900 mx-auto relative overflow-hidden">
+            <div className="absolute h-full bg-white animate-scan-horizontal"></div>
+          </div>
+
+          {/* Skip Button */}
+          <button
+            onClick={() => setStep("phase3_commitment")}
+            className="mt-8 border border-gray-700 bg-transparent text-gray-500 hover:border-white hover:text-white py-3 px-6 text-xs font-mono uppercase tracking-widest transition-colors"
+          >
+            Continue
+          </button>
+        </div>
+
+        <style jsx>{`
+          @keyframes scan-horizontal {
+            0% { width: 0%; left: 0%; }
+            50% { width: 100%; left: 0%; }
+            100% { width: 0%; left: 100%; }
+          }
+          .animate-scan-horizontal {
+            animation: scan-horizontal 2s ease-in-out infinite;
+          }
+        `}</style>
+      </div>
+    );
+  }
+
+  // Phase 3.1: The Commitment (Streak Setting)
+  if (step === "phase3_commitment") {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center p-6 text-center">
+        <div className="animate-slide-in-right max-w-md">
+          {/* CHARACTER PLACEHOLDER */}
+          <div className="mb-8">
+            <div className="w-24 h-24 bg-gray-800 mx-auto border border-gray-600 flex items-center justify-center">
+              <span className="text-gray-600 text-xs">STATUE</span>
+            </div>
+          </div>
+
+          <p className="text-gray-400 font-mono text-sm italic mb-8">
+            "Consistency is not a habit. It is survival."
+          </p>
+
+          <h1 className="text-2xl font-mono font-bold text-white tracking-wider uppercase mb-12">
+            Set Your Training Intensity
+          </h1>
+
+          <div className="grid grid-cols-1 gap-4 w-full">
+            <button
+              onClick={() => setStep("phase3_paywall")}
+              className="group border border-gray-700 bg-transparent hover:border-white hover:bg-white hover:text-black p-6 flex flex-col items-center justify-center gap-2 transition-all duration-300"
+            >
+              <span className="font-mono text-xs uppercase tracking-widest text-gray-500 group-hover:text-black transition-colors">
+                Casual
+              </span>
+              <span className="font-mono text-xs text-gray-600 group-hover:text-black transition-colors">
+                I will train occasionally.
+              </span>
+              <span className="font-mono text-xs italic text-red-800 group-hover:text-red-600 transition-colors">
+                "Mediocrity is a choice."
+              </span>
+            </button>
+
+            <button
+              onClick={() => setStep("phase3_paywall")}
+              className="group border border-white bg-transparent hover:bg-white hover:text-black p-6 flex flex-col items-center justify-center gap-2 transition-all duration-300"
+            >
+              <span className="font-mono text-xs uppercase tracking-widest text-white group-hover:text-black transition-colors">
+                Serious
+              </span>
+              <span className="font-mono text-xs text-gray-400 group-hover:text-black transition-colors">
+                I will train daily.
+              </span>
+              <span className="font-mono text-xs italic text-green-600 group-hover:text-green-800 transition-colors">
+                "Good. We begin immediately."
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Phase 3.2: The Paywall (7-Day Trial)
+  if (step === "phase3_paywall") {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center p-6 text-center">
+        <div className="animate-slide-in-right max-w-md">
+          {/* Locked Folder Icon Placeholder */}
+          <div className="mb-8">
+            <div className="w-32 h-32 bg-gray-900 mx-auto border-2 border-red-900 flex items-center justify-center relative">
+              <span className="text-red-500 text-4xl">🔒</span>
+            </div>
+          </div>
+
+          <h1 className="text-2xl font-mono font-bold text-white tracking-widest uppercase mb-4">
+            Clearance Required
+          </h1>
+
+          <p className="text-gray-400 font-mono text-xs mb-12">
+            Your profile indicates high aptitude. Access to the advanced curriculum is restricted to Operatives.
+          </p>
+
+          <div className="mb-8 border border-white p-6">
+            <h2 className="text-lg font-mono text-white uppercase tracking-wider mb-2">
+              7-Day Field Test
+            </h2>
+            <p className="text-gray-500 font-mono text-xs">
+              Full access to Dark Psychology Mastery curriculum
+            </p>
+          </div>
+
+          <button
+            onClick={() => {
+              // Reset for demo
+              setStep("coldOpen");
+              setAssessmentQuestion(-1);
+              setEthicsAgreed(false);
+            }}
+            className="w-full border-2 border-white bg-white text-black hover:bg-black hover:text-white py-4 px-8 text-sm font-mono uppercase tracking-widest transition-colors mb-4 animate-pulse"
+          >
+            Initialize 7-Day Field Test
+          </button>
+
+          <button
+            onClick={() => {
+              // Reset for demo
+              setStep("coldOpen");
+              setAssessmentQuestion(-1);
+              setEthicsAgreed(false);
+            }}
+            className="text-gray-700 hover:text-gray-500 text-xs font-mono uppercase tracking-widest transition-colors"
+          >
+            Remain Civilian
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // Phase 3: The Analysis (Result) - OLD PLACEHOLDER
   if (step === "phase3_result") {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center p-6 text-center">
