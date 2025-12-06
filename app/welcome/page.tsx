@@ -763,17 +763,20 @@ export default function WelcomePage() {
       return (
         <div className="min-h-screen bg-black flex items-center justify-center p-6 text-center">
           <div className="max-w-md animate-slide-in-right">
-            {/* CHARACTER PLACEHOLDER - The Strategist with reaction */}
-            <div className={`mb - 8 transition - all duration - 500 ${isCorrect === false ? 'animate-shake' : ''} `}>
-              <div className="w-32 h-32 bg-gray-800 mx-auto border flex items-center justify-center"
+            {/* CHARACTER VIDEO - The Strategist with reaction */}
+            <div className={`mb-8 transition-all duration-500 ${isCorrect === false ? 'animate-shake' : ''}`}>
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-32 h-32 mx-auto object-contain"
                 style={{
-                  borderColor: isCorrect === false ? '#ff0000' : '#666',
-                  backgroundColor: isCorrect === false ? '#2a0a0a' : '#1a1a1a'
-                }}>
-                <span className="text-gray-600 text-xs">
-                  {isCorrect === true ? 'NOD' : isCorrect === false ? 'JUDGING' : 'STATUE'}
-                </span>
-              </div>
+                  filter: isCorrect === false ? 'hue-rotate(120deg) brightness(0.8)' : 'none'
+                }}
+              >
+                <source src="/welcome-animation.webm" type="video/webm" />
+              </video>
             </div>
 
             {/* Text Box with Border Pulse */}
@@ -810,11 +813,17 @@ export default function WelcomePage() {
             ></div>
           </div>
 
-          {/* CHARACTER PLACEHOLDER - The Strategist (IDLE) */}
-          <div className="mb-8 opacity-80">
-            <div className="w-20 h-20 bg-gray-800 mx-auto border border-gray-600 flex items-center justify-center">
-              <span className="text-gray-600 text-xs">STATUE</span>
-            </div>
+          {/* CHARACTER VIDEO - The Strategist (IDLE) */}
+          <div className="mb-8">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-20 h-20 mx-auto object-contain"
+            >
+              <source src="/welcome-animation.webm" type="video/webm" />
+            </video>
           </div>
 
           <h2 className="text-gray-500 font-mono text-xs uppercase tracking-widest mb-2">
