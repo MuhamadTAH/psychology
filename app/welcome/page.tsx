@@ -720,6 +720,45 @@ export default function WelcomePage() {
     };
 
     if (showReaction) {
+      // Typewriter effect state
+      const [displayedText, setDisplayedText] = useState('');
+      const [showCursor, setShowCursor] = useState(true);
+      const [borderPulse, setBorderPulse] = useState(true);
+
+      useEffect(() => {
+        if (!selectedReaction) return;
+
+        let currentIndex = 0;
+        setDisplayedText('');
+        setBorderPulse(true);
+
+        // Border pulse for 300ms
+        const pulseTimer = setTimeout(() => {
+          setBorderPulse(false);
+        }, 300);
+
+        // Typewriter effect: 25ms per character
+        const typeInterval = setInterval(() => {
+          if (currentIndex < selectedReaction.length) {
+            setDisplayedText(selectedReaction.substring(0, currentIndex + 1));
+            currentIndex++;
+          } else {
+            clearInterval(typeInterval);
+          }
+        }, 25);
+
+        // Cursor blinking
+        const cursorInterval = setInterval(() => {
+          setShowCursor(prev => !prev);
+        }, 500);
+
+        return () => {
+          clearTimeout(pulseTimer);
+          clearInterval(typeInterval);
+          clearInterval(cursorInterval);
+        };
+      }, [selectedReaction]);
+
       return (
         <div className="min-h-screen bg-black flex items-center justify-center p-6 text-center">
           <div className="max-w-md animate-slide-in-right">
@@ -736,9 +775,24 @@ export default function WelcomePage() {
               </div>
             </div>
 
-            <p className={`font-mono text-sm tracking-wider italic ${isCorrect === false ? 'text-red-500' : 'text-gray-300'}`}>
-              "{selectedReaction}"
-            </p>
+            {/* Text Box with Border Pulse */}
+            <div
+              className={`border-2 p-6 transition-all duration-300 ${borderPulse
+                  ? (isCorrect === false ? 'border-red-500 shadow-[0_0_20px_rgba(239,68,68,0.5)]' : 'border-white shadow-[0_0_20px_rgba(255,255,255,0.5)]')
+                  : 'border-gray-700'
+                }`}
+            >
+              <p className={`font-mono text-sm tracking-wider italic ${isCorrect === false ? 'text-red-500' : 'text-gray-300'}`}>
+                "{displayedText}
+                {displayedText.length < (selectedReaction?.length || 0) && showCursor && (
+                  <span className="inline-block">█</span>
+                )}
+                {displayedText.length === (selectedReaction?.length || 0) && showCursor && (
+                  <span className="inline-block">█</span>
+                )}
+                "
+              </p>
+            </div>
           </div>
         </div>
       );
