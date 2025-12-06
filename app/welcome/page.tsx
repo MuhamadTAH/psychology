@@ -36,6 +36,11 @@ export default function WelcomePage() {
   const [selectedReaction, setSelectedReaction] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
 
+  // Typewriter effect state
+  const [displayedText, setDisplayedText] = useState('');
+  const [showCursor, setShowCursor] = useState(true);
+  const [borderPulse, setBorderPulse] = useState(true);
+
   // Identity Verification State
   const [glitch, setGlitch] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
@@ -721,9 +726,7 @@ export default function WelcomePage() {
 
     if (showReaction) {
       // Typewriter effect state
-      const [displayedText, setDisplayedText] = useState('');
-      const [showCursor, setShowCursor] = useState(true);
-      const [borderPulse, setBorderPulse] = useState(true);
+
 
       useEffect(() => {
         if (!selectedReaction) return;
@@ -763,7 +766,7 @@ export default function WelcomePage() {
         <div className="min-h-screen bg-black flex items-center justify-center p-6 text-center">
           <div className="max-w-md animate-slide-in-right">
             {/* CHARACTER PLACEHOLDER - The Strategist with reaction */}
-            <div className={`mb-8 transition-all duration-500 ${isCorrect === false ? 'animate-shake' : ''}`}>
+            <div className={`mb - 8 transition - all duration - 500 ${isCorrect === false ? 'animate-shake' : ''} `}>
               <div className="w-32 h-32 bg-gray-800 mx-auto border flex items-center justify-center"
                 style={{
                   borderColor: isCorrect === false ? '#ff0000' : '#666',
@@ -777,12 +780,12 @@ export default function WelcomePage() {
 
             {/* Text Box with Border Pulse */}
             <div
-              className={`border-2 p-6 transition-all duration-300 ${borderPulse
+              className={`border - 2 p - 6 transition - all duration - 300 ${borderPulse
                   ? (isCorrect === false ? 'border-red-500 shadow-[0_0_20px_rgba(239,68,68,0.5)]' : 'border-white shadow-[0_0_20px_rgba(255,255,255,0.5)]')
                   : 'border-gray-700'
-                }`}
+                } `}
             >
-              <p className={`font-mono text-sm tracking-wider italic ${isCorrect === false ? 'text-red-500' : 'text-gray-300'}`}>
+              <p className={`font - mono text - sm tracking - wider italic ${isCorrect === false ? 'text-red-500' : 'text-gray-300'} `}>
                 "{displayedText}
                 {displayedText.length < (selectedReaction?.length || 0) && showCursor && (
                   <span className="inline-block">█</span>
@@ -805,7 +808,7 @@ export default function WelcomePage() {
           <div className="w-full max-w-md h-1 bg-gray-900 mb-12 relative">
             <div
               className="h-full bg-white transition-all duration-500"
-              style={{ width: `${((assessmentQuestion + 1) / 7) * 100}%` }}
+              style={{ width: `${((assessmentQuestion + 1) / 7) * 100}% ` }}
             ></div>
           </div>
 
@@ -867,15 +870,15 @@ export default function WelcomePage() {
           </div>
         </div>
         <style jsx>{`
-          @keyframes scan-horizontal {
-            0% { width: 0%; left: 0%; }
-            50% { width: 100%; left: 0%; }
-            100% { width: 0%; left: 100%; }
+          @keyframes scan - horizontal {
+            0 % { width: 0 %; left: 0 %; }
+            50 % { width: 100 %; left: 0 %; }
+            100 % { width: 0 %; left: 100 %; }
           }
-          .animate-scan-horizontal {
-            animation: scan-horizontal 2s ease-in-out infinite;
-          }
-        `}</style>
+          .animate - scan - horizontal {
+        animation: scan - horizontal 2s ease -in -out infinite;
+      }
+      `}</style>
       </div>
     );
   }
@@ -941,8 +944,8 @@ export default function WelcomePage() {
             {dynamicMessages.slice(0, currentMessageIndex + 1).map((msg, idx) => (
               <p
                 key={idx}
-                className={`font-mono text-xs mb-2 transition-all duration-500 ${idx === currentMessageIndex ? 'text-white font-bold animate-pulse' : 'text-gray-700'
-                  }`}
+                className={`font - mono text - xs mb - 2 transition - all duration - 500 ${idx === currentMessageIndex ? 'text-white font-bold animate-pulse' : 'text-gray-700'
+                  } `}
                 style={{
                   animation: idx === currentMessageIndex ? 'glitch 0.3s infinite' : 'none'
                 }}
@@ -966,19 +969,21 @@ export default function WelcomePage() {
         </div>
 
         <style jsx>{`
-          @keyframes scan-horizontal {
-            0% { width: 0%; left: 0%; }
-            50% { width: 100%; left: 0%; }
-            100% { width: 0%; left: 100%; }
-          }
-          .animate-scan-horizontal {
-            animation: scan-horizontal 2s ease-in-out infinite;
-          }
-          @keyframes glitch {
-            0%, 100% { text-shadow: 2px 0 #ff0000, -2px 0 #00ffff; }
-            50% { text-shadow: -2px 0 #ff0000, 2px 0 #00ffff; }
-          }
-        `}</style>
+      @keyframes scan - horizontal {
+        0 % { width: 0 %; left: 0 %; }
+        50 % { width: 100 %; left: 0 %; }
+        100 % { width: 0 %; left: 100 %; }
+      }
+          .animate - scan - horizontal {
+      animation: scan - horizontal 2s ease -in -out infinite;
+    }
+    @keyframes glitch {
+      0 %, 100 % { text- shadow: 2px 0 #ff0000, -2px 0 #00ffff;
+    }
+    50 % { text- shadow: -2px 0 #ff0000, 2px 0 #00ffff;
+  }
+}
+`}</style>
       </div>
     );
   }
