@@ -7,7 +7,8 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useSignIn, useSignUp } from "@clerk/nextjs";
-import { Shield, Eye, Lock, Terminal, MessageSquare, Scale, CheckCircle, ArrowRight, ArrowDown } from "lucide-react";
+import { ArrowRight, CheckSquare, Shield, Eye, Terminal, Lock, ArrowDown, MessageSquare, Scale, CheckCircle } from "lucide-react";
+import ScanTransition from "@/components/ScanTransition";
 
 export default function WelcomePage() {
   const router = useRouter();
@@ -595,51 +596,10 @@ export default function WelcomePage() {
     );
   }
 
-  // Phase 2.0: The Transition
+  // Phase 2.0: The Transition (Military HUD Scanner)
   if (step === "phase2_assessment" && assessmentQuestion === -1) {
     return (
-      <div className="min-h-screen bg-black flex items-center justify-center p-6">
-        <div className="text-center animate-slide-in-right">
-          {/* CHARACTER PLACEHOLDER - The Strategist (IDLE) */}
-          <div className="mb-12">
-            <div className="w-24 h-24 bg-gray-800 mx-auto border border-gray-600 flex items-center justify-center">
-              <span className="text-gray-600 text-xs">STATUE</span>
-            </div>
-          </div>
-
-          <h1 className="text-2xl font-mono text-white tracking-widest uppercase mb-8 animate-pulse">
-            Analyzing Operative Profile...
-          </h1>
-
-          {/* Scanning Grid */}
-          <div className="relative w-full max-w-md h-64 mx-auto border border-gray-800 overflow-hidden">
-            <div className="absolute inset-0 grid grid-cols-8 grid-rows-8">
-              {Array.from({ length: 64 }).map((_, i) => (
-                <div key={i} className="border border-gray-900 animate-pulse" style={{ animationDelay: `${i * 20}ms` }}></div>
-              ))}
-            </div>
-            <div className="absolute w-full h-1 bg-white/50 animate-scan-vertical"></div>
-          </div>
-
-          {/* Skip Button */}
-          <button
-            onClick={() => setAssessmentQuestion(0)}
-            className="mt-8 border border-gray-700 bg-transparent text-gray-500 hover:border-white hover:text-white py-3 px-6 text-xs font-mono uppercase tracking-widest transition-colors"
-          >
-            Continue
-          </button>
-        </div>
-
-        <style jsx>{`
-          @keyframes scan-vertical {
-            0% { top: 0%; }
-            100% { top: 100%; }
-          }
-          .animate-scan-vertical {
-            animation: scan-vertical 2s linear infinite;
-          }
-        `}</style>
-      </div>
+      <ScanTransition onComplete={() => setAssessmentQuestion(0)} />
     );
   }
 
