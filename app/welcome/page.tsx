@@ -639,7 +639,7 @@ export default function WelcomePage() {
         headline: "Do you find yourself constantly surrounded by toxic or narcissistic personalities?",
         options: [
           { text: "Yes, it keeps happening.", type: "vulnerable", reaction: "You are broadcasting vulnerability. We must change your frequency." },
-          { text: "Only in the workplace.", type: "workplace", reaction: null },
+          { text: "Only in the workplace.", type: "workplace", reaction: "Confined toxicity is still toxicity. We will address it." },
           { text: "No, I spot them early.", type: "vigilant", reaction: "Excellent. Vigilance is working." }
         ]
       },
@@ -685,6 +685,16 @@ export default function WelcomePage() {
     const handleAnswer = (option: any) => {
       // Track user's answer
       setUserAnswers(prev => ({ ...prev, [assessmentQuestion]: option.type }));
+
+      // If no reaction, skip directly to next question
+      if (!option.reaction) {
+        if (assessmentQuestion < 6) {
+          setAssessmentQuestion(prev => prev + 1);
+        } else {
+          setStep("phase3_calculation");
+        }
+        return;
+      }
 
       // Show reaction first
       if (option.correct !== undefined) {
