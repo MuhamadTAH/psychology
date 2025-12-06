@@ -71,11 +71,46 @@ export default function WelcomePage() {
     if (step === "identityVerification") {
       const interval = setInterval(() => {
         setGlitch(true);
-        setTimeout(() => setGlitch(false), 200);
-      }, 4000);
+        setTimeout(() => setGlitch(false), 100);
+      }, 3000);
       return () => clearInterval(interval);
     }
   }, [step]);
+
+  // Typewriter effect for reactions
+  useEffect(() => {
+    if (!showReaction || !selectedReaction) return;
+
+    let currentIndex = 0;
+    setDisplayedText('');
+    setBorderPulse(true);
+
+    // Border pulse for 300ms
+    const pulseTimer = setTimeout(() => {
+      setBorderPulse(false);
+    }, 300);
+
+    // Typewriter effect: 25ms per character
+    const typeInterval = setInterval(() => {
+      if (currentIndex < selectedReaction.length) {
+        setDisplayedText(selectedReaction.substring(0, currentIndex + 1));
+        currentIndex++;
+      } else {
+        clearInterval(typeInterval);
+      }
+    }, 25);
+
+    // Cursor blinking
+    const cursorInterval = setInterval(() => {
+      setShowCursor(prev => !prev);
+    }, 500);
+
+    return () => {
+      clearTimeout(pulseTimer);
+      clearInterval(typeInterval);
+      clearInterval(cursorInterval);
+    };
+  }, [showReaction, selectedReaction]);
 
   // Screen 0: Cold Open - Pure black with glitching video
   if (step === "coldOpen") {
@@ -725,43 +760,6 @@ export default function WelcomePage() {
     };
 
     if (showReaction) {
-      // Typewriter effect state
-
-
-      useEffect(() => {
-        if (!selectedReaction) return;
-
-        let currentIndex = 0;
-        setDisplayedText('');
-        setBorderPulse(true);
-
-        // Border pulse for 300ms
-        const pulseTimer = setTimeout(() => {
-          setBorderPulse(false);
-        }, 300);
-
-        // Typewriter effect: 25ms per character
-        const typeInterval = setInterval(() => {
-          if (currentIndex < selectedReaction.length) {
-            setDisplayedText(selectedReaction.substring(0, currentIndex + 1));
-            currentIndex++;
-          } else {
-            clearInterval(typeInterval);
-          }
-        }, 25);
-
-        // Cursor blinking
-        const cursorInterval = setInterval(() => {
-          setShowCursor(prev => !prev);
-        }, 500);
-
-        return () => {
-          clearTimeout(pulseTimer);
-          clearInterval(typeInterval);
-          clearInterval(cursorInterval);
-        };
-      }, [selectedReaction]);
-
       return (
         <div className="min-h-screen bg-black flex items-center justify-center p-6 text-center">
           <div className="max-w-md animate-slide-in-right">
@@ -781,8 +779,8 @@ export default function WelcomePage() {
             {/* Text Box with Border Pulse */}
             <div
               className={`border - 2 p - 6 transition - all duration - 300 ${borderPulse
-                  ? (isCorrect === false ? 'border-red-500 shadow-[0_0_20px_rgba(239,68,68,0.5)]' : 'border-white shadow-[0_0_20px_rgba(255,255,255,0.5)]')
-                  : 'border-gray-700'
+                ? (isCorrect === false ? 'border-red-500 shadow-[0_0_20px_rgba(239,68,68,0.5)]' : 'border-white shadow-[0_0_20px_rgba(255,255,255,0.5)]')
+                : 'border-gray-700'
                 } `}
             >
               <p className={`font - mono text - sm tracking - wider italic ${isCorrect === false ? 'text-red-500' : 'text-gray-300'} `}>
