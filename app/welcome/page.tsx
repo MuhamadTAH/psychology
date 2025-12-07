@@ -7,7 +7,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useSignIn, useSignUp } from "@clerk/nextjs";
-import { ArrowRight, CheckSquare, Shield, Eye, Terminal, Lock, ArrowDown, MessageSquare, Scale, CheckCircle } from "lucide-react";
+import { ArrowRight, CheckSquare, Shield, Eye, Terminal, Lock, ArrowDown, MessageSquare, Scale, CheckCircle, Folder, AlertTriangle } from "lucide-react";
 import ScanTransition from "@/components/ScanTransition";
 
 export default function WelcomePage() {
@@ -48,6 +48,10 @@ export default function WelcomePage() {
 
   // Phase 3: Calculation State (must be at top level, not inside if block)
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
+
+  // Phase 3: Payment State
+  const [selectedPlan, setSelectedPlan] = useState<'annual' | 'monthly'>('annual');
+  const [showWalkOfShame, setShowWalkOfShame] = useState(false);
 
   // Manual skip for Cold Open - removed auto-advance
   // useEffect(() => {
@@ -1055,50 +1059,140 @@ export default function WelcomePage() {
     );
   }
 
-  // Phase 3.2: The Paywall (7-Day Trial)
+  // Phase 3.2: The Clearance (The Paywall/Tactical Pricing)
   if (step === "phase3_paywall") {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center p-6 text-center">
-        <div className="animate-slide-in-right max-w-md">
-          {/* Locked Folder Icon Placeholder */}
-          <div className="mb-8">
-            <div className="w-32 h-32 bg-gray-900 mx-auto border-2 border-red-900 flex items-center justify-center relative">
-              <span className="text-red-500 text-4xl">🔒</span>
+        {/* Walk of Shame Modal */}
+        {showWalkOfShame && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-red-900/20 backdrop-blur-sm animate-fade-in">
+            <div className="bg-black border-2 border-red-600 p-8 max-w-sm w-full shadow-[0_0_50px_rgba(220,38,38,0.5)] animate-shake">
+              {/* Glitching Character - Red */}
+              <div className="mb-6">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-24 h-24 mx-auto object-contain"
+                  style={{ filter: 'hue-rotate(0deg) saturate(200%) brightness(0.8) sepia(100%) saturate(500%) hue-rotate(-50deg)' }} // Very Red
+                >
+                  <source src="/welcome-animation.webm" type="video/webm" />
+                </video>
+              </div>
+
+              <h2 className="text-red-500 font-mono text-lg font-bold uppercase tracking-widest mb-4 flex items-center justify-center gap-2">
+                <AlertTriangle size={20} />
+                WARNING
+              </h2>
+
+              <p className="text-gray-300 font-mono text-xs mb-8 leading-relaxed">
+                You are declining advanced weaponry. You will enter the field unprotected. This decision is illogical.
+                <br /><br />
+                Confirm?
+              </p>
+
+              <div className="space-y-3">
+                <button
+                  onClick={() => setShowWalkOfShame(false)}
+                  className="w-full bg-white text-black font-mono text-xs font-bold uppercase py-3 tracking-widest hover:bg-gray-200"
+                >
+                  Go Back
+                </button>
+                <button
+                  onClick={() => router.push("/dark-psychology-dashboard")}
+                  className="w-full bg-transparent border border-red-900 text-red-900 font-mono text-[10px] uppercase py-3 tracking-widest hover:text-red-500 hover:border-red-500 transition-colors"
+                >
+                  I Accept Mediocrity
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        <div className={`animate-slide-in-right max-w-lg w-full ${showWalkOfShame ? 'blur-sm grayscale' : ''}`}>
+
+          {/* Top Secret Folder Icon */}
+          <div className="mb-8 relative w-24 h-24 mx-auto">
+            <div className="absolute inset-0 bg-yellow-600/10 rounded-lg transform rotate-3"></div>
+            <Folder size={80} className="text-yellow-700 mx-auto relative z-0" fill="#4d3a1e" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-black p-2 rounded-full border border-red-900">
+              <Lock className="text-red-500 w-8 h-8" />
             </div>
           </div>
 
-          <h1 className="text-2xl font-mono font-bold text-white tracking-widest uppercase mb-4">
+          <h1 className="text-2xl font-mono font-bold text-white tracking-widest uppercase mb-2">
             Clearance Required
           </h1>
 
-          <p className="text-gray-400 font-mono text-xs mb-12">
-            Your profile indicates high aptitude. Access to the advanced curriculum is restricted to Operatives.
+          <p className="text-gray-400 font-mono text-xs mb-8">
+            Select your contract duration.
           </p>
 
-          <div className="mb-8 border border-white p-6">
-            <h2 className="text-lg font-mono text-white uppercase tracking-wider mb-2">
-              7-Day Field Test
-            </h2>
-            <p className="text-gray-500 font-mono text-xs">
-              Full access to Dark Psychology Mastery curriculum
-            </p>
+          {/* Pricing Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+
+            {/* Card A: The Hero (Annual) */}
+            <div
+              onClick={() => setSelectedPlan('annual')}
+              className={`relative border-2 p-6 cursor-pointer transition-all duration-300 flex flex-col justify-between ${selectedPlan === 'annual' ? 'border-white bg-white/5 shadow-[0_0_20px_rgba(255,255,255,0.1)]' : 'border-gray-800 opacity-50 hover:opacity-80'}`}
+            >
+              {/* Badge */}
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-600 text-black text-[10px] font-bold px-3 py-1 uppercase tracking-wide whitespace-nowrap shadow-lg">
+                Founding Offer: -75%
+              </div>
+
+              <div className="mt-2">
+                <h3 className="text-gray-400 font-mono text-[10px] uppercase tracking-widest mb-4">12 Month Assignment</h3>
+                <div className="flex flex-col items-center">
+                  <span className="text-gray-600 line-through text-xs font-mono">$239.99</span>
+                  <span className="text-white text-2xl font-mono font-bold my-1">$59.99<span className="text-xs font-normal text-gray-500">/yr</span></span>
+                  <span className="text-green-400 text-xs font-mono font-bold">That is $4.99 / mo</span>
+                </div>
+              </div>
+
+              <div className="mt-4 pt-4 border-t border-gray-800">
+                <p className="text-gray-300 text-[10px] font-mono">Includes 7-Day Field Test</p>
+                <p className="text-gray-500 text-[10px] font-mono italic">You are not charged today.</p>
+              </div>
+            </div>
+
+            {/* Card B: The Decoy (Mercenary) */}
+            <div
+              onClick={() => setSelectedPlan('monthly')}
+              className={`relative border-2 p-6 cursor-pointer transition-all duration-300 flex flex-col justify-between ${selectedPlan === 'monthly' ? 'border-white bg-white/5' : 'border-gray-800 opacity-50 hover:opacity-80'}`}
+            >
+              <div className="mt-2">
+                <h3 className="text-gray-400 font-mono text-[10px] uppercase tracking-widest mb-4">Monthly Contract</h3>
+                <div className="flex flex-col items-center">
+                  <span className="text-transparent text-xs select-none">.</span>
+                  <span className="text-white text-2xl font-mono font-bold my-1">$19.99<span className="text-xs font-normal text-gray-500">/mo</span></span>
+                  <span className="text-gray-600 text-xs font-mono">Billed monthly</span>
+                </div>
+              </div>
+
+              <div className="mt-4 pt-4 border-t border-gray-800">
+                <p className="text-gray-500 text-[10px] font-mono">No discount.</p>
+                <p className="text-gray-500 text-[10px] font-mono italic">Immediate billing.</p>
+              </div>
+            </div>
+
           </div>
 
+          {/* Primary Action */}
           <button
             onClick={() => {
-              // Redirect to dashboard
+              // In production: Integrate RevenueCat here
               router.push("/dark-psychology-dashboard");
             }}
             className="w-full border-2 border-white bg-white text-black hover:bg-black hover:text-white py-4 px-8 text-sm font-mono uppercase tracking-widest transition-colors mb-4 animate-pulse"
           >
-            Initialize 7-Day Field Test
+            {selectedPlan === 'annual' ? 'Initialize 7-Day Field Test' : 'Initialize Access ($19.99)'}
           </button>
 
+          {/* Secondary Action - Trigger Walk of Shame */}
           <button
-            onClick={() => {
-              // Redirect to dashboard
-              router.push("/dark-psychology-dashboard");
-            }}
+            onClick={() => setShowWalkOfShame(true)}
             className="text-gray-700 hover:text-gray-500 text-xs font-mono uppercase tracking-widest transition-colors"
           >
             Remain Civilian
