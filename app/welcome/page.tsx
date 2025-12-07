@@ -46,6 +46,9 @@ export default function WelcomePage() {
   const [textIndex, setTextIndex] = useState(0);
   const fullText = "ACCESS TO THIS DATABASE IS RESTRICTED.";
 
+  // Phase 3: Calculation State (must be at top level, not inside if block)
+  const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
+
   // Manual skip for Cold Open - removed auto-advance
   // useEffect(() => {
   //   if (step === "coldOpen") {
@@ -111,6 +114,23 @@ export default function WelcomePage() {
       clearInterval(cursorInterval);
     };
   }, [showReaction, selectedReaction]);
+
+  // Phase 3 Calculation: Dynamic message cycling
+  useEffect(() => {
+    if (step === "phase3_calculation") {
+      const interval = setInterval(() => {
+        setCurrentMessageIndex(prev => {
+          // We'll calculate max based on userAnswers
+          const maxMessages = 5; // Will be updated dynamically in render
+          if (prev < maxMessages - 1) {
+            return prev + 1;
+          }
+          return prev;
+        });
+      }, 800);
+      return () => clearInterval(interval);
+    }
+  }, [step, userAnswers]);
 
   // Screen 0: Cold Open - Pure black with glitching video
   if (step === "coldOpen") {
@@ -505,7 +525,7 @@ export default function WelcomePage() {
             className="group border border-white bg-transparent text-white hover:bg-white hover:text-black transition-all duration-300 py-4 px-8 flex items-center justify-center gap-3 uppercase tracking-widest text-sm font-mono"
           >
             <span>Explain</span>
-            <ArrowDown size={16} className="group-hover:translate-y-1 transition-transform" />
+            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
 
@@ -920,22 +940,6 @@ export default function WelcomePage() {
     // Always show
     dynamicMessages.push('ENCRYPTING DATA...');
 
-    const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
-
-    useEffect(() => {
-      if (step === "phase3_calculation") {
-        const interval = setInterval(() => {
-          setCurrentMessageIndex(prev => {
-            if (prev < dynamicMessages.length - 1) {
-              return prev + 1;
-            }
-            return prev;
-          });
-        }, 800);
-        return () => clearInterval(interval);
-      }
-    }, [step]);
-
     return (
       <div className="min-h-screen bg-black flex items-center justify-center p-6">
         <div className="text-center animate-slide-in-right">
@@ -1082,10 +1086,8 @@ export default function WelcomePage() {
 
           <button
             onClick={() => {
-              // Reset for demo
-              setStep("coldOpen");
-              setAssessmentQuestion(-1);
-              setEthicsAgreed(false);
+              // Redirect to dashboard
+              router.push("/dark-psychology-dashboard");
             }}
             className="w-full border-2 border-white bg-white text-black hover:bg-black hover:text-white py-4 px-8 text-sm font-mono uppercase tracking-widest transition-colors mb-4 animate-pulse"
           >
@@ -1094,10 +1096,8 @@ export default function WelcomePage() {
 
           <button
             onClick={() => {
-              // Reset for demo
-              setStep("coldOpen");
-              setAssessmentQuestion(-1);
-              setEthicsAgreed(false);
+              // Redirect to dashboard
+              router.push("/dark-psychology-dashboard");
             }}
             className="text-gray-700 hover:text-gray-500 text-xs font-mono uppercase tracking-widest transition-colors"
           >
