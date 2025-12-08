@@ -87,11 +87,11 @@ export default function AddDarkPsychologyLessonPage() {
           <h1 className="text-2xl font-bold">Add Dark Psychology Lesson</h1>
           <Button
             variant="outline"
-            onClick={() => router.push("/learn")}
+            onClick={() => router.push("/dark-psychology-dashboard")}
             className="flex items-center gap-2"
           >
             <Home className="h-4 w-4" />
-            Back to Learn
+            Back to Dashboard
           </Button>
         </div>
       </div>

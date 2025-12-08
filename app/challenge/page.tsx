@@ -489,7 +489,7 @@ export default function ChallengePage() {
       {/* Bottom Navigation */}
       <div className="fixed bottom-0 left-0 right-0 bg-[#1F1F1F] shadow-2xl z-50">
         <div className="max-w-2xl mx-auto px-4 py-4 flex items-center justify-around">
-          <button onClick={() => router.push('/learn')} className="flex flex-col items-center gap-1 group hover:opacity-80">
+          <button onClick={() => router.push('/dark-psychology-dashboard')} className="flex flex-col items-center gap-1 group hover:opacity-80">
             <Home className="h-7 w-7 text-gray-500" />
           </button>
           <button className="flex flex-col items-center gap-1 group hover:opacity-80">

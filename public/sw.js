@@ -11,12 +11,10 @@ const RUNTIME_CACHE = 'duolearn-runtime-v1';
 // These are the core files needed for the app to function offline
 const PRECACHE_URLS = [
   '/',
-  '/learn',
   '/dark-psychology-dashboard',
   '/profile',
   '/shop',
   '/leagues',
-  '/offline',
 ];
 
 // Step 3: Install event - cache essential resources
@@ -26,7 +24,21 @@ self.addEventListener('install', (event) => {
     caches.open(CACHE_NAME)
       .then((cache) => {
         console.log('Opened cache');
-        return cache.addAll(PRECACHE_URLS);
+        console.log('Attempting to cache these URLs:', PRECACHE_URLS);
+
+        // Cache each URL individually to see which one fails
+        return Promise.all(
+          PRECACHE_URLS.map(url => {
+            return cache.add(url)
+              .then(() => {
+                console.log('✅ Successfully cached:', url);
+              })
+              .catch((error) => {
+                console.error('❌ Failed to cache:', url, error);
+                // Don't throw - continue caching other URLs
+              });
+          })
+        );
       })
       .then(() => self.skipWaiting())
   );
@@ -66,8 +78,8 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
       fetch(event.request)
         .then((response) => {
-          // Clone the response and cache it
-          if (response.status === 200) {
+          // Only cache GET requests (Cache API doesn't support POST)
+          if (response.status === 200 && event.request.method === 'GET') {
             const responseToCache = response.clone();
             caches.open(RUNTIME_CACHE).then((cache) => {
               cache.put(event.request, responseToCache);
@@ -76,8 +88,12 @@ self.addEventListener('fetch', (event) => {
           return response;
         })
         .catch(() => {
-          // If network fails, try to serve from cache
-          return caches.match(event.request);
+          // If network fails, try to serve from cache (only works for GET)
+          if (event.request.method === 'GET') {
+            return caches.match(event.request);
+          }
+          // For non-GET requests, return error
+          return new Response('Network error', { status: 503 });
         })
     );
     return;
@@ -144,8 +160,8 @@ async function syncLessons() {
 self.addEventListener('push', (event) => {
   const options = {
     body: event.data ? event.data.text() : 'New update available!',
-    icon: '/icons/icon-192x192.png',
-    badge: '/icons/icon-72x72.png',
+    icon: '/icons/icon-192x192.svg',
+    badge: '/icons/icon-72x72.svg',
     vibrate: [100, 50, 100],
     data: {
       dateOfArrival: Date.now(),
@@ -155,12 +171,12 @@ self.addEventListener('push', (event) => {
       {
         action: 'explore',
         title: 'Open App',
-        icon: '/icons/icon-96x96.png'
+        icon: '/icons/icon-96x96.svg'
       },
       {
         action: 'close',
         title: 'Close',
-        icon: '/icons/icon-96x96.png'
+        icon: '/icons/icon-96x96.svg'
       }
     ]
   };

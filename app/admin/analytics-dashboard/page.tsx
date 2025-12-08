@@ -547,26 +547,28 @@ onclone: (clonedDoc) => {
         {/* Dashboard Content */}
         {!isLoadingStats && stats && (
           <div ref={dashboardRef} className="space-y-6">
-            {/* Alerts Panel */}
-            {recentAlerts && recentAlerts.length > 0 && (
-              <div className="bg-white rounded-2xl shadow-lg p-6">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-bold text-gray-800 flex items-center gap-2">
-                    <Bell className="w-6 h-6 text-orange-500" />
-                    Active Alerts
-                    {unreadCount && unreadCount > 0 && (
-                      <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full">
-                        {unreadCount}
-                      </span>
-                    )}
-                  </h3>
-                  <button
-                    onClick={() => generateAlerts()}
-                    className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all font-semibold"
-                  >
-                    Refresh Alerts
-                  </button>
-                </div>
+            {/* Alerts Panel - Always visible */}
+            <div className="bg-white rounded-2xl shadow-lg p-6">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-xl font-bold text-gray-800 flex items-center gap-2">
+                  <Bell className="w-6 h-6 text-orange-500" />
+                  Active Alerts
+                  {unreadCount && unreadCount > 0 && (
+                    <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full">
+                      {unreadCount}
+                    </span>
+                  )}
+                </h3>
+                <button
+                  onClick={() => generateAlerts()}
+                  className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all font-semibold"
+                >
+                  Refresh Alerts
+                </button>
+              </div>
+
+              {/* Show alerts if they exist, otherwise show empty state */}
+              {recentAlerts && recentAlerts.length > 0 ? (
                 <div className="space-y-3">
                   {recentAlerts
                     .filter(alert => !alert.dismissed)
@@ -614,15 +616,20 @@ onclone: (clonedDoc) => {
                         </div>
                       );
                     })}
+                  {recentAlerts.filter(a => !a.dismissed).length === 0 && (
+                    <div className="text-center py-8 text-gray-500">
+                      <Info className="w-12 h-12 mx-auto mb-2 text-gray-400" />
+                      <p>No active alerts. Everything looks good!</p>
+                    </div>
+                  )}
                 </div>
-                {recentAlerts.filter(a => !a.dismissed).length === 0 && (
-                  <div className="text-center py-8 text-gray-500">
-                    <Info className="w-12 h-12 mx-auto mb-2 text-gray-400" />
-                    <p>No active alerts. Everything looks good!</p>
-                  </div>
-                )}
-              </div>
-            )}
+              ) : (
+                <div className="text-center py-8 text-gray-500">
+                  <Info className="w-12 h-12 mx-auto mb-2 text-gray-400" />
+                  <p>No alerts yet. Click "Refresh Alerts" to generate alerts based on current data.</p>
+                </div>
+              )}
+            </div>
 
             {/* Key Metrics Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">

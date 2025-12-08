@@ -62,11 +62,11 @@ export default function DarkPsychologyPage() {
             </Button>
             <Button
               variant="outline"
-              onClick={() => router.push("/learn")}
+              onClick={() => router.push("/dark-psychology-dashboard")}
               className="flex items-center gap-2"
             >
               <Home className="h-4 w-4" />
-              Back to Learn
+              Back to Dashboard
             </Button>
           </div>
         </div>

@@ -17,8 +17,8 @@ export default function SignInPage() {
         routing="path"
         path="/sign-in"
         signUpUrl="/sign-up"
-        afterSignInUrl="/learn"
-        redirectUrl="/learn"
+        afterSignInUrl="/dark-psychology-dashboard"
+        redirectUrl="/dark-psychology-dashboard"
       />
     </div>
   );

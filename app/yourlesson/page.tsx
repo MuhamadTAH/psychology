@@ -63,8 +63,8 @@ export default function YourLessonPage() {
 
   // Matching question states
   const [selectedTerm, setSelectedTerm] = useState<string | null>(null);
-  const [matchedPairs, setMatchedPairs] = useState<{[key: string]: string}>({});
-  const [wrongMatch, setWrongMatch] = useState<{term: string, definition: string} | null>(null);
+  const [matchedPairs, setMatchedPairs] = useState<{ [key: string]: string }>({});
+  const [wrongMatch, setWrongMatch] = useState<{ term: string, definition: string } | null>(null);
   const [selectedColumnA, setSelectedColumnA] = useState<string | null>(null);
   const [shuffledDefinitions, setShuffledDefinitions] = useState<string[]>([]); // Shuffled definitions for matching
 
@@ -76,12 +76,12 @@ export default function YourLessonPage() {
 
   // Micro-Sim (chat-style conversation) states
   const [microSimStep, setMicroSimStep] = useState(0); // Current step in the micro-sim
-  const [chatHistory, setChatHistory] = useState<Array<{speaker: 'villain' | 'user'; text: string}>>([]); // Chat conversation history
+  const [chatHistory, setChatHistory] = useState<Array<{ speaker: 'villain' | 'user'; text: string }>>([]); // Chat conversation history
 
   // Lesson metadata
   const [currentLessonNumber, setCurrentLessonNumber] = useState<number | null>(null);
   const [hadWrongAttempt, setHadWrongAttempt] = useState(false);
-  const [wrongAnswers, setWrongAnswers] = useState<Array<{questionIndex: number, question: string, userAnswer: string, correctAnswer: string}>>([]);
+  const [wrongAnswers, setWrongAnswers] = useState<Array<{ questionIndex: number, question: string, userAnswer: string, correctAnswer: string }>>([]);
   const [wrongFlash, setWrongFlash] = useState(false);
 
   // Get user email from localStorage
@@ -281,10 +281,10 @@ export default function YourLessonPage() {
 
                   const formattedOptions = Array.isArray(exercise.options)
                     ? exercise.options.map((opt: any, idx: number) =>
-                        typeof opt === 'string'
-                          ? { id: String.fromCharCode(65 + idx), text: opt }
-                          : opt
-                      )
+                      typeof opt === 'string'
+                        ? { id: String.fromCharCode(65 + idx), text: opt }
+                        : opt
+                    )
                     : [];
 
                   const correctAnswerText = exercise.correct || exercise.correctAnswer;
@@ -694,16 +694,16 @@ export default function YourLessonPage() {
                 <Button onClick={handleRestartQuiz} className="w-full bg-orange-600 hover:bg-orange-700" size="lg">
                   Retry Lesson
                 </Button>
-                <Button onClick={() => router.push('/learn')} variant="secondary" className="w-full" size="lg">
-                  Back to Lessons
+                <Button onClick={() => router.push('/dark-psychology-dashboard')} variant="secondary" className="w-full" size="lg">
+                  Back to Dashboard
                 </Button>
               </div>
             </div>
           ) : (
             <div className="space-y-3">
               <p className="text-green-700 text-lg mb-4">🎉 Perfect score! No mistakes!</p>
-              <Button onClick={() => router.push('/learn')} className="w-full bg-green-600 hover:bg-green-700" size="lg">
-                Back to Lessons
+              <Button onClick={() => router.push('/dark-psychology-dashboard')} className="w-full bg-green-600 hover:bg-green-700" size="lg">
+                Back to Dashboard
               </Button>
             </div>
           )}
@@ -728,12 +728,12 @@ export default function YourLessonPage() {
             <button
               onClick={() => {
                 // Step: Redirect based on lesson category
-                // Dark Psychology lessons go back to their section page, regular lessons go to /learn
+                // Dark Psychology lessons go back to their section page
                 if (lessonCategory === 'dark-psychology' && typeof window !== 'undefined') {
                   const sectionId = localStorage.getItem('darkPsychSectionId') || 'B';
                   router.push(`/dark-psychology/section/${sectionId}`);
                 } else {
-                  router.push('/learn');
+                  router.push('/dark-psychology-dashboard');
                 }
               }}
               className="text-gray-400 hover:text-white transition-colors"
@@ -910,15 +910,13 @@ export default function YourLessonPage() {
                       {term ? (
                         <button
                           onClick={() => setSelectedTerm(term)}
-                          className={`rounded-xl md:rounded-2xl border-2 md:border-3 text-sm md:text-base font-semibold transition-all overflow-hidden flex items-center justify-center min-h-[60px] md:min-h-[70px] ${
-                            isImagePath(term) ? 'p-2' : 'p-4 md:p-5'
-                          } ${
-                            isWrongTerm
+                          className={`rounded-xl md:rounded-2xl border-2 md:border-3 text-sm md:text-base font-semibold transition-all overflow-hidden flex items-center justify-center min-h-[60px] md:min-h-[70px] ${isImagePath(term) ? 'p-2' : 'p-4 md:p-5'
+                            } ${isWrongTerm
                               ? 'bg-[#1a2332] border-red-500 text-red-400 animate-shake'
                               : isSelected
-                              ? 'bg-[#1a2332] border-[#58CC02] text-[#58CC02] scale-105'
-                              : 'bg-[#1a2332] border-gray-600 hover:border-gray-500 text-white'
-                          }`}
+                                ? 'bg-[#1a2332] border-[#58CC02] text-[#58CC02] scale-105'
+                                : 'bg-[#1a2332] border-gray-600 hover:border-gray-500 text-white'
+                            }`}
                         >
                           {isImagePath(term) ? (
                             <img src={term} alt="Match item" className="w-24 h-24 md:w-28 md:h-28 object-cover rounded" />
@@ -938,7 +936,7 @@ export default function YourLessonPage() {
 
                             const correctDef = currentQuestion.pairs![selectedTerm];
                             if (definition === correctDef) {
-                              setMatchedPairs({...matchedPairs, [selectedTerm]: definition});
+                              setMatchedPairs({ ...matchedPairs, [selectedTerm]: definition });
                               setSelectedTerm(null);
                               setWrongMatch(null);
 
@@ -958,7 +956,7 @@ export default function YourLessonPage() {
                                 setTimeout(() => handleNext(), 1000);
                               }
                             } else {
-                              setWrongMatch({term: selectedTerm, definition});
+                              setWrongMatch({ term: selectedTerm, definition });
                               setTimeout(() => {
                                 setWrongMatch(null);
                                 setSelectedTerm(null);
@@ -966,15 +964,13 @@ export default function YourLessonPage() {
                             }
                           }}
                           disabled={!selectedTerm}
-                          className={`rounded-xl md:rounded-2xl border-2 md:border-3 text-sm md:text-base transition-all overflow-hidden flex items-center justify-center min-h-[60px] md:min-h-[70px] ${
-                            isImagePath(definition) ? 'p-2' : 'p-4 md:p-5'
-                          } ${
-                            isWrongDef
+                          className={`rounded-xl md:rounded-2xl border-2 md:border-3 text-sm md:text-base transition-all overflow-hidden flex items-center justify-center min-h-[60px] md:min-h-[70px] ${isImagePath(definition) ? 'p-2' : 'p-4 md:p-5'
+                            } ${isWrongDef
                               ? 'bg-[#1a2332] border-red-500 text-red-400 animate-shake'
                               : !selectedTerm
-                              ? 'bg-[#1a2332] border-gray-700 text-gray-500 cursor-not-allowed opacity-50'
-                              : 'bg-[#1a2332] border-gray-600 hover:border-[#58CC02] text-white cursor-pointer'
-                          }`}
+                                ? 'bg-[#1a2332] border-gray-700 text-gray-500 cursor-not-allowed opacity-50'
+                                : 'bg-[#1a2332] border-gray-600 hover:border-[#58CC02] text-white cursor-pointer'
+                            }`}
                         >
                           {isImagePath(definition) ? (
                             <img src={definition} alt="Match item" className="w-24 h-24 md:w-28 md:h-28 object-cover rounded" />
@@ -1008,11 +1004,10 @@ export default function YourLessonPage() {
                     {part}
                     {i < arr.length - 1 && (
                       <span className="inline-flex items-center">
-                        <span className={`mx-1 md:mx-2 px-3 md:px-4 py-1 md:py-2 rounded-lg border-2 font-semibold text-sm md:text-lg ${
-                          fillInAnswer
+                        <span className={`mx-1 md:mx-2 px-3 md:px-4 py-1 md:py-2 rounded-lg border-2 font-semibold text-sm md:text-lg ${fillInAnswer
                             ? 'bg-[#58CC02] border-[#46A302] text-white'
                             : 'bg-gray-800 border-gray-600 text-gray-400'
-                        }`}>
+                          }`}>
                           {fillInAnswer || '___'}
                         </span>
                       </span>
@@ -1026,115 +1021,68 @@ export default function YourLessonPage() {
             <div className="grid grid-cols-2 gap-2 md:gap-3">
               {(currentQuestion.wrongOptions || currentQuestion.correctAnswer) &&
                 [currentQuestion.correctAnswer, ...(currentQuestion.wrongOptions || [])]
-                .filter(Boolean)
-                .sort(() => Math.random() - 0.5)
-                .map((option) => (
-                  <button
-                    key={option}
-                    onClick={() => setFillInAnswer(option!)}
-                    disabled={isChecked}
-                    className={`p-3 md:p-4 rounded-lg md:rounded-xl border-2 md:border-4 text-sm md:text-base font-semibold transition-all ${
-                      fillInAnswer === option
-                        ? 'bg-[#1a2332] border-[#58CC02] text-[#58CC02] scale-105'
-                        : 'bg-[#1a2332] border-gray-600 hover:border-gray-500 text-white'
-                    } ${isChecked ? 'opacity-50 cursor-not-allowed' : ''}`}
-                  >
-                    {option}
-                  </button>
-                ))}
+                  .filter(Boolean)
+                  .sort(() => Math.random() - 0.5)
+                  .map((option) => (
+                    <button
+                      key={option}
+                      onClick={() => setFillInAnswer(option!)}
+                      disabled={isChecked}
+                      className={`p-3 md:p-4 rounded-lg md:rounded-xl border-2 md:border-4 text-sm md:text-base font-semibold transition-all ${fillInAnswer === option
+                          ? 'bg-[#1a2332] border-[#58CC02] text-[#58CC02] scale-105'
+                          : 'bg-[#1a2332] border-gray-600 hover:border-gray-500 text-white'
+                        } ${isChecked ? 'opacity-50 cursor-not-allowed' : ''}`}
+                    >
+                      {option}
+                    </button>
+                  ))}
             </div>
           </div>
         )}
 
         {/* Step 15.5: Render Multiple Choice and Similar Question Types */}
-        {/* Show question with answer options in a grid */}
-        {/* Handles: multiple-choice, scenario, fill-in, true-false, reverse-scenario, ethical-dilemma, boss-scenario, case-analysis, micro-sim */}
-        {(() => {
-          // Micro-Sim: Render step options
-          if (currentQuestion.type === 'micro-sim' && currentQuestion.steps) {
-            const currentStep = currentQuestion.steps[microSimStep];
-            if (!currentStep) return null;
+        {['multiple-choice', 'scenario', 'fill-in', 'true-false', 'reverse-scenario', 'ethical-dilemma', 'boss-scenario', 'case-analysis'].includes(currentQuestion.type) && currentQuestion.options && (
+          <div className="space-y-4 md:space-y-6">
+            {/* Show image if present */}
+            {currentQuestion.image && (
+              <div className="flex justify-center mb-4 md:mb-6">
+                <img
+                  src={currentQuestion.image}
+                  alt="Question image"
+                  className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-xl border-4 border-gray-600"
+                />
+              </div>
+            )}
 
-            return (
-              <div className="space-y-3 md:space-y-4">
-                {currentStep.options.map((optionText, index) => {
-                  const optionId = String.fromCharCode(65 + index); // A, B, C, D
-                  const isSelected = selectedAnswer === optionId;
-                  const showCorrect = isChecked && optionText === currentStep.correct;
-                  const showWrong = isChecked && isSelected && optionText !== currentStep.correct;
+            <div className="grid grid-cols-2 gap-3 md:gap-4">
+              {currentQuestion.options.map((option) => {
+                const isSelected = selectedAnswer === option.id;
+                const showCorrect = isChecked && option.id === currentQuestion.correctAnswer;
+                const showWrong = isChecked && isSelected && option.id !== currentQuestion.correctAnswer;
 
-                  return (
-                    <button
-                      key={index}
-                      onClick={() => !isChecked && setSelectedAnswer(optionId)}
-                      disabled={isChecked}
-                      className={`w-full p-4 md:p-5 rounded-xl md:rounded-2xl border-2 md:border-3 transition-all text-left min-h-[60px] flex items-center ${
-                        showCorrect
-                          ? "border-[#58CC02] bg-green-900/40 text-[#58CC02]"
-                          : showWrong
+                return (
+                  <button
+                    key={option.id}
+                    onClick={() => !isChecked && setSelectedAnswer(option.id)}
+                    disabled={isChecked}
+                    className={`p-4 md:p-6 rounded-xl md:rounded-2xl border-2 md:border-4 transition-all flex items-center justify-center min-h-[100px] md:min-h-[120px] ${showCorrect
+                        ? "border-[#58CC02] bg-green-900/40 text-[#58CC02]"
+                        : showWrong
                           ? "border-red-500 bg-[#1a2332] text-red-400"
                           : isSelected
-                          ? "border-[#58CC02] bg-[#1a2332] text-[#58CC02] scale-105"
-                          : "border-gray-600 bg-[#1a2332] text-white hover:border-gray-500"
-                      } ${!isChecked ? 'hover:scale-105 active:scale-95' : ''}`}
-                    >
-                      <span className="text-sm md:text-base font-semibold">
-                        {renderOptionText(optionText)}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-            );
-          }
-
-          // Regular multiple-choice and scenario types
-          if (['multiple-choice', 'scenario', 'fill-in', 'true-false', 'reverse-scenario', 'ethical-dilemma', 'boss-scenario', 'case-analysis'].includes(currentQuestion.type) && currentQuestion.options) {
-            return (
-              <div className="space-y-4 md:space-y-6">
-                {/* Show image if present */}
-                {currentQuestion.image && (
-                  <div className="flex justify-center mb-4 md:mb-6">
-                    <img
-                      src={currentQuestion.image}
-                      alt="Question image"
-                      className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-xl border-4 border-gray-600"
-                    />
-                  </div>
-                )}
-
-                <div className="grid grid-cols-2 gap-3 md:gap-4">
-                  {currentQuestion.options.map((option) => {
-                    const isSelected = selectedAnswer === option.id;
-                    const showCorrect = isChecked && option.id === currentQuestion.correctAnswer;
-                    const showWrong = isChecked && isSelected && option.id !== currentQuestion.correctAnswer;
-
-                    return (
-                      <button
-                        key={option.id}
-                        onClick={() => !isChecked && setSelectedAnswer(option.id)}
-                        disabled={isChecked}
-                        className={`p-4 md:p-6 rounded-xl md:rounded-2xl border-2 md:border-4 transition-all flex items-center justify-center min-h-[100px] md:min-h-[120px] ${
-                          showCorrect
-                            ? "border-[#58CC02] bg-green-900/40 text-[#58CC02]"
-                            : showWrong
-                            ? "border-red-500 bg-[#1a2332] text-red-400"
-                            : isSelected
                             ? "border-[#58CC02] bg-[#1a2332] text-[#58CC02] scale-105"
                             : "border-gray-600 bg-[#1a2332] text-white hover:border-gray-500"
-                        } ${!isChecked ? 'hover:scale-105 active:scale-95' : ''}`}
-                      >
-                        <span className="text-sm md:text-lg font-semibold text-center">
-                          {renderOptionText(option.text)}
-                        </span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            );
-          }
-        })()}
+                      } ${!isChecked ? 'hover:scale-105 active:scale-95' : ''}`}
+                  >
+                    <span className="text-sm md:text-lg font-semibold text-center">
+                      {renderOptionText(option.text)}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
 
         {/* Step 15.7: Render Sentence Building Question - Individual Ghost Slots */}
         {/* Individual empty boxes for each word, showing exactly how many words needed */}
@@ -1153,15 +1101,14 @@ export default function YourLessonPage() {
                   return (
                     <div
                       key={index}
-                      className={`min-w-[80px] md:min-w-[100px] h-12 md:h-14 rounded-xl border-2 flex items-center justify-center transition-all ${
-                        word
+                      className={`min-w-[80px] md:min-w-[100px] h-12 md:h-14 rounded-xl border-2 flex items-center justify-center transition-all ${word
                           ? isChecked
                             ? selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim()
                               ? 'bg-[#58CC02] border-[#46A302] text-white'
                               : 'bg-red-500 border-red-700 text-white'
                             : 'bg-white border-gray-300 text-gray-800'
                           : 'border-dashed border-gray-600 bg-[#1a2332]'
-                      }`}
+                        }`}
                       onDragOver={(e) => e.preventDefault()}
                       onDrop={(e) => {
                         e.preventDefault();
@@ -1266,11 +1213,10 @@ export default function YourLessonPage() {
                     {itemA ? (
                       <button
                         onClick={() => setSelectedColumnA(itemA.id)}
-                        className={`w-full p-2 md:p-4 text-left rounded-lg border-2 transition-all text-xs md:text-base self-center ${
-                          selectedColumnA === itemA.id
+                        className={`w-full p-2 md:p-4 text-left rounded-lg border-2 transition-all text-xs md:text-base self-center ${selectedColumnA === itemA.id
                             ? 'border-[#58CC02] bg-[#1a2332] text-[#58CC02]'
                             : 'border-gray-600 hover:border-gray-500 bg-[#1a2332] text-white'
-                        }`}
+                          }`}
                       >
                         <span className="font-semibold">{itemA.id}.</span> <span>{itemA.text}</span>
                       </button>
@@ -1287,11 +1233,10 @@ export default function YourLessonPage() {
                           }
                         }}
                         disabled={!selectedColumnA}
-                        className={`w-full p-2 md:p-4 text-left rounded-lg border-2 transition-all text-xs md:text-base self-center ${
-                          !selectedColumnA
+                        className={`w-full p-2 md:p-4 text-left rounded-lg border-2 transition-all text-xs md:text-base self-center ${!selectedColumnA
                             ? 'border-gray-700 bg-[#1a2332] text-gray-500 cursor-not-allowed opacity-50'
                             : 'border-gray-600 hover:border-[#58CC02] bg-[#1a2332] text-white cursor-pointer'
-                        }`}
+                          }`}
                       >
                         <span className="font-semibold">{itemB.id})</span> <span>{itemB.text}</span>
                       </button>
@@ -1347,8 +1292,8 @@ export default function YourLessonPage() {
                 selectedAnswer === currentQuestion?.correctAnswer ||
                 (currentQuestion.type === 'sentence-building' && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim());
             })()
-            ? 'bg-[#58CC02] border-[#46A302]' : 'bg-red-500 border-red-700'
-          }`}>
+              ? 'bg-[#58CC02] border-[#46A302]' : 'bg-red-500 border-red-700'
+            }`}>
             <div className="max-w-4xl mx-auto">
               <div className="flex items-start justify-between gap-4">
                 {/* Left side - Feedback message */}
@@ -1425,19 +1370,19 @@ export default function YourLessonPage() {
                   {(fillInAnswer.toLowerCase().trim() === currentQuestion.correctAnswer?.toLowerCase().trim() ||
                     selectedAnswer === currentQuestion?.correctAnswer ||
                     (currentQuestion.type === 'sentence-building' && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim())) && (
-                    <>
-                      <button className="p-2 hover:bg-white/20 rounded-lg transition-colors">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
-                        </svg>
-                      </button>
-                      <button className="p-2 hover:bg-white/20 rounded-lg transition-colors">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
-                        </svg>
-                      </button>
-                    </>
-                  )}
+                      <>
+                        <button className="p-2 hover:bg-white/20 rounded-lg transition-colors">
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                          </svg>
+                        </button>
+                        <button className="p-2 hover:bg-white/20 rounded-lg transition-colors">
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+                          </svg>
+                        </button>
+                      </>
+                    )}
 
                   {/* CONTINUE button */}
                   <button
@@ -1473,7 +1418,7 @@ export default function YourLessonPage() {
               </div>
             </div>
             <Button
-              onClick={() => router.push('/learn')}
+              onClick={() => router.push('/dark-psychology-dashboard')}
               className="w-full bg-[#58CC02] hover:bg-[#46A302] text-white font-bold py-4 md:py-6 text-base md:text-lg rounded-xl"
             >
               Continue Learning

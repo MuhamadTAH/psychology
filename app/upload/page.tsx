@@ -11,9 +11,9 @@ export default function UploadPage() {
   const router = useRouter();
 
   // 🚫 UPLOAD PAGE IS DISABLED
-  // Redirect users to learn page instead
+  // Redirect users to dark psychology dashboard instead
   useEffect(() => {
-    router.push("/learn");
+    router.push("/dark-psychology-dashboard");
   }, [router]);
 
   return (
@@ -27,10 +27,10 @@ export default function UploadPage() {
           The upload feature is currently disabled. You can start learning with the pre-loaded lessons.
         </p>
         <Button
-          onClick={() => router.push("/learn")}
+          onClick={() => router.push("/dark-psychology-dashboard")}
           className="bg-[#58CC02] hover:bg-[#46A302] text-white font-bold px-8 py-6"
         >
-          Go to Learn Page
+          Go to Dashboard
         </Button>
       </div>
     </div>

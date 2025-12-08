@@ -127,11 +127,11 @@ export default function AnimationTestPage() {
         {/* Navigation */}
         <div className="flex gap-4">
           <Button
-            onClick={() => router.push('/learn')}
+            onClick={() => router.push('/dark-psychology-dashboard')}
             variant="outline"
             className="flex-1 py-4 text-lg"
           >
-            ← Back to Learn
+            ← Back to Dashboard
           </Button>
           <Button
             onClick={() => router.push('/yourlesson')}

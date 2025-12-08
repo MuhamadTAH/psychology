@@ -1,21 +1,32 @@
 // 🧠 FILE PURPOSE
-// Homepage - redirects to Dark Psychology dashboard.
-// This is the entry point of the application.
+// Homepage - Smart routing for new vs returning users.
+// New users → Welcome page onboarding
+// Returning users → Dark Psychology dashboard
 
 "use client";
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { useUser } from "@clerk/nextjs";
 
 export default function Home() {
   const router = useRouter();
+  const { isLoaded, isSignedIn } = useUser();
 
-  // Step 1: Redirect to Dark Psychology dashboard
+  // Step 1: Check if user is new or returning
   useEffect(() => {
-    router.push("/dark-psychology-dashboard");
-  }, [router]);
+    if (!isLoaded) return; // Wait for Clerk to load
 
-  // Show loading while redirecting
+    if (!isSignedIn) {
+      // New user (not signed in) → Show welcome page
+      router.push("/welcome");
+    } else {
+      // Returning user (signed in) → Go to dashboard
+      router.push("/dark-psychology-dashboard");
+    }
+  }, [isLoaded, isSignedIn, router]);
+
+  // Show loading while checking authentication
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 flex items-center justify-center">
       <div className="text-center">
@@ -28,5 +39,6 @@ export default function Home() {
 }
 
 // ✅ In this page we achieved:
-// Homepage redirect to Dark Psychology dashboard.
-// Clean loading screen with branding.
+// Smart routing based on authentication status.
+// New users see welcome page, returning users see dashboard.
+// Works identically in PWA and mobile apps.

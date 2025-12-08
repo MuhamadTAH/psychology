@@ -81,7 +81,7 @@ export default function ShopPage() {
         <div className="max-w-4xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <Link
-              href="/learn"
+              href="/dark-psychology-dashboard"
               className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
             >
               <ArrowLeft className="w-5 h-5" />

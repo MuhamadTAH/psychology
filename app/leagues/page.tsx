@@ -346,7 +346,7 @@ export default function LeaguesPage() {
       {/* Bottom Navigation (Mobile Only) */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 bg-[#131F24] border-t border-gray-800 z-50 pb-safe">
         <div className="flex items-center justify-around p-3">
-          <button onClick={() => router.push('/learn')} className="p-2 text-gray-500 hover:text-gray-300">
+          <button onClick={() => router.push('/dark-psychology-dashboard')} className="p-2 text-gray-500 hover:text-gray-300">
             <Home className="w-6 h-6" />
           </button>
           <button className="p-2 text-[#58CC02]">
@@ -361,7 +361,7 @@ export default function LeaguesPage() {
       {/* Desktop Bottom Navigation (Hidden on Mobile) */}
       <div className="hidden md:block fixed bottom-0 left-0 right-0 bg-[#1F1F1F] shadow-2xl z-50">
         <div className="max-w-2xl mx-auto px-4 py-4 flex items-center justify-around">
-          <button onClick={() => router.push('/learn')} className="flex flex-col items-center gap-1 group hover:opacity-80">
+          <button onClick={() => router.push('/dark-psychology-dashboard')} className="flex flex-col items-center gap-1 group hover:opacity-80">
             <Home className="h-7 w-7 text-gray-500" />
           </button>
           <button className="flex flex-col items-center gap-1 group hover:opacity-80">

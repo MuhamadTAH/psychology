@@ -2,7 +2,7 @@ PROJECT ARCHITECTURE: DARK PSYCHOLOGY MASTERY
 
 Module: Onboarding & First Launch (The Induction)
 
-Version: 1.6 (Added Technical Animation Specs)
+Version: 1.7 (Added Tactical Pricing UI & Walk of Shame Logic)
 Tone: "Elite Leadership Training" (Public) / "Psychological Warfare" (Internal)
 Visual Theme: Dark Mode, High Contrast, Terminal/System Aesthetic.
 
@@ -267,7 +267,7 @@ If WRONG: Screen shakes/Red Text. "Incorrect. You missed the micro-aggression." 
 
 If CORRECT: White Text/Nod. "Correct. Duper's Delight." -> Auto-advance to Phase 3 after 2s.
 
-5. THE FLOW: PHASE 3 - THE COMMITMENT (Streak & Trial)
+5. THE FLOW: PHASE 3 - THE COMMITMENT (Streak & Pricing)
 
 Goal: Establish the "Discipline" loop and convert the user.
 
@@ -309,19 +309,65 @@ Options:
 
 System Note: This sets the notification permission prompt.
 
-Screen 5.2: The Clearance (The Paywall/Trial)
+Screen 5.2: The Clearance (The Paywall/Tactical Pricing)
 
-Visual: A Top Secret Folder with a "LOCKED" padlock icon.
+Visual: Top Secret Folder icon with "LOCKED" padlock.
 
 Headline: "CLEARANCE REQUIRED."
 
 Subtext: "Your profile indicates high aptitude for [Result from Q4.1]. Access to the advanced curriculum is restricted to Operatives."
 
-The Offer: "7-Day Field Test."
+The Card Container (Select One):
 
-Action: [ INITIALIZE 7-DAY FIELD TEST ] (Pulse Animation).
+Card A: The Hero (Founding Offer)
 
-Secondary Action: [ REMAIN CIVILIAN ] (Small, grey text - continues to restricted free version).
+State: Selected by default (Glowing White Border).
+
+Badge: [ FOUNDING OFFER: -75% ] (Green).
+
+Headline: 12 MONTH ASSIGNMENT
+
+Price: $59.99 / year (Strike-through ~~$239.99~~).
+
+Math: "That is $4.99 / month."
+
+Hook: "Includes 7-Day Field Test. You are not charged today."
+
+Card B: The Decoy (Mercenary)
+
+State: Dimmed (Grey Border).
+
+Headline: MONTHLY CONTRACT
+
+Price: $19.99 / month.
+
+Trap: No discount. High short-term cost.
+
+The Actions:
+
+Primary Button:
+
+If Annual Selected: [ INITIALIZE 7-DAY FIELD TEST ] (Pulse Animation).
+
+If Monthly Selected: [ INITIALIZE ACCESS ($19.99) ] (No Trial).
+
+Click Action: Trigger RevenueCat / In-App Purchase.
+
+Secondary Button: [ REMAIN CIVILIAN ] (Small, grey text).
+
+The Walk of Shame (Logic for 'Remain Civilian'):
+
+Trigger: User clicks "Remain Civilian."
+
+Visual: Screen dims Red. Strategist Glitches.
+
+Modal Text: "Warning: You are declining advanced weaponry. You will enter the field unprotected. Confirm?"
+
+Modal Buttons:
+
+[ GO BACK ] (Return to Paywall).
+
+[ I ACCEPT MEDIOCRITY ] (Proceed to restricted Free Tier).
 
 6. APP STORE SAFETY PROTOCOL (Camouflage)
 
@@ -339,13 +385,29 @@ Spec A: Screen 1.0 - "The Severed String"
 
 Style: Flat Vector Minimalist (Kurzgesagt Noir).
 
-Elements: A single white vertical line (The String) connected to a small puppet handle (top).
+Elements:
 
-Action: A sharp, invisible "cut" snaps the string in the middle. The bottom half falls away with physics (gravity).
+The Anchor (Top): A white "Puppet Control Cross" (looks like a fan/cross).
 
-Loop: Snap -> Fall -> Fade Out -> Reset.
+The String: A single vertical white line pulling tight against the anchor.
 
-Colors: String (#FFFFFF), Background (#000000). No blood, no hands. Just the string breaking.
+Action (The Snap):
+
+Frame 1: Static tension.
+
+Frame 2 (The Cut): Invisible blade hits center.
+
+The Reaction (Physics):
+
+Bottom Half: Curls and falls rapidly off-screen.
+
+Top Half: Recoils sharply UPWARD towards the Anchor.
+
+The Anchor: Jerks slightly upwards (releasing tension) and then stabilizes.
+
+Loop: Snap -> Fall/Recoil -> Fade Out -> Reset.
+
+Colors: String (#FFFFFF), Background (#000000).
 
 Spec B: Screen 2.0 - "The Kinetic Shield"
 

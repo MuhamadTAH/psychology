@@ -42,10 +42,10 @@ export default function OfflinePage() {
           </button>
 
           <a
-            href="/learn"
+            href="/dark-psychology-dashboard"
             className="block w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-xl transition-colors"
           >
-            Go to Learning
+            Go to Dashboard
           </a>
 
           <a

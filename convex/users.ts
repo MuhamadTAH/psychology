@@ -254,7 +254,34 @@ export const getFollowersCount = query({
   },
 });
 
-// Step 7: Search users by name or email
+// Step 9: Update user profile name
+// Updates the user's name in the database (persists across sessions)
+export const updateUserName = mutation({
+  args: {
+    name: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) throw new Error("Not authenticated");
+
+    // Get current user
+    const currentUser = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", identity.email!))
+      .first();
+
+    if (!currentUser) throw new Error("User not found");
+
+    // Update name in database
+    await ctx.db.patch(currentUser._id, {
+      name: args.name,
+    });
+
+    return { success: true, message: "Name updated successfully" };
+  },
+});
+
+// Step 10: Search users by name or email
 // Returns users matching the search query (case-insensitive)
 export const searchUsers = query({
   args: {

@@ -29,8 +29,8 @@ export default function DemoSentencePage() {
 
     try {
       await createMockLesson({ email: userEmail });
-      alert("Mock lesson created! Redirecting to learn page...");
-      router.push('/learn');
+      alert("Mock lesson created! Redirecting to dashboard...");
+      router.push('/dark-psychology-dashboard');
     } catch (error) {
       console.error("Error creating mock lesson:", error);
       alert("Failed to create mock lesson");
