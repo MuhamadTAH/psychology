@@ -11,36 +11,95 @@ import { Button } from "@/components/ui/button";
 import { Home, BookOpen, Brain, ChevronRight } from "lucide-react";
 import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import { DARK_PSYCHOLOGY_LESSONS, SECTIONS } from "@/lib/darkPsychologyLessons";
+import { SECTIONS } from "@/lib/darkPsychologyLessons";
 
 export default function DarkPsychologyPage() {
   const router = useRouter();
   const { user } = useUser();
   const userEmail = user?.primaryEmailAddress?.emailAddress;
 
-  // Load user progress
+  // Step 1: Load user progress
   const progress = useQuery(api.lessons.getUserProgress, userEmail ? { email: userEmail } : "skip");
 
-  // Step 1: Navigate to section page
+  // Step 2: Load all Dark Psychology lessons from database (same as section page)
+  const dbLessons = useQuery(api.lessons.getAllDarkPsychologyLessons);
+
+  // Step 3: Navigate to section page
   const goToSection = (sectionId: string) => {
     router.push(`/dark-psychology/section/${sectionId}`);
   };
 
-  // Step 2: Calculate section stats
+  // Step 4: Calculate section stats from database lessons
   const getSectionStats = (sectionId: string) => {
-    const lessons = DARK_PSYCHOLOGY_LESSONS.filter(l => (l.sectionId || l.section) === sectionId);
-    const completedLessons = lessons.filter(lesson =>
-      progress?.some(p => p.lessonNumber === lesson.number && p.isCompleted)
-    );
+    if (!dbLessons) return { total: 0, completed: 0, percentage: 0 };
+
+    // Filter database lessons for this section
+    const filteredLessons = dbLessons.filter(lesson => {
+      const lessonData = lesson.lessonJSON;
+      return (lessonData?.sectionId || lessonData?.section) === sectionId;
+    });
+
+    // Group by lessonId to count unique lessons (not parts)
+    const groupedLessonsMap = filteredLessons.reduce((acc, lesson) => {
+      const lessonData = lesson.lessonJSON;
+      const lessonId = lessonData.lessonId || lesson._id;
+
+      if (!acc[lessonId]) {
+        acc[lessonId] = {
+          lessonId,
+          parts: [],
+        };
+      }
+
+      acc[lessonId].parts.push({
+        partNumber: lessonData.lessonPart || 1,
+      });
+
+      return acc;
+    }, {} as Record<string, any>);
+
+    const uniqueLessons = Object.values(groupedLessonsMap);
+    const totalLessons = uniqueLessons.length;
+
+    // Count completed lessons (all parts must be completed)
+    let completedCount = 0;
+    for (const lesson of uniqueLessons) {
+      const totalParts = lesson.parts.length;
+      let completedParts = 0;
+
+      // Check each part
+      for (let partNum = 1; partNum <= totalParts; partNum++) {
+        const partKey = `${lesson.lessonId}-Part${partNum}`;
+        const partProgress = progress?.find(p => p.darkPsychLessonId === partKey);
+
+        if (partProgress?.isCompleted) {
+          completedParts++;
+        }
+      }
+
+      // Lesson is completed if ALL parts are completed
+      if (completedParts === totalParts) {
+        completedCount++;
+      }
+    }
 
     return {
-      total: lessons.length,
-      completed: completedLessons.length,
-      percentage: lessons.length > 0 ? Math.round((completedLessons.length / lessons.length) * 100) : 0
+      total: totalLessons,
+      completed: completedCount,
+      percentage: totalLessons > 0 ? Math.round((completedCount / totalLessons) * 100) : 0
     };
   };
 
   // ✅ Section navigation ready
+
+  // Step 5: Show loading state while database lessons are loading
+  if (!dbLessons) {
+    return (
+      <div className="min-h-screen bg-[#1F2937] flex items-center justify-center">
+        <div className="text-white text-xl">Loading sections...</div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-[#1F2937]">
@@ -142,7 +201,7 @@ export default function DarkPsychologyPage() {
         </div>
 
         {/* Empty State */}
-        {DARK_PSYCHOLOGY_LESSONS.length === 0 && (
+        {dbLessons && dbLessons.length === 0 && (
           <div className="text-center py-12 bg-gray-800 rounded-lg border border-gray-700 mt-8">
             <Brain className="h-16 w-16 text-gray-600 mx-auto mb-4" />
             <h2 className="text-xl font-bold text-white mb-2">No Lessons Yet</h2>
@@ -164,7 +223,10 @@ export default function DarkPsychologyPage() {
 
 // ✅ Dark Psychology main page complete:
 // - Displays 4 sections as clickable cards (A, B, C, D)
+// - Loads lessons from DATABASE (same as section pages) - now properly connected!
+// - Groups lessons by lessonId to count unique lessons (handles multi-part lessons)
 // - Shows lesson count and completion progress for each section
+// - Progress tracking: lesson completed only when ALL parts are done
 // - Clicking a section navigates to /dark-psychology/section/{sectionId}
 // - Progress bar shows completion percentage
-// - Empty state when no lessons exist
+// - Empty state when no lessons exist in database
