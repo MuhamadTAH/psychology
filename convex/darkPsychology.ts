@@ -486,7 +486,13 @@ export const checkAndUnlockAchievements = mutation({
         const existing = await ctx.db.query("darkPsychologyAchievements").withIndex("by_user_achievement", (q) => q.eq("email", args.email).eq("achievementId", achievement.id)).first();
         if (!existing) {
           await ctx.db.insert("darkPsychologyAchievements", { email: args.email, achievementId: achievement.id, achievementName: achievement.name, achievementDescription: achievement.description, achievementIcon: achievement.icon, unlockedAt: Date.now() });
-          newlyUnlocked.push(achievement);
+          // ✅ FIX: Only return serializable data (no functions)
+          newlyUnlocked.push({
+            id: achievement.id,
+            name: achievement.name,
+            description: achievement.description,
+            icon: achievement.icon,
+          });
         }
       }
     }
