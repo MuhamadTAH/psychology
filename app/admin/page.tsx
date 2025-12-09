@@ -5,6 +5,10 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
+import { useUser } from "@clerk/nextjs";
+import { useMutation } from "convex/react";
+import { api } from "@/convex/_generated/api";
 import {
   BookOpen,
   Upload,
@@ -15,7 +19,8 @@ import {
   MessageSquare,
   Edit3,
   RefreshCw,
-  Users
+  Users,
+  Trash2
 } from "lucide-react";
 
 // Step 1: Define admin page data structure
@@ -113,6 +118,31 @@ const adminPages: AdminCard[] = [
 ];
 
 export default function AdminDashboard() {
+  const { user } = useUser();
+  const userEmail = user?.primaryEmailAddress?.emailAddress || "";
+  const resetUserData = useMutation(api.darkPsychology.resetAllUserData);
+
+  const [isResetting, setIsResetting] = useState(false);
+  const [resetMessage, setResetMessage] = useState("");
+
+  const handleResetUserData = async () => {
+    if (!confirm("⚠️ WARNING: This will DELETE ALL your Dark Psychology data (progress, notes, bookmarks, achievements, etc.). This cannot be undone! Continue?")) {
+      return;
+    }
+
+    setIsResetting(true);
+    setResetMessage("");
+
+    try {
+      const result = await resetUserData({ email: userEmail });
+      setResetMessage(`✅ ${result.message}`);
+    } catch (error: any) {
+      setResetMessage(`❌ Error: ${error.message}`);
+    } finally {
+      setIsResetting(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Step 2: Create header section */}
@@ -204,6 +234,38 @@ export default function AdminDashboard() {
             <div className="bg-green-50 rounded-lg p-4">
               <p className="text-sm text-gray-600">Analytics & Data</p>
               <p className="text-2xl font-bold text-green-600">4 Tools</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Reset User Data Section */}
+        <div className="mt-8 bg-red-50 border-2 border-red-200 rounded-xl p-6">
+          <div className="flex items-start gap-4">
+            <div className="bg-red-100 p-3 rounded-lg">
+              <Trash2 className="w-6 h-6 text-red-600" />
+            </div>
+            <div className="flex-1">
+              <h3 className="text-lg font-bold text-red-900 mb-2">Reset Dark Psychology Data</h3>
+              <p className="text-sm text-red-700 mb-4">
+                Delete ALL your Dark Psychology data including progress, XP, notes, bookmarks, achievements, and power-ups.
+                This will completely reset your account as if you're a brand new user.
+              </p>
+              <button
+                onClick={handleResetUserData}
+                disabled={isResetting}
+                className={`px-6 py-3 rounded-lg font-bold transition-all ${
+                  isResetting
+                    ? "bg-gray-400 cursor-not-allowed"
+                    : "bg-red-600 hover:bg-red-700 text-white"
+                }`}
+              >
+                {isResetting ? "Resetting..." : "🗑️ Reset All My Data"}
+              </button>
+              {resetMessage && (
+                <p className={`mt-4 text-sm font-semibold ${resetMessage.startsWith("✅") ? "text-green-700" : "text-red-700"}`}>
+                  {resetMessage}
+                </p>
+              )}
             </div>
           </div>
         </div>

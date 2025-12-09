@@ -1,6 +1,6 @@
 // 🧠 FILE PURPOSE
 // Dark Psychology Dashboard - Complete learning hub with all features.
-// Shows progress, notes, bookmarks, search, review mode, and certificate.
+// ⚠️ MODIFIED: Progress/stats sections disabled to show clean first-time user experience.
 
 "use client";
 
@@ -38,39 +38,59 @@ export default function DarkPsychologyDashboard() {
   }, [isLoaded, user]);
 
   // Step 2: Load dashboard data only if user is authenticated
-  const dashboard = useQuery(
+  // ⚠️ DISABLED: Data queries still run but values are overridden to show 0/empty
+  const dashboardData = useQuery(
     api.darkPsychology.getDashboard,
     userEmail ? { email: userEmail } : "skip"
   );
-  const notes = useQuery(
+  const notesData = useQuery(
     api.darkPsychology.getNotes,
     userEmail ? { email: userEmail } : "skip"
   );
-  const bookmarks = useQuery(
+  const bookmarksData = useQuery(
     api.darkPsychology.getBookmarks,
     userEmail ? { email: userEmail } : "skip"
   );
-  const reviewQuestions = useQuery(
+  const reviewQuestionsData = useQuery(
     api.darkPsychology.getReviewQuestions,
     userEmail ? { email: userEmail } : "skip"
   );
-  const recommendations = useQuery(
+  const recommendationsData = useQuery(
     api.darkPsychology.getRecommendations,
     userEmail ? { email: userEmail } : "skip"
   );
   const updateStreak = useMutation(api.darkPsychology.updateDailyStreak);
 
+  // ⚠️ OVERRIDE: Force all data to show zero/empty (first-time user experience)
+  const dashboard = dashboardData ? {
+    ...dashboardData,
+    completedLessons: 0,
+    totalXP: 0,
+    accuracy: 0,
+    streak: 0,
+    reviewCount: 0,
+    notesCount: 0,
+    bookmarksCount: 0,
+    nextLesson: null,
+  } : dashboardData;
+
+  const notes: any[] = []; // Always empty
+  const bookmarks: any[] = []; // Always empty
+  const reviewQuestions: any[] = []; // Always empty
+  const recommendations: any[] = []; // Always empty
+
   const [activeTab, setActiveTab] = useState<"overview" | "notes" | "bookmarks" | "review">("overview");
   const [searchQuery, setSearchQuery] = useState("");
 
   // Step 3: Auto-update streak on dashboard load
-  useEffect(() => {
-    if (userEmail) {
-      updateStreak({ email: userEmail }).catch((error) => {
-        console.error("Failed to update streak:", error);
-      });
-    }
-  }, [userEmail]);
+  // ⚠️ DISABLED: Streak update disabled to maintain zero state
+  // useEffect(() => {
+  //   if (userEmail) {
+  //     updateStreak({ email: userEmail }).catch((error) => {
+  //       console.error("Failed to update streak:", error);
+  //     });
+  //   }
+  // }, [userEmail]);
 
   // Step 4: Show loading state while checking authentication or loading data
   if (!isLoaded || !user) {
@@ -314,19 +334,13 @@ export default function DarkPsychologyDashboard() {
               <h3 className="text-xl font-bold text-white mb-4">Quick Actions</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Link
-                  href={
-                    dashboard.nextLesson
-                      ? `/yourlesson?category=dark-psychology&lessonNumber=${dashboard.nextLesson.lessonNumber}&lessonId=${dashboard.nextLesson.lessonId}&part=${dashboard.nextLesson.nextPart}`
-                      : "/yourlesson?category=dark-psychology&lessonNumber=1"
-                  }
+                  href="/dark-psychology"
                   className="bg-gradient-to-r from-gray-700 to-gray-800 rounded-lg p-6 hover:from-gray-600 hover:to-gray-700 transition-all"
                 >
                   <Target className="w-8 h-8 text-white mb-2" />
-                  <h4 className="text-white font-bold text-lg mb-1">Continue Learning</h4>
+                  <h4 className="text-white font-bold text-lg mb-1">Start Learning</h4>
                   <p className="text-gray-300 text-sm">
-                    {dashboard.nextLesson
-                      ? `Lesson ${dashboard.nextLesson.lessonNumber}, Part ${dashboard.nextLesson.nextPart}`
-                      : "Start first lesson"}
+                    Browse sections and begin your journey
                   </p>
                 </Link>
                 <Link
@@ -335,7 +349,7 @@ export default function DarkPsychologyDashboard() {
                 >
                   <Clock className="w-8 h-8 text-white mb-2" />
                   <h4 className="text-white font-bold text-lg mb-1">Review Mode</h4>
-                  <p className="text-purple-200 text-sm">Practice {dashboard.reviewCount} questions</p>
+                  <p className="text-purple-200 text-sm">No questions to review yet</p>
                 </Link>
                 <Link
                   href="/dark-psychology-quiz"
@@ -375,7 +389,7 @@ export default function DarkPsychologyDashboard() {
                 >
                   <Flame className="w-8 h-8 text-white mb-2" />
                   <h4 className="text-white font-bold text-lg mb-1">Daily Streaks</h4>
-                  <p className="text-orange-200 text-sm">{dashboard.streak} day streak 🔥</p>
+                  <p className="text-orange-200 text-sm">Start your streak today!</p>
                 </Link>
                 <Link
                   href="/dark-psychology-shop"
@@ -481,7 +495,10 @@ export default function DarkPsychologyDashboard() {
 
 // ✅ In this page we achieved:
 // Complete Dark Psychology dashboard with all features in one place.
-// Progress tracking with visual progress bar and stats.
-// Tabbed interface for notes, bookmarks, and review questions.
-// Quick action buttons for all main features.
-// Certificate message when course is complete.
+// ⚠️ MODIFIED: All user data (XP, progress, notes, etc.) forced to 0/empty
+// - Shows UI exactly as a first-time user would see it
+// - All stats show 0: completedLessons, totalXP, accuracy, streak, reviewCount
+// - Notes, bookmarks, and review questions always empty
+// - AI recommendations disabled (always empty)
+// - "Continue Learning" changed to "Start Learning" → goes to sections page
+// - All visual elements preserved, only data values overridden

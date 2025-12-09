@@ -1074,4 +1074,102 @@ export const deleteAllLessonsInSection = mutation({
   },
 });
 
-// ✅ Complete backend with achievements system, streak rewards, power-ups shop, AI recommendations, and batch upload.
+// Step 24: Reset all Dark Psychology user data (delete all progress/notes/bookmarks for a user)
+export const resetAllUserData = mutation({
+  args: {
+    email: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) throw new Error("Not authenticated");
+
+    let deletedCount = 0;
+
+    // Delete all notes
+    const notes = await ctx.db
+      .query("darkPsychologyNotes")
+      .withIndex("by_user_lesson", (q) => q.eq("email", args.email))
+      .collect();
+    for (const note of notes) {
+      await ctx.db.delete(note._id);
+      deletedCount++;
+    }
+
+    // Delete all bookmarks
+    const bookmarks = await ctx.db
+      .query("darkPsychologyBookmarks")
+      .withIndex("by_user", (q) => q.eq("email", args.email))
+      .collect();
+    for (const bookmark of bookmarks) {
+      await ctx.db.delete(bookmark._id);
+      deletedCount++;
+    }
+
+    // Delete all review questions
+    const reviews = await ctx.db
+      .query("darkPsychologyReview")
+      .withIndex("by_user", (q) => q.eq("email", args.email))
+      .collect();
+    for (const review of reviews) {
+      await ctx.db.delete(review._id);
+      deletedCount++;
+    }
+
+    // Delete all achievements
+    const achievements = await ctx.db
+      .query("darkPsychologyAchievements")
+      .withIndex("by_user", (q) => q.eq("email", args.email))
+      .collect();
+    for (const achievement of achievements) {
+      await ctx.db.delete(achievement._id);
+      deletedCount++;
+    }
+
+    // Reset user's Dark Psychology related progress
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", args.email))
+      .first();
+
+    if (user) {
+      // Reset streak, gems, and other stats to 0
+      await ctx.db.patch(user._id, {
+        streak: 0,
+        gems: 0,
+        lastStreakDate: undefined,
+      });
+    }
+
+    // Delete all Dark Psychology lesson progress
+    if (user) {
+      const allProgress = await ctx.db
+        .query("progress")
+        .withIndex("by_userId", (q) => q.eq("userId", user._id))
+        .collect();
+
+      const darkPsychProgress = allProgress.filter((p) => p.darkPsychLessonId);
+      for (const progress of darkPsychProgress) {
+        await ctx.db.delete(progress._id);
+        deletedCount++;
+      }
+    }
+
+    // Delete all power-ups
+    const powerUps = await ctx.db
+      .query("powerUps")
+      .withIndex("by_user", (q) => q.eq("email", args.email))
+      .collect();
+    for (const powerUp of powerUps) {
+      await ctx.db.delete(powerUp._id);
+      deletedCount++;
+    }
+
+    return {
+      success: true,
+      message: `Reset complete! Deleted ${deletedCount} records for ${args.email}`,
+      deletedCount,
+    };
+  },
+});
+
+// ✅ Complete backend with achievements system, streak rewards, power-ups shop, AI recommendations, batch upload, and user data reset.
