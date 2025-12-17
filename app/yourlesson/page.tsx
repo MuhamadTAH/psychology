@@ -11,6 +11,8 @@ import { Button } from "@/components/ui/button";
 import { Check, X } from "lucide-react";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
+import { StreakBadgeWithFx } from "@/components/StreakBadgeWithFx";
+import { useStreakTimeline } from "@/lib/streakStateMachine";
 
 // Step 1: Define TypeScript interfaces for question types
 // These interfaces ensure type safety for all question data structures
@@ -84,10 +86,45 @@ export default function YourLessonPage() {
   const [wrongAnswers, setWrongAnswers] = useState<Array<{ questionIndex: number, question: string, userAnswer: string, correctAnswer: string }>>([]);
   const [wrongFlash, setWrongFlash] = useState(false);
 
+  // Step: Sound effects state
+  // Audio objects for playing sound effects during the lesson
+  const [soundEffects] = useState(() => {
+    if (typeof window === 'undefined') return {
+      startLesson: null,
+      changingExercise: null,
+      lessonComplete: null,
+      correctAnswer: null,
+      wrongAnswer: null,
+    };
+
+
+    return {
+      startLesson: new Audio('/sounds/start-lesson.mp3'),
+      changingExercise: new Audio('/sounds/changing-exercise.mp3'),
+      lessonComplete: new Audio('/sounds/lesson-complete.mp3'),
+      correctAnswer: new Audio('/sounds/correct-answer.mp3'),
+      wrongAnswer: new Audio('/sounds/wrong-answer.mp3'),
+    };
+  });
+
   // Get user email from localStorage
   const [userEmail, setUserEmail] = useState<string | null>(null);
   const [lessonCategory, setLessonCategory] = useState<string | null>(null);
   const [darkPsychLessonId, setDarkPsychLessonId] = useState<string | null>(null);
+
+  // Step: Video animation state for character
+  // This controls which part of the video plays based on user state
+  const [videoRef, setVideoRef] = useState<HTMLVideoElement | null>(null);
+  const [currentAnimation, setCurrentAnimation] = useState<'thinking' | 'correct' | 'wrong'>('thinking');
+
+  // Step: Streak badge celebration state
+  // Shows the streak badge overlay when user completes first lesson of the day
+  const [showStreakBadge, setShowStreakBadge] = useState(false);
+  const [celebrationStreak, setCelebrationStreak] = useState(0);
+
+  // Step: Exercise transition animation state
+  // Controls fade out and slide in animations when switching exercises
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   // Step 3: Load data from Convex backend
   // Query lessons and user stats from the database
@@ -105,6 +142,12 @@ export default function YourLessonPage() {
   const addXPMutation = useMutation(api.gamification.addXP);
   const updateStreakMutation = useMutation(api.gamification.updateStreak);
   const updateLessonProgressMutation = useMutation(api.lessons.updateLessonProgress);
+
+  // Step: Initialize streak timeline for badge celebration
+  const { triggerCelebrate, triggerMilestone } = useStreakTimeline(
+    userStats?.streak ?? 0,
+    'idle'
+  );
 
   // Step 4: Initialize lesson from localStorage
   // Get the current lesson number and user email
@@ -232,7 +275,6 @@ export default function YourLessonPage() {
   useEffect(() => {
     // Handle Dark Psychology lessons
     if (lessonCategory === 'dark-psychology' && darkPsychLessons && darkPsychLessonId) {
-      console.log('📚 [DARK PSYCH LESSON] Loading lesson with ID:', darkPsychLessonId);
 
       const lessonParts = darkPsychLessons.filter((l: any) => {
         const lessonData = l.lessonJSON || l.content;
@@ -240,7 +282,6 @@ export default function YourLessonPage() {
         return lessonId && lessonId === darkPsychLessonId;
       });
 
-      console.log(`📚 [DARK PSYCH LESSON] Found ${lessonParts.length} parts`);
 
       if (lessonParts.length > 0) {
         lessonParts.sort((a: any, b: any) => {
@@ -251,6 +292,12 @@ export default function YourLessonPage() {
 
         const combinedQuestions: QuizData[] = [];
 
+        // Step: Play start lesson sound when questions are loaded
+        // This plays only once when the lesson begins
+        if (soundEffects.startLesson && currentQuestionIndex === 0) {
+          soundEffects.startLesson.play().catch(() => {});
+        }
+
         lessonParts.forEach((part: any) => {
           const data = part.lessonJSON || part.content;
 
@@ -258,12 +305,10 @@ export default function YourLessonPage() {
             data.contentScreens.forEach((screen: any) => {
               if (screen.exercises && Array.isArray(screen.exercises)) {
                 screen.exercises.forEach((exercise: any, exerciseIndex: number) => {
-                  console.log(`📝 [EXERCISE DEBUG] Type: ${exercise.type}, Has steps: ${!!exercise.steps}`);
 
                   // Step: Handle micro-sim exercises specially
                   // Micro-sims have a "steps" array and use a different data structure
                   if (exercise.type === 'micro-sim' && Array.isArray(exercise.steps)) {
-                    console.log(`🎭 [MICRO-SIM] Loading with ${exercise.steps.length} steps`);
                     const microSimQuestion: QuizData = {
                       type: 'micro-sim',
                       question: '', // Not used for micro-sims
@@ -324,7 +369,6 @@ export default function YourLessonPage() {
           }
         });
 
-        console.log(`✅ [DARK PSYCH LESSON] Loaded ${combinedQuestions.length} total questions`);
         setAllQuestions(combinedQuestions);
         return;
       }
@@ -352,6 +396,61 @@ export default function YourLessonPage() {
   }, [lessons, currentLessonNumber, lessonCategory, darkPsychLessons, darkPsychLessonId]);
 
   const currentQuestion = allQuestions[currentQuestionIndex];
+
+  // Step 5.5: Control video animation based on state
+  // Play different segments of the video for thinking, correct, or wrong states
+  useEffect(() => {
+    if (!videoRef) return;
+
+    let isInitialized = false;
+
+    const handleTimeUpdate = () => {
+      if (!isInitialized) return; // Don't check until initial seek is done
+
+      if (currentAnimation === 'thinking') {
+        // Loop thinking animation (0 to 6.15s)
+        if (videoRef.currentTime >= 6.15) {
+          videoRef.currentTime = 0;
+        }
+      } else if (currentAnimation === 'correct') {
+        // Play correct animation once (19.15 to 22.12s)
+        if (videoRef.currentTime >= 22.12) {
+          videoRef.pause();
+          setCurrentAnimation('thinking');
+        }
+      } else if (currentAnimation === 'wrong') {
+        // Play wrong animation once (15.30 to 18.15s)
+        if (videoRef.currentTime >= 18.15) {
+          videoRef.pause();
+          setCurrentAnimation('thinking');
+        }
+      }
+    };
+
+    // Set initial time and play
+    const initializeAnimation = async () => {
+      if (currentAnimation === 'thinking') {
+        videoRef.currentTime = 0;
+      } else if (currentAnimation === 'correct') {
+        videoRef.currentTime = 19.15;
+      } else if (currentAnimation === 'wrong') {
+        videoRef.currentTime = 15.30;
+      }
+
+      // Wait a bit for the seek to complete, then mark as initialized
+      setTimeout(() => {
+        isInitialized = true;
+        videoRef.play();
+      }, 50);
+    };
+
+    initializeAnimation();
+    videoRef.addEventListener('timeupdate', handleTimeUpdate);
+
+    return () => {
+      videoRef.removeEventListener('timeupdate', handleTimeUpdate);
+    };
+  }, [currentAnimation, videoRef]);
 
   // Step 6: Shuffle definitions when question changes (for matching questions)
   // This prevents answers from being displayed in order
@@ -432,7 +531,7 @@ export default function YourLessonPage() {
     } else if (currentQuestion.type === 'fill-in-blank') {
       isCorrect = fillInAnswer.toLowerCase().trim() === currentQuestion.correctAnswer?.toLowerCase().trim();
       userAnswer = fillInAnswer;
-    } else if (currentQuestion.type === 'multiple-choice') {
+    } else if (currentQuestion.type === 'multiple-choice' || currentQuestion.type === 'scenario' || currentQuestion.type === 'true-false' || currentQuestion.type === 'reverse-scenario' || currentQuestion.type === 'boss-scenario' || currentQuestion.type === 'ethical-dilemma' || currentQuestion.type === 'case-analysis') {
       isCorrect = selectedAnswer === currentQuestion?.correctAnswer;
       userAnswer = selectedAnswer || '';
     } else if (currentQuestion.type === 'sentence-building' || currentQuestion.type === 'build-sentence') {
@@ -441,11 +540,21 @@ export default function YourLessonPage() {
       const correctSentence = currentQuestion.correctSentence?.toLowerCase().trim() || '';
       isCorrect = userSentence === correctSentence;
       userAnswer = selectedWords.join(' ');
+
+      // DEBUG: Log sentence building comparison
     }
 
     if (isCorrect) {
+      // Step: Play correct answer sound
+      // Positive audio feedback when user gets the answer right
+      if (soundEffects.correctAnswer) {
+        soundEffects.correctAnswer.play().catch(() => {});
+      }
+
       // Correct answer - add XP if first try and lesson not completed
       setCorrectAnswers(correctAnswers + 1);
+      // Trigger correct animation
+      setCurrentAnimation('correct');
 
       if (!hadWrongAttempt && !isLessonAlreadyCompleted()) {
         try {
@@ -457,8 +566,17 @@ export default function YourLessonPage() {
         }
       }
     } else {
+      // Step: Play wrong answer sound
+      // Negative audio feedback when user gets the answer wrong
+      if (soundEffects.wrongAnswer) {
+        soundEffects.wrongAnswer.volume = 1.0; // Full volume for wrong answers
+        soundEffects.wrongAnswer.play().catch(() => {});
+      }
+
       // Wrong answer - lose heart and XP
       setHadWrongAttempt(true);
+      // Trigger wrong animation
+      setCurrentAnimation('wrong');
 
       if (currentLessonNumber) {
         try {
@@ -526,24 +644,50 @@ export default function YourLessonPage() {
     }
 
     if (currentQuestionIndex < allQuestions.length - 1) {
-      // Move to next question
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setSelectedAnswer(null);
-      setFillInAnswer('');
-      setIsChecked(false);
-      setHadWrongAttempt(false);
-      // Reset matching states
-      setSelectedColumnA(null);
-      setMatchedPairs({});
-      setSelectedTerm(null);
-      setWrongMatch(null);
-      setShuffledDefinitions([]); // Will be re-shuffled by useEffect
-      // Reset sentence building states
-      setSelectedWords([]);
-      setAvailableWords([]); // Will be re-shuffled by useEffect
-      setDraggedWordIndex(null);
-      setDraggedAvailableIndex(null);
+      // Step: Start transition animation
+      // Fade out current exercise and prepare for slide in
+      setIsTransitioning(true);
+
+      // Step: Play changing exercise sound BEFORE moving to next question
+      // This makes it feel more immediate and responsive
+      if (soundEffects.changingExercise) {
+        soundEffects.changingExercise.play().catch(() => {});
+      }
+
+      // Wait for fade out animation to complete (300ms)
+      setTimeout(() => {
+        // Move to next question
+        setCurrentQuestionIndex(currentQuestionIndex + 1);
+        setSelectedAnswer(null);
+        setFillInAnswer('');
+        setIsChecked(false);
+        setHadWrongAttempt(false);
+        // Reset to thinking animation for next question
+        setCurrentAnimation('thinking');
+        // Reset matching states
+        setSelectedColumnA(null);
+        setMatchedPairs({});
+        setSelectedTerm(null);
+        setWrongMatch(null);
+        setShuffledDefinitions([]); // Will be re-shuffled by useEffect
+        // Reset sentence building states
+        setSelectedWords([]);
+        setAvailableWords([]); // Will be re-shuffled by useEffect
+        setDraggedWordIndex(null);
+        setDraggedAvailableIndex(null);
+
+        // End transition after slide in completes (300ms)
+        setTimeout(() => {
+          setIsTransitioning(false);
+        }, 300);
+      }, 300);
     } else {
+      // Step: Play lesson complete sound
+      // Celebration sound when user finishes all questions
+      if (soundEffects.lessonComplete) {
+        soundEffects.lessonComplete.play().catch(() => {});
+      }
+
       // Step 8a: Lesson completed - mark as completed and update streak
       // This unlocks the next lesson in the learning path
       try {
@@ -562,8 +706,28 @@ export default function YourLessonPage() {
             });
           }
 
-          // Update daily streak
-          await updateStreakMutation({ email: userEmail });
+          // Update daily streak and show celebration
+          const streakResult = await updateStreakMutation({ email: userEmail });
+
+          // Show streak badge celebration if this is first lesson today
+          if (streakResult && !streakResult.isToday) {
+            const newStreak = streakResult.streak;
+            setCelebrationStreak(newStreak);
+            setShowStreakBadge(true);
+
+            // Check if this is a milestone
+            const milestones = [5, 10, 15, 20, 25, 30];
+            if (milestones.includes(newStreak)) {
+              triggerMilestone(newStreak as 5 | 10 | 15 | 20 | 25 | 30);
+            } else {
+              triggerCelebrate();
+            }
+
+            // Auto-hide badge after animation completes
+            setTimeout(() => {
+              setShowStreakBadge(false);
+            }, 3000);
+          }
         }
       } catch (error) {
         console.error("Error completing lesson:", error);
@@ -626,8 +790,8 @@ export default function YourLessonPage() {
     return (
       <div className="min-h-screen bg-[#1F2937] flex items-center justify-center p-8">
         <div className="text-center max-w-2xl">
-          <h1 className="text-3xl font-bold text-white mb-4">Cat Animation Test</h1>
-          <p className="text-gray-400 mb-6">Testing the celebrating cat animation</p>
+          <h1 className="text-3xl font-bold text-white mb-4">No Lesson Loaded</h1>
+          <p className="text-gray-400 mb-6">Please select a lesson from the dashboard</p>
 
           {/* Cat Animation Video Player */}
           <div className="bg-[#1a2332] p-6 rounded-2xl border-2 border-gray-700 mb-6">
@@ -719,6 +883,29 @@ export default function YourLessonPage() {
   // This is the main UI that shows questions and answer options
   return (
     <div className={`min-h-screen relative transition-all ${wrongFlash ? 'bg-red-500/20' : 'bg-[#1F2937]'}`}>
+      {/* CSS for transition animations */}
+      <style jsx>{`
+        @keyframes fadeOut {
+          from { opacity: 1; }
+          to { opacity: 0; }
+        }
+        @keyframes slideInFromRight {
+          from {
+            opacity: 0;
+            transform: translateX(100%);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        .exercise-fade-out {
+          animation: fadeOut 0.3s ease-out forwards;
+        }
+        .exercise-slide-in {
+          animation: slideInFromRight 0.3s ease-out forwards;
+        }
+      `}</style>
       {/* Step 12a: Top Header - Matches plan.md design */}
       {/* X button, progress bar with XP display, hearts counter */}
       <div className="fixed top-0 left-0 right-0 bg-[#1F2937] z-50 border-b-2 border-gray-700">
@@ -779,25 +966,31 @@ export default function YourLessonPage() {
             const questionText = parsed.scene ? parsed.question : currentQuestion.question;
 
             return (
-              <div className="mb-6 md:mb-8">
+              <div className={`mb-6 md:mb-8 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
                 {/* Combat Title - Red and intense */}
                 <h2 className="text-xl md:text-2xl font-bold text-red-500 mb-6 md:mb-8 text-center">
                   ⚔️ Active Practice - Field Scenario
                 </h2>
 
-                {/* Villain Character with Speech Bubble */}
-                <div className="flex items-center gap-4 md:gap-6 mb-6 md:mb-8">
-                  {/* Villain Avatar - Red ring, dark background */}
-                  <div className="flex-shrink-0">
-                    <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full bg-[#1a0f0f] border-4 border-red-600 flex items-center justify-center shadow-2xl shadow-red-900/50">
-                      {/* Villain silhouette or icon */}
-                      <div className="text-6xl md:text-7xl">😈</div>
+                {/* Character Animation - Fixed position, doesn't affect layout */}
+                <div className="relative mb-6 md:mb-8">
+                  {/* Character Avatar - Floating on the left */}
+                  <div className="absolute -left-[50px] -top-30 z-10">
+                    <div className="w-48 h-48 md:w-96 md:h-96 rounded-2xl overflow-hidden bg-transparent">
+                      <video
+                        ref={(ref) => setVideoRef(ref)}
+                        className="w-full h-full object-contain"
+                        muted
+                        playsInline
+                      >
+                        <source src="/animations/character-standing.webm" type="video/webm" />
+                      </video>
                     </div>
                   </div>
 
-                  {/* Speech Bubble - Darker, more ominous */}
+                  {/* Speech Bubble - Has margin to avoid character overlap */}
                   {parsed.scene && (
-                    <div className="flex-1 relative">
+                    <div className="ml-52 md:ml-[230px] relative max-w-xl">
                       <div className="bg-[#2a1f1f] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-red-900/30 relative">
                         {/* Speech bubble pointer */}
                         <div className="absolute left-0 top-1/2 transform -translate-x-2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#2a1f1f]"></div>
@@ -822,26 +1015,39 @@ export default function YourLessonPage() {
           // Training Mode: Mentor/Brain icon, clean cards, lighter background
           if (uiMode === 'training') {
             return (
-              <div className="mb-6 md:mb-8">
+              <div className={`mb-6 md:mb-8 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
                 {/* Training Title - Blue and educational */}
                 <h2 className="text-xl md:text-2xl font-bold text-blue-400 mb-6 md:mb-8 text-center">
                   📚 Theory Learning - The Lab
                 </h2>
 
-                {/* Clean Card Layout with Mentor Icon */}
-                <div className="bg-[#1e2a3a] rounded-2xl p-6 md:p-8 border-2 border-blue-900/30 shadow-xl mb-8">
-                  {/* Mentor Icon at top */}
-                  <div className="flex justify-center mb-6">
-                    <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-blue-900/30 border-3 border-blue-500 flex items-center justify-center">
-                      <div className="text-4xl md:text-5xl">🧠</div>
+                {/* Character and Speech Bubble Layout */}
+                <div className="relative mb-6 md:mb-8">
+                  {/* Character Avatar - Floating on the left (space reserved for future character) */}
+                  <div className="absolute -left-[50px] -top-30 z-10">
+                    <div className="w-48 h-48 md:w-96 md:h-96 rounded-2xl overflow-hidden bg-transparent">
+                      {/* Character will be added here */}
                     </div>
                   </div>
 
-                  {/* Question text - centered, clean */}
-                  <div className="text-center">
-                    <p className="text-white text-lg md:text-xl font-semibold leading-relaxed">
-                      {renderTextWithBold(currentQuestion.question)}
-                    </p>
+                  {/* Speech Bubble - Has margin to avoid character overlap */}
+                  <div className="ml-52 md:ml-[230px] relative max-w-xl">
+                    <div className="bg-[#1e2a3a] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-blue-900/30 relative">
+                      {/* Speech bubble pointer pointing to character */}
+                      <div className="absolute left-0 top-1/2 transform -translate-x-2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#1e2a3a]"></div>
+
+                      {/* Brain Icon - Floating on the top right inside bubble */}
+                      <div className="absolute -top-3 -right-3 z-20">
+                        <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-blue-900/50 border-2 border-blue-500 flex items-center justify-center shadow-lg">
+                          <div className="text-xl md:text-2xl">🧠</div>
+                        </div>
+                      </div>
+
+                      {/* Question text - clean */}
+                      <p className="text-white text-base md:text-lg font-semibold leading-relaxed">
+                        {renderTextWithBold(currentQuestion.question)}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -851,7 +1057,7 @@ export default function YourLessonPage() {
           // Puzzle Mode: No avatar, full screen, minimal UI
           if (uiMode === 'puzzle') {
             return (
-              <div className="mb-6 md:mb-8">
+              <div className={`mb-6 md:mb-8 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
                 {/* Puzzle Title - Purple and pattern-focused */}
                 <h2 className="text-xl md:text-2xl font-bold text-purple-400 mb-6 md:mb-8 text-center">
                   🧩 Pattern Recognition Exercise
@@ -879,7 +1085,7 @@ export default function YourLessonPage() {
         {/* Step 14: Render Matching Question (Practice Style) */}
         {/* Show two columns: terms on left, definitions on right */}
         {currentQuestion.type === 'matching' && currentQuestion.pairs && (
-          <div className="space-y-4 md:space-y-6">
+          <div className={`space-y-4 md:space-y-6 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
             {/* Headers */}
             <div className="grid grid-cols-2 gap-4 md:gap-6 mb-2 md:mb-3">
               <p className="text-xs md:text-sm font-semibold text-gray-400 text-center">Terms</p>
@@ -992,7 +1198,7 @@ export default function YourLessonPage() {
         {/* Step 15: Render Fill-in-Blank Question with Word Buttons */}
         {/* This combines the sentence and word selection in one interface */}
         {currentQuestion.type === 'fill-in-blank' && currentQuestion.sentence && (
-          <div className="space-y-4 md:space-y-6">
+          <div className={`space-y-4 md:space-y-6 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
             <h3 className="text-lg md:text-2xl font-bold text-white mb-4 md:mb-6 text-center">
               Complete the sentence
             </h3>
@@ -1005,8 +1211,8 @@ export default function YourLessonPage() {
                     {i < arr.length - 1 && (
                       <span className="inline-flex items-center">
                         <span className={`mx-1 md:mx-2 px-3 md:px-4 py-1 md:py-2 rounded-lg border-2 font-semibold text-sm md:text-lg ${fillInAnswer
-                            ? 'bg-[#58CC02] border-[#46A302] text-white'
-                            : 'bg-gray-800 border-gray-600 text-gray-400'
+                          ? 'bg-[#58CC02] border-[#46A302] text-white'
+                          : 'bg-gray-800 border-gray-600 text-gray-400'
                           }`}>
                           {fillInAnswer || '___'}
                         </span>
@@ -1029,8 +1235,8 @@ export default function YourLessonPage() {
                       onClick={() => setFillInAnswer(option!)}
                       disabled={isChecked}
                       className={`p-3 md:p-4 rounded-lg md:rounded-xl border-2 md:border-4 text-sm md:text-base font-semibold transition-all ${fillInAnswer === option
-                          ? 'bg-[#1a2332] border-[#58CC02] text-[#58CC02] scale-105'
-                          : 'bg-[#1a2332] border-gray-600 hover:border-gray-500 text-white'
+                        ? 'bg-[#1a2332] border-[#58CC02] text-[#58CC02] scale-105'
+                        : 'bg-[#1a2332] border-gray-600 hover:border-gray-500 text-white'
                         } ${isChecked ? 'opacity-50 cursor-not-allowed' : ''}`}
                     >
                       {option}
@@ -1042,7 +1248,7 @@ export default function YourLessonPage() {
 
         {/* Step 15.5: Render Multiple Choice and Similar Question Types */}
         {['multiple-choice', 'scenario', 'fill-in', 'true-false', 'reverse-scenario', 'ethical-dilemma', 'boss-scenario', 'case-analysis'].includes(currentQuestion.type) && currentQuestion.options && (
-          <div className="space-y-4 md:space-y-6">
+          <div className={`space-y-4 md:space-y-6 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
             {/* Show image if present */}
             {currentQuestion.image && (
               <div className="flex justify-center mb-4 md:mb-6">
@@ -1066,12 +1272,12 @@ export default function YourLessonPage() {
                     onClick={() => !isChecked && setSelectedAnswer(option.id)}
                     disabled={isChecked}
                     className={`p-4 md:p-6 rounded-xl md:rounded-2xl border-2 md:border-4 transition-all flex items-center justify-center min-h-[100px] md:min-h-[120px] ${showCorrect
-                        ? "border-[#58CC02] bg-green-900/40 text-[#58CC02]"
-                        : showWrong
-                          ? "border-red-500 bg-[#1a2332] text-red-400"
-                          : isSelected
-                            ? "border-[#58CC02] bg-[#1a2332] text-[#58CC02] scale-105"
-                            : "border-gray-600 bg-[#1a2332] text-white hover:border-gray-500"
+                      ? "border-[#58CC02] bg-green-900/40 text-[#58CC02]"
+                      : showWrong
+                        ? "border-red-500 bg-[#1a2332] text-red-400"
+                        : isSelected
+                          ? "border-[#58CC02] bg-[#1a2332] text-[#58CC02] scale-105"
+                          : "border-gray-600 bg-[#1a2332] text-white hover:border-gray-500"
                       } ${!isChecked ? 'hover:scale-105 active:scale-95' : ''}`}
                   >
                     <span className="text-sm md:text-lg font-semibold text-center">
@@ -1084,10 +1290,45 @@ export default function YourLessonPage() {
           </div>
         )}
 
+        {/* Character Animation for Sentence Building Questions */}
+        {(currentQuestion.type === 'sentence-building' || currentQuestion.type === 'build-sentence') && currentQuestion.question && (
+          <div className={`mb-6 md:mb-8 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
+            {/* Character Animation - Fixed position, doesn't affect layout */}
+            <div className="relative mb-6 md:mb-8">
+              {/* Character Avatar - Floating on the left */}
+              <div className="absolute -left-[50px] -top-30 z-10">
+                <div className="w-48 h-48 md:w-96 md:h-96 rounded-2xl overflow-hidden bg-transparent">
+                  <video
+                    ref={(ref) => setVideoRef(ref)}
+                    className="w-full h-full object-contain"
+                    muted
+                    playsInline
+                  >
+                    <source src="/animations/character-standing.webm" type="video/webm" />
+                  </video>
+                </div>
+              </div>
+
+              {/* Speech Bubble - Has margin to avoid character overlap */}
+              <div className="ml-52 md:ml-[230px] relative max-w-xl">
+                <div className="bg-[#1a2332] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-gray-700 relative">
+                  {/* Speech bubble pointer */}
+                  <div className="absolute left-0 top-1/2 transform -translate-x-2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#1a2332]"></div>
+
+                  {/* Question text */}
+                  <p className="text-white text-base md:text-lg font-semibold leading-relaxed">
+                    {renderTextWithBold(currentQuestion.question)}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Step 15.7: Render Sentence Building Question - Individual Ghost Slots */}
         {/* Individual empty boxes for each word, showing exactly how many words needed */}
         {(currentQuestion.type === 'sentence-building' || currentQuestion.type === 'build-sentence') && currentQuestion.words && (
-          <div className="space-y-6 md:space-y-8">
+          <div className={`space-y-6 md:space-y-8 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
             {/* Ghost Slots - Individual boxes for each word */}
             <div className="flex flex-wrap gap-2 md:gap-3 justify-center items-center min-h-[100px]">
               {(() => {
@@ -1102,12 +1343,12 @@ export default function YourLessonPage() {
                     <div
                       key={index}
                       className={`min-w-[80px] md:min-w-[100px] h-12 md:h-14 rounded-xl border-2 flex items-center justify-center transition-all ${word
-                          ? isChecked
-                            ? selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim()
-                              ? 'bg-[#58CC02] border-[#46A302] text-white'
-                              : 'bg-red-500 border-red-700 text-white'
-                            : 'bg-white border-gray-300 text-gray-800'
-                          : 'border-dashed border-gray-600 bg-[#1a2332]'
+                        ? isChecked
+                          ? selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim()
+                            ? 'bg-[#58CC02] border-[#46A302] text-white'
+                            : 'bg-red-500 border-red-700 text-white'
+                          : 'bg-white border-gray-300 text-gray-800'
+                        : 'border-dashed border-gray-600 bg-[#1a2332]'
                         }`}
                       onDragOver={(e) => e.preventDefault()}
                       onDrop={(e) => {
@@ -1190,7 +1431,7 @@ export default function YourLessonPage() {
         {/* This is the alternative matching format with Column A and Column B */}
         {/* Each row contains one box from each column, aligned horizontally */}
         {currentQuestion.type === 'matching' && currentQuestion.columnA && currentQuestion.columnB && (
-          <div className="space-y-2 md:space-y-3">
+          <div className={`space-y-2 md:space-y-3 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
             {/* Column headers */}
             <div className="grid grid-cols-2 gap-3 md:gap-8 mb-2 md:mb-4">
               <h3 className="font-semibold text-white text-xs md:text-sm text-center">Column A</h3>
@@ -1214,8 +1455,8 @@ export default function YourLessonPage() {
                       <button
                         onClick={() => setSelectedColumnA(itemA.id)}
                         className={`w-full p-2 md:p-4 text-left rounded-lg border-2 transition-all text-xs md:text-base self-center ${selectedColumnA === itemA.id
-                            ? 'border-[#58CC02] bg-[#1a2332] text-[#58CC02]'
-                            : 'border-gray-600 hover:border-gray-500 bg-[#1a2332] text-white'
+                          ? 'border-[#58CC02] bg-[#1a2332] text-[#58CC02]'
+                          : 'border-gray-600 hover:border-gray-500 bg-[#1a2332] text-white'
                           }`}
                       >
                         <span className="font-semibold">{itemA.id}.</span> <span>{itemA.text}</span>
@@ -1234,8 +1475,8 @@ export default function YourLessonPage() {
                         }}
                         disabled={!selectedColumnA}
                         className={`w-full p-2 md:p-4 text-left rounded-lg border-2 transition-all text-xs md:text-base self-center ${!selectedColumnA
-                            ? 'border-gray-700 bg-[#1a2332] text-gray-500 cursor-not-allowed opacity-50'
-                            : 'border-gray-600 hover:border-[#58CC02] bg-[#1a2332] text-white cursor-pointer'
+                          ? 'border-gray-700 bg-[#1a2332] text-gray-500 cursor-not-allowed opacity-50'
+                          : 'border-gray-600 hover:border-[#58CC02] bg-[#1a2332] text-white cursor-pointer'
                           }`}
                       >
                         <span className="font-semibold">{itemB.id})</span> <span>{itemB.text}</span>
@@ -1423,6 +1664,27 @@ export default function YourLessonPage() {
             >
               Continue Learning
             </Button>
+          </div>
+        </div>
+      )}
+
+      {/* Streak Badge Celebration Overlay */}
+      {showStreakBadge && (
+        <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[150] pointer-events-none">
+          <div className="flex flex-col items-center gap-4">
+            <StreakBadgeWithFx
+              streakCount={celebrationStreak}
+              triggerType="onUpdate"
+              size={160}
+            />
+            <div className="text-white text-2xl font-bold text-center">
+              {celebrationStreak} Day Streak!
+              {[5, 10, 15, 20, 25, 30].includes(celebrationStreak) && (
+                <div className="text-yellow-400 text-lg mt-2">
+                  🎉 Milestone Achieved! 🎉
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}

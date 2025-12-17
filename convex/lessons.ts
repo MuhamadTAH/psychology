@@ -686,76 +686,22 @@ export const initializeDemoLessonsForUser = mutation({
 export const getAllDarkPsychologyLessons = query({
   args: {},
   handler: async (ctx) => {
-    console.log('═══════════════════════════════════════════════════════');
-    console.log('🟢 [CONVEX QUERY] getAllDarkPsychologyLessons CALLED');
-    console.log('🟢 [CONVEX QUERY] Timestamp:', new Date().toISOString());
-    console.log('═══════════════════════════════════════════════════════');
-
     try {
       // Step 1: Get system user
-      console.log('🔍 [STEP 1] Searching for system user (system@duolearn.com)...');
       const systemUser = await ctx.db
         .query("users")
         .withIndex("by_email", (q) => q.eq("email", "system@duolearn.com"))
         .first();
 
       if (!systemUser) {
-        console.log('🔴 [ERROR] System user not found!');
-        console.log('🔴 [ERROR] Cannot fetch lessons without system user');
-
-        // Try to get ALL users to debug
-        const allUsers = await ctx.db.query("users").collect();
-        console.log('🔍 [DEBUG] Total users in database:', allUsers.length);
-        allUsers.forEach((user, i) => {
-          console.log(`🔍 [DEBUG] User ${i + 1}:`, {
-            id: user._id,
-            email: user.email,
-            name: user.name,
-          });
-        });
-
         return [];
       }
 
-      console.log('✅ [STEP 1] System user found!');
-      console.log('✅ [SYSTEM USER]', {
-        _id: systemUser._id,
-        email: systemUser.email,
-        name: systemUser.name,
-      });
-
       // Step 2: Get all lessons created by system user
-      console.log('🔍 [STEP 2] Fetching all lessons for system user...');
       const lessons = await ctx.db
         .query("lessons")
         .withIndex("by_userId", (q) => q.eq("userId", systemUser._id))
         .collect();
-
-      console.log('✅ [STEP 2] Query completed!');
-      console.log('✅ [RESULT] Found', lessons.length, 'lessons for system user');
-
-      if (lessons.length === 0) {
-        console.log('⚠️ [WARNING] No lessons found for system user!');
-        console.log('⚠️ [WARNING] System user has 0 lessons in database');
-      } else {
-        console.log('📚 [LESSONS] Listing all lessons:');
-        lessons.forEach((lesson, i) => {
-          const data = lesson.lessonJSON;
-          console.log(`📄 [LESSON ${i + 1}/${lessons.length}]`, {
-            dbId: lesson._id,
-            title: lesson.title,
-            sectionId: data?.sectionId,
-            unitId: data?.unitId,
-            lessonId: data?.lessonId,
-            lessonPart: data?.lessonPart,
-            lessonTitle: data?.lessonTitle,
-          });
-        });
-      }
-
-      console.log('═══════════════════════════════════════════════════════');
-      console.log('✅ [CONVEX QUERY] Returning', lessons.length, 'lessons');
-      console.log('═══════════════════════════════════════════════════════');
 
       // Step 3: Return lesson data with fields at BOTH top level AND in lessonJSON
       // Top level: For edit page (expects lesson.lessonId directly)
@@ -767,9 +713,6 @@ export const getAllDarkPsychologyLessons = query({
         lessonJSON: lesson.lessonJSON, // Keep original nested structure for backward compatibility
       }));
     } catch (error) {
-      console.log('🔴🔴🔴 [FATAL ERROR] Exception in getAllDarkPsychologyLessons 🔴🔴🔴');
-      console.log('🔴 [ERROR]', error);
-      console.log('🔴 [ERROR] Stack:', error instanceof Error ? error.stack : 'No stack trace');
       throw error;
     }
   },
