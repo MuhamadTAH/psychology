@@ -284,8 +284,14 @@ export default function YourLessonPage() {
   // Step 5: Load and combine all questions from lesson data
   // Merge practice and quiz questions into one continuous array
   useEffect(() => {
+    console.log('🔄 [LESSON LOADER] useEffect triggered');
+    console.log('📋 [LESSON LOADER] lessonCategory:', lessonCategory);
+    console.log('📋 [LESSON LOADER] darkPsychLessonId:', darkPsychLessonId);
+    console.log('📋 [LESSON LOADER] currentLessonNumber:', currentLessonNumber);
+
     // Handle Dark Psychology lessons
     if (lessonCategory === 'dark-psychology' && darkPsychLessons && darkPsychLessonId) {
+      console.log('🎯 [DARK PSYCH] Loading Dark Psychology lesson...');
 
       const lessonParts = darkPsychLessons.filter((l: any) => {
         const lessonData = l.lessonJSON || l.content;
@@ -293,6 +299,7 @@ export default function YourLessonPage() {
         return lessonId && lessonId === darkPsychLessonId;
       });
 
+      console.log('📦 [DARK PSYCH] Found lesson parts:', lessonParts.length);
 
       if (lessonParts.length > 0) {
         lessonParts.sort((a: any, b: any) => {
@@ -309,17 +316,25 @@ export default function YourLessonPage() {
           soundEffects.startLesson.play().catch(() => { });
         }
 
-        lessonParts.forEach((part: any) => {
+        lessonParts.forEach((part: any, partIndex: number) => {
           const data = part.lessonJSON || part.content;
+          console.log(`📄 [PART ${partIndex + 1}] Processing part ${data?.lessonPart || partIndex + 1}`);
 
           if (data?.contentScreens && Array.isArray(data.contentScreens)) {
-            data.contentScreens.forEach((screen: any) => {
+            console.log(`📺 [PART ${partIndex + 1}] Found ${data.contentScreens.length} content screens`);
+
+            data.contentScreens.forEach((screen: any, screenIndex: number) => {
               if (screen.exercises && Array.isArray(screen.exercises)) {
+                console.log(`📝 [SCREEN ${screenIndex + 1}] Found ${screen.exercises.length} exercises`);
+
                 screen.exercises.forEach((exercise: any, exerciseIndex: number) => {
+                  console.log(`🎯 [EXERCISE ${exerciseIndex + 1}] Type: "${exercise.type}", Question: "${exercise.question?.substring(0, 50)}..."`);
+                  console.log(`📋 [EXERCISE ${exerciseIndex + 1}] Full exercise data:`, JSON.stringify(exercise, null, 2));
 
                   // Step: Handle micro-sim exercises specially
                   // Micro-sims have a "steps" array and use a different data structure
                   if (exercise.type === 'micro-sim' && Array.isArray(exercise.steps)) {
+                    console.log(`✅ [EXERCISE ${exerciseIndex + 1}] Adding micro-sim with ${exercise.steps.length} steps`);
                     const microSimQuestion: QuizData = {
                       type: 'micro-sim',
                       question: '', // Not used for micro-sims
@@ -343,6 +358,8 @@ export default function YourLessonPage() {
                     )
                     : [];
 
+                  console.log(`🔢 [EXERCISE ${exerciseIndex + 1}] Formatted ${formattedOptions.length} options`);
+
                   const correctAnswerText = exercise.correct || exercise.correctAnswer;
                   const correctAnswerId = formattedOptions.find((opt: any) => opt.text === correctAnswerText)?.id || correctAnswerText;
 
@@ -354,11 +371,16 @@ export default function YourLessonPage() {
                         pairsObject![pair.term] = pair.definition;
                       }
                     });
+                    console.log(`🧩 [EXERCISE ${exerciseIndex + 1}] Created matching pairs: ${Object.keys(pairsObject).length} pairs`);
                   }
 
                   const wordsArray = exercise.type === 'build-sentence' && Array.isArray(exercise.words)
                     ? exercise.words
                     : undefined;
+
+                  if (wordsArray) {
+                    console.log(`📝 [EXERCISE ${exerciseIndex + 1}] Sentence building with ${wordsArray.length} words`);
+                  }
 
                   const standardQuestion: QuizData = {
                     type: exercise.type || 'multiple-choice',
@@ -371,14 +393,28 @@ export default function YourLessonPage() {
                     correctSentence: exercise.type === 'build-sentence' ? correctAnswerText : undefined,
                   };
 
-                  if (standardQuestion.question || pairsObject || wordsArray) {
+                  // Check if question should be added
+                  const shouldAdd = standardQuestion.question || pairsObject || wordsArray;
+
+                  if (shouldAdd) {
+                    console.log(`✅ [EXERCISE ${exerciseIndex + 1}] ADDED to lesson (Type: ${exercise.type})`);
                     combinedQuestions.push(standardQuestion);
+                  } else {
+                    console.log(`❌ [EXERCISE ${exerciseIndex + 1}] SKIPPED - No question text, pairs, or words`);
                   }
                 });
               }
             });
           }
         });
+
+        console.log(`🎉 [DARK PSYCH] Total questions loaded: ${combinedQuestions.length}`);
+        console.log('📊 [DARK PSYCH] Question types breakdown:',
+          combinedQuestions.reduce((acc: any, q) => {
+            acc[q.type || 'unknown'] = (acc[q.type || 'unknown'] || 0) + 1;
+            return acc;
+          }, {})
+        );
 
         setAllQuestions(combinedQuestions);
         return;
@@ -387,21 +423,37 @@ export default function YourLessonPage() {
 
     // Handle regular lessons
     if (lessons && currentLessonNumber && lessonCategory !== 'dark-psychology') {
+      console.log('📚 [REGULAR LESSON] Loading regular lesson...');
       const lesson = lessons.find(l => l.lessonNumber === currentLessonNumber);
+
       if (lesson) {
+        console.log('✅ [REGULAR LESSON] Found lesson:', lesson.title || 'Untitled');
         const data = lesson.lessonJSON || lesson.content;
         const combinedQuestions = [];
 
         if (data?.practice && data.practice.length > 0) {
+          console.log(`📝 [REGULAR LESSON] Adding ${data.practice.length} practice questions`);
           combinedQuestions.push(...data.practice);
         }
 
         if (data?.quiz && data.quiz.length > 0) {
+          console.log(`🎯 [REGULAR LESSON] Found ${data.quiz.length} quiz questions`);
+          console.log('🔍 [REGULAR LESSON] Quiz question types BEFORE filter:',
+            data.quiz.map((q: QuizData) => q.type)
+          );
+
           const filteredQuiz = data.quiz.filter((q: QuizData) => q.type !== 'true-false');
+
+          console.log(`⚠️ [REGULAR LESSON] FILTERED OUT ${data.quiz.length - filteredQuiz.length} true-false questions`);
+          console.log(`✅ [REGULAR LESSON] Adding ${filteredQuiz.length} quiz questions (after filtering)`);
+
           combinedQuestions.push(...filteredQuiz);
         }
 
+        console.log(`🎉 [REGULAR LESSON] Total questions loaded: ${combinedQuestions.length}`);
         setAllQuestions(combinedQuestions);
+      } else {
+        console.log('❌ [REGULAR LESSON] Lesson not found for number:', currentLessonNumber);
       }
     }
   }, [lessons, currentLessonNumber, lessonCategory, darkPsychLessons, darkPsychLessonId]);

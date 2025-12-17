@@ -11,6 +11,7 @@ import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, Flame, Award, Zap, Clock, TrendingUp } from "lucide-react";
 import { useEffect, useState } from "react";
+import { StreakBadgeWithFx } from "@/components/StreakBadgeWithFx";
 
 export default function DarkPsychologyStreaks() {
   const router = useRouter();
@@ -71,16 +72,13 @@ export default function DarkPsychologyStreaks() {
         {/* Current Streak Display */}
         <div className="bg-gradient-to-br from-orange-500/10 to-red-500/10 rounded-xl border-2 border-orange-500/30 p-8 mb-8">
           <div className="flex flex-col items-center">
-            {/* Animated Flame */}
+            {/* Animated Streak Badge */}
             <div className="relative mb-6">
-              <Flame
-                className={`w-32 h-32 text-orange-400 ${
-                  streakData.currentStreak > 0 ? "animate-pulse" : "opacity-50"
-                }`}
+              <StreakBadgeWithFx
+                streakCount={streakData.currentStreak}
+                triggerType="onView"
+                size={160}
               />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-white font-bold text-4xl">{streakData.currentStreak}</span>
-              </div>
             </div>
 
             <h2 className="text-white text-4xl font-bold mb-2">

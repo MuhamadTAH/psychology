@@ -480,23 +480,25 @@ export const checkAndUnlockAchievements = mutation({
       { id: "all_complete", name: "Psychology Master", description: "Complete all lessons", icon: "🏆", check: () => new Set(darkPsychProgress.filter((p) => p.isCompleted).map((p) => p.darkPsychLessonId)).size >= 6 },
     ];
 
-    const newlyUnlocked = [];
+    const newlyUnlocked: Array<{ id: string; name: string; description: string; icon: string }> = [];
     for (const achievement of achievements) {
       if (achievement.check()) {
         const existing = await ctx.db.query("darkPsychologyAchievements").withIndex("by_user_achievement", (q) => q.eq("email", args.email).eq("achievementId", achievement.id)).first();
         if (!existing) {
           await ctx.db.insert("darkPsychologyAchievements", { email: args.email, achievementId: achievement.id, achievementName: achievement.name, achievementDescription: achievement.description, achievementIcon: achievement.icon, unlockedAt: Date.now() });
           // ✅ FIX: Only return serializable data (no functions)
-          newlyUnlocked.push({
-            id: achievement.id,
-            name: achievement.name,
-            description: achievement.description,
-            icon: achievement.icon,
-          });
+          // Create a clean object with only the required properties
+          const unlockedAchievement = {
+            id: String(achievement.id),
+            name: String(achievement.name),
+            description: String(achievement.description),
+            icon: String(achievement.icon),
+          };
+          newlyUnlocked.push(unlockedAchievement);
         }
       }
     }
-    return { newlyUnlocked };
+    return { newlyUnlocked: newlyUnlocked };
   },
 });
 
