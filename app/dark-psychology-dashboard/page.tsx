@@ -82,6 +82,16 @@ export default function DarkPsychologyDashboard() {
   const [activeTab, setActiveTab] = useState<"overview" | "notes" | "bookmarks" | "review">("overview");
   const [searchQuery, setSearchQuery] = useState("");
 
+  // Step: Play click sound for UI interactions
+  // Adds satisfying audio feedback when navigating the dashboard
+  const playClickSound = () => {
+    if (typeof window !== 'undefined') {
+      const clickSound = new Audio('/sounds/button-click.mp3');
+      clickSound.volume = 0.5;
+      clickSound.play().catch(() => {});
+    }
+  };
+
   // Step 3: Auto-update streak on dashboard load
   // ⚠️ DISABLED: Streak update disabled to maintain zero state
   // useEffect(() => {
@@ -282,7 +292,10 @@ export default function DarkPsychologyDashboard() {
         {/* Tab Navigation */}
         <div className="mb-8 flex gap-2 overflow-x-auto pb-2">
           <button
-            onClick={() => setActiveTab("overview")}
+            onClick={() => {
+              playClickSound();
+              setActiveTab("overview");
+            }}
             className={`px-6 py-3 rounded-lg font-semibold whitespace-nowrap transition-all ${
               activeTab === "overview"
                 ? "bg-purple-600 text-white"
@@ -293,7 +306,10 @@ export default function DarkPsychologyDashboard() {
             Overview
           </button>
           <button
-            onClick={() => setActiveTab("notes")}
+            onClick={() => {
+              playClickSound();
+              setActiveTab("notes");
+            }}
             className={`px-6 py-3 rounded-lg font-semibold whitespace-nowrap transition-all ${
               activeTab === "notes"
                 ? "bg-purple-600 text-white"
@@ -304,7 +320,10 @@ export default function DarkPsychologyDashboard() {
             Notes ({dashboard.notesCount})
           </button>
           <button
-            onClick={() => setActiveTab("bookmarks")}
+            onClick={() => {
+              playClickSound();
+              setActiveTab("bookmarks");
+            }}
             className={`px-6 py-3 rounded-lg font-semibold whitespace-nowrap transition-all ${
               activeTab === "bookmarks"
                 ? "bg-purple-600 text-white"
@@ -315,7 +334,10 @@ export default function DarkPsychologyDashboard() {
             Bookmarks ({dashboard.bookmarksCount})
           </button>
           <button
-            onClick={() => setActiveTab("review")}
+            onClick={() => {
+              playClickSound();
+              setActiveTab("review");
+            }}
             className={`px-6 py-3 rounded-lg font-semibold whitespace-nowrap transition-all ${
               activeTab === "review"
                 ? "bg-purple-600 text-white"

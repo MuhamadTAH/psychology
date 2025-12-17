@@ -24,8 +24,19 @@ export default function DarkPsychologyPage() {
   // Step 2: Load all Dark Psychology lessons from database (same as section page)
   const dbLessons = useQuery(api.lessons.getAllDarkPsychologyLessons);
 
+  // Step: Play click sound for button interactions
+  // Adds satisfying audio feedback when clicking buttons
+  const playClickSound = () => {
+    if (typeof window !== 'undefined') {
+      const clickSound = new Audio('/sounds/button-click.mp3');
+      clickSound.volume = 0.5;
+      clickSound.play().catch(() => {});
+    }
+  };
+
   // Step 3: Navigate to section page
   const goToSection = (sectionId: string) => {
+    playClickSound();
     router.push(`/dark-psychology/section/${sectionId}`);
   };
 
@@ -113,7 +124,10 @@ export default function DarkPsychologyPage() {
           <div className="flex items-center gap-4">
             <Button
               variant="outline"
-              onClick={() => router.push("/admin/add-dark-psychology-lesson")}
+              onClick={() => {
+                playClickSound();
+                router.push("/admin/add-dark-psychology-lesson");
+              }}
               className="flex items-center gap-2"
             >
               <BookOpen className="h-4 w-4" />
@@ -121,7 +135,10 @@ export default function DarkPsychologyPage() {
             </Button>
             <Button
               variant="outline"
-              onClick={() => router.push("/dark-psychology-dashboard")}
+              onClick={() => {
+                playClickSound();
+                router.push("/dark-psychology-dashboard");
+              }}
               className="flex items-center gap-2"
             >
               <Home className="h-4 w-4" />
@@ -209,7 +226,10 @@ export default function DarkPsychologyPage() {
               Dark Psychology lessons will appear here once they are added.
             </p>
             <Button
-              onClick={() => router.push("/admin/add-dark-psychology-lesson")}
+              onClick={() => {
+                playClickSound();
+                router.push("/admin/add-dark-psychology-lesson");
+              }}
               className="bg-purple-600 hover:bg-purple-700"
             >
               Add First Lesson

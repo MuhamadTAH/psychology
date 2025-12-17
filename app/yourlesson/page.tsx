@@ -11,8 +11,15 @@ import { Button } from "@/components/ui/button";
 import { Check, X } from "lucide-react";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import { StreakBadgeWithFx } from "@/components/StreakBadgeWithFx";
+import { StreakBadge } from "@/components/StreakBadge";
 import { useStreakTimeline } from "@/lib/streakStateMachine";
+import { getStreakTier } from "@/lib/streakFxConfig";
+import { GlowPulse } from "@/components/streak-fx/GlowPulse";
+import { ShineSweep } from "@/components/streak-fx/ShineSweep";
+import { SparkleParticles } from "@/components/streak-fx/SparkleParticles";
+import { RingPing } from "@/components/streak-fx/RingPing";
+import { AuraHalo } from "@/components/streak-fx/AuraHalo";
+import { MilestoneAnimation } from "@/components/MilestoneAnimation";
 
 // Step 1: Define TypeScript interfaces for question types
 // These interfaces ensure type safety for all question data structures
@@ -144,10 +151,14 @@ export default function YourLessonPage() {
   const updateLessonProgressMutation = useMutation(api.lessons.updateLessonProgress);
 
   // Step: Initialize streak timeline for badge celebration
-  const { triggerCelebrate, triggerMilestone } = useStreakTimeline(
-    userStats?.streak ?? 0,
+  // Use celebrationStreak when showing badge, otherwise use current streak
+  const { timeline, triggerCelebrate, triggerMilestone } = useStreakTimeline(
+    celebrationStreak || userStats?.streak || 0,
     'idle'
   );
+
+  // Get tier config for the celebration streak
+  const celebrationTierConfig = getStreakTier(celebrationStreak || 0);
 
   // Step 4: Initialize lesson from localStorage
   // Get the current lesson number and user email
@@ -295,7 +306,7 @@ export default function YourLessonPage() {
         // Step: Play start lesson sound when questions are loaded
         // This plays only once when the lesson begins
         if (soundEffects.startLesson && currentQuestionIndex === 0) {
-          soundEffects.startLesson.play().catch(() => {});
+          soundEffects.startLesson.play().catch(() => { });
         }
 
         lessonParts.forEach((part: any) => {
@@ -548,7 +559,7 @@ export default function YourLessonPage() {
       // Step: Play correct answer sound
       // Positive audio feedback when user gets the answer right
       if (soundEffects.correctAnswer) {
-        soundEffects.correctAnswer.play().catch(() => {});
+        soundEffects.correctAnswer.play().catch(() => { });
       }
 
       // Correct answer - add XP if first try and lesson not completed
@@ -562,7 +573,7 @@ export default function YourLessonPage() {
             await addXPMutation({ amount: 5, email: userEmail });
           }
         } catch (error) {
-          console.error("Error adding XP:", error);
+          // Error adding XP
         }
       }
     } else {
@@ -570,7 +581,7 @@ export default function YourLessonPage() {
       // Negative audio feedback when user gets the answer wrong
       if (soundEffects.wrongAnswer) {
         soundEffects.wrongAnswer.volume = 1.0; // Full volume for wrong answers
-        soundEffects.wrongAnswer.play().catch(() => {});
+        soundEffects.wrongAnswer.play().catch(() => { });
       }
 
       // Wrong answer - lose heart and XP
@@ -585,7 +596,7 @@ export default function YourLessonPage() {
             await loseHeartMutation({ lessonId: lesson._id, email: userEmail });
           }
         } catch (error) {
-          console.error("Error losing heart:", error);
+          // Error losing heart
         }
       }
 
@@ -594,7 +605,7 @@ export default function YourLessonPage() {
           await addXPMutation({ amount: -5, email: userEmail });
         }
       } catch (error) {
-        console.error("Error subtracting XP:", error);
+        // Error subtracting XP
       }
 
       // Track wrong answer for reinforcement
@@ -651,7 +662,7 @@ export default function YourLessonPage() {
       // Step: Play changing exercise sound BEFORE moving to next question
       // This makes it feel more immediate and responsive
       if (soundEffects.changingExercise) {
-        soundEffects.changingExercise.play().catch(() => {});
+        soundEffects.changingExercise.play().catch(() => { });
       }
 
       // Wait for fade out animation to complete (300ms)
@@ -679,13 +690,13 @@ export default function YourLessonPage() {
         // End transition after slide in completes (300ms)
         setTimeout(() => {
           setIsTransitioning(false);
-        }, 300);
+        }, 200);
       }, 300);
     } else {
       // Step: Play lesson complete sound
       // Celebration sound when user finishes all questions
       if (soundEffects.lessonComplete) {
-        soundEffects.lessonComplete.play().catch(() => {});
+        soundEffects.lessonComplete.play().catch(() => { });
       }
 
       // Step 8a: Lesson completed - mark as completed and update streak
@@ -730,7 +741,7 @@ export default function YourLessonPage() {
           }
         }
       } catch (error) {
-        console.error("Error completing lesson:", error);
+        // Error completing lesson
       }
 
       setShowFinalScore(true);
@@ -757,7 +768,7 @@ export default function YourLessonPage() {
           try {
             addXPMutation({ amount: 5, email: userEmail });
           } catch (error) {
-            console.error("Error adding XP:", error);
+            // Error adding XP
           }
         }
 
@@ -966,16 +977,10 @@ export default function YourLessonPage() {
             const questionText = parsed.scene ? parsed.question : currentQuestion.question;
 
             return (
-              <div className={`mb-6 md:mb-8 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
-                {/* Combat Title - Red and intense */}
-                <h2 className="text-xl md:text-2xl font-bold text-red-500 mb-6 md:mb-8 text-center">
-                  ⚔️ Active Practice - Field Scenario
-                </h2>
-
-                {/* Character Animation - Fixed position, doesn't affect layout */}
+              <div className="mb-6 md:mb-8">
+                {/* Character Animation - Fixed position, STAYS VISIBLE - NO ANIMATION */}
                 <div className="relative mb-6 md:mb-8">
-                  {/* Character Avatar - Floating on the left */}
-                  <div className="absolute -left-[50px] -top-30 z-10">
+                  <div className="absolute -left-[50px] -top-30 z-10 translate-y-[60px]">
                     <div className="w-48 h-48 md:w-96 md:h-96 rounded-2xl overflow-hidden bg-transparent">
                       <video
                         ref={(ref) => setVideoRef(ref)}
@@ -988,25 +993,33 @@ export default function YourLessonPage() {
                     </div>
                   </div>
 
-                  {/* Speech Bubble - Has margin to avoid character overlap */}
-                  {parsed.scene && (
-                    <div className="ml-52 md:ml-[230px] relative max-w-xl">
-                      <div className="bg-[#2a1f1f] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-red-900/30 relative">
-                        {/* Speech bubble pointer */}
-                        <div className="absolute left-0 top-1/2 transform -translate-x-2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#2a1f1f]"></div>
+                  {/* ANIMATED CONTENT WRAPPER - Only this part animates */}
+                  <div className={`${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
+                    {/* Combat Title - Red and intense */}
+                    <h2 className="text-xl md:text-2xl font-bold text-red-500 mb-6 md:mb-8 text-center">
+                      ⚔️ Active Practice - Field Scenario
+                    </h2>
 
-                        {/* Scene text - red tint */}
-                        <p className="text-red-200 text-base md:text-lg italic">{renderTextWithBold(parsed.scene)}</p>
+                    {/* Speech Bubble - Has margin to avoid character overlap */}
+                    {parsed.scene && (
+                      <div className="ml-52 md:ml-[230px] relative max-w-xl">
+                        <div className="bg-[#2a1f1f] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-red-900/30 relative">
+                          {/* Speech bubble pointer */}
+                          <div className="absolute left-0 top-1/2 transform -translate-x-2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#2a1f1f]"></div>
+
+                          {/* Scene text - red tint */}
+                          <p className="text-red-200 text-base md:text-lg italic">{renderTextWithBold(parsed.scene)}</p>
+                        </div>
                       </div>
-                    </div>
-                  )}
-                </div>
+                    )}
 
-                {/* Question - White text, bold */}
-                <div className="mt-12 mb-8 md:mt-14 md:mb-10">
-                  <p className="text-white text-lg md:text-xl font-bold text-center">
-                    {renderTextWithBold(questionText)}
-                  </p>
+                    {/* Question - White text, bold */}
+                    <div className="mt-12 mb-8 md:mt-14 md:mb-10">
+                      <p className="text-white text-lg md:text-xl font-bold text-center">
+                        {renderTextWithBold(questionText)}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             );
@@ -1015,38 +1028,48 @@ export default function YourLessonPage() {
           // Training Mode: Mentor/Brain icon, clean cards, lighter background
           if (uiMode === 'training') {
             return (
-              <div className={`mb-6 md:mb-8 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
-                {/* Training Title - Blue and educational */}
-                <h2 className="text-xl md:text-2xl font-bold text-blue-400 mb-6 md:mb-8 text-center">
-                  📚 Theory Learning - The Lab
-                </h2>
-
+              <div className="mb-6 md:mb-8">
                 {/* Character and Speech Bubble Layout */}
                 <div className="relative mb-6 md:mb-8">
-                  {/* Character Avatar - Floating on the left (space reserved for future character) */}
-                  <div className="absolute -left-[50px] -top-30 z-10">
+                  {/* Character Avatar - Floating on the left (space reserved for future character) - STAYS VISIBLE */}
+                  <div className="absolute -left-[50px] -top-30 z-10 translate-y-[60px]">
                     <div className="w-48 h-48 md:w-96 md:h-96 rounded-2xl overflow-hidden bg-transparent">
-                      {/* Character will be added here */}
+                      <video
+                        ref={(ref) => setVideoRef(ref)}
+                        className="w-full h-full object-contain"
+                        muted
+                        playsInline
+                      >
+                        <source src="/animations/character-standing.webm" type="video/webm" />
+                      </video>
                     </div>
                   </div>
 
-                  {/* Speech Bubble - Has margin to avoid character overlap */}
-                  <div className="ml-52 md:ml-[230px] relative max-w-xl">
-                    <div className="bg-[#1e2a3a] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-blue-900/30 relative">
-                      {/* Speech bubble pointer pointing to character */}
-                      <div className="absolute left-0 top-1/2 transform -translate-x-2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#1e2a3a]"></div>
+                  {/* ANIMATED CONTENT WRAPPER - Only this part animates */}
+                  <div className={`${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
+                    {/* Training Title - Blue and educational */}
+                    <h2 className="text-xl md:text-2xl font-bold text-blue-400 mb-6 md:mb-8 text-center">
+                      📚 Theory Learning - The Lab
+                    </h2>
 
-                      {/* Brain Icon - Floating on the top right inside bubble */}
-                      <div className="absolute -top-3 -right-3 z-20">
-                        <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-blue-900/50 border-2 border-blue-500 flex items-center justify-center shadow-lg">
-                          <div className="text-xl md:text-2xl">🧠</div>
+                    {/* Speech Bubble - Has margin to avoid character overlap */}
+                    <div className="ml-52 md:ml-[230px] relative max-w-xl">
+                      <div className="bg-[#1e2a3a] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-blue-900/30 relative">
+                        {/* Speech bubble pointer pointing to character */}
+                        <div className="absolute left-0 top-1/2 transform -translate-x-2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#1e2a3a]"></div>
+
+                        {/* Brain Icon - Floating on the top right inside bubble */}
+                        <div className="absolute -top-3 -right-3 z-20">
+                          <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-blue-900/50 border-2 border-blue-500 flex items-center justify-center shadow-lg">
+                            <div className="text-xl md:text-2xl">🧠</div>
+                          </div>
                         </div>
-                      </div>
 
-                      {/* Question text - clean */}
-                      <p className="text-white text-base md:text-lg font-semibold leading-relaxed">
-                        {renderTextWithBold(currentQuestion.question)}
-                      </p>
+                        {/* Question text - clean */}
+                        <p className="text-white text-base md:text-lg font-semibold leading-relaxed">
+                          {renderTextWithBold(currentQuestion.question)}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1155,7 +1178,7 @@ export default function YourLessonPage() {
                                   try {
                                     await addXPMutation({ amount: 5, email: userEmail });
                                   } catch (error) {
-                                    console.error("Error adding XP:", error);
+                                    // Error adding XP
                                   }
                                 }
 
@@ -1290,45 +1313,12 @@ export default function YourLessonPage() {
           </div>
         )}
 
-        {/* Character Animation for Sentence Building Questions */}
-        {(currentQuestion.type === 'sentence-building' || currentQuestion.type === 'build-sentence') && currentQuestion.question && (
-          <div className={`mb-6 md:mb-8 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
-            {/* Character Animation - Fixed position, doesn't affect layout */}
-            <div className="relative mb-6 md:mb-8">
-              {/* Character Avatar - Floating on the left */}
-              <div className="absolute -left-[50px] -top-30 z-10">
-                <div className="w-48 h-48 md:w-96 md:h-96 rounded-2xl overflow-hidden bg-transparent">
-                  <video
-                    ref={(ref) => setVideoRef(ref)}
-                    className="w-full h-full object-contain"
-                    muted
-                    playsInline
-                  >
-                    <source src="/animations/character-standing.webm" type="video/webm" />
-                  </video>
-                </div>
-              </div>
-
-              {/* Speech Bubble - Has margin to avoid character overlap */}
-              <div className="ml-52 md:ml-[230px] relative max-w-xl">
-                <div className="bg-[#1a2332] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-gray-700 relative">
-                  {/* Speech bubble pointer */}
-                  <div className="absolute left-0 top-1/2 transform -translate-x-2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#1a2332]"></div>
-
-                  {/* Question text */}
-                  <p className="text-white text-base md:text-lg font-semibold leading-relaxed">
-                    {renderTextWithBold(currentQuestion.question)}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+        {/* Character Animation removed (integrated into Training Mode UI) */}
 
         {/* Step 15.7: Render Sentence Building Question - Individual Ghost Slots */}
         {/* Individual empty boxes for each word, showing exactly how many words needed */}
         {(currentQuestion.type === 'sentence-building' || currentQuestion.type === 'build-sentence') && currentQuestion.words && (
-          <div className={`space-y-6 md:space-y-8 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
+          <div className={`space-y-6 md:space-y-8 mt-[80px] ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
             {/* Ghost Slots - Individual boxes for each word */}
             <div className="flex flex-wrap gap-2 md:gap-3 justify-center items-center min-h-[100px]">
               {(() => {
@@ -1672,11 +1662,21 @@ export default function YourLessonPage() {
       {showStreakBadge && (
         <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[150] pointer-events-none">
           <div className="flex flex-col items-center gap-4">
-            <StreakBadgeWithFx
-              streakCount={celebrationStreak}
-              triggerType="onUpdate"
-              size={160}
-            />
+            <StreakBadge streakCount={celebrationStreak} timeline={timeline} size={160}>
+              {/* FX Layers */}
+              <AuraHalo timeline={timeline} tierConfig={celebrationTierConfig} size={160} />
+              <GlowPulse timeline={timeline} tierConfig={celebrationTierConfig} size={160} />
+              <RingPing timeline={timeline} tierConfig={celebrationTierConfig} size={160} />
+              <ShineSweep timeline={timeline} tierConfig={celebrationTierConfig} size={160} />
+              <SparkleParticles timeline={timeline} tierConfig={celebrationTierConfig} size={160} />
+              {celebrationTierConfig.isMilestone && celebrationTierConfig.milestoneType && (
+                <MilestoneAnimation
+                  milestoneDay={celebrationTierConfig.milestoneType}
+                  timeline={timeline}
+                  size={160}
+                />
+              )}
+            </StreakBadge>
             <div className="text-white text-2xl font-bold text-center">
               {celebrationStreak} Day Streak!
               {[5, 10, 15, 20, 25, 30].includes(celebrationStreak) && (

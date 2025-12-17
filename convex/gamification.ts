@@ -362,16 +362,11 @@ export const completeLesson = mutation({
     email: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    console.log("🔵 [MUTATION] completeLesson called with args:", args);
-
     // Step 1: Get user
     const identity = await ctx.auth.getUserIdentity();
     const userEmail = args.email || identity?.email;
 
-    console.log("🔵 [MUTATION] User email:", userEmail);
-
     if (!userEmail) {
-      console.log("❌ [MUTATION] No user email - not authenticated");
       throw new Error("Not authenticated");
     }
 
@@ -380,25 +375,19 @@ export const completeLesson = mutation({
       .withIndex("by_email", (q) => q.eq("email", userEmail))
       .first();
 
-    console.log("🔵 [MUTATION] User found:", user ? `${user.email} (ID: ${user._id})` : "NOT FOUND");
-
     if (!user) {
-      console.log("❌ [MUTATION] User not found in database");
       throw new Error("User not found");
     }
 
     // Step 2: Calculate completion bonus XP (only if not already completed)
     // Award 10 XP bonus for completing the lesson
     const bonusXP = 10;
-    console.log("🔵 [MUTATION] Bonus XP to award:", bonusXP);
 
     // Step 3: Check if this is a global lesson or user lesson
     const isGlobalLesson = args.lessonId.startsWith("global-");
-    console.log("🔵 [MUTATION] Is global lesson:", isGlobalLesson, "| Lesson ID:", args.lessonId);
 
     // Step 4: For non-global lessons, update progress in database
     if (!isGlobalLesson) {
-      console.log("🔵 [MUTATION] Processing user lesson (non-global)");
       const existingProgress = await ctx.db
         .query("progress")
         .withIndex("by_userId_and_lessonId", (q) =>
@@ -406,21 +395,14 @@ export const completeLesson = mutation({
         )
         .first();
 
-      console.log("🔵 [MUTATION] Existing progress:", existingProgress ? `Found (completed: ${existingProgress.isCompleted})` : "NOT FOUND");
-
       // Only award bonus if not already completed
       if (!existingProgress?.isCompleted) {
-        console.log("✅ [MUTATION] Lesson not completed yet, awarding XP...");
         const currentXP = user.xp ?? 0;
         const newXP = currentXP + bonusXP;
-
-        console.log("🔵 [MUTATION] Updating user XP:", currentXP, "→", newXP);
 
         await ctx.db.patch(user._id, {
           xp: newXP,
         });
-
-        console.log("✅ [MUTATION] User XP updated successfully");
 
         // Update weekly XP in leagues
         const userLeague = await ctx.db
@@ -428,27 +410,21 @@ export const completeLesson = mutation({
           .withIndex("by_userId", (q) => q.eq("userId", user._id))
           .first();
 
-        console.log("🔵 [MUTATION] User league:", userLeague ? "Found" : "NOT FOUND");
-
         if (userLeague) {
           const newWeeklyXP = userLeague.weeklyXP + bonusXP;
-          console.log("🔵 [MUTATION] Updating league XP:", userLeague.weeklyXP, "→", newWeeklyXP);
           await ctx.db.patch(userLeague._id, {
             weeklyXP: newWeeklyXP,
             lastUpdated: Date.now(),
           });
-          console.log("✅ [MUTATION] League XP updated successfully");
         }
 
         // Mark lesson as completed
         if (existingProgress) {
-          console.log("🔵 [MUTATION] Updating existing progress to completed");
           await ctx.db.patch(existingProgress._id, {
             isCompleted: true,
             updatedAt: Date.now(),
           });
         } else {
-          console.log("🔵 [MUTATION] Creating new progress record");
           await ctx.db.insert("progress", {
             userId: user._id,
             lessonId: args.lessonId as any,
@@ -460,38 +436,26 @@ export const completeLesson = mutation({
           });
         }
 
-        console.log("✅ [MUTATION] Lesson marked as completed");
-        console.log("🎉 [MUTATION] Success! Returning:", { bonusXP, totalXP: newXP, alreadyCompleted: false });
-
         return { bonusXP, totalXP: newXP, alreadyCompleted: false };
       } else {
-        console.log("⚠️ [MUTATION] Lesson already completed, no XP awarded");
         return { bonusXP: 0, totalXP: user.xp ?? 0, alreadyCompleted: true };
       }
     } else {
       // Step 5: For global lessons, track completion in progress table
-      console.log("🔵 [MUTATION] Processing global lesson");
       const existingProgress = await ctx.db
         .query("progress")
         .withIndex("by_userId", (q) => q.eq("userId", user._id))
         .filter((q) => q.eq(q.field("lessonNumber"), args.lessonNumber))
         .first();
 
-      console.log("🔵 [MUTATION] Existing progress:", existingProgress ? `Found (completed: ${existingProgress.isCompleted})` : "NOT FOUND");
-
       // Only award bonus if not already completed
       if (!existingProgress?.isCompleted) {
-        console.log("✅ [MUTATION] Global lesson not completed yet, awarding XP...");
         const currentXP = user.xp ?? 0;
         const newXP = currentXP + bonusXP;
-
-        console.log("🔵 [MUTATION] Updating user XP:", currentXP, "→", newXP);
 
         await ctx.db.patch(user._id, {
           xp: newXP,
         });
-
-        console.log("✅ [MUTATION] User XP updated successfully");
 
         // Update weekly XP in leagues
         const userLeague = await ctx.db
@@ -499,27 +463,21 @@ export const completeLesson = mutation({
           .withIndex("by_userId", (q) => q.eq("userId", user._id))
           .first();
 
-        console.log("🔵 [MUTATION] User league:", userLeague ? "Found" : "NOT FOUND");
-
         if (userLeague) {
           const newWeeklyXP = userLeague.weeklyXP + bonusXP;
-          console.log("🔵 [MUTATION] Updating league XP:", userLeague.weeklyXP, "→", newWeeklyXP);
           await ctx.db.patch(userLeague._id, {
             weeklyXP: newWeeklyXP,
             lastUpdated: Date.now(),
           });
-          console.log("✅ [MUTATION] League XP updated successfully");
         }
 
         // Create or update progress for global lesson
         if (existingProgress) {
-          console.log("🔵 [MUTATION] Updating existing global lesson progress to completed");
           await ctx.db.patch(existingProgress._id, {
             isCompleted: true,
             updatedAt: Date.now(),
           });
         } else {
-          console.log("🔵 [MUTATION] Creating new global lesson progress record");
           await ctx.db.insert("progress", {
             userId: user._id,
             lessonId: undefined, // No lessonId for global lessons
@@ -531,12 +489,8 @@ export const completeLesson = mutation({
           });
         }
 
-        console.log("✅ [MUTATION] Global lesson marked as completed");
-        console.log("🎉 [MUTATION] Success! Returning:", { bonusXP, totalXP: newXP, alreadyCompleted: false });
-
         return { bonusXP, totalXP: newXP, alreadyCompleted: false };
       } else {
-        console.log("⚠️ [MUTATION] Global lesson already completed, no XP awarded");
         return { bonusXP: 0, totalXP: user.xp ?? 0, alreadyCompleted: true };
       }
     }

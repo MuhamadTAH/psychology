@@ -10,6 +10,7 @@ import { useRouter } from "next/navigation";
 import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { X, Share2, ChevronLeft, ChevronRight, Shield, Flame } from "lucide-react";
+import { StreakBadgeWithFx } from "@/components/StreakBadgeWithFx";
 
 export default function StreakPage() {
   const router = useRouter();
@@ -65,15 +66,12 @@ export default function StreakPage() {
     const todayYear = todayDate.getFullYear();
     const todayDay = todayDate.getDate();
 
-    console.log('Today:', todayDay, 'Streak:', currentStreak);
-
     // Only show streak days if we're viewing the current month
     if (currentMonth === todayMonth && currentYear === todayYear) {
       // Add consecutive days going backwards from today
       for (let i = 0; i < currentStreak; i++) {
         const streakDate = new Date(todayYear, todayMonth, todayDay - i);
         const dayNum = streakDate.getDate();
-        console.log('Adding streak day:', dayNum);
 
         // Only add if it's in the current month
         if (streakDate.getMonth() === currentMonth) {
@@ -82,8 +80,6 @@ export default function StreakPage() {
       }
     }
   }
-
-  console.log('Final streakDays:', JSON.stringify(streakDays));
 
   const freezeDays: number[] = []; // Days where streak freeze was used
   const goalDays: number[] = []; // Future goal days
@@ -144,18 +140,29 @@ export default function StreakPage() {
       <div className="max-w-2xl mx-auto px-4 py-6 space-y-6">
 
         {/* Step 9: Streak Society celebration banner */}
-        {/* Large orange banner showing current streak with mascot graphic */}
+        {/* Large orange banner showing current streak with animated badge */}
         <div className="relative bg-gradient-to-br from-orange-500 to-orange-600 rounded-3xl p-8 overflow-hidden">
-          <div className="relative z-10">
-            <p className="text-orange-900 text-sm font-bold mb-2">STREAK SOCIETY</p>
-            <div className="flex items-baseline gap-2">
-              <span className="text-7xl font-black text-white">{currentStreak}</span>
-              <span className="text-2xl font-bold text-white">day streak!</span>
+          <div className="flex items-center justify-between">
+            <div className="relative z-10">
+              <p className="text-orange-900 text-sm font-bold mb-2">STREAK SOCIETY</p>
+              <div className="flex items-baseline gap-2">
+                <span className="text-7xl font-black text-white">{currentStreak}</span>
+                <span className="text-2xl font-bold text-white">day streak!</span>
+              </div>
+            </div>
+
+            {/* Animated Streak Badge */}
+            <div className="relative z-10">
+              <StreakBadgeWithFx
+                streakCount={currentStreak}
+                triggerType="onView"
+                size={120}
+              />
             </div>
           </div>
 
-          {/* Mascot graphic placeholder - using a flame icon as substitute */}
-          <div className="absolute -right-4 -bottom-4 opacity-20">
+          {/* Background decoration */}
+          <div className="absolute -right-4 -bottom-4 opacity-10">
             <Flame className="h-48 w-48 text-white" strokeWidth={1.5} />
           </div>
         </div>
@@ -267,10 +274,6 @@ export default function StreakPage() {
 
               // Check if this is the FIRST streak day in this row
               const isFirstInRow = streakDaysInThisRow.length > 0 && day === streakDaysInThisRow[0];
-
-              if (isFirstInRow) {
-                console.log(`Day ${day}, Row ${currentRow}, streakDaysInThisRow:`, streakDaysInThisRow);
-              }
 
               // Calculate animation delay based on row number
               const animationDelay = `${currentRow * 0.5}s`;
