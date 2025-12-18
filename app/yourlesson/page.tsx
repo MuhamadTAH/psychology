@@ -26,8 +26,10 @@ import { MilestoneAnimation } from "@/components/MilestoneAnimation";
 interface QuizData {
   type?: string;
   question: string;
+  // True-false fields
+  statement?: string; // true-false questions use 'statement' instead of 'question'
   // Fill-in-blank fields
-  sentence?: string;
+  sentence?: string; // fill-in questions use 'sentence' instead of 'question'
   correctAnswer?: string;
   wrongOptions?: string[];
   explanation?: string;
@@ -328,8 +330,13 @@ export default function YourLessonPage() {
                 console.log(`📝 [SCREEN ${screenIndex + 1}] Found ${screen.exercises.length} exercises`);
 
                 screen.exercises.forEach((exercise: any, exerciseIndex: number) => {
-                  console.log(`🎯 [EXERCISE ${exerciseIndex + 1}] Type: "${exercise.type}", Question: "${exercise.question?.substring(0, 50)}..."`);
-                  console.log(`📋 [EXERCISE ${exerciseIndex + 1}] Full exercise data:`, JSON.stringify(exercise, null, 2));
+                  const displayText = exercise.question || exercise.statement || exercise.sentence || 'NO TEXT';
+                  console.log(`🎯 [EXERCISE ${exerciseIndex + 1}] Type: "${exercise.type}", Text: "${displayText?.substring(0, 50)}..."`);
+
+                  // Only log full data for skipped exercises to reduce console spam
+                  if (!exercise.question && !exercise.statement && !exercise.sentence && exercise.type !== 'matching' && exercise.type !== 'build-sentence') {
+                    console.log(`📋 [EXERCISE ${exerciseIndex + 1}] Full exercise data (WILL BE SKIPPED):`, JSON.stringify(exercise, null, 2));
+                  }
 
                   // Step: Handle micro-sim exercises specially
                   // Micro-sims have a "steps" array and use a different data structure
@@ -346,9 +353,15 @@ export default function YourLessonPage() {
                   }
 
                   // Step: Handle regular exercises (multiple-choice, scenario, etc.)
+                  // Different question types use different field names:
+                  // - 'true-false' uses 'statement' instead of 'question'
+                  // - 'fill-in' uses 'sentence' instead of 'question'
+                  // - Most others use 'question'
+                  let baseQuestionText = exercise.question || exercise.statement || exercise.sentence || '';
+
                   const questionText = exercise.scene
-                    ? `${exercise.scene}\n\n${exercise.question || ''}`
-                    : (exercise.question || '');
+                    ? `${exercise.scene}\n\n${baseQuestionText}`
+                    : baseQuestionText;
 
                   const formattedOptions = Array.isArray(exercise.options)
                     ? exercise.options.map((opt: any, idx: number) =>
@@ -570,12 +583,42 @@ export default function YourLessonPage() {
 
   const canAnswer = (userStats?.hearts || 5) > 0 || isLessonAlreadyCompleted();
 
+  // DEBUG: Log current question details
+  useEffect(() => {
+    if (currentQuestion) {
+      console.log('📍 [CURRENT QUESTION]', {
+        type: currentQuestion.type,
+        question: currentQuestion.question?.substring(0, 50),
+        hasOptions: !!currentQuestion.options,
+        optionsCount: currentQuestion.options?.length,
+        correctAnswer: currentQuestion.correctAnswer,
+        isChecked: isChecked,
+        selectedAnswer: selectedAnswer
+      });
+    }
+  }, [currentQuestion, isChecked, selectedAnswer]);
+
   // ✅ In this section we achieved:
   // Loaded all lesson data and combined questions from practice and quiz into one array
 
   // Step 7: Handle answer checking for all question types
   // Check if the user's answer is correct based on question type
   const handleCheckAnswer = async () => {
+    console.log('🔍 [CHECK ANSWER] Starting check...', {
+      questionType: currentQuestion.type,
+      selectedAnswer: selectedAnswer,
+      fillInAnswer: fillInAnswer,
+      selectedWords: selectedWords,
+      correctAnswer: currentQuestion.correctAnswer
+    });
+
+    // Step: Prevent checking sentence building with no words selected
+    // This ensures user must select at least one word before checking
+    if ((currentQuestion.type === 'sentence-building' || currentQuestion.type === 'build-sentence') && selectedWords.length === 0) {
+      console.log('⚠️ [CHECK BLOCKED] No words selected for sentence building');
+      return;
+    }
+
     setIsChecked(true);
 
     let isCorrect = false;
@@ -605,7 +648,14 @@ export default function YourLessonPage() {
       userAnswer = selectedWords.join(' ');
 
       // DEBUG: Log sentence building comparison
+      console.log('🔤 [SENTENCE BUILD CHECK]', {
+        userSentence: selectedWords.join(' ').toLowerCase().trim(),
+        correctSentence: currentQuestion.correctSentence?.toLowerCase().trim(),
+        isCorrect: isCorrect
+      });
     }
+
+    console.log('✅ [CHECK RESULT]', { isCorrect, userAnswer });
 
     if (isCorrect) {
       // Step: Play correct answer sound
@@ -707,6 +757,10 @@ export default function YourLessonPage() {
     }
 
     if (currentQuestionIndex < allQuestions.length - 1) {
+      // Step: Hide feedback bar immediately before transition starts
+      // This ensures feedback doesn't stay visible during animations
+      setIsChecked(false);
+
       // Step: Start transition animation
       // Fade out current exercise and prepare for slide in
       setIsTransitioning(true);
@@ -723,7 +777,6 @@ export default function YourLessonPage() {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
         setSelectedAnswer(null);
         setFillInAnswer('');
-        setIsChecked(false);
         setHadWrongAttempt(false);
         // Reset to thinking animation for next question
         setCurrentAnimation('thinking');
@@ -971,14 +1024,13 @@ export default function YourLessonPage() {
       `}</style>
       {/* Step 12a: Top Header - Matches plan.md design */}
       {/* X button, progress bar with XP display, hearts counter */}
-      <div className="fixed top-0 left-0 right-0 bg-[#1F2937] z-50 border-b-2 border-gray-700">
-        <div className="max-w-4xl mx-auto px-6 py-3">
-          <div className="flex items-center gap-4">
-            {/* Close Button - X */}
+      {/* Step 12a: Top Header - Premium Design */}
+      <div className="fixed top-0 left-0 right-0 bg-[#1F2937]/90 backdrop-blur-md z-50 border-b border-gray-700/50 shadow-lg">
+        <div className="max-w-4xl mx-auto px-4 md:px-6 py-4">
+          <div className="flex items-center gap-6">
+            {/* Close Button - More subtle hover effect */}
             <button
               onClick={() => {
-                // Step: Redirect based on lesson category
-                // Dark Psychology lessons go back to their section page
                 if (lessonCategory === 'dark-psychology' && typeof window !== 'undefined') {
                   const sectionId = localStorage.getItem('darkPsychSectionId') || 'B';
                   router.push(`/dark-psychology/section/${sectionId}`);
@@ -986,30 +1038,38 @@ export default function YourLessonPage() {
                   router.push('/dark-psychology-dashboard');
                 }
               }}
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-gray-400 hover:text-white transition-colors p-1 rounded-full hover:bg-white/5"
             >
-              <X className="h-6 w-6" strokeWidth={3} />
+              <X className="h-6 w-6" strokeWidth={2.5} />
             </button>
 
-            {/* Progress Bar with XP Counter */}
-            <div className="flex-1 relative">
-              <div className="w-full bg-gray-700 rounded-full h-4 overflow-hidden border-2 border-gray-600">
-                <div
-                  className="bg-[#58CC02] h-full transition-all duration-300 flex items-center justify-center"
-                  style={{ width: `${((currentQuestionIndex + 1) / allQuestions.length) * 100}%` }}
-                >
-                  {/* XP earned so far in this lesson */}
-                  <span className="text-[10px] font-bold text-white px-2">
-                    {correctAnswers * 5} XP
-                  </span>
-                </div>
+            {/* Progress Bar Container - Sleeker design */}
+            <div className="flex-1 relative h-3 bg-gray-700/50 rounded-full overflow-hidden backdrop-blur-sm">
+              <div
+                className="absolute inset-0 bg-[#58CC02] transition-all duration-500 ease-out rounded-full shadow-[0_0_10px_rgba(88,204,2,0.4)]"
+                style={{ width: `${((currentQuestionIndex + 1) / allQuestions.length) * 100}%` }}
+              >
+                {/* Shine effect overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/20"></div>
               </div>
             </div>
 
-            {/* Hearts Counter - ⚡ style */}
-            <div className="flex items-center gap-1">
-              <span className="text-2xl">⚡</span>
-              <span className="text-white font-bold text-lg">{userStats?.hearts || 5}</span>
+            {/* Stats Group - Grouped together for better visual flow */}
+            <div className="flex items-center gap-4">
+              {/* XP Pill - Shows current session earnings */}
+              <div className="flex items-center gap-1.5 bg-[#58CC02]/10 px-3 py-1 rounded-full border border-[#58CC02]/20">
+                <span className="text-[#58CC02] text-xs font-bold tracking-wider">EXP</span>
+                <span className="text-[#58CC02] font-bold text-sm tabular-nums">+{correctAnswers * 5}</span>
+              </div>
+
+              {/* Hearts Counter - Premium detailed icon style */}
+              <div className="flex items-center gap-1.5">
+                <div className="relative">
+                  <span className="text-2xl drop-shadow-md">⚡</span>
+                  <div className="absolute inset-0 bg-yellow-400/20 blur-sm rounded-full"></div>
+                </div>
+                <span className="text-white font-bold text-lg tabular-nums">{userStats?.hearts || 5}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -1030,10 +1090,16 @@ export default function YourLessonPage() {
 
             return (
               <div className="mb-6 md:mb-8">
-                {/* Character Animation - Fixed position, STAYS VISIBLE - NO ANIMATION */}
-                <div className="relative mb-6 md:mb-8">
-                  <div className="absolute -left-[50px] -top-30 z-10 translate-y-[60px]">
-                    <div className="w-48 h-48 md:w-96 md:h-96 rounded-2xl overflow-hidden bg-transparent">
+                {/* Combat Title - Centered */}
+                <h2 className="text-xl md:text-2xl font-bold text-red-500 mb-6 md:mb-8 text-center">
+                  ⚔️ Active Practice - Field Scenario
+                </h2>
+
+                {/* Character and Speech Bubble Container - Absolute Character to prevent layout shift */}
+                <div className="relative mb-2 min-h-[200px] md:min-h-[300px]">
+                  {/* Character Avatar - Absolute Positioned to hang off the left */}
+                  <div className="absolute -left-[100px] md:-left-[100px] -top-30 z-10">
+                    <div className="w-[350px] h-[350px] md:w-[550px] md:h-[550px] rounded-2xl overflow-hidden bg-transparent">
                       <video
                         ref={(ref) => setVideoRef(ref)}
                         className="w-full h-full object-contain"
@@ -1045,33 +1111,33 @@ export default function YourLessonPage() {
                     </div>
                   </div>
 
-                  {/* ANIMATED CONTENT WRAPPER - Only this part animates */}
-                  <div className={`${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
-                    {/* Combat Title - Red and intense */}
-                    <h2 className="text-xl md:text-2xl font-bold text-red-500 mb-6 md:mb-8 text-center">
-                      ⚔️ Active Practice - Field Scenario
-                    </h2>
+                  {/* Speech Bubble - Pushed right to clear the character */}
+                  <div className={`ml-[160px] md:ml-[280px] pt-12 md:pt-10 transition-all duration-300 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
+                    <div className="relative">
+                      <div className="bg-[#2a1f1f] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-red-900/30 relative">
+                        {/* Speech bubble pointer */}
+                        <div className="absolute left-0 top-16 transform -translate-x-2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#2a1f1f]"></div>
 
-                    {/* Speech Bubble - Has margin to avoid character overlap */}
-                    {parsed.scene && (
-                      <div className="ml-52 md:ml-[230px] relative max-w-xl">
-                        <div className="bg-[#2a1f1f] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-red-900/30 relative">
-                          {/* Speech bubble pointer */}
-                          <div className="absolute left-0 top-1/2 transform -translate-x-2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#2a1f1f]"></div>
-
-                          {/* Scene text - red tint */}
-                          <p className="text-red-200 text-base md:text-lg italic">{renderTextWithBold(parsed.scene)}</p>
-                        </div>
+                        {/* Scene text */}
+                        {parsed.scene && (
+                          <p className="text-red-200 text-base md:text-lg italic mb-2">{renderTextWithBold(parsed.scene)}</p>
+                        )}
+                        {!parsed.scene && (
+                          <p className="text-white text-base md:text-lg font-semibold">{renderTextWithBold(currentQuestion.question)}</p>
+                        )}
                       </div>
-                    )}
-
-                    {/* Question - White text, bold */}
-                    <div className="mt-12 mb-8 md:mt-14 md:mb-10">
-                      <p className="text-white text-lg md:text-xl font-bold text-center">
-                        {renderTextWithBold(questionText)}
-                      </p>
                     </div>
                   </div>
+                </div>
+
+                {/* Secondary Question Text Area - Consistent Spacing below character/bubble */}
+                {/* Only show if we have a separate question line (like in scenarios) */}
+                <div className="min-h-[60px] flex items-center justify-center mb-6">
+                  {parsed.scene && questionText && (
+                    <p className="text-white text-lg md:text-xl font-bold text-center animate-fade-in">
+                      {renderTextWithBold(questionText)}
+                    </p>
+                  )}
                 </div>
               </div>
             );
@@ -1081,11 +1147,16 @@ export default function YourLessonPage() {
           if (uiMode === 'training') {
             return (
               <div className="mb-6 md:mb-8">
-                {/* Character and Speech Bubble Layout */}
-                <div className="relative mb-6 md:mb-8">
-                  {/* Character Avatar - Floating on the left (space reserved for future character) - STAYS VISIBLE */}
-                  <div className="absolute -left-[50px] -top-30 z-10 translate-y-[60px]">
-                    <div className="w-48 h-48 md:w-96 md:h-96 rounded-2xl overflow-hidden bg-transparent">
+                {/* Training Title - Centered */}
+                <h2 className="text-xl md:text-2xl font-bold text-blue-400 mb-6 md:mb-8 text-center">
+                  📚 Theory Learning - The Lab
+                </h2>
+
+                {/* Character and Speech Bubble Container - Absolute Character */}
+                <div className="relative mb-2 min-h-[200px] md:min-h-[300px]">
+                  {/* Character Avatar - Left Side Absolute */}
+                  <div className="absolute -left-[100px] md:-left-[100px] -top-30 z-10">
+                    <div className="w-[350px] h-[350px] md:w-[550px] md:h-[550px] rounded-2xl overflow-hidden bg-transparent">
                       <video
                         ref={(ref) => setVideoRef(ref)}
                         className="w-full h-full object-contain"
@@ -1097,27 +1168,21 @@ export default function YourLessonPage() {
                     </div>
                   </div>
 
-                  {/* ANIMATED CONTENT WRAPPER - Only this part animates */}
-                  <div className={`${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
-                    {/* Training Title - Blue and educational */}
-                    <h2 className="text-xl md:text-2xl font-bold text-blue-400 mb-6 md:mb-8 text-center">
-                      📚 Theory Learning - The Lab
-                    </h2>
-
-                    {/* Speech Bubble - Has margin to avoid character overlap */}
-                    <div className="ml-52 md:ml-[230px] relative max-w-xl">
+                  {/* Speech Bubble - Pushed right */}
+                  <div className={`ml-[160px] md:ml-[280px] pt-12 md:pt-10 transition-all duration-300 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
+                    <div className="relative">
                       <div className="bg-[#1e2a3a] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-blue-900/30 relative">
-                        {/* Speech bubble pointer pointing to character */}
-                        <div className="absolute left-0 top-1/2 transform -translate-x-2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#1e2a3a]"></div>
+                        {/* Speech bubble pointer */}
+                        <div className="absolute left-0 top-16 transform -translate-x-2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#1e2a3a]"></div>
 
-                        {/* Brain Icon - Floating on the top right inside bubble */}
+                        {/* Brain Icon */}
                         <div className="absolute -top-3 -right-3 z-20">
                           <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-blue-900/50 border-2 border-blue-500 flex items-center justify-center shadow-lg">
                             <div className="text-xl md:text-2xl">🧠</div>
                           </div>
                         </div>
 
-                        {/* Question text - clean */}
+                        {/* Question text */}
                         <p className="text-white text-base md:text-lg font-semibold leading-relaxed">
                           {renderTextWithBold(currentQuestion.question)}
                         </p>
@@ -1125,6 +1190,9 @@ export default function YourLessonPage() {
                     </div>
                   </div>
                 </div>
+
+                {/* Secondary Question Text Area - Consistent Spacing (Empty for Training to maintian layout) */}
+                <div className="min-h-[60px] mb-6"></div>
               </div>
             );
           }
@@ -1138,12 +1206,46 @@ export default function YourLessonPage() {
                   🧩 Pattern Recognition Exercise
                 </h2>
 
-                {/* Simple instruction text - no avatar */}
-                <div className="text-center mb-8">
-                  <p className="text-white text-lg md:text-xl font-semibold">
-                    Match the terms with their definitions
-                  </p>
+                {/* Character Avatar - Consistent Layout */}
+                <div className="relative mb-2 min-h-[200px] md:min-h-[300px]">
+                  <div className="absolute -left-[100px] md:-left-[100px] -top-30 z-10">
+                    <div className="w-[350px] h-[350px] md:w-[550px] md:h-[550px] rounded-2xl overflow-hidden bg-transparent">
+                      <video
+                        ref={(ref) => setVideoRef(ref)}
+                        className="w-full h-full object-contain"
+                        muted
+                        playsInline
+                      >
+                        <source src="/animations/character-standing.webm" type="video/webm" />
+                      </video>
+                    </div>
+                  </div>
+
+                  {/* Speech Bubble - Identical to Combat/Training Modes */}
+                  <div className={`ml-[160px] md:ml-[280px] pt-12 md:pt-10 transition-all duration-300 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
+                    <div className="relative">
+                      <div className="bg-[#1e2a3a] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-purple-900/30 relative">
+                        {/* Speech bubble pointer */}
+                        <div className="absolute left-0 top-16 transform -translate-x-2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#1e2a3a]"></div>
+
+                        {/* Brain/Puzzle Icon */}
+                        <div className="absolute -top-3 -right-3 z-20">
+                          <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-purple-900/50 border-2 border-purple-500 flex items-center justify-center shadow-lg">
+                            <div className="text-xl md:text-2xl">🧩</div>
+                          </div>
+                        </div>
+
+                        {/* Instruction Text as Speech Bubble Content */}
+                        <p className="text-white text-base md:text-lg font-semibold leading-relaxed">
+                          Match the terms with their definitions.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+                {/* Spacer to push matching box down to match options position */}
+                <div className="min-h-[40px] md:min-h-[60px]"></div>
               </div>
             );
           }
@@ -1323,44 +1425,36 @@ export default function YourLessonPage() {
 
         {/* Step 15.5: Render Multiple Choice and Similar Question Types */}
         {['multiple-choice', 'scenario', 'fill-in', 'true-false', 'reverse-scenario', 'ethical-dilemma', 'boss-scenario', 'case-analysis'].includes(currentQuestion.type) && currentQuestion.options && (
-          <div className={`space-y-4 md:space-y-6 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
-            {/* Show image if present */}
-            {currentQuestion.image && (
-              <div className="flex justify-center mb-4 md:mb-6">
-                <img
-                  src={currentQuestion.image}
-                  alt="Question image"
-                  className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-xl border-4 border-gray-600"
-                />
+          <div className="mb-6 md:mb-8">
+            {/* Options Grid - ANIMATED, Centered below character and bubble */}
+            <div className={`flex justify-center ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
+              <div className="grid grid-cols-2 gap-4 md:gap-6 max-w-3xl w-full px-4">
+                {currentQuestion.options.map((option) => {
+                  const isSelected = selectedAnswer === option.id;
+                  const showCorrect = isChecked && option.id === currentQuestion.correctAnswer;
+                  const showWrong = isChecked && isSelected && option.id !== currentQuestion.correctAnswer;
+
+                  return (
+                    <button
+                      key={option.id}
+                      onClick={() => !isChecked && setSelectedAnswer(option.id)}
+                      disabled={isChecked}
+                      className={`p-4 md:p-6 rounded-xl md:rounded-2xl border-2 md:border-4 transition-all flex items-center justify-center min-h-[100px] md:min-h-[120px] ${showCorrect
+                        ? "border-[#58CC02] bg-green-900/40 text-[#58CC02]"
+                        : showWrong
+                          ? "border-red-500 bg-[#1a2332] text-red-400"
+                          : isSelected
+                            ? "border-[#58CC02] bg-[#1a2332] text-[#58CC02] scale-105"
+                            : "border-gray-600 bg-[#1a2332] text-white hover:border-gray-500"
+                        } ${!isChecked ? 'hover:scale-105 active:scale-95' : ''}`}
+                    >
+                      <span className="text-sm md:text-lg font-semibold text-center">
+                        {renderOptionText(option.text)}
+                      </span>
+                    </button>
+                  );
+                })}
               </div>
-            )}
-
-            <div className="grid grid-cols-2 gap-3 md:gap-4">
-              {currentQuestion.options.map((option) => {
-                const isSelected = selectedAnswer === option.id;
-                const showCorrect = isChecked && option.id === currentQuestion.correctAnswer;
-                const showWrong = isChecked && isSelected && option.id !== currentQuestion.correctAnswer;
-
-                return (
-                  <button
-                    key={option.id}
-                    onClick={() => !isChecked && setSelectedAnswer(option.id)}
-                    disabled={isChecked}
-                    className={`p-4 md:p-6 rounded-xl md:rounded-2xl border-2 md:border-4 transition-all flex items-center justify-center min-h-[100px] md:min-h-[120px] ${showCorrect
-                      ? "border-[#58CC02] bg-green-900/40 text-[#58CC02]"
-                      : showWrong
-                        ? "border-red-500 bg-[#1a2332] text-red-400"
-                        : isSelected
-                          ? "border-[#58CC02] bg-[#1a2332] text-[#58CC02] scale-105"
-                          : "border-gray-600 bg-[#1a2332] text-white hover:border-gray-500"
-                      } ${!isChecked ? 'hover:scale-105 active:scale-95' : ''}`}
-                  >
-                    <span className="text-sm md:text-lg font-semibold text-center">
-                      {renderOptionText(option.text)}
-                    </span>
-                  </button>
-                );
-              })}
             </div>
           </div>
         )}
@@ -1370,7 +1464,7 @@ export default function YourLessonPage() {
         {/* Step 15.7: Render Sentence Building Question - Individual Ghost Slots */}
         {/* Individual empty boxes for each word, showing exactly how many words needed */}
         {(currentQuestion.type === 'sentence-building' || currentQuestion.type === 'build-sentence') && currentQuestion.words && (
-          <div className={`space-y-6 md:space-y-8 mt-[80px] ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
+          <div className={`space-y-6 md:space-y-8 -mt-10 md:-mt-16 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
             {/* Ghost Slots - Individual boxes for each word */}
             <div className="flex flex-wrap gap-2 md:gap-3 justify-center items-center min-h-[100px]">
               {(() => {
