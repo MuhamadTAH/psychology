@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Check, X } from "lucide-react";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
+import { FinalScore } from "./components/FinalScore";
 import { StreakBadge } from "@/components/StreakBadge";
 import { useStreakTimeline } from "@/lib/streakStateMachine";
 import { getStreakTier } from "@/lib/streakFxConfig";
@@ -30,6 +31,7 @@ interface QuizData {
   statement?: string; // true-false questions use 'statement' instead of 'question'
   // Fill-in-blank fields
   sentence?: string; // fill-in questions use 'sentence' instead of 'question'
+  answers?: string[]; // fill-in questions use 'answers' array for multiple blanks
   correctAnswer?: string;
   wrongOptions?: string[];
   explanation?: string;
@@ -70,7 +72,9 @@ export default function YourLessonPage() {
 
   // Answer states for different question types
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null); // For multiple choice
-  const [fillInAnswer, setFillInAnswer] = useState(''); // For fill-in-blank
+  const [fillInAnswer, setFillInAnswer] = useState(''); // For fill-in-blank (single blank - legacy)
+  const [fillInAnswers, setFillInAnswers] = useState<string[]>([]); // For fill-in (multiple blanks)
+  const [shuffledFillInOptions, setShuffledFillInOptions] = useState<string[]>([]); // Shuffled options for fill-in-blank
 
   // Matching question states
   const [selectedTerm, setSelectedTerm] = useState<string | null>(null);
@@ -130,10 +134,20 @@ export default function YourLessonPage() {
   // Shows the streak badge overlay when user completes first lesson of the day
   const [showStreakBadge, setShowStreakBadge] = useState(false);
   const [celebrationStreak, setCelebrationStreak] = useState(0);
+  const [streakFreezeUsed, setStreakFreezeUsed] = useState(false);
 
   // Step: Exercise transition animation state
   // Controls fade out and slide in animations when switching exercises
   const [isTransitioning, setIsTransitioning] = useState(false);
+
+  // Step: Motivational message state
+  // Store the selected motivational message to prevent it from changing on every render
+  const [motivationalMessage, setMotivationalMessage] = useState('');
+
+  // Step: Lesson Part Progression State
+  // Track which part of the lesson the user is currently on (0, 1, 2...)
+  const [activePartIndex, setActivePartIndex] = useState(0);
+  const [totalLessonParts, setTotalLessonParts] = useState(1);
 
   // Step 3: Load data from Convex backend
   // Query lessons and user stats from the database
@@ -286,22 +300,13 @@ export default function YourLessonPage() {
   // Step 5: Load and combine all questions from lesson data
   // Merge practice and quiz questions into one continuous array
   useEffect(() => {
-    console.log('🔄 [LESSON LOADER] useEffect triggered');
-    console.log('📋 [LESSON LOADER] lessonCategory:', lessonCategory);
-    console.log('📋 [LESSON LOADER] darkPsychLessonId:', darkPsychLessonId);
-    console.log('📋 [LESSON LOADER] currentLessonNumber:', currentLessonNumber);
-
     // Handle Dark Psychology lessons
     if (lessonCategory === 'dark-psychology' && darkPsychLessons && darkPsychLessonId) {
-      console.log('🎯 [DARK PSYCH] Loading Dark Psychology lesson...');
-
       const lessonParts = darkPsychLessons.filter((l: any) => {
         const lessonData = l.lessonJSON || l.content;
         const lessonId = lessonData?.lessonId;
         return lessonId && lessonId === darkPsychLessonId;
       });
-
-      console.log('📦 [DARK PSYCH] Found lesson parts:', lessonParts.length);
 
       if (lessonParts.length > 0) {
         lessonParts.sort((a: any, b: any) => {
@@ -318,30 +323,67 @@ export default function YourLessonPage() {
           soundEffects.startLesson.play().catch(() => { });
         }
 
-        lessonParts.forEach((part: any, partIndex: number) => {
-          const data = part.lessonJSON || part.content;
-          console.log(`📄 [PART ${partIndex + 1}] Processing part ${data?.lessonPart || partIndex + 1}`);
+        // Determine current part based on localStorage
+        let currentPart = 0;
+        if (typeof window !== 'undefined' && darkPsychLessonId) {
+          const savedPart = localStorage.getItem(`lesson_progress_${darkPsychLessonId}`);
+          if (savedPart) {
+            currentPart = parseInt(savedPart, 10);
+            // Ensure we don't go out of bounds if lesson structure changed
+            if (currentPart >= lessonParts.length) {
+              currentPart = lessonParts.length - 1; // Cap at last part
+              // Or reset to 0? For now cap it so they can replay last part.
+              // Actually, if they finished all parts, maybe loop back or stay at end?
+              // User request: "fill ring... click again start part two"
+              // If finished, maybe reset to 0 to replay? Or show "Review"?
+              // For now, let's assume if currentPart >= total, they are reviewing.
+              // Let's safe guard it.
+              if (currentPart > lessonParts.length - 1) currentPart = lessonParts.length - 1;
+            }
+          }
+        }
+        setActivePartIndex(currentPart);
+        setTotalLessonParts(lessonParts.length);
 
+        console.log(`🎯 [DARK PSYCH] Loading Part ${currentPart + 1} of ${lessonParts.length}`);
+
+        // ONLY process the SINGLE active part
+        const activeLessonPart = lessonParts[currentPart];
+        const data = activeLessonPart?.lessonJSON || activeLessonPart?.content;
+
+        console.log(`📦 [DATA CHECK]`, { hasData: !!data, hasContentScreens: !!data?.contentScreens, isArray: Array.isArray(data?.contentScreens) });
+
+        if (data) {
+          // Process just this part (previously we looped through all parts)
           if (data?.contentScreens && Array.isArray(data.contentScreens)) {
-            console.log(`📺 [PART ${partIndex + 1}] Found ${data.contentScreens.length} content screens`);
-
+            console.log(`📚 [CONTENT SCREENS] Found ${data.contentScreens.length} screens`);
             data.contentScreens.forEach((screen: any, screenIndex: number) => {
+              console.log(`📄 [SCREEN ${screenIndex + 1}]`, { hasExercises: !!screen.exercises, exerciseCount: screen.exercises?.length });
+
+
               if (screen.exercises && Array.isArray(screen.exercises)) {
-                console.log(`📝 [SCREEN ${screenIndex + 1}] Found ${screen.exercises.length} exercises`);
-
                 screen.exercises.forEach((exercise: any, exerciseIndex: number) => {
-                  const displayText = exercise.question || exercise.statement || exercise.sentence || 'NO TEXT';
-                  console.log(`🎯 [EXERCISE ${exerciseIndex + 1}] Type: "${exercise.type}", Text: "${displayText?.substring(0, 50)}..."`);
-
-                  // Only log full data for skipped exercises to reduce console spam
-                  if (!exercise.question && !exercise.statement && !exercise.sentence && exercise.type !== 'matching' && exercise.type !== 'build-sentence') {
-                    console.log(`📋 [EXERCISE ${exerciseIndex + 1}] Full exercise data (WILL BE SKIPPED):`, JSON.stringify(exercise, null, 2));
-                  }
+                  // DEBUG: Log ALL exercises to find missing ones
+                  console.log(`🔍 [EXERCISE ${exerciseIndex + 1}] Processing:`, {
+                    exerciseId: exercise.exerciseId,
+                    type: exercise.type,
+                    hasScenarioTitle: !!exercise.scenarioTitle,
+                    hasSteps: !!exercise.steps,
+                    isStepsArray: Array.isArray(exercise.steps),
+                    hasQuestion: !!exercise.question,
+                    hasSentence: !!exercise.sentence,
+                    hasStatement: !!exercise.statement,
+                    difficulty: exercise.difficulty
+                  });
 
                   // Step: Handle micro-sim exercises specially
                   // Micro-sims have a "steps" array and use a different data structure
-                  if (exercise.type === 'micro-sim' && Array.isArray(exercise.steps)) {
-                    console.log(`✅ [EXERCISE ${exerciseIndex + 1}] Adding micro-sim with ${exercise.steps.length} steps`);
+                  // Also handle exercises with scenarioTitle + steps (even without explicit type)
+                  if ((exercise.type === 'micro-sim' || exercise.scenarioTitle) && Array.isArray(exercise.steps)) {
+                    console.log(`✅ [MICRO-SIM ADDED] ${exercise.exerciseId}:`, {
+                      scenarioTitle: exercise.scenarioTitle,
+                      stepCount: exercise.steps.length
+                    });
                     const microSimQuestion: QuizData = {
                       type: 'micro-sim',
                       question: '', // Not used for micro-sims
@@ -350,6 +392,8 @@ export default function YourLessonPage() {
                     };
                     combinedQuestions.push(microSimQuestion);
                     return; // Skip the rest of the processing
+                  } else {
+                    console.log(`⚠️ [NOT MICRO-SIM] ${exercise.exerciseId} - will process as regular exercise`);
                   }
 
                   // Step: Handle regular exercises (multiple-choice, scenario, etc.)
@@ -371,8 +415,6 @@ export default function YourLessonPage() {
                     )
                     : [];
 
-                  console.log(`🔢 [EXERCISE ${exerciseIndex + 1}] Formatted ${formattedOptions.length} options`);
-
                   const correctAnswerText = exercise.correct || exercise.correctAnswer;
                   const correctAnswerId = formattedOptions.find((opt: any) => opt.text === correctAnswerText)?.id || correctAnswerText;
 
@@ -384,16 +426,11 @@ export default function YourLessonPage() {
                         pairsObject![pair.term] = pair.definition;
                       }
                     });
-                    console.log(`🧩 [EXERCISE ${exerciseIndex + 1}] Created matching pairs: ${Object.keys(pairsObject).length} pairs`);
                   }
 
                   const wordsArray = exercise.type === 'build-sentence' && Array.isArray(exercise.words)
                     ? exercise.words
                     : undefined;
-
-                  if (wordsArray) {
-                    console.log(`📝 [EXERCISE ${exerciseIndex + 1}] Sentence building with ${wordsArray.length} words`);
-                  }
 
                   const standardQuestion: QuizData = {
                     type: exercise.type || 'multiple-choice',
@@ -404,69 +441,59 @@ export default function YourLessonPage() {
                     pairs: pairsObject,
                     words: wordsArray,
                     correctSentence: exercise.type === 'build-sentence' ? correctAnswerText : undefined,
+                    // Copy answers array for fill-in questions
+                    answers: exercise.type === 'fill-in' && Array.isArray(exercise.answers) ? exercise.answers : undefined,
+                    // Copy sentence for fill-in questions
+                    sentence: exercise.sentence,
                   };
 
                   // Check if question should be added
                   const shouldAdd = standardQuestion.question || pairsObject || wordsArray;
 
                   if (shouldAdd) {
-                    console.log(`✅ [EXERCISE ${exerciseIndex + 1}] ADDED to lesson (Type: ${exercise.type})`);
                     combinedQuestions.push(standardQuestion);
+                    console.log(`✅ [ADDED] ${exercise.exerciseId} as type: ${standardQuestion.type}`);
                   } else {
-                    console.log(`❌ [EXERCISE ${exerciseIndex + 1}] SKIPPED - No question text, pairs, or words`);
+                    console.log(`❌ [SKIPPED] ${exercise.exerciseId} - no question/pairs/words`);
                   }
                 });
               }
             });
           }
-        });
 
-        console.log(`🎉 [DARK PSYCH] Total questions loaded: ${combinedQuestions.length}`);
-        console.log('📊 [DARK PSYCH] Question types breakdown:',
-          combinedQuestions.reduce((acc: any, q) => {
-            acc[q.type || 'unknown'] = (acc[q.type || 'unknown'] || 0) + 1;
-            return acc;
-          }, {})
-        );
+          console.log(`📊 [FINAL] Total questions loaded: ${combinedQuestions.length}`);
+          console.log(`📊 [FINAL] All questions:`, combinedQuestions.map((q: any, i: number) => ({
+            index: i + 1,
+            type: q.type,
+            scenarioTitle: q.scenarioTitle,
+            hasSteps: !!q.steps,
+            stepCount: q.steps?.length
+          })));
 
-        setAllQuestions(combinedQuestions);
-        return;
+          setAllQuestions(combinedQuestions);
+          return;
+        }
       }
     }
 
     // Handle regular lessons
     if (lessons && currentLessonNumber && lessonCategory !== 'dark-psychology') {
-      console.log('📚 [REGULAR LESSON] Loading regular lesson...');
       const lesson = lessons.find(l => l.lessonNumber === currentLessonNumber);
 
       if (lesson) {
-        console.log('✅ [REGULAR LESSON] Found lesson:', lesson.title || 'Untitled');
         const data = lesson.lessonJSON || lesson.content;
         const combinedQuestions = [];
 
         if (data?.practice && data.practice.length > 0) {
-          console.log(`📝 [REGULAR LESSON] Adding ${data.practice.length} practice questions`);
           combinedQuestions.push(...data.practice);
         }
 
         if (data?.quiz && data.quiz.length > 0) {
-          console.log(`🎯 [REGULAR LESSON] Found ${data.quiz.length} quiz questions`);
-          console.log('🔍 [REGULAR LESSON] Quiz question types BEFORE filter:',
-            data.quiz.map((q: QuizData) => q.type)
-          );
-
           const filteredQuiz = data.quiz.filter((q: QuizData) => q.type !== 'true-false');
-
-          console.log(`⚠️ [REGULAR LESSON] FILTERED OUT ${data.quiz.length - filteredQuiz.length} true-false questions`);
-          console.log(`✅ [REGULAR LESSON] Adding ${filteredQuiz.length} quiz questions (after filtering)`);
-
           combinedQuestions.push(...filteredQuiz);
         }
 
-        console.log(`🎉 [REGULAR LESSON] Total questions loaded: ${combinedQuestions.length}`);
         setAllQuestions(combinedQuestions);
-      } else {
-        console.log('❌ [REGULAR LESSON] Lesson not found for number:', currentLessonNumber);
       }
     }
   }, [lessons, currentLessonNumber, lessonCategory, darkPsychLessons, darkPsychLessonId]);
@@ -531,6 +558,17 @@ export default function YourLessonPage() {
   // Step 6: Shuffle definitions when question changes (for matching questions)
   // This prevents answers from being displayed in order
   useEffect(() => {
+    // Shuffle fill-in-blank options
+    if (currentQuestion?.type === 'fill-in-blank' && (currentQuestion.wrongOptions || currentQuestion.correctAnswer)) {
+      const options = [currentQuestion.correctAnswer, ...(currentQuestion.wrongOptions || [])].filter(Boolean) as string[];
+      const shuffled = [...options];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      setShuffledFillInOptions(shuffled);
+    }
+
     if (currentQuestion?.type === 'matching' && currentQuestion.pairs) {
       const definitions = Object.values(currentQuestion.pairs);
       // Fisher-Yates shuffle algorithm
@@ -583,20 +621,6 @@ export default function YourLessonPage() {
 
   const canAnswer = (userStats?.hearts || 5) > 0 || isLessonAlreadyCompleted();
 
-  // DEBUG: Log current question details
-  useEffect(() => {
-    if (currentQuestion) {
-      console.log('📍 [CURRENT QUESTION]', {
-        type: currentQuestion.type,
-        question: currentQuestion.question?.substring(0, 50),
-        hasOptions: !!currentQuestion.options,
-        optionsCount: currentQuestion.options?.length,
-        correctAnswer: currentQuestion.correctAnswer,
-        isChecked: isChecked,
-        selectedAnswer: selectedAnswer
-      });
-    }
-  }, [currentQuestion, isChecked, selectedAnswer]);
 
   // ✅ In this section we achieved:
   // Loaded all lesson data and combined questions from practice and quiz into one array
@@ -604,18 +628,9 @@ export default function YourLessonPage() {
   // Step 7: Handle answer checking for all question types
   // Check if the user's answer is correct based on question type
   const handleCheckAnswer = async () => {
-    console.log('🔍 [CHECK ANSWER] Starting check...', {
-      questionType: currentQuestion.type,
-      selectedAnswer: selectedAnswer,
-      fillInAnswer: fillInAnswer,
-      selectedWords: selectedWords,
-      correctAnswer: currentQuestion.correctAnswer
-    });
-
     // Step: Prevent checking sentence building with no words selected
     // This ensures user must select at least one word before checking
     if ((currentQuestion.type === 'sentence-building' || currentQuestion.type === 'build-sentence') && selectedWords.length === 0) {
-      console.log('⚠️ [CHECK BLOCKED] No words selected for sentence building');
       return;
     }
 
@@ -637,6 +652,15 @@ export default function YourLessonPage() {
     } else if (currentQuestion.type === 'fill-in-blank') {
       isCorrect = fillInAnswer.toLowerCase().trim() === currentQuestion.correctAnswer?.toLowerCase().trim();
       userAnswer = fillInAnswer;
+    } else if (currentQuestion.type === 'fill-in') {
+      // Step: Check fill-in answers by comparing arrays in order
+      // User must select the correct words in the correct sequence
+      if (currentQuestion.answers && fillInAnswers.length === currentQuestion.answers.length) {
+        isCorrect = fillInAnswers.every((answer, index) =>
+          answer.toLowerCase().trim() === currentQuestion.answers![index].toLowerCase().trim()
+        );
+        userAnswer = fillInAnswers.join(', ');
+      }
     } else if (currentQuestion.type === 'multiple-choice' || currentQuestion.type === 'scenario' || currentQuestion.type === 'true-false' || currentQuestion.type === 'reverse-scenario' || currentQuestion.type === 'boss-scenario' || currentQuestion.type === 'ethical-dilemma' || currentQuestion.type === 'case-analysis') {
       isCorrect = selectedAnswer === currentQuestion?.correctAnswer;
       userAnswer = selectedAnswer || '';
@@ -646,16 +670,7 @@ export default function YourLessonPage() {
       const correctSentence = currentQuestion.correctSentence?.toLowerCase().trim() || '';
       isCorrect = userSentence === correctSentence;
       userAnswer = selectedWords.join(' ');
-
-      // DEBUG: Log sentence building comparison
-      console.log('🔤 [SENTENCE BUILD CHECK]', {
-        userSentence: selectedWords.join(' ').toLowerCase().trim(),
-        correctSentence: currentQuestion.correctSentence?.toLowerCase().trim(),
-        isCorrect: isCorrect
-      });
     }
-
-    console.log('✅ [CHECK RESULT]', { isCorrect, userAnswer });
 
     if (isCorrect) {
       // Step: Play correct answer sound
@@ -668,6 +683,11 @@ export default function YourLessonPage() {
       setCorrectAnswers(correctAnswers + 1);
       // Trigger correct animation
       setCurrentAnimation('correct');
+
+      // Step: Set random motivational message once
+      // This prevents the message from changing on every render
+      const messages = ['Nice catch!', 'Correct!', 'Awesome!', 'Amazing!', 'Perfect!', 'Excellent!', 'Great job!', 'Well done!'];
+      setMotivationalMessage(messages[Math.floor(Math.random() * messages.length)]);
 
       if (!hadWrongAttempt && !isLessonAlreadyCompleted()) {
         try {
@@ -777,6 +797,7 @@ export default function YourLessonPage() {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
         setSelectedAnswer(null);
         setFillInAnswer('');
+        setFillInAnswers([]); // Reset fill-in multiple blanks
         setHadWrongAttempt(false);
         // Reset to thinking animation for next question
         setCurrentAnimation('thinking');
@@ -792,16 +813,35 @@ export default function YourLessonPage() {
         setDraggedWordIndex(null);
         setDraggedAvailableIndex(null);
 
-        // End transition after slide in completes (300ms)
-        setTimeout(() => {
-          setIsTransitioning(false);
-        }, 200);
+        // End transition immediately so new question can slide in
+        setIsTransitioning(false);
       }, 300);
     } else {
       // Step: Play lesson complete sound
       // Celebration sound when user finishes all questions
       if (soundEffects.lessonComplete) {
         soundEffects.lessonComplete.play().catch(() => { });
+      }
+
+      // Step: Handle Dark Psychology Segment Progression
+      // If the lesson has multiple parts, we check if the user just finished a part
+      // but hasn't finished the WHOLE lesson yet.
+      if (lessonCategory === 'dark-psychology' && darkPsychLessonId) {
+        const nextPart = activePartIndex + 1;
+        console.log(`🔒 [PROGRESS] Part ${activePartIndex + 1}/${totalLessonParts} Complete. Saving next part: ${nextPart}`);
+
+        if (typeof window !== 'undefined') {
+          localStorage.setItem(`lesson_progress_${darkPsychLessonId}`, nextPart.toString());
+        }
+
+        // If NOT the last part, stop here (don't mark full lesson as complete)
+        if (activePartIndex < totalLessonParts - 1) {
+          console.log(`⏭️ [PROGRESS] Moving to next segment. Haltiing full completion.`);
+          setShowFinalScore(true); // Show score screen ("Lesson Complete")
+          // When they click "Back", they go to map. 
+          // Clicking lesson again loads next part from localStorage.
+          return;
+        }
       }
 
       // Step 8a: Lesson completed - mark as completed and update streak
@@ -828,7 +868,10 @@ export default function YourLessonPage() {
           // Show streak badge celebration if this is first lesson today
           if (streakResult && !streakResult.isToday) {
             const newStreak = streakResult.streak;
+            const freezeUsed = (streakResult.streakFreezesUsed ?? 0) > 0;
+
             setCelebrationStreak(newStreak);
+            setStreakFreezeUsed(freezeUsed);
             setShowStreakBadge(true);
 
             // Check if this is a milestone
@@ -931,68 +974,34 @@ export default function YourLessonPage() {
   // Step 11: Render final score modal
   // Show results and reinforcement if user got questions wrong
   if (showFinalScore) {
+    const hasMorePartsFlag = lessonCategory === 'dark-psychology' && activePartIndex < totalLessonParts - 1;
+    const handleBack = () => router.push('/dark-psychology-dashboard');
+
     return (
-      <div className="min-h-screen bg-[#1F2937] flex items-center justify-center p-4">
-        <div className="bg-white rounded-lg shadow-2xl p-8 max-w-md w-full">
-          <div className="flex justify-center mb-6">
-            <div className="w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center">
-              <span className="text-6xl">🏆</span>
-            </div>
-          </div>
-
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">Lesson Complete!</h2>
-          <p className="text-center text-gray-600 mb-4">
-            You got <span className="text-2xl font-bold text-blue-600">{correctAnswers}</span> out of{" "}
-            <span className="text-2xl font-bold">{allQuestions.length}</span> correct!
-          </p>
-
-          <div className="w-full bg-gray-200 rounded-full h-4 mb-8">
-            <div
-              className="bg-green-500 h-4 rounded-full transition-all"
-              style={{ width: `${(correctAnswers / allQuestions.length) * 100}%` }}
-            ></div>
-          </div>
-
-          {wrongAnswers.length > 0 ? (
-            <div className="space-y-4">
-              <h3 className="text-xl font-bold text-orange-800 mb-4">📚 Review Wrong Answers</h3>
-              <p className="text-gray-700 mb-4">
-                You got {wrongAnswers.length} question{wrongAnswers.length > 1 ? 's' : ''} wrong:
-              </p>
-
-              <div className="space-y-6">
-                {wrongAnswers.map((mistake, index) => (
-                  <div key={index} className="bg-white rounded-lg p-6 border-2 border-orange-200">
-                    <p className="font-semibold text-gray-800 mb-2">❌ {mistake.question}</p>
-                    <p className="text-sm text-red-600 mb-1">Your answer: {mistake.userAnswer}</p>
-                    <p className="text-sm text-green-600 font-semibold">✅ Correct: {mistake.correctAnswer}</p>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-6 space-y-3">
-                <Button onClick={handleRestartQuiz} className="w-full bg-orange-600 hover:bg-orange-700" size="lg">
-                  Retry Lesson
-                </Button>
-                <Button onClick={() => router.push('/dark-psychology-dashboard')} variant="secondary" className="w-full" size="lg">
-                  Back to Dashboard
-                </Button>
-              </div>
-            </div>
-          ) : (
-            <div className="space-y-3">
-              <p className="text-green-700 text-lg mb-4">🎉 Perfect score! No mistakes!</p>
-              <Button onClick={() => router.push('/dark-psychology-dashboard')} className="w-full bg-green-600 hover:bg-green-700" size="lg">
-                Back to Dashboard
-              </Button>
-            </div>
-          )}
-        </div>
-      </div>
+      <FinalScore
+        correctAnswers={correctAnswers}
+        totalQuestions={allQuestions.length}
+        wrongAnswers={wrongAnswers}
+        totalXP={correctAnswers * 5}
+        lessonTime={0}
+        lessonId={darkPsychLessonId || undefined}
+        lessonNumber={currentLessonNumber || undefined}
+        userEmail={userEmail}
+        firstTryWrongCount={wrongAnswers.length}
+        hasMoreParts={hasMorePartsFlag}
+        currentPart={activePartIndex}
+        totalParts={totalLessonParts}
+        onRetry={handleRestartQuiz}
+        onBackToLessons={handleBack}
+        onContinueNextPart={() => {
+          setShowFinalScore(false);
+          handleBack();
+        }}
+      />
     );
   }
 
-  // ✅ In this section we achieved:
+  // In this section we achieved:
   // Completed the final score screen with reinforcement for wrong answers
 
   // Step 12: Render main lesson interface
@@ -1084,6 +1093,10 @@ export default function YourLessonPage() {
 
           // Combat Mode: Villain avatar, dark atmosphere, speech bubble
           if (uiMode === 'combat') {
+            // Check if this is a micro-sim
+            const isMicroSim = currentQuestion.type === 'micro-sim' && currentQuestion.steps;
+            const currentStep = isMicroSim ? currentQuestion.steps[microSimStep] : null;
+
             // Regular Scenario: Single scene with static speech bubble
             const parsed = parseQuestionText(currentQuestion.question);
             const questionText = parsed.scene ? parsed.question : currentQuestion.question;
@@ -1092,19 +1105,20 @@ export default function YourLessonPage() {
               <div className="mb-6 md:mb-8">
                 {/* Combat Title - Centered */}
                 <h2 className="text-xl md:text-2xl font-bold text-red-500 mb-6 md:mb-8 text-center">
-                  ⚔️ Active Practice - Field Scenario
+                  {isMicroSim ? `⚔️ ${currentQuestion.scenarioTitle || 'Micro-Simulation'}` : '⚔️ Active Practice - Field Scenario'}
                 </h2>
 
                 {/* Character and Speech Bubble Container - Absolute Character to prevent layout shift */}
                 <div className="relative mb-2 min-h-[200px] md:min-h-[300px]">
                   {/* Character Avatar - Absolute Positioned to hang off the left */}
-                  <div className="absolute -left-[100px] md:-left-[100px] -top-30 z-10">
-                    <div className="w-[350px] h-[350px] md:w-[550px] md:h-[550px] rounded-2xl overflow-hidden bg-transparent">
+                  <div className="absolute -left-[100px] md:-left-[100px] -top-30 z-10 opacity-100">
+                    <div className="w-[350px] h-[350px] md:w-[550px] md:h-[550px] rounded-2xl overflow-hidden bg-transparent opacity-100">
                       <video
                         ref={(ref) => setVideoRef(ref)}
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-contain opacity-100"
                         muted
                         playsInline
+                        style={{ opacity: 1 }}
                       >
                         <source src="/animations/character-standing.webm" type="video/webm" />
                       </video>
@@ -1118,11 +1132,18 @@ export default function YourLessonPage() {
                         {/* Speech bubble pointer */}
                         <div className="absolute left-0 top-16 transform -translate-x-2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#2a1f1f]"></div>
 
-                        {/* Scene text */}
-                        {parsed.scene && (
+                        {/* Micro-sim: Show current step's scene or question */}
+                        {isMicroSim && currentStep && (
+                          <p className="text-red-200 text-base md:text-lg italic mb-2">
+                            {renderTextWithBold(currentStep.scene || currentStep.question)}
+                          </p>
+                        )}
+
+                        {/* Regular scenario: Scene text */}
+                        {!isMicroSim && parsed.scene && (
                           <p className="text-red-200 text-base md:text-lg italic mb-2">{renderTextWithBold(parsed.scene)}</p>
                         )}
-                        {!parsed.scene && (
+                        {!isMicroSim && !parsed.scene && (
                           <p className="text-white text-base md:text-lg font-semibold">{renderTextWithBold(currentQuestion.question)}</p>
                         )}
                       </div>
@@ -1132,9 +1153,9 @@ export default function YourLessonPage() {
 
                 {/* Secondary Question Text Area - Consistent Spacing below character/bubble */}
                 {/* Only show if we have a separate question line (like in scenarios) */}
-                <div className="min-h-[60px] flex items-center justify-center mb-6">
+                <div className={`min-h-[60px] flex items-center justify-center mb-6 transition-all duration-300 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
                   {parsed.scene && questionText && (
-                    <p className="text-white text-lg md:text-xl font-bold text-center animate-fade-in">
+                    <p className="text-white text-lg md:text-xl font-bold text-center">
                       {renderTextWithBold(questionText)}
                     </p>
                   )}
@@ -1148,20 +1169,21 @@ export default function YourLessonPage() {
             return (
               <div className="mb-6 md:mb-8">
                 {/* Training Title - Centered */}
-                <h2 className="text-xl md:text-2xl font-bold text-blue-400 mb-6 md:mb-8 text-center">
+                <h2 className={`text-xl md:text-2xl font-bold text-blue-400 mb-6 md:mb-8 text-center transition-all duration-300 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
                   📚 Theory Learning - The Lab
                 </h2>
 
                 {/* Character and Speech Bubble Container - Absolute Character */}
                 <div className="relative mb-2 min-h-[200px] md:min-h-[300px]">
-                  {/* Character Avatar - Left Side Absolute */}
-                  <div className="absolute -left-[100px] md:-left-[100px] -top-30 z-10">
-                    <div className="w-[350px] h-[350px] md:w-[550px] md:h-[550px] rounded-2xl overflow-hidden bg-transparent">
+                  {/* Character Avatar - Left Side Absolute - Always visible, no fade */}
+                  <div className="absolute -left-[100px] md:-left-[100px] -top-30 z-10 opacity-100">
+                    <div className="w-[350px] h-[350px] md:w-[550px] md:h-[550px] rounded-2xl overflow-hidden bg-transparent opacity-100">
                       <video
                         ref={(ref) => setVideoRef(ref)}
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-contain opacity-100"
                         muted
                         playsInline
+                        style={{ opacity: 1 }}
                       >
                         <source src="/animations/character-standing.webm" type="video/webm" />
                       </video>
@@ -1184,7 +1206,40 @@ export default function YourLessonPage() {
 
                         {/* Question text */}
                         <p className="text-white text-base md:text-lg font-semibold leading-relaxed">
-                          {renderTextWithBold(currentQuestion.question)}
+                          {currentQuestion.type === 'fill-in' && currentQuestion.sentence ? (
+                            // For fill-in questions, show sentence with blanks that fill in as user selects words
+                            (() => {
+                              const parts = currentQuestion.sentence.split('(--------)');
+                              return parts.map((part, index) => (
+                                <span key={index}>
+                                  {part}
+                                  {index < parts.length - 1 && (
+                                    <span
+                                      onClick={() => {
+                                        if (!isChecked && fillInAnswers[index]) {
+                                          // Remove this word from the blank by setting it to empty string
+                                          const newAnswers = [...fillInAnswers];
+                                          newAnswers[index] = '';
+                                          // Filter out empty strings from the end to keep array clean
+                                          while (newAnswers.length > 0 && !newAnswers[newAnswers.length - 1]) {
+                                            newAnswers.pop();
+                                          }
+                                          setFillInAnswers(newAnswers);
+                                        }
+                                      }}
+                                      className={`inline-flex items-center justify-center mx-1 px-4 py-2 rounded-lg border-2 font-semibold text-sm md:text-base min-w-[120px] transition-all ${fillInAnswers[index]
+                                        ? 'bg-[#58CC02] border-[#46A302] text-white cursor-pointer hover:opacity-80 hover:scale-105'
+                                        : 'bg-gray-800 border-gray-600 text-gray-400 cursor-default'
+                                        }`}>
+                                      {fillInAnswers[index] || '________'}
+                                    </span>
+                                  )}
+                                </span>
+                              ));
+                            })()
+                          ) : (
+                            renderTextWithBold(currentQuestion.question)
+                          )}
                         </p>
                       </div>
                     </div>
@@ -1402,29 +1457,118 @@ export default function YourLessonPage() {
 
             {/* Word Options */}
             <div className="grid grid-cols-2 gap-2 md:gap-3">
-              {(currentQuestion.wrongOptions || currentQuestion.correctAnswer) &&
-                [currentQuestion.correctAnswer, ...(currentQuestion.wrongOptions || [])]
-                  .filter(Boolean)
-                  .sort(() => Math.random() - 0.5)
-                  .map((option) => (
-                    <button
-                      key={option}
-                      onClick={() => setFillInAnswer(option!)}
-                      disabled={isChecked}
-                      className={`p-3 md:p-4 rounded-lg md:rounded-xl border-2 md:border-4 text-sm md:text-base font-semibold transition-all ${fillInAnswer === option
-                        ? 'bg-[#1a2332] border-[#58CC02] text-[#58CC02] scale-105'
-                        : 'bg-[#1a2332] border-gray-600 hover:border-gray-500 text-white'
-                        } ${isChecked ? 'opacity-50 cursor-not-allowed' : ''}`}
-                    >
-                      {option}
-                    </button>
-                  ))}
+              {shuffledFillInOptions.map((option) => (
+                <button
+                  key={option}
+                  onClick={() => setFillInAnswer(option)}
+                  disabled={isChecked}
+                  className={`p-3 md:p-4 rounded-lg md:rounded-xl border-2 md:border-4 text-sm md:text-base font-semibold transition-all ${fillInAnswer === option
+                    ? 'bg-[#1a2332] border-[#58CC02] text-[#58CC02] scale-105'
+                    : 'bg-[#1a2332] border-gray-600 hover:border-gray-500 text-white'
+                    } ${isChecked ? 'opacity-50 cursor-not-allowed' : ''}`}
+                >
+                  {option}
+                </button>
+              ))}
             </div>
           </div>
         )}
 
-        {/* Step 15.5: Render Multiple Choice and Similar Question Types */}
-        {['multiple-choice', 'scenario', 'fill-in', 'true-false', 'reverse-scenario', 'ethical-dilemma', 'boss-scenario', 'case-analysis'].includes(currentQuestion.type) && currentQuestion.options && (
+        {/* Step 15.5: Render Fill-In Questions with Multiple Blanks */}
+        {/* Show sentence with numbered blank slots and clickable word buttons below */}
+        {currentQuestion.type === 'fill-in' && currentQuestion.sentence && currentQuestion.answers && (
+          <div className={`space-y-6 md:space-y-8 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
+
+            {/* Word option buttons */}
+            <div className="grid grid-cols-2 gap-3 md:gap-4 max-w-2xl mx-auto px-4">
+              {currentQuestion.options?.map((option) => {
+                const isSelected = fillInAnswers.includes(option.text);
+                const isDisabled = isChecked || fillInAnswers.length >= (currentQuestion.answers?.length || 0);
+
+                return (
+                  <button
+                    key={option.id}
+                    onClick={() => {
+                      if (!isChecked) {
+                        const maxBlanks = currentQuestion.answers?.length || 0;
+                        // Find first empty position or add to end if all filled
+                        const newAnswers = [...fillInAnswers];
+                        let inserted = false;
+                        for (let i = 0; i < maxBlanks; i++) {
+                          if (!newAnswers[i]) {
+                            newAnswers[i] = option.text;
+                            inserted = true;
+                            break;
+                          }
+                        }
+                        if (!inserted && newAnswers.length < maxBlanks) {
+                          newAnswers.push(option.text);
+                        }
+                        if (inserted || newAnswers.length <= maxBlanks) {
+                          setFillInAnswers(newAnswers);
+                        }
+                      }
+                    }}
+                    disabled={isSelected || isDisabled}
+                    className={`p-4 md:p-5 rounded-xl md:rounded-2xl border-2 md:border-3 text-sm md:text-lg font-semibold transition-all ${isSelected
+                      ? 'bg-gray-800 border-gray-700 text-gray-500 opacity-50 cursor-not-allowed'
+                      : isDisabled
+                        ? 'bg-[#1a2332] border-gray-600 text-gray-400 opacity-70 cursor-not-allowed'
+                        : 'bg-[#1a2332] border-gray-600 hover:border-[#58CC02] text-white hover:scale-105 active:scale-95'
+                      }`}
+                  >
+                    {option.text}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
+        {/* Step 15.5.5: Render Micro-Sim Options */}
+        {currentQuestion.type === 'micro-sim' && currentQuestion.steps && (() => {
+          const currentStep = currentQuestion.steps[microSimStep];
+          if (!currentStep || !currentStep.options) return null;
+
+          return (
+            <div className="mb-6 md:mb-8">
+              {/* Options Grid - ANIMATED */}
+              <div className={`flex justify-center ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
+                <div className="grid grid-cols-2 gap-4 md:gap-6 max-w-3xl w-full px-4">
+                  {currentStep.options.map((optionText, index) => {
+                    const optionId = String.fromCharCode(65 + index); // A, B, C, D
+                    const isSelected = selectedAnswer === optionId;
+                    const showCorrect = isChecked && optionText === currentStep.correct;
+                    const showWrong = isChecked && isSelected && optionText !== currentStep.correct;
+
+                    return (
+                      <button
+                        key={optionId}
+                        onClick={() => !isChecked && setSelectedAnswer(optionId)}
+                        disabled={isChecked}
+                        className={`p-4 md:p-5 rounded-xl md:rounded-2xl border-2 md:border-3 transition-all text-left ${showCorrect
+                          ? "border-[#58CC02] bg-green-900/40 text-[#58CC02]"
+                          : showWrong
+                            ? "border-red-500 bg-[#1a2332] text-red-400"
+                            : isSelected
+                              ? "border-[#58CC02] bg-[#1a2332] text-[#58CC02]"
+                              : "border-gray-600 bg-[#1a2332] text-white hover:border-gray-500"
+                          } ${!isChecked ? 'hover:scale-102 active:scale-98' : ''}`}
+                      >
+                        <span className="text-sm md:text-base font-semibold">
+                          {optionText}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          );
+        })()}
+
+        {/* Step 15.6: Render Multiple Choice and Similar Question Types */}
+        {['multiple-choice', 'scenario', 'true-false', 'reverse-scenario', 'ethical-dilemma', 'boss-scenario', 'case-analysis'].includes(currentQuestion.type) && currentQuestion.options && (
           <div className="mb-6 md:mb-8">
             {/* Options Grid - ANIMATED, Centered below character and bubble */}
             <div className={`flex justify-center ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
@@ -1640,6 +1784,7 @@ export default function YourLessonPage() {
                 disabled={
                   (currentQuestion.type === 'multiple-choice' && !selectedAnswer) ||
                   (currentQuestion.type === 'fill-in-blank' && !fillInAnswer) ||
+                  (currentQuestion.type === 'fill-in' && (!currentQuestion.answers || fillInAnswers.length < currentQuestion.answers.length)) ||
                   (currentQuestion.type === 'sentence-building' && selectedWords.length === 0) ||
                   !canAnswer
                 }
@@ -1666,8 +1811,9 @@ export default function YourLessonPage() {
                 return false;
               }
               return fillInAnswer.toLowerCase().trim() === currentQuestion.correctAnswer?.toLowerCase().trim() ||
+                (currentQuestion.type === 'fill-in' && currentQuestion.answers && fillInAnswers.length === currentQuestion.answers.length && fillInAnswers.every((answer, index) => answer.toLowerCase().trim() === currentQuestion.answers![index].toLowerCase().trim())) ||
                 selectedAnswer === currentQuestion?.correctAnswer ||
-                (currentQuestion.type === 'sentence-building' && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim());
+                ((currentQuestion.type === 'sentence-building' || currentQuestion.type === 'build-sentence') && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim());
             })()
               ? 'bg-[#58CC02] border-[#46A302]' : 'bg-red-500 border-red-700'
             }`}>
@@ -1687,8 +1833,9 @@ export default function YourLessonPage() {
                       }
                     } else {
                       isCorrect = fillInAnswer.toLowerCase().trim() === currentQuestion.correctAnswer?.toLowerCase().trim() ||
+                        (currentQuestion.type === 'fill-in' && currentQuestion.answers && fillInAnswers.length === currentQuestion.answers.length && fillInAnswers.every((answer, index) => answer.toLowerCase().trim() === currentQuestion.answers![index].toLowerCase().trim())) ||
                         selectedAnswer === currentQuestion?.correctAnswer ||
-                        (currentQuestion.type === 'sentence-building' && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim());
+                        ((currentQuestion.type === 'sentence-building' || currentQuestion.type === 'build-sentence') && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim());
                     }
 
                     return isCorrect ? (
@@ -1718,8 +1865,9 @@ export default function YourLessonPage() {
                         }
                       } else {
                         isCorrect = fillInAnswer.toLowerCase().trim() === currentQuestion.correctAnswer?.toLowerCase().trim() ||
+                          (currentQuestion.type === 'fill-in' && currentQuestion.answers && fillInAnswers.length === currentQuestion.answers.length && fillInAnswers.every((answer, index) => answer.toLowerCase().trim() === currentQuestion.answers![index].toLowerCase().trim())) ||
                           selectedAnswer === currentQuestion?.correctAnswer ||
-                          (currentQuestion.type === 'sentence-building' && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim());
+                          ((currentQuestion.type === 'sentence-building' || currentQuestion.type === 'build-sentence') && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim());
                         feedbackText = currentQuestion.explanation || '';
                       }
 
@@ -1727,7 +1875,7 @@ export default function YourLessonPage() {
                         <>
                           <p className="text-white font-bold text-lg md:text-2xl">
                             {isCorrect
-                              ? ['Nice catch!', 'Correct!', 'Awesome!', 'Amazing!', 'Perfect!', 'Excellent!', 'Great job!', 'Well done!'][Math.floor(Math.random() * 8)]
+                              ? motivationalMessage
                               : 'Incorrect'}
                           </p>
                           {feedbackText && (
@@ -1745,8 +1893,9 @@ export default function YourLessonPage() {
                 <div className="flex items-center gap-3">
                   {/* Share and Report buttons (only on correct answer) */}
                   {(fillInAnswer.toLowerCase().trim() === currentQuestion.correctAnswer?.toLowerCase().trim() ||
+                    (currentQuestion.type === 'fill-in' && currentQuestion.answers && fillInAnswers.length === currentQuestion.answers.length && fillInAnswers.every((answer, index) => answer.toLowerCase().trim() === currentQuestion.answers![index].toLowerCase().trim())) ||
                     selectedAnswer === currentQuestion?.correctAnswer ||
-                    (currentQuestion.type === 'sentence-building' && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim())) && (
+                    ((currentQuestion.type === 'sentence-building' || currentQuestion.type === 'build-sentence') && selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim())) && (
                       <>
                         <button className="p-2 hover:bg-white/20 rounded-lg transition-colors">
                           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1825,6 +1974,11 @@ export default function YourLessonPage() {
             </StreakBadge>
             <div className="text-white text-2xl font-bold text-center">
               {celebrationStreak} Day Streak!
+              {streakFreezeUsed && (
+                <div className="text-blue-400 text-lg mt-2">
+                  ❄️ Streak Freeze Used
+                </div>
+              )}
               {[5, 10, 15, 20, 25, 30].includes(celebrationStreak) && (
                 <div className="text-yellow-400 text-lg mt-2">
                   🎉 Milestone Achieved! 🎉
