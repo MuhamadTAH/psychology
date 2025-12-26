@@ -187,7 +187,6 @@
         {
           "exerciseId": "A4-5-P1-E8",
           "type": "reverse-scenario",
-          "answer": "A lifestyle where the individual relies on others for financial support, often through manipulation or theft, while refusing to work.",
           "question": "What is this trait?",
           "options": [
             "Parasitic Lifestyle",
@@ -200,7 +199,8 @@
           "feedback": {
             "correct": "Correct. They feel entitled to your resources. They are the 'Mooch' who never leaves.",
             "incorrect": "It is active exploitation, not bad luck."
-          }
+          },
+          "scene": "A lifestyle where the individual relies on others for financial support, often through manipulation or theft, while refusing to work."
         },
         {
           "exerciseId": "A4-5-P1-E9",
@@ -331,7 +331,6 @@
         {
           "exerciseId": "A4-5-P1-E16",
           "type": "reverse-scenario",
-          "answer": "A deliberate attempt to confuse you, deny reality, and make you doubt your sanity.",
           "question": "What is this?",
           "options": [
             "Gaslighting",
@@ -344,7 +343,8 @@
           "feedback": {
             "correct": "Correct. Gaslighting is the tool of control for all Dark Triad types, including Psychopaths.",
             "incorrect": "It targets your sanity."
-          }
+          },
+          "scene": "A deliberate attempt to confuse you, deny reality, and make you doubt your sanity."
         },
         {
           "exerciseId": "A4-5-P1-E17",

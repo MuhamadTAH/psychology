@@ -188,7 +188,6 @@
         {
           "exerciseId": "B4-4-P2-E8",
           "type": "reverse-scenario",
-          "answer": "A leader who claims to have a 'Secret Plan' or 'Divine Vision' that cannot be questioned or explained to outsiders.",
           "question": "What is this?",
           "options": [
             "The Prophet / Visionary Trap",
@@ -201,7 +200,8 @@
           "feedback": {
             "correct": "Correct. By claiming the source is 'Divine' or 'Secret,' they insulate themselves from logic. You must believe to see.",
             "incorrect": "Scientists explain. Prophets demand faith. Manipulators play the Prophet."
-          }
+          },
+          "scene": "A leader who claims to have a 'Secret Plan' or 'Divine Vision' that cannot be questioned or explained to outsiders."
         },
         {
           "exerciseId": "B4-4-P2-E9",

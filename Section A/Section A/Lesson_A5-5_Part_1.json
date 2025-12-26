@@ -150,7 +150,6 @@
         {
           "exerciseId": "A5-5-P1-E6",
           "type": "reverse-scenario",
-          "answer": "The tendency to value a relationship *more* because you have already invested time/money into it, making it hard to leave.",
           "question": "What is this bias?",
           "options": [
             "Sunk Cost Fallacy",
@@ -163,7 +162,8 @@
           "feedback": {
             "correct": "Correct. 'I can't leave after 5 years.' This thought keeps you trapped. The time is gone; don't waste more.",
             "incorrect": "It's about past investment. You are trying to 'save' a lost bet."
-          }
+          },
+          "scene": "The tendency to value a relationship *more* because you have already invested time/money into it, making it hard to leave."
         },
         {
           "exerciseId": "A5-5-P1-E7",

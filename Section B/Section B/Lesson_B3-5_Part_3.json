@@ -205,7 +205,6 @@
         {
           "exerciseId": "B3-5-P3-E8",
           "type": "reverse-scenario",
-          "answer": "The technique of verifying a request by contacting the sender through a different, trusted channel (e.g., calling the bank using the number on your card).",
           "question": "What is this?",
           "options": [
             "Out-of-Band Verification",
@@ -218,7 +217,8 @@
           "feedback": {
             "correct": "Correct. The only way to be 100% sure. Never use the contact info provided in the suspicious message.",
             "incorrect": "In-Band (replying to the email) is dangerous."
-          }
+          },
+          "scene": "The technique of verifying a request by contacting the sender through a different, trusted channel (e.g., calling the bank using the number on your card)."
         },
         {
           "exerciseId": "B3-5-P3-E9",

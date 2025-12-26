@@ -206,7 +206,6 @@
         {
           "exerciseId": "B2-1-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A tactic where you agree with the opponent's premise but change the conclusion. 'Yes, the price is high, which is why you get the best service.'",
           "question": "What is this?",
           "options": [
             "Agreement Frame / Pivot",
@@ -219,7 +218,8 @@
           "feedback": {
             "correct": "Correct. 'Yes, and...' You validate the fact (Price) but link it to a positive (Service) instead of a negative (Cost).",
             "incorrect": "Denial fights the fact. The Agreement Frame uses the fact as leverage."
-          }
+          },
+          "scene": "A tactic where you agree with the opponent's premise but change the conclusion. 'Yes, the price is high, which is why you get the best service.'"
         },
         {
           "exerciseId": "B2-1-P3-E9",

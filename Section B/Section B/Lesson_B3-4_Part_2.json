@@ -187,7 +187,6 @@
         {
           "exerciseId": "B3-4-P2-E8",
           "type": "reverse-scenario",
-          "answer": "A specific type of compliment that attributes a positive trait to you ('You are a generous person') to force you to act in accordance with that trait.",
           "question": "What is this?",
           "options": [
             "Altercasting / Labeling",
@@ -200,7 +199,8 @@
           "feedback": {
             "correct": "Correct. 'You are generous' creates a pressure to *prove* you are generous by giving money.",
             "incorrect": "It casts you in a role (Alter) that serves the manipulator."
-          }
+          },
+          "scene": "A specific type of compliment that attributes a positive trait to you ('You are a generous person') to force you to act in accordance with that trait."
         },
         {
           "exerciseId": "B3-4-P2-E9",

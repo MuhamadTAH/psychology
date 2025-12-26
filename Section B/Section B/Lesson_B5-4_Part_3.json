@@ -208,7 +208,6 @@
         {
           "exerciseId": "B5-4-P3-E8",
           "type": "reverse-scenario",
-          "answer": "Using a celebrity or respected figure to endorse a candidate, transferring their 'Halo' to the politician.",
           "question": "What is this?",
           "options": [
             "Authority Transfer / Halo Effect",
@@ -221,7 +220,8 @@
           "feedback": {
             "correct": "Correct. 'I like this actor, so I will vote for who they like.' It is irrational but effective.",
             "incorrect": "Actors are not policy experts. It is purely emotional transfer."
-          }
+          },
+          "scene": "Using a celebrity or respected figure to endorse a candidate, transferring their 'Halo' to the politician."
         },
         {
           "exerciseId": "B5-4-P3-E9",

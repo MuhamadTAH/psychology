@@ -187,7 +187,6 @@
         {
           "exerciseId": "A4-4-P2-E8",
           "type": "reverse-scenario",
-          "answer": "A sudden, complete cessation of crying/sadness the moment they get what they want (or realize the tactic isn't working).",
           "question": "What is this phenomenon?",
           "options": [
             "The Switch",
@@ -200,7 +199,8 @@
           "feedback": {
             "correct": "Correct. Real emotion fades gradually. Fake emotion shuts off like a light switch. This is the 'Mask Drop'.",
             "incorrect": "It happens too fast to be regulation or healing. It proves the emotion was instrumental."
-          }
+          },
+          "scene": "A sudden, complete cessation of crying/sadness the moment they get what they want (or realize the tactic isn't working)."
         },
         {
           "exerciseId": "A4-4-P2-E9",

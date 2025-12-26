@@ -203,7 +203,6 @@
         {
           "exerciseId": "A4-1-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A tactic where the predator acts helpless or injured (like 'Ted Bundy' with his fake cast) to lure a victim closer.",
           "question": "What is this?",
           "options": [
             "The Pity Play / Wolf in Sheep's Clothing",
@@ -216,7 +215,8 @@
           "feedback": {
             "correct": "Correct. Normal people have an urge to help the weak. Predators exploit this instinct to close the distance.",
             "incorrect": "This is a specific ambush tactic. 'Help me' is the lure."
-          }
+          },
+          "scene": "A tactic where the predator acts helpless or injured (like 'Ted Bundy' with his fake cast) to lure a victim closer."
         },
         {
           "exerciseId": "A4-1-P3-E9",

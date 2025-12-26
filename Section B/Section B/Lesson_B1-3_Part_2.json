@@ -186,7 +186,6 @@
         {
           "exerciseId": "B1-3-P2-E8",
           "type": "reverse-scenario",
-          "answer": "A rhetorical device where the speaker presents two extreme options as the *only* possibilities (e.g., 'Either you are with us, or you are with the terrorists').",
           "question": "What is this?",
           "options": [
             "False Dichotomy / Black-and-White Thinking",
@@ -199,7 +198,8 @@
           "feedback": {
             "correct": "Correct. It erases the middle ground (nuance). Manipulators hate the middle ground because that is where compromise lives.",
             "incorrect": "It is a specific logical fallacy used to force polarization."
-          }
+          },
+          "scene": "A rhetorical device where the speaker presents two extreme options as the *only* possibilities (e.g., 'Either you are with us, or you are with the terrorists')."
         },
         {
           "exerciseId": "B1-3-P2-E9",

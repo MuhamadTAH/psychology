@@ -204,7 +204,6 @@
         {
           "exerciseId": "B5-1-P3-E8",
           "type": "reverse-scenario",
-          "answer": "Attacking the opponent's motive instead of their argument (e.g., 'You only say that because you're paid to').",
           "question": "What is this fallacy?",
           "options": [
             "Bulverism / Appeal to Motive",
@@ -217,7 +216,8 @@
           "feedback": {
             "correct": "Correct. C.S. Lewis coined 'Bulverism.' Instead of proving *that* you are wrong, they explain *why* you are wrong (your bias).",
             "incorrect": "It dismisses the argument by attacking the source's intent."
-          }
+          },
+          "scene": "Attacking the opponent's motive instead of their argument (e.g., 'You only say that because you're paid to')."
         },
         {
           "exerciseId": "B5-1-P3-E9",

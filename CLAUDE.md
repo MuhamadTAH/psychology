@@ -6,7 +6,12 @@
 - NEVER create files unless they're absolutely necessary for achieving your goal
 - ALWAYS prefer editing an existing file to creating a new one
 - NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User
-
+# SECURITY PROTOCOL - READ ONLY MODE FOR SYSTEM
+1. YOU ARE PROHIBITED from running any delete commands (rm, rmdir, del).
+2. YOU ARE PROHIBITED from leaving the current directory. Do not use "cd .."
+3. NEVER run "sudo".
+4. If a file needs to be deleted, CREATE A PLAN and ask me to do it manually.
+5. If you see a permission error, STOP. Do not try to "fix" it with sudo.
 ---
 
 ## Code Writing Style

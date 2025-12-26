@@ -173,7 +173,6 @@
         {
           "exerciseId": "B3-3-P1-E7",
           "type": "reverse-scenario",
-          "answer": "Following an authorized person into a secure building by relying on their politeness to hold the door.",
           "question": "What is this physical pretext called?",
           "options": [
             "Tailgating / Piggybacking",
@@ -186,7 +185,8 @@
           "feedback": {
             "correct": "Correct. The pretext is 'I forgot my badge' or just looking busy. It exploits social norms (politeness) to bypass security.",
             "incorrect": "Dumpster diving is looking for trash. Tailgating is walking in behind someone."
-          }
+          },
+          "scene": "Following an authorized person into a secure building by relying on their politeness to hold the door."
         },
         {
           "exerciseId": "B3-3-P1-E8",

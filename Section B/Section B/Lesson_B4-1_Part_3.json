@@ -210,7 +210,6 @@
         {
           "exerciseId": "B4-1-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A tactic where a seller lists an item as 'Out of Stock' or 'Sold Out' just to build hype and demand.",
           "question": "What is this?",
           "options": [
             "Artificial Scarcity / The Velvet Rope",
@@ -223,7 +222,8 @@
           "feedback": {
             "correct": "Correct. Supreme and luxury brands do this. The empty shelf sells the next shipment.",
             "incorrect": "It is intentional. Unavailability creates mystique."
-          }
+          },
+          "scene": "A tactic where a seller lists an item as 'Out of Stock' or 'Sold Out' just to build hype and demand."
         },
         {
           "exerciseId": "B4-1-P3-E9",

@@ -173,7 +173,6 @@
         {
           "exerciseId": "B2-1-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A rhetorical tactic where you define the debate terms so the opponent loses no matter what they say (e.g., 'When did you stop hitting your wife?').",
           "question": "What is this?",
           "options": [
             "The Loaded Frame / Complex Question",
@@ -186,7 +185,8 @@
           "feedback": {
             "correct": "Correct. The frame assumes guilt. If you answer 'Yesterday,' you are guilty. If you answer 'Never,' you sound defensive. You must reject the frame.",
             "incorrect": "It loads the question with a presupposition (Frame) that traps the answerer."
-          }
+          },
+          "scene": "A rhetorical tactic where you define the debate terms so the opponent loses no matter what they say (e.g., 'When did you stop hitting your wife?')."
         },
         {
           "exerciseId": "B2-1-P1-E8",

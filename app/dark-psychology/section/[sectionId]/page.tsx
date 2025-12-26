@@ -69,63 +69,51 @@ export default function SectionPage() {
   const params = useParams();
   const sectionId = params.sectionId as string;
 
-  const { user } = useUser();
+  const { user, isLoaded, isSignedIn } = useUser();
   const userEmail = user?.primaryEmailAddress?.emailAddress;
+  const shouldLoad = isLoaded && isSignedIn;
 
-  const progress = useQuery(api.lessons.getUserProgress, userEmail ? { email: userEmail } : "skip");
+  const progress = useQuery(api.lessons.getUserProgress, shouldLoad && userEmail ? { email: userEmail } : "skip");
+  useEffect(() => {
+    console.log('[DP MAP] progress loaded', {
+      userEmail,
+      progressCount: progress ? progress.length : 'skip/undefined',
+      sample: progress?.slice(0, 10)?.map(p => ({
+        id: p._id,
+        lessonNumber: p.lessonNumber,
+        darkPsychLessonId: p.darkPsychLessonId,
+        isCompleted: p.isCompleted,
+        completedStages: p.completedStages,
+        currentPart: p.currentPart,
+        completedParts: p.completedParts,
+        reviewedParts: p.reviewedParts,
+      })),
+    });
+  }, [progress, userEmail]);
+
+  // Step: Pre-load click sound for instant playback
+  // Loading sound once makes it play immediately when clicked
+  const [buttonSound] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const sound = new Audio('/sounds/button-click.mp3');
+      sound.volume = 0.5;
+      return sound;
+    }
+    return null;
+  });
+
+  const playClickSound = () => {
+    if (buttonSound) {
+      buttonSound.currentTime = 0; // Reset to start
+      buttonSound.play().catch(() => {});
+    }
+  };
 
   // Step: Load all Dark Psychology lessons from database
-  const dbLessons = useQuery(api.lessons.getAllDarkPsychologyLessons);
+  const dbLessons = useQuery(api.lessons.getAllDarkPsychologyLessons, shouldLoad ? {} : "skip");
 
   // Step: Mutation to delete all lessons in this section
   const deleteAllInSection = useMutation(api.darkPsychology.deleteAllLessonsInSection);
-
-  // 🐛 DEBUG: Comprehensive logging for database query
-  useEffect(() => {
-    console.log('═══════════════════════════════════════════════════════');
-    console.log('🔍 [DB QUERY STATUS CHECK]');
-    console.log('═══════════════════════════════════════════════════════');
-    console.log('🔍 [DB LESSONS] Type:', typeof dbLessons);
-    console.log('🔍 [DB LESSONS] Is undefined:', dbLessons === undefined);
-    console.log('🔍 [DB LESSONS] Is null:', dbLessons === null);
-    console.log('🔍 [DB LESSONS] Is array:', Array.isArray(dbLessons));
-    console.log('🔍 [DB LESSONS] Length:', dbLessons?.length);
-    console.log('🔍 [DB LESSONS] Raw value:', dbLessons);
-
-    if (dbLessons && Array.isArray(dbLessons)) {
-      console.log('✅ [DB LESSONS] Successfully loaded', dbLessons.length, 'lessons');
-      dbLessons.forEach((lesson, i) => {
-        console.log(`📄 [LESSON ${i}]`, {
-          _id: lesson._id,
-          title: lesson.title,
-          userId: lesson.userId,
-          lessonJSON: lesson.lessonJSON ? {
-            sectionId: lesson.lessonJSON.sectionId,
-            unitId: lesson.lessonJSON.unitId,
-            lessonId: lesson.lessonJSON.lessonId,
-            lessonPart: lesson.lessonJSON.lessonPart,
-            lessonTitle: lesson.lessonJSON.lessonTitle,
-          } : 'NO JSON DATA'
-        });
-      });
-    } else if (dbLessons === undefined) {
-      console.log('⚠️ [DB LESSONS] Still loading (undefined)...');
-    } else {
-      console.log('❌ [DB LESSONS] Unexpected state:', dbLessons);
-    }
-    console.log('═══════════════════════════════════════════════════════');
-  }, [dbLessons]);
-
-  // 🐛 DEBUG: Log all progress data on load
-  useEffect(() => {
-    if (progress && progress.length > 0) {
-      console.log('🔍 [ALL PROGRESS DATA]', progress);
-      console.log('🔍 [PROGRESS COUNT]', progress.length);
-      progress.forEach((p, i) => {
-        console.log(`🔍 [PROGRESS ${i}] lessonNumber: ${p.lessonNumber}, darkPsychLessonId: ${p.darkPsychLessonId}, isCompleted: ${p.isCompleted}`);
-      });
-    }
-  }, [progress]);
 
   // Step: Define section titles
   const SECTIONS = {
@@ -143,16 +131,6 @@ export default function SectionPage() {
       const lessonData = lesson.lessonJSON;
       return (lessonData?.sectionId || lessonData?.section) === sectionId;
     });
-
-  // 🐛 DEBUG: Log filtered lessons count
-  console.log('🔍 [FILTER] Total DB lessons:', dbLessons?.length || 0);
-  console.log('🔍 [FILTER] Filtered lessons for section', sectionId, ':', filteredLessons.length);
-
-  // 🐛 DEBUG: Log each filtered lesson's lessonId and lessonPart
-  filteredLessons.forEach((lesson, i) => {
-    const lessonData = lesson.lessonJSON;
-    console.log(`🔍 [FILTER ${i}] lessonId: ${lessonData.lessonId}, lessonPart: ${lessonData.lessonPart}, title: "${lessonData.lessonTitle}"`);
-  });
 
   // Step: GROUP lessons by lessonId to combine multiple part files into one logical lesson
   // This handles the case where each lesson has 3 separate JSON files (Part_1.json, Part_2.json, Part_3.json)
@@ -174,9 +152,7 @@ export default function SectionPage() {
         parts: [], // Will collect all parts here
         allContentScreens: [], // Collect all content screens from all parts
       };
-      console.log(`🟢 [GROUP] Created new group for lessonId: ${lessonId}`);
     } else {
-      console.log(`🔵 [GROUP] Adding to existing group for lessonId: ${lessonId}`);
     }
 
     // Add this part's data to the collection
@@ -193,23 +169,13 @@ export default function SectionPage() {
     return acc;
   }, {} as Record<string, any>);
 
-  // 🐛 DEBUG: Log grouped lessons
-  console.log('═══════════════════════════════════════════════════════');
-  console.log('🔍 [GROUP] Total unique lessons after grouping:', Object.keys(groupedLessonsMap).length);
-  console.log('🔍 [GROUP] Lesson IDs:', Object.keys(groupedLessonsMap));
-  Object.entries(groupedLessonsMap).forEach(([lessonId, lesson]: [string, any]) => {
-    console.log(`🔍 [GROUP] Lesson ${lessonId}: "${lesson.title}" has ${lesson.parts.length} parts, unitId: ${lesson.unitId}`);
-  });
-  console.log('═══════════════════════════════════════════════════════');
-
   // Step: Convert grouped lessons map to array and calculate final properties
-  console.log('🔄 [TRANSFORM] Converting grouped map to array...');
   const unsortedLessons = Object.values(groupedLessonsMap)
     .map((lesson, index) => {
       // Sort parts by part number
       const sortedParts = lesson.parts.sort((a: any, b: any) => a.partNumber - b.partNumber);
 
-      const mappedLesson = {
+      return {
         number: index + 1, // Temporary number, will be reassigned after sorting
         title: lesson.title,
         lessonTitle: lesson.lessonTitle,
@@ -220,66 +186,30 @@ export default function SectionPage() {
         section: lesson.section,
         practice: lesson.practice,
         parts: sortedParts,
-        totalParts: sortedParts.length, // ✅ FIX: This will now be 3 instead of 2
-        contentScreens: lesson.allContentScreens, // All content screens from all parts
+        totalParts: sortedParts.length,
+        contentScreens: lesson.allContentScreens,
       };
-
-      console.log(`🔄 [TRANSFORM] Mapped lesson ${index + 1}: lessonId=${mappedLesson.lessonId}, unitId=${mappedLesson.unitId}`);
-
-      return mappedLesson;
     });
-
-  console.log('═══════════════════════════════════════════════════════');
-  console.log('📊 [SORT] Sorting lessons by unitId then lessonId...');
-  console.log('📊 [SORT] Before sort - lesson count:', unsortedLessons.length);
 
   const sectionLessons = unsortedLessons.sort((a, b) => {
       // Sort by unitId first, then by lessonId
       const unitA = a.unitId || '';
       const unitB = b.unitId || '';
 
-      console.log(`🔍 [SORT COMPARE] "${a.lessonId}" (unit: ${unitA}) vs "${b.lessonId}" (unit: ${unitB})`);
-
       if (unitA !== unitB) {
-        const result = unitA.localeCompare(unitB);
-        console.log(`  → Different units: ${unitA} vs ${unitB}, result: ${result}`);
-        return result;
+        return unitA.localeCompare(unitB);
       }
 
-      const result = a.lessonId.localeCompare(b.lessonId);
-      console.log(`  → Same unit, comparing lessonIds: ${a.lessonId} vs ${b.lessonId}, result: ${result}`);
-      return result;
+      return a.lessonId.localeCompare(b.lessonId);
     })
     .map((lesson, index) => ({
       ...lesson,
       number: index + 1, // Reassign numbers after sorting
     }));
 
-  console.log('═══════════════════════════════════════════════════════');
-  console.log('✅ [SORT] After sort - Final lesson order:');
-  sectionLessons.forEach((lesson, i) => {
-    console.log(`  ${i + 1}. ${lesson.lessonId} (${lesson.unitId}) - "${lesson.title}"`);
-  });
-  console.log('═══════════════════════════════════════════════════════');
-
-  // 🐛 DEBUG: Log all lessons in this section
-  useEffect(() => {
-    console.log('📚 [ALL LESSONS IN SECTION]', sectionId);
-    console.log('📚 [DB LESSONS RAW]', dbLessons);
-    console.log('📚 [FILTERED SECTION LESSONS]', sectionLessons);
-    sectionLessons.forEach((lesson, i) => {
-      console.log(`📚 [LESSON ${i}] number: ${lesson.number}, lessonId: ${lesson.lessonId}, unitId: ${lesson.unitId}, title: "${lesson.title}"`);
-    });
-  }, [sectionId, sectionLessons, dbLessons]);
-
   // Step: Group lessons by unit for better organization
-  console.log('═══════════════════════════════════════════════════════');
-  console.log('🗂️ [UNIT GROUPING] Grouping lessons by unit...');
-
   const lessonsByUnit = sectionLessons.reduce((acc, lesson) => {
     const unitId = lesson.unitId || 'Unknown';
-
-    console.log(`🗂️ [UNIT GROUPING] Processing lesson ${lesson.number}: "${lesson.title}", unitId: ${unitId}`);
 
     if (!acc[unitId]) {
       acc[unitId] = {
@@ -287,26 +217,13 @@ export default function SectionPage() {
         unitTitle: lesson.unitTitle || 'Unknown Unit',
         lessons: []
       };
-      console.log(`  → Created new unit group: ${unitId}`);
     }
 
     acc[unitId].lessons.push(lesson);
-    console.log(`  → Added to unit ${unitId}, total lessons in unit: ${acc[unitId].lessons.length}`);
-
     return acc;
   }, {} as Record<string, { unitId: string; unitTitle: string; lessons: typeof sectionLessons }>);
 
   const units = Object.values(lessonsByUnit);
-
-  console.log('═══════════════════════════════════════════════════════');
-  console.log('✅ [UNIT GROUPING] Final unit groups:');
-  units.forEach((unit, i) => {
-    console.log(`  Unit ${i + 1}: ${unit.unitId} - "${unit.unitTitle}" with ${unit.lessons.length} lessons`);
-    unit.lessons.forEach((lesson, j) => {
-      console.log(`    ${j + 1}. ${lesson.lessonId} - "${lesson.title}"`);
-    });
-  });
-  console.log('═══════════════════════════════════════════════════════');
 
   // Review dialog state
   const [showReviewDialog, setShowReviewDialog] = useState(false);
@@ -314,6 +231,9 @@ export default function SectionPage() {
 
   // ✅ FIX: Check if lesson is completed and show review dialog
   const handleStartLesson = (lessonNumber: number, lessonId?: string) => {
+    // Step: Play click sound when clicking on a lesson
+    playClickSound();
+
     const isCompleted = lessonId ? isLessonCompleted(lessonId) : false;
 
     if (isCompleted) {
@@ -330,6 +250,7 @@ export default function SectionPage() {
   const startLesson = (lessonNumber: number, lessonId?: string, isReview: boolean = false) => {
     localStorage.setItem('currentLessonNumber', lessonNumber.toString());
     localStorage.setItem('lessonCategory', 'dark-psychology');
+    localStorage.setItem('darkPsychSectionId', sectionId); // Store section ID for back navigation
     if (lessonId) {
       localStorage.setItem('darkPsychLessonId', lessonId);
     }
@@ -374,12 +295,7 @@ export default function SectionPage() {
   // Step: Get lesson progress from Convex
   // ✅ FIX: Use lessonId instead of lessonNumber to avoid collision between units
   const getLessonProgress = (lessonId: string) => {
-    const foundProgress = progress?.find(p => p.darkPsychLessonId === lessonId);
-    // 🐛 DEBUG: Log progress lookup
-    if (foundProgress) {
-      console.log(`[PROGRESS DEBUG] Found progress for lessonId: ${lessonId}`, foundProgress);
-    }
-    return foundProgress;
+    return progress?.find(p => p.darkPsychLessonId === lessonId);
   };
 
   const isLessonCompleted = (lessonId: string) => {
@@ -399,7 +315,21 @@ export default function SectionPage() {
       if (partProgress?.isCompleted) {
         completedParts.push(partNum);
       }
+
+      console.log('[DP MAP] part check', {
+        lessonId,
+        partKey,
+        found: !!partProgress,
+        isCompleted: partProgress?.isCompleted,
+      });
     }
+
+    console.log('[DP MAP] completedParts', {
+      lessonId,
+      totalParts,
+      completedParts,
+      progressCount: progress?.length ?? 0,
+    });
 
     return completedParts;
   };
@@ -436,12 +366,6 @@ export default function SectionPage() {
 
     // Total height = base position + unit offset + extra padding
     const totalHeight = lastLessonBasePosition.y + lastUnitOffset + 300;
-
-    console.log('🔍 [PATH HEIGHT] Calculation:');
-    console.log('  → Last unit index:', lastUnitIndex);
-    console.log('  → Last unit offset:', lastUnitOffset);
-    console.log('  → Last lesson base Y:', lastLessonBasePosition.y);
-    console.log('  → Total path height:', totalHeight);
 
     return totalHeight;
   })();
@@ -519,7 +443,10 @@ export default function SectionPage() {
           <div className="flex items-center gap-3">
             <Button
               variant="outline"
-              onClick={() => router.push("/dark-psychology")}
+              onClick={() => {
+                playClickSound();
+                router.push("/dark-psychology");
+              }}
               className="flex items-center gap-2 border-gray-700 text-gray-200 hover:bg-gray-800"
             >
               <ArrowLeft className="h-4 w-4" />
@@ -607,25 +534,12 @@ export default function SectionPage() {
                       y: basePosition.y + unitVerticalOffset
                     };
 
-                    // 🐛 DEBUG: Log lesson position calculation
-                    console.log(`🎯 [POSITION] Lesson ${lesson.number} (${lesson.lessonId}):`);
-                    console.log(`  → Unit index: ${unitIndex}, Position in unit: ${positionIndex}`);
-                    console.log(`  → Base position: x=${basePosition.x}%, y=${basePosition.y}px`);
-                    console.log(`  → Unit offset: ${unitVerticalOffset}px`);
-                    console.log(`  → Final position: x=${position.x}%, y=${position.y}px`);
-
                     // ✅ FIX: Use lessonId instead of number to avoid collision
                     const lessonUniqueId = lesson.lessonId || `${lesson.section}-${lesson.number}`;
                     const totalParts = lesson.totalParts || lesson.parts?.length || 1;
                     const completedParts = getCompletedParts(lessonUniqueId, totalParts);
                     // Check if ALL parts are completed
                     const completed = completedParts.length === totalParts;
-
-                    // 🐛 DEBUG: Log lesson details
-                    console.log(`[LESSON DEBUG] Unit: ${unit.unitId}, Lesson Number: ${lesson.number}, Unique ID: ${lessonUniqueId}`);
-                    console.log(`[LESSON DEBUG] Is Completed: ${completed}, Completed Parts:`, completedParts);
-                    console.log(`[LESSON DEBUG] Lesson Title: "${lesson.title}"`);
-                    console.log('---');
 
                     return (
                       <div
@@ -651,9 +565,6 @@ export default function SectionPage() {
                         viewBox="0 0 80 80"
                         ref={(svg) => {
                           if (svg) {
-                            console.log(`🔵 [RING] Lesson ${lesson.number}: "${lesson.title}"`);
-                            console.log(`🔵 [RING] Total parts: ${totalParts}`);
-                            console.log(`🔵 [RING] Completed parts array:`, completedParts);
                           }
                         }}
                       >
@@ -689,7 +600,6 @@ export default function SectionPage() {
                             const partNumber = partIndex + 1;
                             const isPartCompleted = completedParts.includes(partNumber);
 
-                            console.log(`🔵 [RING] Part ${partNumber}: ${isPartCompleted ? '✅ FILLED' : '⭕ EMPTY'}`);
                             const anglePerPart = 360 / totalParts;
                             const startAngle = anglePerPart * partIndex;
                             const endAngle = anglePerPart * (partIndex + 1);
@@ -820,6 +730,7 @@ export default function SectionPage() {
             <div className="flex gap-4">
               <button
                 onClick={() => {
+                  playClickSound();
                   startLesson(selectedLessonForReview.number, selectedLessonForReview.id, true);
                   setShowReviewDialog(false);
                 }}
@@ -829,6 +740,7 @@ export default function SectionPage() {
               </button>
               <button
                 onClick={() => {
+                  playClickSound();
                   setShowReviewDialog(false);
                   setSelectedLessonForReview(null);
                 }}

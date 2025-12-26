@@ -208,7 +208,6 @@
         {
           "exerciseId": "B3-1-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A manufactured movement designed to look like a grassroots uprising, funded by a corporation or government.",
           "question": "What is this?",
           "options": [
             "Astroturfing",
@@ -221,7 +220,8 @@
           "feedback": {
             "correct": "Correct. 'Fake Grass.' It makes you think 'the people' support this, so you should too.",
             "incorrect": "It is a specific type of fake Social Proof."
-          }
+          },
+          "scene": "A manufactured movement designed to look like a grassroots uprising, funded by a corporation or government."
         },
         {
           "exerciseId": "B3-1-P3-E9",

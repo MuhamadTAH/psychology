@@ -22,6 +22,9 @@ export default function SearchUsersPage() {
     debouncedQuery.length >= 2 ? { searchQuery: debouncedQuery } : "skip"
   );
 
+  // Step 2.5: Get friend suggestions (show when not searching)
+  const friendSuggestions = useQuery(api.users.getFriendSuggestions, { limit: 20 });
+
   // Step 3: Follow/unfollow mutations
   const followUser = useMutation(api.users.followUser);
   const unfollowUser = useMutation(api.users.unfollowUser);
@@ -95,12 +98,73 @@ export default function SearchUsersPage() {
           </p>
         </div>
 
-        {/* Step 9: Search results */}
+        {/* Step 9: Search results OR friend suggestions */}
         {debouncedQuery.length < 2 ? (
-          <div className="text-center text-gray-400 py-12">
-            <Search className="w-16 h-16 mx-auto mb-4 text-gray-600" />
-            <p className="text-lg">Start typing to search for users</p>
-          </div>
+          // Show friend suggestions when not searching
+          friendSuggestions === undefined ? (
+            <div className="text-center text-gray-400 py-12">
+              <p className="text-lg">Loading suggestions...</p>
+            </div>
+          ) : friendSuggestions.length === 0 ? (
+            <div className="text-center text-gray-400 py-12">
+              <Search className="w-16 h-16 mx-auto mb-4 text-gray-600" />
+              <p className="text-lg">No friend suggestions available</p>
+              <p className="text-sm mt-2">Start typing to search for users</p>
+            </div>
+          ) : (
+            <div className="space-y-4">
+              <p className="text-gray-400 mb-4">
+                Suggested friends ({friendSuggestions.length})
+              </p>
+
+              {friendSuggestions.map((user) => (
+                <div
+                  key={user._id}
+                  className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border-2 border-gray-700 p-4 md:p-6 hover:border-blue-500/50 transition-all"
+                >
+                  {/* Mobile: Vertical layout, Desktop: Horizontal layout */}
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    {/* User info */}
+                    <div className="flex items-center gap-3 md:gap-4 flex-1 min-w-0">
+                      {/* Avatar */}
+                      <div className="w-12 h-12 md:w-16 md:h-16 flex-shrink-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full flex items-center justify-center border-2 border-blue-500/30">
+                        <User className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
+                      </div>
+
+                      {/* Name and email */}
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-white font-bold text-base md:text-lg mb-1 truncate">
+                          {user.name || "Anonymous User"}
+                        </h3>
+                        <p className="text-gray-400 text-xs md:text-sm mb-2 truncate">{user.email}</p>
+
+                        {/* Stats */}
+                        <div className="flex items-center gap-3 md:gap-4 text-xs md:text-sm">
+                          <div className="flex items-center gap-1 text-yellow-400">
+                            <Trophy className="w-3 h-3 md:w-4 md:h-4" />
+                            <span>{user.xp} XP</span>
+                          </div>
+                          <div className="flex items-center gap-1 text-orange-400">
+                            <Flame className="w-3 h-3 md:w-4 md:h-4" />
+                            <span>{user.streak} day</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Follow button - Full width on mobile, auto on desktop */}
+                    <button
+                      onClick={() => handleFollowToggle(user._id, false)}
+                      className="w-full md:w-auto px-4 md:px-6 py-2.5 md:py-3 rounded-xl font-bold text-sm md:text-base transition-all flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white border-2 border-blue-500/50 hover:from-blue-500 hover:to-purple-500"
+                    >
+                      <UserPlus className="w-4 h-4 md:w-5 md:h-5" />
+                      <span>Follow</span>
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )
         ) : searchResults === undefined ? (
           <div className="text-center text-gray-400 py-12">
             <p className="text-lg">Searching...</p>
@@ -119,13 +183,14 @@ export default function SearchUsersPage() {
             {searchResults.map((user) => (
               <div
                 key={user._id}
-                className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border-2 border-gray-700 p-6 hover:border-blue-500/50 transition-all"
+                className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border-2 border-gray-700 p-4 md:p-6 hover:border-blue-500/50 transition-all"
               >
-                <div className="flex items-center justify-between gap-4">
+                {/* Mobile: Vertical layout, Desktop: Horizontal layout */}
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   {/* User info */}
-                  <div className="flex items-center gap-4 flex-1">
+                  <div className="flex items-center gap-3 md:gap-4 flex-1 min-w-0">
                     {/* Avatar */}
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full flex items-center justify-center border-2 border-blue-500/30">
+                    <div className="w-12 h-12 md:w-16 md:h-16 flex-shrink-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full flex items-center justify-center border-2 border-blue-500/30">
                       {user.image ? (
                         <img
                           src={user.image}
@@ -133,35 +198,35 @@ export default function SearchUsersPage() {
                           className="w-full h-full rounded-full object-cover"
                         />
                       ) : (
-                        <User className="w-8 h-8 text-blue-400" />
+                        <User className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
                       )}
                     </div>
 
                     {/* Name and email */}
-                    <div className="flex-1">
-                      <h3 className="text-white font-bold text-lg mb-1">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-white font-bold text-base md:text-lg mb-1 truncate">
                         {user.name || "Anonymous User"}
                       </h3>
-                      <p className="text-gray-400 text-sm mb-2">{user.email}</p>
+                      <p className="text-gray-400 text-xs md:text-sm mb-2 truncate">{user.email}</p>
 
                       {/* Stats */}
-                      <div className="flex items-center gap-4 text-sm">
+                      <div className="flex items-center gap-3 md:gap-4 text-xs md:text-sm">
                         <div className="flex items-center gap-1 text-yellow-400">
-                          <Trophy className="w-4 h-4" />
+                          <Trophy className="w-3 h-3 md:w-4 md:h-4" />
                           <span>{user.xp} XP</span>
                         </div>
                         <div className="flex items-center gap-1 text-orange-400">
-                          <Flame className="w-4 h-4" />
-                          <span>{user.streak} day streak</span>
+                          <Flame className="w-3 h-3 md:w-4 md:h-4" />
+                          <span>{user.streak} day</span>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  {/* Follow/Unfollow button */}
+                  {/* Follow/Unfollow button - Full width on mobile, auto on desktop */}
                   <button
                     onClick={() => handleFollowToggle(user._id, user.isFollowing)}
-                    className={`px-6 py-3 rounded-xl font-bold transition-all flex items-center gap-2 ${
+                    className={`w-full md:w-auto px-4 md:px-6 py-2.5 md:py-3 rounded-xl font-bold text-sm md:text-base transition-all flex items-center justify-center gap-2 ${
                       user.isFollowing
                         ? "bg-gray-700 text-white border-2 border-gray-600 hover:bg-gray-600"
                         : "bg-gradient-to-r from-blue-600 to-purple-600 text-white border-2 border-blue-500/50 hover:from-blue-500 hover:to-purple-500"
@@ -169,12 +234,12 @@ export default function SearchUsersPage() {
                   >
                     {user.isFollowing ? (
                       <>
-                        <UserMinus className="w-5 h-5" />
+                        <UserMinus className="w-4 h-4 md:w-5 md:h-5" />
                         <span>Unfollow</span>
                       </>
                     ) : (
                       <>
-                        <UserPlus className="w-5 h-5" />
+                        <UserPlus className="w-4 h-4 md:w-5 md:h-5" />
                         <span>Follow</span>
                       </>
                     )}

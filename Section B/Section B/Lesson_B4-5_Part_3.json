@@ -200,7 +200,6 @@
         {
           "exerciseId": "B4-5-P3-E8",
           "type": "reverse-scenario",
-          "answer": "Using the promise of a massive future reward (that doesn't exist) to get free work/money now.",
           "question": "What is this?",
           "options": [
             "Hope-Mongering / Future Faking",
@@ -213,7 +212,8 @@
           "feedback": {
             "correct": "Correct. They sell the dream to steal the present.",
             "incorrect": "It targets hope, not fear or debt."
-          }
+          },
+          "scene": "Using the promise of a massive future reward (that doesn't exist) to get free work/money now."
         },
         {
           "exerciseId": "B4-5-P3-E9",

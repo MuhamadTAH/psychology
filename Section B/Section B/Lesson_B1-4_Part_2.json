@@ -204,7 +204,6 @@
         {
           "exerciseId": "B1-4-P2-E9",
           "type": "reverse-scenario",
-          "answer": "A statement like 'All men are liars' or 'Women are too emotional.'",
           "question": "What is this pattern?",
           "options": [
             "Universal Quantifier (Generalization)",
@@ -217,7 +216,8 @@
           "feedback": {
             "correct": "Correct. Words like All, Every, Always, Never. They create a rigid, false reality. Challenge: 'All men? Every single one?'",
             "incorrect": "It takes one example and applies it to the universe. It is a generalization."
-          }
+          },
+          "scene": "A statement like 'All men are liars' or 'Women are too emotional.'"
         },
         {
           "exerciseId": "B1-4-P2-E10",

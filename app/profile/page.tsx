@@ -9,6 +9,7 @@ import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { Settings, Pencil, Calendar, RefreshCw, Flame, Zap, Gem, Trophy, UserPlus, X, Home, BookOpen, ShoppingBag, Crown, User } from "lucide-react";
 import Avatar from "@/components/Avatar";
+import { useState } from "react";
 
 // --- Sub-Components (Now accept props for real data) ---
 
@@ -25,7 +26,7 @@ const ProfileHeader = () => (
 );
 
 // 2. User Hero Section - Now takes the Clerk user object and friend count
-const UserHero = ({ user, friendsCount }: { user: any; friendsCount: number }) => {
+const UserHero = ({ user, friendsCount, onEditClick }: { user: any; friendsCount: number; onEditClick: () => void }) => {
   const joinDate = user.createdAt?.toLocaleDateString('en-US', {
     month: 'long',
     year: 'numeric',
@@ -35,7 +36,10 @@ const UserHero = ({ user, friendsCount }: { user: any; friendsCount: number }) =
     <section className="bg-[#1a2332] p-6 rounded-2xl border border-gray-700">
       <div className="relative w-32 h-32 mx-auto mb-4">
         <img src={user.imageUrl} alt={user.fullName} className="w-full h-full rounded-full border-4 border-gray-600" />
-        <button className="absolute top-0 right-0 w-8 h-8 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center">
+        <button
+          onClick={onEditClick}
+          className="absolute top-0 right-0 w-8 h-8 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
+        >
           <Pencil className="w-4 h-4 text-white" />
         </button>
       </div>
@@ -105,7 +109,7 @@ const AchievementCard = ({ badgeColor, title, level, progress, goal, description
     );
 };
 
-const AchievementsSection = ({ stats }: { stats: any }) => {
+const AchievementsSection = ({ stats, onViewAll }: { stats: any; onViewAll: () => void }) => {
     return (
         <section className="bg-[#1a2332] p-6 rounded-2xl border border-gray-700">
             <h3 className="text-xl font-bold text-white mb-4">Achievements</h3>
@@ -115,7 +119,10 @@ const AchievementsSection = ({ stats }: { stats: any }) => {
                 <AchievementCard badgeColor="bg-red-500" title="Scholar" level={7} progress={586} goal={750} description="Learn 750 new words"/>
             </div>
             <div className="border-t border-gray-700 mt-4 pt-4">
-                <button className="w-full flex items-center justify-between hover:bg-white/10 p-2 rounded-lg transition-colors">
+                <button
+                  onClick={onViewAll}
+                  className="w-full flex items-center justify-between hover:bg-white/10 p-2 rounded-lg transition-colors"
+                >
                     <span className="font-bold text-white">View all</span>
                     <span className="text-gray-400 text-2xl font-light">&rsaquo;</span>
                 </button>
@@ -185,7 +192,7 @@ const FriendSuggestionCard = ({ user, onFollow }: any) => {
     );
 };
 
-const FriendSuggestions = ({ suggestions, onFollow }: { suggestions: any[]; onFollow: (userId: string) => void }) => {
+const FriendSuggestions = ({ suggestions, onFollow, onViewAll }: { suggestions: any[]; onFollow: (userId: string) => void; onViewAll: () => void }) => {
     if (!suggestions || suggestions.length === 0) {
         return null;
     }
@@ -200,7 +207,10 @@ const FriendSuggestions = ({ suggestions, onFollow }: { suggestions: any[]; onFo
             </div>
             {suggestions.length > 3 && (
                 <div className="border-t border-gray-700 mt-4 pt-4">
-                    <button className="w-full flex items-center justify-between hover:bg-white/10 p-2 rounded-lg transition-colors">
+                    <button
+                      onClick={onViewAll}
+                      className="w-full flex items-center justify-between hover:bg-white/10 p-2 rounded-lg transition-colors"
+                    >
                         <span className="font-bold text-white">View all</span>
                         <span className="text-gray-400 text-2xl font-light">&rsaquo;</span>
                     </button>
@@ -237,6 +247,12 @@ export default function ProfilePage() {
 
   // 7. Mutations
   const followUser = useMutation(api.users.followUser);
+  const updateUserName = useMutation(api.users.updateUserName);
+
+  // 8. Modal state management
+  const [showEditModal, setShowEditModal] = useState(false);
+  const [editName, setEditName] = useState("");
+  const [isSaving, setIsSaving] = useState(false);
 
   // Handle follow action
   const handleFollow = async (friendId: string) => {
@@ -245,6 +261,50 @@ export default function ProfilePage() {
     } catch (error) {
       console.error("Error following user:", error);
     }
+  };
+
+  // Handle edit profile click
+  const handleEditClick = () => {
+    setEditName(user?.fullName || "");
+    setShowEditModal(true);
+  };
+
+  // Handle save name
+  const handleSaveName = async () => {
+    if (!editName.trim()) {
+      alert("Name cannot be empty");
+      return;
+    }
+
+    setIsSaving(true);
+    try {
+      // Step 1: Update name in Convex database (persistent)
+      await updateUserName({ name: editName.trim() });
+
+      // Step 2: Update name in Clerk (for display)
+      await user?.update({
+        firstName: editName.split(" ")[0],
+        lastName: editName.split(" ").slice(1).join(" ") || "",
+      });
+
+      setShowEditModal(false);
+    } catch (error) {
+      console.error("Error updating name:", error);
+      alert("Failed to update name. Please try again.");
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
+  // Handle view all achievements
+  const handleViewAllAchievements = () => {
+    // For now, just alert - you can create a dedicated page later
+    alert("View all achievements feature - coming soon!");
+  };
+
+  // Handle view all friend suggestions
+  const handleViewAllSuggestions = () => {
+    router.push('/search-users');
   };
 
   // NOW we can do conditional returns AFTER all hooks are called
@@ -273,19 +333,65 @@ export default function ProfilePage() {
       <ProfileHeader />
 
       <main className="max-w-2xl mx-auto px-4 py-8 pb-24 space-y-8">
-        <UserHero user={user} friendsCount={followingCount || 0} />
+        <UserHero user={user} friendsCount={followingCount || 0} onEditClick={handleEditClick} />
         <StatsGrid stats={userStats} leagueName={leagueName} />
-        <AchievementsSection stats={userStats} />
+        <AchievementsSection stats={userStats} onViewAll={handleViewAllAchievements} />
         <FriendsList friends={following} />
-        <FriendSuggestions suggestions={suggestions || []} onFollow={handleFollow} />
+        <FriendSuggestions suggestions={suggestions || []} onFollow={handleFollow} onViewAll={handleViewAllSuggestions} />
       </main>
+
+      {/* Edit Name Modal */}
+      {showEditModal && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-[#1a2332] rounded-2xl border-2 border-gray-700 p-6 max-w-md w-full">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xl font-bold text-white">Edit Profile</h2>
+              <button
+                onClick={() => setShowEditModal(false)}
+                className="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-white rounded-full hover:bg-white/10 transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="mb-6">
+              <label className="block text-gray-300 font-semibold mb-2">
+                Full Name
+              </label>
+              <input
+                type="text"
+                value={editName}
+                onChange={(e) => setEditName(e.target.value)}
+                placeholder="Enter your name"
+                className="w-full bg-[#111b21] text-white rounded-lg px-4 py-3 border-2 border-gray-600 focus:border-blue-500 focus:outline-none transition-colors"
+              />
+            </div>
+
+            <div className="flex gap-3">
+              <button
+                onClick={() => setShowEditModal(false)}
+                className="flex-1 bg-gray-700 text-white font-bold py-3 px-6 rounded-xl hover:bg-gray-600 transition-colors"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleSaveName}
+                disabled={isSaving}
+                className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-3 px-6 rounded-xl hover:from-blue-500 hover:to-purple-500 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isSaving ? "Saving..." : "Save"}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Bottom Navigation */}
       <div className="fixed bottom-0 left-0 right-0 bg-[#1F1F1F] shadow-2xl z-50">
         <div className="max-w-2xl mx-auto px-4 py-4 flex items-center justify-around">
           {/* Home */}
           <button
-            onClick={() => router.push('/learn')}
+            onClick={() => router.push('/dark-psychology-dashboard')}
             className="flex flex-col items-center gap-1 group hover:opacity-80"
           >
             <Home className="h-7 w-7 text-gray-500" />

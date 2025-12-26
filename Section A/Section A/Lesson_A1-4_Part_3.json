@@ -1,239 +1,239 @@
 {
-"sectionId": "A",
-"sectionTitle": "The Foundations of the Dark Mind",
-"unitId": "A1",
-"unitTitle": "The Fast Hook",
-"lessonId": "A1-4",
-"lessonTitle": "The Second Hook",
-"lessonType": "Normal",
-"lessonPart": 3,
-"lessonPartTitle": "The Promise - Learn This Tactic",
-"objective": "To solidify the 'hook' by giving the user a clear promise of the skills they will build to defend against emotional manipulation like guilt-tripping.",
-"gamification": {
-"progressRings": [
-{
-"ringId": "learn",
-"status": "complete",
-"label": "Part 1"
-},
-{
-"ringId": "practice",
-"status": "complete",
-"label": "Part 2"
-},
-{
-"ringId": "challenge",
-"status": "pending",
-"label": "Part 3"
-}
-],
-"pointsValue": 100,
-"starsAvailable": 3,
-"badgeOnCompletion": "Emotional_Shield_Badge"
-},
-"contentScreens": [
-{
-"screenId": "A1-4-P3-S1",
-"screenType": "Learn",
-"title": "The Promise",
-"content": [
-{
-"type": "paragraph",
-"text": "You've now been 'hooked' by a stranger (Alex) and a friend (Casey). You've seen how flattery attacks the ego, and how guilt attacks the conscience."
-},
-{
-"type": "alert",
-"alertType": "info",
-"text": "Falling for a guilt-trip is a sign that you are a *good* person (you want to be a good friend). This app will teach you how to be a 'good friend' *without* being a 'victim' of manipulation. This is the promise."
-}
-]
-},
-{
-"screenId": "A1-4-P3-S2",
-"screenType": "Exercises",
-"exercises": [
-{
-"exerciseId": "A1-4-P3-E1",
-"type": "multiple-choice",
-"question": "What is the *primary* defense against a guilt-trip?",
-"options": [
-"Guilt-tripping them back even harder.",
-"Setting a clear, firm, but polite boundary.",
-"Giving in immediately to avoid conflict.",
-"Never speaking to your friends again."
-],
-"correct": "Setting a clear, firm, but polite boundary.",
-"difficulty": "easy",
-"explanation": "This is the 'shield.' A boundary is the defense against a guilt-trip. We will learn how to build them."
-},
-{
-"exerciseId": "A1-4-P3-E2",
-"type": "true-false",
-"statement": "The core 'promise' of this app is to teach you how to stop caring about other people's feelings.",
-"options": [
-"True",
-"False"
-],
-"correct": "False",
-"difficulty": "easy",
-"explanation": "False. The promise is to teach you the difference between *caring* for someone (Empathy) and being *responsible* for them (a trap)."
-},
-{
-"exerciseId": "A1-4-P3-E3",
-"type": "build-sentence",
-"question": "Arrange these words into the core 'guilt' defense:",
-"words": [
-"for",
-"responsible",
-"not",
-"are",
-"You",
-"emotions",
-"others'"
-],
-"correct": "You are not responsible for others' emotions",
-"difficulty": "medium",
-"explanation": "This is the 'Golden Rule' of emotional defense. You are responsible for your *actions*, not their *feelings*."
-},
-{
-"exerciseId": "A1-4-P3-E4",
-"type": "fill-in",
-"sentence": "A 'light' request is (--------). A 'dark' request is (--------) (hidden in an emotion).",
-"options": [
-"direct",
-"covert",
-"loud",
-"always",
-"mean"
-],
-"answers": [
-"direct",
-"covert"
-],
-"difficulty": "medium",
-"explanation": "The 'promise' is to teach you to spot the 'covert' (hidden) request inside the emotion and demand 'direct' communication."
-},
-{
-"exerciseId":E": "A1-4-P3-E8",
-"type": "reverse-scenario",
-"answer": "A 'Boss Scenario'",
-"question": "What does this term mean in this app?",
-"options": [
-"A simulation of talking to your boss.",
-"A test that is impossibly difficult.",
-"A complex scenario that *combines multiple tactics* at once.",
-"A simple, easy-to-pass quiz."
-],
-"correct": "A complex scenario that *combines multiple tactics* at once.",
-"difficulty": "easy",
-"explanation": "You've passed two 'Boss Scenarios' (Alex and Casey). They combine tactics (Flattery + Guilt + Gaslighting) to test your skills."
-},
-{
-"exerciseId": "A1-4-P3-E9",
-"type": "ethical-dilemma",
-"scene": "You learn to spot 'guilt-trips' from your friend Casey all the time. You know they are a manipulator.",
-"question": "What is the 'ethically-aware' promise to yourself?",
-"options": [
-"To use their tactics back on them to 'win'.",
-"To cut them out of your life immediately without a word.",
-"To start setting small, firm boundaries and see if the friendship can be saved.",
-"To do nothing, because you are a good friend."
-],
-"correct": "To start setting small, firm boundaries and see if the friendship can be saved.",
-"difficulty": "medium",
-"explanation": "This is the 'light' path. This knowledge isn't for *punishing* people; it's for *protecting* you. The promise is to build your defense (boundaries)."
-},
-{
-"exerciseId": "A1-4-P3-E10",
-"type": "build-sentence",
-"question": "Arrange these words into the *defense* for the 'Casey' scenario:",
-"words": [
-"a",
-"boundary,",
-"Set",
-"guilt",
-"not",
-"a"
-],
-"correct": "Set a boundary, not a guilt",
-"difficulty": "medium",
-"explanation": "This is the promise. You will learn to stop 'feeling guilty' and start 'setting boundaries'."
-},
-{
-"exerciseId": "A1-4-P3-E11",
-"type": "fill-in",
-"sentence": "You have now been 'hooked' with (--------) (Alex) and (--------) (Casey).",
-"options": [
-"flattery",
-"guilt",
-"money",
-"threats"
-],
-"answers": [
-"flattery",
-"guilt"
-],
-"difficulty": "easy",
-"explanation": "These are the two biggest 'softener' tactics. You've now seen them both in action."
-},
-{
-"exerciseId": "A1-4-P3-E12",
-"type": "multiple-choice",
-"question": "The next lesson, A1-5, is the 'Unit 1 Review.' What will it *most likely* test you on?",
-"options": [
-"A final, complex 'Boss Scenario' combining *all* the tactics you've seen (Flattery, Rapport, Guilt, Gaslighting).",
-"A 50-question test on Machiavellian history.",
-"A friendly conversation with no manipulation.",
-"Only the 'Casey' scenario again."
-],
-"correct": "A final, complex 'Boss Scenario' combining *all* the tactics you've seen (Flattery, Rapport, Guilt, Gaslighting).",
-"difficulty": "medium",
-"explanation": "Correct. The final lesson of the Unit will be a 'Review Challenge' that combines *everything* you've learned from all 4 previous lessons into a final 'Gauntlet'."
-},
-{
-"exerciseId": "A1-4-P3-E13",
-"type": "true-false",
-"statement": "By promising to learn these defenses, I am promising to become a colder, less-trusting person.",
-"options": [
-"True",
-"False"
-],
-"correct": "False",
-"difficulty": "medium",
-"explanation": "False. You are promising to become a *wiser* person. This allows you to trust *safely*. You will trust 'light' (direct) communication, and defend against 'dark' (covert) manipulation."
-},
-{
-"exerciseId": "A1-4-P3-E14",
-"type": "build-sentence",
-"question": "Arrange these words into the 'Final Promise' of this lesson:",
-"words": [
-"My",
-"is",
-"not",
-"negotiable",
-"peace"
-],
-"correct": "My peace is not negotiable",
-"difficulty": "medium",
-"explanation": "This is the core of a 'boundary.' A manipulator (like Casey) tries to 'negotiate' your peace and your plans. The promise is to stop negotiating."
-},
-{
-"exerciseId": "A1-4-P3-E15",
-"type": "case-analysis",
-"caseTitle": "Lesson Complete: The Second Hook",
-"scene": "You've finished all 3 parts of 'The Second Hook.' You were tested with emotional manipulation (Guilt, Gaslighting) from a friend. You have 'debriefed' why these tactics work (by attacking your conscience). And you have made a 'promise' to learn the defense (boundaries).",
-"question": "You are now ready for the final lesson of this unit:",
-"options": [
-"Lesson A1-5: Unit 1 Review",
-"Lesson A2-1: Narcissism",
-"A lesson on friendship",
-"This lesson is over"
-],
-"correct": "Lesson A1-5: Unit 1 Review",
-"difficulty": "easy",
-"explanation": "Congratulations. You've passed the 'hook' phase. It's time to put all your new knowledge to the test in the final Unit 1 Review."
-}
-]
-}
-]
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A1",
+  "unitTitle": "The Fast Hook",
+  "lessonId": "A1-4",
+  "lessonTitle": "The Second Hook",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "The Promise - Learn This Tactic",
+  "objective": "To solidify the 'hook' by giving the user a clear promise of the skills they will build to defend against emotional manipulation like guilt-tripping.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "complete",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "complete",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 100,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Emotional_Shield_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A1-4-P3-S1",
+      "screenType": "Learn",
+      "title": "The Promise",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You've now been 'hooked' by a stranger (Alex) and a friend (Casey). You've seen how flattery attacks the ego, and how guilt attacks the conscience."
+        },
+        {
+          "type": "alert",
+          "alertType": "info",
+          "text": "Falling for a guilt-trip is a sign that you are a *good* person (you want to be a good friend). This app will teach you how to be a 'good friend' *without* being a 'victim' of manipulation. This is the promise."
+        }
+      ]
+    },
+    {
+      "screenId": "A1-4-P3-S2",
+      "screenType": "Exercises",
+      "exercises": [
+        {
+          "exerciseId": "A1-4-P3-E1",
+          "type": "multiple-choice",
+          "question": "What is the *primary* defense against a guilt-trip?",
+          "options": [
+            "Guilt-tripping them back even harder.",
+            "Setting a clear, firm, but polite boundary.",
+            "Giving in immediately to avoid conflict.",
+            "Never speaking to your friends again."
+          ],
+          "correct": "Setting a clear, firm, but polite boundary.",
+          "difficulty": "easy",
+          "explanation": "This is the 'shield.' A boundary is the defense against a guilt-trip. We will learn how to build them."
+        },
+        {
+          "exerciseId": "A1-4-P3-E2",
+          "type": "true-false",
+          "statement": "The core 'promise' of this app is to teach you how to stop caring about other people's feelings.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "easy",
+          "explanation": "False. The promise is to teach you the difference between *caring* for someone (Empathy) and being *responsible* for them (a trap)."
+        },
+        {
+          "exerciseId": "A1-4-P3-E3",
+          "type": "build-sentence",
+          "question": "Arrange these words into the core 'guilt' defense:",
+          "words": [
+            "for",
+            "responsible",
+            "not",
+            "are",
+            "You",
+            "emotions",
+            "others'"
+          ],
+          "correct": "You are not responsible for others' emotions",
+          "difficulty": "medium",
+          "explanation": "This is the 'Golden Rule' of emotional defense. You are responsible for your *actions*, not their *feelings*."
+        },
+        {
+          "exerciseId": "A1-4-P3-E4",
+          "type": "fill-in",
+          "sentence": "A 'light' request is (--------). A 'dark' request is (--------) (hidden in an emotion).",
+          "options": [
+            "direct",
+            "covert",
+            "loud",
+            "always",
+            "mean"
+          ],
+          "answers": [
+            "direct",
+            "covert"
+          ],
+          "difficulty": "medium",
+          "explanation": "The 'promise' is to teach you to spot the 'covert' (hidden) request inside the emotion and demand 'direct' communication."
+        },
+        {
+          "exerciseId": "A1-4-P3-E8",
+          "type": "reverse-scenario",
+          "question": "What does this term mean in this app?",
+          "options": [
+            "A simulation of talking to your boss.",
+            "A test that is impossibly difficult.",
+            "A complex scenario that *combines multiple tactics* at once.",
+            "A simple, easy-to-pass quiz."
+          ],
+          "correct": "A complex scenario that *combines multiple tactics* at once.",
+          "difficulty": "easy",
+          "explanation": "You've passed two 'Boss Scenarios' (Alex and Casey). They combine tactics (Flattery + Guilt + Gaslighting) to test your skills.",
+          "scene": "A 'Boss Scenario'"
+        },
+        {
+          "exerciseId": "A1-4-P3-E9",
+          "type": "ethical-dilemma",
+          "scene": "You learn to spot 'guilt-trips' from your friend Casey all the time. You know they are a manipulator.",
+          "question": "What is the 'ethically-aware' promise to yourself?",
+          "options": [
+            "To use their tactics back on them to 'win'.",
+            "To cut them out of your life immediately without a word.",
+            "To start setting small, firm boundaries and see if the friendship can be saved.",
+            "To do nothing, because you are a good friend."
+          ],
+          "correct": "To start setting small, firm boundaries and see if the friendship can be saved.",
+          "difficulty": "medium",
+          "explanation": "This is the 'light' path. This knowledge isn't for *punishing* people; it's for *protecting* you. The promise is to build your defense (boundaries)."
+        },
+        {
+          "exerciseId": "A1-4-P3-E10",
+          "type": "build-sentence",
+          "question": "Arrange these words into the *defense* for the 'Casey' scenario:",
+          "words": [
+            "a",
+            "boundary,",
+            "Set",
+            "guilt",
+            "not",
+            "a"
+          ],
+          "correct": "Set a boundary, not a guilt",
+          "difficulty": "medium",
+          "explanation": "This is the promise. You will learn to stop 'feeling guilty' and start 'setting boundaries'."
+        },
+        {
+          "exerciseId": "A1-4-P3-E11",
+          "type": "fill-in",
+          "sentence": "You have now been 'hooked' with (--------) (Alex) and (--------) (Casey).",
+          "options": [
+            "flattery",
+            "guilt",
+            "money",
+            "threats"
+          ],
+          "answers": [
+            "flattery",
+            "guilt"
+          ],
+          "difficulty": "easy",
+          "explanation": "These are the two biggest 'softener' tactics. You've now seen them both in action."
+        },
+        {
+          "exerciseId": "A1-4-P3-E12",
+          "type": "multiple-choice",
+          "question": "The next lesson, A1-5, is the 'Unit 1 Review.' What will it *most likely* test you on?",
+          "options": [
+            "A final, complex 'Boss Scenario' combining *all* the tactics you've seen (Flattery, Rapport, Guilt, Gaslighting).",
+            "A 50-question test on Machiavellian history.",
+            "A friendly conversation with no manipulation.",
+            "Only the 'Casey' scenario again."
+          ],
+          "correct": "A final, complex 'Boss Scenario' combining *all* the tactics you've seen (Flattery, Rapport, Guilt, Gaslighting).",
+          "difficulty": "medium",
+          "explanation": "Correct. The final lesson of the Unit will be a 'Review Challenge' that combines *everything* you've learned from all 4 previous lessons into a final 'Gauntlet'."
+        },
+        {
+          "exerciseId": "A1-4-P3-E13",
+          "type": "true-false",
+          "statement": "By promising to learn these defenses, I am promising to become a colder, less-trusting person.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "explanation": "False. You are promising to become a *wiser* person. This allows you to trust *safely*. You will trust 'light' (direct) communication, and defend against 'dark' (covert) manipulation."
+        },
+        {
+          "exerciseId": "A1-4-P3-E14",
+          "type": "build-sentence",
+          "question": "Arrange these words into the 'Final Promise' of this lesson:",
+          "words": [
+            "My",
+            "is",
+            "not",
+            "negotiable",
+            "peace"
+          ],
+          "correct": "My peace is not negotiable",
+          "difficulty": "medium",
+          "explanation": "This is the core of a 'boundary.' A manipulator (like Casey) tries to 'negotiate' your peace and your plans. The promise is to stop negotiating."
+        },
+        {
+          "exerciseId": "A1-4-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Second Hook",
+          "scene": "You've finished all 3 parts of 'The Second Hook.' You were tested with emotional manipulation (Guilt, Gaslighting) from a friend. You have 'debriefed' why these tactics work (by attacking your conscience). And you have made a 'promise' to learn the defense (boundaries).",
+          "question": "You are now ready for the final lesson of this unit:",
+          "options": [
+            "Lesson A1-5: Unit 1 Review",
+            "Lesson A2-1: Narcissism",
+            "A lesson on friendship",
+            "This lesson is over"
+          ],
+          "correct": "Lesson A1-5: Unit 1 Review",
+          "difficulty": "easy",
+          "explanation": "Congratulations. You've passed the 'hook' phase. It's time to put all your new knowledge to the test in the final Unit 1 Review."
+        }
+      ]
+    }
+  ]
 }

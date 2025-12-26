@@ -231,7 +231,6 @@
         {
           "exerciseId": "A2-2-P2-E11",
           "type": "reverse-scenario",
-          "answer": "The narcissist accuses you of 'abusing' them because you refused to give them a compliment they fished for.",
           "question": "This reaction is an example of:",
           "options": [
             "DARVO (Deny, Attack, Reverse Victim and Offender)",
@@ -244,7 +243,8 @@
           "feedback": {
             "correct": "Correct. By withholding Supply, *you* became the 'abuser' in their narrative. They reversed the roles to gain victim status (Supply).",
             "incorrect": "This is DARVO. They are attacking you for setting a boundary and claiming *they* are the victim."
-          }
+          },
+          "scene": "The narcissist accuses you of 'abusing' them because you refused to give them a compliment they fished for."
         },
         {
           "exerciseId": "A2-2-P2-E12",

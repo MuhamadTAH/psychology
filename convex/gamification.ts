@@ -1,17 +1,30 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
 
+// Require an authenticated identity and optionally verify the provided email matches
+const requireIdentity = async (ctx: any, providedEmail?: string) => {
+  const identity = await ctx.auth.getUserIdentity();
+  const email = identity?.email;
+
+  if (!email) {
+    throw new Error("Not authenticated");
+  }
+
+  if (providedEmail && providedEmail !== email) {
+    throw new Error("Forbidden");
+  }
+
+  return identity;
+};
+
 // Get user stats (hearts, gems, xp, streak)
 export const getUserStats = query({
   args: {
     email: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    // Try Clerk auth first (for backward compatibility)
-    const identity = await ctx.auth.getUserIdentity();
-    const userEmail = args.email || identity?.email;
-
-    if (!userEmail) return null;
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
 
     const user = await ctx.db
       .query("users")
@@ -68,11 +81,8 @@ export const loseHeart = mutation({
     email: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    // Try Clerk auth first (for backward compatibility)
-    const identity = await ctx.auth.getUserIdentity();
-    const userEmail = args.email || identity?.email;
-
-    if (!userEmail) throw new Error("Not authenticated");
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
 
     const user = await ctx.db
       .query("users")
@@ -134,11 +144,8 @@ export const addXP = mutation({
     email: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    // Try Clerk auth first (for backward compatibility)
-    const identity = await ctx.auth.getUserIdentity();
-    const userEmail = args.email || identity?.email;
-
-    if (!userEmail) throw new Error("Not authenticated");
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
 
     const user = await ctx.db
       .query("users")
@@ -261,11 +268,8 @@ export const updateStreak = mutation({
     email: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    // Try Clerk auth first (for backward compatibility)
-    const identity = await ctx.auth.getUserIdentity();
-    const userEmail = args.email || identity?.email;
-
-    if (!userEmail) throw new Error("Not authenticated");
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
 
     const user = await ctx.db
       .query("users")
@@ -279,13 +283,20 @@ export const updateStreak = mutation({
     const lastDate = user.lastLessonDate;
 
     let newStreak = user.streak ?? 0;
+    let longestStreak = user.longestStreak ?? 0;
+    let streakFreezesUsed = 0;
 
     if (!lastDate) {
       // First lesson ever
       newStreak = 1;
     } else if (lastDate === today) {
       // Already did lesson today, no change
-      return { streak: newStreak, isToday: true };
+      return {
+        streak: newStreak,
+        isToday: true,
+        longestStreak,
+        streakFreezesUsed: 0
+      };
     } else {
       // Check if yesterday
       const yesterday = new Date();
@@ -296,18 +307,81 @@ export const updateStreak = mutation({
         // Did lesson yesterday, increment streak
         newStreak = newStreak + 1;
       } else {
-        // Missed days, reset streak
-        newStreak = 1;
+        // Missed days - check if we have streak freezes
+        const daysMissed = Math.floor((new Date(today).getTime() - new Date(lastDate).getTime()) / (1000 * 60 * 60 * 24));
+        const currentFreezes = user.streakFreezes ?? 0;
+
+        if (daysMissed === 1 && currentFreezes > 0) {
+          // Use one freeze to maintain streak (missed exactly 1 day)
+          streakFreezesUsed = 1;
+          await ctx.db.patch(user._id, {
+            streakFreezes: currentFreezes - 1,
+          });
+          // Streak stays the same (protected by freeze)
+        } else {
+          // Reset streak (either no freezes, or missed more than 1 day)
+          newStreak = 1;
+        }
       }
+    }
+
+    // Update longest streak if current is higher
+    if (newStreak > longestStreak) {
+      longestStreak = newStreak;
     }
 
     // Update user
     await ctx.db.patch(user._id, {
       streak: newStreak,
       lastLessonDate: today,
+      longestStreak,
     });
 
-    return { streak: newStreak, isToday: lastDate === today };
+    return {
+      streak: newStreak,
+      isToday: lastDate === today,
+      longestStreak,
+      streakFreezesUsed
+    };
+  },
+});
+
+// Equip streak freeze (purchase with gems)
+export const equipStreakFreeze = mutation({
+  args: {
+    email: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", userEmail))
+      .first();
+
+    if (!user) throw new Error("User not found");
+
+    // Cost: 10 gems per freeze
+    const FREEZE_COST = 10;
+    const currentGems = user.gems ?? 0;
+
+    if (currentGems < FREEZE_COST) {
+      return { success: false, error: "Not enough gems" };
+    }
+
+    // Deduct gems and add freeze
+    const currentFreezes = user.streakFreezes ?? 0;
+    await ctx.db.patch(user._id, {
+      gems: currentGems - FREEZE_COST,
+      streakFreezes: currentFreezes + 1,
+    });
+
+    return {
+      success: true,
+      gems: currentGems - FREEZE_COST,
+      streakFreezes: currentFreezes + 1,
+    };
   },
 });
 
@@ -362,43 +436,28 @@ export const completeLesson = mutation({
     email: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    console.log("🔵 [MUTATION] completeLesson called with args:", args);
-
     // Step 1: Get user
-    const identity = await ctx.auth.getUserIdentity();
-    const userEmail = args.email || identity?.email;
-
-    console.log("🔵 [MUTATION] User email:", userEmail);
-
-    if (!userEmail) {
-      console.log("❌ [MUTATION] No user email - not authenticated");
-      throw new Error("Not authenticated");
-    }
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
 
     const user = await ctx.db
       .query("users")
       .withIndex("by_email", (q) => q.eq("email", userEmail))
       .first();
 
-    console.log("🔵 [MUTATION] User found:", user ? `${user.email} (ID: ${user._id})` : "NOT FOUND");
-
     if (!user) {
-      console.log("❌ [MUTATION] User not found in database");
       throw new Error("User not found");
     }
 
     // Step 2: Calculate completion bonus XP (only if not already completed)
     // Award 10 XP bonus for completing the lesson
     const bonusXP = 10;
-    console.log("🔵 [MUTATION] Bonus XP to award:", bonusXP);
 
     // Step 3: Check if this is a global lesson or user lesson
     const isGlobalLesson = args.lessonId.startsWith("global-");
-    console.log("🔵 [MUTATION] Is global lesson:", isGlobalLesson, "| Lesson ID:", args.lessonId);
 
     // Step 4: For non-global lessons, update progress in database
     if (!isGlobalLesson) {
-      console.log("🔵 [MUTATION] Processing user lesson (non-global)");
       const existingProgress = await ctx.db
         .query("progress")
         .withIndex("by_userId_and_lessonId", (q) =>
@@ -406,21 +465,14 @@ export const completeLesson = mutation({
         )
         .first();
 
-      console.log("🔵 [MUTATION] Existing progress:", existingProgress ? `Found (completed: ${existingProgress.isCompleted})` : "NOT FOUND");
-
       // Only award bonus if not already completed
       if (!existingProgress?.isCompleted) {
-        console.log("✅ [MUTATION] Lesson not completed yet, awarding XP...");
         const currentXP = user.xp ?? 0;
         const newXP = currentXP + bonusXP;
-
-        console.log("🔵 [MUTATION] Updating user XP:", currentXP, "→", newXP);
 
         await ctx.db.patch(user._id, {
           xp: newXP,
         });
-
-        console.log("✅ [MUTATION] User XP updated successfully");
 
         // Update weekly XP in leagues
         const userLeague = await ctx.db
@@ -428,27 +480,21 @@ export const completeLesson = mutation({
           .withIndex("by_userId", (q) => q.eq("userId", user._id))
           .first();
 
-        console.log("🔵 [MUTATION] User league:", userLeague ? "Found" : "NOT FOUND");
-
         if (userLeague) {
           const newWeeklyXP = userLeague.weeklyXP + bonusXP;
-          console.log("🔵 [MUTATION] Updating league XP:", userLeague.weeklyXP, "→", newWeeklyXP);
           await ctx.db.patch(userLeague._id, {
             weeklyXP: newWeeklyXP,
             lastUpdated: Date.now(),
           });
-          console.log("✅ [MUTATION] League XP updated successfully");
         }
 
         // Mark lesson as completed
         if (existingProgress) {
-          console.log("🔵 [MUTATION] Updating existing progress to completed");
           await ctx.db.patch(existingProgress._id, {
             isCompleted: true,
             updatedAt: Date.now(),
           });
         } else {
-          console.log("🔵 [MUTATION] Creating new progress record");
           await ctx.db.insert("progress", {
             userId: user._id,
             lessonId: args.lessonId as any,
@@ -460,38 +506,26 @@ export const completeLesson = mutation({
           });
         }
 
-        console.log("✅ [MUTATION] Lesson marked as completed");
-        console.log("🎉 [MUTATION] Success! Returning:", { bonusXP, totalXP: newXP, alreadyCompleted: false });
-
         return { bonusXP, totalXP: newXP, alreadyCompleted: false };
       } else {
-        console.log("⚠️ [MUTATION] Lesson already completed, no XP awarded");
         return { bonusXP: 0, totalXP: user.xp ?? 0, alreadyCompleted: true };
       }
     } else {
       // Step 5: For global lessons, track completion in progress table
-      console.log("🔵 [MUTATION] Processing global lesson");
       const existingProgress = await ctx.db
         .query("progress")
         .withIndex("by_userId", (q) => q.eq("userId", user._id))
         .filter((q) => q.eq(q.field("lessonNumber"), args.lessonNumber))
         .first();
 
-      console.log("🔵 [MUTATION] Existing progress:", existingProgress ? `Found (completed: ${existingProgress.isCompleted})` : "NOT FOUND");
-
       // Only award bonus if not already completed
       if (!existingProgress?.isCompleted) {
-        console.log("✅ [MUTATION] Global lesson not completed yet, awarding XP...");
         const currentXP = user.xp ?? 0;
         const newXP = currentXP + bonusXP;
-
-        console.log("🔵 [MUTATION] Updating user XP:", currentXP, "→", newXP);
 
         await ctx.db.patch(user._id, {
           xp: newXP,
         });
-
-        console.log("✅ [MUTATION] User XP updated successfully");
 
         // Update weekly XP in leagues
         const userLeague = await ctx.db
@@ -499,27 +533,21 @@ export const completeLesson = mutation({
           .withIndex("by_userId", (q) => q.eq("userId", user._id))
           .first();
 
-        console.log("🔵 [MUTATION] User league:", userLeague ? "Found" : "NOT FOUND");
-
         if (userLeague) {
           const newWeeklyXP = userLeague.weeklyXP + bonusXP;
-          console.log("🔵 [MUTATION] Updating league XP:", userLeague.weeklyXP, "→", newWeeklyXP);
           await ctx.db.patch(userLeague._id, {
             weeklyXP: newWeeklyXP,
             lastUpdated: Date.now(),
           });
-          console.log("✅ [MUTATION] League XP updated successfully");
         }
 
         // Create or update progress for global lesson
         if (existingProgress) {
-          console.log("🔵 [MUTATION] Updating existing global lesson progress to completed");
           await ctx.db.patch(existingProgress._id, {
             isCompleted: true,
             updatedAt: Date.now(),
           });
         } else {
-          console.log("🔵 [MUTATION] Creating new global lesson progress record");
           await ctx.db.insert("progress", {
             userId: user._id,
             lessonId: undefined, // No lessonId for global lessons
@@ -531,14 +559,195 @@ export const completeLesson = mutation({
           });
         }
 
-        console.log("✅ [MUTATION] Global lesson marked as completed");
-        console.log("🎉 [MUTATION] Success! Returning:", { bonusXP, totalXP: newXP, alreadyCompleted: false });
-
         return { bonusXP, totalXP: newXP, alreadyCompleted: false };
       } else {
-        console.log("⚠️ [MUTATION] Global lesson already completed, no XP awarded");
         return { bonusXP: 0, totalXP: user.xp ?? 0, alreadyCompleted: true };
       }
     }
+  },
+});
+
+// Step 1: Subscription Management
+
+// Set subscription status (called from paywall)
+export const setSubscriptionStatus = mutation({
+  args: {
+    status: v.string(), // "free" or "premium"
+    plan: v.optional(v.string()), // "monthly" or "annual"
+  },
+  handler: async (ctx, args) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) throw new Error("Not authenticated");
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", identity.email!))
+      .first();
+
+    if (!user) throw new Error("User not found");
+
+    const now = Date.now();
+    const updates: any = {
+      subscriptionStatus: args.status,
+      subscriptionStartDate: now,
+    };
+
+    if (args.status === "premium") {
+      updates.subscriptionPlan = args.plan;
+      // Set end date based on plan (for now, far future)
+      // In production, this would be managed by payment processor
+      const endDate = args.plan === "annual"
+        ? now + (365 * 24 * 60 * 60 * 1000) // 1 year
+        : now + (30 * 24 * 60 * 60 * 1000);  // 1 month
+      updates.subscriptionEndDate = endDate;
+    }
+
+    await ctx.db.patch(user._id, updates);
+
+    return { success: true, subscriptionStatus: args.status };
+  },
+});
+
+// Get subscription status
+export const getSubscriptionStatus = query({
+  handler: async (ctx) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) return { status: "free", isPremium: false };
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", identity.email!))
+      .first();
+
+    if (!user) return { status: "free", isPremium: false };
+
+    const status = user.subscriptionStatus ?? "free";
+    const isPremium = status === "premium";
+
+    return {
+      status,
+      isPremium,
+      plan: user.subscriptionPlan,
+      startDate: user.subscriptionStartDate,
+      endDate: user.subscriptionEndDate,
+    };
+  },
+});
+
+// Step 2: Heart Refill System (1 heart per hour)
+
+// Check and refill hearts based on time elapsed
+export const checkAndRefillHearts = mutation({
+  handler: async (ctx) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) throw new Error("Not authenticated");
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", identity.email!))
+      .first();
+
+    if (!user) throw new Error("User not found");
+
+    // Premium users have unlimited hearts
+    const isPremium = (user.subscriptionStatus ?? "free") === "premium";
+    if (isPremium) {
+      return { hearts: 999, isPremium: true, refilled: 0 };
+    }
+
+    const now = Date.now();
+    const currentHearts = user.hearts ?? 5;
+    const lastRefill = user.lastHeartRefill ?? now;
+
+    // If already at max hearts (5), no need to refill
+    if (currentHearts >= 5) {
+      return { hearts: currentHearts, isPremium: false, refilled: 0 };
+    }
+
+    // Calculate hours elapsed since last refill
+    const hoursElapsed = Math.floor((now - lastRefill) / (1000 * 60 * 60));
+
+    if (hoursElapsed > 0) {
+      // Refill hearts (1 per hour, max 5)
+      const heartsToAdd = Math.min(hoursElapsed, 5 - currentHearts);
+      const newHearts = Math.min(currentHearts + heartsToAdd, 5);
+
+      await ctx.db.patch(user._id, {
+        hearts: newHearts,
+        lastHeartRefill: now,
+      });
+
+      return { hearts: newHearts, isPremium: false, refilled: heartsToAdd };
+    }
+
+    return { hearts: currentHearts, isPremium: false, refilled: 0 };
+  },
+});
+
+// Get hearts with auto-refill check
+export const getHearts = query({
+  handler: async (ctx) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) return { hearts: 5, isPremium: false, nextRefillIn: 0 };
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", identity.email!))
+      .first();
+
+    if (!user) return { hearts: 5, isPremium: false, nextRefillIn: 0 };
+
+    const isPremium = (user.subscriptionStatus ?? "free") === "premium";
+    if (isPremium) {
+      return { hearts: 999, isPremium: true, nextRefillIn: 0 };
+    }
+
+    const currentHearts = user.hearts ?? 5;
+    const lastRefill = user.lastHeartRefill ?? Date.now();
+    const now = Date.now();
+
+    // Calculate time until next heart refill (in milliseconds)
+    const timeSinceRefill = now - lastRefill;
+    const oneHour = 1000 * 60 * 60;
+    const nextRefillIn = currentHearts < 5 ? oneHour - (timeSinceRefill % oneHour) : 0;
+
+    return { hearts: currentHearts, isPremium: false, nextRefillIn };
+  },
+});
+
+// Updated loseHeart to respect premium status
+export const loseHeartV2 = mutation({
+  args: {
+    lessonId: v.optional(v.string()), // Made optional for dark psychology lessons
+    email: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", userEmail))
+      .first();
+
+    if (!user) throw new Error("User not found");
+
+    // Premium users don't lose hearts
+    const isPremium = (user.subscriptionStatus ?? "free") === "premium";
+    if (isPremium) {
+      return { hearts: 999, isPremium: true };
+    }
+
+    // Lose 1 heart (minimum 0)
+    const currentHearts = user.hearts ?? 5;
+    const newHearts = Math.max(0, currentHearts - 1);
+
+    // Update last refill time when losing a heart (start the 1-hour timer)
+    await ctx.db.patch(user._id, {
+      hearts: newHearts,
+      lastHeartRefill: newHearts < 5 ? Date.now() : (user.lastHeartRefill ?? Date.now()),
+    });
+
+    return { hearts: newHearts, isPremium: false };
   },
 });

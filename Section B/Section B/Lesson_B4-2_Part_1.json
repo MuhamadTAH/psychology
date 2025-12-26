@@ -173,7 +173,6 @@
         {
           "exerciseId": "B4-2-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A tactic where a negotiator makes a large request, gets rejected, then makes a smaller request. You feel obligated to say 'Yes' because they made a concession.",
           "question": "What is this?",
           "options": [
             "Reciprocal Concessions (Door-in-the-Face)",
@@ -186,7 +185,8 @@
           "feedback": {
             "correct": "Correct. They 'gave up' their big demand, so you must 'give up' your refusal. It is Reciprocity applied to negotiation.",
             "incorrect": "It is the mechanism behind Door-in-the-Face."
-          }
+          },
+          "scene": "A tactic where a negotiator makes a large request, gets rejected, then makes a smaller request. You feel obligated to say 'Yes' because they made a concession."
         }
       ]
     }

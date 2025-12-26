@@ -204,7 +204,6 @@
         {
           "exerciseId": "B3-3-P3-E8",
           "type": "reverse-scenario",
-          "answer": "Finding information about a target on social media (birthdays, pet names) to guess passwords or build a fake rapport.",
           "question": "What is this recon phase called?",
           "options": [
             "OSINT (Open Source Intelligence)",
@@ -217,7 +216,8 @@
           "feedback": {
             "correct": "Correct. Using public data to build a dossier on the victim.",
             "incorrect": "Doxing is publishing it. OSINT is gathering it for an attack."
-          }
+          },
+          "scene": "Finding information about a target on social media (birthdays, pet names) to guess passwords or build a fake rapport."
         },
         {
           "exerciseId": "B3-3-P3-E9",

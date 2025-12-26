@@ -172,7 +172,6 @@
         {
           "exerciseId": "B2-2-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A technique where you make an extreme request (the Anchor) knowing it will be rejected, so your second, smaller request looks reasonable.",
           "question": "What is this?",
           "options": [
             "Door-in-the-Face Technique",
@@ -185,7 +184,8 @@
           "feedback": {
             "correct": "Correct. You slam the 'Door' on the big request, but the Anchor makes the small request feel tiny by comparison. It utilizes the Contrast Principle.",
             "incorrect": "Foot-in-the-Door starts small. Door-in-the-Face starts HUGE (The Anchor) to make the real request look small."
-          }
+          },
+          "scene": "A technique where you make an extreme request (the Anchor) knowing it will be rejected, so your second, smaller request looks reasonable."
         },
         {
           "exerciseId": "B2-2-P1-E8",

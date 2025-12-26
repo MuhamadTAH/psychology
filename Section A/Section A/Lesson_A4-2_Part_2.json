@@ -186,7 +186,6 @@
         {
           "exerciseId": "A4-2-P2-E8",
           "type": "reverse-scenario",
-          "answer": "Using complex vocabulary or jargon to sound intelligent and confuse the victim, while actually saying nothing of value.",
           "question": "What is this verbal smokescreen?",
           "options": [
             "Intellectual Bullying / Word Salad",
@@ -199,7 +198,8 @@
           "feedback": {
             "correct": "Correct. They hide their lack of substance behind big words. It creates an illusion of authority.",
             "incorrect": "It is not intelligence. It is a performance of intelligence to dominate the conversation."
-          }
+          },
+          "scene": "Using complex vocabulary or jargon to sound intelligent and confuse the victim, while actually saying nothing of value."
         },
         {
           "exerciseId": "A4-2-P2-E9",

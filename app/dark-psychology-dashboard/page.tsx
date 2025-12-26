@@ -1,6 +1,6 @@
 // 🧠 FILE PURPOSE
 // Dark Psychology Dashboard - Complete learning hub with all features.
-// Shows progress, notes, bookmarks, search, review mode, and certificate.
+// Shows real user progress, stats, notes, bookmarks, and AI recommendations.
 
 "use client";
 
@@ -26,21 +26,62 @@ import {
 } from "lucide-react";
 
 export default function DarkPsychologyDashboard() {
-  const { user } = useUser();
+  const { user, isLoaded } = useUser();
   const userEmail = user?.primaryEmailAddress?.emailAddress || "";
 
-  // Step 1: Load dashboard data
-  const dashboard = useQuery(api.darkPsychology.getDashboard, { email: userEmail });
-  const notes = useQuery(api.darkPsychology.getNotes, { email: userEmail });
-  const bookmarks = useQuery(api.darkPsychology.getBookmarks, { email: userEmail });
-  const reviewQuestions = useQuery(api.darkPsychology.getReviewQuestions, { email: userEmail });
-  const recommendations = useQuery(api.darkPsychology.getRecommendations, { email: userEmail });
+  // Step 1: Redirect to welcome page if not authenticated
+  // This ensures users see the onboarding flow
+  useEffect(() => {
+    if (isLoaded && !user) {
+      window.location.href = "/welcome";
+    }
+  }, [isLoaded, user]);
+
+  // Step 2: Load dashboard data only if user is authenticated
+  const dashboard = useQuery(
+    api.darkPsychology.getDashboard,
+    userEmail ? { email: userEmail } : "skip"
+  );
+  const notes = useQuery(
+    api.darkPsychology.getNotes,
+    userEmail ? { email: userEmail } : "skip"
+  );
+  const bookmarks = useQuery(
+    api.darkPsychology.getBookmarks,
+    userEmail ? { email: userEmail } : "skip"
+  );
+  const reviewQuestions = useQuery(
+    api.darkPsychology.getReviewQuestions,
+    userEmail ? { email: userEmail } : "skip"
+  );
+  const recommendations = useQuery(
+    api.darkPsychology.getRecommendations,
+    userEmail ? { email: userEmail } : "skip"
+  );
   const updateStreak = useMutation(api.darkPsychology.updateDailyStreak);
 
   const [activeTab, setActiveTab] = useState<"overview" | "notes" | "bookmarks" | "review">("overview");
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Step 2: Auto-update streak on dashboard load
+  // Step: Pre-load click sound for instant playback
+  // Loading sound once makes it play immediately when clicked
+  const [buttonSound] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const sound = new Audio('/sounds/button-click.mp3');
+      sound.volume = 0.5;
+      return sound;
+    }
+    return null;
+  });
+
+  const playClickSound = () => {
+    if (buttonSound) {
+      buttonSound.currentTime = 0; // Reset to start
+      buttonSound.play().catch(() => {});
+    }
+  };
+
+  // Step 3: Auto-update streak on dashboard load
   useEffect(() => {
     if (userEmail) {
       updateStreak({ email: userEmail }).catch((error) => {
@@ -48,6 +89,15 @@ export default function DarkPsychologyDashboard() {
       });
     }
   }, [userEmail]);
+
+  // Step 4: Show loading state while checking authentication or loading data
+  if (!isLoaded || !user) {
+    return (
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 flex items-center justify-center">
+        <div className="text-white text-xl">Loading...</div>
+      </div>
+    );
+  }
 
   if (!dashboard) {
     return (
@@ -67,11 +117,11 @@ export default function DarkPsychologyDashboard() {
       <div className="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-sm border-b-2 border-gray-700">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link
-            href="/learn"
+            href="/"
             className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
-            <span className="font-medium">Back to Lessons</span>
+            <span className="font-medium">Home</span>
           </Link>
           <h1 className="text-2xl font-bold text-white">Dark Psychology Hub</h1>
           <div className="w-24"></div> {/* Spacer for centering */}
@@ -116,7 +166,7 @@ export default function DarkPsychologyDashboard() {
                 <div className="text-gray-400 text-sm">Accuracy</div>
               </div>
               <div className="bg-gray-800/50 rounded-lg p-4 text-center">
-                <div className="text-blue-400 text-3xl font-bold">{dashboard.streak}</div>
+                <div className="text-white text-3xl font-bold">{dashboard.streak}</div>
                 <div className="text-gray-400 text-sm">Day Streak</div>
               </div>
               <div className="bg-gray-800/50 rounded-lg p-4 text-center">
@@ -151,9 +201,9 @@ export default function DarkPsychologyDashboard() {
         {/* AI Recommendations Section */}
         {recommendations && recommendations.length > 0 && (
           <div className="mb-8">
-            <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 rounded-xl border-2 border-blue-500/30 p-6">
+            <div className="bg-gradient-to-br from-gray-800/50 to-gray-700/50 rounded-xl border-2 border-gray-700 p-6">
               <div className="flex items-center gap-3 mb-4">
-                <Target className="w-6 h-6 text-blue-400" />
+                <Target className="w-6 h-6 text-white" />
                 <h2 className="text-xl font-bold text-white">Recommended for You</h2>
               </div>
               <p className="text-gray-400 text-sm mb-4">
@@ -164,12 +214,12 @@ export default function DarkPsychologyDashboard() {
                   <Link
                     key={rec.id}
                     href={`/yourlesson?category=dark-psychology&lessonNumber=${rec.number}&lessonId=${rec.id}`}
-                    className="block bg-gray-800/50 rounded-lg p-4 border border-gray-700 hover:border-blue-500 transition-all"
+                    className="block bg-gray-800/50 rounded-lg p-4 border border-gray-700 hover:border-gray-500 transition-all"
                   >
                     <div className="flex items-start justify-between">
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-2">
-                          <span className="bg-blue-500/20 text-blue-300 text-xs font-bold px-2 py-1 rounded">
+                          <span className="bg-gray-700 text-gray-300 text-xs font-bold px-2 py-1 rounded">
                             {rec.topic}
                           </span>
                           {rec.status === "not_started" && (
@@ -213,7 +263,7 @@ export default function DarkPsychologyDashboard() {
                               ? "bg-orange-500/20 text-orange-400"
                               : rec.priority >= 3
                               ? "bg-yellow-500/20 text-yellow-400"
-                              : "bg-blue-500/20 text-blue-400"
+                              : "bg-gray-700 text-white"
                           }`}
                         >
                           <span className="text-xl font-bold">!</span>
@@ -230,7 +280,10 @@ export default function DarkPsychologyDashboard() {
         {/* Tab Navigation */}
         <div className="mb-8 flex gap-2 overflow-x-auto pb-2">
           <button
-            onClick={() => setActiveTab("overview")}
+            onClick={() => {
+              playClickSound();
+              setActiveTab("overview");
+            }}
             className={`px-6 py-3 rounded-lg font-semibold whitespace-nowrap transition-all ${
               activeTab === "overview"
                 ? "bg-purple-600 text-white"
@@ -241,7 +294,10 @@ export default function DarkPsychologyDashboard() {
             Overview
           </button>
           <button
-            onClick={() => setActiveTab("notes")}
+            onClick={() => {
+              playClickSound();
+              setActiveTab("notes");
+            }}
             className={`px-6 py-3 rounded-lg font-semibold whitespace-nowrap transition-all ${
               activeTab === "notes"
                 ? "bg-purple-600 text-white"
@@ -252,7 +308,10 @@ export default function DarkPsychologyDashboard() {
             Notes ({dashboard.notesCount})
           </button>
           <button
-            onClick={() => setActiveTab("bookmarks")}
+            onClick={() => {
+              playClickSound();
+              setActiveTab("bookmarks");
+            }}
             className={`px-6 py-3 rounded-lg font-semibold whitespace-nowrap transition-all ${
               activeTab === "bookmarks"
                 ? "bg-purple-600 text-white"
@@ -263,7 +322,10 @@ export default function DarkPsychologyDashboard() {
             Bookmarks ({dashboard.bookmarksCount})
           </button>
           <button
-            onClick={() => setActiveTab("review")}
+            onClick={() => {
+              playClickSound();
+              setActiveTab("review");
+            }}
             className={`px-6 py-3 rounded-lg font-semibold whitespace-nowrap transition-all ${
               activeTab === "review"
                 ? "bg-purple-600 text-white"
@@ -282,19 +344,13 @@ export default function DarkPsychologyDashboard() {
               <h3 className="text-xl font-bold text-white mb-4">Quick Actions</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Link
-                  href={
-                    dashboard.nextLesson
-                      ? `/yourlesson?category=dark-psychology&lessonNumber=${dashboard.nextLesson.lessonNumber}&lessonId=${dashboard.nextLesson.lessonId}&part=${dashboard.nextLesson.nextPart}`
-                      : "/yourlesson?category=dark-psychology&lessonNumber=1"
-                  }
-                  className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg p-6 hover:from-blue-500 hover:to-blue-600 transition-all"
+                  href="/dark-psychology"
+                  className="bg-gradient-to-r from-gray-700 to-gray-800 rounded-lg p-6 hover:from-gray-600 hover:to-gray-700 transition-all"
                 >
                   <Target className="w-8 h-8 text-white mb-2" />
-                  <h4 className="text-white font-bold text-lg mb-1">Continue Learning</h4>
-                  <p className="text-blue-200 text-sm">
-                    {dashboard.nextLesson
-                      ? `Lesson ${dashboard.nextLesson.lessonNumber}, Part ${dashboard.nextLesson.nextPart}`
-                      : "Start first lesson"}
+                  <h4 className="text-white font-bold text-lg mb-1">Start Learning</h4>
+                  <p className="text-gray-300 text-sm">
+                    Browse sections and begin your journey
                   </p>
                 </Link>
                 <Link
@@ -303,15 +359,7 @@ export default function DarkPsychologyDashboard() {
                 >
                   <Clock className="w-8 h-8 text-white mb-2" />
                   <h4 className="text-white font-bold text-lg mb-1">Review Mode</h4>
-                  <p className="text-purple-200 text-sm">Practice {dashboard.reviewCount} questions</p>
-                </Link>
-                <Link
-                  href="/dark-psychology-quiz"
-                  className="bg-gradient-to-r from-green-600 to-green-700 rounded-lg p-6 hover:from-green-500 hover:to-green-600 transition-all"
-                >
-                  <TrendingUp className="w-8 h-8 text-white mb-2" />
-                  <h4 className="text-white font-bold text-lg mb-1">Random Quiz</h4>
-                  <p className="text-green-200 text-sm">Test your knowledge</p>
+                  <p className="text-purple-200 text-sm">No questions to review yet</p>
                 </Link>
                 <Link
                   href="/dark-psychology/search"
@@ -343,7 +391,7 @@ export default function DarkPsychologyDashboard() {
                 >
                   <Flame className="w-8 h-8 text-white mb-2" />
                   <h4 className="text-white font-bold text-lg mb-1">Daily Streaks</h4>
-                  <p className="text-orange-200 text-sm">{dashboard.streak} day streak 🔥</p>
+                  <p className="text-orange-200 text-sm">Start your streak today!</p>
                 </Link>
                 <Link
                   href="/dark-psychology-shop"
@@ -421,8 +469,8 @@ export default function DarkPsychologyDashboard() {
               <h3 className="text-xl font-bold text-white mb-4">Questions to Review</h3>
               {reviewQuestions && reviewQuestions.length > 0 ? (
                 <div className="space-y-4">
-                  <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4 mb-4">
-                    <p className="text-blue-300 text-sm">
+                  <div className="bg-gray-700/50 border border-gray-600 rounded-lg p-4 mb-4">
+                    <p className="text-gray-300 text-sm">
                       These questions are ready for review based on spaced repetition. Practice them to strengthen your memory!
                     </p>
                   </div>
@@ -449,7 +497,9 @@ export default function DarkPsychologyDashboard() {
 
 // ✅ In this page we achieved:
 // Complete Dark Psychology dashboard with all features in one place.
-// Progress tracking with visual progress bar and stats.
-// Tabbed interface for notes, bookmarks, and review questions.
-// Quick action buttons for all main features.
-// Certificate message when course is complete.
+// - Real user data: XP, progress, accuracy, streak displayed from database
+// - Notes, bookmarks, and review questions loaded dynamically
+// - AI recommendations based on user performance
+// - Auto-updates daily streak on page load
+// - Tab navigation for different features
+// - Quick action cards for all major features

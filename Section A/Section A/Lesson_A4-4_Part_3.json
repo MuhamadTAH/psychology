@@ -205,7 +205,6 @@
         {
           "exerciseId": "A4-4-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A dynamic where the victim believes they are the only one who can 'heal' or 'understand' the damaged predator.",
           "question": "What is this trap?",
           "options": [
             "The 'Beauty and the Beast' Fantasy",
@@ -218,7 +217,8 @@
           "feedback": {
             "correct": "Correct. It is the fantasy that your love is strong enough to cure their pathology. It is a fatal ego trap for the empath.",
             "incorrect": "It is not love; it is a savior complex. The Beast eats Beauty in the real version."
-          }
+          },
+          "scene": "A dynamic where the victim believes they are the only one who can 'heal' or 'understand' the damaged predator."
         },
         {
           "exerciseId": "A4-4-P3-E9",

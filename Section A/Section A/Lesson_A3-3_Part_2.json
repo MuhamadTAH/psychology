@@ -204,7 +204,6 @@
         {
           "exerciseId": "A3-3-P2-E9",
           "type": "reverse-scenario",
-          "answer": "Using strict adherence to rules and bureaucracy to punish an enemy or avoid helping them.",
           "question": "What is this form of aggression?",
           "options": [
             "Malicious Compliance / Lawfare",
@@ -217,7 +216,8 @@
           "feedback": {
             "correct": "Correct. 'I'd love to help, but the *policy* says...' They use the rules as a shield to hide their malice.",
             "incorrect": "It's not gaslighting. It's using the 'Letter of the Law' to violate the 'Spirit of the Law'."
-          }
+          },
+          "scene": "Using strict adherence to rules and bureaucracy to punish an enemy or avoid helping them."
         },
         {
           "exerciseId": "A3-3-P2-E10",

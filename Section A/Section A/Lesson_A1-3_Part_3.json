@@ -1,341 +1,341 @@
 {
-"sectionId": "A",
-"sectionTitle": "The Foundations of the Dark Mind",
-"unitId": "A1",
-"unitTitle": "The Fast Hook",
-"lessonId": "A1-3",
-"lessonTitle": "The \"Bootcamp\" - Definitions, History & Ethics",
-"lessonType": "Normal",
-"lessonPart": 3,
-"lessonPartTitle": "The 'Mega-Test' (A long challenge on all 3 topics)",
-"objective": "To synthesize and apply knowledge of definitions, ethics, and history in complex, multi-layered scenarios.",
-"gamification": {
-"progressRings": [
-{
-"ringId": "learn",
-"status": "complete",
-"label": "Part 1"
-},
-{
-"ringId": "practice",
-"status": "complete",
-"label": "Part 2"
-},
-{
-"ringId": "challenge",
-"status": "pending",
-"label": "Part 3"
-}
-],
-"pointsValue": 100,
-"starsAvailable": 3,
-"badgeOnCompletion": "Bootcamp_Graduate_Badge"
-},
-"contentScreens": [
-{
-"screenId": "A1-3-P3-S1",
-"screenType": "Learn",
-"title": "The Bootcamp: Part 3",
-"content": [
-{
-"type": "paragraph",
-"text": "You've learned the 'What,' the 'Why,' and the 'Who.' Now it's time to put it all together."
-},
-{
-"type": "alert",
-"alertType": "warning",
-"text": "This is the 'Mega-Test.' These scenarios are more complex and will combine definitions, historical tactics, and ethical dilemmas all at once. Let's see your new skills."
-}
-]
-},
-{
-"screenId": "A1-3-P3-S2",
-"screenType": "Exercises",
-"exercises": [
-{
-"exerciseId": "A1-3-P3-E1",
-"type": "matching",
-"question": "Match the term with its historical 'father' or origin:",
-"pairs": [
-{
-"term": "Machiavellianism",
-"definition": "Niccolò Machiavelli"
-},
-{
-"term": "Gaslighting",
-"definition": "A 1938 play/film"
-},
-{
-"term": "Dark Triad",
-"definition": "Modern Psychology (2002)"
-},
-{
-"term": "Propaganda",
-"definition": "Wartime Media / Edward Bernays"
-}
-],
-"difficulty": "medium",
-"explanation": "This connects the modern terms (Dark Triad) with their historical roots (Machiavelli)."
-},
-{
-"exerciseId": "A1-3-P3-E2",
-"type": "boss-scenario",
-"scene": "A political ad shows a grainy, black-and-white photo of an opponent ('Monster') while playing scary music. It then shows their own candidate in full color, smiling, with a flag ('Hero').",
-"question": "This ad combines 'Propaganda' with what other concept?",
-"options": [
-"Implied Coercion (fear-mongering)",
-"Flattery (of the viewer's intelligence)",
-"Reciprocity (giving a gift)",
-"The Silent Treatment"
-],
-"correct": "Implied Coercion (fear-mongering)",
-"difficulty": "hard",
-"explanation": "This is historical 'Propaganda' in modern form. It uses 'us vs. them' and *fear* (Implied Coercion) to manipulate your vote, not logic."
-},
-{
-"exerciseId": "A1-3-P3-E3",
-"type": "ethical-dilemma",
-"scene": "You *know* a co-worker is using 'flattery' and 'mirroring' (Machiavellian tactics) to get a promotion you both want.",
-"question": "What is the most 'ethically aware' response?",
-"options": [
-"Use the *same* tactics, but do them better.",
-"Do nothing and hope the boss sees through it.",
-"Focus on your own *work and results*, communicating them clearly and transparently.",
-"Loudly accuse them of being a manipulator in a team meeting."
-],
-"correct": "Focus on your own *work and results*, communicating them clearly and transparently.",
-"difficulty": "hard",
-"explanation": "This is the 'light' path. Don't play the 'dark' game. The best defense is to counter *hidden* manipulation with *transparent* value. This is your 'Ethical Compass' in action."
-},
-{
-"exerciseId": "A1-3-P3-E4",
-"type": "true-false",
-"statement": "According to Machiavelli, Alex (the coffee shop con-artist) was 'wrong' because Alex lied.",
-"options": [
-"True",
-"False"
-],
-"correct": "False",
-"difficulty": "medium",
-"explanation": "Machiavelli would say Alex was 'right.' The 'end' (getting $20) 'justified the means' (lying, flattery, reciprocity). This is the 'dark' philosophy."
-},
-{
-"exerciseId": "A1-3-P3-E5",
-"type": "multiple-choice",
-"question": "What *three* concepts (the 'Dark Triad') are the cornerstones of manipulative personalities?",
-"options": [
-"Kindness, Empathy, Honesty",
-"Narcissism, Machiavellianism, Psychopathy",
-"Persuasion, Coercion, Flattery",
-"Gaslighting, Love Bombing, Guilt"
-],
-"correct": "Narcissism, Machiavellianism, Psychopathy",
-"difficulty": "medium",
-"explanation": "This is a key definition from Part 2. These three traits together form the 'Dark Triad'."
-},
-{
-"exerciseId": "A1-3-P3-E6",
-"type": "case-analysis",
-"caseTitle": "The 'Helpful' Friend",
-"scene": "Your friend 'Sam' always gives you 'help' you didn't ask for (like 'fixing' your resume or 're-organizing' your kitchen). Later, Sam always says, 'Well, after all I've done for you, you *owe* me...' when they want a big favor.",
-"question": "Sam is combining a 'Reciprocity Trap' (Manipulation) with what other 'Dark Triad' trait?",
-"options": [
-"Narcissism (needing to feel superior and 'in control' of your life)",
-"Empathy (genuinely wanting to help)",
-"Honesty (being direct about your flaws)",
-"Psychopathy (a lack of emotion)"
-],
-"correct": "Narcissism (needing to feel superior and 'in control' of your life)",
-"difficulty": "hard",
-"explanation": "This is an advanced scenario. The 'help' is a narcissistic act of control. The 'debt' is the 'Reciprocity Trap.' This is a 2-part tactic."
-},
-{
-"exerciseId": "A1-3-P3-E7",
-"type": "fill-in",
-"sentence": "(--------) is hidden (deceit). (--------) is forced (threats). (--------) is transparent (logic/emotion).",
-"options": [
-"Manipulation",
-"Coercion",
-"Persuasion",
-"Flattery",
-"History"
-],
-"answers": [
-"Manipulation",
-"Coercion",
-"Persuasion"
-],
-"difficulty": "medium",
-"explanation": "These are the 'Big 3' definitions from Part 1. You must know these by heart."
-},
-{
-"exerciseId": "A1-3-P3-E8",
-"type": "build-sentence",
-"question": "Arrange these words into the 'Prime Directive' of this app:",
-"words": [
-"to",
-"not",
-"harm,",
-"awareness,",
-"Use",
-"for",
-"defense"
-],
-"correct": "Use awareness for defense, not to harm",
-"difficulty": "medium",
-"explanation": "This is the core 'Ethical' rule from Part 2. We are building shields, not swords."
-},
-{
-"exerciseId": "A1-3-P3-E9",
-"type": "reverse-scenario",
-"scene": "This person uses *hidden* tactics (like guilt-trips, flattery, or gaslighting) to *deceive* you into doing what they want.",
-"question": "What is this person's primary method?",
-"options": [
-"Manipulation",
-"Coercion",
-"Persuasion",
-"Radical Honesty"
-],
-"correct": "Manipulation",
-"difficulty": "medium",
-"explanation": "This is the definition of Manipulation. The key words are 'hidden' and 'deceive'."
-},
-{
-"exerciseId": "A1-3-P3-E10",
-"type": "reverse-scenario",
-"scene": "This person uses *threats* (like 'You'll be fired' or 'You'll be sorry') to *force* you into doing what they want.",
-"question": "What is this person's primary method?",
-"options": [
-"Manipulation",
-"Coercion",
-"Persuasion",
-"Flattery"
-],
-"correct": "Coercion",
-"difficulty": "medium",
-"explanation": "This is the definition of Coercion. The key word is 'force' or 'threat'."
-},
-{
-"exerciseId": "A1-3-P3-E11",
-"type": "true-false",
-"statement": "The historical term 'Propaganda' and the modern term 'Gaslighting' are completely unrelated.",
-"options": [
-"True",
-"False"
-],
-"correct": "False",
-"difficulty": "hard",
-"explanation": "They are *deeply* related. Propaganda is often 'Gaslighting' on a mass scale (e.g., 'The war is not happening, you are just imagining it.' 'That photo is fake.')."
-},
-{
-"exerciseId": "A1-3-P3-E12",
-"type": "boss-scenario",
-"scene": "Your partner is upset. 'You *never* listen to me!' (You know this isn't true). 'After all the sacrifices I've made for you, you *always* abandon me!'",
-"question": "This is a 'Boss Scenario' combining 'Gaslighting' ('You never...') with what?",
-"options": [
-"A Guilt-Trip ('After all I've made...')",
-"Flattery ('You're so smart')",
-"Reciprocity (a free gift)",
-"A genuine complaint"
-],
-"correct": "A Guilt-Trip ('After all I've made...')",
-"difficulty": "hard",
-"explanation": "This is a 2-hit combo: (1) Gaslighting (using 'never' or 'always' to make you doubt reality) and (2) a Guilt-Trip (making you feel 'in debt' for past 'sacrifices')."
-},
-{
-"exerciseId": "A1-3-P3-E14",
-"type": "ethical-dilemma",
-"scene": "A con-artist (like 'Alex') is using 'flattery' and 'vulnerability' to try and scam your elderly neighbor.",
-"question": "Is it 'ethical' to use 'manipulation' (like a 'light' lie, e.g., 'Oh, Alex, your boss is on the phone for you!') to stop them?",
-"options": [
-"No. Manipulation is *always* unethical. You must tell the truth.",
-"Yes. This is an 'ethically grey' area where a 'dark' tactic (a lie) is used for a 'light' purpose (protection).",
-"No. You should just call the police.",
-"Yes. You should use a 'dark' tactic to steal Alex's wallet."
-],
-"correct": "Yes. This is an 'ethically grey' area where a 'dark' tactic (a lie) is used for a 'light' purpose (protection).",
-"difficulty": "hard",
-"explanation": "This is the ultimate ethical test. The 'Prime Directive' is 'Do No Harm.' Using a 'white lie' (manipulation) to *prevent* harm (the scam) is a high-level, ethically-aware choice."
-},
-{
-"exerciseId": "A1-3-P3-E15",
-"type": "true-false",
-"statement": "A 'Narcissist' and a 'Machiavellian' are the same thing.",
-"options": [
-"True",
-"False"
-],
-"correct": "False",
-"difficulty": "hard",
-"explanation": "They are different. A Narcissist *needs* admiration and flattery (it's about their ego). A Machiavellian *doesn't* need admiration; they only want *power* and will use any tool (even faking weakness) to get it."
-},
-{
-"exerciseId": "A1-3-P3-E16",
-"type": "multiple-choice",
-"question": "Which 'Dark Triad' trait *best* describes Alex from the Coffee Shop?",
-"options": [
-"Narcissism (needed to be flattered and admired)",
-"Machiavellianism (used a cold, calculated 'script' to get a goal: $20)",
-"Psychopathy (showed a total lack of fear or remorse)",
-"Empathy (was genuinely lonely)"
-],
-"correct": "Machiavellianism (used a cold, calculated 'script' to get a goal: $20)",
-"difficulty": "hard",
-"explanation": "Alex's actions weren't about *ego*; they were about *profit*. The flattery, the vulnerability—it was all a *script*. This is pure 'the end justifies the means.' This is Machiavellianism."
-},
-{
-"exerciseId": "A1-3-P3-E17",
-"type": "case-analysis",
-"caseTitle": "The Job Interview 'Grey Area'",
-"scene": "In Part 2, we said 'mirroring' in a job interview is an 'ethically grey' area. What is the *primary* factor that keeps it from being 'Dark'?",
-"question": "Why is it not 'Dark' manipulation?",
-"options": [
-"Because the 'intent' is transparent (to get a job), not 'hidden' (to exploit).",
-"Because it never works.",
-"Because everyone does it, so it's 'normal'.",
-"Because the interviewer is also a manipulator."
-],
-"correct": "Because the 'intent' is transparent (to get a job), not 'hidden' (to exploit).",
-"difficulty": "hard",
-"explanation": "This is the final test of 'Intent' (from Part 1) and 'Ethics' (from Part 2). 'Dark' implies a *hidden, exploitative* intent. An interview is a *transparent, persuasive* context."
-},
-{
-"exerciseId": "A1-3-P3-E18",
-"type": "build-sentence",
-"question": "Arrange these words into the *defense* for the 'Gaslighting' origin story:",
-"words": [
-"your",
-"trust",
-"lights'",
-"'the",
-"are",
-"own",
-"when",
-"dim,'",
-"perception"
-],
-"correct": "Trust your own perception when 'the lights' are dim",
-"difficulty": "hard",
-"explanation": "This is a core 'Bootcamp' concept. The defense against 'Gaslighting' (from Part 2 history) is to trust your own senses."
-},
-{
-"exerciseId": "A1-3-P3-E19",
-"type": "fill-in",
-"sentence": "You have completed the 'Bootcamp' on Definitions, (--------), and (--------).",
-"options": [
-"History",
-"Ethics",
-"Sales",
-"Flattery"
-],
-"answers": [
-"History",
-"Ethics"
-],
-"difficulty": "easy",
-"explanation": "You've mastered the 'What,' 'Why,' and 'Who' of Dark Psychology."
-},
-]
-}
-]
+    "sectionId": "A",
+    "sectionTitle": "The Foundations of the Dark Mind",
+    "unitId": "A1",
+    "unitTitle": "The Fast Hook",
+    "lessonId": "A1-3",
+    "lessonTitle": "The \"Bootcamp\" - Definitions, History & Ethics",
+    "lessonType": "Normal",
+    "lessonPart": 3,
+    "lessonPartTitle": "The 'Mega-Test' (A long challenge on all 3 topics)",
+    "objective": "To synthesize and apply knowledge of definitions, ethics, and history in complex, multi-layered scenarios.",
+    "gamification": {
+        "progressRings": [
+            {
+                "ringId": "learn",
+                "status": "complete",
+                "label": "Part 1"
+            },
+            {
+                "ringId": "practice",
+                "status": "complete",
+                "label": "Part 2"
+            },
+            {
+                "ringId": "challenge",
+                "status": "pending",
+                "label": "Part 3"
+            }
+        ],
+        "pointsValue": 100,
+        "starsAvailable": 3,
+        "badgeOnCompletion": "Bootcamp_Graduate_Badge"
+    },
+    "contentScreens": [
+        {
+            "screenId": "A1-3-P3-S1",
+            "screenType": "Learn",
+            "title": "The Bootcamp: Part 3",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "You've learned the 'What,' the 'Why,' and the 'Who.' Now it's time to put it all together."
+                },
+                {
+                    "type": "alert",
+                    "alertType": "warning",
+                    "text": "This is the 'Mega-Test.' These scenarios are more complex and will combine definitions, historical tactics, and ethical dilemmas all at once. Let's see your new skills."
+                }
+            ]
+        },
+        {
+            "screenId": "A1-3-P3-S2",
+            "screenType": "Exercises",
+            "exercises": [
+                {
+                    "exerciseId": "A1-3-P3-E1",
+                    "type": "matching",
+                    "question": "Match the term with its historical 'father' or origin:",
+                    "pairs": [
+                        {
+                            "term": "Machiavellianism",
+                            "definition": "Niccolò Machiavelli"
+                        },
+                        {
+                            "term": "Gaslighting",
+                            "definition": "A 1938 play/film"
+                        },
+                        {
+                            "term": "Dark Triad",
+                            "definition": "Modern Psychology (2002)"
+                        },
+                        {
+                            "term": "Propaganda",
+                            "definition": "Wartime Media / Edward Bernays"
+                        }
+                    ],
+                    "difficulty": "medium",
+                    "explanation": "This connects the modern terms (Dark Triad) with their historical roots (Machiavelli)."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E2",
+                    "type": "boss-scenario",
+                    "scene": "A political ad shows a grainy, black-and-white photo of an opponent ('Monster') while playing scary music. It then shows their own candidate in full color, smiling, with a flag ('Hero').",
+                    "question": "This ad combines 'Propaganda' with what other concept?",
+                    "options": [
+                        "Implied Coercion (fear-mongering)",
+                        "Flattery (of the viewer's intelligence)",
+                        "Reciprocity (giving a gift)",
+                        "The Silent Treatment"
+                    ],
+                    "correct": "Implied Coercion (fear-mongering)",
+                    "difficulty": "hard",
+                    "explanation": "This is historical 'Propaganda' in modern form. It uses 'us vs. them' and *fear* (Implied Coercion) to manipulate your vote, not logic."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E3",
+                    "type": "ethical-dilemma",
+                    "scene": "You *know* a co-worker is using 'flattery' and 'mirroring' (Machiavellian tactics) to get a promotion you both want.",
+                    "question": "What is the most 'ethically aware' response?",
+                    "options": [
+                        "Use the *same* tactics, but do them better.",
+                        "Do nothing and hope the boss sees through it.",
+                        "Focus on your own *work and results*, communicating them clearly and transparently.",
+                        "Loudly accuse them of being a manipulator in a team meeting."
+                    ],
+                    "correct": "Focus on your own *work and results*, communicating them clearly and transparently.",
+                    "difficulty": "hard",
+                    "explanation": "This is the 'light' path. Don't play the 'dark' game. The best defense is to counter *hidden* manipulation with *transparent* value. This is your 'Ethical Compass' in action."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E4",
+                    "type": "true-false",
+                    "statement": "According to Machiavelli, Alex (the coffee shop con-artist) was 'wrong' because Alex lied.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "correct": "False",
+                    "difficulty": "medium",
+                    "explanation": "Machiavelli would say Alex was 'right.' The 'end' (getting $20) 'justified the means' (lying, flattery, reciprocity). This is the 'dark' philosophy."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E5",
+                    "type": "multiple-choice",
+                    "question": "What *three* concepts (the 'Dark Triad') are the cornerstones of manipulative personalities?",
+                    "options": [
+                        "Kindness, Empathy, Honesty",
+                        "Narcissism, Machiavellianism, Psychopathy",
+                        "Persuasion, Coercion, Flattery",
+                        "Gaslighting, Love Bombing, Guilt"
+                    ],
+                    "correct": "Narcissism, Machiavellianism, Psychopathy",
+                    "difficulty": "medium",
+                    "explanation": "This is a key definition from Part 2. These three traits together form the 'Dark Triad'."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E6",
+                    "type": "case-analysis",
+                    "caseTitle": "The 'Helpful' Friend",
+                    "scene": "Your friend 'Sam' always gives you 'help' you didn't ask for (like 'fixing' your resume or 're-organizing' your kitchen). Later, Sam always says, 'Well, after all I've done for you, you *owe* me...' when they want a big favor.",
+                    "question": "Sam is combining a 'Reciprocity Trap' (Manipulation) with what other 'Dark Triad' trait?",
+                    "options": [
+                        "Narcissism (needing to feel superior and 'in control' of your life)",
+                        "Empathy (genuinely wanting to help)",
+                        "Honesty (being direct about your flaws)",
+                        "Psychopathy (a lack of emotion)"
+                    ],
+                    "correct": "Narcissism (needing to feel superior and 'in control' of your life)",
+                    "difficulty": "hard",
+                    "explanation": "This is an advanced scenario. The 'help' is a narcissistic act of control. The 'debt' is the 'Reciprocity Trap.' This is a 2-part tactic."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E7",
+                    "type": "fill-in",
+                    "sentence": "(--------) is hidden (deceit). (--------) is forced (threats). (--------) is transparent (logic/emotion).",
+                    "options": [
+                        "Manipulation",
+                        "Coercion",
+                        "Persuasion",
+                        "Flattery",
+                        "History"
+                    ],
+                    "answers": [
+                        "Manipulation",
+                        "Coercion",
+                        "Persuasion"
+                    ],
+                    "difficulty": "medium",
+                    "explanation": "These are the 'Big 3' definitions from Part 1. You must know these by heart."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E8",
+                    "type": "build-sentence",
+                    "question": "Arrange these words into the 'Prime Directive' of this app:",
+                    "words": [
+                        "to",
+                        "not",
+                        "harm,",
+                        "awareness,",
+                        "Use",
+                        "for",
+                        "defense"
+                    ],
+                    "correct": "Use awareness for defense, not to harm",
+                    "difficulty": "medium",
+                    "explanation": "This is the core 'Ethical' rule from Part 2. We are building shields, not swords."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E9",
+                    "type": "reverse-scenario",
+                    "scene": "This person uses *hidden* tactics (like guilt-trips, flattery, or gaslighting) to *deceive* you into doing what they want.",
+                    "question": "What is this person's primary method?",
+                    "options": [
+                        "Manipulation",
+                        "Coercion",
+                        "Persuasion",
+                        "Radical Honesty"
+                    ],
+                    "correct": "Manipulation",
+                    "difficulty": "medium",
+                    "explanation": "This is the definition of Manipulation. The key words are 'hidden' and 'deceive'."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E10",
+                    "type": "reverse-scenario",
+                    "scene": "This person uses *threats* (like 'You'll be fired' or 'You'll be sorry') to *force* you into doing what they want.",
+                    "question": "What is this person's primary method?",
+                    "options": [
+                        "Manipulation",
+                        "Coercion",
+                        "Persuasion",
+                        "Flattery"
+                    ],
+                    "correct": "Coercion",
+                    "difficulty": "medium",
+                    "explanation": "This is the definition of Coercion. The key word is 'force' or 'threat'."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E11",
+                    "type": "true-false",
+                    "statement": "The historical term 'Propaganda' and the modern term 'Gaslighting' are completely unrelated.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "correct": "False",
+                    "difficulty": "hard",
+                    "explanation": "They are *deeply* related. Propaganda is often 'Gaslighting' on a mass scale (e.g., 'The war is not happening, you are just imagining it.' 'That photo is fake.')."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E12",
+                    "type": "boss-scenario",
+                    "scene": "Your partner is upset. 'You *never* listen to me!' (You know this isn't true). 'After all the sacrifices I've made for you, you *always* abandon me!'",
+                    "question": "This is a 'Boss Scenario' combining 'Gaslighting' ('You never...') with what?",
+                    "options": [
+                        "A Guilt-Trip ('After all I've made...')",
+                        "Flattery ('You're so smart')",
+                        "Reciprocity (a free gift)",
+                        "A genuine complaint"
+                    ],
+                    "correct": "A Guilt-Trip ('After all I've made...')",
+                    "difficulty": "hard",
+                    "explanation": "This is a 2-hit combo: (1) Gaslighting (using 'never' or 'always' to make you doubt reality) and (2) a Guilt-Trip (making you feel 'in debt' for past 'sacrifices')."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E14",
+                    "type": "ethical-dilemma",
+                    "scene": "A con-artist (like 'Alex') is using 'flattery' and 'vulnerability' to try and scam your elderly neighbor.",
+                    "question": "Is it 'ethical' to use 'manipulation' (like a 'light' lie, e.g., 'Oh, Alex, your boss is on the phone for you!') to stop them?",
+                    "options": [
+                        "No. Manipulation is *always* unethical. You must tell the truth.",
+                        "Yes. This is an 'ethically grey' area where a 'dark' tactic (a lie) is used for a 'light' purpose (protection).",
+                        "No. You should just call the police.",
+                        "Yes. You should use a 'dark' tactic to steal Alex's wallet."
+                    ],
+                    "correct": "Yes. This is an 'ethically grey' area where a 'dark' tactic (a lie) is used for a 'light' purpose (protection).",
+                    "difficulty": "hard",
+                    "explanation": "This is the ultimate ethical test. The 'Prime Directive' is 'Do No Harm.' Using a 'white lie' (manipulation) to *prevent* harm (the scam) is a high-level, ethically-aware choice."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E15",
+                    "type": "true-false",
+                    "statement": "A 'Narcissist' and a 'Machiavellian' are the same thing.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "correct": "False",
+                    "difficulty": "hard",
+                    "explanation": "They are different. A Narcissist *needs* admiration and flattery (it's about their ego). A Machiavellian *doesn't* need admiration; they only want *power* and will use any tool (even faking weakness) to get it."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E16",
+                    "type": "multiple-choice",
+                    "question": "Which 'Dark Triad' trait *best* describes Alex from the Coffee Shop?",
+                    "options": [
+                        "Narcissism (needed to be flattered and admired)",
+                        "Machiavellianism (used a cold, calculated 'script' to get a goal: $20)",
+                        "Psychopathy (showed a total lack of fear or remorse)",
+                        "Empathy (was genuinely lonely)"
+                    ],
+                    "correct": "Machiavellianism (used a cold, calculated 'script' to get a goal: $20)",
+                    "difficulty": "hard",
+                    "explanation": "Alex's actions weren't about *ego*; they were about *profit*. The flattery, the vulnerability—it was all a *script*. This is pure 'the end justifies the means.' This is Machiavellianism."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E17",
+                    "type": "case-analysis",
+                    "caseTitle": "The Job Interview 'Grey Area'",
+                    "scene": "In Part 2, we said 'mirroring' in a job interview is an 'ethically grey' area. What is the *primary* factor that keeps it from being 'Dark'?",
+                    "question": "Why is it not 'Dark' manipulation?",
+                    "options": [
+                        "Because the 'intent' is transparent (to get a job), not 'hidden' (to exploit).",
+                        "Because it never works.",
+                        "Because everyone does it, so it's 'normal'.",
+                        "Because the interviewer is also a manipulator."
+                    ],
+                    "correct": "Because the 'intent' is transparent (to get a job), not 'hidden' (to exploit).",
+                    "difficulty": "hard",
+                    "explanation": "This is the final test of 'Intent' (from Part 1) and 'Ethics' (from Part 2). 'Dark' implies a *hidden, exploitative* intent. An interview is a *transparent, persuasive* context."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E18",
+                    "type": "build-sentence",
+                    "question": "Arrange these words into the *defense* for the 'Gaslighting' origin story:",
+                    "words": [
+                        "your",
+                        "trust",
+                        "lights'",
+                        "'the",
+                        "are",
+                        "own",
+                        "when",
+                        "dim,'",
+                        "perception"
+                    ],
+                    "correct": "Trust your own perception when 'the lights' are dim",
+                    "difficulty": "hard",
+                    "explanation": "This is a core 'Bootcamp' concept. The defense against 'Gaslighting' (from Part 2 history) is to trust your own senses."
+                },
+                {
+                    "exerciseId": "A1-3-P3-E19",
+                    "type": "fill-in",
+                    "sentence": "You have completed the 'Bootcamp' on Definitions, (--------), and (--------).",
+                    "options": [
+                        "History",
+                        "Ethics",
+                        "Sales",
+                        "Flattery"
+                    ],
+                    "answers": [
+                        "History",
+                        "Ethics"
+                    ],
+                    "difficulty": "easy",
+                    "explanation": "You've mastered the 'What,' 'Why,' and 'Who' of Dark Psychology."
+                }
+            ]
+        }
+    ]
 }

@@ -174,7 +174,6 @@
         {
           "exerciseId": "A1-4-P1-E9",
           "type": "reverse-scenario",
-          "answer": "'If you *really* loved me, you would...' or 'I guess I'm just not as *important* as...'",
           "question": "These are classic opening lines for what tactic?",
           "options": [
             "Flattery",
@@ -184,7 +183,8 @@
           ],
           "correct": "A Guilt-Trip",
           "difficulty": "medium",
-          "explanation": "These phrases aren't requests; they are *challenges* to your character. They force you to 'prove' your love or loyalty by complying."
+          "explanation": "These phrases aren't requests; they are *challenges* to your character. They force you to 'prove' your love or loyalty by complying.",
+          "scene": "'If you *really* loved me, you would...' or 'I guess I'm just not as *important* as...'"
         },
         {
           "exerciseId": "A1-4-P1-E10",

@@ -172,7 +172,6 @@
         {
           "exerciseId": "B2-5-P1-E7",
           "type": "reverse-scenario",
-          "answer": "Reacting with visible shock or silence to a price offer to make the other person feel insecure about their number.",
           "question": "What is this tactic?",
           "options": [
             "The Flinch",
@@ -185,7 +184,8 @@
           "feedback": {
             "correct": "Correct. The Flinch signals 'That is crazy' without using words. It pressures them to lower the price.",
             "incorrect": "It is a non-verbal rejection tactic."
-          }
+          },
+          "scene": "Reacting with visible shock or silence to a price offer to make the other person feel insecure about their number."
         },
         {
           "exerciseId": "B2-5-P1-E8",

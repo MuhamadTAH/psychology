@@ -173,7 +173,6 @@
         {
           "exerciseId": "A5-3-P1-E7",
           "type": "reverse-scenario",
-          "answer": "Feeling resentful because you do everything for everyone, but no one does anything for you (even though you never ask).",
           "question": "What is this feeling?",
           "options": [
             "The Martyr's Resentment",
@@ -186,7 +185,8 @@
           "feedback": {
             "correct": "Correct. You give to get validation. When you don't get it, you feel used. But you set the dynamic up by over-giving.",
             "incorrect": "Altruism expects nothing back. The Martyr keeps score."
-          }
+          },
+          "scene": "Feeling resentful because you do everything for everyone, but no one does anything for you (even though you never ask)."
         },
         {
           "exerciseId": "A5-3-P1-E8",

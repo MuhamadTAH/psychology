@@ -225,7 +225,6 @@
         {
           "exerciseId": "A3-5-P3-E9",
           "type": "reverse-scenario",
-          "answer": "A person who acts as a 'friend' to both sides of a conflict, gathering intel from both and ensuring the war continues so they remain necessary.",
           "question": "What is this role?",
           "options": [
             "The Agent Provocateur / War Profiteer",
@@ -238,7 +237,8 @@
           "feedback": {
             "correct": "Correct. 'Chaos is a ladder.' They profit from the conflict. If peace breaks out, they lose their utility.",
             "incorrect": "A Peacemaker ends the war. This person feeds it."
-          }
+          },
+          "scene": "A person who acts as a 'friend' to both sides of a conflict, gathering intel from both and ensuring the war continues so they remain necessary."
         },
         {
           "exerciseId": "A3-5-P3-E10",

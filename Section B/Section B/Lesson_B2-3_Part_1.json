@@ -173,7 +173,6 @@
         {
           "exerciseId": "B2-3-P1-E7",
           "type": "reverse-scenario",
-          "answer": "Selling the expensive item (Suit) first, so the accessories (Belt, Tie) seem cheap.",
           "question": "What is this sales strategy?",
           "options": [
             "The Contrast Principle (Retail)",
@@ -186,7 +185,8 @@
           "feedback": {
             "correct": "Correct. If you spend $500 on a suit, $50 for a tie seems like 'nothing.' If you bought the tie first, $50 would feel like a lot.",
             "incorrect": "It's simple contrast. The big number shrinks the perception of the small number."
-          }
+          },
+          "scene": "Selling the expensive item (Suit) first, so the accessories (Belt, Tie) seem cheap."
         },
         {
           "exerciseId": "B2-3-P1-E8",

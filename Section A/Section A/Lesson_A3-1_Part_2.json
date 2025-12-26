@@ -208,7 +208,6 @@
         {
           "exerciseId": "A3-1-P2-E9",
           "type": "reverse-scenario",
-          "answer": "Feigning incompetence or playing 'dumb' so others underestimate you and reveal their plans.",
           "question": "What is this strategic mask?",
           "options": [
             "The Fox (Cunning disguised as stupidity).",
@@ -221,7 +220,8 @@
           "feedback": {
             "correct": "Correct. Machiavelli advised being both a Lion (strong) and a Fox (cunning). Playing dumb is a classic Fox move.",
             "incorrect": "A Narcissist hates looking dumb. A Machiavellian *loves* looking dumb if it gives them an advantage."
-          }
+          },
+          "scene": "Feigning incompetence or playing 'dumb' so others underestimate you and reveal their plans."
         },
         {
           "exerciseId": "A3-1-P2-E10",

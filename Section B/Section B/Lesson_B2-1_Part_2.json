@@ -188,7 +188,6 @@
         {
           "exerciseId": "B2-1-P2-E8",
           "type": "reverse-scenario",
-          "answer": "Framing a request as a 'favor' to make the other person feel generous, rather than obligated.",
           "question": "What is this?",
           "options": [
             "The Benevolence Frame",
@@ -201,7 +200,8 @@
           "feedback": {
             "correct": "Correct. 'Can you do me a huge favor?' frames the helper as a Hero. 'Do your job' frames them as a Servant. Heroes work harder.",
             "incorrect": "It appeals to their goodness, not their duty."
-          }
+          },
+          "scene": "Framing a request as a 'favor' to make the other person feel generous, rather than obligated."
         },
         {
           "exerciseId": "B2-1-P2-E9",

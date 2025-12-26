@@ -1,6 +1,21 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
-import { Id } from "./_generated/dataModel";
+
+// Require an authenticated user and optionally verify the provided email matches
+const requireIdentity = async (ctx: any, providedEmail?: string) => {
+  const identity = await ctx.auth.getUserIdentity();
+  const email = identity?.email;
+
+  if (!email) {
+    throw new Error("Not authenticated");
+  }
+
+  if (providedEmail && providedEmail !== email) {
+    throw new Error("Forbidden");
+  }
+
+  return identity;
+};
 
 // Save upload and lessons (deletes old lessons first)
 export const saveUploadAndLessons = mutation({
@@ -11,13 +26,8 @@ export const saveUploadAndLessons = mutation({
     email: v.optional(v.string()), // Email from localStorage
   },
   handler: async (ctx, args) => {
-    // Try Clerk auth first, fallback to email parameter
-    const identity = await ctx.auth.getUserIdentity();
-    const userEmail = args.email || identity?.email;
-
-    if (!userEmail) {
-      throw new Error("Not authenticated");
-    }
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
 
     // Get or create user
     let user = await ctx.db
@@ -94,12 +104,8 @@ export const getUserLessons = query({
     email: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    const userEmail = args.email || identity?.email;
-
-    if (!userEmail) {
-      return [];
-    }
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
 
     const user = await ctx.db
       .query("users")
@@ -107,7 +113,7 @@ export const getUserLessons = query({
       .first();
 
     if (!user) {
-      return [];
+      throw new Error("User not found");
     }
 
     const lessons = await ctx.db
@@ -123,6 +129,7 @@ export const getUserLessons = query({
 export const getLessonsByUpload = query({
   args: { uploadId: v.id("uploads") },
   handler: async (ctx, args) => {
+    await requireIdentity(ctx);
     const lessons = await ctx.db
       .query("lessons")
       .withIndex("by_uploadId", (q) => q.eq("uploadId", args.uploadId))
@@ -138,12 +145,8 @@ export const getUserProgress = query({
     email: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    const userEmail = args.email || identity?.email;
-
-    if (!userEmail) {
-      return [];
-    }
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
 
     const user = await ctx.db
       .query("users")
@@ -151,7 +154,7 @@ export const getUserProgress = query({
       .first();
 
     if (!user) {
-      return [];
+      throw new Error("User not found");
     }
 
     const progress = await ctx.db
@@ -180,12 +183,8 @@ export const updateLessonProgress = mutation({
     totalParts: v.optional(v.number()), // Total number of parts in the lesson
   },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    const userEmail = args.email || identity?.email;
-
-    if (!userEmail) {
-      throw new Error("Not authenticated");
-    }
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
 
     const user = await ctx.db
       .query("users")
@@ -268,6 +267,12 @@ export const createMockSentenceBuildingLesson = mutation({
     email: v.string(),
   },
   handler: async (ctx, args) => {
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
+    if (args.email !== userEmail) {
+      throw new Error("Forbidden");
+    }
+
     // Get or create user
     let user = await ctx.db
       .query("users")
@@ -356,6 +361,12 @@ export const deleteAllMyLessons = mutation({
     email: v.string(),
   },
   handler: async (ctx, args) => {
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
+    if (userEmail !== args.email) {
+      throw new Error("Forbidden");
+    }
+
     // Get user
     const user = await ctx.db
       .query("users")
@@ -396,12 +407,12 @@ export const copyLessonsToAllUsers = mutation({
     email: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    // Step 1: Get the current user (the one who created the lessons)
-    const identity = await ctx.auth.getUserIdentity();
-    const userEmail = args.email || identity?.email;
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
+    const ADMIN_EMAILS = ["system@duolearn.com"];
 
-    if (!userEmail) {
-      throw new Error("Not authenticated");
+    if (!ADMIN_EMAILS.includes(userEmail)) {
+      throw new Error("Forbidden");
     }
 
     const sourceUser = await ctx.db
@@ -474,12 +485,8 @@ export const initializeDemoLessonsForUser = mutation({
   },
   handler: async (ctx, args) => {
     // Step 1: Get or create the current user
-    const identity = await ctx.auth.getUserIdentity();
-    const userEmail = args.email || identity?.email;
-
-    if (!userEmail) {
-      throw new Error("Not authenticated");
-    }
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
 
     let user = await ctx.db
       .query("users")
@@ -686,82 +693,36 @@ export const initializeDemoLessonsForUser = mutation({
 export const getAllDarkPsychologyLessons = query({
   args: {},
   handler: async (ctx) => {
-    console.log('═══════════════════════════════════════════════════════');
-    console.log('🟢 [CONVEX QUERY] getAllDarkPsychologyLessons CALLED');
-    console.log('🟢 [CONVEX QUERY] Timestamp:', new Date().toISOString());
-    console.log('═══════════════════════════════════════════════════════');
-
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) {
+      return [];
+    }
     try {
       // Step 1: Get system user
-      console.log('🔍 [STEP 1] Searching for system user (system@duolearn.com)...');
       const systemUser = await ctx.db
         .query("users")
         .withIndex("by_email", (q) => q.eq("email", "system@duolearn.com"))
         .first();
 
       if (!systemUser) {
-        console.log('🔴 [ERROR] System user not found!');
-        console.log('🔴 [ERROR] Cannot fetch lessons without system user');
-
-        // Try to get ALL users to debug
-        const allUsers = await ctx.db.query("users").collect();
-        console.log('🔍 [DEBUG] Total users in database:', allUsers.length);
-        allUsers.forEach((user, i) => {
-          console.log(`🔍 [DEBUG] User ${i + 1}:`, {
-            id: user._id,
-            email: user.email,
-            name: user.name,
-          });
-        });
-
         return [];
       }
 
-      console.log('✅ [STEP 1] System user found!');
-      console.log('✅ [SYSTEM USER]', {
-        _id: systemUser._id,
-        email: systemUser.email,
-        name: systemUser.name,
-      });
-
       // Step 2: Get all lessons created by system user
-      console.log('🔍 [STEP 2] Fetching all lessons for system user...');
       const lessons = await ctx.db
         .query("lessons")
         .withIndex("by_userId", (q) => q.eq("userId", systemUser._id))
         .collect();
 
-      console.log('✅ [STEP 2] Query completed!');
-      console.log('✅ [RESULT] Found', lessons.length, 'lessons for system user');
-
-      if (lessons.length === 0) {
-        console.log('⚠️ [WARNING] No lessons found for system user!');
-        console.log('⚠️ [WARNING] System user has 0 lessons in database');
-      } else {
-        console.log('📚 [LESSONS] Listing all lessons:');
-        lessons.forEach((lesson, i) => {
-          const data = lesson.lessonJSON;
-          console.log(`📄 [LESSON ${i + 1}/${lessons.length}]`, {
-            dbId: lesson._id,
-            title: lesson.title,
-            sectionId: data?.sectionId,
-            unitId: data?.unitId,
-            lessonId: data?.lessonId,
-            lessonPart: data?.lessonPart,
-            lessonTitle: data?.lessonTitle,
-          });
-        });
-      }
-
-      console.log('═══════════════════════════════════════════════════════');
-      console.log('✅ [CONVEX QUERY] Returning', lessons.length, 'lessons');
-      console.log('═══════════════════════════════════════════════════════');
-
-      return lessons;
+      // Step 3: Return lesson data - spread lessonJSON OR content at root level for compatibility
+      // This ensures old lessons (with 'content') and new lessons (with 'lessonJSON') both work
+      return lessons.map(lesson => ({
+        ...lesson.lessonJSON || lesson.content,
+        _id: lesson._id,
+        title: lesson.title,
+        lessonJSON: lesson.lessonJSON || lesson.content,
+      }));
     } catch (error) {
-      console.log('🔴🔴🔴 [FATAL ERROR] Exception in getAllDarkPsychologyLessons 🔴🔴🔴');
-      console.log('🔴 [ERROR]', error);
-      console.log('🔴 [ERROR] Stack:', error instanceof Error ? error.stack : 'No stack trace');
       throw error;
     }
   },

@@ -177,7 +177,6 @@
         {
           "exerciseId": "B4-4-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A manipulator who promises a grand vision (Future Faking) to get followers to work for free or give up their lives.",
           "question": "What archetype is this?",
           "options": [
             "The Cult Leader / Visionary Narcissist",
@@ -190,7 +189,8 @@
           "feedback": {
             "correct": "Correct. They sell 'Utopia.' The price is your autonomy. Examples: Elizabeth Holmes, Keith Raniere.",
             "incorrect": "Honest leaders promise hard work, not magic."
-          }
+          },
+          "scene": "A manipulator who promises a grand vision (Future Faking) to get followers to work for free or give up their lives."
         },
         {
           "exerciseId": "B4-4-P1-E8",

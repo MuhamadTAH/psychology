@@ -207,7 +207,6 @@
         {
           "exerciseId": "B4-2-P3-E8",
           "type": "reverse-scenario",
-          "answer": "When a company gives you a 'Free Trial' but requires a credit card, knowing you will forget to cancel.",
           "question": "What is this?",
           "options": [
             "The Inertia Trap / Forced Continuity",
@@ -220,7 +219,8 @@
           "feedback": {
             "correct": "Correct. They give you the 'Gift' (Trial) to get the 'Data' (Card). They bank on your laziness (Inertia) to keep paying.",
             "incorrect": "It uses Reciprocity (Free Trial) to start the billing cycle."
-          }
+          },
+          "scene": "When a company gives you a 'Free Trial' but requires a credit card, knowing you will forget to cancel."
         },
         {
           "exerciseId": "B4-2-P3-E9",

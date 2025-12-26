@@ -207,7 +207,6 @@
         {
           "exerciseId": "A1-3-P1-E11",
           "type": "reverse-scenario",
-          "answer": "This tactic is *hidden* and uses *deception* to get a 'yes'.",
           "question": "This is the definition of...?",
           "options": [
             "Coercion",
@@ -217,7 +216,8 @@
           ],
           "correct": "Manipulation",
           "difficulty": "medium",
-          "explanation": "Persuasion is *open*. Manipulation is *hidden*. Coercion is *forced*."
+          "explanation": "Persuasion is *open*. Manipulation is *hidden*. Coercion is *forced*.",
+          "scene": "This tactic is *hidden* and uses *deception* to get a 'yes'."
         },
         {
           "exerciseId": "A1-3-P1-E12",

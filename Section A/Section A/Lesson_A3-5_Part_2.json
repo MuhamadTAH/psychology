@@ -144,7 +144,6 @@
         {
           "exerciseId": "A3-5-P2-E6",
           "type": "reverse-scenario",
-          "answer": "Creating a problem so you can step in and solve it, looking like a hero.",
           "question": "What is this tactic?",
           "options": [
             "The Firefighter Arsonist",
@@ -157,7 +156,8 @@
           "feedback": {
             "correct": "Correct. They light the fire (cause the drama/failure) just to put it out and get the applause.",
             "incorrect": "A White Knight saves you from *others*. This person saves you from *themselves*."
-          }
+          },
+          "scene": "Creating a problem so you can step in and solve it, looking like a hero."
         },
         {
           "exerciseId": "A3-5-P2-E7",
@@ -329,7 +329,6 @@
         {
           "exerciseId": "A3-5-P2-E16",
           "type": "reverse-scenario",
-          "answer": "Using a proxy (a third person) to attack an enemy so you don't get the blame.",
           "question": "What is this called?",
           "options": [
             "The Cat's Paw",
@@ -342,7 +341,8 @@
           "feedback": {
             "correct": "Correct. From the fable where a monkey uses a cat's paw to pull chestnuts out of a fire. The manipulator gets the prize; the proxy gets burned.",
             "incorrect": "This is a classic idiom for using a dupe."
-          }
+          },
+          "scene": "Using a proxy (a third person) to attack an enemy so you don't get the blame."
         },
         {
           "exerciseId": "A3-5-P2-E17",
@@ -511,7 +511,6 @@
         {
           "exerciseId": "A3-5-P2-E26",
           "type": "reverse-scenario",
-          "answer": "A strategic alliance formed purely for mutual benefit, with no emotional bond.",
           "question": "What is this?",
           "options": [
             "A Transactional Relationship",
@@ -524,7 +523,8 @@
           "feedback": {
             "correct": "Correct. This is the standard Machiavellian bond. 'I scratch your back, you scratch mine.'",
             "incorrect": "It is honest business, but it is cold."
-          }
+          },
+          "scene": "A strategic alliance formed purely for mutual benefit, with no emotional bond."
         },
         {
           "exerciseId": "A3-5-P2-E27",

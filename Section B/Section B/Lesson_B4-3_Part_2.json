@@ -188,7 +188,6 @@
         {
           "exerciseId": "B4-3-P2-E8",
           "type": "reverse-scenario",
-          "answer": "A technique where the manipulator creates a state of high anxiety, then suddenly removes it to create compliance (e.g., 'Good Cop/Bad Cop').",
           "question": "What is this?",
           "options": [
             "Fear-Then-Relief",
@@ -201,7 +200,8 @@
           "feedback": {
             "correct": "Correct. The relief floods the brain, making the victim pliable and grateful to the person who stopped the fear.",
             "incorrect": "It relies on the contrast between Terror and Safety."
-          }
+          },
+          "scene": "A technique where the manipulator creates a state of high anxiety, then suddenly removes it to create compliance (e.g., 'Good Cop/Bad Cop')."
         },
         {
           "exerciseId": "B4-3-P2-E9",

@@ -139,7 +139,6 @@
         {
           "exerciseId": "A1-4-P2-E6",
           "type": "reverse-scenario",
-          "answer": "'You're just overreacting!' and 'I'm not doing *anything*!'",
           "question": "When Casey said this, they were using 'Gaslighting' to...",
           "options": [
             "Make you doubt your own (correct) perception that you were being guilt-tripped.",
@@ -149,7 +148,8 @@
           ],
           "correct": "Make you doubt your own (correct) perception that you were being guilt-tripped.",
           "difficulty": "hard",
-          "explanation": "This is why this combo is so 'dark.' Tactic 1: They guilt-trip you. Tactic 2: When you call them on it, they 'Gaslight' you. This 1-2 punch is designed to confuse you."
+          "explanation": "This is why this combo is so 'dark.' Tactic 1: They guilt-trip you. Tactic 2: When you call them on it, they 'Gaslight' you. This 1-2 punch is designed to confuse you.",
+          "scene": "'You're just overreacting!' and 'I'm not doing *anything*!'"
         },
         {
           "exerciseId": "A1-4-P2-E7",

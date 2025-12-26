@@ -210,7 +210,6 @@
         {
           "exerciseId": "A5-2-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A bias where you assume someone is 'smart' just because they are rich or famous.",
           "question": "What is this?",
           "options": [
             "The Halo Effect (Wealth Variant)",
@@ -223,7 +222,8 @@
           "feedback": {
             "correct": "Correct. Wealth is the 'Halo.' We assume rich people know secrets we don't. Often, they are just lucky or ruthless.",
             "incorrect": "It is a specific type of Halo Effect. Money = Competence in our biased brains."
-          }
+          },
+          "scene": "A bias where you assume someone is 'smart' just because they are rich or famous."
         },
         {
           "exerciseId": "A5-2-P3-E9",

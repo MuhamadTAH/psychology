@@ -190,7 +190,6 @@
         {
           "exerciseId": "A2-2-P1-E8",
           "type": "reverse-scenario",
-          "answer": "The person or object that provides the fuel (admiration, status, sex, money, or fear).",
           "question": "In narcissistic terms, this person is called the...",
           "options": [
             "Source",
@@ -203,7 +202,8 @@
           "feedback": {
             "correct": "Correct. You are a 'Source' of Supply. There are Primary Sources (spouses) and Secondary Sources (colleagues, fans).",
             "incorrect": "To them, you aren't a partner or friend. You are a 'Source'—like an oil well or a battery."
-          }
+          },
+          "scene": "The person or object that provides the fuel (admiration, status, sex, money, or fear)."
         },
         {
           "exerciseId": "A2-2-P1-E9",

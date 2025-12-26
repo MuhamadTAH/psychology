@@ -173,7 +173,6 @@
         {
           "exerciseId": "B1-4-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A linguistic pattern that links two unrelated ideas so that if one is true, the other must be true (e.g., 'The more you relax, the more you will agree').",
           "question": "What is this called?",
           "options": [
             "Cause and Effect Linkage",
@@ -186,7 +185,8 @@
           "feedback": {
             "correct": "Correct. It creates a fake logic. Relaxation does not cause agreement, but the sentence links them. Your brain accepts the link.",
             "incorrect": "It connects X to Y. 'As you sit there (X), you will feel happy (Y).'"
-          }
+          },
+          "scene": "A linguistic pattern that links two unrelated ideas so that if one is true, the other must be true (e.g., 'The more you relax, the more you will agree')."
         },
         {
           "exerciseId": "B1-4-P1-E8",

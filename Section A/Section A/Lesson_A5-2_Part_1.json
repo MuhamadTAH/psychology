@@ -190,7 +190,6 @@
         {
           "exerciseId": "A5-2-P2-E8",
           "type": "reverse-scenario",
-          "answer": "When incompetent people overestimate their competence because they lack the knowledge to know how bad they are.",
           "question": "What is this effect?",
           "options": [
             "Dunning-Kruger Effect",
@@ -203,7 +202,8 @@
           "feedback": {
             "correct": "Correct. A stupid person doesn't know they are stupid. This makes them incredibly confident, which can fool you (Confidence Heuristic).",
             "incorrect": "Imposter Syndrome is the opposite (smart people feeling fake). Dunning-Kruger is dumb people feeling smart."
-          }
+          },
+          "scene": "When incompetent people overestimate their competence because they lack the knowledge to know how bad they are."
         },
         {
           "exerciseId": "A5-2-P2-E9",

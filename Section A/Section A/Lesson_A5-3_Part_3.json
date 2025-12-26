@@ -207,7 +207,6 @@
         {
           "exerciseId": "A5-3-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A relationship where one person functions as a 'parent' (responsible, worried) and the other as a 'child' (rebellious, helpless).",
           "question": "What is this dynamic?",
           "options": [
             "Parentification / Codependency",
@@ -220,7 +219,8 @@
           "feedback": {
             "correct": "Correct. It kills intimacy. You cannot be romantically attracted to someone you are parenting.",
             "incorrect": "Partners are equals. Parents and children are hierarchical."
-          }
+          },
+          "scene": "A relationship where one person functions as a 'parent' (responsible, worried) and the other as a 'child' (rebellious, helpless)."
         },
         {
           "exerciseId": "A5-3-P3-E9",

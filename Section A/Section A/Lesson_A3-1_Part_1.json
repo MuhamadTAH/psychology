@@ -225,7 +225,6 @@
         {
           "exerciseId": "A3-1-P1-E10",
           "type": "reverse-scenario",
-          "answer": "Hiding your true intentions and wearing a 'mask of sanity' or friendliness to gain an advantage.",
           "question": "What is this strategic behavior?",
           "options": [
             "Strategic Deception",
@@ -238,7 +237,8 @@
           "feedback": {
             "correct": "Correct. Unlike a Narcissist who masks to hide *shame*, a Machiavellian masks to hide *plans*. They want you to think they are harmless until it's too late.",
             "incorrect": "It's not rage or bonding. It is calculated deception to lower your guard."
-          }
+          },
+          "scene": "Hiding your true intentions and wearing a 'mask of sanity' or friendliness to gain an advantage."
         },
         {
           "exerciseId": "A3-1-P1-E11",

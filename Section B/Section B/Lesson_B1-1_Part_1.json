@@ -174,7 +174,7 @@
         {
           "exerciseId": "B1-1-P1-E7",
           "type": "reverse-scenario",
-          "answer": "Agreeing with a person's complaints to make them feel understood, so they stop complaining and listen to you.",
+          "scene": "Agreeing with a person's complaints to make them feel understood, so they stop complaining and listen to you.",
           "question": "What is this tactic?",
           "options": [
             "Pacing the Resistance",

@@ -147,7 +147,6 @@
         {
           "exerciseId": "A1-1-P2-E6",
           "type": "reverse-scenario",
-          "answer": "Alex consciously copied your posture and said, 'Wow, we have so much in common!'",
           "question": "What was the psychological goal of these actions?",
           "options": [
             "To build a feeling of deep, subconscious rapport.",
@@ -157,7 +156,8 @@
           ],
           "correct": "To build a feeling of deep, subconscious rapport.",
           "difficulty": "medium",
-          "explanation": "This is *Mirroring* and *Pacing*. These tactics bypass your logic and make you *feel* like you've known them for ages."
+          "explanation": "This is *Mirroring* and *Pacing*. These tactics bypass your logic and make you *feel* like you've known them for ages.",
+          "scene": "Alex consciously copied your posture and said, 'Wow, we have so much in common!'"
         },
         {
           "exerciseId": "A1-1-P2-E7",
@@ -235,7 +235,6 @@
         {
           "exerciseId": "A1-1-P2-E12",
           "type": "reverse-scenario",
-          "answer": "The manipulator makes you feel like *you* are the 'bad person' for not complying.",
           "question": "This is a form of what?",
           "options": [
             "Reciprocity",
@@ -245,7 +244,8 @@
           ],
           "correct": "Guilt-tripping",
           "difficulty": "medium",
-          "explanation": "Alex did this by saying, 'I wouldn't ask, but you're such a kind person...' The unspoken threat is: 'If you say no, you are *not* a kind person.'"
+          "explanation": "Alex did this by saying, 'I wouldn't ask, but you're such a kind person...' The unspoken threat is: 'If you say no, you are *not* a kind person.'",
+          "scene": "The manipulator makes you feel like *you* are the 'bad person' for not complying."
         },
         {
           "exerciseId": "A1-1-P2-E13",

@@ -249,7 +249,6 @@
         {
           "exerciseId": "A2-5-P3-E10",
           "type": "reverse-scenario",
-          "answer": "The Boss realizes you don't care about the new hire. Suddenly, they offer you a promotion and a raise, apologizing for 'being stressed lately.'",
           "question": "What is this tactic?",
           "options": [
             "Hoovering",
@@ -262,7 +261,8 @@
           "feedback": {
             "correct": "Correct. The Discard didn't hurt you, so they panic and try to suck you back in (Hoover) to regain control.",
             "incorrect": "Narcissists don't change. They adjust tactics. This is a trap to restart the cycle."
-          }
+          },
+          "scene": "The Boss realizes you don't care about the new hire. Suddenly, they offer you a promotion and a raise, apologizing for 'being stressed lately.'"
         },
         {
           "exerciseId": "A2-5-P3-E11",

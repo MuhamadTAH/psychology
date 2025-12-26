@@ -1,28 +1,42 @@
 // 🧠 FILE PURPOSE
-// This page allows users to manage their account settings and preferences.
-// Users can update profile information, learning preferences, and view account details.
+// This page allows users to manage their account settings.
+// Users can update profile information (name, age) and view account details.
 
 "use client";
 
 import { useState, useEffect } from "react";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import { ArrowLeft, Settings as SettingsIcon, User, BookOpen, Clock, Target, Save } from "lucide-react";
+import { ArrowLeft, Settings as SettingsIcon, User, Save, LogOut, Bell, Globe, Moon, Volume2, Zap, Lock, Shield, Trash2 } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useClerk } from "@clerk/nextjs";
 
 export default function SettingsPage() {
+  const router = useRouter();
+  const { signOut } = useClerk();
+
   // Step 1: Get user settings
   const userSettings = useQuery(api.settings.getUserSettings);
   const updateProfile = useMutation(api.settings.updateProfile);
-  const updatePreferences = useMutation(api.settings.updatePreferences);
+  const updateAppSettings = useMutation(api.settings.updateAppSettings);
 
   // Step 2: Form state
   const [name, setName] = useState("");
   const [age, setAge] = useState<number | "">("");
-  const [school, setSchool] = useState("");
-  const [favoriteSubject, setFavoriteSubject] = useState("");
-  const [studyTime, setStudyTime] = useState("");
-  const [motivation, setMotivation] = useState("");
+
+  // Notification settings
+  const [pushNotifications, setPushNotifications] = useState(true);
+  const [emailNotifications, setEmailNotifications] = useState(true);
+  const [streakReminders, setStreakReminders] = useState(true);
+
+  // App preferences
+  const [soundEffects, setSoundEffects] = useState(true);
+  const [animations, setAnimations] = useState(true);
+
+  // Privacy settings
+  const [profileVisibility, setProfileVisibility] = useState("public");
+  const [showStats, setShowStats] = useState(true);
 
   // Step 3: Feedback state
   const [saveMessage, setSaveMessage] = useState<{
@@ -36,10 +50,14 @@ export default function SettingsPage() {
     if (userSettings) {
       setName(userSettings.name || "");
       setAge(userSettings.age || "");
-      setSchool(userSettings.school || "");
-      setFavoriteSubject(userSettings.favoriteSubject || "");
-      setStudyTime(userSettings.studyTime || "");
-      setMotivation(userSettings.motivation || "");
+      // Initialize all app settings from Convex
+      setPushNotifications(userSettings.pushNotifications ?? true);
+      setEmailNotifications(userSettings.emailNotifications ?? true);
+      setStreakReminders(userSettings.streakReminders ?? true);
+      setSoundEffects(userSettings.soundEffects ?? true);
+      setAnimations(userSettings.animations ?? true);
+      setProfileVisibility(userSettings.profileVisibility ?? "public");
+      setShowStats(userSettings.showStats ?? true);
     }
   }, [userSettings]);
 
@@ -53,7 +71,6 @@ export default function SettingsPage() {
       await updateProfile({
         name: name || undefined,
         age: age ? Number(age) : undefined,
-        school: school || undefined,
       });
 
       setSaveMessage({
@@ -71,30 +88,34 @@ export default function SettingsPage() {
     }
   };
 
-  // Step 6: Handle preferences save
-  const handleSavePreferences = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSaving(true);
-    setSaveMessage(null);
+  // Step 6: Handle sign out
+  const handleSignOut = async () => {
+    if (confirm("Are you sure you want to sign out?")) {
+      await signOut();
+      router.push("/");
+    }
+  };
 
+  const handleSwitchAccount = async () => {
+    await signOut();
+    router.push("/sign-in");
+  };
+
+  // Step 6.5: Handle delete account
+  const handleDeleteAccount = () => {
+    alert("Account deletion is not implemented yet. Contact support to delete your account.");
+  };
+
+  // Step 6.6: Handle settings updates (save to Convex immediately)
+  const handleToggleSetting = async (settingName: string, newValue: boolean | string | number) => {
     try {
-      await updatePreferences({
-        favoriteSubject: favoriteSubject || undefined,
-        studyTime: studyTime || undefined,
-        motivation: motivation || undefined,
-      });
-
-      setSaveMessage({
-        type: "success",
-        message: "✅ Preferences updated successfully!",
-      });
-    } catch (error: any) {
+      await updateAppSettings({ [settingName]: newValue });
+    } catch (error) {
+      console.error("Error updating setting:", error);
       setSaveMessage({
         type: "error",
-        message: error.message || "Failed to update preferences",
+        message: "Failed to save setting. Please try again.",
       });
-    } finally {
-      setIsSaving(false);
       setTimeout(() => setSaveMessage(null), 3000);
     }
   };
@@ -132,8 +153,32 @@ export default function SettingsPage() {
             <h1 className="text-4xl font-bold text-white">Settings</h1>
           </div>
           <p className="text-gray-400 text-lg">
-            Manage your account and learning preferences
+            Manage your account information
           </p>
+        </div>
+
+        {/* Account actions */}
+        <div className="mb-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border-2 border-gray-700 p-6">
+          <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+            <LogOut className="w-6 h-6 text-blue-400" />
+            Account
+          </h2>
+          <div className="flex flex-col md:flex-row gap-3">
+            <button
+              onClick={handleSwitchAccount}
+              className="flex-1 bg-gray-700 text-white font-semibold py-3 px-4 rounded-xl border-2 border-gray-600 hover:border-blue-400 hover:bg-gray-600 transition-colors flex items-center justify-center gap-2"
+            >
+              <User className="w-5 h-5" />
+              Switch account
+            </button>
+            <button
+              onClick={handleSignOut}
+              className="flex-1 bg-red-600 text-white font-semibold py-3 px-4 rounded-xl border-2 border-red-700 hover:bg-red-500 transition-colors flex items-center justify-center gap-2"
+            >
+              <LogOut className="w-5 h-5" />
+              Sign out
+            </button>
+          </div>
         </div>
 
         {/* Save message */}
@@ -185,20 +230,6 @@ export default function SettingsPage() {
               />
             </div>
 
-            {/* School */}
-            <div>
-              <label className="block text-gray-300 font-semibold mb-2">
-                School/Organization
-              </label>
-              <input
-                type="text"
-                value={school}
-                onChange={(e) => setSchool(e.target.value)}
-                placeholder="Enter your school or organization"
-                className="w-full bg-gray-700 text-white rounded-lg px-4 py-3 border-2 border-gray-600 focus:border-blue-500 focus:outline-none transition-colors"
-              />
-            </div>
-
             {/* Email (read-only) */}
             <div>
               <label className="block text-gray-300 font-semibold mb-2">
@@ -227,84 +258,227 @@ export default function SettingsPage() {
           </form>
         </div>
 
-        {/* Step 11: Learning preferences */}
-        <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border-2 border-gray-700 p-6">
+        {/* Step 11: Notifications section */}
+        <div className="mb-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border-2 border-gray-700 p-6">
           <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-            <BookOpen className="w-6 h-6 text-purple-400" />
-            Learning Preferences
+            <Bell className="w-6 h-6 text-blue-400" />
+            Notifications
           </h2>
 
-          <form onSubmit={handleSavePreferences} className="space-y-4">
-            {/* Favorite Subject */}
-            <div>
-              <label className="block text-gray-300 font-semibold mb-2">
-                Favorite Subject
-              </label>
-              <select
-                value={favoriteSubject}
-                onChange={(e) => setFavoriteSubject(e.target.value)}
-                className="w-full bg-gray-700 text-white rounded-lg px-4 py-3 border-2 border-gray-600 focus:border-purple-500 focus:outline-none transition-colors"
+          <div className="space-y-4">
+            {/* Push Notifications */}
+            <div className="flex items-center justify-between p-4 bg-gray-700/50 rounded-xl border border-gray-600">
+              <div>
+                <p className="text-white font-semibold">Push Notifications</p>
+                <p className="text-gray-400 text-sm">Get notified about your progress</p>
+              </div>
+              <button
+                onClick={() => {
+                  const newValue = !pushNotifications;
+                  setPushNotifications(newValue);
+                  handleToggleSetting("pushNotifications", newValue);
+                }}
+                className={`w-14 h-8 rounded-full transition-colors ${
+                  pushNotifications ? "bg-blue-600" : "bg-gray-600"
+                }`}
               >
-                <option value="">Select a subject</option>
-                <option value="math">Math</option>
-                <option value="science">Science</option>
-                <option value="english">English</option>
-                <option value="history">History</option>
-                <option value="art">Art</option>
-                <option value="music">Music</option>
-              </select>
+                <div
+                  className={`w-6 h-6 bg-white rounded-full transition-transform ${
+                    pushNotifications ? "translate-x-7" : "translate-x-1"
+                  }`}
+                />
+              </button>
             </div>
 
-            {/* Study Time */}
-            <div>
-              <label className="block text-gray-300 font-semibold mb-2 flex items-center gap-2">
-                <Clock className="w-5 h-5" />
-                Preferred Study Time
-              </label>
-              <select
-                value={studyTime}
-                onChange={(e) => setStudyTime(e.target.value)}
-                className="w-full bg-gray-700 text-white rounded-lg px-4 py-3 border-2 border-gray-600 focus:border-purple-500 focus:outline-none transition-colors"
+            {/* Email Notifications */}
+            <div className="flex items-center justify-between p-4 bg-gray-700/50 rounded-xl border border-gray-600">
+              <div>
+                <p className="text-white font-semibold">Email Notifications</p>
+                <p className="text-gray-400 text-sm">Receive updates via email</p>
+              </div>
+              <button
+                onClick={() => {
+                  const newValue = !emailNotifications;
+                  setEmailNotifications(newValue);
+                  handleToggleSetting("emailNotifications", newValue);
+                }}
+                className={`w-14 h-8 rounded-full transition-colors ${
+                  emailNotifications ? "bg-blue-600" : "bg-gray-600"
+                }`}
               >
-                <option value="">Select a time</option>
-                <option value="morning">Morning</option>
-                <option value="afternoon">Afternoon</option>
-                <option value="evening">Evening</option>
-                <option value="anytime">Anytime</option>
-              </select>
+                <div
+                  className={`w-6 h-6 bg-white rounded-full transition-transform ${
+                    emailNotifications ? "translate-x-7" : "translate-x-1"
+                  }`}
+                />
+              </button>
             </div>
 
-            {/* Motivation */}
-            <div>
-              <label className="block text-gray-300 font-semibold mb-2 flex items-center gap-2">
-                <Target className="w-5 h-5" />
-                Learning Motivation
-              </label>
-              <select
-                value={motivation}
-                onChange={(e) => setMotivation(e.target.value)}
-                className="w-full bg-gray-700 text-white rounded-lg px-4 py-3 border-2 border-gray-600 focus:border-purple-500 focus:outline-none transition-colors"
+            {/* Streak Reminders */}
+            <div className="flex items-center justify-between p-4 bg-gray-700/50 rounded-xl border border-gray-600">
+              <div>
+                <p className="text-white font-semibold">Streak Reminders</p>
+                <p className="text-gray-400 text-sm">Don't lose your streak!</p>
+              </div>
+              <button
+                onClick={() => {
+                  const newValue = !streakReminders;
+                  setStreakReminders(newValue);
+                  handleToggleSetting("streakReminders", newValue);
+                }}
+                className={`w-14 h-8 rounded-full transition-colors ${
+                  streakReminders ? "bg-blue-600" : "bg-gray-600"
+                }`}
               >
-                <option value="">Select motivation</option>
-                <option value="fun">For Fun</option>
-                <option value="education">Education</option>
-                <option value="connect">Connect with Others</option>
-                <option value="productive">Be More Productive</option>
-                <option value="career">Career Advancement</option>
-                <option value="travel">Travel</option>
-              </select>
+                <div
+                  className={`w-6 h-6 bg-white rounded-full transition-transform ${
+                    streakReminders ? "translate-x-7" : "translate-x-1"
+                  }`}
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Step 12: App Preferences section */}
+        <div className="mb-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border-2 border-gray-700 p-6">
+          <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+            <Zap className="w-6 h-6 text-blue-400" />
+            App Preferences
+          </h2>
+
+          <div className="space-y-4">
+            {/* Sound Effects */}
+            <div className="flex items-center justify-between p-4 bg-gray-700/50 rounded-xl border border-gray-600">
+              <div>
+                <p className="text-white font-semibold">Sound Effects</p>
+                <p className="text-gray-400 text-sm">Play sounds during lessons</p>
+              </div>
+              <button
+                onClick={() => {
+                  const newValue = !soundEffects;
+                  setSoundEffects(newValue);
+                  handleToggleSetting("soundEffects", newValue);
+                }}
+                className={`w-14 h-8 rounded-full transition-colors ${
+                  soundEffects ? "bg-blue-600" : "bg-gray-600"
+                }`}
+              >
+                <div
+                  className={`w-6 h-6 bg-white rounded-full transition-transform ${
+                    soundEffects ? "translate-x-7" : "translate-x-1"
+                  }`}
+                />
+              </button>
             </div>
 
-            {/* Save button */}
+            {/* Animations */}
+            <div className="flex items-center justify-between p-4 bg-gray-700/50 rounded-xl border border-gray-600">
+              <div>
+                <p className="text-white font-semibold">Animations</p>
+                <p className="text-gray-400 text-sm">Enable visual animations</p>
+              </div>
+              <button
+                onClick={() => {
+                  const newValue = !animations;
+                  setAnimations(newValue);
+                  handleToggleSetting("animations", newValue);
+                }}
+                className={`w-14 h-8 rounded-full transition-colors ${
+                  animations ? "bg-blue-600" : "bg-gray-600"
+                }`}
+              >
+                <div
+                  className={`w-6 h-6 bg-white rounded-full transition-transform ${
+                    animations ? "translate-x-7" : "translate-x-1"
+                  }`}
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Step 13: Privacy & Data section */}
+        <div className="mb-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border-2 border-gray-700 p-6">
+          <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+            <Shield className="w-6 h-6 text-blue-400" />
+            Privacy & Data
+          </h2>
+
+          <div className="space-y-4">
+            {/* Profile Visibility */}
+            <div className="p-4 bg-gray-700/50 rounded-xl border border-gray-600">
+              <label className="block text-white font-semibold mb-2">
+                Profile Visibility
+              </label>
+              <select
+                value={profileVisibility}
+                onChange={(e) => {
+                  const newValue = e.target.value;
+                  setProfileVisibility(newValue);
+                  handleToggleSetting("profileVisibility", newValue);
+                }}
+                className="w-full bg-gray-700 text-white rounded-lg px-4 py-3 border-2 border-gray-600 focus:border-blue-500 focus:outline-none transition-colors"
+              >
+                <option value="public">Public - Anyone can see</option>
+                <option value="friends">Friends Only</option>
+                <option value="private">Private - Only me</option>
+              </select>
+              <p className="text-gray-400 text-sm mt-2">Control who can view your profile</p>
+            </div>
+
+            {/* Show Stats */}
+            <div className="flex items-center justify-between p-4 bg-gray-700/50 rounded-xl border border-gray-600">
+              <div>
+                <p className="text-white font-semibold">Show Stats on Profile</p>
+                <p className="text-gray-400 text-sm">Display XP and streak publicly</p>
+              </div>
+              <button
+                onClick={() => {
+                  const newValue = !showStats;
+                  setShowStats(newValue);
+                  handleToggleSetting("showStats", newValue);
+                }}
+                className={`w-14 h-8 rounded-full transition-colors ${
+                  showStats ? "bg-blue-600" : "bg-gray-600"
+                }`}
+              >
+                <div
+                  className={`w-6 h-6 bg-white rounded-full transition-transform ${
+                    showStats ? "translate-x-7" : "translate-x-1"
+                  }`}
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Step 14: Account Actions section */}
+        <div className="mb-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border-2 border-gray-700 p-6">
+          <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+            <Lock className="w-6 h-6 text-blue-400" />
+            Account Actions
+          </h2>
+
+          <div className="space-y-4">
+            {/* Sign Out */}
             <button
-              type="submit"
-              disabled={isSaving}
-              className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-3 px-6 rounded-xl border-2 border-purple-500/50 hover:from-purple-500 hover:to-pink-500 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              onClick={handleSignOut}
+              className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-3 px-6 rounded-xl border-2 border-blue-500/50 hover:from-blue-500 hover:to-purple-500 transition-all flex items-center justify-center gap-2"
             >
-              <Save className="w-5 h-5" />
-              <span>{isSaving ? "Saving..." : "Save Preferences"}</span>
+              <LogOut className="w-5 h-5" />
+              <span>Sign Out</span>
             </button>
-          </form>
+
+            {/* Delete Account */}
+            <button
+              onClick={handleDeleteAccount}
+              className="w-full bg-gradient-to-r from-red-600 to-red-700 text-white font-bold py-3 px-6 rounded-xl border-2 border-red-500/50 hover:from-red-500 hover:to-red-600 transition-all flex items-center justify-center gap-2"
+            >
+              <Trash2 className="w-5 h-5" />
+              <span>Delete Account</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -312,6 +486,12 @@ export default function SettingsPage() {
 }
 
 // ✅ In this page we achieved:
-// A comprehensive settings page for managing profile and learning preferences.
-// Separate forms for profile and preferences with individual save buttons.
+// A comprehensive settings page with multiple sections:
+// 1. Profile Information - Update name, age, and view email
+// 2. Notifications - Control push notifications, email, and streak reminders
+// 3. App Preferences - Toggle sound effects and animations
+// 4. Privacy & Data - Manage profile visibility and stats display
+// 5. Account Actions - Sign out or delete account functionality
 // Real-time feedback on save actions with success/error messages.
+// All settings use toggle switches and dropdowns for easy configuration.
+// All settings are persisted to Convex database and sync across sessions.

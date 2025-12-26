@@ -184,7 +184,6 @@
         {
           "exerciseId": "B5-3-P2-E8",
           "type": "reverse-scenario",
-          "answer": "Refusing to answer a 'forced choice' question (e.g., 'Cash or Credit?') and instead proposing a new option.",
           "question": "What is this?",
           "options": [
             "Breaking the Frame",
@@ -197,7 +196,8 @@
           "feedback": {
             "correct": "Correct. 'I'm not paying yet. We haven't agreed on the price.' You rejected the 'Closing Frame' and returned to the 'Negotiation Frame.'",
             "incorrect": "You stepped out of their reality tunnel."
-          }
+          },
+          "scene": "Refusing to answer a 'forced choice' question (e.g., 'Cash or Credit?') and instead proposing a new option."
         },
         {
           "exerciseId": "B5-3-P2-E9",

@@ -186,7 +186,6 @@
         {
           "exerciseId": "B5-1-P1-E8",
           "type": "reverse-scenario",
-          "answer": "The cognitive bias where the first number spoken becomes the reference point for all future negotiations.",
           "question": "What is this?",
           "options": [
             "Anchoring",
@@ -199,7 +198,8 @@
           "feedback": {
             "correct": "Correct. The Anchor has gravity. You negotiate away from it, but it pulls you back.",
             "incorrect": "It sets the baseline."
-          }
+          },
+          "scene": "The cognitive bias where the first number spoken becomes the reference point for all future negotiations."
         },
         {
           "exerciseId": "B5-1-P1-E9",

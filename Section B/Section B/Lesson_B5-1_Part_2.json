@@ -180,7 +180,6 @@
         {
           "exerciseId": "B5-1-P2-E8",
           "type": "reverse-scenario",
-          "answer": "A phrase like 'It's interesting you say that...' used to buy time and detach emotionally.",
           "question": "What is this?",
           "options": [
             "A Buffer / Pattern Interrupt",
@@ -193,7 +192,8 @@
           "feedback": {
             "correct": "Correct. It creates a pause. It stops you from reacting impulsively.",
             "incorrect": "It is not agreement. It is a neutral holding statement."
-          }
+          },
+          "scene": "A phrase like 'It's interesting you say that...' used to buy time and detach emotionally."
         },
         {
           "exerciseId": "B5-1-P2-E9",

@@ -176,7 +176,6 @@
         {
           "exerciseId": "B3-1-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A marketing tactic where a company pays people to write positive reviews or creates bot accounts to boost a rating.",
           "question": "What is this?",
           "options": [
             "Review Farming / Astroturfing",
@@ -189,7 +188,8 @@
           "feedback": {
             "correct": "Correct. 90% of people read reviews. Manipulating them creates a false reality of consensus.",
             "incorrect": "It is deception. It manufactures a crowd that doesn't exist."
-          }
+          },
+          "scene": "A marketing tactic where a company pays people to write positive reviews or creates bot accounts to boost a rating."
         },
         {
           "exerciseId": "B3-1-P1-E8",

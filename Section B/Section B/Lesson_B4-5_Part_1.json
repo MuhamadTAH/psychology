@@ -187,7 +187,6 @@
         {
           "exerciseId": "B4-5-P1-E8",
           "type": "reverse-scenario",
-          "answer": "Promising an impossible result (e.g., 'Lose 30lbs in 3 days' or 'Get rich quick') to exploit desperate people.",
           "question": "What is this?",
           "options": [
             "The Miracle Cure / Hope-Mongering",
@@ -200,7 +199,8 @@
           "feedback": {
             "correct": "Correct. Desperate people turn off their critical thinking. They *need* the miracle to be true.",
             "incorrect": "It is a scam targeting vulnerability."
-          }
+          },
+          "scene": "Promising an impossible result (e.g., 'Lose 30lbs in 3 days' or 'Get rich quick') to exploit desperate people."
         },
         {
           "exerciseId": "B4-5-P1-E9",

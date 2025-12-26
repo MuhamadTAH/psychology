@@ -188,7 +188,6 @@
         {
           "exerciseId": "B3-1-P2-E8",
           "type": "reverse-scenario",
-          "answer": "A marketing strategy where a company hires people to stand in line outside a club to make it look exclusive and popular.",
           "question": "What is this?",
           "options": [
             "The Velvet Rope Effect / Manufactured Demand",
@@ -201,7 +200,8 @@
           "feedback": {
             "correct": "Correct. The long line is an advertisement. 'If people are waiting, it must be good.'",
             "incorrect": "It creates the illusion of demand through visible waiting."
-          }
+          },
+          "scene": "A marketing strategy where a company hires people to stand in line outside a club to make it look exclusive and popular."
         },
         {
           "exerciseId": "B3-1-P2-E9",

@@ -169,7 +169,6 @@
         {
           "exerciseId": "A3-5-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A tactic where you give a 'gift' (help, info, access) that actually allows you to infiltrate or sabotage a rival.",
           "question": "What is this called?",
           "options": [
             "The Trojan Horse",
@@ -182,7 +181,8 @@
           "feedback": {
             "correct": "Correct. 'Beware of Greeks bearing gifts.' The gift is the container for the attack.",
             "incorrect": "It is not Love Bombing (which creates dependency). This is specifically for infiltration/sabotage."
-          }
+          },
+          "scene": "A tactic where you give a 'gift' (help, info, access) that actually allows you to infiltrate or sabotage a rival."
         },
         {
           "exerciseId": "A3-5-P1-E8",
@@ -336,7 +336,6 @@
         {
           "exerciseId": "A3-5-P1-E16",
           "type": "reverse-scenario",
-          "answer": "You share a secret with them, but they don't share one with you. They now have leverage, and you have none.",
           "question": "What is this state called?",
           "options": [
             "Information Asymmetry",
@@ -349,7 +348,8 @@
           "feedback": {
             "correct": "Correct. The balance of power is tilted. They know more about you than you know about them.",
             "incorrect": "This is the opposite of friendship (reciprocity). It is a power imbalance."
-          }
+          },
+          "scene": "You share a secret with them, but they don't share one with you. They now have leverage, and you have none."
         },
         {
           "exerciseId": "A3-5-P1-E17",

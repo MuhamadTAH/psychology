@@ -172,7 +172,6 @@
         {
           "exerciseId": "A4-2-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A smile that uses the mouth muscles but does not reach the eyes (Orbicularis Oculi).",
           "question": "What is this physical sign of fake charm?",
           "options": [
             "The Predator Grin",
@@ -185,7 +184,8 @@
           "feedback": {
             "correct": "Correct. Also known as a 'Non-Duchenne' smile. Psychopaths often smile to signal 'I am nice,' but the eyes remain dead/watchful.",
             "incorrect": "A Duchenne smile is real (eyes crinkle). The fake smile stops at the cheeks."
-          }
+          },
+          "scene": "A smile that uses the mouth muscles but does not reach the eyes (Orbicularis Oculi)."
         },
         {
           "exerciseId": "A4-2-P1-E8",

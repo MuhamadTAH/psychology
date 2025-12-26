@@ -187,7 +187,6 @@
         {
           "exerciseId": "B3-2-P2-E8",
           "type": "reverse-scenario",
-          "answer": "Using a deep voice, interrupting others, and taking up physical space to subconsciously signal dominance.",
           "question": "What is this behavior?",
           "options": [
             "Non-Verbal Authority / Power Posing",
@@ -200,7 +199,8 @@
           "feedback": {
             "correct": "Correct. Animals do this to signal alpha status. Humans do it in boardrooms.",
             "incorrect": "It creates a biological signal of 'Leader' that bypasses logic."
-          }
+          },
+          "scene": "Using a deep voice, interrupting others, and taking up physical space to subconsciously signal dominance."
         },
         {
           "exerciseId": "B3-2-P2-E9",

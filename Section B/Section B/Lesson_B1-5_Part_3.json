@@ -221,7 +221,6 @@
         {
           "exerciseId": "B1-5-P3-E9",
           "type": "reverse-scenario",
-          "answer": "A sentence that implies a fact without stating it (e.g., 'When you realize I am right, you will apologize').",
           "question": "What is this?",
           "options": [
             "Presupposition",
@@ -234,7 +233,8 @@
           "feedback": {
             "correct": "Correct. It presupposes that 'I am right.' To answer the sentence, you must accept that premise.",
             "incorrect": "It's a linguistic trap that buries the assumption."
-          }
+          },
+          "scene": "A sentence that implies a fact without stating it (e.g., 'When you realize I am right, you will apologize')."
         },
         {
           "exerciseId": "B1-5-P3-E10",

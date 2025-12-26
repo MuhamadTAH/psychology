@@ -173,7 +173,6 @@
         {
           "exerciseId": "A5-2-P1-E7",
           "type": "reverse-scenario",
-          "answer": "The tendency to trust someone simply because they are famous, have a degree, or wear a suit.",
           "question": "What is this bias?",
           "options": [
             "Authority Bias",
@@ -186,7 +185,8 @@
           "feedback": {
             "correct": "Correct. We are evolutionarily programmed to follow the 'Leader.' Manipulators hijack this by faking the symbols of leadership.",
             "incorrect": "It's similar to the Halo Effect, but specific to power/status symbols (Authority)."
-          }
+          },
+          "scene": "The tendency to trust someone simply because they are famous, have a degree, or wear a suit."
         },
         {
           "exerciseId": "A5-2-P1-E8",

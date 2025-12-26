@@ -12,6 +12,7 @@ interface QuestionHeaderProps {
   totalQuestions: number;
   correctAnswers: number;
   userStats: UserStats | undefined;
+  isPremium?: boolean;
   onClose: () => void;
 }
 
@@ -20,6 +21,7 @@ export function QuestionHeader({
   totalQuestions,
   correctAnswers,
   userStats,
+  isPremium = false,
   onClose
 }: QuestionHeaderProps) {
   // Calculate XP earned (5 XP per correct answer)
@@ -61,7 +63,9 @@ export function QuestionHeader({
           {/* Hearts Counter - ⚡ style */}
           <div className="flex items-center gap-1">
             <span className="text-2xl" aria-label="Hearts">⚡</span>
-            <span className="text-white font-bold text-lg">{userStats?.hearts || 5}</span>
+            <span className="text-white font-bold text-lg">
+              {isPremium ? "∞" : (userStats?.hearts || 5)}
+            </span>
           </div>
         </div>
       </div>

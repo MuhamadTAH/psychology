@@ -204,7 +204,6 @@
         {
           "exerciseId": "B2-2-P3-E8",
           "type": "reverse-scenario",
-          "answer": "Reacting with visible shock, silence, or disgust to an offer to make the other person feel their number is offensive.",
           "question": "What is this?",
           "options": [
             "The Flinch",
@@ -217,7 +216,8 @@
           "feedback": {
             "correct": "Correct. The Flinch is a non-verbal rejection.",
             "incorrect": "It signals 'That number is impossible.'"
-          }
+          },
+          "scene": "Reacting with visible shock, silence, or disgust to an offer to make the other person feel their number is offensive."
         },
         {
           "exerciseId": "B2-2-P3-E9",

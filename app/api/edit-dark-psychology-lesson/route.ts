@@ -35,7 +35,15 @@ export async function POST(request: Request) {
 
     // Step 2: Read the current darkPsychologyLessons.ts file
     const filePath = path.join(process.cwd(), "lib", "darkPsychologyLessons.ts");
+    console.log(`🔧 [EDIT API] Reading file from: ${filePath}`);
+
+    if (!fs.existsSync(filePath)) {
+      console.error(`❌ [EDIT API] File NOT found at: ${filePath}`);
+      return NextResponse.json({ error: "Database file not found" }, { status: 500 });
+    }
+
     const fileContent = fs.readFileSync(filePath, "utf-8");
+    console.log(`🔧 [EDIT API] File read successfully. Length: ${fileContent.length}`);
 
     // Step 3: Extract everything before and after the lessons array
     const beforeArray = fileContent.substring(0, fileContent.indexOf("export const DARK_PSYCHOLOGY_LESSONS"));
@@ -74,29 +82,39 @@ export async function POST(request: Request) {
 
     // Step 5: Find and replace the lesson
     // ✅ FIX: Find by lessonId first, then fall back to lessonNumber
+    console.log(`🔧 [EDIT API] Parsed ${lessons.length} lessons from file`);
+    lessons.forEach((l, idx) => {
+      console.log(`   Lesson ${idx}: ID="${l.data.lessonId}", Number=${l.data.number}, Title="${l.data.title || l.data.lessonTitle}"`);
+    });
+
     let lessonIndex = -1;
     if (lessonId) {
-      lessonIndex = lessons.findIndex(l => l.data.lessonId === lessonId);
-      console.log('🔧 [EDIT API] Looking for lessonId:', lessonId, 'Found index:', lessonIndex);
+      console.log(`🔧 [EDIT API] Searching for lessonId: "${lessonId}"`);
+      lessonIndex = lessons.findIndex(l => {
+        const match = String(l.data.lessonId) === String(lessonId);
+        // console.log(`   Checking against ID "${l.data.lessonId}": ${match}`);
+        return match;
+      });
+      console.log('🔧 [EDIT API] Found index:', lessonIndex);
     } else if (lessonNumber) {
-      lessonIndex = lessons.findIndex(l => l.data.number === lessonNumber);
+      lessonIndex = lessons.findIndex(l => Number(l.data.number) === Number(lessonNumber));
       console.log('🔧 [EDIT API] Looking for lessonNumber:', lessonNumber, 'Found index:', lessonIndex);
     }
 
     if (lessonIndex === -1) {
-      console.log('🔧 [EDIT API] Available lessons:', lessons.map(l => ({
-        number: l.data.number,
-        lessonId: l.data.lessonId,
-        title: l.data.title || l.data.lessonTitle
-      })));
-      return NextResponse.json({ error: "Lesson not found" }, { status: 404 });
+      console.log('⚠️ [EDIT API] Lesson not found in file. Creating NEW lesson entry.');
+      lessons.push({
+        text: JSON.stringify(updatedLesson, null, 2),
+        data: updatedLesson
+      });
+    } else {
+      console.log(`✅ [EDIT API] Updating existing lesson at index ${lessonIndex}`);
+      // Replace with updated lesson
+      lessons[lessonIndex] = {
+        text: JSON.stringify(updatedLesson, null, 2),
+        data: updatedLesson
+      };
     }
-
-    // Replace with updated lesson
-    lessons[lessonIndex] = {
-      text: JSON.stringify(updatedLesson, null, 2),
-      data: updatedLesson
-    };
 
     // Step 6: Rebuild the array content
     let newArrayContent = "";

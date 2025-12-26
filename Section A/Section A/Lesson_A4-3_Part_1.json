@@ -172,7 +172,6 @@
         {
           "exerciseId": "A4-3-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A person who jumps from job to job, relationship to relationship, never finishing anything, and leaving a trail of debt.",
           "question": "What trait does this describe?",
           "options": [
             "Impulsivity and Irresponsibility",
@@ -185,7 +184,8 @@
           "feedback": {
             "correct": "Correct. They lack 'Long-Term Goals.' They live entirely in the present moment of gratification.",
             "incorrect": "It's not bad luck. It's a refusal to endure the 'boredom' of stability and responsibility."
-          }
+          },
+          "scene": "A person who jumps from job to job, relationship to relationship, never finishing anything, and leaving a trail of debt."
         },
         {
           "exerciseId": "A4-3-P1-E8",

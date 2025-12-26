@@ -146,7 +146,6 @@
         {
           "exerciseId": "A1-2-P3-E7",
           "type": "reverse-scenario",
-          "answer": "By 'mirroring' your posture and speech, then using flattery about your 'unique' insights.",
           "question": "How does a manipulator build rapid, fake rapport to make you feel 'seen'?",
           "options": [
             "By disagreeing with you to show dominance.",
@@ -156,7 +155,8 @@
           ],
           "correct": "By combining subconscious (mirroring) and ego-based (flattery) tactics.",
           "difficulty": "hard",
-          "explanation": "This combination is extremely effective. Your brain *feels* the connection (mirroring) and your ego *loves* the praise (flattery)."
+          "explanation": "This combination is extremely effective. Your brain *feels* the connection (mirroring) and your ego *loves* the praise (flattery).",
+          "scene": "By 'mirroring' your posture and speech, then using flattery about your 'unique' insights."
         },
         {
           "exerciseId": "A1-2-P3-E8",

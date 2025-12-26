@@ -172,7 +172,6 @@
         {
           "exerciseId": "A5-1-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A person who feels unworthy of love, so they work extra hard to 'earn' it by doing favors for toxic people.",
           "question": "What is this trait?",
           "options": [
             "People Pleasing / Fawning",
@@ -185,7 +184,8 @@
           "feedback": {
             "correct": "Correct. This is a trauma response. Manipulators love People Pleasers because they give endless supply with zero effort.",
             "incorrect": "It is the opposite of Narcissism. It is self-abandonment to please others."
-          }
+          },
+          "scene": "A person who feels unworthy of love, so they work extra hard to 'earn' it by doing favors for toxic people."
         },
         {
           "exerciseId": "A5-1-P1-E8",

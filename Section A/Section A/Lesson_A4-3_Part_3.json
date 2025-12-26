@@ -207,7 +207,6 @@
         {
           "exerciseId": "A4-3-P3-E8",
           "type": "reverse-scenario",
-          "answer": "Hiding debt, opening secret credit cards in your name, or spending shared money without permission.",
           "question": "What is this called?",
           "options": [
             "Financial Infidelity",
@@ -220,7 +219,8 @@
           "feedback": {
             "correct": "Correct. It is a betrayal of trust involving money. It is often a precursor to the discard (they are extracting value before leaving).",
             "incorrect": "It is not accounting. It is theft and deception within a relationship."
-          }
+          },
+          "scene": "Hiding debt, opening secret credit cards in your name, or spending shared money without permission."
         },
         {
           "exerciseId": "A4-3-P3-E9",

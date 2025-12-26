@@ -187,7 +187,6 @@
         {
           "exerciseId": "B2-2-P2-E8",
           "type": "reverse-scenario",
-          "answer": "Deliberately setting a deadline or time limit (e.g., 'I need an answer by 5 PM') to force a rushed decision.",
           "question": "What is this?",
           "options": [
             "Time Anchoring / Artificial Urgency",
@@ -200,7 +199,8 @@
           "feedback": {
             "correct": "Correct. The time is the anchor. If you accept '5 PM' as real, you panic. If you reject it ('I'll tell you tomorrow'), you regain control.",
             "incorrect": "It creates pressure by limiting the resource of Time."
-          }
+          },
+          "scene": "Deliberately setting a deadline or time limit (e.g., 'I need an answer by 5 PM') to force a rushed decision."
         },
         {
           "exerciseId": "B2-2-P2-E9",

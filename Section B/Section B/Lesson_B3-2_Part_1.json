@@ -171,7 +171,6 @@
         {
           "exerciseId": "B3-2-P1-E7",
           "type": "reverse-scenario",
-          "answer": "Acting with total certainty and arrogance so that people assume you must be right, even if you are wrong.",
           "question": "What is this trait?",
           "options": [
             "The Confidence Heuristic",
@@ -184,7 +183,8 @@
           "feedback": {
             "correct": "Correct. We unconsciously equate 'Confidence' with 'Competence.' Con artists exploit this by never showing doubt.",
             "incorrect": "It creates an 'Air of Authority.' Doubt signals weakness; certainty signals power."
-          }
+          },
+          "scene": "Acting with total certainty and arrogance so that people assume you must be right, even if you are wrong."
         },
         {
           "exerciseId": "B3-2-P1-E8",

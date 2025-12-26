@@ -204,7 +204,6 @@
         {
           "exerciseId": "A3-4-P2-E9",
           "type": "reverse-scenario",
-          "answer": "A person who remains unnaturally calm during a crisis while everyone else is panicking.",
           "question": "This high level of regulation can indicate:",
           "options": [
             "High Machiavellianism / Detachment.",
@@ -217,7 +216,8 @@
           "feedback": {
             "correct": "Correct. While it can be leadership, extreme detachment in crisis suggests a lack of emotional 'contagion.' They are observing, not feeling.",
             "incorrect": "It's not stupidity. They perceive the danger but suppress the fear response to calculate the advantage."
-          }
+          },
+          "scene": "A person who remains unnaturally calm during a crisis while everyone else is panicking."
         },
         {
           "exerciseId": "A3-4-P2-E10",

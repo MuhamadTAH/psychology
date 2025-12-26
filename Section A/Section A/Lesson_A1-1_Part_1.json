@@ -219,7 +219,7 @@
         {
           "exerciseId": "A1-1-P1-E12",
           "type": "reverse-scenario",
-          "answer": "Giving a small, unsolicited gift to make someone feel obligated to agree to a *larger* request later.",
+          "scene": "Giving a small, unsolicited gift to make someone feel obligated to agree to a *larger* request later.",
           "question": "What is this tactic called?",
           "options": [
             "The 'Foot-in-the-Door' Tactic",

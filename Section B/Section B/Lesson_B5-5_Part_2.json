@@ -204,7 +204,6 @@
         {
           "exerciseId": "B5-5-P2-E9",
           "type": "reverse-scenario",
-          "answer": "Using a 'Fake Crisis' to force a victim to bypass security protocols (e.g., 'The server is melting down, let me in!').",
           "question": "What is this?",
           "options": [
             "Urgency Hacking",
@@ -217,7 +216,8 @@
           "feedback": {
             "correct": "Correct. Urgency overrides protocol.",
             "incorrect": "It relies on the desire to help in a crisis."
-          }
+          },
+          "scene": "Using a 'Fake Crisis' to force a victim to bypass security protocols (e.g., 'The server is melting down, let me in!')."
         },
         {
           "exerciseId": "B5-5-P2-E10",
@@ -352,7 +352,6 @@
         {
           "exerciseId": "B5-5-P2-E17",
           "type": "reverse-scenario",
-          "answer": "A phrase like 'It's interesting you say that...' used to buy time and detach emotionally.",
           "question": "What is this?",
           "options": [
             "A Buffer / Pattern Interrupt",
@@ -365,7 +364,8 @@
           "feedback": {
             "correct": "Correct. It creates a pause. It stops you from reacting impulsively.",
             "incorrect": "It is not agreement. It is a neutral holding statement."
-          }
+          },
+          "scene": "A phrase like 'It's interesting you say that...' used to buy time and detach emotionally."
         },
         {
           "exerciseId": "B5-5-P2-E18",
@@ -536,7 +536,6 @@
         {
           "exerciseId": "B5-5-P2-E27",
           "type": "reverse-scenario",
-          "answer": "A technique where you mirror the other person's breathing, posture, and tone to create deep, subconscious rapport.",
           "question": "What is this?",
           "options": [
             "Matching / Mirroring",
@@ -549,7 +548,8 @@
           "feedback": {
             "correct": "Correct. It triggers the Liking Bias. 'They are like me, so they are safe.'",
             "incorrect": "It builds rapport, not confusion."
-          }
+          },
+          "scene": "A technique where you mirror the other person's breathing, posture, and tone to create deep, subconscious rapport."
         },
         {
           "exerciseId": "B5-5-P2-E28",

@@ -194,7 +194,6 @@
         {
           "exerciseId": "A3-4-P1-E8",
           "type": "reverse-scenario",
-          "answer": "The ability to control your own emotional reaction, suppress anger or fear, and act logically even under pressure.",
           "question": "What is this skill?",
           "options": [
             "Emotional Regulation / Suppression",
@@ -207,7 +206,8 @@
           "feedback": {
             "correct": "Correct. This is the defense. While Narcissists have 'Rage' (low regulation), Machiavellians have 'Ice' (high regulation).",
             "incorrect": "It's not dissociation (checking out). It is active control of the emotional output."
-          }
+          },
+          "scene": "The ability to control your own emotional reaction, suppress anger or fear, and act logically even under pressure."
         },
         {
           "exerciseId": "A3-4-P1-E9",

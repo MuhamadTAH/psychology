@@ -34,7 +34,7 @@ export default function DeleteLessonsPage() {
     try {
       const result = await deleteAllLessons({ email: userEmail });
       alert(`Successfully deleted ${result.deletedLessons} lessons and ${result.deletedProgress} progress records!`);
-      router.push('/learn');
+      router.push('/dark-psychology-dashboard');
     } catch (error) {
       console.error("Error deleting lessons:", error);
       alert("Failed to delete lessons");
@@ -68,7 +68,7 @@ export default function DeleteLessonsPage() {
               {loading ? "Deleting..." : "Delete All Lessons"}
             </Button>
             <Button
-              onClick={() => router.push('/learn')}
+              onClick={() => router.push('/dark-psychology-dashboard')}
               variant="secondary"
               className="w-full"
             >

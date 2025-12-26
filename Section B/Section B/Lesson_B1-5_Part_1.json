@@ -185,7 +185,6 @@
         {
           "exerciseId": "B1-5-P1-E8",
           "type": "reverse-scenario",
-          "answer": "A vague statement so general that anyone can find personal meaning in it (e.g., horoscopes).",
           "question": "What is this?",
           "options": [
             "Barnum Statement",
@@ -198,7 +197,8 @@
           "feedback": {
             "correct": "Correct. 'You have a need for other people to like you.' Everyone feels this. It builds fake rapport.",
             "incorrect": "It is named after P.T. Barnum. 'Something for everyone.'"
-          }
+          },
+          "scene": "A vague statement so general that anyone can find personal meaning in it (e.g., horoscopes)."
         },
         {
           "exerciseId": "B1-5-P1-E9",
@@ -370,7 +370,6 @@
         {
           "exerciseId": "B1-5-P1-E18",
           "type": "reverse-scenario",
-          "answer": "The belief that 'The Map is not the Territory.' Words are just symbols, not reality.",
           "question": "What is this concept?",
           "options": [
             "General Semantics / NLP Core",
@@ -383,7 +382,8 @@
           "feedback": {
             "correct": "Correct. Manipulators change your Map (words) to change how you navigate the Territory (life).",
             "incorrect": "It is the foundational philosophy of NLP."
-          }
+          },
+          "scene": "The belief that 'The Map is not the Territory.' Words are just symbols, not reality."
         },
         {
           "exerciseId": "B1-5-P1-E19",

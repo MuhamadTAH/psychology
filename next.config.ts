@@ -1,11 +1,15 @@
+// 🧠 FILE PURPOSE
+// Next.js configuration for PWA support.
+// Enables offline functionality and installable app features.
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Enable PWA support with service worker
+  // Step 1: Enable PWA support with service worker
   // This allows the app to work offline and be installable
   reactStrictMode: true,
 
-  // Configure headers for PWA
+  // Step 2: Configure headers for PWA
   async headers() {
     return [
       {
@@ -35,3 +39,8 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+// ✅ In this file we achieved:
+// Configured Next.js with PWA support
+// Note: Capacitor will use live server URL for development/testing
+// For production, API routes would need to be migrated to Convex

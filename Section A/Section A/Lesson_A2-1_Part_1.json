@@ -278,7 +278,6 @@
         {
           "exerciseId": "A2-1-P1-E13",
           "type": "reverse-scenario",
-          "answer": "A person who is genuinely confident and has high *internal* self-worth.",
           "question": "Who is the *least* likely person to be a narcissist?",
           "options": [
             "The 'Grandiose' boss (Overt Narcissist)",
@@ -291,7 +290,8 @@
           "feedback": {
             "correct": "Correct. Genuine confidence comes from *inside*. Narcissism is a *performance* to get validation from *outside*.",
             "incorrect": "This is a trap. The 'Confident' friend is the *least* likely, because true confidence comes from *inside*. Narcissism is a performance to get *external* validation."
-          }
+          },
+          "scene": "A person who is genuinely confident and has high *internal* self-worth."
         },
         {
           "exerciseId": "A2-1-P1-E14",

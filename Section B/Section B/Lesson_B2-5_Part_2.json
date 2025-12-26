@@ -186,7 +186,6 @@
         {
           "exerciseId": "B2-5-P2-E8",
           "type": "reverse-scenario",
-          "answer": "Reacting with shock ('The Flinch') to a first offer to make the other person feel their number is unreasonable.",
           "question": "What is this defense?",
           "options": [
             "De-Anchoring",
@@ -199,7 +198,8 @@
           "feedback": {
             "correct": "Correct. The Flinch breaks the Anchor's grip on reality. It tells them: 'Try again.'",
             "incorrect": "It is a specific counter-move to Anchoring."
-          }
+          },
+          "scene": "Reacting with shock ('The Flinch') to a first offer to make the other person feel their number is unreasonable."
         },
         {
           "exerciseId": "B2-5-P2-E9",
@@ -328,7 +328,6 @@
         {
           "exerciseId": "B2-5-P2-E16",
           "type": "reverse-scenario",
-          "answer": "Using the words 'We' and 'Us' to create a false sense of team unity.",
           "question": "What is this?",
           "options": [
             "Forced Teaming / In-Group Framing",
@@ -341,7 +340,8 @@
           "feedback": {
             "correct": "Correct. 'We're in this together' makes it harder for you to say 'No' to the request.",
             "incorrect": "It forces a shared identity."
-          }
+          },
+          "scene": "Using the words 'We' and 'Us' to create a false sense of team unity."
         },
         {
           "exerciseId": "B2-5-P2-E17",
@@ -548,7 +548,6 @@
         {
           "exerciseId": "B2-5-P2-E28",
           "type": "reverse-scenario",
-          "answer": "When a manipulator compares you to their 'crazy ex' to make you feel stable/superior.",
           "question": "What is this?",
           "options": [
             "The 'Low Bar' Contrast",
@@ -561,7 +560,8 @@
           "feedback": {
             "correct": "Correct. They use the 'Crazy Ex' as a foil to make you feel special. Later, you will be the 'Crazy Ex' for the next person.",
             "incorrect": "It frames the ex as the problem, not the manipulator."
-          }
+          },
+          "scene": "When a manipulator compares you to their 'crazy ex' to make you feel stable/superior."
         },
         {
           "exerciseId": "B2-5-P2-E29",

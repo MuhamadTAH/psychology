@@ -187,7 +187,6 @@
         {
           "exerciseId": "B4-1-P2-E8",
           "type": "reverse-scenario",
-          "answer": "When a manipulator suddenly stops texting or calling to make you panic and chase them.",
           "question": "What is this?",
           "options": [
             "The Pull-Back / Strategic Withdrawal",
@@ -200,7 +199,8 @@
           "feedback": {
             "correct": "Correct. They gave you abundance (Love Bombing), then created scarcity (Silence). You chase the scarcity.",
             "incorrect": "It creates artificial value. 'Why did they leave? I must get them back.'"
-          }
+          },
+          "scene": "When a manipulator suddenly stops texting or calling to make you panic and chase them."
         },
         {
           "exerciseId": "B4-1-P2-E9",
