@@ -49,7 +49,9 @@
       "Bash(del \"lib\\prisma.ts\")",
       "Bash(npx cap init DuoLearn com.duolearn.app --web-dir=out)",
       "Bash(npx cap:*)",
-      "Bash(git pull:*)"
+      "Bash(git pull:*)",
+      "Bash(git fetch:*)",
+      "Bash(git ls-tree:*)"
     ],
     "deny": [],
     "ask": []

@@ -74,6 +74,12 @@ export default function SectionPage() {
   const shouldLoad = isLoaded && isSignedIn;
 
   const progress = useQuery(api.lessons.getUserProgress, shouldLoad && userEmail ? { email: userEmail } : "skip");
+
+  // Step: Query subscription status to check if user is premium
+  // Free users can only access lessons 1-5, premium users get all lessons
+  const subscriptionData = useQuery(api.gamification.getSubscriptionStatus, shouldLoad && userEmail ? { email: userEmail } : "skip");
+  const isPremium = subscriptionData?.isPremium ?? false;
+
   useEffect(() => {
     console.log('[DP MAP] progress loaded', {
       userEmail,
@@ -233,6 +239,15 @@ export default function SectionPage() {
   const handleStartLesson = (lessonNumber: number, lessonId?: string) => {
     // Step: Play click sound when clicking on a lesson
     playClickSound();
+
+    // Step: Check if lesson is locked for free users
+    // Free users can only access lessons 1-5
+    if (!isPremium && lessonNumber > 5) {
+      // Show premium upgrade dialog for locked lessons
+      alert('This lesson is locked. Upgrade to premium to unlock all lessons!');
+      router.push('/welcome'); // Redirect to paywall
+      return;
+    }
 
     const isCompleted = lessonId ? isLessonCompleted(lessonId) : false;
 
@@ -541,6 +556,10 @@ export default function SectionPage() {
                     // Check if ALL parts are completed
                     const completed = completedParts.length === totalParts;
 
+                    // Step: Check if lesson is locked for free users
+                    // Free users can only access lessons 1-5
+                    const isLocked = !isPremium && lesson.number > 5;
+
                     return (
                       <div
                         ref={(el) => { lessonRefs.current[globalLessonIndex] = el; }}
@@ -581,14 +600,14 @@ export default function SectionPage() {
                               stroke="#374151"
                               strokeWidth="4"
                             />
-                            {/* Progress circle (purple) - only show if completed */}
+                            {/* Progress circle (purple for normal, gray for locked) - only show if completed */}
                             {completedParts.includes(1) && (
                               <circle
                                 cx="40"
                                 cy="40"
                                 r="36"
                                 fill="none"
-                                stroke={completed ? '#C084FC' : '#A78BFA'}
+                                stroke={isLocked ? '#6B7280' : (completed ? '#C084FC' : '#A78BFA')}
                                 strokeWidth="4"
                                 className="transition-all duration-500"
                               />
@@ -629,7 +648,7 @@ export default function SectionPage() {
                                   <path
                                     d={`M ${x1} ${y1} A ${radius} ${radius} 0 ${largeArc} 1 ${x2} ${y2}`}
                                     fill="none"
-                                    stroke={completed ? '#C084FC' : '#A78BFA'}
+                                    stroke={isLocked ? '#6B7280' : (completed ? '#C084FC' : '#A78BFA')}
                                     strokeWidth="4"
                                     className="transition-all duration-500"
                                   />
@@ -667,12 +686,16 @@ export default function SectionPage() {
                       {/* Inner Lesson Icon - Centered inside the ring */}
                       <div
                         className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full flex items-center justify-center transition-all duration-200 transform group-hover:scale-105 active:scale-95 shadow-lg ${
-                          completed
+                          isLocked
+                            ? 'bg-gradient-to-br from-gray-600 to-gray-700'
+                            : completed
                             ? 'bg-gradient-to-br from-purple-600 to-indigo-600'
                             : 'bg-gradient-to-br from-purple-600 to-indigo-700'
                         }`}
                       >
-                        {completed ? (
+                        {isLocked ? (
+                          <Lock className="h-8 w-8 text-gray-300" />
+                        ) : completed ? (
                           <Check className="h-8 w-8 text-white font-bold" strokeWidth={3} />
                         ) : (
                           <Star className="h-8 w-8 text-white" />
