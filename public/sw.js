@@ -133,8 +133,14 @@ self.addEventListener('fetch', (event) => {
 
           return response;
         }).catch(() => {
-          // If both network and cache fail, show offline page
-          return caches.match('/offline');
+          // If both network and cache fail, return a simple offline response
+          return new Response('You are offline. Please check your internet connection.', {
+            status: 503,
+            statusText: 'Service Unavailable',
+            headers: new Headers({
+              'Content-Type': 'text/plain',
+            }),
+          });
         });
       })
   );
