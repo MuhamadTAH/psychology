@@ -30,7 +30,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/dark-psychology-achievements',
     '/privacy',
     '/terms',
-    '/offline',
   ];
 
   // Step 4: Map static pages to sitemap format
