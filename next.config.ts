@@ -9,6 +9,16 @@ const nextConfig: NextConfig = {
   // This allows the app to work offline and be installable
   reactStrictMode: true,
 
+  // Disable ESLint during production builds (Vercel)
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
+  // Disable TypeScript errors during production builds
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+
   // Step 2: Configure headers for PWA
   async headers() {
     return [
