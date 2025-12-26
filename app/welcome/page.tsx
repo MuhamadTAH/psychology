@@ -9,11 +9,14 @@ import { useRouter } from "next/navigation";
 import { useSignIn, useSignUp } from "@clerk/nextjs";
 import { ArrowRight, CheckSquare, Shield, Eye, Terminal, Lock, ArrowDown, MessageSquare, Scale, CheckCircle, Folder, AlertTriangle } from "lucide-react";
 import ScanTransition from "@/components/ScanTransition";
+import { useMutation } from "convex/react";
+import { api } from "@/convex/_generated/api";
 
 export default function WelcomePage() {
   const router = useRouter();
   const { signIn, setActive, isLoaded } = useSignIn();
   const { signUp } = useSignUp();
+  const setSubscription = useMutation(api.gamification.setSubscriptionStatus);
 
   const [step, setStep] = useState<"coldOpen" | "identityVerification" | "loginForm" | "phase1_awareness" | "phase1_solution" | "phase1_ethics" | "phase2_assessment" | "phase3_calculation" | "phase3_commitment" | "phase3_paywall" | "phase3_lockdown" | "phase3_result">("coldOpen");
   const [showGhostWarning, setShowGhostWarning] = useState(false);
@@ -1204,7 +1207,18 @@ export default function WelcomePage() {
                   Go Back
                 </button>
                 <button
-                  onClick={() => router.push("/dark-psychology-dashboard")}
+                  onClick={async () => {
+                    try {
+                      // Set as free user
+                      await setSubscription({
+                        status: "free",
+                      });
+                      router.push("/dark-psychology-dashboard");
+                    } catch (error) {
+                      console.error("Failed to set free status:", error);
+                      router.push("/dark-psychology-dashboard");
+                    }
+                  }}
                   className="w-full bg-transparent border border-red-900 text-red-900 font-mono text-[10px] uppercase py-3 tracking-widest hover:text-red-500 hover:border-red-500 transition-colors"
                 >
                   I Accept Mediocrity
@@ -1285,9 +1299,19 @@ export default function WelcomePage() {
 
           {/* Primary Action */}
           <button
-            onClick={() => {
-              // In production: Integrate RevenueCat here
-              router.push("/dark-psychology-dashboard");
+            onClick={async () => {
+              try {
+                // Save subscription status to database
+                await setSubscription({
+                  status: "premium",
+                  plan: selectedPlan,
+                });
+                // In production: Integrate payment processor here
+                router.push("/dark-psychology-dashboard");
+              } catch (error) {
+                console.error("Failed to set subscription:", error);
+                router.push("/dark-psychology-dashboard");
+              }
             }}
             className="w-full border-2 border-white bg-white text-black hover:bg-black hover:text-white py-4 px-8 text-sm font-mono uppercase tracking-widest transition-colors mb-4 animate-pulse"
           >

@@ -566,3 +566,188 @@ export const completeLesson = mutation({
     }
   },
 });
+
+// Step 1: Subscription Management
+
+// Set subscription status (called from paywall)
+export const setSubscriptionStatus = mutation({
+  args: {
+    status: v.string(), // "free" or "premium"
+    plan: v.optional(v.string()), // "monthly" or "annual"
+  },
+  handler: async (ctx, args) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) throw new Error("Not authenticated");
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", identity.email!))
+      .first();
+
+    if (!user) throw new Error("User not found");
+
+    const now = Date.now();
+    const updates: any = {
+      subscriptionStatus: args.status,
+      subscriptionStartDate: now,
+    };
+
+    if (args.status === "premium") {
+      updates.subscriptionPlan = args.plan;
+      // Set end date based on plan (for now, far future)
+      // In production, this would be managed by payment processor
+      const endDate = args.plan === "annual"
+        ? now + (365 * 24 * 60 * 60 * 1000) // 1 year
+        : now + (30 * 24 * 60 * 60 * 1000);  // 1 month
+      updates.subscriptionEndDate = endDate;
+    }
+
+    await ctx.db.patch(user._id, updates);
+
+    return { success: true, subscriptionStatus: args.status };
+  },
+});
+
+// Get subscription status
+export const getSubscriptionStatus = query({
+  handler: async (ctx) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) return { status: "free", isPremium: false };
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", identity.email!))
+      .first();
+
+    if (!user) return { status: "free", isPremium: false };
+
+    const status = user.subscriptionStatus ?? "free";
+    const isPremium = status === "premium";
+
+    return {
+      status,
+      isPremium,
+      plan: user.subscriptionPlan,
+      startDate: user.subscriptionStartDate,
+      endDate: user.subscriptionEndDate,
+    };
+  },
+});
+
+// Step 2: Heart Refill System (1 heart per hour)
+
+// Check and refill hearts based on time elapsed
+export const checkAndRefillHearts = mutation({
+  handler: async (ctx) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) throw new Error("Not authenticated");
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", identity.email!))
+      .first();
+
+    if (!user) throw new Error("User not found");
+
+    // Premium users have unlimited hearts
+    const isPremium = (user.subscriptionStatus ?? "free") === "premium";
+    if (isPremium) {
+      return { hearts: 999, isPremium: true, refilled: 0 };
+    }
+
+    const now = Date.now();
+    const currentHearts = user.hearts ?? 5;
+    const lastRefill = user.lastHeartRefill ?? now;
+
+    // If already at max hearts (5), no need to refill
+    if (currentHearts >= 5) {
+      return { hearts: currentHearts, isPremium: false, refilled: 0 };
+    }
+
+    // Calculate hours elapsed since last refill
+    const hoursElapsed = Math.floor((now - lastRefill) / (1000 * 60 * 60));
+
+    if (hoursElapsed > 0) {
+      // Refill hearts (1 per hour, max 5)
+      const heartsToAdd = Math.min(hoursElapsed, 5 - currentHearts);
+      const newHearts = Math.min(currentHearts + heartsToAdd, 5);
+
+      await ctx.db.patch(user._id, {
+        hearts: newHearts,
+        lastHeartRefill: now,
+      });
+
+      return { hearts: newHearts, isPremium: false, refilled: heartsToAdd };
+    }
+
+    return { hearts: currentHearts, isPremium: false, refilled: 0 };
+  },
+});
+
+// Get hearts with auto-refill check
+export const getHearts = query({
+  handler: async (ctx) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) return { hearts: 5, isPremium: false, nextRefillIn: 0 };
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", identity.email!))
+      .first();
+
+    if (!user) return { hearts: 5, isPremium: false, nextRefillIn: 0 };
+
+    const isPremium = (user.subscriptionStatus ?? "free") === "premium";
+    if (isPremium) {
+      return { hearts: 999, isPremium: true, nextRefillIn: 0 };
+    }
+
+    const currentHearts = user.hearts ?? 5;
+    const lastRefill = user.lastHeartRefill ?? Date.now();
+    const now = Date.now();
+
+    // Calculate time until next heart refill (in milliseconds)
+    const timeSinceRefill = now - lastRefill;
+    const oneHour = 1000 * 60 * 60;
+    const nextRefillIn = currentHearts < 5 ? oneHour - (timeSinceRefill % oneHour) : 0;
+
+    return { hearts: currentHearts, isPremium: false, nextRefillIn };
+  },
+});
+
+// Updated loseHeart to respect premium status
+export const loseHeartV2 = mutation({
+  args: {
+    lessonId: v.optional(v.string()), // Made optional for dark psychology lessons
+    email: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", userEmail))
+      .first();
+
+    if (!user) throw new Error("User not found");
+
+    // Premium users don't lose hearts
+    const isPremium = (user.subscriptionStatus ?? "free") === "premium";
+    if (isPremium) {
+      return { hearts: 999, isPremium: true };
+    }
+
+    // Lose 1 heart (minimum 0)
+    const currentHearts = user.hearts ?? 5;
+    const newHearts = Math.max(0, currentHearts - 1);
+
+    // Update last refill time when losing a heart (start the 1-hour timer)
+    await ctx.db.patch(user._id, {
+      hearts: newHearts,
+      lastHeartRefill: newHearts < 5 ? Date.now() : (user.lastHeartRefill ?? Date.now()),
+    });
+
+    return { hearts: newHearts, isPremium: false };
+  },
+});
