@@ -180,7 +180,6 @@
         {
           "exerciseId": "B5-2-P2-E8",
           "type": "reverse-scenario",
-          "answer": "A technique where a seller creates a false sense of rivalry (e.g., 'Another buyer is coming at 3 PM') to force a sale.",
           "question": "What is this?",
           "options": [
             "The Phantom Competitor",
@@ -193,7 +192,8 @@
           "feedback": {
             "correct": "Correct. You are bidding against a ghost. Call the bluff: 'Okay, sell it to them.'",
             "incorrect": "It uses Scarcity + Social Proof to trigger auction fever."
-          }
+          },
+          "scene": "A technique where a seller creates a false sense of rivalry (e.g., 'Another buyer is coming at 3 PM') to force a sale."
         },
         {
           "exerciseId": "B5-2-P2-E9",

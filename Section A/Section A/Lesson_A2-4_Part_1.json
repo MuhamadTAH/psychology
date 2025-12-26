@@ -177,7 +177,6 @@
         {
           "exerciseId": "A2-4-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A tactic where the manipulator hides your keys or wallet, then helps you find them, claiming you are 'forgetful' and 'losing it.'",
           "question": "What is this physical form of Gaslighting called?",
           "options": [
             "The 'Dimming Light' / Ambient Gaslighting",
@@ -190,7 +189,8 @@
           "feedback": {
             "correct": "Correct. This mimics the original 1938 play (moving pictures, dimming lights). It involves altering the *physical environment* to prove the victim is insane.",
             "incorrect": "This isn't Reciprocity (gifts). This is staging the environment to create evidence of your 'insanity'."
-          }
+          },
+          "scene": "A tactic where the manipulator hides your keys or wallet, then helps you find them, claiming you are 'forgetful' and 'losing it.'"
         },
         {
           "exerciseId": "A2-4-P1-E8",

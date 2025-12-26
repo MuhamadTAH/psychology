@@ -224,7 +224,6 @@
         {
           "exerciseId": "A4-5-P2-E10",
           "type": "reverse-scenario",
-          "answer": "A person who moves into your home, stops working, creates drama, and refuses to leave.",
           "question": "What is this lifestyle?",
           "options": [
             "Parasitic Lifestyle",
@@ -237,7 +236,8 @@
           "feedback": {
             "correct": "Correct. They are feeding off your resources (The Host).",
             "incorrect": "Depression involves guilt/withdrawal. Parasitism involves entitlement/usage."
-          }
+          },
+          "scene": "A person who moves into your home, stops working, creates drama, and refuses to leave."
         },
         {
           "exerciseId": "A4-5-P2-E11",
@@ -390,7 +390,6 @@
         {
           "exerciseId": "A4-5-P2-E19",
           "type": "reverse-scenario",
-          "answer": "A calculated risk-taker who uses charm to defraud investors, feels no guilt, and moves to the next scam when caught.",
           "question": "What is this?",
           "options": [
             "A Corporate Psychopath",
@@ -403,7 +402,8 @@
           "feedback": {
             "correct": "Correct. They flourish in business because they can lie without sweating.",
             "incorrect": "Narcissists need praise. This person needs *profit* and *thrills*."
-          }
+          },
+          "scene": "A calculated risk-taker who uses charm to defraud investors, feels no guilt, and moves to the next scam when caught."
         },
         {
           "exerciseId": "A4-5-P2-E20",

@@ -173,7 +173,6 @@
         {
           "exerciseId": "B2-4-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A tactic where the manipulator assigns you a negative role (e.g., 'You're just being difficult') to put you on the defensive.",
           "question": "What is this?",
           "options": [
             "Negative Altercasting / Frame Trap",
@@ -186,7 +185,8 @@
           "feedback": {
             "correct": "Correct. Instead of arguing the point, you argue against the label. 'I'm not difficult!' You lost the frame.",
             "incorrect": "It forces you to defend your character instead of your argument."
-          }
+          },
+          "scene": "A tactic where the manipulator assigns you a negative role (e.g., 'You're just being difficult') to put you on the defensive."
         }
       ]
     }

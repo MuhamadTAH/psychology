@@ -188,7 +188,6 @@
         {
           "exerciseId": "B4-2-P2-E8",
           "type": "reverse-scenario",
-          "answer": "Refusing a gift or favor politely at the start to avoid the feeling of obligation later.",
           "question": "What is this defense?",
           "options": [
             "The Preemptive Refusal",
@@ -201,7 +200,8 @@
           "feedback": {
             "correct": "Correct. 'No thank you, I'm not hungry.' 'No thanks, I can carry it.' Stopping the favor stops the debt.",
             "incorrect": "It's not rude; it's boundaries. It prevents the cycle from starting."
-          }
+          },
+          "scene": "Refusing a gift or favor politely at the start to avoid the feeling of obligation later."
         },
         {
           "exerciseId": "B4-2-P2-E9",

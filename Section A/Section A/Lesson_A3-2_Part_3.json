@@ -204,7 +204,6 @@
         {
           "exerciseId": "A3-2-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A trap where you use a seductive or attractive agent (a 'Honey Pot') to lure a target into compromising themselves.",
           "question": "This is a form of:",
           "options": [
             "Sexual/Emotional Trojan Horse",
@@ -217,7 +216,8 @@
           "feedback": {
             "correct": "Correct. The 'Gift' is the relationship/sex. The 'Trap' is the blackmail or intelligence gathering.",
             "incorrect": "It is a classic spycraft tactic. The target opens their defenses for pleasure, letting the enemy in."
-          }
+          },
+          "scene": "A trap where you use a seductive or attractive agent (a 'Honey Pot') to lure a target into compromising themselves."
         },
         {
           "exerciseId": "A3-2-P3-E9",

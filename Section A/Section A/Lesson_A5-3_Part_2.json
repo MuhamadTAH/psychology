@@ -188,7 +188,6 @@
         {
           "exerciseId": "A5-3-P2-E8",
           "type": "reverse-scenario",
-          "answer": "Pretending not to know how to do a simple task (like cleaning or paperwork) so someone else will do it for you.",
           "question": "What is this manipulation?",
           "options": [
             "Weaponized Incompetence",
@@ -201,7 +200,8 @@
           "feedback": {
             "correct": "Correct. It exploits the Savior's need for 'perfection' or 'speed.' 'Fine, I'll just do it myself!' is exactly what they want you to say.",
             "incorrect": "It is a strategic performance of inability to force you into the Rescuer role."
-          }
+          },
+          "scene": "Pretending not to know how to do a simple task (like cleaning or paperwork) so someone else will do it for you."
         },
         {
           "exerciseId": "A5-3-P2-E9",

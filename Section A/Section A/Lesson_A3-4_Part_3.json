@@ -205,7 +205,6 @@
         {
           "exerciseId": "A3-4-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A negotiation tactic where you react to their offer with visible shock or silence to make them feel insecure and lower their price.",
           "question": "What is this?",
           "options": [
             "The Flinch",
@@ -218,7 +217,8 @@
           "feedback": {
             "correct": "Correct. It is a performed emotion (shock) used to manipulate the other person's confidence.",
             "incorrect": "It is a deliberate non-verbal cue that signals 'That offer is insulting' without saying a word."
-          }
+          },
+          "scene": "A negotiation tactic where you react to their offer with visible shock or silence to make them feel insecure and lower their price."
         },
         {
           "exerciseId": "A3-4-P3-E9",

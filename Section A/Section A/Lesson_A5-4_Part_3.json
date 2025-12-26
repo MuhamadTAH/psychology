@@ -207,7 +207,6 @@
         {
           "exerciseId": "A5-4-P3-E8",
           "type": "reverse-scenario",
-          "answer": "The feeling that you are 'going crazy' or 'empty' without the chaos of the relationship.",
           "question": "What is this?",
           "options": [
             "Withdrawal / Detox",
@@ -220,7 +219,8 @@
           "feedback": {
             "correct": "Correct. Your body is screaming for the cortisol spike. Peace feels 'wrong' because your baseline is set to 'Chaos'.",
             "incorrect": "It mimics depression, but it is chemical withdrawal from the stress cycle."
-          }
+          },
+          "scene": "The feeling that you are 'going crazy' or 'empty' without the chaos of the relationship."
         },
         {
           "exerciseId": "A5-4-P3-E9",

@@ -13,11 +13,18 @@ export default defineSchema({
     avatar: v.optional(v.string()), // Avatar theme: default, red-black, bold, shadow, etc.
 
     // Gamification fields
-    hearts: v.optional(v.number()), // Default: 5, range: 0-5
+    hearts: v.optional(v.number()), // Default: 5, range: 0-5 (unlimited for premium)
+    lastHeartRefill: v.optional(v.number()), // Timestamp of last heart refill
     gems: v.optional(v.number()), // Default: 0, no limit
     xp: v.optional(v.number()), // Default: 0, no limit
     streak: v.optional(v.number()), // Default: 0, consecutive days
     lastLessonDate: v.optional(v.string()), // Format: "YYYY-MM-DD"
+
+    // Subscription fields
+    subscriptionStatus: v.optional(v.string()), // "free", "premium"
+    subscriptionPlan: v.optional(v.string()), // "monthly", "annual"
+    subscriptionStartDate: v.optional(v.number()), // Timestamp when subscription started
+    subscriptionEndDate: v.optional(v.number()), // Timestamp when subscription ends
 
     // Streak rewards system
     lastLoginDate: v.optional(v.string()), // Format: "YYYY-MM-DD", track daily login

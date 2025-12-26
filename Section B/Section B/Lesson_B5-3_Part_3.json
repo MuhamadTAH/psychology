@@ -207,7 +207,6 @@
         {
           "exerciseId": "B5-3-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A tactic where the seller acts offended by your low offer to shame you into raising it.",
           "question": "What is this?",
           "options": [
             "The Flinch (Offensive)",
@@ -220,7 +219,8 @@
           "feedback": {
             "correct": "Correct. Sellers Flinch too. 'Wow, I can't believe you'd insult me with that offer!' Don't fall for the shame. Stick to the data.",
             "incorrect": "It is theatrical indignation."
-          }
+          },
+          "scene": "A tactic where the seller acts offended by your low offer to shame you into raising it."
         },
         {
           "exerciseId": "B5-3-P3-E9",

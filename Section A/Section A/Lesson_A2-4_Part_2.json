@@ -249,7 +249,6 @@
         {
           "exerciseId": "A2-4-P2-E10",
           "type": "reverse-scenario",
-          "answer": "Changing the subject to 'how' you are speaking (your tone) instead of 'what' you are saying (the facts).",
           "question": "What is this diversion tactic?",
           "options": [
             "Tone Policing",
@@ -262,7 +261,8 @@
           "feedback": {
             "correct": "Correct. 'I can't listen to you when you sound so angry.' Now the conversation is about your anger, not their bad behavior. It is a form of Blocking/Diverting.",
             "incorrect": "This is 'Tone Policing.' It diverts attention from the content to the delivery."
-          }
+          },
+          "scene": "Changing the subject to 'how' you are speaking (your tone) instead of 'what' you are saying (the facts)."
         },
         {
           "exerciseId": "A2-4-P2-E11",

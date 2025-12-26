@@ -111,7 +111,6 @@
         {
           "exerciseId": "A1-2-P2-E5",
           "type": "reverse-scenario",
-          "answer": "A manipulator wants to use your own ego against you to get what they want.",
           "question": "What is their 'weapon' of choice?",
           "options": [
             "Guilt-tripping",
@@ -121,7 +120,8 @@
           ],
           "correct": "Flattery",
           "difficulty": "easy",
-          "explanation": "Flattery is a direct appeal to the ego. The manipulator knows that if they make you feel good, you'll be less likely to be logical."
+          "explanation": "Flattery is a direct appeal to the ego. The manipulator knows that if they make you feel good, you'll be less likely to be logical.",
+          "scene": "A manipulator wants to use your own ego against you to get what they want."
         },
         {
           "exerciseId": "A1-2-P2-E6",
@@ -151,7 +151,7 @@
         {
           "exerciseId": "A1-2-P2-E7",
           "type": "fill-in",
-          "sentence": "The 'Flattery -> ___ -> Ask' pattern is the most common manipulative sequence.",
+          "sentence": "The 'Flattery (--------) Ask' pattern is the most common manipulative sequence.",
           "options": [
             "Soften Defenses",
             "Insult",

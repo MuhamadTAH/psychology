@@ -201,7 +201,6 @@
         {
           "exerciseId": "A4-1-P2-E9",
           "type": "reverse-scenario",
-          "answer": "Using charm, compliments, and mirroring to lower a target's defenses before striking.",
           "question": "This is the definition of:",
           "options": [
             "Predatory Grooming",
@@ -214,7 +213,8 @@
           "feedback": {
             "correct": "Correct. Unlike a hot-headed sociopath, a cold predator plans the attack. Grooming is the preparation phase.",
             "incorrect": "It looks like kindness, but the intent is consumption."
-          }
+          },
+          "scene": "Using charm, compliments, and mirroring to lower a target's defenses before striking."
         },
         {
           "exerciseId": "A4-1-P2-E10",

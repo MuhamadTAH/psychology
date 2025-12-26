@@ -207,7 +207,6 @@
         {
           "exerciseId": "A2-2-P3-E8",
           "type": "reverse-scenario",
-          "answer": "You stop reacting to their insults. They try to make you jealous. You don't react. They try to make you guilty. You don't react. Finally, they stop calling you.",
           "question": "What has happened?",
           "options": [
             "They have been cured.",
@@ -220,7 +219,8 @@
           "feedback": {
             "correct": "Correct. You proved you are a 'broken appliance' (you provide no fuel). They have discarded you to find a working Source. You are free.",
             "incorrect": "They didn't win; they left because the mine ran dry. This is the goal of 'No Contact' or 'Grey Rock'."
-          }
+          },
+          "scene": "You stop reacting to their insults. They try to make you jealous. You don't react. They try to make you guilty. You don't react. Finally, they stop calling you."
         },
         {
           "exerciseId": "A2-2-P3-E9",

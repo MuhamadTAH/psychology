@@ -202,7 +202,6 @@
         {
           "exerciseId": "B1-2-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A hidden message that suggests a feeling or action without stating it (e.g., 'It's getting late...' implying 'Go home').",
           "question": "What is this?",
           "options": [
             "Implication / Subtext",
@@ -215,7 +214,8 @@
           "feedback": {
             "correct": "Correct. Subtext allows for Plausible Deniability. 'I didn't tell you to leave! I just said it was late!'",
             "incorrect": "It isn't lying. It is communicating between the lines."
-          }
+          },
+          "scene": "A hidden message that suggests a feeling or action without stating it (e.g., 'It's getting late...' implying 'Go home')."
         },
         {
           "exerciseId": "B1-2-P3-E9",

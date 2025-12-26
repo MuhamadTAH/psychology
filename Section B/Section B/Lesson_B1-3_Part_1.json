@@ -175,7 +175,6 @@
         {
           "exerciseId": "B1-3-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A question like 'Do you want to sign now or after coffee?' that presupposes the main action (Signing).",
           "question": "What is this sales tactic called?",
           "options": [
             "The Assumptive Close / Alternative Close",
@@ -188,7 +187,8 @@
           "feedback": {
             "correct": "Correct. It assumes the sale is made and only negotiates the details.",
             "incorrect": "It is a specific close technique. It bypasses the decision to buy."
-          }
+          },
+          "scene": "A question like 'Do you want to sign now or after coffee?' that presupposes the main action (Signing)."
         },
         {
           "exerciseId": "B1-3-P1-E8",

@@ -5,6 +5,14 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
 
+// Enforce authenticated user and ensure the caller matches the provided email
+const requireUserEmail = async (ctx: any, email: string) => {
+  const identity = await ctx.auth.getUserIdentity();
+  if (!identity) throw new Error("Not authenticated");
+  if (identity.email !== email) throw new Error("Forbidden");
+  return identity.email!;
+};
+
 // Step 1: Save a note for a specific lesson
 export const saveNote = mutation({
   args: {
@@ -14,14 +22,13 @@ export const saveNote = mutation({
     note: v.string(),
   },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+    const userEmail = await requireUserEmail(ctx, args.email);
 
     // Check if note already exists for this lesson
     const existing = await ctx.db
       .query("darkPsychologyNotes")
       .withIndex("by_user_lesson", (q) =>
-        q.eq("email", args.email).eq("lessonId", args.lessonId)
+        q.eq("email", userEmail).eq("lessonId", args.lessonId)
       )
       .first();
 
@@ -35,7 +42,7 @@ export const saveNote = mutation({
     } else {
       // Create new note
       await ctx.db.insert("darkPsychologyNotes", {
-        email: args.email,
+        email: userEmail,
         lessonId: args.lessonId,
         lessonTitle: args.lessonTitle,
         note: args.note,
@@ -51,12 +58,11 @@ export const saveNote = mutation({
 export const getNotes = query({
   args: { email: v.string() },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return [];
+    const userEmail = await requireUserEmail(ctx, args.email);
 
     const notes = await ctx.db
       .query("darkPsychologyNotes")
-      .withIndex("by_user_lesson", (q) => q.eq("email", args.email))
+      .withIndex("by_user_lesson", (q) => q.eq("email", userEmail))
       .collect();
 
     return notes;
@@ -67,13 +73,12 @@ export const getNotes = query({
 export const getNoteForLesson = query({
   args: { email: v.string(), lessonId: v.string() },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return null;
+    const userEmail = await requireUserEmail(ctx, args.email);
 
     const note = await ctx.db
       .query("darkPsychologyNotes")
       .withIndex("by_user_lesson", (q) =>
-        q.eq("email", args.email).eq("lessonId", args.lessonId)
+        q.eq("email", userEmail).eq("lessonId", args.lessonId)
       )
       .first();
 
@@ -87,6 +92,10 @@ export const deleteNote = mutation({
   handler: async (ctx, args) => {
     const identity = await ctx.auth.getUserIdentity();
     if (!identity) throw new Error("Not authenticated");
+
+    const note = await ctx.db.get(args.noteId);
+    if (!note) throw new Error("Note not found");
+    if (note.email !== identity.email) throw new Error("Forbidden");
 
     await ctx.db.delete(args.noteId);
     return { success: true };
@@ -103,14 +112,13 @@ export const toggleBookmark = mutation({
     questionIndex: v.number(),
   },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+    const userEmail = await requireUserEmail(ctx, args.email);
 
     // Check if bookmark exists for this specific question
     const existing = await ctx.db
       .query("darkPsychologyBookmarks")
       .withIndex("by_user_question", (q) =>
-        q.eq("email", args.email).eq("lessonId", args.lessonId).eq("questionIndex", args.questionIndex)
+        q.eq("email", userEmail).eq("lessonId", args.lessonId).eq("questionIndex", args.questionIndex)
       )
       .first();
 
@@ -121,7 +129,7 @@ export const toggleBookmark = mutation({
     } else {
       // Add bookmark
       await ctx.db.insert("darkPsychologyBookmarks", {
-        email: args.email,
+        email: userEmail,
         lessonId: args.lessonId,
         lessonTitle: args.lessonTitle,
         question: args.question,
@@ -137,12 +145,11 @@ export const toggleBookmark = mutation({
 export const getBookmarks = query({
   args: { email: v.string() },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return [];
+    const userEmail = await requireUserEmail(ctx, args.email);
 
     const bookmarks = await ctx.db
       .query("darkPsychologyBookmarks")
-      .withIndex("by_user_lesson", (q) => q.eq("email", args.email))
+      .withIndex("by_user_lesson", (q) => q.eq("email", userEmail))
       .collect();
 
     return bookmarks;
@@ -153,13 +160,12 @@ export const getBookmarks = query({
 export const isBookmarked = query({
   args: { email: v.string(), lessonId: v.string(), questionIndex: v.number() },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return false;
+    const userEmail = await requireUserEmail(ctx, args.email);
 
     const bookmark = await ctx.db
       .query("darkPsychologyBookmarks")
       .withIndex("by_user_question", (q) =>
-        q.eq("email", args.email).eq("lessonId", args.lessonId).eq("questionIndex", args.questionIndex)
+        q.eq("email", userEmail).eq("lessonId", args.lessonId).eq("questionIndex", args.questionIndex)
       )
       .first();
 
@@ -178,14 +184,13 @@ export const saveWrongAnswer = mutation({
     questionType: v.string(),
   },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+    const userEmail = await requireUserEmail(ctx, args.email);
 
     // Check if this wrong answer already exists
     const existing = await ctx.db
       .query("darkPsychologyReview")
       .withIndex("by_user_lesson", (q) =>
-        q.eq("email", args.email).eq("lessonId", args.lessonId)
+        q.eq("email", userEmail).eq("lessonId", args.lessonId)
       )
       .filter((q) => q.eq(q.field("question"), args.question))
       .first();
@@ -200,7 +205,7 @@ export const saveWrongAnswer = mutation({
     } else {
       // Create new review item
       await ctx.db.insert("darkPsychologyReview", {
-        email: args.email,
+        email: userEmail,
         lessonId: args.lessonId,
         question: args.question,
         userAnswer: args.userAnswer,
@@ -221,13 +226,12 @@ export const saveWrongAnswer = mutation({
 export const getReviewQuestions = query({
   args: { email: v.string() },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return [];
+    const userEmail = await requireUserEmail(ctx, args.email);
 
     const now = Date.now();
     const reviews = await ctx.db
       .query("darkPsychologyReview")
-      .withIndex("by_user_lesson", (q) => q.eq("email", args.email))
+      .withIndex("by_user_lesson", (q) => q.eq("email", userEmail))
       .filter((q) => q.lte(q.field("nextReview"), now))
       .collect();
 
@@ -239,12 +243,11 @@ export const getReviewQuestions = query({
 export const getAllWrongAnswers = query({
   args: { email: v.string() },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return [];
+    const userEmail = await requireUserEmail(ctx, args.email);
 
     const reviews = await ctx.db
       .query("darkPsychologyReview")
-      .withIndex("by_user_lesson", (q) => q.eq("email", args.email))
+      .withIndex("by_user_lesson", (q) => q.eq("email", userEmail))
       .collect();
 
     return reviews;
@@ -257,6 +260,10 @@ export const markAsMastered = mutation({
   handler: async (ctx, args) => {
     const identity = await ctx.auth.getUserIdentity();
     if (!identity) throw new Error("Not authenticated");
+
+    const review = await ctx.db.get(args.reviewId);
+    if (!review) throw new Error("Review not found");
+    if (review.email !== identity.email) throw new Error("Forbidden");
 
     await ctx.db.delete(args.reviewId);
     return { success: true };
@@ -463,10 +470,9 @@ export const getLeaderboard = query({
 export const checkAndUnlockAchievements = mutation({
   args: { email: v.string() },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+    const userEmail = await requireUserEmail(ctx, args.email);
 
-    const user = await ctx.db.query("users").withIndex("by_email", (q) => q.eq("email", args.email)).first();
+    const user = await ctx.db.query("users").withIndex("by_email", (q) => q.eq("email", userEmail)).first();
     if (!user) return { newlyUnlocked: [] };
 
     const allProgress = await ctx.db.query("progress").withIndex("by_userId", (q) => q.eq("userId", user._id)).collect();
@@ -483,9 +489,9 @@ export const checkAndUnlockAchievements = mutation({
     const newlyUnlocked: Array<{ id: string; name: string; description: string; icon: string }> = [];
     for (const achievement of achievements) {
       if (achievement.check()) {
-        const existing = await ctx.db.query("darkPsychologyAchievements").withIndex("by_user_achievement", (q) => q.eq("email", args.email).eq("achievementId", achievement.id)).first();
+        const existing = await ctx.db.query("darkPsychologyAchievements").withIndex("by_user_achievement", (q) => q.eq("email", userEmail).eq("achievementId", achievement.id)).first();
         if (!existing) {
-          await ctx.db.insert("darkPsychologyAchievements", { email: args.email, achievementId: achievement.id, achievementName: achievement.name, achievementDescription: achievement.description, achievementIcon: achievement.icon, unlockedAt: Date.now() });
+          await ctx.db.insert("darkPsychologyAchievements", { email: userEmail, achievementId: achievement.id, achievementName: achievement.name, achievementDescription: achievement.description, achievementIcon: achievement.icon, unlockedAt: Date.now() });
           // ✅ FIX: Only return serializable data (no functions)
           // Create a clean object with only the required properties
           const unlockedAchievement = {
@@ -505,9 +511,8 @@ export const checkAndUnlockAchievements = mutation({
 export const getUserAchievements = query({
   args: { email: v.string() },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return [];
-    return await ctx.db.query("darkPsychologyAchievements").withIndex("by_user", (q) => q.eq("email", args.email)).collect();
+    const userEmail = await requireUserEmail(ctx, args.email);
+    return await ctx.db.query("darkPsychologyAchievements").withIndex("by_user", (q) => q.eq("email", userEmail)).collect();
   },
 });
 
@@ -515,10 +520,9 @@ export const getUserAchievements = query({
 export const updateDailyStreak = mutation({
   args: { email: v.string() },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+    const userEmail = await requireUserEmail(ctx, args.email);
 
-    const user = await ctx.db.query("users").withIndex("by_email", (q) => q.eq("email", args.email)).first();
+    const user = await ctx.db.query("users").withIndex("by_email", (q) => q.eq("email", userEmail)).first();
     if (!user) throw new Error("User not found");
 
     const today = new Date().toISOString().split("T")[0]; // "YYYY-MM-DD"
@@ -998,10 +1002,6 @@ export const uploadSingleLesson = mutation({
       .filter((q) => q.eq(q.field("title"), uniqueKey))
       .first();
 
-    if (existingLesson) {
-      throw new Error(`Lesson "${lessonData.lessonTitle}" (Part ${lessonData.lessonPart}) already exists`);
-    }
-
     // Get or create a system user for global lessons
     let systemUser = await ctx.db.query("users").withIndex("by_email", (q) => q.eq("email", "system@duolearn.com")).first();
 
@@ -1012,6 +1012,25 @@ export const uploadSingleLesson = mutation({
         createdAt: Date.now(),
       });
       systemUser = await ctx.db.get(userId);
+    }
+
+    // If the lesson already exists, update it instead of failing the upload.
+    if (existingLesson) {
+      await ctx.db.patch(existingLesson._id, {
+        userId: systemUser!._id,
+        lessonNumber: lessonData.lessonPart || existingLesson.lessonNumber || 1,
+        title: uniqueKey,
+        lessonJSON: lessonData,
+        updatedAt: Date.now(),
+      });
+
+      return {
+        success: true,
+        updated: true,
+        lessonId: existingLesson._id,
+        title: lessonData.lessonTitle,
+        lessonIdFromJson: lessonData.lessonId,
+      };
     }
 
     // Create lesson in database (use unique key as title to prevent duplicates)
@@ -1028,6 +1047,75 @@ export const uploadSingleLesson = mutation({
       lessonId,
       title: lessonData.lessonTitle,
       lessonIdFromJson: lessonData.lessonId,
+    };
+  },
+});
+
+// Step: Update a single lesson in the database
+// ⚠️ NOTE: This is a system operation and doesn't require user authentication
+export const updateSingleLesson = mutation({
+  args: {
+    lessonId: v.string(), // The lessonId to find (e.g., "A1-2")
+    updatedLessonData: v.any(), // Updated lesson JSON object
+  },
+  handler: async (ctx, args) => {
+    const { lessonId, updatedLessonData } = args;
+
+    // Validate required fields
+    if (!updatedLessonData.lessonId || !updatedLessonData.lessonTitle) {
+      throw new Error(`Missing lessonId or lessonTitle in updated lesson data`);
+    }
+
+    // Get system user
+    const systemUser = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", "system@duolearn.com"))
+      .first();
+
+    if (!systemUser) {
+      throw new Error("System user not found");
+    }
+
+    // Find ALL parts of this lesson (multi-part lessons have multiple documents)
+    const allLessons = await ctx.db
+      .query("lessons")
+      .withIndex("by_userId", (q) => q.eq("userId", systemUser._id))
+      .collect();
+
+    const lessonParts = allLessons.filter(lesson => {
+      return lesson.lessonJSON?.lessonId === lessonId;
+    });
+
+    if (lessonParts.length === 0) {
+      throw new Error(`Lesson with lessonId "${lessonId}" not found`);
+    }
+
+    // Update each part
+    for (const part of lessonParts) {
+      // If updatedLessonData has a parts array, use the corresponding part
+      // Otherwise, use the updatedLessonData directly (single part lesson)
+      let partData = updatedLessonData;
+
+      if (updatedLessonData.parts && Array.isArray(updatedLessonData.parts)) {
+        // Multi-part update: find the matching part number
+        const partNumber = part.lessonJSON?.lessonPart || 1;
+        const matchingPart = updatedLessonData.parts.find((p: any) => p.lessonPart === partNumber);
+        if (matchingPart) {
+          partData = matchingPart;
+        }
+      }
+
+      // Update the lesson document
+      await ctx.db.patch(part._id, {
+        lessonJSON: partData,
+        title: `${partData.lessonId}-Part${partData.lessonPart || 1}`,
+      });
+    }
+
+    return {
+      success: true,
+      updatedCount: lessonParts.length,
+      lessonId,
     };
   },
 });

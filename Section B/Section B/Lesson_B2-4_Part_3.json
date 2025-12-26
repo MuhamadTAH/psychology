@@ -202,7 +202,6 @@
         {
           "exerciseId": "B2-4-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A tactic where the manipulator acts helpless to force you into the role of 'The Rescuer/Parent.'",
           "question": "What is this?",
           "options": [
             "Feigned Incompetence / The Child Role",
@@ -215,7 +214,8 @@
           "feedback": {
             "correct": "Correct. By playing 'Child,' they force you to play 'Parent.' You do the work; they get the care.",
             "incorrect": "It creates a parent-child dynamic in an adult relationship."
-          }
+          },
+          "scene": "A tactic where the manipulator acts helpless to force you into the role of 'The Rescuer/Parent.'"
         },
         {
           "exerciseId": "B2-4-P3-E9",

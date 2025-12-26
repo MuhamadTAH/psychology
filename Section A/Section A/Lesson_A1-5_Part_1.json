@@ -189,7 +189,6 @@
         {
           "exerciseId": "A1-5-P1-E9",
           "type": "reverse-scenario",
-          "answer": "Acknowledge the compliment, but *separate* it from the 'ask'.",
           "question": "This is the primary defense against...?",
           "options": [
             "Gaslighting",
@@ -199,12 +198,12 @@
           ],
           "correct": "Flattery",
           "difficulty": "medium",
-          "explanation": "This is the 'Separate and Judge' method from A1-2. 'Thanks, I appreciate that. But no, I can't do your report.'"
+          "explanation": "This is the 'Separate and Judge' method from A1-2. 'Thanks, I appreciate that. But no, I can't do your report.'",
+          "scene": "Acknowledge the compliment, but *separate* it from the 'ask'."
         },
         {
           "exerciseId": "A1-5-P1-E10",
           "type": "reverse-scenario",
-          "answer": "Set a clear, firm, but polite boundary.",
           "question": "This is the primary defense against...?",
           "options": [
             "Flattery",
@@ -214,7 +213,8 @@
           ],
           "correct": "A Guilt-Trip",
           "difficulty": "medium",
-          "explanation": "This is the 'Boundary' defense from A1-4. 'I can't help you, Casey' stops the guilt-trip from working."
+          "explanation": "This is the 'Boundary' defense from A1-4. 'I can't help you, Casey' stops the guilt-trip from working.",
+          "scene": "Set a clear, firm, but polite boundary."
         },
         {
           "exerciseId": "A1-5-P1-E11",

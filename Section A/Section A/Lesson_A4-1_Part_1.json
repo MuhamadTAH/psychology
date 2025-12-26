@@ -177,7 +177,6 @@
         {
           "exerciseId": "A4-1-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A term often used interchangeably with 'Secondary Psychopath,' referring to someone whose anti-social behavior is caused by trauma, abuse, or bad environment.",
           "question": "What is this term?",
           "options": [
             "Sociopath",
@@ -190,7 +189,8 @@
           "feedback": {
             "correct": "Correct. 'Psychopath' usually implies born (Cold). 'Sociopath' usually implies made (Hot/Erratic).",
             "incorrect": "The 'made' version is commonly called a Sociopath."
-          }
+          },
+          "scene": "A term often used interchangeably with 'Secondary Psychopath,' referring to someone whose anti-social behavior is caused by trauma, abuse, or bad environment."
         },
         {
           "exerciseId": "A4-1-P1-E8",

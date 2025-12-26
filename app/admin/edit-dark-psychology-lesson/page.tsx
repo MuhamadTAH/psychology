@@ -44,10 +44,10 @@ function EditLessonContent() {
 
       const lessonParts = lessonId
         ? dbLessons.filter((l: any) => {
-            const matches = l.lessonId === lessonId;
-            console.log(`  Checking lesson: ${l.lessonId} === ${lessonId}? ${matches}`);
-            return matches;
-          })
+          const matches = l.lessonId === lessonId;
+          console.log(`  Checking lesson: ${l.lessonId} === ${lessonId}? ${matches}`);
+          return matches;
+        })
         : [dbLessons.find((l: any) => l.number === parseInt(lessonNumber!))].filter(Boolean);
 
       console.log('🔍 [EDIT PAGE] Found parts:', lessonParts.length);
@@ -83,8 +83,21 @@ function EditLessonContent() {
           setJsonInput(JSON.stringify(combinedLesson, null, 2));
         }
       } else {
-        console.error('❌ [EDIT PAGE] Lesson not found in Convex database');
-        setError(`Lesson not found. Available lessons: ${[...new Set(dbLessons.map((l: any) => l.lessonId))].join(', ')}`);
+        console.warn('⚠️ [EDIT PAGE] Lesson not found in Convex database. Initializing new template...');
+        // Instead of error, create a blank/template lesson
+        const templateLesson = {
+          lessonId: lessonId || `A${lessonNumber || '1'}-1`,
+          number: lessonNumber ? parseInt(lessonNumber) : 0,
+          title: "New Lesson (Not in DB)",
+          lessonTitle: "New Lesson (Not in DB)",
+          sectionId: "A",
+          unitId: "A1",
+          parts: [],
+          practice: []
+        };
+        setLesson(templateLesson);
+        setJsonInput(JSON.stringify(templateLesson, null, 2));
+        setMessage("⚠️ Lesson not found in DB. Created template. You can paste JSON and Save to create it.");
       }
     }
   }, [dbLessons, lessonNumber, lessonId]);

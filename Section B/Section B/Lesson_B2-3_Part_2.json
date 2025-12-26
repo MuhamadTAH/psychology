@@ -188,7 +188,6 @@
         {
           "exerciseId": "B2-3-P2-E8",
           "type": "reverse-scenario",
-          "answer": "Showing a client the most expensive, high-end option first to reset their price expectations upward.",
           "question": "What is this?",
           "options": [
             "The Setup / Top-Down Selling",
@@ -201,7 +200,8 @@
           "feedback": {
             "correct": "Correct. If you see a $5,000 suit first, the $1,000 suit seems reasonable. If you saw a $100 suit first, the $1,000 suit would seem insane.",
             "incorrect": "It anchors the high end. It is the opposite of lowballing."
-          }
+          },
+          "scene": "Showing a client the most expensive, high-end option first to reset their price expectations upward."
         },
         {
           "exerciseId": "B2-3-P2-E9",

@@ -1,6 +1,6 @@
 // 🧠 FILE PURPOSE
 // Dark Psychology Dashboard - Complete learning hub with all features.
-// ⚠️ MODIFIED: Progress/stats sections disabled to show clean first-time user experience.
+// Shows real user progress, stats, notes, bookmarks, and AI recommendations.
 
 "use client";
 
@@ -38,69 +38,57 @@ export default function DarkPsychologyDashboard() {
   }, [isLoaded, user]);
 
   // Step 2: Load dashboard data only if user is authenticated
-  // ⚠️ DISABLED: Data queries still run but values are overridden to show 0/empty
-  const dashboardData = useQuery(
+  const dashboard = useQuery(
     api.darkPsychology.getDashboard,
     userEmail ? { email: userEmail } : "skip"
   );
-  const notesData = useQuery(
+  const notes = useQuery(
     api.darkPsychology.getNotes,
     userEmail ? { email: userEmail } : "skip"
   );
-  const bookmarksData = useQuery(
+  const bookmarks = useQuery(
     api.darkPsychology.getBookmarks,
     userEmail ? { email: userEmail } : "skip"
   );
-  const reviewQuestionsData = useQuery(
+  const reviewQuestions = useQuery(
     api.darkPsychology.getReviewQuestions,
     userEmail ? { email: userEmail } : "skip"
   );
-  const recommendationsData = useQuery(
+  const recommendations = useQuery(
     api.darkPsychology.getRecommendations,
     userEmail ? { email: userEmail } : "skip"
   );
   const updateStreak = useMutation(api.darkPsychology.updateDailyStreak);
 
-  // ⚠️ OVERRIDE: Force all data to show zero/empty (first-time user experience)
-  const dashboard = dashboardData ? {
-    ...dashboardData,
-    completedLessons: 0,
-    totalXP: 0,
-    accuracy: 0,
-    streak: 0,
-    reviewCount: 0,
-    notesCount: 0,
-    bookmarksCount: 0,
-    nextLesson: null,
-  } : dashboardData;
-
-  const notes: any[] = []; // Always empty
-  const bookmarks: any[] = []; // Always empty
-  const reviewQuestions: any[] = []; // Always empty
-  const recommendations: any[] = []; // Always empty
-
   const [activeTab, setActiveTab] = useState<"overview" | "notes" | "bookmarks" | "review">("overview");
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Step: Play click sound for UI interactions
-  // Adds satisfying audio feedback when navigating the dashboard
-  const playClickSound = () => {
+  // Step: Pre-load click sound for instant playback
+  // Loading sound once makes it play immediately when clicked
+  const [buttonSound] = useState(() => {
     if (typeof window !== 'undefined') {
-      const clickSound = new Audio('/sounds/button-click.mp3');
-      clickSound.volume = 0.5;
-      clickSound.play().catch(() => {});
+      const sound = new Audio('/sounds/button-click.mp3');
+      sound.volume = 0.5;
+      return sound;
+    }
+    return null;
+  });
+
+  const playClickSound = () => {
+    if (buttonSound) {
+      buttonSound.currentTime = 0; // Reset to start
+      buttonSound.play().catch(() => {});
     }
   };
 
   // Step 3: Auto-update streak on dashboard load
-  // ⚠️ DISABLED: Streak update disabled to maintain zero state
-  // useEffect(() => {
-  //   if (userEmail) {
-  //     updateStreak({ email: userEmail }).catch((error) => {
-  //       console.error("Failed to update streak:", error);
-  //     });
-  //   }
-  // }, [userEmail]);
+  useEffect(() => {
+    if (userEmail) {
+      updateStreak({ email: userEmail }).catch((error) => {
+        console.error("Failed to update streak:", error);
+      });
+    }
+  }, [userEmail]);
 
   // Step 4: Show loading state while checking authentication or loading data
   if (!isLoaded || !user) {
@@ -374,14 +362,6 @@ export default function DarkPsychologyDashboard() {
                   <p className="text-purple-200 text-sm">No questions to review yet</p>
                 </Link>
                 <Link
-                  href="/dark-psychology-quiz"
-                  className="bg-gradient-to-r from-green-600 to-green-700 rounded-lg p-6 hover:from-green-500 hover:to-green-600 transition-all"
-                >
-                  <TrendingUp className="w-8 h-8 text-white mb-2" />
-                  <h4 className="text-white font-bold text-lg mb-1">Random Quiz</h4>
-                  <p className="text-green-200 text-sm">Test your knowledge</p>
-                </Link>
-                <Link
                   href="/dark-psychology/search"
                   className="bg-gradient-to-r from-orange-600 to-orange-700 rounded-lg p-6 hover:from-orange-500 hover:to-orange-600 transition-all"
                 >
@@ -517,10 +497,9 @@ export default function DarkPsychologyDashboard() {
 
 // ✅ In this page we achieved:
 // Complete Dark Psychology dashboard with all features in one place.
-// ⚠️ MODIFIED: All user data (XP, progress, notes, etc.) forced to 0/empty
-// - Shows UI exactly as a first-time user would see it
-// - All stats show 0: completedLessons, totalXP, accuracy, streak, reviewCount
-// - Notes, bookmarks, and review questions always empty
-// - AI recommendations disabled (always empty)
-// - "Continue Learning" changed to "Start Learning" → goes to sections page
-// - All visual elements preserved, only data values overridden
+// - Real user data: XP, progress, accuracy, streak displayed from database
+// - Notes, bookmarks, and review questions loaded dynamically
+// - AI recommendations based on user performance
+// - Auto-updates daily streak on page load
+// - Tab navigation for different features
+// - Quick action cards for all major features

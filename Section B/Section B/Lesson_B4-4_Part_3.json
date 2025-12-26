@@ -207,7 +207,6 @@
         {
           "exerciseId": "B4-4-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A bias where we interpret vague information (like a horoscope) as being highly specific and accurate to us.",
           "question": "What is this?",
           "options": [
             "The Barnum Effect / Forer Effect",
@@ -220,7 +219,8 @@
           "feedback": {
             "correct": "Correct. Hope-Mongers use this to fake 'insight.' 'You have a great need for other people to like you.' Everyone does.",
             "incorrect": "It makes you feel 'seen' by a stranger."
-          }
+          },
+          "scene": "A bias where we interpret vague information (like a horoscope) as being highly specific and accurate to us."
         },
         {
           "exerciseId": "B4-4-P3-E9",

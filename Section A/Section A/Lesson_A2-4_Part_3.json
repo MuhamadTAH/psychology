@@ -1,351 +1,352 @@
 {
-"sectionId": "A",
-"sectionTitle": "The Foundations of the Dark Mind",
-"unitId": "A2",
-"unitTitle": "The Manipulator's Playbook: Narcissism & Gaslighting",
-"lessonId": "A2-4",
-"lessonTitle": "Tactic Deep Dive: Gaslighting",
-"lessonType": "Normal",
-"lessonPart": 3,
-"lessonPartTitle": "Challenge: The 'Gaslighting' Defense Drill",
-"objective": "To master the defense against Gaslighting by holding onto reality in high-pressure simulations, utilizing Reality Anchors and refusing to JADE.",
-"gamification": {
-"progressRings": [
-{
-"ringId": "learn",
-"status": "completed",
-"label": "Part 1"
-},
-{
-"ringId": "practice",
-"status": "completed",
-"label": "Part 2"
-},
-{
-"ringId": "challenge",
-"status": "pending",
-"label": "Part 3"
-}
-],
-"pointsValue": 200,
-"starsAvailable": 3,
-"badgeOnCompletion": "Reality_Anchor_Badge"
-},
-"contentScreens": [
-{
-"screenId": "A2-4-P3-S1",
-"screenType": "Learn",
-"title": "Challenge: The Reality War",
-"content": [
-{
-"type": "paragraph",
-"text": "In this challenge, the manipulator will try to erase your memory and reality. Your goal is to **Hold The Line**."
-},
-{
-"type": "paragraph",
-"text": "Do not argue. Do not explain. Do not try to convince them. Your goal is to keep *your own* sanity intact, not to change their mind."
-},
-{
-"type": "alert",
-"alertType": "warning",
-"text": "Warning: The gaslighter will escalate from confusion to rage to pity. Stay anchored."
-}
-]
-},
-{
-"screenId": "A2-4-P3-S2",
-"screenType": "Exercises",
-"title": "Simulation: Hold the Line",
-"exercises": [
-{
-"exerciseId": "A2-4-P3-E1",
-"type": "boss-scenario",
-"scene": "You confront a partner about cheating. You saw the texts. They look you in the eye: 'I can't believe you are accusing me. You have been so paranoid lately. I'm actually worried you are having a breakdown. There were no texts.'",
-"question": "This is the 'Sanity Attack.' What is your strongest defense?",
-"options": [
-"'I saw them! They said [quote]!' (Argue Facts)",
-"'Maybe I am paranoid... I have been stressed.' (Accept Reality Shift)",
-"'I know what I saw. I am not discussing my sanity. I am discussing the texts.' (Reality Anchor)",
-"'You are a liar!' (Attack)"
-],
-"correct": "'I know what I saw. I am not discussing my sanity. I am discussing the texts.' (Reality Anchor)",
-"difficulty": "hard",
-"feedback": {
-"correct": "Correct. You refused to debate your sanity. You re-anchored the conversation to the *event* (the texts).",
-"incorrect": "Arguing facts is useless because they deny reality. Accepting their label ('paranoid') means you lost. You must hold the frame."
-}
-},
-{
-"exerciseId": "A2-4-P3-E2",
-"type": "micro-sim",
-"scenarioTitle": "Simulation: The Memory Wipe",
-"steps": [
-{
-"scene": "Gaslighter: 'We never agreed to save money. I told you I was buying this car last week. You weren't listening.' (You know this is false).",
-"options": [
-"'No you didn't! We agreed to save!' (Fight)",
-"'I remember the conversation differently. We agreed to save.' (Statement of Fact)",
-"'Oh... maybe I forgot. Sorry.' (Submission)",
-"'You always do this!' (Drama)"
-],
-"correct": "'I remember the conversation differently. We agreed to save.' (Statement of Fact)",
-"feedback": {
-"correct": "Perfect. You state your reality ('I remember differently') without needing them to agree with you. You hold your truth.",
-"incorrect": "Fighting gives them Supply. Submitting gives them control. You must calmly state your divergent reality."
-}
-},
-{
-"question": "Gaslighter (Escalating): 'Wow. You really don't remember? That's scary. Maybe you should see a doctor about your memory.'",
-"options": [
-"'I don't need a doctor! I'm fine!' (Defense)",
-"'Maybe I should...' (Doubt)",
-"'My memory is fine. I am not buying the car.' (Boundary)",
-"'Stop gaslighting me!' (Accusation)"
-],
-"correct": "'My memory is fine. I am not buying the car.' (Boundary)",
-"feedback": {
-"correct": "Mastery. You ignored the bait ('see a doctor') and re-stated the hard boundary ('not buying the car').",
-"incorrect": "They are trying to make the conversation about your *health* instead of the *car*. Don't let them change the subject."
-}
-}
-],
-"difficulty": "hard",
-"feedback": {
-"correct": "You survived the Memory Wipe. By refusing to debate your own health, you kept the focus on the boundary.",
-"incorrect": "You allowed them to shift the focus to your mental state. This is how they win."
-}
-},
-{
-"exerciseId": "A2-4-P3-E3",
-"type": "multiple-choice",
-"question": "What is the 'Broken Record' technique?",
-"options": [
-"Repeating a lie until it becomes true.",
-"Calmly repeating your boundary or reality ('I am not doing that') without getting angry or adding new explanations.",
-"Recording the conversation.",
-"Breaking up with them repeatedly."
-],
-"correct": "Calmly repeating your boundary or reality ('I am not doing that') without getting angry or adding new explanations.",
-"difficulty": "medium",
-"feedback": {
-"correct": "Correct. Gaslighters rely on wearing you down. The Broken Record shows them you will not be moved, no matter what tactics they try.",
-"incorrect": "It's a defense tactic for *you*. You repeat the truth calmly until they realize the tactic isn't working."
-}
-},
-{
-"exerciseId": "A2-4-P3-E4",
-"type": "true-false",
-"scene": "Scenario: The Gaslighter says, 'I'm sorry you feel that way.'",
-"question": "Is this a genuine apology?",
-"options": [
-"True",
-"False"
-],
-"correct": "False",
-"difficulty": "medium",
-"feedback": {
-"correct": "Correct/False. This is a **Non-Apology**. They are apologizing for *your reaction* ('you feel that way'), not for *their action*. It shifts the blame back to you.",
-"incorrect": "A real apology is 'I'm sorry I did X.' This phrasing implies your feelings are the problem."
-}
-},
-{
-"exerciseId": "A2-4-P3-E5",
-"type": "scenario",
-"scene": "Scenario: At a dinner party, your partner tells a story about you that is humiliating and untrue. When you correct them, they say loudly: 'See? She can never take a joke. Always so serious!'",
-"question": "This is Public Gaslighting. What is the best response?",
-"options": [
-"Scream at them in front of everyone.",
-"Run away crying.",
-"Calmly say: 'It wasn't a joke, it was a lie. Anyway, pass the salt.' (Correction + Pivot)",
-"Laugh along awkwardly."
-],
-"correct": "Calmly say: 'It wasn't a joke, it was a lie. Anyway, pass the salt.' (Correction + Pivot)",
-"difficulty": "hard",
-"feedback": {
-"correct": "Correct. You corrected the record publicly but refused to provide the 'drama' they wanted. The 'Pivot' shows you are unbothered.",
-"incorrect": "Screaming makes *you* look unstable (confirming their lie). Laughing accepts the abuse. Calm correction is power."
-}
-},
-{
-"exerciseId": "A2-4-P3-E6",
-"type": "build-sentence",
-"question": "Arrange these words to form the Gaslighting antidote:",
-"words": [
-"reality",
-"require",
-"Does",
-"agreement",
-"not",
-"your"
-],
-"correct": "Your reality does not require agreement",
-"difficulty": "medium",
-"feedback": {
-"correct": "Correct. You don't need the gaslighter to say 'You are right.' You just need to know it yourself.",
-"incorrect": "Stop trying to get them to agree. They never will. Trust yourself without their permission."
-}
-},
-{
-"exerciseId": "A2-4-P3-E7",
-"type": "reverse-scenario",
-"answer": "You document conversations immediately. You keep screenshots. You rely on facts, not their words.",
-"question": "What are you building?",
-"options": [
-"A Reality Anchor.",
-"A fantasy.",
-"A grudge.",
-"A smear campaign."
-],
-"correct": "A Reality Anchor.",
-"difficulty": "easy",
-"feedback": {
-"correct": "Correct. Reality Anchors (journals, proof) are external validations of the truth that the gaslighter cannot erase.",
-"incorrect": "It's not a grudge; it's survival. You need evidence to remind yourself you aren't crazy."
-}
-},
-{
-"exerciseId": "A2-4-P3-E8",
-"type": "scenario",
-"scene": "Scenario: You catch the Gaslighter in a lie with proof (a screenshot). They stare at it and say, 'I didn't send that. Someone hacked my phone. I can't believe you're falling for a hacker's trick.'",
-"question": "This is 'Bald-Faced Denial.' What is the best response?",
-"options": [
-"'Oh my god! We need to call the police!' (Believing the lie)",
-"'You are lying! Admit it!' (Argument)",
-"'I don't believe that. But I'm done arguing about it.' (Disengagement)",
-"'Maybe it was a hacker...'"
-],
-"correct": "'I don't believe that. But I'm done arguing about it.' (Disengagement)",
-"difficulty": "hard",
-"feedback": {
-"correct": "Correct. You state your disbelief calmly and then *end the conversation*. You cannot force them to admit the lie. You can only refuse to accept it.",
-"incorrect": "Arguing with a delusion is useless. Believing it is dangerous. Disengaging preserves your energy."
-}
-},
-{
-"exerciseId": "A2-4-P3-E9",
-"type": "multiple-choice",
-"question": "Why is 'J.A.D.E.' (Justify, Argue, Defend, Explain) dangerous with a Gaslighter?",
-"options": [
-"It makes you look weak.",
-"It validates their false reality by treating it as something worth debating.",
-"It hurts their feelings.",
-"It takes too much time."
-],
-"correct": "It validates their false reality by treating it as something worth debating.",
-"difficulty": "hard",
-"feedback": {
-"correct": "Correct. If you defend yourself against a crazy accusation, you are accepting the premise that the accusation is worth discussing. Don't debate reality.",
-"incorrect": "The danger is psychological. Debating a lie gives the lie power and legitimacy."
-}
-},
-{
-"exerciseId": "A2-4-P3-E10",
-"type": "fill-in",
-"sentence": "The Gaslighter wants you to doubt your (--------), but you must learn to trust it above their words.",
-"options": [
-"gut",
-"friends",
-"boss",
-"phone"
-],
-"answers": [
-"gut"
-],
-"difficulty": "medium",
-"feedback": {
-"correct": "Correct. Your 'gut instinct' (intuition) is often the first thing to notice the lie. Gaslighting is designed to disconnect you from that instinct.",
-"incorrect": "It's internal. They want you to doubt your own internal warning system (your gut)."
-}
-},
-{
-"exerciseId": "A2-4-P3-E11",
-"type": "scenario",
-"scene": "Scenario: The Gaslighter says, 'You're just like your mother. She was crazy too.'",
-"question": "This is a combination of Gaslighting and:",
-"options": [
-"Projecting insecurities.",
-"Weaponizing your history/trauma.",
-"A compliment.",
-"Flattery."
-],
-"correct": "Weaponizing your history/trauma.",
-"difficulty": "medium",
-"feedback": {
-"correct": "Correct. They use your known fears (being like a difficult parent) to reinforce the 'crazy' label. It is a low blow designed to trigger shame.",
-"incorrect": "It's not just projection. It is a specific attack using your personal history against you."
-}
-},
-{
-"exerciseId": "A2-4-P3-E12",
-"type": "true-false",
-"scene": "Scenario: You successfully hold your reality. The Gaslighter realizes it isn't working. They suddenly switch to Rage.",
-"question": "Is this a sign you failed?",
-"options": [
-"True",
-"False"
-],
-"correct": "False",
-"difficulty": "medium",
-"feedback": {
-"correct": "Correct/False. Rage means the manipulation *failed*. They are trying to use fear (Coercion) because the mind games (Gaslighting) didn't work. It is an Extinction Burst.",
-"incorrect": "Rage is the backup plan. If they can't confuse you, they will try to scare you. It means you held the line."
-}
-},
-{
-"exerciseId": "A2-4-P3-E13",
-"type": "ethical-dilemma",
-"scene": "You are in a relationship where you need to record conversations to prove you aren't crazy.",
-"question": "What does this signify?",
-"options": [
-"You are a good detective.",
-"The relationship is over. A relationship without shared reality is impossible.",
-"You should keep doing it forever.",
-"You are the gaslighter."
-],
-"correct": "The relationship is over. A relationship without shared reality is impossible.",
-"difficulty": "hard",
-"feedback": {
-"correct": "Correct. If you need 'evidence' to survive a conversation, there is no trust. The goal of spotting Gaslighting is not to win the argument, but to realize you need to leave.",
-"incorrect": "Recording is a survival tactic, not a lifestyle. It proves the relationship is toxic beyond repair."
-}
-},
-{
-"exerciseId": "A2-4-P3-E14",
-"type": "scenario",
-"scene": "Scenario: 'I never said I would pick up the kids! You are always making things up to make me look bad!'",
-"question": "They are playing the:",
-"options": [
-"Hero",
-"Victim (of your 'lies')",
-"Boss",
-"Teacher"
-],
-"correct": "Victim (of your 'lies')",
-"difficulty": "medium",
-"feedback": {
-"correct": "Correct. This is DARVO. They reversed it so *you* are the liar making *them* look bad. They are the victim of your 'imagination'.",
-"incorrect": "They are claiming to be the *victim* of your false accusation. This shifts the focus from their negligence to your 'cruelty'."
-}
-},
-{
-"exerciseId": "A2-4-P3-E15",
-"type": "case-analysis",
-"caseTitle": "Lesson Complete: The Fog Lifts",
-"scene": "You have learned to spot Gaslighting. You know that 'Denial' is a tactic, not the truth. You have your Reality Anchors.",
-"question": "You are now ready for the Unit 2 Review.",
-"options": [
-"Lesson A2-5: Unit 2 Review.",
-"Lesson A1-1.",
-"Start over.",
-"Believe the lies."
-],
-"correct": "Lesson A2-5: Unit 2 Review.",
-"difficulty": "easy",
-"feedback": {
-"correct": "Correct. You have completed the deep dives on Narcissism, Supply, Love Bombing, and Gaslighting. Now, we test everything in the Unit 2 Gauntlet.",
-"incorrect": "It is time to review and integrate all the tactics of the Narcissist."
-}
-}
-]
-}
+  "sectionId": "A",
+  "sectionTitle": "The Foundations of the Dark Mind",
+  "unitId": "A2",
+  "unitTitle": "The Manipulator's Playbook: Narcissism & Gaslighting",
+  "lessonId": "A2-4",
+  "lessonTitle": "Tactic Deep Dive: Gaslighting",
+  "lessonType": "Normal",
+  "lessonPart": 3,
+  "lessonPartTitle": "Challenge: The 'Gaslighting' Defense Drill",
+  "objective": "To master the defense against Gaslighting by holding onto reality in high-pressure simulations, utilizing Reality Anchors and refusing to JADE.",
+  "gamification": {
+    "progressRings": [
+      {
+        "ringId": "learn",
+        "status": "completed",
+        "label": "Part 1"
+      },
+      {
+        "ringId": "practice",
+        "status": "completed",
+        "label": "Part 2"
+      },
+      {
+        "ringId": "challenge",
+        "status": "pending",
+        "label": "Part 3"
+      }
+    ],
+    "pointsValue": 200,
+    "starsAvailable": 3,
+    "badgeOnCompletion": "Reality_Anchor_Badge"
+  },
+  "contentScreens": [
+    {
+      "screenId": "A2-4-P3-S1",
+      "screenType": "Learn",
+      "title": "Challenge: The Reality War",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In this challenge, the manipulator will try to erase your memory and reality. Your goal is to **Hold The Line**."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not argue. Do not explain. Do not try to convince them. Your goal is to keep *your own* sanity intact, not to change their mind."
+        },
+        {
+          "type": "alert",
+          "alertType": "warning",
+          "text": "Warning: The gaslighter will escalate from confusion to rage to pity. Stay anchored."
+        }
+      ]
+    },
+    {
+      "screenId": "A2-4-P3-S2",
+      "screenType": "Exercises",
+      "title": "Simulation: Hold the Line",
+      "exercises": [
+        {
+          "exerciseId": "A2-4-P3-E1",
+          "type": "boss-scenario",
+          "scene": "You confront a partner about cheating. You saw the texts. They look you in the eye: 'I can't believe you are accusing me. You have been so paranoid lately. I'm actually worried you are having a breakdown. There were no texts.'",
+          "question": "This is the 'Sanity Attack.' What is your strongest defense?",
+          "options": [
+            "'I saw them! They said [quote]!' (Argue Facts)",
+            "'Maybe I am paranoid... I have been stressed.' (Accept Reality Shift)",
+            "'I know what I saw. I am not discussing my sanity. I am discussing the texts.' (Reality Anchor)",
+            "'You are a liar!' (Attack)"
+          ],
+          "correct": "'I know what I saw. I am not discussing my sanity. I am discussing the texts.' (Reality Anchor)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You refused to debate your sanity. You re-anchored the conversation to the *event* (the texts).",
+            "incorrect": "Arguing facts is useless because they deny reality. Accepting their label ('paranoid') means you lost. You must hold the frame."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P3-E2",
+          "type": "micro-sim",
+          "scenarioTitle": "Simulation: The Memory Wipe",
+          "steps": [
+            {
+              "scene": "Gaslighter: 'We never agreed to save money. I told you I was buying this car last week. You weren't listening.' (You know this is false).",
+              "options": [
+                "'No you didn't! We agreed to save!' (Fight)",
+                "'I remember the conversation differently. We agreed to save.' (Statement of Fact)",
+                "'Oh... maybe I forgot. Sorry.' (Submission)",
+                "'You always do this!' (Drama)"
+              ],
+              "correct": "'I remember the conversation differently. We agreed to save.' (Statement of Fact)",
+              "feedback": {
+                "correct": "Perfect. You state your reality ('I remember differently') without needing them to agree with you. You hold your truth.",
+                "incorrect": "Fighting gives them Supply. Submitting gives them control. You must calmly state your divergent reality."
+              }
+            },
+            {
+              "question": "Gaslighter (Escalating): 'Wow. You really don't remember? That's scary. Maybe you should see a doctor about your memory.'",
+              "options": [
+                "'I don't need a doctor! I'm fine!' (Defense)",
+                "'Maybe I should...' (Doubt)",
+                "'My memory is fine. I am not buying the car.' (Boundary)",
+                "'Stop gaslighting me!' (Accusation)"
+              ],
+              "correct": "'My memory is fine. I am not buying the car.' (Boundary)",
+              "feedback": {
+                "correct": "Mastery. You ignored the bait ('see a doctor') and re-stated the hard boundary ('not buying the car').",
+                "incorrect": "They are trying to make the conversation about your *health* instead of the *car*. Don't let them change the subject."
+              }
+            }
+          ],
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "You survived the Memory Wipe. By refusing to debate your own health, you kept the focus on the boundary.",
+            "incorrect": "You allowed them to shift the focus to your mental state. This is how they win."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P3-E3",
+          "type": "multiple-choice",
+          "question": "What is the 'Broken Record' technique?",
+          "options": [
+            "Repeating a lie until it becomes true.",
+            "Calmly repeating your boundary or reality ('I am not doing that') without getting angry or adding new explanations.",
+            "Recording the conversation.",
+            "Breaking up with them repeatedly."
+          ],
+          "correct": "Calmly repeating your boundary or reality ('I am not doing that') without getting angry or adding new explanations.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Gaslighters rely on wearing you down. The Broken Record shows them you will not be moved, no matter what tactics they try.",
+            "incorrect": "It's a defense tactic for *you*. You repeat the truth calmly until they realize the tactic isn't working."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P3-E4",
+          "type": "true-false",
+          "scene": "Scenario: The Gaslighter says, 'I'm sorry you feel that way.'",
+          "question": "Is this a genuine apology?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. This is a **Non-Apology**. They are apologizing for *your reaction* ('you feel that way'), not for *their action*. It shifts the blame back to you.",
+            "incorrect": "A real apology is 'I'm sorry I did X.' This phrasing implies your feelings are the problem."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P3-E5",
+          "type": "scenario",
+          "scene": "Scenario: At a dinner party, your partner tells a story about you that is humiliating and untrue. When you correct them, they say loudly: 'See? She can never take a joke. Always so serious!'",
+          "question": "This is Public Gaslighting. What is the best response?",
+          "options": [
+            "Scream at them in front of everyone.",
+            "Run away crying.",
+            "Calmly say: 'It wasn't a joke, it was a lie. Anyway, pass the salt.' (Correction + Pivot)",
+            "Laugh along awkwardly."
+          ],
+          "correct": "Calmly say: 'It wasn't a joke, it was a lie. Anyway, pass the salt.' (Correction + Pivot)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You corrected the record publicly but refused to provide the 'drama' they wanted. The 'Pivot' shows you are unbothered.",
+            "incorrect": "Screaming makes *you* look unstable (confirming their lie). Laughing accepts the abuse. Calm correction is power."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P3-E6",
+          "type": "build-sentence",
+          "question": "Arrange these words to form the Gaslighting antidote:",
+          "words": [
+            "reality",
+            "require",
+            "Does",
+            "agreement",
+            "not",
+            "your"
+          ],
+          "correct": "Your reality does not require agreement",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. You don't need the gaslighter to say 'You are right.' You just need to know it yourself.",
+            "incorrect": "Stop trying to get them to agree. They never will. Trust yourself without their permission."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P3-E7",
+          "type": "reverse-scenario",
+          "question": "What are you building?",
+          "options": [
+            "A Reality Anchor.",
+            "A fantasy.",
+            "A grudge.",
+            "A smear campaign."
+          ],
+          "correct": "A Reality Anchor.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. Reality Anchors (journals, proof) are external validations of the truth that the gaslighter cannot erase.",
+            "incorrect": "It's not a grudge; it's survival. You need evidence to remind yourself you aren't crazy."
+          },
+          "scene": "You document conversations immediately. You keep screenshots. You rely on facts, not their words."
+        },
+        {
+          "exerciseId": "A2-4-P3-E8",
+          "type": "scenario",
+          "scene": "Scenario: You catch the Gaslighter in a lie with proof (a screenshot). They stare at it and say, 'I didn't send that. Someone hacked my phone. I can't believe you're falling for a hacker's trick.'",
+          "question": "This is 'Bald-Faced Denial.' What is the best response?",
+          "options": [
+            "'Oh my god! We need to call the police!' (Believing the lie)",
+            "'You are lying! Admit it!' (Argument)",
+            "'I don't believe that. But I'm done arguing about it.' (Disengagement)",
+            "'Maybe it was a hacker...'"
+          ],
+          "correct": "'I don't believe that. But I'm done arguing about it.' (Disengagement)",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. You state your disbelief calmly and then *end the conversation*. You cannot force them to admit the lie. You can only refuse to accept it.",
+            "incorrect": "Arguing with a delusion is useless. Believing it is dangerous. Disengaging preserves your energy."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P3-E9",
+          "type": "multiple-choice",
+          "question": "Why is 'J.A.D.E.' (Justify, Argue, Defend, Explain) dangerous with a Gaslighter?",
+          "options": [
+            "It makes you look weak.",
+            "It validates their false reality by treating it as something worth debating.",
+            "It hurts their feelings.",
+            "It takes too much time."
+          ],
+          "correct": "It validates their false reality by treating it as something worth debating.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you defend yourself against a crazy accusation, you are accepting the premise that the accusation is worth discussing. Don't debate reality.",
+            "incorrect": "The danger is psychological. Debating a lie gives the lie power and legitimacy."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P3-E10",
+          "type": "fill-in",
+          "sentence": "The Gaslighter wants you to doubt your (--------), but you must learn to trust it above their words.",
+          "options": [
+            "gut",
+            "friends",
+            "boss",
+            "phone"
+          ],
+          "answers": [
+            "gut"
+          ],
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. Your 'gut instinct' (intuition) is often the first thing to notice the lie. Gaslighting is designed to disconnect you from that instinct.",
+            "incorrect": "It's internal. They want you to doubt your own internal warning system (your gut)."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P3-E11",
+          "type": "scenario",
+          "scene": "Scenario: The Gaslighter says, 'You're just like your mother. She was crazy too.'",
+          "question": "This is a combination of Gaslighting and:",
+          "options": [
+            "Projecting insecurities.",
+            "Weaponizing your history/trauma.",
+            "A compliment.",
+            "Flattery."
+          ],
+          "correct": "Weaponizing your history/trauma.",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. They use your known fears (being like a difficult parent) to reinforce the 'crazy' label. It is a low blow designed to trigger shame.",
+            "incorrect": "It's not just projection. It is a specific attack using your personal history against you."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P3-E12",
+          "type": "true-false",
+          "scene": "Scenario: You successfully hold your reality. The Gaslighter realizes it isn't working. They suddenly switch to Rage.",
+          "question": "Is this a sign you failed?",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": "False",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct/False. Rage means the manipulation *failed*. They are trying to use fear (Coercion) because the mind games (Gaslighting) didn't work. It is an Extinction Burst.",
+            "incorrect": "Rage is the backup plan. If they can't confuse you, they will try to scare you. It means you held the line."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P3-E13",
+          "type": "ethical-dilemma",
+          "scene": "You are in a relationship where you need to record conversations to prove you aren't crazy.",
+          "question": "What does this signify?",
+          "options": [
+            "You are a good detective.",
+            "The relationship is over. A relationship without shared reality is impossible.",
+            "You should keep doing it forever.",
+            "You are the gaslighter."
+          ],
+          "correct": "The relationship is over. A relationship without shared reality is impossible.",
+          "difficulty": "hard",
+          "feedback": {
+            "correct": "Correct. If you need 'evidence' to survive a conversation, there is no trust. The goal of spotting Gaslighting is not to win the argument, but to realize you need to leave.",
+            "incorrect": "Recording is a survival tactic, not a lifestyle. It proves the relationship is toxic beyond repair."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P3-E14",
+          "type": "scenario",
+          "scene": "Scenario: 'I never said I would pick up the kids! You are always making things up to make me look bad!'",
+          "question": "They are playing the:",
+          "options": [
+            "Hero",
+            "Victim (of your 'lies')",
+            "Boss",
+            "Teacher"
+          ],
+          "correct": "Victim (of your 'lies')",
+          "difficulty": "medium",
+          "feedback": {
+            "correct": "Correct. This is DARVO. They reversed it so *you* are the liar making *them* look bad. They are the victim of your 'imagination'.",
+            "incorrect": "They are claiming to be the *victim* of your false accusation. This shifts the focus from their negligence to your 'cruelty'."
+          }
+        },
+        {
+          "exerciseId": "A2-4-P3-E15",
+          "type": "case-analysis",
+          "caseTitle": "Lesson Complete: The Fog Lifts",
+          "scene": "You have learned to spot Gaslighting. You know that 'Denial' is a tactic, not the truth. You have your Reality Anchors.",
+          "question": "You are now ready for the Unit 2 Review.",
+          "options": [
+            "Lesson A2-5: Unit 2 Review.",
+            "Lesson A1-1.",
+            "Start over.",
+            "Believe the lies."
+          ],
+          "correct": "Lesson A2-5: Unit 2 Review.",
+          "difficulty": "easy",
+          "feedback": {
+            "correct": "Correct. You have completed the deep dives on Narcissism, Supply, Love Bombing, and Gaslighting. Now, we test everything in the Unit 2 Gauntlet.",
+            "incorrect": "It is time to review and integrate all the tactics of the Narcissist."
+          }
+        }
+      ]
+    }
+  ]
 }

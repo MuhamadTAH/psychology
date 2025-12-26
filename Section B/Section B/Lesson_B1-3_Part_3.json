@@ -204,7 +204,6 @@
         {
           "exerciseId": "B1-3-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A question formatted to make 'No' sound like an insult or failure (e.g., 'Do you want to be a quitter?').",
           "question": "What is this?",
           "options": [
             "The Loaded Question / Complex Equivalent",
@@ -217,7 +216,8 @@
           "feedback": {
             "correct": "Correct. They equate 'Quitting' (Action) with 'Being a Quitter' (Identity). It is a linguistic trap.",
             "incorrect": "It loads the question with a presupposition that traps the answerer."
-          }
+          },
+          "scene": "A question formatted to make 'No' sound like an insult or failure (e.g., 'Do you want to be a quitter?')."
         },
         {
           "exerciseId": "B1-3-P3-E9",

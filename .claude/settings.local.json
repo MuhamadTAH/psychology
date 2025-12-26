@@ -46,7 +46,8 @@
       "Bash(ffmpeg:*)",
       "Bash(del \"public\\animations\\character-standing.webm\")",
       "Bash(del \"lib\\auth.ts\")",
-      "Bash(del \"lib\\prisma.ts\")"
+      "Bash(del \"lib\\prisma.ts\")",
+      "Bash(npx cap init DuoLearn com.duolearn.app --web-dir=out)"
     ],
     "deny": [],
     "ask": []

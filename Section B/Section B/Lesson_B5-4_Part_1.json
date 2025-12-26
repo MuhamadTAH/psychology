@@ -186,7 +186,6 @@
         {
           "exerciseId": "B5-4-P1-E8",
           "type": "reverse-scenario",
-          "answer": "A technique where the speaker answers a question by attacking the questioner's character or motive.",
           "question": "What is this?",
           "options": [
             "Ad Hominem / Deflection",
@@ -199,7 +198,8 @@
           "feedback": {
             "correct": "Correct. 'You're fake news!' It destroys the messenger so they don't have to answer the message.",
             "incorrect": "It attacks the person (Hominem), not the topic."
-          }
+          },
+          "scene": "A technique where the speaker answers a question by attacking the questioner's character or motive."
         },
         {
           "exerciseId": "B5-4-P1-E9",

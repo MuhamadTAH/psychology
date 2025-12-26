@@ -184,7 +184,6 @@
         {
           "exerciseId": "B5-3-P1-E8",
           "type": "reverse-scenario",
-          "answer": "Asking a high price ($5,000), getting rejected, then offering the 'real' price ($2,000) to make it look like a deal.",
           "question": "What is this sequence?",
           "options": [
             "Anchor -> Rejection -> Retreat (Door-in-the-Face)",
@@ -197,7 +196,8 @@
           "feedback": {
             "correct": "Correct. It uses Contrast (5k vs 2k) and Reciprocity (I lowered the price, so you should say Yes).",
             "incorrect": "It combines multiple laws of influence."
-          }
+          },
+          "scene": "Asking a high price ($5,000), getting rejected, then offering the 'real' price ($2,000) to make it look like a deal."
         },
         {
           "exerciseId": "B5-3-P1-E9",

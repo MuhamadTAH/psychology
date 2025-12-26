@@ -4,7 +4,7 @@
 
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useUser } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
@@ -15,22 +15,31 @@ import { SECTIONS } from "@/lib/darkPsychologyLessons";
 
 export default function DarkPsychologyPage() {
   const router = useRouter();
-  const { user } = useUser();
+  const { user, isLoaded, isSignedIn } = useUser();
   const userEmail = user?.primaryEmailAddress?.emailAddress;
+  const shouldLoad = isLoaded && isSignedIn;
 
   // Step 1: Load user progress
-  const progress = useQuery(api.lessons.getUserProgress, userEmail ? { email: userEmail } : "skip");
+  const progress = useQuery(api.lessons.getUserProgress, shouldLoad && userEmail ? { email: userEmail } : "skip");
 
   // Step 2: Load all Dark Psychology lessons from database (same as section page)
-  const dbLessons = useQuery(api.lessons.getAllDarkPsychologyLessons);
+  const dbLessons = useQuery(api.lessons.getAllDarkPsychologyLessons, shouldLoad ? {} : "skip");
 
-  // Step: Play click sound for button interactions
-  // Adds satisfying audio feedback when clicking buttons
-  const playClickSound = () => {
+  // Step: Pre-load click sound for instant playback
+  // Loading sound once makes it play immediately when clicked
+  const [buttonSound] = useState(() => {
     if (typeof window !== 'undefined') {
-      const clickSound = new Audio('/sounds/button-click.mp3');
-      clickSound.volume = 0.5;
-      clickSound.play().catch(() => {});
+      const sound = new Audio('/sounds/button-click.mp3');
+      sound.volume = 0.5;
+      return sound;
+    }
+    return null;
+  });
+
+  const playClickSound = () => {
+    if (buttonSound) {
+      buttonSound.currentTime = 0; // Reset to start
+      buttonSound.play().catch(() => {});
     }
   };
 

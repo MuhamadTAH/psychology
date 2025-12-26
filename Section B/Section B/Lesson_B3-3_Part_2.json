@@ -186,7 +186,6 @@
         {
           "exerciseId": "B3-3-P2-E8",
           "type": "reverse-scenario",
-          "answer": "Looking over someone's shoulder to steal their PIN or password at an ATM or coffee shop.",
           "question": "What is this called?",
           "options": [
             "Shoulder Surfing",
@@ -199,7 +198,8 @@
           "feedback": {
             "correct": "Correct. It is a low-tech visual hack. Always cover your hand.",
             "incorrect": "It relies on line-of-sight."
-          }
+          },
+          "scene": "Looking over someone's shoulder to steal their PIN or password at an ATM or coffee shop."
         },
         {
           "exerciseId": "B3-3-P2-E9",

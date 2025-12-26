@@ -212,7 +212,6 @@
         {
           "exerciseId": "A2-3-P1-E9",
           "type": "reverse-scenario",
-          "answer": "Promising a wonderful future (marriage, vacations, kids) very early on to distract you from current bad behavior.",
           "question": "What is this tactic called?",
           "options": [
             "Future Faking",
@@ -225,7 +224,8 @@
           "feedback": {
             "correct": "Correct. **Future Faking** sells you a dream. You stay in the relationship hoping for the 'future,' ignoring the abusive 'present.'",
             "incorrect": "This is 'Future Faking.' They hold the future hostage to get compliance today."
-          }
+          },
+          "scene": "Promising a wonderful future (marriage, vacations, kids) very early on to distract you from current bad behavior."
         },
         {
           "exerciseId": "A2-3-P1-E10",

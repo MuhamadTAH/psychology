@@ -204,7 +204,6 @@
         {
           "exerciseId": "B1-4-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A phrase that implies knowledge without stating it, like 'I'm glad you finally *realized* the truth.' (Implies you didn't know it before).",
           "question": "What is this?",
           "options": [
             "A Factive Presupposition",
@@ -217,7 +216,8 @@
           "feedback": {
             "correct": "Correct. The word 'realized' presupposes that the 'truth' is a fact. It forces you to accept their version of 'truth' to accept the compliment.",
             "incorrect": "It smuggles an assumption into the sentence."
-          }
+          },
+          "scene": "A phrase that implies knowledge without stating it, like 'I'm glad you finally *realized* the truth.' (Implies you didn't know it before)."
         },
         {
           "exerciseId": "B1-4-P3-E9",

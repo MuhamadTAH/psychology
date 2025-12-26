@@ -185,7 +185,6 @@
         {
           "exerciseId": "A5-4-P2-E8",
           "type": "reverse-scenario",
-          "answer": "The feeling of holding two opposing beliefs at once: 'He loves me' and 'He hurts me.'",
           "question": "What is this mental state?",
           "options": [
             "Cognitive Dissonance",
@@ -198,7 +197,8 @@
           "feedback": {
             "correct": "Correct. The brain tries to resolve this tension by making excuses for the abuser ('He hurts me *because* he loves me').",
             "incorrect": "It causes extreme stress. The goal of detox is to resolve the dissonance: 'He hurts me because he is abusive.'"
-          }
+          },
+          "scene": "The feeling of holding two opposing beliefs at once: 'He loves me' and 'He hurts me.'"
         },
         {
           "exerciseId": "A5-4-P2-E9",

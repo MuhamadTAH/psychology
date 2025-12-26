@@ -221,7 +221,6 @@
         {
           "exerciseId": "A4-5-P3-E9",
           "type": "reverse-scenario",
-          "answer": "A deliberate performance of 'changing for the better' (therapy, religion, sobriety) just long enough to hook you back in.",
           "question": "What is this tactic?",
           "options": [
             "The False Redemption Arc",
@@ -234,7 +233,8 @@
           "feedback": {
             "correct": "Correct. Psychopaths don't change personality; they change masks. They mimic redemption to regain access.",
             "incorrect": "Real change takes years, not days. This is a strategic pivot."
-          }
+          },
+          "scene": "A deliberate performance of 'changing for the better' (therapy, religion, sobriety) just long enough to hook you back in."
         },
         {
           "exerciseId": "A4-5-P3-E10",

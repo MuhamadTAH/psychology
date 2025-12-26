@@ -201,7 +201,6 @@
         {
           "exerciseId": "B2-5-P3-E8",
           "type": "reverse-scenario",
-          "answer": "Using a high price on a menu item that no one buys, just to make the second-highest item look affordable.",
           "question": "What is this item called?",
           "options": [
             "The Anchor Item",
@@ -214,7 +213,8 @@
           "feedback": {
             "correct": "Correct. The $100 steak sells the $50 steak.",
             "incorrect": "It is there to anchor the price perception."
-          }
+          },
+          "scene": "Using a high price on a menu item that no one buys, just to make the second-highest item look affordable."
         },
         {
           "exerciseId": "B2-5-P3-E9",

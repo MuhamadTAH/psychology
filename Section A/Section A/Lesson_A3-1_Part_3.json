@@ -225,7 +225,6 @@
         {
           "exerciseId": "A3-1-P3-E9",
           "type": "reverse-scenario",
-          "answer": "Using a 'Win-Lose' tactic (like bullying or trickery) that wins the battle but causes the other person to resent you forever.",
           "question": "What is this result called?",
           "options": [
             "A Pyrrhic Victory.",
@@ -238,7 +237,8 @@
           "feedback": {
             "correct": "Correct. A victory that costs so much (in trust/reputation) that it is practically a defeat. Machiavellians often win Pyrrhic victories.",
             "incorrect": "Winning the battle but losing the war (the relationship) is not a clean win."
-          }
+          },
+          "scene": "Using a 'Win-Lose' tactic (like bullying or trickery) that wins the battle but causes the other person to resent you forever."
         },
         {
           "exerciseId": "A3-1-P3-E10",

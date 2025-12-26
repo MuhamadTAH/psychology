@@ -204,7 +204,6 @@
         {
           "exerciseId": "A2-5-P2-E9",
           "type": "reverse-scenario",
-          "answer": "An intense, temporary spike in abuse or drama that happens immediately after you set a boundary or go Grey Rock.",
           "question": "What is this called?",
           "options": [
             "Extinction Burst",
@@ -217,7 +216,8 @@
           "feedback": {
             "correct": "Correct. Like a tantrum, it gets worse before it stops. They are testing if the boundary is real.",
             "incorrect": "It's not a Discard; it's a desperate attempt to re-establish control."
-          }
+          },
+          "scene": "An intense, temporary spike in abuse or drama that happens immediately after you set a boundary or go Grey Rock."
         },
         {
           "exerciseId": "A2-5-P2-E10",
@@ -443,7 +443,6 @@
         {
           "exerciseId": "A2-5-P2-E22",
           "type": "reverse-scenario",
-          "answer": "You stop viewing the narcissist as a partner and start viewing them as a 'broken robot' who can only output abuse.",
           "question": "This mindset shift is called:",
           "options": [
             "Radical Acceptance / Detachment.",
@@ -456,7 +455,8 @@
           "feedback": {
             "correct": "Correct. Emotional detachment allows you to observe their behavior without getting hurt. You stop expecting them to be human.",
             "incorrect": "It's not mean; it's realistic. You are accepting the reality of their limitation."
-          }
+          },
+          "scene": "You stop viewing the narcissist as a partner and start viewing them as a 'broken robot' who can only output abuse."
         },
         {
           "exerciseId": "A2-5-P2-E23",

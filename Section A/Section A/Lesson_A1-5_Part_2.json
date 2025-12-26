@@ -220,7 +220,6 @@
         {
           "exerciseId": "A1-5-P2-E11",
           "type": "reverse-scenario",
-          "answer": "Acknowledge the compliment, but *separate* it from the 'ask'.",
           "question": "This is the primary defense against...?",
           "options": [
             "Gaslighting",
@@ -230,12 +229,12 @@
           ],
           "correct": "Flattery",
           "difficulty": "easy",
-          "explanation": "Gauntlet quick-check: This is the 'Separate and Judge' method from A1-2. 'Thanks, but no.'"
+          "explanation": "Gauntlet quick-check: This is the 'Separate and Judge' method from A1-2. 'Thanks, but no.'",
+          "scene": "Acknowledge the compliment, but *separate* it from the 'ask'."
         },
         {
           "exerciseId": "A1-5-P2-E12",
           "type": "reverse-scenario",
-          "answer": "Set a clear, firm, but polite boundary.",
           "question": "This is the primary defense against...?",
           "options": [
             "Flattery",
@@ -245,7 +244,8 @@
           ],
           "correct": "A Guilt-Trip",
           "difficulty": "easy",
-          "explanation": "Gauntlet quick-check: This is the 'Boundary' defense from A1-4. 'I can't help you' stops the guilt-trip."
+          "explanation": "Gauntlet quick-check: This is the 'Boundary' defense from A1-4. 'I can't help you' stops the guilt-trip.",
+          "scene": "Set a clear, firm, but polite boundary."
         },
         {
           "exerciseId": "A1-5-P2-E13",

@@ -8,7 +8,7 @@
 
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { getStreakTier, type StreakTierConfig } from '@/lib/streakFxConfig';
 import { type BadgeTimeline } from '@/lib/streakStateMachine';
 
@@ -25,6 +25,26 @@ export function StreakBadge({
   size = 140,
   children,
 }: StreakBadgeProps) {
+  // Step: Pre-load streak sound for instant playback
+  // This sound plays when the day number changes
+  const [streakSound] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const sound = new Audio('/sounds/streak-sound.mp3');
+      sound.volume = 0.7;
+      return sound;
+    }
+    return null;
+  });
+
+  // Step: Play sound when streak count changes
+  // Detects when the number updates and plays celebration sound
+  useEffect(() => {
+    if (streakCount > 0 && streakSound) {
+      streakSound.currentTime = 0;
+      streakSound.play().catch(() => {});
+    }
+  }, [streakCount, streakSound]);
+
   // Step 1: Get tier configuration for this streak day
   const tierConfig = getStreakTier(streakCount);
 

@@ -186,7 +186,6 @@
         {
           "exerciseId": "A4-3-P2-E8",
           "type": "reverse-scenario",
-          "answer": "A person who lives in your house, eats your food, creates drama, and contributes nothing but excuses.",
           "question": "What is this person?",
           "options": [
             "A Parasitic Psychopath (The Hobosexual)",
@@ -199,7 +198,8 @@
           "feedback": {
             "correct": "Correct. 'Hobosexual' is a slang term for someone who dates you just for a place to live. It is a form of parasitism.",
             "incorrect": "Struggling people try to help or feel gratitude. Parasites feel entitled."
-          }
+          },
+          "scene": "A person who lives in your house, eats your food, creates drama, and contributes nothing but excuses."
         },
         {
           "exerciseId": "A4-3-P2-E9",

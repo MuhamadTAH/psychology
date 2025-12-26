@@ -175,7 +175,6 @@
         {
           "exerciseId": "A4-4-P1-E7",
           "type": "reverse-scenario",
-          "answer": "Using a fake display of guilt or sadness to manipulate the victim into dropping boundaries.",
           "question": "What is this tactic?",
           "options": [
             "Weaponized Remorse / Crocodile Tears",
@@ -188,7 +187,8 @@
           "feedback": {
             "correct": "Correct. 'Crocodile Tears' refers to the myth that crocodiles cry to lure prey. It is a performance of sadness.",
             "incorrect": "It isn't true. It is a weaponized simulation of guilt."
-          }
+          },
+          "scene": "Using a fake display of guilt or sadness to manipulate the victim into dropping boundaries."
         },
         {
           "exerciseId": "A4-4-P1-E8",

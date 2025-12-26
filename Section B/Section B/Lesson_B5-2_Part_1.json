@@ -189,7 +189,6 @@
         {
           "exerciseId": "B5-2-P1-E8",
           "type": "reverse-scenario",
-          "answer": "A marketing tactic where fake reviews or paid actors create the illusion of popularity.",
           "question": "What is this?",
           "options": [
             "Astroturfing",
@@ -202,7 +201,8 @@
           "feedback": {
             "correct": "Correct. 'Fake Grass.' It creates artificial Social Proof.",
             "incorrect": "It is deception."
-          }
+          },
+          "scene": "A marketing tactic where fake reviews or paid actors create the illusion of popularity."
         },
         {
           "exerciseId": "B5-2-P1-E9",

@@ -172,7 +172,6 @@
         {
           "exerciseId": "B4-1-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A tactic where a seller claims another buyer is 'just about to buy it' to force you to commit immediately.",
           "question": "What is this?",
           "options": [
             "The Phantom Competitor",
@@ -185,7 +184,8 @@
           "feedback": {
             "correct": "Correct. Real estate agents and car dealers use this constantly. The fear of losing the item to 'someone else' forces the sale.",
             "incorrect": "It is a specific Scarcity tactic involving a fake rival."
-          }
+          },
+          "scene": "A tactic where a seller claims another buyer is 'just about to buy it' to force you to commit immediately."
         },
         {
           "exerciseId": "B4-1-P1-E8",

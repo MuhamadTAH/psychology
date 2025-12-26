@@ -157,7 +157,6 @@
         {
           "exerciseId": "A1-2-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A manipulator wants to make you feel 'special' and 'smart' so you will agree with their idea in a meeting.",
           "question": "What tactic would they most likely use before the meeting?",
           "options": [
             "Give you a small, unsolicited gift.",
@@ -167,7 +166,8 @@
           ],
           "correct": "Send you an email full of flattery about your 'brilliant insights'.",
           "difficulty": "medium",
-          "explanation": "They are 'priming' you. By flattering your 'insights,' they make you *want* to share insights that align with their goal."
+          "explanation": "They are 'priming' you. By flattering your 'insights,' they make you *want* to share insights that align with their goal.",
+          "scene": "A manipulator wants to make you feel 'special' and 'smart' so you will agree with their idea in a meeting."
         },
         {
           "exerciseId": "A1-2-P1-E8",
@@ -273,24 +273,6 @@
         },
         {
           "exerciseId": "A1-2-P1-E14",
-          "type": "fill-in",
-          "sentence": "Flattery builds a fast, but fake, sense of (--------). This is the first step in building (--------).",
-          "options": [
-            "rapport",
-            "trust",
-            "ego",
-            "anger",
-            "distance"
-          ],
-          "answers": [
-            "rapport",
-            "trust"
-          ],
-          "difficulty": "medium",
-          "explanation": "This is a repeat, but it's a critical concept. Rapport is the feeling of connection. Trust is the *result* of that feeling. Flattery fakes both."
-        },
-        {
-          "exerciseId": "A1-2-P1-E15",
           "type": "multiple-choice",
           "question": "What is the *best* mental defense against flattery?",
           "options": [

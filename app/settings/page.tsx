@@ -96,6 +96,11 @@ export default function SettingsPage() {
     }
   };
 
+  const handleSwitchAccount = async () => {
+    await signOut();
+    router.push("/sign-in");
+  };
+
   // Step 6.5: Handle delete account
   const handleDeleteAccount = () => {
     alert("Account deletion is not implemented yet. Contact support to delete your account.");
@@ -150,6 +155,30 @@ export default function SettingsPage() {
           <p className="text-gray-400 text-lg">
             Manage your account information
           </p>
+        </div>
+
+        {/* Account actions */}
+        <div className="mb-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border-2 border-gray-700 p-6">
+          <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+            <LogOut className="w-6 h-6 text-blue-400" />
+            Account
+          </h2>
+          <div className="flex flex-col md:flex-row gap-3">
+            <button
+              onClick={handleSwitchAccount}
+              className="flex-1 bg-gray-700 text-white font-semibold py-3 px-4 rounded-xl border-2 border-gray-600 hover:border-blue-400 hover:bg-gray-600 transition-colors flex items-center justify-center gap-2"
+            >
+              <User className="w-5 h-5" />
+              Switch account
+            </button>
+            <button
+              onClick={handleSignOut}
+              className="flex-1 bg-red-600 text-white font-semibold py-3 px-4 rounded-xl border-2 border-red-700 hover:bg-red-500 transition-colors flex items-center justify-center gap-2"
+            >
+              <LogOut className="w-5 h-5" />
+              Sign out
+            </button>
+          </div>
         </div>
 
         {/* Save message */}

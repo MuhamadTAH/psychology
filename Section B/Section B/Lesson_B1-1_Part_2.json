@@ -186,7 +186,7 @@
         {
           "exerciseId": "B1-1-P2-E8",
           "type": "reverse-scenario",
-          "answer": "A technique where you state a fact that is undeniably true ('You are here') to make your next statement ('You are relaxing') accepted as true.",
+          "scene": "A technique where you state a fact that is undeniably true ('You are here') to make your next statement ('You are relaxing') accepted as true.",
           "question": "What is this?",
           "options": [
             "The Truism Trap / Pacing",

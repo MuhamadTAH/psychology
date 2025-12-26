@@ -1,17 +1,30 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
 
+// Require an authenticated identity and optionally verify the provided email matches
+const requireIdentity = async (ctx: any, providedEmail?: string) => {
+  const identity = await ctx.auth.getUserIdentity();
+  const email = identity?.email;
+
+  if (!email) {
+    throw new Error("Not authenticated");
+  }
+
+  if (providedEmail && providedEmail !== email) {
+    throw new Error("Forbidden");
+  }
+
+  return identity;
+};
+
 // Get user stats (hearts, gems, xp, streak)
 export const getUserStats = query({
   args: {
     email: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    // Try Clerk auth first (for backward compatibility)
-    const identity = await ctx.auth.getUserIdentity();
-    const userEmail = args.email || identity?.email;
-
-    if (!userEmail) return null;
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
 
     const user = await ctx.db
       .query("users")
@@ -68,11 +81,8 @@ export const loseHeart = mutation({
     email: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    // Try Clerk auth first (for backward compatibility)
-    const identity = await ctx.auth.getUserIdentity();
-    const userEmail = args.email || identity?.email;
-
-    if (!userEmail) throw new Error("Not authenticated");
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
 
     const user = await ctx.db
       .query("users")
@@ -134,11 +144,8 @@ export const addXP = mutation({
     email: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    // Try Clerk auth first (for backward compatibility)
-    const identity = await ctx.auth.getUserIdentity();
-    const userEmail = args.email || identity?.email;
-
-    if (!userEmail) throw new Error("Not authenticated");
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
 
     const user = await ctx.db
       .query("users")
@@ -261,11 +268,8 @@ export const updateStreak = mutation({
     email: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    // Try Clerk auth first (for backward compatibility)
-    const identity = await ctx.auth.getUserIdentity();
-    const userEmail = args.email || identity?.email;
-
-    if (!userEmail) throw new Error("Not authenticated");
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
 
     const user = await ctx.db
       .query("users")
@@ -279,13 +283,20 @@ export const updateStreak = mutation({
     const lastDate = user.lastLessonDate;
 
     let newStreak = user.streak ?? 0;
+    let longestStreak = user.longestStreak ?? 0;
+    let streakFreezesUsed = 0;
 
     if (!lastDate) {
       // First lesson ever
       newStreak = 1;
     } else if (lastDate === today) {
       // Already did lesson today, no change
-      return { streak: newStreak, isToday: true };
+      return {
+        streak: newStreak,
+        isToday: true,
+        longestStreak,
+        streakFreezesUsed: 0
+      };
     } else {
       // Check if yesterday
       const yesterday = new Date();
@@ -296,18 +307,81 @@ export const updateStreak = mutation({
         // Did lesson yesterday, increment streak
         newStreak = newStreak + 1;
       } else {
-        // Missed days, reset streak
-        newStreak = 1;
+        // Missed days - check if we have streak freezes
+        const daysMissed = Math.floor((new Date(today).getTime() - new Date(lastDate).getTime()) / (1000 * 60 * 60 * 24));
+        const currentFreezes = user.streakFreezes ?? 0;
+
+        if (daysMissed === 1 && currentFreezes > 0) {
+          // Use one freeze to maintain streak (missed exactly 1 day)
+          streakFreezesUsed = 1;
+          await ctx.db.patch(user._id, {
+            streakFreezes: currentFreezes - 1,
+          });
+          // Streak stays the same (protected by freeze)
+        } else {
+          // Reset streak (either no freezes, or missed more than 1 day)
+          newStreak = 1;
+        }
       }
+    }
+
+    // Update longest streak if current is higher
+    if (newStreak > longestStreak) {
+      longestStreak = newStreak;
     }
 
     // Update user
     await ctx.db.patch(user._id, {
       streak: newStreak,
       lastLessonDate: today,
+      longestStreak,
     });
 
-    return { streak: newStreak, isToday: lastDate === today };
+    return {
+      streak: newStreak,
+      isToday: lastDate === today,
+      longestStreak,
+      streakFreezesUsed
+    };
+  },
+});
+
+// Equip streak freeze (purchase with gems)
+export const equipStreakFreeze = mutation({
+  args: {
+    email: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", userEmail))
+      .first();
+
+    if (!user) throw new Error("User not found");
+
+    // Cost: 10 gems per freeze
+    const FREEZE_COST = 10;
+    const currentGems = user.gems ?? 0;
+
+    if (currentGems < FREEZE_COST) {
+      return { success: false, error: "Not enough gems" };
+    }
+
+    // Deduct gems and add freeze
+    const currentFreezes = user.streakFreezes ?? 0;
+    await ctx.db.patch(user._id, {
+      gems: currentGems - FREEZE_COST,
+      streakFreezes: currentFreezes + 1,
+    });
+
+    return {
+      success: true,
+      gems: currentGems - FREEZE_COST,
+      streakFreezes: currentFreezes + 1,
+    };
   },
 });
 
@@ -363,12 +437,8 @@ export const completeLesson = mutation({
   },
   handler: async (ctx, args) => {
     // Step 1: Get user
-    const identity = await ctx.auth.getUserIdentity();
-    const userEmail = args.email || identity?.email;
-
-    if (!userEmail) {
-      throw new Error("Not authenticated");
-    }
+    const identity = await requireIdentity(ctx, args.email);
+    const userEmail = identity.email!;
 
     const user = await ctx.db
       .query("users")

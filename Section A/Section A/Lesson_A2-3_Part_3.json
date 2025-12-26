@@ -207,7 +207,6 @@
         {
           "exerciseId": "A2-3-P3-E8",
           "type": "reverse-scenario",
-          "answer": "The narcissist suddenly stops the affection, ignores your texts for a day, and looks bored when you speak.",
           "question": "What has just happened?",
           "options": [
             "They are busy.",
@@ -220,7 +219,8 @@
           "feedback": {
             "correct": "Correct. The switch is often sudden. They have 'hooked' you, so they stop feeding you the drug. Now you will chase them to get it back.",
             "incorrect": "This isn't being busy. It's a tactical withdrawal of affection to trigger your anxiety."
-          }
+          },
+          "scene": "The narcissist suddenly stops the affection, ignores your texts for a day, and looks bored when you speak."
         },
         {
           "exerciseId": "A2-3-P3-E9",

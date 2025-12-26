@@ -203,7 +203,6 @@
         {
           "exerciseId": "B3-4-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A manipulative compliment that includes a subtle insult to lower your self-esteem and make you seek their approval.",
           "question": "What is this?",
           "options": [
             "Negging",
@@ -216,7 +215,8 @@
           "feedback": {
             "correct": "Correct. 'You're smart for a girl.' 'Nice shirt, did you get it at Goodwill?' It creates a craving for validation.",
             "incorrect": "It is the opposite of pure flattery. It is a status attack."
-          }
+          },
+          "scene": "A manipulative compliment that includes a subtle insult to lower your self-esteem and make you seek their approval."
         },
         {
           "exerciseId": "B3-4-P3-E9",

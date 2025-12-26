@@ -203,7 +203,6 @@
         {
           "exerciseId": "B3-5-P2-E9",
           "type": "reverse-scenario",
-          "answer": "A technique where a salesperson mirrors your body language and speech patterns to make you trust them.",
           "question": "What is this?",
           "options": [
             "The Chameleon Effect / Mirroring",
@@ -216,7 +215,8 @@
           "feedback": {
             "correct": "Correct. It triggers the Liking Bias. 'They are like me, so they are safe.'",
             "incorrect": "It builds rapport, not confusion."
-          }
+          },
+          "scene": "A technique where a salesperson mirrors your body language and speech patterns to make you trust them."
         },
         {
           "exerciseId": "B3-5-P2-E10",
@@ -327,7 +327,6 @@
         {
           "exerciseId": "B3-5-P2-E16",
           "type": "reverse-scenario",
-          "answer": "A targeted email attack that uses specific personal details (name, job, hobbies) to trick a specific person.",
           "question": "What is this?",
           "options": [
             "Spear Phishing",
@@ -340,7 +339,8 @@
           "feedback": {
             "correct": "Correct. Phishing is a net. Spear Phishing is a harpoon. It is customized.",
             "incorrect": "Whaling targets CEOs. Spear Phishing targets individuals."
-          }
+          },
+          "scene": "A targeted email attack that uses specific personal details (name, job, hobbies) to trick a specific person."
         },
         {
           "exerciseId": "B3-5-P2-E17",
@@ -532,7 +532,6 @@
         {
           "exerciseId": "B3-5-P2-E27",
           "type": "reverse-scenario",
-          "answer": "A specific type of Phishing targeting high-level executives (CEOs/CFOs).",
           "question": "What is this?",
           "options": [
             "Whaling",
@@ -545,7 +544,8 @@
           "feedback": {
             "correct": "Correct. Targeting the 'Big Fish.'",
             "incorrect": "Spear Phishing is any targeted attack. Whaling is C-Suite specific."
-          }
+          },
+          "scene": "A specific type of Phishing targeting high-level executives (CEOs/CFOs)."
         },
         {
           "exerciseId": "B3-5-P2-E28",

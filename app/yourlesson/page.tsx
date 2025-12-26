@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Check, X } from "lucide-react";
+import { useUser } from "@clerk/nextjs";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { FinalScore } from "./components/FinalScore";
@@ -61,6 +62,21 @@ interface QuizData {
 
 export default function YourLessonPage() {
   const router = useRouter();
+  const { user, isLoaded: isUserLoaded, isSignedIn } = useUser();
+  const userEmail = isSignedIn
+    ? (user?.primaryEmailAddress?.emailAddress || user?.emailAddresses?.[0]?.emailAddress || null)
+    : null;
+  const shouldLoadUserData = isUserLoaded && isSignedIn;
+
+  // Step 1.5: Helper function to get question text (supports 'question', 'prompt', 'statement')
+  const getQuestionText = (question: any): string => {
+    return question.question || (question as any).prompt || question.statement || '';
+  };
+
+  // Step 1.6: Helper function to get case description/scene (supports 'caseDescription' and 'scene')
+  const getCaseDescription = (question: any): string => {
+    return (question as any).caseDescription || question.scene || '';
+  };
 
   // Step 2: Setup state management for the lesson
   // These states track the current question, answers, and lesson progress
@@ -88,6 +104,7 @@ export default function YourLessonPage() {
   const [availableWords, setAvailableWords] = useState<string[]>([]); // Words still available to select
   const [draggedWordIndex, setDraggedWordIndex] = useState<number | null>(null); // Track which word is being dragged from selected
   const [draggedAvailableIndex, setDraggedAvailableIndex] = useState<number | null>(null); // Track which word is being dragged from available
+  const [draggedBlankIndex, setDraggedBlankIndex] = useState<number | null>(null); // Track which fill-in blank is being dragged
 
   // Micro-Sim (chat-style conversation) states
   const [microSimStep, setMicroSimStep] = useState(0); // Current step in the micro-sim
@@ -98,6 +115,7 @@ export default function YourLessonPage() {
   const [hadWrongAttempt, setHadWrongAttempt] = useState(false);
   const [wrongAnswers, setWrongAnswers] = useState<Array<{ questionIndex: number, question: string, userAnswer: string, correctAnswer: string }>>([]);
   const [wrongFlash, setWrongFlash] = useState(false);
+  const [shuffledOptions, setShuffledOptions] = useState<any[]>([]);
 
   // Step: Sound effects state
   // Audio objects for playing sound effects during the lesson
@@ -120,8 +138,6 @@ export default function YourLessonPage() {
     };
   });
 
-  // Get user email from localStorage
-  const [userEmail, setUserEmail] = useState<string | null>(null);
   const [lessonCategory, setLessonCategory] = useState<string | null>(null);
   const [darkPsychLessonId, setDarkPsychLessonId] = useState<string | null>(null);
 
@@ -144,6 +160,14 @@ export default function YourLessonPage() {
   // Store the selected motivational message to prevent it from changing on every render
   const [motivationalMessage, setMotivationalMessage] = useState('');
 
+  // Step: Track last logged UI mode to prevent repeated logs
+  const [lastLoggedMode, setLastLoggedMode] = useState<string>('');
+
+  // Step: Retry wrong answers state
+  // Track if we're in retry mode for wrong answers
+  const [isRetryMode, setIsRetryMode] = useState(false);
+  const [retryQuestions, setRetryQuestions] = useState<QuizData[]>([]);
+
   // Step: Lesson Part Progression State
   // Track which part of the lesson the user is currently on (0, 1, 2...)
   const [activePartIndex, setActivePartIndex] = useState(0);
@@ -151,20 +175,41 @@ export default function YourLessonPage() {
 
   // Step 3: Load data from Convex backend
   // Query lessons and user stats from the database
-  const lessons = useQuery(api.lessons.getUserLessons, userEmail ? { email: userEmail } : "skip");
-  const progress = useQuery(api.lessons.getUserProgress, userEmail ? { email: userEmail } : "skip");
-  const userStats = useQuery(api.gamification.getUserStats, userEmail ? { email: userEmail } : "skip");
+  const lessons = useQuery(api.lessons.getUserLessons, shouldLoadUserData ? {} : "skip");
+  const progress = useQuery(api.lessons.getUserProgress, shouldLoadUserData ? {} : "skip");
+  const userStats = useQuery(api.gamification.getUserStats, shouldLoadUserData ? {} : "skip");
 
   // Query Dark Psychology lessons if this is a Dark Psychology lesson
   const darkPsychLessons = useQuery(
     api.lessons.getAllDarkPsychologyLessons,
-    lessonCategory === 'dark-psychology' ? {} : "skip"
+    lessonCategory === 'dark-psychology' && shouldLoadUserData ? {} : "skip"
   );
 
   const loseHeartMutation = useMutation(api.gamification.loseHeart);
   const addXPMutation = useMutation(api.gamification.addXP);
   const updateStreakMutation = useMutation(api.gamification.updateStreak);
   const updateLessonProgressMutation = useMutation(api.lessons.updateLessonProgress);
+
+  // Record completion of a Dark Psychology lesson part so the map ring fills segment-by-segment.
+  const markDarkPsychPartComplete = async (partNumber: number) => {
+    if (!darkPsychLessonId || !shouldLoadUserData) return;
+
+    try {
+      await updateLessonProgressMutation({
+        lessonNumber: partNumber,
+        darkPsychLessonId: `${darkPsychLessonId}-Part${partNumber}`,
+        stage: "completed",
+        score: correctAnswers,
+        mistakes: wrongAnswers,
+        isCompleted: true,
+        currentPart: partNumber,
+        completedParts: [partNumber],
+        totalParts: totalLessonParts,
+      });
+    } catch (error) {
+      // If progress fails, don't block the UI; the next lesson tap can retry.
+    }
+  };
 
   // Step: Initialize streak timeline for badge celebration
   // Use celebrationStreak when showing badge, otherwise use current streak
@@ -180,9 +225,6 @@ export default function YourLessonPage() {
   // Get the current lesson number and user email
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const email = localStorage.getItem('userEmail');
-      setUserEmail(email);
-
       const lessonNum = localStorage.getItem('currentLessonNumber');
       if (lessonNum) {
         setCurrentLessonNumber(parseInt(lessonNum));
@@ -245,9 +287,15 @@ export default function YourLessonPage() {
 
   // Helper function to render markdown-style bold and italic text
   const renderTextWithBold = (text: string) => {
+    // Handle undefined/null text
+    if (!text) return '';
+
     // Split by **bold**, *italic*, and (parentheses) patterns
     const parts = text.split(/(\*\*.*?\*\*|\*.*?\*|\(.*?\))/g);
     return parts.map((part, index) => {
+      // Skip empty or undefined parts
+      if (!part) return null;
+
       // Handle **bold** (double asterisks)
       if (part.startsWith('**') && part.endsWith('**')) {
         return <strong key={`bold-${index}`}>{part.slice(2, -2)}</strong>;
@@ -266,9 +314,15 @@ export default function YourLessonPage() {
 
   // Helper function for options - plain text without parentheses styling
   const renderOptionText = (text: string) => {
+    // Handle undefined/null text
+    if (!text) return '';
+
     // Split by **bold** and *italic* patterns only (no parentheses)
     const parts = text.split(/(\*\*.*?\*\*|\*.*?\*)/g);
     return parts.map((part, index) => {
+      // Skip empty or undefined parts
+      if (!part) return null;
+
       // Handle **bold** (double asterisks)
       if (part.startsWith('**') && part.endsWith('**')) {
         return <strong key={`bold-${index}`}>{part.slice(2, -2)}</strong>;
@@ -290,10 +344,23 @@ export default function YourLessonPage() {
       return 'combat';
     }
 
+    // Combat Mode: reverse-scenario (has answer OR scene field that becomes the scene)
+    if (question.type === 'reverse-scenario' && ((question as any).answer || (question as any).scene)) {
+      return 'combat';
+    }
+
+    // Combat Mode: multiple-choice, fill-in, or scenario that should be auto-converted (has only question, no scene/caseDescription)
+    const questionTextRaw = getQuestionText(question);
+    const parsed = parseQuestionText(questionTextRaw);
+    const caseDesc = getCaseDescription(question);
+    const shouldAutoConvert = (question.type === 'multiple-choice' || question.type === 'fill-in' || question.type === 'scenario')
+      && !caseDesc && !parsed.scene;
+    if (shouldAutoConvert) return 'combat';
+
     // Puzzle Mode: matching exercises
     if (question.type === 'matching') return 'puzzle';
 
-    // Training Mode: all other types (multiple-choice, true-false, fill-in, etc.)
+    // Training Mode: all other types (true-false, etc.)
     return 'training';
   };
 
@@ -324,66 +391,41 @@ export default function YourLessonPage() {
         }
 
         // Determine current part based on localStorage
-        let currentPart = 0;
+        let currentPart = activePartIndex || 0;
         if (typeof window !== 'undefined' && darkPsychLessonId) {
           const savedPart = localStorage.getItem(`lesson_progress_${darkPsychLessonId}`);
-          if (savedPart) {
-            currentPart = parseInt(savedPart, 10);
-            // Ensure we don't go out of bounds if lesson structure changed
-            if (currentPart >= lessonParts.length) {
-              currentPart = lessonParts.length - 1; // Cap at last part
-              // Or reset to 0? For now cap it so they can replay last part.
-              // Actually, if they finished all parts, maybe loop back or stay at end?
-              // User request: "fill ring... click again start part two"
-              // If finished, maybe reset to 0 to replay? Or show "Review"?
-              // For now, let's assume if currentPart >= total, they are reviewing.
-              // Let's safe guard it.
-              if (currentPart > lessonParts.length - 1) currentPart = lessonParts.length - 1;
-            }
+          const savedIndex = savedPart ? parseInt(savedPart, 10) : null;
+          // Prefer in-memory activePartIndex (from Continue) if it is ahead of saved progress
+          if (savedIndex !== null) {
+            currentPart = Math.max(activePartIndex, savedIndex);
+          }
+          // Ensure we don't go out of bounds if lesson structure changed
+          if (currentPart >= lessonParts.length) {
+            currentPart = lessonParts.length - 1; // Cap at last part
+            if (currentPart > lessonParts.length - 1) currentPart = lessonParts.length - 1;
           }
         }
         setActivePartIndex(currentPart);
         setTotalLessonParts(lessonParts.length);
 
-        console.log(`🎯 [DARK PSYCH] Loading Part ${currentPart + 1} of ${lessonParts.length}`);
 
         // ONLY process the SINGLE active part
         const activeLessonPart = lessonParts[currentPart];
         const data = activeLessonPart?.lessonJSON || activeLessonPart?.content;
 
-        console.log(`📦 [DATA CHECK]`, { hasData: !!data, hasContentScreens: !!data?.contentScreens, isArray: Array.isArray(data?.contentScreens) });
 
         if (data) {
           // Process just this part (previously we looped through all parts)
           if (data?.contentScreens && Array.isArray(data.contentScreens)) {
-            console.log(`📚 [CONTENT SCREENS] Found ${data.contentScreens.length} screens`);
             data.contentScreens.forEach((screen: any, screenIndex: number) => {
-              console.log(`📄 [SCREEN ${screenIndex + 1}]`, { hasExercises: !!screen.exercises, exerciseCount: screen.exercises?.length });
 
 
               if (screen.exercises && Array.isArray(screen.exercises)) {
                 screen.exercises.forEach((exercise: any, exerciseIndex: number) => {
-                  // DEBUG: Log ALL exercises to find missing ones
-                  console.log(`🔍 [EXERCISE ${exerciseIndex + 1}] Processing:`, {
-                    exerciseId: exercise.exerciseId,
-                    type: exercise.type,
-                    hasScenarioTitle: !!exercise.scenarioTitle,
-                    hasSteps: !!exercise.steps,
-                    isStepsArray: Array.isArray(exercise.steps),
-                    hasQuestion: !!exercise.question,
-                    hasSentence: !!exercise.sentence,
-                    hasStatement: !!exercise.statement,
-                    difficulty: exercise.difficulty
-                  });
-
                   // Step: Handle micro-sim exercises specially
                   // Micro-sims have a "steps" array and use a different data structure
                   // Also handle exercises with scenarioTitle + steps (even without explicit type)
                   if ((exercise.type === 'micro-sim' || exercise.scenarioTitle) && Array.isArray(exercise.steps)) {
-                    console.log(`✅ [MICRO-SIM ADDED] ${exercise.exerciseId}:`, {
-                      scenarioTitle: exercise.scenarioTitle,
-                      stepCount: exercise.steps.length
-                    });
                     const microSimQuestion: QuizData = {
                       type: 'micro-sim',
                       question: '', // Not used for micro-sims
@@ -392,8 +434,6 @@ export default function YourLessonPage() {
                     };
                     combinedQuestions.push(microSimQuestion);
                     return; // Skip the rest of the processing
-                  } else {
-                    console.log(`⚠️ [NOT MICRO-SIM] ${exercise.exerciseId} - will process as regular exercise`);
                   }
 
                   // Step: Handle regular exercises (multiple-choice, scenario, etc.)
@@ -452,23 +492,11 @@ export default function YourLessonPage() {
 
                   if (shouldAdd) {
                     combinedQuestions.push(standardQuestion);
-                    console.log(`✅ [ADDED] ${exercise.exerciseId} as type: ${standardQuestion.type}`);
-                  } else {
-                    console.log(`❌ [SKIPPED] ${exercise.exerciseId} - no question/pairs/words`);
                   }
                 });
               }
             });
           }
-
-          console.log(`📊 [FINAL] Total questions loaded: ${combinedQuestions.length}`);
-          console.log(`📊 [FINAL] All questions:`, combinedQuestions.map((q: any, i: number) => ({
-            index: i + 1,
-            type: q.type,
-            scenarioTitle: q.scenarioTitle,
-            hasSteps: !!q.steps,
-            stepCount: q.steps?.length
-          })));
 
           setAllQuestions(combinedQuestions);
           return;
@@ -496,9 +524,16 @@ export default function YourLessonPage() {
         setAllQuestions(combinedQuestions);
       }
     }
-  }, [lessons, currentLessonNumber, lessonCategory, darkPsychLessons, darkPsychLessonId]);
+  }, [lessons, currentLessonNumber, lessonCategory, darkPsychLessons, darkPsychLessonId, activePartIndex]);
 
-  const currentQuestion = allQuestions[currentQuestionIndex];
+  const currentQuestion = isRetryMode
+    ? retryQuestions[currentQuestionIndex]
+    : allQuestions[currentQuestionIndex];
+
+  // Safety check: if in retry mode but no retry questions, exit retry mode
+  if (isRetryMode && retryQuestions.length === 0) {
+    setIsRetryMode(false);
+  }
 
   // Step 5.5: Control video animation based on state
   // Play different segments of the video for thinking, correct, or wrong states
@@ -532,6 +567,9 @@ export default function YourLessonPage() {
 
     // Set initial time and play
     const initializeAnimation = async () => {
+      // Check if video element is still in the DOM
+      if (!videoRef.isConnected) return;
+
       if (currentAnimation === 'thinking') {
         videoRef.currentTime = 0;
       } else if (currentAnimation === 'correct') {
@@ -542,8 +580,13 @@ export default function YourLessonPage() {
 
       // Wait a bit for the seek to complete, then mark as initialized
       setTimeout(() => {
-        isInitialized = true;
-        videoRef.play();
+        // Check again before playing
+        if (videoRef.isConnected) {
+          isInitialized = true;
+          videoRef.play().catch(() => {
+            // Silently handle play interruption
+          });
+        }
       }, 50);
     };
 
@@ -558,6 +601,18 @@ export default function YourLessonPage() {
   // Step 6: Shuffle definitions when question changes (for matching questions)
   // This prevents answers from being displayed in order
   useEffect(() => {
+    // Shuffle standard multiple choice options
+    if (currentQuestion?.options && currentQuestion.options.length > 0) {
+      const shuffled = [...currentQuestion.options];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      setShuffledOptions(shuffled);
+    } else {
+      setShuffledOptions([]);
+    }
+
     // Shuffle fill-in-blank options
     if (currentQuestion?.type === 'fill-in-blank' && (currentQuestion.wrongOptions || currentQuestion.correctAnswer)) {
       const options = [currentQuestion.correctAnswer, ...(currentQuestion.wrongOptions || [])].filter(Boolean) as string[];
@@ -691,8 +746,8 @@ export default function YourLessonPage() {
 
       if (!hadWrongAttempt && !isLessonAlreadyCompleted()) {
         try {
-          if (userEmail) {
-            await addXPMutation({ amount: 5, email: userEmail });
+          if (isSignedIn) {
+            await addXPMutation({ amount: 5 });
           }
         } catch (error) {
           // Error adding XP
@@ -711,11 +766,11 @@ export default function YourLessonPage() {
       // Trigger wrong animation
       setCurrentAnimation('wrong');
 
-      if (currentLessonNumber) {
+      if (currentLessonNumber && isSignedIn) {
         try {
           const lesson = lessons?.find(l => l.lessonNumber === currentLessonNumber);
-          if (lesson && userEmail) {
-            await loseHeartMutation({ lessonId: lesson._id, email: userEmail });
+          if (lesson) {
+            await loseHeartMutation({ lessonId: lesson._id });
           }
         } catch (error) {
           // Error losing heart
@@ -723,8 +778,8 @@ export default function YourLessonPage() {
       }
 
       try {
-        if (userEmail) {
-          await addXPMutation({ amount: -5, email: userEmail });
+        if (isSignedIn) {
+          await addXPMutation({ amount: -5 });
         }
       } catch (error) {
         // Error subtracting XP
@@ -733,7 +788,7 @@ export default function YourLessonPage() {
       // Track wrong answer for reinforcement
       setWrongAnswers([...wrongAnswers, {
         questionIndex: currentQuestionIndex,
-        question: currentQuestion.question,
+        question: getQuestionText(currentQuestion),
         userAnswer: userAnswer,
         correctAnswer: currentQuestion.correctAnswer || ''
       }]);
@@ -755,7 +810,7 @@ export default function YourLessonPage() {
         // Add villain's message and user's response to chat history
         const newHistory = [
           ...chatHistory,
-          { speaker: 'villain' as const, text: currentStep.scene || currentStep.question || '' },
+          { speaker: 'villain' as const, text: getCaseDescription(currentStep) || getQuestionText(currentStep) },
           { speaker: 'user' as const, text: selectedOptionText }
         ];
         setChatHistory(newHistory);
@@ -776,7 +831,8 @@ export default function YourLessonPage() {
       }
     }
 
-    if (currentQuestionIndex < allQuestions.length - 1) {
+    const questionsArray = isRetryMode ? retryQuestions : allQuestions;
+    if (currentQuestionIndex < questionsArray.length - 1) {
       // Step: Hide feedback bar immediately before transition starts
       // This ensures feedback doesn't stay visible during animations
       setIsChecked(false);
@@ -817,6 +873,36 @@ export default function YourLessonPage() {
         setIsTransitioning(false);
       }, 300);
     } else {
+      // Check if we should start retry mode
+      if (!isRetryMode && wrongAnswers.length > 0) {
+        // Build retry questions from wrong answers
+        const retry = wrongAnswers.map(wa => allQuestions[wa.questionIndex]);
+        setRetryQuestions(retry);
+        setIsRetryMode(true);
+        setCurrentQuestionIndex(0);
+        setSelectedAnswer(null);
+        setFillInAnswer('');
+        setFillInAnswers([]);
+        setIsChecked(false);
+        setHadWrongAttempt(false);
+        setWrongAnswers([]); // Clear wrong answers for retry round
+
+        // Reset matching states
+        setSelectedColumnA(null);
+        setMatchedPairs({});
+        setSelectedTerm(null);
+        setWrongMatch(null);
+        setShuffledDefinitions([]);
+
+        // Reset sentence building states
+        setSelectedWords([]);
+        setAvailableWords([]);
+        setDraggedWordIndex(null);
+        setDraggedAvailableIndex(null);
+
+        return; // Don't show final score yet
+      }
+
       // Step: Play lesson complete sound
       // Celebration sound when user finishes all questions
       if (soundEffects.lessonComplete) {
@@ -827,8 +913,10 @@ export default function YourLessonPage() {
       // If the lesson has multiple parts, we check if the user just finished a part
       // but hasn't finished the WHOLE lesson yet.
       if (lessonCategory === 'dark-psychology' && darkPsychLessonId) {
+        const currentPartNumber = activePartIndex + 1;
+        await markDarkPsychPartComplete(currentPartNumber);
+
         const nextPart = activePartIndex + 1;
-        console.log(`🔒 [PROGRESS] Part ${activePartIndex + 1}/${totalLessonParts} Complete. Saving next part: ${nextPart}`);
 
         if (typeof window !== 'undefined') {
           localStorage.setItem(`lesson_progress_${darkPsychLessonId}`, nextPart.toString());
@@ -836,7 +924,6 @@ export default function YourLessonPage() {
 
         // If NOT the last part, stop here (don't mark full lesson as complete)
         if (activePartIndex < totalLessonParts - 1) {
-          console.log(`⏭️ [PROGRESS] Moving to next segment. Haltiing full completion.`);
           setShowFinalScore(true); // Show score screen ("Lesson Complete")
           // When they click "Back", they go to map. 
           // Clicking lesson again loads next part from localStorage.
@@ -847,7 +934,7 @@ export default function YourLessonPage() {
       // Step 8a: Lesson completed - mark as completed and update streak
       // This unlocks the next lesson in the learning path
       try {
-        if (userEmail && currentLessonNumber) {
+        if (isSignedIn && currentLessonNumber) {
           const lesson = lessons?.find(l => l.lessonNumber === currentLessonNumber);
           if (lesson) {
             // Mark lesson as completed so next lesson unlocks
@@ -858,12 +945,11 @@ export default function YourLessonPage() {
               score: correctAnswers,
               mistakes: wrongAnswers,
               isCompleted: true,
-              email: userEmail,
             });
           }
 
           // Update daily streak and show celebration
-          const streakResult = await updateStreakMutation({ email: userEmail });
+          const streakResult = await updateStreakMutation({});
 
           // Show streak badge celebration if this is first lesson today
           if (streakResult && !streakResult.isToday) {
@@ -912,9 +998,9 @@ export default function YourLessonPage() {
         setCorrectAnswers(correctAnswers + 1);
 
         // Award XP for completing matching question
-        if (!isLessonAlreadyCompleted() && userEmail) {
+        if (!isLessonAlreadyCompleted() && isSignedIn) {
           try {
-            addXPMutation({ amount: 5, email: userEmail });
+            await addXPMutation({ amount: 5 });
           } catch (error) {
             // Error adding XP
           }
@@ -975,7 +1061,17 @@ export default function YourLessonPage() {
   // Show results and reinforcement if user got questions wrong
   if (showFinalScore) {
     const hasMorePartsFlag = lessonCategory === 'dark-psychology' && activePartIndex < totalLessonParts - 1;
-    const handleBack = () => router.push('/dark-psychology-dashboard');
+    const handleBack = () => {
+      if (lessonCategory === 'dark-psychology') {
+        const storedSection = typeof window !== 'undefined' ? localStorage.getItem('darkPsychSectionId') : null;
+        const inferredSection = darkPsychLessonId ? darkPsychLessonId.split('-')[0] : null;
+        const sectionId = storedSection || inferredSection || 'B';
+        router.push(`/dark-psychology/section/${sectionId}`);
+      } else {
+        router.push('/dark-psychology-dashboard');
+      }
+    };
+    const currentPartForDisplay = activePartIndex + 1; // show next part label correctly
 
     return (
       <FinalScore
@@ -989,13 +1085,28 @@ export default function YourLessonPage() {
         userEmail={userEmail}
         firstTryWrongCount={wrongAnswers.length}
         hasMoreParts={hasMorePartsFlag}
-        currentPart={activePartIndex}
+        currentPart={currentPartForDisplay}
         totalParts={totalLessonParts}
         onRetry={handleRestartQuiz}
         onBackToLessons={handleBack}
         onContinueNextPart={() => {
+          const nextPartIndex = Math.min(activePartIndex + 1, totalLessonParts - 1);
+          const progressKey = darkPsychLessonId ? `lesson_progress_${darkPsychLessonId}` : null;
+
+          if (progressKey && typeof window !== 'undefined') {
+            localStorage.setItem(progressKey, nextPartIndex.toString());
+          }
+
+          // Prepare to load next part in-place
           setShowFinalScore(false);
-          handleBack();
+          setActivePartIndex(nextPartIndex);
+          setCurrentQuestionIndex(0);
+          setIsRetryMode(false);
+          setRetryQuestions([]);
+          setWrongAnswers([]);
+          setIsChecked(false);
+
+          // No full refresh; loader effect will pick up new activePartIndex
         }}
       />
     );
@@ -1003,6 +1114,11 @@ export default function YourLessonPage() {
 
   // In this section we achieved:
   // Completed the final score screen with reinforcement for wrong answers
+
+  // Safety check: Don't render if no current question
+  if (!currentQuestion) {
+    return null;
+  }
 
   // Step 12: Render main lesson interface
   // This is the main UI that shows questions and answer options
@@ -1056,7 +1172,7 @@ export default function YourLessonPage() {
             <div className="flex-1 relative h-3 bg-gray-700/50 rounded-full overflow-hidden backdrop-blur-sm">
               <div
                 className="absolute inset-0 bg-[#58CC02] transition-all duration-500 ease-out rounded-full shadow-[0_0_10px_rgba(88,204,2,0.4)]"
-                style={{ width: `${((currentQuestionIndex + 1) / allQuestions.length) * 100}%` }}
+                style={{ width: `${((currentQuestionIndex + 1) / (isRetryMode ? retryQuestions.length : allQuestions.length)) * 100}%` }}
               >
                 {/* Shine effect overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/20"></div>
@@ -1097,9 +1213,63 @@ export default function YourLessonPage() {
             const isMicroSim = currentQuestion.type === 'micro-sim' && currentQuestion.steps;
             const currentStep = isMicroSim ? currentQuestion.steps[microSimStep] : null;
 
+            // Micro-sim: Auto-convert logic for steps
+            let microSimScene = '';
+            let microSimPrompt = '';
+            if (isMicroSim && currentStep) {
+              const stepCaseDesc = getCaseDescription(currentStep);
+              const stepQuestionText = getQuestionText(currentStep);
+              const stepParsed = parseQuestionText(stepQuestionText);
+
+              // Check if step has ONLY scene (no separate question/prompt)
+              const hasOnlyScene = stepCaseDesc && !stepQuestionText && !stepParsed.question;
+
+              if (hasOnlyScene) {
+                // Auto-convert: scene goes to speech bubble, add generic prompt
+                microSimScene = stepCaseDesc;
+                microSimPrompt = 'Choose the correct answer';
+              } else if (stepCaseDesc) {
+                // Has both scene and question
+                microSimScene = stepCaseDesc;
+                microSimPrompt = stepParsed.question || stepQuestionText;
+              } else if (stepQuestionText) {
+                // Has only question, treat as scene
+                microSimScene = stepQuestionText;
+                microSimPrompt = 'Choose your response';
+              } else {
+                // Fallback
+                microSimScene = stepCaseDesc || stepParsed.scene || '';
+                microSimPrompt = stepParsed.question || stepQuestionText || 'Choose your response';
+              }
+            }
+
             // Regular Scenario: Single scene with static speech bubble
-            const parsed = parseQuestionText(currentQuestion.question);
-            const questionText = parsed.scene ? parsed.question : currentQuestion.question;
+            const questionTextRaw = getQuestionText(currentQuestion);
+            const parsed = parseQuestionText(questionTextRaw);
+            const caseDesc = getCaseDescription(currentQuestion);
+
+            // Special handling for reverse-scenario: answer field becomes the scene
+            let finalScene = '';
+            let finalPrompt = '';
+            let questionText = '';
+
+            if (currentQuestion.type === 'reverse-scenario' && ((currentQuestion as any).answer || (currentQuestion as any).scene)) {
+              // Reverse-scenario: answer/scene goes to speech bubble, question is the prompt
+              finalScene = (currentQuestion as any).answer || (currentQuestion as any).scene || '';
+              finalPrompt = questionTextRaw || 'What is this?';
+              questionText = finalPrompt;
+            } else {
+              // Auto-convert question to scene for multiple-choice, fill-in, and scenario (if no explicit scene/caseDescription)
+              const shouldAutoConvert = (currentQuestion.type === 'multiple-choice' || currentQuestion.type === 'fill-in' || currentQuestion.type === 'scenario')
+                && !caseDesc && !parsed.scene;
+              finalScene = shouldAutoConvert ? questionTextRaw : (caseDesc || parsed.scene);
+              finalPrompt = shouldAutoConvert
+                ? (currentQuestion.type === 'multiple-choice' ? 'Choose the correct answer' :
+                  currentQuestion.type === 'fill-in' ? 'Complete the sentence' :
+                    'Choose your response')
+                : parsed.question;
+              questionText = finalScene ? finalPrompt : questionTextRaw;
+            }
 
             return (
               <div className="mb-6 md:mb-8">
@@ -1111,7 +1281,7 @@ export default function YourLessonPage() {
                 {/* Character and Speech Bubble Container - Absolute Character to prevent layout shift */}
                 <div className="relative mb-2 min-h-[200px] md:min-h-[300px]">
                   {/* Character Avatar - Absolute Positioned to hang off the left */}
-                  <div className="absolute -left-[100px] md:-left-[100px] -top-30 z-10 opacity-100">
+                  <div className="absolute -left-[100px] md:-left-[100px] -top-30 z-10 opacity-100 pointer-events-none">
                     <div className="w-[350px] h-[350px] md:w-[550px] md:h-[550px] rounded-2xl overflow-hidden bg-transparent opacity-100">
                       <video
                         ref={(ref) => setVideoRef(ref)}
@@ -1126,25 +1296,64 @@ export default function YourLessonPage() {
                   </div>
 
                   {/* Speech Bubble - Pushed right to clear the character */}
-                  <div className={`ml-[160px] md:ml-[280px] pt-12 md:pt-10 transition-all duration-300 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
+                  <div className={`ml-[160px] md:ml-[280px] pt-12 md:pt-10 transition-all duration-300 relative z-20 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
                     <div className="relative">
                       <div className="bg-[#2a1f1f] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-red-900/30 relative">
                         {/* Speech bubble pointer */}
                         <div className="absolute left-0 top-16 transform -translate-x-2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#2a1f1f]"></div>
 
-                        {/* Micro-sim: Show current step's scene or question */}
-                        {isMicroSim && currentStep && (
+                        {/* Micro-sim: Show current step's scene (auto-converted or explicit) */}
+                        {isMicroSim && currentStep && microSimScene && (
                           <p className="text-red-200 text-base md:text-lg italic mb-2">
-                            {renderTextWithBold(currentStep.scene || currentStep.question)}
+                            {renderTextWithBold(microSimScene)}
                           </p>
                         )}
 
-                        {/* Regular scenario: Scene text */}
-                        {!isMicroSim && parsed.scene && (
-                          <p className="text-red-200 text-base md:text-lg italic mb-2">{renderTextWithBold(parsed.scene)}</p>
+                        {/* Regular scenario: Scene/caseDescription text (or auto-converted question) */}
+                        {!isMicroSim && finalScene && (
+                          <p className="text-red-200 text-base md:text-lg italic mb-2">
+                            {currentQuestion.type === 'fill-in' && currentQuestion.sentence ? (
+                              // For fill-in questions, show sentence with interactive blanks
+                              (() => {
+                                const normalizedSentence = currentQuestion.sentence
+                                  .replace(/_{3,}/g, '(--------)')
+                                  .replace(/\([-]+\)/g, '(--------)');
+                                const parts = normalizedSentence.split('(--------)');
+                                return (
+                                  <span className="inline-flex flex-wrap items-center gap-1">
+                                    {parts.map((part, index) => (
+                                      <span key={index} className="inline-flex flex-wrap items-center gap-1">
+                                        <span>{part}</span>
+                                        {index < parts.length - 1 && (
+                                          <span
+                                            onClick={() => {
+
+                                              if (!isChecked && fillInAnswers[index]) {
+                                                const newAnswers = [...fillInAnswers];
+                                                newAnswers[index] = '';
+                                                setFillInAnswers(newAnswers);
+                                              } else {
+                                              }
+                                            }}
+                                            className={`inline-flex items-center justify-center px-4 py-1.5 rounded-lg border-2 font-semibold text-sm md:text-base min-w-[140px] transition-all ${fillInAnswers[index]
+                                              ? 'bg-[#58CC02] border-[#46A302] text-white cursor-pointer hover:opacity-80 hover:scale-105'
+                                              : 'bg-gray-800/50 border-gray-600 text-gray-500 cursor-default border-dashed'
+                                              }`}>
+                                            {fillInAnswers[index] || '___________'}
+                                          </span>
+                                        )}
+                                      </span>
+                                    ))}
+                                  </span>
+                                );
+                              })()
+                            ) : (
+                              renderTextWithBold(finalScene)
+                            )}
+                          </p>
                         )}
-                        {!isMicroSim && !parsed.scene && (
-                          <p className="text-white text-base md:text-lg font-semibold">{renderTextWithBold(currentQuestion.question)}</p>
+                        {!isMicroSim && !finalScene && (
+                          <p className="text-white text-base md:text-lg font-semibold">{renderTextWithBold(questionTextRaw)}</p>
                         )}
                       </div>
                     </div>
@@ -1152,9 +1361,16 @@ export default function YourLessonPage() {
                 </div>
 
                 {/* Secondary Question Text Area - Consistent Spacing below character/bubble */}
-                {/* Only show if we have a separate question line (like in scenarios) */}
+                {/* Only show if we have a separate question line (like in scenarios or auto-converted) */}
                 <div className={`min-h-[60px] flex items-center justify-center mb-6 transition-all duration-300 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
-                  {parsed.scene && questionText && (
+                  {/* Micro-sim: Show prompt if scene exists */}
+                  {isMicroSim && microSimScene && microSimPrompt && (
+                    <p className="text-white text-lg md:text-xl font-bold text-center">
+                      {renderTextWithBold(microSimPrompt)}
+                    </p>
+                  )}
+                  {/* Regular scenario: Show prompt if scene exists */}
+                  {!isMicroSim && finalScene && questionText && (
                     <p className="text-white text-lg md:text-xl font-bold text-center">
                       {renderTextWithBold(questionText)}
                     </p>
@@ -1176,7 +1392,7 @@ export default function YourLessonPage() {
                 {/* Character and Speech Bubble Container - Absolute Character */}
                 <div className="relative mb-2 min-h-[200px] md:min-h-[300px]">
                   {/* Character Avatar - Left Side Absolute - Always visible, no fade */}
-                  <div className="absolute -left-[100px] md:-left-[100px] -top-30 z-10 opacity-100">
+                  <div className="absolute -left-[100px] md:-left-[100px] -top-30 z-10 opacity-100 pointer-events-none">
                     <div className="w-[350px] h-[350px] md:w-[550px] md:h-[550px] rounded-2xl overflow-hidden bg-transparent opacity-100">
                       <video
                         ref={(ref) => setVideoRef(ref)}
@@ -1209,36 +1425,75 @@ export default function YourLessonPage() {
                           {currentQuestion.type === 'fill-in' && currentQuestion.sentence ? (
                             // For fill-in questions, show sentence with blanks that fill in as user selects words
                             (() => {
-                              const parts = currentQuestion.sentence.split('(--------)');
-                              return parts.map((part, index) => (
-                                <span key={index}>
-                                  {part}
-                                  {index < parts.length - 1 && (
-                                    <span
-                                      onClick={() => {
-                                        if (!isChecked && fillInAnswers[index]) {
-                                          // Remove this word from the blank by setting it to empty string
-                                          const newAnswers = [...fillInAnswers];
-                                          newAnswers[index] = '';
-                                          // Filter out empty strings from the end to keep array clean
-                                          while (newAnswers.length > 0 && !newAnswers[newAnswers.length - 1]) {
-                                            newAnswers.pop();
-                                          }
-                                          setFillInAnswers(newAnswers);
-                                        }
-                                      }}
-                                      className={`inline-flex items-center justify-center mx-1 px-4 py-2 rounded-lg border-2 font-semibold text-sm md:text-base min-w-[120px] transition-all ${fillInAnswers[index]
-                                        ? 'bg-[#58CC02] border-[#46A302] text-white cursor-pointer hover:opacity-80 hover:scale-105'
-                                        : 'bg-gray-800 border-gray-600 text-gray-400 cursor-default'
-                                        }`}>
-                                      {fillInAnswers[index] || '________'}
+                              // Convert ___ to (--------) for consistency
+                              const normalizedSentence = currentQuestion.sentence
+                                .replace(/_{3,}/g, '(--------)')
+                                .replace(/\([-]+\)/g, '(--------)');
+                              const parts = normalizedSentence.split('(--------)');
+                              return (
+                                <span className="inline-flex flex-wrap items-center gap-1">
+                                  {parts.map((part, index) => (
+                                    <span key={index} className="inline-flex flex-wrap items-center gap-1">
+                                      <span>{part}</span>
+                                      {index < parts.length - 1 && (
+                                        <span
+                                          draggable={!isChecked && !!fillInAnswers[index]}
+                                          onDragStart={(e) => {
+                                            if (!isChecked && fillInAnswers[index]) {
+                                              setDraggedBlankIndex(index);
+                                              e.dataTransfer.effectAllowed = 'move';
+                                            }
+                                          }}
+                                          onDragEnd={() => {
+                                            setDraggedBlankIndex(null);
+                                          }}
+                                          onDragOver={(e) => {
+                                            e.preventDefault();
+                                            e.dataTransfer.dropEffect = 'move';
+                                          }}
+                                          onDrop={(e) => {
+                                            e.preventDefault();
+                                            if (isChecked || draggedBlankIndex === null || draggedBlankIndex === index) return;
+
+                                            // Reorder fill-in answers
+                                            const newAnswers = [...fillInAnswers];
+                                            const draggedWord = newAnswers[draggedBlankIndex];
+
+                                            // Remove from old position
+                                            newAnswers.splice(draggedBlankIndex, 1, '');
+
+                                            // Insert at new position
+                                            newAnswers[index] = draggedWord;
+
+                                            setFillInAnswers(newAnswers);
+                                            setDraggedBlankIndex(null);
+                                          }}
+                                          onClick={() => {
+                                            if (!isChecked && fillInAnswers[index]) {
+                                              // Remove this word from the blank
+                                              const newAnswers = [...fillInAnswers];
+                                              newAnswers[index] = '';
+                                              // Clean up empty trailing positions
+                                              while (newAnswers.length > 0 && !newAnswers[newAnswers.length - 1]) {
+                                                newAnswers.pop();
+                                              }
+                                              setFillInAnswers(newAnswers);
+                                            }
+                                          }}
+                                          className={`inline-flex items-center justify-center px-4 py-1.5 rounded-lg border-2 font-semibold text-sm md:text-base min-w-[140px] transition-all duration-300 ease-in-out ${fillInAnswers[index]
+                                            ? 'bg-[#58CC02] border-[#46A302] text-white cursor-move hover:opacity-80 hover:scale-105'
+                                            : 'bg-gray-800/50 border-gray-600 text-gray-500 cursor-default border-dashed'
+                                            } ${draggedBlankIndex === index ? 'opacity-50 scale-95' : ''}`}>
+                                          {fillInAnswers[index] || '___________'}
+                                        </span>
+                                      )}
                                     </span>
-                                  )}
+                                  ))}
                                 </span>
-                              ));
+                              );
                             })()
                           ) : (
-                            renderTextWithBold(currentQuestion.question)
+                            renderTextWithBold(getQuestionText(currentQuestion))
                           )}
                         </p>
                       </div>
@@ -1255,7 +1510,7 @@ export default function YourLessonPage() {
           // Puzzle Mode: No avatar, full screen, minimal UI
           if (uiMode === 'puzzle') {
             return (
-              <div className={`mb-6 md:mb-8 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
+              <div className="mb-6 md:mb-8">
                 {/* Puzzle Title - Purple and pattern-focused */}
                 <h2 className="text-xl md:text-2xl font-bold text-purple-400 mb-6 md:mb-8 text-center">
                   🧩 Pattern Recognition Exercise
@@ -1263,13 +1518,14 @@ export default function YourLessonPage() {
 
                 {/* Character Avatar - Consistent Layout */}
                 <div className="relative mb-2 min-h-[200px] md:min-h-[300px]">
-                  <div className="absolute -left-[100px] md:-left-[100px] -top-30 z-10">
-                    <div className="w-[350px] h-[350px] md:w-[550px] md:h-[550px] rounded-2xl overflow-hidden bg-transparent">
+                  <div className="absolute -left-[100px] md:-left-[100px] -top-30 z-10 opacity-100 pointer-events-none">
+                    <div className="w-[350px] h-[350px] md:w-[550px] md:h-[550px] rounded-2xl overflow-hidden bg-transparent opacity-100">
                       <video
                         ref={(ref) => setVideoRef(ref)}
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-contain opacity-100"
                         muted
                         playsInline
+                        style={{ opacity: 1 }}
                       >
                         <source src="/animations/character-standing.webm" type="video/webm" />
                       </video>
@@ -1277,7 +1533,7 @@ export default function YourLessonPage() {
                   </div>
 
                   {/* Speech Bubble - Identical to Combat/Training Modes */}
-                  <div className={`ml-[160px] md:ml-[280px] pt-12 md:pt-10 transition-all duration-300 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
+                  <div className={`ml-[160px] md:ml-[280px] pt-12 md:pt-10 transition-all duration-300 relative z-20 ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
                     <div className="relative">
                       <div className="bg-[#1e2a3a] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-purple-900/30 relative">
                         {/* Speech bubble pointer */}
@@ -1383,9 +1639,9 @@ export default function YourLessonPage() {
                                 setCorrectAnswers(correctAnswers + 1);
 
                                 // Award XP for completing matching question
-                                if (!isLessonAlreadyCompleted() && userEmail) {
+                                if (!isLessonAlreadyCompleted() && isSignedIn) {
                                   try {
-                                    await addXPMutation({ amount: 5, email: userEmail });
+                                    await addXPMutation({ amount: 5 });
                                   } catch (error) {
                                     // Error adding XP
                                   }
@@ -1481,46 +1737,51 @@ export default function YourLessonPage() {
 
             {/* Word option buttons */}
             <div className="grid grid-cols-2 gap-3 md:gap-4 max-w-2xl mx-auto px-4">
-              {currentQuestion.options?.map((option) => {
-                const isSelected = fillInAnswers.includes(option.text);
-                const isDisabled = isChecked || fillInAnswers.length >= (currentQuestion.answers?.length || 0);
+              {(() => {
+                return currentQuestion.options?.map((option) => {
+                  const isSelected = fillInAnswers.includes(option.text);
+                  // Count non-empty answers (filter out empty strings)
+                  const filledCount = fillInAnswers.filter(a => a && a.trim()).length;
+                  const isDisabled = isChecked || filledCount >= (currentQuestion.answers?.length || 0);
 
-                return (
-                  <button
-                    key={option.id}
-                    onClick={() => {
-                      if (!isChecked) {
-                        const maxBlanks = currentQuestion.answers?.length || 0;
-                        // Find first empty position or add to end if all filled
-                        const newAnswers = [...fillInAnswers];
-                        let inserted = false;
-                        for (let i = 0; i < maxBlanks; i++) {
-                          if (!newAnswers[i]) {
-                            newAnswers[i] = option.text;
-                            inserted = true;
-                            break;
+                  return (
+                    <button
+                      key={option.id}
+                      onClick={() => {
+                        if (!isChecked) {
+                          const maxBlanks = currentQuestion.answers?.length || 0;
+                          const newAnswers = [...fillInAnswers];
+                          let inserted = false;
+                          for (let i = 0; i < maxBlanks; i++) {
+                            if (!newAnswers[i]) {
+                              newAnswers[i] = option.text;
+                              inserted = true;
+                              break;
+                            }
+                          }
+                          if (!inserted && newAnswers.length < maxBlanks) {
+                            newAnswers.push(option.text);
+                          }
+
+                          if (inserted || newAnswers.length <= maxBlanks) {
+                            setFillInAnswers(newAnswers);
+                          } else {
                           }
                         }
-                        if (!inserted && newAnswers.length < maxBlanks) {
-                          newAnswers.push(option.text);
-                        }
-                        if (inserted || newAnswers.length <= maxBlanks) {
-                          setFillInAnswers(newAnswers);
-                        }
-                      }
-                    }}
-                    disabled={isSelected || isDisabled}
-                    className={`p-4 md:p-5 rounded-xl md:rounded-2xl border-2 md:border-3 text-sm md:text-lg font-semibold transition-all ${isSelected
-                      ? 'bg-gray-800 border-gray-700 text-gray-500 opacity-50 cursor-not-allowed'
-                      : isDisabled
-                        ? 'bg-[#1a2332] border-gray-600 text-gray-400 opacity-70 cursor-not-allowed'
-                        : 'bg-[#1a2332] border-gray-600 hover:border-[#58CC02] text-white hover:scale-105 active:scale-95'
-                      }`}
-                  >
-                    {option.text}
-                  </button>
-                );
-              })}
+                      }}
+                      disabled={isSelected || isDisabled}
+                      className={`p-4 md:p-5 rounded-xl md:rounded-2xl border-2 md:border-3 text-sm md:text-lg font-semibold transition-all ${isSelected
+                        ? 'bg-gray-800 border-gray-700 text-gray-500 opacity-50 cursor-not-allowed'
+                        : isDisabled
+                          ? 'bg-[#1a2332] border-gray-600 text-gray-400 opacity-70 cursor-not-allowed'
+                          : 'bg-[#1a2332] border-gray-600 hover:border-[#58CC02] text-white hover:scale-105 active:scale-95'
+                        }`}
+                    >
+                      {option.text}
+                    </button>
+                  );
+                });
+              })()}
             </div>
           </div>
         )}
@@ -1573,7 +1834,10 @@ export default function YourLessonPage() {
             {/* Options Grid - ANIMATED, Centered below character and bubble */}
             <div className={`flex justify-center ${isTransitioning ? 'exercise-fade-out' : 'exercise-slide-in'}`}>
               <div className="grid grid-cols-2 gap-4 md:gap-6 max-w-3xl w-full px-4">
-                {currentQuestion.options.map((option) => {
+                {(shuffledOptions.length > 0 ? shuffledOptions : currentQuestion.options).map((option) => {
+                  // Skip options with undefined text
+                  if (!option || !option.text) return null;
+
                   const isSelected = selectedAnswer === option.id;
                   const showCorrect = isChecked && option.id === currentQuestion.correctAnswer;
                   const showWrong = isChecked && isSelected && option.id !== currentQuestion.correctAnswer;
@@ -1622,18 +1886,25 @@ export default function YourLessonPage() {
                   return (
                     <div
                       key={index}
-                      className={`min-w-[80px] md:min-w-[100px] h-12 md:h-14 rounded-xl border-2 flex items-center justify-center transition-all ${word
+                      onClick={() => console.log('📦 [DIV CLICKED]', { index, word, hasWord: !!word })}
+                      className={`min-w-[80px] md:min-w-[100px] h-12 md:h-14 rounded-xl border-2 flex items-center justify-center transition-all duration-300 ease-in-out ${word
                         ? isChecked
                           ? selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim()
                             ? 'bg-[#58CC02] border-[#46A302] text-white'
                             : 'bg-red-500 border-red-700 text-white'
                           : 'bg-white border-gray-300 text-gray-800'
                         : 'border-dashed border-gray-600 bg-[#1a2332]'
-                        }`}
-                      onDragOver={(e) => e.preventDefault()}
+                        } ${draggedWordIndex === index ? 'opacity-50 scale-95' : ''}`}
+                      onDragOver={(e) => {
+                        e.preventDefault();
+                        e.dataTransfer.dropEffect = 'move';
+                      }}
                       onDrop={(e) => {
                         e.preventDefault();
-                        if (!isChecked && draggedAvailableIndex !== null && !word) {
+                        if (isChecked) return;
+
+                        // Dropping from word bank
+                        if (draggedAvailableIndex !== null && !word) {
                           const droppedWord = availableWords[draggedAvailableIndex];
                           const newWords = [...selectedWords];
                           newWords[index] = droppedWord;
@@ -1641,20 +1912,57 @@ export default function YourLessonPage() {
                           setAvailableWords(availableWords.filter((_, i) => i !== draggedAvailableIndex));
                           setDraggedAvailableIndex(null);
                         }
+                        // Reordering within sentence slots
+                        else if (draggedWordIndex !== null && draggedWordIndex !== index) {
+                          const newWords = [...selectedWords];
+                          const draggedWord = newWords[draggedWordIndex];
+
+                          // Remove from old position
+                          newWords.splice(draggedWordIndex, 1);
+
+                          // Insert at new position
+                          newWords.splice(index, 0, draggedWord);
+
+                          setSelectedWords(newWords);
+                          setDraggedWordIndex(null);
+                        }
                       }}
                     >
                       {word ? (
                         <button
-                          onClick={() => {
+                          draggable={!isChecked}
+                          onDragStart={(e) => {
                             if (!isChecked) {
+                              setDraggedWordIndex(index);
+                              e.dataTransfer.effectAllowed = 'move';
+                            }
+                          }}
+                          onDragEnd={() => {
+                            setDraggedWordIndex(null);
+                          }}
+                          onClick={() => {
+                            console.log('🖱️ [WORD CLICKED IN SLOT]', {
+                              word,
+                              index,
+                              isChecked,
+                              selectedWords,
+                              availableWords
+                            });
+                            if (!isChecked) {
+                              console.log('✅ [REMOVING WORD FROM SLOT]', { word, index });
                               const newWords = [...selectedWords];
                               newWords[index] = '';
-                              setSelectedWords(newWords.filter(w => w !== ''));
+                              const filtered = newWords.filter(w => w !== '');
+                              console.log('🔄 [AFTER FILTER]', { newWords, filtered });
+                              setSelectedWords(filtered);
                               setAvailableWords([...availableWords, word]);
+                              console.log('✅ [WORD RETURNED TO BANK]', { word, newAvailableWords: [...availableWords, word] });
+                            } else {
+                              console.log('❌ [BLOCKED - Already checked]');
                             }
                           }}
                           disabled={isChecked}
-                          className="px-3 py-2 text-sm md:text-base font-semibold w-full h-full"
+                          className="px-3 py-2 text-sm md:text-base font-semibold w-full h-full cursor-move hover:opacity-80 transition-opacity duration-200"
                         >
                           {/* Auto-capitalize first word for display */}
                           {isFirstWord && word ? word.charAt(0).toUpperCase() + word.slice(1) : word}

@@ -187,7 +187,6 @@
         {
           "exerciseId": "B1-2-P2-E8",
           "type": "reverse-scenario",
-          "answer": "A technique where a manipulator tells a story about 'someone else' to deliver a message to you without being direct.",
           "question": "What is this?",
           "options": [
             "The 'My Friend John' Technique / Metaphor",
@@ -200,7 +199,8 @@
           "feedback": {
             "correct": "Correct. 'My friend John just *quit his job* and he's so happy.' The command 'Quit your job' is hidden in the story.",
             "incorrect": "It's not just a story. It is a proxy message aimed at your subconscious."
-          }
+          },
+          "scene": "A technique where a manipulator tells a story about 'someone else' to deliver a message to you without being direct."
         },
         {
           "exerciseId": "B1-2-P2-E9",

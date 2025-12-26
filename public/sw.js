@@ -4,8 +4,8 @@
 
 // Step 1: Define cache names and versions
 // Using versioned cache names allows us to update the cache when the app updates
-const CACHE_NAME = 'duolearn-v1';
-const RUNTIME_CACHE = 'duolearn-runtime-v1';
+const CACHE_NAME = 'duolearn-v2';
+const RUNTIME_CACHE = 'duolearn-runtime-v2';
 
 // Step 2: List essential resources to cache during installation
 // These are the core files needed for the app to function offline
@@ -70,6 +70,12 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   // Skip cross-origin requests and chrome extensions
   if (!event.request.url.startsWith(self.location.origin)) {
+    return;
+  }
+
+  // Only cache GET requests; let other methods hit the network directly
+  if (event.request.method !== 'GET') {
+    event.respondWith(fetch(event.request));
     return;
   }
 

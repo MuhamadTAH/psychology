@@ -171,7 +171,6 @@
         {
           "exerciseId": "A5-4-P1-E7",
           "type": "reverse-scenario",
-          "answer": "The psychological phenomenon where hostages develop positive feelings for their captors as a survival strategy.",
           "question": "What is this called?",
           "options": [
             "Stockholm Syndrome",
@@ -184,7 +183,8 @@
           "feedback": {
             "correct": "Correct. In an abusive relationship, you are a hostage. You bond with the captor to avoid being hurt. It is a survival instinct.",
             "incorrect": "Trauma Bonding is the modern term for this dynamic in relationships."
-          }
+          },
+          "scene": "The psychological phenomenon where hostages develop positive feelings for their captors as a survival strategy."
         },
         {
           "exerciseId": "A5-4-P1-E8",

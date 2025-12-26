@@ -180,7 +180,6 @@
         {
           "exerciseId": "B5-4-P2-E8",
           "type": "reverse-scenario",
-          "answer": "A tactic where the speaker repeats a lie so often that people start to believe it.",
           "question": "What is this effect?",
           "options": [
             "Illusory Truth Effect",
@@ -193,7 +192,8 @@
           "feedback": {
             "correct": "Correct. Repetition creates familiarity. Familiarity feels like truth to the brain.",
             "incorrect": "It is a specific cognitive bias exploited by propaganda."
-          }
+          },
+          "scene": "A tactic where the speaker repeats a lie so often that people start to believe it."
         },
         {
           "exerciseId": "B5-4-P2-E9",

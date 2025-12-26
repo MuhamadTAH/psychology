@@ -158,7 +158,6 @@
         {
           "exerciseId": "A1-1-P3-E9",
           "type": "reverse-scenario",
-          "answer": "A 'Boss Scenario'",
           "question": "What does this term mean in this app?",
           "options": [
             "A simulation of talking to your boss.",
@@ -168,7 +167,8 @@
           ],
           "correct": "A complex scenario that *combines multiple tactics* at once.",
           "difficulty": "medium",
-          "explanation": "You've already passed one! The 'Coffee Shop' was a 'Boss Scenario' because it combined 5 different tactics."
+          "explanation": "You've already passed one! The 'Coffee Shop' was a 'Boss Scenario' because it combined 5 different tactics.",
+          "scene": "A 'Boss Scenario'"
         },
         {
           "exerciseId": "A1-1-P3-E10",

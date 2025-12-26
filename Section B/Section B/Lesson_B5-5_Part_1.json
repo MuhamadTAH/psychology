@@ -199,7 +199,6 @@
         {
           "exerciseId": "B5-5-P1-E8",
           "type": "reverse-scenario",
-          "answer": "Creating a fake scenario (story) to trick a victim into giving up information.",
           "question": "What is this Social Engineering term?",
           "options": [
             "Pretexting",
@@ -212,7 +211,8 @@
           "feedback": {
             "correct": "Correct. The 'Pretext' is the lie/story. Phishing is just one way to deliver it.",
             "incorrect": "It is the act of creating the scenario."
-          }
+          },
+          "scene": "Creating a fake scenario (story) to trick a victim into giving up information."
         },
         {
           "exerciseId": "B5-5-P1-E9",

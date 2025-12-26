@@ -204,7 +204,6 @@
         {
           "exerciseId": "B4-5-P2-E9",
           "type": "reverse-scenario",
-          "answer": "Claiming another buyer is about to purchase the item to force you to bid higher.",
           "question": "What is this tactic?",
           "options": [
             "The Phantom Competitor",
@@ -217,7 +216,8 @@
           "feedback": {
             "correct": "Correct. It creates artificial rivalry. You bid against a ghost.",
             "incorrect": "It is a specific Scarcity play."
-          }
+          },
+          "scene": "Claiming another buyer is about to purchase the item to force you to bid higher."
         },
         {
           "exerciseId": "B4-5-P2-E10",

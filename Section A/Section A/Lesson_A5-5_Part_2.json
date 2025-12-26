@@ -186,7 +186,6 @@
         {
           "exerciseId": "A5-5-P2-E8",
           "type": "reverse-scenario",
-          "answer": "A person who lacks a conscience, feels no fear, and uses people for stimulation.",
           "question": "What is this?",
           "options": [
             "Psychopath",
@@ -199,7 +198,8 @@
           "feedback": {
             "correct": "Correct. The lack of fear (low arousal) and conscience defines the Psychopath.",
             "incorrect": "Narcissists feel shame. Machiavellians feel strategy. Psychopaths feel nothing."
-          }
+          },
+          "scene": "A person who lacks a conscience, feels no fear, and uses people for stimulation."
         },
         {
           "exerciseId": "A5-5-P2-E9",
@@ -348,7 +348,6 @@
         {
           "exerciseId": "A5-5-P2-E17",
           "type": "reverse-scenario",
-          "answer": "A tactic where the manipulator recruits third parties to validate their abuse or convey messages.",
           "question": "What are these third parties called?",
           "options": [
             "Flying Monkeys",
@@ -361,7 +360,8 @@
           "feedback": {
             "correct": "Correct. From Wizard of Oz. They do the Witch's bidding.",
             "incorrect": "They aren't real friends. They are pawns."
-          }
+          },
+          "scene": "A tactic where the manipulator recruits third parties to validate their abuse or convey messages."
         },
         {
           "exerciseId": "A5-5-P2-E18",
@@ -567,7 +567,6 @@
         {
           "exerciseId": "A5-5-P2-E29",
           "type": "reverse-scenario",
-          "answer": "The ability to know what someone feels without feeling it yourself (used for strategy).",
           "question": "What is this?",
           "options": [
             "Cold / Cognitive Empathy",
@@ -580,7 +579,8 @@
           "feedback": {
             "correct": "Correct. This is the Machiavellian superpower. Data without distress.",
             "incorrect": "It is not warm. It is clinical."
-          }
+          },
+          "scene": "The ability to know what someone feels without feeling it yourself (used for strategy)."
         },
         {
           "exerciseId": "A5-5-P2-E30",

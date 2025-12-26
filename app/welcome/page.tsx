@@ -36,6 +36,10 @@ export default function WelcomePage() {
   const [selectedReaction, setSelectedReaction] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
 
+  // Character animation state
+  const [currentAnimation, setCurrentAnimation] = useState<'thinking' | 'correct' | 'wrong'>('thinking');
+  const [videoRef, setVideoRef] = useState<HTMLVideoElement | null>(null);
+
   // Typewriter effect state
   const [displayedText, setDisplayedText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
@@ -119,6 +123,59 @@ export default function WelcomePage() {
     };
   }, [showReaction, selectedReaction]);
 
+  // Character video animation control
+  useEffect(() => {
+    if (!videoRef) return;
+
+    let isInitialized = false;
+
+    const handleTimeUpdate = () => {
+      if (!isInitialized) return;
+
+      if (currentAnimation === 'thinking') {
+        if (videoRef.currentTime >= 6.15) {
+          videoRef.currentTime = 0;
+        }
+      } else if (currentAnimation === 'correct') {
+        if (videoRef.currentTime >= 22.12) {
+          videoRef.pause();
+          setCurrentAnimation('thinking');
+        }
+      } else if (currentAnimation === 'wrong') {
+        if (videoRef.currentTime >= 18.15) {
+          videoRef.pause();
+          setCurrentAnimation('thinking');
+        }
+      }
+    };
+
+    const initializeAnimation = async () => {
+      if (!videoRef.isConnected) return;
+
+      if (currentAnimation === 'thinking') {
+        videoRef.currentTime = 0;
+      } else if (currentAnimation === 'correct') {
+        videoRef.currentTime = 19.15;
+      } else if (currentAnimation === 'wrong') {
+        videoRef.currentTime = 15.30;
+      }
+
+      setTimeout(() => {
+        if (videoRef.isConnected) {
+          isInitialized = true;
+          videoRef.play().catch(() => { });
+        }
+      }, 50);
+    };
+
+    initializeAnimation();
+    videoRef.addEventListener('timeupdate', handleTimeUpdate);
+
+    return () => {
+      videoRef.removeEventListener('timeupdate', handleTimeUpdate);
+    };
+  }, [currentAnimation, videoRef]);
+
   // Phase 3 Calculation: Dynamic message cycling
   useEffect(() => {
     if (step === "phase3_calculation") {
@@ -148,7 +205,7 @@ export default function WelcomePage() {
             playsInline
             className="w-64 h-64 object-contain glitch-video cursor-pointer"
           >
-            <source src="/welcome-animation.webm" type="video/webm" />
+            <source src="/logo-animation.webm" type="video/webm" />
           </video>
           {/* Skip hint */}
           <div className="absolute bottom-0 text-gray-700 text-xs font-mono uppercase tracking-widest animate-pulse">
@@ -205,187 +262,182 @@ export default function WelcomePage() {
           style={{ backgroundImage: 'linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06))', backgroundSize: '100% 2px, 3px 100%' }}>
         </div>
 
-        {/* THE "STATUE" - Replaces the Cat */}
-        <div className={`mb-8 relative transition-all duration-500 
-          ${glitch ? '-translate-x-1 translate-y-1 opacity-80' : ''}
-          ${statueState === 'evaluate' ? 'scale-125' : ''}
-          ${statueState === 'nod' ? 'animate-nod' : ''}
-        `}>
-          {/* Abstract Geometric Bust Representation */}
-          <div className="w-32 h-32 relative">
-            <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-              {/* Head Silhouette */}
-              <path d="M50 10 C 30 10, 25 35, 25 50 C 25 70, 35 80, 35 90 L 65 90 C 65 80, 75 70, 75 50 C 75 35, 70 10, 50 10" fill={statueState === 'suspicion' ? "#2a0a0a" : "#e5e5e5"} className="transition-colors duration-500" />
-              {/* The Gold Crack (Kintsugi) */}
-              <path d="M50 10 L 45 30 L 55 45 L 40 60 L 50 90" fill="none" stroke="#D4AF37" strokeWidth="1.5" className="animate-pulse" />
-              {/* Sensor Bar over Eyes */}
-              <rect x="30" y="35" width="40" height={statueState === 'suspicion' ? "4" : "8"} fill={statueState === 'suspicion' ? "#ff0000" : "#000"} className="transition-all duration-300" />
-            </svg>
-            {/* Glitch Overlay Elements */}
-            {glitch && (
-              <>
-                <div className="absolute top-0 left-0 w-full h-full bg-red-500 mix-blend-multiply opacity-30 translate-x-1"></div>
-                <div className="absolute top-0 left-0 w-full h-full bg-cyan-500 mix-blend-multiply opacity-30 -translate-x-1"></div>
-              </>
-            )}
-          </div>
+        {/* Character Animation - Absolute fixed position at top */}
+        <div className="absolute top-4 md:top-4 left-1/2 -translate-x-1/2 pointer-events-none z-10">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-72 h-72 md:w-96 md:h-96 object-contain"
+            onTimeUpdate={(e) => {
+              const video = e.currentTarget;
+              if (video.currentTime >= 6.15) {
+                video.currentTime = 0;
+              }
+            }}
+          >
+            <source src="/animations/character-standing.webm" type="video/webm" />
+          </video>
         </div>
 
-        {/* Main Headline */}
-        <h1 className="text-3xl md:text-4xl font-bold tracking-widest mb-2 text-center uppercase border-b-2 border-white pb-2">
-          Identify Yourself
-        </h1>
+        <div className="relative z-20 mt-56 md:mt-72">
+          {/* Main Headline */}
+          <h1 className="text-3xl md:text-4xl font-bold tracking-widest mb-2 text-center uppercase border-b-2 border-white pb-2">
+            Identify Yourself
+          </h1>
 
-        {/* Subtext with Typewriter Effect */}
-        <p className="text-gray-400 text-xs md:text-sm tracking-widest mb-12 h-6 flex items-center">
-          <Terminal size={12} className="mr-2 inline-block text-red-500" />
-          {fullText.substring(0, textIndex)}
-          <span className="animate-pulse">_</span>
-        </p>
+          {/* Subtext with Typewriter Effect */}
+          <p className="text-gray-400 text-xs md:text-sm tracking-widest mb-12 h-6 flex items-center justify-center">
+            <Terminal size={12} className="mr-2 inline-block text-red-500" />
+            {fullText.substring(0, textIndex)}
+            <span className="animate-pulse">_</span>
+          </p>
 
-        {/* Action Buttons */}
-        {/* Action Buttons - Only show if NOT in login form mode */}
-        {step === "identityVerification" && (
-          <div className="w-full max-w-sm space-y-4 z-10">
+          {/* Action Buttons */}
+          {/* Action Buttons - Only show if NOT in login form mode */}
+          {step === "identityVerification" && (
+            <div className="w-full max-w-sm space-y-4 z-10">
 
-            {/* Primary Action - Existing User */}
-            <button
-              onClick={() => {
-                setStep("loginForm");
-                setStatueState("nod");
-              }}
-              className="group w-full border border-white bg-transparent hover:bg-white hover:text-black transition-all duration-300 py-4 px-6 flex items-center justify-between uppercase tracking-wider text-sm"
-            >
-              <span>Access Existing Dossier</span>
-              <Lock size={16} className="group-hover:text-black text-gray-500 transition-colors" />
-            </button>
+              {/* Primary Action - Existing User */}
+              <button
+                onClick={() => {
+                  setStep("loginForm");
+                  setStatueState("nod");
+                }}
+                className="group w-full border border-white bg-transparent hover:bg-white hover:text-black transition-all duration-300 py-4 px-6 flex items-center justify-between uppercase tracking-wider text-sm"
+              >
+                <span>Access Existing Dossier</span>
+                <Lock size={16} className="group-hover:text-black text-gray-500 transition-colors" />
+              </button>
 
-            {/* Secondary Action - New User */}
-            <button
-              onClick={() => {
-                setStatueState("evaluate");
-                setTimeout(() => setStep("phase1_awareness"), 800);
-              }}
-              className="group w-full border border-gray-600 bg-transparent hover:border-white hover:bg-zinc-900 transition-all duration-300 py-4 px-6 flex items-center justify-between uppercase tracking-wider text-sm text-gray-300 hover:text-white"
-            >
-              <span>Create Operative Profile</span>
-              <Shield size={16} className="group-hover:text-white text-gray-600 transition-colors" />
-            </button>
+              {/* Secondary Action - New User */}
+              <button
+                onClick={() => {
+                  setStatueState("evaluate");
+                  setTimeout(() => setStep("phase1_awareness"), 800);
+                }}
+                className="group w-full border border-gray-600 bg-transparent hover:border-white hover:bg-zinc-900 transition-all duration-300 py-4 px-6 flex items-center justify-between uppercase tracking-wider text-sm text-gray-300 hover:text-white"
+              >
+                <span>Create Operative Profile</span>
+                <Shield size={16} className="group-hover:text-white text-gray-600 transition-colors" />
+              </button>
 
-            {/* Tertiary Action - Ghost Mode */}
-            <button
-              onClick={() => {
-                setStatueState("suspicion");
-                setGlitch(true);
-                setTimeout(() => setGlitch(false), 500);
-                setShowGhostWarning(true);
-              }}
-              className="group w-full border-t border-b border-transparent hover:border-zinc-800 py-3 px-6 flex items-center justify-center uppercase tracking-widest text-xs text-gray-600 hover:text-red-500 transition-colors mt-8"
-            >
-              <Eye size={12} className="mr-2" />
-              <span>Proceed as Ghost</span>
-            </button>
-
-          </div>
-        )}
-
-        {/* Inline Login Form */}
-        {step === "loginForm" && (
-          <div className={`w-full max-w-sm space-y-4 z-10 ${loginError ? 'animate-shake' : 'animate-slide-up'}`}>
-            <div className="space-y-2">
-              <label className="text-xs text-gray-500 uppercase tracking-widest">Agent ID</label>
-              <input
-                type="email"
-                value={formData.identifier}
-                onChange={(e) => setFormData({ ...formData, identifier: e.target.value })}
-                className="w-full bg-zinc-900/50 border border-gray-700 p-3 text-white font-mono text-sm focus:border-white focus:outline-none transition-colors"
-                placeholder="ENTER EMAIL"
-              />
-            </div>
-            <div className="space-y-2">
-              <label className="text-xs text-gray-500 uppercase tracking-widest">Decryption Key</label>
-              <input
-                type="password"
-                value={formData.password}
-                onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                className="w-full bg-zinc-900/50 border border-gray-700 p-3 text-white font-mono text-sm focus:border-white focus:outline-none transition-colors"
-                placeholder="ENTER PASSWORD"
-              />
-            </div>
-
-            <button
-              onClick={async () => {
-                if (!isLoaded || !signIn) return;
-
-                try {
-                  const result = await signIn.create({
-                    identifier: formData.identifier,
-                    password: formData.password,
-                  });
-
-                  if (result.status === "complete") {
-                    await setActive({ session: result.createdSessionId });
-                    // Visual Success Feedback
-                    const btn = document.getElementById('login-btn');
-                    if (btn) {
-                      btn.innerText = "IDENTITY VERIFIED";
-                      btn.classList.remove('bg-white', 'text-black');
-                      btn.classList.add('bg-green-500', 'text-black', 'border-green-500');
-                    }
-                    setTimeout(() => {
-                      router.push("/dark-psychology-dashboard");
-                    }, 800);
-                  }
-                } catch (err) {
-                  setLoginError(true);
+              {/* Tertiary Action - Ghost Mode */}
+              <button
+                onClick={() => {
+                  setStatueState("suspicion");
                   setGlitch(true);
-                  setTimeout(() => {
-                    setLoginError(false);
-                    setGlitch(false);
-                  }, 1500);
-                }
-              }}
-              id="login-btn"
-              className={`w-full py-4 px-6 uppercase tracking-widest text-sm font-bold transition-all duration-200 mt-4 ${loginError
-                ? 'bg-red-900/20 border border-red-600 text-red-500 animate-pulse'
-                : 'bg-white text-black hover:bg-gray-200'
-                }`}
-            >
-              {loginError ? "ACCESS DENIED - INTRUDER ALERT" : "Verify Identity"}
-            </button>
+                  setTimeout(() => setGlitch(false), 500);
+                  setShowGhostWarning(true);
+                }}
+                className="group w-full border-t border-b border-transparent hover:border-zinc-800 py-3 px-6 flex items-center justify-center uppercase tracking-widest text-xs text-gray-600 hover:text-red-500 transition-colors mt-8"
+              >
+                <Eye size={12} className="mr-2" />
+                <span>Proceed as Ghost</span>
+              </button>
 
-            {/* Google Login */}
-            <button
-              onClick={() => {
-                if (!isLoaded || !signIn) return;
-                signIn.authenticateWithRedirect({
-                  strategy: "oauth_google",
-                  redirectUrl: "/sso-callback",
-                  redirectUrlComplete: "/dark-psychology-dashboard",
-                });
-              }}
-              className="w-full border border-zinc-700 bg-zinc-900/50 text-gray-400 py-4 px-6 uppercase tracking-widest text-xs hover:bg-zinc-800 hover:text-white transition-colors mt-4 flex items-center justify-center gap-3"
-            >
-              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
-                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
-                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
-                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
-              </svg>
-              <span>Authenticate via Google</span>
-            </button>
+            </div>
+          )}
 
-            <button
-              onClick={() => {
-                setStep("identityVerification");
-                setStatueState("idle");
-              }}
-              className="w-full text-center text-xs text-gray-600 uppercase tracking-widest hover:text-white transition-colors mt-4"
-            >
-              Cancel
-            </button>
-          </div>
-        )}
+          {/* Inline Login Form */}
+          {step === "loginForm" && (
+            <div className={`w-full max-w-sm space-y-4 z-10 ${loginError ? 'animate-shake' : 'animate-slide-up'}`}>
+              <div className="space-y-2">
+                <label className="text-xs text-gray-500 uppercase tracking-widest">Agent ID</label>
+                <input
+                  type="email"
+                  value={formData.identifier}
+                  onChange={(e) => setFormData({ ...formData, identifier: e.target.value })}
+                  className="w-full bg-zinc-900/50 border border-gray-700 p-3 text-white font-mono text-sm focus:border-white focus:outline-none transition-colors"
+                  placeholder="ENTER EMAIL"
+                />
+              </div>
+              <div className="space-y-2">
+                <label className="text-xs text-gray-500 uppercase tracking-widest">Decryption Key</label>
+                <input
+                  type="password"
+                  value={formData.password}
+                  onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+                  className="w-full bg-zinc-900/50 border border-gray-700 p-3 text-white font-mono text-sm focus:border-white focus:outline-none transition-colors"
+                  placeholder="ENTER PASSWORD"
+                />
+              </div>
+
+              <button
+                onClick={async () => {
+                  if (!isLoaded || !signIn) return;
+
+                  try {
+                    const result = await signIn.create({
+                      identifier: formData.identifier,
+                      password: formData.password,
+                    });
+
+                    if (result.status === "complete") {
+                      await setActive({ session: result.createdSessionId });
+                      // Visual Success Feedback
+                      const btn = document.getElementById('login-btn');
+                      if (btn) {
+                        btn.innerText = "IDENTITY VERIFIED";
+                        btn.classList.remove('bg-white', 'text-black');
+                        btn.classList.add('bg-green-500', 'text-black', 'border-green-500');
+                      }
+                      setTimeout(() => {
+                        router.push("/dark-psychology-dashboard");
+                      }, 800);
+                    }
+                  } catch (err) {
+                    setLoginError(true);
+                    setGlitch(true);
+                    setTimeout(() => {
+                      setLoginError(false);
+                      setGlitch(false);
+                    }, 1500);
+                  }
+                }}
+                id="login-btn"
+                className={`w-full py-4 px-6 uppercase tracking-widest text-sm font-bold transition-all duration-200 mt-4 ${loginError
+                  ? 'bg-red-900/20 border border-red-600 text-red-500 animate-pulse'
+                  : 'bg-white text-black hover:bg-gray-200'
+                  }`}
+              >
+                {loginError ? "ACCESS DENIED - INTRUDER ALERT" : "Verify Identity"}
+              </button>
+
+              {/* Google Login */}
+              <button
+                onClick={() => {
+                  if (!isLoaded || !signIn) return;
+                  signIn.authenticateWithRedirect({
+                    strategy: "oauth_google",
+                    redirectUrl: "/sso-callback",
+                    redirectUrlComplete: "/dark-psychology-dashboard",
+                  });
+                }}
+                className="w-full border border-zinc-700 bg-zinc-900/50 text-gray-400 py-4 px-6 uppercase tracking-widest text-xs hover:bg-zinc-800 hover:text-white transition-colors mt-4 flex items-center justify-center gap-3"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
+                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
+                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
+                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
+                </svg>
+                <span>Authenticate via Google</span>
+              </button>
+
+              <button
+                onClick={() => {
+                  setStep("identityVerification");
+                  setStatueState("idle");
+                }}
+                className="w-full text-center text-xs text-gray-600 uppercase tracking-widest hover:text-white transition-colors mt-4"
+              >
+                Cancel
+              </button>
+            </div>
+          )}
+        </div>
 
         {/* Footer / Version */}
         <div className="absolute bottom-6 text-[10px] text-gray-700 font-mono tracking-widest">
@@ -494,23 +546,30 @@ export default function WelcomePage() {
   // Phase 1.0: The Awareness ("The Hook")
   if (step === "phase1_awareness") {
     return (
-      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center">
-        <div key="phase1_awareness" className="animate-slide-in-right flex flex-col items-center">
-          {/* Statue: Idle (Observing) */}
-          <div className="mb-8 opacity-80">
-            <div className="w-24 h-24 relative">
-              <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-                <path d="M50 10 C 30 10, 25 35, 25 50 C 25 70, 35 80, 35 90 L 65 90 C 65 80, 75 70, 75 50 C 75 35, 70 10, 50 10" fill="#e5e5e5" />
-                <path d="M50 10 L 45 30 L 55 45 L 40 60 L 50 90" fill="none" stroke="#D4AF37" strokeWidth="1.5" />
-                <rect x="30" y="35" width="40" height="8" fill="#000" />
-              </svg>
-            </div>
-          </div>
+      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center relative">
+        {/* Character Animation - Absolute fixed position at top */}
+        <div className="absolute top-4 md:top-4 left-1/2 -translate-x-1/2 pointer-events-none z-10">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-72 h-72 md:w-96 md:h-96 object-contain"
+            onTimeUpdate={(e) => {
+              const video = e.currentTarget;
+              if (video.currentTime >= 6.15) {
+                video.currentTime = 0;
+              }
+            }}
+          >
+            <source src="/animations/character-standing.webm" type="video/webm" />
+          </video>
+        </div>
 
-          {/* Visual: Puppet String (Abstract) */}
+        <div key="phase1_awareness" className="animate-slide-in-right flex flex-col items-center relative z-20 mt-56 md:mt-72">
+
+          {/* Visual: Eye Icon */}
           <div className="mb-12 relative w-full max-w-xs h-32 flex items-center justify-center">
-            <div className="absolute inset-0 border-t border-gray-800 animate-pulse"></div>
-            <div className="w-1 h-32 bg-gray-800 absolute top-0 left-1/2 -translate-x-1/2 origin-top animate-swing"></div>
             <Eye size={48} className="text-white relative z-10" />
           </div>
 
@@ -556,20 +615,27 @@ export default function WelcomePage() {
   // Phase 1.1: The Solution ("The Arsenal")
   if (step === "phase1_solution") {
     return (
-      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center">
-        <div key="phase1_solution" className="animate-slide-in-right flex flex-col items-center">
-          {/* Statue: Explain (Hand Gesture / Glowing) */}
-          <div className="mb-8 opacity-90">
-            <div className="w-24 h-24 relative">
-              <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-                <path d="M50 10 C 30 10, 25 35, 25 50 C 25 70, 35 80, 35 90 L 65 90 C 65 80, 75 70, 75 50 C 75 35, 70 10, 50 10" fill="#e5e5e5" />
-                <path d="M50 10 L 45 30 L 55 45 L 40 60 L 50 90" fill="none" stroke="#D4AF37" strokeWidth="1.5" />
-                <rect x="30" y="35" width="40" height="8" fill="#000" />
-                {/* Hand Gesture Representation */}
-                <circle cx="80" cy="70" r="10" fill="#fff" className="animate-pulse opacity-50" />
-              </svg>
-            </div>
-          </div>
+      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center relative">
+        {/* Character Animation - Absolute fixed position at top */}
+        <div className="absolute top-4 md:top-4 left-1/2 -translate-x-1/2 pointer-events-none z-10">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-72 h-72 md:w-96 md:h-96 object-contain"
+            onTimeUpdate={(e) => {
+              const video = e.currentTarget;
+              if (video.currentTime >= 6.15) {
+                video.currentTime = 0;
+              }
+            }}
+          >
+            <source src="/animations/character-standing.webm" type="video/webm" />
+          </video>
+        </div>
+
+        <div key="phase1_solution" className="animate-slide-in-right flex flex-col items-center relative z-20 mt-56 md:mt-72">
 
           {/* Visual: Shield/Speech */}
           <div className="mb-12 relative w-full max-w-xs h-32 flex items-center justify-center gap-4">
@@ -603,18 +669,27 @@ export default function WelcomePage() {
   // Phase 1.2: The Ethics ("The Warning")
   if (step === "phase1_ethics") {
     return (
-      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center">
-        <div key="phase1_ethics" className="animate-slide-in-right flex flex-col items-center">
-          {/* Statue: Judging (Red Eyes) */}
-          <div className="mb-8 opacity-100">
-            <div className="w-24 h-24 relative">
-              <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_15px_rgba(220,38,38,0.2)]">
-                <path d="M50 10 C 30 10, 25 35, 25 50 C 25 70, 35 80, 35 90 L 65 90 C 65 80, 75 70, 75 50 C 75 35, 70 10, 50 10" fill="#2a0a0a" />
-                <path d="M50 10 L 45 30 L 55 45 L 40 60 L 50 90" fill="none" stroke="#D4AF37" strokeWidth="1.5" />
-                <rect x="30" y="35" width="40" height="4" fill="#ff0000" className="animate-pulse" />
-              </svg>
-            </div>
-          </div>
+      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center relative">
+        {/* Character Animation - Absolute fixed position at top */}
+        <div className="absolute top-4 md:top-4 left-1/2 -translate-x-1/2 pointer-events-none z-10">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-72 h-72 md:w-96 md:h-96 object-contain"
+            onTimeUpdate={(e) => {
+              const video = e.currentTarget;
+              if (video.currentTime >= 6.15) {
+                video.currentTime = 0;
+              }
+            }}
+          >
+            <source src="/animations/character-standing.webm" type="video/webm" />
+          </video>
+        </div>
+
+        <div key="phase1_ethics" className="animate-slide-in-right flex flex-col items-center relative z-20 mt-56 md:mt-72">
 
           {/* Visual: Vault/Scale */}
           <div className="mb-12 relative w-full max-w-xs h-32 flex items-center justify-center">
@@ -750,20 +825,29 @@ export default function WelcomePage() {
       // Track user's answer
       setUserAnswers(prev => ({ ...prev, [assessmentQuestion]: option.type }));
 
-      // If no reaction, skip directly to next question
+      // If no reaction, skip directly to next question (play correct animation for any answer)
       if (!option.reaction) {
-        if (assessmentQuestion < 6) {
-          setAssessmentQuestion(prev => prev + 1);
-        } else {
-          setStep("phase3_calculation");
-        }
+        setCurrentAnimation('correct');
+        setTimeout(() => {
+          setCurrentAnimation('thinking');
+          if (assessmentQuestion < 6) {
+            setAssessmentQuestion(prev => prev + 1);
+          } else {
+            setStep("phase3_calculation");
+          }
+        }, 3000);
         return;
       }
 
-      // Show reaction first
+      // Show reaction first and trigger animation
       if (option.correct !== undefined) {
         setIsCorrect(option.correct);
         setStatueState(option.correct ? "nod" : "suspicion");
+        // Trigger correct or wrong animation
+        setCurrentAnimation(option.correct ? 'correct' : 'wrong');
+      } else {
+        // No specific correct/wrong, play correct animation
+        setCurrentAnimation('correct');
       }
       setSelectedReaction(option.reaction);
       setShowReaction(true);
@@ -773,6 +857,7 @@ export default function WelcomePage() {
         setShowReaction(false);
         setStatueState("idle");
         setIsCorrect(null);
+        setCurrentAnimation('thinking');
 
         if (assessmentQuestion < 6) {
           setAssessmentQuestion(prev => prev + 1);
@@ -785,23 +870,22 @@ export default function WelcomePage() {
 
     if (showReaction) {
       return (
-        <div className="min-h-screen bg-black flex items-center justify-center p-6 text-center">
-          <div className="max-w-md animate-slide-in-right">
-            {/* CHARACTER VIDEO - The Strategist with reaction */}
-            <div className={`mb-8 transition-all duration-500 ${isCorrect === false ? 'animate-shake' : ''}`}>
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-32 h-32 mx-auto object-contain"
-                style={{
-                  filter: isCorrect === false ? 'hue-rotate(120deg) brightness(0.8)' : 'none'
-                }}
-              >
-                <source src="/welcome-animation.webm" type="video/webm" />
-              </video>
-            </div>
+        <div className="min-h-screen bg-black flex items-center justify-center p-6 text-center relative">
+          {/* Character Animation - Absolute fixed position at top */}
+          <div className="absolute top-4 md:top-4 left-1/2 -translate-x-1/2 pointer-events-none z-10">
+            <video
+              ref={(ref) => setVideoRef(ref)}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-72 h-72 md:w-96 md:h-96 object-contain"
+            >
+              <source src="/animations/character-standing.webm" type="video/webm" />
+            </video>
+          </div>
+
+          <div className="max-w-md animate-slide-in-right relative z-20 mt-56 md:mt-72">
 
             {/* Text Box with Border Pulse */}
             <div
@@ -827,27 +911,28 @@ export default function WelcomePage() {
     }
 
     return (
-      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center">
-        <div key={assessmentQuestion} className="animate-slide-in-right flex flex-col items-center max-w-2xl mx-auto">
+      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center relative">
+        {/* Character Animation - Absolute fixed position at top */}
+        <div className="absolute top-4 md:top-4 left-1/2 -translate-x-1/2 pointer-events-none z-10">
+          <video
+            ref={(ref) => setVideoRef(ref)}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-72 h-72 md:w-96 md:h-96 object-contain"
+          >
+            <source src="/animations/character-standing.webm" type="video/webm" />
+          </video>
+        </div>
+
+        <div key={assessmentQuestion} className="animate-slide-in-right flex flex-col items-center max-w-2xl mx-auto relative z-20 mt-56 md:mt-80">
           {/* Progress Bar */}
           <div className="w-full max-w-md h-1 bg-gray-900 mb-12 relative">
             <div
               className="h-full bg-white transition-all duration-500"
               style={{ width: `${((assessmentQuestion + 1) / 7) * 100}% ` }}
             ></div>
-          </div>
-
-          {/* CHARACTER VIDEO - The Strategist (IDLE) */}
-          <div className="mb-8">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-20 h-20 mx-auto object-contain"
-            >
-              <source src="/welcome-animation.webm" type="video/webm" />
-            </video>
           </div>
 
           <h2 className="text-gray-500 font-mono text-xs uppercase tracking-widest mb-2">
@@ -945,11 +1030,27 @@ export default function WelcomePage() {
     dynamicMessages.push('ENCRYPTING DATA...');
 
     return (
-      <div className="min-h-screen bg-black flex items-center justify-center p-6">
-        <div className="text-center animate-slide-in-right">
-          <div className="mb-8">
-            <Terminal size={64} className="text-white mx-auto animate-pulse" />
-          </div>
+      <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-center relative">
+        {/* Character Animation - Absolute fixed position at top */}
+        <div className="absolute top-4 md:top-4 left-1/2 -translate-x-1/2 pointer-events-none z-10">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-72 h-72 md:w-96 md:h-96 object-contain"
+            onTimeUpdate={(e) => {
+              const video = e.currentTarget;
+              if (video.currentTime >= 6.15) {
+                video.currentTime = 0;
+              }
+            }}
+          >
+            <source src="/animations/character-standing.webm" type="video/webm" />
+          </video>
+        </div>
+
+        <div className="text-center animate-slide-in-right relative z-20 mt-56 md:mt-72">
           <h1 className="text-2xl font-mono text-white tracking-widest uppercase mb-4 animate-pulse">
             Compiling Operative Profile...
           </h1>
@@ -971,7 +1072,10 @@ export default function WelcomePage() {
           </div>
 
           <div className="w-64 h-1 bg-gray-900 mx-auto relative overflow-hidden">
-            <div className="absolute h-full bg-white animate-scan-horizontal"></div>
+            <div
+              className="h-full bg-white transition-all duration-500"
+              style={{ width: `${((currentMessageIndex + 1) / dynamicMessages.length) * 100}%` }}
+            ></div>
           </div>
 
           {/* Skip Button */}

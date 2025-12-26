@@ -187,7 +187,6 @@
         {
           "exerciseId": "A3-2-P2-E8",
           "type": "reverse-scenario",
-          "answer": "Intentionally feeding false information to a suspected leak to see where it ends up.",
           "question": "What is this counter-intelligence tactic called?",
           "options": [
             "The Barium Meal / Canary Trap",
@@ -200,7 +199,8 @@
           "feedback": {
             "correct": "Correct. If you tell Person A 'The code is Blue' and Person B 'The code is Red,' and the news reports 'Red,' you know Person B is the traitor.",
             "incorrect": "This is a specific spycraft tactic called the Canary Trap (or Barium Meal)."
-          }
+          },
+          "scene": "Intentionally feeding false information to a suspected leak to see where it ends up."
         },
         {
           "exerciseId": "A3-2-P2-E9",

@@ -206,7 +206,6 @@
         {
           "exerciseId": "B4-3-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A logical fallacy where the manipulator claims that if you don't do X, a terrible chain of events will inevitably lead to Y (Disaster).",
           "question": "What is this?",
           "options": [
             "Slippery Slope",
@@ -219,7 +218,8 @@
           "feedback": {
             "correct": "Correct. 'If you skip breakfast, you'll fail school, become homeless, and die.' It exaggerates consequence to create fear.",
             "incorrect": "It connects a small action to a huge disaster without evidence."
-          }
+          },
+          "scene": "A logical fallacy where the manipulator claims that if you don't do X, a terrible chain of events will inevitably lead to Y (Disaster)."
         },
         {
           "exerciseId": "B4-3-P3-E9",

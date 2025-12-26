@@ -190,7 +190,6 @@
         {
           "exerciseId": "A3-3-P1-E8",
           "type": "reverse-scenario",
-          "answer": "Assuming that if you don't take advantage of a situation, someone else will, so you have a 'duty' to take it.",
           "question": "What is this logical fallacy?",
           "options": [
             "The Preemptive Strike / The Vacuum Argument",
@@ -203,7 +202,8 @@
           "feedback": {
             "correct": "Correct. 'Nature abhors a vacuum.' They argue that since the resource *will* be taken, they are not bad for taking it first.",
             "incorrect": "It's not Sunk Cost. It's a justification for greed based on a hypothetical competitor."
-          }
+          },
+          "scene": "Assuming that if you don't take advantage of a situation, someone else will, so you have a 'duty' to take it."
         },
         {
           "exerciseId": "A3-3-P1-E9",

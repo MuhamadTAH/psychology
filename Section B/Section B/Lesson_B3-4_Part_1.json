@@ -174,7 +174,6 @@
         {
           "exerciseId": "B3-4-P1-E7",
           "type": "reverse-scenario",
-          "answer": "A technique where a manipulator mirrors your body language, tone, and values to make you feel 'understood' and safe.",
           "question": "What is this called?",
           "options": [
             "Mirroring / Chameleon Effect",
@@ -187,7 +186,8 @@
           "feedback": {
             "correct": "Correct. We naturally like people who reflect us. It validates our own existence.",
             "incorrect": "It creates a subconscious bond of 'Liking'."
-          }
+          },
+          "scene": "A technique where a manipulator mirrors your body language, tone, and values to make you feel 'understood' and safe."
         }
       ]
     }

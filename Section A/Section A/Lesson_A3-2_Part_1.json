@@ -173,7 +173,6 @@
         {
           "exerciseId": "A3-2-P1-E7",
           "type": "reverse-scenario",
-          "answer": "Allowing your opponent to believe they are smarter than you, so they get arrogant and make a mistake.",
           "question": "What is this tactic?",
           "options": [
             "Playing the Fool",
@@ -186,7 +185,8 @@
           "feedback": {
             "correct": "Correct. 'The best way to be smart is to play dumb.' Arrogant opponents get sloppy. You wait for the mistake.",
             "incorrect": "Gaslighting is about reality. Playing the Fool is about ego management."
-          }
+          },
+          "scene": "Allowing your opponent to believe they are smarter than you, so they get arrogant and make a mistake."
         },
         {
           "exerciseId": "A3-2-P1-E8",

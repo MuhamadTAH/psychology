@@ -184,7 +184,6 @@
         {
           "exerciseId": "B3-5-P1-E8",
           "type": "reverse-scenario",
-          "answer": "Finding personal information on social media to make a scam more convincing.",
           "question": "What is this called?",
           "options": [
             "OSINT (Open Source Intelligence)",
@@ -197,7 +196,8 @@
           "feedback": {
             "correct": "Correct. Information is ammo. They gather it publicly to use it privately.",
             "incorrect": "It is legal intelligence gathering for illegal purposes."
-          }
+          },
+          "scene": "Finding personal information on social media to make a scam more convincing."
         },
         {
           "exerciseId": "B3-5-P1-E9",

@@ -189,7 +189,6 @@
         {
           "exerciseId": "A3-3-P3-E7",
           "type": "reverse-scenario",
-          "answer": "Keeping different parts of your life/business separate so that if one person betrays you, they can't destroy everything.",
           "question": "What is this defense strategy?",
           "options": [
             "Compartmentalization",
@@ -202,7 +201,8 @@
           "feedback": {
             "correct": "Correct. Like a ship with bulkheads. If one ally breaches the hull (betrays you), the ship doesn't sink because the damage is contained.",
             "incorrect": "It's not paranoia; it's structural safety. Don't give one person all the keys."
-          }
+          },
+          "scene": "Keeping different parts of your life/business separate so that if one person betrays you, they can't destroy everything."
         },
         {
           "exerciseId": "A3-3-P3-E8",

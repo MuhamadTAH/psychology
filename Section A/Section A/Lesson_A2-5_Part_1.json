@@ -186,7 +186,6 @@
         {
           "exerciseId": "A2-5-P1-E8",
           "type": "reverse-scenario",
-          "answer": "Promising a future that will never happen (marriage, trips, success) to keep you hooked in the present.",
           "question": "What is this tactic?",
           "options": [
             "Future Faking",
@@ -199,7 +198,8 @@
           "feedback": {
             "correct": "Correct. They sell you a fantasy future. You pay for it with compliance today.",
             "incorrect": "This is Future Faking. The future is the carrot on the stick."
-          }
+          },
+          "scene": "Promising a future that will never happen (marriage, trips, success) to keep you hooked in the present."
         },
         {
           "exerciseId": "A2-5-P1-E9",
@@ -352,7 +352,6 @@
         {
           "exerciseId": "A2-5-P1-E17",
           "type": "reverse-scenario",
-          "answer": "Attempting to suck a victim back into the relationship after the Discard using pity, nostalgia, or promises of change.",
           "question": "What is this tactic?",
           "options": [
             "Hoovering",
@@ -365,7 +364,8 @@
           "feedback": {
             "correct": "Correct. Named after the vacuum cleaner. They try to suck you back in to extract more Supply.",
             "incorrect": "It is a return to the Idealize phase, but the specific tactic of re-engagement is Hoovering."
-          }
+          },
+          "scene": "Attempting to suck a victim back into the relationship after the Discard using pity, nostalgia, or promises of change."
         },
         {
           "exerciseId": "A2-5-P1-E18",

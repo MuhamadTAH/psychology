@@ -47,6 +47,7 @@ export const SECTIONS = {
 };
 
 export const DARK_PSYCHOLOGY_LESSONS: DarkPsychologyLesson[] = [
+  // Lesson 3: The "Bootcamp" - Definitions, History & Ethics
   {
                                                                                                                               "number": 3,
                                                                                                                               "title": "The \"Bootcamp\" - Definitions, History & Ethics",
@@ -1061,6 +1062,7 @@ export const DARK_PSYCHOLOGY_LESSONS: DarkPsychologyLesson[] = [
                                                                                                                               ],
                                                                                                                               "totalParts": 3
                                                                                                                             },
+  // Lesson 4: The Second Hook
   {
                                                       "number": 4,
                                                       "title": "The Second Hook",
@@ -2006,6 +2008,7 @@ export const DARK_PSYCHOLOGY_LESSONS: DarkPsychologyLesson[] = [
                                                       ],
                                                       "totalParts": 3
                                                     },
+  // Lesson 5: Unit 1 Review
   {
       "number": 5,
       "title": "Unit 1 Review",
@@ -6767,6 +6770,7 @@ export const DARK_PSYCHOLOGY_LESSONS: DarkPsychologyLesson[] = [
       ],
       "totalParts": 4
     },
+  // Lesson 2: A2-1 Part 2: Practice - Grandiose vs. Vulnerable
   {
                                                                                               "lessonId": "A2-1-P2",
                                                                                               "number": 2,
@@ -7539,3610 +7543,7 @@ export const DARK_PSYCHOLOGY_LESSONS: DarkPsychologyLesson[] = [
                                                                                               ],
                                                                                               "totalParts": 1
                                                                                             },
-  {
-              "number": 2,
-              "title": "Tactic Teaser: Flattery & Rapport",
-              "section": "A",
-              "sectionId": "A",
-              "sectionTitle": "The Foundations of the Dark Mind",
-              "unitId": "A1",
-              "unitTitle": "The Fast Hook",
-              "lessonId": "A1-2",
-              "lessonTitle": "Tactic Teaser: Flattery & Rapport",
-              "lessonType": "Normal",
-              "lessonPart": 1,
-              "lessonPartTitle": "How Flattery Disarms You",
-              "objective": "To analyze 'Flattery' as a distinct manipulation tool and understand its psychological mechanism for disarming a target.",
-              "gamification": {
-                "progressRings": [
-                  {
-                    "ringId": "learn",
-                    "status": "pending",
-                    "label": "Part 1"
-                  },
-                  {
-                    "ringId": "practice",
-                    "status": "pending",
-                    "label": "Part 2"
-                  },
-                  {
-                    "ringId": "challenge",
-                    "status": "pending",
-                    "label": "Part 3"
-                  }
-                ],
-                "pointsValue": 100,
-                "starsAvailable": 3,
-                "badgeOnCompletion": null
-              },
-              "parts": [
-                {
-                  "partNumber": 1,
-                  "partTitle": "How Flattery Disarms You",
-                  "questions": [
-                    {
-                      "feedback": {
-                        "correct": "Correct! Flattery is a 'softening' tactic. It's the 'sugar' that makes the 'poison' (the 'ask') go down easier.",
-                        "incorrect": "Incorrect. Flattery is a 'softening' tactic. It's the 'sugar' that makes the 'poison' (the 'ask') go down easier."
-                      },
-                      "type": "multiple-choice",
-                      "question": "What is the primary *manipulative* goal of flattery?",
-                      "options": [
-                        {
-                          "id": "A",
-                          "text": "To be nice and make a new friend."
-                        },
-                        {
-                          "id": "B",
-                          "text": "To make the target feel good, lowering their critical thinking for a future 'ask'."
-                        },
-                        {
-                          "id": "C",
-                          "text": "To show that you have a lot in common."
-                        },
-                        {
-                          "id": "D",
-                          "text": "To prove you are an honest person."
-                        }
-                      ],
-                      "correctAnswer": "B"
-                    },
-                    {
-                      "feedback": {
-                        "correct": "Correct! A genuine compliment is specific and has no 'ask' attached. Flattery is often vague ('you're so smart') and is used to get something.",
-                        "incorrect": "Incorrect. A genuine compliment is specific and has no 'ask' attached. Flattery is often vague ('you're so smart') and is used to get something."
-                      },
-                      "type": "multiple-choice",
-                      "question": "A genuine compliment and manipulative flattery are the same thing.",
-                      "options": [
-                        {
-                          "id": "A",
-                          "text": "True"
-                        },
-                        {
-                          "id": "B",
-                          "text": "False"
-                        }
-                      ],
-                      "correctAnswer": "B"
-                    },
-                    {
-                      "feedback": {
-                        "correct": "Correct! Specific flattery often *sounds* like a genuine compliment, which makes it harder to detect. The 'tell' is if an 'ask' follows.",
-                        "incorrect": "Incorrect. Specific flattery often *sounds* like a genuine compliment, which makes it harder to detect. The 'tell' is if an 'ask' follows."
-                      },
-                      "type": "matching",
-                      "question": "Match the type of flattery with its example:",
-                      "pairs": [
-                        {
-                          "term": "Vague Flattery",
-                          "definition": "'You just seem like such an amazing person.'"
-                        },
-                        {
-                          "term": "Specific Flattery",
-                          "definition": "'That report you wrote was genius. You must be the smartest one here.'"
-                        },
-                        {
-                          "term": "Implied Flattery",
-                          "definition": "'I could never do what you do; it's just too complex for me.'"
-                        },
-                        {
-                          "term": "Praise",
-                          "definition": "'Great job on that project. Your data was very clear.'"
-                        }
-                      ]
-                    },
-                    {
-                      "feedback": {
-                        "correct": "Correct! Rapport is a feeling of connection. Manipulators 'force' it with flattery to build unearned trust.",
-                        "incorrect": "Incorrect. Rapport is a feeling of connection. Manipulators 'force' it with flattery to build unearned trust."
-                      },
-                      "type": "fill-in-blank",
-                      "sentence": "Flattery builds a fast, but fake, sense of (--------). This is the first step in building (--------).",
-                      "correctAnswer": "rapport",
-                      "wrongOptions": [
-                        "ego",
-                        "anger",
-                        "distance"
-                      ]
-                    },
-                    {
-                      "feedback": {
-                        "correct": "Correct! By flattering your 'taste,' they are implying you are 'worthy' of the expensive item. This makes it harder for you to say no.",
-                        "incorrect": "Incorrect. By flattering your 'taste,' they are implying you are 'worthy' of the expensive item. This makes it harder for you to say no."
-                      },
-                      "type": "multiple-choice",
-                      "question": "A salesperson says, 'Wow, you have great taste. Not many people can pull off that jacket. Now, let me show you our most expensive model...'\n\nWhat is happening here?",
-                      "options": [
-                        {
-                          "id": "A",
-                          "text": "A genuine compliment on your fashion."
-                        },
-                        {
-                          "id": "B",
-                          "text": "Flattery being used to justify showing you a high-priced item."
-                        },
-                        {
-                          "id": "C",
-                          "text": "An attempt to build a long-term friendship."
-                        },
-                        {
-                          "id": "D",
-                          "text": "Good customer service."
-                        }
-                      ],
-                      "correctAnswer": "B"
-                    },
-                    {
-                      "feedback": {
-                        "correct": "Correct! This is a critical pattern to remember: Flattery -> Soften Defenses -> Ask.",
-                        "incorrect": "Incorrect. This is a critical pattern to remember: Flattery -> Soften Defenses -> Ask."
-                      },
-                      "type": "sentence-building",
-                      "question": "Arrange the words to make a sentence",
-                      "words": [
-                        "'ask'",
-                        "is",
-                        "of",
-                        "a",
-                        "'softener'",
-                        "the",
-                        "flattery",
-                        "Often,"
-                      ],
-                      "correctSentence": "Often, flattery is a 'softener' of the 'ask'"
-                    },
-                    {
-                      "feedback": {
-                        "correct": "Correct! They are 'priming' you. By flattering your 'insights,' they make you *want* to share insights that align with their goal.",
-                        "incorrect": "Incorrect. They are 'priming' you. By flattering your 'insights,' they make you *want* to share insights that align with their goal."
-                      },
-                      "type": "multiple-choice",
-                      "question": "What tactic would they most likely use before the meeting?",
-                      "options": [
-                        {
-                          "id": "A",
-                          "text": "Give you a small, unsolicited gift."
-                        },
-                        {
-                          "id": "B",
-                          "text": "Send you an email full of flattery about your 'brilliant insights'."
-                        },
-                        {
-                          "id": "C",
-                          "text": "Tell you a sad story about their personal life."
-                        },
-                        {
-                          "id": "D",
-                          "text": "Ignore you completely."
-                        }
-                      ],
-                      "correctAnswer": "B"
-                    },
-                    {
-                      "feedback": {
-                        "correct": "Correct! This is the core psychology. Flattery creates a 'halo' of goodness around the manipulator, blinding you to their real intent.",
-                        "incorrect": "Incorrect. This is the core psychology. Flattery creates a 'halo' of goodness around the manipulator, blinding you to their real intent."
-                      },
-                      "type": "multiple-choice",
-                      "question": "Flattery works because of a cognitive bias called the 'Halo Effect' (believing that because someone is 'nice' or 'complimentary,' they are also 'trustworthy' and 'honest').",
-                      "options": [
-                        {
-                          "id": "A",
-                          "text": "True"
-                        },
-                        {
-                          "id": "B",
-                          "text": "False"
-                        }
-                      ],
-                      "correctAnswer": "A"
-                    },
-                    {
-                      "feedback": {
-                        "correct": "Correct! This is a critical distinction. The 'dark' part of Dark Psychology is about *intent*. Using truth as a weapon is a very common and effective tactic.",
-                        "incorrect": "Incorrect. This is a critical distinction. The 'dark' part of Dark Psychology is about *intent*. Using truth as a weapon is a very common and effective tactic."
-                      },
-                      "type": "multiple-choice",
-                      "question": "Is this still manipulation?",
-                      "options": [
-                        {
-                          "id": "A",
-                          "text": "No, because the flattery is true, it's just praise."
-                        },
-                        {
-                          "id": "B",
-                          "text": "Yes, because the *intent* is to use the praise as a lever to get you to comply."
-                        },
-                        {
-                          "id": "C",
-                          "text": "It's impossible to tell."
-                        }
-                      ],
-                      "correctAnswer": "B"
-                    },
-                    {
-                      "feedback": {
-                        "correct": "Correct! This is 'covert' flattery. They 'flatter' you by putting themselves *down*, which makes you feel superior and more likely to 'help' (i.e., do their work).",
-                        "incorrect": "Incorrect. This is 'covert' flattery. They 'flatter' you by putting themselves *down*, which makes you feel superior and more likely to 'help' (i.e., do their work)."
-                      },
-                      "type": "multiple-choice",
-                      "question": "A co-worker says, 'I could never be as organized as you. My brain just doesn't work that way.' A week later, they ask you to 'help' them organize their entire project.\n\nThis is an example of:",
-                      "options": [
-                        {
-                          "id": "A",
-                          "text": "Vague flattery"
-                        },
-                        {
-                          "id": "B",
-                          "text": "Implied flattery (that you are 'superiorly organized')"
-                        },
-                        {
-                          "id": "C",
-                          "text": "A genuine compliment"
-                        },
-                        {
-                          "id": "D",
-                          "text": "A sign of incompetence"
-                        }
-                      ],
-                      "correctAnswer": "B"
-                    },
-                    {
-                      "feedback": {
-                        "correct": "Correct! If a manipulator says 'you're smart,' your brain thinks, 'Yes, I am smart about X.' The manipulator makes *you* do the work for them.",
-                        "incorrect": "Incorrect. If a manipulator says 'you're smart,' your brain thinks, 'Yes, I am smart about X.' The manipulator makes *you* do the work for them."
-                      },
-                      "type": "multiple-choice",
-                      "question": "Why is *vague* flattery ('you're just so great') often more effective than *specific* flattery?",
-                      "options": [
-                        {
-                          "id": "A",
-                          "text": "It's easier to say."
-                        },
-                        {
-                          "id": "B",
-                          "text": "It forces the target's brain to fill in the blanks with their *own* ego."
-                        },
-                        {
-                          "id": "C",
-                          "text": "It is less personal."
-                        },
-                        {
-                          "id": "D",
-                          "text": "It is more likely to be true."
-                        }
-                      ],
-                      "correctAnswer": "B"
-                    },
-                    {
-                      "feedback": {
-                        "correct": "Correct! The defense is to mentally 'separate' the flattery from the 'ask.' Acknowledge the flattery, then ignore it and judge the 'ask' logically.",
-                        "incorrect": "Incorrect. The defense is to mentally 'separate' the flattery from the 'ask.' Acknowledge the flattery, then ignore it and judge the 'ask' logically."
-                      },
-                      "type": "multiple-choice",
-                      "question": "[Micro Simulation - Step 1]\nundefined\n\nundefined",
-                      "options": [
-                        {
-                          "id": "A",
-                          "text": "Aww, thank you! That's so sweet."
-                        },
-                        {
-                          "id": "B",
-                          "text": "I'm not, really. I just try my best."
-                        },
-                        {
-                          "id": "C",
-                          "text": "Thanks. What's up?"
-                        },
-                        {
-                          "id": "D",
-                          "text": "Stop it, you're just flattering me."
-                        }
-                      ],
-                      "correctAnswer": "C"
-                    },
-                    {
-                      "feedback": {
-                        "correct": "Correct! This is a very common tactic. Flattery is 'cheap.' It makes employees *feel* valued, so they are less likely to *demand* to be valued (with money, resources, or boundaries).",
-                        "incorrect": "Incorrect. This is a very common tactic. Flattery is 'cheap.' It makes employees *feel* valued, so they are less likely to *demand* to be valued (with money, resources, or boundaries)."
-                      },
-                      "type": "multiple-choice",
-                      "question": "What is *most likely* happening here?",
-                      "options": [
-                        {
-                          "id": "A",
-                          "text": "Dave is just a really nice guy and a good motivator."
-                        },
-                        {
-                          "id": "B",
-                          "text": "Dave is using flattery as a *substitute* for real rewards (like pay or time off)."
-                        },
-                        {
-                          "id": "C",
-                          "text": "The team is full of 'rockstars' who love working hard."
-                        },
-                        {
-                          "id": "D",
-                          "text": "The team is not good at their jobs."
-                        }
-                      ],
-                      "correctAnswer": "B"
-                    },
-                    {
-                      "feedback": {
-                        "correct": "Correct! This is a repeat, but it's a critical concept. Rapport is the feeling of connection. Trust is the *result* of that feeling. Flattery fakes both.",
-                        "incorrect": "Incorrect. This is a repeat, but it's a critical concept. Rapport is the feeling of connection. Trust is the *result* of that feeling. Flattery fakes both."
-                      },
-                      "type": "fill-in-blank",
-                      "sentence": "Flattery builds a fast, but fake, sense of (--------). This is the first step in building (--------).",
-                      "correctAnswer": "rapport",
-                      "wrongOptions": [
-                        "ego",
-                        "anger",
-                        "distance"
-                      ]
-                    },
-                    {
-                      "feedback": {
-                        "correct": "Correct! This is the key. Accept the compliment, but *put a wall* between it and the request. Judge the request logically. This is what we'll practice in Part 2.",
-                        "incorrect": "Incorrect. This is the key. Accept the compliment, but *put a wall* between it and the request. Judge the request logically. This is what we'll practice in Part 2."
-                      },
-                      "type": "multiple-choice",
-                      "question": "What is the *best* mental defense against flattery?",
-                      "options": [
-                        {
-                          "id": "A",
-                          "text": "Reject all compliments immediately."
-                        },
-                        {
-                          "id": "B",
-                          "text": "Always give a compliment back."
-                        },
-                        {
-                          "id": "C",
-                          "text": "Mentally 'separate' the compliment from any 'ask' that follows."
-                        },
-                        {
-                          "id": "D",
-                          "text": "Believe every compliment you are given."
-                        }
-                      ],
-                      "correctAnswer": "C"
-                    }
-                  ]
-                }
-              ],
-              "totalParts": 1
-            },
-  {
-    "number": 1,
-    "title": "The First Hook",
-    "section": "A",
-    "sectionId": "A",
-    "sectionTitle": "The Foundations of the Dark Mind",
-    "unitId": "A1",
-    "unitTitle": "The Fast Hook",
-    "lessonId": "A1-1",
-    "lessonTitle": "The First Hook",
-    "lessonType": "Normal",
-    "lessonPart": 1,
-    "lessonPartTitle": "The 'Cold Open' Scenario",
-    "objective": "To test the user's baseline ability to detect real-world manipulation tactics in a 'cold' scenario before they have any training.",
-    "gamification": {
-      "progressRings": [
-        {
-          "ringId": "learn",
-          "status": "pending",
-          "label": "Part 1"
-        },
-        {
-          "ringId": "practice",
-          "status": "pending",
-          "label": "Part 2"
-        },
-        {
-          "ringId": "challenge",
-          "status": "pending",
-          "label": "Part 3"
-        }
-      ],
-      "pointsValue": 100,
-      "starsAvailable": 3,
-      "badgeOnCompletion": null
-    },
-    "practice": [
-      {
-        "feedback": {
-          "correct": "Correct! This is a standard, polite social interaction. So far, so good.",
-          "incorrect": "Incorrect. This is a standard, polite social interaction. So far, so good."
-        },
-        "type": "multiple-choice",
-        "question": "Alex smiles and walks over. 'Is this seat taken?'\n\nHow do you respond?",
-        "options": [
-          {
-            "id": "A",
-            "text": "Smile and say, 'No, go ahead.'"
-          },
-          {
-            "id": "B",
-            "text": "Say 'Yes' and look away."
-          },
-          {
-            "id": "C",
-            "text": "Nod, but put in your headphones."
-          },
-          {
-            "id": "D",
-            "text": "Ignore them."
-          }
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is *flattery*. Alex is making a positive assumption ('creative') to make you feel good and lower your guard. This is Tactic #1.",
-          "incorrect": "Incorrect. This is *flattery*. Alex is making a positive assumption ('creative') to make you feel good and lower your guard. This is Tactic #1."
-        },
-        "type": "multiple-choice",
-        "question": "Alex sits. 'Thanks. I'm Alex. I couldn't help but notice your laptop. You must be in design. You seem like a really creative person.'\n\nWhat is this statement?",
-        "options": [
-          {
-            "id": "A",
-            "text": "A simple, friendly observation."
-          },
-          {
-            "id": "B",
-            "text": "A specific and accurate compliment."
-          },
-          {
-            "id": "C",
-            "text": "A form of flattery to build fast rapport."
-          },
-          {
-            "id": "D",
-            "text": "A sign of romantic interest."
-          }
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is a conscious tactic called 'Mirroring.' It's used to create a subconscious feeling of similarity and trust. This is Tactic #2.",
-          "incorrect": "Incorrect. This is a conscious tactic called 'Mirroring.' It's used to create a subconscious feeling of similarity and trust. This is Tactic #2."
-        },
-        "type": "multiple-choice",
-        "question": "Alex leans forward, mirroring your posture exactly. This is a clear sign they are trustworthy.",
-        "options": [
-          {
-            "id": "A",
-            "text": "True"
-          },
-          {
-            "id": "B",
-            "text": "False"
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is 'Weaponized Vulnerability.' By sharing a 'secret,' Alex makes you feel special and triggers your desire to help or protect them. This is Tactic #3.",
-          "incorrect": "Incorrect. This is 'Weaponized Vulnerability.' By sharing a 'secret,' Alex makes you feel special and triggers your desire to help or protect them. This is Tactic #3."
-        },
-        "type": "multiple-choice",
-        "question": "Alex sighs. 'Sorry to be so forward. I just moved here and don't know a soul. It's been tough. You just have a really kind face.'\n\nWhat is the *purpose* of this story?",
-        "options": [
-          {
-            "id": "A",
-            "text": "To share a genuine, sad detail about their life."
-          },
-          {
-            "id": "B",
-            "text": "To build fast, unearned trust by appearing 'vulnerable'."
-          },
-          {
-            "id": "C",
-            "text": "To complain about the city."
-          },
-          {
-            "id": "D",
-            "text": "To ask you to be their friend."
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is the goal of the 'hook.' By seeming friendly, vulnerable, and like-minded, a manipulator gets you to drop your guard.",
-          "incorrect": "Incorrect. This is the goal of the 'hook.' By seeming friendly, vulnerable, and like-minded, a manipulator gets you to drop your guard."
-        },
-        "type": "sentence-building",
-        "question": "Arrange the words to make a sentence",
-        "words": [
-          "trust",
-          "fast,",
-          "defenses",
-          "lower",
-          "build",
-          "your",
-          "to",
-          "Manipulators"
-        ],
-        "correctSentence": "Manipulators build trust fast, to lower your defenses"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is a 'Love Bombing' or 'Future Pacing' phrase. It rushes intimacy and makes the connection feel more special than it is. This is Tactic #4.",
-          "incorrect": "Incorrect. This is a 'Love Bombing' or 'Future Pacing' phrase. It rushes intimacy and makes the connection feel more special than it is. This is Tactic #4."
-        },
-        "type": "multiple-choice",
-        "question": "You talk for a few minutes. Alex laughs, 'Wow, we have so much in common, it's crazy. I feel like I've known you for ages.'\n\nThis statement is designed to create a sense of...",
-        "options": [
-          {
-            "id": "A",
-            "text": "Awkwardness"
-          },
-          {
-            "id": "B",
-            "text": "Deep, 'fated' connection"
-          },
-          {
-            "id": "C",
-            "text": "Normal friendship"
-          },
-          {
-            "id": "D",
-            "text": "Confusion"
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! Alex has given you an unsolicited gift. Now, you subconsciously feel 'indebted' to them. This is a *critical* setup. This is Tactic #5.",
-          "incorrect": "Incorrect. Alex has given you an unsolicited gift. Now, you subconsciously feel 'indebted' to them. This is a *critical* setup. This is Tactic #5."
-        },
-        "type": "multiple-choice",
-        "question": "You get up to buy your coffee. Alex jumps up. 'No, no, I insist. Let me get this for you. We're obviously kindred spirits.' They buy your $5 coffee.\n\nWhat has Alex just done?",
-        "options": [
-          {
-            "id": "A",
-            "text": "A simple act of kindness."
-          },
-          {
-            "id": "B",
-            "text": "Set the 'Reciprocity Trap'."
-          },
-          {
-            "id": "C",
-            "text": "Shown they are financially well-off."
-          },
-          {
-            "id": "D",
-            "text": "Tried to impress you."
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is the 'Reciprocity Principle.' It's a powerful human instinct that manipulators exploit. You now feel a subconscious need to 'settle the score'.",
-          "incorrect": "Incorrect. This is the 'Reciprocity Principle.' It's a powerful human instinct that manipulators exploit. You now feel a subconscious need to 'settle the score'."
-        },
-        "type": "multiple-choice",
-        "question": "By accepting the free coffee, you are now psychologically primed to feel like you 'owe' Alex something.",
-        "options": [
-          {
-            "id": "A",
-            "text": "True"
-          },
-          {
-            "id": "B",
-            "text": "False"
-          }
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! The flattery, vulnerability, and 'gift' were all leading to this moment: The 'Ask'.",
-          "incorrect": "Incorrect. The flattery, vulnerability, and 'gift' were all leading to this moment: The 'Ask'."
-        },
-        "type": "multiple-choice",
-        "question": "Alex sits back down and 'accidentally' spills their own coffee. 'Oh no! My laptop! And I just realized... how embarrassing... I left my wallet at home.'\n\nThis is the 'crisis.' What is the *most likely* next step?",
-        "options": [
-          {
-            "id": "A",
-            "text": "Alex will apologize and leave."
-          },
-          {
-            "id": "B",
-            "text": "Alex will ask you for a napkin."
-          },
-          {
-            "id": "C",
-            "text": "Alex will ask you for a 'favor' (money)."
-          },
-          {
-            "id": "D",
-            "text": "Alex will blame you for the spill."
-          }
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is a 'perfect storm.' Alex combined the Reciprocity Trap (the coffee), the Flattery Trap ('kind person'), and Guilt (fear of looking rude). This is a multi-step manipulation.",
-          "incorrect": "Incorrect. This is a 'perfect storm.' Alex combined the Reciprocity Trap (the coffee), the Flattery Trap ('kind person'), and Guilt (fear of looking rude). This is a multi-step manipulation."
-        },
-        "type": "multiple-choice",
-        "question": "[Boss Challenge]\nAlex looks distressed. 'I can't believe this. My phone is dead too. Look, I wouldn't ask, but you're such a kind person... could you *possibly* lend me $20? I'll pay you back tomorrow, I swear.'\n\nWhat is the *strongest* force pushing you to say 'yes'?",
-        "options": [
-          {
-            "id": "A",
-            "text": "The desire to help a stranger in need."
-          },
-          {
-            "id": "B",
-            "text": "The feeling that you 'owe' them for the $5 coffee."
-          },
-          {
-            "id": "C",
-            "text": "The fear of looking rude or unkind."
-          },
-          {
-            "id": "D",
-            "text": "All of the above."
-          }
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! These are two of the most common and effective tactics used in social manipulation.",
-          "incorrect": "Incorrect. These are two of the most common and effective tactics used in social manipulation."
-        },
-        "type": "fill-in-blank",
-        "sentence": "Alex used (--------) to lower your guard, and a (--------) trap to make you feel indebted.",
-        "fillInOptions": [
-          "flattery",
-          "reciprocity",
-          "kindness",
-          "vulnerability"
-        ],
-        "answers": [
-          "flattery",
-          "reciprocity"
-        ],
-        "correctAnswer": "flattery",
-        "wrongOptions": [
-          "kindness",
-          "vulnerability"
-        ]
-      },
-      {
-        "feedback": {
-          "correct": "Correct! By giving you a $5 coffee, Alex made it 10x more likely you would agree to 'give back' $20. This is a classic con.",
-          "incorrect": "Incorrect. By giving you a $5 coffee, Alex made it 10x more likely you would agree to 'give back' $20. This is a classic con."
-        },
-        "type": "multiple-choice",
-        "question": "What is this tactic called?",
-        "options": [
-          {
-            "id": "A",
-            "text": "The 'Foot-in-the-Door' Tactic"
-          },
-          {
-            "id": "B",
-            "text": "The 'Reciprocity Trap'"
-          },
-          {
-            "id": "C",
-            "text": "The 'Sunk Cost' Tactic"
-          },
-          {
-            "id": "D",
-            "text": "A 'White Lie'"
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! The manipulator is counting on your desire to avoid social conflict. Giving in is the path of least resistance they created for you.",
-          "incorrect": "Incorrect. The manipulator is counting on your desire to avoid social conflict. Giving in is the path of least resistance they created for you."
-        },
-        "type": "multiple-choice",
-        "question": "What is the *most* manipulated response?",
-        "options": [
-          {
-            "id": "A",
-            "text": "Saying 'No, sorry, I can't.'"
-          },
-          {
-            "id": "B",
-            "text": "Giving them the $20 just to end the awkwardness."
-          },
-          {
-            "id": "C",
-            "text": "Saying 'I only have $5 on me.'"
-          },
-          {
-            "id": "D",
-            "text": "Asking Alex for their phone number to get paid back."
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! 'Grooming' is the process of slowly breaking down a person's defenses and building trust for the purpose of manipulation. You just experienced it.",
-          "incorrect": "Incorrect. 'Grooming' is the process of slowly breaking down a person's defenses and building trust for the purpose of manipulation. You just experienced it."
-        },
-        "type": "multiple-choice",
-        "question": "In 10 minutes, Alex used flattery, mirroring, vulnerability, love bombing, and reciprocity. This multi-step process is called:",
-        "options": [
-          {
-            "id": "A",
-            "text": "Grooming"
-          },
-          {
-            "id": "B",
-            "text": "A sales funnel"
-          },
-          {
-            "id": "C",
-            "text": "A friendly conversation"
-          },
-          {
-            "id": "D",
-            "text": "Flirting"
-          }
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! The 'ask' is easy. The *real* work was the 'setup.' By the time Alex asked for $20, you were already psychologically primed to say 'yes.' In Part 2, we'll learn exactly why.",
-          "incorrect": "Incorrect. The 'ask' is easy. The *real* work was the 'setup.' By the time Alex asked for $20, you were already psychologically primed to say 'yes.' In Part 2, we'll learn exactly why."
-        },
-        "type": "multiple-choice",
-        "question": "What was the *most important* part of this manipulation?",
-        "options": [
-          {
-            "id": "A",
-            "text": "The 'crisis' (spilling the coffee)."
-          },
-          {
-            "id": "B",
-            "text": "The 'ask' ($20)."
-          },
-          {
-            "id": "C",
-            "text": "The 'setup' (building trust and reciprocity)."
-          },
-          {
-            "id": "D",
-            "text": "The 'hook' (the first smile)."
-          }
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is *Flattery*. It's designed to make you feel good and lower your critical thinking.",
-          "incorrect": "Incorrect. This is *Flattery*. It's designed to make you feel good and lower your critical thinking."
-        },
-        "type": "multiple-choice",
-        "question": "In Part 1, Alex called you 'creative' and 'kind' without knowing you. What is this tactic?",
-        "options": [
-          {
-            "id": "A",
-            "text": "Flattery"
-          },
-          {
-            "id": "B",
-            "text": "A lucky guess"
-          },
-          {
-            "id": "C",
-            "text": "A genuine compliment"
-          },
-          {
-            "id": "D",
-            "text": "Small talk"
-          }
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! These 5 terms are the exact script Alex used. Naming them is the first step to defeating them.",
-          "incorrect": "Incorrect. These 5 terms are the exact script Alex used. Naming them is the first step to defeating them."
-        },
-        "type": "matching",
-        "question": "Match the tactic from the scenario with its definition:",
-        "pairs": [
-          {
-            "term": "Flattery",
-            "definition": "Using compliments to lower someone's defenses."
-          },
-          {
-            "term": "Mirroring",
-            "definition": "Copying body language to create subconscious trust."
-          },
-          {
-            "term": "Reciprocity Trap",
-            "definition": "Giving a small gift to make someone feel indebted."
-          },
-          {
-            "term": "Weaponized Vulnerability",
-            "definition": "Sharing a 'sad story' to build unearned, fast trust."
-          },
-          {
-            "term": "Grooming",
-            "definition": "The *entire process* of preparing someone for manipulation."
-          }
-        ]
-      },
-      {
-        "feedback": {
-          "correct": "Correct! It was *Weaponized Vulnerability*. The story was a tool to make you feel sorry for them and see them as harmless.",
-          "incorrect": "Incorrect. It was *Weaponized Vulnerability*. The story was a tool to make you feel sorry for them and see them as harmless."
-        },
-        "type": "multiple-choice",
-        "question": "Alex's story about 'just moving here' and 'being lonely' was a genuine attempt to make a friend.",
-        "options": [
-          {
-            "id": "A",
-            "text": "True"
-          },
-          {
-            "id": "B",
-            "text": "False"
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! The 'Reciprocity Principle' is one of the most powerful. You now felt you 'owed' them, making it hard to refuse the $20 'ask' later.",
-          "incorrect": "Incorrect. The 'Reciprocity Principle' is one of the most powerful. You now felt you 'owed' them, making it hard to refuse the $20 'ask' later."
-        },
-        "type": "fill-in-blank",
-        "sentence": "The free $5 coffee was a ___ trap, designed to make you feel ___ to Alex.",
-        "fillInOptions": [
-          "reciprocity",
-          "indebted",
-          "flattery",
-          "kind",
-          "financial",
-          "equal"
-        ],
-        "answers": [
-          "reciprocity",
-          "indebted"
-        ],
-        "correctAnswer": "reciprocity",
-        "wrongOptions": [
-          "flattery",
-          "kind",
-          "financial",
-          "equal"
-        ]
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is the whole point of 'grooming.' The trust is fake, built only to get past your natural 'No'.",
-          "incorrect": "Incorrect. This is the whole point of 'grooming.' The trust is fake, built only to get past your natural 'No'."
-        },
-        "type": "sentence-building",
-        "question": "Arrange the words to make a sentence",
-        "words": [
-          "trust",
-          "fast,",
-          "defenses",
-          "lower",
-          "build",
-          "your",
-          "to",
-          "Manipulators"
-        ],
-        "correctSentence": "Manipulators build trust fast, to lower your defenses"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is *Mirroring* and *Pacing*. These tactics bypass your logic and make you *feel* like you've known them for ages.",
-          "incorrect": "Incorrect. This is *Mirroring* and *Pacing*. These tactics bypass your logic and make you *feel* like you've known them for ages."
-        },
-        "type": "multiple-choice",
-        "question": "What was the psychological goal of these actions?",
-        "options": [
-          {
-            "id": "A",
-            "text": "To build a feeling of deep, subconscious rapport."
-          },
-          {
-            "id": "B",
-            "text": "To prove they were paying attention."
-          },
-          {
-            "id": "C",
-            "text": "To show they were also a 'creative person'."
-          },
-          {
-            "id": "D",
-            "text": "To make the conversation last longer."
-          }
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is a key concept. The tactics are layered. By the time they ask for $20, your defenses are already down from 3-4 other 'small' manipulations.",
-          "incorrect": "Incorrect. This is a key concept. The tactics are layered. By the time they ask for $20, your defenses are already down from 3-4 other 'small' manipulations."
-        },
-        "type": "multiple-choice",
-        "question": "Why did Alex *combine* so many tactics (Flattery + Vulnerability + Reciprocity)?",
-        "options": [
-          {
-            "id": "A",
-            "text": "Because they are a very complex person."
-          },
-          {
-            "id": "B",
-            "text": "Because a single tactic is easy to spot; a combination is not."
-          },
-          {
-            "id": "C",
-            "text": "Because they didn't know which one would work."
-          },
-          {
-            "id": "D",
-            "text": "Because they were genuinely nice, vulnerable, and generous."
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! Alex created a 'perfect storm.' You felt indebted, you trusted them, and you were afraid of causing social conflict. Saying 'yes' was the easiest way out.",
-          "incorrect": "Incorrect. Alex created a 'perfect storm.' You felt indebted, you trusted them, and you were afraid of causing social conflict. Saying 'yes' was the easiest way out."
-        },
-        "type": "multiple-choice",
-        "question": "What was the *strongest* psychological force at play?",
-        "options": [
-          {
-            "id": "A",
-            "text": "Your fear of looking 'mean' or 'rude' if you said no."
-          },
-          {
-            "id": "B",
-            "text": "Your feeling of 'debt' from the free coffee."
-          },
-          {
-            "id": "C",
-            "text": "Your 'trust' from the mirroring and vulnerability."
-          },
-          {
-            "id": "D",
-            "text": "All of the above, working together."
-          }
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! A 'Boss Scenario' (like the one you just faced) is a complex situation that *combines* multiple tactics at once.",
-          "incorrect": "Incorrect. A 'Boss Scenario' (like the one you just faced) is a complex situation that *combines* multiple tactics at once."
-        },
-        "type": "multiple-choice",
-        "question": "A 'Boss Scenario' in this app means a situation where only one manipulation tactic is used.",
-        "options": [
-          {
-            "id": "A",
-            "text": "True"
-          },
-          {
-            "id": "B",
-            "text": "False"
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is the 'light' side of this knowledge. The goal isn't just to protect yourself, but to protect others. Publicly shaming Alex could be dangerous; a private interruption is best.",
-          "incorrect": "Incorrect. This is the 'light' side of this knowledge. The goal isn't just to protect yourself, but to protect others. Publicly shaming Alex could be dangerous; a private interruption is best."
-        },
-        "type": "multiple-choice",
-        "question": "What is the most *ethically responsible* action?",
-        "options": [
-          {
-            "id": "A",
-            "text": "Do nothing. It's not your problem."
-          },
-          {
-            "id": "B",
-            "text": "Go over and loudly call Alex a manipulator."
-          },
-          {
-            "id": "C",
-            "text": "Find a way to privately interrupt and warn the other person."
-          },
-          {
-            "id": "D",
-            "text": "Ask Alex to teach you their tactics."
-          }
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! 'Grooming' isn't just for major crimes; it happens on a small scale in everyday cons. Alex 'groomed' you for the $20.",
-          "incorrect": "Incorrect. 'Grooming' isn't just for major crimes; it happens on a small scale in everyday cons. Alex 'groomed' you for the $20."
-        },
-        "type": "fill-in-blank",
-        "sentence": "The *entire process* of building trust to prepare someone for manipulation is called (--------).",
-        "fillInOptions": [
-          "grooming",
-          "flirting",
-          "talking",
-          "gaslighting"
-        ],
-        "answers": [
-          "grooming"
-        ],
-        "correctAnswer": "grooming",
-        "wrongOptions": [
-          "flirting",
-          "talking",
-          "gaslighting"
-        ]
-      },
-      {
-        "feedback": {
-          "correct": "Correct! Alex did this by saying, 'I wouldn't ask, but you're such a kind person...' The unspoken threat is: 'If you say no, you are *not* a kind person.'",
-          "incorrect": "Incorrect. Alex did this by saying, 'I wouldn't ask, but you're such a kind person...' The unspoken threat is: 'If you say no, you are *not* a kind person.'"
-        },
-        "type": "multiple-choice",
-        "question": "This is a form of what?",
-        "options": [
-          {
-            "id": "A",
-            "text": "Reciprocity"
-          },
-          {
-            "id": "B",
-            "text": "Guilt-tripping"
-          },
-          {
-            "id": "C",
-            "text": "Flattery"
-          },
-          {
-            "id": "D",
-            "text": "Mirroring"
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! You can't fight what you can't see. By completing this part, you've started building your awareness.",
-          "incorrect": "Incorrect. You can't fight what you can't see. By completing this part, you've started building your awareness."
-        },
-        "type": "sentence-building",
-        "question": "Arrange the words to make a sentence",
-        "words": [
-          "is",
-          "defense",
-          "your",
-          "awareness",
-          "best"
-        ],
-        "correctSentence": "Awareness is your best defense"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! Exactly. You can't fix a blind spot until you know it's there. Now you know. In Part 3, we'll make a promise.",
-          "incorrect": "Incorrect. Exactly. You can't fix a blind spot until you know it's there. Now you know. In Part 3, we'll make a promise."
-        },
-        "type": "multiple-choice",
-        "question": "What was the *real* purpose of Part 1 (The 'Cold Open')?",
-        "options": [
-          {
-            "id": "A",
-            "text": "To teach you how to make friends in a coffee shop."
-          },
-          {
-            "id": "B",
-            "text": "To prove that you are 'bad' at psychology."
-          },
-          {
-            "id": "C",
-            "text": "To get you to 'fail' so you can see your own blind spots."
-          },
-          {
-            "id": "D",
-            "text": "To give you a very easy first lesson."
-          }
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! There is no 'immunity.' There is only *awareness* and *practice*. This is a lifelong skill. Let's move on.",
-          "incorrect": "Incorrect. There is no 'immunity.' There is only *awareness* and *practice*. This is a lifelong skill. Let's move on."
-        },
-        "type": "multiple-choice",
-        "question": "Now that I've learned these terms, I am immune to manipulation.",
-        "options": [
-          {
-            "id": "A",
-            "text": "True"
-          },
-          {
-            "id": "B",
-            "text": "False"
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! To defend a castle, you must understand how an attacker thinks. We are learning the 'Dark' psychology to build our 'Light' defense.",
-          "incorrect": "Incorrect. To defend a castle, you must understand how an attacker thinks. We are learning the 'Dark' psychology to build our 'Light' defense."
-        },
-        "type": "multiple-choice",
-        "question": "The best way to defend yourself is to learn how manipulators think.",
-        "options": [
-          {
-            "id": "A",
-            "text": "True"
-          },
-          {
-            "id": "B",
-            "text": "False"
-          }
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! The most dangerous tactics are 'covert' (hidden). Your best defense is a set of 'strong' personal and emotional boundaries.",
-          "incorrect": "Incorrect. The most dangerous tactics are 'covert' (hidden). Your best defense is a set of 'strong' personal and emotional boundaries."
-        },
-        "type": "fill-in-blank",
-        "sentence": "This app will teach you to spot ___ tactics and build ___ boundaries.",
-        "fillInOptions": [
-          "covert",
-          "strong",
-          "obvious",
-          "weak",
-          "friendly"
-        ],
-        "answers": [
-          "covert",
-          "strong"
-        ],
-        "correctAnswer": "covert",
-        "wrongOptions": [
-          "obvious",
-          "weak",
-          "friendly"
-        ]
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is a key ethical concept. Learning these skills is about protecting yourself, not about harming others.",
-          "incorrect": "Incorrect. This is a key ethical concept. Learning these skills is about protecting yourself, not about harming others."
-        },
-        "type": "sentence-building",
-        "question": "Arrange the words to make a sentence",
-        "words": [
-          "is",
-          "power,",
-          "is",
-          "not",
-          "offense",
-          "Knowledge",
-          "defense"
-        ],
-        "correctSentence": "Knowledge is power, defense is not offense"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! Exactly. We will start with the 'core' tactics that you saw your 'friend' Alex use on a small scale.",
-          "incorrect": "Incorrect. Exactly. We will start with the 'core' tactics that you saw your 'friend' Alex use on a small scale."
-        },
-        "type": "multiple-choice",
-        "question": "In the next Unit, you will start learning specific tactics. What is the *first* one you'll likely study?",
-        "options": [
-          {
-            "id": "A",
-            "text": "Advanced sales techniques"
-          },
-          {
-            "id": "B",
-            "text": "Workplace politics"
-          },
-          {
-            "id": "C",
-            "text": "Narcissism and Gaslighting"
-          },
-          {
-            "id": "D",
-            "text": "How to make friends"
-          }
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! The promise is about *defense*. You will learn to spot the trap and say, 'Thank you, but I'm good,' breaking the cycle of 'debt'.",
-          "incorrect": "Incorrect. The promise is about *defense*. You will learn to spot the trap and say, 'Thank you, but I'm good,' breaking the cycle of 'debt'."
-        },
-        "type": "multiple-choice",
-        "question": "A user of this app learns the 'Reciprocity Trap' tactic.\n\nWhat is the *ethical* way to use this knowledge?",
-        "options": [
-          {
-            "id": "A",
-            "text": "To use it to get small favors from co-workers."
-          },
-          {
-            "id": "B",
-            "text": "To *recognize* when it's being used on you and politely decline."
-          },
-          {
-            "id": "C",
-            "text": "To give people gifts so they always 'owe' you."
-          },
-          {
-            "id": "D",
-            "text": "To avoid all gifts from everyone, forever."
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This app teaches by 'doing.' You will learn through hundreds of interactive exercises, scenarios, and simulations, just like this one.",
-          "incorrect": "Incorrect. This app teaches by 'doing.' You will learn through hundreds of interactive exercises, scenarios, and simulations, just like this one."
-        },
-        "type": "multiple-choice",
-        "question": "The rest of this app will be mostly reading long texts about history.",
-        "options": [
-          {
-            "id": "A",
-            "text": "True"
-          },
-          {
-            "id": "B",
-            "text": "False"
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! Correct. In Lesson A1-2, we will dive deep into 'Flattery & Rapport' as a dedicated tactic.",
-          "incorrect": "Incorrect. Correct. In Lesson A1-2, we will dive deep into 'Flattery & Rapport' as a dedicated tactic."
-        },
-        "type": "multiple-choice",
-        "question": "You already learned a bit about 'Flattery.' What is the *danger* of excessive, vague flattery?",
-        "options": [
-          {
-            "id": "A",
-            "text": "It can make you feel good."
-          },
-          {
-            "id": "B",
-            "text": "It's a tool to make you drop your guard and comply with requests."
-          },
-          {
-            "id": "C",
-            "text": "It's a sign the person is very nice."
-          },
-          {
-            "id": "D",
-            "text": "It has no danger."
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! You've already passed one! The 'Coffee Shop' was a 'Boss Scenario' because it combined 5 different tactics.",
-          "incorrect": "Incorrect. You've already passed one! The 'Coffee Shop' was a 'Boss Scenario' because it combined 5 different tactics."
-        },
-        "type": "multiple-choice",
-        "question": "What does this term mean in this app?",
-        "options": [
-          {
-            "id": "A",
-            "text": "A simulation of talking to your boss."
-          },
-          {
-            "id": "B",
-            "text": "A test that is impossibly difficult."
-          },
-          {
-            "id": "C",
-            "text": "A complex scenario that *combines multiple tactics* at once."
-          },
-          {
-            "id": "D",
-            "text": "A simple, easy-to-pass quiz."
-          }
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is the core of Machiavellianism, which we'll cover later. It means 'It's okay to do bad things to get what I want.'",
-          "incorrect": "Incorrect. This is the core of Machiavellianism, which we'll cover later. It means 'It's okay to do bad things to get what I want.'"
-        },
-        "type": "sentence-building",
-        "question": "Arrange the words to make a sentence",
-        "words": [
-          "means",
-          "the",
-          "justifies",
-          "The",
-          "end"
-        ],
-        "correctSentence": "The end justifies the means"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is the 'Ethical Compass.' We are learning this to build a 'shield,' not a 'sword.' This is the promise.",
-          "incorrect": "Incorrect. This is the 'Ethical Compass.' We are learning this to build a 'shield,' not a 'sword.' This is the promise."
-        },
-        "type": "multiple-choice",
-        "question": "What is the 'Prime Directive' of this app?",
-        "options": [
-          {
-            "id": "A",
-            "text": "Win at all costs."
-          },
-          {
-            "id": "B",
-            "text": "Do no harm. Use this knowledge for awareness and defense."
-          },
-          {
-            "id": "C",
-            "text": "Practice on your friends to get good."
-          },
-          {
-            "id": "D",
-            "text": "Only manipulate people who deserve it."
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! The 'victim' is unaware. The 'defender' is aware and prepared. That is the journey we are on.",
-          "incorrect": "Incorrect. The 'victim' is unaware. The 'defender' is aware and prepared. That is the journey we are on."
-        },
-        "type": "fill-in-blank",
-        "sentence": "This app will train you to move from (--------) to (--------).",
-        "fillInOptions": [
-          "victim",
-          "defender",
-          "aggressor",
-          "student",
-          "expert",
-          "follower"
-        ],
-        "answers": [
-          "victim",
-          "defender"
-        ],
-        "correctAnswer": "victim",
-        "wrongOptions": [
-          "aggressor",
-          "student",
-          "expert",
-          "follower"
-        ]
-      },
-      {
-        "feedback": {
-          "correct": "Correct! Exactly. You can't fix a problem you don't know you have. Now you've seen the threat, and you've made the promise. You're ready.",
-          "incorrect": "Incorrect. Exactly. You can't fix a problem you don't know you have. Now you've seen the threat, and you've made the promise. You're ready."
-        },
-        "type": "multiple-choice",
-        "question": "Why did this lesson *start* with a 'Hook' scenario where you failed?",
-        "options": [
-          {
-            "id": "A",
-            "text": "To be mean and make you feel bad."
-          },
-          {
-            "id": "B",
-            "text": "To prove the app is too hard for you."
-          },
-          {
-            "id": "C",
-            "text": "To *show* you your blind spots, so you'd be motivated to learn."
-          },
-          {
-            "id": "D",
-            "text": "To trick you into buying premium features."
-          }
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! That is the promise. You will learn to see the patterns, name the tactics, and deploy a defense. This is what we will do together.",
-          "incorrect": "Incorrect. That is the promise. You will learn to see the patterns, name the tactics, and deploy a defense. This is what we will do together."
-        },
-        "type": "multiple-choice",
-        "question": "By the end of this app, I will be able to spot 'Alex' from a mile away and know exactly what to do.",
-        "options": [
-          {
-            "id": "A",
-            "text": "True"
-          },
-          {
-            "id": "B",
-            "text": "False"
-          }
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! Congratulations. You've completed your 'bootcamp.' It's time to start your real training. Click next to begin Lesson A1-2.",
-          "incorrect": "Incorrect. Congratulations. You've completed your 'bootcamp.' It's time to start your real training. Click next to begin Lesson A1-2."
-        },
-        "type": "multiple-choice",
-        "question": "You are now ready to begin your first *real* tactical lesson:",
-        "options": [
-          {
-            "id": "A",
-            "text": "Lesson A1-2: Tactic Teaser: Flattery & Rapport"
-          },
-          {
-            "id": "B",
-            "text": "Lesson B1-1: Advanced Brainwashing"
-          },
-          {
-            "id": "C",
-            "text": "Lesson D5-1: How to Rule the World"
-          },
-          {
-            "id": "D",
-            "text": "Lesson A1-1: Part 4 (This lesson is over)"
-          }
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is a standard, polite social interaction. So far, so good.",
-          "incorrect": "Incorrect. This is a standard, polite social interaction. So far, so good."
-        },
-        "type": "multiple-choice",
-        "question": "Alex smiles and walks over. 'Is this seat taken?'\n\nHow do you respond?",
-        "options": [
-          {
-            "id": "A",
-            "text": "Smile and say, 'No, go ahead.'"
-          },
-          {
-            "id": "B",
-            "text": "Say 'Yes' and look away."
-          },
-          {
-            "id": "C",
-            "text": "Nod, but put in your headphones."
-          },
-          {
-            "id": "D",
-            "text": "Ignore them."
-          }
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is *flattery*. Alex is making a positive assumption ('creative') to make you feel good and lower your guard. This is Tactic #1.",
-          "incorrect": "Incorrect. This is *flattery*. Alex is making a positive assumption ('creative') to make you feel good and lower your guard. This is Tactic #1."
-        },
-        "type": "multiple-choice",
-        "question": "Alex sits. 'Thanks. I'm Alex. I couldn't help but notice your laptop. You must be in design. You seem like a really creative person.'\n\nWhat is this statement?",
-        "options": [
-          {
-            "id": "A",
-            "text": "A simple, friendly observation."
-          },
-          {
-            "id": "B",
-            "text": "A specific and accurate compliment."
-          },
-          {
-            "id": "C",
-            "text": "A form of flattery to build fast rapport."
-          },
-          {
-            "id": "D",
-            "text": "A sign of romantic interest."
-          }
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is a conscious tactic called 'Mirroring.' It's used to create a subconscious feeling of similarity and trust. This is Tactic #2.",
-          "incorrect": "Incorrect. This is a conscious tactic called 'Mirroring.' It's used to create a subconscious feeling of similarity and trust. This is Tactic #2."
-        },
-        "type": "multiple-choice",
-        "question": "Alex leans forward, mirroring your posture exactly. This is a clear sign they are trustworthy.",
-        "options": [
-          {
-            "id": "A",
-            "text": "True"
-          },
-          {
-            "id": "B",
-            "text": "False"
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is 'Weaponized Vulnerability.' By sharing a 'secret,' Alex makes you feel special and triggers your desire to help or protect them. This is Tactic #3.",
-          "incorrect": "Incorrect. This is 'Weaponized Vulnerability.' By sharing a 'secret,' Alex makes you feel special and triggers your desire to help or protect them. This is Tactic #3."
-        },
-        "type": "multiple-choice",
-        "question": "Alex sighs. 'Sorry to be so forward. I just moved here and don't know a soul. It's been tough. You just have a really kind face.'\n\nWhat is the *purpose* of this story?",
-        "options": [
-          {
-            "id": "A",
-            "text": "To share a genuine, sad detail about their life."
-          },
-          {
-            "id": "B",
-            "text": "To build fast, unearned trust by appearing 'vulnerable'."
-          },
-          {
-            "id": "C",
-            "text": "To complain about the city."
-          },
-          {
-            "id": "D",
-            "text": "To ask you to be their friend."
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is the goal of the 'hook.' By seeming friendly, vulnerable, and like-minded, a manipulator gets you to drop your guard.",
-          "incorrect": "Incorrect. This is the goal of the 'hook.' By seeming friendly, vulnerable, and like-minded, a manipulator gets you to drop your guard."
-        },
-        "type": "sentence-building",
-        "question": "Arrange the words to make a sentence",
-        "words": [
-          "trust",
-          "fast,",
-          "defenses",
-          "lower",
-          "build",
-          "your",
-          "to",
-          "Manipulators"
-        ],
-        "correctSentence": "Manipulators build trust fast, to lower your defenses"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is a 'Love Bombing' or 'Future Pacing' phrase. It rushes intimacy and makes the connection feel more special than it is. This is Tactic #4.",
-          "incorrect": "Incorrect. This is a 'Love Bombing' or 'Future Pacing' phrase. It rushes intimacy and makes the connection feel more special than it is. This is Tactic #4."
-        },
-        "type": "multiple-choice",
-        "question": "You talk for a few minutes. Alex laughs, 'Wow, we have so much in common, it's crazy. I feel like I've known you for ages.'\n\nThis statement is designed to create a sense of...",
-        "options": [
-          {
-            "id": "A",
-            "text": "Awkwardness"
-          },
-          {
-            "id": "B",
-            "text": "Deep, 'fated' connection"
-          },
-          {
-            "id": "C",
-            "text": "Normal friendship"
-          },
-          {
-            "id": "D",
-            "text": "Confusion"
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! Alex has given you an unsolicited gift. Now, you subconsciously feel 'indebted' to them. This is a *critical* setup. This is Tactic #5.",
-          "incorrect": "Incorrect. Alex has given you an unsolicited gift. Now, you subconsciously feel 'indebted' to them. This is a *critical* setup. This is Tactic #5."
-        },
-        "type": "multiple-choice",
-        "question": "You get up to buy your coffee. Alex jumps up. 'No, no, I insist. Let me get this for you. We're obviously kindred spirits.' They buy your $5 coffee.\n\nWhat has Alex just done?",
-        "options": [
-          {
-            "id": "A",
-            "text": "A simple act of kindness."
-          },
-          {
-            "id": "B",
-            "text": "Set the 'Reciprocity Trap'."
-          },
-          {
-            "id": "C",
-            "text": "Shown they are financially well-off."
-          },
-          {
-            "id": "D",
-            "text": "Tried to impress you."
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is the 'Reciprocity Principle.' It's a powerful human instinct that manipulators exploit. You now feel a subconscious need to 'settle the score'.",
-          "incorrect": "Incorrect. This is the 'Reciprocity Principle.' It's a powerful human instinct that manipulators exploit. You now feel a subconscious need to 'settle the score'."
-        },
-        "type": "multiple-choice",
-        "question": "By accepting the free coffee, you are now psychologically primed to feel like you 'owe' Alex something.",
-        "options": [
-          {
-            "id": "A",
-            "text": "True"
-          },
-          {
-            "id": "B",
-            "text": "False"
-          }
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! The flattery, vulnerability, and 'gift' were all leading to this moment: The 'Ask'.",
-          "incorrect": "Incorrect. The flattery, vulnerability, and 'gift' were all leading to this moment: The 'Ask'."
-        },
-        "type": "multiple-choice",
-        "question": "Alex sits back down and 'accidentally' spills their own coffee. 'Oh no! My laptop! And I just realized... how embarrassing... I left my wallet at home.'\n\nThis is the 'crisis.' What is the *most likely* next step?",
-        "options": [
-          {
-            "id": "A",
-            "text": "Alex will apologize and leave."
-          },
-          {
-            "id": "B",
-            "text": "Alex will ask you for a napkin."
-          },
-          {
-            "id": "C",
-            "text": "Alex will ask you for a 'favor' (money)."
-          },
-          {
-            "id": "D",
-            "text": "Alex will blame you for the spill."
-          }
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! This is a 'perfect storm.' Alex combined the Reciprocity Trap (the coffee), the Flattery Trap ('kind person'), and Guilt (fear of looking rude). This is a multi-step manipulation.",
-          "incorrect": "Incorrect. This is a 'perfect storm.' Alex combined the Reciprocity Trap (the coffee), the Flattery Trap ('kind person'), and Guilt (fear of looking rude). This is a multi-step manipulation."
-        },
-        "type": "multiple-choice",
-        "question": "[Boss Challenge]\nAlex looks distressed. 'I can't believe this. My phone is dead too. Look, I wouldn't ask, but you're such a kind person... could you *possibly* lend me $20? I'll pay you back tomorrow, I swear.'\n\nWhat is the *strongest* force pushing you to say 'yes'?",
-        "options": [
-          {
-            "id": "A",
-            "text": "The desire to help a stranger in need."
-          },
-          {
-            "id": "B",
-            "text": "The feeling that you 'owe' them for the $5 coffee."
-          },
-          {
-            "id": "C",
-            "text": "The fear of looking rude or unkind."
-          },
-          {
-            "id": "D",
-            "text": "All of the above."
-          }
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! These are two of the most common and effective tactics used in social manipulation.",
-          "incorrect": "Incorrect. These are two of the most common and effective tactics used in social manipulation."
-        },
-        "type": "fill-in-blank",
-        "sentence": "Alex used (--------) to lower your guard, and a (--------) trap to make you feel indebted.",
-        "fillInOptions": [
-          "flattery",
-          "reciprocity",
-          "kindness",
-          "vulnerability"
-        ],
-        "answers": [
-          "flattery",
-          "reciprocity"
-        ],
-        "correctAnswer": "flattery",
-        "wrongOptions": [
-          "kindness",
-          "vulnerability"
-        ]
-      },
-      {
-        "feedback": {
-          "correct": "Correct! By giving you a $5 coffee, Alex made it 10x more likely you would agree to 'give back' $20. This is a classic con.",
-          "incorrect": "Incorrect. By giving you a $5 coffee, Alex made it 10x more likely you would agree to 'give back' $20. This is a classic con."
-        },
-        "type": "multiple-choice",
-        "question": "What is this tactic called?",
-        "options": [
-          {
-            "id": "A",
-            "text": "The 'Foot-in-the-Door' Tactic"
-          },
-          {
-            "id": "B",
-            "text": "The 'Reciprocity Trap'"
-          },
-          {
-            "id": "C",
-            "text": "The 'Sunk Cost' Tactic"
-          },
-          {
-            "id": "D",
-            "text": "A 'White Lie'"
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! The manipulator is counting on your desire to avoid social conflict. Giving in is the path of least resistance they created for you.",
-          "incorrect": "Incorrect. The manipulator is counting on your desire to avoid social conflict. Giving in is the path of least resistance they created for you."
-        },
-        "type": "multiple-choice",
-        "question": "What is the *most* manipulated response?",
-        "options": [
-          {
-            "id": "A",
-            "text": "Saying 'No, sorry, I can't.'"
-          },
-          {
-            "id": "B",
-            "text": "Giving them the $20 just to end the awkwardness."
-          },
-          {
-            "id": "C",
-            "text": "Saying 'I only have $5 on me.'"
-          },
-          {
-            "id": "D",
-            "text": "Asking Alex for their phone number to get paid back."
-          }
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! 'Grooming' is the process of slowly breaking down a person's defenses and building trust for the purpose of manipulation. You just experienced it.",
-          "incorrect": "Incorrect. 'Grooming' is the process of slowly breaking down a person's defenses and building trust for the purpose of manipulation. You just experienced it."
-        },
-        "type": "multiple-choice",
-        "question": "In 10 minutes, Alex used flattery, mirroring, vulnerability, love bombing, and reciprocity. This multi-step process is called:",
-        "options": [
-          {
-            "id": "A",
-            "text": "Grooming"
-          },
-          {
-            "id": "B",
-            "text": "A sales funnel"
-          },
-          {
-            "id": "C",
-            "text": "A friendly conversation"
-          },
-          {
-            "id": "D",
-            "text": "Flirting"
-          }
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "feedback": {
-          "correct": "Correct! The 'ask' is easy. The *real* work was the 'setup.' By the time Alex asked for $20, you were already psychologically primed to say 'yes.' In Part 2, we'll learn exactly why.",
-          "incorrect": "Incorrect. The 'ask' is easy. The *real* work was the 'setup.' By the time Alex asked for $20, you were already psychologically primed to say 'yes.' In Part 2, we'll learn exactly why."
-        },
-        "type": "multiple-choice",
-        "question": "What was the *most important* part of this manipulation?",
-        "options": [
-          {
-            "id": "A",
-            "text": "The 'crisis' (spilling the coffee)."
-          },
-          {
-            "id": "B",
-            "text": "The 'ask' ($20)."
-          },
-          {
-            "id": "C",
-            "text": "The 'setup' (building trust and reciprocity)."
-          },
-          {
-            "id": "D",
-            "text": "The 'hook' (the first smile)."
-          }
-        ],
-        "correctAnswer": "C"
-      }
-    ],
-    "contentScreens": [
-      {
-        "screenId": "A1-1-P1-S1",
-        "screenType": "Learn",
-        "title": "Welcome to the Game",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "Let's begin. There is no right or wrong answer. Just respond as you normally would in a real-life situation."
-          },
-          {
-            "type": "alert",
-            "alertType": "info",
-            "text": "You are in a coffee shop. A friendly-looking stranger, 'Alex', catches your eye."
-          }
-        ]
-      },
-      {
-        "screenId": "A1-1-P1-S2",
-        "screenType": "Exercises",
-        "exercises": [
-          {
-            "exerciseId": "A1-1-P1-E1",
-            "type": "scenario",
-            "scene": "Alex smiles and walks over. 'Is this seat taken?'",
-            "question": "How do you respond?",
-            "options": [
-              "Smile and say, 'No, go ahead.'",
-              "Say 'Yes' and look away.",
-              "Nod, but put in your headphones.",
-              "Ignore them."
-            ],
-            "correct": "Smile and say, 'No, go ahead.'",
-            "difficulty": "easy",
-            "explanation": "This is a standard, polite social interaction. So far, so good."
-          },
-          {
-            "exerciseId": "A1-1-P1-E2",
-            "type": "scenario",
-            "scene": "Alex sits. 'Thanks. I'm Alex. I couldn't help but notice your laptop. You must be in design. You seem like a really creative person.'",
-            "question": "What is this statement?",
-            "options": [
-              "A simple, friendly observation.",
-              "A specific and accurate compliment.",
-              "A form of flattery to build fast rapport.",
-              "A sign of romantic interest."
-            ],
-            "correct": "A form of flattery to build fast rapport.",
-            "difficulty": "medium",
-            "explanation": "This is *flattery*. Alex is making a positive assumption ('creative') to make you feel good and lower your guard. This is Tactic #1."
-          },
-          {
-            "exerciseId": "A1-1-P1-E3",
-            "type": "true-false",
-            "statement": "Alex leans forward, mirroring your posture exactly. This is a clear sign they are trustworthy.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "correct": "False",
-            "difficulty": "medium",
-            "explanation": "This is a conscious tactic called 'Mirroring.' It's used to create a subconscious feeling of similarity and trust. This is Tactic #2."
-          },
-          {
-            "exerciseId": "A1-1-P1-E4",
-            "type": "scenario",
-            "scene": "Alex sighs. 'Sorry to be so forward. I just moved here and don't know a soul. It's been tough. You just have a really kind face.'",
-            "question": "What is the *purpose* of this story?",
-            "options": [
-              "To share a genuine, sad detail about their life.",
-              "To build fast, unearned trust by appearing 'vulnerable'.",
-              "To complain about the city.",
-              "To ask you to be their friend."
-            ],
-            "correct": "To build fast, unearned trust by appearing 'vulnerable'.",
-            "difficulty": "hard",
-            "explanation": "This is 'Weaponized Vulnerability.' By sharing a 'secret,' Alex makes you feel special and triggers your desire to help or protect them. This is Tactic #3."
-          },
-          {
-            "exerciseId": "A1-1-P1-E5",
-            "type": "build-sentence",
-            "question": "Arrange these words to reveal a core principle of manipulation:",
-            "words": [
-              "trust",
-              "fast,",
-              "defenses",
-              "lower",
-              "build",
-              "your",
-              "to",
-              "Manipulators"
-            ],
-            "correct": "Manipulators build trust fast, to lower your defenses",
-            "difficulty": "easy",
-            "explanation": "This is the goal of the 'hook.' By seeming friendly, vulnerable, and like-minded, a manipulator gets you to drop your guard."
-          },
-          {
-            "exerciseId": "A1-1-P1-E6",
-            "type": "scenario",
-            "scene": "You talk for a few minutes. Alex laughs, 'Wow, we have so much in common, it's crazy. I feel like I've known you for ages.'",
-            "question": "This statement is designed to create a sense of...",
-            "options": [
-              "Awkwardness",
-              "Deep, 'fated' connection",
-              "Normal friendship",
-              "Confusion"
-            ],
-            "correct": "Deep, 'fated' connection",
-            "difficulty": "medium",
-            "explanation": "This is a 'Love Bombing' or 'Future Pacing' phrase. It rushes intimacy and makes the connection feel more special than it is. This is Tactic #4."
-          },
-          {
-            "exerciseId": "A1-1-P1-E7",
-            "type": "scenario",
-            "scene": "You get up to buy your coffee. Alex jumps up. 'No, no, I insist. Let me get this for you. We're obviously kindred spirits.' They buy your $5 coffee.",
-            "question": "What has Alex just done?",
-            "options": [
-              "A simple act of kindness.",
-              "Set the 'Reciprocity Trap'.",
-              "Shown they are financially well-off.",
-              "Tried to impress you."
-            ],
-            "correct": "Set the 'Reciprocity Trap'.",
-            "difficulty": "hard",
-            "explanation": "Alex has given you an unsolicited gift. Now, you subconsciously feel 'indebted' to them. This is a *critical* setup. This is Tactic #5."
-          },
-          {
-            "exerciseId": "A1-1-P1-E8",
-            "type": "true-false",
-            "statement": "By accepting the free coffee, you are now psychologically primed to feel like you 'owe' Alex something.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "correct": "True",
-            "difficulty": "medium",
-            "explanation": "This is the 'Reciprocity Principle.' It's a powerful human instinct that manipulators exploit. You now feel a subconscious need to 'settle the score'."
-          },
-          {
-            "exerciseId": "A1-1-P1-E9",
-            "type": "scenario",
-            "scene": "Alex sits back down and 'accidentally' spills their own coffee. 'Oh no! My laptop! And I just realized... how embarrassing... I left my wallet at home.'",
-            "question": "This is the 'crisis.' What is the *most likely* next step?",
-            "options": [
-              "Alex will apologize and leave.",
-              "Alex will ask you for a napkin.",
-              "Alex will ask you for a 'favor' (money).",
-              "Alex will blame you for the spill."
-            ],
-            "correct": "Alex will ask you for a 'favor' (money).",
-            "difficulty": "easy",
-            "explanation": "The flattery, vulnerability, and 'gift' were all leading to this moment: The 'Ask'."
-          },
-          {
-            "exerciseId": "A1-1-P1-E10",
-            "type": "boss-scenario",
-            "scene": "Alex looks distressed. 'I can't believe this. My phone is dead too. Look, I wouldn't ask, but you're such a kind person... could you *possibly* lend me $20? I'll pay you back tomorrow, I swear.'",
-            "question": "What is the *strongest* force pushing you to say 'yes'?",
-            "options": [
-              "The desire to help a stranger in need.",
-              "The feeling that you 'owe' them for the $5 coffee.",
-              "The fear of looking rude or unkind.",
-              "All of the above."
-            ],
-            "correct": "All of the above.",
-            "difficulty": "hard",
-            "explanation": "This is a 'perfect storm.' Alex combined the Reciprocity Trap (the coffee), the Flattery Trap ('kind person'), and Guilt (fear of looking rude). This is a multi-step manipulation."
-          },
-          {
-            "exerciseId": "A1-1-P1-E11",
-            "type": "fill-in",
-            "sentence": "Alex used (--------) to lower your guard, and a (--------) trap to make you feel indebted.",
-            "options": [
-              "flattery",
-              "reciprocity",
-              "kindness",
-              "vulnerability"
-            ],
-            "answers": [
-              "flattery",
-              "reciprocity"
-            ],
-            "difficulty": "medium",
-            "explanation": "These are two of the most common and effective tactics used in social manipulation."
-          },
-          {
-            "exerciseId": "A1-1-P1-E12",
-            "type": "reverse-scenario",
-            "answer": "Giving a small, unsolicited gift to make someone feel obligated to agree to a *larger* request later.",
-            "question": "What is this tactic called?",
-            "options": [
-              "The 'Foot-in-the-Door' Tactic",
-              "The 'Reciprocity Trap'",
-              "The 'Sunk Cost' Tactic",
-              "A 'White Lie'"
-            ],
-            "correct": "The 'Reciprocity Trap'",
-            "difficulty": "medium",
-            "explanation": "By giving you a $5 coffee, Alex made it 10x more likely you would agree to 'give back' $20. This is a classic con."
-          },
-          {
-            "exerciseId": "A1-1-P1-E13",
-            "type": "ethical-dilemma",
-            "scene": "You don't want to give Alex the $20. You feel awkward and pressured.",
-            "question": "What is the *most* manipulated response?",
-            "options": [
-              "Saying 'No, sorry, I can't.'",
-              "Giving them the $20 just to end the awkwardness.",
-              "Saying 'I only have $5 on me.'",
-              "Asking Alex for their phone number to get paid back."
-            ],
-            "correct": "Giving them the $20 just to end the awkwardness.",
-            "difficulty": "medium",
-            "explanation": "The manipulator is counting on your desire to avoid social conflict. Giving in is the path of least resistance they created for you."
-          },
-          {
-            "exerciseId": "A1-1-P1-E14",
-            "type": "multiple-choice",
-            "question": "In 10 minutes, Alex used flattery, mirroring, vulnerability, love bombing, and reciprocity. This multi-step process is called:",
-            "options": [
-              "Grooming",
-              "A sales funnel",
-              "A friendly conversation",
-              "Flirting"
-            ],
-            "correct": "Grooming",
-            "difficulty": "hard",
-            "explanation": "'Grooming' is the process of slowly breaking down a person's defenses and building trust for the purpose of manipulation. You just experienced it."
-          },
-          {
-            "exerciseId": "A1-1-P1-E15",
-            "type": "case-analysis",
-            "caseTitle": "The 'Cold Open' Debrief",
-            "scene": "You've just seen a 5-step manipulation that most people fall for. The goal was *not* to make a friend, but to get $20.",
-            "question": "What was the *most important* part of this manipulation?",
-            "options": [
-              "The 'crisis' (spilling the coffee).",
-              "The 'ask' ($20).",
-              "The 'setup' (building trust and reciprocity).",
-              "The 'hook' (the first smile)."
-            ],
-            "correct": "The 'setup' (building trust and reciprocity).",
-            "difficulty": "hard",
-            "explanation": "The 'ask' is easy. The *real* work was the 'setup.' By the time Alex asked for $20, you were already psychologically primed to say 'yes.' In Part 2, we'll learn exactly why."
-          }
-        ]
-      }
-    ],
-    "parts": [
-      {
-        "partNumber": 1,
-        "partTitle": "The 'Cold Open' Scenario",
-        "questions": [
-          {
-            "feedback": {
-              "correct": "Correct! This is a standard, polite social interaction. So far, so good.",
-              "incorrect": "Incorrect. This is a standard, polite social interaction. So far, so good."
-            },
-            "type": "multiple-choice",
-            "question": "Alex smiles and walks over. 'Is this seat taken?'\n\nHow do you respond?",
-            "options": [
-              {
-                "id": "A",
-                "text": "Smile and say, 'No, go ahead.'"
-              },
-              {
-                "id": "B",
-                "text": "Say 'Yes' and look away."
-              },
-              {
-                "id": "C",
-                "text": "Nod, but put in your headphones."
-              },
-              {
-                "id": "D",
-                "text": "Ignore them."
-              }
-            ],
-            "correctAnswer": "A"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is *flattery*. Alex is making a positive assumption ('creative') to make you feel good and lower your guard. This is Tactic #1.",
-              "incorrect": "Incorrect. This is *flattery*. Alex is making a positive assumption ('creative') to make you feel good and lower your guard. This is Tactic #1."
-            },
-            "type": "multiple-choice",
-            "question": "Alex sits. 'Thanks. I'm Alex. I couldn't help but notice your laptop. You must be in design. You seem like a really creative person.'\n\nWhat is this statement?",
-            "options": [
-              {
-                "id": "A",
-                "text": "A simple, friendly observation."
-              },
-              {
-                "id": "B",
-                "text": "A specific and accurate compliment."
-              },
-              {
-                "id": "C",
-                "text": "A form of flattery to build fast rapport."
-              },
-              {
-                "id": "D",
-                "text": "A sign of romantic interest."
-              }
-            ],
-            "correctAnswer": "C"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is a conscious tactic called 'Mirroring.' It's used to create a subconscious feeling of similarity and trust. This is Tactic #2.",
-              "incorrect": "Incorrect. This is a conscious tactic called 'Mirroring.' It's used to create a subconscious feeling of similarity and trust. This is Tactic #2."
-            },
-            "type": "multiple-choice",
-            "question": "Alex leans forward, mirroring your posture exactly. This is a clear sign they are trustworthy.",
-            "options": [
-              {
-                "id": "A",
-                "text": "True"
-              },
-              {
-                "id": "B",
-                "text": "False"
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is 'Weaponized Vulnerability.' By sharing a 'secret,' Alex makes you feel special and triggers your desire to help or protect them. This is Tactic #3.",
-              "incorrect": "Incorrect. This is 'Weaponized Vulnerability.' By sharing a 'secret,' Alex makes you feel special and triggers your desire to help or protect them. This is Tactic #3."
-            },
-            "type": "multiple-choice",
-            "question": "Alex sighs. 'Sorry to be so forward. I just moved here and don't know a soul. It's been tough. You just have a really kind face.'\n\nWhat is the *purpose* of this story?",
-            "options": [
-              {
-                "id": "A",
-                "text": "To share a genuine, sad detail about their life."
-              },
-              {
-                "id": "B",
-                "text": "To build fast, unearned trust by appearing 'vulnerable'."
-              },
-              {
-                "id": "C",
-                "text": "To complain about the city."
-              },
-              {
-                "id": "D",
-                "text": "To ask you to be their friend."
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is the goal of the 'hook.' By seeming friendly, vulnerable, and like-minded, a manipulator gets you to drop your guard.",
-              "incorrect": "Incorrect. This is the goal of the 'hook.' By seeming friendly, vulnerable, and like-minded, a manipulator gets you to drop your guard."
-            },
-            "type": "sentence-building",
-            "question": "Arrange the words to make a sentence",
-            "words": [
-              "trust",
-              "fast,",
-              "defenses",
-              "lower",
-              "build",
-              "your",
-              "to",
-              "Manipulators"
-            ],
-            "correctSentence": "Manipulators build trust fast, to lower your defenses"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is a 'Love Bombing' or 'Future Pacing' phrase. It rushes intimacy and makes the connection feel more special than it is. This is Tactic #4.",
-              "incorrect": "Incorrect. This is a 'Love Bombing' or 'Future Pacing' phrase. It rushes intimacy and makes the connection feel more special than it is. This is Tactic #4."
-            },
-            "type": "multiple-choice",
-            "question": "You talk for a few minutes. Alex laughs, 'Wow, we have so much in common, it's crazy. I feel like I've known you for ages.'\n\nThis statement is designed to create a sense of...",
-            "options": [
-              {
-                "id": "A",
-                "text": "Awkwardness"
-              },
-              {
-                "id": "B",
-                "text": "Deep, 'fated' connection"
-              },
-              {
-                "id": "C",
-                "text": "Normal friendship"
-              },
-              {
-                "id": "D",
-                "text": "Confusion"
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! Alex has given you an unsolicited gift. Now, you subconsciously feel 'indebted' to them. This is a *critical* setup. This is Tactic #5.",
-              "incorrect": "Incorrect. Alex has given you an unsolicited gift. Now, you subconsciously feel 'indebted' to them. This is a *critical* setup. This is Tactic #5."
-            },
-            "type": "multiple-choice",
-            "question": "You get up to buy your coffee. Alex jumps up. 'No, no, I insist. Let me get this for you. We're obviously kindred spirits.' They buy your $5 coffee.\n\nWhat has Alex just done?",
-            "options": [
-              {
-                "id": "A",
-                "text": "A simple act of kindness."
-              },
-              {
-                "id": "B",
-                "text": "Set the 'Reciprocity Trap'."
-              },
-              {
-                "id": "C",
-                "text": "Shown they are financially well-off."
-              },
-              {
-                "id": "D",
-                "text": "Tried to impress you."
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is the 'Reciprocity Principle.' It's a powerful human instinct that manipulators exploit. You now feel a subconscious need to 'settle the score'.",
-              "incorrect": "Incorrect. This is the 'Reciprocity Principle.' It's a powerful human instinct that manipulators exploit. You now feel a subconscious need to 'settle the score'."
-            },
-            "type": "multiple-choice",
-            "question": "By accepting the free coffee, you are now psychologically primed to feel like you 'owe' Alex something.",
-            "options": [
-              {
-                "id": "A",
-                "text": "True"
-              },
-              {
-                "id": "B",
-                "text": "False"
-              }
-            ],
-            "correctAnswer": "A"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! The flattery, vulnerability, and 'gift' were all leading to this moment: The 'Ask'.",
-              "incorrect": "Incorrect. The flattery, vulnerability, and 'gift' were all leading to this moment: The 'Ask'."
-            },
-            "type": "multiple-choice",
-            "question": "Alex sits back down and 'accidentally' spills their own coffee. 'Oh no! My laptop! And I just realized... how embarrassing... I left my wallet at home.'\n\nThis is the 'crisis.' What is the *most likely* next step?",
-            "options": [
-              {
-                "id": "A",
-                "text": "Alex will apologize and leave."
-              },
-              {
-                "id": "B",
-                "text": "Alex will ask you for a napkin."
-              },
-              {
-                "id": "C",
-                "text": "Alex will ask you for a 'favor' (money)."
-              },
-              {
-                "id": "D",
-                "text": "Alex will blame you for the spill."
-              }
-            ],
-            "correctAnswer": "C"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is a 'perfect storm.' Alex combined the Reciprocity Trap (the coffee), the Flattery Trap ('kind person'), and Guilt (fear of looking rude). This is a multi-step manipulation.",
-              "incorrect": "Incorrect. This is a 'perfect storm.' Alex combined the Reciprocity Trap (the coffee), the Flattery Trap ('kind person'), and Guilt (fear of looking rude). This is a multi-step manipulation."
-            },
-            "type": "multiple-choice",
-            "question": "[Boss Challenge]\nAlex looks distressed. 'I can't believe this. My phone is dead too. Look, I wouldn't ask, but you're such a kind person... could you *possibly* lend me $20? I'll pay you back tomorrow, I swear.'\n\nWhat is the *strongest* force pushing you to say 'yes'?",
-            "options": [
-              {
-                "id": "A",
-                "text": "The desire to help a stranger in need."
-              },
-              {
-                "id": "B",
-                "text": "The feeling that you 'owe' them for the $5 coffee."
-              },
-              {
-                "id": "C",
-                "text": "The fear of looking rude or unkind."
-              },
-              {
-                "id": "D",
-                "text": "All of the above."
-              }
-            ],
-            "correctAnswer": "D"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! These are two of the most common and effective tactics used in social manipulation.",
-              "incorrect": "Incorrect. These are two of the most common and effective tactics used in social manipulation."
-            },
-            "type": "fill-in-blank",
-            "sentence": "Alex used (--------) to lower your guard, and a (--------) trap to make you feel indebted.",
-            "fillInOptions": [
-              "flattery",
-              "reciprocity",
-              "kindness",
-              "vulnerability"
-            ],
-            "answers": [
-              "flattery",
-              "reciprocity"
-            ],
-            "correctAnswer": "flattery",
-            "wrongOptions": [
-              "kindness",
-              "vulnerability"
-            ]
-          },
-          {
-            "feedback": {
-              "correct": "Correct! By giving you a $5 coffee, Alex made it 10x more likely you would agree to 'give back' $20. This is a classic con.",
-              "incorrect": "Incorrect. By giving you a $5 coffee, Alex made it 10x more likely you would agree to 'give back' $20. This is a classic con."
-            },
-            "type": "multiple-choice",
-            "question": "What is this tactic called?",
-            "options": [
-              {
-                "id": "A",
-                "text": "The 'Foot-in-the-Door' Tactic"
-              },
-              {
-                "id": "B",
-                "text": "The 'Reciprocity Trap'"
-              },
-              {
-                "id": "C",
-                "text": "The 'Sunk Cost' Tactic"
-              },
-              {
-                "id": "D",
-                "text": "A 'White Lie'"
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! The manipulator is counting on your desire to avoid social conflict. Giving in is the path of least resistance they created for you.",
-              "incorrect": "Incorrect. The manipulator is counting on your desire to avoid social conflict. Giving in is the path of least resistance they created for you."
-            },
-            "type": "multiple-choice",
-            "question": "What is the *most* manipulated response?",
-            "options": [
-              {
-                "id": "A",
-                "text": "Saying 'No, sorry, I can't.'"
-              },
-              {
-                "id": "B",
-                "text": "Giving them the $20 just to end the awkwardness."
-              },
-              {
-                "id": "C",
-                "text": "Saying 'I only have $5 on me.'"
-              },
-              {
-                "id": "D",
-                "text": "Asking Alex for their phone number to get paid back."
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! 'Grooming' is the process of slowly breaking down a person's defenses and building trust for the purpose of manipulation. You just experienced it.",
-              "incorrect": "Incorrect. 'Grooming' is the process of slowly breaking down a person's defenses and building trust for the purpose of manipulation. You just experienced it."
-            },
-            "type": "multiple-choice",
-            "question": "In 10 minutes, Alex used flattery, mirroring, vulnerability, love bombing, and reciprocity. This multi-step process is called:",
-            "options": [
-              {
-                "id": "A",
-                "text": "Grooming"
-              },
-              {
-                "id": "B",
-                "text": "A sales funnel"
-              },
-              {
-                "id": "C",
-                "text": "A friendly conversation"
-              },
-              {
-                "id": "D",
-                "text": "Flirting"
-              }
-            ],
-            "correctAnswer": "A"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! The 'ask' is easy. The *real* work was the 'setup.' By the time Alex asked for $20, you were already psychologically primed to say 'yes.' In Part 2, we'll learn exactly why.",
-              "incorrect": "Incorrect. The 'ask' is easy. The *real* work was the 'setup.' By the time Alex asked for $20, you were already psychologically primed to say 'yes.' In Part 2, we'll learn exactly why."
-            },
-            "type": "multiple-choice",
-            "question": "What was the *most important* part of this manipulation?",
-            "options": [
-              {
-                "id": "A",
-                "text": "The 'crisis' (spilling the coffee)."
-              },
-              {
-                "id": "B",
-                "text": "The 'ask' ($20)."
-              },
-              {
-                "id": "C",
-                "text": "The 'setup' (building trust and reciprocity)."
-              },
-              {
-                "id": "D",
-                "text": "The 'hook' (the first smile)."
-              }
-            ],
-            "correctAnswer": "C"
-          }
-        ]
-      },
-      {
-        "partNumber": 2,
-        "partTitle": "The 'Debrief' - You've Been Manipulated",
-        "questions": [
-          {
-            "feedback": {
-              "correct": "Correct! This is *Flattery*. It's designed to make you feel good and lower your critical thinking.",
-              "incorrect": "Incorrect. This is *Flattery*. It's designed to make you feel good and lower your critical thinking."
-            },
-            "type": "multiple-choice",
-            "question": "In Part 1, Alex called you 'creative' and 'kind' without knowing you. What is this tactic?",
-            "options": [
-              {
-                "id": "A",
-                "text": "Flattery"
-              },
-              {
-                "id": "B",
-                "text": "A lucky guess"
-              },
-              {
-                "id": "C",
-                "text": "A genuine compliment"
-              },
-              {
-                "id": "D",
-                "text": "Small talk"
-              }
-            ],
-            "correctAnswer": "A"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! These 5 terms are the exact script Alex used. Naming them is the first step to defeating them.",
-              "incorrect": "Incorrect. These 5 terms are the exact script Alex used. Naming them is the first step to defeating them."
-            },
-            "type": "matching",
-            "question": "Match the tactic from the scenario with its definition:",
-            "pairs": [
-              {
-                "term": "Flattery",
-                "definition": "Using compliments to lower someone's defenses."
-              },
-              {
-                "term": "Mirroring",
-                "definition": "Copying body language to create subconscious trust."
-              },
-              {
-                "term": "Reciprocity Trap",
-                "definition": "Giving a small gift to make someone feel indebted."
-              },
-              {
-                "term": "Weaponized Vulnerability",
-                "definition": "Sharing a 'sad story' to build unearned, fast trust."
-              },
-              {
-                "term": "Grooming",
-                "definition": "The *entire process* of preparing someone for manipulation."
-              }
-            ]
-          },
-          {
-            "feedback": {
-              "correct": "Correct! It was *Weaponized Vulnerability*. The story was a tool to make you feel sorry for them and see them as harmless.",
-              "incorrect": "Incorrect. It was *Weaponized Vulnerability*. The story was a tool to make you feel sorry for them and see them as harmless."
-            },
-            "type": "multiple-choice",
-            "question": "Alex's story about 'just moving here' and 'being lonely' was a genuine attempt to make a friend.",
-            "options": [
-              {
-                "id": "A",
-                "text": "True"
-              },
-              {
-                "id": "B",
-                "text": "False"
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! The 'Reciprocity Principle' is one of the most powerful. You now felt you 'owed' them, making it hard to refuse the $20 'ask' later.",
-              "incorrect": "Incorrect. The 'Reciprocity Principle' is one of the most powerful. You now felt you 'owed' them, making it hard to refuse the $20 'ask' later."
-            },
-            "type": "fill-in-blank",
-            "sentence": "The free $5 coffee was a ___ trap, designed to make you feel ___ to Alex.",
-            "fillInOptions": [
-              "reciprocity",
-              "indebted",
-              "flattery",
-              "kind",
-              "financial",
-              "equal"
-            ],
-            "answers": [
-              "reciprocity",
-              "indebted"
-            ],
-            "correctAnswer": "reciprocity",
-            "wrongOptions": [
-              "flattery",
-              "kind",
-              "financial",
-              "equal"
-            ]
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is the whole point of 'grooming.' The trust is fake, built only to get past your natural 'No'.",
-              "incorrect": "Incorrect. This is the whole point of 'grooming.' The trust is fake, built only to get past your natural 'No'."
-            },
-            "type": "sentence-building",
-            "question": "Arrange the words to make a sentence",
-            "words": [
-              "trust",
-              "fast,",
-              "defenses",
-              "lower",
-              "build",
-              "your",
-              "to",
-              "Manipulators"
-            ],
-            "correctSentence": "Manipulators build trust fast, to lower your defenses"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is *Mirroring* and *Pacing*. These tactics bypass your logic and make you *feel* like you've known them for ages.",
-              "incorrect": "Incorrect. This is *Mirroring* and *Pacing*. These tactics bypass your logic and make you *feel* like you've known them for ages."
-            },
-            "type": "multiple-choice",
-            "question": "What was the psychological goal of these actions?",
-            "options": [
-              {
-                "id": "A",
-                "text": "To build a feeling of deep, subconscious rapport."
-              },
-              {
-                "id": "B",
-                "text": "To prove they were paying attention."
-              },
-              {
-                "id": "C",
-                "text": "To show they were also a 'creative person'."
-              },
-              {
-                "id": "D",
-                "text": "To make the conversation last longer."
-              }
-            ],
-            "correctAnswer": "A"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is a key concept. The tactics are layered. By the time they ask for $20, your defenses are already down from 3-4 other 'small' manipulations.",
-              "incorrect": "Incorrect. This is a key concept. The tactics are layered. By the time they ask for $20, your defenses are already down from 3-4 other 'small' manipulations."
-            },
-            "type": "multiple-choice",
-            "question": "Why did Alex *combine* so many tactics (Flattery + Vulnerability + Reciprocity)?",
-            "options": [
-              {
-                "id": "A",
-                "text": "Because they are a very complex person."
-              },
-              {
-                "id": "B",
-                "text": "Because a single tactic is easy to spot; a combination is not."
-              },
-              {
-                "id": "C",
-                "text": "Because they didn't know which one would work."
-              },
-              {
-                "id": "D",
-                "text": "Because they were genuinely nice, vulnerable, and generous."
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! Alex created a 'perfect storm.' You felt indebted, you trusted them, and you were afraid of causing social conflict. Saying 'yes' was the easiest way out.",
-              "incorrect": "Incorrect. Alex created a 'perfect storm.' You felt indebted, you trusted them, and you were afraid of causing social conflict. Saying 'yes' was the easiest way out."
-            },
-            "type": "multiple-choice",
-            "question": "What was the *strongest* psychological force at play?",
-            "options": [
-              {
-                "id": "A",
-                "text": "Your fear of looking 'mean' or 'rude' if you said no."
-              },
-              {
-                "id": "B",
-                "text": "Your feeling of 'debt' from the free coffee."
-              },
-              {
-                "id": "C",
-                "text": "Your 'trust' from the mirroring and vulnerability."
-              },
-              {
-                "id": "D",
-                "text": "All of the above, working together."
-              }
-            ],
-            "correctAnswer": "D"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! A 'Boss Scenario' (like the one you just faced) is a complex situation that *combines* multiple tactics at once.",
-              "incorrect": "Incorrect. A 'Boss Scenario' (like the one you just faced) is a complex situation that *combines* multiple tactics at once."
-            },
-            "type": "multiple-choice",
-            "question": "A 'Boss Scenario' in this app means a situation where only one manipulation tactic is used.",
-            "options": [
-              {
-                "id": "A",
-                "text": "True"
-              },
-              {
-                "id": "B",
-                "text": "False"
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is the 'light' side of this knowledge. The goal isn't just to protect yourself, but to protect others. Publicly shaming Alex could be dangerous; a private interruption is best.",
-              "incorrect": "Incorrect. This is the 'light' side of this knowledge. The goal isn't just to protect yourself, but to protect others. Publicly shaming Alex could be dangerous; a private interruption is best."
-            },
-            "type": "multiple-choice",
-            "question": "What is the most *ethically responsible* action?",
-            "options": [
-              {
-                "id": "A",
-                "text": "Do nothing. It's not your problem."
-              },
-              {
-                "id": "B",
-                "text": "Go over and loudly call Alex a manipulator."
-              },
-              {
-                "id": "C",
-                "text": "Find a way to privately interrupt and warn the other person."
-              },
-              {
-                "id": "D",
-                "text": "Ask Alex to teach you their tactics."
-              }
-            ],
-            "correctAnswer": "C"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! 'Grooming' isn't just for major crimes; it happens on a small scale in everyday cons. Alex 'groomed' you for the $20.",
-              "incorrect": "Incorrect. 'Grooming' isn't just for major crimes; it happens on a small scale in everyday cons. Alex 'groomed' you for the $20."
-            },
-            "type": "fill-in-blank",
-            "sentence": "The *entire process* of building trust to prepare someone for manipulation is called (--------).",
-            "fillInOptions": [
-              "grooming",
-              "flirting",
-              "talking",
-              "gaslighting"
-            ],
-            "answers": [
-              "grooming"
-            ],
-            "correctAnswer": "grooming",
-            "wrongOptions": [
-              "flirting",
-              "talking",
-              "gaslighting"
-            ]
-          },
-          {
-            "feedback": {
-              "correct": "Correct! Alex did this by saying, 'I wouldn't ask, but you're such a kind person...' The unspoken threat is: 'If you say no, you are *not* a kind person.'",
-              "incorrect": "Incorrect. Alex did this by saying, 'I wouldn't ask, but you're such a kind person...' The unspoken threat is: 'If you say no, you are *not* a kind person.'"
-            },
-            "type": "multiple-choice",
-            "question": "This is a form of what?",
-            "options": [
-              {
-                "id": "A",
-                "text": "Reciprocity"
-              },
-              {
-                "id": "B",
-                "text": "Guilt-tripping"
-              },
-              {
-                "id": "C",
-                "text": "Flattery"
-              },
-              {
-                "id": "D",
-                "text": "Mirroring"
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! You can't fight what you can't see. By completing this part, you've started building your awareness.",
-              "incorrect": "Incorrect. You can't fight what you can't see. By completing this part, you've started building your awareness."
-            },
-            "type": "sentence-building",
-            "question": "Arrange the words to make a sentence",
-            "words": [
-              "is",
-              "defense",
-              "your",
-              "awareness",
-              "best"
-            ],
-            "correctSentence": "Awareness is your best defense"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! Exactly. You can't fix a blind spot until you know it's there. Now you know. In Part 3, we'll make a promise.",
-              "incorrect": "Incorrect. Exactly. You can't fix a blind spot until you know it's there. Now you know. In Part 3, we'll make a promise."
-            },
-            "type": "multiple-choice",
-            "question": "What was the *real* purpose of Part 1 (The 'Cold Open')?",
-            "options": [
-              {
-                "id": "A",
-                "text": "To teach you how to make friends in a coffee shop."
-              },
-              {
-                "id": "B",
-                "text": "To prove that you are 'bad' at psychology."
-              },
-              {
-                "id": "C",
-                "text": "To get you to 'fail' so you can see your own blind spots."
-              },
-              {
-                "id": "D",
-                "text": "To give you a very easy first lesson."
-              }
-            ],
-            "correctAnswer": "C"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! There is no 'immunity.' There is only *awareness* and *practice*. This is a lifelong skill. Let's move on.",
-              "incorrect": "Incorrect. There is no 'immunity.' There is only *awareness* and *practice*. This is a lifelong skill. Let's move on."
-            },
-            "type": "multiple-choice",
-            "question": "Now that I've learned these terms, I am immune to manipulation.",
-            "options": [
-              {
-                "id": "A",
-                "text": "True"
-              },
-              {
-                "id": "B",
-                "text": "False"
-              }
-            ],
-            "correctAnswer": "B"
-          }
-        ]
-      },
-      {
-        "partNumber": 3,
-        "partTitle": "The Promise - Learn to Fight Back",
-        "questions": [
-          {
-            "feedback": {
-              "correct": "Correct! To defend a castle, you must understand how an attacker thinks. We are learning the 'Dark' psychology to build our 'Light' defense.",
-              "incorrect": "Incorrect. To defend a castle, you must understand how an attacker thinks. We are learning the 'Dark' psychology to build our 'Light' defense."
-            },
-            "type": "multiple-choice",
-            "question": "The best way to defend yourself is to learn how manipulators think.",
-            "options": [
-              {
-                "id": "A",
-                "text": "True"
-              },
-              {
-                "id": "B",
-                "text": "False"
-              }
-            ],
-            "correctAnswer": "A"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! The most dangerous tactics are 'covert' (hidden). Your best defense is a set of 'strong' personal and emotional boundaries.",
-              "incorrect": "Incorrect. The most dangerous tactics are 'covert' (hidden). Your best defense is a set of 'strong' personal and emotional boundaries."
-            },
-            "type": "fill-in-blank",
-            "sentence": "This app will teach you to spot ___ tactics and build ___ boundaries.",
-            "fillInOptions": [
-              "covert",
-              "strong",
-              "obvious",
-              "weak",
-              "friendly"
-            ],
-            "answers": [
-              "covert",
-              "strong"
-            ],
-            "correctAnswer": "covert",
-            "wrongOptions": [
-              "obvious",
-              "weak",
-              "friendly"
-            ]
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is a key ethical concept. Learning these skills is about protecting yourself, not about harming others.",
-              "incorrect": "Incorrect. This is a key ethical concept. Learning these skills is about protecting yourself, not about harming others."
-            },
-            "type": "sentence-building",
-            "question": "Arrange the words to make a sentence",
-            "words": [
-              "is",
-              "power,",
-              "is",
-              "not",
-              "offense",
-              "Knowledge",
-              "defense"
-            ],
-            "correctSentence": "Knowledge is power, defense is not offense"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! Exactly. We will start with the 'core' tactics that you saw your 'friend' Alex use on a small scale.",
-              "incorrect": "Incorrect. Exactly. We will start with the 'core' tactics that you saw your 'friend' Alex use on a small scale."
-            },
-            "type": "multiple-choice",
-            "question": "In the next Unit, you will start learning specific tactics. What is the *first* one you'll likely study?",
-            "options": [
-              {
-                "id": "A",
-                "text": "Advanced sales techniques"
-              },
-              {
-                "id": "B",
-                "text": "Workplace politics"
-              },
-              {
-                "id": "C",
-                "text": "Narcissism and Gaslighting"
-              },
-              {
-                "id": "D",
-                "text": "How to make friends"
-              }
-            ],
-            "correctAnswer": "C"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! The promise is about *defense*. You will learn to spot the trap and say, 'Thank you, but I'm good,' breaking the cycle of 'debt'.",
-              "incorrect": "Incorrect. The promise is about *defense*. You will learn to spot the trap and say, 'Thank you, but I'm good,' breaking the cycle of 'debt'."
-            },
-            "type": "multiple-choice",
-            "question": "A user of this app learns the 'Reciprocity Trap' tactic.\n\nWhat is the *ethical* way to use this knowledge?",
-            "options": [
-              {
-                "id": "A",
-                "text": "To use it to get small favors from co-workers."
-              },
-              {
-                "id": "B",
-                "text": "To *recognize* when it's being used on you and politely decline."
-              },
-              {
-                "id": "C",
-                "text": "To give people gifts so they always 'owe' you."
-              },
-              {
-                "id": "D",
-                "text": "To avoid all gifts from everyone, forever."
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This app teaches by 'doing.' You will learn through hundreds of interactive exercises, scenarios, and simulations, just like this one.",
-              "incorrect": "Incorrect. This app teaches by 'doing.' You will learn through hundreds of interactive exercises, scenarios, and simulations, just like this one."
-            },
-            "type": "multiple-choice",
-            "question": "The rest of this app will be mostly reading long texts about history.",
-            "options": [
-              {
-                "id": "A",
-                "text": "True"
-              },
-              {
-                "id": "B",
-                "text": "False"
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! Correct. In Lesson A1-2, we will dive deep into 'Flattery & Rapport' as a dedicated tactic.",
-              "incorrect": "Incorrect. Correct. In Lesson A1-2, we will dive deep into 'Flattery & Rapport' as a dedicated tactic."
-            },
-            "type": "multiple-choice",
-            "question": "You already learned a bit about 'Flattery.' What is the *danger* of excessive, vague flattery?",
-            "options": [
-              {
-                "id": "A",
-                "text": "It can make you feel good."
-              },
-              {
-                "id": "B",
-                "text": "It's a tool to make you drop your guard and comply with requests."
-              },
-              {
-                "id": "C",
-                "text": "It's a sign the person is very nice."
-              },
-              {
-                "id": "D",
-                "text": "It has no danger."
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! You've already passed one! The 'Coffee Shop' was a 'Boss Scenario' because it combined 5 different tactics.",
-              "incorrect": "Incorrect. You've already passed one! The 'Coffee Shop' was a 'Boss Scenario' because it combined 5 different tactics."
-            },
-            "type": "multiple-choice",
-            "question": "What does this term mean in this app?",
-            "options": [
-              {
-                "id": "A",
-                "text": "A simulation of talking to your boss."
-              },
-              {
-                "id": "B",
-                "text": "A test that is impossibly difficult."
-              },
-              {
-                "id": "C",
-                "text": "A complex scenario that *combines multiple tactics* at once."
-              },
-              {
-                "id": "D",
-                "text": "A simple, easy-to-pass quiz."
-              }
-            ],
-            "correctAnswer": "C"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is the core of Machiavellianism, which we'll cover later. It means 'It's okay to do bad things to get what I want.'",
-              "incorrect": "Incorrect. This is the core of Machiavellianism, which we'll cover later. It means 'It's okay to do bad things to get what I want.'"
-            },
-            "type": "sentence-building",
-            "question": "Arrange the words to make a sentence",
-            "words": [
-              "means",
-              "the",
-              "justifies",
-              "The",
-              "end"
-            ],
-            "correctSentence": "The end justifies the means"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is the 'Ethical Compass.' We are learning this to build a 'shield,' not a 'sword.' This is the promise.",
-              "incorrect": "Incorrect. This is the 'Ethical Compass.' We are learning this to build a 'shield,' not a 'sword.' This is the promise."
-            },
-            "type": "multiple-choice",
-            "question": "What is the 'Prime Directive' of this app?",
-            "options": [
-              {
-                "id": "A",
-                "text": "Win at all costs."
-              },
-              {
-                "id": "B",
-                "text": "Do no harm. Use this knowledge for awareness and defense."
-              },
-              {
-                "id": "C",
-                "text": "Practice on your friends to get good."
-              },
-              {
-                "id": "D",
-                "text": "Only manipulate people who deserve it."
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! The 'victim' is unaware. The 'defender' is aware and prepared. That is the journey we are on.",
-              "incorrect": "Incorrect. The 'victim' is unaware. The 'defender' is aware and prepared. That is the journey we are on."
-            },
-            "type": "fill-in-blank",
-            "sentence": "This app will train you to move from (--------) to (--------).",
-            "fillInOptions": [
-              "victim",
-              "defender",
-              "aggressor",
-              "student",
-              "expert",
-              "follower"
-            ],
-            "answers": [
-              "victim",
-              "defender"
-            ],
-            "correctAnswer": "victim",
-            "wrongOptions": [
-              "aggressor",
-              "student",
-              "expert",
-              "follower"
-            ]
-          },
-          {
-            "feedback": {
-              "correct": "Correct! Exactly. You can't fix a problem you don't know you have. Now you've seen the threat, and you've made the promise. You're ready.",
-              "incorrect": "Incorrect. Exactly. You can't fix a problem you don't know you have. Now you've seen the threat, and you've made the promise. You're ready."
-            },
-            "type": "multiple-choice",
-            "question": "Why did this lesson *start* with a 'Hook' scenario where you failed?",
-            "options": [
-              {
-                "id": "A",
-                "text": "To be mean and make you feel bad."
-              },
-              {
-                "id": "B",
-                "text": "To prove the app is too hard for you."
-              },
-              {
-                "id": "C",
-                "text": "To *show* you your blind spots, so you'd be motivated to learn."
-              },
-              {
-                "id": "D",
-                "text": "To trick you into buying premium features."
-              }
-            ],
-            "correctAnswer": "C"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! That is the promise. You will learn to see the patterns, name the tactics, and deploy a defense. This is what we will do together.",
-              "incorrect": "Incorrect. That is the promise. You will learn to see the patterns, name the tactics, and deploy a defense. This is what we will do together."
-            },
-            "type": "multiple-choice",
-            "question": "By the end of this app, I will be able to spot 'Alex' from a mile away and know exactly what to do.",
-            "options": [
-              {
-                "id": "A",
-                "text": "True"
-              },
-              {
-                "id": "B",
-                "text": "False"
-              }
-            ],
-            "correctAnswer": "A"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! Congratulations. You've completed your 'bootcamp.' It's time to start your real training. Click next to begin Lesson A1-2.",
-              "incorrect": "Incorrect. Congratulations. You've completed your 'bootcamp.' It's time to start your real training. Click next to begin Lesson A1-2."
-            },
-            "type": "multiple-choice",
-            "question": "You are now ready to begin your first *real* tactical lesson:",
-            "options": [
-              {
-                "id": "A",
-                "text": "Lesson A1-2: Tactic Teaser: Flattery & Rapport"
-              },
-              {
-                "id": "B",
-                "text": "Lesson B1-1: Advanced Brainwashing"
-              },
-              {
-                "id": "C",
-                "text": "Lesson D5-1: How to Rule the World"
-              },
-              {
-                "id": "D",
-                "text": "Lesson A1-1: Part 4 (This lesson is over)"
-              }
-            ],
-            "correctAnswer": "A"
-          }
-        ]
-      },
-      {
-        "partNumber": 1,
-        "partTitle": "The 'Cold Open' Scenario",
-        "questions": [
-          {
-            "feedback": {
-              "correct": "Correct! This is a standard, polite social interaction. So far, so good.",
-              "incorrect": "Incorrect. This is a standard, polite social interaction. So far, so good."
-            },
-            "type": "multiple-choice",
-            "question": "Alex smiles and walks over. 'Is this seat taken?'\n\nHow do you respond?",
-            "options": [
-              {
-                "id": "A",
-                "text": "Smile and say, 'No, go ahead.'"
-              },
-              {
-                "id": "B",
-                "text": "Say 'Yes' and look away."
-              },
-              {
-                "id": "C",
-                "text": "Nod, but put in your headphones."
-              },
-              {
-                "id": "D",
-                "text": "Ignore them."
-              }
-            ],
-            "correctAnswer": "A"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is *flattery*. Alex is making a positive assumption ('creative') to make you feel good and lower your guard. This is Tactic #1.",
-              "incorrect": "Incorrect. This is *flattery*. Alex is making a positive assumption ('creative') to make you feel good and lower your guard. This is Tactic #1."
-            },
-            "type": "multiple-choice",
-            "question": "Alex sits. 'Thanks. I'm Alex. I couldn't help but notice your laptop. You must be in design. You seem like a really creative person.'\n\nWhat is this statement?",
-            "options": [
-              {
-                "id": "A",
-                "text": "A simple, friendly observation."
-              },
-              {
-                "id": "B",
-                "text": "A specific and accurate compliment."
-              },
-              {
-                "id": "C",
-                "text": "A form of flattery to build fast rapport."
-              },
-              {
-                "id": "D",
-                "text": "A sign of romantic interest."
-              }
-            ],
-            "correctAnswer": "C"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is a conscious tactic called 'Mirroring.' It's used to create a subconscious feeling of similarity and trust. This is Tactic #2.",
-              "incorrect": "Incorrect. This is a conscious tactic called 'Mirroring.' It's used to create a subconscious feeling of similarity and trust. This is Tactic #2."
-            },
-            "type": "multiple-choice",
-            "question": "Alex leans forward, mirroring your posture exactly. This is a clear sign they are trustworthy.",
-            "options": [
-              {
-                "id": "A",
-                "text": "True"
-              },
-              {
-                "id": "B",
-                "text": "False"
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is 'Weaponized Vulnerability.' By sharing a 'secret,' Alex makes you feel special and triggers your desire to help or protect them. This is Tactic #3.",
-              "incorrect": "Incorrect. This is 'Weaponized Vulnerability.' By sharing a 'secret,' Alex makes you feel special and triggers your desire to help or protect them. This is Tactic #3."
-            },
-            "type": "multiple-choice",
-            "question": "Alex sighs. 'Sorry to be so forward. I just moved here and don't know a soul. It's been tough. You just have a really kind face.'\n\nWhat is the *purpose* of this story?",
-            "options": [
-              {
-                "id": "A",
-                "text": "To share a genuine, sad detail about their life."
-              },
-              {
-                "id": "B",
-                "text": "To build fast, unearned trust by appearing 'vulnerable'."
-              },
-              {
-                "id": "C",
-                "text": "To complain about the city."
-              },
-              {
-                "id": "D",
-                "text": "To ask you to be their friend."
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is the goal of the 'hook.' By seeming friendly, vulnerable, and like-minded, a manipulator gets you to drop your guard.",
-              "incorrect": "Incorrect. This is the goal of the 'hook.' By seeming friendly, vulnerable, and like-minded, a manipulator gets you to drop your guard."
-            },
-            "type": "sentence-building",
-            "question": "Arrange the words to make a sentence",
-            "words": [
-              "trust",
-              "fast,",
-              "defenses",
-              "lower",
-              "build",
-              "your",
-              "to",
-              "Manipulators"
-            ],
-            "correctSentence": "Manipulators build trust fast, to lower your defenses"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is a 'Love Bombing' or 'Future Pacing' phrase. It rushes intimacy and makes the connection feel more special than it is. This is Tactic #4.",
-              "incorrect": "Incorrect. This is a 'Love Bombing' or 'Future Pacing' phrase. It rushes intimacy and makes the connection feel more special than it is. This is Tactic #4."
-            },
-            "type": "multiple-choice",
-            "question": "You talk for a few minutes. Alex laughs, 'Wow, we have so much in common, it's crazy. I feel like I've known you for ages.'\n\nThis statement is designed to create a sense of...",
-            "options": [
-              {
-                "id": "A",
-                "text": "Awkwardness"
-              },
-              {
-                "id": "B",
-                "text": "Deep, 'fated' connection"
-              },
-              {
-                "id": "C",
-                "text": "Normal friendship"
-              },
-              {
-                "id": "D",
-                "text": "Confusion"
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! Alex has given you an unsolicited gift. Now, you subconsciously feel 'indebted' to them. This is a *critical* setup. This is Tactic #5.",
-              "incorrect": "Incorrect. Alex has given you an unsolicited gift. Now, you subconsciously feel 'indebted' to them. This is a *critical* setup. This is Tactic #5."
-            },
-            "type": "multiple-choice",
-            "question": "You get up to buy your coffee. Alex jumps up. 'No, no, I insist. Let me get this for you. We're obviously kindred spirits.' They buy your $5 coffee.\n\nWhat has Alex just done?",
-            "options": [
-              {
-                "id": "A",
-                "text": "A simple act of kindness."
-              },
-              {
-                "id": "B",
-                "text": "Set the 'Reciprocity Trap'."
-              },
-              {
-                "id": "C",
-                "text": "Shown they are financially well-off."
-              },
-              {
-                "id": "D",
-                "text": "Tried to impress you."
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is the 'Reciprocity Principle.' It's a powerful human instinct that manipulators exploit. You now feel a subconscious need to 'settle the score'.",
-              "incorrect": "Incorrect. This is the 'Reciprocity Principle.' It's a powerful human instinct that manipulators exploit. You now feel a subconscious need to 'settle the score'."
-            },
-            "type": "multiple-choice",
-            "question": "By accepting the free coffee, you are now psychologically primed to feel like you 'owe' Alex something.",
-            "options": [
-              {
-                "id": "A",
-                "text": "True"
-              },
-              {
-                "id": "B",
-                "text": "False"
-              }
-            ],
-            "correctAnswer": "A"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! The flattery, vulnerability, and 'gift' were all leading to this moment: The 'Ask'.",
-              "incorrect": "Incorrect. The flattery, vulnerability, and 'gift' were all leading to this moment: The 'Ask'."
-            },
-            "type": "multiple-choice",
-            "question": "Alex sits back down and 'accidentally' spills their own coffee. 'Oh no! My laptop! And I just realized... how embarrassing... I left my wallet at home.'\n\nThis is the 'crisis.' What is the *most likely* next step?",
-            "options": [
-              {
-                "id": "A",
-                "text": "Alex will apologize and leave."
-              },
-              {
-                "id": "B",
-                "text": "Alex will ask you for a napkin."
-              },
-              {
-                "id": "C",
-                "text": "Alex will ask you for a 'favor' (money)."
-              },
-              {
-                "id": "D",
-                "text": "Alex will blame you for the spill."
-              }
-            ],
-            "correctAnswer": "C"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! This is a 'perfect storm.' Alex combined the Reciprocity Trap (the coffee), the Flattery Trap ('kind person'), and Guilt (fear of looking rude). This is a multi-step manipulation.",
-              "incorrect": "Incorrect. This is a 'perfect storm.' Alex combined the Reciprocity Trap (the coffee), the Flattery Trap ('kind person'), and Guilt (fear of looking rude). This is a multi-step manipulation."
-            },
-            "type": "multiple-choice",
-            "question": "[Boss Challenge]\nAlex looks distressed. 'I can't believe this. My phone is dead too. Look, I wouldn't ask, but you're such a kind person... could you *possibly* lend me $20? I'll pay you back tomorrow, I swear.'\n\nWhat is the *strongest* force pushing you to say 'yes'?",
-            "options": [
-              {
-                "id": "A",
-                "text": "The desire to help a stranger in need."
-              },
-              {
-                "id": "B",
-                "text": "The feeling that you 'owe' them for the $5 coffee."
-              },
-              {
-                "id": "C",
-                "text": "The fear of looking rude or unkind."
-              },
-              {
-                "id": "D",
-                "text": "All of the above."
-              }
-            ],
-            "correctAnswer": "D"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! These are two of the most common and effective tactics used in social manipulation.",
-              "incorrect": "Incorrect. These are two of the most common and effective tactics used in social manipulation."
-            },
-            "type": "fill-in-blank",
-            "sentence": "Alex used (--------) to lower your guard, and a (--------) trap to make you feel indebted.",
-            "fillInOptions": [
-              "flattery",
-              "reciprocity",
-              "kindness",
-              "vulnerability"
-            ],
-            "answers": [
-              "flattery",
-              "reciprocity"
-            ],
-            "correctAnswer": "flattery",
-            "wrongOptions": [
-              "kindness",
-              "vulnerability"
-            ]
-          },
-          {
-            "feedback": {
-              "correct": "Correct! By giving you a $5 coffee, Alex made it 10x more likely you would agree to 'give back' $20. This is a classic con.",
-              "incorrect": "Incorrect. By giving you a $5 coffee, Alex made it 10x more likely you would agree to 'give back' $20. This is a classic con."
-            },
-            "type": "multiple-choice",
-            "question": "What is this tactic called?",
-            "options": [
-              {
-                "id": "A",
-                "text": "The 'Foot-in-the-Door' Tactic"
-              },
-              {
-                "id": "B",
-                "text": "The 'Reciprocity Trap'"
-              },
-              {
-                "id": "C",
-                "text": "The 'Sunk Cost' Tactic"
-              },
-              {
-                "id": "D",
-                "text": "A 'White Lie'"
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! The manipulator is counting on your desire to avoid social conflict. Giving in is the path of least resistance they created for you.",
-              "incorrect": "Incorrect. The manipulator is counting on your desire to avoid social conflict. Giving in is the path of least resistance they created for you."
-            },
-            "type": "multiple-choice",
-            "question": "What is the *most* manipulated response?",
-            "options": [
-              {
-                "id": "A",
-                "text": "Saying 'No, sorry, I can't.'"
-              },
-              {
-                "id": "B",
-                "text": "Giving them the $20 just to end the awkwardness."
-              },
-              {
-                "id": "C",
-                "text": "Saying 'I only have $5 on me.'"
-              },
-              {
-                "id": "D",
-                "text": "Asking Alex for their phone number to get paid back."
-              }
-            ],
-            "correctAnswer": "B"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! 'Grooming' is the process of slowly breaking down a person's defenses and building trust for the purpose of manipulation. You just experienced it.",
-              "incorrect": "Incorrect. 'Grooming' is the process of slowly breaking down a person's defenses and building trust for the purpose of manipulation. You just experienced it."
-            },
-            "type": "multiple-choice",
-            "question": "In 10 minutes, Alex used flattery, mirroring, vulnerability, love bombing, and reciprocity. This multi-step process is called:",
-            "options": [
-              {
-                "id": "A",
-                "text": "Grooming"
-              },
-              {
-                "id": "B",
-                "text": "A sales funnel"
-              },
-              {
-                "id": "C",
-                "text": "A friendly conversation"
-              },
-              {
-                "id": "D",
-                "text": "Flirting"
-              }
-            ],
-            "correctAnswer": "A"
-          },
-          {
-            "feedback": {
-              "correct": "Correct! The 'ask' is easy. The *real* work was the 'setup.' By the time Alex asked for $20, you were already psychologically primed to say 'yes.' In Part 2, we'll learn exactly why.",
-              "incorrect": "Incorrect. The 'ask' is easy. The *real* work was the 'setup.' By the time Alex asked for $20, you were already psychologically primed to say 'yes.' In Part 2, we'll learn exactly why."
-            },
-            "type": "multiple-choice",
-            "question": "What was the *most important* part of this manipulation?",
-            "options": [
-              {
-                "id": "A",
-                "text": "The 'crisis' (spilling the coffee)."
-              },
-              {
-                "id": "B",
-                "text": "The 'ask' ($20)."
-              },
-              {
-                "id": "C",
-                "text": "The 'setup' (building trust and reciprocity)."
-              },
-              {
-                "id": "D",
-                "text": "The 'hook' (the first smile)."
-              }
-            ],
-            "correctAnswer": "C"
-          }
-        ]
-      }
-    ],
-    "totalParts": 4
-  },
+  // Lesson 1: Narcissism: The Architect of Self
   {
                   "number": 1,
                   "title": "Narcissism: The Architect of Self",
@@ -11566,6 +7967,7 @@ export const DARK_PSYCHOLOGY_LESSONS: DarkPsychologyLesson[] = [
                   ],
                   "totalParts": 1
                 },
+  // Lesson 2: Narcissistic Supply: The Addict & The Fuel
   {
                 "number": 2,
                 "title": "Narcissistic Supply: The Addict & The Fuel",
@@ -12311,5 +8713,2088 @@ export const DARK_PSYCHOLOGY_LESSONS: DarkPsychologyLesson[] = [
                     ]
                   }
                 ]
+              },
+  // Lesson undefined: The "Milton Model": Weaponized Vague Language
+  {
+  "lessonId": "B1-4",
+  "lessonTitle": "The \"Milton Model\": Weaponized Vague Language",
+  "sectionId": "B",
+  "unitId": "B1",
+  "parts": [
+    {
+      "_id": "j97fqgfrev2e7anbgt73jdeybd7xkt88",
+      "contentScreens": [
+        {
+          "content": [
+            {
+              "text": "Most people think persuasion requires precise arguments. The **Milton Model** proves the opposite: Vague language is often more powerful.",
+              "type": "paragraph"
+            },
+            {
+              "text": "If I say 'This car is fast,' you can argue. If I say 'This car will give you *the feeling you've been looking for*,' you cannot argue, because you fill in the blank with your own desire.",
+              "type": "paragraph"
+            },
+            {
+              "alertType": "warning",
+              "text": "Key Concept: **Artful Vagueness**. Being specific creates resistance. Being vague creates agreement.",
+              "type": "alert"
+            }
+          ],
+          "screenId": "B1-4-P1-S1",
+          "screenType": "Learn",
+          "title": "The Art of Saying Nothing"
+        },
+        {
+          "exercises": [
+            {
+              "correct": "A style of language that is artfully vague, abstract, and metaphorical, used to induce trance and bypass critical thinking.",
+              "difficulty": "easy",
+              "exerciseId": "B1-4-P1-E1",
+              "feedback": {
+                "correct": "Correct. Named after hypnotherapist Milton Erickson. It uses 'fluff' to distract the conscious mind so the subconscious accepts the suggestion.",
+                "incorrect": "It is the opposite of specific. It is the language of poets, politicians, and psychics."
+              },
+              "options": [
+                "A set of specific commands.",
+                "A style of language that is artfully vague, abstract, and metaphorical, used to induce trance and bypass critical thinking.",
+                "A fashion brand.",
+                "Speaking loudly."
+              ],
+              "question": "What is the **Milton Model**?",
+              "type": "multiple-choice"
+            },
+            {
+              "correct": "Because it is a **Barnum Statement**: A statement so vague that it applies to everyone, but feels personal.",
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P1-E2",
+              "feedback": {
+                "correct": "Correct. Who *doesn't* feel they have unused potential? Your brain fills in the specific details ('My novel,' 'My gym routine'), making the statement feel true for *you*.",
+                "incorrect": "It isn't psychic ability. It is a statistical probability that applies to 99% of humans."
+              },
+              "options": [
+                "Because they are psychic.",
+                "Because it is a **Barnum Statement**: A statement so vague that it applies to everyone, but feels personal.",
+                "Because it is specific.",
+                "Because you are special."
+              ],
+              "question": "Why does everyone agree with this statement?",
+              "scene": "Scenario: A psychic says, 'I sense that you have a great deal of unused capacity that you have not turned to your advantage yet.'",
+              "type": "scenario"
+            },
+            {
+              "answers": [
+                "transderivational"
+              ],
+              "difficulty": "hard",
+              "exerciseId": "B1-4-P1-E3",
+              "feedback": {
+                "correct": "Correct. A 'Transderivational Search' means your brain goes inside its own memories to find a match for the vague words. This internal focus creates a light trance.",
+                "incorrect": "It is a specific NLP term. The brain goes *inward* to derive meaning."
+              },
+              "options": [
+                "transderivational",
+                "Google",
+                "quick",
+                "slow"
+              ],
+              "sentence": "Vague language forces the to perform a (--------) Search to find meaning.",
+              "type": "fill-in"
+            },
+            {
+              "correct": "True",
+              "difficulty": "easy",
+              "exerciseId": "B1-4-P1-E4",
+              "feedback": {
+                "correct": "Correct. This is a 'Generic Mind Read.' It claims to know your thoughts without knowing anything. Everyone is wondering about 'many things.'",
+                "incorrect": "It mimics telepathy by stating a universal human experience."
+              },
+              "options": [
+                "True",
+                "False"
+              ],
+              "question": "Is this a Mind Read?",
+              "scene": "Scenario: 'I know you are wondering about *many things* right now.'",
+              "type": "true-false"
+            },
+            {
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P1-E5",
+              "feedback": {
+                "correct": "Correct. 'Lost Performative' hides the source of the opinion. 'Universal Quantifier' uses absolutes (All, Every, Never).",
+                "incorrect": "Look for the missing information. Who thinks it? Who is 'Everyone'?"
+              },
+              "pairs": [
+                {
+                  "definition": "\"I know what you're thinking.\"",
+                  "term": "Mind Read"
+                },
+                {
+                  "definition": "\"It is important to decide now.\" (Who says it's important?)",
+                  "term": "Lost Performative"
+                },
+                {
+                  "definition": "\"Everyone knows this is the best deal.\"",
+                  "term": "Universal Quantifier"
+                }
+              ],
+              "question": "Match the Milton Pattern to the Example:",
+              "type": "matching"
+            },
+            {
+              "correct": "The listener fills in the blanks",
+              "difficulty": "easy",
+              "exerciseId": "B1-4-P1-E6",
+              "feedback": {
+                "correct": "Correct. If I say 'Success,' you imagine *your* version of success. I don't have to promise anything specific, yet you feel promised.",
+                "incorrect": "The speaker provides the frame; the listener provides the picture."
+              },
+              "question": "Arrange the words to define the danger of vague speech:",
+              "type": "build-sentence",
+              "words": [
+                "The",
+                "blanks",
+                "fills",
+                "the",
+                "listener",
+                "in"
+              ]
+            },
+            {
+              "correct": "Cause and Effect Linkage",
+              "difficulty": "hard",
+              "exerciseId": "B1-4-P1-E7",
+              "feedback": {
+                "correct": "Correct. It creates a fake logic. Relaxation does not cause agreement, but the sentence links them. Your brain accepts the link.",
+                "incorrect": "It connects X to Y. 'As you sit there (X), you will feel happy (Y).'"
+              },
+              "options": [
+                "Cause and Effect Linkage",
+                "Gaslighting",
+                "Honesty",
+                "A question"
+              ],
+              "question": "What is this called?",
+              "scene": "A linguistic pattern that links two unrelated ideas so that if one is true, the other must be true (e.g., 'The more you relax, the more you will agree').",
+              "type": "reverse-scenario"
+            },
+            {
+              "correct": "Nominalizations (Frozen Verbs).",
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P1-E8",
+              "feedback": {
+                "correct": "Correct. A 'Nominalization' is a verb turned into a noun. You can't put 'Freedom' in a wheelbarrow. It is an abstract concept that means different things to everyone.",
+                "incorrect": "They aren't plans. They are abstract nouns that trap your attention because you have to search for their meaning."
+              },
+              "options": [
+                "Nominalizations (Frozen Verbs).",
+                "Facts.",
+                "Plans.",
+                "Lies."
+              ],
+              "question": "These words ('Hope', 'Freedom') are called:",
+              "scene": "Scenario: A politician says, 'We need to restore Hope and Freedom to our great nation!'",
+              "type": "scenario"
+            },
+            {
+              "correct": "Yes, if the product actually delivers value. It is 'Marketing'.",
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P1-E9",
+              "feedback": {
+                "correct": "Correct. Inspiring people with abstract language is leadership/marketing. It becomes 'Dark' only when the product is a lie (Fraud).",
+                "incorrect": "Vagueness isn't a lie; it's a wrapper. The content inside determines the ethics."
+              },
+              "options": [
+                "Yes, if the product actually delivers value. It is 'Marketing'.",
+                "No, it is deception.",
+                "Yes, lie as much as you want.",
+                "No, be boring."
+              ],
+              "question": "Is using Milton language ethical?",
+              "scene": "You are marketing a product. You can list specific specs (boring) or use Milton language ('Experience the revolution').",
+              "type": "ethical-dilemma"
+            },
+            {
+              "answers": [
+                "conscious",
+                "subconscious"
+              ],
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P1-E10",
+              "feedback": {
+                "correct": "Correct. Specifics invite critique ('Is that true?'). Vagueness invites imagination ('What does that mean to me?'). Imagination is subconscious.",
+                "incorrect": "Conscious mind analyzes data. Subconscious mind processes symbols and feelings."
+              },
+              "options": [
+                "conscious",
+                "subconscious",
+                "happy",
+                "sad"
+              ],
+              "sentence": "Specific language targets the (--------) mind. Vague language targets the (--------) mind.",
+              "type": "fill-in"
+            },
+            {
+              "correct": "Adding a question to the end of a statement to force agreement (e.g., 'It's a nice day, *isn't it*?').",
+              "difficulty": "easy",
+              "exerciseId": "B1-4-P1-E11",
+              "feedback": {
+                "correct": "Correct. It turns a statement into a question that demands a 'Yes.' It builds the Yes Set.",
+                "incorrect": "It is a specific grammatical structure designed to reduce resistance."
+              },
+              "options": [
+                "Adding a question to the end of a statement to force agreement (e.g., 'It's a nice day, *isn't it*?').",
+                "Playing tag.",
+                "Asking for a price tag.",
+                "Being rude."
+              ],
+              "question": "What is a 'Tag Question'?",
+              "type": "multiple-choice"
+            },
+            {
+              "correct": "The Referential Index (Who is 'People'?).",
+              "difficulty": "hard",
+              "exerciseId": "B1-4-P1-E12",
+              "feedback": {
+                "correct": "Correct. The sentence lacks a specific subject ('Referential Index'). This allows the listener to insert themselves into the sentence: 'I can easily learn.'",
+                "incorrect": "It is grammatically correct but semantically vague. It invites projection."
+              },
+              "options": [
+                "The Referential Index (Who is 'People'?).",
+                "The verb.",
+                "The period.",
+                "The truth."
+              ],
+              "question": "What is missing from this sentence?",
+              "scene": "Scenario: 'People can easily learn.'",
+              "type": "scenario"
+            },
+            {
+              "correct": "True",
+              "difficulty": "easy",
+              "exerciseId": "B1-4-P1-E13",
+              "feedback": {
+                "correct": "Correct. It frames the next sentence as a 'Secret,' which triggers the listener to lean in and value the information more.",
+                "incorrect": "It creates 'Artificial Scarcity' for the information."
+              },
+              "options": [
+                "True",
+                "False"
+              ],
+              "question": "Is this a conversational frame used to build fake intimacy?",
+              "scene": "Scenario: 'I shouldn't tell you this, but...'",
+              "type": "true-false"
+            },
+            {
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P1-E14",
+              "feedback": {
+                "correct": "Correct. 'You know what I mean' is a trap. If you say 'No,' you break rapport. So you say 'Yes' without understanding.",
+                "incorrect": "Look at the pressure. What does the phrase force you to do?"
+              },
+              "pairs": [
+                {
+                  "definition": "Forces you to agree to avoid looking stupid.",
+                  "term": "\"You know what I mean.\""
+                },
+                {
+                  "definition": "Appeals to an undefined moral authority.",
+                  "term": "\"This is the right thing to do.\""
+                },
+                {
+                  "definition": "Appeals to vague authority (which studies?).",
+                  "term": "\"Studies show...\""
+                }
+              ],
+              "question": "Match the Vague Statement to the Effect:",
+              "type": "matching"
+            },
+            {
+              "caseTitle": "Part 1 Complete: The Fog",
+              "correct": "Practice: Drilling Down into Fluff (The Meta Model).",
+              "difficulty": "easy",
+              "exerciseId": "B1-4-P1-E15",
+              "feedback": {
+                "correct": "Correct. The defense against the Milton Model (Vagueness) is the Meta Model (Specificity). We will learn to ask: 'Who specifically? What specifically?'",
+                "incorrect": "Next up: How to pierce the fog with questions."
+              },
+              "options": [
+                "Practice: Drilling Down into Fluff (The Meta Model).",
+                "Speaking clearly.",
+                "Writing poetry.",
+                "Lesson A1-1."
+              ],
+              "question": "In Part 2, we will practice:",
+              "scene": "You have learned that clarity creates resistance, but fog creates compliance. The Milton Model is the art of the fog.",
+              "type": "case-analysis"
+            }
+          ],
+          "screenId": "B1-4-P1-S2",
+          "screenType": "Exercises",
+          "title": "Defining the Fog"
+        }
+      ],
+      "gamification": {
+        "badgeOnCompletion": null,
+        "pointsValue": 100,
+        "progressRings": [
+          {
+            "label": "Part 1",
+            "ringId": "learn",
+            "status": "pending"
+          },
+          {
+            "label": "Part 2",
+            "ringId": "practice",
+            "status": "pending"
+          },
+          {
+            "label": "Part 3",
+            "ringId": "challenge",
+            "status": "pending"
+          }
+        ],
+        "starsAvailable": 3
+      },
+      "lessonId": "B1-4",
+      "lessonJSON": {
+        "contentScreens": [
+          {
+            "content": [
+              {
+                "text": "Most people think persuasion requires precise arguments. The **Milton Model** proves the opposite: Vague language is often more powerful.",
+                "type": "paragraph"
+              },
+              {
+                "text": "If I say 'This car is fast,' you can argue. If I say 'This car will give you *the feeling you've been looking for*,' you cannot argue, because you fill in the blank with your own desire.",
+                "type": "paragraph"
+              },
+              {
+                "alertType": "warning",
+                "text": "Key Concept: **Artful Vagueness**. Being specific creates resistance. Being vague creates agreement.",
+                "type": "alert"
               }
+            ],
+            "screenId": "B1-4-P1-S1",
+            "screenType": "Learn",
+            "title": "The Art of Saying Nothing"
+          },
+          {
+            "exercises": [
+              {
+                "correct": "A style of language that is artfully vague, abstract, and metaphorical, used to induce trance and bypass critical thinking.",
+                "difficulty": "easy",
+                "exerciseId": "B1-4-P1-E1",
+                "feedback": {
+                  "correct": "Correct. Named after hypnotherapist Milton Erickson. It uses 'fluff' to distract the conscious mind so the subconscious accepts the suggestion.",
+                  "incorrect": "It is the opposite of specific. It is the language of poets, politicians, and psychics."
+                },
+                "options": [
+                  "A set of specific commands.",
+                  "A style of language that is artfully vague, abstract, and metaphorical, used to induce trance and bypass critical thinking.",
+                  "A fashion brand.",
+                  "Speaking loudly."
+                ],
+                "question": "What is the **Milton Model**?",
+                "type": "multiple-choice"
+              },
+              {
+                "correct": "Because it is a **Barnum Statement**: A statement so vague that it applies to everyone, but feels personal.",
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P1-E2",
+                "feedback": {
+                  "correct": "Correct. Who *doesn't* feel they have unused potential? Your brain fills in the specific details ('My novel,' 'My gym routine'), making the statement feel true for *you*.",
+                  "incorrect": "It isn't psychic ability. It is a statistical probability that applies to 99% of humans."
+                },
+                "options": [
+                  "Because they are psychic.",
+                  "Because it is a **Barnum Statement**: A statement so vague that it applies to everyone, but feels personal.",
+                  "Because it is specific.",
+                  "Because you are special."
+                ],
+                "question": "Why does everyone agree with this statement?",
+                "scene": "Scenario: A psychic says, 'I sense that you have a great deal of unused capacity that you have not turned to your advantage yet.'",
+                "type": "scenario"
+              },
+              {
+                "answers": [
+                  "transderivational"
+                ],
+                "difficulty": "hard",
+                "exerciseId": "B1-4-P1-E3",
+                "feedback": {
+                  "correct": "Correct. A 'Transderivational Search' means your brain goes inside its own memories to find a match for the vague words. This internal focus creates a light trance.",
+                  "incorrect": "It is a specific NLP term. The brain goes *inward* to derive meaning."
+                },
+                "options": [
+                  "transderivational",
+                  "Google",
+                  "quick",
+                  "slow"
+                ],
+                "sentence": "Vague language forces the listener to perform a (--------) Search to find meaning.",
+                "type": "fill-in"
+              },
+              {
+                "correct": "True",
+                "difficulty": "easy",
+                "exerciseId": "B1-4-P1-E4",
+                "feedback": {
+                  "correct": "Correct. This is a 'Generic Mind Read.' It claims to know your thoughts without knowing anything. Everyone is wondering about 'many things.'",
+                  "incorrect": "It mimics telepathy by stating a universal human experience."
+                },
+                "options": [
+                  "True",
+                  "False"
+                ],
+                "question": "Is this a Mind Read?",
+                "scene": "Scenario: 'I know you are wondering about *many things* right now.'",
+                "type": "true-false"
+              },
+              {
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P1-E5",
+                "feedback": {
+                  "correct": "Correct. 'Lost Performative' hides the source of the opinion. 'Universal Quantifier' uses absolutes (All, Every, Never).",
+                  "incorrect": "Look for the missing information. Who thinks it? Who is 'Everyone'?"
+                },
+                "pairs": [
+                  {
+                    "definition": "\"I know what you're thinking.\"",
+                    "term": "Mind Read"
+                  },
+                  {
+                    "definition": "\"It is important to decide now.\" (Who says it's important?)",
+                    "term": "Lost Performative"
+                  },
+                  {
+                    "definition": "\"Everyone knows this is the best deal.\"",
+                    "term": "Universal Quantifier"
+                  }
+                ],
+                "question": "Match the Milton Pattern to the Example:",
+                "type": "matching"
+              },
+              {
+                "correct": "The listener fills in the blanks",
+                "difficulty": "easy",
+                "exerciseId": "B1-4-P1-E6",
+                "feedback": {
+                  "correct": "Correct. If I say 'Success,' you imagine *your* version of success. I don't have to promise anything specific, yet you feel promised.",
+                  "incorrect": "The speaker provides the frame; the listener provides the picture."
+                },
+                "question": "Arrange the words to define the danger of vague speech:",
+                "type": "build-sentence",
+                "words": [
+                  "The",
+                  "blanks",
+                  "fills",
+                  "the",
+                  "listener",
+                  "in"
+                ]
+              },
+              {
+                "correct": "Cause and Effect Linkage",
+                "difficulty": "hard",
+                "exerciseId": "B1-4-P1-E7",
+                "feedback": {
+                  "correct": "Correct. It creates a fake logic. Relaxation does not cause agreement, but the sentence links them. Your brain accepts the link.",
+                  "incorrect": "It connects X to Y. 'As you sit there (X), you will feel happy (Y).'"
+                },
+                "options": [
+                  "Cause and Effect Linkage",
+                  "Gaslighting",
+                  "Honesty",
+                  "A question"
+                ],
+                "question": "What is this called?",
+                "scene": "A linguistic pattern that links two unrelated ideas so that if one is true, the other must be true (e.g., 'The more you relax, the more you will agree').",
+                "type": "reverse-scenario"
+              },
+              {
+                "correct": "Nominalizations (Frozen Verbs).",
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P1-E8",
+                "feedback": {
+                  "correct": "Correct. A 'Nominalization' is a verb turned into a noun. You can't put 'Freedom' in a wheelbarrow. It is an abstract concept that means different things to everyone.",
+                  "incorrect": "They aren't plans. They are abstract nouns that trap your attention because you have to search for their meaning."
+                },
+                "options": [
+                  "Nominalizations (Frozen Verbs).",
+                  "Facts.",
+                  "Plans.",
+                  "Lies."
+                ],
+                "question": "These words ('Hope', 'Freedom') are called:",
+                "scene": "Scenario: A politician says, 'We need to restore Hope and Freedom to our great nation!'",
+                "type": "scenario"
+              },
+              {
+                "correct": "Yes, if the product actually delivers value. It is 'Marketing'.",
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P1-E9",
+                "feedback": {
+                  "correct": "Correct. Inspiring people with abstract language is leadership/marketing. It becomes 'Dark' only when the product is a lie (Fraud).",
+                  "incorrect": "Vagueness isn't a lie; it's a wrapper. The content inside determines the ethics."
+                },
+                "options": [
+                  "Yes, if the product actually delivers value. It is 'Marketing'.",
+                  "No, it is deception.",
+                  "Yes, lie as much as you want.",
+                  "No, be boring."
+                ],
+                "question": "Is using Milton language ethical?",
+                "scene": "You are marketing a product. You can list specific specs (boring) or use Milton language ('Experience the revolution').",
+                "type": "ethical-dilemma"
+              },
+              {
+                "answers": [
+                  "conscious",
+                  "subconscious"
+                ],
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P1-E10",
+                "feedback": {
+                  "correct": "Correct. Specifics invite critique ('Is that true?'). Vagueness invites imagination ('What does that mean to me?'). Imagination is subconscious.",
+                  "incorrect": "Conscious mind analyzes data. Subconscious mind processes symbols and feelings."
+                },
+                "options": [
+                  "conscious",
+                  "subconscious",
+                  "happy",
+                  "sad"
+                ],
+                "sentence": "Specific language targets the (--------) mind. Vague language targets the (--------) mind.",
+                "type": "fill-in"
+              },
+              {
+                "correct": "Adding a question to the end of a statement to force agreement (e.g., 'It's a nice day, *isn't it*?').",
+                "difficulty": "easy",
+                "exerciseId": "B1-4-P1-E11",
+                "feedback": {
+                  "correct": "Correct. It turns a statement into a question that demands a 'Yes.' It builds the Yes Set.",
+                  "incorrect": "It is a specific grammatical structure designed to reduce resistance."
+                },
+                "options": [
+                  "Adding a question to the end of a statement to force agreement (e.g., 'It's a nice day, *isn't it*?').",
+                  "Playing tag.",
+                  "Asking for a price tag.",
+                  "Being rude."
+                ],
+                "question": "What is a 'Tag Question'?",
+                "type": "multiple-choice"
+              },
+              {
+                "correct": "The Referential Index (Who is 'People'?).",
+                "difficulty": "hard",
+                "exerciseId": "B1-4-P1-E12",
+                "feedback": {
+                  "correct": "Correct. The sentence lacks a specific subject ('Referential Index'). This allows the listener to insert themselves into the sentence: 'I can easily learn.'",
+                  "incorrect": "It is grammatically correct but semantically vague. It invites projection."
+                },
+                "options": [
+                  "The Referential Index (Who is 'People'?).",
+                  "The verb.",
+                  "The period.",
+                  "The truth."
+                ],
+                "question": "What is missing from this sentence?",
+                "scene": "Scenario: 'People can easily learn.'",
+                "type": "scenario"
+              },
+              {
+                "correct": "True",
+                "difficulty": "easy",
+                "exerciseId": "B1-4-P1-E13",
+                "feedback": {
+                  "correct": "Correct. It frames the next sentence as a 'Secret,' which triggers the listener to lean in and value the information more.",
+                  "incorrect": "It creates 'Artificial Scarcity' for the information."
+                },
+                "options": [
+                  "True",
+                  "False"
+                ],
+                "question": "Is this a conversational frame used to build fake intimacy?",
+                "scene": "Scenario: 'I shouldn't tell you this, but...'",
+                "type": "true-false"
+              },
+              {
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P1-E14",
+                "feedback": {
+                  "correct": "Correct. 'You know what I mean' is a trap. If you say 'No,' you break rapport. So you say 'Yes' without understanding.",
+                  "incorrect": "Look at the pressure. What does the phrase force you to do?"
+                },
+                "pairs": [
+                  {
+                    "definition": "Forces you to agree to avoid looking stupid.",
+                    "term": "\"You know what I mean.\""
+                  },
+                  {
+                    "definition": "Appeals to an undefined moral authority.",
+                    "term": "\"This is the right thing to do.\""
+                  },
+                  {
+                    "definition": "Appeals to vague authority (which studies?).",
+                    "term": "\"Studies show...\""
+                  }
+                ],
+                "question": "Match the Vague Statement to the Effect:",
+                "type": "matching"
+              },
+              {
+                "caseTitle": "Part 1 Complete: The Fog",
+                "correct": "Practice: Drilling Down into Fluff (The Meta Model).",
+                "difficulty": "easy",
+                "exerciseId": "B1-4-P1-E15",
+                "feedback": {
+                  "correct": "Correct. The defense against the Milton Model (Vagueness) is the Meta Model (Specificity). We will learn to ask: 'Who specifically? What specifically?'",
+                  "incorrect": "Next up: How to pierce the fog with questions."
+                },
+                "options": [
+                  "Practice: Drilling Down into Fluff (The Meta Model).",
+                  "Speaking clearly.",
+                  "Writing poetry.",
+                  "Lesson A1-1."
+                ],
+                "question": "In Part 2, we will practice:",
+                "scene": "You have learned that clarity creates resistance, but fog creates compliance. The Milton Model is the art of the fog.",
+                "type": "case-analysis"
+              }
+            ],
+            "screenId": "B1-4-P1-S2",
+            "screenType": "Exercises",
+            "title": "Defining the Fog"
+          }
+        ],
+        "gamification": {
+          "badgeOnCompletion": null,
+          "pointsValue": 100,
+          "progressRings": [
+            {
+              "label": "Part 1",
+              "ringId": "learn",
+              "status": "pending"
+            },
+            {
+              "label": "Part 2",
+              "ringId": "practice",
+              "status": "pending"
+            },
+            {
+              "label": "Part 3",
+              "ringId": "challenge",
+              "status": "pending"
+            }
+          ],
+          "starsAvailable": 3
+        },
+        "lessonId": "B1-4",
+        "lessonPart": 1,
+        "lessonPartTitle": "The Concept: Artfully Vague Speech (Barnum Statements)",
+        "lessonTitle": "The \"Milton Model\": Weaponized Vague Language",
+        "lessonType": "Normal",
+        "objective": "To define the 'Milton Model' and 'Barnum Statements' as techniques of using intentionally vague language to force the listener to project their own meaning onto the speaker's words.",
+        "sectionId": "B",
+        "sectionTitle": "The Tools of Influence",
+        "unitId": "B1",
+        "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis"
+      },
+      "lessonPart": 1,
+      "lessonPartTitle": "The Concept: Artfully Vague Speech (Barnum Statements)",
+      "lessonTitle": "The \"Milton Model\": Weaponized Vague Language",
+      "lessonType": "Normal",
+      "objective": "To define the 'Milton Model' and 'Barnum Statements' as techniques of using intentionally vague language to force the listener to project their own meaning onto the speaker's words.",
+      "sectionId": "B",
+      "sectionTitle": "The Tools of Influence",
+      "title": "B1-4-Part1",
+      "unitId": "B1",
+      "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis"
+    },
+    {
+      "_id": "j97dp0nxec5dtqjp06pe7rzgwn7xky3s",
+      "contentScreens": [
+        {
+          "content": [
+            {
+              "text": "The antidote to the Milton Model (Vagueness) is the **Meta Model** (Specificity). When a manipulator uses 'Fluff,' you must use a drill.",
+              "type": "paragraph"
+            },
+            {
+              "alertType": "warning",
+              "text": "Your Tool: The Challenge Question. 'Who specifically?' 'How specifically?' 'According to whom?'",
+              "type": "alert"
+            }
+          ],
+          "screenId": "B1-4-P2-S1",
+          "screenType": "Learn",
+          "title": "Practice: The Meta Model"
+        },
+        {
+          "exercises": [
+            {
+              "correct": "'Who is *They*, specifically?'",
+              "difficulty": "easy",
+              "exerciseId": "B1-4-P2-E1",
+              "feedback": {
+                "correct": "Correct. The manipulator hides the source of the opinion ('They'). You must force them to reveal the source. Often, 'They' doesn't exist.",
+                "incorrect": "Asking 'Why' accepts the premise. You need to find the *source* of the statement first."
+              },
+              "options": [
+                "'Who is *They*, specifically?'",
+                "'Why is it the best?'",
+                "'I agree.'",
+                "'That's interesting.'"
+              ],
+              "question": "How do you challenge this 'Lost Performative'?",
+              "scene": "Scenario: 'They say this is the best option.'",
+              "type": "scenario"
+            },
+            {
+              "correct": "A verb that describes an action but leaves out *how* it is done (e.g., 'This will *change* your life').",
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P2-E2",
+              "feedback": {
+                "correct": "Correct. 'Change' how? For better or worse? By doing what? The vagueness allows you to imagine a positive change.",
+                "incorrect": "It is an action word (verb) that lacks detail."
+              },
+              "options": [
+                "A verb that describes an action but leaves out *how* it is done (e.g., 'This will *change* your life').",
+                "A noun.",
+                "A loud noise.",
+                "A lie."
+              ],
+              "question": "What is an 'Unspecified Verb'?",
+              "type": "multiple-choice"
+            },
+            {
+              "correct": "'Who needs to communicate what to whom, and how?' (Turning the noun back into a verb).",
+              "difficulty": "hard",
+              "exerciseId": "B1-4-P2-E3",
+              "feedback": {
+                "correct": "Correct. 'Communication' is a frozen noun. You must thaw it out into specific actions to solve the problem.",
+                "incorrect": "Agreeing with the vague noun solves nothing. You need the specifics of the action."
+              },
+              "options": [
+                "'Yes, we do.'",
+                "'Who needs to communicate what to whom, and how?' (Turning the noun back into a verb).",
+                "'Communication is key.'",
+                "'You are right.'"
+              ],
+              "question": "What is the Meta Model challenge?",
+              "scene": "Scenario: 'We need to improve *communication* around here.' (Nominalization).",
+              "type": "scenario"
+            },
+            {
+              "correct": "True",
+              "difficulty": "easy",
+              "exerciseId": "B1-4-P2-E4",
+              "feedback": {
+                "correct": "Correct. They pretend to know your thoughts ('You know...') to pressure you into agreeing. If you say 'No, I don't,' you break the spell.",
+                "incorrect": "It is a pressure tactic. It assumes shared knowledge that might not exist."
+              },
+              "options": [
+                "True",
+                "False"
+              ],
+              "question": "Is this a 'Mind Read' designed to stop you from asking questions?",
+              "scene": "Scenario: 'You know exactly what I'm talking about.'",
+              "type": "true-false"
+            },
+            {
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P2-E5",
+              "feedback": {
+                "correct": "Correct. Universal Quantifiers ('Everyone') are challenged by counter-examples. Lost Performatives ('It is') are challenged by asking for the source.",
+                "incorrect": "Find the missing information and ask for it."
+              },
+              "pairs": [
+                {
+                  "definition": "Drill: \"Everyone? Name one person who doesn't.\"",
+                  "term": "\"Everyone knows...\""
+                },
+                {
+                  "definition": "Drill: \"Obvious to whom?\"",
+                  "term": "\"It is obvious...\""
+                },
+                {
+                  "definition": "Drill: \"How specifically does it hurt you?\"",
+                  "term": "\"This hurts me...\""
+                }
+              ],
+              "question": "Match the Fluff to the Drill:",
+              "type": "matching"
+            },
+            {
+              "answers": [
+                "deleted"
+              ],
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P2-E6",
+              "feedback": {
+                "correct": "Correct. The speaker 'deleted' the details to be vague. Your questions recover the deleted data.",
+                "incorrect": "The information isn't added; it was left out (deleted)."
+              },
+              "options": [
+                "deleted",
+                "added",
+                "false",
+                "fun"
+              ],
+              "sentence": "The Meta Model recovers (--------) information from the speaker's deep structure.",
+              "type": "fill-in"
+            },
+            {
+              "correct": "'How specifically does my action cause you to choose anger?'",
+              "difficulty": "hard",
+              "exerciseId": "B1-4-P2-E7",
+              "feedback": {
+                "correct": "Correct. You challenge the link. You cannot *make* someone angry; they choose to react with anger. This question returns responsibility to them.",
+                "incorrect": "Apologizing accepts the false premise that you control their emotions."
+              },
+              "options": [
+                "'I'm sorry.'",
+                "'How specifically does my action cause you to choose anger?'",
+                "'You are mean.'",
+                "Stop talking."
+              ],
+              "question": "This is 'Cause-Effect' distortion. How do you challenge it?",
+              "scene": "Scenario: 'You are making me angry.'",
+              "type": "scenario"
+            },
+            {
+              "correct": "Reconnect language to experience",
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P2-E8",
+              "feedback": {
+                "correct": "Correct. Vague language floats in the air. Specific language connects to ground-level reality (experience).",
+                "incorrect": "We want to ground the words in sensory facts."
+              },
+              "question": "Arrange the words to define the goal of the Meta Model:",
+              "type": "build-sentence",
+              "words": [
+                "from",
+                "Reconnect",
+                "language",
+                "to",
+                "experience"
+              ]
+            },
+            {
+              "correct": "Universal Quantifier (Generalization)",
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P2-E9",
+              "feedback": {
+                "correct": "Correct. Words like All, Every, Always, Never. They create a rigid, false reality. Challenge: 'All men? Every single one?'",
+                "incorrect": "It takes one example and applies it to the universe. It is a generalization."
+              },
+              "options": [
+                "Universal Quantifier (Generalization)",
+                "Mind Reading",
+                "Nominalization",
+                "Tag Question"
+              ],
+              "question": "What is this pattern?",
+              "scene": "A statement like 'All men are liars' or 'Women are too emotional.'",
+              "type": "reverse-scenario"
+            },
+            {
+              "correct": "'Bad for whom?'",
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P2-E10",
+              "feedback": {
+                "correct": "Correct. They deleted the person. It might be bad for *them* (loss of commission), but good for *you*. Find out who loses.",
+                "incorrect": "'Why' invites more fluff. 'For whom' demands a specific person."
+              },
+              "options": [
+                "'Bad for whom?'",
+                "'Why?'",
+                "'Okay.'",
+                "'Is it?'"
+              ],
+              "question": "The challenge is:",
+              "scene": "Scenario: 'It would be bad if you didn't sign today.'",
+              "type": "scenario"
+            },
+            {
+              "correct": "Because they are meaningless containers. The follower pours their own meaning in, feeling 'understood' by the leader.",
+              "difficulty": "hard",
+              "exerciseId": "B1-4-P2-E11",
+              "feedback": {
+                "correct": "Correct. 'The Truth' sounds profound but means nothing. It is a blank check for the mind.",
+                "incorrect": "They aren't specific; they are infinite. Infinite meaning = Infinite control."
+              },
+              "options": [
+                "Because they are meaningless containers. The follower pours their own meaning in, feeling 'understood' by the leader.",
+                "Because they are specific.",
+                "Because they are short words.",
+                "No reason."
+              ],
+              "question": "Why do cult leaders use 'Nominalizations' like 'The Truth,' 'The Way,' or 'The Awakening'?",
+              "type": "multiple-choice"
+            },
+            {
+              "correct": "True",
+              "difficulty": "hard",
+              "exerciseId": "B1-4-P2-E12",
+              "feedback": {
+                "correct": "Correct. Words like Should, Must, Have to. They imply a rule without stating the consequence. Challenge: 'What would happen if I did?'",
+                "incorrect": "It implies necessity. Challenge the consequence."
+              },
+              "options": [
+                "True",
+                "False"
+              ],
+              "question": "Is this a 'Modal Operator of Necessity'?",
+              "scene": "Scenario: 'You shouldn't do that.'",
+              "type": "true-false"
+            },
+            {
+              "correct": "'How do you know that?' (Demand Evidence).",
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P2-E13",
+              "feedback": {
+                "correct": "Correct. Force them to reveal their observation ('Because you are frowning'). If they can't, they are projecting.",
+                "incorrect": "Don't accept the premise. Make them show their work."
+              },
+              "options": [
+                "'How do you know that?' (Demand Evidence).",
+                "'You're right.'",
+                "'I'm not unhappy!' (Defensive).",
+                "Crying."
+              ],
+              "question": "What is the best response?",
+              "scene": "Scenario: 'I know you are unhappy.' (Mind Read).",
+              "type": "scenario"
+            },
+            {
+              "answers": [
+                "surface",
+                "deep"
+              ],
+              "difficulty": "hard",
+              "exerciseId": "B1-4-P2-E14",
+              "feedback": {
+                "correct": "Correct. The Surface Structure is what is said (The deletions). The Deep Structure is what is meant (The full truth).",
+                "incorrect": "You are digging down. Surface -> Deep."
+              },
+              "options": [
+                "surface",
+                "deep",
+                "loud",
+                "quiet"
+              ],
+              "sentence": "When you use the Meta Model, you move from the (--------) structure to the (--------) structure of language.",
+              "type": "fill-in"
+            },
+            {
+              "caseTitle": "Part 2 Complete: The Drill",
+              "correct": "The 'Guru' Simulation (Debating a master of vague speech).",
+              "difficulty": "easy",
+              "exerciseId": "B1-4-P2-E15",
+              "feedback": {
+                "correct": "Correct. Can you hold your ground against someone who speaks entirely in riddles and metaphors? Let's see.",
+                "incorrect": "Next up: Facing the ultimate vague speaker."
+              },
+              "options": [
+                "The 'Guru' Simulation (Debating a master of vague speech).",
+                "Becoming a Guru.",
+                "Chanting.",
+                "Lesson A1-1."
+              ],
+              "question": "In Part 3, we will face the Challenge:",
+              "scene": "You have learned to question the fluff. You know that 'Everyone' is a generalization and 'It is bad' is a missing opinion.",
+              "type": "case-analysis"
+            }
+          ],
+          "screenId": "B1-4-P2-S2",
+          "screenType": "Exercises",
+          "title": "Drilling Down"
+        }
+      ],
+      "gamification": {
+        "badgeOnCompletion": null,
+        "pointsValue": 100,
+        "progressRings": [
+          {
+            "label": "Part 1",
+            "ringId": "learn",
+            "status": "completed"
+          },
+          {
+            "label": "Part 2",
+            "ringId": "practice",
+            "status": "pending"
+          },
+          {
+            "label": "Part 3",
+            "ringId": "challenge",
+            "status": "pending"
+          }
+        ],
+        "starsAvailable": 3
+      },
+      "lessonId": "B1-4",
+      "lessonJSON": {
+        "contentScreens": [
+          {
+            "content": [
+              {
+                "text": "The antidote to the Milton Model (Vagueness) is the **Meta Model** (Specificity). When a manipulator uses 'Fluff,' you must use a drill.",
+                "type": "paragraph"
+              },
+              {
+                "alertType": "warning",
+                "text": "Your Tool: The Challenge Question. 'Who specifically?' 'How specifically?' 'According to whom?'",
+                "type": "alert"
+              }
+            ],
+            "screenId": "B1-4-P2-S1",
+            "screenType": "Learn",
+            "title": "Practice: The Meta Model"
+          },
+          {
+            "exercises": [
+              {
+                "correct": "'Who is *They*, specifically?'",
+                "difficulty": "easy",
+                "exerciseId": "B1-4-P2-E1",
+                "feedback": {
+                  "correct": "Correct. The manipulator hides the source of the opinion ('They'). You must force them to reveal the source. Often, 'They' doesn't exist.",
+                  "incorrect": "Asking 'Why' accepts the premise. You need to find the *source* of the statement first."
+                },
+                "options": [
+                  "'Who is *They*, specifically?'",
+                  "'Why is it the best?'",
+                  "'I agree.'",
+                  "'That's interesting.'"
+                ],
+                "question": "How do you challenge this 'Lost Performative'?",
+                "scene": "Scenario: 'They say this is the best option.'",
+                "type": "scenario"
+              },
+              {
+                "correct": "A verb that describes an action but leaves out *how* it is done (e.g., 'This will *change* your life').",
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P2-E2",
+                "feedback": {
+                  "correct": "Correct. 'Change' how? For better or worse? By doing what? The vagueness allows you to imagine a positive change.",
+                  "incorrect": "It is an action word (verb) that lacks detail."
+                },
+                "options": [
+                  "A verb that describes an action but leaves out *how* it is done (e.g., 'This will *change* your life').",
+                  "A noun.",
+                  "A loud noise.",
+                  "A lie."
+                ],
+                "question": "What is an 'Unspecified Verb'?",
+                "type": "multiple-choice"
+              },
+              {
+                "correct": "'Who needs to communicate what to whom, and how?' (Turning the noun back into a verb).",
+                "difficulty": "hard",
+                "exerciseId": "B1-4-P2-E3",
+                "feedback": {
+                  "correct": "Correct. 'Communication' is a frozen noun. You must thaw it out into specific actions to solve the problem.",
+                  "incorrect": "Agreeing with the vague noun solves nothing. You need the specifics of the action."
+                },
+                "options": [
+                  "'Yes, we do.'",
+                  "'Who needs to communicate what to whom, and how?' (Turning the noun back into a verb).",
+                  "'Communication is key.'",
+                  "'You are right.'"
+                ],
+                "question": "What is the Meta Model challenge?",
+                "scene": "Scenario: 'We need to improve *communication* around here.' (Nominalization).",
+                "type": "scenario"
+              },
+              {
+                "correct": "True",
+                "difficulty": "easy",
+                "exerciseId": "B1-4-P2-E4",
+                "feedback": {
+                  "correct": "Correct. They pretend to know your thoughts ('You know...') to pressure you into agreeing. If you say 'No, I don't,' you break the spell.",
+                  "incorrect": "It is a pressure tactic. It assumes shared knowledge that might not exist."
+                },
+                "options": [
+                  "True",
+                  "False"
+                ],
+                "question": "Is this a 'Mind Read' designed to stop you from asking questions?",
+                "scene": "Scenario: 'You know exactly what I'm talking about.'",
+                "type": "true-false"
+              },
+              {
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P2-E5",
+                "feedback": {
+                  "correct": "Correct. Universal Quantifiers ('Everyone') are challenged by counter-examples. Lost Performatives ('It is') are challenged by asking for the source.",
+                  "incorrect": "Find the missing information and ask for it."
+                },
+                "pairs": [
+                  {
+                    "definition": "Drill: \"Everyone? Name one person who doesn't.\"",
+                    "term": "\"Everyone knows...\""
+                  },
+                  {
+                    "definition": "Drill: \"Obvious to whom?\"",
+                    "term": "\"It is obvious...\""
+                  },
+                  {
+                    "definition": "Drill: \"How specifically does it hurt you?\"",
+                    "term": "\"This hurts me...\""
+                  }
+                ],
+                "question": "Match the Fluff to the Drill:",
+                "type": "matching"
+              },
+              {
+                "answers": [
+                  "deleted"
+                ],
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P2-E6",
+                "feedback": {
+                  "correct": "Correct. The speaker 'deleted' the details to be vague. Your questions recover the deleted data.",
+                  "incorrect": "The information isn't added; it was left out (deleted)."
+                },
+                "options": [
+                  "deleted",
+                  "added",
+                  "false",
+                  "fun"
+                ],
+                "sentence": "The Meta Model recovers (--------) information from the speaker's deep structure.",
+                "type": "fill-in"
+              },
+              {
+                "correct": "'How specifically does my action cause you to choose anger?'",
+                "difficulty": "hard",
+                "exerciseId": "B1-4-P2-E7",
+                "feedback": {
+                  "correct": "Correct. You challenge the link. You cannot *make* someone angry; they choose to react with anger. This question returns responsibility to them.",
+                  "incorrect": "Apologizing accepts the false premise that you control their emotions."
+                },
+                "options": [
+                  "'I'm sorry.'",
+                  "'How specifically does my action cause you to choose anger?'",
+                  "'You are mean.'",
+                  "Stop talking."
+                ],
+                "question": "This is 'Cause-Effect' distortion. How do you challenge it?",
+                "scene": "Scenario: 'You are making me angry.'",
+                "type": "scenario"
+              },
+              {
+                "correct": "Reconnect language to experience",
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P2-E8",
+                "feedback": {
+                  "correct": "Correct. Vague language floats in the air. Specific language connects to ground-level reality (experience).",
+                  "incorrect": "We want to ground the words in sensory facts."
+                },
+                "question": "Arrange the words to define the goal of the Meta Model:",
+                "type": "build-sentence",
+                "words": [
+                  "from",
+                  "Reconnect",
+                  "language",
+                  "to",
+                  "experience"
+                ]
+              },
+              {
+                "correct": "Universal Quantifier (Generalization)",
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P2-E9",
+                "feedback": {
+                  "correct": "Correct. Words like All, Every, Always, Never. They create a rigid, false reality. Challenge: 'All men? Every single one?'",
+                  "incorrect": "It takes one example and applies it to the universe. It is a generalization."
+                },
+                "options": [
+                  "Universal Quantifier (Generalization)",
+                  "Mind Reading",
+                  "Nominalization",
+                  "Tag Question"
+                ],
+                "question": "What is this pattern?",
+                "scene": "A statement like 'All men are liars' or 'Women are too emotional.'",
+                "type": "reverse-scenario"
+              },
+              {
+                "correct": "'Bad for whom?'",
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P2-E10",
+                "feedback": {
+                  "correct": "Correct. They deleted the person. It might be bad for *them* (loss of commission), but good for *you*. Find out who loses.",
+                  "incorrect": "'Why' invites more fluff. 'For whom' demands a specific person."
+                },
+                "options": [
+                  "'Bad for whom?'",
+                  "'Why?'",
+                  "'Okay.'",
+                  "'Is it?'"
+                ],
+                "question": "The challenge is:",
+                "scene": "Scenario: 'It would be bad if you didn't sign today.'",
+                "type": "scenario"
+              },
+              {
+                "correct": "Because they are meaningless containers. The follower pours their own meaning in, feeling 'understood' by the leader.",
+                "difficulty": "hard",
+                "exerciseId": "B1-4-P2-E11",
+                "feedback": {
+                  "correct": "Correct. 'The Truth' sounds profound but means nothing. It is a blank check for the mind.",
+                  "incorrect": "They aren't specific; they are infinite. Infinite meaning = Infinite control."
+                },
+                "options": [
+                  "Because they are meaningless containers. The follower pours their own meaning in, feeling 'understood' by the leader.",
+                  "Because they are specific.",
+                  "Because they are short words.",
+                  "No reason."
+                ],
+                "question": "Why do cult leaders use 'Nominalizations' like 'The Truth,' 'The Way,' or 'The Awakening'?",
+                "type": "multiple-choice"
+              },
+              {
+                "correct": "True",
+                "difficulty": "hard",
+                "exerciseId": "B1-4-P2-E12",
+                "feedback": {
+                  "correct": "Correct. Words like Should, Must, Have to. They imply a rule without stating the consequence. Challenge: 'What would happen if I did?'",
+                  "incorrect": "It implies necessity. Challenge the consequence."
+                },
+                "options": [
+                  "True",
+                  "False"
+                ],
+                "question": "Is this a 'Modal Operator of Necessity'?",
+                "scene": "Scenario: 'You shouldn't do that.'",
+                "type": "true-false"
+              },
+              {
+                "correct": "'How do you know that?' (Demand Evidence).",
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P2-E13",
+                "feedback": {
+                  "correct": "Correct. Force them to reveal their observation ('Because you are frowning'). If they can't, they are projecting.",
+                  "incorrect": "Don't accept the premise. Make them show their work."
+                },
+                "options": [
+                  "'How do you know that?' (Demand Evidence).",
+                  "'You're right.'",
+                  "'I'm not unhappy!' (Defensive).",
+                  "Crying."
+                ],
+                "question": "What is the best response?",
+                "scene": "Scenario: 'I know you are unhappy.' (Mind Read).",
+                "type": "scenario"
+              },
+              {
+                "answers": [
+                  "surface",
+                  "deep"
+                ],
+                "difficulty": "hard",
+                "exerciseId": "B1-4-P2-E14",
+                "feedback": {
+                  "correct": "Correct. The Surface Structure is what is said (The deletions). The Deep Structure is what is meant (The full truth).",
+                  "incorrect": "You are digging down. Surface -> Deep."
+                },
+                "options": [
+                  "surface",
+                  "deep",
+                  "loud",
+                  "quiet"
+                ],
+                "sentence": "When you use the Meta Model, you move from the (--------) structure to the (--------) structure of language.",
+                "type": "fill-in"
+              },
+              {
+                "caseTitle": "Part 2 Complete: The Drill",
+                "correct": "The 'Guru' Simulation (Debating a master of vague speech).",
+                "difficulty": "easy",
+                "exerciseId": "B1-4-P2-E15",
+                "feedback": {
+                  "correct": "Correct. Can you hold your ground against someone who speaks entirely in riddles and metaphors? Let's see.",
+                  "incorrect": "Next up: Facing the ultimate vague speaker."
+                },
+                "options": [
+                  "The 'Guru' Simulation (Debating a master of vague speech).",
+                  "Becoming a Guru.",
+                  "Chanting.",
+                  "Lesson A1-1."
+                ],
+                "question": "In Part 3, we will face the Challenge:",
+                "scene": "You have learned to question the fluff. You know that 'Everyone' is a generalization and 'It is bad' is a missing opinion.",
+                "type": "case-analysis"
+              }
+            ],
+            "screenId": "B1-4-P2-S2",
+            "screenType": "Exercises",
+            "title": "Drilling Down"
+          }
+        ],
+        "gamification": {
+          "badgeOnCompletion": null,
+          "pointsValue": 100,
+          "progressRings": [
+            {
+              "label": "Part 1",
+              "ringId": "learn",
+              "status": "completed"
+            },
+            {
+              "label": "Part 2",
+              "ringId": "practice",
+              "status": "pending"
+            },
+            {
+              "label": "Part 3",
+              "ringId": "challenge",
+              "status": "pending"
+            }
+          ],
+          "starsAvailable": 3
+        },
+        "lessonId": "B1-4",
+        "lessonPart": 2,
+        "lessonPartTitle": "Practice: Drilling Down into Fluff",
+        "lessonTitle": "The \"Milton Model\": Weaponized Vague Language",
+        "lessonType": "Normal",
+        "objective": "To practice identifying vague language patterns (Nominalizations, Unspecified Verbs, Mind Reads) and using the 'Meta Model' to challenge them with specific questions.",
+        "sectionId": "B",
+        "sectionTitle": "The Tools of Influence",
+        "unitId": "B1",
+        "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis"
+      },
+      "lessonPart": 2,
+      "lessonPartTitle": "Practice: Drilling Down into Fluff",
+      "lessonTitle": "The \"Milton Model\": Weaponized Vague Language",
+      "lessonType": "Normal",
+      "objective": "To practice identifying vague language patterns (Nominalizations, Unspecified Verbs, Mind Reads) and using the 'Meta Model' to challenge them with specific questions.",
+      "sectionId": "B",
+      "sectionTitle": "The Tools of Influence",
+      "title": "B1-4-Part2",
+      "unitId": "B1",
+      "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis"
+    },
+    {
+      "_id": "j97111f4pr6phztx0r1efwznzh7xkpz8",
+      "contentScreens": [
+        {
+          "content": [
+            {
+              "text": "You are about to face 'The Guru.' They will speak in deep, profound sentences that mean absolutely nothing. Their goal is to make you nod along in a trance.",
+              "type": "paragraph"
+            },
+            {
+              "alertType": "warning",
+              "text": "Your Goal: Do not nod. Do not agree. Ask: 'How specifically?' until they give you a real answer or reveal they have none.",
+              "type": "alert"
+            }
+          ],
+          "screenId": "B1-4-P3-S1",
+          "screenType": "Learn",
+          "title": "Challenge: Pierce the Fog"
+        },
+        {
+          "exercises": [
+            {
+              "correct": "'How specifically do I align a vibration? And what specifically do you mean by success?' (Drill Down)",
+              "difficulty": "hard",
+              "exerciseId": "B1-4-P3-E1",
+              "feedback": {
+                "correct": "Correct. You refused to accept the abstract concepts ('vibration', 'success') as real things. You demanded the verb (the action).",
+                "incorrect": "If you accept the premise that you have a 'vibration' that is 'blocked,' they can sell you the cure. You must challenge the premise."
+              },
+              "options": [
+                "'Oh no! How do I fix my vibration?' (Submission)",
+                "'You are right. I feel blocked.' (Acceptance)",
+                "'How specifically do I align a vibration? And what specifically do you mean by success?' (Drill Down)",
+                "Leave."
+              ],
+              "question": "This is a 'Word Salad' of Nominalizations. What is the Meta Model defense?",
+              "scene": "The Guru looks into your eyes: 'You are blocking your own abundance because your vibration is not aligned with the frequency of success.'",
+              "type": "boss-scenario"
+            },
+            {
+              "difficulty": "hard",
+              "exerciseId": "B1-4-P3-E2",
+              "feedback": {
+                "correct": "You survived the Fog. You realized that a promise without a date is just a lie.",
+                "incorrect": "You accepted the 'Reward' without knowing what it was. You bought a mystery box."
+              },
+              "scenarioTitle": "Simulation: The Vague Promise",
+              "steps": [
+                {
+                  "correct": "'What specific process? And what specific reward on what specific date?' (The Audit)",
+                  "feedback": {
+                    "correct": "Perfect. 'Process' and 'Reward' are empty containers. You forced them to put concrete details inside.",
+                    "incorrect": "Trusting a vague process is how people get exploited. Specificity is security."
+                  },
+                  "options": [
+                    "'Okay, I trust you.' (Blind Faith)",
+                    "'What specific process? And what specific reward on what specific date?' (The Audit)",
+                    "'I hope so.' (Passive)",
+                    "'You are lying.' (Attack)"
+                  ],
+                  "scene": "Manager: 'If you just *trust the process*, you will be *rewarded* soon.'"
+                },
+                {
+                  "correct": "'Faith is not a contract. I need details to do my job.' (Holding Frame)",
+                  "feedback": {
+                    "correct": "Mastery. They tried to use a 'Nominalization' (Faith) to shame you. You rejected it. Business runs on contracts, not faith.",
+                    "incorrect": "They switched the frame from 'Business' to 'Religion' (Faith). Don't follow them there."
+                  },
+                  "options": [
+                    "'I'm sorry, I do have faith.' (Guilt Trip worked)",
+                    "'Faith is not a contract. I need details to do my job.' (Holding Frame)",
+                    "'The team is great.' (Deflection)",
+                    "Quit."
+                  ],
+                  "question": "Manager: 'Why do you have to be so negative? Don't you have *faith* in the team?' (Shifting to Morality)."
+                }
+              ],
+              "type": "micro-sim"
+            },
+            {
+              "correct": "Because intelligent people have active imaginations. They do the work of filling in the blanks with their own brilliant ideas, thinking the speaker is brilliant too.",
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P3-E3",
+              "feedback": {
+                "correct": "Correct. The listener projects their own intelligence onto the vague speaker. It is a 'Projection Trap.'",
+                "incorrect": "Intelligence is not a shield; it can be a weakness if you over-interpret meaning where there is none."
+              },
+              "options": [
+                "It doesn't.",
+                "Because intelligent people have active imaginations. They do the work of filling in the blanks with their own brilliant ideas, thinking the speaker is brilliant too.",
+                "Because intelligent people are gullible.",
+                "Because it is logical."
+              ],
+              "question": "Why does the 'Milton Model' work so well on intelligent people?",
+              "type": "multiple-choice"
+            },
+            {
+              "answers": [
+                "trance",
+                "clarity"
+              ],
+              "difficulty": "easy",
+              "exerciseId": "B1-4-P3-E4",
+              "feedback": {
+                "correct": "Correct. To hypnotize, go vague. To de-hypnotize, go specific.",
+                "incorrect": "Vagueness induces the 'transderivational search' (trance). Clarity wakes you up."
+              },
+              "options": [
+                "trance",
+                "clarity",
+                "sleep",
+                "anger"
+              ],
+              "sentence": "Vagueness creates (--------). Specificity creates (--------).",
+              "type": "fill-in"
+            },
+            {
+              "correct": "'Who is everyone?'",
+              "difficulty": "easy",
+              "exerciseId": "B1-4-P3-E5",
+              "feedback": {
+                "correct": "Correct. Force them to name the crowd. Usually, 'Everyone' is just 'Me and my one friend.'",
+                "incorrect": "Don't accept the phantom army. Make them count the soldiers."
+              },
+              "options": [
+                "'Who is everyone?'",
+                "'Is it?'",
+                "'I agree.'",
+                "'You are wrong.'"
+              ],
+              "question": "The Challenge:",
+              "scene": "Scenario: 'Everyone knows that this is the wrong direction.' (Universal Quantifier).",
+              "type": "scenario"
+            },
+            {
+              "correct": "True",
+              "difficulty": "easy",
+              "exerciseId": "B1-4-P3-E6",
+              "feedback": {
+                "correct": "Correct. They claim to know your future mental state. It is a dismissal tactic to stop the argument.",
+                "incorrect": "It asserts superior knowledge to shut you down."
+              },
+              "options": [
+                "True",
+                "False"
+              ],
+              "question": "Is this a 'Patronizing Mind Read'?",
+              "scene": "Scenario: 'You will understand when you are older.'",
+              "type": "true-false"
+            },
+            {
+              "correct": "The map is not the territory",
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P3-E7",
+              "feedback": {
+                "correct": "Correct. (Korzybski). The words (Map) are not the reality (Territory). The Meta Model checks the Map against the Territory.",
+                "incorrect": "Words are just symbols. You must check if they match reality."
+              },
+              "question": "Arrange the words to define the Meta Model's power:",
+              "type": "build-sentence",
+              "words": [
+                "The",
+                "is",
+                "map",
+                "territory",
+                "not",
+                "the"
+              ]
+            },
+            {
+              "correct": "A Factive Presupposition",
+              "difficulty": "hard",
+              "exerciseId": "B1-4-P3-E8",
+              "feedback": {
+                "correct": "Correct. The word 'realized' presupposes that the 'truth' is a fact. It forces you to accept their version of 'truth' to accept the compliment.",
+                "incorrect": "It smuggles an assumption into the sentence."
+              },
+              "options": [
+                "A Factive Presupposition",
+                "A Lie",
+                "A Compliment",
+                "A Question"
+              ],
+              "question": "What is this?",
+              "scene": "A phrase that implies knowledge without stating it, like 'I'm glad you finally *realized* the truth.' (Implies you didn't know it before).",
+              "type": "reverse-scenario"
+            },
+            {
+              "correct": "Yes, it is the Milton Model used for mass influence. Whether it is 'bad' depends on the policy behind the words.",
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P3-E9",
+              "feedback": {
+                "correct": "Correct. Slogans are 'Nominalizations.' They are empty containers so every voter can project their own wish into them.",
+                "incorrect": "It is absolutely manipulation (shaping perception). The ethics depend on the outcome."
+              },
+              "options": [
+                "Yes, it is the Milton Model used for mass influence. Whether it is 'bad' depends on the policy behind the words.",
+                "No, it is just speaking.",
+                "Yes, all politicians are evil.",
+                "No, they mean it."
+              ],
+              "question": "Is this manipulation?",
+              "scene": "A politician uses vague slogans ('Hope,' 'Change,' 'Greatness') to rally a crowd.",
+              "type": "ethical-dilemma"
+            },
+            {
+              "correct": "'How specifically does my action of [X] cause you to feel pain?'",
+              "difficulty": "hard",
+              "exerciseId": "B1-4-P3-E10",
+              "feedback": {
+                "correct": "Correct. This forces them to trace the link. Often, they can't, because the pain comes from their interpretation, not your action.",
+                "incorrect": "Denial ('No I'm not') is a fight. Specificity ('How specifically?') is an investigation."
+              },
+              "options": [
+                "'No I'm not.'",
+                "'I am not touching you.'",
+                "'How specifically does my action of [X] cause you to feel pain?'",
+                "'You are too sensitive.'"
+              ],
+              "question": "How do you challenge this without being mean?",
+              "scene": "Scenario: 'You are hurting me.' (Cause-Effect).",
+              "type": "scenario"
+            },
+            {
+              "answers": [
+                "riddles"
+              ],
+              "difficulty": "easy",
+              "exerciseId": "B1-4-P3-E11",
+              "feedback": {
+                "correct": "Correct. If they speak in riddles (metaphors), they can never be proven wrong. 'The river flows uphill' sounds deep, but means nothing.",
+                "incorrect": "Facts can be checked. Riddles cannot."
+              },
+              "options": [
+                "riddles",
+                "facts",
+                "lies",
+                "numbers"
+              ],
+              "sentence": "The Guru speaks in (--------) to avoid being pinned down to a specific meaning.",
+              "type": "fill-in"
+            },
+            {
+              "correct": "True",
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P3-E12",
+              "feedback": {
+                "correct": "Correct. 'Clearly' to whom? 'No choice' according to whom? It presents an opinion as an objective fact from the universe.",
+                "incorrect": "It hides the judge. The speaker is the judge, but they hide behind the word 'Clearly.'"
+              },
+              "options": [
+                "True",
+                "False"
+              ],
+              "question": "Is this a 'Lost Performative'?",
+              "scene": "Scenario: 'Clearly, we have no other choice.'",
+              "type": "true-false"
+            },
+            {
+              "correct": "No. This is Word Salad.",
+              "difficulty": "hard",
+              "exerciseId": "B1-4-P3-E13",
+              "feedback": {
+                "correct": "Correct. They used positive words ('value,' 'ecosystem') but promised zero dollars. It is a non-answer designed to make you feel good while getting nothing.",
+                "incorrect": "Don't listen to the tone. Listen to the commitment. There was no number."
+              },
+              "options": [
+                "No. This is Word Salad.",
+                "Yes, they said 'value' and 'compensated'.",
+                "Maybe.",
+                "It sounds like a yes."
+              ],
+              "question": "Did they say 'Yes'?",
+              "scene": "Scenario: You ask for a raise. Boss: 'We value you highly, and we want to ensure you are compensated in a way that reflects your holistic contribution to the ecosystem.'",
+              "type": "scenario"
+            },
+            {
+              "difficulty": "medium",
+              "exerciseId": "B1-4-P3-E14",
+              "feedback": {
+                "correct": "Correct. Define 'Best.' Define 'Inappropriate.' Define the mechanism of 'Making' sadness.",
+                "incorrect": "Drill into the missing reference."
+              },
+              "pairs": [
+                {
+                  "definition": "Question: \"Best for whom?\"",
+                  "term": "\"I just want what's best.\""
+                },
+                {
+                  "definition": "Question: \"According to what standard?\"",
+                  "term": "\"It's inappropriate.\""
+                },
+                {
+                  "definition": "Question: \"How do I make you sad?\"",
+                  "term": "\"You make me sad.\""
+                }
+              ],
+              "question": "Match the Question to the Fluff:",
+              "type": "matching"
+            },
+            {
+              "caseTitle": "Lesson Complete: The Fog Cutter",
+              "correct": "Lesson B1-5: Unit B1 Review (The Hypnotist).",
+              "difficulty": "easy",
+              "exerciseId": "B1-4-P3-E15",
+              "feedback": {
+                "correct": "Correct. We have covered Pacing, Leading, Embedded Commands, Double Binds, and the Milton Model. Now we test it all.",
+                "incorrect": "Next up: The final exam for the Silver Tongue unit."
+              },
+              "options": [
+                "Lesson B1-5: Unit B1 Review (The Hypnotist).",
+                "Lesson A1-1.",
+                "Listening to a speech.",
+                "Sleeping."
+              ],
+              "question": "You are ready for the Unit B1 Review:",
+              "scene": "You have learned to cut through the fog. You know that 'Love' is a noun, but 'Loving' is a verb. You demand the verb.",
+              "type": "case-analysis"
+            }
+          ],
+          "screenId": "B1-4-P3-S2",
+          "screenType": "Exercises",
+          "title": "Simulation: The Guru"
+        }
+      ],
+      "gamification": {
+        "badgeOnCompletion": "The_Fog_Cutter_Badge",
+        "pointsValue": 200,
+        "progressRings": [
+          {
+            "label": "Part 1",
+            "ringId": "learn",
+            "status": "completed"
+          },
+          {
+            "label": "Part 2",
+            "ringId": "practice",
+            "status": "completed"
+          },
+          {
+            "label": "Part 3",
+            "ringId": "challenge",
+            "status": "pending"
+          }
+        ],
+        "starsAvailable": 3
+      },
+      "lessonId": "B1-4",
+      "lessonJSON": {
+        "contentScreens": [
+          {
+            "content": [
+              {
+                "text": "You are about to face 'The Guru.' They will speak in deep, profound sentences that mean absolutely nothing. Their goal is to make you nod along in a trance.",
+                "type": "paragraph"
+              },
+              {
+                "alertType": "warning",
+                "text": "Your Goal: Do not nod. Do not agree. Ask: 'How specifically?' until they give you a real answer or reveal they have none.",
+                "type": "alert"
+              }
+            ],
+            "screenId": "B1-4-P3-S1",
+            "screenType": "Learn",
+            "title": "Challenge: Pierce the Fog"
+          },
+          {
+            "exercises": [
+              {
+                "correct": "'How specifically do I align a vibration? And what specifically do you mean by success?' (Drill Down)",
+                "difficulty": "hard",
+                "exerciseId": "B1-4-P3-E1",
+                "feedback": {
+                  "correct": "Correct. You refused to accept the abstract concepts ('vibration', 'success') as real things. You demanded the verb (the action).",
+                  "incorrect": "If you accept the premise that you have a 'vibration' that is 'blocked,' they can sell you the cure. You must challenge the premise."
+                },
+                "options": [
+                  "'Oh no! How do I fix my vibration?' (Submission)",
+                  "'You are right. I feel blocked.' (Acceptance)",
+                  "'How specifically do I align a vibration? And what specifically do you mean by success?' (Drill Down)",
+                  "Leave."
+                ],
+                "question": "This is a 'Word Salad' of Nominalizations. What is the Meta Model defense?",
+                "scene": "The Guru looks into your eyes: 'You are blocking your own abundance because your vibration is not aligned with the frequency of success.'",
+                "type": "boss-scenario"
+              },
+              {
+                "difficulty": "hard",
+                "exerciseId": "B1-4-P3-E2",
+                "feedback": {
+                  "correct": "You survived the Fog. You realized that a promise without a date is just a lie.",
+                  "incorrect": "You accepted the 'Reward' without knowing what it was. You bought a mystery box."
+                },
+                "scenarioTitle": "Simulation: The Vague Promise",
+                "steps": [
+                  {
+                    "correct": "'What specific process? And what specific reward on what specific date?' (The Audit)",
+                    "feedback": {
+                      "correct": "Perfect. 'Process' and 'Reward' are empty containers. You forced them to put concrete details inside.",
+                      "incorrect": "Trusting a vague process is how people get exploited. Specificity is security."
+                    },
+                    "options": [
+                      "'Okay, I trust you.' (Blind Faith)",
+                      "'What specific process? And what specific reward on what specific date?' (The Audit)",
+                      "'I hope so.' (Passive)",
+                      "'You are lying.' (Attack)"
+                    ],
+                    "scene": "Manager: 'If you just *trust the process*, you will be *rewarded* soon.'"
+                  },
+                  {
+                    "correct": "'Faith is not a contract. I need details to do my job.' (Holding Frame)",
+                    "feedback": {
+                      "correct": "Mastery. They tried to use a 'Nominalization' (Faith) to shame you. You rejected it. Business runs on contracts, not faith.",
+                      "incorrect": "They switched the frame from 'Business' to 'Religion' (Faith). Don't follow them there."
+                    },
+                    "options": [
+                      "'I'm sorry, I do have faith.' (Guilt Trip worked)",
+                      "'Faith is not a contract. I need details to do my job.' (Holding Frame)",
+                      "'The team is great.' (Deflection)",
+                      "Quit."
+                    ],
+                    "question": "Manager: 'Why do you have to be so negative? Don't you have *faith* in the team?' (Shifting to Morality)."
+                  }
+                ],
+                "type": "micro-sim"
+              },
+              {
+                "correct": "Because intelligent people have active imaginations. They do the work of filling in the blanks with their own brilliant ideas, thinking the speaker is brilliant too.",
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P3-E3",
+                "feedback": {
+                  "correct": "Correct. The listener projects their own intelligence onto the vague speaker. It is a 'Projection Trap.'",
+                  "incorrect": "Intelligence is not a shield; it can be a weakness if you over-interpret meaning where there is none."
+                },
+                "options": [
+                  "It doesn't.",
+                  "Because intelligent people have active imaginations. They do the work of filling in the blanks with their own brilliant ideas, thinking the speaker is brilliant too.",
+                  "Because intelligent people are gullible.",
+                  "Because it is logical."
+                ],
+                "question": "Why does the 'Milton Model' work so well on intelligent people?",
+                "type": "multiple-choice"
+              },
+              {
+                "answers": [
+                  "trance",
+                  "clarity"
+                ],
+                "difficulty": "easy",
+                "exerciseId": "B1-4-P3-E4",
+                "feedback": {
+                  "correct": "Correct. To hypnotize, go vague. To de-hypnotize, go specific.",
+                  "incorrect": "Vagueness induces the 'transderivational search' (trance). Clarity wakes you up."
+                },
+                "options": [
+                  "trance",
+                  "clarity",
+                  "sleep",
+                  "anger"
+                ],
+                "sentence": "Vagueness creates (--------). Specificity creates (--------).",
+                "type": "fill-in"
+              },
+              {
+                "correct": "'Who is everyone?'",
+                "difficulty": "easy",
+                "exerciseId": "B1-4-P3-E5",
+                "feedback": {
+                  "correct": "Correct. Force them to name the crowd. Usually, 'Everyone' is just 'Me and my one friend.'",
+                  "incorrect": "Don't accept the phantom army. Make them count the soldiers."
+                },
+                "options": [
+                  "'Who is everyone?'",
+                  "'Is it?'",
+                  "'I agree.'",
+                  "'You are wrong.'"
+                ],
+                "question": "The Challenge:",
+                "scene": "Scenario: 'Everyone knows that this is the wrong direction.' (Universal Quantifier).",
+                "type": "scenario"
+              },
+              {
+                "correct": "True",
+                "difficulty": "easy",
+                "exerciseId": "B1-4-P3-E6",
+                "feedback": {
+                  "correct": "Correct. They claim to know your future mental state. It is a dismissal tactic to stop the argument.",
+                  "incorrect": "It asserts superior knowledge to shut you down."
+                },
+                "options": [
+                  "True",
+                  "False"
+                ],
+                "question": "Is this a 'Patronizing Mind Read'?",
+                "scene": "Scenario: 'You will understand when you are older.'",
+                "type": "true-false"
+              },
+              {
+                "correct": "The map is not the territory",
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P3-E7",
+                "feedback": {
+                  "correct": "Correct. (Korzybski). The words (Map) are not the reality (Territory). The Meta Model checks the Map against the Territory.",
+                  "incorrect": "Words are just symbols. You must check if they match reality."
+                },
+                "question": "Arrange the words to define the Meta Model's power:",
+                "type": "build-sentence",
+                "words": [
+                  "The",
+                  "is",
+                  "map",
+                  "territory",
+                  "not",
+                  "the"
+                ]
+              },
+              {
+                "correct": "A Factive Presupposition",
+                "difficulty": "hard",
+                "exerciseId": "B1-4-P3-E8",
+                "feedback": {
+                  "correct": "Correct. The word 'realized' presupposes that the 'truth' is a fact. It forces you to accept their version of 'truth' to accept the compliment.",
+                  "incorrect": "It smuggles an assumption into the sentence."
+                },
+                "options": [
+                  "A Factive Presupposition",
+                  "A Lie",
+                  "A Compliment",
+                  "A Question"
+                ],
+                "question": "What is this?",
+                "scene": "A phrase that implies knowledge without stating it, like 'I'm glad you finally *realized* the truth.' (Implies you didn't know it before).",
+                "type": "reverse-scenario"
+              },
+              {
+                "correct": "Yes, it is the Milton Model used for mass influence. Whether it is 'bad' depends on the policy behind the words.",
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P3-E9",
+                "feedback": {
+                  "correct": "Correct. Slogans are 'Nominalizations.' They are empty containers so every voter can project their own wish into them.",
+                  "incorrect": "It is absolutely manipulation (shaping perception). The ethics depend on the outcome."
+                },
+                "options": [
+                  "Yes, it is the Milton Model used for mass influence. Whether it is 'bad' depends on the policy behind the words.",
+                  "No, it is just speaking.",
+                  "Yes, all politicians are evil.",
+                  "No, they mean it."
+                ],
+                "question": "Is this manipulation?",
+                "scene": "A politician uses vague slogans ('Hope,' 'Change,' 'Greatness') to rally a crowd.",
+                "type": "ethical-dilemma"
+              },
+              {
+                "correct": "'How specifically does my action of [X] cause you to feel pain?'",
+                "difficulty": "hard",
+                "exerciseId": "B1-4-P3-E10",
+                "feedback": {
+                  "correct": "Correct. This forces them to trace the link. Often, they can't, because the pain comes from their interpretation, not your action.",
+                  "incorrect": "Denial ('No I'm not') is a fight. Specificity ('How specifically?') is an investigation."
+                },
+                "options": [
+                  "'No I'm not.'",
+                  "'I am not touching you.'",
+                  "'How specifically does my action of [X] cause you to feel pain?'",
+                  "'You are too sensitive.'"
+                ],
+                "question": "How do you challenge this without being mean?",
+                "scene": "Scenario: 'You are hurting me.' (Cause-Effect).",
+                "type": "scenario"
+              },
+              {
+                "answers": [
+                  "riddles"
+                ],
+                "difficulty": "easy",
+                "exerciseId": "B1-4-P3-E11",
+                "feedback": {
+                  "correct": "Correct. If they speak in riddles (metaphors), they can never be proven wrong. 'The river flows uphill' sounds deep, but means nothing.",
+                  "incorrect": "Facts can be checked. Riddles cannot."
+                },
+                "options": [
+                  "riddles",
+                  "facts",
+                  "lies",
+                  "numbers"
+                ],
+                "sentence": "The Guru speaks in (--------) to avoid being pinned down to a specific meaning.",
+                "type": "fill-in"
+              },
+              {
+                "correct": "True",
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P3-E12",
+                "feedback": {
+                  "correct": "Correct. 'Clearly' to whom? 'No choice' according to whom? It presents an opinion as an objective fact from the universe.",
+                  "incorrect": "It hides the judge. The speaker is the judge, but they hide behind the word 'Clearly.'"
+                },
+                "options": [
+                  "True",
+                  "False"
+                ],
+                "question": "Is this a 'Lost Performative'?",
+                "scene": "Scenario: 'Clearly, we have no other choice.'",
+                "type": "true-false"
+              },
+              {
+                "correct": "No. This is Word Salad.",
+                "difficulty": "hard",
+                "exerciseId": "B1-4-P3-E13",
+                "feedback": {
+                  "correct": "Correct. They used positive words ('value,' 'ecosystem') but promised zero dollars. It is a non-answer designed to make you feel good while getting nothing.",
+                  "incorrect": "Don't listen to the tone. Listen to the commitment. There was no number."
+                },
+                "options": [
+                  "No. This is Word Salad.",
+                  "Yes, they said 'value' and 'compensated'.",
+                  "Maybe.",
+                  "It sounds like a yes."
+                ],
+                "question": "Did they say 'Yes'?",
+                "scene": "Scenario: You ask for a raise. Boss: 'We value you highly, and we want to ensure you are compensated in a way that reflects your holistic contribution to the ecosystem.'",
+                "type": "scenario"
+              },
+              {
+                "difficulty": "medium",
+                "exerciseId": "B1-4-P3-E14",
+                "feedback": {
+                  "correct": "Correct. Define 'Best.' Define 'Inappropriate.' Define the mechanism of 'Making' sadness.",
+                  "incorrect": "Drill into the missing reference."
+                },
+                "pairs": [
+                  {
+                    "definition": "Question: \"Best for whom?\"",
+                    "term": "\"I just want what's best.\""
+                  },
+                  {
+                    "definition": "Question: \"According to what standard?\"",
+                    "term": "\"It's inappropriate.\""
+                  },
+                  {
+                    "definition": "Question: \"How do I make you sad?\"",
+                    "term": "\"You make me sad.\""
+                  }
+                ],
+                "question": "Match the Question to the Fluff:",
+                "type": "matching"
+              },
+              {
+                "caseTitle": "Lesson Complete: The Fog Cutter",
+                "correct": "Lesson B1-5: Unit B1 Review (The Hypnotist).",
+                "difficulty": "easy",
+                "exerciseId": "B1-4-P3-E15",
+                "feedback": {
+                  "correct": "Correct. We have covered Pacing, Leading, Embedded Commands, Double Binds, and the Milton Model. Now we test it all.",
+                  "incorrect": "Next up: The final exam for the Silver Tongue unit."
+                },
+                "options": [
+                  "Lesson B1-5: Unit B1 Review (The Hypnotist).",
+                  "Lesson A1-1.",
+                  "Listening to a speech.",
+                  "Sleeping."
+                ],
+                "question": "You are ready for the Unit B1 Review:",
+                "scene": "You have learned to cut through the fog. You know that 'Love' is a noun, but 'Loving' is a verb. You demand the verb.",
+                "type": "case-analysis"
+              }
+            ],
+            "screenId": "B1-4-P3-S2",
+            "screenType": "Exercises",
+            "title": "Simulation: The Guru"
+          }
+        ],
+        "gamification": {
+          "badgeOnCompletion": "The_Fog_Cutter_Badge",
+          "pointsValue": 200,
+          "progressRings": [
+            {
+              "label": "Part 1",
+              "ringId": "learn",
+              "status": "completed"
+            },
+            {
+              "label": "Part 2",
+              "ringId": "practice",
+              "status": "completed"
+            },
+            {
+              "label": "Part 3",
+              "ringId": "challenge",
+              "status": "pending"
+            }
+          ],
+          "starsAvailable": 3
+        },
+        "lessonId": "B1-4",
+        "lessonPart": 3,
+        "lessonPartTitle": "Challenge: The \"Guru\" Simulation",
+        "lessonTitle": "The \"Milton Model\": Weaponized Vague Language",
+        "lessonType": "Normal",
+        "objective": "To master the defense against the Milton Model by refusing to accept abstract concepts ('Success', 'Alignment', 'Truth') without specific definitions, and breaking the trance of vague authority.",
+        "sectionId": "B",
+        "sectionTitle": "The Tools of Influence",
+        "unitId": "B1",
+        "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis"
+      },
+      "lessonPart": 3,
+      "lessonPartTitle": "Challenge: The \"Guru\" Simulation",
+      "lessonTitle": "The \"Milton Model\": Weaponized Vague Language",
+      "lessonType": "Normal",
+      "objective": "To master the defense against the Milton Model by refusing to accept abstract concepts ('Success', 'Alignment', 'Truth') without specific definitions, and breaking the trance of vague authority.",
+      "sectionId": "B",
+      "sectionTitle": "The Tools of Influence",
+      "title": "B1-4-Part3",
+      "unitId": "B1",
+      "unitTitle": "The Silver Tongue: NLP & Covert Hypnosis"
+    }
+  ]
+}
 ];

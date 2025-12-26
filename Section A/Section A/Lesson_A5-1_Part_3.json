@@ -229,7 +229,6 @@
         {
           "exerciseId": "A5-1-P3-E9",
           "type": "reverse-scenario",
-          "answer": "A dynamic where you feel 'addicted' to a partner who treats you badly, often because of Intermittent Reinforcement.",
           "question": "What is this bond?",
           "options": [
             "Trauma Bond",
@@ -242,7 +241,8 @@
           "feedback": {
             "correct": "Correct. It feels like love, but it is addiction. It is forged in the cycle of abuse (Fear -> Relief).",
             "incorrect": "Love is stable. Trauma bonds are volatile and addictive."
-          }
+          },
+          "scene": "A dynamic where you feel 'addicted' to a partner who treats you badly, often because of Intermittent Reinforcement."
         },
         {
           "exerciseId": "A5-1-P3-E10",

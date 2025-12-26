@@ -208,7 +208,7 @@
         {
           "exerciseId": "B1-1-P3-E8",
           "type": "reverse-scenario",
-          "answer": "Using phrases like 'As you sit here...', 'As you listen to me...', 'Because you are reading this...' to force agreement.",
+          "scene": "Using phrases like 'As you sit here...', 'As you listen to me...', 'Because you are reading this...' to force agreement.",
           "question": "What is this technique?",
           "options": [
             "Utilization / Truisms",

@@ -205,7 +205,6 @@
         {
           "exerciseId": "A4-2-P3-E8",
           "type": "reverse-scenario",
-          "answer": "A fleeting micro-expression of contempt or boredom that appears when they think you aren't looking.",
           "question": "What is this?",
           "options": [
             "The Mask Slip",
@@ -218,7 +217,8 @@
           "feedback": {
             "correct": "Correct. Maintaining the 'Nice Person' mask is hard work. When they relax, the true face (contempt/emptiness) shows.",
             "incorrect": "It's not a smile. It's the crack in the armor."
-          }
+          },
+          "scene": "A fleeting micro-expression of contempt or boredom that appears when they think you aren't looking."
         },
         {
           "exerciseId": "A4-2-P3-E9",

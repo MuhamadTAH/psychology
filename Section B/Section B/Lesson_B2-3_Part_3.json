@@ -204,7 +204,6 @@
         {
           "exerciseId": "B2-3-P3-E8",
           "type": "reverse-scenario",
-          "answer": "Introducing a third, inferior option (Option C) that is similar to Option B, but worse, to make Option B look like the winner.",
           "question": "What is this specific effect?",
           "options": [
             "Asymmetric Dominance Effect (The Decoy)",
@@ -217,7 +216,8 @@
           "feedback": {
             "correct": "Correct. Option C is dominated by B. It exists only to push you to B. It is useless on its own.",
             "incorrect": "It is the technical term for the Decoy Effect."
-          }
+          },
+          "scene": "Introducing a third, inferior option (Option C) that is similar to Option B, but worse, to make Option B look like the winner."
         },
         {
           "exerciseId": "B2-3-P3-E9",

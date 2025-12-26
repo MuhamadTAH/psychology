@@ -200,7 +200,6 @@
         {
           "exerciseId": "A1-3-P2-E11",
           "type": "reverse-scenario",
-          "answer": "A personality trait marked by a high sense of self-importance, a need for admiration, and a lack of empathy.",
           "question": "This is the definition of what 'Dark Triad' trait?",
           "options": [
             "Machiavellianism",
@@ -210,7 +209,8 @@
           ],
           "correct": "Narcissism",
           "difficulty": "medium",
-          "explanation": "We will spend a *lot* of time on Narcissism, as it's one of the most common sources of manipulation in personal relationships."
+          "explanation": "We will spend a *lot* of time on Narcissism, as it's one of the most common sources of manipulation in personal relationships.",
+          "scene": "A personality trait marked by a high sense of self-importance, a need for admiration, and a lack of empathy."
         },
         {
           "exerciseId": "A1-3-P2-E12",

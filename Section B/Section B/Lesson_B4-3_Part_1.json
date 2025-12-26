@@ -172,7 +172,6 @@
         {
           "exerciseId": "B4-3-P1-E7",
           "type": "reverse-scenario",
-          "answer": "Creating a false problem (e.g., 'Your computer has a virus!') so the victim pays for help they don't need.",
           "question": "What is this?",
           "options": [
             "The Manufactured Crisis",
@@ -185,7 +184,8 @@
           "feedback": {
             "correct": "Correct. The virus isn't real. The fear is real. The payment is real.",
             "incorrect": "It is a scam based on fabricating a threat."
-          }
+          },
+          "scene": "Creating a false problem (e.g., 'Your computer has a virus!') so the victim pays for help they don't need."
         }
       ]
     }

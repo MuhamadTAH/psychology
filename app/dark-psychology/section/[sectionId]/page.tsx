@@ -69,23 +69,48 @@ export default function SectionPage() {
   const params = useParams();
   const sectionId = params.sectionId as string;
 
-  const { user } = useUser();
+  const { user, isLoaded, isSignedIn } = useUser();
   const userEmail = user?.primaryEmailAddress?.emailAddress;
+  const shouldLoad = isLoaded && isSignedIn;
 
-  const progress = useQuery(api.lessons.getUserProgress, userEmail ? { email: userEmail } : "skip");
+  const progress = useQuery(api.lessons.getUserProgress, shouldLoad && userEmail ? { email: userEmail } : "skip");
+  useEffect(() => {
+    console.log('[DP MAP] progress loaded', {
+      userEmail,
+      progressCount: progress ? progress.length : 'skip/undefined',
+      sample: progress?.slice(0, 10)?.map(p => ({
+        id: p._id,
+        lessonNumber: p.lessonNumber,
+        darkPsychLessonId: p.darkPsychLessonId,
+        isCompleted: p.isCompleted,
+        completedStages: p.completedStages,
+        currentPart: p.currentPart,
+        completedParts: p.completedParts,
+        reviewedParts: p.reviewedParts,
+      })),
+    });
+  }, [progress, userEmail]);
 
-  // Step: Initialize click sound effect
-  // Play a satisfying click sound when user interacts with buttons
-  const playClickSound = () => {
+  // Step: Pre-load click sound for instant playback
+  // Loading sound once makes it play immediately when clicked
+  const [buttonSound] = useState(() => {
     if (typeof window !== 'undefined') {
-      const clickSound = new Audio('/sounds/button-click.mp3');
-      clickSound.volume = 0.5; // Medium volume for button clicks
-      clickSound.play().catch(() => {});
+      const sound = new Audio('/sounds/button-click.mp3');
+      sound.volume = 0.5;
+      return sound;
+    }
+    return null;
+  });
+
+  const playClickSound = () => {
+    if (buttonSound) {
+      buttonSound.currentTime = 0; // Reset to start
+      buttonSound.play().catch(() => {});
     }
   };
 
   // Step: Load all Dark Psychology lessons from database
-  const dbLessons = useQuery(api.lessons.getAllDarkPsychologyLessons);
+  const dbLessons = useQuery(api.lessons.getAllDarkPsychologyLessons, shouldLoad ? {} : "skip");
 
   // Step: Mutation to delete all lessons in this section
   const deleteAllInSection = useMutation(api.darkPsychology.deleteAllLessonsInSection);
@@ -290,7 +315,21 @@ export default function SectionPage() {
       if (partProgress?.isCompleted) {
         completedParts.push(partNum);
       }
+
+      console.log('[DP MAP] part check', {
+        lessonId,
+        partKey,
+        found: !!partProgress,
+        isCompleted: partProgress?.isCompleted,
+      });
     }
+
+    console.log('[DP MAP] completedParts', {
+      lessonId,
+      totalParts,
+      completedParts,
+      progressCount: progress?.length ?? 0,
+    });
 
     return completedParts;
   };

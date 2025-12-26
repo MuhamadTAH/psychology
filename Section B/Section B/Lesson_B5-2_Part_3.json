@@ -206,7 +206,6 @@
         {
           "exerciseId": "B5-2-P3-E8",
           "type": "reverse-scenario",
-          "answer": "Using a 'Fake Crisis' to force a victim to bypass security protocols (e.g., 'The server is melting down, let me in!').",
           "question": "What is this Social Engineering tactic?",
           "options": [
             "Urgency Hacking",
@@ -219,7 +218,8 @@
           "feedback": {
             "correct": "Correct. Urgency overrides protocol. The 'Crisis' is the lever used to pry open the door.",
             "incorrect": "It relies on the target's desire to be helpful in a crisis."
-          }
+          },
+          "scene": "Using a 'Fake Crisis' to force a victim to bypass security protocols (e.g., 'The server is melting down, let me in!')."
         },
         {
           "exerciseId": "B5-2-P3-E9",

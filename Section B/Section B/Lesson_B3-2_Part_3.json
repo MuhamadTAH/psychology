@@ -202,7 +202,6 @@
         {
           "exerciseId": "B3-2-P3-E8",
           "type": "reverse-scenario",
-          "answer": "Creating a fake email from the 'CEO' asking for an urgent wire transfer.",
           "question": "What is this Social Engineering attack?",
           "options": [
             "CEO Fraud / Whaling",
@@ -215,7 +214,8 @@
           "feedback": {
             "correct": "Correct. It relies entirely on Authority Bias. Employees are afraid to say 'No' to the CEO's urgent request.",
             "incorrect": "Phishing is general. Whaling targets big fish using authority."
-          }
+          },
+          "scene": "Creating a fake email from the 'CEO' asking for an urgent wire transfer."
         },
         {
           "exerciseId": "B3-2-P3-E9",
