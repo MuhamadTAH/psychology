@@ -85,10 +85,17 @@ export default function YourLessonPage() {
     lessonCategory === 'dark-psychology' ? {} : "skip"
   );
 
-  const loseHeartMutation = useMutation(api.gamification.loseHeart);
+  // Step: Setup Convex mutations for gamification
+  // Heart deduction uses V2 which respects premium status
+  const loseHeartMutation = useMutation(api.gamification.loseHeartV2);
   const addXPMutation = useMutation(api.gamification.addXP);
   const updateStreakMutation = useMutation(api.gamification.updateStreak);
   const updateLessonProgressMutation = useMutation(api.lessons.updateLessonProgress);
+
+  // Step: Query subscription status to check if user is premium
+  // Premium users get unlimited hearts displayed as ∞
+  const subscriptionData = useQuery(api.gamification.getSubscriptionStatus, userEmail ? { email: userEmail } : "skip");
+  const isPremium = subscriptionData?.isPremium ?? false;
 
   // Step 4: Initialize lesson from localStorage
   // Get the current lesson number and user email
@@ -306,7 +313,9 @@ export default function YourLessonPage() {
     return progress.some(p => p.lessonNumber === currentLessonNumber && p.isCompleted);
   };
 
-  const canAnswer = (userStats?.hearts || 5) > 0 || isLessonAlreadyCompleted();
+  // Step: Check if user can answer questions
+  // Premium users always can answer, free users need hearts, completed lessons are reviewable
+  const canAnswer = isPremium || (userStats?.hearts || 5) > 0 || isLessonAlreadyCompleted();
 
   // ✅ In this section we achieved:
   // Loaded all lesson data and combined questions from practice and quiz into one array
@@ -608,7 +617,9 @@ export default function YourLessonPage() {
             {/* Hearts Counter - ⚡ style */}
             <div className="flex items-center gap-1">
               <span className="text-2xl">⚡</span>
-              <span className="text-white font-bold text-lg">{userStats?.hearts || 5}</span>
+              <span className="text-white font-bold text-lg">
+                {isPremium ? "∞" : (userStats?.hearts || 5)}
+              </span>
             </div>
           </div>
         </div>
