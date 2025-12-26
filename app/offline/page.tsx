@@ -4,10 +4,20 @@
 
 "use client";
 
+import { useRouter } from 'next/navigation';
+
 // Force dynamic rendering - prevent static generation
 export const dynamic = 'force-dynamic';
+export const dynamicParams = true;
+export const revalidate = 0;
 
 export default function OfflinePage() {
+  const router = useRouter();
+
+  const handleRetry = () => {
+    router.refresh();
+  };
+
   return (
     <div className="min-h-screen bg-[#1F2937] flex items-center justify-center p-8">
       <div className="text-center max-w-md">
@@ -18,7 +28,7 @@ export default function OfflinePage() {
           It looks like you&apos;ve lost your internet connection. Please check your network and try again.
         </p>
         <button
-          onClick={() => window.location.reload()}
+          onClick={handleRetry}
           className="bg-[#58CC02] hover:bg-[#46A302] text-white font-bold py-3 px-8 rounded-xl transition-colors"
         >
           Try Again

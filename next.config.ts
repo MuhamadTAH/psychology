@@ -19,6 +19,9 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
 
+  // Disable static page generation export
+  output: 'standalone',
+
   // Step 2: Configure headers for PWA
   async headers() {
     return [
