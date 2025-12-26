@@ -22,6 +22,9 @@ const nextConfig: NextConfig = {
   // Disable static page generation export
   output: 'standalone',
 
+  // Fix workspace root warning
+  outputFileTracingRoot: require('path').join(__dirname),
+
   // Step 2: Configure headers for PWA
   async headers() {
     return [
