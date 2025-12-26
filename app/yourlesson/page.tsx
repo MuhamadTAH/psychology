@@ -984,7 +984,7 @@ export default function YourLessonPage() {
 
   // Step 9: Handle matching question clicks
   // Check if the selected pair is correct for matching questions
-  const handleMatchClick = (columnAId: string, columnBId: string) => {
+  const handleMatchClick = async (columnAId: string, columnBId: string) => {
     const correctPairs = currentQuestion?.correctPairs || {};
 
     if (correctPairs[columnAId] === columnBId) {
