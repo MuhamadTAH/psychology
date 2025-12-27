@@ -361,7 +361,6 @@ onclone: (clonedDoc) => {
         },
       });
       const imgData = canvas.toDataURL("image/png");
-      `);
       const pdf = new jsPDF({
         orientation: "portrait",
         unit: "mm",
@@ -379,7 +378,6 @@ onclone: (clonedDoc) => {
       pdf.text(`Time Range: ${timeRange} days`, 10, 21);
       const imgWidth = 190;
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
-      }mm`);
 
       let heightLeft = imgHeight;
       let position = 25;
