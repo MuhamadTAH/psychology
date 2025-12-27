@@ -1320,8 +1320,8 @@ export default function WelcomePage() {
               // Step: Open Paddle checkout overlay
               // Select the correct price ID based on selected plan
               const priceId = selectedPlan === 'annual'
-                ? 'pri_01kdebw86anasb9gk72jq604vp'  // Annual plan
-                : 'pri_01kdeb8gbzrfrcfhp9shj1ymjk'; // Monthly plan
+                ? 'pri_01kdfxxqtv3bg6qsq9fvr9srdh'  // Annual/Yearly plan (sandbox)
+                : 'pri_01kdfxwtqhwv2femmzdnkppd7h'; // Monthly plan (sandbox)
 
               if (window.Paddle) {
                 window.Paddle.Checkout.open({
