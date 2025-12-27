@@ -397,15 +397,11 @@ onclone: (clonedDoc) => {
       }
 
       const filename = `dashboard-${new Date().toISOString().split('T')[0]}.pdf`;
-      `);
       pdf.save(filename);
       // Show success message
       alert(`PDF exported successfully!\nFilename: ${filename}\nPages: ${pageCount}`);
     } catch (error) {
-      .name,
-        message: (error as Error).message,
-        stack: (error as Error).stack,
-      });
+      // PDF export failed
       alert(`Failed to export dashboard.\n\nError: ${(error as Error).message}\n\nCheck browser console for details.`);
     }
   };

@@ -83,7 +83,7 @@ export default function SectionPage() {
 
   // Step: Query subscription status to check if user is premium
   // Free users can only access lessons 1-5, premium users get all lessons
-  const subscriptionData = useQuery(api.gamification.getSubscriptionStatus, shouldLoad && userEmail ? { email: userEmail } : "skip");
+  const subscriptionData = useQuery(api.gamification.getSubscriptionStatus);
   const isPremium = subscriptionData?.isPremium ?? false;
 
   useEffect(() => {
