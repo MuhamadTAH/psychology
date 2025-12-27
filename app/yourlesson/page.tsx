@@ -1290,6 +1290,7 @@ export default function YourLessonPage() {
                         playsInline
                         style={{ opacity: 1 }}
                       >
+                        <source src="/animations/character-standing.mp4" type="video/mp4" />
                         <source src="/animations/character-standing.webm" type="video/webm" />
                       </video>
                     </div>
@@ -1401,6 +1402,7 @@ export default function YourLessonPage() {
                         playsInline
                         style={{ opacity: 1 }}
                       >
+                        <source src="/animations/character-standing.mp4" type="video/mp4" />
                         <source src="/animations/character-standing.webm" type="video/webm" />
                       </video>
                     </div>
@@ -1527,6 +1529,7 @@ export default function YourLessonPage() {
                         playsInline
                         style={{ opacity: 1 }}
                       >
+                        <source src="/animations/character-standing.mp4" type="video/mp4" />
                         <source src="/animations/character-standing.webm" type="video/webm" />
                       </video>
                     </div>

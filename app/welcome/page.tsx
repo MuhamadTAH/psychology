@@ -226,6 +226,7 @@ export default function WelcomePage() {
             playsInline
             className="w-64 h-64 object-contain glitch-video cursor-pointer"
           >
+            <source src="/logo-animation.mp4" type="video/mp4" />
             <source src="/logo-animation.webm" type="video/webm" />
           </video>
           {/* Skip hint */}
@@ -298,6 +299,7 @@ export default function WelcomePage() {
               }
             }}
           >
+            <source src="/animations/character-standing.mp4" type="video/mp4" />
             <source src="/animations/character-standing.webm" type="video/webm" />
           </video>
         </div>
@@ -583,6 +585,7 @@ export default function WelcomePage() {
               }
             }}
           >
+            <source src="/animations/character-standing.mp4" type="video/mp4" />
             <source src="/animations/character-standing.webm" type="video/webm" />
           </video>
         </div>
@@ -652,6 +655,7 @@ export default function WelcomePage() {
               }
             }}
           >
+            <source src="/animations/character-standing.mp4" type="video/mp4" />
             <source src="/animations/character-standing.webm" type="video/webm" />
           </video>
         </div>
@@ -706,6 +710,7 @@ export default function WelcomePage() {
               }
             }}
           >
+            <source src="/animations/character-standing.mp4" type="video/mp4" />
             <source src="/animations/character-standing.webm" type="video/webm" />
           </video>
         </div>
@@ -902,7 +907,8 @@ export default function WelcomePage() {
               playsInline
               className="w-72 h-72 md:w-96 md:h-96 object-contain"
             >
-              <source src="/animations/character-standing.webm" type="video/webm" />
+              <source src="/animations/character-standing.mp4" type="video/mp4" />
+            <source src="/animations/character-standing.webm" type="video/webm" />
             </video>
           </div>
 
@@ -943,6 +949,7 @@ export default function WelcomePage() {
             playsInline
             className="w-72 h-72 md:w-96 md:h-96 object-contain"
           >
+            <source src="/animations/character-standing.mp4" type="video/mp4" />
             <source src="/animations/character-standing.webm" type="video/webm" />
           </video>
         </div>
@@ -1067,6 +1074,7 @@ export default function WelcomePage() {
               }
             }}
           >
+            <source src="/animations/character-standing.mp4" type="video/mp4" />
             <source src="/animations/character-standing.webm" type="video/webm" />
           </video>
         </div>
@@ -1202,6 +1210,7 @@ export default function WelcomePage() {
                   className="w-24 h-24 mx-auto object-contain"
                   style={{ filter: 'hue-rotate(0deg) saturate(200%) brightness(0.8) sepia(100%) saturate(500%) hue-rotate(-50deg)' }} // Very Red
                 >
+                  <source src="/welcome-animation.mp4" type="video/mp4" />
                   <source src="/welcome-animation.webm" type="video/webm" />
                 </video>
               </div>
