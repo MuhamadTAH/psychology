@@ -1321,32 +1321,47 @@ export default function WelcomePage() {
 
           {/* Primary Action */}
           <button
-            onClick={() => {
-              // Step: Open Paddle checkout overlay
-              // Select the correct price ID based on selected plan
-              const priceId = selectedPlan === 'annual'
-                ? 'pri_01kdfxxqtv3bg6qsq9fvr9srdh'  // Annual/Yearly plan (sandbox)
-                : 'pri_01kdfxwtqhwv2femmzdnkppd7h'; // Monthly plan (sandbox)
+            onClick={async () => {
+              // Step: Check if we're in test mode (bypass Paddle for development)
+              const isTestMode = process.env.NEXT_PUBLIC_PAYMENT_TEST_MODE === 'true';
 
-              if (window.Paddle) {
-                window.Paddle.Checkout.open({
-                  items: [{ priceId, quantity: 1 }],
-                  successCallback: async (data: any) => {
-                    // Step: Payment successful - save subscription to database
-                    try {
-                      await setSubscription({
-                        status: "premium",
-                        plan: selectedPlan,
-                      });
-                      router.push("/dark-psychology-dashboard");
-                    } catch (error) {
-                      router.push("/dark-psychology-dashboard");
-                    }
-                  },
-                  closeCallback: () => {
-                    // User closed the checkout without completing payment
-                  },
-                });
+              if (isTestMode) {
+                // Test mode: Skip Paddle, directly grant premium access
+                try {
+                  await setSubscription({
+                    status: "premium",
+                    plan: selectedPlan,
+                  });
+                  router.push("/dark-psychology-dashboard");
+                } catch (error) {
+                  router.push("/dark-psychology-dashboard");
+                }
+              } else {
+                // Production mode: Use real Paddle checkout
+                const priceId = selectedPlan === 'annual'
+                  ? 'pri_01kdfxxqtv3bg6qsq9fvr9srdh'  // Annual/Yearly plan (sandbox)
+                  : 'pri_01kdfxwtqhwv2femmzdnkppd7h'; // Monthly plan (sandbox)
+
+                if (window.Paddle) {
+                  window.Paddle.Checkout.open({
+                    items: [{ priceId, quantity: 1 }],
+                    successCallback: async (data: any) => {
+                      // Step: Payment successful - save subscription to database
+                      try {
+                        await setSubscription({
+                          status: "premium",
+                          plan: selectedPlan,
+                        });
+                        router.push("/dark-psychology-dashboard");
+                      } catch (error) {
+                        router.push("/dark-psychology-dashboard");
+                      }
+                    },
+                    closeCallback: () => {
+                      // User closed the checkout without completing payment
+                    },
+                  });
+                }
               }
             }}
             className="w-full border-2 border-white bg-white text-black hover:bg-black hover:text-white py-4 px-8 text-sm font-mono uppercase tracking-widest transition-colors mb-4 animate-pulse"
