@@ -15,6 +15,11 @@ export const followUser = mutation({
     const identity = await ctx.auth.getUserIdentity();
     if (!identity) throw new Error("Not authenticated");
 
+    // Prevent following self
+    if (args.friendId === identity.subject) {
+      throw new Error("Cannot follow yourself");
+    }
+
     // Get current user
     const currentUser = await ctx.db
       .query("users")
@@ -47,6 +52,11 @@ export const unfollowUser = mutation({
   handler: async (ctx, args) => {
     const identity = await ctx.auth.getUserIdentity();
     if (!identity) throw new Error("Not authenticated");
+
+    // Prevent unfollowing self (no-op)
+    if (args.friendId === identity.subject) {
+      return { success: false, message: "Cannot unfollow yourself" };
+    }
 
     // Get current user
     const currentUser = await ctx.db

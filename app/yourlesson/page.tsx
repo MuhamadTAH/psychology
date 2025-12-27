@@ -1886,7 +1886,7 @@ export default function YourLessonPage() {
                   return (
                     <div
                       key={index}
-                      onClick={() => }
+                      onClick={() => { /* Slot click handler */ }}
                       className={`min-w-[80px] md:min-w-[100px] h-12 md:h-14 rounded-xl border-2 flex items-center justify-center transition-all duration-300 ease-in-out ${word
                         ? isChecked
                           ? selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim()

@@ -5,6 +5,12 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
 
+const requireIdentity = async (ctx: any) => {
+  const identity = await ctx.auth.getUserIdentity();
+  if (!identity) throw new Error("Not authenticated");
+  return identity;
+};
+
 // Step 1: Define shop items and their costs
 export const SHOP_ITEMS = {
   REFILL_HEARTS: {
@@ -33,8 +39,7 @@ export const SHOP_ITEMS = {
 // Step 2: Purchase hearts refill (restore to 5 hearts)
 export const purchaseHeartsRefill = mutation({
   handler: async (ctx) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+    const identity = await requireIdentity(ctx);
 
     const user = await ctx.db
       .query("users")
@@ -69,8 +74,7 @@ export const purchaseHeartsRefill = mutation({
 // Step 3: Purchase streak freeze (protects streak for 1 day)
 export const purchaseStreakFreeze = mutation({
   handler: async (ctx) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+    const identity = await requireIdentity(ctx);
 
     const user = await ctx.db
       .query("users")
@@ -105,8 +109,7 @@ export const purchaseStreakFreeze = mutation({
 // Step 4: Purchase double XP boost (2x XP for next lesson)
 export const purchaseDoubleXP = mutation({
   handler: async (ctx) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+    const identity = await requireIdentity(ctx);
 
     const user = await ctx.db
       .query("users")

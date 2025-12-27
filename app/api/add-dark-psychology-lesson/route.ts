@@ -633,8 +633,6 @@ export async function POST(request: Request) {
         l => l.data.lessonId && newLesson.lessonId && l.data.lessonId === newLesson.lessonId
       );
 
-      ));
-
       if (existingLessonIndex !== -1) {
 
         // MERGE: This is a new part for an existing lesson

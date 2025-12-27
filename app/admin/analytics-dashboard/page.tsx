@@ -354,10 +354,9 @@ onclone: (clonedDoc) => {
           const allText = clonedDoc.documentElement.innerHTML;
           const labMatches = allText.match(/lab\([^)]+\)/g);
           if (labMatches && labMatches.length > 0) {
-             references in DOM HTML!`);
-            );
+            // Lab color references found in DOM HTML
           } else {
-             colors found in final DOM HTML");
+            // No lab colors found in final DOM HTML
           }
         },
       });

@@ -1,11 +1,16 @@
 import { v } from "convex/values";
 import { query, mutation } from "./_generated/server";
 
+const requireIdentity = async (ctx: any) => {
+  const identity = await ctx.auth.getUserIdentity();
+  if (!identity) throw new Error("Not authenticated");
+  return identity;
+};
+
 // Get leaderboard for user's current league
 export const getLeagueLeaderboard = query({
   handler: async (ctx) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return [];
+    const identity = await requireIdentity(ctx);
 
     const user = await ctx.db
       .query("users")
@@ -60,8 +65,7 @@ export const getLeagueLeaderboard = query({
 // Get user's current rank
 export const getUserRank = query({
   handler: async (ctx) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return null;
+    const identity = await requireIdentity(ctx);
 
     const user = await ctx.db
       .query("users")
@@ -93,8 +97,7 @@ export const getUserRank = query({
 // Get user's league info (league name and end date)
 export const getUserLeagueInfo = query({
   handler: async (ctx) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return null;
+    const identity = await requireIdentity(ctx);
 
     const user = await ctx.db
       .query("users")
@@ -124,8 +127,7 @@ export const initializeUserLeague = mutation({
     email: v.string(), // Add this
   },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+    const identity = await requireIdentity(ctx);
 
     // Step 1: Get or create user in Convex database
     let user = await ctx.db
@@ -198,8 +200,7 @@ export const updateWeeklyXP = mutation({
     xpToAdd: v.number(),
   },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+    const identity = await requireIdentity(ctx);
 
     const user = await ctx.db
       .query("users")
@@ -228,8 +229,7 @@ export const updateWeeklyXP = mutation({
 // Fix/sync user's weeklyXP with their current total XP (one-time fix)
 export const syncWeeklyXP = mutation({
   handler: async (ctx) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+    const identity = await requireIdentity(ctx);
 
     const user = await ctx.db
       .query("users")
@@ -258,8 +258,7 @@ export const syncWeeklyXP = mutation({
 // Seed test users for leagues (for testing/demo purposes)
 export const seedTestUsers = mutation({
   handler: async (ctx) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+    const identity = await requireIdentity(ctx);
 
     const user = await ctx.db
       .query("users")

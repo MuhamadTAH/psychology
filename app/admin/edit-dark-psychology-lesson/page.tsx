@@ -96,7 +96,6 @@ function EditLessonContent() {
         }
       } else if (lessonNumber) {
         if (updatedLesson.number !== parseInt(lessonNumber!)) {
-          );
           setError("Cannot change lesson number. Delete and create new lesson instead.");
           return;
         }

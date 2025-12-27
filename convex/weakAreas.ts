@@ -5,18 +5,23 @@
 import { v } from "convex/values";
 import { query } from "./_generated/server";
 
+const requireIdentity = async (ctx: any) => {
+  const identity = await ctx.auth.getUserIdentity();
+  if (!identity) throw new Error("Not authenticated");
+  return identity;
+};
+
 // Step 1: Get all mistakes from user's progress
 export const getUserMistakes = query({
   handler: async (ctx) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return [];
+    const identity = await requireIdentity(ctx);
 
     const user = await ctx.db
       .query("users")
       .withIndex("by_email", (q) => q.eq("email", identity.email!))
       .first();
 
-    if (!user) return [];
+    if (!user) throw new Error("User not found");
 
     // Get all progress records with mistakes
     const allProgress = await ctx.db
@@ -47,15 +52,14 @@ export const getUserMistakes = query({
 // Step 3: Get mistake statistics (most common wrong answers)
 export const getMistakeStats = query({
   handler: async (ctx) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return { totalMistakes: 0, mostCommonMistakes: [] };
+    const identity = await requireIdentity(ctx);
 
     const user = await ctx.db
       .query("users")
       .withIndex("by_email", (q) => q.eq("email", identity.email!))
       .first();
 
-    if (!user) return { totalMistakes: 0, mostCommonMistakes: [] };
+    if (!user) throw new Error("User not found");
 
     // Get all progress records
     const allProgress = await ctx.db
