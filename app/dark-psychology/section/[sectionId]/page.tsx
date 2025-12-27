@@ -87,17 +87,7 @@ export default function SectionPage() {
   const isPremium = subscriptionData?.isPremium ?? false;
 
   useEffect(() => {
-    ?.map(p => ({
-        id: p._id,
-        lessonNumber: p.lessonNumber,
-        darkPsychLessonId: p.darkPsychLessonId,
-        isCompleted: p.isCompleted,
-        completedStages: p.completedStages,
-        currentPart: p.currentPart,
-        completedParts: p.completedParts,
-        reviewedParts: p.reviewedParts,
-      })),
-    });
+    // Progress data updated
   }, [progress, userEmail]);
 
   // Step: Pre-load click sound for instant playback

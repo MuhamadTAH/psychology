@@ -343,10 +343,11 @@ onclone: (clonedDoc) => {
               }
 
             } catch (err) {
+              // Error catching problematic element
             }
           });
           if (problematicElements.length > 0) {
-            );
+            // Found problematic elements with lab colors
           }
 
           // Final check: Look for any remaining lab colors in the DOM

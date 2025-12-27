@@ -408,9 +408,6 @@ function UploadPageDisabled() {
         if (lessonsData && lessonsData.length > 0) {
           // Save lessons to Convex
           try {
-             + "...",
-              lessonCount: lessonsData.length
-            });
             const userEmail = localStorage.getItem('userEmail') || undefined;
             const result = await saveUploadAndLessons({
               userText: inputMessage,

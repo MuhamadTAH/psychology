@@ -36,6 +36,8 @@ export const signup = mutation({
     school: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    // Disable signup in favor of Clerk authentication
+    throw new Error("Email/password signup is disabled. Please sign in with Clerk.");
     // Check if user already exists
     const existingUser = await ctx.db
       .query("users")
@@ -86,6 +88,8 @@ export const signin = mutation({
     password: v.string(),
   },
   handler: async (ctx, args) => {
+    // Disable signin in favor of Clerk authentication
+    throw new Error("Email/password signin is disabled. Please use Clerk.");
     // Find user by email
     const user = await ctx.db
       .query("users")

@@ -295,7 +295,6 @@ function convertComprehensiveExercise(exercise: any): any {
         wrongOptions: fillInWrongOptions
       };
 
-      );
       return result;
 
       // ✅ In this section we achieved:

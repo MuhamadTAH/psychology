@@ -45,11 +45,6 @@ function EditLessonContent() {
       if (lessonParts.length > 0) {
         // Sort parts by lessonPart number
         lessonParts.sort((a: any, b: any) => (a.lessonPart || 0) - (b.lessonPart || 0));
-         => p.lessonPart),
-          sectionId: lessonParts[0].sectionId,
-          unitId: lessonParts[0].unitId,
-          title: lessonParts[0].lessonTitle
-        });
 
         // For multi-part lessons, show all parts
         if (lessonParts.length === 1) {
