@@ -29,11 +29,11 @@ export default function WelcomePage() {
 
   // Step: Initialize Paddle on component mount
   // This loads Paddle payment system with sandbox credentials
-  // Note: Sandbox/production mode is determined by the token prefix (live_ vs test_)
+  // Sandbox mode uses test_ token prefix, production uses live_ prefix
   useEffect(() => {
     if (typeof window !== 'undefined' && window.Paddle) {
       window.Paddle.Initialize({
-        token: 'live_7d279f61a3499fed520f7cd8c08',
+        token: 'test_ccebce130edda8da55f5ecd309b',
       });
     }
   }, []);
