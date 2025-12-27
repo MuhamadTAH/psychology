@@ -74,7 +74,6 @@ export async function POST(request: Request) {
     }
 
     if (filteredLessons.length === lessons.length) {
-      ));
       return NextResponse.json({ error: "Lesson not found" }, { status: 404 });
     }
 

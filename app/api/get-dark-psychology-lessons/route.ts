@@ -63,8 +63,7 @@ export async function GET() {
               const lesson = JSON.parse(lessonStr);
               lessons.push(lesson);
             } catch (e) {
-
-              );
+              // Error parsing lesson - skip it
             }
             currentStart = -1;
           }

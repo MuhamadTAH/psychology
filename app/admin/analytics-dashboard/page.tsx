@@ -332,8 +332,6 @@ onclone: (clonedDoc) => {
               // CRITICAL: Also fix inline style attribute (raw HTML)
               const styleAttr = el.getAttribute('style');
               if (styleAttr && (styleAttr.includes('lab(') || styleAttr.includes('lch(') || styleAttr.includes('oklch('))) {
-                }...`);
-
                 // Remove all lab/lch/oklch color functions from inline style
                 let fixedStyle = styleAttr
                   .replace(/lab\([^)]+\)/g, '#000000')

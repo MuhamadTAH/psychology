@@ -261,7 +261,6 @@ function convertComprehensiveExercise(exercise: any): any {
       // Step 1: Handle 'correct', 'answer', or 'answers' fields
       // This supports both single-blank and multi-blank questions
       const correctValue = exercise.correct || exercise.answer || exercise.answers;
-      );
 
       // Step 2: Preserve all answers for multi-blank questions
       // Convert single answer to array format for consistency

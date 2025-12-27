@@ -34,7 +34,6 @@ function EditLessonContent() {
     if (lessonNumber || lessonId) {
       // Step: Find ALL parts of the lesson by lessonId
       // Multi-part lessons are stored as separate documents (Part 1, Part 2, etc.)
-       => l.lessonId));
 
       const lessonParts = lessonId
         ? dbLessons.filter((l: any) => {
@@ -42,7 +41,6 @@ function EditLessonContent() {
           return matches;
         })
         : [dbLessons.find((l: any) => l.number === parseInt(lessonNumber!))].filter(Boolean);
-       => ({ lessonId: p.lessonId, part: p.lessonPart })));
 
       if (lessonParts.length > 0) {
         // Sort parts by lessonPart number
