@@ -218,21 +218,17 @@ export default function WelcomePage() {
   if (step === "coldOpen") {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center">
-        <div className="flex justify-center relative" onClick={() => setStep("identityVerification")}>
+        <div className="flex justify-center relative">
           <video
             autoPlay
-            loop
             muted
             playsInline
-            className="w-64 h-64 object-contain glitch-video cursor-pointer"
+            className="w-64 h-64 object-contain glitch-video"
+            onEnded={() => setStep("identityVerification")}
           >
             <source src="/logo-animation.mp4" type="video/mp4" />
             <source src="/logo-animation.webm" type="video/webm" />
           </video>
-          {/* Skip hint */}
-          <div className="absolute bottom-0 text-gray-700 text-xs font-mono uppercase tracking-widest animate-pulse">
-            Click to continue
-          </div>
         </div>
         {/* CSS for glitch effect, specific to coldOpen */}
         <style jsx global>{`
