@@ -28,12 +28,12 @@ export default function WelcomePage() {
   const [step, setStep] = useState<"coldOpen" | "identityVerification" | "loginForm" | "phase1_awareness" | "phase1_solution" | "phase1_ethics" | "phase2_assessment" | "phase3_calculation" | "phase3_commitment" | "phase3_paywall" | "phase3_lockdown" | "phase3_result">("coldOpen");
 
   // Step: Initialize Paddle on component mount
-  // This loads Paddle payment system with our sandbox credentials
+  // This loads Paddle payment system with sandbox credentials
+  // Note: Sandbox/production mode is determined by the token prefix (live_ vs test_)
   useEffect(() => {
     if (typeof window !== 'undefined' && window.Paddle) {
       window.Paddle.Initialize({
         token: 'live_7d279f61a3499fed520f7cd8c08',
-        environment: 'sandbox', // Use sandbox for testing
       });
     }
   }, []);
