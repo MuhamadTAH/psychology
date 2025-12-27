@@ -215,7 +215,6 @@ export function FinalScore({
                       email: userEmail,
                     });
                   } catch (error) {
-                    console.error("[CLAIM XP] Error completing lesson:", error);
                   }
                 }
 

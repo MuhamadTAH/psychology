@@ -1,0 +1,60 @@
+<svg width="1024" height="500" viewBox="0 0 1024 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="darkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glowEffect">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="500" fill="url(#darkGradient)"/>
+
+  <!-- Subtle Scanlines Effect -->
+  <pattern id="scanlines" patternUnits="userSpaceOnUse" width="100%" height="2">
+    <rect width="100%" height="1" fill="rgba(18, 16, 16, 0)" />
+    <rect y="1" width="100%" height="1" fill="rgba(0, 0, 0, 0.25)" />
+  </pattern>
+  <rect width="1024" height="500" fill="url(#scanlines)" opacity="0.1"/>
+
+  <!-- Left Side: Brain Icon with Glow -->
+  <circle cx="200" cy="250" r="80" fill="url(#glowEffect)" opacity="0.5"/>
+  <text x="200" y="280" font-size="120" text-anchor="middle" fill="#ffffff" opacity="0.9">🧠</text>
+
+  <!-- Center: Main Text -->
+  <text x="512" y="200" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="#ffffff" letter-spacing="8">
+    DUOLEARN
+  </text>
+
+  <text x="512" y="260" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="#cccccc" letter-spacing="4">
+    MASTER DARK PSYCHOLOGY
+  </text>
+
+  <text x="512" y="320" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#999999">
+    Learn • Defend • Understand Human Behavior
+  </text>
+
+  <!-- Bottom: Key Features -->
+  <g transform="translate(150, 380)">
+    <text font-family="Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="bold">
+      <tspan x="0" dy="0">✓ 250+ Interactive Lessons</tspan>
+      <tspan x="250" dy="0">✓ Real-World Scenarios</tspan>
+      <tspan x="500" dy="0">✓ Gamified Learning</tspan>
+    </text>
+  </g>
+
+  <!-- Right Side: Shield Icon -->
+  <g transform="translate(824, 250)">
+    <path d="M 0,-60 L 40,-40 L 40,20 C 40,50 20,70 0,80 C -20,70 -40,50 -40,20 L -40,-40 Z"
+          fill="none" stroke="#ffffff" stroke-width="3" opacity="0.7"/>
+    <path d="M -15,0 L -5,15 L 20,-20" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.7"/>
+  </g>
+
+  <!-- Decorative Border -->
+  <rect x="10" y="10" width="1004" height="480" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.2"/>
+</svg>

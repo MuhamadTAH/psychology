@@ -63,8 +63,8 @@ export async function GET() {
               const lesson = JSON.parse(lessonStr);
               lessons.push(lesson);
             } catch (e) {
-              console.error("Failed to parse lesson:", e);
-              console.error("Lesson string:", lessonStr.substring(0, 200));
+
+              );
             }
             currentStart = -1;
           }
@@ -72,13 +72,11 @@ export async function GET() {
       }
     }
 
-    console.log(`Parsed ${lessons.length} lessons from file`);
-
     // Step 4: Return the fresh lessons
     return NextResponse.json({ lessons });
 
   } catch (error) {
-    console.error("Error fetching lessons:", error);
+
     return NextResponse.json({
       error: "Failed to fetch lessons",
       details: error instanceof Error ? error.message : "Unknown error"

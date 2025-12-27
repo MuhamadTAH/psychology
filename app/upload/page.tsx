@@ -115,8 +115,6 @@ function UploadPageDisabled() {
 
             // Check if response contains JSON lessons and save them
             const lessonsData = parseLessonsFromGPT(chatData.reply);
-            console.log("Parsed lessons:", lessonsData);
-
             if (lessonsData && lessonsData.length > 0) {
               try {
                 const userEmail = localStorage.getItem('userEmail') || undefined;
@@ -128,23 +126,19 @@ function UploadPageDisabled() {
                 });
                 alert(`Lessons saved successfully! Created ${lessonsData.length} lessons. Go to Learn page to start.`);
               } catch (error) {
-                console.error("Error saving lessons:", error);
                 alert("Error saving lessons to database");
               }
             } else {
-              console.error("No lessons parsed from GPT response");
               alert("Failed to parse lessons from GPT response");
             }
           }
         } catch (chatErr) {
-          console.error(chatErr);
           alert("Error sending text to GPT");
         } finally {
           setChatLoading(false);
         }
       }
     } catch (err) {
-      console.error(err);
       alert("Error extracting PDF");
     } finally {
       setLoading(false);
@@ -183,8 +177,6 @@ function UploadPageDisabled() {
         lessons = JSON.parse(jsonText);
       } catch (firstError) {
         // If first parse fails, try more aggressive fixes
-        console.log("First parse failed, trying fixes...");
-
         // Try to fix common patterns
         jsonText = jsonText
           .replace(/"\s*\n\s*}/g, '"}')  // Fix missing closing quote
@@ -193,24 +185,17 @@ function UploadPageDisabled() {
 
         try {
           lessons = JSON.parse(jsonText);
-          console.log("Successfully parsed after fixes!");
         } catch (secondError) {
-          console.error("Even after fixes, JSON parsing failed");
           throw secondError;
         }
       }
 
       // Validate that it's an array
       if (!Array.isArray(lessons)) {
-        console.error("Parsed data is not an array");
         return [];
       }
-
-      console.log("Successfully parsed JSON lessons:", lessons);
       return lessons;
     } catch (error) {
-      console.error("Error parsing JSON lessons:", error);
-      console.error("Raw text:", text);
       return [];
     }
   };
@@ -260,7 +245,6 @@ function UploadPageDisabled() {
 
       return questions;
     } catch (error) {
-      console.error("Error parsing quiz:", error);
       return [];
     }
   };
@@ -421,13 +405,10 @@ function UploadPageDisabled() {
 
         // Check if response contains JSON lessons
         const lessonsData = parseLessonsFromGPT(data.reply);
-        console.log("Parsed lessons:", lessonsData);
-
         if (lessonsData && lessonsData.length > 0) {
           // Save lessons to Convex
           try {
-            console.log("Calling saveUploadAndLessons with:", {
-              userText: inputMessage.substring(0, 50) + "...",
+             + "...",
               lessonCount: lessonsData.length
             });
             const userEmail = localStorage.getItem('userEmail') || undefined;
@@ -437,22 +418,17 @@ function UploadPageDisabled() {
               lessons: lessonsData,
               email: userEmail,
             });
-            console.log("Save result:", result);
             alert(`Lessons saved successfully! Created ${lessonsData.length} lessons.`);
             // Navigate to learn page
             router.push('/learn');
           } catch (error: any) {
-            console.error("Error saving lessons:", error);
             alert(`Error saving lessons: ${error.message || error}`);
           }
         } else {
-          console.error("No lessons parsed from GPT response");
           // If no lessons, it might be a regular chat response
-          console.log("Treating as regular chat response");
         }
       }
     } catch (err) {
-      console.error(err);
       alert("Error sending message");
     } finally {
       setChatLoading(false);

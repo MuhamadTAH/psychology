@@ -152,11 +152,8 @@ export function FillInBlankQuestion({
               const { scene, question } = parseSceneAndQuestion(sentence);
 
               // 🔍 DEBUG: Log fill-in-blank parsing
-              console.log('✏️ [FILL-IN-BLANK] === RENDER DEBUG ===');
-              console.log('✏️ [FILL-IN-BLANK] sentence:', sentence);
-              console.log('✏️ [FILL-IN-BLANK] Parsed scene:', scene);
-              console.log('✏️ [FILL-IN-BLANK] Parsed question:', question);
-              console.log('✏️ [FILL-IN-BLANK] Blank format detected:', sentence.includes('___') ? '___' : sentence.includes('(--------)') ? '(--------)' : 'NONE');
+
+               ? '___' : sentence.includes('(--------)') ? '(--------)' : 'NONE');
 
               // If there's a scene, show it first in gray italic
               return (

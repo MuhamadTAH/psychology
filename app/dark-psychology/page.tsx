@@ -19,6 +19,12 @@ export default function DarkPsychologyPage() {
   const userEmail = user?.primaryEmailAddress?.emailAddress;
   const shouldLoad = isLoaded && isSignedIn;
 
+  // Redirect unauthenticated users to sign-in
+  if (isLoaded && !isSignedIn) {
+    router.push("/sign-in");
+    return null;
+  }
+
   // Step 1: Load user progress
   const progress = useQuery(api.lessons.getUserProgress, shouldLoad && userEmail ? { email: userEmail } : "skip");
 

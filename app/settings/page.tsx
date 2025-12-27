@@ -111,7 +111,6 @@ export default function SettingsPage() {
     try {
       await updateAppSettings({ [settingName]: newValue });
     } catch (error) {
-      console.error("Error updating setting:", error);
       setSaveMessage({
         type: "error",
         message: "Failed to save setting. Please try again.",

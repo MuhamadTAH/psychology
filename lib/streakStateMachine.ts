@@ -126,11 +126,8 @@ export function useStreakTimeline(
   // Step 6: Trigger functions for celebrate and milestone
   const triggerCelebrate = useCallback(() => {
     if (!timeline.canTrigger) {
-      console.log('Streak badge: Celebrate trigger blocked by cooldown');
       return;
     }
-
-    console.log('Streak badge: Triggering celebrate animation');
     setTimeline({
       state: 'celebrate',
       progress: 0,
@@ -143,7 +140,6 @@ export function useStreakTimeline(
 
   const triggerMilestone = useCallback((milestoneDay: 5 | 10 | 15 | 20 | 25 | 30) => {
     if (!timeline.canTrigger) {
-      console.log('Streak badge: Milestone trigger blocked by cooldown');
       return;
     }
 
@@ -155,8 +151,6 @@ export function useStreakTimeline(
     else if (milestoneDay === 20) duration = 1700;
     else if (milestoneDay === 25) duration = 1800;
     else if (milestoneDay === 30) duration = 2000;
-
-    console.log(`Streak badge: Triggering milestone ${milestoneDay} animation`);
     setTimeline({
       state: 'milestone',
       progress: 0,

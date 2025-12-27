@@ -236,17 +236,12 @@ export default function AnalyticsDashboardPage() {
   // Step 12: Export dashboard to PDF
   const exportDashboard = async () => {
     if (!dashboardRef.current) {
-      console.error("❌ Dashboard ref is null");
       return;
     }
-
-    console.log("📄 Starting PDF export...");
-
     try {
       // Step 12a: Configure html2canvas with compatibility options
       // ignoreElements skips unsupported elements, allowTaint handles cross-origin issues
       // useCORS enables CORS for images, onclone allows pre-processing the cloned DOM
-      console.log("🎨 Rendering dashboard to canvas...");
       const canvas = await html2canvas(dashboardRef.current, {
         scale: 1.5,
         backgroundColor: "#f8fafc",
@@ -256,7 +251,6 @@ export default function AnalyticsDashboardPage() {
         // Step 12b: Pre-process cloned DOM to convert modern CSS colors
         // This fixes the "lab" color function error by converting to standard formats
 onclone: (clonedDoc) => {
-          console.log("🔧 Pre-processing cloned DOM...");
           const elements = clonedDoc.querySelectorAll('*');
           let colorFixCount = 0;
           const problematicElements: any[] = [];
@@ -277,13 +271,6 @@ onclone: (clonedDoc) => {
 
                 // Log detailed SVG element info
                 if (currentFill.includes('lab') || currentStroke.includes('lab') || currentColor.includes('lab')) {
-                  console.log(`🔍 SVG <${tagName}> #${index}:`, {
-                    fill: currentFill,
-                    stroke: currentStroke,
-                    color: currentColor,
-                    classes: el.className,
-                    id: el.id
-                  });
                   problematicElements.push({ index, tag: tagName, fill: currentFill, stroke: currentStroke });
                 }
 
@@ -335,8 +322,6 @@ onclone: (clonedDoc) => {
               colorProps.forEach(prop => {
                 const value = (styles as any)[prop];
                 if (value && typeof value === 'string' && (value.includes('lab') || value.includes('lch') || value.includes('oklch'))) {
-                  console.log(`⚠️ ${prop}: ${value} on <${el.tagName}> #${index}`);
-
                   // Force override with !important
                   const fallback = prop === 'backgroundColor' ? '#ffffff' : '#000000';
                   el.style.setProperty(prop.replace(/([A-Z])/g, '-$1').toLowerCase(), fallback, 'important');
@@ -347,7 +332,7 @@ onclone: (clonedDoc) => {
               // CRITICAL: Also fix inline style attribute (raw HTML)
               const styleAttr = el.getAttribute('style');
               if (styleAttr && (styleAttr.includes('lab(') || styleAttr.includes('lch(') || styleAttr.includes('oklch('))) {
-                console.log(`🔥 Inline style with lab on <${el.tagName}> #${index}: ${styleAttr.substring(0, 100)}...`);
+                }...`);
 
                 // Remove all lab/lch/oklch color functions from inline style
                 let fixedStyle = styleAttr
@@ -360,35 +345,25 @@ onclone: (clonedDoc) => {
               }
 
             } catch (err) {
-              console.warn(`⚠️ Error processing element #${index}:`, err);
             }
           });
-
-          console.log(`✅ Fixed ${colorFixCount} unsupported colors`);
           if (problematicElements.length > 0) {
-            console.log(`🚨 Found ${problematicElements.length} problematic SVG elements:`, problematicElements.slice(0, 5));
+            );
           }
 
           // Final check: Look for any remaining lab colors in the DOM
-          console.log("🔍 Final scan for remaining lab colors...");
           const allText = clonedDoc.documentElement.innerHTML;
           const labMatches = allText.match(/lab\([^)]+\)/g);
           if (labMatches && labMatches.length > 0) {
-            console.warn(`🚨 STILL FOUND ${labMatches.length} lab() references in DOM HTML!`);
-            console.log("First 10 matches:", labMatches.slice(0, 10));
+             references in DOM HTML!`);
+            );
           } else {
-            console.log("✅ No lab() colors found in final DOM HTML");
+             colors found in final DOM HTML");
           }
         },
       });
-
-      console.log(`✅ Canvas created: ${canvas.width}x${canvas.height}`);
-
-      console.log("🖼️ Converting canvas to image data...");
       const imgData = canvas.toDataURL("image/png");
-      console.log(`✅ Image data created (length: ${imgData.length} chars)`);
-
-      console.log("📋 Creating PDF document...");
+      `);
       const pdf = new jsPDF({
         orientation: "portrait",
         unit: "mm",
@@ -404,17 +379,15 @@ onclone: (clonedDoc) => {
       pdf.setTextColor(100);
       pdf.text(`Generated: ${timestamp}`, 10, 16);
       pdf.text(`Time Range: ${timeRange} days`, 10, 21);
-      console.log("✅ PDF header added");
-
       const imgWidth = 190;
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
-      console.log(`📐 PDF dimensions: ${imgWidth}mm x ${imgHeight.toFixed(2)}mm`);
+      }mm`);
 
       let heightLeft = imgHeight;
       let position = 25;
       let pageCount = 1;
 
-      console.log("🖼️ Adding image to PDF (page 1)...");
+      ...");
       pdf.addImage(imgData, "PNG", 10, position, imgWidth, imgHeight);
       heightLeft -= 252;
 
@@ -422,7 +395,6 @@ onclone: (clonedDoc) => {
         position = heightLeft - imgHeight + 25;
         pdf.addPage();
         pageCount++;
-        console.log(`📄 Adding page ${pageCount}...`);
         pdf.text("Analytics Dashboard Report", 10, 10);
         pdf.text(`Generated: ${timestamp}`, 10, 16);
         pdf.addImage(imgData, "PNG", 10, position, imgWidth, imgHeight);
@@ -430,16 +402,12 @@ onclone: (clonedDoc) => {
       }
 
       const filename = `dashboard-${new Date().toISOString().split('T')[0]}.pdf`;
-      console.log(`💾 Saving PDF: ${filename} (${pageCount} pages)`);
+      `);
       pdf.save(filename);
-      console.log("✅ PDF export completed successfully!");
-
       // Show success message
       alert(`PDF exported successfully!\nFilename: ${filename}\nPages: ${pageCount}`);
     } catch (error) {
-      console.error("❌ PDF export error:", error);
-      console.error("Error details:", {
-        name: (error as Error).name,
+      .name,
         message: (error as Error).message,
         stack: (error as Error).stack,
       });

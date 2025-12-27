@@ -49,7 +49,6 @@ export default function SearchUsersPage() {
         await followUser({ friendId: userId });
       }
     } catch (error) {
-      console.error("Error toggling follow:", error);
     }
   };
 

@@ -73,7 +73,6 @@ export default function AddDarkPsychologyLessonPage() {
       }
     } catch (err) {
       setError("Invalid JSON format. Please check your input.");
-      console.error(err);
     }
   };
 

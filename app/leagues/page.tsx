@@ -43,9 +43,7 @@ export default function LeaguesPage() {
         await fixLeagueNameSpelling();
         // Then reset everyone to Bronze League
         const result = await resetAllUsersToBronzLeague();
-        console.log('League reset result:', result);
       } catch (error) {
-        console.error('League reset error:', error);
       }
     };
     fix();
@@ -66,7 +64,6 @@ export default function LeaguesPage() {
 
       // If user doesn't have a league entry, initialize it
       if (userLeagueInfo === null) {
-        console.log('Initializing user league...');
         await initializeLeague({ email: user.primaryEmailAddress.emailAddress });
         return;
       }
@@ -77,7 +74,6 @@ export default function LeaguesPage() {
   // Step 2: Update user's current league from database
   useEffect(() => {
     if (userLeagueInfo) {
-      console.log('User league info:', userLeagueInfo);
       // Fix potential typo from DB
       const leagueName = userLeagueInfo.leagueName === 'Bronz League' ? 'Bronze League' : userLeagueInfo.leagueName;
       setUserCurrentLeague(leagueName);

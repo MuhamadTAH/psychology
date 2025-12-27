@@ -1233,7 +1233,6 @@ export default function WelcomePage() {
                       });
                       router.push("/dark-psychology-dashboard");
                     } catch (error) {
-                      console.error("Failed to set free status:", error);
                       router.push("/dark-psychology-dashboard");
                     }
                   }}
@@ -1336,13 +1335,11 @@ export default function WelcomePage() {
                       });
                       router.push("/dark-psychology-dashboard");
                     } catch (error) {
-                      console.error("Failed to save subscription:", error);
                       router.push("/dark-psychology-dashboard");
                     }
                   },
                   closeCallback: () => {
                     // User closed the checkout without completing payment
-                    console.log("Checkout closed");
                   },
                 });
               }

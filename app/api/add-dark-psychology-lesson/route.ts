@@ -261,20 +261,17 @@ function convertComprehensiveExercise(exercise: any): any {
       // Step 1: Handle 'correct', 'answer', or 'answers' fields
       // This supports both single-blank and multi-blank questions
       const correctValue = exercise.correct || exercise.answer || exercise.answers;
-      console.log('🔍 [FILL-IN DEBUG] Raw exercise:', JSON.stringify(exercise, null, 2));
-      console.log('🔍 [FILL-IN DEBUG] correctValue:', correctValue);
+      );
 
       // Step 2: Preserve all answers for multi-blank questions
       // Convert single answer to array format for consistency
       const fillInCorrectAnswers = Array.isArray(correctValue)
         ? correctValue
         : [correctValue];
-      console.log('🔍 [FILL-IN DEBUG] fillInCorrectAnswers:', fillInCorrectAnswers);
 
       // Step 3: Handle 'options' or 'wrongOptions' fields
       // Filter out correct answers from the options to get wrong options only
       const optionsValue = exercise.options || exercise.wrongOptions || [];
-      console.log('🔍 [FILL-IN DEBUG] optionsValue:', optionsValue);
 
       const fillInWrongOptions = Array.isArray(optionsValue)
         ? optionsValue.filter((o: string) =>
@@ -283,12 +280,10 @@ function convertComprehensiveExercise(exercise: any): any {
               : o !== correctValue
           )
         : [];
-      console.log('🔍 [FILL-IN DEBUG] fillInWrongOptions:', fillInWrongOptions);
 
       // Step 4: Build the new format (fillInOptions + answers)
       // This supports the FillInBlankQuestion component's new format
       const allOptions = [...fillInCorrectAnswers, ...fillInWrongOptions];
-      console.log('🔍 [FILL-IN DEBUG] allOptions:', allOptions);
 
       const result = {
         ...feedbackData,
@@ -301,7 +296,7 @@ function convertComprehensiveExercise(exercise: any): any {
         wrongOptions: fillInWrongOptions
       };
 
-      console.log('🔍 [FILL-IN DEBUG] Final converted exercise:', JSON.stringify(result, null, 2));
+      );
       return result;
 
       // ✅ In this section we achieved:
@@ -617,9 +612,9 @@ export async function POST(request: Request) {
             try {
               const lesson = JSON.parse(lessonText);
               existingLessons.push({ text: lessonText, data: lesson });
-              console.log('✅ Parsed existing lesson:', lesson.number, lesson.lessonId);
+
             } catch (e) {
-              console.error('❌ Failed to parse lesson:', e);
+
             }
             currentLessonStart = -1;
           }
@@ -634,31 +629,16 @@ export async function POST(request: Request) {
 
     // Step 9: Process new lessons - merge parts or add new
     lessons.forEach((newLesson: any) => {
-      console.log('🔍 [ADD LESSON] Processing new lesson:', {
-        number: newLesson.number,
-        lessonId: newLesson.lessonId,
-        unitId: newLesson.unitId,
-        lessonPart: newLesson.lessonPart,
-        lessonTitle: newLesson.lessonTitle
-      });
 
       // Check if this is a part of an existing lesson (based on lessonId)
       const existingLessonIndex = existingLessons.findIndex(
         l => l.data.lessonId && newLesson.lessonId && l.data.lessonId === newLesson.lessonId
       );
 
-      console.log('🔍 [ADD LESSON] Existing lesson index:', existingLessonIndex);
-      console.log('🔍 [ADD LESSON] All existing lessons:', existingLessons.map(l => ({
-        id: l.data.lessonId,
-        unitId: l.data.unitId,
-        number: l.data.number,
-        title: l.data.title || l.data.lessonTitle
-      })));
-      console.log('🔍 [ADD LESSON] Looking for lessonId:', newLesson.lessonId);
-      console.log('🔍 [ADD LESSON] Found match?', existingLessonIndex !== -1 ? 'YES' : 'NO');
+      ));
 
       if (existingLessonIndex !== -1) {
-        console.log('✅ MERGING: Found existing lesson with lessonId:', newLesson.lessonId);
+
         // MERGE: This is a new part for an existing lesson
         const existingLesson = existingLessons[existingLessonIndex].data;
 
@@ -690,7 +670,7 @@ export async function POST(request: Request) {
         existingLessons[existingLessonIndex].text = JSON.stringify(existingLesson, null, 2);
 
       } else {
-        console.log('➕ NEW LESSON: No existing lesson found, creating new');
+
         // NEW LESSON: Add as new entry
         // Use the lesson number already set in newLesson (extracted from lessonId in processComprehensiveFormat)
         // Don't recalculate it to avoid incorrect numbering
@@ -784,7 +764,7 @@ export const DARK_PSYCHOLOGY_LESSONS: DarkPsychologyLesson[] = [${lessonsArrayCo
     });
 
   } catch (error) {
-    console.error("Error adding lesson:", error);
+
     return NextResponse.json({
       error: "Failed to add lesson",
       details: error instanceof Error ? error.message : "Unknown error"

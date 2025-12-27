@@ -73,6 +73,12 @@ export default function SectionPage() {
   const userEmail = user?.primaryEmailAddress?.emailAddress;
   const shouldLoad = isLoaded && isSignedIn;
 
+  // Redirect unauthenticated users to sign-in
+  if (isLoaded && !isSignedIn) {
+    router.push("/sign-in");
+    return null;
+  }
+
   const progress = useQuery(api.lessons.getUserProgress, shouldLoad && userEmail ? { email: userEmail } : "skip");
 
   // Step: Query subscription status to check if user is premium
@@ -81,10 +87,7 @@ export default function SectionPage() {
   const isPremium = subscriptionData?.isPremium ?? false;
 
   useEffect(() => {
-    console.log('[DP MAP] progress loaded', {
-      userEmail,
-      progressCount: progress ? progress.length : 'skip/undefined',
-      sample: progress?.slice(0, 10)?.map(p => ({
+    ?.map(p => ({
         id: p._id,
         lessonNumber: p.lessonNumber,
         darkPsychLessonId: p.darkPsychLessonId,
@@ -296,7 +299,6 @@ export default function SectionPage() {
         alert('Failed to delete lesson');
       }
     } catch (error) {
-      console.error('Error deleting lesson:', error);
       alert('Error deleting lesson');
     }
   };
@@ -330,22 +332,7 @@ export default function SectionPage() {
       if (partProgress?.isCompleted) {
         completedParts.push(partNum);
       }
-
-      console.log('[DP MAP] part check', {
-        lessonId,
-        partKey,
-        found: !!partProgress,
-        isCompleted: partProgress?.isCompleted,
-      });
     }
-
-    console.log('[DP MAP] completedParts', {
-      lessonId,
-      totalParts,
-      completedParts,
-      progressCount: progress?.length ?? 0,
-    });
-
     return completedParts;
   };
 
@@ -408,7 +395,6 @@ export default function SectionPage() {
       alert(result.message);
       window.location.reload();
     } catch (error: any) {
-      console.error('Error deleting lessons:', error);
       alert('Failed to delete lessons: ' + error.message);
     }
   };

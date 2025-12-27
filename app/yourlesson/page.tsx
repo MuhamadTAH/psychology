@@ -1886,7 +1886,7 @@ export default function YourLessonPage() {
                   return (
                     <div
                       key={index}
-                      onClick={() => console.log('📦 [DIV CLICKED]', { index, word, hasWord: !!word })}
+                      onClick={() => }
                       className={`min-w-[80px] md:min-w-[100px] h-12 md:h-14 rounded-xl border-2 flex items-center justify-center transition-all duration-300 ease-in-out ${word
                         ? isChecked
                           ? selectedWords.join(' ').toLowerCase().trim() === currentQuestion.correctSentence?.toLowerCase().trim()
@@ -1941,24 +1941,13 @@ export default function YourLessonPage() {
                             setDraggedWordIndex(null);
                           }}
                           onClick={() => {
-                            console.log('🖱️ [WORD CLICKED IN SLOT]', {
-                              word,
-                              index,
-                              isChecked,
-                              selectedWords,
-                              availableWords
-                            });
                             if (!isChecked) {
-                              console.log('✅ [REMOVING WORD FROM SLOT]', { word, index });
                               const newWords = [...selectedWords];
                               newWords[index] = '';
                               const filtered = newWords.filter(w => w !== '');
-                              console.log('🔄 [AFTER FILTER]', { newWords, filtered });
                               setSelectedWords(filtered);
                               setAvailableWords([...availableWords, word]);
-                              console.log('✅ [WORD RETURNED TO BANK]', { word, newAvailableWords: [...availableWords, word] });
                             } else {
-                              console.log('❌ [BLOCKED - Already checked]');
                             }
                           }}
                           disabled={isChecked}

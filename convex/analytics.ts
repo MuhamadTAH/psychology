@@ -6,6 +6,17 @@
 import { query } from "./_generated/server";
 import { v } from "convex/values";
 
+// Restrict analytics to admins only
+const requireAdmin = async (ctx: any) => {
+  const identity = await ctx.auth.getUserIdentity();
+  const ADMIN_EMAILS = ["system@duolearn.com"];
+  if (!identity) throw new Error("Not authenticated");
+  if (!ADMIN_EMAILS.includes(identity.email!)) {
+    throw new Error("Forbidden");
+  }
+  return identity;
+};
+
 // ========================================
 // USER ANALYTICS
 // ========================================
@@ -14,6 +25,7 @@ import { v } from "convex/values";
 // Returns the count of all registered users in the app
 export const getTotalUsers = query({
   handler: async (ctx) => {
+    await requireAdmin(ctx);
     const users = await ctx.db.query("users").collect();
     return {
       total: users.length,
@@ -35,6 +47,7 @@ export const getTotalUsers = query({
 export const getActiveUsers = query({
   args: { days: v.optional(v.number()) }, // Default: 7 days
   handler: async (ctx, args) => {
+    await requireAdmin(ctx);
     const daysAgo = args.days || 7;
     const cutoffTime = Date.now() - (daysAgo * 24 * 60 * 60 * 1000);
 
@@ -64,6 +77,7 @@ export const getActiveUsers = query({
 // Returns comprehensive stats about user activity and engagement
 export const getEngagementOverview = query({
   handler: async (ctx) => {
+    await requireAdmin(ctx);
     const users = await ctx.db.query("users").collect();
     const progress = await ctx.db.query("progress").collect();
     const notes = await ctx.db.query("darkPsychologyNotes").collect();
@@ -125,6 +139,7 @@ export const getEngagementOverview = query({
 export const getLessonStats = query({
   args: { lessonId: v.string() },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx);
     const progress = await ctx.db
       .query("progress")
       .filter((q) => q.eq(q.field("darkPsychLessonId"), args.lessonId))
@@ -163,6 +178,7 @@ export const getLessonStats = query({
 // Returns stats for all Dark Psychology lessons
 export const getAllDarkPsychLessonStats = query({
   handler: async (ctx) => {
+    await requireAdmin(ctx);
     const progress = await ctx.db.query("progress").collect();
 
     // Group by darkPsychLessonId
@@ -210,6 +226,7 @@ export const getAllDarkPsychLessonStats = query({
 export const getTopLessons = query({
   args: { limit: v.optional(v.number()) },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx);
     const limit = args.limit || 10;
     const progress = await ctx.db.query("progress").collect();
 
@@ -247,6 +264,7 @@ export const getTopLessons = query({
 export const getStrugglingLessons = query({
   args: { limit: v.optional(v.number()) },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx);
     const limit = args.limit || 10;
     const progress = await ctx.db.query("progress").collect();
 
@@ -292,6 +310,7 @@ export const getStrugglingLessons = query({
 // Returns completion stats grouped by Dark Psychology sections (A, B, C, D)
 export const getLessonCompletionBySection = query({
   handler: async (ctx) => {
+    await requireAdmin(ctx);
     const progress = await ctx.db.query("progress").collect();
 
     const sections = { A: 0, B: 0, C: 0, D: 0 };
@@ -334,6 +353,7 @@ export const getLessonCompletionBySection = query({
 // Returns detailed stats about user streaks
 export const getStreakStats = query({
   handler: async (ctx) => {
+    await requireAdmin(ctx);
     const users = await ctx.db.query("users").collect();
 
     const streakData = {
@@ -381,6 +401,7 @@ export const getStreakStats = query({
 // Returns how resources are distributed among users
 export const getResourceDistribution = query({
   handler: async (ctx) => {
+    await requireAdmin(ctx);
     const users = await ctx.db.query("users").collect();
 
     const xpRanges = { '0-100': 0, '101-500': 0, '501-1000': 0, '1001-5000': 0, '5000+': 0 };
@@ -421,6 +442,7 @@ export const getResourceDistribution = query({
 // Returns info about league participation and rankings
 export const getLeagueStats = query({
   handler: async (ctx) => {
+    await requireAdmin(ctx);
     const leagues = await ctx.db.query("leagues").collect();
 
     const leagueMap = new Map();
@@ -460,6 +482,7 @@ export const getLeagueStats = query({
 // Returns how users are engaging with study features
 export const getStudyFeatureStats = query({
   handler: async (ctx) => {
+    await requireAdmin(ctx);
     const notes = await ctx.db.query("darkPsychologyNotes").collect();
     const bookmarks = await ctx.db.query("darkPsychologyBookmarks").collect();
     const reviews = await ctx.db.query("darkPsychologyReview").collect();
@@ -509,6 +532,7 @@ export const getStudyFeatureStats = query({
 // Returns achievement unlock rates
 export const getAchievementStats = query({
   handler: async (ctx) => {
+    await requireAdmin(ctx);
     const achievements = await ctx.db.query("darkPsychologyAchievements").collect();
     const users = await ctx.db.query("users").collect();
 
@@ -549,6 +573,7 @@ export const getAchievementStats = query({
 // Returns which power-ups are most popular
 export const getPowerUpStats = query({
   handler: async (ctx) => {
+    await requireAdmin(ctx);
     const powerUps = await ctx.db.query("powerUps").collect();
     const purchases = await ctx.db.query("powerUpPurchases").collect();
     const usage = await ctx.db.query("powerUpUsage").collect();
@@ -602,6 +627,7 @@ export const getPowerUpStats = query({
 // Returns a comprehensive overview of all key metrics
 export const getAppHealthDashboard = query({
   handler: async (ctx) => {
+    await requireAdmin(ctx);
     const users = await ctx.db.query("users").collect();
     const progress = await ctx.db.query("progress").collect();
     const notes = await ctx.db.query("darkPsychologyNotes").collect();
@@ -676,6 +702,7 @@ export const getAppHealthDashboard = query({
 export const getUserGrowthOverTime = query({
   args: { days: v.optional(v.number()) }, // Default: 30 days
   handler: async (ctx, args) => {
+    await requireAdmin(ctx);
     const daysBack = args.days || 30;
     const now = Date.now();
     const startTime = now - (daysBack * 24 * 60 * 60 * 1000);
@@ -721,6 +748,7 @@ export const getUserGrowthOverTime = query({
 // Returns Day 1, Day 7, Day 30 retention rates
 export const getRetentionMetrics = query({
   handler: async (ctx) => {
+    await requireAdmin(ctx);
     const users = await ctx.db.query("users").collect();
     const progress = await ctx.db.query("progress").collect();
 
@@ -806,6 +834,7 @@ export const getRetentionMetrics = query({
 export const getEngagementOverTime = query({
   args: { days: v.optional(v.number()) }, // Default: 30 days
   handler: async (ctx, args) => {
+    await requireAdmin(ctx);
     const daysBack = args.days || 30;
     const now = Date.now();
 

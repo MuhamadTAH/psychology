@@ -42,8 +42,6 @@ function runPythonExtractor(filePath: string): Promise<any> {
     py.stderr.on("data", (chunk) => (error += chunk.toString()));
 
     py.on("close", (code) => {
-      console.log("Python stdout:", data);
-      console.error("Python stderr:", error);
 
       if (code === 0) {
         try {

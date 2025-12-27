@@ -46,15 +46,11 @@ export default function TestStreakPage() {
 
   // Step 4: Trigger animation
   const handleTriggerAnimation = () => {
-    console.log(`Triggering animation for day ${selectedDay}, milestone: ${tierConfig.isMilestone}`);
-
     const milestones = [5, 10, 15, 20, 25, 30];
 
     if (milestones.includes(selectedDay)) {
-      console.log('Triggering MILESTONE animation');
       triggerMilestone(selectedDay as 5 | 10 | 15 | 20 | 25 | 30);
     } else {
-      console.log('Triggering CELEBRATE animation');
       triggerCelebrate();
     }
   };
@@ -74,10 +70,8 @@ export default function TestStreakPage() {
     setTimeout(() => {
       const milestones = [5, 10, 15, 20, 25, 30];
       if (milestones.includes(day)) {
-        console.log(`Auto-triggering MILESTONE animation for day ${day}`);
         triggerMilestone(day as 5 | 10 | 15 | 20 | 25 | 30);
       } else {
-        console.log(`Auto-triggering CELEBRATE animation for day ${day}`);
         triggerCelebrate();
       }
     }, 100);
@@ -203,7 +197,6 @@ export default function TestStreakPage() {
                   <button
                     onClick={() => {
                       const nextDay = selectedDay + 1;
-                      console.log(`Changing day ${selectedDay} → ${nextDay} with snap confirm`);
                       setSelectedDay(nextDay);
 
                       // Small delay to let state update, then trigger animation

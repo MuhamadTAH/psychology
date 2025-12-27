@@ -1,7 +1,7 @@
 {
-  "name": "DuoLearn - Language Learning App",
+  "name": "DuoLearn - Master Dark Psychology",
   "short_name": "DuoLearn",
-  "description": "Master languages and psychology with interactive lessons, gamification, and 3D character customization",
+  "description": "Master dark psychology techniques through interactive lessons, real-world scenarios, and gamified learning experiences",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -60,39 +60,18 @@
   "categories": ["education", "productivity"],
   "shortcuts": [
     {
-      "name": "Start Learning",
-      "short_name": "Learn",
-      "description": "Start your daily lesson",
-      "url": "/learn",
-      "icons": [{ "src": "/icons/icon-96x96.png", "sizes": "96x96" }]
-    },
-    {
       "name": "Dark Psychology",
       "short_name": "Psychology",
       "description": "Open Dark Psychology course",
       "url": "/dark-psychology-dashboard",
-      "icons": [{ "src": "/icons/icon-96x96.png", "sizes": "96x96" }]
+      "icons": [{ "src": "/icons/icon-96x96.svg", "sizes": "96x96", "type": "image/svg+xml" }]
     },
     {
-      "name": "Profile",
-      "short_name": "Profile",
-      "description": "View your profile",
-      "url": "/profile",
-      "icons": [{ "src": "/icons/icon-96x96.png", "sizes": "96x96" }]
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "/screenshots/desktop-1.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide"
-    },
-    {
-      "src": "/screenshots/mobile-1.png",
-      "sizes": "750x1334",
-      "type": "image/png",
-      "form_factor": "narrow"
+      "name": "Settings",
+      "short_name": "Settings",
+      "description": "View your settings",
+      "url": "/settings",
+      "icons": [{ "src": "/icons/icon-96x96.svg", "sizes": "96x96", "type": "image/svg+xml" }]
     }
   ]
 }

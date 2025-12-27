@@ -259,7 +259,6 @@ export default function ProfilePage() {
     try {
       await followUser({ friendId });
     } catch (error) {
-      console.error("Error following user:", error);
     }
   };
 
@@ -289,7 +288,6 @@ export default function ProfilePage() {
 
       setShowEditModal(false);
     } catch (error) {
-      console.error("Error updating name:", error);
       alert("Failed to update name. Please try again.");
     } finally {
       setIsSaving(false);

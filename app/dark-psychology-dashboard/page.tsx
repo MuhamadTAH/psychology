@@ -85,7 +85,6 @@ export default function DarkPsychologyDashboard() {
   useEffect(() => {
     if (userEmail) {
       updateStreak({ email: userEmail }).catch((error) => {
-        console.error("Failed to update streak:", error);
       });
     }
   }, [userEmail]);

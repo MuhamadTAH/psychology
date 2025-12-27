@@ -32,7 +32,6 @@ export default function DemoSentencePage() {
       alert("Mock lesson created! Redirecting to dashboard...");
       router.push('/dark-psychology-dashboard');
     } catch (error) {
-      console.error("Error creating mock lesson:", error);
       alert("Failed to create mock lesson");
     }
   };

@@ -28,39 +28,26 @@ function EditLessonContent() {
   // Step 2: Load the lesson when data is available
   useEffect(() => {
     if (!dbLessons) {
-      console.log('⏳ [EDIT PAGE] Waiting for Convex data...');
       return;
     }
 
     if (lessonNumber || lessonId) {
-      console.log('🔄 [EDIT PAGE] Searching for lesson in Convex database');
-      console.log('🔄 [EDIT PAGE] Looking for:', lessonId ? `lessonId: ${lessonId}` : `lessonNumber: ${lessonNumber}`);
-      console.log('📊 [EDIT PAGE] Total lessons in DB:', dbLessons.length);
-
       // Step: Find ALL parts of the lesson by lessonId
       // Multi-part lessons are stored as separate documents (Part 1, Part 2, etc.)
-      console.log('🔍 [EDIT PAGE] Filtering lessons...');
-      console.log('🔍 [EDIT PAGE] All lesson IDs in DB:', dbLessons.map((l: any) => l.lessonId));
+       => l.lessonId));
 
       const lessonParts = lessonId
         ? dbLessons.filter((l: any) => {
           const matches = l.lessonId === lessonId;
-          console.log(`  Checking lesson: ${l.lessonId} === ${lessonId}? ${matches}`);
           return matches;
         })
         : [dbLessons.find((l: any) => l.number === parseInt(lessonNumber!))].filter(Boolean);
-
-      console.log('🔍 [EDIT PAGE] Found parts:', lessonParts.length);
-      console.log('🔍 [EDIT PAGE] Parts:', lessonParts.map((p: any) => ({ lessonId: p.lessonId, part: p.lessonPart })));
+       => ({ lessonId: p.lessonId, part: p.lessonPart })));
 
       if (lessonParts.length > 0) {
         // Sort parts by lessonPart number
         lessonParts.sort((a: any, b: any) => (a.lessonPart || 0) - (b.lessonPart || 0));
-
-        console.log('✅ [EDIT PAGE] Found lesson with', lessonParts.length, 'parts');
-        console.log('📋 [EDIT PAGE] Lesson data:', {
-          lessonId: lessonParts[0].lessonId,
-          parts: lessonParts.map((p: any) => p.lessonPart),
+         => p.lessonPart),
           sectionId: lessonParts[0].sectionId,
           unitId: lessonParts[0].unitId,
           title: lessonParts[0].lessonTitle
@@ -83,7 +70,6 @@ function EditLessonContent() {
           setJsonInput(JSON.stringify(combinedLesson, null, 2));
         }
       } else {
-        console.warn('⚠️ [EDIT PAGE] Lesson not found in Convex database. Initializing new template...');
         // Instead of error, create a blank/template lesson
         const templateLesson = {
           lessonId: lessonId || `A${lessonNumber || '1'}-1`,
@@ -104,41 +90,24 @@ function EditLessonContent() {
 
   // Step 2: Handle save
   const handleSave = async () => {
-    console.log('🔧 [SAVE] handleSave function called');
-    console.log('🔧 [SAVE] lessonNumber:', lessonNumber);
-    console.log('🔧 [SAVE] jsonInput length:', jsonInput?.length);
-
     setMessage("");
     setError("");
 
     try {
-      console.log('🔧 [SAVE] Entered try block');
-
-      console.log('🔧 [SAVE] Attempting to parse JSON...');
       const updatedLesson = JSON.parse(jsonInput);
-
-      console.log('🔧 [SAVE] ✅ JSON parsed successfully!');
-      console.log('🔧 [SAVE] Parsed lesson number:', updatedLesson.number);
-      console.log('🔧 [SAVE] Parsed lesson ID:', updatedLesson.lessonId);
-      console.log('🔧 [SAVE] Parsed lesson title:', updatedLesson.title || updatedLesson.lessonTitle);
-
       // ✅ FIX: Validate lesson identifier hasn't changed (use lessonId if available)
       if (lessonId) {
         if (updatedLesson.lessonId !== lessonId) {
-          console.log('🔧 [SAVE] ❌ Lesson ID mismatch!', updatedLesson.lessonId, 'vs', lessonId);
           setError("Cannot change lesson ID. Delete and create new lesson instead.");
           return;
         }
       } else if (lessonNumber) {
         if (updatedLesson.number !== parseInt(lessonNumber!)) {
-          console.log('🔧 [SAVE] ❌ Lesson number mismatch!', updatedLesson.number, 'vs', parseInt(lessonNumber!));
+          );
           setError("Cannot change lesson number. Delete and create new lesson instead.");
           return;
         }
       }
-
-      console.log('🔧 [SAVE] Lesson identifier validated. Sending to API...');
-
       // ✅ FIX: Send to API with appropriate identifier
       const response = await fetch("/api/edit-dark-psychology-lesson", {
         method: "POST",
@@ -149,26 +118,16 @@ function EditLessonContent() {
           updatedLesson
         }),
       });
-
-      console.log('🔧 [SAVE] API response status:', response.status);
-
       const result = await response.json();
-      console.log('🔧 [SAVE] API response data:', result);
-
       if (response.ok) {
-        console.log('🔧 [SAVE] ✅ Save successful!');
         setMessage(`✅ ${result.message}`);
         setTimeout(() => {
           router.push("/dark-psychology");
         }, 1500);
       } else {
-        console.log('🔧 [SAVE] ❌ API returned error:', result.error);
         setError(result.error || "Failed to update lesson");
       }
     } catch (err) {
-      console.error('🔧 [SAVE] ❌ Error caught:', err);
-      console.error('🔧 [SAVE] Error details:', err instanceof Error ? err.message : err);
-      console.error('🔧 [SAVE] Error stack:', err instanceof Error ? err.stack : 'No stack trace');
       setError(err instanceof Error ? err.message : "Invalid JSON format");
     }
   };
@@ -291,8 +250,6 @@ function EditLessonContent() {
                 </Button>
                 <Button
                   onClick={async () => {
-                    console.log('🔄 [RELOAD] Reloading fresh data from Convex...');
-
                     if (!dbLessons) {
                       alert('❌ Database not loaded yet');
                       return;
@@ -321,7 +278,6 @@ function EditLessonContent() {
                       }
                       alert('✅ Reloaded fresh data from database!');
                     } else {
-                      console.error('❌ [RELOAD] Lesson not found');
                       alert('❌ Lesson not found');
                     }
                   }}

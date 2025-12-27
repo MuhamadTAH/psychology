@@ -16,10 +16,6 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Lesson number or ID is required" }, { status: 400 });
     }
 
-    console.log('🗑️ [DELETE API] Received request:');
-    console.log('🗑️ [DELETE API] lessonNumber:', lessonNumber);
-    console.log('🗑️ [DELETE API] lessonId:', lessonId);
-
     // Step 2: Read the current darkPsychologyLessons.ts file
     const filePath = path.join(process.cwd(), "lib", "darkPsychologyLessons.ts");
     const fileContent = fs.readFileSync(filePath, "utf-8");
@@ -68,21 +64,17 @@ export async function POST(request: Request) {
     // ✅ FIX: Filter by lessonId first, then fall back to lessonNumber
     let filteredLessons;
     if (lessonId) {
-      console.log('🗑️ [DELETE API] Filtering by lessonId:', lessonId);
+
       filteredLessons = lessons.filter(l => l.data.lessonId !== lessonId);
-      console.log('🗑️ [DELETE API] Lessons before:', lessons.length, 'after:', filteredLessons.length);
+
     } else {
-      console.log('🗑️ [DELETE API] Filtering by lessonNumber:', lessonNumber);
+
       filteredLessons = lessons.filter(l => l.data.number !== lessonNumber);
-      console.log('🗑️ [DELETE API] Lessons before:', lessons.length, 'after:', filteredLessons.length);
+
     }
 
     if (filteredLessons.length === lessons.length) {
-      console.log('🗑️ [DELETE API] Available lessons:', lessons.map(l => ({
-        number: l.data.number,
-        lessonId: l.data.lessonId,
-        title: l.data.title || l.data.lessonTitle
-      })));
+      ));
       return NextResponse.json({ error: "Lesson not found" }, { status: 404 });
     }
 
@@ -102,7 +94,6 @@ export async function POST(request: Request) {
     fs.writeFileSync(filePath, newFileContent, "utf-8");
 
     const lessonIdentifier = lessonId || lessonNumber;
-    console.log(`🗑️ [DELETE API] ✅ Lesson ${lessonIdentifier} deleted successfully`);
 
     return NextResponse.json({
       success: true,
@@ -110,7 +101,7 @@ export async function POST(request: Request) {
     });
 
   } catch (error) {
-    console.error("Error deleting lesson:", error);
+
     return NextResponse.json({
       error: "Failed to delete lesson",
       details: error instanceof Error ? error.message : "Unknown error"

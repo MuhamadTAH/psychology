@@ -40,13 +40,10 @@ export function AnswerFeedback({
 
   // Determine which feedback to show
   // Priority: feedback object > explanation (legacy) > default messages
-  console.log('🔍 [FEEDBACK] Component received:', { feedback, explanation, isCorrect, isChecked });
 
   const feedbackText = feedback
     ? (isCorrect ? feedback.correct : feedback.incorrect)
     : explanation || (isCorrect ? 'Correct!' : 'Incorrect. Try again!');
-
-  console.log('🔍 [FEEDBACK] Final feedbackText:', feedbackText);
 
   // Don't show for matching questions (they auto-continue)
   if (isMatching) return null;

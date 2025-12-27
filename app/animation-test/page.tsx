@@ -25,7 +25,6 @@ export default function AnimationTestPage() {
         videoRef.current.currentTime = 0;
         await videoRef.current.play();
       } catch (error) {
-        console.log("Play error:", error);
       }
     }
   };
@@ -79,7 +78,6 @@ export default function AnimationTestPage() {
             }}
             onLoadedData={() => {
               setVideoError("");
-              console.log("Video loaded successfully!");
             }}
           >
             <source src={currentVideo} type="video/webm" />

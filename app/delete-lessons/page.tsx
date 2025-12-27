@@ -36,7 +36,6 @@ export default function DeleteLessonsPage() {
       alert(`Successfully deleted ${result.deletedLessons} lessons and ${result.deletedProgress} progress records!`);
       router.push('/dark-psychology-dashboard');
     } catch (error) {
-      console.error("Error deleting lessons:", error);
       alert("Failed to delete lessons");
     } finally {
       setLoading(false);
