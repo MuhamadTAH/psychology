@@ -50,6 +50,9 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/icons/icon-152x152.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
 
+        {/* Paddle.js Payment Integration */}
+        <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+
         {/* iOS Splash Screens */}
         <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/splash/apple-splash-iphone5.svg" />
         <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/splash/apple-splash-iphone6.svg" />

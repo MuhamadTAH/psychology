@@ -274,13 +274,12 @@ export const markAsMastered = mutation({
 export const getDashboard = query({
   args: { email: v.string() },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return null;
+    const userEmail = await requireUserEmail(ctx, args.email);
 
     // Get user
     const user = await ctx.db
       .query("users")
-      .withIndex("by_email", (q) => q.eq("email", args.email))
+      .withIndex("by_email", (q) => q.eq("email", userEmail))
       .first();
 
     if (!user) return null;
@@ -330,21 +329,21 @@ export const getDashboard = query({
     // Get notes count
     const notes = await ctx.db
       .query("darkPsychologyNotes")
-      .withIndex("by_user_lesson", (q) => q.eq("email", args.email))
+      .withIndex("by_user_lesson", (q) => q.eq("email", userEmail))
       .collect();
     const notesCount = notes.length;
 
     // Get bookmarks count
     const bookmarks = await ctx.db
       .query("darkPsychologyBookmarks")
-      .withIndex("by_user_lesson", (q) => q.eq("email", args.email))
+      .withIndex("by_user_lesson", (q) => q.eq("email", userEmail))
       .collect();
     const bookmarksCount = bookmarks.length;
 
     // Get review questions count
     const reviews = await ctx.db
       .query("darkPsychologyReview")
-      .withIndex("by_user_lesson", (q) => q.eq("email", args.email))
+      .withIndex("by_user_lesson", (q) => q.eq("email", userEmail))
       .collect();
     const reviewCount = reviews.length;
 
@@ -608,10 +607,9 @@ export const updateDailyStreak = mutation({
 export const useStreakFreeze = mutation({
   args: { email: v.string() },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+    const userEmail = await requireUserEmail(ctx, args.email);
 
-    const user = await ctx.db.query("users").withIndex("by_email", (q) => q.eq("email", args.email)).first();
+    const user = await ctx.db.query("users").withIndex("by_email", (q) => q.eq("email", userEmail)).first();
     if (!user) throw new Error("User not found");
 
     if ((user.streakFreezes || 0) <= 0) {
@@ -630,10 +628,9 @@ export const useStreakFreeze = mutation({
 export const getStreakRewards = query({
   args: { email: v.string() },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return null;
+    const userEmail = await requireUserEmail(ctx, args.email);
 
-    const user = await ctx.db.query("users").withIndex("by_email", (q) => q.eq("email", args.email)).first();
+    const user = await ctx.db.query("users").withIndex("by_email", (q) => q.eq("email", userEmail)).first();
     if (!user) return null;
 
     const currentStreak = user.streak || 0;
@@ -672,12 +669,11 @@ export const getStreakRewards = query({
 export const getPowerUps = query({
   args: { email: v.string() },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return [];
+    const userEmail = await requireUserEmail(ctx, args.email);
 
     const powerUps = await ctx.db
       .query("powerUps")
-      .withIndex("by_user", (q) => q.eq("email", args.email))
+      .withIndex("by_user", (q) => q.eq("email", userEmail))
       .collect();
 
     return powerUps;
@@ -694,11 +690,10 @@ export const purchasePowerUp = mutation({
     quantity: v.number(),
   },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+    const userEmail = await requireUserEmail(ctx, args.email);
 
     // Get user
-    const user = await ctx.db.query("users").withIndex("by_email", (q) => q.eq("email", args.email)).first();
+    const user = await ctx.db.query("users").withIndex("by_email", (q) => q.eq("email", userEmail)).first();
     if (!user) throw new Error("User not found");
 
     // Check if user has enough gems
@@ -717,7 +712,7 @@ export const purchasePowerUp = mutation({
     // Add power-up to inventory
     const existingPowerUp = await ctx.db
       .query("powerUps")
-      .withIndex("by_user_type", (q) => q.eq("email", args.email).eq("powerUpType", args.powerUpType))
+      .withIndex("by_user_type", (q) => q.eq("email", userEmail).eq("powerUpType", args.powerUpType))
       .first();
 
     if (existingPowerUp) {
@@ -729,7 +724,7 @@ export const purchasePowerUp = mutation({
     } else {
       // Create new inventory entry
       await ctx.db.insert("powerUps", {
-        email: args.email,
+        email: userEmail,
         powerUpType: args.powerUpType,
         quantity: args.quantity,
         updatedAt: Date.now(),
@@ -738,7 +733,7 @@ export const purchasePowerUp = mutation({
 
     // Record purchase history
     await ctx.db.insert("powerUpPurchases", {
-      email: args.email,
+      email: userEmail,
       powerUpType: args.powerUpType,
       powerUpName: args.powerUpName,
       gemsCost: args.gemsCost,
@@ -762,13 +757,12 @@ export const usePowerUp = mutation({
     lessonId: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+    const userEmail = await requireUserEmail(ctx, args.email);
 
     // Check if user has this power-up
     const powerUp = await ctx.db
       .query("powerUps")
-      .withIndex("by_user_type", (q) => q.eq("email", args.email).eq("powerUpType", args.powerUpType))
+      .withIndex("by_user_type", (q) => q.eq("email", userEmail).eq("powerUpType", args.powerUpType))
       .first();
 
     if (!powerUp || powerUp.quantity <= 0) {
@@ -783,7 +777,7 @@ export const usePowerUp = mutation({
 
     // Record usage
     await ctx.db.insert("powerUpUsage", {
-      email: args.email,
+      email: userEmail,
       powerUpType: args.powerUpType,
       lessonId: args.lessonId,
       usedAt: Date.now(),
@@ -800,17 +794,16 @@ export const usePowerUp = mutation({
 export const getShopData = query({
   args: { email: v.string() },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return null;
+    const userEmail = await requireUserEmail(ctx, args.email);
 
     // Get user's gem balance
-    const user = await ctx.db.query("users").withIndex("by_email", (q) => q.eq("email", args.email)).first();
+    const user = await ctx.db.query("users").withIndex("by_email", (q) => q.eq("email", userEmail)).first();
     if (!user) return null;
 
     // Get user's power-ups inventory
     const powerUps = await ctx.db
       .query("powerUps")
-      .withIndex("by_user", (q) => q.eq("email", args.email))
+      .withIndex("by_user", (q) => q.eq("email", userEmail))
       .collect();
 
     // Create inventory map
@@ -874,11 +867,10 @@ export const getShopData = query({
 export const getRecommendations = query({
   args: { email: v.string() },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return [];
+    const userEmail = await requireUserEmail(ctx, args.email);
 
     // Get user
-    const user = await ctx.db.query("users").withIndex("by_email", (q) => q.eq("email", args.email)).first();
+    const user = await ctx.db.query("users").withIndex("by_email", (q) => q.eq("email", userEmail)).first();
     if (!user) return [];
 
     // Get all progress records for Dark Psychology lessons
@@ -1176,15 +1168,14 @@ export const resetAllUserData = mutation({
     email: v.string(),
   },
   handler: async (ctx, args) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+    const userEmail = await requireUserEmail(ctx, args.email);
 
     let deletedCount = 0;
 
     // Delete all notes
     const notes = await ctx.db
       .query("darkPsychologyNotes")
-      .withIndex("by_user_lesson", (q) => q.eq("email", args.email))
+      .withIndex("by_user_lesson", (q) => q.eq("email", userEmail))
       .collect();
     for (const note of notes) {
       await ctx.db.delete(note._id);
@@ -1194,7 +1185,7 @@ export const resetAllUserData = mutation({
     // Delete all bookmarks
     const bookmarks = await ctx.db
       .query("darkPsychologyBookmarks")
-      .withIndex("by_user", (q) => q.eq("email", args.email))
+      .withIndex("by_user", (q) => q.eq("email", userEmail))
       .collect();
     for (const bookmark of bookmarks) {
       await ctx.db.delete(bookmark._id);
@@ -1204,7 +1195,7 @@ export const resetAllUserData = mutation({
     // Delete all review questions
     const reviews = await ctx.db
       .query("darkPsychologyReview")
-      .withIndex("by_user", (q) => q.eq("email", args.email))
+      .withIndex("by_user", (q) => q.eq("email", userEmail))
       .collect();
     for (const review of reviews) {
       await ctx.db.delete(review._id);
@@ -1214,7 +1205,7 @@ export const resetAllUserData = mutation({
     // Delete all achievements
     const achievements = await ctx.db
       .query("darkPsychologyAchievements")
-      .withIndex("by_user", (q) => q.eq("email", args.email))
+      .withIndex("by_user", (q) => q.eq("email", userEmail))
       .collect();
     for (const achievement of achievements) {
       await ctx.db.delete(achievement._id);
@@ -1224,7 +1215,7 @@ export const resetAllUserData = mutation({
     // Reset user's Dark Psychology related progress
     const user = await ctx.db
       .query("users")
-      .withIndex("by_email", (q) => q.eq("email", args.email))
+      .withIndex("by_email", (q) => q.eq("email", userEmail))
       .first();
 
     if (user) {
@@ -1253,7 +1244,7 @@ export const resetAllUserData = mutation({
     // Delete all power-ups
     const powerUps = await ctx.db
       .query("powerUps")
-      .withIndex("by_user", (q) => q.eq("email", args.email))
+      .withIndex("by_user", (q) => q.eq("email", userEmail))
       .collect();
     for (const powerUp of powerUps) {
       await ctx.db.delete(powerUp._id);
@@ -1262,7 +1253,7 @@ export const resetAllUserData = mutation({
 
     return {
       success: true,
-      message: `Reset complete! Deleted ${deletedCount} records for ${args.email}`,
+      message: `Reset complete! Deleted ${deletedCount} records for ${userEmail}`,
       deletedCount,
     };
   },

@@ -12,6 +12,13 @@ import ScanTransition from "@/components/ScanTransition";
 import { useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 
+// Step: Declare Paddle global type for TypeScript
+declare global {
+  interface Window {
+    Paddle: any;
+  }
+}
+
 export default function WelcomePage() {
   const router = useRouter();
   const { signIn, setActive, isLoaded } = useSignIn();
@@ -19,6 +26,17 @@ export default function WelcomePage() {
   const setSubscription = useMutation(api.gamification.setSubscriptionStatus);
 
   const [step, setStep] = useState<"coldOpen" | "identityVerification" | "loginForm" | "phase1_awareness" | "phase1_solution" | "phase1_ethics" | "phase2_assessment" | "phase3_calculation" | "phase3_commitment" | "phase3_paywall" | "phase3_lockdown" | "phase3_result">("coldOpen");
+
+  // Step: Initialize Paddle on component mount
+  // This loads Paddle payment system with our sandbox credentials
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.Paddle) {
+      window.Paddle.Initialize({
+        token: 'live_7d279f61a3499fed520f7cd8c08',
+        environment: 'sandbox', // Use sandbox for testing
+      });
+    }
+  }, []);
   const [showGhostWarning, setShowGhostWarning] = useState(false);
   const [statueState, setStatueState] = useState<"idle" | "nod" | "evaluate" | "suspicion" | "explain" | "judging">("idle");
   const [ethicsAgreed, setEthicsAgreed] = useState(false);
@@ -1299,18 +1317,34 @@ export default function WelcomePage() {
 
           {/* Primary Action */}
           <button
-            onClick={async () => {
-              try {
-                // Save subscription status to database
-                await setSubscription({
-                  status: "premium",
-                  plan: selectedPlan,
+            onClick={() => {
+              // Step: Open Paddle checkout overlay
+              // Select the correct price ID based on selected plan
+              const priceId = selectedPlan === 'annual'
+                ? 'pri_01kdebw86anasb9gk72jq604vp'  // Annual plan
+                : 'pri_01kdeb8gbzrfrcfhp9shj1ymjk'; // Monthly plan
+
+              if (window.Paddle) {
+                window.Paddle.Checkout.open({
+                  items: [{ priceId, quantity: 1 }],
+                  successCallback: async (data: any) => {
+                    // Step: Payment successful - save subscription to database
+                    try {
+                      await setSubscription({
+                        status: "premium",
+                        plan: selectedPlan,
+                      });
+                      router.push("/dark-psychology-dashboard");
+                    } catch (error) {
+                      console.error("Failed to save subscription:", error);
+                      router.push("/dark-psychology-dashboard");
+                    }
+                  },
+                  closeCallback: () => {
+                    // User closed the checkout without completing payment
+                    console.log("Checkout closed");
+                  },
                 });
-                // In production: Integrate payment processor here
-                router.push("/dark-psychology-dashboard");
-              } catch (error) {
-                console.error("Failed to set subscription:", error);
-                router.push("/dark-psychology-dashboard");
               }
             }}
             className="w-full border-2 border-white bg-white text-black hover:bg-black hover:text-white py-4 px-8 text-sm font-mono uppercase tracking-widest transition-colors mb-4 animate-pulse"
