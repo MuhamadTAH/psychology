@@ -383,7 +383,6 @@ onclone: (clonedDoc) => {
       let position = 25;
       let pageCount = 1;
 
-      ...");
       pdf.addImage(imgData, "PNG", 10, position, imgWidth, imgHeight);
       heightLeft -= 252;
 
