@@ -4,7 +4,7 @@
 
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useSignIn, useSignUp, useUser } from "@clerk/nextjs";
 import { ArrowRight, CheckSquare, Shield, Eye, Terminal, Lock, ArrowDown, MessageSquare, Scale, CheckCircle, Folder, AlertTriangle } from "lucide-react";
@@ -19,7 +19,8 @@ declare global {
   }
 }
 
-export default function WelcomePage() {
+// Inner component that uses useSearchParams
+function WelcomePageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const skipToPaywall = searchParams.get('skip') === 'true'; // Check if we should skip to paywall
@@ -228,10 +229,26 @@ export default function WelcomePage() {
         <div className="flex justify-center relative">
           <video
             autoPlay
-            muted
             playsInline
             className="w-64 h-64 object-contain glitch-video"
             onEnded={() => setStep("identityVerification")}
+            onLoadedMetadata={(e) => {
+              const video = e.currentTarget;
+              console.log("Logo video loaded - Has audio tracks:", video.audioTracks?.length || 0);
+              console.log("Logo video muted:", video.muted);
+              console.log("Logo video volume:", video.volume);
+            }}
+            onPlay={(e) => {
+              const video = e.currentTarget;
+              console.log("Logo video playing - muted:", video.muted, "volume:", video.volume);
+            }}
+            onVolumeChange={(e) => {
+              const video = e.currentTarget;
+              console.log("Logo video volume changed - muted:", video.muted, "volume:", video.volume);
+            }}
+            onError={(e) => {
+              console.error("Logo video error:", e);
+            }}
           >
             <source src="/logo-animation.mp4" type="video/mp4" />
             <source src="/logo-animation.webm" type="video/webm" />
@@ -1516,6 +1533,19 @@ export default function WelcomePage() {
   }
 
   return null; // Should not reach here
+}
+
+// Export default component wrapped in Suspense
+export default function WelcomePage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <div className="text-white text-xl">Loading...</div>
+      </div>
+    }>
+      <WelcomePageContent />
+    </Suspense>
+  );
 }
 
 // ✅ Phase 0: The Gate implemented
