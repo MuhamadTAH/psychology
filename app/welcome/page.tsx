@@ -5,7 +5,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useSignIn, useSignUp, useUser } from "@clerk/nextjs";
 import { ArrowRight, CheckSquare, Shield, Eye, Terminal, Lock, ArrowDown, MessageSquare, Scale, CheckCircle, Folder, AlertTriangle } from "lucide-react";
 import ScanTransition from "@/components/ScanTransition";
@@ -21,12 +21,17 @@ declare global {
 
 export default function WelcomePage() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const skipToPaywall = searchParams.get('skip') === 'true'; // Check if we should skip to paywall
+
   const { signIn, setActive, isLoaded } = useSignIn();
   const { signUp } = useSignUp();
   const { user } = useUser(); // Get current user authentication status
   const setSubscription = useMutation(api.gamification.setSubscriptionStatus);
 
-  const [step, setStep] = useState<"coldOpen" | "identityVerification" | "loginForm" | "phase1_awareness" | "phase1_solution" | "phase1_ethics" | "phase2_assessment" | "phase3_calculation" | "phase3_commitment" | "phase3_paywall" | "phase3_lockdown" | "phase3_result">("coldOpen");
+  // If skip=true, start at paywall, otherwise start at coldOpen
+  const initialStep = skipToPaywall ? "phase3_paywall" : "coldOpen";
+  const [step, setStep] = useState<"coldOpen" | "identityVerification" | "loginForm" | "phase1_awareness" | "phase1_solution" | "phase1_ethics" | "phase2_assessment" | "phase3_calculation" | "phase3_commitment" | "phase3_paywall" | "phase3_lockdown" | "phase3_result">(initialStep);
   const [showAuthPrompt, setShowAuthPrompt] = useState(false); // Prompt ghost users to sign up before payment
 
   // Step: Initialize Paddle on component mount

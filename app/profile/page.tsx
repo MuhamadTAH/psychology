@@ -413,7 +413,8 @@ export default function ProfilePage() {
 
   // Handle upgrade/manage subscription
   const handleUpgradeSubscription = () => {
-    router.push('/welcome');
+    // Add query parameter to skip directly to paywall
+    router.push('/welcome?skip=true');
   };
 
   // NOW we can do conditional returns AFTER all hooks are called
