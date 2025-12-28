@@ -6,7 +6,7 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { useSignIn, useSignUp } from "@clerk/nextjs";
+import { useSignIn, useSignUp, useUser } from "@clerk/nextjs";
 import { ArrowRight, CheckSquare, Shield, Eye, Terminal, Lock, ArrowDown, MessageSquare, Scale, CheckCircle, Folder, AlertTriangle } from "lucide-react";
 import ScanTransition from "@/components/ScanTransition";
 import { useMutation } from "convex/react";
@@ -23,9 +23,11 @@ export default function WelcomePage() {
   const router = useRouter();
   const { signIn, setActive, isLoaded } = useSignIn();
   const { signUp } = useSignUp();
+  const { user } = useUser(); // Get current user authentication status
   const setSubscription = useMutation(api.gamification.setSubscriptionStatus);
 
   const [step, setStep] = useState<"coldOpen" | "identityVerification" | "loginForm" | "phase1_awareness" | "phase1_solution" | "phase1_ethics" | "phase2_assessment" | "phase3_calculation" | "phase3_commitment" | "phase3_paywall" | "phase3_lockdown" | "phase3_result">("coldOpen");
+  const [showAuthPrompt, setShowAuthPrompt] = useState(false); // Prompt ghost users to sign up before payment
 
   // Step: Initialize Paddle on component mount
   // This loads Paddle payment system with sandbox credentials
@@ -1192,6 +1194,43 @@ export default function WelcomePage() {
   if (step === "phase3_paywall") {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center p-6 text-center">
+        {/* Auth Prompt Modal - For Ghost Users Trying to Subscribe */}
+        {showAuthPrompt && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm animate-fade-in">
+            <div className="bg-black border-2 border-white p-8 max-w-sm w-full shadow-[0_0_50px_rgba(255,255,255,0.3)]">
+              <div className="mb-6">
+                <Lock size={48} className="text-white mx-auto" />
+              </div>
+
+              <h2 className="text-white font-mono text-lg font-bold uppercase tracking-widest mb-4 text-center">
+                Authentication Required
+              </h2>
+
+              <p className="text-gray-300 font-mono text-xs mb-8 leading-relaxed text-center">
+                To access premium features, you must create an operative profile or sign in to an existing account.
+              </p>
+
+              <div className="space-y-3">
+                <button
+                  onClick={() => {
+                    setShowAuthPrompt(false);
+                    setStep("identityVerification");
+                  }}
+                  className="w-full bg-white text-black font-mono text-xs font-bold uppercase py-3 tracking-widest hover:bg-gray-200 transition-colors"
+                >
+                  Create Account / Sign In
+                </button>
+                <button
+                  onClick={() => setShowAuthPrompt(false)}
+                  className="w-full bg-transparent border border-gray-700 text-gray-400 font-mono text-xs uppercase py-3 tracking-widest hover:border-white hover:text-white transition-colors"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Walk of Shame Modal */}
         {showWalkOfShame && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-red-900/20 backdrop-blur-sm animate-fade-in">
@@ -1250,7 +1289,7 @@ export default function WelcomePage() {
           </div>
         )}
 
-        <div className={`animate-slide-in-right max-w-lg w-full ${showWalkOfShame ? 'blur-sm grayscale' : ''}`}>
+        <div className={`animate-slide-in-right max-w-lg w-full ${showWalkOfShame || showAuthPrompt ? 'blur-sm grayscale' : ''}`}>
 
           {/* Top Secret Folder Icon */}
           <div className="mb-8 relative w-24 h-24 mx-auto">
@@ -1322,7 +1361,15 @@ export default function WelcomePage() {
           {/* Primary Action */}
           <button
             onClick={async () => {
-              // Step: Check if we're in test mode (bypass Paddle for development)
+              // Step 1: Check if user is authenticated (not a ghost user)
+              if (!user) {
+                // User is not logged in - show auth prompt
+                setShowAuthPrompt(true);
+                return;
+              }
+
+              // Step 2: User is logged in - proceed with payment
+              // Check if we're in test mode (bypass Paddle for development)
               const isTestMode = process.env.NEXT_PUBLIC_PAYMENT_TEST_MODE === 'true';
 
               if (isTestMode) {
