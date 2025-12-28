@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import { useUser } from "@clerk/nextjs";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import { Settings, Pencil, Calendar, RefreshCw, Flame, Zap, Gem, Trophy, UserPlus, X, Home, BookOpen, ShoppingBag, Crown, User } from "lucide-react";
+import { Settings, Pencil, Calendar, RefreshCw, Flame, Zap, Gem, Trophy, UserPlus, X, Home, BookOpen, ShoppingBag, Crown, User, CreditCard, Sparkles, Infinity } from "lucide-react";
 import Avatar from "@/components/Avatar";
 import { useState } from "react";
 
@@ -220,6 +220,112 @@ const FriendSuggestions = ({ suggestions, onFollow, onViewAll }: { suggestions: 
     );
 };
 
+// 7. Subscription Section - Shows current plan and upgrade options
+const SubscriptionSection = ({ subscriptionStatus, subscriptionPlan, subscriptionEndDate, onUpgrade }: {
+    subscriptionStatus?: string;
+    subscriptionPlan?: string;
+    subscriptionEndDate?: number;
+    onUpgrade: () => void;
+}) => {
+    const isPremium = subscriptionStatus === "premium";
+    const endDate = subscriptionEndDate ? new Date(subscriptionEndDate).toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric'
+    }) : null;
+
+    return (
+        <section className="bg-gradient-to-br from-purple-900/30 to-blue-900/30 p-6 rounded-2xl border-2 border-purple-500/30">
+            <div className="flex items-center gap-3 mb-4">
+                {isPremium ? (
+                    <Crown className="w-6 h-6 text-yellow-400" />
+                ) : (
+                    <CreditCard className="w-6 h-6 text-blue-400" />
+                )}
+                <h3 className="text-xl font-bold text-white">Subscription</h3>
+            </div>
+
+            {isPremium ? (
+                <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                        <Sparkles className="w-5 h-5 text-yellow-400 mt-1" />
+                        <div>
+                            <p className="text-white font-bold text-lg">Premium Active</p>
+                            <p className="text-gray-300 text-sm">
+                                {subscriptionPlan === 'annual' ? 'Annual Plan' : 'Monthly Plan'}
+                            </p>
+                            {endDate && (
+                                <p className="text-gray-400 text-xs mt-1">
+                                    Renews on {endDate}
+                                </p>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Premium Benefits */}
+                    <div className="bg-white/5 rounded-xl p-4 space-y-2">
+                        <p className="text-white font-semibold text-sm mb-3">Your Benefits:</p>
+                        <div className="flex items-center gap-2 text-gray-300 text-sm">
+                            <Infinity className="w-4 h-4 text-green-400" />
+                            <span>Unlimited hearts</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-gray-300 text-sm">
+                            <Zap className="w-4 h-4 text-yellow-400" />
+                            <span>Unlimited lessons</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-gray-300 text-sm">
+                            <Crown className="w-4 h-4 text-yellow-400" />
+                            <span>Premium badge</span>
+                        </div>
+                    </div>
+
+                    {/* Manage subscription button */}
+                    <button
+                        onClick={onUpgrade}
+                        className="w-full bg-gray-700 text-white font-semibold py-3 px-4 rounded-xl border border-gray-600 hover:bg-gray-600 transition-colors"
+                    >
+                        Manage Subscription
+                    </button>
+                </div>
+            ) : (
+                <div className="space-y-4">
+                    <div>
+                        <p className="text-white font-bold text-lg mb-1">Free Plan</p>
+                        <p className="text-gray-300 text-sm">
+                            Limited to 5 lessons • 5 hearts
+                        </p>
+                    </div>
+
+                    {/* Upgrade CTA */}
+                    <div className="bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-xl p-4 border border-purple-500/30">
+                        <p className="text-white font-semibold mb-2">Upgrade to Premium</p>
+                        <ul className="space-y-2 text-sm text-gray-300 mb-4">
+                            <li className="flex items-center gap-2">
+                                <Infinity className="w-4 h-4 text-green-400" />
+                                Unlimited hearts & lessons
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <Sparkles className="w-4 h-4 text-yellow-400" />
+                                No ads or interruptions
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <Crown className="w-4 h-4 text-yellow-400" />
+                                Exclusive premium badge
+                            </li>
+                        </ul>
+                        <button
+                            onClick={onUpgrade}
+                            className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold py-3 px-4 rounded-xl hover:from-purple-500 hover:to-blue-500 transition-all"
+                        >
+                            Upgrade Now
+                        </button>
+                    </div>
+                </div>
+            )}
+        </section>
+    );
+};
+
 // --- Main Page Component ---
 
 export default function ProfilePage() {
@@ -305,6 +411,11 @@ export default function ProfilePage() {
     router.push('/search-users');
   };
 
+  // Handle upgrade/manage subscription
+  const handleUpgradeSubscription = () => {
+    router.push('/welcome');
+  };
+
   // NOW we can do conditional returns AFTER all hooks are called
   // Loading state: wait for both Clerk and Convex to be ready
   if (!isLoaded || userStats === undefined || following === undefined) {
@@ -333,6 +444,12 @@ export default function ProfilePage() {
       <main className="max-w-2xl mx-auto px-4 py-8 pb-24 space-y-8">
         <UserHero user={user} friendsCount={followingCount || 0} onEditClick={handleEditClick} />
         <StatsGrid stats={userStats} leagueName={leagueName} />
+        <SubscriptionSection
+          subscriptionStatus={userStats?.subscriptionStatus}
+          subscriptionPlan={userStats?.subscriptionPlan}
+          subscriptionEndDate={userStats?.subscriptionEndDate}
+          onUpgrade={handleUpgradeSubscription}
+        />
         <AchievementsSection stats={userStats} onViewAll={handleViewAllAchievements} />
         <FriendsList friends={following} />
         <FriendSuggestions suggestions={suggestions || []} onFollow={handleFollow} onViewAll={handleViewAllSuggestions} />
