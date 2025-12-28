@@ -250,8 +250,7 @@ function WelcomePageContent() {
               console.error("Logo video error:", e);
             }}
           >
-            <source src="/logo-animation.mp4" type="video/mp4" />
-            <source src="/logo-animation.webm" type="video/webm" />
+            <source src="/logo-animation.mov" type="video/quicktime" />
           </video>
         </div>
         {/* CSS for glitch effect, specific to coldOpen */}
@@ -1383,53 +1382,78 @@ function WelcomePageContent() {
           {/* Primary Action */}
           <button
             onClick={async () => {
+              console.log('🔵 Subscribe button clicked');
+              console.log('User object:', user);
+              console.log('Selected plan:', selectedPlan);
+              console.log('Test mode env var:', process.env.NEXT_PUBLIC_PAYMENT_TEST_MODE);
+
               // Step 1: Check if user is authenticated (not a ghost user)
               if (!user) {
+                console.log('⚠️ No user - showing auth prompt');
                 // User is not logged in - show auth prompt
                 setShowAuthPrompt(true);
                 return;
               }
 
+              console.log('✅ User is authenticated');
+
               // Step 2: User is logged in - proceed with payment
               // Check if we're in test mode (bypass Paddle for development)
               const isTestMode = process.env.NEXT_PUBLIC_PAYMENT_TEST_MODE === 'true';
+              console.log('Is test mode:', isTestMode);
 
               if (isTestMode) {
+                console.log('🧪 Test mode active - bypassing Paddle');
                 // Test mode: Skip Paddle, directly grant premium access
                 try {
+                  console.log('Calling setSubscription mutation...');
                   await setSubscription({
                     status: "premium",
                     plan: selectedPlan,
                   });
+                  console.log('✅ Subscription set successfully');
+                  console.log('Redirecting to dashboard...');
                   router.push("/dark-psychology-dashboard");
                 } catch (error) {
+                  console.error('❌ Subscription error:', error);
+                  console.log('Redirecting to dashboard anyway...');
                   router.push("/dark-psychology-dashboard");
                 }
               } else {
+                console.log('💳 Production mode - using Paddle');
                 // Production mode: Use real Paddle checkout
                 const priceId = selectedPlan === 'annual'
                   ? 'pri_01kdfxxqtv3bg6qsq9fvr9srdh'  // Annual/Yearly plan (sandbox)
                   : 'pri_01kdfxwtqhwv2femmzdnkppd7h'; // Monthly plan (sandbox)
 
+                console.log('Using price ID:', priceId);
+
                 if (window.Paddle) {
+                  console.log('Opening Paddle checkout...');
                   window.Paddle.Checkout.open({
                     items: [{ priceId, quantity: 1 }],
                     successCallback: async (data: any) => {
+                      console.log('✅ Paddle payment successful:', data);
                       // Step: Payment successful - save subscription to database
                       try {
                         await setSubscription({
                           status: "premium",
                           plan: selectedPlan,
                         });
+                        console.log('Subscription saved to database');
                         router.push("/dark-psychology-dashboard");
                       } catch (error) {
+                        console.error('Error saving subscription:', error);
                         router.push("/dark-psychology-dashboard");
                       }
                     },
                     closeCallback: () => {
+                      console.log('⚠️ User closed Paddle checkout');
                       // User closed the checkout without completing payment
                     },
                   });
+                } else {
+                  console.error('❌ Paddle not loaded');
                 }
               }
             }}
