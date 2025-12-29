@@ -1,4 +1,4 @@
-// 🧠 FILE PURPOSE
+﻿// ≡ƒºá FILE PURPOSE
 // "The Induction" - Dark Psychology onboarding experience
 // Phase 0: The Gate (Cold Open + Identity Verification)
 
@@ -943,10 +943,10 @@ function WelcomePageContent() {
               <p className={`font - mono text - sm tracking - wider italic ${isCorrect === false ? 'text-red-500' : 'text-gray-300'} `}>
                 "{displayedText}
                 {displayedText.length < (selectedReaction?.length || 0) && showCursor && (
-                  <span className="inline-block">█</span>
+                  <span className="inline-block">Γûê</span>
                 )}
                 {displayedText.length === (selectedReaction?.length || 0) && showCursor && (
-                  <span className="inline-block">█</span>
+                  <span className="inline-block">Γûê</span>
                 )}
                 "
               </p>
@@ -1382,78 +1382,78 @@ function WelcomePageContent() {
           {/* Primary Action */}
           <button
             onClick={async () => {
-              console.log('🔵 Subscribe button clicked');
-              console.log('User object:', user);
-              console.log('Selected plan:', selectedPlan);
-              console.log('Test mode env var:', process.env.NEXT_PUBLIC_PAYMENT_TEST_MODE);
+              console.log('[PAYWALL] Subscribe button clicked');
+              console.log('[PAYWALL] User object:', user);
+              console.log('[PAYWALL] Selected plan:', selectedPlan);
+              console.log('[PAYWALL] Env NEXT_PUBLIC_PAYMENT_TEST_MODE:', process.env.NEXT_PUBLIC_PAYMENT_TEST_MODE);
 
               // Step 1: Check if user is authenticated (not a ghost user)
               if (!user) {
-                console.log('⚠️ No user - showing auth prompt');
+                console.log('[PAYWALL] No user - showing auth prompt');
                 // User is not logged in - show auth prompt
                 setShowAuthPrompt(true);
                 return;
               }
 
-              console.log('✅ User is authenticated');
+              console.log('[PAYWALL] User is authenticated');
 
               // Step 2: User is logged in - proceed with payment
               // Check if we're in test mode (bypass Paddle for development)
               const isTestMode = process.env.NEXT_PUBLIC_PAYMENT_TEST_MODE === 'true';
-              console.log('Is test mode:', isTestMode);
+              console.log('[PAYWALL] isTestMode computed as:', isTestMode);
 
               if (isTestMode) {
-                console.log('🧪 Test mode active - bypassing Paddle');
+                console.log('[PAYWALL] Test mode active - bypassing Paddle (no Paddle order will be created)');
                 // Test mode: Skip Paddle, directly grant premium access
                 try {
-                  console.log('Calling setSubscription mutation...');
+                  console.log('[PAYWALL] Calling setSubscription mutation (test bypass)...');
                   await setSubscription({
                     status: "premium",
                     plan: selectedPlan,
                   });
-                  console.log('✅ Subscription set successfully');
-                  console.log('Redirecting to dashboard...');
+                  console.log('[PAYWALL] Subscription set successfully (test bypass)');
+                  console.log('[PAYWALL] Redirecting to dashboard...');
                   router.push("/dark-psychology-dashboard");
                 } catch (error) {
-                  console.error('❌ Subscription error:', error);
-                  console.log('Redirecting to dashboard anyway...');
+                  console.error('[PAYWALL] Subscription error during test bypass:', error);
+                  console.log('[PAYWALL] Redirecting to dashboard anyway...');
                   router.push("/dark-psychology-dashboard");
                 }
               } else {
-                console.log('💳 Production mode - using Paddle');
+                console.log('[PAYWALL] Paddle mode - opening checkout');
                 // Production mode: Use real Paddle checkout
                 const priceId = selectedPlan === 'annual'
                   ? 'pri_01kdfxxqtv3bg6qsq9fvr9srdh'  // Annual/Yearly plan (sandbox)
                   : 'pri_01kdfxwtqhwv2femmzdnkppd7h'; // Monthly plan (sandbox)
 
-                console.log('Using price ID:', priceId);
+                console.log('[PAYWALL] Using price ID:', priceId, 'for plan:', selectedPlan);
 
                 if (window.Paddle) {
-                  console.log('Opening Paddle checkout...');
+                  console.log('[PAYWALL] Opening Paddle checkout...');
                   window.Paddle.Checkout.open({
                     items: [{ priceId, quantity: 1 }],
                     successCallback: async (data: any) => {
-                      console.log('✅ Paddle payment successful:', data);
+                      console.log('[PAYWALL] Paddle success callback payload:', data);
                       // Step: Payment successful - save subscription to database
                       try {
                         await setSubscription({
                           status: "premium",
                           plan: selectedPlan,
                         });
-                        console.log('Subscription saved to database');
+                        console.log('[PAYWALL] Subscription saved to database after Paddle success');
                         router.push("/dark-psychology-dashboard");
                       } catch (error) {
-                        console.error('Error saving subscription:', error);
+                        console.error('[PAYWALL] Error saving subscription after Paddle success:', error);
                         router.push("/dark-psychology-dashboard");
                       }
                     },
                     closeCallback: () => {
-                      console.log('⚠️ User closed Paddle checkout');
+                      console.log('[PAYWALL] User closed Paddle checkout');
                       // User closed the checkout without completing payment
                     },
                   });
                 } else {
-                  console.error('❌ Paddle not loaded');
+                  console.error('[PAYWALL] Paddle not loaded on window');
                 }
               }
             }}
@@ -1572,6 +1572,6 @@ export default function WelcomePage() {
   );
 }
 
-// ✅ Phase 0: The Gate implemented
+// Γ£à Phase 0: The Gate implemented
 // - Screen 0: Cold Open (pure black + glitching video, 3s auto-advance)
 // - Screen 0.5: Identity Verification (ghost buttons + Clerk integration)
