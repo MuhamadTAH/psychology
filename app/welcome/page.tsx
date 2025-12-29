@@ -40,9 +40,20 @@ function WelcomePageContent() {
   // Sandbox mode uses test_ token prefix, production uses live_ prefix
   useEffect(() => {
     if (typeof window !== 'undefined' && window.Paddle) {
-      window.Paddle.Initialize({
-        token: 'test_ccebce130edda8da55f5ecd309b',
-      });
+      try {
+        // Ensure sandbox environment locally (matches test token + sandbox price IDs)
+        if (window.Paddle?.Environment?.set) {
+          window.Paddle.Environment.set("sandbox");
+          console.log("[PAYWALL] Paddle environment set to sandbox");
+        }
+
+        window.Paddle.Initialize({
+          token: 'test_ccebce130edda8da55f5ecd309b',
+        });
+        console.log("[PAYWALL] Paddle initialized (sandbox token)");
+      } catch (err) {
+        console.error("[PAYWALL] Paddle init error:", err);
+      }
     }
   }, []);
   const [showGhostWarning, setShowGhostWarning] = useState(false);
@@ -1461,6 +1472,12 @@ function WelcomePageContent() {
           >
             {selectedPlan === 'annual' ? 'Initialize 7-Day Field Test' : 'Initialize Access ($19.99)'}
           </button>
+
+          {/* Debug panel to inspect payment mode in production */}
+          <div className="text-[10px] text-gray-500 font-mono mb-2">
+            <div>Paddle loaded: {typeof window !== "undefined" && (window as any).Paddle ? "yes" : "no"}</div>
+            <div>NEXT_PUBLIC_PAYMENT_TEST_MODE: {process.env.NEXT_PUBLIC_PAYMENT_TEST_MODE || "undefined"}</div>
+          </div>
 
           {/* Secondary Action - Trigger Walk of Shame */}
           <button
