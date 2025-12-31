@@ -1,11 +1,11 @@
 // 🧠 FILE PURPOSE
 // Renders the multiple-choice question type with dynamic layouts:
 // - Chat bubble with character for questions WITH a scene
-// - Clean card with brain icon for questions WITHOUT a scene
+// - Clean card for questions WITHOUT a scene
 
 "use client";
 
-import { Volume2, Brain } from 'lucide-react';
+import { Volume2 } from 'lucide-react';
 import { isImagePath, parseSceneAndQuestion } from '../utils/questionHelpers';
 import { FormattedText } from '../utils/textFormatter';
 
@@ -91,20 +91,10 @@ export function MultipleChoiceQuestion({
       {!hasScene && bubbleContent && !isImagePath(bubbleContent) && (
         <div className="flex items-center justify-center">
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl border-2 border-gray-600 shadow-xl p-6 md:p-8 max-w-2xl w-full">
-            <div className="flex items-start gap-4">
-              {/* Brain icon for knowledge check */}
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-full flex items-center justify-center border-2 border-purple-500/30">
-                  <Brain className="w-6 h-6 md:w-7 md:h-7 text-purple-400" />
-                </div>
-              </div>
-
-              {/* Question text */}
-              <div className="flex-1">
-                <p className="text-white text-lg md:text-xl font-semibold leading-relaxed">
-                  <FormattedText text={question} />
-                </p>
-              </div>
+            <div className="flex items-start">
+              <p className="text-white text-lg md:text-xl font-semibold leading-relaxed">
+                <FormattedText text={question} />
+              </p>
             </div>
           </div>
         </div>
@@ -152,5 +142,4 @@ export function MultipleChoiceQuestion({
 
 // ✅ In this component we achieved:
 // Two distinct visual styles: chat bubble for scenes, clean card for direct questions.
-// Brain icon distinguishes "knowledge check" questions from conversational scenes.
 // Responsive design works for both layouts.

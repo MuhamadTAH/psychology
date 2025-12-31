@@ -6,7 +6,7 @@
 
 import { useState } from "react";
 import { FileDown, AlertTriangle, CheckCircle, Code } from "lucide-react";
-import { DARK_PSYCHOLOGY_LESSONS } from "@/lib/darkPsychologyLessons";
+import { DARK_PSYCHOLOGY_LESSONS } from "@/md/lib/darkPsychologyLessons";
 
 export function MigrateDarkPsychology() {
   const [analysisResult, setAnalysisResult] = useState<any>(null);

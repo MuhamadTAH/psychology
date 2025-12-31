@@ -9,7 +9,15 @@ import { v } from "convex/values";
 // Restrict analytics to admins only
 const requireAdmin = async (ctx: any) => {
   const identity = await ctx.auth.getUserIdentity();
-  const ADMIN_EMAILS = ["system@duolearn.com"];
+  const adminEnv = process.env.ADMIN_EMAILS || "";
+  const ADMIN_EMAILS = adminEnv
+    .split(",")
+    .map((e) => e.trim())
+    .filter(Boolean);
+  // Always include system fallback
+  if (!ADMIN_EMAILS.includes("system@duolearn.com")) {
+    ADMIN_EMAILS.push("system@duolearn.com");
+  }
   if (!identity) throw new Error("Not authenticated");
   if (!ADMIN_EMAILS.includes(identity.email!)) {
     throw new Error("Forbidden");

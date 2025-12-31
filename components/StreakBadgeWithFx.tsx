@@ -7,8 +7,8 @@
 
 import React from 'react';
 import { StreakBadge } from './StreakBadge';
-import { getStreakTier } from '@/lib/streakFxConfig';
-import { useStreakTimeline, type TriggerType } from '@/lib/streakStateMachine';
+import { getStreakTier } from '@/md/lib/streakFxConfig';
+import { useStreakTimeline, type TriggerType } from '@/md/lib/streakStateMachine';
 import { GlowPulse } from './streak-fx/GlowPulse';
 import { ShineSweep } from './streak-fx/ShineSweep';
 import { SparkleParticles } from './streak-fx/SparkleParticles';

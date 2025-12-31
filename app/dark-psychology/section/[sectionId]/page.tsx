@@ -9,7 +9,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { useUser } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Brain, Trash2, Edit, ArrowLeft, Star, Check, Lock } from "lucide-react";
+import { BookOpen, Trash2, Edit, ArrowLeft, Star, Check, Lock } from "lucide-react";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 
@@ -470,7 +470,6 @@ export default function SectionPage() {
       <div className="max-w-2xl mx-auto px-4 py-8 relative">
         {sectionLessons.length === 0 ? (
           <div className="text-center py-16 bg-gray-800/40 backdrop-blur rounded-xl border border-gray-700/50 shadow-lg">
-            <Brain className="h-16 w-16 text-gray-600 mx-auto mb-4" />
             <h2 className="text-xl font-bold text-white mb-2">No Lessons Yet</h2>
             <p className="text-gray-400 mb-4 max-w-md mx-auto px-4">
               Even shadows begin with a single step.  

@@ -15,7 +15,7 @@ export default function AnimationTestPage() {
 
   // Step 1: Define video segments
   // You can add more segments here for different animations
-  const [currentVideo, setCurrentVideo] = useState("/cat-animation/robot_transparent.webm");
+  const [currentVideo, setCurrentVideo] = useState("/animations/character-standing.webm");
 
   // Step 2: Handle video playback
   // Play video from start when button is clicked

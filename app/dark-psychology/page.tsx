@@ -8,10 +8,10 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useUser } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
-import { Home, BookOpen, Brain, ChevronRight } from "lucide-react";
+import { Home, BookOpen, ChevronRight } from "lucide-react";
 import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import { SECTIONS } from "@/lib/darkPsychologyLessons";
+import { SECTIONS } from "@/md/lib/darkPsychologyLessons";
 
 export default function DarkPsychologyPage() {
   const router = useRouter();
@@ -45,7 +45,7 @@ export default function DarkPsychologyPage() {
   const playClickSound = () => {
     if (buttonSound) {
       buttonSound.currentTime = 0; // Reset to start
-      buttonSound.play().catch(() => {});
+      buttonSound.play().catch(() => { });
     }
   };
 
@@ -132,10 +132,7 @@ export default function DarkPsychologyPage() {
       {/* Header */}
       <div className="bg-[#1F2937] border-b border-gray-700 sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Brain className="h-8 w-8 text-purple-500" />
-            <h1 className="text-2xl font-bold text-white">Dark Psychology</h1>
-          </div>
+          <h1 className="text-2xl font-bold text-white">Dark Psychology</h1>
           <div className="flex items-center gap-4">
             <Button
               variant="outline"
@@ -235,7 +232,6 @@ export default function DarkPsychologyPage() {
         {/* Empty State */}
         {dbLessons && dbLessons.length === 0 && (
           <div className="text-center py-12 bg-gray-800 rounded-lg border border-gray-700 mt-8">
-            <Brain className="h-16 w-16 text-gray-600 mx-auto mb-4" />
             <h2 className="text-xl font-bold text-white mb-2">No Lessons Yet</h2>
             <p className="text-gray-400 mb-4">
               Dark Psychology lessons will appear here once they are added.

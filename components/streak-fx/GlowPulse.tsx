@@ -6,8 +6,8 @@
 'use client';
 
 import React from 'react';
-import { type StreakTierConfig } from '@/lib/streakFxConfig';
-import { type BadgeTimeline } from '@/lib/streakStateMachine';
+import { type StreakTierConfig } from '@/md/lib/streakFxConfig';
+import { type BadgeTimeline } from '@/md/lib/streakStateMachine';
 
 interface GlowPulseProps {
   timeline: BadgeTimeline;

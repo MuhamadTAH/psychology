@@ -239,28 +239,136 @@ function WelcomePageContent() {
       <div className="min-h-screen bg-black flex items-center justify-center">
         <div className="flex justify-center relative">
           <video
+            ref={(el) => {
+              if (el) {
+                console.log("🎬 VIDEO ELEMENT CREATED");
+                console.log("📊 Initial state:", {
+                  muted: el.muted,
+                  volume: el.volume,
+                  autoplay: el.autoplay,
+                  src: el.currentSrc
+                });
+
+                // Force unmute and set volume immediately
+                el.muted = false;
+                el.volume = 0.7;
+
+                // Force load the video
+                console.log("🔄 Forcing video load...");
+                el.load();
+
+                // Try to play immediately
+                setTimeout(() => {
+                  console.log("▶️ Attempting to play video...");
+                  el.play()
+                    .then(() => {
+                      console.log("✅ Video started playing successfully!");
+                      console.log("🔇 Muted:", el.muted, "🔊 Volume:", el.volume);
+                    })
+                    .catch((error) => {
+                      console.error("❌ Play failed:", error.name, error.message);
+                      if (error.name === 'NotAllowedError') {
+                        console.warn("⚠️ Browser blocked autoplay with sound");
+                        console.log("💡 Trying muted playback...");
+                        el.muted = true;
+                        el.play().then(() => {
+                          console.log("✅ Playing muted");
+                          console.log("💡 Click anywhere to unmute!");
+
+                          // Add click listener to unmute
+                          const unmute = () => {
+                            el.muted = false;
+                            el.volume = 0.7;
+                            console.log("🔊 UNMUTED! Volume:", el.volume);
+                            document.removeEventListener('click', unmute);
+                          };
+                          document.addEventListener('click', unmute, { once: true });
+                        });
+                      }
+                    });
+                }, 100);
+              }
+            }}
             autoPlay
             playsInline
+            preload="auto"
             className="w-64 h-64 object-contain glitch-video"
             onEnded={() => setStep("identityVerification")}
             onLoadedMetadata={(e) => {
               const video = e.currentTarget;
-              console.log("Logo video loaded - Has audio tracks:", video.audioTracks?.length || 0);
-              console.log("Logo video muted:", video.muted);
-              console.log("Logo video volume:", video.volume);
+              console.log("📹 ===== VIDEO LOADED METADATA =====");
+              console.log("🔊 Audio tracks:", video.audioTracks?.length || "Not supported");
+              console.log("🎵 Has audio:", video.mozHasAudio || video.webkitAudioDecodedByteCount > 0 || "Unknown");
+              console.log("🔇 Muted:", video.muted);
+              console.log("🔊 Volume:", video.volume);
+              console.log("⏯️ Paused:", video.paused);
+              console.log("📺 Current source:", video.currentSrc);
+              console.log("⏱️ Duration:", video.duration);
+
+              // Force unmute and set volume
+              video.muted = false;
+              video.volume = 0.7;
+
+              console.log("✅ After setting - Muted:", video.muted, "Volume:", video.volume);
+            }}
+            onLoadedData={(e) => {
+              const video = e.currentTarget;
+              console.log("📦 VIDEO DATA LOADED");
+              console.log("🔇 Muted:", video.muted, "🔊 Volume:", video.volume);
+            }}
+            onCanPlay={(e) => {
+              const video = e.currentTarget;
+              console.log("▶️ VIDEO CAN PLAY");
+              console.log("🔇 Muted:", video.muted, "🔊 Volume:", video.volume);
+
+              // Try to play with sound
+              video.play().then(() => {
+                console.log("✅ Video play() succeeded");
+                console.log("🔇 Playing - Muted:", video.muted, "🔊 Volume:", video.volume);
+              }).catch((error) => {
+                console.error("❌ Video play() failed:", error.name, error.message);
+                if (error.name === 'NotAllowedError') {
+                  console.warn("⚠️ Browser blocked autoplay with sound. User interaction required.");
+                  console.log("💡 Trying to play muted...");
+                  video.muted = true;
+                  video.play().then(() => {
+                    console.log("✅ Playing muted successfully");
+                  });
+                }
+              });
             }}
             onPlay={(e) => {
               const video = e.currentTarget;
-              console.log("Logo video playing - muted:", video.muted, "volume:", video.volume);
+              console.log("▶️ ===== VIDEO PLAYING =====");
+              console.log("🔇 Muted:", video.muted);
+              console.log("🔊 Volume:", video.volume);
+              console.log("⏸️ Paused:", video.paused);
+            }}
+            onPlaying={(e) => {
+              const video = e.currentTarget;
+              console.log("🎬 VIDEO IS ACTIVELY PLAYING");
+              console.log("🔇 Muted:", video.muted, "🔊 Volume:", video.volume);
             }}
             onVolumeChange={(e) => {
               const video = e.currentTarget;
-              console.log("Logo video volume changed - muted:", video.muted, "volume:", video.volume);
+              console.log("🔊 VOLUME CHANGED - Muted:", video.muted, "Volume:", video.volume);
+            }}
+            onSuspend={(e) => {
+              console.log("⏸️ VIDEO SUSPENDED (loading paused)");
+            }}
+            onStalled={(e) => {
+              console.log("⚠️ VIDEO STALLED (network issue?)");
             }}
             onError={(e) => {
-              console.error("Logo video error:", e);
+              const video = e.currentTarget;
+              console.error("❌ ===== VIDEO ERROR =====");
+              console.error("Error code:", video.error?.code);
+              console.error("Error message:", video.error?.message);
+              console.error("Current source:", video.currentSrc);
             }}
           >
+            <source src="/logo-animation.mp4" type="video/mp4" />
+            <source src="/logo-animation.webm" type="video/webm" />
             <source src="/logo-animation.mov" type="video/quicktime" />
           </video>
         </div>
@@ -938,7 +1046,7 @@ function WelcomePageContent() {
               className="w-72 h-72 md:w-96 md:h-96 object-contain"
             >
               <source src="/animations/character-standing.mp4" type="video/mp4" />
-            <source src="/animations/character-standing.webm" type="video/webm" />
+              <source src="/animations/character-standing.webm" type="video/webm" />
             </video>
           </div>
 

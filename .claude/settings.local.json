@@ -53,7 +53,9 @@
       "Bash(git fetch:*)",
       "Bash(git ls-tree:*)",
       "Bash(del \"app\\\\api\\\\analytics-ai\\\\route.ts\")",
-      "Bash(npm view:*)"
+      "Bash(npm view:*)",
+      "Bash(ls:*)",
+      "Bash(ffprobe:*)"
     ],
     "deny": [],
     "ask": []

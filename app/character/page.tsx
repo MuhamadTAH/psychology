@@ -2,7 +2,7 @@
 
 import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import { useConfiguratorStore } from "@/lib/character-store";
+import { useConfiguratorStore } from "@/md/lib/character-store";
 import { useEffect } from "react";
 import { UI } from "@/components/character/UI";
 import { Canvas } from "@react-three/fiber";

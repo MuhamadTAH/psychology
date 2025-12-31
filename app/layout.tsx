@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import InstallPWA from "@/components/InstallPWA";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,21 +15,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DuoLearn - AI-Powered Learning",
+  title: "Gambit - AI-Powered Learning",
   description: "Learn smarter with AI-generated lessons",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "DuoLearn",
+    title: "Gambit",
   },
   icons: {
     icon: [
-      { url: "/icons/icon-192x192.svg", sizes: "192x192", type: "image/svg+xml" },
-      { url: "/icons/icon-512x512.svg", sizes: "512x512", type: "image/svg+xml" },
+      { url: "/app-icon-512x512.png", sizes: "512x512", type: "image/png" },
+      { url: "/app-icon-1024x1024.png", sizes: "1024x1024", type: "image/png" },
     ],
     apple: [
-      { url: "/icons/icon-152x152.svg", sizes: "152x152", type: "image/svg+xml" },
+      { url: "/app-icon-1024x1024.png", sizes: "1024x1024", type: "image/png" },
     ],
   },
 };
@@ -46,8 +47,8 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="DuoLearn" />
-        <link rel="apple-touch-icon" href="/icons/icon-152x152.svg" />
+        <meta name="apple-mobile-web-app-title" content="Gambit" />
+        <link rel="apple-touch-icon" href="/app-icon-1024x1024.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
 
         {/* Paddle.js Payment Integration */}
@@ -68,6 +69,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>{children}</Providers>
+        <InstallPWA />
         <script dangerouslySetInnerHTML={{
           __html: `
             if ('serviceWorker' in navigator) {

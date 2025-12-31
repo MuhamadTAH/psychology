@@ -2,7 +2,7 @@
 
 import { useAnimations, useGLTF } from "@react-three/drei";
 import { Suspense, useEffect, useRef } from "react";
-import { useConfiguratorStore } from "@/lib/character-store";
+import { useConfiguratorStore } from "@/md/lib/character-store";
 import { Asset } from "./Asset";
 import { Group, Skeleton } from "three";
 

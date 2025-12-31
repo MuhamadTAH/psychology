@@ -2,7 +2,7 @@
 
 import { useGLTF } from "@react-three/drei";
 import { useEffect, useMemo } from "react";
-import { useConfiguratorStore } from "@/lib/character-store";
+import { useConfiguratorStore } from "@/md/lib/character-store";
 import type { Skeleton, Material, BufferGeometry } from "three";
 
 interface AssetProps {

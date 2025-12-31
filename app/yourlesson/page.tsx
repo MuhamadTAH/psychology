@@ -14,8 +14,8 @@ import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { FinalScore } from "./components/FinalScore";
 import { StreakBadge } from "@/components/StreakBadge";
-import { useStreakTimeline } from "@/lib/streakStateMachine";
-import { getStreakTier } from "@/lib/streakFxConfig";
+import { useStreakTimeline } from "@/md/lib/streakStateMachine";
+import { getStreakTier } from "@/md/lib/streakFxConfig";
 import { GlowPulse } from "@/components/streak-fx/GlowPulse";
 import { ShineSweep } from "@/components/streak-fx/ShineSweep";
 import { SparkleParticles } from "@/components/streak-fx/SparkleParticles";
@@ -1038,19 +1038,6 @@ export default function YourLessonPage() {
           <h1 className="text-3xl font-bold text-white mb-4">No Lesson Loaded</h1>
           <p className="text-gray-400 mb-6">Please select a lesson from the dashboard</p>
 
-          {/* Cat Animation Video Player */}
-          <div className="bg-[#1a2332] p-6 rounded-2xl border-2 border-gray-700 mb-6">
-            <video
-              className="w-full h-auto rounded-xl"
-              controls
-              autoPlay
-              loop
-            >
-              <source src="/cat animation/celebrating .mov" type="video/quicktime" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
           <Button onClick={() => router.push('/upload')}>Go to Upload</Button>
         </div>
       </div>
@@ -1381,7 +1368,7 @@ export default function YourLessonPage() {
             );
           }
 
-          // Training Mode: Mentor/Brain icon, clean cards, lighter background
+          // Training Mode: Clean cards, lighter background
           if (uiMode === 'training') {
             return (
               <div className="mb-6 md:mb-8">
@@ -1414,14 +1401,6 @@ export default function YourLessonPage() {
                       <div className="bg-[#1e2a3a] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-blue-900/30 relative">
                         {/* Speech bubble pointer */}
                         <div className="absolute left-0 top-16 transform -translate-x-2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#1e2a3a]"></div>
-
-                        {/* Brain Icon */}
-                        <div className="absolute -top-3 -right-3 z-20">
-                          <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-blue-900/50 border-2 border-blue-500 flex items-center justify-center shadow-lg">
-                            <div className="text-xl md:text-2xl">🧠</div>
-                          </div>
-                        </div>
-
                         {/* Question text */}
                         <p className="text-white text-base md:text-lg font-semibold leading-relaxed">
                           {currentQuestion.type === 'fill-in' && currentQuestion.sentence ? (
@@ -1541,14 +1520,6 @@ export default function YourLessonPage() {
                       <div className="bg-[#1e2a3a] rounded-2xl px-5 py-4 md:px-6 md:py-5 shadow-xl border-2 border-purple-900/30 relative">
                         {/* Speech bubble pointer */}
                         <div className="absolute left-0 top-16 transform -translate-x-2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#1e2a3a]"></div>
-
-                        {/* Brain/Puzzle Icon */}
-                        <div className="absolute -top-3 -right-3 z-20">
-                          <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-purple-900/50 border-2 border-purple-500 flex items-center justify-center shadow-lg">
-                            <div className="text-xl md:text-2xl">🧩</div>
-                          </div>
-                        </div>
-
                         {/* Instruction Text as Speech Bubble Content */}
                         <p className="text-white text-base md:text-lg font-semibold leading-relaxed">
                           Match the terms with their definitions.

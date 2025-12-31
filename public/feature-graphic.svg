@@ -22,9 +22,8 @@
   </pattern>
   <rect width="1024" height="500" fill="url(#scanlines)" opacity="0.1"/>
 
-  <!-- Left Side: Brain Icon with Glow -->
+  <!-- Left Side: Abstract Glow -->
   <circle cx="200" cy="250" r="80" fill="url(#glowEffect)" opacity="0.5"/>
-  <text x="200" y="280" font-size="120" text-anchor="middle" fill="#ffffff" opacity="0.9">🧠</text>
 
   <!-- Center: Main Text -->
   <text x="512" y="200" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="#ffffff" letter-spacing="8">

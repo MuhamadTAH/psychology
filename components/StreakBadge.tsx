@@ -9,8 +9,8 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { getStreakTier, type StreakTierConfig } from '@/lib/streakFxConfig';
-import { type BadgeTimeline } from '@/lib/streakStateMachine';
+import { getStreakTier, type StreakTierConfig } from '@/md/lib/streakFxConfig';
+import { type BadgeTimeline } from '@/md/lib/streakStateMachine';
 
 interface StreakBadgeProps {
   streakCount: number;
@@ -41,7 +41,7 @@ export function StreakBadge({
   useEffect(() => {
     if (streakCount > 0 && streakSound) {
       streakSound.currentTime = 0;
-      streakSound.play().catch(() => {});
+      streakSound.play().catch(() => { });
     }
   }, [streakCount, streakSound]);
 

@@ -8,7 +8,7 @@ import { useState } from "react";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { Upload, CheckCircle, AlertCircle, Database, RefreshCw } from "lucide-react";
-import { DARK_PSYCHOLOGY_LESSONS } from "@/lib/darkPsychologyLessons";
+import { DARK_PSYCHOLOGY_LESSONS } from "@/md/lib/darkPsychologyLessons";
 
 export function MigrateDarkPsychologyDB() {
   const [isImporting, setIsImporting] = useState(false);
@@ -90,11 +90,10 @@ export function MigrateDarkPsychologyDB() {
       {/* Import result */}
       {importResult && (
         <div
-          className={`mb-4 p-4 rounded-lg border-2 ${
-            importResult.type === "success"
+          className={`mb-4 p-4 rounded-lg border-2 ${importResult.type === "success"
               ? "bg-green-500/10 border-green-500/30 text-green-400"
               : "bg-red-500/10 border-red-500/30 text-red-400"
-          }`}
+            }`}
         >
           <p className="font-semibold mb-2">{importResult.message}</p>
           {importResult.details && importResult.details.errors.length > 0 && (
@@ -132,11 +131,10 @@ export function MigrateDarkPsychologyDB() {
       <button
         onClick={handleImportToDB}
         disabled={isImporting}
-        className={`w-full font-bold py-3 px-6 rounded-xl transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed ${
-          dbStatus.inDatabase
+        className={`w-full font-bold py-3 px-6 rounded-xl transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed ${dbStatus.inDatabase
             ? "bg-yellow-600 hover:bg-yellow-500 text-white"
             : "bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white"
-        }`}
+          }`}
       >
         {isImporting ? (
           <>
