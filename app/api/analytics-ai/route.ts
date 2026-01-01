@@ -5,7 +5,7 @@
 // This is the main orchestration layer between the user, the database, and the LLM.
 
 import { NextRequest, NextResponse } from "next/server";
-import { DATABASE_SCHEMA, SYSTEM_PROMPT } from "@/lib/ai-schema";
+import { DATABASE_SCHEMA, SYSTEM_PROMPT } from "@/utils-lib/ai-schema";
 import { fetchQuery } from "convex/nextjs";
 import { api } from "@/convex/_generated/api";
 
