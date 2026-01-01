@@ -5,7 +5,7 @@
 
 import { useRouter } from "next/navigation";
 import { Home, BookOpen, Trophy, ShoppingBag, Crown, ChevronDown, ChevronUp, Lock, User } from "lucide-react";
-import Avatar from "@/components/Avatar";
+import Avatar from "@/components/character/Avatar";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { useEffect, useState, useRef } from "react";

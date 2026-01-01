@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 import { Home, BookOpen, Trophy, Target, Crown, Flame, Gem, Heart, Star, Clock, X } from "lucide-react";
 import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import Avatar from "@/components/Avatar";
+import Avatar from "@/components/character/Avatar";
 import Script from "next/script";
 
 // Declare custom element for TypeScript
@@ -155,41 +155,37 @@ export default function ChallengePage() {
         <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide mb-6">
           <button
             onClick={() => setActiveTab("daily")}
-            className={`px-4 py-2 rounded-lg font-semibold text-sm whitespace-nowrap transition-all ${
-              activeTab === "daily"
+            className={`px-4 py-2 rounded-lg font-semibold text-sm whitespace-nowrap transition-all ${activeTab === "daily"
                 ? "bg-gradient-to-r from-[#A78BFA] to-[#8B5CF6] text-white"
                 : "bg-[#2B2B2B] text-gray-400 hover:text-white"
-            }`}
+              }`}
           >
             🏆 Daily
           </button>
           <button
             onClick={() => setActiveTab("weekly")}
-            className={`px-4 py-2 rounded-lg font-semibold text-sm whitespace-nowrap transition-all ${
-              activeTab === "weekly"
+            className={`px-4 py-2 rounded-lg font-semibold text-sm whitespace-nowrap transition-all ${activeTab === "weekly"
                 ? "bg-gradient-to-r from-[#A78BFA] to-[#8B5CF6] text-white"
                 : "bg-[#2B2B2B] text-gray-400 hover:text-white"
-            }`}
+              }`}
           >
             📅 Weekly
           </button>
           <button
             onClick={() => setActiveTab("mastery")}
-            className={`px-4 py-2 rounded-lg font-semibold text-sm whitespace-nowrap transition-all ${
-              activeTab === "mastery"
+            className={`px-4 py-2 rounded-lg font-semibold text-sm whitespace-nowrap transition-all ${activeTab === "mastery"
                 ? "bg-gradient-to-r from-[#A78BFA] to-[#8B5CF6] text-white"
                 : "bg-[#2B2B2B] text-gray-400 hover:text-white"
-            }`}
+              }`}
           >
             🌟 Mastery
           </button>
           <button
             onClick={() => setActiveTab("social")}
-            className={`px-4 py-2 rounded-lg font-semibold text-sm whitespace-nowrap transition-all ${
-              activeTab === "social"
+            className={`px-4 py-2 rounded-lg font-semibold text-sm whitespace-nowrap transition-all ${activeTab === "social"
                 ? "bg-gradient-to-r from-[#A78BFA] to-[#8B5CF6] text-white"
                 : "bg-[#2B2B2B] text-gray-400 hover:text-white"
-            }`}
+              }`}
           >
             💬 Social
           </button>
@@ -240,9 +236,8 @@ export default function ChallengePage() {
                     </div>
 
                     {/* Chest reward icon */}
-                    <div className={`w-16 h-16 rounded-xl flex items-center justify-center ${
-                      isCompleted ? 'opacity-100' : 'opacity-60 grayscale'
-                    }`}>
+                    <div className={`w-16 h-16 rounded-xl flex items-center justify-center ${isCompleted ? 'opacity-100' : 'opacity-60 grayscale'
+                      }`}>
                       <dotlottie-wc
                         src="https://lottie.host/6cc8c7f1-638c-45a6-9a64-b4a2260ac821/5GaLgCNDcv.lottie"
                         speed="1"
@@ -299,9 +294,8 @@ export default function ChallengePage() {
                     </div>
 
                     {/* Chest reward icon */}
-                    <div className={`w-16 h-16 rounded-xl flex items-center justify-center ${
-                      isCompleted ? 'opacity-100' : 'opacity-60 grayscale'
-                    }`}>
+                    <div className={`w-16 h-16 rounded-xl flex items-center justify-center ${isCompleted ? 'opacity-100' : 'opacity-60 grayscale'
+                      }`}>
                       <dotlottie-wc
                         src="https://lottie.host/6cc8c7f1-638c-45a6-9a64-b4a2260ac821/5GaLgCNDcv.lottie"
                         speed="1"
@@ -343,9 +337,8 @@ export default function ChallengePage() {
                       <div className="relative">
                         <div className={`h-8 rounded-full overflow-hidden ${quest.isEvent ? 'bg-white/30' : 'bg-gray-700'}`}>
                           <div
-                            className={`h-full rounded-full flex items-center justify-center transition-all duration-500 ${
-                              quest.isEvent ? 'bg-white' : 'bg-gradient-to-r from-[#A78BFA] to-[#8B5CF6]'
-                            }`}
+                            className={`h-full rounded-full flex items-center justify-center transition-all duration-500 ${quest.isEvent ? 'bg-white' : 'bg-gradient-to-r from-[#A78BFA] to-[#8B5CF6]'
+                              }`}
                             style={{ width: `${Math.min(progress, 100)}%` }}
                           >
                             {progress > 20 && (
@@ -362,9 +355,8 @@ export default function ChallengePage() {
                     </div>
 
                     {/* Chest reward icon */}
-                    <div className={`w-16 h-16 rounded-xl flex items-center justify-center ${
-                      isCompleted ? 'opacity-100' : 'opacity-60 grayscale'
-                    }`}>
+                    <div className={`w-16 h-16 rounded-xl flex items-center justify-center ${isCompleted ? 'opacity-100' : 'opacity-60 grayscale'
+                      }`}>
                       <dotlottie-wc
                         src="https://lottie.host/6cc8c7f1-638c-45a6-9a64-b4a2260ac821/5GaLgCNDcv.lottie"
                         speed="1"
@@ -418,9 +410,8 @@ export default function ChallengePage() {
                     </div>
 
                     {/* Chest reward icon */}
-                    <div className={`w-16 h-16 rounded-xl flex items-center justify-center ${
-                      isCompleted ? 'opacity-100' : 'opacity-60 grayscale'
-                    }`}>
+                    <div className={`w-16 h-16 rounded-xl flex items-center justify-center ${isCompleted ? 'opacity-100' : 'opacity-60 grayscale'
+                      }`}>
                       <dotlottie-wc
                         src="https://lottie.host/6cc8c7f1-638c-45a6-9a64-b4a2260ac821/5GaLgCNDcv.lottie"
                         speed="1"
