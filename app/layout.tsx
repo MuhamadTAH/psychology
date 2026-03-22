@@ -15,14 +15,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GAMPIT — Access Locked",
+  title: "GAMPIT | Tactical Psychological Defense",
   description:
-    "GAMPIT is a tactical simulator for psychological defense. The Beta is currently locked. Request early access now.",
+    "Master the invisible game. GAMPIT is an elite tactical simulator for psychological defense, frame control, and anti-manipulation training. Request clearance today.",
   manifest: "/manifest.json",
+  keywords: [
+    "psychological defense",
+    "frame control",
+    "anti-manipulation",
+    "tactical training",
+    "social dominance",
+    "dark psychology",
+  ],
+  openGraph: {
+    title: "GAMPIT | Tactical Psychological Defense",
+    description: "Master the invisible game. Request beta clearance.",
+    type: "website",
+    siteName: "GAMPIT",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GAMPIT | Tactical Psychological Defense",
+    description: "Master the invisible game. Request beta clearance.",
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Gambit",
+    title: "GAMPIT",
   },
   icons: {
     icon: [
@@ -48,7 +67,7 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Gambit" />
+        <meta name="apple-mobile-web-app-title" content="GAMPIT" />
         <link rel="apple-touch-icon" href="/app-icon-1024x1024.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
 

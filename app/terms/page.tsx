@@ -1,5 +1,5 @@
 // 🧠 FILE PURPOSE
-// This page displays the terms of service for DuoLearn.
+// This page displays the terms of service for GAMPIT.
 // Required for app store submissions and legal protection.
 
 export default function TermsOfServicePage() {
@@ -15,8 +15,8 @@ export default function TermsOfServicePage() {
         {/* Step 2: Introduction */}
         <section className="mb-8">
           <p className="text-gray-700 leading-relaxed mb-4">
-            Welcome to DuoLearn! These Terms of Service ("Terms") govern your access to
-            and use of the DuoLearn application, website, and services (collectively, the "Service").
+            Welcome to GAMPIT! These Terms of Service ("Terms") govern your access to
+            and use of the GAMPIT application, website, and services (collectively, the "Service").
           </p>
           <p className="text-gray-700 leading-relaxed">
             By accessing or using our Service, you agree to be bound by these Terms. If you
@@ -28,7 +28,7 @@ export default function TermsOfServicePage() {
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Acceptance of Terms</h2>
           <p className="text-gray-700 mb-4">
-            By creating an account or using DuoLearn, you confirm that:
+            By creating an account or using GAMPIT, you confirm that:
           </p>
           <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-1">
             <li>You are at least 13 years of age</li>
@@ -87,7 +87,7 @@ export default function TermsOfServicePage() {
           <p className="text-gray-700 mb-4">
             All content, features, and functionality of the Service, including but not
             limited to text, graphics, logos, icons, images, audio, video, lessons, and
-            software, are owned by DuoLearn or our licensors and are protected by
+            software, are owned by GAMPIT or our licensors and are protected by
             copyright, trademark, and other intellectual property laws.
           </p>
 
@@ -111,7 +111,7 @@ export default function TermsOfServicePage() {
 
           <h3 className="text-xl font-semibold text-gray-800 mb-2">5.1 Virtual Currency</h3>
           <p className="text-gray-700 mb-4">
-            DuoLearn offers virtual currency (gems) and items (hearts, streak freezes,
+            GAMPIT offers virtual currency (gems) and items (hearts, streak freezes,
             power-ups) that can be purchased with real money. Virtual currency and items:
           </p>
           <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-1">
@@ -130,7 +130,7 @@ export default function TermsOfServicePage() {
           <h3 className="text-xl font-semibold text-gray-800 mb-2">5.3 Refunds</h3>
           <p className="text-gray-700 mb-4">
             Refund requests must be made within 14 days of purchase. Contact
-            support@duolearn.com with your purchase details.
+            support@gampit.app with your purchase details.
           </p>
         </section>
 
@@ -184,7 +184,7 @@ export default function TermsOfServicePage() {
               TO THE MAXIMUM EXTENT PERMITTED BY LAW:
             </p>
             <p className="text-gray-700 mb-2">
-              DuoLearn and its affiliates, officers, employees, agents, partners, and
+              GAMPIT and its affiliates, officers, employees, agents, partners, and
               licensors shall not be liable for any indirect, incidental, special,
               consequential, or punitive damages, including but not limited to:
             </p>
@@ -205,7 +205,7 @@ export default function TermsOfServicePage() {
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Indemnification</h2>
           <p className="text-gray-700">
-            You agree to defend, indemnify, and hold harmless DuoLearn and its affiliates
+            You agree to defend, indemnify, and hold harmless GAMPIT and its affiliates
             from any claims, damages, losses, liabilities, and expenses (including legal
             fees) arising from:
           </p>
@@ -248,7 +248,7 @@ export default function TermsOfServicePage() {
 
           <h3 className="text-xl font-semibold text-gray-800 mb-2">12.1 Informal Resolution</h3>
           <p className="text-gray-700 mb-4">
-            Before filing a claim, please contact us at support@duolearn.com to attempt
+            Before filing a claim, please contact us at support@gampit.app to attempt
             to resolve the dispute informally.
           </p>
 
@@ -298,7 +298,7 @@ export default function TermsOfServicePage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">15. Entire Agreement</h2>
           <p className="text-gray-700">
             These Terms, together with our Privacy Policy, constitute the entire agreement
-            between you and DuoLearn regarding the Service and supersede all prior agreements.
+            between you and GAMPIT regarding the Service and supersede all prior agreements.
           </p>
         </section>
 
@@ -310,10 +310,10 @@ export default function TermsOfServicePage() {
           </p>
           <div className="bg-blue-50 p-4 rounded-lg">
             <p className="text-gray-700">
-              <strong>Email:</strong> legal@duolearn.com
+              <strong>Email:</strong> legal@gampit.app
             </p>
             <p className="text-gray-700">
-              <strong>Support:</strong> support@duolearn.com
+              <strong>Support:</strong> support@gampit.app
             </p>
           </div>
         </section>
@@ -322,7 +322,7 @@ export default function TermsOfServicePage() {
         <section className="mb-8">
           <div className="bg-gray-100 p-6 rounded-lg">
             <p className="text-gray-800 font-semibold mb-2">
-              By using DuoLearn, you acknowledge that you have read, understood, and agree
+              By using GAMPIT, you acknowledge that you have read, understood, and agree
               to be bound by these Terms of Service.
             </p>
             <p className="text-gray-700">

@@ -1,5 +1,5 @@
 // 🧠 FILE PURPOSE
-// This page displays the privacy policy for DuoLearn.
+// This page displays the privacy policy for GAMPIT.
 // Required for app store submissions and good user transparency.
 
 export default function PrivacyPolicyPage() {
@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
         {/* Step 2: Introduction */}
         <section className="mb-8">
           <p className="text-gray-700 leading-relaxed">
-            DuoLearn ("we", "our", or "us") is committed to protecting your privacy.
+            GAMPIT ("we", "our", or "us") is committed to protecting your privacy.
             This Privacy Policy explains how we collect, use, disclose, and safeguard
             your information when you use our mobile application and website.
           </p>
@@ -175,7 +175,7 @@ export default function PrivacyPolicyPage() {
             <li><strong>Withdraw Consent:</strong> Disable optional data collection</li>
           </ul>
           <p className="text-gray-700">
-            To exercise these rights, contact us at privacy@duolearn.com
+            To exercise these rights, contact us at privacy@gampit.app
           </p>
         </section>
 
@@ -251,10 +251,10 @@ export default function PrivacyPolicyPage() {
           </p>
           <div className="bg-blue-50 p-4 rounded-lg">
             <p className="text-gray-700">
-              <strong>Email:</strong> privacy@duolearn.com
+              <strong>Email:</strong> privacy@gampit.app
             </p>
             <p className="text-gray-700">
-              <strong>Support:</strong> support@duolearn.com
+              <strong>Support:</strong> support@gampit.app
             </p>
           </div>
         </section>

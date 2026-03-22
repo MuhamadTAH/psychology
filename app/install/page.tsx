@@ -54,7 +54,7 @@ export default function InstallPage() {
                         <Download className="w-10 h-10 text-white" />
                     </div>
                     <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                        Install DuoLearn
+                        Install GAMPIT
                     </h1>
                     <p className="text-lg text-gray-600">
                         Get the full app experience with offline access and faster performance
@@ -209,7 +209,7 @@ export default function InstallPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-semibold text-gray-900 mb-1">Launch</h3>
-                                    <p className="text-gray-600">Find the DuoLearn icon on your home screen. Done! 🎉</p>
+                                    <p className="text-gray-600">Find the GAMPIT icon on your home screen. Done! 🎉</p>
                                 </div>
                             </div>
                         </div>
@@ -244,7 +244,7 @@ export default function InstallPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-semibold text-gray-900 mb-1">Alternative Method</h3>
-                                    <p className="text-gray-600">Click menu (⋮) → "Install DuoLearn" or "Create shortcut"</p>
+                                    <p className="text-gray-600">Click menu (⋮) → "Install GAMPIT" or "Create shortcut"</p>
                                 </div>
                             </div>
 
@@ -254,7 +254,7 @@ export default function InstallPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-semibold text-gray-900 mb-1">Launch</h3>
-                                    <p className="text-gray-600">Find DuoLearn in your apps or desktop. Done! 🎉</p>
+                                    <p className="text-gray-600">Find GAMPIT in your apps or desktop. Done! 🎉</p>
                                 </div>
                             </div>
                         </div>
@@ -265,7 +265,7 @@ export default function InstallPage() {
                 <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl shadow-xl p-8 text-white">
                     <h2 className="text-2xl font-bold mb-4">Share This Page</h2>
                     <p className="mb-4 opacity-90">
-                        Send this link to others so they can install DuoLearn too!
+                        Send this link to others so they can install GAMPIT too!
                     </p>
                     <div className="flex gap-2">
                         <input

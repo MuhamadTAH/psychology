@@ -81,20 +81,20 @@ export async function POST(request: NextRequest) {
 
     const result = await resend.emails.send({
       // Use a verified or default sender; replace with your domain once verified in Resend.
-      from: "DuoLearn <onboarding@resend.dev>",
+      from: "GAMPIT <onboarding@resend.dev>",
       to: email,
-      subject: "Your DuoLearn discount code",
+      subject: "Your GAMPIT discount code",
       text: [
         greeting,
         "",
-        "Here is your discount code for DuoLearn:",
+        "Here is your discount code for GAMPIT:",
         `Code: ${sanitizedCouponCode}`,
         "",
         "Use this code at checkout on the paywall to apply your discount.",
         "",
         "If you did not request this code, you can ignore this email.",
         "",
-        "— DuoLearn Team",
+        "— GAMPIT Team",
       ].join("\n"),
     });
 
