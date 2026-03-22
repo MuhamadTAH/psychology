@@ -15,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gambit - AI-Powered Learning",
-  description: "Learn smarter with AI-generated lessons",
+  title: "GAMPIT — Access Locked",
+  description:
+    "GAMPIT is a tactical simulator for psychological defense. The Beta is currently locked. Request early access now.",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
@@ -67,6 +68,7 @@ export default function RootLayout({
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning
       >
         <Providers>{children}</Providers>
         <InstallPWA />

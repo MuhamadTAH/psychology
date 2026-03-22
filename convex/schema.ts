@@ -12,11 +12,21 @@ export default defineSchema({
     image: v.optional(v.string()),
     avatar: v.optional(v.string()), // Avatar theme: default, red-black, bold, shadow, etc.
 
+    // Settings fields
+    pushNotifications: v.optional(v.boolean()),
+    emailNotifications: v.optional(v.boolean()),
+    streakReminders: v.optional(v.boolean()),
+    soundEffects: v.optional(v.boolean()),
+    animations: v.optional(v.boolean()),
+    profileVisibility: v.optional(v.string()),
+    showStats: v.optional(v.boolean()),
+
     // Gamification fields
     hearts: v.optional(v.number()), // Default: 5, range: 0-5 (unlimited for premium)
     lastHeartRefill: v.optional(v.number()), // Timestamp of last heart refill
     gems: v.optional(v.number()), // Default: 0, no limit
     xp: v.optional(v.number()), // Default: 0, no limit
+    wins: v.optional(v.number()), // Match wins
     streak: v.optional(v.number()), // Default: 0, consecutive days
     lastLessonDate: v.optional(v.string()), // Format: "YYYY-MM-DD"
 
@@ -35,6 +45,8 @@ export default defineSchema({
 
     // Social features
     following: v.optional(v.array(v.id("users"))), // Array of user IDs this user follows
+    followingBots: v.optional(v.array(v.string())), // Array of bot IDs this user follows
+    followersBots: v.optional(v.array(v.string())), // Array of bot IDs that follow this user
 
     createdAt: v.number(),
   }).index("by_email", ["email"]),
@@ -255,4 +267,75 @@ export default defineSchema({
   })
     .index("by_timestamp", ["timestamp"])
     .index("by_severity", ["severity"]),
+
+  // Gambit: AI interaction logs (prompt sent + AI response)
+  gambitLogs: defineTable({
+    topic: v.string(),
+    model: v.string(),
+    promptSent: v.string(),
+    rawAIResponse: v.optional(v.string()),
+    parsedData: v.optional(v.any()),
+    roundsCount: v.optional(v.number()),
+    success: v.boolean(),
+    error: v.optional(v.string()),
+    durationMs: v.number(),
+    timestamp: v.number(),
+  }).index("by_timestamp", ["timestamp"]),
+
+  // Bot Roster: Persistent bot identities
+  bots: defineTable({
+    botId: v.string(), // "bot_001"
+    username: v.string(),
+    avatar: v.string(),
+    avatarTier: v.optional(v.number()), // 1-4 (Tier system)
+    rankTier: v.string(), // "Bronze", "Silver", "Gold"
+    rank: v.string(), // "Gold II"
+    winRate: v.number(), // 0-100
+    points: v.optional(v.number()), // For leaderboards
+    bio: v.string(),
+    archetype: v.string(), // "rager", etc.
+    chatFrequency: v.optional(v.string()), // "silent", "active", etc.
+    playstyleTag: v.optional(v.string()), // Hidden: "aggressive", "defensive", "adaptive", "chaotic"
+
+    // Account Age Simulation (§9)
+    accountAgeDays: v.optional(v.number()), // Fake account age in days
+    matchCount: v.optional(v.number()), // Fake total matches played
+
+    // Personality Biases
+    aggressionBias: v.number(),
+    submissionBias: v.number(),
+    correctBias: v.optional(v.number()), // 0.0-1.0
+    tiltChance: v.number(),
+    mercyChance: v.number(),
+    baseResponseMs: v.optional(v.number()),
+    typingSpeedMs: v.optional(v.number()),
+
+    // Dynamic State
+    isOnline: v.optional(v.boolean()),
+    lastActive: v.optional(v.number()),
+  })
+    .index("by_botId", ["botId"]) // Fast lookup by fixed ID
+    .index("by_rankTier", ["rankTier"]) // For matchmaking
+    .index("by_username", ["username"]), // For search
+
+  // Per-player bot avatar exposure tracking (§4 Exposure Control)
+  botExposure: defineTable({
+    email: v.string(), // Real player email
+    encounteredBots: v.array(v.object({
+      botId: v.string(),
+      timestamp: v.number(),
+    })),
+    lastUpdated: v.number(),
+  }).index("by_email", ["email"]),
+
+  // Pre-launch waitlist signups
+  waitlist: defineTable({
+    email: v.string(),
+    joinedAt: v.number(), // Unix timestamp (ms)
+    status: v.string(),   // "pending" | "approved" | "rejected"
+    ipHash: v.optional(v.string()), // Hashed IP for dedup (never store raw IP)
+  })
+    .index("by_email", ["email"])
+    .index("by_status", ["status"])
+    .index("by_joinedAt", ["joinedAt"]),
 });
