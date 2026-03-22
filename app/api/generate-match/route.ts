@@ -4,14 +4,7 @@ import { ConvexHttpClient } from 'convex/browser';
 import { api } from '@/convex/_generated/api';
 import { generateLogId } from '@/lib/ai-logger';
 
-// Initialize OpenAI client with NVIDIA's base URL
-const openai = new OpenAI({
-    apiKey: process.env.NVIDIA_API_KEY,
-    baseURL: 'https://integrate.api.nvidia.com/v1',
-});
-
 const MODEL_NAME = 'meta/llama-3.1-405b-instruct';
-const convex = new ConvexHttpClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
 
 // --- TACTICS & TOPICS DATA ---
 const TACTICS = [
@@ -56,6 +49,14 @@ const shuffleAndReindex = (rounds: any[]) => {
 };
 
 export async function POST(req: Request) {
+    // Initialize clients lazily inside the handler (not at module level)
+    // so env vars are available at runtime, not build time.
+    const openai = new OpenAI({
+        apiKey: process.env.NVIDIA_API_KEY,
+        baseURL: 'https://integrate.api.nvidia.com/v1',
+    });
+    const convex = new ConvexHttpClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
+
     const logId = generateLogId();
     const startTime = Date.now();
     let promptSent = '';
