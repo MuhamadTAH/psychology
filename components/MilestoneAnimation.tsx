@@ -8,7 +8,7 @@
 'use client';
 
 import React, { useMemo } from 'react';
-import { type BadgeTimeline } from '@/md/lib/streakStateMachine';
+import { type BadgeTimeline } from '@/utils-lib/streakStateMachine';
 
 interface MilestoneAnimationProps {
   milestoneDay: 5 | 10 | 15 | 20 | 25 | 30;

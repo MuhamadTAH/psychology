@@ -6,7 +6,7 @@
 import { useRouter } from "next/navigation";
 import { Home, BookOpen, Trophy, ShoppingBag, Crown, ChevronDown, ChevronUp, Lock, User } from "lucide-react";
 import Avatar from "@/components/Avatar";
-import { useQuery, useMutation } from "convex/react";
+import { useQuery, useMutation, useConvexAuth } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { useEffect, useState, useRef } from "react";
 import { useUser } from "@clerk/nextjs";
@@ -18,12 +18,16 @@ export default function LeaguesPage() {
 
   // State for user's current league and time remaining
   const [userCurrentLeague, setUserCurrentLeague] = useState('Bronze League');
+  const [viewingLeague, setViewingLeague] = useState<string | undefined>(undefined);
   const [timeRemaining, setTimeRemaining] = useState('');
 
-  // Fetch league data from Convex
-  const leagueData = useQuery(api.leagues.getLeagueLeaderboard);
-  const userRank = useQuery(api.leagues.getUserRank);
-  const userLeagueInfo = useQuery(api.leagues.getUserLeagueInfo);
+  // Fetch league data from Convex (only when user is authenticated)
+  // If viewingLeague is undefined, backend defaults to user's current league
+  const { isAuthenticated } = useConvexAuth();
+
+  const leagueData = useQuery(api.leagues.getLeagueLeaderboard, isAuthenticated ? (viewingLeague ? { leagueName: viewingLeague } : {}) : "skip");
+  const userRank = useQuery(api.leagues.getUserRank, isAuthenticated ? {} : "skip");
+  const userLeagueInfo = useQuery(api.leagues.getUserLeagueInfo, isAuthenticated ? {} : "skip");
 
   // Initialize user in league if not already
   const initializeLeague = useMutation(api.leagues.initializeUserLeague);
@@ -34,6 +38,7 @@ export default function LeaguesPage() {
   const resetAllUsersToBronzLeague = useMutation(api.leagues.resetAllUsersToBronzLeague);
 
   // Step 0: Reset all users to Bronze League (one-time migration)
+  /*
   useEffect(() => {
     const fix = async () => {
       if (!isLoaded || !user) return;
@@ -48,6 +53,7 @@ export default function LeaguesPage() {
     };
     fix();
   }, [isLoaded, user, fixLeagueNameSpelling, resetAllUsersToBronzLeague]);
+  */
 
   // Step 1: Initialize league on first load
   useEffect(() => {
@@ -138,25 +144,42 @@ export default function LeaguesPage() {
     { name: 'Obsidian League', color: 'text-purple-400', bg: 'bg-purple-600', border: 'border-purple-600' }
   ];
 
-  const currentLeagueIndex = LEAGUES.findIndex(l => l.name === userCurrentLeague);
-  const currentLeagueData = LEAGUES[currentLeagueIndex] || LEAGUES[0];
+  const userLeagueIndex = LEAGUES.findIndex(l => l.name === userCurrentLeague);
+  const activeLeagueName = viewingLeague || userCurrentLeague;
+  const activeLeagueIndex = LEAGUES.findIndex(l => l.name === activeLeagueName);
+  const currentLeagueData = LEAGUES[activeLeagueIndex] || LEAGUES[0];
 
-  // Auto-scroll to current league
+  // Auto-scroll to CURRENTLY VIEWED league
   useEffect(() => {
     if (scrollRef.current) {
-      const currentElement = scrollRef.current.children[currentLeagueIndex] as HTMLElement;
+      if (activeLeagueIndex === -1) return;
+      const currentElement = scrollRef.current.children[activeLeagueIndex] as HTMLElement;
       if (currentElement) {
         const containerWidth = scrollRef.current.clientWidth;
         const elementWidth = currentElement.clientWidth;
-        const elementLeft = currentElement.offsetLeft;
+        // Center the element
+        const scrollLeft = currentElement.offsetLeft - (containerWidth / 2) + (elementWidth / 2);
 
         scrollRef.current.scrollTo({
-          left: elementLeft - containerWidth / 2 + elementWidth / 2,
+          left: scrollLeft,
           behavior: 'smooth'
         });
       }
     }
-  }, [currentLeagueIndex]);
+  }, [activeLeagueIndex]);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   return (
     <div className="min-h-screen bg-[#131F24] text-white flex flex-col">
@@ -191,14 +214,15 @@ export default function LeaguesPage() {
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {LEAGUES.map((league, index) => {
-                const isUnlocked = index <= currentLeagueIndex;
-                const isCurrent = index === currentLeagueIndex;
-                const isLocked = index > currentLeagueIndex;
+                const isUnlocked = index <= userLeagueIndex;
+                const isCurrent = index === activeLeagueIndex;
+                const isLocked = index > userLeagueIndex;
 
                 return (
                   <div
                     key={league.name}
-                    className={`flex flex-col items-center flex-shrink-0 snap-center transition-all duration-500 ${isCurrent ? 'scale-110 opacity-100' : 'scale-90 opacity-50'
+                    onClick={() => setViewingLeague(league.name)}
+                    className={`cursor-pointer flex flex-col items-center flex-shrink-0 snap-center transition-all duration-500 ${isCurrent ? 'scale-110 opacity-100' : 'scale-90 opacity-50'
                       }`}
                   >
                     <div className={`relative flex items-center justify-center transition-all duration-500 overflow-hidden ${isCurrent ? 'w-28 h-28' : 'w-16 h-16'
@@ -293,10 +317,12 @@ export default function LeaguesPage() {
                 )}
 
                 {/* User Row */}
-                <div className={`flex items-center justify-between py-4 px-5 rounded-2xl transition-all hover:bg-[#1F2937] ${user.isCurrentUser
-                  ? 'bg-[#1F2937] border-2 border-[#58CC02] shadow-lg scale-[1.02] z-10'
-                  : 'bg-[#111b21] border border-gray-800'
-                  }`}>
+                <div
+                  onClick={() => router.push(`/profile/${user.id}?type=${user.type}`)}
+                  className={`cursor-pointer flex items-center justify-between py-4 px-5 rounded-2xl transition-all hover:bg-[#1F2937] ${user.isCurrentUser
+                    ? 'bg-[#1F2937] border-2 border-[#58CC02] shadow-lg scale-[1.02] z-10'
+                    : 'bg-[#111b21] border border-gray-800'
+                    }`}>
                   <div className="flex items-center gap-4">
                     {/* Rank */}
                     <div className="w-8 flex justify-center">

@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import { useUser } from "@clerk/nextjs";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import { Settings, Pencil, Calendar, RefreshCw, Flame, Zap, Gem, Trophy, UserPlus, X, Home, BookOpen, ShoppingBag, Crown, User, CreditCard, Sparkles, Infinity } from "lucide-react";
+import { Settings, Pencil, Calendar, RefreshCw, Flame, Zap, Gem, Trophy, UserPlus, X, Home, BookOpen, ShoppingBag, Crown, User, CreditCard, Sparkles, Infinity, Lock } from "lucide-react";
 import { useState } from "react";
 
 // --- Sub-Components (Now accept props for real data) ---
@@ -34,7 +34,7 @@ const UserHero = ({ user, friendsCount, onEditClick }: { user: any; friendsCount
   return (
     <section className="bg-[#1a2332] p-6 rounded-2xl border border-gray-700">
       <div className="relative w-32 h-32 mx-auto mb-4">
-        <img src={user.imageUrl} alt={user.fullName} className="w-full h-full rounded-full border-4 border-gray-600" />
+        <img src={user.imageUrl} alt={user.fullName} className="w-full h-full object-cover rounded-full border-4 border-gray-600" />
         <button
           onClick={onEditClick}
           className="absolute top-0 right-0 w-8 h-8 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
@@ -137,28 +137,49 @@ const FriendsList = ({ friends }: { friends: any[] }) => {
     return null;
   }
 
-  const colors = ["bg-purple-500", "bg-red-400", "bg-indigo-500", "bg-blue-500", "bg-green-500", "bg-yellow-500"];
-
   return (
     <section id="friends" className="bg-[#1a2332] p-6 rounded-2xl border border-gray-700">
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-xl font-bold text-white">Friends</h3>
       </div>
       <div className="space-y-4">
-        {friends.slice(0, 3).map((friend, index) => (
-          <div key={friend._id} className="flex items-center gap-4">
-            <div className={`w-12 h-12 ${colors[index % colors.length]} rounded-full`}></div>
+        {friends.slice(0, 5).map((friend, index) => (
+          <div key={friend._id || index} className="flex items-center gap-4">
+            {/* Avatar */}
+            <div className="relative w-12 h-12">
+              <div className="w-full h-full rounded-full bg-gray-700 flex items-center justify-center text-xl overflow-hidden border-2 border-gray-600">
+                <img
+                  src={friend.avatar && friend.avatar.startsWith('/') ? friend.avatar : '/Profile image/1.jpg'}
+                  className="w-full h-full object-cover"
+                  alt={friend.name}
+                />
+              </div>
+
+              {/* Online Status */}
+              {friend.status === 'online' && (
+                <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-[#1a2332]" title="Online"></div>
+              )}
+              {/* Offline Status for Bots (Gray dot) */}
+              {friend.botId && friend.status !== 'online' && (
+                <div className="absolute bottom-0 right-0 w-3 h-3 bg-gray-500 rounded-full border-2 border-[#1a2332]" title="Offline"></div>
+              )}
+            </div>
+
             <div>
-              <p className="font-bold text-white">{friend.name}</p>
-              <p className="text-sm text-gray-400">{friend.xp?.toLocaleString()} XP</p>
+              <p className="font-bold text-white flex items-center gap-2">
+                {friend.name}
+              </p>
+              <p className="text-sm text-gray-400">
+                {friend.xp !== undefined ? `${friend.xp.toLocaleString()} XP` : (friend.rank || "New")}
+              </p>
             </div>
           </div>
         ))}
       </div>
-      {friends.length > 3 && (
+      {friends.length > 5 && (
         <div className="border-t border-gray-700 mt-4 pt-4">
           <button className="w-full flex items-center justify-between hover:bg-white/10 p-2 rounded-lg transition-colors">
-            <span className="font-bold text-white">View {friends.length - 3} more</span>
+            <span className="font-bold text-white">View {friends.length - 5} more</span>
             <span className="text-gray-400 text-2xl font-light">&rsaquo;</span>
           </button>
         </div>
@@ -169,12 +190,15 @@ const FriendsList = ({ friends }: { friends: any[] }) => {
 
 // 6. Friend Suggestions Section - REAL DATA from Convex
 const FriendSuggestionCard = ({ user, onFollow }: any) => {
-  const colors = ["bg-purple-400", "bg-teal-400", "bg-pink-300", "bg-blue-400", "bg-green-400"];
-  const randomColor = colors[Math.floor(Math.random() * colors.length)];
-
   return (
     <div className="flex items-center gap-3">
-      <div className={`w-12 h-12 ${randomColor} rounded-full flex-shrink-0`}></div>
+      <div className="w-12 h-12 rounded-full flex-shrink-0 overflow-hidden border-2 border-gray-600 bg-gray-700">
+        <img
+          src={user.avatar && user.avatar.startsWith('/') ? user.avatar : '/Profile image/1.jpg'}
+          className="w-full h-full object-cover"
+          alt={user.name}
+        />
+      </div>
       <div className="flex-grow">
         <p className="font-bold text-white">{user.name}</p>
         <p className="text-sm text-gray-400">{user.school || user.email}</p>
@@ -341,8 +365,12 @@ export default function ProfilePage() {
 
   // 4. Get friends data from Convex (only when user is loaded)
   const following = useQuery(api.users.getFollowing, isLoaded && user ? {} : "skip");
+  const botFriends = useQuery(api.friends.getBotFriends, isLoaded && user ? {} : "skip");
   const suggestions = useQuery(api.users.getFriendSuggestions, isLoaded && user ? { limit: 10 } : "skip");
-  const followingCount = useQuery(api.users.getFollowingCount, isLoaded && user ? {} : "skip");
+  const followingCountQuery = useQuery(api.users.getFollowingCount, isLoaded && user ? {} : "skip");
+
+  const combinedFriends = [...(following || []), ...(botFriends || [])];
+  const totalFollowingCount = (followingCountQuery || 0) + (botFriends?.length || 0);
 
   // 5. Get league info from Convex (only when user is loaded)
   const userLeagueInfo = useQuery(api.leagues.getUserLeagueInfo, isLoaded && user ? {} : "skip");
@@ -350,10 +378,43 @@ export default function ProfilePage() {
   // 6. Mutations
   const followUser = useMutation(api.users.followUser);
   const updateUserName = useMutation(api.users.updateUserName);
+  const updateUserAvatar = useMutation(api.users.updateUserAvatar);
+
+  const getAvatarLockMsg = (index: number) => {
+    const id = index + 1;
+    // Tier 1
+    if (id <= 3) return null;
+
+    // Tier 4
+    if (id >= 12 && id <= 15) {
+      if (userStats?.subscriptionStatus === 'premium') return null;
+      return "Unlock with GAMPIT PRO";
+    }
+
+    // Tier 3
+    if (id === 8) return "Win 10 Arena matches in a row to unlock";
+    if (id === 9) {
+      if ((userStats?.streak ?? 0) >= 14) return null;
+      return "Maintain a 14-day learning streak to unlock";
+    }
+    if (id === 10) return "Reach top 3 in your League to unlock";
+    if (id === 11) {
+      if ((userStats?.streak ?? 0) >= 7) return null;
+      return "Maintain a 7-day learning streak to unlock";
+    }
+
+    // Tier 2
+    if (id === 4 || id === 5) return "Reach Bronze II Rank to unlock";
+    if (id === 6) return "Reach Silver I Rank to unlock";
+    if (id === 7) return "Reach Silver II Rank to unlock";
+
+    return "Locked";
+  };
 
   // 7. Modal state management
   const [showEditModal, setShowEditModal] = useState(false);
   const [editName, setEditName] = useState("");
+  const [selectedAvatar, setSelectedAvatar] = useState("");
   const [isSaving, setIsSaving] = useState(false);
 
   // Handle follow action
@@ -367,11 +428,12 @@ export default function ProfilePage() {
   // Handle edit profile click
   const handleEditClick = () => {
     setEditName(user?.fullName || "");
+    setSelectedAvatar(user?.imageUrl || "");
     setShowEditModal(true);
   };
 
-  // Handle save name
-  const handleSaveName = async () => {
+  // Handle save profile
+  const handleSaveProfile = async () => {
     if (!editName.trim()) {
       alert("Name cannot be empty");
       return;
@@ -388,9 +450,25 @@ export default function ProfilePage() {
         lastName: editName.split(" ").slice(1).join(" ") || "",
       });
 
+      // Step 3: Handle avatar update if changed to a preset
+      if (selectedAvatar && selectedAvatar !== user?.imageUrl && selectedAvatar.startsWith('/Profile image/')) {
+        // Update in Convex
+        await updateUserAvatar({ avatar: selectedAvatar });
+
+        // Update in Clerk by fetching the local image and uploading
+        try {
+          const response = await fetch(selectedAvatar);
+          const blob = await response.blob();
+          const file = new File([blob], "avatar.jpg", { type: blob.type });
+          await user?.setProfileImage({ file });
+        } catch (imgError) {
+          console.error("Error setting clerk profile image:", imgError);
+        }
+      }
+
       setShowEditModal(false);
     } catch (error) {
-      alert("Failed to update name. Please try again.");
+      alert("Failed to update profile. Please try again.");
     } finally {
       setIsSaving(false);
     }
@@ -439,7 +517,7 @@ export default function ProfilePage() {
       <ProfileHeader />
 
       <main className="max-w-2xl mx-auto px-4 py-8 pb-24 space-y-8">
-        <UserHero user={user} friendsCount={followingCount || 0} onEditClick={handleEditClick} />
+        <UserHero user={user} friendsCount={totalFollowingCount} onEditClick={handleEditClick} />
         <StatsGrid stats={userStats} leagueName={leagueName} />
         <SubscriptionSection
           subscriptionStatus={userStats?.subscriptionStatus}
@@ -448,7 +526,7 @@ export default function ProfilePage() {
           onUpgrade={handleUpgradeSubscription}
         />
         <AchievementsSection stats={userStats} onViewAll={handleViewAllAchievements} />
-        <FriendsList friends={following} />
+        <FriendsList friends={combinedFriends} />
         <FriendSuggestions suggestions={suggestions || []} onFollow={handleFollow} onViewAll={handleViewAllSuggestions} />
       </main>
 
@@ -475,8 +553,43 @@ export default function ProfilePage() {
                 value={editName}
                 onChange={(e) => setEditName(e.target.value)}
                 placeholder="Enter your name"
-                className="w-full bg-[#111b21] text-white rounded-lg px-4 py-3 border-2 border-gray-600 focus:border-blue-500 focus:outline-none transition-colors"
+                className="w-full bg-[#111b21] text-white rounded-lg px-4 py-3 border-2 border-gray-600 focus:border-blue-500 focus:outline-none transition-colors mb-4"
               />
+
+              <label className="block text-gray-300 font-semibold mb-2">
+                Profile Image
+              </label>
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4 max-h-60 overflow-y-auto p-4 bg-[#111b21] rounded-lg border border-gray-600 outline-none place-items-center">
+                {Array.from({ length: 15 }, (_, i) => {
+                  const imgUrl = `/Profile image/${i + 1}.jpg`;
+                  const lockMsg = getAvatarLockMsg(i);
+                  const isLocked = !!lockMsg;
+
+                  return (
+                    <button
+                      key={imgUrl}
+                      onClick={() => {
+                        if (isLocked) {
+                          alert(lockMsg);
+                        } else {
+                          setSelectedAvatar(imgUrl);
+                        }
+                      }}
+                      className={`relative w-16 h-16 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 transition-all ${selectedAvatar === imgUrl && !isLocked
+                        ? "border-blue-500 scale-110"
+                        : isLocked ? "border-transparent opacity-40 cursor-not-allowed" : "border-transparent hover:border-gray-400"
+                        }`}
+                    >
+                      <img src={imgUrl} alt={`Avatar ${i + 1}`} className="w-full h-full object-cover" />
+                      {isLocked && (
+                        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                          <Lock className="w-6 h-6 text-white opacity-90 shadow-2xl" />
+                        </div>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
 
             <div className="flex gap-3">
@@ -487,7 +600,7 @@ export default function ProfilePage() {
                 Cancel
               </button>
               <button
-                onClick={handleSaveName}
+                onClick={handleSaveProfile}
                 disabled={isSaving}
                 className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-3 px-6 rounded-xl hover:from-blue-500 hover:to-purple-500 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
               >

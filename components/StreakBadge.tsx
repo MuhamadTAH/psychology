@@ -9,8 +9,8 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { getStreakTier, type StreakTierConfig } from '@/md/lib/streakFxConfig';
-import { type BadgeTimeline } from '@/md/lib/streakStateMachine';
+import { getStreakTier, type StreakTierConfig } from '@/utils-lib/streakFxConfig';
+import { type BadgeTimeline } from '@/utils-lib/streakStateMachine';
 
 interface StreakBadgeProps {
   streakCount: number;

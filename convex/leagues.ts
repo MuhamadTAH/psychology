@@ -8,9 +8,13 @@ const requireIdentity = async (ctx: any) => {
 };
 
 // Get leaderboard for user's current league
+// Get leaderboard for user's current league (Mixed Humans + Bots)
 export const getLeagueLeaderboard = query({
-  handler: async (ctx) => {
-    const identity = await requireIdentity(ctx);
+  args: { leagueName: v.optional(v.string()) },
+  handler: async (ctx, args) => {
+    // Graceful auth check avoiding "Uncaught Error"
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) return [];
 
     const user = await ctx.db
       .query("users")
@@ -19,7 +23,6 @@ export const getLeagueLeaderboard = query({
 
     if (!user) return [];
 
-    // Get user's league entry
     const userLeague = await ctx.db
       .query("leagues")
       .withIndex("by_userId", (q) => q.eq("userId", user._id))
@@ -27,33 +30,86 @@ export const getLeagueLeaderboard = query({
 
     if (!userLeague) return [];
 
-    // Get all users in the same league, ordered by weeklyXP descending
+    const targetLeagueName = args.leagueName || userLeague.leagueName;
+
+    // 1. Get Real Users
     const leagueMembers = await ctx.db
       .query("leagues")
       .withIndex("by_leagueName_and_weeklyXP", (q) =>
-        q.eq("leagueName", userLeague.leagueName)
+        q.eq("leagueName", targetLeagueName)
       )
-      .order("desc")
       .collect();
 
-    // Get user details for each league member
-    const leaderboard = await Promise.all(
-      leagueMembers.map(async (member, index) => {
-        const memberUser = await ctx.db.get(member.userId);
-        const rank = index + 1;
+    // 2. Get Bots for this tier
+    let botTier = "Bronze";
+    if (targetLeagueName.includes("Silver")) botTier = "Silver";
+    if (targetLeagueName.includes("Gold")) botTier = "Gold";
+    if (targetLeagueName.includes("Bronz")) botTier = "Bronze";
 
-        // Determine zone based on rank
+    const botMembers = await ctx.db
+      .query("bots")
+      .withIndex("by_rankTier", (q) => q.eq("rankTier", botTier))
+      .collect();
+
+    // 3. Merge and Sort
+    const allMembers: any[] = [
+      ...leagueMembers.map((m) => ({ type: "user", ...m })),
+      ...botMembers.map((b) => ({ type: "bot", ...b })),
+    ];
+
+    allMembers.sort((a: any, b: any) => {
+      const xpA = a.type === "user" ? a.weeklyXP : (a.points || 0);
+      const xpB = b.type === "user" ? b.weeklyXP : (b.points || 0);
+      if (xpB !== xpA) return xpB - xpA;
+      return (b._creationTime || 0) - (a._creationTime || 0);
+    });
+
+    // 4. Map to UI format
+    const leaderboard = await Promise.all(
+      allMembers.map(async (member: any, index) => {
+        let name = "Unknown";
+        let avatar = "default";
+        let xp = 0;
+        let isCurrentUser = false;
+        let id: string = "";
+        let type: string = member.type;
+
+        if (member.type === "user") {
+          // Fetch user details
+          if (!member.userId) {
+            // Should not happen for type user
+          } else {
+            const userDoc: any = await ctx.db.get(member.userId);
+            name = userDoc?.name || "User";
+            avatar = userDoc?.avatar || "default";
+            xp = member.weeklyXP;
+            isCurrentUser = userDoc?._id === user._id; // safe check
+            id = userDoc?._id || "";
+          }
+        } else {
+          // Bot details
+          name = member.username;
+          avatar = member.avatar;
+          xp = member.points || 0;
+          isCurrentUser = false;
+          id = member.botId || ""; // use bot string ID
+        }
+
+        const rank = index + 1;
         let zone = "safe";
         if (rank <= 5) zone = "promotion";
-        else if (rank >= 96) zone = "demotion";
+        else if (rank >= 25 && rank < 100) zone = "demotion";
 
         return {
           rank,
-          name: memberUser?.name || "User",
-          flag: "🌍", // Default flag, can be added to user schema later
-          xp: member.weeklyXP,
-          avatar: memberUser?.avatar || "default",
+          name,
+          flag: "🌍",
+          xp,
+          avatar,
           zone,
+          isCurrentUser,
+          id,
+          type
         };
       })
     );
@@ -65,7 +121,8 @@ export const getLeagueLeaderboard = query({
 // Get user's current rank
 export const getUserRank = query({
   handler: async (ctx) => {
-    const identity = await requireIdentity(ctx);
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) return null;
 
     const user = await ctx.db
       .query("users")
@@ -97,7 +154,8 @@ export const getUserRank = query({
 // Get user's league info (league name and end date)
 export const getUserLeagueInfo = query({
   handler: async (ctx) => {
-    const identity = await requireIdentity(ctx);
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) return null;
 
     const user = await ctx.db
       .query("users")
@@ -339,80 +397,138 @@ export const seedTestUsers = mutation({
   },
 });
 
-// Process league promotion/demotion (run when league week ends)
-export const processLeagueTransitions = mutation({
-  handler: async (ctx) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("Not authenticated");
+// Internal function to run transitions (shared logic)
+const runLeagueTransitions = async (ctx: any) => {
+  const identity = await ctx.auth.getUserIdentity();
+  if (!identity) throw new Error("Not authenticated");
 
-    // Get all leagues that have ended
-    const now = Date.now();
-    const endedLeagues = await ctx.db
-      .query("leagues")
-      .filter((q) => q.lte(q.field("weekEndDate"), now))
+  const now = Date.now();
+
+  // Get all leagues (users) that have ended
+  const endedLeagues = await ctx.db
+    .query("leagues")
+    .filter((q: any) => q.lte(q.field("weekEndDate"), now))
+    .collect();
+
+  if (endedLeagues.length === 0) {
+    return { message: "No leagues have ended yet" };
+  }
+
+  const leagueOrder = [
+    "Bronz League",
+    "Silver League",
+    "Gold League",
+    "Emerald League",
+    "Sapphire League",
+    "Ruby League",
+    "Diamond League",
+    "Mythic League",
+  ];
+
+  // Group users by league
+  const leagueGroups = new Map<string, any[]>();
+  for (const league of endedLeagues) {
+    const existing = leagueGroups.get(league.leagueName) || [];
+    existing.push({ ...league, type: 'user' });
+    leagueGroups.set(league.leagueName, existing);
+  }
+
+  // Process each league group (Users + Bots)
+  for (const [leagueName, users] of leagueGroups.entries()) {
+    // 1. Fetch Bots for this tier
+    let botTier = "Bronze";
+    if (leagueName.includes("Silver")) botTier = "Silver";
+    if (leagueName.includes("Gold")) botTier = "Gold";
+    if (leagueName.includes("Bronz")) botTier = "Bronze";
+
+    const bots = await ctx.db
+      .query("bots")
+      .withIndex("by_rankTier", (q: any) => q.eq("rankTier", botTier))
       .collect();
 
-    if (endedLeagues.length === 0) {
-      return { message: "No leagues have ended yet" };
-    }
-
-    // Step 7: Define league order for promotions/demotions
-    const leagueOrder = [
-      "Bronz League",
-      "Silver League",
-      "Gold League",
-      "Emerald League",
-      "Sapphire League",
-      "Ruby League",
-      "Diamond League",
-      "Mythic League",
+    // 2. Merge Users and Bots
+    const allMembers = [
+      ...users,
+      ...bots.map((b: any) => ({ ...b, type: 'bot' }))
     ];
 
-    // Group by league name
-    const leagueGroups = new Map<string, any[]>();
-    for (const league of endedLeagues) {
-      const existing = leagueGroups.get(league.leagueName) || [];
-      existing.push(league);
-      leagueGroups.set(league.leagueName, existing);
-    }
+    // 3. Sort by XP/Points
+    const sorted = allMembers.sort((a: any, b: any) => {
+      const xpA = a.type === "user" ? a.weeklyXP : (a.points || 0);
+      const xpB = b.type === "user" ? b.weeklyXP : (b.points || 0);
+      return xpB - xpA; // Descending
+    });
 
-    // Process each league group
-    for (const [leagueName, members] of leagueGroups.entries()) {
-      // Sort by weeklyXP descending to get rankings
-      const sorted = members.sort((a, b) => b.weeklyXP - a.weeklyXP);
+    // 4. Determine new ranks
+    const currentLeagueIndex = leagueOrder.indexOf(leagueName);
 
-      const currentLeagueIndex = leagueOrder.indexOf(leagueName);
+    for (let i = 0; i < sorted.length; i++) {
+      const member = sorted[i];
+      const rank = i + 1;
 
-      for (let i = 0; i < sorted.length; i++) {
-        const member = sorted[i];
-        const rank = i + 1;
-        let newLeagueName = leagueName;
+      let newLeagueName = leagueName;
+      let newBotTier = botTier;
 
-        // Top 5 get promoted (unless already in highest league)
-        if (rank <= 5 && currentLeagueIndex < leagueOrder.length - 1) {
-          newLeagueName = leagueOrder[currentLeagueIndex + 1];
-        }
-        // Bottom 5 (96-100) get demoted (unless in lowest league)
-        else if (rank >= 96 && currentLeagueIndex > 0) {
-          newLeagueName = leagueOrder[currentLeagueIndex - 1];
-        }
+      // Promotion (Top 5)
+      if (rank <= 5 && currentLeagueIndex < leagueOrder.length - 1) {
+        newLeagueName = leagueOrder[currentLeagueIndex + 1];
+        newBotTier = newLeagueName.split(' ')[0].replace('Bronz', 'Bronze');
+      }
+      // Demotion (Bottom 5)
+      else if (rank > sorted.length - 5 && currentLeagueIndex > 0) {
+        newLeagueName = leagueOrder[currentLeagueIndex - 1];
+        newBotTier = newLeagueName.split(' ')[0].replace('Bronz', 'Bronze');
+      }
 
-        // Update the league entry with new league and reset weekly XP
+      // Apply Updates
+      if (member.type === 'user') {
         const newWeekStart = now;
         const newWeekEnd = now + 7 * 24 * 60 * 60 * 1000;
 
         await ctx.db.patch(member._id, {
           leagueName: newLeagueName,
-          weeklyXP: 0, // Reset weekly XP for new week
+          weeklyXP: 0, // Reset for new week
           weekStartDate: newWeekStart,
           weekEndDate: newWeekEnd,
           lastUpdated: now,
         });
-      }
+      } else            // Update Bot Tier if changed
+        if (newBotTier !== botTier) {
+          await ctx.db.patch(member._id, {
+            rankTier: newBotTier,
+            rank: `${newBotTier} I`
+          });
+        }
+    }
+  }
+
+  return { message: "League transitions processed successfully", count: endedLeagues.length };
+};
+
+// Process league promotion/demotion (run when league week ends)
+export const processLeagueTransitions = mutation({
+  handler: async (ctx) => {
+    return await runLeagueTransitions(ctx);
+  },
+});
+
+// Force End League Week (For Testing)
+export const forceEndLeagueWeek = mutation({
+  handler: async (ctx) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) throw new Error("Not authenticated");
+
+    const allLeagues = await ctx.db.query("leagues").collect();
+    const now = Date.now();
+
+    for (const league of allLeagues) {
+      await ctx.db.patch(league._id, {
+        weekEndDate: now - 10000, // Ended 10 seconds ago
+      });
     }
 
-    return { message: "League transitions processed successfully" };
-  },
+    return { message: `Forced ${allLeagues.length} leagues to end.` };
+  }
 });
 
 // Check and auto-process league transitions if week has ended
@@ -455,7 +571,7 @@ export const checkAndProcessLeagues = mutation({
     const now = Date.now();
     if (now >= userLeague.weekEndDate) {
       // Process transitions for all users
-      await processLeagueTransitions(ctx, {});
+      await runLeagueTransitions(ctx);
       return { processed: true };
     }
 

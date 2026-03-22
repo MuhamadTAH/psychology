@@ -25,15 +25,15 @@ export const getUserSettings = query({
       .first();
 
     return {
-      name: user.name,
-      email: user.email,
-      age: user.age,
-      school: user.school,
-      image: user.image,
-      avatar: user.avatar,
-      favoriteSubject: onboarding?.favoriteSubject,
-      studyTime: onboarding?.studyTime,
-      motivation: onboarding?.motivation,
+      name: user.name ?? "",
+      email: user.email ?? "",
+      age: user.age ?? null,
+      school: user.school ?? null,
+      image: user.image ?? null,
+      avatar: user.avatar ?? null,
+      favoriteSubject: onboarding?.favoriteSubject ?? null,
+      studyTime: onboarding?.studyTime ?? null,
+      motivation: onboarding?.motivation ?? null,
       // New settings with defaults
       pushNotifications: user.pushNotifications ?? true,
       emailNotifications: user.emailNotifications ?? true,

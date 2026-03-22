@@ -1,6 +1,6 @@
 "use client";
 
-import { useConfiguratorStore, PHOTO_POSES, UI_MODES } from "@/md/lib/character-store";
+import { useConfiguratorStore, PHOTO_POSES, UI_MODES } from "@/utils-lib/character-store";
 
 export const UI = () => {
   const currentCategory = useConfiguratorStore((state) => state.currentCategory);
@@ -45,8 +45,8 @@ export const UI = () => {
           <div className="flex justify-stretch">
             <button
               className={`flex-1 pointer-events-auto p-4 text-white transition-colors duration-200 font-medium ${mode === UI_MODES.CUSTOMIZE
-                  ? "bg-indigo-500/90"
-                  : "bg-indigo-500/30 hover:bg-indigo-500/50"
+                ? "bg-indigo-500/90"
+                : "bg-indigo-500/30 hover:bg-indigo-500/50"
                 }`}
               onClick={() => setMode(UI_MODES.CUSTOMIZE)}
             >
@@ -55,8 +55,8 @@ export const UI = () => {
             <div className="w-px bg-white/30"></div>
             <button
               className={`flex-1 pointer-events-auto p-4 text-white transition-colors duration-200 font-medium ${mode === UI_MODES.PHOTO
-                  ? "bg-indigo-500/90"
-                  : "bg-indigo-500/30 hover:bg-indigo-500/50"
+                ? "bg-indigo-500/90"
+                : "bg-indigo-500/30 hover:bg-indigo-500/50"
                 }`}
               onClick={() => setMode(UI_MODES.PHOTO)}
             >
@@ -79,8 +79,8 @@ const PosesBox = () => {
         <button
           key={pose}
           className={`transition-colors duration-200 font-medium flex-shrink-0 border-b ${curPose === PHOTO_POSES[pose as keyof typeof PHOTO_POSES]
-              ? "text-white shadow-purple-100 border-b-white"
-              : "text-gray-200 hover:text-gray-100 border-b-transparent"
+            ? "text-white shadow-purple-100 border-b-white"
+            : "text-gray-200 hover:text-gray-100 border-b-transparent"
             }`}
           onClick={() => setPose(PHOTO_POSES[pose as keyof typeof PHOTO_POSES])}
         >
@@ -103,8 +103,8 @@ const AssetsBox = () => {
             key={category._id}
             onClick={() => setCurrentCategory(category)}
             className={`transition-colors duration-200 font-medium flex-shrink-0 border-b ${currentCategory?.name === category.name
-                ? "text-white shadow-purple-100 border-b-white"
-                : "text-gray-200 hover:text-gray-100 border-b-transparent"
+              ? "text-white shadow-purple-100 border-b-white"
+              : "text-gray-200 hover:text-gray-100 border-b-transparent"
               }`}
           >
             {category.name}
@@ -126,8 +126,8 @@ const AssetsBox = () => {
           <button
             onClick={() => changeAsset(currentCategory.name, null)}
             className={`w-20 h-20 flex-shrink-0 rounded-xl overflow-hidden pointer-events-auto hover:opacity-100 transition-all border-2 duration-300 bg-gradient-to-tr ${!customization[currentCategory.name]?.asset
-                ? "border-white from-white/20 to-white/30"
-                : "from-black/70 to-black/20 border-black"
+              ? "border-white from-white/20 to-white/30"
+              : "from-black/70 to-black/20 border-black"
               }`}
           >
             <div className="w-full h-full flex items-center justify-center bg-black/40 text-white">
@@ -150,8 +150,8 @@ const AssetsBox = () => {
             key={asset._id}
             onClick={() => changeAsset(currentCategory.name, asset)}
             className={`w-20 h-20 flex-shrink-0 rounded-xl overflow-hidden pointer-events-auto hover:opacity-100 transition-all border-2 duration-300 bg-gradient-to-tr ${customization[currentCategory.name]?.asset?._id === asset._id
-                ? "border-white from-white/20 to-white/30"
-                : "from-black/70 to-black/20 border-black"
+              ? "border-white from-white/20 to-white/30"
+              : "from-black/70 to-black/20 border-black"
               }`}
           >
             {asset.thumbnailUrl ? (
@@ -255,8 +255,8 @@ const ColorPicker = () => {
         <button
           key={`${index}-${color}`}
           className={`w-10 h-10 p-1.5 drop-shadow-md bg-black/20 shrink-0 rounded-lg overflow-hidden transition-all duration-300 border-2 ${customization[currentCategory.name]?.color === color
-              ? "border-white"
-              : "border-transparent"
+            ? "border-white"
+            : "border-transparent"
             }`}
           onClick={() => updateColor(color)}
         >

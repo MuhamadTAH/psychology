@@ -1,0 +1,114 @@
+Immediate FAKE BOT (top offenders) — change these or tweak behavior/metadata
+
+not_a_bot — Literally marketing the lie. Instant giveaway.
+Fix: remove the claim; give a short natural bio ("trying to climb ranks, gg's") and inconsistent play times.
+
+user8821 (avatar 🤖, bio ".") — avatar + meaningless bio + numeric name = classic placeholder bot.
+Fix: swap avatar, give a one-line bio with punctuation/typo, drop trailing numbers.
+
+NPC_energy, RageFactory, GODCOMPLEX, HONK_HONK, spam_emoji — all-on-the-nose names or meta jokes. Players will instantly sniff these as staged.
+Fix: humanize: shorten names, remove meta cues, use less literal bios.
+
+xXReaperXx, x_SHADOW_x, xBrutalx, NUKE_EM, FURY_99 — overused gamer leetspeak + repeated x/_/99 patterns = generated.
+Fix: remove repeated decoration; prefer natural-looking variants (e.g., "Reaper42", "ShadowCove").
+
+robot_heart, binary_mind, matrix_neo, null_void — techno/robot motif + high win rates = suspiciously consistent “engine” voice.
+Fix: diversify themes, lower mechanical-sounding win-rates, add humanizing lines ("lag ruined my streak").
+
+usernames that reuse identical avatars (lots of 💀, 🤖, 🗡️) — avatar reuse across similar archetype looks canned.
+Fix: expand avatar pool, include photos/emojis that match different personalities.
+
+Names that would likely pass as real people (and why)
+
+DarkKnight42 — plausible gaming handle, bio short but natural; rank & win rate believable.
+
+SunnyDay_, gentlesoul, kindred_spirit — pleasers read human because they’re soft, varied, and not trying too hard.
+
+calculated, precision_1, deep_focus — sniper group looks credible; focused names + precise bios feel like actual players.
+
+killshot_, BladeRunner_ — still gamer-y but within expected ranges; not screaming “script.”
+
+Tweak note: a handful of realistic names is fine — the problem is you’ve got entire clusters of near-identical “rager” handles.
+
+Quick judgement on RAGE_QUIT_99 typing in ALL CAPS
+
+My read: more likely an angry kid / human than a lazy bot — but bots can be scripted to shout. ALL CAPS alone doesn’t prove human; it’s a common stylistic flag used by both people and cheap bot scripts.
+
+How to tell: a human will mix caps with grammatical fragments, emojis, context-specific anger (“wtf map RNG” / “that lag was trash”), and variable timing. A bot will likely post CAPS mechanically (same phrasing across matches), often immediately after an event.
+
+If you want believable rage: use context-aware rants (mention weapon/map/time), add typos, and randomize timing (delay 1–6s, then partial messages like “fuck—” then full message).
+
+Global problems that make the pool feel botty
+
+Homogenous archetype density: too many “rager” variants with same bio tone. Real populations are noisy — not 25 clones of the same simmering rage.
+
+Name patterns: Xx_ wrappers, numeric suffixes (99, 42) and ALL-CAPS names concentrated in one archetype.
+
+Win rate / rank mismatch: several Bronzes with mid-high win rates and Golds with improbably consistent 70+ — looks tuned, not natural.
+
+Avatar reuse and emoji overreliance: repeated emojis map too cleanly to archetype.
+
+Bios feel templated: 90% are 2–3 word punchlines or meme phrases; real players vary length, style, grammar, punctuation, and topic.
+
+Concrete fixes to make them believable (do these, not optional)
+
+Diversify name formats — mix: firstname/lastname-style handles, regional names, short nicknames, casual phrases, and occasional leetspeak. Example set: TariqPlays, mari., roninLuke, Jas_94, mama’s_boy (yes, the last is human).
+
+Vary bios length & tone — add: short personal lines, game-specific gripes, inside jokes, casual complaints, life noises. Examples:
+
+“always sniping from the roof — pls nerf”
+
+“mic broke, sry”
+
+“studying for finals rn, playing on off-hours”
+
+include typos and emojis sparingly.
+
+Win rate vs rank realism — create distribution: Gold: 55–75, Silver: 45–65, Bronze: 25–50. Don’t pack Gold with 70–78 for everything. Add variance over time (simulate streaks).
+
+Chat behavior templates — implement per-archetype message pools with variability & context-sensitivity. Example rager lines (vary casing, punctuation, typos):
+
+“wtf that was a hitbox”
+
+“bro LAG”
+
+“i’m done. gg”
+
+“NO WAY i got sniped from behind???”
+Also: add pre-game small talk and post-game short reactions (“nice shot”, “u carried”, “bruh”).
+
+Timing & typing emulation — add realistic delays and aborted typing: typing start, pause, send. Example timing model:
+
+think_time = normal(mean=1.2s, sd=0.8s) + rand(0–2s)
+
+send partial message 30% of time then full message after 0.5–1.2s
+
+Error injection — occasional typos, autocorrect artifacts, slang, mixed-case. Don't make every message perfectly formatted.
+
+Session & activity variance — players play at different hours. Stagger play windows across time zones, have random idle disconnects, and inconsistent play-session lengths.
+
+Persona depth for a subset — pick 10% of bots and give them 2–3 lines of backstory and specific map/weapons preferences. That subset will anchor believability.
+
+Reduce obvious meta names — rename not_a_bot, NPC_energy, GODCOMPLEX → subtle variants or normal names.
+
+Introduce social behaviors — say “sorry” after teamkill, “gl hf” pre-match sometimes, friendly / trash talk mix.
+
+Quick rewrites (examples you can swap in now)
+
+RageFactory → RageFac with bio: “tilted but learning. gg”
+
+user8821 → mike_8821 with bio: “new to sniping, pls help”
+
+not_a_bot → nate.k with bio: “dailies only — low-key tryhard”
+
+Implementation checklist (copy/paste)
+
+ Randomize avatar selection, avoid reuse >2 per 25 players.
+
+ Enforce winRate distribution by rank (see fix #3).
+
+ Add 4–6 chat templates per archetype, with 40% typos/mixed-case.
+
+ Implement typing delay & partial-send logic.
+
+ Create 10% “deep personas” with map/weapon preferences.

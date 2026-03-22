@@ -1,0 +1,21 @@
+# Dependencies (NEVER let the AI read these)
+node_modules/
+venv/
+.env
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+
+# Massive static assets
+*.mp4
+*.mp3
+*.png
+*.jpg
+*.vtt
+*.json (unless it's a small config file)
+
+# Git history
+.git/

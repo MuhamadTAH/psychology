@@ -120,10 +120,24 @@ export default function SettingsPage() {
   };
 
   // Step 7: Loading state
-  if (!userSettings) {
+  if (userSettings === undefined) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 flex items-center justify-center">
         <div className="text-white text-xl">Loading settings...</div>
+      </div>
+    );
+  }
+
+  if (userSettings === null) {
+    return (
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 flex flex-col items-center justify-center gap-4">
+        <div className="text-white text-xl">Please sign in to view settings, or wait a moment while your profile is being created.</div>
+        <button
+          onClick={handleSwitchAccount}
+          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition-colors"
+        >
+          Sign In
+        </button>
       </div>
     );
   }
@@ -183,11 +197,10 @@ export default function SettingsPage() {
         {/* Save message */}
         {saveMessage && (
           <div
-            className={`mb-6 p-4 rounded-xl border-2 ${
-              saveMessage.type === "success"
+            className={`mb-6 p-4 rounded-xl border-2 ${saveMessage.type === "success"
                 ? "bg-green-500/10 border-green-500/30 text-green-400"
                 : "bg-red-500/10 border-red-500/30 text-red-400"
-            }`}
+              }`}
           >
             <p className="text-center font-semibold">{saveMessage.message}</p>
           </div>
@@ -277,14 +290,12 @@ export default function SettingsPage() {
                   setPushNotifications(newValue);
                   handleToggleSetting("pushNotifications", newValue);
                 }}
-                className={`w-14 h-8 rounded-full transition-colors ${
-                  pushNotifications ? "bg-blue-600" : "bg-gray-600"
-                }`}
+                className={`w-14 h-8 rounded-full transition-colors ${pushNotifications ? "bg-blue-600" : "bg-gray-600"
+                  }`}
               >
                 <div
-                  className={`w-6 h-6 bg-white rounded-full transition-transform ${
-                    pushNotifications ? "translate-x-7" : "translate-x-1"
-                  }`}
+                  className={`w-6 h-6 bg-white rounded-full transition-transform ${pushNotifications ? "translate-x-7" : "translate-x-1"
+                    }`}
                 />
               </button>
             </div>
@@ -301,14 +312,12 @@ export default function SettingsPage() {
                   setEmailNotifications(newValue);
                   handleToggleSetting("emailNotifications", newValue);
                 }}
-                className={`w-14 h-8 rounded-full transition-colors ${
-                  emailNotifications ? "bg-blue-600" : "bg-gray-600"
-                }`}
+                className={`w-14 h-8 rounded-full transition-colors ${emailNotifications ? "bg-blue-600" : "bg-gray-600"
+                  }`}
               >
                 <div
-                  className={`w-6 h-6 bg-white rounded-full transition-transform ${
-                    emailNotifications ? "translate-x-7" : "translate-x-1"
-                  }`}
+                  className={`w-6 h-6 bg-white rounded-full transition-transform ${emailNotifications ? "translate-x-7" : "translate-x-1"
+                    }`}
                 />
               </button>
             </div>
@@ -325,14 +334,12 @@ export default function SettingsPage() {
                   setStreakReminders(newValue);
                   handleToggleSetting("streakReminders", newValue);
                 }}
-                className={`w-14 h-8 rounded-full transition-colors ${
-                  streakReminders ? "bg-blue-600" : "bg-gray-600"
-                }`}
+                className={`w-14 h-8 rounded-full transition-colors ${streakReminders ? "bg-blue-600" : "bg-gray-600"
+                  }`}
               >
                 <div
-                  className={`w-6 h-6 bg-white rounded-full transition-transform ${
-                    streakReminders ? "translate-x-7" : "translate-x-1"
-                  }`}
+                  className={`w-6 h-6 bg-white rounded-full transition-transform ${streakReminders ? "translate-x-7" : "translate-x-1"
+                    }`}
                 />
               </button>
             </div>
@@ -359,14 +366,12 @@ export default function SettingsPage() {
                   setSoundEffects(newValue);
                   handleToggleSetting("soundEffects", newValue);
                 }}
-                className={`w-14 h-8 rounded-full transition-colors ${
-                  soundEffects ? "bg-blue-600" : "bg-gray-600"
-                }`}
+                className={`w-14 h-8 rounded-full transition-colors ${soundEffects ? "bg-blue-600" : "bg-gray-600"
+                  }`}
               >
                 <div
-                  className={`w-6 h-6 bg-white rounded-full transition-transform ${
-                    soundEffects ? "translate-x-7" : "translate-x-1"
-                  }`}
+                  className={`w-6 h-6 bg-white rounded-full transition-transform ${soundEffects ? "translate-x-7" : "translate-x-1"
+                    }`}
                 />
               </button>
             </div>
@@ -383,14 +388,12 @@ export default function SettingsPage() {
                   setAnimations(newValue);
                   handleToggleSetting("animations", newValue);
                 }}
-                className={`w-14 h-8 rounded-full transition-colors ${
-                  animations ? "bg-blue-600" : "bg-gray-600"
-                }`}
+                className={`w-14 h-8 rounded-full transition-colors ${animations ? "bg-blue-600" : "bg-gray-600"
+                  }`}
               >
                 <div
-                  className={`w-6 h-6 bg-white rounded-full transition-transform ${
-                    animations ? "translate-x-7" : "translate-x-1"
-                  }`}
+                  className={`w-6 h-6 bg-white rounded-full transition-transform ${animations ? "translate-x-7" : "translate-x-1"
+                    }`}
                 />
               </button>
             </div>
@@ -438,14 +441,12 @@ export default function SettingsPage() {
                   setShowStats(newValue);
                   handleToggleSetting("showStats", newValue);
                 }}
-                className={`w-14 h-8 rounded-full transition-colors ${
-                  showStats ? "bg-blue-600" : "bg-gray-600"
-                }`}
+                className={`w-14 h-8 rounded-full transition-colors ${showStats ? "bg-blue-600" : "bg-gray-600"
+                  }`}
               >
                 <div
-                  className={`w-6 h-6 bg-white rounded-full transition-transform ${
-                    showStats ? "translate-x-7" : "translate-x-1"
-                  }`}
+                  className={`w-6 h-6 bg-white rounded-full transition-transform ${showStats ? "translate-x-7" : "translate-x-1"
+                    }`}
                 />
               </button>
             </div>

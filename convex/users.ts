@@ -264,6 +264,32 @@ export const getFollowersCount = query({
   },
 });
 
+export const updateUserAvatar = mutation({
+  args: {
+    avatar: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) throw new Error("Not authenticated");
+
+    // Get current user
+    const currentUser = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", identity.email!))
+      .first();
+
+    if (!currentUser) throw new Error("User not found");
+
+    // Update avatar and image in database
+    await ctx.db.patch(currentUser._id, {
+      avatar: args.avatar,
+      image: args.avatar,
+    });
+
+    return { success: true, message: "Avatar updated successfully" };
+  },
+});
+
 // Step 9: Update user profile name
 // Updates the user's name in the database (persists across sessions)
 export const updateUserName = mutation({

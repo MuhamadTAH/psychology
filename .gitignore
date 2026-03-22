@@ -41,3 +41,28 @@ yarn-error.log*
 next-env.d.ts
 
 /lib/generated/prisma
+
+# Security: Temp files (PDF uploads, etc.)
+/temp/
+*.tmp
+
+# Security: API keys and secrets (redundant with .env* but explicit)
+*.key
+*.pem
+*.secret
+
+# Security: Log files that may contain sensitive data
+*.log
+logs/
+ai-logs/
+
+# Media and large files (v2)
+*.mp4
+*.mov
+public/VIdeo/
+public/log/
+"video sources/" 
+*.png
+*.jpg
+*.jpeg
+*.gif

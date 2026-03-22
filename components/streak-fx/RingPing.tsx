@@ -6,8 +6,8 @@
 'use client';
 
 import React from 'react';
-import { type StreakTierConfig } from '@/md/lib/streakFxConfig';
-import { type BadgeTimeline } from '@/md/lib/streakStateMachine';
+import { type StreakTierConfig } from '@/utils-lib/streakFxConfig';
+import { type BadgeTimeline } from '@/utils-lib/streakStateMachine';
 
 interface RingPingProps {
   timeline: BadgeTimeline;

@@ -1,0 +1,130 @@
+PART 1: THE VISUAL EXPERIENCE (UI/UX)
+The vibe must be Underground Poker meets Street Fighter. Dark mode. High contrast. Serious.
+
+1. The Logo
+Concept: "The Spark."
+
+Visual: Two speech bubbles colliding. One is jagged (Red/Attack), one is a smooth shield (Blue/Defense).
+
+Vibe: Conflict and Control.
+
+2. The Lobby (Searching Screen)
+Visual: Dark screen. A radar/sonar pulse in the center.
+
+Text: "Scanning Local Network..." -> "Frame Detected." -> "Opponent Found."
+
+The Trick: Show the Opponent's "Card" before the match starts.
+
+Avatar: (e.g., A pixelated skull).
+
+Name: Frame_Killa.
+
+Rank: "Silver III".
+
+Win Rate: "64%".
+
+Why: Seeing their stats makes them feel real.
+
+3. The Arena (The Match)
+Layout: Split Screen.
+
+Top Half: The Opponent (Avatar + Health Bar named "STATUS").
+
+Bottom Half: You (Avatar + Health Bar).
+
+The Center: The Scenario Text appears here.
+
+The Timer: A thin line burning down rapidly (Red).
+
+Animation: When you take damage, your screen shakes slightly. When you win a round, your avatar glows Blue.
+
+4. Post-Match
+Visual: "VICTORY" or "FRAMED" (Loss).
+
+Progression: Show a bar filling up towards the next Rank.
+
+Rivalry: A button that says "Rematch Request Sent..." (The bot can randomly accept or decline).
+
+PART 2: THE ROSTER GENERATOR PROMPT
+You need to generate the 100 bots once. Hand this file to your developer. They will upload it to the game database.
+
+PART 1: THE VISUAL EXPERIENCE (UI/UX)
+The vibe must be Underground Poker meets Street Fighter. Dark mode. High contrast. Serious.
+
+1. The Logo
+Concept: "The Spark."
+
+Visual: Two speech bubbles colliding. One is jagged (Red/Attack), one is a smooth shield (Blue/Defense).
+
+Vibe: Conflict and Control.
+
+2. The Lobby (Searching Screen)
+Visual: Dark screen. A radar/sonar pulse in the center.
+
+Text: "Scanning Local Network..." -> "Frame Detected." -> "Opponent Found."
+
+The Trick: Show the Opponent's "Card" before the match starts.
+
+Avatar: (e.g., A pixelated skull).
+
+Name: Frame_Killa.
+
+Rank: "Silver III".
+
+Win Rate: "64%".
+
+Why: Seeing their stats makes them feel real.
+
+3. The Arena (The Match)
+Layout: Split Screen.
+
+Top Half: The Opponent (Avatar + Health Bar named "STATUS").
+
+Bottom Half: You (Avatar + Health Bar).
+
+The Center: The Scenario Text appears here.
+
+The Timer: A thin line burning down rapidly (Red).
+
+Animation: When you take damage, your screen shakes slightly. When you win a round, your avatar glows Blue.
+
+4. Post-Match
+Visual: "VICTORY" or "FRAMED" (Loss).
+
+Progression: Show a bar filling up towards the next Rank.
+
+Rivalry: A button that says "Rematch Request Sent..." (The bot can randomly accept or decline).
+
+PART 2: THE ROSTER GENERATOR PROMPT
+You need to generate the 100 bots once. Hand this file to your developer. They will upload it to the game database.
+
+COPY THIS PROMPT:
+GAMPIT Content Engine
+15 Feb, 11:59
+PART 3: THE MATCH GENERATOR (Updated)
+Now, we update the Arena Prompt. We remove the "Identity Generation" (because the game engine handles that now) and focus purely on the Scenario.
+
+COPY THIS PROMPT (For Ongoing Content):
+Summary of the Plan:
+
+Run Prompt 1: Get your list of 50/100 Bots. Give to Developer.
+
+Run Prompt 2: Generate 20-30 Matches. Give to Developer.
+
+The App: Randomly picks a Match + Picks a Bot from the list -> BATTLE STARTS.
+
+This creates the illusion of a living world.
+
+PART 3: THE MATCH GENERATOR (Updated)
+Now, we update the Arena Prompt. We remove the "Identity Generation" (because the game engine handles that now) and focus purely on the Scenario.
+
+COPY THIS PROMPT (For Ongoing Content):
+Summary of the Plan:
+
+Run Prompt 1: Get your list of 50/100 Bots. Give to Developer.
+
+Run Prompt 2: Generate 20-30 Matches. Give to Developer.
+
+The App: Randomly picks a Match + Picks a Bot from the list -> BATTLE STARTS.
+
+This creates the illusion of a living world.

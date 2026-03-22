@@ -8,8 +8,8 @@
 import React, { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { StreakBadge } from "@/components/StreakBadge";
-import { getStreakTier } from "@/md/lib/streakFxConfig";
-import { useStreakTimeline } from "@/md/lib/streakStateMachine";
+import { getStreakTier } from "@/utils-lib/streakFxConfig";
+import { useStreakTimeline } from "@/utils-lib/streakStateMachine";
 import { GlowPulse } from "@/components/streak-fx/GlowPulse";
 import { ShineSweep } from "@/components/streak-fx/ShineSweep";
 import { SparkleParticles } from "@/components/streak-fx/SparkleParticles";
@@ -184,8 +184,8 @@ export default function TestStreakPage() {
                     onClick={handleTriggerAnimation}
                     disabled={!timeline.canTrigger}
                     className={`flex-1 font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-colors ${timeline.canTrigger
-                        ? "bg-green-600 hover:bg-green-700 text-white"
-                        : "bg-gray-700 text-gray-500 cursor-not-allowed"
+                      ? "bg-green-600 hover:bg-green-700 text-white"
+                      : "bg-gray-700 text-gray-500 cursor-not-allowed"
                       }`}
                   >
                     <Play className="w-5 h-5" />
@@ -205,8 +205,8 @@ export default function TestStreakPage() {
                     }}
                     disabled={!timeline.canTrigger}
                     className={`flex-1 font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-colors ${timeline.canTrigger
-                        ? "bg-blue-600 hover:bg-blue-700 text-white"
-                        : "bg-gray-700 text-gray-500 cursor-not-allowed"
+                      ? "bg-blue-600 hover:bg-blue-700 text-white"
+                      : "bg-gray-700 text-gray-500 cursor-not-allowed"
                       }`}
                   >
                     <Play className="w-4 h-4" />
@@ -305,8 +305,8 @@ export default function TestStreakPage() {
                     key={item.day}
                     onClick={() => handleDaySelect(item.day)}
                     className={`p-4 rounded-xl border-2 transition-all ${selectedDay === item.day
-                        ? "bg-green-600 border-green-500 text-white"
-                        : "bg-gray-900 border-gray-700 text-gray-300 hover:border-gray-600"
+                      ? "bg-green-600 border-green-500 text-white"
+                      : "bg-gray-900 border-gray-700 text-gray-300 hover:border-gray-600"
                       }`}
                   >
                     <div className="font-bold text-lg">{item.label}</div>

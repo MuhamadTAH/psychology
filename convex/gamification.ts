@@ -37,6 +37,7 @@ export const getUserStats = query({
       hearts: user.hearts ?? 5,
       gems: user.gems ?? 0,
       xp: user.xp ?? 0,
+      wins: user.wins ?? 0,
       streak: user.streak ?? 0,
     };
   },

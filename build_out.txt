@@ -1,0 +1,322 @@
+
+> duolearn@0.1.0 build
+> next build
+
+⚠ `eslint` configuration in next.config.ts is no longer supported. See more info here: https://nextjs.org/docs/app/api-reference/cli/next#next-lint-options
+⚠ Invalid next.config.ts options detected: 
+⚠     Unrecognized key(s) in object: 'eslint'
+⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+▲ Next.js 16.1.1 (Turbopack)
+- Environments: .env.local, .env
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 11 errors:
+./app/character/page.tsx:5:1
+Module not found: Can't resolve '@/md/lib/character-store'
+[0m [90m 3 |[39m [36mimport[39m { useQuery } [36mfrom[39m [32m"convex/react"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { api } [36mfrom[39m [32m"@/convex/_generated/api"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { useConfiguratorStore } [36mfrom[39m [32m"@/md/lib/character-store"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m [36mimport[39m { useEffect } [36mfrom[39m [32m"react"[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m { [33mUI[39m } [36mfrom[39m [32m"@/components/character/UI"[39m[33m;[39m
+ [90m 8 |[39m [36mimport[39m { [33mCanvas[39m } [36mfrom[39m [32m"@react-three/fiber"[39m[33m;[39m[0m
+
+Import map: aliased to relative './md/lib/character-store' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/character/page.tsx [Client Component Browser]
+    ./app/character/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/character/page.tsx [Client Component SSR]
+    ./app/character/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./components/character/Asset.tsx:5:1
+Module not found: Can't resolve '@/md/lib/character-store'
+[0m [90m 3 |[39m [36mimport[39m { useGLTF } [36mfrom[39m [32m"@react-three/drei"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { useEffect[33m,[39m useMemo } [36mfrom[39m [32m"react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { useConfiguratorStore } [36mfrom[39m [32m"@/md/lib/character-store"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m [36mimport[39m type { [33mSkeleton[39m[33m,[39m [33mMaterial[39m[33m,[39m [33mBufferGeometry[39m } [36mfrom[39m [32m"three"[39m[33m;[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mAssetProps[39m {[0m
+
+Import map: aliased to relative './md/lib/character-store' inside of [project]/
+
+
+Import trace:
+  Client Component Browser:
+    ./components/character/Asset.tsx [Client Component Browser]
+    ./components/character/Avatar.tsx [Client Component Browser]
+    ./components/character/Experience.tsx [Client Component Browser]
+    ./app/character/page.tsx [Client Component Browser]
+    ./app/character/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./components/character/UI.tsx:3:1
+Module not found: Can't resolve '@/md/lib/character-store'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { useConfiguratorStore[33m,[39m [33mPHOTO_POSES[39m[33m,[39m [33mUI_MODES[39m } [36mfrom[39m [32m"@/md/lib/character-store"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m
+ [90m 5 |[39m [36mexport[39m [36mconst[39m [33mUI[39m [33m=[39m () [33m=>[39m {
+ [90m 6 |[39m   [36mconst[39m currentCategory [33m=[39m useConfiguratorStore((state) [33m=>[39m state[33m.[39mcurrentCategory)[33m;[39m[0m
+
+Import map: aliased to relative './md/lib/character-store' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/character/UI.tsx [Client Component Browser]
+    ./app/character/page.tsx [Client Component Browser]
+    ./app/character/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/character/UI.tsx [Client Component SSR]
+    ./app/character/page.tsx [Client Component SSR]
+    ./app/character/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./app/admin/migrate-lessons/migrate-dark-psychology-db.tsx:11:1
+Module not found: Can't resolve '@/md/lib/darkPsychologyLessons'
+[0m [90m  9 |[39m [36mimport[39m { api } [36mfrom[39m [32m"@/convex/_generated/api"[39m[33m;[39m
+ [90m 10 |[39m [36mimport[39m { [33mUpload[39m[33m,[39m [33mCheckCircle[39m[33m,[39m [33mAlertCircle[39m[33m,[39m [33mDatabase[39m[33m,[39m [33mRefreshCw[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 11 |[39m [36mimport[39m { [33mDARK_PSYCHOLOGY_LESSONS[39m } [36mfrom[39m [32m"@/md/lib/darkPsychologyLessons"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 12 |[39m
+ [90m 13 |[39m [36mexport[39m [36mfunction[39m [33mMigrateDarkPsychologyDB[39m() {
+ [90m 14 |[39m   [36mconst[39m [isImporting[33m,[39m setIsImporting] [33m=[39m useState([36mfalse[39m)[33m;[39m[0m
+
+Import map: aliased to relative './md/lib/darkPsychologyLessons' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/migrate-lessons/migrate-dark-psychology-db.tsx [Client Component Browser]
+    ./app/admin/migrate-lessons/page.tsx [Client Component Browser]
+    ./app/admin/migrate-lessons/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/migrate-lessons/migrate-dark-psychology-db.tsx [Client Component SSR]
+    ./app/admin/migrate-lessons/page.tsx [Client Component SSR]
+    ./app/admin/migrate-lessons/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./app/test-streak/page.tsx:11:1
+Module not found: Can't resolve '@/md/lib/streakFxConfig'
+[0m [90m  9 |[39m [36mimport[39m { useRouter } [36mfrom[39m [32m"next/navigation"[39m[33m;[39m
+ [90m 10 |[39m [36mimport[39m { [33mStreakBadge[39m } [36mfrom[39m [32m"@/components/StreakBadge"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 11 |[39m [36mimport[39m { getStreakTier } [36mfrom[39m [32m"@/md/lib/streakFxConfig"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 12 |[39m [36mimport[39m { useStreakTimeline } [36mfrom[39m [32m"@/md/lib/streakStateMachine"[39m[33m;[39m
+ [90m 13 |[39m [36mimport[39m { [33mGlowPulse[39m } [36mfrom[39m [32m"@/components/streak-fx/GlowPulse"[39m[33m;[39m
+ [90m 14 |[39m [36mimport[39m { [33mShineSweep[39m } [36mfrom[39m [32m"@/components/streak-fx/ShineSweep"[39m[33m;[39m[0m
+
+Import map: aliased to relative './md/lib/streakFxConfig' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/test-streak/page.tsx [Client Component Browser]
+    ./app/test-streak/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/test-streak/page.tsx [Client Component SSR]
+    ./app/test-streak/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./app/yourlesson/page.tsx:18:1
+Module not found: Can't resolve '@/md/lib/streakFxConfig'
+[0m [90m 16 |[39m [36mimport[39m { [33mStreakBadge[39m } [36mfrom[39m [32m"@/components/StreakBadge"[39m[33m;[39m
+ [90m 17 |[39m [36mimport[39m { useStreakTimeline } [36mfrom[39m [32m"@/md/lib/streakStateMachine"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 18 |[39m [36mimport[39m { getStreakTier } [36mfrom[39m [32m"@/md/lib/streakFxConfig"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 19 |[39m [36mimport[39m { [33mGlowPulse[39m } [36mfrom[39m [32m"@/components/streak-fx/GlowPulse"[39m[33m;[39m
+ [90m 20 |[39m [36mimport[39m { [33mShineSweep[39m } [36mfrom[39m [32m"@/components/streak-fx/ShineSweep"[39m[33m;[39m
+ [90m 21 |[39m [36mimport[39m { [33mSparkleParticles[39m } [36mfrom[39m [32m"@/components/streak-fx/SparkleParticles"[39m[33m;[39m[0m
+
+Import map: aliased to relative './md/lib/streakFxConfig' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/yourlesson/page.tsx [Client Component Browser]
+    ./app/yourlesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/yourlesson/page.tsx [Client Component SSR]
+    ./app/yourlesson/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./components/StreakBadge.tsx:12:1
+Module not found: Can't resolve '@/md/lib/streakFxConfig'
+[0m [90m 10 |[39m
+ [90m 11 |[39m [36mimport[39m [33mReact[39m[33m,[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m'react'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 12 |[39m [36mimport[39m { getStreakTier[33m,[39m type [33mStreakTierConfig[39m } [36mfrom[39m [32m'@/md/lib/streakFxConfig'[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 13 |[39m [36mimport[39m { type [33mBadgeTimeline[39m } [36mfrom[39m [32m'@/md/lib/streakStateMachine'[39m[33m;[39m
+ [90m 14 |[39m
+ [90m 15 |[39m [36minterface[39m [33mStreakBadgeProps[39m {[0m
+
+Import map: aliased to relative './md/lib/streakFxConfig' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/StreakBadge.tsx [Client Component Browser]
+    ./app/test-streak/page.tsx [Client Component Browser]
+    ./app/test-streak/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/StreakBadge.tsx [Client Component SSR]
+    ./app/test-streak/page.tsx [Client Component SSR]
+    ./app/test-streak/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./components/StreakBadgeWithFx.tsx:10:1
+Module not found: Can't resolve '@/md/lib/streakFxConfig'
+[0m [90m  8 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m'react'[39m[33m;[39m
+ [90m  9 |[39m [36mimport[39m { [33mStreakBadge[39m } [36mfrom[39m [32m'./StreakBadge'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 10 |[39m [36mimport[39m { getStreakTier } [36mfrom[39m [32m'@/md/lib/streakFxConfig'[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m [36mimport[39m { useStreakTimeline[33m,[39m type [33mTriggerType[39m } [36mfrom[39m [32m'@/md/lib/streakStateMachine'[39m[33m;[39m
+ [90m 12 |[39m [36mimport[39m { [33mGlowPulse[39m } [36mfrom[39m [32m'./streak-fx/GlowPulse'[39m[33m;[39m
+ [90m 13 |[39m [36mimport[39m { [33mShineSweep[39m } [36mfrom[39m [32m'./streak-fx/ShineSweep'[39m[33m;[39m[0m
+
+Import map: aliased to relative './md/lib/streakFxConfig' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/StreakBadgeWithFx.tsx [Client Component Browser]
+    ./app/dark-psychology-streaks/page.tsx [Client Component Browser]
+    ./app/dark-psychology-streaks/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/StreakBadgeWithFx.tsx [Client Component SSR]
+    ./app/dark-psychology-streaks/page.tsx [Client Component SSR]
+    ./app/dark-psychology-streaks/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./app/test-streak/page.tsx:12:1
+Module not found: Can't resolve '@/md/lib/streakStateMachine'
+[0m [90m 10 |[39m [36mimport[39m { [33mStreakBadge[39m } [36mfrom[39m [32m"@/components/StreakBadge"[39m[33m;[39m
+ [90m 11 |[39m [36mimport[39m { getStreakTier } [36mfrom[39m [32m"@/md/lib/streakFxConfig"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 12 |[39m [36mimport[39m { useStreakTimeline } [36mfrom[39m [32m"@/md/lib/streakStateMachine"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 13 |[39m [36mimport[39m { [33mGlowPulse[39m } [36mfrom[39m [32m"@/components/streak-fx/GlowPulse"[39m[33m;[39m
+ [90m 14 |[39m [36mimport[39m { [33mShineSweep[39m } [36mfrom[39m [32m"@/components/streak-fx/ShineSweep"[39m[33m;[39m
+ [90m 15 |[39m [36mimport[39m { [33mSparkleParticles[39m } [36mfrom[39m [32m"@/components/streak-fx/SparkleParticles"[39m[33m;[39m[0m
+
+Import map: aliased to relative './md/lib/streakStateMachine' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/test-streak/page.tsx [Client Component Browser]
+    ./app/test-streak/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/test-streak/page.tsx [Client Component SSR]
+    ./app/test-streak/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./app/yourlesson/page.tsx:17:1
+Module not found: Can't resolve '@/md/lib/streakStateMachine'
+[0m [90m 15 |[39m [36mimport[39m { [33mFinalScore[39m } [36mfrom[39m [32m"./components/FinalScore"[39m[33m;[39m
+ [90m 16 |[39m [36mimport[39m { [33mStreakBadge[39m } [36mfrom[39m [32m"@/components/StreakBadge"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 17 |[39m [36mimport[39m { useStreakTimeline } [36mfrom[39m [32m"@/md/lib/streakStateMachine"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 18 |[39m [36mimport[39m { getStreakTier } [36mfrom[39m [32m"@/md/lib/streakFxConfig"[39m[33m;[39m
+ [90m 19 |[39m [36mimport[39m { [33mGlowPulse[39m } [36mfrom[39m [32m"@/components/streak-fx/GlowPulse"[39m[33m;[39m
+ [90m 20 |[39m [36mimport[39m { [33mShineSweep[39m } [36mfrom[39m [32m"@/components/streak-fx/ShineSweep"[39m[33m;[39m[0m
+
+Import map: aliased to relative './md/lib/streakStateMachine' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/yourlesson/page.tsx [Client Component Browser]
+    ./app/yourlesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/yourlesson/page.tsx [Client Component SSR]
+    ./app/yourlesson/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./components/StreakBadgeWithFx.tsx:11:1
+Module not found: Can't resolve '@/md/lib/streakStateMachine'
+[0m [90m  9 |[39m [36mimport[39m { [33mStreakBadge[39m } [36mfrom[39m [32m'./StreakBadge'[39m[33m;[39m
+ [90m 10 |[39m [36mimport[39m { getStreakTier } [36mfrom[39m [32m'@/md/lib/streakFxConfig'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 11 |[39m [36mimport[39m { useStreakTimeline[33m,[39m type [33mTriggerType[39m } [36mfrom[39m [32m'@/md/lib/streakStateMachine'[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 12 |[39m [36mimport[39m { [33mGlowPulse[39m } [36mfrom[39m [32m'./streak-fx/GlowPulse'[39m[33m;[39m
+ [90m 13 |[39m [36mimport[39m { [33mShineSweep[39m } [36mfrom[39m [32m'./streak-fx/ShineSweep'[39m[33m;[39m
+ [90m 14 |[39m [36mimport[39m { [33mSparkleParticles[39m } [36mfrom[39m [32m'./streak-fx/SparkleParticles'[39m[33m;[39m[0m
+
+Import map: aliased to relative './md/lib/streakStateMachine' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/StreakBadgeWithFx.tsx [Client Component Browser]
+    ./app/dark-psychology-streaks/page.tsx [Client Component Browser]
+    ./app/dark-psychology-streaks/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/StreakBadgeWithFx.tsx [Client Component SSR]
+    ./app/dark-psychology-streaks/page.tsx [Client Component SSR]
+    ./app/dark-psychology-streaks/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./app/character/page.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./components/character/Asset.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./components/character/UI.tsx:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/admin/migrate-lessons/migrate-dark-psychology-db.tsx:11:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/test-streak/page.tsx:11:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/yourlesson/page.tsx:18:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./components/StreakBadge.tsx:12:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./components/StreakBadgeWithFx.tsx:10:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/test-streak/page.tsx:12:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./app/yourlesson/page.tsx:17:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./components/StreakBadgeWithFx.tsx:11:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)

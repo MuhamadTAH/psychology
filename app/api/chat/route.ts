@@ -1,7 +1,32 @@
-import { NextRequest, NextResponse } from "next/server";
+/**
+ * 🧠 FILE PURPOSE
+ * Chat API endpoint for lesson generation.
+ * Receives text content and uses AI to generate Duolingo-style lessons.
+ * 
+ * 🔒 SECURITY FEATURES:
+ * - Rate limiting (AI endpoint - 10 req/min per IP)
+ * - Schema-based input validation
+ * - Secure API key handling
+ * - OWASP-compliant security headers
+ */
 
-// OLD QUIZ PROMPT - DISABLED
-// const OLD_QUIZ_PROMPT = `...quiz prompt...`;
+import { NextRequest, NextResponse } from "next/server";
+import { auth } from "@clerk/nextjs/server";
+import {
+  rateLimit,
+  createRateLimitResponse,
+  getRateLimitHeaders,
+  parseAndValidateBody,
+  CHAT_SCHEMA,
+  getApiKey,
+  createApiKeyErrorResponse,
+} from "@/lib/security";
+import { SECURITY_HEADERS } from "@/lib/security/headers";
+
+// 🔒 SECURITY: Type for validated request body
+interface ChatRequest {
+  message: string;
+}
 
 const SYSTEM_PROMPT = `You are a lesson creator for a Duolingo-style learning app. When the user provides text with multiple paragraphs/sections, create ONE LESSON per paragraph title/topic.
 
@@ -141,21 +166,39 @@ IMPORTANT:
 
 export async function POST(req: NextRequest) {
   try {
-    const { message } = await req.json();
-
-    if (!message) {
-      return NextResponse.json(
-        { error: "Message is required" },
-        { status: 400 }
-      );
+    // 🔒 SECURITY: Get user ID for rate limiting (if authenticated)
+    let userId: string | null = null;
+    try {
+      const { userId: authUserId } = await auth();
+      userId = authUserId;
+    } catch {
+      // Not authenticated - will use IP-based rate limiting only
     }
 
-    const apiKey = process.env.OPENAI_API_KEY;
+    // 🔒 SECURITY: Apply rate limiting (AI endpoints are more restrictive)
+    const rateLimitResult = rateLimit(req.headers, userId, 'ai', '/api/chat');
+
+    if (!rateLimitResult.allowed) {
+      return createRateLimitResponse(rateLimitResult);
+    }
+
+    // 🔒 SECURITY: Validate and sanitize input
+    const parseResult = await parseAndValidateBody<ChatRequest>(
+      req,
+      CHAT_SCHEMA,
+      { strictMode: true }
+    );
+
+    if (!parseResult.success) {
+      return parseResult.response;
+    }
+
+    const { message } = parseResult.data;
+
+    // 🔒 SECURITY: Check if OpenAI API key is configured
+    const apiKey = getApiKey('OPENAI_API_KEY');
     if (!apiKey) {
-      return NextResponse.json(
-        { error: "OpenAI API key not configured" },
-        { status: 500 }
-      );
+      return createApiKeyErrorResponse('OPENAI_API_KEY');
     }
 
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -180,22 +223,55 @@ export async function POST(req: NextRequest) {
     });
 
     if (!response.ok) {
-      const error = await response.json();
+      // 🔒 SECURITY: Don't expose OpenAI error details in production
+      const errorData = await response.json().catch(() => ({}));
+      console.error("OpenAI API error:", errorData);
+
       return NextResponse.json(
-        { error: error.error?.message || "OpenAI API error" },
-        { status: response.status }
+        {
+          error: process.env.NODE_ENV === 'development'
+            ? (errorData.error?.message || "OpenAI API error")
+            : "AI service error"
+        },
+        {
+          status: response.status,
+          headers: SECURITY_HEADERS,
+        }
       );
     }
 
     const data = await response.json();
     const reply = data.choices[0]?.message?.content || "No response";
 
-    return NextResponse.json({ reply });
-  } catch (error: any) {
-    console.error("Chat API error:", error);
+    // 🔒 SECURITY: Include rate limit headers in response
+    const rateLimitHeaders = getRateLimitHeaders(rateLimitResult);
+
     return NextResponse.json(
-      { error: error.message || "Internal server error" },
-      { status: 500 }
+      { reply },
+      {
+        headers: {
+          ...SECURITY_HEADERS,
+          ...rateLimitHeaders,
+        },
+      }
+    );
+  } catch (error: unknown) {
+    // 🔒 SECURITY: Don't expose internal error details
+    const errorMessage = error instanceof Error ? error.message : "Unknown error";
+    console.error("Chat API error:", errorMessage);
+
+    return NextResponse.json(
+      { error: process.env.NODE_ENV === 'development' ? errorMessage : "Internal server error" },
+      {
+        status: 500,
+        headers: SECURITY_HEADERS,
+      }
     );
   }
 }
+
+// ✅ Chat API endpoint with security hardening:
+// 1. Rate limiting (IP + user-based)
+// 2. Schema-based input validation
+// 3. Secure API key handling
+// 4. OWASP-compliant security headers

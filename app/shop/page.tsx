@@ -7,15 +7,18 @@
 import { useUser } from "@clerk/nextjs";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Gem, Heart, Zap, Snowflake, ShoppingBag, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
 export default function ShopPage() {
-  const { user } = useUser();
-  const userStats = useQuery(api.gamification.getUserStats, {
-    email: user?.emailAddresses[0]?.emailAddress,
-  });
+  const { user, isLoaded } = useUser();
+  const userStats = useQuery(
+    api.gamification.getUserStats,
+    user?.emailAddresses[0]?.emailAddress
+      ? { email: user.emailAddresses[0].emailAddress }
+      : "skip"
+  );
 
   // Step 1: Get shop items and user stats
   const shopItems = useQuery(api.shop.getShopItems);
@@ -31,6 +34,12 @@ export default function ShopPage() {
     message: string;
   } | null>(null);
   const [isPurchasing, setIsPurchasing] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  // Ensure consistent hydration
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   // Step 4: Handle purchase click
   const handlePurchase = async (itemId: string) => {
@@ -66,10 +75,26 @@ export default function ShopPage() {
   };
 
   // Step 5: Loading state
-  if (!shopItems || !userStats) {
+  if (!isMounted || shopItems === undefined || userStats === undefined) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 flex items-center justify-center">
         <div className="text-white text-xl">Loading shop...</div>
+      </div>
+    );
+  }
+
+  // Handle case where user stats haven't been created yet or user is logged out
+  if (userStats === null) {
+    return (
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 flex flex-col items-center justify-center gap-4">
+        <div className="text-white text-xl">Please sign in to access the gem shop.</div>
+        <Link
+          href="/shop" // Assuming they will stay or be redirected back after sign in
+          onClick={(e) => { e.preventDefault(); window.location.href = "/sign-in"; }}
+          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition-colors"
+        >
+          Sign In
+        </Link>
       </div>
     );
   }
@@ -121,11 +146,10 @@ export default function ShopPage() {
         {/* Purchase message */}
         {purchaseMessage && (
           <div
-            className={`mb-6 p-4 rounded-xl border-2 ${
-              purchaseMessage.type === "success"
-                ? "bg-green-500/10 border-green-500/30 text-green-400"
-                : "bg-red-500/10 border-red-500/30 text-red-400"
-            }`}
+            className={`mb-6 p-4 rounded-xl border-2 ${purchaseMessage.type === "success"
+              ? "bg-green-500/10 border-green-500/30 text-green-400"
+              : "bg-red-500/10 border-red-500/30 text-red-400"
+              }`}
           >
             <p className="text-center font-semibold">{purchaseMessage.message}</p>
           </div>
@@ -141,8 +165,8 @@ export default function ShopPage() {
               item.id === "refill_hearts"
                 ? Heart
                 : item.id === "streak_freeze"
-                ? Snowflake
-                : Zap;
+                  ? Snowflake
+                  : Zap;
 
             return (
               <div
@@ -176,17 +200,16 @@ export default function ShopPage() {
                 <button
                   onClick={() => handlePurchase(item.id)}
                   disabled={!canAfford || isPurchasing}
-                  className={`w-full py-3 px-6 rounded-xl font-bold text-white transition-all ${
-                    canAfford && !isPurchasing
-                      ? "bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 border-2 border-purple-500/50 hover:scale-105 active:scale-95"
-                      : "bg-gray-700 border-2 border-gray-600 cursor-not-allowed opacity-50"
-                  }`}
+                  className={`w-full py-3 px-6 rounded-xl font-bold text-white transition-all ${canAfford && !isPurchasing
+                    ? "bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 border-2 border-purple-500/50 hover:scale-105 active:scale-95"
+                    : "bg-gray-700 border-2 border-gray-600 cursor-not-allowed opacity-50"
+                    }`}
                 >
                   {isPurchasing
                     ? "Processing..."
                     : canAfford
-                    ? "Purchase"
-                    : "Not Enough Gems"}
+                      ? "Purchase"
+                      : "Not Enough Gems"}
                 </button>
               </div>
             );

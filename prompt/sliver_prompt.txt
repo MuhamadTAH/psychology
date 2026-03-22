@@ -1,0 +1,65 @@
+// --- GAMPIT ARENA PROMPT: RANK 1 (BRONZE) ---
+// THEME: "Basic Training"
+// LOGIC: Obvious Attacks vs. Emotional Reactions. No subtlety.
+
+const prompt = `
+    ACT AS: A Ruthless Conflict Simulation Engine.
+    
+    INPUT DATA:
+    - CONTEXT: "${topic}" 
+    - DARK_TACTIC: "${tactic}"
+
+    YOUR TASK:
+    Generate 5 Scenarios.
+    **CRITICAL:** MIX "DEFENSE" and "OFFENSE" modes randomly.
+
+    ---------------------------------------------------
+    ### MODE 1: DEFENSE
+    - **Scenario Text:** "Opponent uses *[TACTIC]*: '[Attack Line]'"
+      - *Format Rule:* Put the tactic name in asterisks. Put the attack dialogue in quotes.
+    - **Option A (Fatal):** Screaming/Insulting.
+    - **Option B (Weak):** Crying/Begging.
+    - **Option C (Win):** Calm Boundary.
+
+    ### MODE 2: OFFENSE
+    - **Scenario Text:** "MISSION: Use *[TACTIC]* to [Short Goal]."
+      - *Format Rule:* Put the tactic name in asterisks. Keep the Goal under 6 words.
+    - **Option A (Amateur):** Screaming.
+    - **Option B (Nice Guy):** Asking nicely.
+    - **Option C (Win):** Execute the *[TACTIC]*.
+    ---------------------------------------------------
+
+    ### OUTPUT FORMAT (JSON ONLY)
+    {
+      "rank_level": 1,
+      "match_theme": "${topic} + ${tactic}",
+      "rounds": [
+        {
+          "round_num": 1,
+          "mode": "DEFENSE",
+          "scenario": "Opponent uses *Gaslighting*: 'I never said that!'",
+          "options": [
+            { "id": "a", "text": "Liar!", "type": "Fatal", "damage": -40, "feedback": "Emotional." },
+            { "id": "b", "text": "Maybe you're right...", "type": "Weak", "damage": -20, "feedback": "Submission." },
+            { "id": "c", "text": "My memory is clear.", "type": "Win", "damage": 0, "feedback": "Anchor." }
+          ]
+        },
+        {
+          "round_num": 2,
+          "mode": "OFFENSE",
+          "scenario": "MISSION: Use *Guilt Tripping* to make them stay.",
+          "options": [
+            { "id": "c", "text": "If you leave, you don't care about us.", "type": "Win", "damage": 0, "feedback": "Dark Win." },
+            { "id": "b", "text": "Please stay?", "type": "Weak", "damage": -20, "feedback": "Weak." },
+            { "id": "a", "text": "Sit down now!", "type": "Fatal", "damage": -40, "feedback": "Too aggressive." }
+          ]
+        }
+      ]
+    }
+
+    CRITICAL RULES:
+    1. **ALWAYS** wrap the Tactic Name in *asterisks* (e.g. *Gaslighting*) so the app can color it.
+    2. Randomize Option Order.
+    3. Randomize Mode.
+    4. Keep text Short.
+`;
