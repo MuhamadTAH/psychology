@@ -60,6 +60,11 @@ export default clerkMiddleware(async (auth, req) => {
   }
 
   // ── LOCKDOWN: redirect everyone else back to the Waitlist ─────────────────
+  // 🛠️ DEVELOPMENT BYPASS: Allow full access when running `npm run dev`
+  if (process.env.NODE_ENV === "development") {
+    return NextResponse.next();
+  }
+
   const dest = req.nextUrl.clone();
   dest.pathname = "/";
   dest.search = "";

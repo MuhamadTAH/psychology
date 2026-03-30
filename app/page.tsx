@@ -4,6 +4,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
+import { usePostHog } from "posthog-js/react";
 
 // ─── Blinking cursor ──────────────────────────────────────────────────────────
 function Cursor() {
@@ -81,6 +82,7 @@ export default function WaitlistPage() {
   const [selectedAnswer, setSelectedAnswer] = useState<"A" | "B" | null>(null);
 
   const joinWaitlist = useMutation(api.waitlist.joinWaitlist);
+  const posthog = usePostHog();
 
   // Dynamic Headline based on phase
   let rawHeadline = "YOU'RE ALREADY LOSING. YOU JUST DON'T SEE IT.";
@@ -108,6 +110,9 @@ export default function WaitlistPage() {
     if (status === "loading") return;
     const trimmed = email.trim();
     if (!trimmed) return;
+
+    posthog?.capture("request_access_clicked", { email: trimmed });
+
     setStatus("loading");
     setErrorMsg("");
     try {

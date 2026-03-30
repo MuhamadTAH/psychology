@@ -486,7 +486,7 @@ export default function ChallengePage() {
           <button className="flex flex-col items-center gap-1 group hover:opacity-80">
             <BookOpen className="h-7 w-7 text-gray-500" />
           </button>
-          <button onClick={() => router.push('/leagues')} className="flex flex-col items-center gap-1 group hover:opacity-80">
+          <button className="flex flex-col items-center gap-1 group hover:opacity-80">
             <Trophy className="h-7 w-7 text-gray-500" />
           </button>
           <button className="flex flex-col items-center gap-1 group">

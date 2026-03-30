@@ -627,17 +627,9 @@ export default function ProfilePage() {
             <BookOpen className="h-7 w-7 text-gray-500" />
           </button>
 
-          {/* Leagues */}
-          <button
-            onClick={() => router.push('/leagues')}
-            className="flex flex-col items-center gap-1 group hover:opacity-80"
-          >
-            <Trophy className="h-7 w-7 text-gray-500" />
-          </button>
-
-          {/* Shop */}
+          {/* Ranking */}
           <button className="flex flex-col items-center gap-1 group hover:opacity-80">
-            <ShoppingBag className="h-7 w-7 text-gray-500" />
+            <Trophy className="h-7 w-7 text-gray-500" />
           </button>
 
           {/* Profile - Active */}

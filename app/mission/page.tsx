@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { useQuery, useMutation, useConvexAuth } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import './gameplay.css';
+import './mission.css';
 
 // Bot Simulant System
 import { BotIdentity, getRandomBot, getBotChat, applyPersonalityDrift, assignBotMood } from '@/lib/botRoster';
@@ -135,7 +135,7 @@ export default function GameplayPage() {
                 const onlineBots = botFriends.filter((b: any) => b.status === 'online');
                 if (onlineBots.length > 0) {
                     const bot = onlineBots[Math.floor(Math.random() * onlineBots.length)];
-                    setInviteNotification({ name: bot.name, botId: bot.botId });
+                    setInviteNotification({ name: bot.username, botId: bot.botId });
 
                     // Auto-clear after 8s
                     setTimeout(() => setInviteNotification(null), 8000);
@@ -221,7 +221,7 @@ export default function GameplayPage() {
     const [botAnswerTime, setBotAnswerTime] = useState<number | null>(null); // seconds
 
     // Player stats from DB
-    const userStats = useQuery(api.gamification.getUserStats, isAuthenticated ? undefined : "skip");
+    const userStats = useQuery(api.gamification.getUserStats, isAuthenticated ? {} : "skip");
 
     // Default fallback to prevent UI breaking
     const playerStats = {
@@ -1078,13 +1078,13 @@ export default function GameplayPage() {
                             <div className="nav-icon">⚔️</div>
                             <span>Battle</span>
                         </button>
-                        <button className="nav-item" onClick={() => router.push('/leagues')}>
+                        <button className="nav-item">
                             <div className="nav-icon">🏆</div>
-                            <span>Leagues</span>
+                            <span>Ranking</span>
                         </button>
-                        <button className="nav-item" onClick={() => router.push('/shop')}>
-                            <div className="nav-icon">🛒</div>
-                            <span>Shop</span>
+                        <button className="nav-item">
+                            <div className="nav-icon">🎖️</div>
+                            <span>Honor</span>
                         </button>
                         <button className="nav-item" onClick={() => router.push('/profile')}>
                             <div className="nav-icon">👤</div>

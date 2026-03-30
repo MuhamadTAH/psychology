@@ -1,21 +1,34 @@
-# Dependencies (NEVER let the AI read these)
+# Core Dependencies (Massive Quota Drainers)
 node_modules/
 venv/
 .env
+.env.local
 
-# Build outputs
+# Next.js & Build Outputs
+.next/
 dist/
 build/
 out/
-.next/
 
-# Massive static assets
+# Convex Generated Files
+convex/_generated/
+
+# Massive Lockfiles & Logs (This allows normal .json configs to work)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+*.log
+*.jsonl
+
+# Media & Static Assets
 *.mp4
 *.mp3
 *.png
 *.jpg
+*.jpeg
+*.gif
 *.vtt
-*.json (unless it's a small config file)
+*.svg
 
-# Git history
+# Git History
 .git/
